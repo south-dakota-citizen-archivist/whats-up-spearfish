@@ -30,6 +30,8 @@ _HEADERS = {"User-Agent": "Mozilla/5.0"}
 def _fetch_month_overwrites(org: int, menu: int, year: int, month: int) -> list[dict]:
     url = _OVERWRITES_URL.format(org=org, menu=menu, year=year, month=month)
     resp = requests.get(url, headers=_HEADERS, timeout=15)
+    if resp.status_code == 400:
+        return []
     resp.raise_for_status()
     return resp.json().get("data", [])
 

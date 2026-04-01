@@ -16,17 +16,20 @@ import json
 import re
 
 import requests
+import urllib3
 from bs4 import BeautifulSoup
 
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 BASE_URL = "https://www.westernhillshumanesociety.com"
 _TAG_RE = re.compile(r"<[^>]+>")
 
 
 def _fetch_pets(url: str, species: str) -> list[dict]:
-    resp = requests.get(url, timeout=20)
+    resp = requests.get(url, timeout=20, verify=False)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
 

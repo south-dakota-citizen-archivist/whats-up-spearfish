@@ -18,8 +18,13 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "pytest>=8.0",
     "ruff>=0.15.8",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
 
 [tool.ruff]
 target-version = "py312"
