@@ -1,0 +1,29 @@
+[project]
+name = "spearfish-bulletin"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+    "feedparser",
+    "icalendar",
+    "Jinja2",
+    "python-slugify",
+    "python-dotenv",
+    "slack-sdk",
+    "civic-scraper",
+    "pytailwindcss",
+    "playwright>=1.58.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.8",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]

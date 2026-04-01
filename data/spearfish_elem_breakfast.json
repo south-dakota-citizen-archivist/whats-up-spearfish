@@ -1,0 +1,4603 @@
+[
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Bacon & Egg Breakfast Pizza, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-02",
+    "start_dt": "2026-03-02",
+    "description": "With: 100% Fruit Juice, Applesauce, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 370519,
+        "name": "Bacon & Egg Breakfast Pizza",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/zZFq47pimbtbjw4CDCxzfNBJNftulwpbYUOIhvvN/original/Xk5RYI7jzRwb8zY4R6VlaMAD2vOt4tznPBj9rJw0.png",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 210,
+          "fat_g": 9.0,
+          "sat_fat_g": 3.5,
+          "carbs_g": 23,
+          "fiber_g": 2.0,
+          "protein_g": 10,
+          "sodium_mg": 330
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370508,
+        "name": "Applesauce",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/m5svd3326v9Ipwf84cqhSJ9dVFVDiTfBAbpsYjV0/original/bGh3TiB4TZq43wAXjwUxAmXC0YZD4WGsw3fdrFLV.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 83,
+          "carbs_g": 22,
+          "fiber_g": 2.8
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Eggoji Waffle with Syrup, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-03",
+    "start_dt": "2026-03-03",
+    "description": "With: 100% Fruit Juice, Mixed Fruit Cocktail, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 1555440,
+        "name": "Eggoji Waffle with Syrup",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/CPraIKGoGeS14hCnMlZeuv4iYnXizRbAaRJFldRh/original/rldp6xwpcZTAFdmsfCTqsOA7Zm6ws2OpTg47CC1e.jpg",
+        "serving_size": "2 each",
+        "nutrition": {
+          "calories": 243,
+          "fat_g": 5.0,
+          "sat_fat_g": 1.5,
+          "carbs_g": 47,
+          "fiber_g": 4.0,
+          "protein_g": 4.0,
+          "sodium_mg": 243
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370505,
+        "name": "Mixed Fruit Cocktail",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/k8LkR7tDdEaWtj3UPQilaJVKhkxt84niQvPhR2nz/original/v9nq1VlkuHWb7KeGfCX3BcZAVHG4NKlIzgdmS0Nc.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 61,
+          "carbs_g": 16,
+          "fiber_g": 1.0
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Fresh Baked Biscuits and Gravy, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-04",
+    "start_dt": "2026-03-04",
+    "description": "With: 100% Fruit Juice, Sliced Peaches, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 128061,
+        "name": "Fresh Baked Biscuits and Gravy",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/dONLQwnyQFNQyjFFI0PqcwMXjPTlqmGbvGmgl5Ls/original/v1d1eaJRqxKBa15kCO7CTCt1Cp2DYaxpJl7Wl2jz.png",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 296,
+          "fat_g": 15,
+          "sat_fat_g": 6.9,
+          "carbs_g": 34,
+          "fiber_g": 2.0,
+          "protein_g": 7.0,
+          "sodium_mg": 659
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370513,
+        "name": "Sliced Peaches",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/l0rlKgTqA1i5PYkPJm7nymyrAFia00lhonELnorm/original/aoRtKRkD9sFZ3TPe9ds87sF6WuxCJZBOzagGAjOh.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 61,
+          "carbs_g": 16,
+          "fiber_g": 1.0,
+          "protein_g": 1.0
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Ham and Cheese Omelet Bowl, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-05",
+    "start_dt": "2026-03-05",
+    "description": "With: 100% Fruit Juice, Fresh Orange Slices, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 1570126,
+        "name": "Ham and Cheese Omelet Bowl",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "Crispy tater tots, ham,  fluffy eggs, and cheddar cheese.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rPaTPDUgo5Ri2K41IoooP4c7zyfmopsZ9sC9pBNi/original/SVCbg2K2UT8OgmNnyyi9qhMge77zyznyw40lPDQF.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 258,
+          "fat_g": 16,
+          "sat_fat_g": 5.2,
+          "carbs_g": 16,
+          "fiber_g": 1.0,
+          "protein_g": 12,
+          "sodium_mg": 597
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370516,
+        "name": "Fresh Orange Slices",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/dSl7Cbvr3jccvYlvEAUrjYQaRG73HWLmAsAEqHv7/original/vHi5XKOFkYURTOOtv2m1kh5nMFssFS8V1G4d8u3T.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 62,
+          "fat_g": 0.2,
+          "sat_fat_g": 0.0,
+          "carbs_g": 15,
+          "fiber_g": 3.1,
+          "protein_g": 1.2
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Fresh Baked Cinnamon Roll, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-06",
+    "start_dt": "2026-03-06",
+    "description": "With: 100% Fruit Juice, Pineapple Tidbits, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 371390,
+        "name": "Fresh Baked Cinnamon Roll",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/aOVQH6fcH9crG1fUKrCiCStcyWCvfGpmgPi55OQi/original/GVi4eDKj0HDDOdLqM1Ck2uSTH0HQgFAhzSjV3mQn.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 333,
+          "fat_g": 6.1,
+          "sat_fat_g": 2.0,
+          "carbs_g": 66,
+          "fiber_g": 3.0,
+          "protein_g": 5.2,
+          "sodium_mg": 184
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370503,
+        "name": "Pineapple Tidbits",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/ywbUPUSUnLzPCl7G58OQFno7a3FY0S6fQMvIViJv/original/Y5PqgBAGXPGbKOop3R0VF2Jc2tvSy3idHDse3Dbb.png",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 78,
+          "carbs_g": 18,
+          "fiber_g": 1.1,
+          "protein_g": 0.6
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Made Fresh Egg Breakfast Burrito, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-09",
+    "start_dt": "2026-03-09",
+    "description": "With: 100% Fruit Juice, Sliced Peaches, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 128031,
+        "name": "Made Fresh Egg Breakfast Burrito",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "Fluffy scrambled eggs, hashbrowns and cheese wrapped in a soft flour tortilla.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/EL0lX7HwZtR3dnkerwAbCxsN2HNpXj01ZoSWw5b5/original/L6vnRcgHUpPsl8q6k7ODHL0gQrC0adNJQ6tLEGOA.jpg",
+        "serving_size": "1 Burrito",
+        "nutrition": {
+          "calories": 322,
+          "fat_g": 15,
+          "sat_fat_g": 5.6,
+          "carbs_g": 32,
+          "fiber_g": 3.4,
+          "protein_g": 13,
+          "sodium_mg": 545
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370513,
+        "name": "Sliced Peaches",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/l0rlKgTqA1i5PYkPJm7nymyrAFia00lhonELnorm/original/aoRtKRkD9sFZ3TPe9ds87sF6WuxCJZBOzagGAjOh.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 61,
+          "carbs_g": 16,
+          "fiber_g": 1.0,
+          "protein_g": 1.0
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Iced Long John, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-10",
+    "start_dt": "2026-03-10",
+    "description": "With: 100% Fruit Juice, Applesauce, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 370510,
+        "name": "Iced Long John",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/Vl0vO0FtjpIjNzC69RC7KHcUrnaEnujqxO3e0pvD/original/27LMrIvCxvuq1DWKmixLGv7FgPPp2hgqLDhoYxwp.jpg",
+        "serving_size": "1 roll",
+        "nutrition": {
+          "calories": 277,
+          "fat_g": 9.0,
+          "sat_fat_g": 3.5,
+          "carbs_g": 43,
+          "fiber_g": 3.0,
+          "protein_g": 6.1,
+          "sodium_mg": 282
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370508,
+        "name": "Applesauce",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/m5svd3326v9Ipwf84cqhSJ9dVFVDiTfBAbpsYjV0/original/bGh3TiB4TZq43wAXjwUxAmXC0YZD4WGsw3fdrFLV.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 83,
+          "carbs_g": 22,
+          "fiber_g": 2.8
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Fresh Baked Ham, Egg & Cheese Biscuit Sandwich, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-11",
+    "start_dt": "2026-03-11",
+    "description": "With: 100% Fruit Juice, Pineapple Tidbits, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 128030,
+        "name": "Fresh Baked Ham, Egg & Cheese Biscuit Sandwich",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/n9uxgThRZvT8d7MiCZUhQWgMcr2LsIhWQUUJD822/original/C9sQPJJ8AfPPzJ4WYgFfR68NpQQrnoZrR5H04OON.png",
+        "serving_size": "1 sandwich",
+        "nutrition": {
+          "calories": 350,
+          "fat_g": 19,
+          "sat_fat_g": 8.3,
+          "carbs_g": 30,
+          "fiber_g": 2.0,
+          "protein_g": 14,
+          "sodium_mg": 722
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370503,
+        "name": "Pineapple Tidbits",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/ywbUPUSUnLzPCl7G58OQFno7a3FY0S6fQMvIViJv/original/Y5PqgBAGXPGbKOop3R0VF2Jc2tvSy3idHDse3Dbb.png",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 78,
+          "carbs_g": 18,
+          "fiber_g": 1.1,
+          "protein_g": 0.6
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Ultimate Chocolate Chip Breakfast Round, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-12",
+    "start_dt": "2026-03-12",
+    "description": "With: 100% Fruit Juice, Sliced Pears, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 370500,
+        "name": "Ultimate Chocolate Chip Breakfast Round",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/juNB9UkLRgevJWB1g13GEHFfGxmaEPedP2ApRjYc/original/RRSCCZvSpaBmp0tAdMAAEOsvYL3VLpYAq8hdxbIf.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 250,
+          "fat_g": 7.0,
+          "sat_fat_g": 2.0,
+          "carbs_g": 42,
+          "fiber_g": 6.0,
+          "protein_g": 5.0,
+          "sodium_mg": 190
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370512,
+        "name": "Sliced Pears",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/96Y5B3RUoWhKOMPs9tk5frifCpsWj3LfJIxF2xy6/original/fyOo4ExUgOBdNlhXI80R8hufR1J9LTFRpoSjLlPL.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 65,
+          "carbs_g": 15,
+          "fiber_g": 1.8
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Fresh Baked Caramel Roll, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-13",
+    "start_dt": "2026-03-13",
+    "description": "With: 100% Fruit Juice, Fresh Orange Slices, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 1497165,
+        "name": "Fresh Baked Caramel Roll",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/7Upl2KGue6tBu1bX2JXlbBeek7uro2TyXyLWlBV1/NoFjtA2Tq7vdj0d9SK5h8aQ4VnZrQthf9B6XYTcD.jpg",
+        "serving_size": "1 Roll",
+        "nutrition": {
+          "calories": 447,
+          "fat_g": 20,
+          "sat_fat_g": 7.2,
+          "carbs_g": 64,
+          "fiber_g": 3.0,
+          "protein_g": 5.4,
+          "sodium_mg": 284
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370516,
+        "name": "Fresh Orange Slices",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/dSl7Cbvr3jccvYlvEAUrjYQaRG73HWLmAsAEqHv7/original/vHi5XKOFkYURTOOtv2m1kh5nMFssFS8V1G4d8u3T.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 62,
+          "fat_g": 0.2,
+          "sat_fat_g": 0.0,
+          "carbs_g": 15,
+          "fiber_g": 3.1,
+          "protein_g": 1.2
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Eggoji Waffle with Syrup, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-16",
+    "start_dt": "2026-03-16",
+    "description": "With: 100% Fruit Juice, Pineapple Tidbits, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 1555440,
+        "name": "Eggoji Waffle with Syrup",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/CPraIKGoGeS14hCnMlZeuv4iYnXizRbAaRJFldRh/original/rldp6xwpcZTAFdmsfCTqsOA7Zm6ws2OpTg47CC1e.jpg",
+        "serving_size": "2 each",
+        "nutrition": {
+          "calories": 243,
+          "fat_g": 5.0,
+          "sat_fat_g": 1.5,
+          "carbs_g": 47,
+          "fiber_g": 4.0,
+          "protein_g": 4.0,
+          "sodium_mg": 243
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370503,
+        "name": "Pineapple Tidbits",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/ywbUPUSUnLzPCl7G58OQFno7a3FY0S6fQMvIViJv/original/Y5PqgBAGXPGbKOop3R0VF2Jc2tvSy3idHDse3Dbb.png",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 78,
+          "carbs_g": 18,
+          "fiber_g": 1.1,
+          "protein_g": 0.6
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Fresh Baked Biscuits and Gravy, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-17",
+    "start_dt": "2026-03-17",
+    "description": "With: 100% Fruit Juice, Applesauce, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 128061,
+        "name": "Fresh Baked Biscuits and Gravy",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/dONLQwnyQFNQyjFFI0PqcwMXjPTlqmGbvGmgl5Ls/original/v1d1eaJRqxKBa15kCO7CTCt1Cp2DYaxpJl7Wl2jz.png",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 296,
+          "fat_g": 15,
+          "sat_fat_g": 6.9,
+          "carbs_g": 34,
+          "fiber_g": 2.0,
+          "protein_g": 7.0,
+          "sodium_mg": 659
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370508,
+        "name": "Applesauce",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/m5svd3326v9Ipwf84cqhSJ9dVFVDiTfBAbpsYjV0/original/bGh3TiB4TZq43wAXjwUxAmXC0YZD4WGsw3fdrFLV.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 83,
+          "carbs_g": 22,
+          "fiber_g": 2.8
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Powdered Sugar Breakfast Bites, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-18",
+    "start_dt": "2026-03-18",
+    "description": "With: 100% Fruit Juice, Sliced Peaches, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 1514761,
+        "name": "Powdered Sugar Breakfast Bites",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "<p>WHOLE WHEAT FLOUR AND WHOLE GRAIN CORN FLOUR BLEND (WHOLE WHEAT FLOUR, WHOLE GRAIN CORN FLOUR), WATER, ENRICHED UNBLEACHED WHEAT FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID), PALM OIL, SUGAR, CONTAINS LESS THAN 2% OF THE FOLLOWING: DEGERMED YELLOW CORN MEAL, SOYBEAN OIL, LEAVENING (SODIUM ACID PYROPHOSPHATE, BAKING SODA), EGG YOLKS, DEFATTED SOY FLOUR, WHEAT STARCH, NATURAL AND ARTIFICIAL FLAVOR, NATURAL FLAVOR, MODIFIED WHEAT STARCH, SKIM MILK, POTATO FLOUR, MALTODEXTRIN, SALT, MONOGLYCERIDES, PROPYLENE GLYCOL MONO AND DIESTERS OF FATS AND FATTY ACIDS, SODIUM STEAROYL LACTYLATE, SODIUM CASEINATE (A MILK DERIVATIVE), DATEM.&nbsp;</p>",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iV3yyUoicrBpBrV9uAOiVSQivhI9ldsdFr083fGn/original/1BX5iFViaVC0YnVZHtgnFsjL5Pyz23anUlRvLL4F.jpg",
+        "serving_size": "6 each",
+        "nutrition": {
+          "calories": 357,
+          "fat_g": 16,
+          "sat_fat_g": 7.0,
+          "carbs_g": 52,
+          "fiber_g": 2.0,
+          "protein_g": 4.0,
+          "sodium_mg": 400
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370513,
+        "name": "Sliced Peaches",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/l0rlKgTqA1i5PYkPJm7nymyrAFia00lhonELnorm/original/aoRtKRkD9sFZ3TPe9ds87sF6WuxCJZBOzagGAjOh.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 61,
+          "carbs_g": 16,
+          "fiber_g": 1.0,
+          "protein_g": 1.0
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Ultimate Chocolate Chip Breakfast Round, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-23",
+    "start_dt": "2026-03-23",
+    "description": "With: 100% Fruit Juice, Sliced Peaches, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 370500,
+        "name": "Ultimate Chocolate Chip Breakfast Round",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/juNB9UkLRgevJWB1g13GEHFfGxmaEPedP2ApRjYc/original/RRSCCZvSpaBmp0tAdMAAEOsvYL3VLpYAq8hdxbIf.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 250,
+          "fat_g": 7.0,
+          "sat_fat_g": 2.0,
+          "carbs_g": 42,
+          "fiber_g": 6.0,
+          "protein_g": 5.0,
+          "sodium_mg": 190
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370513,
+        "name": "Sliced Peaches",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/l0rlKgTqA1i5PYkPJm7nymyrAFia00lhonELnorm/original/aoRtKRkD9sFZ3TPe9ds87sF6WuxCJZBOzagGAjOh.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 61,
+          "carbs_g": 16,
+          "fiber_g": 1.0,
+          "protein_g": 1.0
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Made Fresh Egg Breakfast Burrito, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-24",
+    "start_dt": "2026-03-24",
+    "description": "With: 100% Fruit Juice, Mixed Fruit Cocktail, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 128031,
+        "name": "Made Fresh Egg Breakfast Burrito",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "Fluffy scrambled eggs, hashbrowns and cheese wrapped in a soft flour tortilla.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/EL0lX7HwZtR3dnkerwAbCxsN2HNpXj01ZoSWw5b5/original/L6vnRcgHUpPsl8q6k7ODHL0gQrC0adNJQ6tLEGOA.jpg",
+        "serving_size": "1 Burrito",
+        "nutrition": {
+          "calories": 322,
+          "fat_g": 15,
+          "sat_fat_g": 5.6,
+          "carbs_g": 32,
+          "fiber_g": 3.4,
+          "protein_g": 13,
+          "sodium_mg": 545
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370505,
+        "name": "Mixed Fruit Cocktail",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/k8LkR7tDdEaWtj3UPQilaJVKhkxt84niQvPhR2nz/original/v9nq1VlkuHWb7KeGfCX3BcZAVHG4NKlIzgdmS0Nc.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 61,
+          "carbs_g": 16,
+          "fiber_g": 1.0
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "French Toast Sticks with Syrup Dipping Sauce, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-25",
+    "start_dt": "2026-03-25",
+    "description": "With: 100% Fruit Juice, Fresh Orange Slices, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 370514,
+        "name": "French Toast Sticks with Syrup Dipping Sauce",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HfvAZiHsO8N76ETohuWv6GwH9SGi2mjNLDb3AY2q/original/3DlwBrVPR1Sk73kXNw95nsUE3bDWGQ7TycCzFbBI.jpg",
+        "serving_size": "3 sticks",
+        "nutrition": {
+          "calories": 323,
+          "fat_g": 9.0,
+          "sat_fat_g": 1.5,
+          "carbs_g": 56,
+          "fiber_g": 3.0,
+          "protein_g": 6.0,
+          "sodium_mg": 333
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370516,
+        "name": "Fresh Orange Slices",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/dSl7Cbvr3jccvYlvEAUrjYQaRG73HWLmAsAEqHv7/original/vHi5XKOFkYURTOOtv2m1kh5nMFssFS8V1G4d8u3T.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 62,
+          "fat_g": 0.2,
+          "sat_fat_g": 0.0,
+          "carbs_g": 15,
+          "fiber_g": 3.1,
+          "protein_g": 1.2
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Bacon & Egg Breakfast Pizza, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-26",
+    "start_dt": "2026-03-26",
+    "description": "With: 100% Fruit Juice, Applesauce, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 370519,
+        "name": "Bacon & Egg Breakfast Pizza",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/zZFq47pimbtbjw4CDCxzfNBJNftulwpbYUOIhvvN/original/Xk5RYI7jzRwb8zY4R6VlaMAD2vOt4tznPBj9rJw0.png",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 210,
+          "fat_g": 9.0,
+          "sat_fat_g": 3.5,
+          "carbs_g": 23,
+          "fiber_g": 2.0,
+          "protein_g": 10,
+          "sodium_mg": 330
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370508,
+        "name": "Applesauce",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/m5svd3326v9Ipwf84cqhSJ9dVFVDiTfBAbpsYjV0/original/bGh3TiB4TZq43wAXjwUxAmXC0YZD4WGsw3fdrFLV.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 83,
+          "carbs_g": 22,
+          "fiber_g": 2.8
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Fresh Baked Caramel Roll, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-27",
+    "start_dt": "2026-03-27",
+    "description": "With: 100% Fruit Juice, Pineapple Tidbits, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 1497165,
+        "name": "Fresh Baked Caramel Roll",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/7Upl2KGue6tBu1bX2JXlbBeek7uro2TyXyLWlBV1/NoFjtA2Tq7vdj0d9SK5h8aQ4VnZrQthf9B6XYTcD.jpg",
+        "serving_size": "1 Roll",
+        "nutrition": {
+          "calories": 447,
+          "fat_g": 20,
+          "sat_fat_g": 7.2,
+          "carbs_g": 64,
+          "fiber_g": 3.0,
+          "protein_g": 5.4,
+          "sodium_mg": 284
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370503,
+        "name": "Pineapple Tidbits",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/ywbUPUSUnLzPCl7G58OQFno7a3FY0S6fQMvIViJv/original/Y5PqgBAGXPGbKOop3R0VF2Jc2tvSy3idHDse3Dbb.png",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 78,
+          "carbs_g": 18,
+          "fiber_g": 1.1,
+          "protein_g": 0.6
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Pancake Sausage Stick, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-30",
+    "start_dt": "2026-03-30",
+    "description": "With: 100% Fruit Juice, Pineapple Tidbits, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 370517,
+        "name": "Pancake Sausage Stick",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AiTgkj8C6Jlg4eLWDfoPSiV8r61QQCN9BeMRcaWl/original/82oZAM7cgnqI8KWBk6A0phFzlqyHCTWa8fFfvkbc.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 263,
+          "fat_g": 10,
+          "sat_fat_g": 2.5,
+          "carbs_g": 36,
+          "fiber_g": 3.0,
+          "protein_g": 7.0,
+          "sodium_mg": 343
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370503,
+        "name": "Pineapple Tidbits",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/ywbUPUSUnLzPCl7G58OQFno7a3FY0S6fQMvIViJv/original/Y5PqgBAGXPGbKOop3R0VF2Jc2tvSy3idHDse3Dbb.png",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 78,
+          "carbs_g": 18,
+          "fiber_g": 1.1,
+          "protein_g": 0.6
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Iced Long John, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-03-31",
+    "start_dt": "2026-03-31",
+    "description": "With: 100% Fruit Juice, Applesauce, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 370510,
+        "name": "Iced Long John",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/Vl0vO0FtjpIjNzC69RC7KHcUrnaEnujqxO3e0pvD/original/27LMrIvCxvuq1DWKmixLGv7FgPPp2hgqLDhoYxwp.jpg",
+        "serving_size": "1 roll",
+        "nutrition": {
+          "calories": 277,
+          "fat_g": 9.0,
+          "sat_fat_g": 3.5,
+          "carbs_g": 43,
+          "fiber_g": 3.0,
+          "protein_g": 6.1,
+          "sodium_mg": 282
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370508,
+        "name": "Applesauce",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/m5svd3326v9Ipwf84cqhSJ9dVFVDiTfBAbpsYjV0/original/bGh3TiB4TZq43wAXjwUxAmXC0YZD4WGsw3fdrFLV.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 83,
+          "carbs_g": 22,
+          "fiber_g": 2.8
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Fresh Baked Egg & Cheese Biscuit Sandwich, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-01",
+    "start_dt": "2026-04-01",
+    "description": "With: 100% Fruit Juice, Sliced Peaches, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 370509,
+        "name": "Fresh Baked Egg & Cheese Biscuit Sandwich",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/pb0Ai3orA3zFMw001JMjk66JAtOWPXWkkXqgoM2Y/original/uualGrYzOLxbBaWvOp7iRkREtcRzD3nyxTfdmAJ0.png",
+        "serving_size": "1 sandwich",
+        "nutrition": {
+          "calories": 335,
+          "fat_g": 18,
+          "sat_fat_g": 8.0,
+          "carbs_g": 30,
+          "fiber_g": 2.0,
+          "protein_g": 12,
+          "sodium_mg": 555
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370513,
+        "name": "Sliced Peaches",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/l0rlKgTqA1i5PYkPJm7nymyrAFia00lhonELnorm/original/aoRtKRkD9sFZ3TPe9ds87sF6WuxCJZBOzagGAjOh.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 61,
+          "carbs_g": 16,
+          "fiber_g": 1.0,
+          "protein_g": 1.0
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Scrambled Eggs with Toast, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-02",
+    "start_dt": "2026-04-02",
+    "description": "With: 100% Fruit Juice, Fresh Orange Slices, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 264204,
+        "name": "Scrambled Eggs with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/nmgjfCvIsumS9RKSHpDTwAO4iqrhufNpWTfv5jIn/original/IVD6sEnj5FP5q9tb7YMdNMw2fob8FdAzByeoPH4Q.jpg",
+        "serving_size": "1/2 cup",
+        "nutrition": {
+          "calories": 287,
+          "fat_g": 13,
+          "sat_fat_g": 3.8,
+          "carbs_g": 27,
+          "fiber_g": 1.2,
+          "protein_g": 13,
+          "sodium_mg": 285
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370516,
+        "name": "Fresh Orange Slices",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/dSl7Cbvr3jccvYlvEAUrjYQaRG73HWLmAsAEqHv7/original/vHi5XKOFkYURTOOtv2m1kh5nMFssFS8V1G4d8u3T.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 62,
+          "fat_g": 0.2,
+          "sat_fat_g": 0.0,
+          "carbs_g": 15,
+          "fiber_g": 3.1,
+          "protein_g": 1.2
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Eggoji Waffle with Syrup, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-07",
+    "start_dt": "2026-04-07",
+    "description": "With: 100% Fruit Juice, Mixed Fruit Cocktail, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 1555440,
+        "name": "Eggoji Waffle with Syrup",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/CPraIKGoGeS14hCnMlZeuv4iYnXizRbAaRJFldRh/original/rldp6xwpcZTAFdmsfCTqsOA7Zm6ws2OpTg47CC1e.jpg",
+        "serving_size": "2 each",
+        "nutrition": {
+          "calories": 243,
+          "fat_g": 5.0,
+          "sat_fat_g": 1.5,
+          "carbs_g": 47,
+          "fiber_g": 4.0,
+          "protein_g": 4.0,
+          "sodium_mg": 243
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370505,
+        "name": "Mixed Fruit Cocktail",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/k8LkR7tDdEaWtj3UPQilaJVKhkxt84niQvPhR2nz/original/v9nq1VlkuHWb7KeGfCX3BcZAVHG4NKlIzgdmS0Nc.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 61,
+          "carbs_g": 16,
+          "fiber_g": 1.0
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Fresh Baked Biscuits and Gravy, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-08",
+    "start_dt": "2026-04-08",
+    "description": "With: 100% Fruit Juice, Sliced Peaches, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 128061,
+        "name": "Fresh Baked Biscuits and Gravy",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/dONLQwnyQFNQyjFFI0PqcwMXjPTlqmGbvGmgl5Ls/original/v1d1eaJRqxKBa15kCO7CTCt1Cp2DYaxpJl7Wl2jz.png",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 296,
+          "fat_g": 15,
+          "sat_fat_g": 6.9,
+          "carbs_g": 34,
+          "fiber_g": 2.0,
+          "protein_g": 7.0,
+          "sodium_mg": 659
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370513,
+        "name": "Sliced Peaches",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/l0rlKgTqA1i5PYkPJm7nymyrAFia00lhonELnorm/original/aoRtKRkD9sFZ3TPe9ds87sF6WuxCJZBOzagGAjOh.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 61,
+          "carbs_g": 16,
+          "fiber_g": 1.0,
+          "protein_g": 1.0
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Ham and Cheese Omelet Bowl, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-09",
+    "start_dt": "2026-04-09",
+    "description": "With: 100% Fruit Juice, Fresh Orange Slices, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 1570126,
+        "name": "Ham and Cheese Omelet Bowl",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "Crispy tater tots, ham,  fluffy eggs, and cheddar cheese.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rPaTPDUgo5Ri2K41IoooP4c7zyfmopsZ9sC9pBNi/original/SVCbg2K2UT8OgmNnyyi9qhMge77zyznyw40lPDQF.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 258,
+          "fat_g": 16,
+          "sat_fat_g": 5.2,
+          "carbs_g": 16,
+          "fiber_g": 1.0,
+          "protein_g": 12,
+          "sodium_mg": 597
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370516,
+        "name": "Fresh Orange Slices",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/dSl7Cbvr3jccvYlvEAUrjYQaRG73HWLmAsAEqHv7/original/vHi5XKOFkYURTOOtv2m1kh5nMFssFS8V1G4d8u3T.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 62,
+          "fat_g": 0.2,
+          "sat_fat_g": 0.0,
+          "carbs_g": 15,
+          "fiber_g": 3.1,
+          "protein_g": 1.2
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Fresh Baked Cinnamon Roll, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-10",
+    "start_dt": "2026-04-10",
+    "description": "With: 100% Fruit Juice, Pineapple Tidbits, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 371390,
+        "name": "Fresh Baked Cinnamon Roll",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/aOVQH6fcH9crG1fUKrCiCStcyWCvfGpmgPi55OQi/original/GVi4eDKj0HDDOdLqM1Ck2uSTH0HQgFAhzSjV3mQn.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 333,
+          "fat_g": 6.1,
+          "sat_fat_g": 2.0,
+          "carbs_g": 66,
+          "fiber_g": 3.0,
+          "protein_g": 5.2,
+          "sodium_mg": 184
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370503,
+        "name": "Pineapple Tidbits",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/ywbUPUSUnLzPCl7G58OQFno7a3FY0S6fQMvIViJv/original/Y5PqgBAGXPGbKOop3R0VF2Jc2tvSy3idHDse3Dbb.png",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 78,
+          "carbs_g": 18,
+          "fiber_g": 1.1,
+          "protein_g": 0.6
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Made Fresh Egg Breakfast Burrito, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-13",
+    "start_dt": "2026-04-13",
+    "description": "With: 100% Fruit Juice, Sliced Peaches, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 128031,
+        "name": "Made Fresh Egg Breakfast Burrito",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "Fluffy scrambled eggs, hashbrowns and cheese wrapped in a soft flour tortilla.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/EL0lX7HwZtR3dnkerwAbCxsN2HNpXj01ZoSWw5b5/original/L6vnRcgHUpPsl8q6k7ODHL0gQrC0adNJQ6tLEGOA.jpg",
+        "serving_size": "1 Burrito",
+        "nutrition": {
+          "calories": 322,
+          "fat_g": 15,
+          "sat_fat_g": 5.6,
+          "carbs_g": 32,
+          "fiber_g": 3.4,
+          "protein_g": 13,
+          "sodium_mg": 545
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370513,
+        "name": "Sliced Peaches",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/l0rlKgTqA1i5PYkPJm7nymyrAFia00lhonELnorm/original/aoRtKRkD9sFZ3TPe9ds87sF6WuxCJZBOzagGAjOh.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 61,
+          "carbs_g": 16,
+          "fiber_g": 1.0,
+          "protein_g": 1.0
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Iced Long John, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-14",
+    "start_dt": "2026-04-14",
+    "description": "With: 100% Fruit Juice, Applesauce, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 370510,
+        "name": "Iced Long John",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/Vl0vO0FtjpIjNzC69RC7KHcUrnaEnujqxO3e0pvD/original/27LMrIvCxvuq1DWKmixLGv7FgPPp2hgqLDhoYxwp.jpg",
+        "serving_size": "1 roll",
+        "nutrition": {
+          "calories": 277,
+          "fat_g": 9.0,
+          "sat_fat_g": 3.5,
+          "carbs_g": 43,
+          "fiber_g": 3.0,
+          "protein_g": 6.1,
+          "sodium_mg": 282
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370508,
+        "name": "Applesauce",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/m5svd3326v9Ipwf84cqhSJ9dVFVDiTfBAbpsYjV0/original/bGh3TiB4TZq43wAXjwUxAmXC0YZD4WGsw3fdrFLV.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 83,
+          "carbs_g": 22,
+          "fiber_g": 2.8
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Fresh Baked Ham, Egg & Cheese Biscuit Sandwich, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-15",
+    "start_dt": "2026-04-15",
+    "description": "With: 100% Fruit Juice, Pineapple Tidbits, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 128030,
+        "name": "Fresh Baked Ham, Egg & Cheese Biscuit Sandwich",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/n9uxgThRZvT8d7MiCZUhQWgMcr2LsIhWQUUJD822/original/C9sQPJJ8AfPPzJ4WYgFfR68NpQQrnoZrR5H04OON.png",
+        "serving_size": "1 sandwich",
+        "nutrition": {
+          "calories": 350,
+          "fat_g": 19,
+          "sat_fat_g": 8.3,
+          "carbs_g": 30,
+          "fiber_g": 2.0,
+          "protein_g": 14,
+          "sodium_mg": 722
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370503,
+        "name": "Pineapple Tidbits",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/ywbUPUSUnLzPCl7G58OQFno7a3FY0S6fQMvIViJv/original/Y5PqgBAGXPGbKOop3R0VF2Jc2tvSy3idHDse3Dbb.png",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 78,
+          "carbs_g": 18,
+          "fiber_g": 1.1,
+          "protein_g": 0.6
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Ultimate Chocolate Chip Breakfast Round, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-16",
+    "start_dt": "2026-04-16",
+    "description": "With: 100% Fruit Juice, Sliced Pears, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 370500,
+        "name": "Ultimate Chocolate Chip Breakfast Round",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/juNB9UkLRgevJWB1g13GEHFfGxmaEPedP2ApRjYc/original/RRSCCZvSpaBmp0tAdMAAEOsvYL3VLpYAq8hdxbIf.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 250,
+          "fat_g": 7.0,
+          "sat_fat_g": 2.0,
+          "carbs_g": 42,
+          "fiber_g": 6.0,
+          "protein_g": 5.0,
+          "sodium_mg": 190
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370512,
+        "name": "Sliced Pears",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/96Y5B3RUoWhKOMPs9tk5frifCpsWj3LfJIxF2xy6/original/fyOo4ExUgOBdNlhXI80R8hufR1J9LTFRpoSjLlPL.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 65,
+          "carbs_g": 15,
+          "fiber_g": 1.8
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Fresh Baked Caramel Roll, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-17",
+    "start_dt": "2026-04-17",
+    "description": "With: 100% Fruit Juice, Fresh Orange Slices, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 1497165,
+        "name": "Fresh Baked Caramel Roll",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/7Upl2KGue6tBu1bX2JXlbBeek7uro2TyXyLWlBV1/NoFjtA2Tq7vdj0d9SK5h8aQ4VnZrQthf9B6XYTcD.jpg",
+        "serving_size": "1 Roll",
+        "nutrition": {
+          "calories": 447,
+          "fat_g": 20,
+          "sat_fat_g": 7.2,
+          "carbs_g": 64,
+          "fiber_g": 3.0,
+          "protein_g": 5.4,
+          "sodium_mg": 284
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370516,
+        "name": "Fresh Orange Slices",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/dSl7Cbvr3jccvYlvEAUrjYQaRG73HWLmAsAEqHv7/original/vHi5XKOFkYURTOOtv2m1kh5nMFssFS8V1G4d8u3T.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 62,
+          "fat_g": 0.2,
+          "sat_fat_g": 0.0,
+          "carbs_g": 15,
+          "fiber_g": 3.1,
+          "protein_g": 1.2
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Eggoji Waffle with Syrup, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-20",
+    "start_dt": "2026-04-20",
+    "description": "With: 100% Fruit Juice, Pineapple Tidbits, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 1555440,
+        "name": "Eggoji Waffle with Syrup",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/CPraIKGoGeS14hCnMlZeuv4iYnXizRbAaRJFldRh/original/rldp6xwpcZTAFdmsfCTqsOA7Zm6ws2OpTg47CC1e.jpg",
+        "serving_size": "2 each",
+        "nutrition": {
+          "calories": 243,
+          "fat_g": 5.0,
+          "sat_fat_g": 1.5,
+          "carbs_g": 47,
+          "fiber_g": 4.0,
+          "protein_g": 4.0,
+          "sodium_mg": 243
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370503,
+        "name": "Pineapple Tidbits",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/ywbUPUSUnLzPCl7G58OQFno7a3FY0S6fQMvIViJv/original/Y5PqgBAGXPGbKOop3R0VF2Jc2tvSy3idHDse3Dbb.png",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 78,
+          "carbs_g": 18,
+          "fiber_g": 1.1,
+          "protein_g": 0.6
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Fresh Baked Biscuits and Gravy, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-21",
+    "start_dt": "2026-04-21",
+    "description": "With: 100% Fruit Juice, Applesauce, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 128061,
+        "name": "Fresh Baked Biscuits and Gravy",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/dONLQwnyQFNQyjFFI0PqcwMXjPTlqmGbvGmgl5Ls/original/v1d1eaJRqxKBa15kCO7CTCt1Cp2DYaxpJl7Wl2jz.png",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 296,
+          "fat_g": 15,
+          "sat_fat_g": 6.9,
+          "carbs_g": 34,
+          "fiber_g": 2.0,
+          "protein_g": 7.0,
+          "sodium_mg": 659
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370508,
+        "name": "Applesauce",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/m5svd3326v9Ipwf84cqhSJ9dVFVDiTfBAbpsYjV0/original/bGh3TiB4TZq43wAXjwUxAmXC0YZD4WGsw3fdrFLV.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 83,
+          "carbs_g": 22,
+          "fiber_g": 2.8
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Powdered Sugar Breakfast Bites, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-22",
+    "start_dt": "2026-04-22",
+    "description": "With: 100% Fruit Juice, Sliced Peaches, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 1514761,
+        "name": "Powdered Sugar Breakfast Bites",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "<p>WHOLE WHEAT FLOUR AND WHOLE GRAIN CORN FLOUR BLEND (WHOLE WHEAT FLOUR, WHOLE GRAIN CORN FLOUR), WATER, ENRICHED UNBLEACHED WHEAT FLOUR (WHEAT FLOUR, NIACIN, REDUCED IRON, THIAMINE MONONITRATE, RIBOFLAVIN, FOLIC ACID), PALM OIL, SUGAR, CONTAINS LESS THAN 2% OF THE FOLLOWING: DEGERMED YELLOW CORN MEAL, SOYBEAN OIL, LEAVENING (SODIUM ACID PYROPHOSPHATE, BAKING SODA), EGG YOLKS, DEFATTED SOY FLOUR, WHEAT STARCH, NATURAL AND ARTIFICIAL FLAVOR, NATURAL FLAVOR, MODIFIED WHEAT STARCH, SKIM MILK, POTATO FLOUR, MALTODEXTRIN, SALT, MONOGLYCERIDES, PROPYLENE GLYCOL MONO AND DIESTERS OF FATS AND FATTY ACIDS, SODIUM STEAROYL LACTYLATE, SODIUM CASEINATE (A MILK DERIVATIVE), DATEM.&nbsp;</p>",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iV3yyUoicrBpBrV9uAOiVSQivhI9ldsdFr083fGn/original/1BX5iFViaVC0YnVZHtgnFsjL5Pyz23anUlRvLL4F.jpg",
+        "serving_size": "6 each",
+        "nutrition": {
+          "calories": 357,
+          "fat_g": 16,
+          "sat_fat_g": 7.0,
+          "carbs_g": 52,
+          "fiber_g": 2.0,
+          "protein_g": 4.0,
+          "sodium_mg": 400
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370513,
+        "name": "Sliced Peaches",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/l0rlKgTqA1i5PYkPJm7nymyrAFia00lhonELnorm/original/aoRtKRkD9sFZ3TPe9ds87sF6WuxCJZBOzagGAjOh.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 61,
+          "carbs_g": 16,
+          "fiber_g": 1.0,
+          "protein_g": 1.0
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Sausage Breakfast Pizza, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-23",
+    "start_dt": "2026-04-23",
+    "description": "With: 100% Fruit Juice, Fresh Orange Slices, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 370506,
+        "name": "Sausage Breakfast Pizza",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/EkxQrQ2jncJ2oYprRiyJhv8txjgtqD7dkMFXqkmv/original/h804uJZGWQbCUdIzX1z0zTE8f0MU8eeN1dMcz421.png",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 200,
+          "fat_g": 7.0,
+          "sat_fat_g": 2.0,
+          "carbs_g": 26,
+          "fiber_g": 3.0,
+          "protein_g": 9.0,
+          "sodium_mg": 320
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370516,
+        "name": "Fresh Orange Slices",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/dSl7Cbvr3jccvYlvEAUrjYQaRG73HWLmAsAEqHv7/original/vHi5XKOFkYURTOOtv2m1kh5nMFssFS8V1G4d8u3T.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 62,
+          "fat_g": 0.2,
+          "sat_fat_g": 0.0,
+          "carbs_g": 15,
+          "fiber_g": 3.1,
+          "protein_g": 1.2
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Fresh Baked Cinnamon Roll, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-24",
+    "start_dt": "2026-04-24",
+    "description": "With: 100% Fruit Juice, Sliced Pears, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 371390,
+        "name": "Fresh Baked Cinnamon Roll",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/aOVQH6fcH9crG1fUKrCiCStcyWCvfGpmgPi55OQi/original/GVi4eDKj0HDDOdLqM1Ck2uSTH0HQgFAhzSjV3mQn.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 333,
+          "fat_g": 6.1,
+          "sat_fat_g": 2.0,
+          "carbs_g": 66,
+          "fiber_g": 3.0,
+          "protein_g": 5.2,
+          "sodium_mg": 184
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370512,
+        "name": "Sliced Pears",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/96Y5B3RUoWhKOMPs9tk5frifCpsWj3LfJIxF2xy6/original/fyOo4ExUgOBdNlhXI80R8hufR1J9LTFRpoSjLlPL.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 65,
+          "carbs_g": 15,
+          "fiber_g": 1.8
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Ultimate Chocolate Chip Breakfast Round, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-27",
+    "start_dt": "2026-04-27",
+    "description": "With: 100% Fruit Juice, Sliced Peaches, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 370500,
+        "name": "Ultimate Chocolate Chip Breakfast Round",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/juNB9UkLRgevJWB1g13GEHFfGxmaEPedP2ApRjYc/original/RRSCCZvSpaBmp0tAdMAAEOsvYL3VLpYAq8hdxbIf.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 250,
+          "fat_g": 7.0,
+          "sat_fat_g": 2.0,
+          "carbs_g": 42,
+          "fiber_g": 6.0,
+          "protein_g": 5.0,
+          "sodium_mg": 190
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370513,
+        "name": "Sliced Peaches",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/l0rlKgTqA1i5PYkPJm7nymyrAFia00lhonELnorm/original/aoRtKRkD9sFZ3TPe9ds87sF6WuxCJZBOzagGAjOh.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 61,
+          "carbs_g": 16,
+          "fiber_g": 1.0,
+          "protein_g": 1.0
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Made Fresh Egg Breakfast Burrito, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-28",
+    "start_dt": "2026-04-28",
+    "description": "With: 100% Fruit Juice, Mixed Fruit Cocktail, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 128031,
+        "name": "Made Fresh Egg Breakfast Burrito",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "Fluffy scrambled eggs, hashbrowns and cheese wrapped in a soft flour tortilla.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/EL0lX7HwZtR3dnkerwAbCxsN2HNpXj01ZoSWw5b5/original/L6vnRcgHUpPsl8q6k7ODHL0gQrC0adNJQ6tLEGOA.jpg",
+        "serving_size": "1 Burrito",
+        "nutrition": {
+          "calories": 322,
+          "fat_g": 15,
+          "sat_fat_g": 5.6,
+          "carbs_g": 32,
+          "fiber_g": 3.4,
+          "protein_g": 13,
+          "sodium_mg": 545
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370505,
+        "name": "Mixed Fruit Cocktail",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/k8LkR7tDdEaWtj3UPQilaJVKhkxt84niQvPhR2nz/original/v9nq1VlkuHWb7KeGfCX3BcZAVHG4NKlIzgdmS0Nc.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 61,
+          "carbs_g": 16,
+          "fiber_g": 1.0
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "French Toast Sticks with Syrup Dipping Sauce, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-29",
+    "start_dt": "2026-04-29",
+    "description": "With: 100% Fruit Juice, Fresh Orange Slices, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 370514,
+        "name": "French Toast Sticks with Syrup Dipping Sauce",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HfvAZiHsO8N76ETohuWv6GwH9SGi2mjNLDb3AY2q/original/3DlwBrVPR1Sk73kXNw95nsUE3bDWGQ7TycCzFbBI.jpg",
+        "serving_size": "3 sticks",
+        "nutrition": {
+          "calories": 323,
+          "fat_g": 9.0,
+          "sat_fat_g": 1.5,
+          "carbs_g": 56,
+          "fiber_g": 3.0,
+          "protein_g": 6.0,
+          "sodium_mg": 333
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370516,
+        "name": "Fresh Orange Slices",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/dSl7Cbvr3jccvYlvEAUrjYQaRG73HWLmAsAEqHv7/original/vHi5XKOFkYURTOOtv2m1kh5nMFssFS8V1G4d8u3T.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 62,
+          "fat_g": 0.2,
+          "sat_fat_g": 0.0,
+          "carbs_g": 15,
+          "fiber_g": 3.1,
+          "protein_g": 1.2
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128",
+    "title": "Bacon & Egg Breakfast Pizza, Cereal Choices with Toast",
+    "slug": "spearfish-elem-breakfast-2026-04-30",
+    "start_dt": "2026-04-30",
+    "description": "With: 100% Fruit Juice, Applesauce, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 370519,
+        "name": "Bacon & Egg Breakfast Pizza",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/zZFq47pimbtbjw4CDCxzfNBJNftulwpbYUOIhvvN/original/Xk5RYI7jzRwb8zY4R6VlaMAD2vOt4tznPBj9rJw0.png",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 210,
+          "fat_g": 9.0,
+          "sat_fat_g": 3.5,
+          "carbs_g": 23,
+          "fiber_g": 2.0,
+          "protein_g": 10,
+          "sodium_mg": 330
+        }
+      },
+      {
+        "id": 294557,
+        "name": "Cereal Choices with Toast",
+        "category": "Breakfast Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/original/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 249,
+          "fat_g": 4.9,
+          "sat_fat_g": 0.7,
+          "carbs_g": 47,
+          "fiber_g": 3.5,
+          "protein_g": 5.6,
+          "sodium_mg": 276
+        }
+      },
+      {
+        "id": 338998,
+        "name": "100% Fruit Juice",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/original/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+        "serving_size": "4 oz",
+        "nutrition": {
+          "calories": 67,
+          "carbs_g": 16,
+          "protein_g": 0.3,
+          "sodium_mg": 15
+        }
+      },
+      {
+        "id": 370508,
+        "name": "Applesauce",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/m5svd3326v9Ipwf84cqhSJ9dVFVDiTfBAbpsYjV0/original/bGh3TiB4TZq43wAXjwUxAmXC0YZD4WGsw3fdrFLV.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 83,
+          "carbs_g": 22,
+          "fiber_g": 2.8
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/original/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/original/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 120,
+          "carbs_g": 20,
+          "protein_g": 8.0,
+          "sodium_mg": 180
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "Elementary Breakfast"
+  }
+]

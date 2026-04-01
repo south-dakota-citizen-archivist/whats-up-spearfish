@@ -1,0 +1,24 @@
+[
+  {
+    "url": "https://www.spearfish.gov/bids.aspx?bidID=79",
+    "title": "2026 CIPP Lining",
+    "slug": "city-of-spearfish-26-02",
+    "bid_no": "26-02",
+    "status": "Open",
+    "closes": "4/8/2026 1:30 PM",
+    "description": "",
+    "record_type": "bid",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/bids.aspx?bidID=78",
+    "title": "Sawmill Rd",
+    "slug": "city-of-spearfish-25-12",
+    "bid_no": "25-12",
+    "status": "Open",
+    "closes": "4/1/2026 1:30 PM",
+    "description": "",
+    "record_type": "bid",
+    "source_label": "City of Spearfish"
+  }
+]

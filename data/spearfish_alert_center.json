@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://www.spearfish.gov/AlertCenter.aspx?AID=57",
+    "title": "City of Spearfish - Snow Removal Subscription Service",
+    "slug": "city-of-spearfish-snow-removal-subscription-service",
+    "description": "Applications for the Snow Removal Subscription Service are now available. Stop by City Hall or call Public Works at 605-642-1333 to learn more about the program and get an application.",
+    "published": "Fri, 13 Mar 2026 16:48:32 -0600",
+    "start_dt": "Fri, 13 Mar 2026 16:48:32 -0600",
+    "record_type": "alert",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/AlertCenter.aspx?AID=56",
+    "title": "City of Spearfish - Weather & Roads",
+    "slug": "city-of-spearfish-weather-roads",
+    "description": "Staff are monitoring weather and road conditions. If warranted, snow removal crews will be dispatched as early as 4:00 AM Wednesday. Operations will focus on Priority 1 and Priority 2 routes to ensure main travel corridors are cleared.",
+    "published": "Tue, 10 Mar 2026 16:52:39 -0600",
+    "start_dt": "Tue, 10 Mar 2026 16:52:39 -0600",
+    "record_type": "alert",
+    "source_label": "City of Spearfish"
+  }
+]

@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@source "../../../site/templates";
+
+/* Bump base font size — scales all rem-based Tailwind utilities */
+html { font-size: 106.25%; } /* ~17px */
+
+/* Alpine x-cloak: hide elements until Alpine initialises */
+[x-cloak] { display: none !important; }
