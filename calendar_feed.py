@@ -28,7 +28,9 @@ ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / "data"
 OUTPUT_DIR = ROOT / "_site"
 
-SITE_URL = "https://spearfish-bulletin.github.io"  # update to match your Pages URL
+print(OUTPUT_DIR)
+
+SITE_URL = "https://south-dakota-citizen-archivist.github.io/whats-up-spearfish"  # update to match your Pages URL
 
 
 # ---------------------------------------------------------------------------
