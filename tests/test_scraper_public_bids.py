@@ -6,8 +6,6 @@ Tests for the _closes_iso() helper in scrapers/sources/public_bids.py.
 
 from __future__ import annotations
 
-import pytest
-
 from scrapers.sources.public_bids import _closes_iso
 
 
