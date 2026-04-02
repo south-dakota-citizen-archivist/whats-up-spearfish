@@ -50,7 +50,8 @@ def _to_mountain(value: str | None) -> datetime | None:
         if _DATE_ONLY_RE.match(value):
             d = date.fromisoformat(value)
             return datetime(d.year, d.month, d.day, tzinfo=MT)
-        dt = dateutil_parser.parse(value)
+        tzinfos = {"MDT": -6 * 3600, "MST": -7 * 3600}
+        dt = dateutil_parser.parse(value, tzinfos=tzinfos)
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=timezone.utc)
         return dt.astimezone(MT)
