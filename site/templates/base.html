@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}What's up in Spearfish?{% endblock %}</title>
   <link rel="icon" type="image/png" href="static/favicon.png">
-  <link rel="alternate" type="application/rss+xml" title="What's up in Spearfish? — Events" href="/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="What's up in Spearfish? — Events" href="feed.xml">
+  <meta name="description" content="A dashboard with news, events and other features of life in Spearfish, S.D. Updated daily."/>
   <style>{{ inline_css | safe }}</style>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="What's up, Spearfish?"/>
+  <meta property="og:description" content="A dashboard with news, events and other features of life in Spearfish, S.D. Updated daily."/>
+  <meta property="og:url" content="https://south-dakota-citizen-archivist.github.io/whats-up-spearfish/"/>
+  <meta property="og:image" content="https://south-dakota-citizen-archivist.github.io/whats-up-spearfish/static/spearfish-canyon.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://south-dakota-citizen-archivist.github.io/whats-up-spearfish/static/spearfish-canyon.png"/>
   {% block extra_head %}{% endblock %}
 </head>
 <body class="min-h-screen flex flex-col bg-gray-100 text-gray-900">
