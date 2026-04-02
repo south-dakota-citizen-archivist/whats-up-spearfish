@@ -162,6 +162,53 @@ class TestGroupRecords:
         groups = self._call(data)
         assert len(groups["news"]) == 2
 
+    # 30-day cutoff for document / news / press_release
+    def test_news_older_than_30_days_excluded(self):
+        data = {"src": [
+            {"record_type": "news", "title": "Old", "published": "2026-03-01"},  # 31 days before TODAY
+            {"record_type": "news", "title": "Recent", "published": "2026-03-15"},
+        ]}
+        titles = [r["title"] for r in self._call(data).get("news", [])]
+        assert "Old" not in titles
+        assert "Recent" in titles
+
+    def test_document_older_than_30_days_excluded(self):
+        data = {"src": [
+            {"record_type": "document", "title": "Stale", "date": "2026-02-01"},
+            {"record_type": "document", "title": "Fresh", "date": "2026-03-20"},
+        ]}
+        titles = [r["title"] for r in self._call(data).get("document", [])]
+        assert "Stale" not in titles
+        assert "Fresh" in titles
+
+    def test_press_release_older_than_30_days_excluded(self):
+        data = {"src": [
+            {"record_type": "press_release", "title": "Old PR", "date": "2026-01-01"},
+            {"record_type": "press_release", "title": "New PR", "date": "2026-04-01"},
+        ]}
+        titles = [r["title"] for r in self._call(data).get("press_release", [])]
+        assert "Old PR" not in titles
+        assert "New PR" in titles
+
+    def test_record_exactly_30_days_ago_included(self):
+        data = {"src": [
+            {"record_type": "news", "title": "Boundary", "published": "2026-03-02"},  # exactly 30 days before Apr 1
+        ]}
+        titles = [r["title"] for r in self._call(data).get("news", [])]
+        assert "Boundary" in titles
+
+    def test_undated_record_kept_by_30_day_filter(self):
+        data = {"src": [{"record_type": "document", "title": "No Date"}]}
+        titles = [r["title"] for r in self._call(data).get("document", [])]
+        assert "No Date" in titles
+
+    def test_future_dated_record_kept_by_30_day_filter(self):
+        data = {"src": [
+            {"record_type": "news", "title": "Future News", "published": "2026-06-01"},
+        ]}
+        titles = [r["title"] for r in self._call(data).get("news", [])]
+        assert "Future News" in titles
+
 
 # ---------------------------------------------------------------------------
 # Jinja2 filters

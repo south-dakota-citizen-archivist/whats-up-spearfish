@@ -1,0 +1,269 @@
+{# ── detail modal ─────────────────────────────────────────────────────────── #}
+<div x-data x-show="$store.modal.open"
+     @keydown.escape.window="$store.modal.close()"
+     class="fixed inset-0 z-50 flex items-center justify-center p-4"
+     x-cloak
+     x-transition:enter="transition ease-out duration-150"
+     x-transition:enter-start="opacity-0"
+     x-transition:enter-end="opacity-100"
+     x-transition:leave="transition ease-in duration-100"
+     x-transition:leave-start="opacity-100"
+     x-transition:leave-end="opacity-0">
+
+  {# backdrop #}
+  <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" @click="$store.modal.close()"></div>
+
+  {# card #}
+  <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-md max-h-[85vh] flex flex-col overflow-hidden"
+       @click.stop
+       x-transition:enter="transition ease-out duration-150"
+       x-transition:enter-start="opacity-0 scale-95 translate-y-2"
+       x-transition:enter-end="opacity-100 scale-100 translate-y-0"
+       x-transition:leave="transition ease-in duration-100"
+       x-transition:leave-start="opacity-100 scale-100 translate-y-0"
+       x-transition:leave-end="opacity-0 scale-95 translate-y-2">
+
+    {# prev/next nav #}
+    <template x-if="$store.modal.list.length > 1">
+      <div class="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full border border-gray-200 shadow-sm px-2 py-1">
+        <button @click="$store.modal.prev()"
+                :disabled="!$store.modal.hasPrev"
+                class="p-1 rounded-full text-gray-500 hover:text-gray-900 disabled:opacity-30 disabled:cursor-default transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+          </svg>
+        </button>
+        <span class="text-xs font-semibold text-gray-600 tabular-nums min-w-[36px] text-center" x-text="$store.modal.listLabel"></span>
+        <button @click="$store.modal.next()"
+                :disabled="!$store.modal.hasNext"
+                class="p-1 rounded-full text-gray-500 hover:text-gray-900 disabled:opacity-30 disabled:cursor-default transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+    </template>
+
+    {# close button #}
+    <button @click="$store.modal.close()"
+            class="absolute top-3 right-3 z-10 p-1.5 rounded-full text-gray-400 hover:text-gray-700 hover:bg-gray-100 transition-colors"
+            aria-label="Close">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+
+    {# ── LUNCH MODE ─────────────────────────────────────────────────────── #}
+    <template x-if="$store.modal.mode === 'lunch'">
+      <div class="flex flex-col flex-1 overflow-hidden">
+        <div class="px-5 pt-5 pb-3 border-b border-gray-100 pr-14">
+          <h2 class="text-lg font-bold text-gray-900" x-text="$store.modal.title"></h2>
+        </div>
+        <div class="overflow-y-auto flex-1 divide-y divide-gray-100">
+          <template x-for="item in $store.modal.items" :key="item.name">
+            <div class="flex gap-3 px-4 py-3">
+              <template x-if="item.image_url">
+                <img :src="item.image_url" :alt="item.name"
+                     class="w-14 h-14 rounded-lg object-cover shrink-0 bg-gray-100">
+              </template>
+              <template x-if="!item.image_url">
+                <div class="w-14 h-14 rounded-lg shrink-0 bg-gray-100 flex items-center justify-center text-gray-300">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                  </svg>
+                </div>
+              </template>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-start gap-2">
+                  <p class="font-semibold text-sm text-gray-900 leading-snug flex-1" x-text="item.name"></p>
+                  <template x-if="item.is_entree">
+                    <span class="shrink-0 text-xs font-semibold text-blue-700 bg-blue-50 border border-blue-200 rounded px-1.5 py-0.5 leading-none mt-0.5">Entrée</span>
+                  </template>
+                </div>
+                <template x-if="item.category && !item.is_entree">
+                  <p class="text-xs text-gray-400 mt-0.5" x-text="item.category"></p>
+                </template>
+                <template x-if="item.description">
+                  <p class="text-xs text-gray-600 mt-1 leading-snug line-clamp-2" x-text="item.description"></p>
+                </template>
+                <template x-if="item.nutrition && item.nutrition.calories">
+                  <div class="flex flex-wrap gap-x-3 mt-1.5 text-xs text-gray-500">
+                    <span><span class="font-semibold text-gray-700" x-text="item.nutrition.calories"></span> cal</span>
+                    <template x-if="item.nutrition.protein_g">
+                      <span><span class="font-semibold text-gray-700" x-text="item.nutrition.protein_g + 'g'"></span> protein</span>
+                    </template>
+                    <template x-if="item.nutrition.fat_g">
+                      <span><span class="font-semibold text-gray-700" x-text="item.nutrition.fat_g + 'g'"></span> fat</span>
+                    </template>
+                    <template x-if="item.nutrition.carbs_g">
+                      <span><span class="font-semibold text-gray-700" x-text="item.nutrition.carbs_g + 'g'"></span> carbs</span>
+                    </template>
+                    <template x-if="item.nutrition.sodium_mg">
+                      <span><span class="font-semibold text-gray-700" x-text="item.nutrition.sodium_mg + 'mg'"></span> sodium</span>
+                    </template>
+                    <template x-if="item.serving_size">
+                      <span class="text-gray-400" x-text="'(' + item.serving_size + ')'"></span>
+                    </template>
+                  </div>
+                </template>
+              </div>
+            </div>
+          </template>
+        </div>
+        <template x-if="$store.modal.url">
+          <div class="px-5 py-3 border-t border-gray-100 bg-gray-50">
+            <a :href="$store.modal.url" target="_blank" rel="noopener noreferrer"
+               class="text-sm text-blue-700 font-medium hover:underline" x-text="$store.modal.urlLabel"></a>
+          </div>
+        </template>
+      </div>
+    </template>
+
+    {# ── SINGLE-ITEM MODE ────────────────────────────────────────────────── #}
+    <template x-if="$store.modal.mode === 'single'">
+      <div class="flex flex-col flex-1 overflow-hidden">
+
+        <template x-if="$store.modal.image">
+          <div class="w-full bg-gray-100 flex items-center justify-center">
+            <img :src="$store.modal.image" :alt="$store.modal.title"
+                 class="max-w-full max-h-64 object-contain">
+          </div>
+        </template>
+
+        <div class="overflow-y-auto flex-1 px-6 py-5">
+
+          <h2 class="text-xl font-bold text-gray-900 leading-snug pr-6" x-text="$store.modal.title"></h2>
+
+          <template x-if="$store.modal.fields.length > 0">
+            <dl class="mt-3 flex flex-wrap gap-x-5 gap-y-1">
+              <template x-for="f in $store.modal.fields" :key="f.label">
+                <div class="flex items-baseline gap-1.5">
+                  <dt class="text-xs font-semibold text-gray-500 uppercase tracking-wide" x-text="f.label"></dt>
+                  <dd class="text-sm font-medium text-gray-900" x-text="f.value"></dd>
+                </div>
+              </template>
+            </dl>
+          </template>
+
+          <template x-if="$store.modal.prices.length > 0">
+            <div class="mt-3 flex flex-wrap gap-2">
+              <template x-for="p in $store.modal.prices" :key="p.ounces">
+                <div class="flex flex-col items-center rounded-lg border border-gray-200 bg-gray-50 px-3 py-1.5 text-center min-w-[56px]">
+                  <span class="text-xs text-gray-500 leading-none" x-text="p.ounces + ' oz'"></span>
+                  <span class="text-sm font-bold text-gray-900 leading-snug" x-text="'$' + p.price.toFixed(2)"></span>
+                </div>
+              </template>
+            </div>
+          </template>
+
+          <template x-if="$store.modal.description">
+            <p class="mt-3 text-sm text-gray-700 leading-relaxed whitespace-pre-wrap" x-text="$store.modal.description"></p>
+          </template>
+
+          <template x-if="$store.modal.notes">
+            <p class="mt-3 text-xs text-amber-800 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2 leading-relaxed" x-text="$store.modal.notes"></p>
+          </template>
+
+        </div>
+
+        <template x-if="$store.modal.url">
+          <div class="px-6 py-3 border-t border-gray-100 bg-gray-50">
+            <a :href="$store.modal.url" target="_blank" rel="noopener noreferrer"
+               class="text-sm text-blue-700 font-medium hover:underline"
+               x-text="$store.modal.urlLabel || 'View more \u2197'"></a>
+          </div>
+        </template>
+
+      </div>
+    </template>
+
+  </div>
+</div>
+
+<script>
+document.addEventListener('alpine:init', () => {
+  Alpine.store('modal', {
+    open: false,
+    mode: 'single',   // 'single' | 'lunch'
+    title: '',
+    image: '',
+    description: '',
+    notes: '',
+    fields: [],
+    prices: [],
+    items: [],        // lunch mode: array of menu item objects
+    url: '',
+    urlLabel: 'View more \u2197',
+    list: [],         // sibling records for prev/next nav
+    listIndex: -1,
+
+    get hasPrev() { return this.list.length > 1 && this.listIndex > 0; },
+    get hasNext() { return this.list.length > 1 && this.listIndex < this.list.length - 1; },
+    get listLabel() { return this.list.length > 1 ? `${this.listIndex + 1} / ${this.list.length}` : ''; },
+
+    _applyData(data) {
+      this.mode        = 'single';
+      this.title       = data.title       || '';
+      this.image       = data.image       || '';
+      this.description = data.description || '';
+      this.notes       = data.notes       || '';
+      this.fields      = (data.fields     || []).filter(f => f.value);
+      this.prices      = data.prices      || [];
+      this.items       = [];
+      this.url         = data.url         || '';
+      this.urlLabel    = data.urlLabel    || 'View more \u2197';
+    },
+
+    show(data, list, index) {
+      this._applyData(data);
+      this.list      = list  || [];
+      this.listIndex = (index !== undefined) ? index : -1;
+      this.open      = true;
+      document.body.style.overflow = 'hidden';
+    },
+
+    prev() {
+      if (!this.hasPrev) return;
+      this.listIndex--;
+      this._applyData(this.list[this.listIndex]);
+    },
+
+    next() {
+      if (!this.hasNext) return;
+      this.listIndex++;
+      this._applyData(this.list[this.listIndex]);
+    },
+
+    showLunch(data) {
+      this.mode        = 'lunch';
+      this.title       = data.date ? `${data.title || 'School Menu'} \u2014 ${data.date}` : (data.title || 'School Menu');
+      this.items       = data.items || [];
+      this.url         = data.url   || '';
+      this.urlLabel    = 'Full menu \u2197';
+      this.image = ''; this.description = ''; this.notes = '';
+      this.fields = []; this.prices = [];
+      this.list = []; this.listIndex = -1;
+      this.open        = true;
+      document.body.style.overflow = 'hidden';
+    },
+
+    close() {
+      this.open = false;
+      document.body.style.overflow = '';
+    },
+  });
+});
+
+function showModal(el) {
+  const siblings = Array.from(el.closest('[data-modal-group]')?.querySelectorAll('[data-modal]') || el.parentElement?.querySelectorAll(':scope > [data-modal]') || [el]);
+  const list = siblings.map(s => JSON.parse(s.dataset.modal));
+  const index = siblings.indexOf(el);
+  Alpine.store('modal').show(JSON.parse(el.dataset.modal), list, index);
+}
+
+document.addEventListener('keydown', e => {
+  if (!Alpine.store('modal').open || Alpine.store('modal').mode !== 'single') return;
+  if (e.key === 'ArrowRight') Alpine.store('modal').next();
+  if (e.key === 'ArrowLeft')  Alpine.store('modal').prev();
+});
+</script>

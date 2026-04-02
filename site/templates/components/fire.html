@@ -1,0 +1,217 @@
+{# ── fire ──────────────────────────────────────────────────────────────── #}
+{#
+  Columns (by position, matching site's image header):
+    0=Campfires  1=Smoking  2=Charcoal  3=Gas grills  4=Wood stove  5=Welding  6=Fireworks
+#}
+{% set fire = fire | default({}) %}
+{% set fire_rows = fire.rows | default([]) %}
+{% set fire_incidents = fire.incidents | default([]) %}
+{% set fire_source_url = fire.source_url | default("https://www.blackhillsfirerestrictions.com/") %}
+{% set fire_danger = fire.danger | default({}) %}
+{% set danger_zones = fire_danger.zones | default([]) %}
+{% set nws_zones = fire_danger.nws_zones | default([]) %}
+
+{% if fire_rows or fire_incidents or danger_zones %}
+{% set _col_labels = ["Campfires", "Smoking", "Charcoal", "Gas grills", "Wood stove", "Welding", "Fireworks"] %}
+{% set _col_abbr   = ["Camp.", "Smk.", "Coal", "Gas", "Stove", "Weld.", "Fwks."] %}
+{% set _any_fire_on = fire_rows | selectattr("any_restricted") | list | length > 0 %}
+
+{# Level → color classes #}
+{% macro danger_classes(level) %}
+  {%- set l = level | lower -%}
+  {%- if l == "low" -%}bg-green-100 text-green-800 border-green-200
+  {%- elif l == "moderate" -%}bg-yellow-100 text-yellow-800 border-yellow-200
+  {%- elif l == "high" -%}bg-orange-100 text-yellow-800 border-orange-200
+  {%- elif l == "very high" -%}bg-red-100 text-red-800 border-red-200
+  {%- elif l == "extreme" -%}bg-red-900 text-white border-red-900
+  {%- else -%}bg-gray-100 text-gray-500 border-gray-200
+  {%- endif -%}
+{% endmacro %}
+
+{# Precompute summary values for accordion headers #}
+{% set _bh_zones = danger_zones | selectattr("area", "equalto", "Black Hills") | list %}
+{% set _pr_zones = danger_zones | selectattr("area", "equalto", "Prairie") | list %}
+{% set _restricted_count = fire_rows | selectattr("any_restricted") | list | length %}
+{# Default open: wildfires if any, else danger if available, else restrictions #}
+{% if fire_incidents %}{%   set _fire_default = "wildfires" %}
+{% elif danger_zones %}{%   set _fire_default = "danger" %}
+{% else             %}{%   set _fire_default = "restrictions" %}
+{% endif %}
+
+<section id="fire"
+         x-data="{ open: '{{ _fire_default }}' }"
+         class="scroll-mt-20 rounded-xl border {% if _any_fire_on %}border-orange-200 bg-orange-50{% else %}border-gray-200 bg-white{% endif %} overflow-hidden divide-y {% if _any_fire_on %}divide-orange-100{% else %}divide-gray-100{% endif %}">
+
+  {# Widget heading #}
+  <div class="px-4 pt-3.5 pb-3 border-b-2 {% if _any_fire_on %}border-orange-100{% else %}border-gray-200{% endif %}">
+    <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 {% if _any_fire_on %}text-orange-600{% else %}text-gray-400{% endif %}" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2c0 0-5 4.5-5 9a5 5 0 0010 0c0-4.5-5-9-5-9zm0 14a3 3 0 01-3-3c0-2.5 3-6 3-6s3 3.5 3 6a3 3 0 01-3 3z"/>
+      </svg>
+      Fire
+    </h2>
+  </div>
+
+  {# ── Fire Danger accordion row ──────────────────────────────────────── #}
+  {% if danger_zones %}
+  <div>
+    <button @click="open = open === 'danger' ? null : 'danger'"
+            class="w-full flex items-center justify-between px-4 py-2.5 text-left hover:bg-black/[.03] transition-colors">
+      <div class="flex items-center gap-2 min-w-0">
+        <span class="text-xs font-semibold text-gray-600 uppercase tracking-wide shrink-0">Fire Danger</span>
+        {# Summary: show the highest BH level as a pill #}
+        {% if _bh_zones %}
+        {% set _bh_highest = _bh_zones | map(attribute="level") | list | first %}
+        <span class="text-xs font-semibold px-2 py-0.5 rounded-full border {{ danger_classes(_bh_highest) }}">BH: {{ _bh_highest }}</span>
+        {% endif %}
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-400 shrink-0 transition-transform duration-200"
+           :class="open === 'danger' ? 'rotate-180' : ''"
+           fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </button>
+    <div x-show="open === 'danger'" x-collapse>
+      <div class="px-4 pb-3 pt-1">
+        <div class="grid grid-cols-2 gap-x-4 gap-y-3">
+          <div>
+            <p class="text-xs font-semibold text-gray-500 mb-1.5">Black Hills</p>
+            <div class="space-y-1.5">
+              {% for z in _bh_zones %}
+              <div class="flex items-center justify-between gap-1.5">
+                <span class="text-xs text-gray-700">{{ z.name }}<br><span class="text-gray-400">{{ z.counties }}</span></span>
+                <span class="shrink-0 text-xs font-semibold px-2 py-0.5 rounded-full border {{ danger_classes(z.level) }}">{{ z.level }}</span>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div>
+            <p class="text-xs font-semibold text-gray-500 mb-1.5">Prairie</p>
+            <div class="space-y-1.5">
+              {% for z in _pr_zones %}
+              <div class="flex items-center justify-between gap-1.5">
+                <span class="text-xs text-gray-700">{{ z.name }}<br><span class="text-gray-400">{{ z.counties }}</span></span>
+                <span class="shrink-0 text-xs font-semibold px-2 py-0.5 rounded-full border {{ danger_classes(z.level) }}">{{ z.level }}</span>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        <div class="mt-2.5 flex flex-wrap gap-x-3 gap-y-0.5">
+          <a href="{{ fire_danger.sharepoint_url }}" target="_blank" rel="noopener noreferrer"
+             class="text-xs text-blue-700 hover:underline">GPC Fire Danger PDF ↗</a>
+          {% if fire_danger.nws_issued %}
+          <span class="text-xs text-gray-400">NWS issued {{ fire_danger.nws_issued }}</span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {# ── Restrictions accordion row ─────────────────────────────────────── #}
+  {% if fire_rows %}
+  {% set ns = namespace(last_section="") %}
+  <div>
+    <button @click="open = open === 'restrictions' ? null : 'restrictions'"
+            class="w-full flex items-center justify-between px-4 py-2.5 text-left hover:bg-black/[.03] transition-colors">
+      <div class="flex items-center gap-2">
+        <span class="text-xs font-semibold text-gray-600 uppercase tracking-wide shrink-0">Restrictions</span>
+        {% if _restricted_count > 0 %}
+        <span class="text-xs font-semibold px-2 py-0.5 rounded-full border bg-orange-100 text-orange-800 border-orange-200">
+          {{ _restricted_count }} unit{{ "s" if _restricted_count != 1 }} restricted
+        </span>
+        {% else %}
+        <span class="text-xs text-gray-400">None active</span>
+        {% endif %}
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-400 shrink-0 transition-transform duration-200"
+           :class="open === 'restrictions' ? 'rotate-180' : ''"
+           fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </button>
+    <div x-show="open === 'restrictions'" x-collapse>
+      <div class="overflow-x-auto overflow-y-auto max-h-72">
+        <table class="w-full text-xs border-collapse">
+          <thead class="sticky top-0 z-10">
+            <tr class="{% if _any_fire_on %}bg-orange-100{% else %}bg-gray-50{% endif %} border-b {% if _any_fire_on %}border-orange-200{% else %}border-gray-200{% endif %}">
+              <th class="text-left px-3 py-1.5 font-semibold text-gray-700 whitespace-nowrap">Land unit</th>
+              {% for abbr in _col_abbr %}
+              <th class="px-1 py-1.5 font-semibold text-gray-500 text-center whitespace-nowrap" title="{{ _col_labels[loop.index0] }}">{{ abbr }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in fire_rows %}
+            {% if row.section != ns.last_section %}
+            {% set ns.last_section = row.section %}
+            <tr class="{% if _any_fire_on %}bg-orange-50{% else %}bg-gray-50{% endif %}">
+              <td colspan="8" class="px-3 py-1 text-xs font-semibold text-gray-500 uppercase tracking-wide border-t border-gray-200">{{ row.section }}</td>
+            </tr>
+            {% endif %}
+            <tr class="border-t border-gray-100">
+              <td class="px-3 py-1.5 text-gray-800 leading-snug">
+                {% if row.more_info_url %}<a href="{{ row.more_info_url }}" target="_blank" rel="noopener noreferrer" class="text-blue-700 underline hover:text-blue-900">{{ row.name }}</a>
+                {% else %}{{ row.name }}{% endif %}
+              </td>
+              {% for restricted in row.cols %}
+              <td class="px-1 py-1.5 text-center">
+                {% if restricted %}<span class="text-orange-600 font-bold" title="{{ _col_labels[loop.index0] }} prohibited">✕</span>
+                {% else %}<span class="text-gray-300">—</span>{% endif %}
+              </td>
+              {% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <div class="px-4 py-2 border-t border-gray-100">
+        <a href="{{ fire_source_url }}" target="_blank" rel="noopener noreferrer"
+           class="text-xs text-blue-700 hover:underline">blackhillsfirerestrictions.com ↗</a>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {# ── Active Wildfires accordion row ────────────────────────────────── #}
+  {% if fire_incidents %}
+  <div>
+    <button @click="open = open === 'wildfires' ? null : 'wildfires'"
+            class="w-full flex items-center justify-between px-4 py-2.5 text-left hover:bg-black/[.03] transition-colors">
+      <div class="flex items-center gap-2">
+        <span class="text-xs font-semibold text-gray-600 uppercase tracking-wide shrink-0">Active Wildfires</span>
+        <span class="text-xs font-semibold px-2 py-0.5 rounded-full border bg-orange-100 text-orange-800 border-orange-200">
+          {{ fire_incidents | length }} in South Dakota
+        </span>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-400 shrink-0 transition-transform duration-200"
+           :class="open === 'wildfires' ? 'rotate-180' : ''"
+           fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </button>
+    <div x-show="open === 'wildfires'" x-collapse>
+      <div class="px-4 pb-3 pt-1">
+        <ul class="space-y-2">
+          {% for inc in fire_incidents %}
+          <li>
+            <a href="{{ inc.url }}" target="_blank" rel="noopener noreferrer"
+               class="text-sm font-medium text-orange-800 hover:underline leading-snug">{{ inc.name }}</a>
+            <p class="text-xs text-gray-500 leading-snug">
+              {{ inc.type }}{% if inc.size %} · {{ inc.size }}{% endif %}{% if inc.updated %} · updated {{ inc.updated }}{% endif %}
+            </p>
+          </li>
+          {% endfor %}
+        </ul>
+        <p class="mt-2">
+          <a href="https://inciweb.wildfire.gov/accessible-view" target="_blank" rel="noopener noreferrer"
+             class="text-xs text-blue-700 font-medium hover:underline">All wildfires on InciWeb ↗</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+</section>
+{% endif %}

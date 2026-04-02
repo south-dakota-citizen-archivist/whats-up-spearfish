@@ -157,6 +157,7 @@ class SpearfishSchoolsJobs(BaseScraper):
     name = "Spearfish School District"
     slug = "spearfish_schools_jobs"
     dedup_key = "slug"
+    replace = True
 
     def scrape(self) -> list[dict]:
         session = requests.Session()

@@ -14,7 +14,7 @@ import re
 import shutil
 import subprocess
 import sys
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -130,6 +130,17 @@ def group_records(data: dict[str, list[dict]]) -> dict[str, list[dict]]:
                 future.append(r)
         future.sort(key=_sort_dt)
         groups[rtype] = future
+
+    # Documents, news, press releases: last 30 days or future
+    _CUTOFF = TODAY - timedelta(days=30)
+    for rtype in ("document", "news", "press_release"):
+        if rtype not in groups:
+            continue
+        groups[rtype] = [
+            r for r in groups[rtype]
+            if (dt := _parse_dt(r.get("date") or r.get("start_dt") or r.get("published"))) is None
+            or (dt.date() if isinstance(dt, datetime) else dt) >= _CUTOFF
+        ]
 
     # Everything else: descending
     for rtype, records in groups.items():

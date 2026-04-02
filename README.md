@@ -6,7 +6,7 @@ day from scrapers that collect public data across the web.
 
 Source code: [https://github.com/south-dakota-citizen-archivist/whats-up-spearfish](https://github.com/south-dakota-citizen-archivist/whats-up-spearfish)
 
-_Updated: April 1, 2026_
+_Updated: April 2, 2026_
 
 ---
 
@@ -27,7 +27,7 @@ _Updated: April 1, 2026_
 | City of Spearfish Calendar | `spearfish_calendar` | `event` | 28 |
 | City of Spearfish Jobs | `spearfish_jobs` | — | 0 |
 | City of Spearfish News Flash | `spearfish_news` | `press_release` | 4 |
-| Creek Gauge | `creek_gauge` | — | 3 |
+| Creek Gauge | `creek_gauge` | — | 4 |
 | Crow Peak Brewing | `crow_peak_brewing` | `beer` | 16 |
 | Elementary 3-5 Lunch | `spearfish_elem_35_lunch` | `school_menu` | 40 |
 | Elementary Breakfast | `spearfish_elem_breakfast` | `school_menu` | 40 |

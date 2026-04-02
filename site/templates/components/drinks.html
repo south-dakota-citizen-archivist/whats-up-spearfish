@@ -1,0 +1,175 @@
+{# ── tabbed: beers + flavors ──────────────────────────────────────── #}
+{% set beers = groups.beer | default([]) %}
+{% set flavors = groups.flavor | default([]) %}
+{% if beers or flavors %}
+<section id="drinks" class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
+  <div class="px-4 pt-3.5 pb-2.5 border-b-2 border-gray-200 bg-white">
+    <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 3h6l1 9H8L9 3zM8 12v6a2 2 0 002 2h4a2 2 0 002-2v-6M6 7h12"/>
+      </svg>
+      On Tap
+    </h2>
+  </div>
+
+  {% set breweries = beers | map(attribute="source_label") | unique | list %}
+  {% set ice_cream_tab = breweries | length %}
+
+  <div x-data="{ tab: 0 }">
+
+    {# mobile: horizontal tab bar (hidden on sm+) #}
+    <div class="flex overflow-x-auto sm:hidden border-b border-gray-200 bg-gray-50 scrollbar-none">
+      {% for brewery in breweries %}
+      <button
+        @click="tab = {{ loop.index0 }}"
+        :class="tab === {{ loop.index0 }}
+          ? 'border-b-2 border-blue-600 text-blue-700 font-semibold bg-white'
+          : 'text-gray-600 hover:bg-gray-100'"
+        class="shrink-0 px-3 py-2.5 text-xs text-center transition-colors whitespace-nowrap">
+        {{ brewery }}
+      </button>
+      {% endfor %}
+      {% if flavors %}
+      <button
+        @click="tab = {{ ice_cream_tab }}"
+        :class="tab === {{ ice_cream_tab }}
+          ? 'border-b-2 border-blue-600 text-blue-700 font-semibold bg-white'
+          : 'text-gray-600 hover:bg-gray-100'"
+        class="shrink-0 px-3 py-2.5 text-xs text-center transition-colors whitespace-nowrap">
+        Leone's Creamery
+      </button>
+      {% endif %}
+    </div>
+
+    <div class="flex min-h-0">
+
+      {# vertical nav sidebar (hidden on mobile, shown sm+) #}
+      <nav class="hidden sm:flex w-40 shrink-0 border-r border-gray-200 bg-gray-50 flex-col py-1">
+        {% for brewery in breweries %}
+        <button
+          @click="tab = {{ loop.index0 }}"
+          :class="tab === {{ loop.index0 }}
+            ? 'bg-white text-blue-700 font-semibold border-r-2 border-blue-600'
+            : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'"
+          class="text-left px-3 py-2.5 text-xs leading-tight transition-colors w-full">
+          {{ brewery }}
+        </button>
+        {% endfor %}
+        {% if flavors %}
+        <button
+          @click="tab = {{ ice_cream_tab }}"
+          :class="tab === {{ ice_cream_tab }}
+            ? 'bg-white text-blue-700 font-semibold border-r-2 border-r-blue-600 border-t-1 border-t-gray-300'
+            : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900 border-t-1 border-gray-300'"
+          class="text-left px-3 py-2.5 text-xs leading-tight transition-colors w-full">
+          Leone's Creamery
+        </button>
+        {% endif %}
+      </nav>
+
+      {# panels #}
+      <div class="flex-1 min-w-0">
+
+        {# brewery panels #}
+        {% for brewery in breweries %}
+        {% set taps = beers | selectattr("source_label", "equalto", brewery) | list %}
+        <div x-show="tab === {{ loop.index0 }}" x-cloak class="flex flex-col sm:max-h-[420px]">
+          <div class="divide-y divide-gray-100 overflow-y-auto flex-1" data-modal-group>
+            {% for beer in taps %}
+            {% set has_detail = beer.description or beer.abv or beer.ibu or beer.category or beer.image_url or beer.notes or beer.brewery or beer.rating %}
+            {% if has_detail %}
+            {% set _fields = [] %}
+            {% if beer.brewery %}{% set _fields = _fields + [{'label': 'Brewery', 'value': beer.brewery}] %}{% endif %}
+            {% if beer.category %}{% set _fields = _fields + [{'label': 'Style', 'value': beer.category}] %}{% endif %}
+            {% if beer.abv %}{% set _fields = _fields + [{'label': 'ABV', 'value': beer.abv ~ ' ABV'}] %}{% endif %}
+            {% if beer.ibu %}{% set _fields = _fields + [{'label': 'IBU', 'value': beer.ibu ~ ' IBU'}] %}{% endif %}
+            {% if beer.rating %}{% set _fields = _fields + [{'label': 'Rating', 'value': beer.rating ~ ' / 5'}] %}{% endif %}
+            {% set _urlLabel = 'View on Untappd ↗' if beer.url and 'untappd' in beer.url else 'View website ↗' %}
+            {% set _modal = {'title': beer.title, 'image': beer.image_url or '', 'description': beer.description or '', 'notes': beer.notes or '', 'prices': beer.prices or [], 'fields': _fields, 'url': beer.url or '', 'urlLabel': _urlLabel} %}
+            {% endif %}
+            <div class="flex items-start gap-3 px-4 py-3 {% if has_detail %}cursor-pointer hover:bg-blue-50 transition-colors group{% endif %}"
+                 {% if has_detail %}
+                 data-modal="{{ _modal | tojson | forceescape }}"
+                 @click="showModal($el)"
+                 {% endif %}>
+              {% if beer.image_url %}
+              <img src="{{ beer.image_url }}" alt="{{ beer.title }}"
+                   class="w-9 h-9 rounded object-cover shrink-0">
+              {% endif %}
+              <div class="min-w-0 flex-1">
+                <p class="font-semibold text-sm text-gray-900 leading-snug {% if has_detail %}group-hover:text-blue-700{% endif %}">{{ beer.title }}</p>
+                {% if beer.category %}
+                <p class="text-xs text-blue-700 font-medium">{{ beer.category }}</p>
+                {% endif %}
+                <div class="flex gap-2 mt-0.5 text-xs text-gray-600">
+                  {% if beer.abv %}<span>{{ beer.abv }} ABV</span>{% endif %}
+                  {% if beer.ibu %}<span>{{ beer.ibu }} IBU</span>{% endif %}
+                </div>
+              </div>
+              {% if has_detail %}
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 shrink-0 mt-0.5 text-gray-300 group-hover:text-blue-400 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+          {% if taps[0].url %}
+          <div class="border-t border-gray-200 px-4 py-2 bg-gray-50">
+            <a href="{{ taps[0].url }}" target="_blank" rel="noopener noreferrer"
+               class="text-xs text-blue-700 font-medium hover:underline">
+              View website ↗
+            </a>
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+
+        {# flavors panel #}
+        {% if flavors %}
+        <div x-show="tab === {{ ice_cream_tab }}" x-cloak class="flex flex-col sm:max-h-[420px]">
+          <div class="divide-y divide-gray-100 overflow-y-auto flex-1" data-modal-group>
+            {% for flavor in flavors %}
+            {% set has_detail = flavor.description or flavor.image_url %}
+            {% if has_detail %}
+            {% set _modal = {'title': flavor.title, 'image': flavor.image_url or '', 'description': flavor.description or '', 'fields': [], 'url': flavor.url or '', 'urlLabel': "View website ↗"} %}
+            {% endif %}
+            <div class="flex items-start gap-3 px-4 py-3 {% if has_detail %}cursor-pointer hover:bg-blue-50 transition-colors group{% endif %}"
+                 {% if has_detail %}
+                 data-modal="{{ _modal | tojson | forceescape }}"
+                 @click="showModal($el)"
+                 {% endif %}>
+              {% if flavor.image_url %}
+              <img src="{{ flavor.image_url }}" alt="{{ flavor.title }}"
+                   class="w-9 h-9 rounded object-cover shrink-0">
+              {% endif %}
+              <div class="min-w-0 flex-1">
+                <p class="font-semibold text-sm text-gray-900 leading-snug {% if has_detail %}group-hover:text-blue-700{% endif %}">{{ flavor.title }}</p>
+                {% if flavor.description %}
+                <p class="text-xs text-gray-500 leading-snug line-clamp-1">{{ flavor.description }}</p>
+                {% endif %}
+              </div>
+              {% if has_detail %}
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 shrink-0 mt-0.5 text-gray-300 group-hover:text-blue-400 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+          {% if flavors[0].url %}
+          <div class="border-t border-gray-200 px-4 py-2 bg-gray-50">
+            <a href="{{ flavors[0].url }}" target="_blank" rel="noopener noreferrer"
+               class="text-xs text-blue-700 font-medium hover:underline">
+              View website ↗
+            </a>
+          </div>
+          {% endif %}
+        </div>
+        {% endif %}
+
+      </div>{# /panels #}
+    </div>
+  </div>{# /alpine component #}
+</section>
+{% endif %}

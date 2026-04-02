@@ -79,6 +79,7 @@ class WHHSAdoptable(BaseScraper):
     name = "Western Hills Humane Society"
     slug = "whhs_adoptable"
     dedup_key = "slug"
+    replace = True
 
     def scrape(self) -> list[dict]:
         records = []

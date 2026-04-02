@@ -1,0 +1,38 @@
+{# ── public meetings (YouTube) ────────────────────────────────────────── #}
+{% set yt_videos = groups.youtube_video | default([]) %}
+{% if yt_videos %}
+<section id="meetings" class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
+  <div class="px-4 pt-3.5 pb-2.5 border-b-2 border-gray-200 bg-white">
+    <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-600" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+      </svg>
+      Public Meetings
+    </h2>
+  </div>
+  <div class="divide-y divide-gray-200 sm:max-h-96 sm:overflow-y-auto">
+    {% for vid in yt_videos %}
+    <a href="{{ vid.url }}" target="_blank" rel="noopener noreferrer"
+       class="flex items-start gap-3 px-4 py-4 hover:bg-gray-50 transition-colors group">
+      {% if vid.thumbnail_url %}
+      <img src="{{ vid.thumbnail_url }}" alt="" loading="lazy"
+           class="w-24 h-[54px] object-cover rounded shrink-0 bg-gray-100">
+      {% else %}
+      <div class="w-24 h-[54px] rounded shrink-0 bg-gray-100 flex items-center justify-center text-gray-400">
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+        </svg>
+      </div>
+      {% endif %}
+      <div class="min-w-0">
+        <p class="text-base font-semibold text-gray-900 group-hover:text-blue-700 leading-snug line-clamp-2">{{ vid.title }}</p>
+        <div class="mt-1 text-sm text-gray-500 flex flex-wrap gap-2">
+          {% if vid.published %}<span>{{ vid.published | format_date }}</span>{% endif %}
+          <span>{{ vid.source_label }}</span>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

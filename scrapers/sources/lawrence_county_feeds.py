@@ -37,6 +37,7 @@ class LawrenceCountyJobs(BaseScraper):
     name = "Lawrence County Jobs"
     slug = "lawrence_county_jobs"
     dedup_key = "url"
+    replace = True
 
     def scrape(self) -> list[dict]:
         return _parse_feed(

@@ -81,6 +81,7 @@ class SpearfishJobs(BaseScraper):
     name = "City of Spearfish Jobs"
     slug = "spearfish_jobs"
     dedup_key = "url"
+    replace = True
 
     def scrape(self) -> list[dict]:
         return _parse_feed(

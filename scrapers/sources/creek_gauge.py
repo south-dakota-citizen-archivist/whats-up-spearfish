@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import json
 import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
 
 DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "creek_gauge.json"
@@ -92,7 +93,8 @@ class CreekGaugeScraper:
             if float(v["value"]) > -999
         ]
 
-        return {"current": current, "series7d": series7d, "daily30": daily30}
+        fetched_at = datetime.now(timezone.utc).isoformat()
+        return {"current": current, "series7d": series7d, "daily30": daily30, "fetched_at": fetched_at}
 
     def run(self) -> None:
         data = self.fetch()

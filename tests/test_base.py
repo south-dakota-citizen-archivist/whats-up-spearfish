@@ -196,3 +196,58 @@ class TestRun:
         # No pre-existing file
         new = s.run()
         assert len(new) == 2
+
+
+# ---------------------------------------------------------------------------
+# run() — replace=True (kill-and-fill) mode
+# ---------------------------------------------------------------------------
+
+class TestRunReplace:
+    def _make_scraper(self, records):
+        class ReplaceScraper(_Scraper):
+            replace = True
+        return ReplaceScraper(records=records)
+
+    def test_replace_saves_only_fresh_records(self, data_dir):
+        existing = [{"url": "http://old.com"}]
+        fresh = [{"url": "http://new.com"}]
+        s = self._make_scraper(fresh)
+        s.save(existing)
+        s.run()
+        on_disk = json.loads(s.data_file.read_text())
+        assert len(on_disk) == 1
+        assert on_disk[0]["url"] == "http://new.com"
+
+    def test_replace_removes_record_not_in_fresh(self, data_dir):
+        existing = [{"url": "http://a.com"}, {"url": "http://b.com"}]
+        fresh = [{"url": "http://a.com"}]  # b disappeared
+        s = self._make_scraper(fresh)
+        s.save(existing)
+        s.run()
+        on_disk = json.loads(s.data_file.read_text())
+        urls = [r["url"] for r in on_disk]
+        assert "http://b.com" not in urls
+
+    def test_replace_returns_all_fresh_records(self, data_dir):
+        fresh = [{"url": "http://a.com"}, {"url": "http://b.com"}]
+        s = self._make_scraper(fresh)
+        returned = s.run()
+        assert len(returned) == 2
+
+    def test_replace_with_empty_fresh_clears_file(self, data_dir):
+        existing = [{"url": "http://a.com"}]
+        s = self._make_scraper([])
+        s.save(existing)
+        s.run()
+        on_disk = json.loads(s.data_file.read_text())
+        assert on_disk == []
+
+    def test_replace_does_not_merge_existing(self, data_dir):
+        existing = [{"url": "http://a.com"}, {"url": "http://b.com"}]
+        fresh = [{"url": "http://c.com"}]
+        s = self._make_scraper(fresh)
+        s.save(existing)
+        s.run()
+        on_disk = json.loads(s.data_file.read_text())
+        # Only fresh record should be on disk, not the merged union
+        assert len(on_disk) == 1

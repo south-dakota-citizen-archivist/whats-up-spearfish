@@ -1,0 +1,336 @@
+{# ── events (Jinja/Alpine) ────────────────────────────────────────────────── #}
+{% set events = groups.event | default([]) %}
+{% set event_sources = events | map(attribute="source_label") | unique | sort | list %}
+{% set _ns = namespace(slim=[]) %}
+{% for e in events %}
+  {% set _ns.slim = _ns.slim + [{
+    'url': e.url,
+    'title': e.title | default('Event'),
+    'day': (e.start_dt or e.date or '') | format_day,
+    'iso_date': (e.start_dt or e.date or '')[:10],
+    'time': (e.start_dt or '') | format_datetime,
+    'location': e.location | default(''),
+    'description': e.description | default('') | striptags,
+    'source': e.source_label | default(e._source | replace('_', ' ') | title),
+    'today': (e.start_dt is today) or (e.date is today),
+    'this_week': (e.start_dt is this_week) or (e.date is this_week),
+  }] %}
+{% endfor %}
+{% set _slim_events = _ns.slim %}
+
+<section id="events"
+         x-data="eventFilter($el.dataset.events)"
+         data-events="{{ _slim_events | tojson | forceescape }}"
+         class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
+  
+  {# standardized header #}
+  <div class="px-4 pt-3.5 pb-2.5 border-b-2 border-gray-200 bg-white">
+    <div class="flex items-center justify-between mb-3">
+      <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+        </svg>
+        Upcoming Events
+      </h2>
+      <div class="flex items-center gap-3">
+        <span class="text-xs font-medium text-gray-500" x-show="view === 'list'">
+          <span x-text="filtered.length.toLocaleString()"></span> of {{ events | length | intcomma }}
+        </span>
+        <div class="flex rounded-lg border border-gray-300 overflow-hidden text-xs font-medium">
+          <button @click="view = 'list'"
+                  :class="view === 'list' ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'"
+                  class="px-2 py-1.5 flex items-center gap-1 transition-colors">
+            List
+          </button>
+          <button @click="view = 'calendar'; selectedDay = null"
+                  :class="view === 'calendar' ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'"
+                  class="px-2 py-1.5 flex items-center gap-1 transition-colors border-l border-gray-300">
+            Cal
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    {# search + feeds #}
+    <div class="flex flex-wrap items-center gap-2">
+      <div class="relative flex-1 min-w-[140px]">
+        <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-gray-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 0 5 11a6 6 0 0 0 12 0z"/>
+        </svg>
+        <input type="search"
+               x-model.debounce.200ms="query"
+               placeholder="Search events…"
+               class="w-full pl-8 pr-3 py-1.5 text-sm rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent placeholder-gray-400">
+      </div>
+      
+      <div class="flex items-center gap-1.5">
+        <div class="relative" x-data="{ open: false }" @click.outside="open = false">
+          <button @click="open = !open"
+                  class="flex items-center gap-1.5 px-3 py-1.5 text-sm rounded-lg border border-gray-300 bg-white hover:bg-gray-50 transition-colors whitespace-nowrap">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 010 2H4a1 1 0 01-1-1zm3 6a1 1 0 011-1h10a1 1 0 010 2H7a1 1 0 01-1-1zm3 6a1 1 0 011-1h4a1 1 0 010 2h-4a1 1 0 01-1-1z"/>
+            </svg>
+            Sources
+            <template x-if="activeSources.length">
+              <span class="ml-0.5 bg-blue-600 text-white text-xs font-bold rounded-full px-1.5 py-0.5 leading-none" x-text="activeSources.length"></span>
+            </template>
+            <svg :class="open ? 'rotate-180' : ''" class="h-3.5 w-3.5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div x-show="open" x-cloak
+               class="absolute right-0 mt-1 w-56 rounded-xl border border-gray-200 bg-white shadow-lg z-20 py-1 max-h-72 overflow-y-auto">
+            <div class="px-3 py-1.5 flex items-center justify-between border-b border-gray-100">
+              <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Filter by source</span>
+              <button @click="activeSources = []" x-show="activeSources.length" class="text-xs text-blue-600 hover:underline">Clear</button>
+            </div>
+            {% for src in event_sources %}
+            <label class="flex items-center gap-2.5 px-3 py-2 hover:bg-gray-50 cursor-pointer">
+              <input type="checkbox"
+                     value="{{ src }}"
+                     x-model="activeSources"
+                     class="rounded border-gray-300 text-blue-600 focus:ring-blue-400">
+              <span class="text-sm text-gray-700">{{ src }}</span>
+            </label>
+            {% endfor %}
+          </div>
+        </div>
+        <a href="/feed.xml" title="RSS feed" class="p-1.5 rounded-lg border border-gray-300 bg-white hover:bg-orange-50 text-orange-600 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19.01 7.38 20 6.18 20C4.98 20 4 19.01 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {% if events %}
+
+  {# ── LIST VIEW ── #}
+  <div x-show="view === 'list'"
+       class="sm:h-[640px] sm:overflow-y-auto pr-1 scroll-smooth" id="events-scroll">
+
+    <div x-show="filtered.length === 0" class="px-4 py-8 text-center text-sm text-gray-500">
+      No events match your filters.
+      <button @click="query = ''; activeSources = []" class="block mx-auto mt-2 text-blue-600 hover:underline text-xs">Clear filters</button>
+    </div>
+
+    <template x-for="(group, gi) in groupedByDay" :key="gi">
+      <div>
+        <div class="sticky top-0 bg-white/95 backdrop-blur-sm px-4 pt-3 pb-1.5 z-10 border-b border-gray-200">
+          <p class="text-xs font-bold uppercase tracking-wider"
+             :class="group.today ? 'text-blue-700' : group.thisWeek ? 'text-blue-600' : 'text-gray-600'"
+             x-text="group.day + (group.today ? ' \u2014 Today' : '')"></p>
+        </div>
+        <template x-for="(event, ei) in group.events" :key="ei">
+          <a :href="event.url" target="_blank" rel="noopener noreferrer"
+             class="block px-4 py-4 border-b border-gray-100 hover:bg-blue-50/40 transition-colors last:border-0 group">
+            <div class="flex items-start justify-between gap-2">
+              <div class="flex-1 min-w-0">
+                <p class="font-semibold text-base text-gray-900 group-hover:text-blue-700 leading-snug" x-text="event.title"></p>
+                <div class="mt-1 flex flex-wrap items-center gap-x-3 text-sm text-gray-600">
+                  <span x-show="event.time" x-text="event.time"></span>
+                  <span x-show="event.location" class="flex items-center gap-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                    <span x-text="event.location"></span>
+                  </span>
+                </div>
+              </div>
+              <span class="shrink-0 text-xs text-gray-500 text-right leading-tight" x-text="event.source"></span>
+            </div>
+            <p x-show="event.description" class="mt-1.5 text-sm text-gray-600 line-clamp-1" x-text="event.description"></p>
+          </a>
+        </template>
+      </div>
+    </template>
+  </div>
+
+  {# ── CALENDAR VIEW ── #}
+  <div x-show="view === 'calendar'" x-cloak>
+
+    {# month nav #}
+    <div class="flex items-center justify-between px-4 py-2.5 border-b border-gray-200">
+      <button @click="prevMonth()" class="p-1 rounded hover:bg-gray-100 transition-colors text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
+        </svg>
+      </button>
+      <span class="text-sm font-semibold text-gray-900" x-text="calMonthLabel"></span>
+      <button @click="nextMonth()" class="p-1 rounded hover:bg-gray-100 transition-colors text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+    </div>
+
+    {# day-of-week headers #}
+    <div class="grid grid-cols-7 border-b border-gray-200">
+      <template x-for="h in ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']" :key="h">
+        <div class="py-1.5 text-center text-xs font-semibold text-gray-500 uppercase tracking-wide" x-text="h"></div>
+      </template>
+    </div>
+
+    {# calendar grid #}
+    <div class="grid grid-cols-7">
+      <template x-for="(week, wi) in calGrid" :key="wi">
+        <template x-for="(cell, di) in week" :key="di">
+          <button @click="cell.inMonth && selectDay(cell.iso)"
+                  :class="{
+                    'opacity-30 cursor-default': !cell.inMonth,
+                    'bg-blue-600 text-white font-bold': cell.isToday && selectedDay !== cell.iso,
+                    'ring-2 ring-inset ring-blue-500 bg-blue-50': selectedDay === cell.iso,
+                    'hover:bg-gray-50': cell.inMonth && selectedDay !== cell.iso,
+                  }"
+                  class="min-h-[52px] p-1.5 border-b border-r border-gray-100 flex flex-col items-center gap-0.5 transition-colors w-full">
+            <span class="text-xs leading-none w-5 h-5 flex items-center justify-center rounded-full"
+                  :class="cell.isToday && selectedDay !== cell.iso ? 'bg-blue-600 text-white' : 'text-gray-800'"
+                  x-text="cell.day"></span>
+            {# event dots — up to 3 #}
+            <template x-if="eventsByDate[cell.iso] && eventsByDate[cell.iso].length">
+              <div class="flex gap-0.5 flex-wrap justify-center">
+                <template x-for="(_, di2) in eventsByDate[cell.iso].slice(0, 3)" :key="di2">
+                  <span class="w-1 h-1 rounded-full"
+                        :class="selectedDay === cell.iso ? 'bg-blue-400' : 'bg-blue-500'"></span>
+                </template>
+                <span x-show="eventsByDate[cell.iso].length > 3"
+                      class="text-[9px] leading-none text-blue-600 font-semibold"
+                      x-text="'+' + (eventsByDate[cell.iso].length - 3)"></span>
+              </div>
+            </template>
+          </button>
+        </template>
+      </template>
+    </div>
+
+    {# selected day events #}
+    <div x-show="selectedDay" x-cloak class="border-t border-gray-200 max-h-64 overflow-y-auto">
+      <div class="px-4 py-2 bg-gray-50 border-b border-gray-200 flex items-center justify-between">
+        <span class="text-xs font-semibold text-gray-700" x-text="selectedDayLabel"></span>
+        <button @click="selectedDay = null" class="text-xs text-gray-400 hover:text-gray-600">✕</button>
+      </div>
+      <template x-for="(event, ei) in selectedDayEvents" :key="ei">
+        <a :href="event.url" target="_blank" rel="noopener noreferrer"
+           class="block px-4 py-2.5 border-b border-gray-100 last:border-0 hover:bg-blue-50/40 transition-colors group">
+          <p class="font-semibold text-sm text-gray-900 group-hover:text-blue-700 leading-snug" x-text="event.title"></p>
+          <div class="mt-0.5 flex flex-wrap items-center gap-x-3 text-xs text-gray-500">
+            <span x-show="event.time" x-text="event.time"></span>
+            <span x-show="event.location" x-text="event.location"></span>
+            <span x-text="event.source"></span>
+          </div>
+        </a>
+      </template>
+    </div>
+  </div>
+
+  {% else %}
+  <div class="text-sm text-gray-600 italic">No upcoming events found.</div>
+  {% endif %}
+</section>
+
+<script>
+function eventFilter(raw) {
+  const allEvents = typeof raw === 'string' ? JSON.parse(raw) : raw;
+  const _todayDate = new Date();
+  const _todayIso = _todayDate.toLocaleDateString('en-CA'); // YYYY-MM-DD local
+
+  return {
+    query: '',
+    activeSources: [],
+    view: 'list',
+    calYear: _todayDate.getFullYear(),
+    calMonth: _todayDate.getMonth(),
+    selectedDay: null,
+
+    get filtered() {
+      const q = this.query.trim().toLowerCase();
+      return allEvents.filter(e => {
+        if (this.activeSources.length && !this.activeSources.includes(e.source)) return false;
+        if (q && !e.title.toLowerCase().includes(q) &&
+                 !e.description.toLowerCase().includes(q) &&
+                 !e.location.toLowerCase().includes(q) &&
+                 !e.source.toLowerCase().includes(q)) return false;
+        return true;
+      });
+    },
+
+    get groupedByDay() {
+      const groups = [];
+      let current = null;
+      for (const e of this.filtered) {
+        if (!current || current.day !== e.day) {
+          current = { day: e.day, today: e.today, thisWeek: e.this_week, events: [] };
+          groups.push(current);
+        }
+        current.events.push(e);
+      }
+      return groups;
+    },
+
+    get eventsByDate() {
+      const map = {};
+      for (const e of this.filtered) {
+        if (!e.iso_date) continue;
+        (map[e.iso_date] = map[e.iso_date] || []).push(e);
+      }
+      return map;
+    },
+
+    get calMonthLabel() {
+      return new Date(this.calYear, this.calMonth, 1)
+        .toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+    },
+
+    get calGrid() {
+      const y = this.calYear, m = this.calMonth;
+      const firstDow = new Date(y, m, 1).getDay();
+      const daysInMonth = new Date(y, m + 1, 0).getDate();
+      const cells = [];
+      for (let i = 0; i < firstDow; i++) {
+        const d = new Date(y, m, 1 - (firstDow - i));
+        cells.push({ iso: d.toLocaleDateString('en-CA'), day: d.getDate(), inMonth: false, isToday: false });
+      }
+      for (let d = 1; d <= daysInMonth; d++) {
+        const iso = new Date(y, m, d).toLocaleDateString('en-CA');
+        cells.push({ iso, day: d, inMonth: true, isToday: iso === _todayIso });
+      }
+      while (cells.length % 7 !== 0) {
+        const d = new Date(y, m + 1, cells.length - firstDow - daysInMonth + 1);
+        cells.push({ iso: d.toLocaleDateString('en-CA'), day: d.getDate(), inMonth: false, isToday: false });
+      }
+      const weeks = [];
+      for (let i = 0; i < cells.length; i += 7) weeks.push(cells.slice(i, i + 7));
+      return weeks;
+    },
+
+    get selectedDayEvents() {
+      if (!this.selectedDay) return [];
+      return this.eventsByDate[this.selectedDay] || [];
+    },
+
+    get selectedDayLabel() {
+      if (!this.selectedDay) return '';
+      const [y, m, d] = this.selectedDay.split('-').map(Number);
+      return new Date(y, m - 1, d).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+    },
+
+    prevMonth() {
+      if (this.calMonth === 0) { this.calYear--; this.calMonth = 11; }
+      else this.calMonth--;
+      this.selectedDay = null;
+    },
+
+    nextMonth() {
+      if (this.calMonth === 11) { this.calYear++; this.calMonth = 0; }
+      else this.calMonth++;
+      this.selectedDay = null;
+    },
+
+    selectDay(iso) {
+      this.selectedDay = this.selectedDay === iso ? null : iso;
+    },
+  };
+}
+</script>

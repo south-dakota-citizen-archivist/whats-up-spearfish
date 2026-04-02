@@ -28,6 +28,7 @@ class BHSUJobs(BaseScraper):
     name = "BHSU"
     slug = "bhsu_jobs"
     dedup_key = "url"
+    replace = True
 
     def scrape(self) -> list[dict]:
         resp = requests.get(FEED_URL, timeout=20)

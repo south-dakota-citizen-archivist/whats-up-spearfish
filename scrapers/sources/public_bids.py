@@ -114,6 +114,7 @@ class PublicBids(BaseScraper):
     name = "Public Bids"
     slug = "public_bids"
     dedup_key = "slug"
+    replace = True
 
     def scrape(self) -> list[dict]:
         records = []

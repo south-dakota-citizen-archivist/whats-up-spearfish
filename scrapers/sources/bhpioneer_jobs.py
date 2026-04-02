@@ -76,6 +76,7 @@ class BHPioneerJobs(BaseScraper):
     name = "Black Hills Pioneer"
     slug = "bhpioneer_jobs"
     dedup_key = "url"
+    replace = True
 
     def scrape(self) -> list[dict]:
         records = []

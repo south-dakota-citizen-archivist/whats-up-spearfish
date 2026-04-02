@@ -1,0 +1,110 @@
+{# ── adoptable pets ───────────────────────────────────────────────────── #}
+{% set pets = groups.adoptable | default([]) %}
+{% if pets %}
+{% set cats = pets | selectattr("species", "equalto", "cat") | list %}
+{% set dogs = pets | selectattr("species", "equalto", "dog") | list %}
+<section id="adoptable" class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
+  <div class="px-4 pt-3.5 pb-2.5 border-b-2 border-gray-200 bg-white">
+    <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+      </svg>
+      Adopt a Pet
+    </h2>
+  </div>
+  <div x-data="{ tab: 0 }">
+
+    {# mobile: horizontal tab bar (hidden on sm+) #}
+    <div class="flex sm:hidden border-b border-gray-200 bg-gray-50">
+      {% if dogs %}
+      <button @click="tab = 0"
+              :class="tab === 0 ? 'border-b-2 border-blue-600 text-blue-700 font-semibold bg-white' : 'text-gray-600 hover:bg-gray-100'"
+              class="flex-1 px-3 py-2.5 text-xs text-center transition-colors">
+        🐕 Dogs ({{ dogs | length | intcomma }})
+      </button>
+      {% endif %}
+      {% if cats %}
+      <button @click="tab = 1"
+              :class="tab === 1 ? 'border-b-2 border-blue-600 text-blue-700 font-semibold bg-white' : 'text-gray-600 hover:bg-gray-100'"
+              class="flex-1 px-3 py-2.5 text-xs text-center transition-colors">
+        🐈 Cats ({{ cats | length | intcomma }})
+      </button>
+      {% endif %}
+    </div>
+
+    <div class="flex min-h-0">
+
+      {# sidebar tabs (hidden on mobile, shown sm+) #}
+      <nav class="hidden sm:flex w-36 shrink-0 border-r border-gray-200 bg-gray-50 flex-col py-1">
+        {% if dogs %}
+        <button @click="tab = 0"
+                :class="tab === 0 ? 'bg-white text-blue-700 font-semibold border-r-2 border-blue-600' : 'text-gray-700 hover:bg-gray-100'"
+                class="text-left px-3 py-2.5 text-xs leading-tight transition-colors w-full">
+          🐕 Dogs ({{ dogs | length | intcomma }})
+        </button>
+        {% endif %}
+        {% if cats %}
+        <button @click="tab = 1"
+                :class="tab === 1 ? 'bg-white text-blue-700 font-semibold border-r-2 border-blue-600' : 'text-gray-700 hover:bg-gray-100'"
+                class="text-left px-3 py-2.5 text-xs leading-tight transition-colors w-full">
+          🐈 Cats ({{ cats | length | intcomma }})
+        </button>
+        {% endif %}
+      </nav>
+
+      {# panels #}
+      <div class="flex-1 min-w-0 overflow-hidden">
+
+        {# dogs panel #}
+        {% if dogs %}
+        <div x-show="tab === 0" class="sm:max-h-[380px] sm:overflow-y-auto">
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 p-3" data-modal-group>
+            {% for pet in dogs %}
+            {% set _modal = {'title': pet.title, 'image': pet.image_url, 'description': pet.description, 'fields': [], 'url': pet.url, 'urlLabel': 'View all dogs ↗', 'notes': '', 'prices': []} %}
+            <div class="cursor-pointer group"
+                 data-modal="{{ _modal | tojson | forceescape }}"
+                 @click="showModal($el)">
+              {% if pet.image_url %}
+              <img src="{{ pet.image_url }}" alt="{{ pet.image_alt or pet.title }}"
+                   class="w-full aspect-square object-cover rounded-lg group-hover:opacity-90 transition-opacity">
+              {% else %}
+              <div class="w-full aspect-square rounded-lg bg-gray-100 flex items-center justify-center text-2xl">🐕</div>
+              {% endif %}
+              <p class="mt-1 text-xs font-medium text-gray-800 text-center truncate group-hover:text-blue-700">{{ pet.title }}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        {# cats panel #}
+        {% if cats %}
+        <div x-show="tab === 1" {% if dogs %}x-cloak{% endif %} class="sm:max-h-[380px] sm:overflow-y-auto">
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 p-3" data-modal-group>
+            {% for pet in cats %}
+            {% set _modal = {'title': pet.title, 'image': pet.image_url, 'description': pet.description, 'fields': [], 'url': pet.url, 'urlLabel': 'View all cats ↗', 'notes': '', 'prices': []} %}
+            <div class="cursor-pointer group"
+                 data-modal="{{ _modal | tojson | forceescape }}"
+                 @click="showModal($el)">
+              {% if pet.image_url %}
+              <img src="{{ pet.image_url }}" alt="{{ pet.image_alt or pet.title }}"
+                   class="w-full aspect-square object-cover rounded-lg group-hover:opacity-90 transition-opacity">
+              {% else %}
+              <div class="w-full aspect-square rounded-lg bg-gray-100 flex items-center justify-center text-2xl">🐈</div>
+              {% endif %}
+              <p class="mt-1 text-xs font-medium text-gray-800 text-center truncate group-hover:text-blue-700">{{ pet.title }}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+      </div>
+    </div>
+    <div class="border-t border-gray-200 px-4 py-2 bg-gray-50">
+      <a href="https://www.westernhillshumanesociety.com" target="_blank" rel="noopener noreferrer"
+         class="text-xs text-blue-700 font-medium hover:underline">Western Hills Humane Society ↗</a>
+    </div>
+  </div>
+</section>
+{% endif %}
