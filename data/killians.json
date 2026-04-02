@@ -298,5 +298,20 @@
     "last_seen": "2026-04-01",
     "record_type": "beer",
     "source_label": "Killian's"
+  },
+  {
+    "url": "https://untappd.com/b/lagunitas-brewing-company-ipa/4509",
+    "title": "IPA",
+    "slug": "ipa",
+    "category": "IPA - American",
+    "abv": "6.2%",
+    "ibu": "51",
+    "brewery": "Lagunitas Brewing Company",
+    "rating": "3.69",
+    "image_url": "https://labels.untappd.com/4509",
+    "first_seen": "2026-04-01",
+    "last_seen": "2026-04-01",
+    "record_type": "beer",
+    "source_label": "Killian's"
   }
 ]

@@ -148,12 +148,13 @@ def make_env() -> Environment:
         return dt.strftime(fmt) if dt else str(value or "")
 
     def format_datetime(value: str | None) -> str:
-        """Return '6:30 PM' (MT) — empty string for date-only or midnight."""
+        """Return '6:30 PM' or '6 PM' (MT) — strips :00, empty for date-only or midnight."""
         if not value or _DATE_ONLY_RE.match(value):
             return ""
         dt = _to_mountain(value)
         if dt and (dt.hour or dt.minute):
-            return dt.strftime("%-I:%M %p")
+            fmt = "%-I %p" if dt.minute == 0 else "%-I:%M %p"
+            return dt.strftime(fmt)
         return ""
 
     def format_day(value: str | None) -> str:
@@ -177,10 +178,18 @@ def make_env() -> Environment:
         import hashlib
         return hashlib.sha1(value.encode()).hexdigest()[:12]
 
+    def intcomma(value) -> str:
+        """Format an integer with thousands comma separators."""
+        try:
+            return f"{int(value):,}"
+        except (TypeError, ValueError):
+            return str(value)
+
     env.filters["format_date"] = format_date
     env.filters["format_datetime"] = format_datetime
     env.filters["format_day"] = format_day
     env.filters["stable_id"] = stable_id
+    env.filters["intcomma"] = intcomma
     env.tests["today"] = is_today
     env.tests["this_week"] = is_this_week
     return env
@@ -201,6 +210,236 @@ def render(env: Environment, template_name: str, dest: Path, **ctx) -> None:
 # ---------------------------------------------------------------------------
 # Main build
 # ---------------------------------------------------------------------------
+
+def fetch_fire_danger() -> dict:
+    """
+    Fetch fire danger zone ratings from two sources:
+
+    1. GPC SharePoint PDF ("Current Fire Danger") — 6 zones split into
+       Black Hills (Northern/Central/Southern) and Prairie (Northern/Central/Southern).
+       Publicly accessible via share link; playwright stealth bypasses Cloudflare.
+
+    2. NWS Rangeland Fire Danger Statement (RFD) — free-text product from
+       NWS Rapid City covering SD zones. We extract zone name + danger level.
+
+    Returns:
+        {
+          "zones": [{"name": str, "area": str, "counties": str, "level": str}, ...],
+          "nws_zones": [{"name": str, "level": str, "description": str}, ...],
+          "nws_issued": str,   # e.g. "149 AM MDT Wed Apr 1 2026"
+          "pdf_date": str,     # e.g. "Wednesday, April 1, 2026"
+          "sharepoint_url": str,
+        }
+    """
+    import re
+    import subprocess
+    import tempfile
+
+    from playwright.sync_api import sync_playwright
+    from playwright_stealth import Stealth
+
+    SHAREPOINT_URL = (
+        "https://firenet365.sharepoint.com/:b:/s/GPC_Internal/"
+        "EcX4qKVYUyZPsNs1rmcGAREBrSWzZDEWMa1E-xa83UcBSw?e=JdYXPn"
+    )
+    DOWNLOAD_URL = (
+        "https://firenet365.sharepoint.com/sites/GPC_Internal/_layouts/15/"
+        "download.aspx?UniqueId=a5a8f8c5-5358-4f26-b0db-35ae67060111&Translate=false"
+    )
+    NWS_RFD_URL = (
+        "https://forecast.weather.gov/product.php"
+        "?site=UNR&issuedby=UNR&product=RFD&format=TXT&version=1&glossary=0"
+    )
+
+    DANGER_LEVELS = {"low", "moderate", "high", "very high", "extreme", "no data"}
+
+    zones: list[dict] = []
+    pdf_date = ""
+
+    # ── 1. GPC SharePoint PDF ────────────────────────────────────────────────
+    try:
+        with Stealth().use_sync(sync_playwright()) as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context()
+            page = context.new_page()
+            page.goto(SHAREPOINT_URL, timeout=30000, wait_until="networkidle")
+            page.wait_for_timeout(1500)
+            response = context.request.get(DOWNLOAD_URL)
+            if response.status == 200:
+                pdf_bytes = response.body()
+                with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as tf:
+                    tf.write(pdf_bytes)
+                    tmp_path = tf.name
+                result = subprocess.run(
+                    ["pdftotext", "-layout", tmp_path, "-"],
+                    capture_output=True, text=True,
+                )
+                if result.returncode == 0:
+                    text = result.stdout
+                    # Extract date: "Wednesday, April 1, 2026"
+                    date_m = re.search(
+                        r"(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)"
+                        r",\s+\w+\s+\d+,\s+\d{4}", text
+                    )
+                    pdf_date = date_m.group(0) if date_m else ""
+
+                    # Parse zone blocks — each zone is 3 lines:
+                    #   Zone name\n(counties)\n\n   Level
+                    # The PDF layout groups Black Hills (3 zones) and Prairie (3 zones).
+                    # We extract named zones with their level using the level keyword
+                    # as an anchor.
+                    # The PDF uses a 3-column fixed-width layout per row:
+                    #   col <80  = Black Hills level
+                    #   col 80-170 = Prairie left-county level
+                    #   col >170 = Prairie right-county level
+                    # Three rows: Northern, Central, Southern.
+                    level_re = re.compile(
+                        r"\b(Extreme|Very High|High|Moderate|Low|No Data)\b",
+                        re.IGNORECASE,
+                    )
+                    # Identify "level lines": lines whose non-space content is only
+                    # danger-level keywords.
+                    lines = text.splitlines()
+                    level_lines = []
+                    for line in lines:
+                        stripped = level_re.sub("", line).strip()
+                        if level_re.search(line) and stripped == "":
+                            # Extract (col, level) pairs
+                            row = [(m.start(), m.group(1).title())
+                                   for m in level_re.finditer(line)]
+                            if row:
+                                level_lines.append(row)
+                    # We expect 3 data rows (Northern, Central, Southern).
+                    # Drop any legend/example rows (those with only 1-2 values
+                    # and short line length — legend rows have "No Data" etc.)
+                    data_rows = [r for r in level_lines if len(r) == 3]
+
+                    row_defs = [
+                        # (bh_name, bh_counties, pr_left_name, pr_left_counties, pr_right_name, pr_right_counties)
+                        ("Northern Hills", "Lawrence Co.", "Northern", "Lawrence Co.", "Northern", "Butte Co."),
+                        ("Central Hills",  "Pennington & Meade", "Central", "Pennington Co.", "Central", "Meade Co."),
+                        ("Southern Hills", "Custer & Fall River", "Southern", "Custer Co.", "Southern", "Fall River Co."),
+                    ]
+                    for i, row in enumerate(data_rows[:3]):
+                        if i >= len(row_defs):
+                            break
+                        bh_name, bh_co, prl_name, prl_co, prr_name, prr_co = row_defs[i]
+                        # Sort by column position
+                        row_sorted = sorted(row, key=lambda x: x[0])
+                        bh_level  = row_sorted[0][1] if len(row_sorted) > 0 else "No Data"
+                        prl_level = row_sorted[1][1] if len(row_sorted) > 1 else "No Data"
+                        prr_level = row_sorted[2][1] if len(row_sorted) > 2 else "No Data"
+                        zones.append({"name": bh_name,  "area": "Black Hills", "counties": bh_co,  "level": bh_level})
+                        zones.append({"name": prl_name, "area": "Prairie",     "counties": prl_co, "level": prl_level})
+                        zones.append({"name": prr_name, "area": "Prairie",     "counties": prr_co, "level": prr_level})
+            browser.close()
+    except Exception as exc:
+        print(f"[build] Warning: could not fetch GPC fire danger PDF: {exc}")
+
+    # ── 2. NWS Rangeland Fire Danger Statement ───────────────────────────────
+    nws_zones: list[dict] = []
+    nws_issued = ""
+    try:
+        import urllib.request
+        from html.parser import HTMLParser
+
+        class _PreExtractor(HTMLParser):
+            def __init__(self):
+                super().__init__()
+                self._in = False
+                self.text = []
+            def handle_starttag(self, tag, attrs):
+                if tag == "pre": self._in = True
+            def handle_endtag(self, tag):
+                if tag == "pre": self._in = False
+            def handle_data(self, data):
+                if self._in: self.text.append(data)
+
+        req = urllib.request.Request(NWS_RFD_URL, headers={"User-Agent": "SpearfishBulletin/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            raw = resp.read().decode("utf-8", errors="replace")
+        extractor = _PreExtractor()
+        extractor.feed(raw)
+        rfd_text = "".join(extractor.text)
+
+        # Issued time: e.g. "149 AM MDT Wed Apr 1 2026"
+        issued_m = re.search(r"\d{1,4} [AP]M [A-Z]{3} .+", rfd_text)
+        nws_issued = issued_m.group(0).strip() if issued_m else ""
+
+        # Split on "$$" separators into zone blocks
+        blocks = re.split(r"\$\$", rfd_text)
+        level_kw = re.compile(
+            r"\.\.\.(LOW|MODERATE|HIGH|VERY HIGH|EXTREME)\s+FIRE\s+DANGER\.\.\.",
+            re.IGNORECASE,
+        )
+        # Zone name line: the descriptive text after the SDZ code line
+        # e.g. "Harding-Butte-Northern Meade Co Plains-..."
+        for block in blocks:
+            lm = level_kw.search(block)
+            if not lm:
+                continue
+            level = lm.group(1).title()
+            # Grab the description paragraph after the level header
+            after = block[lm.end():].strip()
+            desc_lines = []
+            for line in after.splitlines():
+                line = line.strip()
+                if not line or line.startswith("The outlook"):
+                    break
+                desc_lines.append(line)
+            description = " ".join(desc_lines)
+            # Get zone name from the line listing counties
+            # It's the human-readable line between the SDZ code line and the date line
+            county_re = re.compile(r"^[A-Z][a-zA-Z\s/&\-]+-\s*$|^[A-Z][a-zA-Z\s/&\-]+Co\b", re.MULTILINE)
+            # Zone name: the human-readable county list line (after SDZ codes,
+            # before "Including the cities of" and before the date line).
+            # It looks like: "Harding-Butte-Northern Meade Co Plains-..."
+            name_lines = []
+            past_sdz = False
+            for line in block.splitlines():
+                line = line.strip()
+                if re.match(r"^SDZ\d", line):
+                    past_sdz = True
+                    continue
+                if not past_sdz:
+                    continue
+                if re.match(r"^\d{3,4} [AP]M", line):
+                    break
+                if line.startswith("Including"):
+                    break
+                if line and not line.startswith("."):
+                    name_lines.append(line)
+            zone_name = " ".join(name_lines).strip().rstrip("-").strip() if name_lines else "SD Zone"
+            nws_zones.append({
+                "name": zone_name,
+                "level": level,
+                "description": description,
+            })
+    except Exception as exc:
+        print(f"[build] Warning: could not fetch NWS RFD: {exc}")
+
+    print(
+        f"[build] Fire danger: {len(zones)} GPC zones, "
+        f"{len(nws_zones)} NWS zones, pdf_date={pdf_date!r}"
+    )
+    return {
+        "zones": zones,
+        "nws_zones": nws_zones,
+        "nws_issued": nws_issued,
+        "pdf_date": pdf_date,
+        "sharepoint_url": SHAREPOINT_URL,
+    }
+
+
+def _fmt_acres(raw: str) -> str:
+    """'1234 Acres' or '1,234 acres' → '1,234 acres'."""
+    m = re.search(r"[\d,]+", raw)
+    if not m:
+        return raw
+    num = int(m.group().replace(",", ""))
+    unit = raw[m.end():].strip() or "acres"
+    return f"{num:,} {unit}"
+
 
 def fetch_fire_data() -> dict:
     """
@@ -324,14 +563,17 @@ def fetch_fire_data() -> dict:
                 incidents.append({
                     "name": name,
                     "type": type_td.get_text(strip=True) if type_td else "",
-                    "size": size_td.get_text(strip=True) if size_td else "",
+                    "size": _fmt_acres(size_td.get_text(strip=True) if size_td else ""),
                     "updated": updated_td.get_text(strip=True) if updated_td else "",
                     "url": url,
                 })
     except Exception as exc:
         print(f"[build] Warning: could not fetch InciWeb data: {exc}")
 
-    return {"rows": rows, "incidents": incidents, "source_url": BHNF_URL}
+    # ── Fire danger zones (GPC SharePoint PDF + NWS RFD) ────────────────────
+    danger = fetch_fire_danger()
+
+    return {"rows": rows, "incidents": incidents, "source_url": BHNF_URL, "danger": danger}
 
 
 def fetch_creek_data() -> dict:
@@ -431,7 +673,8 @@ def build() -> None:
     fire_rows = fire_data.get("rows", [])
     print(f"[build] Fire: {len(fire_rows)} restriction row(s), "
           f"{sum(1 for r in fire_rows if r.get('any_restricted'))} with restrictions, "
-          f"{len(fire_data.get('incidents', []))} SD incident(s)")
+          f"{len(fire_data.get('incidents', []))} SD wildfire(s), "
+          f"{len(fire_data.get('danger', {}).get('zones', []))} danger zones")
 
     env = make_env()
 

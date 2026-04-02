@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +8,20 @@
   <style>{{ inline_css | safe }}</style>
   {% block extra_head %}{% endblock %}
 </head>
-<body class="h-full flex flex-col bg-gray-100 text-gray-900">
+<body class="min-h-screen flex flex-col bg-gray-100 text-gray-900">
 
   <header class="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-40">
-    <!-- Brand bar -->
+    
+    <!--
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-13">
+      <div class="flex items-center h-13">
         <a href="/" class="text-lg font-bold text-gray-900 hover:text-blue-700 transition-colors tracking-tight">
           What's up in Spearfish?
         </a>
-        <div class="flex items-center gap-2">
-          <a href="/feed.xml" title="RSS feed"
-             class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-md text-orange-700 bg-orange-100 hover:bg-orange-200 transition-colors text-xs font-semibold border border-orange-200">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19.01 7.38 20 6.18 20C4.98 20 4 19.01 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/>
-            </svg>
-            RSS
-          </a>
-          <a href="/calendar.ics" title="Subscribe to iCalendar"
-             class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-md bg-blue-100 text-blue-800 hover:bg-blue-200 transition-colors text-xs font-semibold border border-blue-200">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-            </svg>
-            iCal
-          </a>
-        </div>
       </div>
     </div>
+    -->
+
     <!-- Section pill strip -->
     {% block subnav %}{% endblock %}
   </header>
@@ -43,9 +30,100 @@
     {% block content %}{% endblock %}
   </main>
 
-  <footer class="bg-white border-t border-gray-300 mt-auto">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-5 text-xs text-gray-600">
-      <p>🤖 <a href="https://github.com/south-dakota-citizen-archivist/whats-up-in-spearfish" class="hover:underline">Vibe-coded with Claude</a></p>
+  <footer class="bg-white border-t border-gray-300 mt-auto" x-data="{ aboutOpen: false }">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-xs text-gray-500 flex items-center gap-4">
+      <button @click="aboutOpen = true"
+              class="cursor-pointer hover:text-gray-800 transition-colors font-medium">
+        About
+      </button>
+    </div>
+
+    {# ── about modal ───────────────────────────────────────────────────────── #}
+    <div x-show="aboutOpen" x-cloak
+         @keydown.escape.window="aboutOpen = false"
+         class="fixed inset-0 z-50 flex items-center justify-center p-4"
+         x-transition:enter="transition ease-out duration-150"
+         x-transition:enter-start="opacity-0"
+         x-transition:enter-end="opacity-100"
+         x-transition:leave="transition ease-in duration-100"
+         x-transition:leave-start="opacity-100"
+         x-transition:leave-end="opacity-0">
+      <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" @click="aboutOpen = false"></div>
+      <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[85vh] flex flex-col overflow-hidden">
+
+        {# header #}
+        <div class="flex items-center justify-between px-6 py-4 border-b border-gray-200 shrink-0">
+          <h2 class="text-base font-bold text-gray-900">About</h2>
+          <button @click="aboutOpen = false"
+                  class="cursor-pointer text-gray-400 hover:text-gray-600 transition-colors p-1 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+
+        {# body #}
+        <div class="overflow-y-auto px-6 py-5 text-sm text-gray-700 space-y-5">
+
+          <p>
+            <strong>What's up in Spearfish?</strong> is a local news and events dashboard for
+            Spearfish, SD — one page that pulls together community happenings, city government,
+            school news, local businesses, and more. It runs as a static site, rebuilt a few
+            times a day from scrapers that collect public data across the web.
+          </p>
+
+          <p>
+            Source code is on GitHub:
+            <a href="https://github.com/south-dakota-citizen-archivist/whats-up-in-spearfish"
+               target="_blank" rel="noopener noreferrer"
+               class="text-blue-700 font-medium hover:underline">
+              south-dakota-citizen-archivist/whats-up-in-spearfish ↗
+            </a>
+          </p>
+
+          <div>
+            <p class="font-semibold text-gray-900 mb-2">Data sources</p>
+            <ul class="space-y-1 text-gray-600">
+              <li class="font-medium text-gray-700 mt-2.5 first:mt-0 text-xs uppercase tracking-wide">Events</li>
+              <li><a href="https://bhsu.edu" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">BHSU Campus Calendar</a></li>
+              <li><a href="https://bhsu.edu/athletics" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">BHSU Athletics</a></li>
+              <li><a href="https://www.matthewsopera.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Matthews Opera House</a></li>
+              <li><a href="https://spearfishchamber.org" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Spearfish Chamber of Commerce</a></li>
+
+              <li class="font-medium text-gray-700 mt-2.5 text-xs uppercase tracking-wide">News</li>
+              <li><a href="https://www.bhpioneer.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Black Hills Pioneer</a></li>
+              <li><a href="https://www.sdpb.org/news" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">South Dakota Public Broadcasting</a></li>
+              <li><a href="https://www.sdnewswatch.org" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">SD Newswatch</a></li>
+              <li><a href="https://southdakotasearchlight.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">South Dakota Searchlight</a></li>
+
+              <li class="font-medium text-gray-700 mt-2.5 text-xs uppercase tracking-wide">Government</li>
+              <li><a href="https://www.spearfish.gov" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">City of Spearfish</a></li>
+              <li><a href="https://www.lawrence.sd.us" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Lawrence County</a></li>
+              <li><a href="https://www.spearfish.k12.sd.us" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Spearfish School District</a></li>
+              <li><a href="https://www.fs.usda.gov/blackhills" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Black Hills National Forest</a></li>
+              <li><a href="https://www.weather.gov" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">National Weather Service</a></li>
+
+              <li class="font-medium text-gray-700 mt-2.5 text-xs uppercase tracking-wide">On Tap</li>
+              <li><a href="https://crowpeakbrewing.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Crow Peak Brewing</a></li>
+              <li><a href="https://www.sawyerbrewingco.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Sawyer Brewing Co.</a></li>
+              <li><a href="https://spearfishbrewing.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Spearfish Brewing Company</a></li>
+              <li><a href="https://untappd.com/v/the-clubhouse-of-spearfish/9898973" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">The Clubhouse of Spearfish</a></li>
+              <li><a href="https://untappd.com/v/killians/556648" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Killian's</a></li>
+              <li><a href="https://untappd.com/v/redwater-kitchen/7654441" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Redwater Kitchen</a></li>
+              <li><a href="https://leonescreamery.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Leone's Creamery</a></li>
+
+              <li class="font-medium text-gray-700 mt-2.5 text-xs uppercase tracking-wide">Community</li>
+              <li><a href="https://spearfish.blackhills.bywatersolutions.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Spearfish Public Library</a></li>
+              <li><a href="https://www.westernhillshumanesociety.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Western Hills Humane Society</a></li>
+            </ul>
+          </div>
+
+          <p class="text-gray-500 text-xs pt-1 border-t border-gray-100">
+            Vibe-coded with <a href="https://claude.ai/code" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:underline">Claude Code</a> by Anthropic.
+          </p>
+
+        </div>
+      </div>
     </div>
   </footer>
 
