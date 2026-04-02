@@ -15,6 +15,7 @@
 
   {# card #}
   <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-md max-h-[85vh] flex flex-col overflow-hidden"
+       data-modal-card
        @click.stop
        x-transition:enter="transition ease-out duration-150"
        x-transition:enter-start="opacity-0 scale-95 translate-y-2"
@@ -266,4 +267,22 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowRight') Alpine.store('modal').next();
   if (e.key === 'ArrowLeft')  Alpine.store('modal').prev();
 });
+
+(function () {
+  let _touchStartX = null;
+  document.addEventListener('touchstart', e => {
+    if (!e.target.closest('[data-modal-card]')) return;
+    _touchStartX = e.changedTouches[0].clientX;
+  }, { passive: true });
+  document.addEventListener('touchend', e => {
+    if (_touchStartX === null) return;
+    const modal = Alpine.store('modal');
+    if (!modal.open || modal.mode !== 'single' || modal.list.length < 2) { _touchStartX = null; return; }
+    const dx = e.changedTouches[0].clientX - _touchStartX;
+    _touchStartX = null;
+    if (Math.abs(dx) < 50) return;
+    if (dx < 0) modal.next();
+    else         modal.prev();
+  }, { passive: true });
+})();
 </script>

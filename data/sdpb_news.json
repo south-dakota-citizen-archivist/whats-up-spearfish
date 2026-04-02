@@ -64,5 +64,38 @@
     "image_url": "https://npr.brightspotcdn.com/ff/48/f88e6be44e32b38da7f09d5d5ef9/lake-mitchell-city-of-mitchll.png",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-04-02/holiday-travel-could-see-weather-complications",
+    "title": "Holiday travel could see weather complications",
+    "slug": "sdpb-holiday-travel-could-see-weather-complications",
+    "published": "2026-04-02",
+    "byline": "By C.J. Keene",
+    "description": "Easter travel plans could be complicated by a large weather system moving through the state. The most heavily impacted portion will likely be East River and the Glacial Lakes.",
+    "image_url": "https://npr.brightspotcdn.com/60/1c/4ba276d140e9819523487c3c9546/dec-13-winter-storm-watertown.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/arts-life/2026-04-02/sd-arts-council-offering-america-250-community-arts-grants",
+    "title": "SD Arts Council offering America 250 Community Arts Grants",
+    "slug": "sdpb-sd-arts-council-offering-america-250-community-arts-grants",
+    "published": "2026-04-02",
+    "byline": "By SDPB News Staff",
+    "description": "The South Dakota arts council is putting out the invitation to apply for America 250 Community Arts Grants.",
+    "image_url": "https://npr.brightspotcdn.com/3d/3a/2117dc1546e1baee994d5a0f47b9/untitled-4.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-02/two-months-from-primary-new-south-dakota-voters-prepare-to-prove-citizenship",
+    "title": "Two months from primary, new South Dakota voters prepare to prove citizenship",
+    "slug": "sdpb-two-months-from-primary-new-south-dakota-voters-prepare-to-prove",
+    "published": "2026-04-02",
+    "byline": "By Lori Walsh",
+    "description": "People whose names do not match their birth certificates may face administrative challenges when registering to vote. Sara Lampert, Ph.D., explains how new rules impact married women and transgender people.",
+    "image_url": "https://npr.brightspotcdn.com/52/a4/27ad8392458d90c0af200f3647e9/website-photo-1.png",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

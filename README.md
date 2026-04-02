@@ -20,11 +20,11 @@ _Updated: April 2, 2026_
 | BHSU Campus Calendar | `bhsu_calendar` | `event` | 44 |
 | Black Hills National Forest | `bhnf` | `event`, `press_release` | 5 |
 | Black Hills Pioneer | `bhpioneer_jobs` | `job` | 11 |
-| Black Hills Pioneer | `black_hills_pioneer` | `news` | 100 |
+| Black Hills Pioneer | `black_hills_pioneer` | `news` | 110 |
 | City of Spearfish | `spearfish_city` | `document` | 2,089 |
 | City of Spearfish Alert Center | `spearfish_alert_center` | `alert` | 2 |
 | City of Spearfish Blog | `spearfish_blog` | — | 0 |
-| City of Spearfish Calendar | `spearfish_calendar` | `event` | 28 |
+| City of Spearfish Calendar | `spearfish_calendar` | `event` | 30 |
 | City of Spearfish Jobs | `spearfish_jobs` | — | 0 |
 | City of Spearfish News Flash | `spearfish_news` | `press_release` | 4 |
 | Creek Gauge | `creek_gauge` | — | 4 |
@@ -35,20 +35,20 @@ _Updated: April 2, 2026_
 | Grace Balloch Memorial Library | `spearfish_library` | `library_book` | 91 |
 | High School Lunch | `spearfish_hs_lunch` | `school_menu` | 40 |
 | Killian's | `killians` | `beer` | 17 |
-| Lawrence County | `lawrence_county` | `document` | 44 |
+| Lawrence County | `lawrence_county` | `document` | 45 |
 | Lawrence County Jobs | `lawrence_county_jobs` | — | 0 |
 | Lawrence County News Flash | `lawrence_county_news` | — | 0 |
 | Leone's Creamery | `leones_creamery` | `flavor` | 8 |
 | Matthews Opera House | `matthews_opera_house` | `event` | 27 |
 | Middle School Lunch | `spearfish_ms_lunch` | `school_menu` | 40 |
 | MS/HS Breakfast | `spearfish_mshs_breakfast` | `school_menu` | 40 |
-| Public Bids | `public_bids` | `bid` | 3 |
+| Public Bids | `public_bids` | `bid` | 2 |
 | Public Meetings (YouTube) | `public_meetings_youtube` | `youtube_video` | 30 |
-| Rapid City Journal | `rapid_city_journal` | `news` | 110 |
+| Rapid City Journal | `rapid_city_journal` | `news` | 114 |
 | Redwater Kitchen | `redwater_kitchen` | `beer` | 12 |
-| Regional News | `news_feeds` | `news` | 117 |
+| Regional News | `news_feeds` | `news` | 120 |
 | Sawyer Brewing Co. | `sawyer_brewing` | `beer` | 17 |
-| SDPB | `sdpb_news` | `news` | 6 |
+| SDPB | `sdpb_news` | `news` | 9 |
 | Spearfish Agenda Center | `spearfish_agenda_center` | — | 0 |
 | Spearfish Brewing Company | `spearfish_brewing` | `beer` | 14 |
 | Spearfish Chamber | `spearfish_chamber` | `event` | 86 |

@@ -24,12 +24,12 @@ _HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; SpearfishBulletin/1.0)"}
 _SOURCES = [
     {
         "base_url": "https://www.spearfish.gov",
-        "list_path": "/Bids.aspx?CatID=showStatus&txtSort=Category&showAllBids=on&Status=open",
+        "list_path": "/Bids.aspx?CatID=showStatus&txtSort=Category&Status=open",
         "source_label": "City of Spearfish",
     },
     {
         "base_url": "https://www.lawrence.sd.us",
-        "list_path": "/Bids.aspx?CatID=showStatus&txtSort=Category&showAllBids=on&Status=open",
+        "list_path": "/Bids.aspx?CatID=showStatus&txtSort=Category&Status=open",
         "source_label": "Lawrence County",
     },
 ]
@@ -81,7 +81,7 @@ def _parse_bids(html: str, base_url: str, source_label: str) -> list[dict]:
                     closes = value_spans[1].get_text(strip=True)
 
         # Only keep open bids
-        if status.lower() not in ("open", "active", ""):
+        if status.lower() not in ("open", "active"):
             continue
 
         # Description snippet (third span in bidTitle, before "Read on")

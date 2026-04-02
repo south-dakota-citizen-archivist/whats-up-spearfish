@@ -6,22 +6,10 @@
     "bid_no": "26-02",
     "status": "Open",
     "closes": "4/8/2026 1:30 PM",
+    "closes_iso": "2026-04-08T13:30:00",
     "description": "",
     "record_type": "bid",
-    "source_label": "City of Spearfish",
-    "closes_iso": "2026-04-08T13:30:00"
-  },
-  {
-    "url": "https://www.spearfish.gov/bids.aspx?bidID=78",
-    "title": "Sawmill Rd",
-    "slug": "city-of-spearfish-25-12",
-    "bid_no": "25-12",
-    "status": "Open",
-    "closes": "4/1/2026 1:30 PM",
-    "description": "",
-    "record_type": "bid",
-    "source_label": "City of Spearfish",
-    "closes_iso": "2026-04-01T13:30:00"
+    "source_label": "City of Spearfish"
   },
   {
     "url": "https://www.spearfish.gov/bids.aspx?bidID=80",
@@ -30,9 +18,9 @@
     "bid_no": "26-22",
     "status": "Open",
     "closes": "4/15/2026 1:30 PM",
+    "closes_iso": "2026-04-15T13:30:00",
     "description": "",
     "record_type": "bid",
-    "source_label": "City of Spearfish",
-    "closes_iso": "2026-04-15T13:30:00"
+    "source_label": "City of Spearfish"
   }
 ]

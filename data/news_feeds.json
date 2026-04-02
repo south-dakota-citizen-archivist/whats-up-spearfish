@@ -1051,5 +1051,32 @@
     "description": "The officials who manage South Dakota’s public employee retirement system said Wednesday that if current investment trends continue, retirees are likely to see a July 2027 cost-of-living benefit adjustment similar to the 1.56% increase they will get this July. If inflation stays above 2% as it has lately, that could mean a sixth straight year [&#8230;]",
     "record_type": "news",
     "source_label": "South Dakota Searchlight"
+  },
+  {
+    "url": "https://www.sdnewswatch.org/sdnw-board-of-directors-rita-edwards-mark-millage/",
+    "title": "2 new directors join SDNW board",
+    "slug": "sd-newswatch-2-new-directors-join-sdnw-board",
+    "published": "2026-04-02",
+    "description": "Rita Edwards and Mark Millage bring experience in law, media and business to South Dakota News Watch board of directors.",
+    "record_type": "news",
+    "source_label": "SD Newswatch"
+  },
+  {
+    "url": "https://www.sdnewswatch.org/fact-brief-south-dakota-rate-recidivism-inmates/",
+    "title": "Fact brief: Does SD have some of the highest recidivism rates?",
+    "slug": "sd-newswatch-fact-brief-does-sd-have-some-of-the-highest-recidivism-rates",
+    "published": "2026-04-02",
+    "description": "According to the Justice Center, South Dakota was one of 14 states where recidivism increased between 2011 and 2021.",
+    "record_type": "news",
+    "source_label": "SD Newswatch"
+  },
+  {
+    "url": "https://www.sdnewswatch.org/south-dakota-voter-guide-primary-general-election/",
+    "title": "South Dakota Voter Guide",
+    "slug": "sd-newswatch-south-dakota-voter-guide",
+    "published": "2026-04-01",
+    "description": "Everything South Dakota voters need to know about statewide contests in the 2026 primary and general elections.",
+    "record_type": "news",
+    "source_label": "SD Newswatch"
   }
 ]

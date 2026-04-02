@@ -20,7 +20,7 @@ from pathlib import Path
 
 DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "creek_gauge.json"
 
-HEADERS = {"User-Agent": "SpearfishBulletin/1.0"}
+HEADERS = {"User-Agent": "SpearfishBulletin/1.0", "Cache-Control": "no-cache", "Pragma": "no-cache"}
 
 IV_URL = (
     "https://waterservices.usgs.gov/nwis/iv/"
