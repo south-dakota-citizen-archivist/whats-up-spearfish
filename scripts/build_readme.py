@@ -12,8 +12,9 @@ import inspect
 import json
 import pkgutil
 import sys
-from datetime import datetime, timezone
+from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 # Ensure the repo root (parent of this script's directory) is on sys.path so
 # that the local `scrapers` package is importable regardless of cwd.
@@ -77,7 +78,7 @@ def _data_stats() -> dict[str, dict]:
 # ---------------------------------------------------------------------------
 
 def _build_readme(slug_to_name: dict[str, str], stats: dict[str, dict]) -> str:
-    now = datetime.now(timezone.utc)
+    now = datetime.now(ZoneInfo("America/Denver"))
     date_str = now.strftime("%B %-d, %Y")
 
     # Build rows: include every slug that has a name OR has data

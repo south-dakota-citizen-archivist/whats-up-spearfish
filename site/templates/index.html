@@ -1,49 +1,35 @@
 {% extends "base.html" %}
 
+{% set _nav = [
+  ('#weather',      'Weather'),
+  ('#events',       'Events'),
+  ('#news',         'News'),
+  ('#press',        'Press Releases'),
+  ('#meetings',     'Meetings'),
+  ('#documents',    'Documents'),
+  ('#library',      'Library'),
+  ('#drinks',       'On Tap'),
+  ('#school-menus', 'School Menus'),
+  ('#fire',         'Fire'),
+  ('#creek',        'Spearfish Creek'),
+  ('#adoptable',    'Adopt a Pet'),
+  ('#jobs',         'Jobs'),
+  ('#bids',         'Bids'),
+] %}
+
 {% block title %}What's up, Spearfish?{% endblock %}
 
 {% block subnav %}
-{% set _nav = [
-  ('#weather',      'Weather'),
-  ('#alerts',       'Alerts'),
-  ('#events',       'Events'),
-  ('#news',         'News'),
-  ('#meetings',     'Meetings'),
-  ('#press',        'Press Releases'),
-  ('#documents',    'Documents'),
-  ('#jobs',         'Jobs'),
-  ('#bids',         'Bids'),
-  ('#drinks',       'On Tap'),
-  ('#school-menus', 'School Menus'),
-  ('#library',      'Library'),
-  ('#adoptable',    'Adopt a Pet'),
-  ('#fire',         'Fire'),
-  ('#creek',        'Spearfish Creek'),
-] %}
-<div class="border-t border-gray-200 bg-gray-50">
-  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="relative"
-         x-data="{ atEnd: false }"
-         x-init="$el.querySelector('nav').addEventListener('scroll', e => { atEnd = e.target.scrollLeft + e.target.clientWidth >= e.target.scrollWidth - 4 })">
-      <nav class="flex items-center gap-1 overflow-x-auto py-1.5 scrollbar-none">
-        {% for href, label in _nav %}
-        <a href="{{ href }}"
-           class="shrink-0 px-3 py-1 rounded-full text-xs font-medium text-gray-600 hover:bg-white hover:text-blue-700 hover:shadow-sm transition-all whitespace-nowrap">
-          {{ label }}
-        </a>
-        {% endfor %}
-      </nav>
-      {# right-side fade + chevron hints that the nav scrolls horizontally #}
-      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center transition-opacity duration-200"
-           :class="atEnd ? 'opacity-0' : 'opacity-100'">
-        <div class="w-12 h-full bg-gradient-to-l from-gray-50 to-transparent"></div>
-        <div class="absolute right-0 pr-0.5 text-gray-400">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-          </svg>
-        </div>
-      </div>
-    </div>
+<div class="border-t border-gray-200 bg-gray-50 xl:hidden">
+  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center gap-3">
+    <label for="mobile-jump" class="text-xs font-bold text-gray-500 uppercase tracking-widest shrink-0">Jump to</label>
+    <select id="mobile-jump" class="block w-full rounded border-gray-300 bg-white text-sm font-medium text-gray-700 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-1.5"
+            onchange="if(this.value) window.location.hash = this.value">
+      <option value="">Select section...</option>
+      {% for href, label in _nav %}
+      <option value="{{ href }}">{{ label }}</option>
+      {% endfor %}
+    </select>
   </div>
 </div>
 {% endblock %}
@@ -63,7 +49,7 @@
 
   {# ── weather strip ────────────────────────────────────────────────────── #}
   {# ── weather (live, client-side) ─────────────────────────────────────── #}
-  <section class="mb-6" id="weather" x-data="weather()" x-init="load()">
+  <section class="mb-6 scroll-mt-20" id="weather" x-data="weather()" x-init="load()">
     <div class="rounded-xl border border-gray-300 bg-white overflow-hidden min-h-[56px]">
 
       {# loading skeleton #}
@@ -82,7 +68,7 @@
       </div>
 
       {# current conditions bar #}
-      <div x-show="ready" class="px-4 sm:px-5 py-3 border-b border-gray-200 bg-gray-50">
+      <div x-show="ready" class="px-4 sm:px-5 py-3 border-b-2 border-gray-200 bg-gray-50">
         {# row 1: temp + description + refresh #}
         <div class="flex items-center gap-2 mb-1.5">
           <span class="text-3xl font-extrabold text-gray-900 leading-none" x-text="current.temp"></span>
@@ -127,7 +113,7 @@
 
   {# ── alerts (static city/county + live NWS) ───────────────────────────── #}
   {% set static_alerts = groups.alert | default([]) %}
-  <section class="mb-8" id="alerts"
+  <section class="mb-6 scroll-mt-20" id="alerts"
            x-data="alerts({{ static_alerts | length }})"
            x-show="visibleCount > 0"
            x-init="loadNWS()"
@@ -214,8 +200,24 @@
     </div>
   </section>
 
-  {# ── main grid ────────────────────────────────────────────────────────── #}
-  <div class="grid lg:grid-cols-5 gap-8">
+  {# ── main layout wrapper ────────────────────────────────────────────────── #}
+  <div class="flex flex-col xl:flex-row gap-8 xl:items-start">
+    
+    {# ── LEFT SIDEBAR TOC (hidden until xl) ── #}
+    <aside class="hidden xl:block w-48 shrink-0 sticky top-24">
+      <nav class="flex flex-col gap-0.5">
+        <p class="text-xs font-bold text-gray-500 uppercase tracking-widest px-3 mb-2">Sections</p>
+        {% for href, label in _nav %}
+        <a href="{{ href }}" class="text-sm font-medium text-gray-600 hover:text-blue-700 hover:bg-white hover:shadow-sm px-3 py-1.5 rounded-lg transition-all">
+          {{ label }}
+        </a>
+        {% endfor %}
+      </nav>
+    </aside>
+
+    {# ── MAIN GRID ───────────────────────────────────────────────────────── #}
+    <div class="flex-1 min-w-0">
+      <div class="grid lg:grid-cols-5 gap-8">
 
     {# ── LEFT COLUMN (events) ── 2/3 width ────────────────────────────── #}
     <div class="lg:col-span-3 space-y-8 min-w-0">
@@ -243,95 +245,86 @@
 
       <section id="events"
                x-data="eventFilter($el.dataset.events)"
-               data-events='{{ _slim_events | tojson }}'>
-        <div class="mb-3">
-          <div class="flex items-center justify-between mb-2">
+               data-events="{{ _slim_events | tojson | forceescape }}"
+               class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
+        
+        {# standardized header #}
+        <div class="px-4 pt-3.5 pb-2.5 border-b-2 border-gray-200 bg-white">
+          <div class="flex items-center justify-between mb-3">
             <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
               </svg>
               Upcoming Events
             </h2>
-            <span class="text-xs font-medium text-gray-500" x-show="view === 'list'">
-              <span x-text="filtered.length.toLocaleString()"></span> of {{ events | length | intcomma }}
-            </span>
-          </div>
-          <div class="flex items-center gap-2">
-            <a href="/feed.xml" title="RSS feed"
-               class="inline-flex items-center gap-1 px-2 py-1 rounded-md text-orange-700 bg-orange-50 hover:bg-orange-100 transition-colors text-xs font-semibold border border-orange-200">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19.01 7.38 20 6.18 20C4.98 20 4 19.01 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/>
-              </svg>
-              RSS
-            </a>
-            <a href="/calendar.ics" title="Subscribe to iCalendar"
-               class="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors text-xs font-semibold border border-blue-200">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-              </svg>
-              iCal
-            </a>
-            <div class="flex rounded-lg border border-gray-300 overflow-hidden text-xs font-medium ml-auto">
-              <button @click="view = 'list'"
-                      :class="view === 'list' ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'"
-                      class="px-2.5 py-1.5 flex items-center gap-1 transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
-                </svg>
-                List
-              </button>
-              <button @click="view = 'calendar'; selectedDay = null"
-                      :class="view === 'calendar' ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'"
-                      class="px-2.5 py-1.5 flex items-center gap-1 transition-colors border-l border-gray-300">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                </svg>
-                Calendar
-              </button>
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-medium text-gray-500" x-show="view === 'list'">
+                <span x-text="filtered.length.toLocaleString()"></span> of {{ events | length | intcomma }}
+              </span>
+              <div class="flex rounded-lg border border-gray-300 overflow-hidden text-xs font-medium">
+                <button @click="view = 'list'"
+                        :class="view === 'list' ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'"
+                        class="px-2 py-1.5 flex items-center gap-1 transition-colors">
+                  List
+                </button>
+                <button @click="view = 'calendar'; selectedDay = null"
+                        :class="view === 'calendar' ? 'bg-blue-600 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'"
+                        class="px-2 py-1.5 flex items-center gap-1 transition-colors border-l border-gray-300">
+                  Cal
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-
-        {# search + filter controls #}
-        <div class="flex flex-col sm:flex-row gap-2 mb-3">
-          <div class="relative flex-1">
-            <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-gray-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 0 5 11a6 6 0 0 0 12 0z"/>
-            </svg>
-            <input type="search"
-                   x-model.debounce.200ms="query"
-                   placeholder="Search events…"
-                   class="w-full pl-8 pr-3 py-1.5 text-sm rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent placeholder-gray-400">
-          </div>
-          <div class="relative" x-data="{ open: false }" @click.outside="open = false">
-            <button @click="open = !open"
-                    class="flex items-center gap-1.5 px-3 py-1.5 text-sm rounded-lg border border-gray-300 bg-white hover:bg-gray-50 transition-colors whitespace-nowrap">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 010 2H4a1 1 0 01-1-1zm3 6a1 1 0 011-1h10a1 1 0 010 2H7a1 1 0 01-1-1zm3 6a1 1 0 011-1h4a1 1 0 010 2h-4a1 1 0 01-1-1z"/>
+          
+          {# search + feeds #}
+          <div class="flex flex-wrap items-center gap-2">
+            <div class="relative flex-1 min-w-[140px]">
+              <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-gray-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 0 5 11a6 6 0 0 0 12 0z"/>
               </svg>
-              Sources
-              <template x-if="activeSources.length">
-                <span class="ml-0.5 bg-blue-600 text-white text-xs font-bold rounded-full px-1.5 py-0.5 leading-none" x-text="activeSources.length"></span>
-              </template>
-              <svg :class="open ? 'rotate-180' : ''" class="h-3.5 w-3.5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-              </svg>
-            </button>
-            <div x-show="open" x-cloak
-                 class="absolute right-0 mt-1 w-56 rounded-xl border border-gray-200 bg-white shadow-lg z-20 py-1 max-h-72 overflow-y-auto">
-              <div class="px-3 py-1.5 flex items-center justify-between border-b border-gray-100">
-                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Filter by source</span>
-                <button @click="activeSources = []" x-show="activeSources.length" class="text-xs text-blue-600 hover:underline">Clear</button>
+              <input type="search"
+                     x-model.debounce.200ms="query"
+                     placeholder="Search events…"
+                     class="w-full pl-8 pr-3 py-1.5 text-sm rounded-lg border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent placeholder-gray-400">
+            </div>
+            
+            <div class="flex items-center gap-1.5">
+              <div class="relative" x-data="{ open: false }" @click.outside="open = false">
+                <button @click="open = !open"
+                        class="flex items-center gap-1.5 px-3 py-1.5 text-sm rounded-lg border border-gray-300 bg-white hover:bg-gray-50 transition-colors whitespace-nowrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 010 2H4a1 1 0 01-1-1zm3 6a1 1 0 011-1h10a1 1 0 010 2H7a1 1 0 01-1-1zm3 6a1 1 0 011-1h4a1 1 0 010 2h-4a1 1 0 01-1-1z"/>
+                  </svg>
+                  Sources
+                  <template x-if="activeSources.length">
+                    <span class="ml-0.5 bg-blue-600 text-white text-xs font-bold rounded-full px-1.5 py-0.5 leading-none" x-text="activeSources.length"></span>
+                  </template>
+                  <svg :class="open ? 'rotate-180' : ''" class="h-3.5 w-3.5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </button>
+                <div x-show="open" x-cloak
+                     class="absolute right-0 mt-1 w-56 rounded-xl border border-gray-200 bg-white shadow-lg z-20 py-1 max-h-72 overflow-y-auto">
+                  <div class="px-3 py-1.5 flex items-center justify-between border-b border-gray-100">
+                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Filter by source</span>
+                    <button @click="activeSources = []" x-show="activeSources.length" class="text-xs text-blue-600 hover:underline">Clear</button>
+                  </div>
+                  {% for src in event_sources %}
+                  <label class="flex items-center gap-2.5 px-3 py-2 hover:bg-gray-50 cursor-pointer">
+                    <input type="checkbox"
+                           value="{{ src }}"
+                           x-model="activeSources"
+                           class="rounded border-gray-300 text-blue-600 focus:ring-blue-400">
+                    <span class="text-sm text-gray-700">{{ src }}</span>
+                  </label>
+                  {% endfor %}
+                </div>
               </div>
-              {% for src in event_sources %}
-              <label class="flex items-center gap-2.5 px-3 py-2 hover:bg-gray-50 cursor-pointer">
-                <input type="checkbox"
-                       value="{{ src }}"
-                       x-model="activeSources"
-                       class="rounded border-gray-300 text-blue-600 focus:ring-blue-400">
-                <span class="text-sm text-gray-700">{{ src }}</span>
-              </label>
-              {% endfor %}
+              <a href="/feed.xml" title="RSS feed" class="p-1.5 rounded-lg border border-gray-300 bg-white hover:bg-orange-50 text-orange-600 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19.01 7.38 20 6.18 20C4.98 20 4 19.01 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -340,7 +333,7 @@
 
         {# ── LIST VIEW ── #}
         <div x-show="view === 'list'"
-             class="h-[640px] overflow-y-auto rounded-xl border border-gray-300 bg-white pr-1 scroll-smooth" id="events-scroll">
+             class="sm:h-[640px] sm:overflow-y-auto pr-1 scroll-smooth" id="events-scroll">
 
           <div x-show="filtered.length === 0" class="px-4 py-8 text-center text-sm text-gray-500">
             No events match your filters.
@@ -356,11 +349,11 @@
               </div>
               <template x-for="(event, ei) in group.events" :key="ei">
                 <a :href="event.url" target="_blank" rel="noopener noreferrer"
-                   class="block px-4 py-3 border-b border-gray-100 hover:bg-blue-50/40 transition-colors last:border-0 group">
+                   class="block px-4 py-4 border-b border-gray-100 hover:bg-blue-50/40 transition-colors last:border-0 group">
                   <div class="flex items-start justify-between gap-2">
                     <div class="flex-1 min-w-0">
-                      <p class="font-semibold text-sm text-gray-900 group-hover:text-blue-700 leading-snug" x-text="event.title"></p>
-                      <div class="mt-0.5 flex flex-wrap items-center gap-x-3 text-xs text-gray-600">
+                      <p class="font-semibold text-base text-gray-900 group-hover:text-blue-700 leading-snug" x-text="event.title"></p>
+                      <div class="mt-1 flex flex-wrap items-center gap-x-3 text-sm text-gray-600">
                         <span x-show="event.time" x-text="event.time"></span>
                         <span x-show="event.location" class="flex items-center gap-0.5">
                           <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -373,7 +366,7 @@
                     </div>
                     <span class="shrink-0 text-xs text-gray-500 text-right leading-tight" x-text="event.source"></span>
                   </div>
-                  <p x-show="event.description" class="mt-1 text-xs text-gray-600 line-clamp-1" x-text="event.description"></p>
+                  <p x-show="event.description" class="mt-1.5 text-sm text-gray-600 line-clamp-1" x-text="event.description"></p>
                 </a>
               </template>
             </div>
@@ -381,8 +374,7 @@
         </div>
 
         {# ── CALENDAR VIEW ── #}
-        <div x-show="view === 'calendar'" x-cloak
-             class="rounded-xl border border-gray-300 bg-white overflow-hidden">
+        <div x-show="view === 'calendar'" x-cloak>
 
           {# month nav #}
           <div class="flex items-center justify-between px-4 py-2.5 border-b border-gray-200">
@@ -479,8 +471,9 @@
       {% if news %}
       <section id="news"
                x-data="newsFilter($el.dataset.news)"
-               data-news='{{ _nns.slim | tojson }}'>
-        <div class="flex items-center justify-between mb-3">
+               data-news="{{ _nns.slim | tojson | forceescape }}"
+               class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
+        <div class="flex items-center justify-between px-4 pt-3.5 pb-2.5 border-b-2 border-gray-200">
           <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 12h6m-6 4h2"/>
@@ -524,21 +517,21 @@
             </div>
           </div>
         </div>
-        <div class="rounded-xl border border-gray-300 bg-white divide-y divide-gray-200 max-h-96 overflow-y-auto">
+        <div class="divide-y divide-gray-200 sm:max-h-96 sm:overflow-y-auto">
           <div x-show="filtered.length === 0" class="px-4 py-8 text-center text-sm text-gray-500">
             No articles match your filters.
             <button @click="activeSources = []" class="block mx-auto mt-2 text-blue-600 hover:underline text-xs">Clear filters</button>
           </div>
           <template x-for="(item, i) in filtered" :key="i">
-          <div class="relative group px-4 py-3 hover:bg-gray-50 transition-colors">
+          <div class="relative group px-4 py-4 hover:bg-gray-50 transition-colors">
             <a :href="item.url" target="_blank" rel="noopener noreferrer"
-               class="font-semibold text-sm text-gray-900 group-hover:text-blue-700 leading-snug line-clamp-2 block after:absolute after:inset-0"
+               class="font-semibold text-base text-gray-900 group-hover:text-blue-700 leading-snug line-clamp-2 block after:absolute after:inset-0"
                x-text="item.title"></a>
-            <div class="mt-1 text-xs text-gray-600 flex flex-wrap items-center gap-2">
+            <div class="mt-1 text-sm text-gray-500 flex flex-wrap items-center gap-2">
               <span x-show="item.published" x-text="item.published"></span>
               <span x-text="item.source"></span>
             </div>
-            <p x-show="item.description" class="mt-1 text-xs text-gray-700 line-clamp-2" x-text="item.description"></p>
+            <p x-show="item.description" class="mt-1.5 text-sm text-gray-600 line-clamp-2" x-text="item.description"></p>
           </div>
           </template>
         </div>
@@ -548,26 +541,28 @@
       {# ── press releases ───────────────────────────────────────────────────── #}
       {% set press = groups.press_release | default([]) %}
       {% if press %}
-      <section id="press">
-        <h2 class="text-base font-bold text-gray-900 mb-3 flex items-center gap-1.5">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-          </svg>
-          Press Releases
-        </h2>
-        <div class="rounded-xl border border-gray-300 bg-white divide-y divide-gray-200 max-h-96 overflow-y-auto">
+      <section id="press" class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
+        <div class="px-4 pt-3.5 pb-2.5 border-b-2 border-gray-200 bg-white">
+          <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+            Press Releases
+          </h2>
+        </div>
+        <div class="divide-y divide-gray-200 sm:max-h-96 sm:overflow-y-auto">
           {% for item in press %}
-          <div class="relative group px-4 py-3 hover:bg-gray-50 transition-colors">
+          <div class="relative group px-4 py-4 hover:bg-gray-50 transition-colors">
             <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"
-               class="font-semibold text-sm text-gray-900 group-hover:text-blue-700 leading-snug line-clamp-2 block after:absolute after:inset-0">
+               class="font-semibold text-base text-gray-900 group-hover:text-blue-700 leading-snug line-clamp-2 block after:absolute after:inset-0">
               {{ item.title }}
             </a>
-            <div class="mt-1 text-xs text-gray-600 flex flex-wrap items-center gap-2">
+            <div class="mt-1 text-sm text-gray-500 flex flex-wrap items-center gap-2">
               {% if item.published %}<span>{{ item.published | format_date }}</span>{% endif %}
               <span>{{ item.source_label | default(item._source | replace("_", " ") | title) }}</span>
             </div>
             {% if item.description %}
-            <p class="mt-1 text-xs text-gray-700 line-clamp-2">{{ item.description | striptags }}</p>
+            <p class="mt-1.5 text-sm text-gray-600 line-clamp-2">{{ item.description | striptags }}</p>
             {% endif %}
           </div>
           {% endfor %}
@@ -578,17 +573,19 @@
       {# ── public meetings (YouTube) ────────────────────────────────────────── #}
       {% set yt_videos = groups.youtube_video | default([]) %}
       {% if yt_videos %}
-      <section id="meetings">
-        <h2 class="text-base font-bold text-gray-900 mb-3 flex items-center gap-1.5">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-600" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-          </svg>
-          Public Meetings
-        </h2>
-        <div class="rounded-xl border border-gray-300 bg-white divide-y divide-gray-200 max-h-96 overflow-y-auto">
+      <section id="meetings" class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
+        <div class="px-4 pt-3.5 pb-2.5 border-b-2 border-gray-200 bg-white">
+          <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-600" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            Public Meetings
+          </h2>
+        </div>
+        <div class="divide-y divide-gray-200 sm:max-h-96 sm:overflow-y-auto">
           {% for vid in yt_videos %}
           <a href="{{ vid.url }}" target="_blank" rel="noopener noreferrer"
-             class="flex items-start gap-3 px-4 py-3 hover:bg-gray-50 transition-colors group">
+             class="flex items-start gap-3 px-4 py-4 hover:bg-gray-50 transition-colors group">
             {% if vid.thumbnail_url %}
             <img src="{{ vid.thumbnail_url }}" alt="" loading="lazy"
                  class="w-24 h-[54px] object-cover rounded shrink-0 bg-gray-100">
@@ -600,8 +597,8 @@
             </div>
             {% endif %}
             <div class="min-w-0">
-              <p class="text-sm font-semibold text-gray-900 group-hover:text-blue-700 leading-snug line-clamp-2">{{ vid.title }}</p>
-              <div class="mt-1 text-xs text-gray-500 flex flex-wrap gap-2">
+              <p class="text-base font-semibold text-gray-900 group-hover:text-blue-700 leading-snug line-clamp-2">{{ vid.title }}</p>
+              <div class="mt-1 text-sm text-gray-500 flex flex-wrap gap-2">
                 {% if vid.published %}<span>{{ vid.published | format_date }}</span>{% endif %}
                 <span>{{ vid.source_label }}</span>
               </div>
@@ -631,67 +628,69 @@
       {% if docs %}
       <section id="documents"
                x-data="docFilter($el.dataset.docs)"
-               data-docs='{{ _dns.slim | tojson }}'>
-        <div class="flex items-center justify-between mb-3">
-          <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-            </svg>
-            Public Documents
-          </h2>
-          <div class="flex items-center gap-2">
-            <span class="text-xs font-medium text-gray-600">
-              <span x-text="filtered.length.toLocaleString()"></span> of {{ docs | length | intcomma }}
-            </span>
-            <div class="relative" x-data="{ open: false }" @click.outside="open = false">
-              <button @click="open = !open"
-                      class="flex items-center gap-1.5 px-3 py-1.5 text-sm rounded-lg border border-gray-300 bg-white hover:bg-gray-50 transition-colors whitespace-nowrap">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 010 2H4a1 1 0 01-1-1zm3 6a1 1 0 011-1h10a1 1 0 010 2H7a1 1 0 01-1-1zm3 6a1 1 0 011-1h4a1 1 0 010 2h-4a1 1 0 01-1-1z"/>
-                </svg>
-                Sources
-                <template x-if="activeSources.length">
-                  <span class="ml-0.5 bg-blue-600 text-white text-xs font-bold rounded-full px-1.5 py-0.5 leading-none" x-text="activeSources.length"></span>
-                </template>
-                <svg :class="open ? 'rotate-180' : ''" class="h-3.5 w-3.5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-                </svg>
-              </button>
-              <div x-show="open" x-cloak
-                   class="absolute right-0 mt-1 w-56 rounded-xl border border-gray-200 bg-white shadow-lg z-20 py-1 max-h-72 overflow-y-auto">
-                <div class="px-3 py-1.5 flex items-center justify-between border-b border-gray-100">
-                  <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Filter by source</span>
-                  <button @click="activeSources = []" x-show="activeSources.length" class="text-xs text-blue-600 hover:underline">Clear</button>
+               data-docs="{{ _dns.slim | tojson | forceescape }}"
+               class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
+        
+        <div class="px-4 pt-3.5 pb-2.5 border-b-2 border-gray-200 bg-white">
+          <div class="flex items-center justify-between mb-2">
+            <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+              Public Documents
+            </h2>
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-medium text-gray-600">
+                <span x-text="filtered.length.toLocaleString()"></span> of {{ docs | length | intcomma }}
+              </span>
+              <div class="relative" x-data="{ open: false }" @click.outside="open = false">
+                <button @click="open = !open"
+                        class="flex items-center gap-1.5 px-3 py-1.5 text-sm rounded-lg border border-gray-300 bg-white hover:bg-gray-50 transition-colors whitespace-nowrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 010 2H4a1 1 0 01-1-1zm3 6a1 1 0 011-1h10a1 1 0 010 2H7a1 1 0 01-1-1zm3 6a1 1 0 011-1h4a1 1 0 010 2h-4a1 1 0 01-1-1z"/>
+                  </svg>
+                  Sources
+                  <template x-if="activeSources.length">
+                    <span class="ml-0.5 bg-blue-600 text-white text-xs font-bold rounded-full px-1.5 py-0.5 leading-none" x-text="activeSources.length"></span>
+                  </template>
+                  <svg :class="open ? 'rotate-180' : ''" class="h-3.5 w-3.5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </button>
+                <div x-show="open" x-cloak
+                     class="absolute right-0 mt-1 w-56 rounded-xl border border-gray-200 bg-white shadow-lg z-20 py-1 max-h-72 overflow-y-auto">
+                  <div class="px-3 py-1.5 flex items-center justify-between border-b border-gray-100">
+                    <span class="text-xs font-semibold text-gray-500 uppercase tracking-wide">Filter by source</span>
+                    <button @click="activeSources = []" x-show="activeSources.length" class="text-xs text-blue-600 hover:underline">Clear</button>
+                  </div>
+                  {% for src in doc_sources %}
+                  <label class="flex items-center gap-2.5 px-3 py-2 hover:bg-gray-50 cursor-pointer">
+                    <input type="checkbox"
+                           value="{{ src }}"
+                           x-model="activeSources"
+                           class="rounded border-gray-300 text-blue-600 focus:ring-blue-400">
+                    <span class="text-sm text-gray-700">{{ src }}</span>
+                  </label>
+                  {% endfor %}
                 </div>
-                {% for src in doc_sources %}
-                <label class="flex items-center gap-2.5 px-3 py-2 hover:bg-gray-50 cursor-pointer">
-                  <input type="checkbox"
-                         value="{{ src }}"
-                         x-model="activeSources"
-                         class="rounded border-gray-300 text-blue-600 focus:ring-blue-400">
-                  <span class="text-sm text-gray-700">{{ src }}</span>
-                </label>
-                {% endfor %}
               </div>
             </div>
           </div>
         </div>
 
-        <div class="rounded-xl border border-gray-300 bg-white divide-y divide-gray-200 max-h-96 overflow-y-auto">
+        <div class="divide-y divide-gray-200 sm:max-h-96 sm:overflow-y-auto">
           <div x-show="filtered.length === 0" class="px-4 py-8 text-center text-sm text-gray-500">
             No documents match your filters.
             <button @click="activeSources = []" class="block mx-auto mt-2 text-blue-600 hover:underline text-xs">Clear filters</button>
           </div>
           <template x-for="(doc, i) in filtered" :key="i">
-            <div class="relative group px-4 py-3 hover:bg-gray-50 transition-colors">
+            <div class="relative group px-4 py-4 hover:bg-gray-50 transition-colors">
               <a :href="doc.url" target="_blank" rel="noopener noreferrer"
-                 class="font-semibold text-sm text-gray-900 group-hover:text-blue-700 leading-snug line-clamp-1 block after:absolute after:inset-0"
+                 class="font-semibold text-base text-gray-900 group-hover:text-blue-700 leading-snug line-clamp-2 block after:absolute after:inset-0"
                  x-text="doc.title"></a>
-              <div class="mt-0.5 flex flex-wrap items-center gap-x-3 text-xs text-gray-600">
+              <div class="mt-1 text-sm text-gray-500 flex flex-wrap items-center gap-2">
+                <span x-show="doc.asset_type" class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-indigo-50 text-indigo-700 border border-indigo-200 uppercase tracking-widest" x-text="doc.asset_type"></span>
                 <span x-show="doc.date" x-text="doc.date"></span>
-                <span x-show="doc.asset_type"
-                      class="px-1.5 py-0 rounded bg-gray-200 text-gray-700"
-                      x-text="doc.asset_type.replace(/_/g,' ').replace(/\b\w/g,c=>c.toUpperCase())"></span>
                 <span x-text="doc.source"></span>
               </div>
             </div>
@@ -700,74 +699,11 @@
       </section>
       {% endif %}
 
-      {# jobs #}
-      {% set jobs = groups.job | default([]) %}
-      {% if jobs %}
-      <section id="jobs">
-        <h2 class="text-base font-bold text-gray-900 mb-3 flex items-center gap-1.5">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-          </svg>
-          Jobs
-        </h2>
-        <div class="rounded-xl border border-gray-300 bg-white divide-y divide-gray-200 max-h-96 overflow-y-auto">
-          {% for item in jobs %}
-          <div class="relative group px-4 py-3 hover:bg-gray-50 transition-colors">
-            <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"
-               class="font-semibold text-sm text-gray-900 group-hover:text-blue-700 leading-snug block after:absolute after:inset-0">
-              {{ item.title }}
-            </a>
-            <div class="mt-0.5 text-xs text-gray-600 flex flex-wrap items-center gap-2">
-              <span class="font-medium">{{ item.source_label | default(item._source | replace("_", " ") | title) }}</span>
-              {% if item.department %}<span>{{ item.department }}</span>{% endif %}
-              {% if item.category %}<span>{{ item.category }}</span>{% endif %}
-              {% if item.published %}<span>{{ item.published | format_date }}</span>{% endif %}
-            </div>
-            {% if item.description %}
-            <p class="mt-1 text-xs text-gray-700 line-clamp-2">{{ item.description | striptags }}</p>
-            {% endif %}
-          </div>
-          {% endfor %}
-        </div>
-      </section>
-      {% endif %}
-
-      {# bids — sort ascending by close date (soonest deadline first) #}
-      {% set bids = groups.bid | default([]) | sort(attribute="closes_iso") %}
-      {% if bids %}
-      <section id="bids">
-        <h2 class="text-base font-bold text-gray-900 mb-3 flex items-center gap-1.5">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
-          </svg>
-          Open Bids &amp; RFPs
-        </h2>
-        <div class="rounded-xl border border-gray-300 bg-white divide-y divide-gray-200">
-          {% for bid in bids %}
-          <div class="relative group px-4 py-3 hover:bg-gray-50 transition-colors">
-            <a href="{{ bid.url }}" target="_blank" rel="noopener noreferrer"
-               class="font-semibold text-sm text-gray-900 group-hover:text-blue-700 leading-snug block after:absolute after:inset-0">
-              {{ bid.title }}
-            </a>
-            <div class="mt-0.5 text-xs text-gray-600 flex flex-wrap items-center gap-x-3">
-              <span class="font-medium">{{ bid.source_label }}</span>
-              {% if bid.bid_no %}<span>No. {{ bid.bid_no }}</span>{% endif %}
-              {% if bid.closes %}<span>Closes {{ bid.closes }}</span>{% endif %}
-            </div>
-            {% if bid.description %}
-            <p class="mt-1 text-xs text-gray-700 line-clamp-2">{{ bid.description }}</p>
-            {% endif %}
-          </div>
-          {% endfor %}
-        </div>
-      </section>
-      {% endif %}
-
       {# ── city library ────────────────────────────────────────────────────── #}
       {% set library_books = groups.library_book | default([]) %}
       {% if library_books %}
-      <section id="library" class="rounded-xl border border-gray-300 bg-white">
-        <div class="px-4 pt-3 pb-2 border-b border-gray-100">
+      <section id="library" class="rounded-xl border border-gray-300 bg-white scroll-mt-20">
+        <div class="px-4 pt-3 pb-2 border-b-2 border-gray-200">
           <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
@@ -804,18 +740,20 @@
       {% set beers = groups.beer | default([]) %}
       {% set flavors = groups.flavor | default([]) %}
       {% if beers or flavors %}
-      <section id="drinks">
-        <h2 class="text-base font-bold text-gray-900 mb-3 flex items-center gap-1.5">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 3h6l1 9H8L9 3zM8 12v6a2 2 0 002 2h4a2 2 0 002-2v-6M6 7h12"/>
-          </svg>
-          On Tap
-        </h2>
+      <section id="drinks" class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
+        <div class="px-4 pt-3.5 pb-2.5 border-b-2 border-gray-200 bg-white">
+          <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 3h6l1 9H8L9 3zM8 12v6a2 2 0 002 2h4a2 2 0 002-2v-6M6 7h12"/>
+            </svg>
+            On Tap
+          </h2>
+        </div>
 
         {% set breweries = beers | map(attribute="source_label") | unique | list %}
         {% set ice_cream_tab = breweries | length %}
 
-        <div x-data="{ tab: 0 }" class="rounded-xl border border-gray-300 bg-white overflow-hidden">
+        <div x-data="{ tab: 0 }">
 
           {# mobile: horizontal tab bar (hidden on sm+) #}
           <div class="flex overflow-x-auto sm:hidden border-b border-gray-200 bg-gray-50 scrollbar-none">
@@ -873,7 +811,7 @@
               {# brewery panels #}
               {% for brewery in breweries %}
               {% set taps = beers | selectattr("source_label", "equalto", brewery) | list %}
-              <div x-show="tab === {{ loop.index0 }}" x-cloak class="flex flex-col max-h-[420px]">
+              <div x-show="tab === {{ loop.index0 }}" x-cloak class="flex flex-col sm:max-h-[420px]">
                 <div class="divide-y divide-gray-100 overflow-y-auto flex-1" data-modal-group>
                   {% for beer in taps %}
                   {% set has_detail = beer.description or beer.abv or beer.ibu or beer.category or beer.image_url or beer.notes or beer.brewery or beer.rating %}
@@ -889,7 +827,7 @@
                   {% endif %}
                   <div class="flex items-start gap-3 px-4 py-3 {% if has_detail %}cursor-pointer hover:bg-blue-50 transition-colors group{% endif %}"
                        {% if has_detail %}
-                       data-modal='{{ _modal | tojson }}'
+                       data-modal="{{ _modal | tojson | forceescape }}"
                        @click="showModal($el)"
                        {% endif %}>
                     {% if beer.image_url %}
@@ -927,7 +865,7 @@
 
               {# flavors panel #}
               {% if flavors %}
-              <div x-show="tab === {{ ice_cream_tab }}" x-cloak class="flex flex-col max-h-[420px]">
+              <div x-show="tab === {{ ice_cream_tab }}" x-cloak class="flex flex-col sm:max-h-[420px]">
                 <div class="divide-y divide-gray-100 overflow-y-auto flex-1" data-modal-group>
                   {% for flavor in flavors %}
                   {% set has_detail = flavor.description or flavor.image_url %}
@@ -936,7 +874,7 @@
                   {% endif %}
                   <div class="flex items-start gap-3 px-4 py-3 {% if has_detail %}cursor-pointer hover:bg-blue-50 transition-colors group{% endif %}"
                        {% if has_detail %}
-                       data-modal='{{ _modal | tojson }}'
+                       data-modal="{{ _modal | tojson | forceescape }}"
                        @click="showModal($el)"
                        {% endif %}>
                     {% if flavor.image_url %}
@@ -991,15 +929,17 @@
       {% for l in present_labels %}{% if l not in _ns.tabs %}{% set _ns.tabs = _ns.tabs + [l] %}{% endif %}{% endfor %}
       {% set tabs = _ns.tabs %}
 
-      <section id="school-menus">
-        <h2 class="text-base font-bold text-gray-900 mb-3 flex items-center gap-1.5">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2M7 2v20M21 15V2a5 5 0 00-5 5v6h3.5a1.5 1.5 0 010 3H16v6"/>
-          </svg>
-          School Menus
-        </h2>
+      <section id="school-menus" class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
+        <div class="px-4 pt-3.5 pb-2.5 border-b-2 border-gray-200 bg-white">
+          <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 002-2V2M7 2v20M21 15V2a5 5 0 00-5 5v6h3.5a1.5 1.5 0 010 3H16v6"/>
+            </svg>
+            School Menus
+          </h2>
+        </div>
 
-        <div x-data="{ tab: 0 }" class="rounded-xl border border-gray-300 bg-white overflow-hidden">
+        <div x-data="{ tab: 0 }">
 
           {# mobile: horizontal tab bar (hidden on sm+) #}
           <div class="flex overflow-x-auto sm:hidden border-b border-gray-200 bg-gray-50 scrollbar-none">
@@ -1035,12 +975,12 @@
             <div class="flex-1 min-w-0">
               {% for tab_label in tabs %}
               {% set days = school_menus | selectattr("source_label", "equalto", tab_label) | list %}
-              <div x-show="tab === {{ loop.index0 }}" {% if not loop.first %}x-cloak{% endif %} class="flex flex-col max-h-[400px]">
+              <div x-show="tab === {{ loop.index0 }}" {% if not loop.first %}x-cloak{% endif %} class="flex flex-col sm:max-h-[400px]">
                 <div class="divide-y divide-gray-100 overflow-y-auto flex-1">
                   {% for menu in days %}
                   {% set _lunch = {'title': tab_label, 'date': (menu.start_dt or '') | format_day, 'items': menu.menu_items, 'url': menu.url} %}
                   <div class="px-4 py-3 hover:bg-blue-50/40 transition-colors cursor-pointer group"
-                       data-lunch='{{ _lunch | tojson }}'
+                       data-lunch="{{ _lunch | tojson | forceescape }}"
                        onclick="Alpine.store('modal').showLunch(JSON.parse(this.dataset.lunch))">
                     <div class="flex items-baseline justify-between gap-2">
                       <p class="font-semibold text-sm text-gray-900 group-hover:text-blue-700 leading-snug">{{ menu.start_dt | format_day }}</p>
@@ -1111,10 +1051,10 @@
 
       <section id="fire"
                x-data="{ open: '{{ _fire_default }}' }"
-               class="rounded-xl border {% if _any_fire_on %}border-orange-200 bg-orange-50{% else %}border-gray-200 bg-white{% endif %} overflow-hidden divide-y {% if _any_fire_on %}divide-orange-100{% else %}divide-gray-100{% endif %}">
+               class="scroll-mt-20 rounded-xl border {% if _any_fire_on %}border-orange-200 bg-orange-50{% else %}border-gray-200 bg-white{% endif %} overflow-hidden divide-y {% if _any_fire_on %}divide-orange-100{% else %}divide-gray-100{% endif %}">
 
         {# Widget heading #}
-        <div class="px-4 pt-3.5 pb-3">
+        <div class="px-4 pt-3.5 pb-3 border-b-2 {% if _any_fire_on %}border-orange-100{% else %}border-gray-200{% endif %}">
           <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 {% if _any_fire_on %}text-orange-600{% else %}text-gray-400{% endif %}" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2c0 0-5 4.5-5 9a5 5 0 0010 0c0-4.5-5-9-5-9zm0 14a3 3 0 01-3-3c0-2.5 3-6 3-6s3 3.5 3 6a3 3 0 01-3 3z"/>
@@ -1325,10 +1265,10 @@
       {% if creek_current %}
       <section id="creek"
                x-data="creekGauge($el.dataset.creek)"
-               data-creek='{{ creek | tojson }}'
-               class="rounded-xl border border-gray-300 bg-white overflow-hidden">
+               data-creek="{{ creek | tojson | forceescape }}"
+               class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
 
-        <div class="px-4 pt-4 pb-2 border-b border-gray-100">
+        <div class="px-4 pt-4 pb-2 border-b-2 border-gray-200 text-blue-950">
           <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 12c1.333-2 2.667-2 4 0s2.667 2 4 0 2.667-2 4 0M4 18c1.333-2 2.667-2 4 0s2.667 2 4 0 2.667-2 4 0M4 6c1.333-2 2.667-2 4 0s2.667 2 4 0 2.667-2 4 0"/>
@@ -1414,14 +1354,16 @@
       {% if pets %}
       {% set cats = pets | selectattr("species", "equalto", "cat") | list %}
       {% set dogs = pets | selectattr("species", "equalto", "dog") | list %}
-      <section id="adoptable">
-        <h2 class="text-base font-bold text-gray-900 mb-3 flex items-center gap-1.5">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-          </svg>
-          Adopt a Pet
-        </h2>
-        <div x-data="{ tab: 0 }" class="rounded-xl border border-gray-300 bg-white overflow-hidden">
+      <section id="adoptable" class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
+        <div class="px-4 pt-3.5 pb-2.5 border-b-2 border-gray-200 bg-white">
+          <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>
+            Adopt a Pet
+          </h2>
+        </div>
+        <div x-data="{ tab: 0 }">
 
           {# mobile: horizontal tab bar (hidden on sm+) #}
           <div class="flex sm:hidden border-b border-gray-200 bg-gray-50">
@@ -1466,12 +1408,12 @@
 
               {# dogs panel #}
               {% if dogs %}
-              <div x-show="tab === 0" class="overflow-y-auto max-h-[380px]">
+              <div x-show="tab === 0" class="sm:max-h-[380px] sm:overflow-y-auto">
                 <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 p-3" data-modal-group>
                   {% for pet in dogs %}
                   {% set _modal = {'title': pet.title, 'image': pet.image_url, 'description': pet.description, 'fields': [], 'url': pet.url, 'urlLabel': 'View all dogs ↗', 'notes': '', 'prices': []} %}
                   <div class="cursor-pointer group"
-                       data-modal='{{ _modal | tojson }}'
+                       data-modal="{{ _modal | tojson | forceescape }}"
                        @click="showModal($el)">
                     {% if pet.image_url %}
                     <img src="{{ pet.image_url }}" alt="{{ pet.image_alt or pet.title }}"
@@ -1488,12 +1430,12 @@
 
               {# cats panel #}
               {% if cats %}
-              <div x-show="tab === 1" {% if dogs %}x-cloak{% endif %} class="overflow-y-auto max-h-[380px]">
+              <div x-show="tab === 1" {% if dogs %}x-cloak{% endif %} class="sm:max-h-[380px] sm:overflow-y-auto">
                 <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 p-3" data-modal-group>
                   {% for pet in cats %}
                   {% set _modal = {'title': pet.title, 'image': pet.image_url, 'description': pet.description, 'fields': [], 'url': pet.url, 'urlLabel': 'View all cats ↗', 'notes': '', 'prices': []} %}
                   <div class="cursor-pointer group"
-                       data-modal='{{ _modal | tojson }}'
+                       data-modal="{{ _modal | tojson | forceescape }}"
                        @click="showModal($el)">
                     {% if pet.image_url %}
                     <img src="{{ pet.image_url }}" alt="{{ pet.image_alt or pet.title }}"
@@ -1518,10 +1460,78 @@
       </section>
       {% endif %}
 
-    </div>{# /right col #}
-  </div>{# /grid #}
 
-</div>
+      {# jobs #}
+      {% set jobs = groups.job | default([]) %}
+      {% if jobs %}
+      <section id="jobs" class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
+        <div class="px-4 pt-3.5 pb-2.5 border-b-2 border-gray-200 bg-white">
+          <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            Jobs
+          </h2>
+        </div>
+        <div class="divide-y divide-gray-200 sm:max-h-96 sm:overflow-y-auto">
+          {% for item in jobs %}
+          <div class="relative group px-4 py-4 hover:bg-gray-50 transition-colors">
+            <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer"
+               class="font-semibold text-base text-gray-900 group-hover:text-blue-700 leading-snug line-clamp-2 block after:absolute after:inset-0">
+              {{ item.title }}
+            </a>
+            <div class="mt-1 text-sm text-gray-500 flex flex-wrap items-center gap-2">
+              <span class="font-medium">{{ item.source_label | default(item._source | replace("_", " ") | title) }}</span>
+              {% if item.department %}<span>{{ item.department }}</span>{% endif %}
+              {% if item.category %}<span>{{ item.category }}</span>{% endif %}
+              {% if item.published %}<span>{{ item.published | format_date }}</span>{% endif %}
+            </div>
+            {% if item.description %}
+            <p class="mt-1 text-xs text-gray-700 line-clamp-2">{{ item.description | striptags }}</p>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+      {# bids — sort ascending by close date (soonest deadline first) #}
+      {% set bids = groups.bid | default([]) | sort(attribute="closes_iso") %}
+      {% if bids %}
+      <section id="bids" class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
+        <div class="px-4 pt-3.5 pb-2.5 border-b-2 border-gray-200 bg-white">
+          <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+            </svg>
+            Open Bids &amp; RFPs
+          </h2>
+        </div>
+        <div class="divide-y divide-gray-200">
+          {% for bid in bids %}
+          <div class="relative group px-4 py-3 hover:bg-gray-50 transition-colors">
+            <a href="{{ bid.url }}" target="_blank" rel="noopener noreferrer"
+               class="font-semibold text-sm text-gray-900 group-hover:text-blue-700 leading-snug block after:absolute after:inset-0">
+              {{ bid.title }}
+            </a>
+            <div class="mt-0.5 text-xs text-gray-600 flex flex-wrap items-center gap-x-3">
+              <span class="font-medium">{{ bid.source_label }}</span>
+              {% if bid.bid_no %}<span>No. {{ bid.bid_no }}</span>{% endif %}
+              {% if bid.closes %}<span>Closes {{ bid.closes }}</span>{% endif %}
+            </div>
+            {% if bid.description %}
+            <p class="mt-1 text-xs text-gray-700 line-clamp-2">{{ bid.description }}</p>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+    </div>{# /right col #}
+
+  </div>{# /main grid #}
+</div>{# /main layout wrapper #}
 
 {# ── detail modal ─────────────────────────────────────────────────────────── #}
 <div x-data x-show="$store.modal.open"

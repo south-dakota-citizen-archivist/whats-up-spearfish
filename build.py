@@ -638,7 +638,7 @@ def fetch_creek_data() -> dict:
 
 
 def build() -> None:
-    build_date = date.today()
+    build_date = TODAY
 
     if OUTPUT_DIR.exists():
         shutil.rmtree(OUTPUT_DIR)
