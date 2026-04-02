@@ -87,15 +87,17 @@ function creekGauge() {
     current: {},
     series7d: [],
     daily30: [],
+    fetchedAt: null,
 
     async init() {
       try {
-        const resp = await fetch('/data/creek_gauge.json', { cache: 'no-store' });
+        const resp = await fetch('data/creek_gauge.json', { cache: 'no-store' });
         if (!resp.ok) throw new Error(resp.status);
         const data = await resp.json();
-        this.current  = data.current  || {};
-        this.series7d = data.series7d || [];
-        this.daily30  = data.daily30  || [];
+        this.current   = data.current   || {};
+        this.series7d  = data.series7d  || [];
+        this.daily30   = data.daily30   || [];
+        this.fetchedAt = data.fetched_at || null;
         this.ready = true;
       } catch (_) {
         this.error = true;

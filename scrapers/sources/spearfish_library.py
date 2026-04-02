@@ -1,7 +1,7 @@
 """
 scrapers/sources/spearfish_library.py
 
-Spearfish Public Library — recently added books via Koha coverflow API.
+Grace Balloch Memorial Library — recently added books via Koha coverflow API.
 
 Each report ID corresponds to a collection/category in the ILS.
 Books are fetched as HTML fragments and parsed for title, cover image,
@@ -54,13 +54,15 @@ def _parse_html(html: str, report_id: int) -> list[dict]:
         # Skip placeholder "no image" images
         if "NoImage" in image_url:
             image_url = ""
+        elif image_url and not image_url.startswith("http"):
+            image_url = BASE_URL + image_url
 
         records.append({
             "url": href,
             "title": title,
             "image_url": image_url,
             "record_type": "library_book",
-            "source_label": "Spearfish Public Library",
+            "source_label": "Grace Balloch Memorial Library",
         })
 
     return records
@@ -97,7 +99,7 @@ def _fetch_all_books() -> list[dict]:
 
 
 class SpearfishLibrary(BaseScraper):
-    name = "Spearfish Public Library"
+    name = "Grace Balloch Memorial Library"
     slug = "spearfish_library"
     dedup_key = "url"
     replace = True

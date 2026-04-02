@@ -32,6 +32,7 @@ _Updated: April 2, 2026_
 | Elementary 3-5 Lunch | `spearfish_elem_35_lunch` | `school_menu` | 40 |
 | Elementary Breakfast | `spearfish_elem_breakfast` | `school_menu` | 40 |
 | Elementary K-2 Lunch | `spearfish_elem_k2_lunch` | `school_menu` | 40 |
+| Grace Balloch Memorial Library | `spearfish_library` | `library_book` | 91 |
 | High School Lunch | `spearfish_hs_lunch` | `school_menu` | 40 |
 | Killian's | `killians` | `beer` | 17 |
 | Lawrence County | `lawrence_county` | `document` | 44 |
@@ -53,7 +54,6 @@ _Updated: April 2, 2026_
 | Spearfish Chamber | `spearfish_chamber` | `event` | 86 |
 | Spearfish HS Sports | `spearfish_sports` | `event` | 1,279 |
 | Spearfish MS Sports | `spearfish_ms_sports` | `event` | 187 |
-| Spearfish Public Library | `spearfish_library` | `library_book` | 91 |
 | Spearfish Sasquatch | `spearfish_sasquatch` | `event` | 32 |
 | Spearfish School Board | `spearfish_school_board_docs` | `document` | 115 |
 | Spearfish School District | `spearfish_school_news` | `press_release` | 3 |
