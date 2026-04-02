@@ -65,8 +65,13 @@ def _to_mountain(value: str | None) -> datetime | None:
 
 def load_data() -> dict[str, list[dict]]:
     data: dict[str, list[dict]] = {}
+    # Files handled separately (non-list JSON)
+    _skip = {"creek_gauge"}
+
     for json_file in sorted(DATA_DIR.glob("*.json")):
         slug = json_file.stem
+        if slug in _skip:
+            continue
         try:
             with json_file.open("r", encoding="utf-8") as fh:
                 records = json.load(fh)
@@ -577,64 +582,17 @@ def fetch_fire_data() -> dict:
     return {"rows": rows, "incidents": incidents, "source_url": BHNF_URL, "danger": danger}
 
 
-def fetch_creek_data() -> dict:
-    """
-    Fetch USGS stream gauge data for Spearfish Creek (site 06431500).
-    Returns a dict with 'current', 'series7d', and 'daily30' keys,
-    or an empty dict on failure.
-    """
-    import urllib.request
-
-    HEADERS = {"User-Agent": "SpearfishBulletin/1.0"}
-
-    def _get(url):
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            return json.loads(resp.read())
-
-    try:
-        iv = _get(
-            "https://waterservices.usgs.gov/nwis/iv/"
-            "?sites=06431500&parameterCd=00060,00065&period=P7D&format=json"
-        )
-        dv = _get(
-            "https://waterservices.usgs.gov/nwis/dv/"
-            "?sites=06431500&parameterCd=00060&period=P30D&format=json"
-        )
-    except Exception as exc:
-        print(f"[build] Warning: could not fetch creek data: {exc}")
+def load_creek_data() -> dict:
+    """Read creek gauge snapshot from data/creek_gauge.json (written by the creek-gauge scraper)."""
+    creek_file = DATA_DIR / "creek_gauge.json"
+    if not creek_file.exists():
+        print("[build] Warning: data/creek_gauge.json not found — creek widget will be empty")
         return {}
-
-    iv_ts = iv.get("value", {}).get("timeSeries", [])
-    cfs_series = next((t for t in iv_ts if t["variable"]["variableCode"][0]["value"] == "00060"), None)
-    ft_series  = next((t for t in iv_ts if t["variable"]["variableCode"][0]["value"] == "00065"), None)
-
-    cfs_vals = [v for v in (cfs_series or {}).get("values", [{}])[0].get("value", []) if float(v["value"]) > -999]
-    ft_vals  = [v for v in (ft_series  or {}).get("values", [{}])[0].get("value", []) if float(v["value"]) > -999]
-
-    current = {}
-    if cfs_vals:
-        last = cfs_vals[-1]
-        current = {
-            "cfs":  round(float(last["value"])),
-            "ft":   round(float(ft_vals[-1]["value"]), 2) if ft_vals else None,
-            "time": last["dateTime"],
-        }
-
-    # Downsample to ~hourly (15-min data → every 4th point)
-    series7d = [
-        {"t": v["dateTime"], "cfs": round(float(v["value"]))}
-        for v in cfs_vals[::4]
-    ]
-
-    dv_vals = (dv.get("value", {}).get("timeSeries") or [{}])[0].get("values", [{}])[0].get("value", [])
-    daily30 = [
-        {"date": v["dateTime"][:10], "cfs": round(float(v["value"]))}
-        for v in reversed(dv_vals)
-        if float(v["value"]) > -999
-    ]
-
-    return {"current": current, "series7d": series7d, "daily30": daily30}
+    try:
+        return json.loads(creek_file.read_text(encoding="utf-8"))
+    except Exception as exc:
+        print(f"[build] Warning: could not read creek_gauge.json: {exc}")
+        return {}
 
 
 def build() -> None:
@@ -665,7 +623,7 @@ def build() -> None:
     css_tmp.unlink()
     print(f"[build] Compiled Tailwind CSS ({len(inline_css) // 1024} KB, inlining)")
 
-    creek_data = fetch_creek_data()
+    creek_data = load_creek_data()
     print(f"[build] Creek gauge: {creek_data.get('current', {}).get('cfs', 'n/a')} cfs, "
           f"{len(creek_data.get('series7d', []))} IV points, "
           f"{len(creek_data.get('daily30', []))} daily values")
@@ -686,7 +644,6 @@ def build() -> None:
         "source_count": source_count,
         "total_records": total_records,
         "inline_css": inline_css,
-        "creek": creek_data,
         "fire": fire_data,
     }
 
@@ -700,6 +657,14 @@ def build() -> None:
     if STATIC_DIR.exists():
         shutil.copytree(STATIC_DIR, OUTPUT_DIR / "static")
         print("[build] Copied static/ → _site/static/")
+
+    # Creek gauge data — served as /data/creek_gauge.json for the JS widget
+    creek_src = DATA_DIR / "creek_gauge.json"
+    if creek_src.exists():
+        data_out = OUTPUT_DIR / "data"
+        data_out.mkdir(exist_ok=True)
+        shutil.copy(creek_src, data_out / "creek_gauge.json")
+        print("[build] Copied creek_gauge.json → _site/data/creek_gauge.json")
 
     (OUTPUT_DIR / ".nojekyll").touch()
     print("[build] Created _site/.nojekyll")

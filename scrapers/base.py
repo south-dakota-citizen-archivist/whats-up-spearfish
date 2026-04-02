@@ -23,6 +23,11 @@ class BaseScraper(ABC):
 
     dedup_key: str = "url"
 
+    #: Set to True on scrapers where the full current state is authoritative —
+    #: e.g. tap lists, flavor boards.  run() will replace stored records with
+    #: whatever scrape() returns rather than merging.
+    replace: bool = False
+
     def __init__(self, name: str = None, slug: str = None):
         # Allow name/slug to be set as class attributes OR passed at init time.
         if name:
@@ -84,18 +89,28 @@ class BaseScraper(ABC):
 
     def run(self) -> list[dict]:
         """
-        Orchestrate a full scrape cycle:
+        Orchestrate a full scrape cycle.
 
-        1. Load existing records.
-        2. Call ``scrape()`` to get fresh records.
-        3. Merge: existing records take precedence on dedup_key collisions so
-           that manually-curated fields are not clobbered; new records are
-           appended.
-        4. Save the merged list.
-        5. Return only the *new* records (those not previously seen).
+        When ``replace`` is True (tap lists, flavor boards, library holdings):
+          - Save fresh records directly; return all of them as "new".
+
+        Otherwise (default merge behaviour):
+          1. Load existing records.
+          2. Call ``scrape()`` to get fresh records.
+          3. Merge: existing records take precedence on dedup_key collisions.
+          4. Save the merged list.
+          5. Return only the *new* records (those not previously seen).
         """
-        existing = self.load_existing()
         fresh = self.scrape()
+
+        if self.replace:
+            self.save(fresh)
+            print(
+                f"[{self.name}] replaced → {len(fresh)} record(s) saved to {self.data_file.name}"
+            )
+            return fresh
+
+        existing = self.load_existing()
 
         # Build a lookup of existing records by dedup key.
         existing_keys: set = {

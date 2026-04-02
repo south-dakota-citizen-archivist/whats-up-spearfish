@@ -10,7 +10,6 @@ year-round beers are fetched from the /beers/ page and merged by slug.
 """
 
 import re
-from datetime import date
 
 from scrapers.base import BaseScraper
 from scrapers.utils import fetch_html, make_slug
@@ -45,10 +44,10 @@ class CrowPeakBrewing(BaseScraper):
     name = "Crow Peak Brewing"
     slug = "crow_peak_brewing"
     dedup_key = "slug"
+    replace = True
 
     def scrape(self) -> list[dict]:
         soup = fetch_html(SOURCE_URL)
-        today = date.today().isoformat()
         descriptions = _fetch_descriptions()
         records = []
 
@@ -80,35 +79,8 @@ class CrowPeakBrewing(BaseScraper):
                 "ibu": ibu_m.group(1) if ibu_m else "",
                 "image_url": image_url,
                 "description": descriptions.get(slug, ""),
-                "first_seen": today,
-                "last_seen": today,
                 "record_type": "beer",
                 "source_label": "Crow Peak Brewing",
             })
 
         return records
-
-    def run(self) -> list[dict]:
-        """Track first_seen / last_seen across runs."""
-        today = date.today().isoformat()
-        existing = self.load_existing()
-        fresh = self.scrape()
-
-        existing_by_key = {r[self.dedup_key]: r for r in existing if r.get(self.dedup_key)}
-        fresh_keys = {r[self.dedup_key] for r in fresh if r.get(self.dedup_key)}
-
-        new_records = []
-        for record in fresh:
-            key = record.get(self.dedup_key)
-            if key in existing_by_key:
-                existing_by_key[key]["last_seen"] = today
-            else:
-                new_records.append(record)
-
-        merged = list(existing_by_key.values()) + new_records
-        self.save(merged)
-        print(
-            f"[{self.name}] {len(new_records)} new / {len(existing_by_key)} existing "
-            f"({len(fresh_keys)} on tap today) → {len(merged)} total saved to {self.data_file.name}"
-        )
-        return new_records

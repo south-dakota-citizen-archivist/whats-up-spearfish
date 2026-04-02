@@ -1257,15 +1257,9 @@
         </div>
       </div>
 
-      {# ── creek gauge (data fetched at build time via USGS) ───────────────── #}
-      {% set creek = creek | default({}) %}
-      {% set creek_current = creek.current | default({}) %}
-      {% set creek_series = creek.series7d | default([]) %}
-      {% set creek_daily = creek.daily30 | default([]) %}
-      {% if creek_current %}
+      {# ── creek gauge (data loaded client-side from /data/creek_gauge.json) ── #}
       <section id="creek"
-               x-data="creekGauge($el.dataset.creek)"
-               data-creek="{{ creek | tojson | forceescape }}"
+               x-data="creekGauge()"
                class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
 
         <div class="px-4 pt-4 pb-2 border-b-2 border-gray-200 text-blue-950">
@@ -1278,30 +1272,29 @@
           <p class="text-xs text-gray-500 mt-0.5">USGS gauge at Spearfish, SD</p>
         </div>
 
+        {# loading / error states #}
+        <div x-show="!ready && !error" class="px-4 py-5 text-sm text-gray-400">Loading…</div>
+        <div x-show="error" class="px-4 py-4 text-sm text-gray-500">Could not load stream gauge data.</div>
+
         {# current readings #}
-        <div class="px-4 pt-4 pb-3 flex items-end gap-6">
+        <div x-show="ready" class="px-4 pt-4 pb-3 flex items-end gap-6">
           <div>
-            <p class="text-3xl font-bold text-blue-700 tabular-nums">{{ creek_current.cfs | default('—') }} <span class="text-lg font-medium text-gray-500">cfs</span></p>
+            <p class="text-3xl font-bold text-blue-700 tabular-nums"><span x-text="current.cfs ?? '—'">—</span> <span class="text-lg font-medium text-gray-500">cfs</span></p>
             <p class="text-xs text-gray-500 mt-0.5">streamflow</p>
           </div>
-          {% if creek_current.ft is not none %}
-          <div>
-            <p class="text-xl font-semibold text-gray-700 tabular-nums">{{ creek_current.ft }} <span class="text-sm font-medium text-gray-500">ft</span></p>
+          <div x-show="current.ft != null">
+            <p class="text-xl font-semibold text-gray-700 tabular-nums"><span x-text="current.ft">—</span> <span class="text-sm font-medium text-gray-500">ft</span></p>
             <p class="text-xs text-gray-500 mt-0.5">gage height</p>
           </div>
-          {% endif %}
           <div class="ml-auto text-right">
-            {% if creek_current.time %}
-            <p class="text-xs text-gray-400 leading-snug">as of {{ creek_current.time | format_datetime or (creek_current.time[:10] | format_date) }}</p>
-            {% endif %}
+            <p x-show="current.time" class="text-xs text-gray-400 leading-snug" x-text="'as of ' + fmtTime(current.time)"></p>
             <a href="https://waterdata.usgs.gov/monitoring-location/06431500/" target="_blank" rel="noopener noreferrer"
                class="text-xs text-blue-700 hover:underline">USGS 06431500 ↗</a>
           </div>
         </div>
 
-        {# 7-day sparkline — rendered by Alpine from embedded JSON #}
-        {% if creek_series | length > 1 %}
-        <div class="px-4 pb-3">
+        {# 7-day sparkline #}
+        <div x-show="ready && series7d.length > 1" class="px-4 pb-3">
           <p class="text-xs text-gray-500 mb-1.5 font-medium">7-day streamflow (cfs)</p>
           <svg viewBox="0 0 400 80" class="w-full h-20" preserveAspectRatio="none">
             <polygon :points="chartFillPoints" fill="rgb(219 234 254)" opacity="0.7"/>
@@ -1313,11 +1306,9 @@
             <span x-text="fmtDate(series7d[series7d.length-1]?.t)"></span>
           </div>
         </div>
-        {% endif %}
 
         {# 30-day daily table #}
-        {% if creek_daily %}
-        <div x-data="{ expanded: false }" class="border-t border-gray-100">
+        <div x-show="ready && daily30.length > 0" x-data="{ expanded: false }" class="border-t border-gray-100">
           <button @click="expanded = !expanded"
                   class="w-full flex items-center justify-between px-4 py-2.5 text-xs font-medium text-gray-700 hover:bg-gray-50 transition-colors">
             <span>30-day daily values</span>
@@ -1334,20 +1325,18 @@
                 </tr>
               </thead>
               <tbody class="divide-y divide-gray-100">
-                {% for row in creek_daily %}
-                <tr class="hover:bg-gray-50">
-                  <td class="px-4 py-1.5 text-gray-700">{{ row.date | format_date("%b %-d") }}</td>
-                  <td class="px-4 py-1.5 text-right tabular-nums font-medium text-blue-700">{{ row.cfs }}</td>
-                </tr>
-                {% endfor %}
+                <template x-for="row in daily30" :key="row.date">
+                  <tr class="hover:bg-gray-50">
+                    <td class="px-4 py-1.5 text-gray-700" x-text="fmtDate(row.date)"></td>
+                    <td class="px-4 py-1.5 text-right tabular-nums font-medium text-blue-700" x-text="row.cfs"></td>
+                  </tr>
+                </template>
               </tbody>
             </table>
           </div>
         </div>
-        {% endif %}
 
       </section>
-      {% endif %}
 
       {# ── adoptable pets ───────────────────────────────────────────────────── #}
       {% set pets = groups.adoptable | default([]) %}
@@ -2057,10 +2046,27 @@ function newsFilter(raw) {
   };
 }
 
-function creekGauge(raw) {
-  const data = typeof raw === 'string' ? JSON.parse(raw) : raw;
+function creekGauge() {
   return {
-    series7d: data.series7d || [],
+    ready: false,
+    error: false,
+    current: {},
+    series7d: [],
+    daily30: [],
+
+    async init() {
+      try {
+        const resp = await fetch('/data/creek_gauge.json', { cache: 'no-store' });
+        if (!resp.ok) throw new Error(resp.status);
+        const data = await resp.json();
+        this.current  = data.current  || {};
+        this.series7d = data.series7d || [];
+        this.daily30  = data.daily30  || [];
+        this.ready = true;
+      } catch (_) {
+        this.error = true;
+      }
+    },
 
     get chartMin() { return this.series7d.length ? Math.min(...this.series7d.map(p => p.cfs)) : 0; },
     get chartMax() { return this.series7d.length ? Math.max(...this.series7d.map(p => p.cfs)) : 1; },
@@ -2084,8 +2090,23 @@ function creekGauge(raw) {
 
     fmtDate(iso) {
       if (!iso) return '';
-      try { return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }); }
-      catch (_) { return ''; }
+      try {
+        // Date-only strings (YYYY-MM-DD): construct as local to avoid UTC midnight → prev day
+        if (/^\d{4}-\d{2}-\d{2}$/.test(iso)) {
+          const [y, m, d] = iso.split('-').map(Number);
+          return new Date(y, m - 1, d).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        }
+        return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      } catch (_) { return ''; }
+    },
+
+    fmtTime(iso) {
+      if (!iso) return '';
+      try {
+        return new Date(iso).toLocaleTimeString('en-US', {
+          hour: 'numeric', minute: '2-digit', timeZone: 'America/Denver', hour12: true,
+        }).replace(':00 ', ' ');
+      } catch (_) { return ''; }
     },
   };
 }

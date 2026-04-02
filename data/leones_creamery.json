@@ -5,8 +5,6 @@
     "title": "Vanilla Bean",
     "slug": "vanilla-bean",
     "description": "A tried and true classic! Made with whole Madagascar vanilla beans, it's the perfect scoop.",
-    "first_seen": "2026-03-29",
-    "last_seen": "2026-04-01",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
@@ -16,8 +14,6 @@
     "title": "Chocolate Peanut Butter Cup",
     "slug": "chocolate-peanut-butter-cup",
     "description": "Creamy chocolate ice cream studded with chopped peanut butter cups.",
-    "first_seen": "2026-03-29",
-    "last_seen": "2026-04-01",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
@@ -27,8 +23,6 @@
     "title": "Mint Oreo",
     "slug": "mint-oreo",
     "description": "Our cool peppermint ice cream is riddled with Oreo cookie pieces (no pesky green dye included).",
-    "first_seen": "2026-03-29",
-    "last_seen": "2026-04-01",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
@@ -38,8 +32,6 @@
     "title": "Lime w/ Tajin Watermelon Seeds",
     "slug": "lime-w-tajin-watermelon-seeds",
     "description": "Our 2026 Seed Swap flavor!!! A creamy lime ice cream with tajin coated watermelon seeds. (Tajin is a Mexican spice mix consisting of lime, mild chili peppers and salt). Fruity, tangy, sweet perfection.",
-    "first_seen": "2026-03-29",
-    "last_seen": "2026-04-01",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
@@ -49,8 +41,6 @@
     "title": "Mud Pie",
     "slug": "mud-pie",
     "description": "Milk Chocolate ice cream with a ribbon of house-made marshmallow meringue, and plenty of our Oreo cookie crust bits...deeelicious!",
-    "first_seen": "2026-03-29",
-    "last_seen": "2026-04-01",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
@@ -60,8 +50,6 @@
     "title": "Salted Caramel M&M",
     "slug": "salted-caramel-m-m",
     "description": "Made with our signature salted caramel sauce and mini M&Ms-- absolutely addicting.",
-    "first_seen": "2026-03-29",
-    "last_seen": "2026-04-01",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
@@ -71,19 +59,6 @@
     "title": "Red Raspberry",
     "slug": "red-raspberry",
     "description": "Bright, tart, and fruity! Made from whole raspberries and a touch of lemon.",
-    "first_seen": "2026-03-29",
-    "last_seen": "2026-04-01",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/111743BD-42C3-4D5E-AA46-CAB26E40ACB2-196-1528419847.jpg",
-    "title": "Vegan Toasted Coconut",
-    "slug": "vegan-toasted-coconut",
-    "description": "Creamy, vegan coconut milk ice cream riddled with toasted coconut.",
-    "first_seen": "2026-03-29",
-    "last_seen": "2026-03-29",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
@@ -93,8 +68,6 @@
     "title": "Vegan Almond w/ Orange Marmalade",
     "slug": "vegan-almond-w-orange-marmalade",
     "description": "Vegan, coconut milk ice cream with toasted almonds and a swirl of housemade orange marmalade.",
-    "first_seen": "2026-03-31",
-    "last_seen": "2026-04-01",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   }

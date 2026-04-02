@@ -100,6 +100,7 @@ class SpearfishLibrary(BaseScraper):
     name = "Spearfish Public Library"
     slug = "spearfish_library"
     dedup_key = "url"
+    replace = True
 
     def scrape(self) -> list[dict]:
         return _fetch_all_books()

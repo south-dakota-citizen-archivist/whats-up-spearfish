@@ -15,7 +15,6 @@ User-Agent returns structured HTML. Each beer is an `li.menu-item` with:
 """
 
 import re
-from datetime import date
 
 from scrapers.base import BaseScraper
 from scrapers.utils import fetch_html, make_slug
@@ -28,10 +27,10 @@ class Killians(BaseScraper):
     name = "Killian's"
     slug = "killians"
     dedup_key = "slug"
+    replace = True
 
     def scrape(self) -> list[dict]:
         soup = fetch_html(SOURCE_URL)
-        today = date.today().isoformat()
         records = []
 
         for li in soup.select("li.menu-item"):
@@ -75,34 +74,8 @@ class Killians(BaseScraper):
                 "brewery": brewery,
                 "rating": rating,
                 "image_url": image_url,
-                "first_seen": today,
-                "last_seen": today,
                 "record_type": "beer",
                 "source_label": "Killian's",
             })
 
         return records
-
-    def run(self) -> list[dict]:
-        today = date.today().isoformat()
-        existing = self.load_existing()
-        fresh = self.scrape()
-
-        existing_by_key = {r[self.dedup_key]: r for r in existing if r.get(self.dedup_key)}
-        fresh_keys = {r[self.dedup_key] for r in fresh if r.get(self.dedup_key)}
-
-        new_records = []
-        for record in fresh:
-            key = record.get(self.dedup_key)
-            if key in existing_by_key:
-                existing_by_key[key]["last_seen"] = today
-            else:
-                new_records.append(record)
-
-        merged = list(existing_by_key.values()) + new_records
-        self.save(merged)
-        print(
-            f"[{self.name}] {len(new_records)} new / {len(existing_by_key)} existing "
-            f"({len(fresh_keys)} on tap today) → {len(merged)} total saved to {self.data_file.name}"
-        )
-        return new_records

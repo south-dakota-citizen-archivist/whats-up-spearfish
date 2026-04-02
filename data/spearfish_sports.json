@@ -20414,5 +20414,53 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h2026020208314722837bcc8cb31bd4a",
+    "url": "https://gobound.com/direct/comps/h2026020208314722837bcc8cb31bd4a/show",
+    "title": "Softball: Rapid City Central vs Spearfish (Junior Varsity)",
+    "slug": "softball-rapid-city-central-vs-spearfish-junior-varsity",
+    "sport": "Softball",
+    "level": "Junior Varsity",
+    "sex": "female",
+    "description": "Junior Varsity Softball - Rapid City Central vs Spearfish",
+    "start_dt": "2027-04-01T22:30:00",
+    "end_dt": "2027-04-02T00:00:00",
+    "location": "Keating Resources SportsPlex  Softball Fields",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h2025061107384800138bbfbb3f35e4b",
+    "url": "https://gobound.com/direct/comps/h2025061107384800138bbfbb3f35e4b/show",
+    "title": "Softball: Spearfish vs Rapid City Central (Junior Varsity)",
+    "slug": "softball-spearfish-vs-rapid-city-central-junior-varsity",
+    "sport": "Softball",
+    "level": "Junior Varsity",
+    "sex": "female",
+    "description": "Junior Varsity Softball - Spearfish vs Rapid City Central",
+    "start_dt": "2027-04-01T23:00:00",
+    "end_dt": "2027-04-02T01:00:00",
+    "location": "Parkview Softball Complex",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h202602020831363825dcb59bbca9649",
+    "url": "https://gobound.com/direct/comps/h202602020831363825dcb59bbca9649/show",
+    "title": "Softball: Rapid City Central vs Spearfish (Varsity)",
+    "slug": "softball-rapid-city-central-vs-spearfish-varsity",
+    "sport": "Softball",
+    "level": "Varsity",
+    "sex": "female",
+    "description": "Varsity Softball - Rapid City Central vs Spearfish",
+    "start_dt": "2027-04-02T00:00:00",
+    "end_dt": "2027-04-02T01:30:00",
+    "location": "Keating Resources SportsPlex  Softball Fields",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]

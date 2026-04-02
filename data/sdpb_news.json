@@ -53,5 +53,16 @@
     "image_url": "https://npr.brightspotcdn.com/c1/8a/4a1ee3104d89a930ca42658449df/2026-political-junkies-logo-sdpb-1920x1080.png",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-04-01/lake-mitchell-project-hinges-on-state-board-approval-before-fall-start",
+    "title": "Lake Mitchell project hinges on state board approval before fall start",
+    "slug": "sdpb-lake-mitchell-project-hinges-on-state-board-approval-before-fall-start",
+    "published": "2026-04-01",
+    "byline": "By Jackson Dircks",
+    "description": "After <a href=\"https://www.sdpb.org/environment/2025-09-17/lake-mitchell-restoration-pushed-back-to-fall-2026\" target=\"_blank\" link-data=\"{\"cms.site.owner\":{\"_ref\":\"00000178-5ae7-d19d-a1fa-ffef051d0000\",\"_type\":\"ae3387cc-b875-31b7-b82d-63fd8d758c20\"},\"cms.content.publishDate\":1775073918660,\"cms.content.publishUser\":{\"_ref\":\"0000018f-9cae-de7b-a1df-ffef3dcd0000\",\"_type\":\"6aa69ae1-35be-30dc-87e9-410da9e1cdcc\"},\"cms.content.updateDate\":1775073918660,\"cms.content.updateUser\":{\"_ref\":\"0000018f-9cae-de7b-a1df-ffef3dcd0000\",\"_type\":\"6aa69ae1-35be-30dc-87e9-410da9e1cdcc\"},\"cms.directory.paths\":[],\"anchorable.showAnchor\":false,\"link\":{\"cms.directory.paths\":[],\"attributes\":[],\"linkText\":\"<b>a late-2025 hiccup</b>\",\"target\":\"NEW\",\"attachSourceUrl\":false,\"url\":\"https://www.sdpb.org/environment/2025-09-17/lake-mitchell-restoration-pushed-back-to-fall-2026\",\"_id\":\"0000019d-4aa6-d63c-a3bd-ffef6ca50000\",\"_type\":\"ff658216-e70f-39d0-b660-bdfe57a5599a\"},\"_id\":\"0000019d-4aa6-d63c-a3bd-ffef6ca50001\",\"_type\":\"809caec9-30e2-3666-8b71-b32ddbffc288\"}\"><b>a late-2025 hiccup</b></a>, the <a href=\"https://www.cityofmitchellsd.gov/DocumentCenter/View/2721/Lake-Mitchell-Master-Plan\" target=\"_blank\" link-data=\"{\"cms.site.owner\":{\"_ref\":\"00000178-5ae7-d19d-a1fa-ffef051d0000\",\"_type\":\"ae3387cc-b875-31b7-b82d-63fd8d758c20\"},\"cms.content.publishDate\":1775073966404,\"cms.content.publishUser\":{\"_ref\":\"0000018f-9cae-de7b-a1df-ffef3dcd0000\",\"_type\":\"6aa69ae1-35be-30dc-87e9-410da9e1cdcc\"},\"cms.content.updateDate\":1775073966404,\"cms.content.updateUser\":{\"_ref\":\"0000018f-9cae-de7b-a1df-ffef3dcd0000\",\"_type\":\"6aa69ae1-35be-30dc-87e9-410da9e1cdcc\"},\"cms.directory.paths\":[],\"anchorable.showAnchor\":false,\"link\":{\"cms.directory.paths\":[],\"attributes\":[],\"linkText\":\"<b>Lake Mitchell restoration project</b>\",\"target\":\"NEW\",\"attachSourceUrl\":false,\"url\":\"https://www.cityofmitchellsd.gov/DocumentCenter/View/2721/Lake-Mitchell-Master-Plan\",\"_id\":\"0000019d-4aa6-d18f-abbf-ebefe9800000\",\"_type\":\"ff658216-e70f-39d0-b660-bdfe57a5599a\"},\"_id\":\"0000019d-4aa6-d18f-abbf-ebefe9800001\",\"_type\":\"809caec9-30e2-3666-8b71-b32ddbffc288\"}\"><b>Lake Mitchell restoration project</b></a> is on course to begin this year. Though, it’s contingent on a state board’s approval.",
+    "image_url": "https://npr.brightspotcdn.com/ff/48/f88e6be44e32b38da7f09d5d5ef9/lake-mitchell-city-of-mitchll.png",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

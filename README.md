@@ -16,43 +16,44 @@ _Updated: April 1, 2026_
 |---|---|---|---:|
 | Bhca Calendar | `bhca_calendar` | `event` | 70 |
 | BHSU | `bhsu_jobs` | `job` | 9 |
-| BHSU Athletics | `bhsu_athletics` | `event` | 56 |
+| BHSU Athletics | `bhsu_athletics` | `event` | 86 |
 | BHSU Campus Calendar | `bhsu_calendar` | `event` | 44 |
 | Black Hills National Forest | `bhnf` | `event`, `press_release` | 5 |
 | Black Hills Pioneer | `bhpioneer_jobs` | `job` | 11 |
 | Black Hills Pioneer | `black_hills_pioneer` | `news` | 100 |
-| City of Spearfish | `spearfish_city` | `document` | 2,088 |
+| City of Spearfish | `spearfish_city` | `document` | 2,089 |
 | City of Spearfish Alert Center | `spearfish_alert_center` | `alert` | 2 |
 | City of Spearfish Blog | `spearfish_blog` | — | 0 |
 | City of Spearfish Calendar | `spearfish_calendar` | `event` | 28 |
 | City of Spearfish Jobs | `spearfish_jobs` | — | 0 |
 | City of Spearfish News Flash | `spearfish_news` | `press_release` | 4 |
+| Creek Gauge | `creek_gauge` | — | 3 |
 | Crow Peak Brewing | `crow_peak_brewing` | `beer` | 16 |
 | Elementary 3-5 Lunch | `spearfish_elem_35_lunch` | `school_menu` | 40 |
 | Elementary Breakfast | `spearfish_elem_breakfast` | `school_menu` | 40 |
 | Elementary K-2 Lunch | `spearfish_elem_k2_lunch` | `school_menu` | 40 |
 | High School Lunch | `spearfish_hs_lunch` | `school_menu` | 40 |
-| Killian's | `killians` | `beer` | 21 |
+| Killian's | `killians` | `beer` | 17 |
 | Lawrence County | `lawrence_county` | `document` | 44 |
 | Lawrence County Jobs | `lawrence_county_jobs` | — | 0 |
 | Lawrence County News Flash | `lawrence_county_news` | — | 0 |
-| Leone's Creamery | `leones_creamery` | `flavor` | 9 |
+| Leone's Creamery | `leones_creamery` | `flavor` | 8 |
 | Matthews Opera House | `matthews_opera_house` | `event` | 27 |
 | Middle School Lunch | `spearfish_ms_lunch` | `school_menu` | 40 |
 | MS/HS Breakfast | `spearfish_mshs_breakfast` | `school_menu` | 40 |
 | Public Bids | `public_bids` | `bid` | 3 |
 | Public Meetings (YouTube) | `public_meetings_youtube` | `youtube_video` | 30 |
-| Rapid City Journal | `rapid_city_journal` | `news` | 105 |
+| Rapid City Journal | `rapid_city_journal` | `news` | 110 |
 | Redwater Kitchen | `redwater_kitchen` | `beer` | 12 |
-| Regional News | `news_feeds` | `news` | 116 |
+| Regional News | `news_feeds` | `news` | 117 |
 | Sawyer Brewing Co. | `sawyer_brewing` | `beer` | 17 |
-| SDPB | `sdpb_news` | `news` | 5 |
+| SDPB | `sdpb_news` | `news` | 6 |
 | Spearfish Agenda Center | `spearfish_agenda_center` | — | 0 |
 | Spearfish Brewing Company | `spearfish_brewing` | `beer` | 14 |
 | Spearfish Chamber | `spearfish_chamber` | `event` | 86 |
-| Spearfish HS Sports | `spearfish_sports` | `event` | 1,276 |
+| Spearfish HS Sports | `spearfish_sports` | `event` | 1,279 |
 | Spearfish MS Sports | `spearfish_ms_sports` | `event` | 187 |
-| Spearfish Public Library | `spearfish_library` | `library_book` | 168 |
+| Spearfish Public Library | `spearfish_library` | `library_book` | 91 |
 | Spearfish Sasquatch | `spearfish_sasquatch` | `event` | 32 |
 | Spearfish School Board | `spearfish_school_board_docs` | `document` | 115 |
 | Spearfish School District | `spearfish_school_news` | `press_release` | 3 |
