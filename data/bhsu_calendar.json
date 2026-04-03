@@ -1092,5 +1092,26 @@
     "category": "Campus Calendar/Events",
     "record_type": "event",
     "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "93490936-8db6-43b5-93b9-890f32b4a96d",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/93490936-8db6-43b5-93b9-890f32b4a96d",
+    "title": "Earth Day Events",
+    "slug": "earth-day-events",
+    "description": "Celebrate Earth Day with a day full of exciting events focused on sustainability, community, and environmental awareness! Guest Presenter Kick off the day with our guest presenter, Spearfish Trails Coalition, in Meier Hall. Enjoy a social hour from 9:30–10:00 AM, followed by the presenter from 10:00–11:00 AM. Learn, get inspired, and engage in meaningful conversations about protecting our planet. Earth Day Festival Immediately after our guest presenter, we will kick off the Earth Day Festival on April 18th from 11:00-2:00 PM on the Campus Green. This year's theme is “Think Global, Act Local,” and there will be educational booths, food trucks, a free plant giveaway, solar panel tours, and much more! Find out more about the Festival! We hope to see you all there! If you have any questions, please contact Taryn.Davis@yellowjackets.bhsu.edu",
+    "start_dt": "2026-04-18T15:30",
+    "end_dt": "2026-04-18T20:00",
+    "location": "BHSU - Spearfish",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "Taryn Davis",
+    "tags": [
+      "BHSU Event"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
   }
 ]

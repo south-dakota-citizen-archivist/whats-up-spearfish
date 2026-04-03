@@ -19,6 +19,15 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/25E551F6-5BFB-4ED5-8849-46383B70B35F-288-1555779660.jpg",
+    "title": "Jellybean",
+    "slug": "jellybean",
+    "description": "We churned up a creamy base with hints of vanilla and lemon, then riddled it with the holy grail of jelly beans (Starburst, obviously).",
+    "record_type": "flavor",
+    "source_label": "Leone's Creamery"
+  },
+  {
+    "url": "https://leonescreamery.com/flavors",
     "image_url": "https://leonescreamery.com/images/uploads/cropped/MintOreo-146-1524171221.jpg",
     "title": "Mint Oreo",
     "slug": "mint-oreo",
@@ -41,15 +50,6 @@
     "title": "Mud Pie",
     "slug": "mud-pie",
     "description": "Milk Chocolate ice cream with a ribbon of house-made marshmallow meringue, and plenty of our Oreo cookie crust bits...deeelicious!",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/89FBD2E8-95B5-4468-9F79-5C7FFEF7DF0C-213-1530654935.jpg",
-    "title": "Salted Caramel M&M",
-    "slug": "salted-caramel-m-m",
-    "description": "Made with our signature salted caramel sauce and mini M&Ms-- absolutely addicting.",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },

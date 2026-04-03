@@ -101,50 +101,27 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="flex-1 min-w-0">
       <div class="grid lg:grid-cols-5 gap-8">
 
-    {# ── LEFT COLUMN (events) ── 2/3 width ────────────────────────────── #}
+    {# ── LEFT COLUMN ── 2/3 width ── #}
     <div class="lg:col-span-3 space-y-8 min-w-0">
-
-      {# upcoming events #}
-      {# Slim event records for embedding — only fields needed by the UI #}
       {% include "components/events.html" %}
-
-      {# ── news (RSS feeds) ────────────────────────────────────────────────── #}
       {% include "components/news.html" %}
-
       {% include "components/fire.html" %}
-
-      {# ── press releases ───────────────────────────────────────────────────── #}
       {% include "components/press.html" %}
-
-      {# recent public documents #}
       {% include "components/documents.html" %}
-
       {% include "components/library.html" %}
-
     </div>{# /left col #}
 
-    {# ── RIGHT COLUMN ────────────────────────────────────────────────────── #}
+    {# ── RIGHT COLUMN ── #}
     <div class="lg:col-span-2 space-y-8 min-w-0">
-
-      {% include "components/drinks.html" %}
-
-      {% include "components/school_menus.html" %}
-
-      {% include "components/dump.html" %}
-
       {% include "components/creek.html" %}
-
+      {% include "components/dump.html" %}
+      {% include "components/drinks.html" %}
+      {% include "components/school_menus.html" %}
       {% include "components/adoptable.html" %}
-
       {% include "components/jobs.html" %}
-
-      {# ── public meetings (YouTube) ────────────────────────────────────────── #}
       {% include "components/meetings.html" %}
-
       {% include "components/bids.html" %}
-
     </div>{# /right col #}
-
   </div>{# /main grid #}
 </div>{# /main layout wrapper #}
 

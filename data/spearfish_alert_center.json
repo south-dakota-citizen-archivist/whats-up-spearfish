@@ -18,5 +18,15 @@
     "start_dt": "Tue, 10 Mar 2026 16:52:39 -0600",
     "record_type": "alert",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/AlertCenter.aspx?AID=59",
+    "title": "City of Spearfish - Winter Weather - Friday April 3rd",
+    "slug": "city-of-spearfish-winter-weather-friday-april-3rd",
+    "description": "Winter weather is expected on Friday. Plow operators will be dispatched as needed in the morning & throughout the day.  Crews will focus on Priority 1 & 2 routes and then move to Priority 3 routes if necessary.",
+    "published": "Thu, 02 Apr 2026 14:00:55 -0700",
+    "start_dt": "Thu, 02 Apr 2026 14:00:55 -0700",
+    "record_type": "alert",
+    "source_label": "City of Spearfish"
   }
 ]
