@@ -68,7 +68,7 @@ def load_data() -> dict[str, list[dict]]:
     # Files handled separately (non-list JSON)
     _skip = {
         "creek_gauge", "native_plants_spotlight", "plants_native_black_hills",
-        "inaturalist_plant_cache", "ebird", "library_circulation",
+        "inaturalist_plant_cache", "ebird", "library_circulation", "bhnf_projects",
     }
 
     for json_file in sorted(DATA_DIR.glob("*.json")):
@@ -646,6 +646,32 @@ def load_ebird() -> list[dict]:
         return []
 
 
+def load_bhnf_projects() -> list[dict]:
+    """Load BHNF public projects, returning only in-progress ones with a past flag."""
+    path = DATA_DIR / "bhnf_projects.json"
+    if not path.exists():
+        return []
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        print(f"[build] Warning: could not load bhnf_projects.json: {exc}")
+        return []
+
+    today_str = TODAY.strftime("%Y-%m")  # YYYY-MM for month comparison
+
+    projects = []
+    for p in raw.get("projects") or []:
+        if p.get("status") != "In Progress":
+            continue
+        # Mark whether the comment period date is in the past
+        cs = p.get("comment_period_sort", "9999-99")
+        p["comment_period_past"] = bool(cs and cs != "9999-99" and cs[:7] < today_str)
+        projects.append(p)
+
+    print(f"[build] BHNF projects: {len(projects)} in-progress")
+    return projects
+
+
 def load_circulation() -> dict:
     """Load library circulation data and pre-compute SVG chart paths."""
     circ_file = DATA_DIR / "library_circulation.json"
@@ -780,6 +806,7 @@ def build() -> None:
 
     plant_spotlight = load_plant_spotlight()
     ebird_observations = load_ebird()
+    bhnf_projects = load_bhnf_projects()
     library_circulation = load_circulation()
     creek_data = load_creek_data()
     print(f"[build] Creek gauge: {creek_data.get('current', {}).get('cfs', 'n/a')} cfs, "
@@ -805,6 +832,7 @@ def build() -> None:
         "fire": fire_data,
         "plant_spotlight": plant_spotlight,
         "ebird_observations": ebird_observations,
+        "bhnf_projects": bhnf_projects,
         "library_circulation": library_circulation,
     }
 

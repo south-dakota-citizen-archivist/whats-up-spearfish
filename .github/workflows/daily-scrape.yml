@@ -63,6 +63,13 @@ jobs:
           fetch_ebird()
           "
 
+      - name: Fetch BHNF public projects
+        run: |
+          uv run python -c "
+          from scrapers.sources.bhnf_projects import fetch_bhnf_projects
+          fetch_bhnf_projects()
+          "
+
       - name: Fetch library circulation data
         run: |
           uv run python -c "

@@ -19,7 +19,8 @@ _Updated: April 4, 2026_
 | BHSU Athletics | `bhsu_athletics` | `event` | 86 |
 | BHSU Campus Calendar | `bhsu_calendar` | `event` | 48 |
 | Black Hills National Forest | `bhnf` | `event`, `press_release` | 5 |
-| Black Hills Pioneer | `bhpioneer_jobs` | `job` | 11 |
+| Black Hills National Forest (public projects) | `bhnf_projects` | — | 48 |
+| Black Hills Pioneer | `bhpioneer_jobs` | `job` | 12 |
 | Black Hills Pioneer | `black_hills_pioneer` | `news` | 132 |
 | Black Hills Wildflowers | `black_hills_wildflowers` | — | 5 |
 | City of Spearfish | `spearfish_city` | `document` | 2,093 |
@@ -33,7 +34,7 @@ _Updated: April 4, 2026_
 | Elementary 3-5 Lunch | `spearfish_elem_35_lunch` | `school_menu` | 40 |
 | Elementary Breakfast | `spearfish_elem_breakfast` | `school_menu` | 40 |
 | Elementary K-2 Lunch | `spearfish_elem_k2_lunch` | `school_menu` | 40 |
-| Grace Balloch Memorial Library | `spearfish_library` | `library_book` | 90 |
+| Grace Balloch Memorial Library | `spearfish_library` | `library_book` | 88 |
 | Grace Balloch Memorial Library (circulation) | `library_circulation` | — | 124 |
 | High School Lunch | `spearfish_hs_lunch` | `school_menu` | 40 |
 | Inaturalist Plant Cache | `inaturalist_plant_cache` | — | 317 |
@@ -47,7 +48,7 @@ _Updated: April 4, 2026_
 | MS/HS Breakfast | `spearfish_mshs_breakfast` | `school_menu` | 40 |
 | Public Bids | `public_bids` | `bid` | 2 |
 | Public Meetings (YouTube) | `public_meetings_youtube` | `youtube_video` | 30 |
-| Rapid City Journal | `rapid_city_journal` | `news` | 140 |
+| Rapid City Journal | `rapid_city_journal` | `news` | 141 |
 | Redwater Kitchen | `redwater_kitchen` | `beer` | 12 |
 | Regional News | `news_feeds` | `news` | 128 |
 | Sawyer Brewing Co. | `sawyer_brewing` | `beer` | 17 |

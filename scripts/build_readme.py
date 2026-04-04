@@ -65,6 +65,7 @@ def _data_stats() -> dict[str, dict]:
     _NESTED: dict[str, str] = {
         "ebird": "observations",
         "library_circulation": "rows",
+        "bhnf_projects": "projects",
     }
     stats: dict[str, dict] = {}
     for path in DATA_DIR.glob("*.json"):
@@ -102,6 +103,7 @@ def _build_readme(slug_to_name: dict[str, str], stats: dict[str, dict]) -> str:
         "creek_gauge": "USGS Stream Gauge — Spearfish Creek (06431500)",
         "ebird": "eBird (recent sightings)",
         "library_circulation": "Grace Balloch Memorial Library (circulation)",
+        "bhnf_projects": "Black Hills National Forest (public projects)",
     }
 
     # Build rows: include every slug that has a name OR has data
