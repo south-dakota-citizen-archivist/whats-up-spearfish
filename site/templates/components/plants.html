@@ -1,0 +1,227 @@
+{# ── native plant spotlight ────────────────────────────────────────────── #}
+{% set p = plant_spotlight %}
+{% if p and p.common_name %}
+<section id="plants" class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20"
+         x-data='{ expanded: false, activeImg: 0, images: {{ p.images | tojson }} }'
+         x-init="images.forEach(function(img){ var i=new Image(); i.src=img.url; if(img.large_url) { var j=new Image(); j.src=img.large_url; } })">
+
+  {# header #}
+  <div class="px-4 pt-3.5 pb-2.5 border-b-2 border-gray-200">
+    <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3C9 7 5 9 5 13a7 7 0 0014 0c0-4-4-6-7-10z"/>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 13v8"/>
+      </svg>
+      Native Plant Spotlight
+    </h2>
+  </div>
+
+  {# photo — full width, clicks to large; thumbnails swap this image #}
+  {% if p.images %}
+  <a :href="images[activeImg].large_url || images[activeImg].url"
+     href="{{ p.images[0].large_url or p.images[0].url }}"
+     target="_blank" rel="noopener noreferrer"
+     class="block relative group">
+    <img :src="images[activeImg].url"
+         src="{{ p.images[0].url }}"
+         alt="{{ p.common_name }}"
+         class="w-full h-52 object-cover group-hover:opacity-95 transition-opacity">
+    <span x-show="images[activeImg].credit"
+          x-text="images[activeImg].credit"
+          class="absolute bottom-0 right-0 bg-black/40 text-white text-[10px] px-2 py-0.5 rounded-tl"
+          style="display:none"></span>
+  </a>
+  {% if p.images | length > 1 %}
+  <div class="flex gap-1.5 overflow-x-auto px-3 pt-2 pb-1">
+    {% for img in p.images %}
+    <button type="button"
+            @click="activeImg = {{ loop.index0 }}"
+            :class="activeImg === {{ loop.index0 }} ? 'ring-2 ring-green-500 ring-offset-1' : 'opacity-60 hover:opacity-90'"
+            class="shrink-0 rounded-md transition-opacity focus:outline-none">
+      <img src="{{ img.thumb_url or img.url }}" alt="{{ p.common_name }}"
+           class="w-12 h-12 rounded-md object-cover border border-gray-200">
+    </button>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% endif %}
+
+  {# identity + quick facts #}
+  <div class="px-4 pt-3 pb-4">
+    <h3 class="text-xl font-bold text-gray-900 leading-tight capitalize">{{ p.common_name }}</h3>
+    <p class="text-sm italic text-gray-500 leading-snug mt-0.5">{{ p.scientific_name }}</p>
+
+    {# pill badges #}
+      <div class="mt-2 flex flex-wrap gap-1.5">
+        {% if p.flower_color %}
+        <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium
+          {% if p.flower_color == 'Yellow' %}bg-yellow-50 text-yellow-800 border border-yellow-200
+          {% elif p.flower_color == 'White' %}bg-gray-50 text-gray-700 border border-gray-200
+          {% elif p.flower_color in ('Purple', 'Violet', 'Blue') %}bg-purple-50 text-purple-800 border border-purple-200
+          {% elif p.flower_color in ('Red', 'Pink') %}bg-red-50 text-red-800 border border-red-200
+          {% elif p.flower_color == 'Orange' %}bg-orange-50 text-orange-800 border border-orange-200
+          {% else %}bg-green-50 text-green-800 border border-green-200{% endif %}">
+          <span class="w-2 h-2 rounded-full inline-block
+            {% if p.flower_color == 'Yellow' %}bg-yellow-400
+            {% elif p.flower_color == 'White' %}bg-gray-300
+            {% elif p.flower_color in ('Purple', 'Violet', 'Blue') %}bg-purple-500
+            {% elif p.flower_color in ('Red', 'Pink') %}bg-red-500
+            {% elif p.flower_color == 'Orange' %}bg-orange-400
+            {% else %}bg-green-500{% endif %}"></span>
+          {{ p.flower_color }} flowers
+        </span>
+        {% endif %}
+        {% if p.bloom_period %}
+        <span class="px-2 py-0.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-800 border border-emerald-200">
+          {{ p.bloom_period }}
+        </span>
+        {% endif %}
+        {% if p.durations %}
+        <span class="px-2 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">
+          {{ p.durations[0] }}
+        </span>
+        {% endif %}
+        {% if p.growth_habits %}
+        <span class="px-2 py-0.5 rounded-full text-xs font-medium bg-stone-50 text-stone-700 border border-stone-200">
+          {{ p.growth_habits[0] }}
+        </span>
+        {% endif %}
+        {% if p.drought_tolerance in ('High', 'Medium') %}
+        <span class="px-2 py-0.5 rounded-full text-xs font-medium bg-amber-50 text-amber-700 border border-amber-200"
+              title="Drought tolerance: {{ p.drought_tolerance }}">
+          Drought {{ p.drought_tolerance | lower }}
+        </span>
+        {% endif %}
+      </div>
+      <p class="mt-2.5 text-xs text-gray-400">
+        Source: <a href="{{ p.plants_url }}" target="_blank" rel="noopener noreferrer" class="hover:underline text-green-700">USDA PLANTS Database ↗</a>
+      </p>
+
+      {# iNaturalist recent sightings #}
+      {% if p.inat and p.inat.recent_obs %}
+      {% set obs = p.inat.recent_obs[0] %}
+      <div class="mt-3 flex items-center gap-2.5 bg-lime-50 border border-lime-200 rounded-lg px-3 py-2">
+        {% if obs.photo_url %}
+        <a href="{{ obs.url }}" target="_blank" rel="noopener noreferrer" class="shrink-0">
+          <img src="{{ obs.photo_url }}" alt="Recent sighting"
+               class="w-10 h-10 rounded-md object-cover border border-lime-200">
+        </a>
+        {% endif %}
+        <div class="min-w-0 flex-1">
+          <p class="text-[10px] font-semibold text-lime-700 uppercase tracking-wide leading-none mb-0.5">Spotted nearby</p>
+          <p class="text-xs text-gray-700 truncate">
+            {% if obs.observed_on %}{{ obs.observed_on }}{% endif %}
+            {% if obs.observer %} · @{{ obs.observer }}{% endif %}
+            {% if obs.place_guess %} · {{ obs.place_guess | truncate(30, true, '…') }}{% endif %}
+          </p>
+        </div>
+        <a href="{{ p.inat.inat_url }}" target="_blank" rel="noopener noreferrer"
+           class="shrink-0 text-[10px] text-lime-700 font-medium hover:underline whitespace-nowrap">
+          {{ p.inat.nearby_obs_count }} obs ↗
+        </a>
+      </div>
+      {% elif p.inat and p.inat.taxon_id %}
+      <div class="mt-3">
+        <a href="{{ p.inat.inat_url }}" target="_blank" rel="noopener noreferrer"
+           class="text-xs text-lime-700 hover:underline">View on iNaturalist ↗</a>
+      </div>
+      {% endif %}
+  </div>
+
+  {# "learn more" toggle #}
+  <div class="border-t border-gray-100">
+    <button @click="expanded = !expanded"
+            class="w-full flex items-center justify-between px-4 py-2.5 text-xs font-medium text-gray-600 hover:bg-gray-50 transition-colors">
+      <span x-text="expanded ? 'Less detail' : 'Learn more'">Learn more</span>
+      <svg :class="expanded ? 'rotate-180' : ''" class="h-3.5 w-3.5 text-gray-400 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </button>
+
+    <div x-show="expanded" x-cloak x-collapse class="border-t border-gray-100">
+
+      {# characteristics table #}
+      <div class="px-4 py-3">
+        <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Characteristics</p>
+        <dl class="grid grid-cols-2 gap-x-4 gap-y-1.5">
+          {% set facts = [
+            ('Height', (p.height_ft ~ ' ft') if p.height_ft else ''),
+            ('Flower color', p.flower_color),
+            ('Bloom period', p.bloom_period),
+            ('Foliage color', p.foliage_color),
+            ('Growth rate', p.growth_rate),
+            ('Lifespan', p.lifespan),
+            ('Toxicity', p.toxicity),
+            ('Drought tolerance', p.drought_tolerance),
+            ('Shade tolerance', p.shade_tolerance),
+            ('Moisture use', p.moisture_use),
+            ('pH range', ((p.ph_min ~ '–' ~ p.ph_max) if p.ph_min and p.ph_max else '')),
+            ('Min temp', ((p.temp_min_f ~ '°F') if p.temp_min_f else '')),
+            ('Palatable to wildlife', p.palatable_browse if p.palatable_browse else ''),
+            ('Palatable to livestock', p.palatable_graze if p.palatable_graze else ''),
+            ('Palatable to humans', p.palatable_human if p.palatable_human else ''),
+          ] %}
+          {% for label, value in facts %}
+          {% if value and value not in ('', 'None', '0') %}
+          <div>
+            <dt class="text-[10px] font-semibold text-gray-400 uppercase tracking-wide leading-none">{{ label }}</dt>
+            <dd class="text-sm text-gray-800 mt-0.5">{{ value }}</dd>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </dl>
+      </div>
+
+      {# wildlife value #}
+      {% if p.wildlife_food %}
+      <div class="px-4 pb-3">
+        <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Wildlife value</p>
+        <div class="flex flex-wrap gap-2">
+          {% for entry in p.wildlife_food %}
+          {% if entry.LargeMammals %}<span class="text-xs text-gray-600 bg-gray-50 border border-gray-200 rounded px-2 py-0.5">Large mammals: {{ entry.LargeMammals }}</span>{% endif %}
+          {% if entry.SmallMammals %}<span class="text-xs text-gray-600 bg-gray-50 border border-gray-200 rounded px-2 py-0.5">Small mammals: {{ entry.SmallMammals }}</span>{% endif %}
+          {% if entry.TerrestrialBirds %}<span class="text-xs text-gray-600 bg-gray-50 border border-gray-200 rounded px-2 py-0.5">Birds: {{ entry.TerrestrialBirds }}</span>{% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {# ethnobotany #}
+      {% if p.ethnobotany %}
+      <div class="px-4 pb-3">
+        <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Traditional uses</p>
+        <ul class="space-y-0.5">
+          {% for e in p.ethnobotany %}
+          <li class="text-xs text-gray-600">
+            <span class="font-medium">{{ e.Group }}</span>
+            {% if e.Usage %} — {{ e.Usage }}{% endif %}
+            {% if e.Source %}<span class="text-gray-400 ml-1">({{ e.Source }})</span>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+      {# related links — exclude the USDA PLANTS profile link (credited above) #}
+      {% set useful_links = p.related_links | selectattr('url') | selectattr('url', 'ne', p.plants_url) | list %}
+      {% if useful_links %}
+      <div class="px-4 pb-4">
+        <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">More resources</p>
+        <ul class="space-y-0.5">
+          {% for lnk in useful_links %}
+          <li>
+            <a href="{{ lnk.url }}" target="_blank" rel="noopener noreferrer"
+               class="text-xs text-blue-700 hover:underline">
+              {{ lnk.text | replace(' (' ~ p.symbol ~ ')', '') | truncate(60, true, '…') }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+    </div>
+  </div>
+
+</section>
+{% endif %}

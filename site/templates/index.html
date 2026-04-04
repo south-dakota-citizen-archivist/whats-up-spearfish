@@ -9,6 +9,8 @@
   ('#documents',    'Documents'),
   ('#library',      'Library'),
   ('#creek',        'Spearfish Creek'),
+  ('#plants',       'Native Plants'),
+  ('#birds',        'Bird Sightings'),
   ('#drinks',       'On Tap'),
   ('#creamery',     'Leone\'s Creamery'),
   ('#school-menus', 'School Menus'),
@@ -108,6 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
       {% include "components/events.html" %}
       {% include "components/news.html" %}
       {% include "components/fire.html" %}
+      {% include "components/jobs.html" %}
       {% include "components/press.html" %}
       {% include "components/documents.html" %}
       {% include "components/library.html" %}
@@ -116,12 +119,13 @@ document.addEventListener('DOMContentLoaded', function () {
     {# ── RIGHT COLUMN ── #}
     <div class="lg:col-span-2 space-y-8 min-w-0">
       {% include "components/creek.html" %}
-      {% include "components/dump.html" %}
+      {% include "components/plants.html" %}
+      {% include "components/birds.html" %}
       {% include "components/drinks.html" %}
+      {% include "components/dump.html" %}
       {% include "components/creamery.html" %}
       {% include "components/school_menus.html" %}
       {% include "components/adoptable.html" %}
-      {% include "components/jobs.html" %}
       {% include "components/meetings.html" %}
       {% include "components/bids.html" %}
     </div>{# /right col #}

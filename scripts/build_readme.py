@@ -81,15 +81,26 @@ def _build_readme(slug_to_name: dict[str, str], stats: dict[str, dict]) -> str:
     now = datetime.now(ZoneInfo("America/Denver"))
     date_str = now.strftime("%B %-d, %Y")
 
+    # Non-scraper sources that don't have a BaseScraper subclass
+    _EXTRA_NAMES = {
+        "native_plants_spotlight": "USDA PLANTS Database (Native Plant Spotlight)",
+        "plants_native_black_hills": "USDA PLANTS Database (Black Hills full pull)",
+        "creek_gauge": "USGS Stream Gauge — Spearfish Creek (06431500)",
+    }
+
     # Build rows: include every slug that has a name OR has data
-    all_slugs = sorted(set(slug_to_name) | set(stats))
+    all_slugs = sorted(set(slug_to_name) | set(stats) | set(_EXTRA_NAMES))
     rows: list[tuple[str, str, str, int]] = []
     for slug in all_slugs:
         s = stats.get(slug, {})
         count = s.get("count", 0)
         types = s.get("types", [])
-        name = slug_to_name.get(slug, slug.replace("_", " ").title())
-        type_str = ", ".join(f"`{t}`" for t in types) if types else "—"
+        name = slug_to_name.get(slug) or _EXTRA_NAMES.get(slug) or slug.replace("_", " ").title()
+        # native_plants_spotlight and creek_gauge are dicts/special — show record count only if list
+        if slug in _EXTRA_NAMES and not types:
+            type_str = "—"
+        else:
+            type_str = ", ".join(f"`{t}`" for t in types) if types else "—"
         rows.append((name, slug, type_str, count))
 
     # Sort by name

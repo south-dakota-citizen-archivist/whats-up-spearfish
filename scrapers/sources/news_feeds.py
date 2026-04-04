@@ -44,11 +44,13 @@ def _parse_feed(url: str, source_label: str) -> list[dict]:
                 except (ValueError, TypeError):
                     pass
                 break
+        byline = (entry.get("author") or "").strip()
         records.append({
             "url": link,
             "title": title,
             "slug": make_slug(f"{source_label}-{title}"),
             "published": published,
+            "byline": byline,
             "description": description,
             "record_type": "news",
             "source_label": source_label,

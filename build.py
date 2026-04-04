@@ -66,7 +66,7 @@ def _to_mountain(value: str | None) -> datetime | None:
 def load_data() -> dict[str, list[dict]]:
     data: dict[str, list[dict]] = {}
     # Files handled separately (non-list JSON)
-    _skip = {"creek_gauge"}
+    _skip = {"creek_gauge", "native_plants_spotlight", "plants_native_black_hills", "inaturalist_plant_cache", "ebird"}
 
     for json_file in sorted(DATA_DIR.glob("*.json")):
         slug = json_file.stem
@@ -593,6 +593,56 @@ def fetch_fire_data() -> dict:
     return {"rows": rows, "incidents": incidents, "source_url": BHNF_URL, "danger": danger}
 
 
+def load_plant_spotlight() -> dict:
+    """Pick today's native plant spotlight deterministically from the curated list."""
+    spotlight_file = DATA_DIR / "native_plants_spotlight.json"
+    if not spotlight_file.exists():
+        print("[build] Warning: data/native_plants_spotlight.json not found — plant widget will be empty")
+        return {}
+    try:
+        plants = json.loads(spotlight_file.read_text(encoding="utf-8"))
+        if not plants:
+            return {}
+        # Deterministic daily rotation: day-of-year mod len gives stable plant per day
+        day_index = TODAY.timetuple().tm_yday
+        plant = plants[day_index % len(plants)]
+        print(f"[build] Plant spotlight: {plant.get('common_name')} ({plant.get('symbol')}) "
+              f"— {len(plants)} in pool, index {day_index % len(plants)}")
+
+        # Merge iNaturalist enrichment if available
+        inat_cache_file = DATA_DIR / "inaturalist_plant_cache.json"
+        if inat_cache_file.exists():
+            try:
+                inat_cache = json.loads(inat_cache_file.read_text(encoding="utf-8"))
+                inat = inat_cache.get(plant.get("symbol") or "")
+                if inat:
+                    plant["inat"] = inat
+                    count = inat.get("nearby_obs_count", 0)
+                    print(f"[build]   iNat: taxon={inat.get('taxon_id')}, nearby={count}")
+            except Exception:
+                pass
+
+        return plant
+    except Exception as exc:
+        print(f"[build] Warning: could not load native_plants_spotlight.json: {exc}")
+        return {}
+
+
+def load_ebird() -> list[dict]:
+    """Load recent eBird sightings from data/ebird.json."""
+    ebird_file = DATA_DIR / "ebird.json"
+    if not ebird_file.exists():
+        return []
+    try:
+        data = json.loads(ebird_file.read_text(encoding="utf-8"))
+        obs = data.get("observations") or []
+        print(f"[build] eBird: {len(obs)} recent sightings")
+        return obs
+    except Exception as exc:
+        print(f"[build] Warning: could not load ebird.json: {exc}")
+        return []
+
+
 def load_creek_data() -> dict:
     """Read creek gauge snapshot from data/creek_gauge.json (written by the creek-gauge scraper)."""
     creek_file = DATA_DIR / "creek_gauge.json"
@@ -634,6 +684,8 @@ def build() -> None:
     css_tmp.unlink()
     print(f"[build] Compiled Tailwind CSS ({len(inline_css) // 1024} KB, inlining)")
 
+    plant_spotlight = load_plant_spotlight()
+    ebird_observations = load_ebird()
     creek_data = load_creek_data()
     print(f"[build] Creek gauge: {creek_data.get('current', {}).get('cfs', 'n/a')} cfs, "
           f"{len(creek_data.get('series7d', []))} IV points, "
@@ -656,6 +708,8 @@ def build() -> None:
         "total_records": total_records,
         "inline_css": inline_css,
         "fire": fire_data,
+        "plant_spotlight": plant_spotlight,
+        "ebird_observations": ebird_observations,
     }
 
     # Single-page dashboard

@@ -6,7 +6,7 @@ day from scrapers that collect public data across the web.
 
 Source code: [https://github.com/south-dakota-citizen-archivist/whats-up-spearfish](https://github.com/south-dakota-citizen-archivist/whats-up-spearfish)
 
-_Updated: April 3, 2026_
+_Updated: April 4, 2026_
 
 ---
 
@@ -20,7 +20,7 @@ _Updated: April 3, 2026_
 | BHSU Campus Calendar | `bhsu_calendar` | `event` | 47 |
 | Black Hills National Forest | `bhnf` | `event`, `press_release` | 5 |
 | Black Hills Pioneer | `bhpioneer_jobs` | `job` | 11 |
-| Black Hills Pioneer | `black_hills_pioneer` | `news` | 110 |
+| Black Hills Pioneer | `black_hills_pioneer` | `news` | 132 |
 | Black Hills Wildflowers | `black_hills_wildflowers` | — | 5 |
 | City of Spearfish | `spearfish_city` | `document` | 2,091 |
 | City of Spearfish Alert Center | `spearfish_alert_center` | `alert` | 3 |
@@ -28,13 +28,14 @@ _Updated: April 3, 2026_
 | City of Spearfish Calendar | `spearfish_calendar` | `event` | 30 |
 | City of Spearfish Jobs | `spearfish_jobs` | — | 0 |
 | City of Spearfish News Flash | `spearfish_news` | `press_release` | 4 |
-| Creek Gauge | `creek_gauge` | — | 4 |
 | Crow Peak Brewing | `crow_peak_brewing` | `beer` | 16 |
+| Ebird | `ebird` | — | 2 |
 | Elementary 3-5 Lunch | `spearfish_elem_35_lunch` | `school_menu` | 40 |
 | Elementary Breakfast | `spearfish_elem_breakfast` | `school_menu` | 40 |
 | Elementary K-2 Lunch | `spearfish_elem_k2_lunch` | `school_menu` | 40 |
 | Grace Balloch Memorial Library | `spearfish_library` | `library_book` | 90 |
 | High School Lunch | `spearfish_hs_lunch` | `school_menu` | 40 |
+| Inaturalist Plant Cache | `inaturalist_plant_cache` | — | 317 |
 | Killian's | `killians` | `beer` | 17 |
 | Lawrence County | `lawrence_county` | `document` | 45 |
 | Lawrence County Jobs | `lawrence_county_jobs` | — | 0 |
@@ -45,9 +46,9 @@ _Updated: April 3, 2026_
 | MS/HS Breakfast | `spearfish_mshs_breakfast` | `school_menu` | 40 |
 | Public Bids | `public_bids` | `bid` | 2 |
 | Public Meetings (YouTube) | `public_meetings_youtube` | `youtube_video` | 30 |
-| Rapid City Journal | `rapid_city_journal` | `news` | 120 |
+| Rapid City Journal | `rapid_city_journal` | `news` | 140 |
 | Redwater Kitchen | `redwater_kitchen` | `beer` | 12 |
-| Regional News | `news_feeds` | `news` | 122 |
+| Regional News | `news_feeds` | `news` | 128 |
 | Sawyer Brewing Co. | `sawyer_brewing` | `beer` | 17 |
 | Sd Flowering Plants | `sd_flowering_plants` | — | 5 |
 | Sd Living Landscapes | `sd_living_landscapes` | — | 5 |
@@ -63,6 +64,9 @@ _Updated: April 3, 2026_
 | Spearfish School District | `spearfish_schools` | `event` | 20 |
 | Spearfish School District | `spearfish_schools_jobs` | `job` | 9 |
 | The Clubhouse | `clubhouse_spearfish` | `beer` | 8 |
+| USDA PLANTS Database (Black Hills full pull) | `plants_native_black_hills` | — | 24,984 |
+| USDA PLANTS Database (Native Plant Spotlight) | `native_plants_spotlight` | — | 317 |
+| USGS Stream Gauge — Spearfish Creek (06431500) | `creek_gauge` | — | 4 |
 | Western Hills Humane Society | `whhs_adoptable` | `adoptable` | 36 |
 
 ---

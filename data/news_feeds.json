@@ -6,7 +6,8 @@
     "published": "2026-04-01",
     "description": "News Watch takes a look at the top takeaways from the first GOP gubernatorial debate.",
     "record_type": "news",
-    "source_label": "SD Newswatch"
+    "source_label": "SD Newswatch",
+    "byline": "Alexander Rifaat"
   },
   {
     "url": "https://www.sdnewswatch.org/fact-brief-south-dakota-republican-governor/",
@@ -15,7 +16,8 @@
     "published": "2026-03-31",
     "description": "A Democratic governor has not held office in South Dakota in more than 47 years.",
     "record_type": "news",
-    "source_label": "SD Newswatch"
+    "source_label": "SD Newswatch",
+    "byline": "Michael Klinski"
   },
   {
     "url": "https://www.sdnewswatch.org/south-dakota-legislature-veto-day-gov-larry-rhoden-bills/",
@@ -24,7 +26,8 @@
     "published": "2026-03-30",
     "description": "Lawmakers failed to override vetoes on a ban of lab-grown meat and state licensing requirements for non-medical home care agencies.",
     "record_type": "news",
-    "source_label": "SD Newswatch"
+    "source_label": "SD Newswatch",
+    "byline": "Alexander Rifaat"
   },
   {
     "url": "https://www.sdnewswatch.org/south-dakota-governor-debates-2026-primary/",
@@ -33,7 +36,8 @@
     "published": "2026-03-27",
     "description": "KELO-TV, SDPB and South Dakota News Watch, and The Dakota Scout and Forum Communications will question the candidates. \"You can't get that just from someone's social media feed.\"",
     "record_type": "news",
-    "source_label": "SD Newswatch"
+    "source_label": "SD Newswatch",
+    "byline": "Carson Walker"
   },
   {
     "url": "https://www.sdnewswatch.org/fact-brief-security-tsa-sioux-falls-airport-shutdown/",
@@ -42,7 +46,8 @@
     "published": "2026-03-26",
     "description": "TSA agents have not been paid since the partial shutdown started on Feb. 14, but that doesn't every affect every airport.",
     "record_type": "news",
-    "source_label": "SD Newswatch"
+    "source_label": "SD Newswatch",
+    "byline": "Michael Klinski"
   },
   {
     "url": "https://www.sdnewswatch.org/native-hoops-basketball-sports-sd-reservations-rez-ball/",
@@ -51,7 +56,8 @@
     "published": "2026-03-25",
     "description": "Some of the best basketball players in SD history come from Native communities. Here's how 'Rez ball' followed athletes across generations.",
     "record_type": "news",
-    "source_label": "SD Newswatch"
+    "source_label": "SD Newswatch",
+    "byline": "Molly Wetsch"
   },
   {
     "url": "https://www.sdnewswatch.org/south-dakota-civics-media-politics-voting-series/",
@@ -60,7 +66,8 @@
     "published": "2026-03-25",
     "description": "Series of community gatherings and other events across South Dakota seeks to increase engagement and help voters find fact-based information ahead of elections.",
     "record_type": "news",
-    "source_label": "SD Newswatch"
+    "source_label": "SD Newswatch",
+    "byline": "SD News Watch"
   },
   {
     "url": "https://www.sdnewswatch.org/fact-brief-tumbleweeds-first-appear-united-states-sd/",
@@ -69,7 +76,8 @@
     "published": "2026-03-24",
     "description": "The tumbleweed is a common sight in South Dakota and other parts of the United States, but does the pesky plant originate here?",
     "record_type": "news",
-    "source_label": "SD Newswatch"
+    "source_label": "SD Newswatch",
+    "byline": "Michael Klinski"
   },
   {
     "url": "https://www.sdnewswatch.org/south-dakota-news-watch-board-kotzea-hine/",
@@ -78,7 +86,8 @@
     "published": "2026-03-24",
     "description": "Kristi Hine, editor and publisher of the True Dakotan in Wessington Springs, takes over leadership of the nonprofit.",
     "record_type": "news",
-    "source_label": "SD Newswatch"
+    "source_label": "SD Newswatch",
+    "byline": "Carson Walker"
   },
   {
     "url": "https://www.sdnewswatch.org/housing-solutions-revitalization-herreid/",
@@ -141,7 +150,8 @@
     "published": "2026-04-01",
     "description": "The four Republican candidates for governor of South Dakota clashed over tax policies in their first debate Tuesday, as the leading candidate in the polls criticized two others for their support of higher sales taxes. U.S. Rep. Dusty Johnson, who has led in polls released publicly so far, deployed the critique in a debate aired [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/31/legislators-plan-to-learn-about-native-american-health-care-emergency-services-disability-care/",
@@ -150,7 +160,8 @@
     "published": "2026-03-31",
     "description": "South Dakota lawmakers plan to learn more about emergency medical services, Native American health care and services for disabled people ahead of the next legislative session. After the annual session ends in March, legislative leaders typically identify a few issues to delve into as “summer studies” before the next session in January. This year, lawmakers [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/30/lawmakers-commit-more-money-to-prevent-catastrophic-failure-at-dam-near-aberdeen/",
@@ -159,7 +170,8 @@
     "published": "2026-03-30",
     "description": "PIERRE — A plan to replace the dam and spillway at a northeast South Dakota lake will receive $8.2 million in additional state funding, lawmakers decided Monday, raising the total funds available for the project to more than $34 million. The state House voted 61-3 and the Senate voted 28-2 to support the spending. Because [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/30/lawmakers-fail-to-override-vetoes-of-lab-grown-meat-ban-and-in-home-care-regulations/",
@@ -168,7 +180,8 @@
     "published": "2026-03-30",
     "description": "South Dakota lawmakers failed Monday to reach the two-thirds majority needed to override Gov. Larry Rhoden’s vetoes of a lab-grown meat ban and regulations on non-medical home care providers. The lab-grown meat bill would have classified the products as adulterated food, effectively banning their sale in the state. Rhoden argued in his veto message last [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/29/trade-mission-to-japan-south-korea-carried-hope-of-diversifying-soybean-market-beyond-china/",
@@ -177,7 +190,8 @@
     "published": "2026-03-29",
     "description": "South Dakota officials are trying to strengthen trade relationships with Japan and South Korea as soybean farmers look to diversify beyond China, which has reduced its purchases.  Jerry Schmitz, executive director of the South Dakota Soybean Research and Promotion Council, was part of a delegation that visited the two countries earlier this month.  “Really, we’re [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/enough-of-the-tyranny-no-kings-protesters-take-to-the-streets-in-south-dakota/",
@@ -186,7 +200,8 @@
     "published": "2026-03-28",
     "description": "PIERRE — Nearly 200 demonstrators showed up Saturday outside the post office in South Dakota’s capital city to protest the Trump administration as part of the No Kings movement. The Pierre protest was one of a dozen in South Dakota, and one of thousands across the country. The state’s largest cities — Sioux Falls and [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/warden-from-virginia-hired-to-run-newly-constructed-rapid-city-womens-prison/",
@@ -195,7 +210,8 @@
     "published": "2026-03-27",
     "description": "The South Dakota Department of Corrections hired Eric Aldridge as warden of the Rapid City women’s prison, the department announced on Friday.  The $87 million facility, which is South Dakota’s second women’s prison, is under construction and expected to open in July. Aldridge, most recently warden of the medium-security Fluvanna Correctional Center for Women in [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/27/iran-war-not-going-well-strategically-former-nato-commander-tells-south-dakota-audience/",
@@ -204,7 +220,8 @@
     "published": "2026-03-27",
     "description": "SIOUX FALLS — Former NATO Supreme Allied Commander James Stavridis told an audience Thursday evening at Augustana University that the war with Iran is “not going well” strategically, and America’s leaders are stretched too thin with conflicts around the globe.  Stavridis also described Ukraine as a grinding war likely headed toward a disappointing settlement, China [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/support-from-governor-means-state-will-cover-gap-in-reduced-price-school-meals/",
@@ -213,7 +230,8 @@
     "published": "2026-03-27",
     "description": "South Dakota’s Republican governor approved legislation Friday that will provide state funding to relieve families and schools of costs for reduced-price student meals. Gov. Larry Rhoden’s signature on the bill comes after several years of advocacy by its prime sponsor, Sioux Falls Democratic Rep. Kadyn Wittman. “This is a meaningful step forward for South Dakota [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "South Dakota Searchlight staff"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/27/for-south-dakota-farmers-the-war-in-iran-is-far-worse-than-it-may-seem/",
@@ -222,7 +240,8 @@
     "published": "2026-03-27",
     "description": "Iran is more than 6,000 miles from the U.S., but South Dakota farmers, as all American ag producers, are intimately feeling the catastrophic potential of our current war with that rogue Mideast nation. Since Iran has vengefully halted the flow of oil through the Strait of Hormuz, that narrow Persian Gulf chokepoint through which about [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Rick Snedeker"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/26/south-dakota-governor-signs-law-requiring-proof-of-citizenship-for-new-voter-registrations/",
@@ -231,7 +250,8 @@
     "published": "2026-03-26",
     "description": "A new state law will require people to prove their citizenship when they register to vote in South Dakota state and local elections. Republican Gov. Larry Rhoden signed the legislation Thursday. An emergency clause puts the law into effect immediately, before the June 2 primary election, rather than the usual July 1 effective date of [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/26/overdose-deaths-decline-in-south-dakota/",
@@ -240,7 +260,8 @@
     "published": "2026-03-26",
     "description": "The number of South Dakotans who died from drug overdoses continued to decrease in 2025, but many of those deaths were potentially preventable, according to data presented Wednesday to the state Opioid Advisory Committee. Drug overdose deaths decreased to 83 in 2025, according to provisional data, down from 94 in 2024 and significantly down from [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/25/governor-vetoes-home-care-regulation-bill/",
@@ -249,7 +270,8 @@
     "published": "2026-03-25",
     "description": "South Dakota Republican Gov. Larry Rhoden vetoed a bill on Wednesday that would require state licensing of non-medical home care agencies, his second veto of the 2026 legislative session. The vetoed bill is sponsored by Brookings Republican Rep. Mellissa Heermann, who said she introduced the legislation to protect “vulnerable” South Dakotans using personal or home [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/plaque-unveiled-at-south-dakota-capitol-for-100-year-old-medal-of-honor-recipient/",
@@ -258,7 +280,8 @@
     "published": "2026-03-25",
     "description": "PIERRE — There’s a new name in the South Dakota Hall of Honor at the state Capitol building. One-hundred-year-old South Dakota native and retired U.S. Navy Capt. E. Royce Williams was celebrated at a Wednesday ceremony where a plaque honoring him was unveiled, although Williams did not attend. “In spite of being outnumbered and facing [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/25/talks-underway-about-state-airplane-purchase-as-new-law-requires-consultation-with-expert-panel/",
@@ -267,7 +290,8 @@
     "published": "2026-03-25",
     "description": "When Republican state Sen. Joy Hohn, a pilot from Hartford, asked a state department head if he consulted with South Dakota’s Aeronautics Commission about an upcoming $5 million airplane purchase, the department head said he’d never heard of the commission. That was despite the existence of a state law requiring the commission to advise state [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/data-center-restrictions-signed-into-south-dakota-law-after-push-for-incentives-failed/",
@@ -276,7 +300,8 @@
     "published": "2026-03-24",
     "description": "After lawmakers rejected proposals to incentivize the construction of large data centers in South Dakota, the governor signed a bill into law Tuesday that will place new limits on the industry. The law applies to data centers with a peak electrical demand of 10 megawatts or greater. It will require data center companies to ensure [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/24/governors-approval-opens-south-dakota-housing-loan-fund-to-big-city-airport-projects/",
@@ -285,7 +310,8 @@
     "published": "2026-03-24",
     "description": "A state loan fund intended to incentivize housing construction will soon be available for airport improvement and maintenance projects in Sioux Falls and Rapid City. The change is in legislation that lawmakers approved earlier this month and South Dakota Republican Gov. Larry Rhoden signed into law Tuesday while visiting the Rapid City Regional Airport. “More [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Seth Tupper"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/24/there-are-moments-where-i-break-down-says-wife-of-deported-huron-resident/",
@@ -294,7 +320,8 @@
     "published": "2026-03-24",
     "description": "She’s a single mother now. The sole breadwinner. The primary source of support when her 2-year-old throws a fit. The one who has to make sure her 9-year-old makes it to his counseling appointments.  The fits are more frequent now, the counseling new. Both developments, she said, ripple from the loss of the children’s father [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "John Hult"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/23/prison-rehabilitation-recidivism-quickly-forgotten-by-lawmakers-this-session-legislator-says/",
@@ -303,7 +330,8 @@
     "published": "2026-03-23",
     "description": "SIOUX FALLS — Last year, lawmakers coalesced around the need to improve rehabilitation programming and reduce recidivism rates as part of a broader investment in South Dakota’s prison system. Those two issues were sticking points in an ultimately successful effort to approve construction of a men’s prison. Yet during the 2026 legislative session that wrapped [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/22/south-dakota-lawmakers-test-their-skills-behind-the-wheel-at-emergency-vehicle-driving-course/",
@@ -312,7 +340,8 @@
     "published": "2026-03-22",
     "description": "PIERRE — After weeks spent split on property tax relief, economic development and other policy decisions, some state legislators seized an opportunity to blow off steam at a lawmakers’ day taking place just north of the capital city. The South Dakota Highway Patrol and Department of Public Safety hosted about a dozen lawmakers at the [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/22/legislatures-property-tax-relief-creates-a-burden-for-everyone/",
@@ -321,7 +350,8 @@
     "published": "2026-03-22",
     "description": "That slurping sound you heard in early March was coming from Pierre. It was lawmakers drinking the Kool-Aid of property tax relief, trying as hard as they could to convince themselves that the best way to provide tax relief for homeowners was through higher sales taxes for everyone. There were some other property tax bills [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Dana Hess"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/state-opens-applications-for-40-more-slots-in-teacher-apprenticeship-program/",
@@ -330,7 +360,8 @@
     "published": "2026-03-21",
     "description": "Another 40 paraprofessionals could be accepted into South Dakota’s teacher apprenticeship program, which is meant to reduce the teaching shortage across the state.  The program, started in 2023, allows full-time paraprofessionals — sometimes called teacher’s aides — to pursue a teaching degree online through Dakota State University in elementary or special education, or through Northern [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/20/governor-approves-extra-city-sales-tax-cigar-bars-more-gambling-tax-revenue-for-deadwood/",
@@ -339,7 +370,8 @@
     "published": "2026-03-20",
     "description": "South Dakota Republican Gov. Larry Rhoden signed three bills earlier this week that he said align with his “open for opportunity” economic development policy framework. The legislation includes shifting some gambling tax revenue from the state to a Black Hills city, permitting more cigar bars across the state, and allowing cities to temporarily increase their [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/20/new-anti-abortion-laws-clarify-definition-criminalize-pills-require-prenatal-videos-in-schools/",
@@ -348,7 +380,8 @@
     "published": "2026-03-20",
     "description": "SIOUX FALLS — The Republican governor of South Dakota signed three anti-abortion bills into law Friday making it a felony to dispense or advertise abortion pills and related items, clarifying what constitutes an abortion, and requiring public schools to show students videos about prenatal development.  “My signature today will strengthen South Dakota’s pro-life laws,” Gov. [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/20/states-investment-manager-urges-patience-with-underperformance-waiting-for-better-opportunities/",
@@ -357,7 +390,8 @@
     "published": "2026-03-20",
     "description": "The people who manage the investments for the state of South Dakota&#8217;s retirement system have underperformed for the third year in a row, contributing to a 1.4 percentage-point gap — or a $2.75 billion shortfall — between their 10-year performance and the benchmark they try to meet over the long term. The state Investment Council [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/20/war-in-middle-east-causes-further-stress-on-u-s-farmers/",
@@ -366,7 +400,8 @@
     "published": "2026-03-20",
     "description": "Corn farmers in the U.S. are bracing for even higher fertilizer prices as conflict in the Middle East impacts the globally traded commodity, according to leaders with the National Corn Growers Association. Corn farmers are approaching a fourth year of negative yields, due to low corn prices and high input costs, including fertilizers. The growers [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Cami Koons"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/19/south-dakota-governor-signs-budget-bills-including-one-to-fund-state-capitol-restoration/",
@@ -375,7 +410,8 @@
     "published": "2026-03-19",
     "description": "A sulfuric, rotten egg smell permeated the chamber of the South Dakota House of Representatives on March 10, delaying lawmakers’ afternoon session at the state Capitol in Pierre. At least one representative took shelter in the Senate chamber, where lawmakers were debating whether to create a Capitol restoration fund and seed it with $1.1 million. [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/19/state-commission-replaces-controversial-wildlife-predator-bounty-with-new-programs/",
@@ -384,7 +420,8 @@
     "published": "2026-03-19",
     "description": "South Dakota Game, Fish and Parks Commission has voted to narrow a controversial nest predator trapping program, but the state intends to pay as much for bounties as it did last year. Instead of paying anyone who traps animals that prey on game birds, the state will dedicate $200,000 of its $500,000 Nest Predator Bounty [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/18/sd-supreme-court-weighs-legality-of-mid-lease-rule-change-at-survival-bunker-community/",
@@ -393,7 +430,8 @@
     "published": "2026-03-18",
     "description": "SIOUX FALLS — When he moved there, Daniel Sindorf was not expressly prohibited from brandishing a gun on the grounds of his survival bunker community near Edgemont. Then the community rules changed, and his landlord tried to evict him for allegedly pointing a firearm at a fellow resident.  The provisions of Sindorf’s lease, he learned, [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar, John Hult"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/18/police-officers-who-shot-suspect-ask-sd-supreme-court-to-shield-their-names-from-public-view/",
@@ -402,7 +440,8 @@
     "published": "2026-03-18",
     "description": "SIOUX FALLS — The South Dakota Supreme Court heard arguments for the first time Wednesday on whether a voter-backed amendment to the state constitution prevents the public disclosure of victims’ names, including the names of police officers involved in altercations with members of the public.  Voters passed “Marsy’s Law” in the 2016 general election. Among [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber, John Hult"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/17/for-sunshine-week-five-things-to-know-about-open-government-in-south-dakota/",
@@ -411,7 +450,8 @@
     "published": "2026-03-17",
     "description": "This is Sunshine Week, a national observance highlighting the importance of openness and transparency in government at all levels. South Dakota NewsMedia Association and our partner members — the newspapers and digital news outlets across the state — have long been supporters of Sunshine Week. This week represents a nationwide nonpartisan collaboration among groups in journalism, [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "David Bordewyk"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/17/creating-sharing-of-deepfakes-will-be-a-felony-under-south-dakota-bill-now-signed-into-law/",
@@ -420,7 +460,8 @@
     "published": "2026-03-17",
     "description": "South Dakota Republican Gov. Larry Rhoden signed a bill into law Monday that makes it a felony crime to create, possess or share computer-generated “deepfakes” of unwilling people in states of nudity or engaging in pornographic acts. The bill was one of 11 public safety bills Rhoden signed Monday. The bill on computer-generated pornography was [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "John Hult"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/16/nearly-four-years-later-sentence-comes-in-killing-of-transgender-native-american-woman/",
@@ -429,7 +470,8 @@
     "published": "2026-03-16",
     "description": "The people who loved Acey Morrison spent nearly as much time waiting for justice as her killer is likely to spend locked up. It doesn’t feel like much, her family said. But at this point, nearly any measure of justice is welcome.  A judge this month sentenced 55-year-old Gregory Edward Landers to seven years in [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "John Hult"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/16/economic-developers-emerge-mostly-unscathed-from-critical-winds-that-blew-into-pierre/",
@@ -438,7 +480,8 @@
     "published": "2026-03-16",
     "description": "Economic developers in South Dakota say they&#8217;ve been under “attack,” and while they failed in their efforts to incentivize data centers this legislative session, they mounted a counter-campaign that warded off many other efforts to restrain government aid for business and industry. Their campaign included public messaging about the state’s business incentive “toolbox,” in response [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/15/school-board-negotiations-with-teachers-could-benefit-from-sunshine/",
@@ -447,7 +490,8 @@
     "published": "2026-03-15",
     "description": "The nation is celebrating Sunshine Week March 15 through 21. It’s a time to shine a light on the importance of open records and open government. Too often in South Dakota, Sunshine Week is a time for complaining about the cloudy nature of this state’s government openness.  Many of our public records that should be [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Dana Hess"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/15/road-closures-announced-as-winter-storm-strikes-south-dakota/",
@@ -456,7 +500,8 @@
     "published": "2026-03-15",
     "description": "",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "South Dakota Searchlight staff"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/15/wildfire-near-custer-damages-10-properties-authorities-say/",
@@ -465,7 +510,8 @@
     "published": "2026-03-15",
     "description": "A wildfire that’s grown to more than 11 square miles near the city of Custer in South Dakota’s Black Hills had not caused any injuries as of Saturday night but had damaged about 10 properties, the Custer County Sheriff’s Office said. The damage ranges from sheds and garages “all the way up to some homes [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Seth Tupper"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/13/wind-dry-conditions-drive-growth-of-qury-fire-near-custer/",
@@ -474,7 +520,8 @@
     "published": "2026-03-13",
     "description": "A wildfire a few miles southeast of Custer in South Dakota’s Black Hills grew to nearly 8 square miles in size between its ignition on Thursday and Friday morning, officials said early Friday afternoon. The Qury Fire spread east, away from the city, and “made a significant run of a few miles” on Thursday due [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "John Hult"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/13/after-new-law-puts-guardrails-around-future-fund-johnson-shares-plan-to-use-it-for-startups/",
@@ -483,7 +530,8 @@
     "published": "2026-03-13",
     "description": "After lawmakers and Gov. Larry Rhoden put new restrictions on a controversial governor-controlled economic development fund, U.S. Rep. Dusty Johnson pledged Friday that if he’s elected governor, he will use $2 million from the fund to create a new local business startup initiative. The Future Fund was created in 1987 at the request of then-Gov. [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/13/south-dakota-supreme-court-affirms-stand-your-ground-ruling-in-survival-bunker-shooting-lawsuit/",
@@ -492,7 +540,8 @@
     "published": "2026-03-13",
     "description": "South Dakota&#8217;s “stand your ground” law lets people defend themselves with deadly force if they feel their own life is in danger, they’re somewhere they&#8217;re allowed to be, and they aren&#8217;t engaged in criminal activity at the time they defend themselves. Assaulting one person an hour before shooting someone else, the South Dakota Supreme Court [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "John Hult"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/12/new-law-limiting-utilities-liability-approved-as-wildfires-break-out-in-black-hills/",
@@ -501,7 +550,8 @@
     "published": "2026-03-12",
     "description": "As wind-driven wildfires flared up Thursday in the Black Hills and an electrical provider proactively shut off power to some customers, South Dakota’s governor signed a bill into law that will give utilities greater protection from wildfire lawsuits. The new law will change the legal playing field after a wildfire by barring the application of [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/12/governor-signs-bills-to-reduce-homeowner-property-taxes-with-higher-sales-taxes/",
@@ -510,7 +560,8 @@
     "published": "2026-03-12",
     "description": "PIERRE — Republican Gov. Larry Rhoden signed two bills into law Thursday that he said will work in tandem to provide “the largest property tax cut in South Dakota history,” although a past tax cut may have been bigger when adjusted for inflation, and the new laws rely on increased sales taxes to fund property [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/12/tax-relief-victim-services-infrastructure-how-lawmakers-are-spending-96m-in-one-time-money/",
@@ -519,7 +570,8 @@
     "published": "2026-03-12",
     "description": "PIERRE — By tapping into reserves and higher-than-expected revenue, South Dakota lawmakers are doling out $96 million in one-time state general funds to address a variety of special projects across the state — nearly seven times more than the amount Gov. Larry Rhoden originally left open for special legislative projects in December. Rhoden laid out [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/12/lawmakers-adopt-7-5-billion-budget-with-1-4-increase-for-schools-state-workers-health-providers/",
@@ -528,7 +580,8 @@
     "published": "2026-03-12",
     "description": "PIERRE — South Dakota lawmakers approved a balanced $7.5 billion state budget on Thursday at the Capitol, up about $172.2 million, or an increase of 2.4%, from the budget they adopted last year. Sen. Mark Lapka, R-Leola, is a member of the Legislature’s main budget panel, the Joint Appropriations Committee. He reminded lawmakers that they started [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/11/governor-signs-lab-grown-meat-moratorium-property-protections-crypto-national-security-bills/",
@@ -537,7 +590,8 @@
     "published": "2026-03-11",
     "description": "Gov. Larry Rhoden signed a compromise bill Wednesday imposing a five-year moratorium on lab-grown meat in South Dakota after rejecting a permanent ban last month. “By talking to producers, legislators, and other stakeholders, we worked together to chart a strong path forward,” Rhoden, a Republican, said in a press release. The new law bars the [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/11/higher-sales-taxes-for-lower-property-taxes-final-plan-takes-shape-at-south-dakota-legislature/",
@@ -546,7 +600,8 @@
     "published": "2026-03-11",
     "description": "PIERRE — After dozens of bills and months of debate about options for reducing homeowner property taxes, South Dakota lawmakers settled Wednesday on plans to use revenue from new and increased sales taxes. State senators voted 20-13 on Wednesday in favor of the last major part of a multi-bill approach. Senate Bill 245 would capture [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien, Seth Tupper"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/11/legislative-budget-committee-partially-restores-cuts-to-needs-based-assistance-for-families/",
@@ -555,7 +610,8 @@
     "published": "2026-03-11",
     "description": "PIERRE — The South Dakota Legislature’s main budget committee voted Wednesday to partially restore cuts made to a federal-state program that provides needs-based financial support for families. The same committee voted last year, due to lower-than-anticipated state revenues, to cut state funding for Temporary Assistance for Needy Families by 30% while authorizing the state Department [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/south-dakota-lawmakers-reject-mandatory-e-verify-checks-of-worker-citizenship-immigration-status/",
@@ -564,7 +620,8 @@
     "published": "2026-03-11",
     "description": "PIERRE — A bill that would have required some South Dakota employers to use a federal website to verify employees’ work eligibility failed in the state Senate on Wednesday, the second-to-last day of the annual legislative session. E-Verify is a free website from the federal government that compares records from the U.S. Department of Homeland [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/johnson-leads-in-new-poll-about-south-dakota-republican-governor-primary-race/",
@@ -573,7 +630,8 @@
     "published": "2026-03-11",
     "description": "A new poll shows U.S. Rep. Dusty Johnson leading the race for South Dakota’s Republican nomination for governor by a 10-point margin, but still below the level needed to avoid a runoff. The KELOLAND-commissioned Emerson College Polling survey results, released Wednesday, found Johnson at 28%, followed by businessman Toby Doeden at 18%, Gov. Larry Rhoden [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/11/adding-more-carcinogenic-smoke-to-indoor-spaces-with-cigar-bars-makes-no-sense/",
@@ -582,7 +640,8 @@
     "published": "2026-03-11",
     "description": "South Dakota voters have already made their position clear: They want smoke-free public spaces. Lawmakers, however, seem to think they know better. They are attempting to significantly weaken that law via House Bill 1215, which has passed both chambers of the Legislature and awaits consideration by the governor. HB 1215 would allow local municipalities to [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Sara Alhasnawi"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/state-regulators-approve-one-electric-rate-increase-begin-consideration-of-another/",
@@ -591,7 +650,8 @@
     "published": "2026-03-10",
     "description": "South Dakota regulators approved an electric rate increase for Otter Tail Power on Tuesday in Pierre while starting a review of Black Hills Energy’s rate increase request.  Otter Tail Power had proposed hiking its average residential customer’s bill by $14.39 per month. The company has about 11,500 customers in northeastern South Dakota.  The Public Utilities [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/two-of-five-bills-in-property-tax-package-defeated-by-south-dakota-legislators/",
@@ -600,7 +660,8 @@
     "published": "2026-03-10",
     "description": "The South Dakota House of Representatives said no to another of the five bills in a property tax reduction package announced last week by Gov. Larry Rhoden and legislative leaders. House Bill 1323 would have made it easier for citizens to refer local government decisions that could increase property taxes to a public vote. Its [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "John Hult"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/10/psychedelic-mental-health-treatments-will-be-legal-in-south-dakota-if-approved-by-feds/",
@@ -609,7 +670,8 @@
     "published": "2026-03-10",
     "description": "A synthetic version of psychedelic mushrooms will be legal for use in mental health therapy in South Dakota if it’s approved by the federal government.  Republican Gov. Larry Rhoden signed a bill into law on Tuesday that sets the state up to instantly legalize crystalline polymorph psilocybin if the U.S. Food and Drug Administration approves [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "John Hult"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/south-dakota-stiffens-penalty-for-disrupting-worship-in-response-to-ice-protests-elsewhere/",
@@ -618,7 +680,8 @@
     "published": "2026-03-10",
     "description": "PIERRE — The crime of preventing religious practices by threat or violence will change from a misdemeanor to a felony in South Dakota, in response to out-of-state protests against immigration enforcement actions. State Senate Majority Leader Jim Mehlhaff, R-Pierre, and state House Majority Leader Scott Odenbach, R-Spearfish, sponsored the bill in coordination with Republican Gov. [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/10/law-enforcement-resistance-tanks-bill-barring-jail-for-unpaid-sobriety-program-fees/",
@@ -627,7 +690,8 @@
     "published": "2026-03-10",
     "description": "A late-session rally from law enforcement lobbyists quashed a South Dakota legislative effort to bar the jailing of 24/7 sobriety program participants for their inability to pay. Codifying constitutional prohibitions against locking up people for debt without a plan to backfill sheriff’s office budgets, the lobbyists said, could spell the death of a program that [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "John Hult"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/09/trading-property-tax-for-sales-tax-legislature-moves-forward-with-parts-of-homeowner-relief-package/",
@@ -636,7 +700,8 @@
     "published": "2026-03-10",
     "description": "PIERRE — Two pieces of a property tax reduction package prepared by South Dakota’s legislative leadership and the executive branch are moving forward, but one bill failed during votes on Monday as lawmakers began the final week of the annual legislative session. The House of Representatives voted 42-27 in support of Senate Bill 245, which [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/09/fate-of-state-funding-for-reduced-price-school-meals-rests-with-governor/",
@@ -645,7 +710,8 @@
     "published": "2026-03-10",
     "description": "South Dakota Republican Gov. Larry Rhoden will decide if the state helps to pay for some school meals after the state Senate voted 20-14 on Monday to endorse the idea. If Rhoden signs House Bill 1082 into law, the state would use roughly $592,000 in state money each year to pay the amount currently charged [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "John Hult"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/09/governor-signs-bill-to-recognize-tribal-police-in-south-dakota-as-law-enforcement/",
@@ -654,7 +720,8 @@
     "published": "2026-03-09",
     "description": "Starting July 1, tribal police helping their state or local counterparts will be recognized as law enforcement officers under South Dakota law.  Gov. Larry Rhoden signed House Bill 1007 and other public safety and public welfare-related bills into law on Monday. Currently, the definition of law enforcement doesn’t include tribal officers, who routinely assist their [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "John Hult"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/09/abortion-rights-group-agrees-to-stop-ads-at-south-dakota-gas-stations-and-settle-litigation/",
@@ -663,7 +730,8 @@
     "published": "2026-03-09",
     "description": "A monthslong dispute over abortion-rights advertising is settled, after a New York nonprofit agreed to remove its ads and end its campaign at gas stations in South Dakota. The group, Mayday Health, began placing signage above gas station pumps across the state in December with links to information about abortion and birth control options, with [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/08/new-south-dakota-law-allows-voters-to-challenge-other-voters-citizenship/",
@@ -672,7 +740,8 @@
     "published": "2026-03-09",
     "description": "Voters in South Dakota will soon be able to challenge other voters’ citizenship. Republican Gov. Larry Rhoden signed legislation into law last week that authorizes challenges by individuals and election officials. “We do a lot of things right in South Dakota, and our election integrity is something to be admired and emulated by other states,” [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Seth Tupper"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/08/the-impact-of-federal-funding-on-civil-legal-aid-in-south-dakota/",
@@ -681,7 +750,8 @@
     "published": "2026-03-08",
     "description": "Every year, millions of Americans face life-altering civil legal crises such as eviction, domestic violence, or losing custody of a child. Despite tireless efforts from South Dakota organizations, 92% of civil legal crises faced by low-income individuals still go unaddressed due to chronic underfunding. Funding from the Legal Services Corporation is essential to South Dakota&#8217;s [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Emma Olafson"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/06/south-dakota-freedom-caucus-is-long-on-theatrics-short-on-results/",
@@ -690,7 +760,8 @@
     "published": "2026-03-07",
     "description": "According to its website, the members of the South Dakota Freedom Caucus keep busy by “fighting for the people’s rights.” If their legislative results this year are any indication, the people’s rights are taking a beating. The Freedom Caucus is a group of Republicans in the South Dakota Legislature. Their website touts adherence to the [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Dana Hess"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/06/noem-could-forgo-her-new-federal-role-for-a-sd-political-race-but-observers-say-its-unlikely/",
@@ -699,7 +770,8 @@
     "published": "2026-03-06",
     "description": "Several South Dakota political insiders think Kristi Noem will stick with her new role in the Trump administration following her dismissal as U.S. Department of Homeland Security secretary, rather than jump into a political race in her home state.  Joel Rosenthal is a former chairman of the South Dakota Republican Party. He said Noem returning [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/06/new-license-plate-imaging-helps-solve-theft-cases-say-police-in-two-south-dakota-cities/",
@@ -708,7 +780,8 @@
     "published": "2026-03-06",
     "description": "Police in South Dakota logged fewer theft reports in 2025 than the previous year, but made more arrests for theft. The figures suggest surveillance technology first adopted in Madison and expanded last year to Sioux Falls can make it easier to find suspects, its supporters say.  Madison Police Chief Justin Meyer said the city’s automated [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "John Hult"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/05/new-sales-tax-options-for-counties-and-cities-headed-to-governors-desk/",
@@ -717,7 +790,8 @@
     "published": "2026-03-06",
     "description": "Two bills that would allow local governments to impose new sales taxes for specific purposes cleared their last legislative hurdles on Thursday at the South Dakota Capitol in Pierre and are headed to the governor for his consideration. One bill is the governor’s own proposal to allow counties to levy up to a half-percent sales [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber, Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/05/data-center-regulation-bill-passes-south-dakota-house/",
@@ -726,7 +800,8 @@
     "published": "2026-03-06",
     "description": "One of the last remaining data center bills pending in the South Dakota Legislature — a measure that would impose new regulations — passed the state House on Thursday and now heads back to the Senate for consideration of a House committee&#8217;s amendment.  Senate Bill 135 is labeled the “Data Center Bill of Rights for [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/medical-marijuana-oversight-committee-survives-as-attempt-to-shut-it-down-fails/",
@@ -735,7 +810,8 @@
     "published": "2026-03-05",
     "description": "The committee that oversees South Dakota’s medical marijuana program should continue its work for at least another year, a panel of state senators decided. But the full Senate could have the final say. A bill that would repeal the sections of state law that established the Medical Marijuana Oversight Committee was rejected 4-3 in the [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/04/hopes-of-removing-south-dakotas-lieutenant-governor-as-senates-presiding-officer-flop-in-the-house/",
@@ -744,7 +820,8 @@
     "published": "2026-03-05",
     "description": "The South Dakota House of Representatives on Wednesday rejected a resolution that would have placed a constitutional amendment on the ballot asking voters if the lieutenant governor should be stripped of his role as the Senate&#8217;s presiding officer. Tensions between the lieutenant governor and the state Senate have simmered in 2026 due to the health-related [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/04/south-dakota-senators-endorse-alternative-setting-for-aggressive-and-violent-students/",
@@ -753,7 +830,8 @@
     "published": "2026-03-04",
     "description": "PIERRE — Students who are aggressive or violent in the classroom could be sent to an alternative setting if Gov. Larry Rhoden signs two bills passed this week by South Dakota lawmakers. Violence and verbal abuse toward teachers from students is rising, according to South Dakota Secretary of Education Joe Graves. He cited data from [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/04/sd-governor-legislative-leaders-roll-out-property-tax-plan-with-one-week-left-of-session/",
@@ -762,7 +840,8 @@
     "published": "2026-03-04",
     "description": "South Dakota Gov. Larry Rhoden has thrown his support behind a plan to use revenues from an upcoming increase in the statewide sales tax rate to offset homeowner property taxes — something his administration opposed earlier this legislative session. The shift in positions is part of a broader agreement between the executive branch and legislative [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/04/ban-on-advertising-selling-of-abortion-pills-one-vote-away-from-governors-desk/",
@@ -771,7 +850,8 @@
     "published": "2026-03-04",
     "description": "PIERRE — A bill to criminalize the sale or advertisement of “an article or thing” designed to perform an abortion is on its way to the South Dakota Senate. The Senate State Affairs Committee voted 8-1 Wednesday to advance it. If it succeeds in the Senate, it will go to the governor’s desk for final [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/04/governor-relents-signs-snap-soda-ban-for-south-dakota-into-law/",
@@ -780,7 +860,8 @@
     "published": "2026-03-04",
     "description": "PIERRE — South Dakota will move to ban the purchase of sugary drinks with food assistance benefits after Republican Gov. Larry Rhoden signed a bill he’d opposed into law in the face of its veto-proof support in both chambers of the South Dakota Legislature. House Bill 1056 will require the state to seek a waiver [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "John Hult"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/04/south-dakota-lawmakers-push-bill-criminalizing-deepfakes-nearer-to-governors-desk/",
@@ -789,7 +870,8 @@
     "published": "2026-03-04",
     "description": "PIERRE — A bill from South Dakota Attorney General Marty Jackley to criminalize the creation or sharing of deepfakes was amended this week to more clearly define what constitutes nudity before it reaches Gov. Larry Rhoden’s desk. The amendment, added on the floor of the House of Representatives, came in response to concerns about unintended [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "John Hult"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/03/governor-to-decide-on-abortion-ban-exceptions-prenatal-development-education/",
@@ -798,7 +880,8 @@
     "published": "2026-03-04",
     "description": "The South Dakota Senate passed bills addressing abortion and required education in prenatal development for K-12 students on Tuesday. The bills will now head to the governor’s desk. House Bill 1257 would spell out that several pregnancy-related treatments are not abortions, including treatment to resolve a miscarriage, treatment or removal of an ectopic pregnancy, removal [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/03/digital-currency-regulation-bills-head-to-south-dakota-governors-desk/",
@@ -807,7 +890,8 @@
     "published": "2026-03-04",
     "description": "PIERRE — Two bills to regulate digital currency in South Dakota are on their way to Gov. Larry Rhoden’s desk after supportive votes in both chambers of the legislature. One bill is meant to curb scams involving digital currency kiosks; the other would define cryptocurrency as a seizable asset. U.S. citizens lost $9.3 billion in [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber, John Hult"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/house-committee-decides-not-to-ask-voters-to-legalize-mobile-sports-betting/",
@@ -816,7 +900,8 @@
     "published": "2026-03-04",
     "description": "PIERRE — A committee of state representatives rejected a measure that would have asked South Dakota voters to approve sports betting and use the resulting tax revenue to fund property tax relief. Rep. Greg Jamison, R-Sioux Falls, carried Senate Joint Resolution 504 in the House of Representatives. Had it passed both chambers, the question of [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/south-dakota-lawmakers-block-rights-of-a-parent-measure/",
@@ -825,7 +910,8 @@
     "published": "2026-03-04",
     "description": "PIERRE — A bill on parental rights failed in the House of Representatives Tuesday over concerns about health care and child abuse. Lawmakers voted 35-30 Monday to defeat the bill, and a reconsideration attempt failed Tuesday. The state Senate passed the bill 19-15 last month. The legislation, brought by Sen. Tamara Grove, R-Lower Brule, would [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/carbon-is-dead-along-with-the-bill-to-make-carbon-pipelines-file-an-environmental-study/",
@@ -834,7 +920,8 @@
     "published": "2026-03-03",
     "description": "A panel of South Dakota senators defeated a state lawmaker’s second attempt to require environmental impact studies for carbon dioxide pipelines. Sioux Falls Republican Rep. John Hughes’ first attempt last year failed in the House on a 37-32 vote. This year’s version, House Bill 1173, cleared the House 44-22 last month.  The Senate Commerce and [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/03/reduced-price-school-meals-funding-heads-to-senate/",
@@ -843,7 +930,8 @@
     "published": "2026-03-03",
     "description": "PIERRE — South Dakota families who qualify for reduced-price school meals could get those meals for free if the state Senate backs and Gov. Larry Rhoden signs a bill endorsed by a panel of lawmakers Tuesday. The Senate Education Committee voted 5-2 to advance House Bill 1082. The bill passed the House of Representatives 46-20. [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/south-dakota-lawmakers-defeat-app-store-age-verification-proposal/",
@@ -852,7 +940,8 @@
     "published": "2026-03-03",
     "description": "A state Senate panel has declined to advance a bill that would have required mobile app stores operating in South Dakota to use age verification to restrict app downloads by minors. House Bill 1275 passed the House of Representatives on a 50-17 vote last month but was defeated in the Senate State Affairs Committee, 5-4. [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/02/south-dakota-senate-declines-to-put-eminent-domain-restrictions-on-the-ballot/",
@@ -861,7 +950,8 @@
     "published": "2026-03-03",
     "description": "South Dakota voters will not be asked to put eminent domain restrictions in the state constitution, the state Senate decided on Monday in Pierre. Supporters of House Joint Resolution 5001, which failed 14-19, had argued that residents need stronger protections than those found in last year’s law banning eminent domain for carbon capture pipelines.  Eminent [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/south-dakota-lawmakers-reject-longer-wait-for-officials-taking-private-jobs-with-state-contractors/",
@@ -870,7 +960,8 @@
     "published": "2026-03-02",
     "description": "A bill to require South Dakota officials who award or oversee major state contracts with private companies to wait longer before accepting jobs with those companies was defeated on Monday, per the request of the bill’s own House sponsor.  Under current law, such state officers and employees must wait one year.   The bill’s defeat came [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/02/state-senate-vote-could-send-prenatal-education-bill-to-south-dakota-governors-desk/",
@@ -879,7 +970,8 @@
     "published": "2026-03-02",
     "description": "PIERRE — Legislation that would require the state’s public schools to show students videos about prenatal development will be heard by the South Dakota Senate, despite concerns from opponents about medical accuracy and mandated education standards. The Senate Health and Human Services Committee voted 6-1 to approve House Bill 1313 on Monday. The House of [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/school-cellphone-ban-fails-in-south-dakota-legislative-committee/",
@@ -888,7 +980,8 @@
     "published": "2026-03-02",
     "description": "PIERRE — A bill to ban cellphone use by public school students during the day narrowly failed in a South Dakota House of Representatives committee Monday. The Education Committee voted 8-7 to defeat Senate Bill 198. The bill passed the state Senate 19-15 on Feb. 17. Cellphone use policies should be in the hands of [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/02/protecting-the-us-senates-home-state-prerogative-in-land-use-fights-is-essential-for-south-dakota/",
@@ -897,7 +990,8 @@
     "published": "2026-03-02",
     "description": "Twenty years ago, the Base Realignment and Closure Commission gave Ellsworth Air Force Base a 12% chance of survival. Washington technocrats had their charts and “authorities.” They didn’t have Box Elder on a map and probably couldn’t find it if they tried. Then-freshman Sen. John Thune and then-Gov. Mike Rounds refused to accept that distant [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Brad Johnson"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/01/closed-door-republican-caucus-meetings-are-an-insult-to-government-transparency/",
@@ -906,7 +1000,8 @@
     "published": "2026-03-01",
     "description": "The South Dakota Legislature, usually noted for the decorum of its public meetings, punished one of its own last month for being out of order. It’s hard for anyone but Republican legislators to know if the punishment fit the crime. During the House debate on Senate Concurrent Resolution 604, a measure admonishing South Dakotans to [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Dana Hess"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/03/01/lawmakers-seek-a-share-of-31-million-in-unallocated-funds/",
@@ -915,7 +1010,8 @@
     "published": "2026-03-01",
     "description": "South Dakota lawmakers have whittled down ideas of how to use at least $31 million in one-time state funding from nearly 30 to under a dozen. Gov. Larry Rhoden told lawmakers in December that he left $14.4 million in his recommended budget for them to spend on special projects. Lawmakers learned in February that pot [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/02/27/whatever-lawmakers-do-about-property-taxes-its-too-late-to-save-us-from-the-price-of-freedom/",
@@ -924,7 +1020,8 @@
     "published": "2026-02-28",
     "description": "A state senator recently offered an insightful opinion on South Dakota’s property tax conundrum. He was arguing, unsuccessfully, for a bill incentivizing data center construction. But his comments made a broader point. “What’s happened in South Dakota is we get people moving here for freedom, and that’s great,” said Sen. Steve Kolbeck, R-Sioux Falls. “But [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Seth Tupper"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/madison-state-senator-drops-out-of-republican-primary-for-u-s-house/",
@@ -933,7 +1030,8 @@
     "published": "2026-02-27",
     "description": "A state senator from Madison has suspended his campaign for U.S. House of Representatives. Republican Casey Crabtree had been seeking the nomination of his party to appear on the general election ballot.  Other announced Republican candidates include South Dakota Attorney General Marty Jackley and a Piedmont man named James Bialota. In a poll commissioned by [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "South Dakota Searchlight staff"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/02/27/some-ethics-documents-meant-to-reveal-state-board-members-conflicts-are-missing/",
@@ -942,7 +1040,8 @@
     "published": "2026-02-27",
     "description": "Many legally requird financial interest disclosures for the governor's 2025 Senate-confirmed appointees were missing or not viewable on the state's website, prompting balme swapping.",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/state-house-declines-to-make-it-easier-to-force-an-election-on-excess-school-taxes/",
@@ -951,7 +1050,8 @@
     "published": "2026-02-26",
     "description": "PIERRE — South Dakota state representatives rejected a proposal Thursday that would make it easier to force an election after a school board decides to exceed property tax limitations. School districts can already raise more revenue by “opting out” of property tax limits set by the state, and local residents can petition that decision to [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/02/26/south-dakota-needs-a-farm-bill-that-protects-producers-wetlands-and-pheasants/",
@@ -960,7 +1060,8 @@
     "published": "2026-02-26",
     "description": "South Dakota’s farms, ranches, rural communities and wildlife advocates are living with uncertainty, and congressional delay on a full farm bill is inexcusable. Agriculture is the backbone of this state. So are the grasslands, wetlands and pheasant fields that define it. When Washington stalls, it doesn’t just create headlines — it destabilizes operations, weakens conservation [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Brad Johnson"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/02/26/governor-launches-website-estimating-property-tax-relief-but-not-higher-sales-tax-impact/",
@@ -969,7 +1070,8 @@
     "published": "2026-02-26",
     "description": "A new page on South Dakota Republican Gov. Larry Rhoden’s website shows how much homeowners would save on property taxes if lawmakers approve his optional half-percent sales tax for counties. He didn’t say, though, how much more the average person would spend on sales taxes. Bureau of Finance and Management Commissioner Jim Terwilliger took a [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/02/26/tax-exemption-efforts-for-disabled-veterans-meet-varied-fates-in-south-dakota-legislature/",
@@ -978,7 +1080,8 @@
     "published": "2026-02-26",
     "description": "PIERRE — South Dakota senators recently nixed two proposals that would have increased property tax exemptions for disabled veteran homeowners, while advancing a related bill. Hot Springs Republican Sen. Amber Hulse said the conversation around the issue has been “vile,” and lawmakers have been too focused on putting limits on relief programs for veterans. “It&#8217;s [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Meghan O'Brien"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/02/25/snap-soda-ban-headed-to-desk-of-south-dakota-governor-whos-concerned-about-costs/",
@@ -1041,7 +1144,8 @@
     "published": "2026-04-01",
     "description": "Financial stress builds for corn and soybean farmers, including for one East River grower who almost lost $10,000 on a sale after a big price drop prompted by a presidential post.",
     "record_type": "news",
-    "source_label": "SD Newswatch"
+    "source_label": "SD Newswatch",
+    "byline": "Bart Pfankuch"
   },
   {
     "url": "https://southdakotasearchlight.com/briefs/public-retirees-in-south-dakota-face-potential-sixth-year-of-less-than-inflation-benefit-changes/",
@@ -1050,7 +1154,8 @@
     "published": "2026-04-01",
     "description": "The officials who manage South Dakota’s public employee retirement system said Wednesday that if current investment trends continue, retirees are likely to see a July 2027 cost-of-living benefit adjustment similar to the 1.56% increase they will get this July. If inflation stays above 2% as it has lately, that could mean a sixth straight year [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Joshua Haiar"
   },
   {
     "url": "https://www.sdnewswatch.org/sdnw-board-of-directors-rita-edwards-mark-millage/",
@@ -1059,7 +1164,8 @@
     "published": "2026-04-02",
     "description": "Rita Edwards and Mark Millage bring experience in law, media and business to South Dakota News Watch board of directors.",
     "record_type": "news",
-    "source_label": "SD Newswatch"
+    "source_label": "SD Newswatch",
+    "byline": "Carson Walker"
   },
   {
     "url": "https://www.sdnewswatch.org/fact-brief-south-dakota-rate-recidivism-inmates/",
@@ -1068,7 +1174,8 @@
     "published": "2026-04-02",
     "description": "According to the Justice Center, South Dakota was one of 14 states where recidivism increased between 2011 and 2021.",
     "record_type": "news",
-    "source_label": "SD Newswatch"
+    "source_label": "SD Newswatch",
+    "byline": "Michael Klinski"
   },
   {
     "url": "https://www.sdnewswatch.org/south-dakota-voter-guide-primary-general-election/",
@@ -1077,7 +1184,8 @@
     "published": "2026-04-01",
     "description": "Everything South Dakota voters need to know about statewide contests in the 2026 primary and general elections.",
     "record_type": "news",
-    "source_label": "SD Newswatch"
+    "source_label": "SD Newswatch",
+    "byline": "Alexander Rifaat"
   },
   {
     "url": "https://southdakotasearchlight.com/2026/04/02/one-data-center-project-unchanged-while-another-doesnt-make-sense-after-rejected-incentives/",
@@ -1086,7 +1194,8 @@
     "published": "2026-04-02",
     "description": "One company plans to pause its project but another company’s plan is “unchanged” after South Dakota lawmakers rejected incentives for large data centers. Applied Digital has been courting South Dakota lawmakers and residents of Deuel County in far eastern South Dakota for years. The company planned to build a $5 billion, 430-megawatt data center campus [&#8230;]",
     "record_type": "news",
-    "source_label": "South Dakota Searchlight"
+    "source_label": "South Dakota Searchlight",
+    "byline": "Makenzie Huber"
   },
   {
     "url": "https://www.sdnewswatch.org/south-dakota-opioid-settlement-rhoden-jackley/",
@@ -1095,6 +1204,67 @@
     "published": "2026-04-02",
     "description": "Ten projects across the state will use funding to address substance use disorder through prevention, treatment and education services.",
     "record_type": "news",
+    "source_label": "SD Newswatch",
+    "byline": "Molly Wetsch"
+  },
+  {
+    "url": "https://www.sdnewswatch.org/historic-restoration-canton-lutheran-church-easter/",
+    "title": "Historic restoration project shines light on Canton Lutheran Church",
+    "slug": "sd-newswatch-historic-restoration-project-shines-light-on-canton-lutheran-church",
+    "published": "2026-04-03",
+    "byline": "Molly Wetsch",
+    "description": "How one rural congregation is tapping its community -- as well as state and national funding -- to preserve a critical part of its history.",
+    "record_type": "news",
     "source_label": "SD Newswatch"
+  },
+  {
+    "url": "https://www.sdnewswatch.org/south-dakota-opioid-settlement-rhoden-jackley/",
+    "title": "$7.8M from opioid settlement granted to organizations",
+    "slug": "sd-newswatch-7-8m-from-opioid-settlement-granted-to-organizations",
+    "published": "2026-04-02",
+    "byline": "Molly Wetsch",
+    "description": "Ten projects across the state will use funding to address substance use disorder through prevention, treatment and education services.",
+    "record_type": "news",
+    "source_label": "SD Newswatch"
+  },
+  {
+    "url": "https://southdakotasearchlight.com/2026/04/04/first-debate-in-republican-race-for-governor-was-like-the-first-pancake-off-the-griddle/",
+    "title": "First debate in Republican race for governor was like the first pancake off the griddle",
+    "slug": "south-dakota-searchlight-first-debate-in-republican-race-for-governor-was-like",
+    "published": "2026-04-04",
+    "byline": "Dana Hess",
+    "description": "Maybe gubernatorial debates are like pancakes. The first one is always a little funky. Fortunately, there are a couple more debates scheduled this month. Maybe, like pancakes, they’ll get better as the griddle gets hotter. The first debate from the four candidates seeking the Republican nomination for governor is in the books. There were some [&#8230;]",
+    "record_type": "news",
+    "source_label": "South Dakota Searchlight"
+  },
+  {
+    "url": "https://southdakotasearchlight.com/briefs/opponents-sue-over-forest-services-approval-of-drilling-near-lakota-sacred-site-in-black-hills/",
+    "title": "Opponents sue over Forest Service’s approval of drilling near Lakota sacred site in Black Hills",
+    "slug": "south-dakota-searchlight-opponents-sue-over-forest-services-approval-of-drilling",
+    "published": "2026-04-03",
+    "byline": "Joshua Haiar",
+    "description": "Opponents filed a lawsuit this week challenging the U.S. Forest Service’s approval of a graphite drilling project near Pe’ Sla, a site in the Black Hills of western South Dakota that holds cultural and spiritual significance for Native Americans.   The plaintiffs are the Indigenous rights group known as NDN Collective and the Black Hills Clean [&#8230;]",
+    "record_type": "news",
+    "source_label": "South Dakota Searchlight"
+  },
+  {
+    "url": "https://southdakotasearchlight.com/2026/04/03/artificial-intelligence-crept-into-lawmaking-in-2026-prompting-excitement-and-concern/",
+    "title": "Artificial intelligence crept into lawmaking in 2026, prompting excitement — and concern",
+    "slug": "south-dakota-searchlight-artificial-intelligence-crept-into-lawmaking-in-2026",
+    "published": "2026-04-03",
+    "byline": "John Hult",
+    "description": "When he’s not at the Capitol, South Dakota state Rep. Al Novstrup helps oversee his amusement parks in Sioux Falls and his hometown of Aberdeen.  He’s not an expert on off-label prescription drug use.  The Republican professed as much during a Feb. 5 speech to the House of Representatives, delivered in support of a bill [&#8230;]",
+    "record_type": "news",
+    "source_label": "South Dakota Searchlight"
+  },
+  {
+    "url": "https://southdakotasearchlight.com/2026/04/02/south-dakota-awards-7-8-million-from-opioid-settlement-to-combat-addiction/",
+    "title": "South Dakota awards $7.8 million from opioid settlement to combat addiction",
+    "slug": "south-dakota-searchlight-south-dakota-awards-7-8-million-from-opioid-settlement",
+    "published": "2026-04-02",
+    "byline": "John Hult",
+    "description": "SIOUX FALLS — The latest round of funding from a nationwide opioid settlement will pay for a mobile street medicine clinic, addiction treatment training for primary care doctors, and recovery coaching for incarcerated people and recent inmates. The money will also help fund a mobile crisis team on the Cheyenne River Reservation, expand addiction treatment [&#8230;]",
+    "record_type": "news",
+    "source_label": "South Dakota Searchlight"
   }
 ]
