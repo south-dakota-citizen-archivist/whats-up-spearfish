@@ -63,6 +63,13 @@ jobs:
           fetch_ebird()
           "
 
+      - name: Fetch library circulation data
+        run: |
+          uv run python -c "
+          from scrapers.sources.library_circulation import fetch_circulation
+          fetch_circulation()
+          "
+
       - name: Fetch creek gauge data
         run: |
           uv run python -c "

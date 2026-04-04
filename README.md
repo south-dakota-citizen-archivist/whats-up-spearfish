@@ -41,6 +41,7 @@ _Updated: April 4, 2026_
 | Lawrence County Jobs | `lawrence_county_jobs` | — | 0 |
 | Lawrence County News Flash | `lawrence_county_news` | — | 0 |
 | Leone's Creamery | `leones_creamery` | `flavor` | 8 |
+| Library Circulation | `library_circulation` | — | 2 |
 | Matthews Opera House | `matthews_opera_house` | `event` | 27 |
 | Middle School Lunch | `spearfish_ms_lunch` | `school_menu` | 40 |
 | MS/HS Breakfast | `spearfish_mshs_breakfast` | `school_menu` | 40 |

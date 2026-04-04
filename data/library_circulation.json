@@ -1,0 +1,1245 @@
+{
+  "fetched_at": "2026-04-04T20:13:37.261463+00:00",
+  "rows": [
+    {
+      "year": 2015,
+      "month": 11,
+      "month_name": "Nov",
+      "loans": 7482,
+      "renewals": 1499,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1039/files/agenda/1100"
+    },
+    {
+      "year": 2015,
+      "month": 12,
+      "month_name": "Dec",
+      "loans": 7185,
+      "renewals": 1519,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1039/files/agenda/1100"
+    },
+    {
+      "year": 2016,
+      "month": 1,
+      "month_name": "Jan",
+      "loans": 7481,
+      "renewals": 1192,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1045/files/agenda/1118"
+    },
+    {
+      "year": 2016,
+      "month": 2,
+      "month_name": "Feb",
+      "loans": 6951,
+      "renewals": 1401,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1045/files/agenda/1118"
+    },
+    {
+      "year": 2016,
+      "month": 3,
+      "month_name": "Mar",
+      "loans": 7724,
+      "renewals": 1616,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1048/files/agenda/1127"
+    },
+    {
+      "year": 2016,
+      "month": 4,
+      "month_name": "Apr",
+      "loans": 7891,
+      "renewals": 1727,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1048/files/agenda/1127"
+    },
+    {
+      "year": 2016,
+      "month": 5,
+      "month_name": "May",
+      "loans": 6435,
+      "renewals": 1626,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1042/files/agenda/1109"
+    },
+    {
+      "year": 2016,
+      "month": 6,
+      "month_name": "Jun",
+      "loans": 9198,
+      "renewals": 1796,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1042/files/agenda/1109"
+    },
+    {
+      "year": 2016,
+      "month": 7,
+      "month_name": "Jul",
+      "loans": 9024,
+      "renewals": 2116,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1054/files/agenda/1145"
+    },
+    {
+      "year": 2016,
+      "month": 8,
+      "month_name": "Aug",
+      "loans": 8295,
+      "renewals": 1850,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1054/files/agenda/1145"
+    },
+    {
+      "year": 2016,
+      "month": 9,
+      "month_name": "Sep",
+      "loans": 7084,
+      "renewals": 1642,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1051/files/agenda/1136"
+    },
+    {
+      "year": 2016,
+      "month": 10,
+      "month_name": "Oct",
+      "loans": 7966,
+      "renewals": 1821,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1051/files/agenda/1136"
+    },
+    {
+      "year": 2016,
+      "month": 11,
+      "month_name": "Nov",
+      "loans": 6871,
+      "renewals": 1769,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1041/files/agenda/1106"
+    },
+    {
+      "year": 2016,
+      "month": 12,
+      "month_name": "Dec",
+      "loans": 6792,
+      "renewals": 1892,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1041/files/agenda/1106"
+    },
+    {
+      "year": 2017,
+      "month": 1,
+      "month_name": "Jan",
+      "loans": 6218,
+      "renewals": 1530,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1046/files/agenda/1121"
+    },
+    {
+      "year": 2017,
+      "month": 2,
+      "month_name": "Feb",
+      "loans": 6378,
+      "renewals": 1480,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1046/files/agenda/1121"
+    },
+    {
+      "year": 2017,
+      "month": 3,
+      "month_name": "Mar",
+      "loans": 7279,
+      "renewals": 1533,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1049/files/agenda/1130"
+    },
+    {
+      "year": 2017,
+      "month": 4,
+      "month_name": "Apr",
+      "loans": 6276,
+      "renewals": 1805,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1049/files/agenda/1130"
+    },
+    {
+      "year": 2017,
+      "month": 5,
+      "month_name": "May",
+      "loans": 6348,
+      "renewals": 1533,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1043/files/agenda/1112"
+    },
+    {
+      "year": 2017,
+      "month": 6,
+      "month_name": "Jun",
+      "loans": 8947,
+      "renewals": 1998,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1043/files/agenda/1112"
+    },
+    {
+      "year": 2017,
+      "month": 7,
+      "month_name": "Jul",
+      "loans": 8088,
+      "renewals": 1787,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1055/files/agenda/1148"
+    },
+    {
+      "year": 2017,
+      "month": 8,
+      "month_name": "Aug",
+      "loans": 7753,
+      "renewals": 1707,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1055/files/agenda/1148"
+    },
+    {
+      "year": 2017,
+      "month": 9,
+      "month_name": "Sep",
+      "loans": 6254,
+      "renewals": 1509,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1052/files/agenda/1139"
+    },
+    {
+      "year": 2017,
+      "month": 10,
+      "month_name": "Oct",
+      "loans": 6650,
+      "renewals": 1594,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1052/files/agenda/1139"
+    },
+    {
+      "year": 2017,
+      "month": 11,
+      "month_name": "Nov",
+      "loans": 6291,
+      "renewals": 1538,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1040/files/agenda/1103"
+    },
+    {
+      "year": 2017,
+      "month": 12,
+      "month_name": "Dec",
+      "loans": 5472,
+      "renewals": 1638,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1040/files/agenda/1103"
+    },
+    {
+      "year": 2018,
+      "month": 1,
+      "month_name": "Jan",
+      "loans": 6807,
+      "renewals": 1307,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1047/files/agenda/1124"
+    },
+    {
+      "year": 2018,
+      "month": 2,
+      "month_name": "Feb",
+      "loans": 6116,
+      "renewals": 1728,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1047/files/agenda/1124"
+    },
+    {
+      "year": 2018,
+      "month": 3,
+      "month_name": "Mar",
+      "loans": 8102,
+      "renewals": 1919,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1050/files/agenda/1133"
+    },
+    {
+      "year": 2018,
+      "month": 4,
+      "month_name": "Apr",
+      "loans": 6213,
+      "renewals": 1853,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1050/files/agenda/1133"
+    },
+    {
+      "year": 2018,
+      "month": 5,
+      "month_name": "May",
+      "loans": 6041,
+      "renewals": 1513,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1044/files/agenda/1115"
+    },
+    {
+      "year": 2018,
+      "month": 6,
+      "month_name": "Jun",
+      "loans": 8871,
+      "renewals": 1711,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1044/files/agenda/1115"
+    },
+    {
+      "year": 2018,
+      "month": 7,
+      "month_name": "Jul",
+      "loans": 6993,
+      "renewals": 1899,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1056/files/agenda/1151"
+    },
+    {
+      "year": 2018,
+      "month": 8,
+      "month_name": "Aug",
+      "loans": 6283,
+      "renewals": 1521,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1056/files/agenda/1151"
+    },
+    {
+      "year": 2018,
+      "month": 9,
+      "month_name": "Sep",
+      "loans": 6033,
+      "renewals": 1523,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1053/files/agenda/1142"
+    },
+    {
+      "year": 2018,
+      "month": 10,
+      "month_name": "Oct",
+      "loans": 6888,
+      "renewals": 1620,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1053/files/agenda/1142"
+    },
+    {
+      "year": 2018,
+      "month": 11,
+      "month_name": "Nov",
+      "loans": 6244,
+      "renewals": 1657,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1332/files/agenda/1685"
+    },
+    {
+      "year": 2018,
+      "month": 12,
+      "month_name": "Dec",
+      "loans": 5376,
+      "renewals": 1698,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1332/files/agenda/1685"
+    },
+    {
+      "year": 2019,
+      "month": 1,
+      "month_name": "Jan",
+      "loans": 7117,
+      "renewals": 1612,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1333/files/agenda/1687"
+    },
+    {
+      "year": 2019,
+      "month": 2,
+      "month_name": "Feb",
+      "loans": 6113,
+      "renewals": 1631,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1333/files/agenda/1687"
+    },
+    {
+      "year": 2019,
+      "month": 3,
+      "month_name": "Mar",
+      "loans": 7167,
+      "renewals": 1880,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1334/files/agenda/1689"
+    },
+    {
+      "year": 2019,
+      "month": 4,
+      "month_name": "Apr",
+      "loans": 6411,
+      "renewals": 1623,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1334/files/agenda/1689"
+    },
+    {
+      "year": 2019,
+      "month": 5,
+      "month_name": "May",
+      "loans": 6546,
+      "renewals": 1748,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1335/files/agenda/1691"
+    },
+    {
+      "year": 2019,
+      "month": 6,
+      "month_name": "Jun",
+      "loans": 8584,
+      "renewals": 1839,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1335/files/agenda/1691"
+    },
+    {
+      "year": 2019,
+      "month": 7,
+      "month_name": "Jul",
+      "loans": 8197,
+      "renewals": 2242,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1330/files/agenda/1680"
+    },
+    {
+      "year": 2019,
+      "month": 8,
+      "month_name": "Aug",
+      "loans": 6717,
+      "renewals": 1832,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1330/files/agenda/1680"
+    },
+    {
+      "year": 2019,
+      "month": 9,
+      "month_name": "Sep",
+      "loans": 6032,
+      "renewals": 1751,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1359/files/agenda/1739"
+    },
+    {
+      "year": 2019,
+      "month": 10,
+      "month_name": "Oct",
+      "loans": 7017,
+      "renewals": 2077,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1359/files/agenda/1739"
+    },
+    {
+      "year": 2019,
+      "month": 11,
+      "month_name": "Nov",
+      "loans": 5884,
+      "renewals": 1461,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1378/files/agenda/1775"
+    },
+    {
+      "year": 2019,
+      "month": 12,
+      "month_name": "Dec",
+      "loans": 5204,
+      "renewals": 1874,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1378/files/agenda/1775"
+    },
+    {
+      "year": 2020,
+      "month": 1,
+      "month_name": "Jan",
+      "loans": 6120,
+      "renewals": 1534,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1405/files/agenda/1827"
+    },
+    {
+      "year": 2020,
+      "month": 2,
+      "month_name": "Feb",
+      "loans": 5774,
+      "renewals": 1536,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1405/files/agenda/1827"
+    },
+    {
+      "year": 2020,
+      "month": 3,
+      "month_name": "Mar",
+      "loans": 3420,
+      "renewals": 1419,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1420/files/agenda/1855"
+    },
+    {
+      "year": 2020,
+      "month": 4,
+      "month_name": "Apr",
+      "loans": 1297,
+      "renewals": 89,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1420/files/agenda/1855"
+    },
+    {
+      "year": 2020,
+      "month": 5,
+      "month_name": "May",
+      "loans": 2048,
+      "renewals": 1315,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1438/files/agenda/1890"
+    },
+    {
+      "year": 2020,
+      "month": 6,
+      "month_name": "Jun",
+      "loans": 4606,
+      "renewals": 1153,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1438/files/agenda/1890"
+    },
+    {
+      "year": 2020,
+      "month": 7,
+      "month_name": "Jul",
+      "loans": 4891,
+      "renewals": 1433,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1455/files/agenda/1923"
+    },
+    {
+      "year": 2020,
+      "month": 8,
+      "month_name": "Aug",
+      "loans": 5160,
+      "renewals": 1394,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1455/files/agenda/1923"
+    },
+    {
+      "year": 2020,
+      "month": 9,
+      "month_name": "Sep",
+      "loans": 5050,
+      "renewals": 1256,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1476/files/agenda/1959"
+    },
+    {
+      "year": 2020,
+      "month": 10,
+      "month_name": "Oct",
+      "loans": 5381,
+      "renewals": 1518,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1476/files/agenda/1959"
+    },
+    {
+      "year": 2020,
+      "month": 11,
+      "month_name": "Nov",
+      "loans": 4325,
+      "renewals": 1501,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1495/files/agenda/1996"
+    },
+    {
+      "year": 2020,
+      "month": 12,
+      "month_name": "Dec",
+      "loans": 4707,
+      "renewals": 1564,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1495/files/agenda/1996"
+    },
+    {
+      "year": 2021,
+      "month": 1,
+      "month_name": "Jan",
+      "loans": 5344,
+      "renewals": 1401,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1516/files/agenda/2038"
+    },
+    {
+      "year": 2021,
+      "month": 2,
+      "month_name": "Feb",
+      "loans": 5162,
+      "renewals": 1542,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1516/files/agenda/2038"
+    },
+    {
+      "year": 2021,
+      "month": 3,
+      "month_name": "Mar",
+      "loans": 5506,
+      "renewals": 1562,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1535/files/agenda/2076"
+    },
+    {
+      "year": 2021,
+      "month": 4,
+      "month_name": "Apr",
+      "loans": 5035,
+      "renewals": 1513,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1535/files/agenda/2076"
+    },
+    {
+      "year": 2021,
+      "month": 5,
+      "month_name": "May",
+      "loans": null,
+      "renewals": null,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1553/files/agenda/2111"
+    },
+    {
+      "year": 2021,
+      "month": 6,
+      "month_name": "Jun",
+      "loans": null,
+      "renewals": null,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1553/files/agenda/2111"
+    },
+    {
+      "year": 2021,
+      "month": 7,
+      "month_name": "Jul",
+      "loans": 6692,
+      "renewals": 1747,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1573/files/agenda/2150"
+    },
+    {
+      "year": 2021,
+      "month": 8,
+      "month_name": "Aug",
+      "loans": 6234,
+      "renewals": 1662,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1573/files/agenda/2150"
+    },
+    {
+      "year": 2021,
+      "month": 9,
+      "month_name": "Sep",
+      "loans": 5201,
+      "renewals": 1587,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1598/files/agenda/2197"
+    },
+    {
+      "year": 2021,
+      "month": 10,
+      "month_name": "Oct",
+      "loans": 5062,
+      "renewals": 1623,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1598/files/agenda/2197"
+    },
+    {
+      "year": 2021,
+      "month": 11,
+      "month_name": "Nov",
+      "loans": 5001,
+      "renewals": 1362,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1615/files/agenda/2231"
+    },
+    {
+      "year": 2021,
+      "month": 12,
+      "month_name": "Dec",
+      "loans": 4676,
+      "renewals": 1515,
+      "overdrive_loans": null,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1615/files/agenda/2231"
+    },
+    {
+      "year": 2022,
+      "month": 1,
+      "month_name": "Jan",
+      "loans": 5265,
+      "renewals": null,
+      "overdrive_loans": 3459,
+      "hoopla_loans": null,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1634/files/agenda/2267"
+    },
+    {
+      "year": 2022,
+      "month": 2,
+      "month_name": "Feb",
+      "loans": 5091,
+      "renewals": null,
+      "overdrive_loans": 2937,
+      "hoopla_loans": 62,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1634/files/agenda/2267"
+    },
+    {
+      "year": 2022,
+      "month": 3,
+      "month_name": "Mar",
+      "loans": 5814,
+      "renewals": null,
+      "overdrive_loans": 3291,
+      "hoopla_loans": 152,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1660/files/agenda/2318"
+    },
+    {
+      "year": 2022,
+      "month": 4,
+      "month_name": "Apr",
+      "loans": 5570,
+      "renewals": null,
+      "overdrive_loans": 3399,
+      "hoopla_loans": 167,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1660/files/agenda/2318"
+    },
+    {
+      "year": 2022,
+      "month": 5,
+      "month_name": "May",
+      "loans": 4751,
+      "renewals": null,
+      "overdrive_loans": 3318,
+      "hoopla_loans": 206,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1671/files/agenda/2339"
+    },
+    {
+      "year": 2022,
+      "month": 6,
+      "month_name": "Jun",
+      "loans": 7260,
+      "renewals": null,
+      "overdrive_loans": 3253,
+      "hoopla_loans": 187,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1671/files/agenda/2339"
+    },
+    {
+      "year": 2022,
+      "month": 7,
+      "month_name": "Jul",
+      "loans": 7386,
+      "renewals": null,
+      "overdrive_loans": 3439,
+      "hoopla_loans": 217,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1683/files/agenda/2361"
+    },
+    {
+      "year": 2022,
+      "month": 8,
+      "month_name": "Aug",
+      "loans": 6210,
+      "renewals": null,
+      "overdrive_loans": 3382,
+      "hoopla_loans": 267,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1683/files/agenda/2361"
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "month_name": "Sep",
+      "loans": 5531,
+      "renewals": null,
+      "overdrive_loans": 3326,
+      "hoopla_loans": 209,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1700/files/agenda/2394"
+    },
+    {
+      "year": 2022,
+      "month": 10,
+      "month_name": "Oct",
+      "loans": 5500,
+      "renewals": null,
+      "overdrive_loans": 3275,
+      "hoopla_loans": 224,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1700/files/agenda/2394"
+    },
+    {
+      "year": 2022,
+      "month": 11,
+      "month_name": "Nov",
+      "loans": 5223,
+      "renewals": null,
+      "overdrive_loans": 3070,
+      "hoopla_loans": 231,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1716/files/agenda/2422"
+    },
+    {
+      "year": 2022,
+      "month": 12,
+      "month_name": "Dec",
+      "loans": 4554,
+      "renewals": null,
+      "overdrive_loans": 3352,
+      "hoopla_loans": 232,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1716/files/agenda/2422"
+    },
+    {
+      "year": 2023,
+      "month": 1,
+      "month_name": "Jan",
+      "loans": 5651,
+      "renewals": null,
+      "overdrive_loans": 3641,
+      "hoopla_loans": 269,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1731/files/agenda/2452"
+    },
+    {
+      "year": 2023,
+      "month": 2,
+      "month_name": "Feb",
+      "loans": 5574,
+      "renewals": null,
+      "overdrive_loans": 3018,
+      "hoopla_loans": 353,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1731/files/agenda/2452"
+    },
+    {
+      "year": 2023,
+      "month": 3,
+      "month_name": "Mar",
+      "loans": 6461,
+      "renewals": null,
+      "overdrive_loans": 3298,
+      "hoopla_loans": 321,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1746/files/agenda/2481"
+    },
+    {
+      "year": 2023,
+      "month": 4,
+      "month_name": "Apr",
+      "loans": 5737,
+      "renewals": null,
+      "overdrive_loans": 3118,
+      "hoopla_loans": 308,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1746/files/agenda/2481"
+    },
+    {
+      "year": 2023,
+      "month": 5,
+      "month_name": "May",
+      "loans": 5224,
+      "renewals": null,
+      "overdrive_loans": 3241,
+      "hoopla_loans": 354,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1761/files/agenda/2509"
+    },
+    {
+      "year": 2023,
+      "month": 6,
+      "month_name": "Jun",
+      "loans": 7652,
+      "renewals": null,
+      "overdrive_loans": 3234,
+      "hoopla_loans": 410,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1761/files/agenda/2509"
+    },
+    {
+      "year": 2023,
+      "month": 7,
+      "month_name": "Jul",
+      "loans": 7392,
+      "renewals": null,
+      "overdrive_loans": 3388,
+      "hoopla_loans": 357,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1776/files/agenda/2538"
+    },
+    {
+      "year": 2023,
+      "month": 8,
+      "month_name": "Aug",
+      "loans": 6930,
+      "renewals": null,
+      "overdrive_loans": 3246,
+      "hoopla_loans": 376,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1776/files/agenda/2538"
+    },
+    {
+      "year": 2023,
+      "month": 9,
+      "month_name": "Sep",
+      "loans": 5703,
+      "renewals": null,
+      "overdrive_loans": 3074,
+      "hoopla_loans": 372,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1795/files/agenda/2569"
+    },
+    {
+      "year": 2023,
+      "month": 10,
+      "month_name": "Oct",
+      "loans": 6036,
+      "renewals": null,
+      "overdrive_loans": 3619,
+      "hoopla_loans": 431,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1795/files/agenda/2569"
+    },
+    {
+      "year": 2023,
+      "month": 11,
+      "month_name": "Nov",
+      "loans": 5968,
+      "renewals": null,
+      "overdrive_loans": 3587,
+      "hoopla_loans": 444,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1816/files/agenda/2608"
+    },
+    {
+      "year": 2023,
+      "month": 12,
+      "month_name": "Dec",
+      "loans": 5601,
+      "renewals": null,
+      "overdrive_loans": 3700,
+      "hoopla_loans": 432,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1816/files/agenda/2608"
+    },
+    {
+      "year": 2024,
+      "month": 1,
+      "month_name": "Jan",
+      "loans": 6038,
+      "renewals": null,
+      "overdrive_loans": 3803,
+      "hoopla_loans": 499,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1829/files/agenda/2630"
+    },
+    {
+      "year": 2024,
+      "month": 2,
+      "month_name": "Feb",
+      "loans": 6356,
+      "renewals": null,
+      "overdrive_loans": 3763,
+      "hoopla_loans": 470,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1829/files/agenda/2630"
+    },
+    {
+      "year": 2024,
+      "month": 3,
+      "month_name": "Mar",
+      "loans": 6487,
+      "renewals": null,
+      "overdrive_loans": 3235,
+      "hoopla_loans": 673,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1844/files/agenda/2659"
+    },
+    {
+      "year": 2024,
+      "month": 4,
+      "month_name": "Apr",
+      "loans": 7627,
+      "renewals": null,
+      "overdrive_loans": 3192,
+      "hoopla_loans": 693,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1844/files/agenda/2659"
+    },
+    {
+      "year": 2024,
+      "month": 5,
+      "month_name": "May",
+      "loans": 6487,
+      "renewals": null,
+      "overdrive_loans": 3235,
+      "hoopla_loans": 673,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1862/files/agenda/2693"
+    },
+    {
+      "year": 2024,
+      "month": 6,
+      "month_name": "Jun",
+      "loans": 7627,
+      "renewals": null,
+      "overdrive_loans": 3192,
+      "hoopla_loans": 693,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1862/files/agenda/2693"
+    },
+    {
+      "year": 2024,
+      "month": 7,
+      "month_name": "Jul",
+      "loans": 7465,
+      "renewals": null,
+      "overdrive_loans": 3432,
+      "hoopla_loans": 693,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1880/files/agenda/2728"
+    },
+    {
+      "year": 2024,
+      "month": 8,
+      "month_name": "Aug",
+      "loans": 6347,
+      "renewals": null,
+      "overdrive_loans": 3447,
+      "hoopla_loans": 685,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1880/files/agenda/2728"
+    },
+    {
+      "year": 2024,
+      "month": 9,
+      "month_name": "Sep",
+      "loans": 5353,
+      "renewals": null,
+      "overdrive_loans": 3452,
+      "hoopla_loans": 663,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1902/files/agenda/2777"
+    },
+    {
+      "year": 2024,
+      "month": 10,
+      "month_name": "Oct",
+      "loans": 5612,
+      "renewals": null,
+      "overdrive_loans": 3146,
+      "hoopla_loans": 759,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1902/files/agenda/2777"
+    },
+    {
+      "year": 2024,
+      "month": 11,
+      "month_name": "Nov",
+      "loans": 5501,
+      "renewals": null,
+      "overdrive_loans": 2938,
+      "hoopla_loans": 723,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1915/files/agenda/2801"
+    },
+    {
+      "year": 2024,
+      "month": 12,
+      "month_name": "Dec",
+      "loans": 5273,
+      "renewals": null,
+      "overdrive_loans": 3024,
+      "hoopla_loans": 778,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1915/files/agenda/2801"
+    },
+    {
+      "year": 2025,
+      "month": 1,
+      "month_name": "Jan",
+      "loans": 5836,
+      "renewals": null,
+      "overdrive_loans": 3594,
+      "hoopla_loans": 847,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1938/files/agenda/2847"
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "month_name": "Feb",
+      "loans": 5877,
+      "renewals": null,
+      "overdrive_loans": 3323,
+      "hoopla_loans": 799,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1938/files/agenda/2847"
+    },
+    {
+      "year": 2025,
+      "month": 3,
+      "month_name": "Mar",
+      "loans": 6041,
+      "renewals": null,
+      "overdrive_loans": 3590,
+      "hoopla_loans": 896,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1960/files/agenda/2885"
+    },
+    {
+      "year": 2025,
+      "month": 4,
+      "month_name": "Apr",
+      "loans": 5370,
+      "renewals": null,
+      "overdrive_loans": 3444,
+      "hoopla_loans": 793,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1960/files/agenda/2885"
+    },
+    {
+      "year": 2025,
+      "month": 5,
+      "month_name": "May",
+      "loans": 6198,
+      "renewals": null,
+      "overdrive_loans": 3825,
+      "hoopla_loans": 847,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1984/files/agenda/4110"
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "month_name": "Jun",
+      "loans": 7619,
+      "renewals": null,
+      "overdrive_loans": 3669,
+      "hoopla_loans": 863,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/1984/files/agenda/4110"
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "month_name": "Jul",
+      "loans": 7623,
+      "renewals": null,
+      "overdrive_loans": 3782,
+      "hoopla_loans": 955,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/2262/files/agenda/4124"
+    },
+    {
+      "year": 2025,
+      "month": 8,
+      "month_name": "Aug",
+      "loans": 6182,
+      "renewals": null,
+      "overdrive_loans": 3712,
+      "hoopla_loans": 979,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/2262/files/agenda/4124"
+    },
+    {
+      "year": 2025,
+      "month": 9,
+      "month_name": "Sep",
+      "loans": 4939,
+      "renewals": null,
+      "overdrive_loans": 3703,
+      "hoopla_loans": 905,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/2254/files/agenda/6374"
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "month_name": "Oct",
+      "loans": 4965,
+      "renewals": null,
+      "overdrive_loans": 3764,
+      "hoopla_loans": 922,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/2254/files/agenda/6374"
+    },
+    {
+      "year": 2025,
+      "month": 11,
+      "month_name": "Nov",
+      "loans": 4939,
+      "renewals": null,
+      "overdrive_loans": 3703,
+      "hoopla_loans": 905,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/2255/files/agenda/6375"
+    },
+    {
+      "year": 2025,
+      "month": 12,
+      "month_name": "Dec",
+      "loans": 4965,
+      "renewals": null,
+      "overdrive_loans": 3764,
+      "hoopla_loans": 922,
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/2255/files/agenda/6375"
+    },
+    {
+      "year": 2026,
+      "month": 1,
+      "month_name": "Jan",
+      "loans": 5539,
+      "renewals": null,
+      "overdrive_loans": 4467,
+      "hoopla_loans": null,
+      "minutes_link": null
+    },
+    {
+      "year": 2026,
+      "month": 2,
+      "month_name": "Feb",
+      "loans": 5205,
+      "renewals": null,
+      "overdrive_loans": 4002,
+      "hoopla_loans": null,
+      "minutes_link": null
+    }
+  ]
+}

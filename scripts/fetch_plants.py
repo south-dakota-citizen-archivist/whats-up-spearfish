@@ -335,7 +335,7 @@ def main():
     OUTPUT_PATH.write_text(json.dumps(enriched, indent=2), encoding="utf-8")
     log.info("Written %d plants to %s", len(enriched), OUTPUT_PATH)
 
-    print(f"\n=== SUMMARY ===")
+    print("\n=== SUMMARY ===")
     print(f"Total symbols in plantlst.txt : {len(symbols)}")
     print(f"Valid profiles returned        : {len(profiles)}")
     print(f"Passed filter (native + bbox)  : {len(filtered)}")

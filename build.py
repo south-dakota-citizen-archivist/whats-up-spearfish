@@ -66,7 +66,10 @@ def _to_mountain(value: str | None) -> datetime | None:
 def load_data() -> dict[str, list[dict]]:
     data: dict[str, list[dict]] = {}
     # Files handled separately (non-list JSON)
-    _skip = {"creek_gauge", "native_plants_spotlight", "plants_native_black_hills", "inaturalist_plant_cache", "ebird"}
+    _skip = {
+        "creek_gauge", "native_plants_spotlight", "plants_native_black_hills",
+        "inaturalist_plant_cache", "ebird", "library_circulation",
+    }
 
     for json_file in sorted(DATA_DIR.glob("*.json")):
         slug = json_file.stem
@@ -643,6 +646,97 @@ def load_ebird() -> list[dict]:
         return []
 
 
+def load_circulation() -> dict:
+    """Load library circulation data and pre-compute SVG chart paths."""
+    circ_file = DATA_DIR / "library_circulation.json"
+    if not circ_file.exists():
+        return {}
+    try:
+        raw = json.loads(circ_file.read_text(encoding="utf-8"))
+    except Exception as exc:
+        print(f"[build] Warning: could not load library_circulation.json: {exc}")
+        return {}
+
+    rows = raw.get("rows", [])
+    if not rows:
+        return {}
+
+    # Rows with physical loan data (for chart x-positions)
+    chart_rows = [r for r in rows if r.get("loans") is not None]
+    n = len(chart_rows)
+    if n < 2:
+        return {"rows": rows, "recent": list(reversed(rows[-24:])), "chart": None}
+
+    # Y-axis max with 5% headroom
+    max_val = max(
+        (r.get("loans") or 0) + (r.get("overdrive_loans") or 0) + (r.get("hoopla_loans") or 0)
+        for r in chart_rows
+    ) * 1.05
+    max_val = max(max_val, 1)
+
+    CHART_W, CHART_H = 500, 90
+
+    pts_phys: list[tuple[float, float]] = []
+    pts_od: list[tuple[float, float]] = []
+    pts_total: list[tuple[float, float]] = []
+
+    for i, r in enumerate(chart_rows):
+        x = round((i / (n - 1)) * CHART_W, 1)
+        phys = r.get("loans") or 0
+        od = r.get("overdrive_loans") or 0
+        hoopla = r.get("hoopla_loans") or 0
+        pts_phys.append((x, round(CHART_H - (phys / max_val) * CHART_H, 1)))
+        pts_od.append((x, round(CHART_H - ((phys + od) / max_val) * CHART_H, 1)))
+        pts_total.append((x, round(CHART_H - ((phys + od + hoopla) / max_val) * CHART_H, 1)))
+
+    def area_path(top: list, bottom: list | None = None) -> str:
+        if not top:
+            return ""
+        base = [(top[-1][0], CHART_H), (top[0][0], CHART_H)] if bottom is None else list(reversed(bottom))
+        pts = top + base
+        return "M " + " L ".join(f"{x},{y}" for x, y in pts) + " Z"
+
+    has_od = any(r.get("overdrive_loans") for r in chart_rows)
+    has_hoopla = any(r.get("hoopla_loans") for r in chart_rows)
+
+    # Year tick marks (January of each year; label even years only)
+    year_ticks = []
+    seen_years: set[int] = set()
+    for i, r in enumerate(chart_rows):
+        yr = r["year"]
+        if r["month"] == 1 and yr not in seen_years:
+            seen_years.add(yr)
+            x = round((i / (n - 1)) * CHART_W, 1)
+            year_ticks.append({"x": x, "year": yr, "label": str(yr) if yr % 2 == 0 else ""})
+
+    # COVID annotation (April 2020)
+    covid_x = None
+    for i, r in enumerate(chart_rows):
+        if r["year"] == 2020 and r["month"] == 4:
+            covid_x = round((i / (n - 1)) * CHART_W, 1)
+            break
+
+    # Recent 24 months for table (newest first), skip rows with no numeric data
+    recent_rows = [r for r in rows if r.get("loans") is not None or r.get("overdrive_loans") is not None]
+    recent = list(reversed(recent_rows[-24:]))
+
+    print(f"[build] Library circulation: {len(rows)} months, {n} chart points, {len(recent)} in table")
+
+    return {
+        "rows": rows,
+        "recent": recent,
+        "chart": {
+            "width": CHART_W,
+            "height": CHART_H,
+            "path_phys": area_path(pts_phys),
+            "path_od": area_path(pts_od, pts_phys) if has_od else "",
+            "path_hoopla": area_path(pts_total, pts_od) if has_hoopla else "",
+            "year_ticks": year_ticks,
+            "covid_x": covid_x,
+        },
+    }
+
+
 def load_creek_data() -> dict:
     """Read creek gauge snapshot from data/creek_gauge.json (written by the creek-gauge scraper)."""
     creek_file = DATA_DIR / "creek_gauge.json"
@@ -686,6 +780,7 @@ def build() -> None:
 
     plant_spotlight = load_plant_spotlight()
     ebird_observations = load_ebird()
+    library_circulation = load_circulation()
     creek_data = load_creek_data()
     print(f"[build] Creek gauge: {creek_data.get('current', {}).get('cfs', 'n/a')} cfs, "
           f"{len(creek_data.get('series7d', []))} IV points, "
@@ -710,6 +805,7 @@ def build() -> None:
         "fire": fire_data,
         "plant_spotlight": plant_spotlight,
         "ebird_observations": ebird_observations,
+        "library_circulation": library_circulation,
     }
 
     # Single-page dashboard
