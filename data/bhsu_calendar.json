@@ -1113,5 +1113,27 @@
     "category": "Campus Calendar/Events",
     "record_type": "event",
     "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "1c6f241d-c5f6-480b-9c33-f22909d1ee45",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/1c6f241d-c5f6-480b-9c33-f22909d1ee45",
+    "title": "Independence Day (Observed) - Faculty/Staff Holiday",
+    "slug": "independence-day-observed-faculty-staff-holiday",
+    "description": "Independence Day (Observed) - Faculty/Staff Holiday",
+    "start_dt": "2026-07-03",
+    "end_dt": "2026-07-03",
+    "location": "",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "",
+    "tags": [
+      "Administrative",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
   }
 ]

@@ -20462,5 +20462,37 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20260403123906210c051a1e992984f",
+    "url": "https://gobound.com/direct/comps/h20260403123906210c051a1e992984f/show",
+    "title": "Softball: Spearfish vs Rapid City Stevens (Junior Varsity)",
+    "slug": "softball-spearfish-vs-rapid-city-stevens-junior-varsity",
+    "sport": "Softball",
+    "level": "Junior Varsity",
+    "sex": "female",
+    "description": "Junior Varsity Softball - Spearfish vs Rapid City Stevens",
+    "start_dt": "2026-04-09T22:30:00",
+    "end_dt": "2026-04-09T23:45:00",
+    "location": "Parkview Softball Complex",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h202604031238561722f217cbee5954e",
+    "url": "https://gobound.com/direct/comps/h202604031238561722f217cbee5954e/show",
+    "title": "Softball: Spearfish vs Rapid City Stevens (Varsity)",
+    "slug": "softball-spearfish-vs-rapid-city-stevens-varsity",
+    "sport": "Softball",
+    "level": "Varsity",
+    "sex": "female",
+    "description": "Varsity Softball - Spearfish vs Rapid City Stevens",
+    "start_dt": "2026-04-10T00:00:00",
+    "end_dt": "2026-04-10T02:00:00",
+    "location": "Parkview Softball Complex",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]

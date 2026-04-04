@@ -298,5 +298,35 @@
     "start_dt": "Thu, 26 Feb 2026 10:14:42 -0600",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3400",
+    "title": "Spring Clean Up Days at Spearfish RUS",
+    "slug": "spring-clean-up-days-at-spearfish-rus",
+    "description": "<strong>Event date:</strong> April 17, 2026 <br /><strong>Event Time: </strong>07:30 AM - 04:00 PM<br /><strong>Location:</strong> <br />910 Camp Comfort Road<br />Spearfish, SD 57783<br /><strong>Description:</strong><br />The Spearfish Restricted Use Site (RUS) will be waiving fees for residents of the City of Spearfish and Lawrence County from 7:30 a.m. to 4 p.m. Friday, April 17, and Saturday, April 18. Household waste will not be accepted. Regular fees apply to appliances containing freon and tires without rims.  Refrigerators and freezers must have the doors removed upon drop-off. Residents using a commercial vehicle for disposal of personal items are subject to regular fees. This will be at the discretion of rubble site staff. Questions can be directed to the rubble site staff at 605-645-3345 prior to disposal.",
+    "published": "Wed, 25 Mar 2026 15:48:40 -0700",
+    "start_dt": "Wed, 25 Mar 2026 15:48:40 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3401",
+    "title": "Spring Clean Up Days at Spearfish RUS",
+    "slug": "spring-clean-up-days-at-spearfish-rus",
+    "description": "<strong>Event date:</strong> April 18, 2026 <br /><strong>Event Time: </strong>07:30 AM - 04:00 PM<br /><strong>Location:</strong> <br />910 Camp Comfort Road<br />Spearfish, SD 57783<br /><strong>Description:</strong><br />The Spearfish Restricted Use Site (RUS) will be waiving fees for residents of the City of Spearfish and Lawrence County from 7:30 a.m. to 4 p.m. Friday, April 17, and Saturday, April 18. Household waste will not be accepted. Regular fees apply to appliances containing freon and tires without rims.  Refrigerators and freezers must have the doors removed upon drop-off. Residents using a commercial vehicle for disposal of personal items are subject to regular fees. This will be at the discretion of rubble site staff. Questions can be directed to the rubble site staff at 605-645-3345 prior to disposal.",
+    "published": "Tue, 10 Mar 2026 12:07:21 -0700",
+    "start_dt": "Tue, 10 Mar 2026 12:07:21 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3307",
+    "title": "Library Book Club",
+    "slug": "library-book-club",
+    "description": "<strong>Event date:</strong> April 18, 2026 <br /><strong>Event Time: </strong>09:30 AM - 10:30 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Stop by the library to check out a copy of this month's selection and join in the discussion. All are welcome!",
+    "published": "Mon, 15 Dec 2025 16:14:14 -0700",
+    "start_dt": "Mon, 15 Dec 2025 16:14:14 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]
