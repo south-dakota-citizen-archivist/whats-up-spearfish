@@ -65,15 +65,17 @@ def _scrape_releases() -> list[dict]:
         desc_el = row.select_one(".news-release__summary")
         description = _WS_RE.sub(" ", desc_el.get_text(" ", strip=True)).strip() if desc_el else ""
 
-        records.append({
-            "url": url,
-            "title": title,
-            "slug": make_slug(f"bhnf-release-{title}"),
-            "published": published,
-            "description": description,
-            "record_type": "press_release",
-            "source_label": "Black Hills National Forest",
-        })
+        records.append(
+            {
+                "url": url,
+                "title": title,
+                "slug": make_slug(f"bhnf-release-{title}"),
+                "published": published,
+                "description": description,
+                "record_type": "press_release",
+                "source_label": "Black Hills National Forest",
+            }
+        )
     return records
 
 
@@ -104,16 +106,18 @@ def _scrape_events() -> list[dict]:
         desc_el = card.select_one(".usa-card__body")
         description = _WS_RE.sub(" ", desc_el.get_text(" ", strip=True)).strip() if desc_el else ""
 
-        records.append({
-            "url": url,
-            "title": title,
-            "slug": make_slug(f"bhnf-event-{title}"),
-            "start_dt": start_dt,
-            "location": "Black Hills National Forest",
-            "description": description,
-            "record_type": "event",
-            "source_label": "Black Hills National Forest",
-        })
+        records.append(
+            {
+                "url": url,
+                "title": title,
+                "slug": make_slug(f"bhnf-event-{title}"),
+                "start_dt": start_dt,
+                "location": "Black Hills National Forest",
+                "description": description,
+                "record_type": "event",
+                "source_label": "Black Hills National Forest",
+            }
+        )
     return records
 
 

@@ -16,6 +16,7 @@ from scrapers.base import BaseScraper
 # Test double — minimal concrete subclass
 # ---------------------------------------------------------------------------
 
+
 class _Scraper(BaseScraper):
     name = "Test Scraper"
     slug = "test_scraper"
@@ -32,18 +33,25 @@ class _Scraper(BaseScraper):
 # Initialisation
 # ---------------------------------------------------------------------------
 
+
 class TestInit:
     def test_missing_name_raises(self):
         class S(BaseScraper):
             slug = "s"
-            def scrape(self): return []
+
+            def scrape(self):
+                return []
+
         with pytest.raises(ValueError, match="name"):
             S()
 
     def test_missing_slug_raises(self):
         class S(BaseScraper):
             name = "S"
-            def scrape(self): return []
+
+            def scrape(self):
+                return []
+
         with pytest.raises(ValueError, match="slug"):
             S()
 
@@ -55,6 +63,7 @@ class TestInit:
 # ---------------------------------------------------------------------------
 # load_existing
 # ---------------------------------------------------------------------------
+
 
 class TestLoadExisting:
     def test_returns_empty_when_file_absent(self, data_dir):
@@ -86,6 +95,7 @@ class TestLoadExisting:
 # save
 # ---------------------------------------------------------------------------
 
+
 class TestSave:
     def test_writes_json_file(self, data_dir):
         s = _Scraper()
@@ -96,6 +106,7 @@ class TestSave:
 
     def test_creates_data_directory(self, tmp_path):
         import scrapers.base as base_module
+
         nested = tmp_path / "deep" / "data"
         original = base_module.DATA_DIR
         base_module.DATA_DIR = nested
@@ -118,6 +129,7 @@ class TestSave:
 # ---------------------------------------------------------------------------
 # run() — dedup and merge logic
 # ---------------------------------------------------------------------------
+
 
 class TestRun:
     def test_all_new_records_returned(self, data_dir):
@@ -168,7 +180,7 @@ class TestRun:
         existing = [{"slug": "foo", "url": "http://a.com"}]
         fresh = [
             {"slug": "foo", "url": "http://a-updated.com"},  # dup
-            {"slug": "bar", "url": "http://b.com"},          # new
+            {"slug": "bar", "url": "http://b.com"},  # new
         ]
         s = SlugScraper(records=fresh)
         s.save(existing)
@@ -202,10 +214,12 @@ class TestRun:
 # run() — replace=True (kill-and-fill) mode
 # ---------------------------------------------------------------------------
 
+
 class TestRunReplace:
     def _make_scraper(self, records):
         class ReplaceScraper(_Scraper):
             replace = True
+
         return ReplaceScraper(records=records)
 
     def test_replace_saves_only_fresh_records(self, data_dir):

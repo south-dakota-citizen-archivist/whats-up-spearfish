@@ -34,6 +34,7 @@ def _to_iso(val) -> str:
 
 class GoBoundSportsScraper(BaseScraper):
     """Base class for gobound.com iCal sports feed scrapers."""
+
     dedup_key = "uid"
     ical_url: str = ""
     source_url: str = ""
@@ -64,22 +65,24 @@ class GoBoundSportsScraper(BaseScraper):
             uid = str(component.get("UID", ""))
             url = str(component.get("URL", self.source_url)).strip() or self.source_url
 
-            records.append({
-                "uid": uid,
-                "url": url,
-                "title": summary,
-                "slug": make_slug(summary),
-                "sport": sport,
-                "level": str(component.get("X-BND-ACTIVITYLEVEL", "")).strip(),
-                "sex": str(component.get("X-BND-ACTIVITYSEX", "")).strip(),
-                "description": str(component.get("DESCRIPTION", "")).strip(),
-                "start_dt": _to_iso(component.get("DTSTART")),
-                "end_dt": _to_iso(component.get("DTEND")),
-                "location": str(component.get("LOCATION", "")).strip(),
-                "status": status,
-                "record_type": "event",
-                "source_label": self.name,
-            })
+            records.append(
+                {
+                    "uid": uid,
+                    "url": url,
+                    "title": summary,
+                    "slug": make_slug(summary),
+                    "sport": sport,
+                    "level": str(component.get("X-BND-ACTIVITYLEVEL", "")).strip(),
+                    "sex": str(component.get("X-BND-ACTIVITYSEX", "")).strip(),
+                    "description": str(component.get("DESCRIPTION", "")).strip(),
+                    "start_dt": _to_iso(component.get("DTSTART")),
+                    "end_dt": _to_iso(component.get("DTEND")),
+                    "location": str(component.get("LOCATION", "")).strip(),
+                    "status": status,
+                    "record_type": "event",
+                    "source_label": self.name,
+                }
+            )
 
         return records
 

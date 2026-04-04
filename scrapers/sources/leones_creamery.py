@@ -34,14 +34,16 @@ class LeonesCreamery(BaseScraper):
             description = img.get("alt", "").strip()
             image_url = img.get("src", "").strip()
 
-            records.append({
-                "url": SOURCE_URL,
-                "image_url": image_url,
-                "title": name,
-                "slug": make_slug(name),
-                "description": description,
-                "record_type": "flavor",
-                "source_label": "Leone's Creamery",
-            })
+            records.append(
+                {
+                    "url": SOURCE_URL,
+                    "image_url": image_url,
+                    "title": name,
+                    "slug": make_slug(name),
+                    "description": description,
+                    "record_type": "flavor",
+                    "source_label": "Leone's Creamery",
+                }
+            )
 
         return records

@@ -60,17 +60,19 @@ def _fetch_pets(url: str, species: str) -> list[dict]:
 
         image_alt = item.get("imageAltText", "") or title
 
-        records.append({
-            "url": url,
-            "title": title,
-            "slug": make_slug(f"{species}-{title}"),
-            "species": species,
-            "description": description,
-            "image_url": image_url,
-            "image_alt": image_alt,
-            "record_type": "adoptable",
-            "source_label": "Western Hills Humane Society",
-        })
+        records.append(
+            {
+                "url": url,
+                "title": title,
+                "slug": make_slug(f"{species}-{title}"),
+                "species": species,
+                "description": description,
+                "image_url": image_url,
+                "image_alt": image_alt,
+                "record_type": "adoptable",
+                "source_label": "Western Hills Humane Society",
+            }
+        )
 
     return records
 

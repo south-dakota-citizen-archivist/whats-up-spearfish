@@ -24,10 +24,7 @@ DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
 # Common user-agent to avoid trivial blocks.
 DEFAULT_HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (compatible; SpearfishBulletinBot/1.0; "
-        "+https://github.com/spearfish-bulletin)"
-    )
+    "User-Agent": ("Mozilla/5.0 (compatible; SpearfishBulletinBot/1.0; +https://github.com/spearfish-bulletin)")
 }
 
 # ---------------------------------------------------------------------------

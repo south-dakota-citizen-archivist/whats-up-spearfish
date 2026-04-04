@@ -35,12 +35,11 @@ GITHUB_URL = "https://github.com/south-dakota-citizen-archivist/whats-up-spearfi
 # Scraper discovery: slug → human name
 # ---------------------------------------------------------------------------
 
+
 def _discover_scrapers() -> dict[str, str]:
     """Walk scrapers.sources and return {slug: name} for every BaseScraper subclass."""
     slug_to_name: dict[str, str] = {}
-    for finder, module_name, _ in pkgutil.walk_packages(
-        scrapers.sources.__path__, prefix="scrapers.sources."
-    ):
+    for finder, module_name, _ in pkgutil.walk_packages(scrapers.sources.__path__, prefix="scrapers.sources."):
         try:
             mod = importlib.import_module(module_name)
         except Exception:
@@ -59,6 +58,7 @@ def _discover_scrapers() -> dict[str, str]:
 # ---------------------------------------------------------------------------
 # Data file stats: slug → {count, record_types}
 # ---------------------------------------------------------------------------
+
 
 def _data_stats() -> dict[str, dict]:
     # Non-list JSON files: map slug → key that holds the actual records list
@@ -91,6 +91,7 @@ def _data_stats() -> dict[str, dict]:
 # ---------------------------------------------------------------------------
 # README template
 # ---------------------------------------------------------------------------
+
 
 def _build_readme(slug_to_name: dict[str, str], stats: dict[str, dict]) -> str:
     now = datetime.now(ZoneInfo("America/Denver"))
@@ -126,7 +127,7 @@ def _build_readme(slug_to_name: dict[str, str], stats: dict[str, dict]) -> str:
 
     # Build markdown table
     header = "| Source | Slug | Record types | Count |"
-    sep    = "|---|---|---|---:|"
+    sep = "|---|---|---|---:|"
     table_lines = [header, sep]
     for name, slug, type_str, count in rows:
         table_lines.append(f"| {name} | `{slug}` | {type_str} | {count:,} |")
@@ -228,6 +229,7 @@ Both are optional — the pipeline runs fine without them.
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+
 
 def main() -> None:
     slug_to_name = _discover_scrapers()

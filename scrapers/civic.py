@@ -73,21 +73,14 @@ class CivicScraperBase(BaseScraper):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         if self.site_class is None:
-            raise ValueError(
-                f"{self.__class__.__name__} must set site_class to a "
-                "civic_scraper.platforms.*Site class."
-            )
+            raise ValueError(f"{self.__class__.__name__} must set site_class to a civic_scraper.platforms.*Site class.")
         if not self.site_url:
-            raise ValueError(
-                f"{self.__class__.__name__} must set site_url."
-            )
+            raise ValueError(f"{self.__class__.__name__} must set site_url.")
 
     def _build_site(self):
         from civic_scraper.base.cache import Cache
 
-        cache_path = self.cache_dir or str(
-            (self.data_file.parent / "civic_cache").resolve()
-        )
+        cache_path = self.cache_dir or str((self.data_file.parent / "civic_cache").resolve())
         return self.site_class(self.site_url, cache=Cache(cache_path))
 
     def _default_start_date(self) -> str:

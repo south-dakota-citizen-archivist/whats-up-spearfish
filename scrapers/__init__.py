@@ -73,9 +73,8 @@ def run_all():
     print(f"\nDone. {total_new} total new record(s) across {len(scraper_classes)} scraper(s).")
 
     if total_new > 0:
-        alert_text = (
-            ":newspaper: *Spearfish Bulletin* — scrape complete.\n"
-            + "\n".join(f"• {line}" for line in summary_lines)
+        alert_text = ":newspaper: *Spearfish Bulletin* — scrape complete.\n" + "\n".join(
+            f"• {line}" for line in summary_lines
         )
         send_alert(alert_text)
 

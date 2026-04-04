@@ -36,9 +36,7 @@ _HEADERS = {
     )
 }
 _WHITESPACE_RE = re.compile(r"\s+")
-_LDJSON_RE = re.compile(
-    r'type="application/ld\+json">(.*?)</script>', re.DOTALL
-)
+_LDJSON_RE = re.compile(r'type="application/ld\+json">(.*?)</script>', re.DOTALL)
 
 
 def _fetch_article_urls() -> list[str]:
@@ -48,16 +46,13 @@ def _fetch_article_urls() -> list[str]:
         page = browser.new_page()
         page.goto(NEWS_URL, timeout=30000, wait_until="networkidle")
         page.wait_for_timeout(2000)
-        hrefs = page.eval_on_selector_all(
-            "a[href]", "els => [...new Set(els.map(e => e.href))]"
-        )
+        hrefs = page.eval_on_selector_all("a[href]", "els => [...new Set(els.map(e => e.href))]")
         browser.close()
 
     return [
-        u for u in hrefs
-        if re.search(r"sdpb\.org/.+/\d{4}-\d{2}-\d{2}/", u)
-        and "/podcast/" not in u
-        and "/schedule" not in u
+        u
+        for u in hrefs
+        if re.search(r"sdpb\.org/.+/\d{4}-\d{2}-\d{2}/", u) and "/podcast/" not in u and "/schedule" not in u
     ]
 
 
@@ -125,10 +120,7 @@ def _parse_article(url: str) -> dict | None:
 
 
 def _slack_blocks(record: dict) -> list[dict]:
-    header = (
-        f"*<{record['url']}|{record['title']}>*\n"
-        f"{record['published']}   {record['byline']}"
-    ).strip()
+    header = (f"*<{record['url']}|{record['title']}>*\n{record['published']}   {record['byline']}").strip()
     blocks = [{"type": "section", "text": {"type": "mrkdwn", "text": header}}]
     desc = record.get("description", "")
     if desc:

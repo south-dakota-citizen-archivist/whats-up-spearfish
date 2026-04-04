@@ -61,17 +61,19 @@ class SpearfishSchools(BaseScraper):
             start_dt = _to_iso(component.get("DTSTART"))
             end_dt = _to_iso(component.get("DTEND"))
 
-            records.append({
-                "uid": uid,
-                "url": url,
-                "title": title,
-                "slug": make_slug(title),
-                "description": description,
-                "start_dt": start_dt,
-                "end_dt": end_dt,
-                "location": location,
-                "record_type": "event",
-                "source_label": "Spearfish School District",
-            })
+            records.append(
+                {
+                    "uid": uid,
+                    "url": url,
+                    "title": title,
+                    "slug": make_slug(title),
+                    "description": description,
+                    "start_dt": start_dt,
+                    "end_dt": end_dt,
+                    "location": location,
+                    "record_type": "event",
+                    "source_label": "Spearfish School District",
+                }
+            )
 
         return records

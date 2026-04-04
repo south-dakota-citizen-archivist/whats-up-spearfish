@@ -36,15 +36,9 @@ class BaseScraper(ABC):
             self.slug = slug
 
         if not hasattr(self, "name") or not self.name:
-            raise ValueError(
-                f"{self.__class__.__name__} must define a 'name' attribute or "
-                "pass name= to __init__."
-            )
+            raise ValueError(f"{self.__class__.__name__} must define a 'name' attribute or pass name= to __init__.")
         if not hasattr(self, "slug") or not self.slug:
-            raise ValueError(
-                f"{self.__class__.__name__} must define a 'slug' attribute or "
-                "pass slug= to __init__."
-            )
+            raise ValueError(f"{self.__class__.__name__} must define a 'slug' attribute or pass slug= to __init__.")
 
         self.data_file: Path = DATA_DIR / f"{self.slug}.json"
 
@@ -105,23 +99,15 @@ class BaseScraper(ABC):
 
         if self.replace:
             self.save(fresh)
-            print(
-                f"[{self.name}] replaced → {len(fresh)} record(s) saved to {self.data_file.name}"
-            )
+            print(f"[{self.name}] replaced → {len(fresh)} record(s) saved to {self.data_file.name}")
             return fresh
 
         existing = self.load_existing()
 
         # Build a lookup of existing records by dedup key.
-        existing_keys: set = {
-            r.get(self.dedup_key)
-            for r in existing
-            if r.get(self.dedup_key)
-        }
+        existing_keys: set = {r.get(self.dedup_key) for r in existing if r.get(self.dedup_key)}
 
-        new_records = [
-            r for r in fresh if r.get(self.dedup_key) not in existing_keys
-        ]
+        new_records = [r for r in fresh if r.get(self.dedup_key) not in existing_keys]
 
         merged = existing + new_records
         self.save(merged)

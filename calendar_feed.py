@@ -37,6 +37,7 @@ SITE_URL = "https://south-dakota-citizen-archivist.github.io/whats-up-spearfish"
 # Data loading (mirrors build.py but self-contained)
 # ---------------------------------------------------------------------------
 
+
 def load_all_records() -> list[dict]:
     records: list[dict] = []
     for json_file in sorted(DATA_DIR.glob("*.json")):
@@ -76,6 +77,7 @@ def _parse_dt(value: str | None) -> datetime | None:
 # ---------------------------------------------------------------------------
 # iCalendar (.ics)
 # ---------------------------------------------------------------------------
+
 
 def generate_ics(records: list[dict]) -> None:
     cal = Calendar()
@@ -133,12 +135,10 @@ def generate_ics(records: list[dict]) -> None:
 # RSS 2.0 feed (events.xml)
 # ---------------------------------------------------------------------------
 
+
 def generate_rss(records: list[dict]) -> None:
     # Filter to event-like records only.
-    events = [
-        r for r in records
-        if r.get("record_type") == "event" or r.get("start_dt")
-    ]
+    events = [r for r in records if r.get("record_type") == "event" or r.get("start_dt")]
     events.sort(
         key=lambda r: r.get("start_dt") or r.get("date") or "",
         reverse=True,
@@ -213,6 +213,7 @@ def _text(parent: ET.Element, tag: str, text: str) -> ET.Element:
 # ---------------------------------------------------------------------------
 # Entry point
 # ---------------------------------------------------------------------------
+
 
 def main() -> None:
     records = load_all_records()

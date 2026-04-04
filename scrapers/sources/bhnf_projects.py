@@ -73,22 +73,24 @@ def _scrape_listing() -> list[dict]:
         url = BASE_URL + href if href.startswith("/") else href
         project_id = href.rstrip("/").split("/")[-1]
         desc_el = card.select_one(".usa-card__body p")
-        projects.append({
-            "project_id": project_id,
-            "title": a.get_text(strip=True),
-            "url": url,
-            "status": card.get("data-status", "").strip(),
-            "district": card.get("data-unit", "").strip(),
-            "purpose": card.get("data-purposeid", "").strip().title(),
-            "description": desc_el.get_text(" ", strip=True) if desc_el else "",
-            "milestones": [],
-            "comment_period_date": None,
-            "comment_period_sort": "9999-99",
-            "location_summary": "",
-            "counties": [],
-            "contact": {},
-            "last_updated": "",
-        })
+        projects.append(
+            {
+                "project_id": project_id,
+                "title": a.get_text(strip=True),
+                "url": url,
+                "status": card.get("data-status", "").strip(),
+                "district": card.get("data-unit", "").strip(),
+                "purpose": card.get("data-purposeid", "").strip().title(),
+                "description": desc_el.get_text(" ", strip=True) if desc_el else "",
+                "milestones": [],
+                "comment_period_date": None,
+                "comment_period_sort": "9999-99",
+                "location_summary": "",
+                "counties": [],
+                "contact": {},
+                "last_updated": "",
+            }
+        )
     return projects
 
 
@@ -120,10 +122,12 @@ def _scrape_detail(url: str) -> dict:
                 for row in table.select("tbody tr"):
                     cells = row.find_all("td")
                     if len(cells) == 2:
-                        milestones.append({
-                            "name": cells[0].get_text(strip=True),
-                            "date": cells[1].get_text(strip=True).replace("\xa0", " ").strip(),
-                        })
+                        milestones.append(
+                            {
+                                "name": cells[0].get_text(strip=True),
+                                "date": cells[1].get_text(strip=True).replace("\xa0", " ").strip(),
+                            }
+                        )
                 result["milestones"] = milestones
 
             # Labeled fields via <b> tags
@@ -133,7 +137,7 @@ def _scrape_detail(url: str) -> dict:
                     continue
                 field = b.get_text(strip=True).rstrip(":").strip()
                 value = p.get_text(" ", strip=True)
-                value = value[len(b.get_text(strip=True)):].lstrip(":").strip()
+                value = value[len(b.get_text(strip=True)) :].lstrip(":").strip()
                 if field == "Location Summary":
                     result["location_summary"] = value
                 elif field == "Counties":
@@ -185,21 +189,19 @@ def fetch_bhnf_projects() -> None:
         p.update(detail)
 
         ms = p.get("milestones") or []
-        comment_ms = next(
-            (m for m in ms if "comment" in m["name"].lower()), None
-        )
+        comment_ms = next((m for m in ms if "comment" in m["name"].lower()), None)
         p["comment_period_date"] = comment_ms["date"] if comment_ms else None
-        p["comment_period_sort"] = (
-            _milestone_sort_key(comment_ms["date"]) if comment_ms else "9999-99"
-        )
-        print(f"  [{i+1}] {p['title']} — comment: {p['comment_period_date']}")
+        p["comment_period_sort"] = _milestone_sort_key(comment_ms["date"]) if comment_ms else "9999-99"
+        print(f"  [{i + 1}] {p['title']} — comment: {p['comment_period_date']}")
 
     # Sort: in-progress first (by comment period soonest), then others by title
-    projects.sort(key=lambda p: (
-        0 if p["status"] == "In Progress" else 1,
-        p.get("comment_period_sort", "9999-99"),
-        p.get("title", "").lower(),
-    ))
+    projects.sort(
+        key=lambda p: (
+            0 if p["status"] == "In Progress" else 1,
+            p.get("comment_period_sort", "9999-99"),
+            p.get("title", "").lower(),
+        )
+    )
 
     DATA_FILE.write_text(
         json.dumps(

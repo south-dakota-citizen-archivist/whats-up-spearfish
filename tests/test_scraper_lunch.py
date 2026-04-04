@@ -15,6 +15,7 @@ from scrapers.sources.spearfish_school_lunch import _parse_day, _parse_nutrition
 # _parse_nutrition
 # ---------------------------------------------------------------------------
 
+
 class TestParseNutrition:
     def test_extracts_calories(self):
         assert _parse_nutrition({"calories_kcal": "500"})["calories"] == 500
@@ -33,8 +34,7 @@ class TestParseNutrition:
             "sodium_milligrams": "800",
         }
         result = _parse_nutrition(nutr)
-        assert set(result.keys()) == {"calories", "fat_g", "sat_fat_g", "carbs_g",
-                                       "fiber_g", "protein_g", "sodium_mg"}
+        assert set(result.keys()) == {"calories", "fat_g", "sat_fat_g", "carbs_g", "fiber_g", "protein_g", "sodium_mg"}
 
     def test_strips_star_suffix(self):
         result = _parse_nutrition({"calories_kcal": "450*", "protein_grams": "18*"})
@@ -71,6 +71,7 @@ class TestParseNutrition:
 # ---------------------------------------------------------------------------
 # _parse_day
 # ---------------------------------------------------------------------------
+
 
 class TestParseDay:
     _LOOKUP = {

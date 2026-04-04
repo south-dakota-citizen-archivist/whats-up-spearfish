@@ -54,18 +54,20 @@ class SpearfishSasquatch(BaseScraper):
                 offset = "-07:00" if "MST" in start_time else "-06:00"
                 start_dt = f"{date_str} {time_clean}{offset}"
 
-            records.append({
-                "url": SOURCE_URL,
-                "title": title,
-                "slug": make_slug(f"sasquatch-{date_str}"),
-                "start_dt": start_dt,
-                "location": location,
-                "opponent": opponent,
-                "game_type": game["type"],
-                "special": special,
-                "fireworks": fireworks,
-                "record_type": "event",
-                "source_label": self.name,
-            })
+            records.append(
+                {
+                    "url": SOURCE_URL,
+                    "title": title,
+                    "slug": make_slug(f"sasquatch-{date_str}"),
+                    "start_dt": start_dt,
+                    "location": location,
+                    "opponent": opponent,
+                    "game_type": game["type"],
+                    "special": special,
+                    "fireworks": fireworks,
+                    "record_type": "event",
+                    "source_label": self.name,
+                }
+            )
 
         return records

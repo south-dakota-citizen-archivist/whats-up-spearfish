@@ -57,13 +57,15 @@ def _parse_html(html: str, report_id: int) -> list[dict]:
         elif image_url and not image_url.startswith("http"):
             image_url = BASE_URL + image_url
 
-        records.append({
-            "url": href,
-            "title": title,
-            "image_url": image_url,
-            "record_type": "library_book",
-            "source_label": "Grace Balloch Memorial Library",
-        })
+        records.append(
+            {
+                "url": href,
+                "title": title,
+                "image_url": image_url,
+                "record_type": "library_book",
+                "source_label": "Grace Balloch Memorial Library",
+            }
+        )
 
     return records
 

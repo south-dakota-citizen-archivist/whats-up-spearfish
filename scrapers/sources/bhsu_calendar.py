@@ -45,30 +45,35 @@ class BHSUCalendar(BaseScraper):
         for event in resp.json():
             start_dt = event.get("startDatetime") or event.get("startDate", "")
             end_dt = event.get("endDatetime") or event.get("endDate", "")
-            location_parts = filter(None, [
-                event.get("location", ""),
-                event.get("locationRoom", ""),
-            ])
+            location_parts = filter(
+                None,
+                [
+                    event.get("location", ""),
+                    event.get("locationRoom", ""),
+                ],
+            )
             location = " ".join(location_parts).strip()
 
-            records.append({
-                "event_id": event["id"],
-                "url": f"{SOURCE_URL}#event-details/{event['id']}",
-                "title": event.get("title", ""),
-                "slug": make_slug(event.get("title", "")),
-                "description": event.get("descriptionText", ""),
-                "start_dt": start_dt,
-                "end_dt": end_dt,
-                "location": location,
-                "image_url": event.get("image", ""),
-                "image_alt": event.get("imageAltText", ""),
-                "organizer": event.get("organizer", ""),
-                "tags": event.get("tags", []),
-                "featured": event.get("featured", False),
-                "ticket_url": event.get("ticketUrl", ""),
-                "category": event.get("categoryName", ""),
-                "record_type": "event",
-                "source_label": "BHSU Campus Calendar",
-            })
+            records.append(
+                {
+                    "event_id": event["id"],
+                    "url": f"{SOURCE_URL}#event-details/{event['id']}",
+                    "title": event.get("title", ""),
+                    "slug": make_slug(event.get("title", "")),
+                    "description": event.get("descriptionText", ""),
+                    "start_dt": start_dt,
+                    "end_dt": end_dt,
+                    "location": location,
+                    "image_url": event.get("image", ""),
+                    "image_alt": event.get("imageAltText", ""),
+                    "organizer": event.get("organizer", ""),
+                    "tags": event.get("tags", []),
+                    "featured": event.get("featured", False),
+                    "ticket_url": event.get("ticketUrl", ""),
+                    "category": event.get("categoryName", ""),
+                    "record_type": "event",
+                    "source_label": "BHSU Campus Calendar",
+                }
+            )
 
         return records

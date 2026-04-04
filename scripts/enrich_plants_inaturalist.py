@@ -41,16 +41,16 @@ from pathlib import Path
 
 import requests
 
-ROOT          = Path(__file__).resolve().parent.parent
-SPOTLIGHT     = ROOT / "data" / "native_plants_spotlight.json"
-CACHE_FILE    = ROOT / "data" / "inaturalist_plant_cache.json"
+ROOT = Path(__file__).resolve().parent.parent
+SPOTLIGHT = ROOT / "data" / "native_plants_spotlight.json"
+CACHE_FILE = ROOT / "data" / "inaturalist_plant_cache.json"
 
-INAT_API      = "https://api.inaturalist.org/v1"
+INAT_API = "https://api.inaturalist.org/v1"
 # Spearfish, SD
-LAT, LNG      = 44.48, -103.86
-RADIUS_KM     = 100
-OBS_PER_PLANT = 3      # most recent research-grade observations to store
-SLEEP         = 0.5    # seconds between requests — be polite
+LAT, LNG = 44.48, -103.86
+RADIUS_KM = 100
+OBS_PER_PLANT = 3  # most recent research-grade observations to store
+SLEEP = 0.5  # seconds between requests — be polite
 
 HEADERS = {
     "User-Agent": "whats-up-in-spearfish/1.0 (https://github.com/south-dakota-citizen-archivist/whats-up-spearfish)",
@@ -84,7 +84,7 @@ def _taxon_id(scientific_name: str) -> int | None:
     for result in data.get("results") or []:
         # Match on the bare genus+species
         name = result.get("name", "").lower()
-        q    = query.lower()
+        q = query.lower()
         if name == q or name.startswith(q + " "):
             return result["id"]
     # Fallback: take the first result if it shares the genus
@@ -99,17 +99,20 @@ def _recent_obs(taxon_id: int) -> tuple[int, list[dict]]:
     Return (total_count, [recent_obs_dicts]) for research-grade observations
     within RADIUS_KM of Spearfish.
     """
-    data = _get("/observations", {
-        "taxon_id":     taxon_id,
-        "lat":          LAT,
-        "lng":          LNG,
-        "radius":       RADIUS_KM,
-        "quality_grade": "research",
-        "order_by":     "observed_on",
-        "order":        "desc",
-        "per_page":     OBS_PER_PLANT,
-        "photos":       "true",
-    })
+    data = _get(
+        "/observations",
+        {
+            "taxon_id": taxon_id,
+            "lat": LAT,
+            "lng": LNG,
+            "radius": RADIUS_KM,
+            "quality_grade": "research",
+            "order_by": "observed_on",
+            "order": "desc",
+            "per_page": OBS_PER_PLANT,
+            "photos": "true",
+        },
+    )
     if not data:
         return 0, []
 
@@ -123,14 +126,16 @@ def _recent_obs(taxon_id: int) -> tuple[int, list[dict]]:
             # iNat square URLs end in /square.jpg — swap for medium
             photo_url = raw.replace("/square.", "/medium.")
 
-        obs_list.append({
-            "id":          obs.get("id"),
-            "url":         obs.get("uri") or f"https://www.inaturalist.org/observations/{obs.get('id')}",
-            "observed_on": obs.get("observed_on") or "",
-            "observer":    (obs.get("user") or {}).get("login") or "",
-            "photo_url":   photo_url,
-            "place_guess": obs.get("place_guess") or "",
-        })
+        obs_list.append(
+            {
+                "id": obs.get("id"),
+                "url": obs.get("uri") or f"https://www.inaturalist.org/observations/{obs.get('id')}",
+                "observed_on": obs.get("observed_on") or "",
+                "observer": (obs.get("user") or {}).get("login") or "",
+                "photo_url": photo_url,
+                "place_guess": obs.get("place_guess") or "",
+            }
+        )
 
     return total, obs_list
 
@@ -152,7 +157,7 @@ def main() -> None:
     newly_fetched = 0
 
     for i, plant in enumerate(plants):
-        symbol   = plant.get("symbol", "")
+        symbol = plant.get("symbol", "")
         sci_name = plant.get("scientific_name", "")
         if not symbol or not sci_name:
             continue
@@ -160,7 +165,7 @@ def main() -> None:
         if symbol in cache:
             continue  # already done
 
-        print(f"[{i+1}/{len(plants)}] {symbol} {sci_name} …", end=" ", flush=True)
+        print(f"[{i + 1}/{len(plants)}] {symbol} {sci_name} …", end=" ", flush=True)
 
         time.sleep(SLEEP)
         taxon_id = _taxon_id(sci_name)
@@ -177,10 +182,10 @@ def main() -> None:
         print(f"taxon={taxon_id}, nearby={total}, photos={len(recent)}")
 
         cache[symbol] = {
-            "taxon_id":        taxon_id,
-            "inat_url":        inat_url,
+            "taxon_id": taxon_id,
+            "inat_url": inat_url,
             "nearby_obs_count": total,
-            "recent_obs":      recent,
+            "recent_obs": recent,
         }
         newly_fetched += 1
 

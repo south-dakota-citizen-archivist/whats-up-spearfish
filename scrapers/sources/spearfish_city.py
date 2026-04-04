@@ -63,13 +63,16 @@ class SpearfishCity(BaseScraper):
         start_dt = event.get("startDateTime") or event.get("eventDate")
 
         location = event.get("eventLocation") or {}
-        address_parts = filter(None, [
-            location.get("address1"),
-            location.get("address2"),
-            location.get("city"),
-            location.get("state"),
-            location.get("zipCode"),
-        ])
+        address_parts = filter(
+            None,
+            [
+                location.get("address1"),
+                location.get("address2"),
+                location.get("city"),
+                location.get("state"),
+                location.get("zipCode"),
+            ],
+        )
         location_str = ", ".join(address_parts)
 
         base = {
@@ -93,17 +96,17 @@ class SpearfishCity(BaseScraper):
         records = []
         for f in published_files:
             relative_url = f.get("url", "")
-            file_url = (
-                f"{PORTAL_BASE}/{relative_url}" if relative_url else portal_url
+            file_url = f"{PORTAL_BASE}/{relative_url}" if relative_url else portal_url
+            records.append(
+                {
+                    **base,
+                    # Use file_url as the primary dedup URL so each file is a
+                    # distinct record; portal_url links back to the meeting page.
+                    "url": file_url,
+                    "title": f.get("name") or event.get("agendaName") or event.get("eventName", ""),
+                    "doc_type": f.get("type", ""),
+                    "file_url": file_url,
+                }
             )
-            records.append({
-                **base,
-                # Use file_url as the primary dedup URL so each file is a
-                # distinct record; portal_url links back to the meeting page.
-                "url": file_url,
-                "title": f.get("name") or event.get("agendaName") or event.get("eventName", ""),
-                "doc_type": f.get("type", ""),
-                "file_url": file_url,
-            })
 
         return records

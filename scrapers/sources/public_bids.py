@@ -94,18 +94,20 @@ def _parse_bids(html: str, base_url: str, source_label: str) -> list[dict]:
                 description = re.sub(r"\s*\[\s*$", "", text).strip()
                 break
 
-        records.append({
-            "url": url,
-            "title": title,
-            "slug": make_slug(f"{source_label}-{bid_no or title}"),
-            "bid_no": bid_no,
-            "status": status,
-            "closes": closes,
-            "closes_iso": _closes_iso(closes),
-            "description": description,
-            "record_type": "bid",
-            "source_label": source_label,
-        })
+        records.append(
+            {
+                "url": url,
+                "title": title,
+                "slug": make_slug(f"{source_label}-{bid_no or title}"),
+                "bid_no": bid_no,
+                "status": status,
+                "closes": closes,
+                "closes_iso": _closes_iso(closes),
+                "description": description,
+                "record_type": "bid",
+                "source_label": source_label,
+            }
+        )
 
     return records
 

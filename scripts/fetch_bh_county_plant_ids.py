@@ -39,8 +39,8 @@ BH_COUNTIES = [
 ]
 
 OUTPUT = Path(__file__).resolve().parent.parent / "data" / "bh_county_plant_ids.json"
-PAGE_SIZE = 25          # what the API returns per page
-SLEEP = 0.3             # seconds between requests
+PAGE_SIZE = 25  # what the API returns per page
+SLEEP = 0.3  # seconds between requests
 API = "https://plantsservices.sc.egov.usda.gov/api/plants-search-results"
 HEADERS = {
     "Accept": "application/json, text/plain, */*",
@@ -52,21 +52,41 @@ HEADERS = {
 
 def _base_body(location_id: int, location_name: str) -> dict:
     return {
-        "Text": None, "Field": None,
-        "Locations": [{"PlantLocationId": location_id,
-                        "PlantLocationName": location_name,
-                        "PlantLocationCategory": None,
-                        "countyName": None}],
-        "Groups": None, "Durations": None, "GrowthHabits": None,
-        "WetlandRegions": None, "NoxiousLocations": None,
-        "InvasiveLocations": None, "Countries": None, "Provinces": None,
-        "Counties": None, "Cities": None, "Localities": None,
-        "ArtistFirstLetters": None, "ImageLocations": None, "Artists": None,
-        "CopyrightStatuses": None, "ImageReferences": None,
-        "ImageTypes": None, "SortBy": "sortSciName", "Offset": -1,
-        "FilterOptions": None, "UnfilteredPlantIds": None,
-        "Type": "State", "TaxonSearchCriteria": None,
-        "MasterId": -1, "allData": 0,
+        "Text": None,
+        "Field": None,
+        "Locations": [
+            {
+                "PlantLocationId": location_id,
+                "PlantLocationName": location_name,
+                "PlantLocationCategory": None,
+                "countyName": None,
+            }
+        ],
+        "Groups": None,
+        "Durations": None,
+        "GrowthHabits": None,
+        "WetlandRegions": None,
+        "NoxiousLocations": None,
+        "InvasiveLocations": None,
+        "Countries": None,
+        "Provinces": None,
+        "Counties": None,
+        "Cities": None,
+        "Localities": None,
+        "ArtistFirstLetters": None,
+        "ImageLocations": None,
+        "Artists": None,
+        "CopyrightStatuses": None,
+        "ImageReferences": None,
+        "ImageTypes": None,
+        "SortBy": "sortSciName",
+        "Offset": -1,
+        "FilterOptions": None,
+        "UnfilteredPlantIds": None,
+        "Type": "State",
+        "TaxonSearchCriteria": None,
+        "MasterId": -1,
+        "allData": 0,
     }
 
 
@@ -89,8 +109,8 @@ def fetch_county(location_id: int, name: str) -> set[int]:
                 data = resp.json()
                 break
             except Exception as e:
-                wait = 2 ** attempt
-                print(f"    page {page} attempt {attempt+1} error: {type(e).__name__} — retrying in {wait}s")
+                wait = 2**attempt
+                print(f"    page {page} attempt {attempt + 1} error: {type(e).__name__} — retrying in {wait}s")
                 time.sleep(wait)
 
         if data is None:

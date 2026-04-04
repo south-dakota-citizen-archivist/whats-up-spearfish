@@ -17,10 +17,12 @@ from calendar_feed import _parse_dt, generate_ics, generate_rss
 # Fixtures
 # ---------------------------------------------------------------------------
 
+
 @pytest.fixture(autouse=True)
 def patch_output_dir(tmp_path, monkeypatch):
     """Redirect OUTPUT_DIR and ROOT to a temp directory for every test in this module."""
     import calendar_feed
+
     monkeypatch.setattr(calendar_feed, "OUTPUT_DIR", tmp_path)
     monkeypatch.setattr(calendar_feed, "ROOT", tmp_path)
     return tmp_path
@@ -29,6 +31,7 @@ def patch_output_dir(tmp_path, monkeypatch):
 # ---------------------------------------------------------------------------
 # _parse_dt
 # ---------------------------------------------------------------------------
+
 
 class TestParseDt:
     def test_none_returns_none(self):
@@ -68,6 +71,7 @@ class TestParseDt:
 # ---------------------------------------------------------------------------
 # generate_ics
 # ---------------------------------------------------------------------------
+
 
 class TestGenerateIcs:
     def _records(self, **overrides):
@@ -123,10 +127,10 @@ class TestGenerateIcs:
 # generate_rss
 # ---------------------------------------------------------------------------
 
+
 class TestGenerateRss:
     def _event(self, **overrides):
-        r = {"title": "Test Event", "start_dt": "2026-04-01", "record_type": "event",
-             "url": "http://example.com"}
+        r = {"title": "Test Event", "start_dt": "2026-04-01", "record_type": "event", "url": "http://example.com"}
         r.update(overrides)
         return r
 

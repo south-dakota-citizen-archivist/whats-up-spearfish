@@ -25,16 +25,18 @@ def _parse_feed(url: str, record_type: str, source_label: str) -> list[dict]:
     feed = feedparser.parse(url)
     records = []
     for entry in feed.entries:
-        records.append({
-            "url": entry.get("link", ""),
-            "title": entry.get("title", ""),
-            "slug": make_slug(entry.get("title", "")),
-            "description": entry.get("summary", ""),
-            "published": entry.get("published", ""),
-            "start_dt": entry.get("published", ""),
-            "record_type": record_type,
-            "source_label": source_label,
-        })
+        records.append(
+            {
+                "url": entry.get("link", ""),
+                "title": entry.get("title", ""),
+                "slug": make_slug(entry.get("title", "")),
+                "description": entry.get("summary", ""),
+                "published": entry.get("published", ""),
+                "start_dt": entry.get("published", ""),
+                "record_type": record_type,
+                "source_label": source_label,
+            }
+        )
     return records
 
 

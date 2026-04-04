@@ -22,14 +22,8 @@ DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "creek_gaug
 
 HEADERS = {"User-Agent": "SpearfishBulletin/1.0", "Cache-Control": "no-cache", "Pragma": "no-cache"}
 
-IV_URL = (
-    "https://waterservices.usgs.gov/nwis/iv/"
-    "?sites=06431500&parameterCd=00060,00065&period=P7D&format=json"
-)
-DV_URL = (
-    "https://waterservices.usgs.gov/nwis/dv/"
-    "?sites=06431500&parameterCd=00060&period=P30D&format=json"
-)
+IV_URL = "https://waterservices.usgs.gov/nwis/iv/?sites=06431500&parameterCd=00060,00065&period=P7D&format=json"
+DV_URL = "https://waterservices.usgs.gov/nwis/dv/?sites=06431500&parameterCd=00060&period=P30D&format=json"
 
 
 def _get(url: str) -> dict:
@@ -51,42 +45,25 @@ class CreekGaugeScraper:
             return {}
 
         iv_ts = iv.get("value", {}).get("timeSeries", [])
-        cfs_series = next(
-            (t for t in iv_ts if t["variable"]["variableCode"][0]["value"] == "00060"), None
-        )
-        ft_series = next(
-            (t for t in iv_ts if t["variable"]["variableCode"][0]["value"] == "00065"), None
-        )
+        cfs_series = next((t for t in iv_ts if t["variable"]["variableCode"][0]["value"] == "00060"), None)
+        ft_series = next((t for t in iv_ts if t["variable"]["variableCode"][0]["value"] == "00065"), None)
 
-        cfs_vals = [
-            v for v in (cfs_series or {}).get("values", [{}])[0].get("value", [])
-            if float(v["value"]) > -999
-        ]
-        ft_vals = [
-            v for v in (ft_series or {}).get("values", [{}])[0].get("value", [])
-            if float(v["value"]) > -999
-        ]
+        cfs_vals = [v for v in (cfs_series or {}).get("values", [{}])[0].get("value", []) if float(v["value"]) > -999]
+        ft_vals = [v for v in (ft_series or {}).get("values", [{}])[0].get("value", []) if float(v["value"]) > -999]
 
         current: dict = {}
         if cfs_vals:
             last = cfs_vals[-1]
             current = {
-                "cfs":  round(float(last["value"])),
-                "ft":   round(float(ft_vals[-1]["value"]), 2) if ft_vals else None,
+                "cfs": round(float(last["value"])),
+                "ft": round(float(ft_vals[-1]["value"]), 2) if ft_vals else None,
                 "time": last["dateTime"],
             }
 
         # Downsample to ~hourly (15-min data → every 4th point)
-        series7d = [
-            {"t": v["dateTime"], "cfs": round(float(v["value"]))}
-            for v in cfs_vals[::4]
-        ]
+        series7d = [{"t": v["dateTime"], "cfs": round(float(v["value"]))} for v in cfs_vals[::4]]
 
-        dv_vals = (
-            (dv.get("value", {}).get("timeSeries") or [{}])[0]
-            .get("values", [{}])[0]
-            .get("value", [])
-        )
+        dv_vals = (dv.get("value", {}).get("timeSeries") or [{}])[0].get("values", [{}])[0].get("value", [])
         daily30 = [
             {"date": v["dateTime"][:10], "cfs": round(float(v["value"]))}
             for v in reversed(dv_vals)

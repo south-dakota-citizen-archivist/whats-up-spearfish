@@ -24,13 +24,13 @@ import requests
 
 DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "ebird.json"
 
-LAT, LNG    = 44.48, -103.86
-RADIUS_KM   = 50
+LAT, LNG = 44.48, -103.86
+RADIUS_KM = 50
 MAX_RESULTS = 50
-BACK_DAYS   = 14
+BACK_DAYS = 14
 
 EBIRD_API = "https://api.ebird.org/v2"
-INAT_API  = "https://api.inaturalist.org/v1"
+INAT_API = "https://api.inaturalist.org/v1"
 INAT_HEADERS = {
     "User-Agent": "whats-up-in-spearfish/1.0",
     "Accept": "application/json",
@@ -77,9 +77,13 @@ def fetch_ebird() -> None:
             f"{EBIRD_API}/data/obs/geo/recent",
             headers=headers,
             params={
-                "lat": LAT, "lng": LNG, "dist": RADIUS_KM,
-                "back": BACK_DAYS, "maxResults": MAX_RESULTS,
-                "includeProvisional": "true", "fmt": "json",
+                "lat": LAT,
+                "lng": LNG,
+                "dist": RADIUS_KM,
+                "back": BACK_DAYS,
+                "maxResults": MAX_RESULTS,
+                "includeProvisional": "true",
+                "fmt": "json",
             },
             timeout=20,
         )
@@ -104,24 +108,27 @@ def fetch_ebird() -> None:
     observations = []
     for obs in raw:
         sci = obs.get("sciName", "")
-        observations.append({
-            "species_code":    obs.get("speciesCode", ""),
-            "common_name":     obs.get("comName", ""),
-            "scientific_name": sci,
-            "observed_on":     obs.get("obsDt", "")[:10],
-            "count":           obs.get("howMany"),
-            "location_name":   obs.get("locName", ""),
-            "lat":             obs.get("lat"),
-            "lng":             obs.get("lng"),
-            "location_id":     obs.get("locId", ""),
-            "checklist_id":    obs.get("subId", ""),
-            "photo_url":       photo_cache.get(sci, ""),
-        })
+        observations.append(
+            {
+                "species_code": obs.get("speciesCode", ""),
+                "common_name": obs.get("comName", ""),
+                "scientific_name": sci,
+                "observed_on": obs.get("obsDt", "")[:10],
+                "count": obs.get("howMany"),
+                "location_name": obs.get("locName", ""),
+                "lat": obs.get("lat"),
+                "lng": obs.get("lng"),
+                "location_id": obs.get("locId", ""),
+                "checklist_id": obs.get("subId", ""),
+                "photo_url": photo_cache.get(sci, ""),
+            }
+        )
 
     DATA_FILE.write_text(
         json.dumps(
             {"fetched_at": datetime.now(timezone.utc).isoformat(), "observations": observations},
-            indent=2, ensure_ascii=False,
+            indent=2,
+            ensure_ascii=False,
         ),
         encoding="utf-8",
     )

@@ -76,29 +76,31 @@ class BHSUAthletics(BaseScraper):
             if facility.get("title"):
                 location = facility["title"] + (f", {location}" if location else "")
 
-            records.append({
-                "game_id": event["id"],
-                "url": schedule.get("url") or SOURCE_URL,
-                "title": title,
-                "slug": make_slug(title),
-                "sport": sport_title,
-                "sport_shortname": sport.get("shortname", ""),
-                "opponent": opponent_name,
-                "home_away": home_away,
-                "is_conference": event.get("is_conference", False),
-                "start_dt": start_dt,
-                "time": event.get("time", ""),
-                "tbd": event.get("tbd", False),
-                "location": location,
-                "conference": event.get("conference", ""),
-                "status": event.get("status", ""),
-                "video_url": media.get("video", ""),
-                "stats_url": media.get("stats", ""),
-                "tickets_url": media.get("tickets", ""),
-                "result_team": (event.get("result") or {}).get("team_score"),
-                "result_opp": (event.get("result") or {}).get("opponent_score"),
-                "record_type": "event",
-                "source_label": "BHSU Athletics",
-            })
+            records.append(
+                {
+                    "game_id": event["id"],
+                    "url": schedule.get("url") or SOURCE_URL,
+                    "title": title,
+                    "slug": make_slug(title),
+                    "sport": sport_title,
+                    "sport_shortname": sport.get("shortname", ""),
+                    "opponent": opponent_name,
+                    "home_away": home_away,
+                    "is_conference": event.get("is_conference", False),
+                    "start_dt": start_dt,
+                    "time": event.get("time", ""),
+                    "tbd": event.get("tbd", False),
+                    "location": location,
+                    "conference": event.get("conference", ""),
+                    "status": event.get("status", ""),
+                    "video_url": media.get("video", ""),
+                    "stats_url": media.get("stats", ""),
+                    "tickets_url": media.get("tickets", ""),
+                    "result_team": (event.get("result") or {}).get("team_score"),
+                    "result_opp": (event.get("result") or {}).get("opponent_score"),
+                    "record_type": "event",
+                    "source_label": "BHSU Athletics",
+                }
+            )
 
         return records

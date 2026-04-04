@@ -30,16 +30,17 @@ SOURCE_FILE = ROOT / "data" / "plants_native_black_hills.json"
 OUTPUT_FILE = ROOT / "data" / "native_plants_spotlight.json"
 
 BH_WILDFLOWERS_FILE = ROOT / "data" / "black_hills_wildflowers.json"
-SD_FLOWERING_FILE   = ROOT / "data" / "sd_flowering_plants.json"
-SD_LANDSCAPES_FILE  = ROOT / "data" / "sd_living_landscapes.json"
+SD_FLOWERING_FILE = ROOT / "data" / "sd_flowering_plants.json"
+SD_LANDSCAPES_FILE = ROOT / "data" / "sd_living_landscapes.json"
 
-PLANTS_IMAGE_BASE   = "https://plants.sc.egov.usda.gov"
+PLANTS_IMAGE_BASE = "https://plants.sc.egov.usda.gov"
 PLANTS_PROFILE_BASE = "https://plants.sc.egov.usda.gov/plant-profile/"
 
 
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
 
 def _strip_html(s: str) -> str:
     return re.sub(r"<[^>]+>", "", s).strip()
@@ -57,8 +58,18 @@ def _genus_species(sci_name: str) -> tuple[str, str | None]:
 
 def _months_to_period(months: list[str]) -> str:
     month_order = [
-        "January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December",
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
     ]
     months_norm = [m.capitalize() for m in months]
     indices = [month_order.index(m) for m in months_norm if m in month_order]
@@ -66,13 +77,14 @@ def _months_to_period(months: list[str]) -> str:
         return ", ".join(months_norm)
     indices.sort()
     first = month_order[indices[0]]
-    last  = month_order[indices[-1]]
+    last = month_order[indices[-1]]
     return first if first == last else f"{first}–{last}"
 
 
 # ---------------------------------------------------------------------------
 # Collect locally-documented scientific names + supplemental bloom data
 # ---------------------------------------------------------------------------
+
 
 def _local_names() -> tuple[list[tuple[str, str | None]], dict[str, dict]]:
     """
@@ -100,7 +112,7 @@ def _local_names() -> tuple[list[tuple[str, str | None]], dict[str, dict]]:
                 for p in plants:
                     name = p.get("name", "")
                     if "(" in name and ")" in name:
-                        _add(name[name.index("(")+1 : name.rindex(")")])
+                        _add(name[name.index("(") + 1 : name.rindex(")")])
 
     if SD_FLOWERING_FILE.exists():
         sdp = json.loads(SD_FLOWERING_FILE.read_text(encoding="utf-8"))
@@ -128,6 +140,7 @@ def _local_names() -> tuple[list[tuple[str, str | None]], dict[str, dict]]:
 # Match local names against PLANTS DB
 # ---------------------------------------------------------------------------
 
+
 def _match_symbols(raw: list[dict], pairs: list[tuple[str, str | None]]) -> set[str]:
     """
     Return symbols of PLANTS DB records that:
@@ -144,7 +157,7 @@ def _match_symbols(raw: list[dict], pairs: list[tuple[str, str | None]]) -> set[
     for record in raw:
         if not record.get("Images"):
             continue
-        sci   = record.get("ScientificName", "")
+        sci = record.get("ScientificName", "")
         genus, species = _genus_species(sci)
         if not genus:
             continue
@@ -164,68 +177,66 @@ def _match_symbols(raw: list[dict], pairs: list[tuple[str, str | None]]) -> set[
 # Flatten
 # ---------------------------------------------------------------------------
 
+
 def _flatten(plant: dict, bloom_supplement: str = "") -> dict:
-    chars  = plant.get("Characteristics") or {}
-    morph  = chars.get("Morphology/Physiology") or {}
+    chars = plant.get("Characteristics") or {}
+    morph = chars.get("Morphology/Physiology") or {}
     growth = chars.get("Growth Requirements") or {}
-    repro  = chars.get("Reproduction") or {}
-    use    = chars.get("Suitability/Use") or {}
+    repro = chars.get("Reproduction") or {}
+    use = chars.get("Suitability/Use") or {}
 
     images = []
-    for img in (plant.get("Images") or []):
-        std   = img.get("StandardSizeImageLibraryPath") or ""
+    for img in plant.get("Images") or []:
+        std = img.get("StandardSizeImageLibraryPath") or ""
         thumb = img.get("ThumbnailSizeImageLibraryPath") or ""
         large = img.get("LargeSizeImageLibraryPath") or ""
         if std:
-            images.append({
-                "url":       f"{PLANTS_IMAGE_BASE}{std}",
-                "thumb_url": f"{PLANTS_IMAGE_BASE}{thumb}" if thumb else "",
-                "large_url": f"{PLANTS_IMAGE_BASE}{large}" if large else "",
-                "credit":    img.get("CommonName") or "",
-                "location":  img.get("ImageLocation") or "",
-                "date":      img.get("ImageCreationDate") or "",
-            })
+            images.append(
+                {
+                    "url": f"{PLANTS_IMAGE_BASE}{std}",
+                    "thumb_url": f"{PLANTS_IMAGE_BASE}{thumb}" if thumb else "",
+                    "large_url": f"{PLANTS_IMAGE_BASE}{large}" if large else "",
+                    "credit": img.get("CommonName") or "",
+                    "location": img.get("ImageLocation") or "",
+                    "date": img.get("ImageCreationDate") or "",
+                }
+            )
 
     symbol = plant.get("Symbol", "")
-    bloom_period = (
-        repro.get("Bloom Period")
-        or morph.get("Active Growth Period")
-        or bloom_supplement
-        or ""
-    )
+    bloom_period = repro.get("Bloom Period") or morph.get("Active Growth Period") or bloom_supplement or ""
 
     return {
-        "symbol":             symbol,
-        "common_name":        plant.get("CommonName") or "",
-        "scientific_name":    _strip_html(plant.get("ScientificName") or ""),
-        "group":              plant.get("Group") or "",
-        "durations":          plant.get("Durations") or [],
-        "growth_habits":      plant.get("GrowthHabits") or [],
-        "plants_url":         f"{PLANTS_PROFILE_BASE}{symbol}",
-        "flower_color":       morph.get("Flower Color") or "",
+        "symbol": symbol,
+        "common_name": plant.get("CommonName") or "",
+        "scientific_name": _strip_html(plant.get("ScientificName") or ""),
+        "group": plant.get("Group") or "",
+        "durations": plant.get("Durations") or [],
+        "growth_habits": plant.get("GrowthHabits") or [],
+        "plants_url": f"{PLANTS_PROFILE_BASE}{symbol}",
+        "flower_color": morph.get("Flower Color") or "",
         "flower_conspicuous": morph.get("Flower Conspicuous") or "",
-        "bloom_period":       bloom_period,
-        "height_ft":          morph.get("Height, Mature (feet)") or "",
-        "foliage_color":      morph.get("Foliage Color") or "",
-        "fall_conspicuous":   morph.get("Fall Conspicuous") or "",
-        "fruit_color":        morph.get("Fruit/Seed Color") or "",
-        "growth_rate":        morph.get("Growth Rate") or "",
-        "lifespan":           morph.get("Lifespan") or "",
-        "toxicity":           morph.get("Toxicity") or "",
-        "drought_tolerance":  growth.get("Drought Tolerance") or "",
-        "shade_tolerance":    growth.get("Shade Tolerance") or "",
-        "moisture_use":       growth.get("Moisture Use") or "",
-        "soil_fine":          growth.get("Adapted to Fine Textured Soils") or "",
-        "soil_coarse":        growth.get("Adapted to Coarse Textured Soils") or "",
-        "ph_min":             growth.get("pH, Minimum") or "",
-        "ph_max":             growth.get("pH, Maximum") or "",
-        "temp_min_f":         growth.get("Temperature, Minimum (°F)") or "",
-        "palatable_browse":   use.get("Palatable Browse Animal") or "",
-        "palatable_graze":    use.get("Palatable Graze Animal") or "",
-        "palatable_human":    use.get("Palatable Human") or "",
-        "wildlife_food":      (plant.get("Wildlife") or {}).get("Food") or [],
-        "ethnobotany":        plant.get("Ethnobotany") or [],
-        "images":             images,
+        "bloom_period": bloom_period,
+        "height_ft": morph.get("Height, Mature (feet)") or "",
+        "foliage_color": morph.get("Foliage Color") or "",
+        "fall_conspicuous": morph.get("Fall Conspicuous") or "",
+        "fruit_color": morph.get("Fruit/Seed Color") or "",
+        "growth_rate": morph.get("Growth Rate") or "",
+        "lifespan": morph.get("Lifespan") or "",
+        "toxicity": morph.get("Toxicity") or "",
+        "drought_tolerance": growth.get("Drought Tolerance") or "",
+        "shade_tolerance": growth.get("Shade Tolerance") or "",
+        "moisture_use": growth.get("Moisture Use") or "",
+        "soil_fine": growth.get("Adapted to Fine Textured Soils") or "",
+        "soil_coarse": growth.get("Adapted to Coarse Textured Soils") or "",
+        "ph_min": growth.get("pH, Minimum") or "",
+        "ph_max": growth.get("pH, Maximum") or "",
+        "temp_min_f": growth.get("Temperature, Minimum (°F)") or "",
+        "palatable_browse": use.get("Palatable Browse Animal") or "",
+        "palatable_graze": use.get("Palatable Graze Animal") or "",
+        "palatable_human": use.get("Palatable Human") or "",
+        "wildlife_food": (plant.get("Wildlife") or {}).get("Food") or [],
+        "ethnobotany": plant.get("Ethnobotany") or [],
+        "images": images,
         "related_links": [
             {"url": lnk.get("Url", ""), "text": lnk.get("LinkText", "")}
             for lnk in (plant.get("RelatedLinks") or [])
@@ -237,6 +248,7 @@ def _flatten(plant: dict, bloom_supplement: str = "") -> dict:
 # ---------------------------------------------------------------------------
 # Build
 # ---------------------------------------------------------------------------
+
 
 def build_spotlight() -> None:
     if not SOURCE_FILE.exists():
@@ -280,9 +292,7 @@ def build_spotlight() -> None:
 
     spotlight = [_flatten(p, _bloom_supplement(p)) for p in candidates]
 
-    OUTPUT_FILE.write_text(
-        json.dumps(spotlight, indent=2, ensure_ascii=False), encoding="utf-8"
-    )
+    OUTPUT_FILE.write_text(json.dumps(spotlight, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"[native_plants_spotlight] Wrote {len(spotlight)} plants → {OUTPUT_FILE.name}")
 
 

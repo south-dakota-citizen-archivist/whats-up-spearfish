@@ -12,11 +12,12 @@ Steps:
 import csv
 import io
 import json
-import time
-import sys
 import logging
+import sys
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+
 import requests
 
 # ---------------------------------------------------------------------------
@@ -49,24 +50,22 @@ log = logging.getLogger(__name__)
 # Helpers
 # ---------------------------------------------------------------------------
 
+
 def make_session() -> requests.Session:
     s = requests.Session()
     s.headers.update({"Accept": "application/json", "User-Agent": "whats-up-in-spearfish/1.0"})
     return s
 
 
-def bbox_overlaps(plant_xmin, plant_ymin, plant_xmax, plant_ymax,
-                  ref_xmin, ref_ymin, ref_xmax, ref_ymax) -> bool:
+def bbox_overlaps(plant_xmin, plant_ymin, plant_xmax, plant_ymax, ref_xmin, ref_ymin, ref_xmax, ref_ymax) -> bool:
     """Return True if two bounding boxes overlap (touch counts)."""
-    return (
-        plant_xmin <= ref_xmax and plant_xmax >= ref_xmin and
-        plant_ymin <= ref_ymax and plant_ymax >= ref_ymin
-    )
+    return plant_xmin <= ref_xmax and plant_xmax >= ref_xmin and plant_ymin <= ref_ymax and plant_ymax >= ref_ymin
 
 
 # ---------------------------------------------------------------------------
 # Step 1: Fetch plant symbol list
 # ---------------------------------------------------------------------------
+
 
 def fetch_symbol_list(session: requests.Session) -> list[str]:
     log.info("Fetching plant symbol list from %s", PLANT_LIST_URL)
@@ -91,6 +90,7 @@ def fetch_symbol_list(session: requests.Session) -> list[str]:
 # ---------------------------------------------------------------------------
 # Step 2: Fetch PlantProfile (bulk, threaded)
 # ---------------------------------------------------------------------------
+
 
 def fetch_profile(symbol: str) -> dict | None:
     """Fetch a single PlantProfile. Returns dict or None on failure."""
@@ -143,6 +143,7 @@ def fetch_all_profiles(symbols: list[str]) -> list[dict]:
 # Step 3: Filter
 # ---------------------------------------------------------------------------
 
+
 def is_native_l48(profile: dict) -> bool:
     for entry in profile.get("NativeStatuses") or []:
         if entry.get("Region") == "L48" and entry.get("Type") == "Native":
@@ -182,6 +183,7 @@ def filter_plants(profiles: list[dict]) -> list[dict]:
 # ---------------------------------------------------------------------------
 # Step 4: Supplemental endpoints
 # ---------------------------------------------------------------------------
+
 
 def fetch_characteristics(session: requests.Session, plant_id: int) -> dict:
     """Fetch PlantCharacteristics and pivot by category."""
@@ -233,11 +235,13 @@ def fetch_images(session: requests.Session, plant_id: int) -> list:
     for img in raw:
         standard = img.get("StandardSizeImageLibraryPath", "")
         thumb = img.get("ThumbnailSizeImageLibraryPath", "")
-        images.append({
-            **img,
-            "StandardSizeImageUrl": f"{BASE_IMAGES}{standard}" if standard else "",
-            "ThumbnailSizeImageUrl": f"{BASE_IMAGES}{thumb}" if thumb else "",
-        })
+        images.append(
+            {
+                **img,
+                "StandardSizeImageUrl": f"{BASE_IMAGES}{standard}" if standard else "",
+                "ThumbnailSizeImageUrl": f"{BASE_IMAGES}{thumb}" if thumb else "",
+            }
+        )
     return images
 
 
@@ -311,6 +315,7 @@ def enrich_all(filtered: list[dict]) -> list[dict]:
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+
 
 def main():
     session = make_session()

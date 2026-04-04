@@ -105,7 +105,7 @@ def _parse_detail(date_str: str, url: str, link_title: str = "") -> dict | None:
     description = desc_el.get_text(" ", strip=True) if desc_el else ""
     # Strip leading "Description" label if present
     if description.startswith("Description"):
-        description = description[len("Description"):].strip()
+        description = description[len("Description") :].strip()
 
     website_el = soup.select_one(".gz-event-website a[href]")
     website = website_el["href"] if website_el else ""

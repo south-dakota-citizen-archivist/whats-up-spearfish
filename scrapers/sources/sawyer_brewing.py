@@ -77,34 +77,38 @@ class SawyerBrewing(BaseScraper):
             notes = info.get("notes") or ""
             prices = info.get("prices") or []
 
-            records.append({
-                "url": SOURCE_URL,
-                "image_url": image_url,
-                "title": title,
-                "slug": make_slug(title),
-                "category": current_category,
-                "description": description,
-                "abv": abv,
-                "notes": notes,
-                "prices": prices,
-                "record_type": "beer",
-                "source_label": "Sawyer Brewing Co.",
-            })
+            records.append(
+                {
+                    "url": SOURCE_URL,
+                    "image_url": image_url,
+                    "title": title,
+                    "slug": make_slug(title),
+                    "category": current_category,
+                    "description": description,
+                    "abv": abv,
+                    "notes": notes,
+                    "prices": prices,
+                    "record_type": "beer",
+                    "source_label": "Sawyer Brewing Co.",
+                }
+            )
 
         if unmatched:
             lines = "\n".join(f"• `{u.rsplit('/', 1)[-1]}`" for u in unmatched)
             send_alert(
                 text=f"Sawyer Brewing: {len(unmatched)} beer(s) not in sawyer_brewing.json — add entries to get names/descriptions.",  # noqa: E501
-                blocks=[{
-                    "type": "section",
-                    "text": {
-                        "type": "mrkdwn",
-                        "text": (
-                            f":beer: *Sawyer Brewing* — {len(unmatched)} unrecognised image(s) found on the menu.\n"
-                            f"Add entries to `scrapers/sources/sawyer_brewing.json` for:\n{lines}"
-                        ),
-                    },
-                }],
+                blocks=[
+                    {
+                        "type": "section",
+                        "text": {
+                            "type": "mrkdwn",
+                            "text": (
+                                f":beer: *Sawyer Brewing* — {len(unmatched)} unrecognised image(s) found on the menu.\n"
+                                f"Add entries to `scrapers/sources/sawyer_brewing.json` for:\n{lines}"
+                            ),
+                        },
+                    }
+                ],
             )
 
         return records

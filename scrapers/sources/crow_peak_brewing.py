@@ -33,8 +33,8 @@ def _fetch_descriptions() -> dict[str, str]:
         m = _ABV_BEERS_RE.search(text)
         if not m:
             continue
-        name = text[:m.start()].strip()
-        description = text[m.end():].strip()
+        name = text[: m.start()].strip()
+        description = text[m.end() :].strip()
         if name and description:
             desc_map[make_slug(name)] = description
     return desc_map
@@ -71,16 +71,18 @@ class CrowPeakBrewing(BaseScraper):
             image_url = img["src"] if img and img.get("src") else ""
             slug = make_slug(name)
 
-            records.append({
-                "url": SOURCE_URL,
-                "title": name,
-                "slug": slug,
-                "abv": abv_m.group(1) + "%" if abv_m else "",
-                "ibu": ibu_m.group(1) if ibu_m else "",
-                "image_url": image_url,
-                "description": descriptions.get(slug, ""),
-                "record_type": "beer",
-                "source_label": "Crow Peak Brewing",
-            })
+            records.append(
+                {
+                    "url": SOURCE_URL,
+                    "title": name,
+                    "slug": slug,
+                    "abv": abv_m.group(1) + "%" if abv_m else "",
+                    "ibu": ibu_m.group(1) if ibu_m else "",
+                    "image_url": image_url,
+                    "description": descriptions.get(slug, ""),
+                    "record_type": "beer",
+                    "source_label": "Crow Peak Brewing",
+                }
+            )
 
         return records

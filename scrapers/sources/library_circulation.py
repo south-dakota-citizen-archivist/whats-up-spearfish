@@ -28,8 +28,7 @@ SHEET_URL = (
     "/pub?gid=0&single=true&output=csv"
 )
 
-MONTH_NAMES = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-               "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+MONTH_NAMES = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 
 def _int_or_none(val: str) -> int | None:
@@ -69,16 +68,18 @@ def fetch_circulation() -> None:
         if loans is None and overdrive is None and hoopla is None and not minutes_link:
             continue
 
-        rows.append({
-            "year": year,
-            "month": month,
-            "month_name": MONTH_NAMES[month],
-            "loans": loans,
-            "renewals": renewals,
-            "overdrive_loans": overdrive,
-            "hoopla_loans": hoopla,
-            "minutes_link": minutes_link or None,
-        })
+        rows.append(
+            {
+                "year": year,
+                "month": month,
+                "month_name": MONTH_NAMES[month],
+                "loans": loans,
+                "renewals": renewals,
+                "overdrive_loans": overdrive,
+                "hoopla_loans": hoopla,
+                "minutes_link": minutes_link or None,
+            }
+        )
 
     DATA_FILE.write_text(
         json.dumps(

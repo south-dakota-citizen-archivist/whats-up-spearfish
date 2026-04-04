@@ -21,8 +21,12 @@ from scrapers.utils import make_slug
 _HTML_TAG_RE = re.compile(r"<[^>]+>")
 
 ORG_ID = 524
-_OVERWRITES_URL = "https://menus.healthepro.com/api/organizations/{org}/menus/{menu}/year/{year}/month/{month}/date_overwrites"
-_RECIPES_URL = "https://menus.healthepro.com/api/organizations/{org}/menus/{menu}/start_date/{start}/end_date/{end}/recipes/"
+_OVERWRITES_URL = (
+    "https://menus.healthepro.com/api/organizations/{org}/menus/{menu}/year/{year}/month/{month}/date_overwrites"
+)
+_RECIPES_URL = (
+    "https://menus.healthepro.com/api/organizations/{org}/menus/{menu}/start_date/{start}/end_date/{end}/recipes/"
+)
 
 _HEADERS = {"User-Agent": "Mozilla/5.0"}
 
@@ -81,8 +85,9 @@ def _parse_nutrition(nutr: dict) -> dict:
     return result
 
 
-def _parse_day(entry: dict, recipe_lookup: dict[int, dict], record_slug_prefix: str,
-               source_url: str, source_label: str) -> dict | None:
+def _parse_day(
+    entry: dict, recipe_lookup: dict[int, dict], record_slug_prefix: str, source_url: str, source_label: str
+) -> dict | None:
     day_str = entry.get("day", "")
     try:
         setting = json.loads(entry["setting"])
@@ -109,29 +114,33 @@ def _parse_day(entry: dict, recipe_lookup: dict[int, dict], record_slug_prefix: 
 
         if isinstance(rid, int) and rid in recipe_lookup:
             info = recipe_lookup[rid]
-            menu_items.append({
-                "id": rid,
-                "name": info["name"] or name_clean,
-                "category": current_category,
-                "is_entree": info["is_entree"] or is_entree_by_name,
-                "description": info["description"],
-                "ingredients": info["ingredients"],
-                "image_url": info["image_url"],
-                "serving_size": info["serving_size"],
-                "nutrition": info["nutrition"],
-            })
+            menu_items.append(
+                {
+                    "id": rid,
+                    "name": info["name"] or name_clean,
+                    "category": current_category,
+                    "is_entree": info["is_entree"] or is_entree_by_name,
+                    "description": info["description"],
+                    "ingredients": info["ingredients"],
+                    "image_url": info["image_url"],
+                    "serving_size": info["serving_size"],
+                    "nutrition": info["nutrition"],
+                }
+            )
         else:
-            menu_items.append({
-                "id": None,
-                "name": name_clean,
-                "category": current_category,
-                "is_entree": is_entree_by_name,
-                "description": "",
-                "ingredients": "",
-                "image_url": "",
-                "serving_size": "",
-                "nutrition": {},
-            })
+            menu_items.append(
+                {
+                    "id": None,
+                    "name": name_clean,
+                    "category": current_category,
+                    "is_entree": is_entree_by_name,
+                    "description": "",
+                    "ingredients": "",
+                    "image_url": "",
+                    "serving_size": "",
+                    "nutrition": {},
+                }
+            )
 
     if not menu_items:
         return None
@@ -159,6 +168,7 @@ def _parse_day(entry: dict, recipe_lookup: dict[int, dict], record_slug_prefix: 
 
 class SchoolMenuScraper(BaseScraper):
     """Base class for HealthePro/NutriSlice school menu scrapers."""
+
     dedup_key = "slug"
     menu_id: int = 0
     source_url: str = ""
@@ -184,6 +194,7 @@ class SchoolMenuScraper(BaseScraper):
 
 
 # ── Lunch menus ────────────────────────────────────────────────────────────────
+
 
 class SpearfishHSLunch(SchoolMenuScraper):
     name = "High School Lunch"
@@ -214,6 +225,7 @@ class SpearfishElem35Lunch(SchoolMenuScraper):
 
 
 # ── Breakfast menus ────────────────────────────────────────────────────────────
+
 
 class SpearfishElemBreakfast(SchoolMenuScraper):
     name = "Elementary Breakfast"

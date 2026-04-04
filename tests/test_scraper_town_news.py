@@ -18,6 +18,7 @@ from scrapers.sources.town_news import (
 # _html_to_text
 # ---------------------------------------------------------------------------
 
+
 class TestHtmlToText:
     def test_basic_paragraph(self):
         result = _html_to_text(["<p>Hello world</p>"])
@@ -66,6 +67,7 @@ class TestHtmlToText:
 # _first_paragraph
 # ---------------------------------------------------------------------------
 
+
 class TestFirstParagraph:
     def test_returns_first_p_text(self):
         assert _first_paragraph(["<p>First</p><p>Second</p>"]) == "First"
@@ -91,6 +93,7 @@ class TestFirstParagraph:
 # ---------------------------------------------------------------------------
 # _slack_blocks
 # ---------------------------------------------------------------------------
+
 
 class TestSlackBlocks:
     def _record(self, **overrides):
@@ -151,6 +154,7 @@ class TestSlackBlocks:
 # ---------------------------------------------------------------------------
 # _parse_record
 # ---------------------------------------------------------------------------
+
 
 class TestParseRecord:
     def _item(self, **overrides):

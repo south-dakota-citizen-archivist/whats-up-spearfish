@@ -24,11 +24,7 @@ _HEADERS = {
         "Chrome/124.0.0.0 Safari/537.36"
     )
 }
-_LIST_URL = (
-    BASE_URL + "/classifieds/job/"
-    "?c%5B0%5D=job&m=56448c72-888d-11e0-8e12-001cc4c002e0"
-    "&l=10&o={offset}"
-)
+_LIST_URL = BASE_URL + "/classifieds/job/?c%5B0%5D=job&m=56448c72-888d-11e0-8e12-001cc4c002e0&l=10&o={offset}"
 
 
 def _parse_page(html: str) -> list[dict]:
@@ -54,15 +50,17 @@ def _parse_page(html: str) -> list[dict]:
         category_el = article.select_one(".tnt-section-tag")
         category = category_el.get_text(strip=True) if category_el else ""
 
-        records.append({
-            "url": url,
-            "title": title,
-            "slug": make_slug(title),
-            "category": category,
-            "published": published,
-            "record_type": "job",
-            "source_label": "Black Hills Pioneer",
-        })
+        records.append(
+            {
+                "url": url,
+                "title": title,
+                "slug": make_slug(title),
+                "category": category,
+                "published": published,
+                "record_type": "job",
+                "source_label": "Black Hills Pioneer",
+            }
+        )
     return records
 
 

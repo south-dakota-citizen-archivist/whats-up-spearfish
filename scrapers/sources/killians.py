@@ -64,18 +64,20 @@ class Killians(BaseScraper):
             img = li.select_one(".beer-label img")
             image_url = img["src"] if img and img.get("src") else ""
 
-            records.append({
-                "url": beer_url,
-                "title": name,
-                "slug": make_slug(name),
-                "category": category,
-                "abv": abv,
-                "ibu": ibu,
-                "brewery": brewery,
-                "rating": rating,
-                "image_url": image_url,
-                "record_type": "beer",
-                "source_label": "Killian's",
-            })
+            records.append(
+                {
+                    "url": beer_url,
+                    "title": name,
+                    "slug": make_slug(name),
+                    "category": category,
+                    "abv": abv,
+                    "ibu": ibu,
+                    "brewery": brewery,
+                    "rating": rating,
+                    "image_url": image_url,
+                    "record_type": "beer",
+                    "source_label": "Killian's",
+                }
+            )
 
         return records

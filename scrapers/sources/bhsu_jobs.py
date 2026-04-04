@@ -52,15 +52,17 @@ class BHSUJobs(BaseScraper):
             if not url or not title:
                 continue
 
-            records.append({
-                "url": url,
-                "title": title,
-                "slug": make_slug(title),
-                "department": department,
-                "description": description,
-                "published": published,
-                "record_type": "job",
-                "source_label": self.name,
-            })
+            records.append(
+                {
+                    "url": url,
+                    "title": title,
+                    "slug": make_slug(title),
+                    "department": department,
+                    "description": description,
+                    "published": published,
+                    "record_type": "job",
+                    "source_label": self.name,
+                }
+            )
 
         return records

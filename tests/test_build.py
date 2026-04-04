@@ -17,9 +17,11 @@ import pytest
 # _to_mountain
 # ---------------------------------------------------------------------------
 
+
 class TestToMountain:
     def _fn(self, value):
         from build import _to_mountain
+
         return _to_mountain(value)
 
     def test_none_returns_none(self):
@@ -33,6 +35,7 @@ class TestToMountain:
 
     def test_date_only_is_midnight_mountain(self):
         from zoneinfo import ZoneInfo
+
         MT = ZoneInfo("America/Denver")
         result = self._fn("2026-04-01")
         assert result is not None
@@ -79,6 +82,7 @@ _TODAY = datetime.date(2026, 4, 1)
 class TestGroupRecords:
     def _call(self, data, today=_TODAY):
         import build
+
         with patch("build.TODAY", today):
             return build.group_records(data)
 
@@ -164,36 +168,44 @@ class TestGroupRecords:
 
     # 30-day cutoff for document / news / press_release
     def test_news_older_than_30_days_excluded(self):
-        data = {"src": [
-            {"record_type": "news", "title": "Old", "published": "2026-03-01"},  # 31 days before TODAY
-            {"record_type": "news", "title": "Recent", "published": "2026-03-15"},
-        ]}
+        data = {
+            "src": [
+                {"record_type": "news", "title": "Old", "published": "2026-03-01"},  # 31 days before TODAY
+                {"record_type": "news", "title": "Recent", "published": "2026-03-15"},
+            ]
+        }
         titles = [r["title"] for r in self._call(data).get("news", [])]
         assert "Old" not in titles
         assert "Recent" in titles
 
     def test_document_older_than_30_days_excluded(self):
-        data = {"src": [
-            {"record_type": "document", "title": "Stale", "date": "2026-02-01"},
-            {"record_type": "document", "title": "Fresh", "date": "2026-03-20"},
-        ]}
+        data = {
+            "src": [
+                {"record_type": "document", "title": "Stale", "date": "2026-02-01"},
+                {"record_type": "document", "title": "Fresh", "date": "2026-03-20"},
+            ]
+        }
         titles = [r["title"] for r in self._call(data).get("document", [])]
         assert "Stale" not in titles
         assert "Fresh" in titles
 
     def test_press_release_older_than_30_days_excluded(self):
-        data = {"src": [
-            {"record_type": "press_release", "title": "Old PR", "date": "2026-01-01"},
-            {"record_type": "press_release", "title": "New PR", "date": "2026-04-01"},
-        ]}
+        data = {
+            "src": [
+                {"record_type": "press_release", "title": "Old PR", "date": "2026-01-01"},
+                {"record_type": "press_release", "title": "New PR", "date": "2026-04-01"},
+            ]
+        }
         titles = [r["title"] for r in self._call(data).get("press_release", [])]
         assert "Old PR" not in titles
         assert "New PR" in titles
 
     def test_record_exactly_30_days_ago_included(self):
-        data = {"src": [
-            {"record_type": "news", "title": "Boundary", "published": "2026-03-02"},  # exactly 30 days before Apr 1
-        ]}
+        data = {
+            "src": [
+                {"record_type": "news", "title": "Boundary", "published": "2026-03-02"},  # exactly 30 days before Apr 1
+            ]
+        }
         titles = [r["title"] for r in self._call(data).get("news", [])]
         assert "Boundary" in titles
 
@@ -203,9 +215,11 @@ class TestGroupRecords:
         assert "No Date" in titles
 
     def test_future_dated_record_kept_by_30_day_filter(self):
-        data = {"src": [
-            {"record_type": "news", "title": "Future News", "published": "2026-06-01"},
-        ]}
+        data = {
+            "src": [
+                {"record_type": "news", "title": "Future News", "published": "2026-06-01"},
+            ]
+        }
         titles = [r["title"] for r in self._call(data).get("news", [])]
         assert "Future News" in titles
 
@@ -214,9 +228,11 @@ class TestGroupRecords:
 # Jinja2 filters
 # ---------------------------------------------------------------------------
 
+
 @pytest.fixture(scope="module")
 def jinja_env():
     import build
+
     with patch("build.TODAY", _TODAY):
         return build.make_env()
 
@@ -292,9 +308,11 @@ class TestStableId:
 # Jinja2 tests (is_today, is_this_week)
 # ---------------------------------------------------------------------------
 
+
 class TestIsToday:
     def _test(self, value):
         import build
+
         with patch("build.TODAY", _TODAY):
             return build.make_env().tests["today"](value)
 
@@ -314,6 +332,7 @@ class TestIsToday:
 class TestIsThisWeek:
     def _test(self, value):
         import build
+
         with patch("build.TODAY", _TODAY):
             return build.make_env().tests["this_week"](value)
 

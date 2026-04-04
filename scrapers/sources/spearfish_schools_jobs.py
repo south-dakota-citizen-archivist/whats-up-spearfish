@@ -92,10 +92,10 @@ def _parse_posting(ul) -> dict | None:
 
     # Apply / detail URL
     url = (
-        f"{BASE_URL}/_application.aspx"
-        f"?posJobCodes={job_id}"
-        f"&posFirstChoice={urllib.parse.quote(position_type)}"
-    ) if job_id else LIST_URL
+        (f"{BASE_URL}/_application.aspx?posJobCodes={job_id}&posFirstChoice={urllib.parse.quote(position_type)}")
+        if job_id
+        else LIST_URL
+    )
 
     description_parts = []
     if position_type:

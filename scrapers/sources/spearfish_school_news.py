@@ -51,14 +51,16 @@ class SpearfishSchoolNews(BaseScraper):
 
             description = desc_el.get_text(" ", strip=True) if desc_el else ""
 
-            records.append({
-                "url": url,
-                "title": title,
-                "slug": make_slug(title),
-                "published": published,
-                "description": description,
-                "record_type": "press_release",
-                "source_label": self.name,
-            })
+            records.append(
+                {
+                    "url": url,
+                    "title": title,
+                    "slug": make_slug(title),
+                    "published": published,
+                    "description": description,
+                    "record_type": "press_release",
+                    "source_label": self.name,
+                }
+            )
 
         return records

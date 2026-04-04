@@ -31,7 +31,7 @@ FEED_URL = "https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
 
 _NS = {
     "atom": "http://www.w3.org/2005/Atom",
-    "yt":   "http://www.youtube.com/xml/schemas/2015",
+    "yt": "http://www.youtube.com/xml/schemas/2015",
     "media": "http://search.yahoo.com/mrss/",
 }
 
@@ -78,11 +78,11 @@ def _fetch_feed(channel_id: str, source_name: str, channel_url: str, n: int = 15
     records = []
     for entry in root.findall("atom:entry", _NS)[:n]:
         video_id_el = entry.find("yt:videoId", _NS)
-        title_el    = entry.find("atom:title", _NS)
-        link_el     = entry.find("atom:link[@rel='alternate']", _NS)
-        pub_el      = entry.find("atom:published", _NS)
+        title_el = entry.find("atom:title", _NS)
+        link_el = entry.find("atom:link[@rel='alternate']", _NS)
+        pub_el = entry.find("atom:published", _NS)
         media_group = entry.find("media:group", _NS)
-        thumb_el    = media_group.find("media:thumbnail", _NS) if media_group is not None else None
+        thumb_el = media_group.find("media:thumbnail", _NS) if media_group is not None else None
 
         video_id = video_id_el.text if video_id_el is not None else None
         if not video_id:
@@ -92,23 +92,21 @@ def _fetch_feed(channel_id: str, source_name: str, channel_url: str, n: int = 15
         if not title:
             continue
 
-        video_url = (
-            link_el.get("href")
-            if link_el is not None
-            else f"https://www.youtube.com/watch?v={video_id}"
-        )
+        video_url = link_el.get("href") if link_el is not None else f"https://www.youtube.com/watch?v={video_id}"
         published = (pub_el.text or "")[:10] if pub_el is not None else ""
         thumbnail = thumb_el.get("url", "") if thumb_el is not None else ""
 
-        records.append({
-            "url":          video_url,
-            "title":        title,
-            "published":    published,
-            "thumbnail_url": thumbnail,
-            "source_label": source_name,
-            "channel_url":  channel_url,
-            "record_type":  "youtube_video",
-        })
+        records.append(
+            {
+                "url": video_url,
+                "title": title,
+                "published": published,
+                "thumbnail_url": thumbnail,
+                "source_label": source_name,
+                "channel_url": channel_url,
+                "record_type": "youtube_video",
+            }
+        )
 
     return records
 

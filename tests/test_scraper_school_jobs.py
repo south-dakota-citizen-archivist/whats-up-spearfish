@@ -15,6 +15,7 @@ from scrapers.sources.spearfish_schools_jobs import _extract_html, _parse_postin
 # _extract_html
 # ---------------------------------------------------------------------------
 
+
 class TestExtractHtml:
     def test_basic_write(self):
         assert _extract_html("document.write('hello');") == "hello"
@@ -56,10 +57,17 @@ class TestExtractHtml:
 # _parse_posting
 # ---------------------------------------------------------------------------
 
-def _make_ul(job_id="4523", district_id="17", title="Art Teacher",
-             location="Spearfish, SD", district="Spearfish School District",
-             date_posted="04/01/2026", closing="05/15/2026",
-             position_type="Certified"):
+
+def _make_ul(
+    job_id="4523",
+    district_id="17",
+    title="Art Teacher",
+    location="Spearfish, SD",
+    district="Spearfish School District",
+    date_posted="04/01/2026",
+    closing="05/15/2026",
+    position_type="Certified",
+):
     html = f"""
     <ul id="p{job_id}_{district_id}">
       <table><tr><td id="wrapword">{title}</td></tr></table>

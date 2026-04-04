@@ -48,11 +48,7 @@ def _extract_events(page_html: str) -> list[dict]:
             parsed = json.loads(block.strip())
         except (json.JSONDecodeError, ValueError):
             continue
-        if (
-            isinstance(parsed, list)
-            and parsed
-            and parsed[0].get("@type") == "Event"
-        ):
+        if isinstance(parsed, list) and parsed and parsed[0].get("@type") == "Event":
             return parsed
     return []
 

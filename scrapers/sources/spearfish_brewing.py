@@ -44,15 +44,17 @@ class SpearfishBrewing(BaseScraper):
             img = item.find("img")
             image_url = img.get("src", "").strip() if img else ""
 
-            records.append({
-                "url": SOURCE_URL,
-                "image_url": image_url,
-                "title": name,
-                "slug": make_slug(name),
-                "description": description,
-                "abv": abv,
-                "record_type": "beer",
-                "source_label": "Spearfish Brewing Company",
-            })
+            records.append(
+                {
+                    "url": SOURCE_URL,
+                    "image_url": image_url,
+                    "title": name,
+                    "slug": make_slug(name),
+                    "description": description,
+                    "abv": abv,
+                    "record_type": "beer",
+                    "source_label": "Spearfish Brewing Company",
+                }
+            )
 
         return records

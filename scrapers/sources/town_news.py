@@ -106,10 +106,7 @@ def _parse_record(item: dict, source_label: str) -> dict | None:
 
 def _slack_blocks(record: dict) -> list[dict]:
     """Build Block Kit blocks for one article alert."""
-    header = (
-        f"*<{record['url']}|{record['title']}>*\n"
-        f"{record['published']}   {record['byline']}"
-    ).strip()
+    header = (f"*<{record['url']}|{record['title']}>*\n{record['published']}   {record['byline']}").strip()
 
     blocks: list[dict] = [{"type": "section", "text": {"type": "mrkdwn", "text": header}}]
 

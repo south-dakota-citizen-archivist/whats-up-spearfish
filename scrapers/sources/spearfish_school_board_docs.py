@@ -66,15 +66,17 @@ def _fetch_folder(folder_id: int, doc_type: str) -> list[dict]:
         slug = make_slug(f"spearfish-board-{doc_type}-{title}")
         published = _parse_date(title)
 
-        records.append({
-            "url": url,
-            "title": title,
-            "slug": slug,
-            "published": published,
-            "asset_type": doc_type,
-            "record_type": "document",
-            "source_label": "Spearfish School Board",
-        })
+        records.append(
+            {
+                "url": url,
+                "title": title,
+                "slug": slug,
+                "published": published,
+                "asset_type": doc_type,
+                "record_type": "document",
+                "source_label": "Spearfish School Board",
+            }
+        )
 
     # Recurse into subfolders
     for subfolder in data.get("meta", {}).get("folders", []):
