@@ -61,12 +61,26 @@ def _discover_scrapers() -> dict[str, str]:
 # ---------------------------------------------------------------------------
 
 def _data_stats() -> dict[str, dict]:
+    # Non-list JSON files: map slug → key that holds the actual records list
+    _NESTED: dict[str, str] = {
+        "ebird": "observations",
+        "library_circulation": "rows",
+    }
     stats: dict[str, dict] = {}
     for path in DATA_DIR.glob("*.json"):
         slug = path.stem
         try:
-            records: list[dict] = json.loads(path.read_text(encoding="utf-8"))
+            raw = json.loads(path.read_text(encoding="utf-8"))
         except Exception:
+            raw = []
+        if isinstance(raw, dict) and slug in _NESTED:
+            records: list = raw.get(_NESTED[slug]) or []
+        elif isinstance(raw, dict):
+            # Flat dict (e.g. keyed by symbol) — treat each value as a record
+            records = list(raw.values())
+        elif isinstance(raw, list):
+            records = raw
+        else:
             records = []
         types = sorted({r.get("record_type", "") for r in records if isinstance(r, dict)} - {""})
         stats[slug] = {"count": len(records), "types": types}
@@ -86,6 +100,8 @@ def _build_readme(slug_to_name: dict[str, str], stats: dict[str, dict]) -> str:
         "native_plants_spotlight": "USDA PLANTS Database (Native Plant Spotlight)",
         "plants_native_black_hills": "USDA PLANTS Database (Black Hills full pull)",
         "creek_gauge": "USGS Stream Gauge — Spearfish Creek (06431500)",
+        "ebird": "eBird (recent sightings)",
+        "library_circulation": "Grace Balloch Memorial Library (circulation)",
     }
 
     # Build rows: include every slug that has a name OR has data
