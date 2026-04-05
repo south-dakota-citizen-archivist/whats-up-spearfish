@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-05T02:43:52.101887+00:00",
+  "fetched_at": "2026-04-05T03:23:20.571448+00:00",
   "rows": [
     {
       "year": 2015,
@@ -1229,7 +1229,7 @@
       "renewals": null,
       "overdrive_loans": 4467,
       "hoopla_loans": null,
-      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/2255/files/agenda/6375"
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/2255/files/agenda/6347"
     },
     {
       "year": 2026,
@@ -1239,7 +1239,7 @@
       "renewals": null,
       "overdrive_loans": 4002,
       "hoopla_loans": null,
-      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/2255/files/agenda/6375"
+      "minutes_link": "https://spearfishsd.portal.civicclerk.com/event/2255/files/agenda/6347"
     }
   ]
 }
