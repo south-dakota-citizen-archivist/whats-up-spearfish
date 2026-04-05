@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-05T03:44:23.589005+00:00",
+  "fetched_at": "2026-04-05T14:59:39.208313+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -30,7 +30,8 @@
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/022326SierraClubDavisAccessUnredactedArcReport.pdf"
         }
       ],
-      "total_docs": 83
+      "total_docs": 83,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "124",
@@ -61,7 +62,8 @@
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/2.06.26_to_Binegar.pdf"
         }
       ],
-      "total_docs": 23
+      "total_docs": 23,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "117",
@@ -92,7 +94,8 @@
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Proposed Conclusions of Law - City of Madison RUS 1.29.2026 FDJJ.pdf"
         }
       ],
-      "total_docs": 57
+      "total_docs": 57,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "24",
@@ -111,7 +114,8 @@
           "url": "https://danr.sd.gov/powertech/ptechExplorationPermits.aspx"
         }
       ],
-      "total_docs": 2
+      "total_docs": 2,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "125",
@@ -142,7 +146,8 @@
           "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/StatePermitSoB.pdf"
         }
       ],
-      "total_docs": 7
+      "total_docs": 7,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "129",
@@ -173,7 +178,8 @@
           "url": "https://danr.sd.gov/wrimage/pub/8991-3_com.pdf"
         }
       ],
-      "total_docs": 11
+      "total_docs": 11,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "127",
@@ -204,7 +210,8 @@
           "url": "https://danr.sd.gov/wrimage/pub/8987-3_notappear2.pdf"
         }
       ],
-      "total_docs": 13
+      "total_docs": 13,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "126",
@@ -235,7 +242,8 @@
           "url": "https://danr.sd.gov/wrimage/pub/8991-3_mot1.pdf"
         }
       ],
-      "total_docs": 13
+      "total_docs": 13,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "128",
@@ -266,7 +274,8 @@
           "url": "https://danr.sd.gov/wrimage/pub/8990-3_pet.pdf"
         }
       ],
-      "total_docs": 8
+      "total_docs": 8,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "95",
@@ -297,7 +306,8 @@
           "url": "https://danr.sd.gov/wrimage/pub/PT_not1.pdf"
         }
       ],
-      "total_docs": 28
+      "total_docs": 28,
+      "latest_doc_date": "0000-00-00"
     }
   ]
 }
