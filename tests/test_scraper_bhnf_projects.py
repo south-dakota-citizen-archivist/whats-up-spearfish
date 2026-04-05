@@ -11,6 +11,7 @@ from __future__ import annotations
 class TestMilestoneSortKey:
     def _fn(self, date_str):
         from scrapers.sources.bhnf_projects import _milestone_sort_key
+
         return _milestone_sort_key(date_str)
 
     # Full MM/DD/YYYY dates

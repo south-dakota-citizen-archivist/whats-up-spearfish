@@ -36,12 +36,31 @@ DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "danr_publi
 DANR_URL = "https://danr.sd.gov/public/default.aspx"
 
 WEST_RIVER = {
-    "lawrence", "meade", "butte", "harding", "pennington", "custer",
-    "fall river", "bennett", "jackson", "shannon", "oglala lakota",
-    "ziebach", "dewey", "corson", "perkins",
+    "lawrence",
+    "meade",
+    "butte",
+    "harding",
+    "pennington",
+    "custer",
+    "fall river",
+    "bennett",
+    "jackson",
+    "shannon",
+    "oglala lakota",
+    "ziebach",
+    "dewey",
+    "corson",
+    "perkins",
     # Common west-river city names as fallback
-    "spearfish", "deadwood", "lead", "rapid city", "sturgis",
-    "belle fourche", "hot springs", "edgemont", "hill city",
+    "spearfish",
+    "deadwood",
+    "lead",
+    "rapid city",
+    "sturgis",
+    "belle fourche",
+    "hot springs",
+    "edgemont",
+    "hill city",
 }
 
 _APPKEY_RE = re.compile(r"/dp/([0-9a-f]{20,})")
@@ -172,7 +191,7 @@ def _parse_table(soup: BeautifulSoup, notice_type: str) -> list[dict]:
             # Plain text value (strip label prefix)
             value = cell.get_text(" ", strip=True)
             if label_text and value.startswith(label_text):
-                value = value[len(label_text):].lstrip(":").strip()
+                value = value[len(label_text) :].lstrip(":").strip()
 
             if any(k in header for k in ("facility", "name", "applicant")):
                 record["name"] = value

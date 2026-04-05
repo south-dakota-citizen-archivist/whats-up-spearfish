@@ -15,6 +15,7 @@ concurrency:
 jobs:
   scrape-and-build:
     runs-on: ubuntu-latest
+    environment: github-pages
 
     permissions:
       contents: write

@@ -78,16 +78,18 @@ def _fetch_listing() -> list[dict]:
             title = cells[3].get_text(" ", strip=True)
             description = cells[4].get_text(" ", strip=True)
 
-            cases.append({
-                "ccid": ccid,
-                "board": current_board,
-                "permit_type": current_permit_type,
-                "title": title,
-                "description": description,
-                "docs_url": docs_url,
-                "documents": [],
-                "total_docs": 0,
-            })
+            cases.append(
+                {
+                    "ccid": ccid,
+                    "board": current_board,
+                    "permit_type": current_permit_type,
+                    "title": title,
+                    "description": description,
+                    "docs_url": docs_url,
+                    "documents": [],
+                    "total_docs": 0,
+                }
+            )
 
     return cases
 

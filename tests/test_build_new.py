@@ -24,9 +24,11 @@ _TODAY = datetime.date(2026, 4, 4)
 # intcomma filter
 # ---------------------------------------------------------------------------
 
+
 @pytest.fixture(scope="module")
 def jinja_env():
     import build
+
     with patch("build.TODAY", _TODAY):
         return build.make_env()
 
@@ -61,6 +63,7 @@ class TestIntcomma:
 # load_danr_notices() — deadline ISO normalization and past-flagging
 # ---------------------------------------------------------------------------
 
+
 class TestLoadDanrNotices:
     def _call(self, notices, today=_TODAY):
         import tempfile
@@ -68,9 +71,7 @@ class TestLoadDanrNotices:
         import build
 
         data = {"fetched_at": "2026-04-04T00:00:00+00:00", "notices": notices}
-        with tempfile.NamedTemporaryFile(
-            mode="w", suffix=".json", delete=False
-        ) as f:
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as f:
             json.dump(data, f)
             tmp = Path(f.name)
 
@@ -121,6 +122,7 @@ class TestLoadDanrNotices:
 # load_bhnf_projects() — comment_period_past flag
 # ---------------------------------------------------------------------------
 
+
 class TestLoadBhnfProjects:
     def _call(self, projects, today=_TODAY):
         import tempfile
@@ -128,9 +130,7 @@ class TestLoadBhnfProjects:
         import build
 
         data = {"fetched_at": "2026-04-04T00:00:00+00:00", "projects": projects}
-        with tempfile.NamedTemporaryFile(
-            mode="w", suffix=".json", delete=False
-        ) as f:
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as f:
             json.dump(data, f)
             tmp = Path(f.name)
 
@@ -206,22 +206,25 @@ class TestLoadBhnfProjects:
 # load_circulation() — y-tick generation
 # ---------------------------------------------------------------------------
 
+
 class TestLoadCirculationYTicks:
     def _make_rows(self, loans_per_month):
         """Build minimal row list with given physical loan counts."""
         rows = []
         year, month = 2022, 1
         for loans in loans_per_month:
-            rows.append({
-                "year": year,
-                "month": month,
-                "month_name": "Jan",
-                "loans": loans,
-                "renewals": None,
-                "overdrive_loans": None,
-                "hoopla_loans": None,
-                "minutes_link": None,
-            })
+            rows.append(
+                {
+                    "year": year,
+                    "month": month,
+                    "month_name": "Jan",
+                    "loans": loans,
+                    "renewals": None,
+                    "overdrive_loans": None,
+                    "hoopla_loans": None,
+                    "minutes_link": None,
+                }
+            )
             month += 1
             if month > 12:
                 month = 1
@@ -234,9 +237,7 @@ class TestLoadCirculationYTicks:
         import build
 
         data = {"fetched_at": "2026-04-04T00:00:00+00:00", "rows": rows}
-        with tempfile.NamedTemporaryFile(
-            mode="w", suffix=".json", delete=False
-        ) as f:
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".json", delete=False) as f:
             json.dump(data, f)
             tmp = Path(f.name)
 

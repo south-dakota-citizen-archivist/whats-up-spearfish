@@ -11,6 +11,7 @@ from __future__ import annotations
 class TestIntOrNone:
     def _fn(self, val):
         from scrapers.sources.library_circulation import _int_or_none
+
         return _int_or_none(val)
 
     def test_integer_string(self):

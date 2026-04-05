@@ -15,9 +15,11 @@ from bs4 import BeautifulSoup
 # _is_west_river
 # ---------------------------------------------------------------------------
 
+
 class TestIsWestRiver:
     def _fn(self, text):
         from scrapers.sources.danr_public_notices import _is_west_river
+
         return _is_west_river(text)
 
     # target counties
@@ -86,9 +88,11 @@ class TestIsWestRiver:
 # _deadline_sort_key
 # ---------------------------------------------------------------------------
 
+
 class TestDeadlineSortKey:
     def _fn(self, notice):
         from scrapers.sources.danr_public_notices import _deadline_sort_key
+
         return _deadline_sort_key(notice)
 
     def test_mm_dd_yyyy(self):
@@ -121,9 +125,11 @@ class TestDeadlineSortKey:
 # _parse_deadline_cell — plain text (no <script>)
 # ---------------------------------------------------------------------------
 
+
 class TestParseDeadlineCellPlainText:
     def _fn(self, html):
         from scrapers.sources.danr_public_notices import _parse_deadline_cell
+
         cell = BeautifulSoup(html, "html.parser")
         return _parse_deadline_cell(cell)
 
@@ -151,9 +157,11 @@ class TestParseDeadlineCellPlainText:
 # _parse_deadline_cell — inline <script> (Caspio pattern)
 # ---------------------------------------------------------------------------
 
+
 class TestParseDeadlineCellScript:
     def _fn(self, html):
         from scrapers.sources.danr_public_notices import _parse_deadline_cell
+
         cell = BeautifulSoup(html, "html.parser")
         return _parse_deadline_cell(cell)
 

@@ -18,6 +18,7 @@ from unittest.mock import patch
 # Helpers
 # ---------------------------------------------------------------------------
 
+
 def _write_json(tmp_path: Path, stem: str, data) -> None:
     (tmp_path / f"{stem}.json").write_text(json.dumps(data))
 
@@ -26,12 +27,14 @@ def _write_json(tmp_path: Path, stem: str, data) -> None:
 # _data_stats
 # ---------------------------------------------------------------------------
 
+
 class TestDataStats:
     def _call(self, tmp_path):
         # Ensure the script's repo root is on sys.path
 
         with patch("scripts.build_readme.DATA_DIR", tmp_path):
             from scripts.build_readme import _data_stats
+
             return _data_stats()
 
     def test_plain_list_json(self, tmp_path):
@@ -104,9 +107,11 @@ class TestDataStats:
 # _build_readme — table content spot-checks
 # ---------------------------------------------------------------------------
 
+
 class TestBuildReadme:
     def _call(self, slug_to_name, stats):
         from scripts.build_readme import _build_readme
+
         return _build_readme(slug_to_name, stats)
 
     def test_table_header_present(self):

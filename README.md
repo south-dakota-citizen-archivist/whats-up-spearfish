@@ -31,7 +31,7 @@ _Updated: April 4, 2026_
 | City of Spearfish Jobs | `spearfish_jobs` | — | 0 |
 | City of Spearfish News Flash | `spearfish_news` | `press_release` | 4 |
 | Crow Peak Brewing | `crow_peak_brewing` | `beer` | 16 |
-| eBird (recent sightings) | `ebird` | — | 50 |
+| eBird (recent sightings) | `ebird` | — | 0 |
 | Elementary 3-5 Lunch | `spearfish_elem_35_lunch` | `school_menu` | 40 |
 | Elementary Breakfast | `spearfish_elem_breakfast` | `school_menu` | 40 |
 | Elementary K-2 Lunch | `spearfish_elem_k2_lunch` | `school_menu` | 40 |
