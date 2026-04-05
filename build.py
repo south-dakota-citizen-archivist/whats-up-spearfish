@@ -898,7 +898,7 @@ def build() -> None:
             executor.submit(load_creek_data): 'creek_data',
             executor.submit(fetch_fire_data): 'fire_data',
         }
-        
+
         data_results = {}
         for future in as_completed(futures):
             key = futures[future]
@@ -916,7 +916,7 @@ def build() -> None:
     library_circulation = data_results.get('library_circulation', {})
     creek_data = data_results.get('creek_data', {})
     fire_data = data_results.get('fire_data', {})
-    
+
     fire_rows = fire_data.get("rows", [])
     print(
         f"[build] Creek gauge: {creek_data.get('current', {}).get('cfs', 'n/a')} cfs, "

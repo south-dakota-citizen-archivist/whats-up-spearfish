@@ -68,14 +68,14 @@ def run_all():
             return (scraper.name, 0, exc)
 
     print(f"Running {len(scraper_classes)} scraper(s) in parallel (max_workers={max_workers})...")
-    
+
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = {executor.submit(_run_scraper, cls): cls.__name__ for cls in scraper_classes}
-        
+
         for future in as_completed(futures):
             name, count, error = future.result()
             total_new += count
-            
+
             if error:
                 msg = f"{name}: ERROR - {error}"
                 print(f"  {msg}")
