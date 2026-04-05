@@ -174,7 +174,10 @@
             </div>
           </div>
 
-          <div class="flex items-center gap-2 shrink-0">
+          <div class="flex flex-col items-end gap-0.5 shrink-0 text-right">
+            {% if c.latest_doc_date %}
+            <span class="text-xs text-gray-500">{{ c.latest_doc_date | format_date }}</span>
+            {% endif %}
             {% if c.total_docs %}
             <span class="text-xs text-gray-400">{{ c.total_docs }} doc{{ 's' if c.total_docs != 1 }}</span>
             {% endif %}

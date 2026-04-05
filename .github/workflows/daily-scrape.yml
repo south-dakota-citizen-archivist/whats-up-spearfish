@@ -57,6 +57,13 @@ jobs:
           fetch_ebird()
           "
 
+      - name: Fetch planning and zoning records
+        run: |
+          uv run python -c "
+          from scrapers.sources.planning_zoning import fetch_planning_zoning
+          fetch_planning_zoning()
+          "
+
       - name: Fetch DANR public notices
         run: |
           uv run python -c "
@@ -90,6 +97,13 @@ jobs:
           uv run python -c "
           from scrapers.sources.creek_gauge import CreekGaugeScraper
           CreekGaugeScraper().run()
+          "
+
+      - name: Fetch building permit PDFs
+        run: |
+          uv run python -c "
+          from scrapers.sources.building_permits import fetch_building_permits
+          fetch_building_permits()
           "
 
       - name: Commit updated data

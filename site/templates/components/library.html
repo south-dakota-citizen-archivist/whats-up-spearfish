@@ -59,9 +59,8 @@
     {# SVG area chart #}
     {% if circ.chart %}
     <div class="px-4 pt-3 pb-1">
-      {# viewBox: 30px left margin for y-labels + chart area + 40px right margin for last x-label + 20px below for year labels #}
       <svg viewBox="-30 0 {{ circ.chart.width + 70 }} {{ circ.chart.height + 20 }}"
-           class="w-full" role="img" aria-label="Library circulation loans over time">
+           class="w-full" style="min-height:140px" role="img" aria-label="Library circulation loans over time">
 
         {# Y-axis gridlines + labels #}
         {% for tick in circ.chart.y_ticks %}

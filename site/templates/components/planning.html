@@ -1,0 +1,650 @@
+{# ── Permits & Applications ─────────────────────────────────────────────────── #}
+{% if planning_records or building_permits %}
+
+<script>
+(function () {
+  window.__planningRecords = {{ planning_records | tojson }};
+  window.__buildingPermits = {{ (building_permits.records or []) | tojson }};
+  window.__permitYearSeries = {{ (building_permits.year_series or []) | tojson }};
+})();
+</script>
+
+<section id="planning" x-data="permitsApp()" x-init="init()"
+         class="rounded-xl border border-gray-300 bg-white overflow-hidden scroll-mt-20">
+
+  {# ── Header ────────────────────────────────────────────────────────────── #}
+  <div class="px-4 pt-3.5 pb-0 border-b border-gray-200">
+    <div class="flex items-center justify-between gap-3 flex-wrap mb-2">
+
+      <h2 class="text-base font-bold text-gray-900 flex items-center gap-1.5 shrink-0 whitespace-nowrap">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4 text-indigo-600 shrink-0">
+          <path d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3H3.375z"/>
+          <path fill-rule="evenodd" d="M3.087 9l.54 9.176A3 3 0 006.62 21h10.757a3 3 0 002.995-2.824L20.913 9H3.087zm6.163 3.75A.75.75 0 0110 12h4a.75.75 0 010 1.5h-4a.75.75 0 01-.75-.75z" clip-rule="evenodd"/>
+        </svg>
+        City permits
+        <span class="ml-1 inline-flex items-center rounded-full bg-indigo-50 px-2 py-0.5 text-xs font-medium text-indigo-700 ring-1 ring-indigo-200"
+              x-text="(mainTab === 'applications' ? appFiltered.length : permFiltered.length).toLocaleString()"></span>
+      </h2>
+
+      {# Map/List toggle — only on applications tab #}
+      <div x-show="mainTab === 'applications'"
+           class="flex items-center gap-1 bg-gray-100 rounded-full p-0.5 text-xs font-medium shrink-0">
+        <button @click="appView = 'list'"
+                :class="appView === 'list' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'"
+                class="px-3 py-1 rounded-full transition-all">List</button>
+        <button @click="switchToMap()"
+                :class="appView === 'map' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'"
+                class="px-3 py-1 rounded-full transition-all">Map</button>
+      </div>
+
+      {# List/Chart toggle — only on permits tab #}
+      <div x-show="mainTab === 'permits'" x-cloak
+           class="flex items-center gap-1 bg-gray-100 rounded-full p-0.5 text-xs font-medium shrink-0">
+        <button @click="permView = 'list'"
+                :class="permView === 'list' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'"
+                class="px-3 py-1 rounded-full transition-all">List</button>
+        <button @click="permView = 'chart'"
+                :class="permView === 'chart' ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'"
+                class="px-3 py-1 rounded-full transition-all">Chart</button>
+      </div>
+    </div>
+
+    {# ── Main tabs ─────────────────────────────────────────────────────────── #}
+    <div class="flex gap-0 -mb-px">
+      <button @click="mainTab = 'applications'"
+              :class="mainTab === 'applications'
+                ? 'border-b-2 border-indigo-600 text-indigo-700 font-semibold'
+                : 'text-gray-500 hover:text-gray-700 border-b-2 border-transparent'"
+              class="px-4 py-2.5 text-xs transition-colors whitespace-nowrap">
+        Applications
+      </button>
+      <button @click="mainTab = 'permits'"
+              :class="mainTab === 'permits'
+                ? 'border-b-2 border-indigo-600 text-indigo-700 font-semibold'
+                : 'text-gray-500 hover:text-gray-700 border-b-2 border-transparent'"
+              class="px-4 py-2.5 text-xs transition-colors whitespace-nowrap">
+        Permits Issued
+        <span class="ml-1 text-gray-400 font-normal">2013–present</span>
+      </button>
+    </div>
+  </div>
+
+  {# ═══════════════════════════════════════════════════════════════════════════ #}
+  {# TAB 1 — All Applications (ViewpointCloud) ────────────────────────────── #}
+  {# ═══════════════════════════════════════════════════════════════════════════ #}
+  <div x-show="mainTab === 'applications'">
+
+    {# Filters #}
+    <div class="px-4 pt-3 pb-3 border-b border-gray-100 space-y-2.5">
+      {# Category pills + type dropdown #}
+      <div class="flex flex-wrap items-center gap-2">
+        <div class="flex items-center gap-1.5 overflow-x-auto scrollbar-none">
+          <template x-for="cat in appCategories" :key="cat.id">
+            <button @click="appActiveCategory = cat.id; appActiveType = ''; appPage = 1"
+                    :class="appActiveCategory === cat.id ? cat.activeClass : 'bg-gray-100 text-gray-600 hover:bg-gray-200'"
+                    class="shrink-0 px-3 py-1 rounded-full text-xs font-medium transition-colors whitespace-nowrap"
+                    x-text="cat.label">
+            </button>
+          </template>
+        </div>
+        <template x-if="appActiveCategory !== 'all' && appTypesForCategory.length > 1">
+          <select x-model="appActiveType" @change="appPage = 1"
+                  class="text-xs rounded-lg border border-gray-300 bg-white px-2 py-1 text-gray-700 focus:border-indigo-400 focus:outline-none focus:ring-1 focus:ring-indigo-400">
+            <option value="">All types</option>
+            <template x-for="t in appTypesForCategory" :key="t">
+              <option :value="t" x-text="t"></option>
+            </template>
+          </select>
+        </template>
+      </div>
+      {# Search #}
+      <input type="search" x-model.debounce.200ms="appSearchQuery" @input="appPage = 1"
+             placeholder="Search address, applicant, permit no…"
+             class="w-full text-xs rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-gray-700 placeholder-gray-400 focus:border-indigo-400 focus:outline-none focus:ring-1 focus:ring-indigo-400">
+      {# Date presets #}
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="text-xs text-gray-400 shrink-0">Filed:</span>
+        <div class="flex items-center gap-1">
+          <template x-for="preset in appDatePresets" :key="preset.id">
+            <button @click="appSetDatePreset(preset.id)"
+                    :class="appActiveDatePreset === preset.id ? 'bg-indigo-600 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'"
+                    class="px-2.5 py-1 rounded-full text-xs font-medium transition-colors whitespace-nowrap"
+                    x-text="preset.label">
+            </button>
+          </template>
+        </div>
+        <template x-if="appActiveDatePreset === 'custom'">
+          <div class="flex items-center gap-1.5">
+            <input type="date" x-model="appDateFrom" @change="appPage = 1"
+                   class="text-xs rounded-lg border border-gray-300 px-2 py-1 text-gray-700 focus:border-indigo-400 focus:outline-none focus:ring-1 focus:ring-indigo-400">
+            <span class="text-xs text-gray-400">–</span>
+            <input type="date" x-model="appDateTo" @change="appPage = 1"
+                   class="text-xs rounded-lg border border-gray-300 px-2 py-1 text-gray-700 focus:border-indigo-400 focus:outline-none focus:ring-1 focus:ring-indigo-400">
+          </div>
+        </template>
+      </div>
+    </div>
+
+    {# Map view #}
+    <div x-show="appView === 'map'" x-cloak>
+      <div id="planning-map" style="height:380px;" class="sm:h-[440px] w-full z-0"></div>
+      <div class="px-4 py-2.5 border-t border-gray-100 bg-gray-50 flex flex-wrap gap-x-4 gap-y-1">
+        <template x-for="cat in appCategories.filter(function(c){ return c.id !== 'all'; })" :key="cat.id">
+          <div class="flex items-center gap-1.5">
+            <span class="inline-block w-3 h-3 rounded-full shrink-0" :style="'background-color:' + cat.mapColor"></span>
+            <span class="text-xs text-gray-600" x-text="cat.label"></span>
+          </div>
+        </template>
+      </div>
+    </div>
+
+    {# List view #}
+    <div x-show="appView === 'list'">
+      <template x-if="appFiltered.length === 0">
+        <p class="px-4 py-8 text-sm text-gray-400 text-center">No records match your filters.</p>
+      </template>
+      <ul class="divide-y divide-gray-100 sm:max-h-[32rem] sm:overflow-y-auto">
+        <template x-for="record in appPaginated" :key="record.id">
+          <li class="flex gap-0 overflow-hidden">
+            <div class="w-1 shrink-0" :style="'background-color:' + appCategoryColor(record.category)"></div>
+            <div class="flex-1 px-4 py-3 min-w-0">
+              <div class="flex items-start justify-between gap-3">
+                <div class="min-w-0">
+                  <p class="text-sm font-bold text-gray-900 leading-snug truncate"
+                     x-text="displayAddress(record.address)"></p>
+                  <div class="mt-1 flex flex-wrap items-center gap-1.5">
+                    <span class="inline-flex items-center rounded px-1.5 py-0.5 text-xs font-medium"
+                          :class="appCategoryBadgeClass(record.category)"
+                          x-text="record.record_type"></span>
+                    <span class="inline-flex items-center rounded px-1.5 py-0.5 text-xs font-medium"
+                          :class="statusClass(record.status)"
+                          x-text="statusLabel(record.status)"></span>
+                  </div>
+                  <div class="mt-1 flex flex-wrap items-center gap-x-3 gap-y-0.5 text-xs text-gray-400">
+                    <template x-if="record.date_created">
+                      <span x-text="'Filed ' + fmtDate(record.date_created)"></span>
+                    </template>
+                    <template x-if="record.applicant">
+                      <span class="truncate" x-text="record.applicant"></span>
+                    </template>
+                  </div>
+                </div>
+                <a :href="record.portal_url" target="_blank" rel="noopener noreferrer"
+                   class="shrink-0 text-xs font-medium text-indigo-700 hover:underline whitespace-nowrap">
+                  View ↗
+                </a>
+              </div>
+            </div>
+          </li>
+        </template>
+        <template x-if="appPaginated.length < appFiltered.length">
+          <li class="px-4 py-3 text-center">
+            <button @click="appPage++" class="text-xs font-medium text-indigo-700 hover:underline">
+              Load more
+              <span class="text-gray-400"
+                    x-text="'(' + (appFiltered.length - appPaginated.length).toLocaleString() + ' remaining)'"></span>
+            </button>
+          </li>
+        </template>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-200 bg-gray-50 px-4 py-2 flex items-center justify-between">
+      <a href="https://spearfishsd.portal.opengov.com/search" target="_blank" rel="noopener noreferrer"
+         class="text-xs text-blue-700 font-medium hover:underline">Search Portal ↗</a>
+      <span class="text-xs text-gray-400">City of Spearfish / OpenGov</span>
+    </div>
+  </div>
+
+  {# ═══════════════════════════════════════════════════════════════════════════ #}
+  {# TAB 2 — Building Permits (PDF archive) ─────────────────────────────────── #}
+  {# ═══════════════════════════════════════════════════════════════════════════ #}
+  <div x-show="mainTab === 'permits'" x-cloak>
+
+    {# Filters #}
+    <div class="px-4 pt-3 pb-3 border-b border-gray-100 space-y-2.5">
+      <div class="flex flex-wrap items-center gap-2">
+        {# Category pills #}
+        <div class="flex items-center gap-1.5 flex-wrap">
+          <template x-for="cat in permCategories" :key="cat.id">
+            <button @click="permActiveCategory = cat.id; permPage = 1"
+                    :class="permActiveCategory === cat.id ? cat.activeClass : 'bg-gray-100 text-gray-600 hover:bg-gray-200'"
+                    class="shrink-0 px-3 py-1 rounded-full text-xs font-medium transition-colors whitespace-nowrap"
+                    x-text="cat.label">
+            </button>
+          </template>
+        </div>
+        {# Year select #}
+        <select x-model="permActiveYear" @change="permPage = 1"
+                class="ml-auto text-xs border border-gray-200 rounded-lg px-2.5 py-1.5 bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-400/40">
+          <option value="">All years</option>
+          <template x-for="yr in permAvailableYears" :key="yr">
+            <option :value="yr" x-text="yr"></option>
+          </template>
+        </select>
+      </div>
+      {# Search #}
+      <div class="relative">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+             class="absolute left-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-gray-400 pointer-events-none">
+          <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd"/>
+        </svg>
+        <input type="search" x-model.debounce.200ms="permSearchQuery" @input="permPage = 1"
+               placeholder="Search address, applicant, permit no…"
+               class="block w-full rounded-lg border border-gray-200 bg-white pl-8 pr-3 py-1.5 text-xs text-gray-900 placeholder-gray-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-400/30">
+      </div>
+    </div>
+
+    {# ── Chart view ───────────────────────────────────────────────────────── #}
+    {% if building_permits and building_permits.chart %}
+    <div x-show="permView === 'chart'" x-cloak class="px-4 py-4">
+      <p class="text-xs text-gray-500 mb-2">Estimated construction value by year · click a bar to filter</p>
+      <div class="overflow-x-auto">
+        <div style="min-width:480px">
+          <svg viewBox="0 0 {{ building_permits.chart.width }} {{ building_permits.chart.height }}"
+               class="w-full" style="min-height:110px" aria-hidden="true">
+
+            {# Y-axis gridlines + labels #}
+            {% for tick in building_permits.chart.y_ticks %}
+            <line x1="{{ building_permits.chart.pad_left }}" y1="{{ tick.y }}"
+                  x2="{{ building_permits.chart.width - 4 }}" y2="{{ tick.y }}"
+                  stroke="#e5e7eb" stroke-width="1"/>
+            <text x="{{ building_permits.chart.pad_left - 4 }}" y="{{ tick.y + 4 }}"
+                  text-anchor="end" fill="#9ca3af" font-size="9">{{ tick.label }}</text>
+            {% endfor %}
+
+            {# Stacked bars — one <g> per year, one <rect> per category segment #}
+            {% for bar in building_permits.chart.bars %}
+            <g :opacity="permActiveYear === '' || permActiveYear === '{{ bar.year }}' ? 1 : 0.25"
+               @click="permActiveYear = permActiveYear === '{{ bar.year }}' ? '' : '{{ bar.year }}'; permPage = 1; permView = 'list'"
+               @mouseover="permHovered = '{{ bar.year }}'"
+               @mouseleave="permHovered = null"
+               class="cursor-pointer transition-opacity">
+              {% for seg in bar.segments %}
+              <rect x="{{ bar.x }}" y="{{ seg.y }}"
+                    width="{{ bar.w }}" height="{{ seg.h }}"
+                    fill="{{ seg.color }}">
+              </rect>
+              {% endfor %}
+            </g>
+            {# Year label — every other to avoid crowding #}
+            {% if loop.index0 % 2 == 0 or loop.last %}
+            <text x="{{ bar.x + bar.w // 2 }}" y="{{ building_permits.chart.height - 2 }}"
+                  text-anchor="middle" fill="#9ca3af" font-size="8">{{ bar.year[2:] }}</text>
+            {% endif %}
+            {% endfor %}
+
+          </svg>
+
+          {# Hover tooltip #}
+          <div class="mt-1 h-5 text-xs text-center text-gray-500">
+            <template x-if="permHovered !== null">
+              <span x-text="permYearLabel(permHovered)"></span>
+            </template>
+            <template x-if="permHovered === null">
+              <span class="text-gray-300">Hover for details · click to filter list</span>
+            </template>
+          </div>
+
+          {# Legend #}
+          <div class="mt-2 flex flex-wrap justify-center gap-x-4 gap-y-1">
+            {% for cat, color in building_permits.chart.cat_colors.items() %}
+            <div class="flex items-center gap-1.5">
+              <span class="inline-block w-2.5 h-2.5 rounded-sm shrink-0" style="background:{{ color }}"></span>
+              <span class="text-xs text-gray-500">
+                {%- if cat == 'new_construction' %}New Construction
+                {%- elif cat == 'alterations' %}Alterations
+                {%- elif cat == 'mechanical' %}Mechanical
+                {%- elif cat == 'demolition' %}Demo
+                {%- endif %}
+              </span>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    {# ── List view ─────────────────────────────────────────────────────────── #}
+    <div x-show="permView === 'list'">
+      <ul class="divide-y divide-gray-100 sm:max-h-[32rem] sm:overflow-y-auto">
+        <template x-for="r in permPage === 'all' ? permFiltered : permFiltered.slice(0, permPage * permPageSize)"
+                  :key="r.permit_number + '-' + r.year + '-' + r.month">
+          <li class="flex gap-0 overflow-hidden">
+            <div class="w-1 shrink-0" :style="'background-color:' + permCategoryColor(r.category)"></div>
+            <div class="flex-1 px-4 py-3 min-w-0">
+              <div class="flex items-start justify-between gap-2">
+                <div class="min-w-0">
+                  <p class="text-sm font-medium text-gray-900 truncate"
+                     x-text="r.applicant_name || '(Unknown)'"></p>
+                  <p class="text-xs text-gray-500 truncate mt-0.5"
+                     x-text="r.site_address || '(No address)'"></p>
+                  <div class="mt-1.5 flex flex-wrap gap-1.5 items-center">
+                    <span class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium ring-1"
+                          :class="permCatBadgeClass(r.category)"
+                          x-text="permCatLabel(r.category)"></span>
+                    <span class="text-xs text-gray-400 truncate" x-text="r.construction_type"></span>
+                  </div>
+                </div>
+                <div class="shrink-0 text-right min-w-[80px]">
+                  <template x-if="r.cost_approximate">
+                    <p class="text-sm font-semibold text-gray-900"
+                       x-text="'$' + Math.round(r.cost_approximate).toLocaleString()"></p>
+                  </template>
+                  <a :href="r.source_url" target="_blank" rel="noopener"
+                     class="text-xs text-indigo-600 hover:underline whitespace-nowrap block mt-0.5"
+                     x-text="MONTHS[parseInt(r.month, 10)] + ' ' + r.year"></a>
+                  <template x-if="r.portal_url">
+                    <a :href="r.portal_url" target="_blank" rel="noopener"
+                       class="text-xs text-indigo-500 hover:underline block mt-0.5">Portal ↗</a>
+                  </template>
+                </div>
+              </div>
+            </div>
+          </li>
+        </template>
+
+        {# Load more #}
+        <li x-show="permPage !== 'all' && permFiltered.length > permPage * permPageSize"
+            class="px-4 py-3 text-center">
+          <button @click="permPage++"
+                  class="text-xs font-medium text-indigo-700 hover:text-indigo-900">
+            Load more
+            <span class="text-gray-400"
+                  x-text="'(' + (permFiltered.length - permPage * permPageSize).toLocaleString() + ' remaining)'"></span>
+          </button>
+        </li>
+
+        <li x-show="permFiltered.length === 0" class="px-4 py-8 text-center text-sm text-gray-400">
+          No permits match your filters.
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-100 px-4 py-2 flex items-center justify-between">
+      <a href="https://www.cityofspearfish.com/Archive.aspx?AMID=37" target="_blank" rel="noopener"
+         class="text-xs text-blue-700 font-medium hover:underline">Monthly reports ↗</a>
+      <p class="text-xs text-gray-400 shrink-0"
+         x-text="permFiltered.length.toLocaleString() + ' of {{ building_permits.records | length | intcomma if building_permits and building_permits.records }}'"></p>
+    </div>
+  </div>
+
+</section>
+
+<script>
+function permitsApp() {
+  var MS_PER_DAY = 24 * 60 * 60 * 1000;
+
+  var MONTHS = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  // ── Applications (ViewpointCloud) config ──────────────────────────────────
+  var APP_DATE_PRESETS = [
+    { id: '6mo',    label: '6 mo',   days: 183 },
+    { id: '1yr',    label: '1 yr',   days: 365 },
+    { id: '2yr',    label: '2 yr',   days: 730 },
+    { id: 'all',    label: 'All',    days: null },
+    { id: 'custom', label: 'Custom', days: null },
+  ];
+
+  var APP_CAT_MAP = {
+    all:              { label: 'All',               activeClass: 'bg-indigo-600 text-white', mapColor: '#6366f1' },
+    new_construction: { label: 'New Construction',  activeClass: 'bg-orange-500 text-white', mapColor: '#f97316' },
+    alterations:      { label: 'Alterations',       activeClass: 'bg-teal-500 text-white',   mapColor: '#14b8a6' },
+    planning:         { label: 'Planning & Zoning', activeClass: 'bg-indigo-500 text-white', mapColor: '#6366f1' },
+    infrastructure:   { label: 'Infrastructure',    activeClass: 'bg-slate-500 text-white',  mapColor: '#94a3b8' },
+  };
+  var APP_BADGE_CLASS = {
+    new_construction: 'bg-orange-100 text-orange-700',
+    alterations:      'bg-teal-100 text-teal-700',
+    planning:         'bg-indigo-100 text-indigo-700',
+    infrastructure:   'bg-gray-100 text-gray-600',
+  };
+  var STATUS_LABEL = { '-1': 'Cancelled', '1': 'Submitted', '2': 'Under Review' };
+  var STATUS_CLASS = {
+    '-1': 'bg-gray-100 text-gray-500',
+    '1':  'bg-blue-50 text-blue-700 ring-1 ring-blue-200',
+    '2':  'bg-purple-50 text-purple-700 ring-1 ring-purple-200',
+  };
+
+  // ── Permits (PDF) config ───────────────────────────────────────────────────
+  var PERM_CATS = [
+    { id: 'all',              label: 'All',             activeClass: 'bg-gray-800 text-white',   color: '#6b7280' },
+    { id: 'new_construction', label: 'New Construction',activeClass: 'bg-orange-500 text-white', color: '#f97316' },
+    { id: 'alterations',      label: 'Alterations',     activeClass: 'bg-teal-500 text-white',   color: '#14b8a6' },
+    { id: 'mechanical',       label: 'Mechanical',      activeClass: 'bg-green-600 text-white',  color: '#16a34a' },
+    { id: 'demolition',       label: 'Demo',            activeClass: 'bg-red-600 text-white',    color: '#dc2626' },
+  ];
+  var PERM_CAT_BADGE = {
+    new_construction: 'bg-orange-50 text-orange-700 ring-orange-200',
+    alterations:      'bg-teal-50 text-teal-700 ring-teal-200',
+    mechanical:       'bg-green-50 text-green-700 ring-green-200',
+    demolition:       'bg-red-50 text-red-700 ring-red-200',
+  };
+  var PERM_CAT_LABEL = {
+    new_construction: 'New Construction',
+    alterations:      'Alterations',
+    mechanical:       'Mechanical',
+    demolition:       'Demo',
+  };
+  var PERM_CAT_COLOR = {
+    new_construction: '#f97316',
+    alterations:      '#14b8a6',
+    mechanical:       '#16a34a',
+    demolition:       '#dc2626',
+  };
+
+  var YEAR_SERIES_MAP = {};
+  (window.__permitYearSeries || []).forEach(function (s) { YEAR_SERIES_MAP[s.year] = s; });
+
+  var permitRecords = window.__buildingPermits || [];
+  var permAvailableYears = Array.from(new Set(permitRecords.map(function(r){ return String(r.year); }))).sort(function(a,b){ return b-a; });
+
+  return {
+    // Main tab
+    mainTab: 'applications',
+
+    // ── Applications state ─────────────────────────────────────────────────
+    appView: 'list',
+    appActiveCategory: 'all',
+    appActiveType: '',
+    appActiveDatePreset: '2yr',
+    appDateFrom: '',
+    appDateTo: '',
+    appSearchQuery: '',
+    appPage: 1,
+    appPageSize: 20,
+    appCategories: Object.keys(APP_CAT_MAP).map(function(id){
+      return { id: id, label: APP_CAT_MAP[id].label, activeClass: APP_CAT_MAP[id].activeClass, mapColor: APP_CAT_MAP[id].mapColor };
+    }),
+    appDatePresets: APP_DATE_PRESETS,
+    appAllRecords: [],
+    _map: null,
+    _mapReady: false,
+    _markerLayer: null,
+
+    // ── Permits state ──────────────────────────────────────────────────────
+    permView: 'list',
+    permActiveCategory: 'all',
+    permActiveYear: '',
+    permSearchQuery: '',
+    permPage: 1,
+    permPageSize: 25,
+    permHovered: null,
+    permCategories: PERM_CATS,
+    permAvailableYears: permAvailableYears,
+
+    MONTHS: MONTHS,
+
+    // ── Computed: Applications ─────────────────────────────────────────────
+    get appTypesForCategory() {
+      var self = this;
+      if (self.appActiveCategory === 'all') return [];
+      var seen = {};
+      self.appAllRecords.forEach(function(r) {
+        if (r.category === self.appActiveCategory && r.record_type) seen[r.record_type] = true;
+      });
+      return Object.keys(seen).sort();
+    },
+
+    get appFiltered() {
+      var self = this;
+      var now = Date.now();
+      var cutoffMs = null, fromMs = null, toMs = null;
+      if (self.appActiveDatePreset !== 'all' && self.appActiveDatePreset !== 'custom') {
+        var preset = APP_DATE_PRESETS.find(function(p){ return p.id === self.appActiveDatePreset; });
+        if (preset && preset.days) cutoffMs = now - preset.days * MS_PER_DAY;
+      } else if (self.appActiveDatePreset === 'custom') {
+        if (self.appDateFrom) fromMs = new Date(self.appDateFrom).getTime();
+        if (self.appDateTo)   toMs   = new Date(self.appDateTo).getTime() + MS_PER_DAY - 1;
+      }
+      var q = self.appSearchQuery.trim().toLowerCase();
+      return self.appAllRecords.filter(function(r) {
+        if (self.appActiveCategory !== 'all' && r.category !== self.appActiveCategory) return false;
+        if (self.appActiveType && r.record_type !== self.appActiveType) return false;
+        if (q) {
+          var hay = ((r.address||'') + ' ' + (r.applicant||'') + ' ' + (r.record_no||'') + ' ' + (r.record_type||'')).toLowerCase();
+          if (hay.indexOf(q) === -1) return false;
+        }
+        if (r.date_created) {
+          var t = new Date(r.date_created).getTime();
+          if (cutoffMs !== null && t < cutoffMs) return false;
+          if (fromMs   !== null && t < fromMs)   return false;
+          if (toMs     !== null && t > toMs)     return false;
+        }
+        return true;
+      });
+    },
+
+    get appPaginated() { return this.appFiltered.slice(0, this.appPage * this.appPageSize); },
+
+    // ── Computed: Permits ──────────────────────────────────────────────────
+    get permFiltered() {
+      var self = this;
+      var cat = self.permActiveCategory;
+      var yr  = self.permActiveYear;
+      var q   = self.permSearchQuery.trim().toLowerCase();
+      return permitRecords.filter(function(r) {
+        if (cat !== 'all' && r.category !== cat) return false;
+        if (yr && String(r.year) !== yr) return false;
+        if (q) {
+          var hay = ((r.applicant_name||'') + ' ' + (r.site_address||'') + ' ' + (r.construction_type||'') + ' ' + (r.permit_number||'')).toLowerCase();
+          if (hay.indexOf(q) === -1) return false;
+        }
+        return true;
+      });
+    },
+
+    // ── Lifecycle ──────────────────────────────────────────────────────────
+    init: function() {
+      this.appAllRecords = window.__planningRecords || [];
+    },
+
+    // ── Applications helpers ───────────────────────────────────────────────
+    appSetDatePreset: function(id) {
+      this.appActiveDatePreset = id;
+      this.appPage = 1;
+      if (id !== 'custom') { this.appDateFrom = ''; this.appDateTo = ''; }
+    },
+
+    displayAddress: function(addr) {
+      if (!addr || /^0\s+no\s+street/i.test(addr)) return '(No address)';
+      return addr;
+    },
+
+    appCategoryColor: function(cat) { return (APP_CAT_MAP[cat] || APP_CAT_MAP.infrastructure).mapColor; },
+    appCategoryBadgeClass: function(cat) { return APP_BADGE_CLASS[cat] || 'bg-gray-100 text-gray-600'; },
+    statusLabel: function(s) { return STATUS_LABEL[String(s)] || 'Unknown'; },
+    statusClass: function(s) { return STATUS_CLASS[String(s)] || 'bg-gray-100 text-gray-500'; },
+
+    fmtDate: function(iso) {
+      if (!iso) return '';
+      try { return new Date(iso).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }); }
+      catch(e) { return iso; }
+    },
+
+    // ── Permits helpers ────────────────────────────────────────────────────
+    permCategoryColor: function(cat) { return PERM_CAT_COLOR[cat] || '#9ca3af'; },
+    permCatBadgeClass: function(cat) { return (PERM_CAT_BADGE[cat] || 'bg-gray-100 text-gray-600 ring-gray-200'); },
+    permCatLabel: function(cat) { return PERM_CAT_LABEL[cat] || cat; },
+
+    permYearLabel: function(yr) {
+      var s = YEAR_SERIES_MAP[yr];
+      if (!s) return yr;
+      return yr + ': $' + (s.total / 1e6).toFixed(1) + 'M · ' + s.count.toLocaleString() + ' permits';
+    },
+
+    // ── Map (Applications tab) ─────────────────────────────────────────────
+    switchToMap: function() {
+      var self = this;
+      self.appView = 'map';
+      if (!window.L) {
+        self._loadLeaflet(function(){ self._initMap(); });
+      } else if (!self._mapReady) {
+        self._initMap();
+      } else {
+        self._renderMarkers();
+      }
+    },
+
+    _loadLeaflet: function(cb) {
+      if (!document.getElementById('leaflet-css')) {
+        var link = document.createElement('link');
+        link.id = 'leaflet-css'; link.rel = 'stylesheet';
+        link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+        document.head.appendChild(link);
+      }
+      var script = document.createElement('script');
+      script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+      script.onload = cb;
+      document.head.appendChild(script);
+    },
+
+    _initMap: function() {
+      var self = this;
+      var el = document.getElementById('planning-map');
+      if (!el || self._map) return;
+      self._map = L.map(el).setView([44.496, -103.858], 12);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 19,
+      }).addTo(self._map);
+      self._mapReady = true;
+      self._renderMarkers();
+      self.$watch('appFiltered', function(){ if (self._mapReady) self._renderMarkers(); });
+    },
+
+    _renderMarkers: function() {
+      var self = this;
+      if (!self._map || !window.L) return;
+      if (self._markerLayer) self._map.removeLayer(self._markerLayer);
+      var markers = [];
+      self.appFiltered.forEach(function(r) {
+        if (!r.lat || !r.lon) return;
+        var color = self.appCategoryColor(r.category);
+        var icon = L.divIcon({
+          className: '',
+          html: '<div style="width:12px;height:12px;border-radius:50%;background:' + color + ';border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>',
+          iconSize: [12, 12], iconAnchor: [6, 6],
+        });
+        var marker = L.marker([r.lat, r.lon], { icon: icon });
+        var statusText = STATUS_LABEL[String(r.status)] || 'Unknown';
+        var dateText = r.date_created ? self.fmtDate(r.date_created) : '';
+        var html = '<div style="min-width:180px;max-width:260px;font-size:13px;line-height:1.4">'
+          + '<p style="font-weight:700;margin:0 0 4px">' + self.displayAddress(r.address) + '</p>'
+          + '<p style="margin:0 0 2px;color:#555">' + r.record_type + '</p>'
+          + '<p style="margin:0 0 2px;color:#555">Status: ' + statusText + '</p>'
+          + (dateText ? '<p style="margin:0 0 2px;color:#555">Filed: ' + dateText + '</p>' : '')
+          + (r.applicant ? '<p style="margin:0 0 6px;color:#777">' + r.applicant + '</p>' : '')
+          + '<a href="' + r.portal_url + '" target="_blank" rel="noopener noreferrer" style="color:#4338ca;font-weight:600;text-decoration:none">View application &#x2197;</a>'
+          + '</div>';
+        marker.bindPopup(html);
+        markers.push(marker);
+      });
+      self._markerLayer = L.layerGroup(markers).addTo(self._map);
+    },
+  };
+}
+</script>
+
+{% endif %}

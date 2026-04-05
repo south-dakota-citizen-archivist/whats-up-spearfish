@@ -68,6 +68,7 @@ def _data_stats() -> dict[str, dict]:
         "bhnf_projects": "projects",
         "danr_public_notices": "notices",
         "danr_contested_cases": "cases",
+        "planning_zoning": "records",
     }
     stats: dict[str, dict] = {}
     for path in DATA_DIR.glob("*.json"):
@@ -109,6 +110,7 @@ def _build_readme(slug_to_name: dict[str, str], stats: dict[str, dict]) -> str:
         "bhnf_projects": "Black Hills National Forest (public projects)",
         "danr_public_notices": "SD Dept. of Agriculture & Natural Resources (public notices)",
         "danr_contested_cases": "SD Dept. of Agriculture & Natural Resources (contested cases)",
+        "planning_zoning": "OpenGov / Spearfish Planning & Zoning Portal",
     }
 
     # Build rows: include every slug that has a name OR has data

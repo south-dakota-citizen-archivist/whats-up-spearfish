@@ -78,6 +78,8 @@ def load_data() -> dict[str, list[dict]]:
         "bhnf_projects",
         "danr_public_notices",
         "danr_contested_cases",
+        "planning_zoning",
+        "building_permits",
     }
 
     for json_file in sorted(DATA_DIR.glob("*.json")):
@@ -772,7 +774,7 @@ def load_circulation() -> dict:
     )
     max_val = max(max_val, 1)
 
-    CHART_W, CHART_H = 500, 90
+    CHART_W, CHART_H = 500, 160
 
     pts_phys: list[tuple[float, float]] = []
     pts_od: list[tuple[float, float]] = []
@@ -846,6 +848,157 @@ def load_circulation() -> dict:
     }
 
 
+def load_building_permits() -> dict:
+    """Load building permit records and pre-compute SVG bar chart from data/building_permits.json."""
+    path = DATA_DIR / "building_permits.json"
+    if not path.exists():
+        print("[build] Warning: data/building_permits.json not found — building permits widget will be empty")
+        return {}
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        print(f"[build] Warning: could not load building_permits.json: {exc}")
+        return {}
+
+    records = raw.get("records") or []
+    month_urls: dict[str, str] = raw.get("month_urls") or {}
+
+    # Enrich each record with its source PDF URL
+    archive_base = "https://www.cityofspearfish.com/Archive.aspx?AMID=37"
+    for r in records:
+        key = f"{r.get('year', '')}-{str(r.get('month', '')).zfill(2)}"
+        r["source_url"] = month_urls.get(key, archive_base)
+
+    # Stack order (bottom → top): demolition, mechanical, alterations, new_construction
+    STACK_CATS = ["demolition", "mechanical", "alterations", "new_construction"]
+    CAT_COLORS = {
+        "new_construction": "#f97316",
+        "alterations": "#14b8a6",
+        "mechanical": "#16a34a",
+        "demolition": "#dc2626",
+    }
+
+    # Per-year totals, broken down by category
+    year_data: dict[str, dict] = {}
+    for r in records:
+        yr = str(r.get("year", ""))
+        if not yr:
+            continue
+        if yr not in year_data:
+            year_data[yr] = {"total": 0.0, "count": 0, "by_cat": {c: 0.0 for c in STACK_CATS}}
+        cost = r.get("cost_approximate") or 0
+        year_data[yr]["total"] += cost
+        year_data[yr]["count"] += 1
+        cat = r.get("category", "alterations")
+        if cat in year_data[yr]["by_cat"]:
+            year_data[yr]["by_cat"][cat] += cost
+        else:
+            year_data[yr]["by_cat"]["alterations"] += cost  # catch-all
+
+    years_sorted = sorted(year_data.keys())
+
+    # ── SVG stacked bar chart ─────────────────────────────────────────────────
+    CHART_W, CHART_H = 480, 130
+    PAD_L = 36  # left margin for y-axis labels
+    PAD_B = 14  # bottom margin for year labels
+    inner_h = CHART_H - PAD_B
+    inner_w = CHART_W - PAD_L - 4
+
+    chart: dict | None = None
+    n = len(years_sorted)
+    if n >= 2:
+        totals = [year_data[yr]["total"] for yr in years_sorted]
+        max_val = max(totals) * 1.05 if max(totals) > 0 else 1.0
+
+        bar_slot = inner_w / n
+        bar_w = max(3, int(bar_slot * 0.72))
+
+        bars = []
+        for i, yr in enumerate(years_sorted):
+            d = year_data[yr]
+            x = PAD_L + round(i * bar_slot + (bar_slot - bar_w) / 2)
+
+            # Build stacked segments bottom-to-top
+            segments = []
+            cumulative = 0.0
+            for cat in STACK_CATS:
+                val = d["by_cat"].get(cat, 0.0)
+                if val <= 0:
+                    continue
+                seg_h = max(1, round((val / max_val) * inner_h))
+                seg_y = inner_h - round(((cumulative + val) / max_val) * inner_h)
+                segments.append(
+                    {
+                        "category": cat,
+                        "color": CAT_COLORS[cat],
+                        "total": round(val),
+                        "y": seg_y,
+                        "h": seg_h,
+                    }
+                )
+                cumulative += val
+
+            bars.append(
+                {
+                    "year": yr,
+                    "total": round(d["total"]),
+                    "count": d["count"],
+                    "x": x,
+                    "w": bar_w,
+                    "segments": segments,
+                }
+            )
+
+        # Y-axis tick marks
+        mv = max(totals)
+        step = 50_000_000 if mv > 200_000_000 else 25_000_000 if mv > 75_000_000 else 10_000_000
+        y_ticks = []
+        v = step
+        while v < max_val:
+            y_px = round(inner_h - (v / max_val) * inner_h)
+            y_ticks.append({"value": v, "label": f"${v // 1_000_000}M", "y": y_px})
+            v += step
+
+        chart = {
+            "width": CHART_W,
+            "height": CHART_H,
+            "pad_left": PAD_L,
+            "inner_h": inner_h,
+            "bars": bars,
+            "y_ticks": y_ticks,
+            "cat_colors": CAT_COLORS,
+        }
+
+    # year_series for JS (used by hover tooltip) — include per-cat breakdown
+    year_series = [
+        {
+            "year": yr,
+            "total": round(year_data[yr]["total"]),
+            "count": year_data[yr]["count"],
+            "by_cat": {c: round(year_data[yr]["by_cat"].get(c, 0)) for c in STACK_CATS},
+        }
+        for yr in years_sorted
+    ]
+
+    print(f"[build] Building permits: {len(records)} records, {n} years, {len(month_urls)} source URLs")
+    return {"records": records, "chart": chart, "year_series": year_series}
+
+
+def load_planning_zoning() -> list[dict]:
+    """Load planning and zoning records from data/planning_zoning.json."""
+    path = DATA_DIR / "planning_zoning.json"
+    if not path.exists():
+        return []
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        print(f"[build] Warning: could not load planning_zoning.json: {exc}")
+        return []
+    records = [r for r in (raw.get("records") or []) if r.get("record_no")]
+    print(f"[build] Planning & zoning: {len(records)} record(s) (with permit numbers)")
+    return records
+
+
 def load_creek_data() -> dict:
     """Read creek gauge snapshot from data/creek_gauge.json (written by the creek-gauge scraper)."""
     creek_file = DATA_DIR / "creek_gauge.json"
@@ -898,6 +1051,8 @@ def build() -> None:
             executor.submit(load_circulation): "library_circulation",
             executor.submit(load_creek_data): "creek_data",
             executor.submit(fetch_fire_data): "fire_data",
+            executor.submit(load_planning_zoning): "planning_records",
+            executor.submit(load_building_permits): "building_permits",
         }
 
         data_results = {}
@@ -907,7 +1062,9 @@ def build() -> None:
                 data_results[key] = future.result()
             except Exception as exc:
                 print(f"[build] Error loading {key}: {exc}")
-                data_results[key] = {} if key != "ebird_observations" else []
+                data_results[key] = {} if key not in ("ebird_observations", "planning_records") else []
+                if key == "building_permits":
+                    data_results[key] = {}
 
     plant_spotlight = data_results.get("plant_spotlight", {})
     ebird_observations = data_results.get("ebird_observations", [])
@@ -917,6 +1074,22 @@ def build() -> None:
     library_circulation = data_results.get("library_circulation", {})
     creek_data = data_results.get("creek_data", {})
     fire_data = data_results.get("fire_data", {})
+    planning_records = data_results.get("planning_records", [])
+    building_permits = data_results.get("building_permits", {})
+
+    # Enrich building permit records with ViewpointCloud portal URLs where permit numbers match
+    if planning_records and building_permits.get("records"):
+        portal_by_record_no = {
+            r["record_no"]: r["portal_url"] for r in planning_records if r.get("record_no") and r.get("portal_url")
+        }  # noqa
+        matched = 0
+        for r in building_permits["records"]:
+            pno = r.get("permit_number", "")
+            if pno and pno in portal_by_record_no:
+                r["portal_url"] = portal_by_record_no[pno]
+                matched += 1
+        if matched:
+            print(f"[build] Matched {matched} building permits to ViewpointCloud portal URLs")
 
     fire_rows = fire_data.get("rows", [])
     print(
@@ -947,6 +1120,8 @@ def build() -> None:
         "danr_contested_cases": danr_contested_cases,
         "bhnf_projects": bhnf_projects,
         "library_circulation": library_circulation,
+        "planning_records": planning_records,
+        "building_permits": building_permits,
     }
 
     # Single-page dashboard

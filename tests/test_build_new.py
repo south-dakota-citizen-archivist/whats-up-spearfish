@@ -286,7 +286,7 @@ class TestLoadCirculationYTicks:
         result = self._call(rows)
         for tick in result["chart"]["y_ticks"]:
             assert "y" in tick
-            assert 0 <= tick["y"] <= 90  # within CHART_H
+            assert 0 <= tick["y"] <= 160  # within CHART_H
 
     def test_no_chart_for_single_row(self):
         rows = self._make_rows([7000])

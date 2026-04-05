@@ -6,7 +6,7 @@ day from scrapers that collect public data across the web.
 
 Source code: [https://github.com/south-dakota-citizen-archivist/whats-up-spearfish](https://github.com/south-dakota-citizen-archivist/whats-up-spearfish)
 
-_Updated: April 4, 2026_
+_Updated: April 5, 2026_
 
 ---
 
@@ -24,6 +24,7 @@ _Updated: April 4, 2026_
 | Black Hills Pioneer | `bhpioneer_jobs` | `job` | 12 |
 | Black Hills Pioneer | `black_hills_pioneer` | `news` | 132 |
 | Black Hills Wildflowers | `black_hills_wildflowers` | — | 5 |
+| Building Permits | `building_permits` | — | 3 |
 | City of Spearfish | `spearfish_city` | `document` | 2,093 |
 | City of Spearfish Alert Center | `spearfish_alert_center` | `alert` | 3 |
 | City of Spearfish Blog | `spearfish_blog` | — | 0 |
@@ -31,7 +32,7 @@ _Updated: April 4, 2026_
 | City of Spearfish Jobs | `spearfish_jobs` | — | 0 |
 | City of Spearfish News Flash | `spearfish_news` | `press_release` | 4 |
 | Crow Peak Brewing | `crow_peak_brewing` | `beer` | 16 |
-| eBird (recent sightings) | `ebird` | — | 0 |
+| eBird (recent sightings) | `ebird` | — | 50 |
 | Elementary 3-5 Lunch | `spearfish_elem_35_lunch` | `school_menu` | 40 |
 | Elementary Breakfast | `spearfish_elem_breakfast` | `school_menu` | 40 |
 | Elementary K-2 Lunch | `spearfish_elem_k2_lunch` | `school_menu` | 40 |
@@ -47,6 +48,7 @@ _Updated: April 4, 2026_
 | Matthews Opera House | `matthews_opera_house` | `event` | 27 |
 | Middle School Lunch | `spearfish_ms_lunch` | `school_menu` | 40 |
 | MS/HS Breakfast | `spearfish_mshs_breakfast` | `school_menu` | 40 |
+| OpenGov / Spearfish Planning & Zoning Portal | `planning_zoning` | `Change of Use or Occupancy`, `Commercial Alterations, Additions, or Tenant Improvements`, `Commercial Demolition`, `Commercial New Construction`, `Conditional Use Permit`, `Development Review District`, `Encroachment Agreement Request`, `Fire Code Permit`, `Floodplain Development`, `Grading Permit`, `Major Final Plat`, `Major Preliminary Plat`, `Minor Final Plat`, `Residential Additions or Alterations`, `Residential Decks, Covered Patios, or Fences`, `Residential Demolition`, `Residential New Construction`, `Rezone`, `Right of Way Permit`, `Sign Permit `, `Sketch Plat`, `Standalone Permits - Plumbing, Mechanical, Gas`, `Subdivision Development Plans`, `Tax Increment Financing (TIF)`, `Vacate of Right of Way or Easement`, `Variance Application`, `Water/Sewer Service Agreement Application` | 457 |
 | Public Bids | `public_bids` | `bid` | 2 |
 | Public Meetings (YouTube) | `public_meetings_youtube` | `youtube_video` | 30 |
 | Rapid City Journal | `rapid_city_journal` | `news` | 141 |

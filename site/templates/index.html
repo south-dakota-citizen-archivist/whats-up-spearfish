@@ -3,21 +3,22 @@
 {% set _nav = [
   ('#weather',      'Weather'),
   ('#events',       'Events'),
+  ('#planning',     'Permits & Applications'),
   ('#news',         'News'),
   ('#fire',         'Fire Info'),
-  ('#bhnf-projects', 'BHNF Projects'),
-  ('#danr-notices', 'DANR Notices'),
+  ('#jobs',         'Jobs'),
   ('#press',        'Press Releases'),
   ('#documents',    'Documents'),
   ('#library',      'Library'),
+  ('#bhnf-projects', 'BHNF Projects'),
+  ('#danr-notices', 'DANR Notices'),
   ('#creek',        'Spearfish Creek'),
   ('#plants',       'Native Plants'),
-  ('#birds',        'Bird Sightings'),
+  ('#birds',        'Birds'),
   ('#drinks',       'On Tap'),
   ('#creamery',     'Leone\'s Creamery'),
   ('#school-menus', 'School Menus'),
   ('#adoptable',    'Adopt a Pet'),
-  ('#jobs',         'Jobs'),
   ('#meetings',     'Meetings'),
   ('#bids',         'Bids'),
 ] %}
@@ -110,6 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {# ── LEFT COLUMN ── 2/3 width ── #}
     <div class="lg:col-span-3 space-y-8 min-w-0">
       {% include "components/events.html" %}
+      {% include "components/planning.html" %}
       {% include "components/news.html" %}
       {% include "components/fire.html" %}
       {% include "components/jobs.html" %}

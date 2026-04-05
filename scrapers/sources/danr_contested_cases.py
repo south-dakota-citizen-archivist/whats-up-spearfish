@@ -147,6 +147,7 @@ def fetch_danr_contested_cases() -> None:
         docs.sort(key=_doc_sort_key, reverse=True)
         case["documents"] = docs[:5]
         case["total_docs"] = total
+        case["latest_doc_date"] = _doc_sort_key(docs[0]) if docs else ""
         print(f"    {total} doc(s), showing {len(case['documents'])}")
         time.sleep(1)
 
