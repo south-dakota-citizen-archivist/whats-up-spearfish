@@ -1,0 +1,237 @@
+[
+  {
+    "record_type": "alert",
+    "title": "Wheeled Vehicles in Wilderness",
+    "url": "https://www.fs.usda.gov/r02/alerts/wheeled-vehicles-wilderness",
+    "description": "This order describes the prohibition of wheeled vehicles in all National Forest Wilderness Areas of the Rocky Mountain Region and any exceptions thereof.",
+    "published": "1996-03-21",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "R02-1996-01"
+  },
+  {
+    "record_type": "alert",
+    "title": "Weed Free Forage Products",
+    "url": "https://www.fs.usda.gov/r02/alerts/weed-free-forage-products",
+    "description": "The purpose of this Order is to prevent the introduction or spread of noxious weeds.",
+    "published": "2025-01-01",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "R02-2024-03"
+  },
+  {
+    "record_type": "alert",
+    "title": "Cave Closure and Restrictions",
+    "url": "https://www.fs.usda.gov/r02/alerts/cave-closure-and-restrictions",
+    "description": "The purpose of this Order is to reduce the spread of the fungus that causes White nose syndrome and to protect bat species during critical biological periods.",
+    "published": "2024-09-01",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "R2-2024-02"
+  },
+  {
+    "record_type": "alert",
+    "title": "Special Restrictions: Over Snow Travel Order",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/special-restrictions-over-snow-travel-order",
+    "description": "Pursuant to 16 U.S.C. § 551 and 36 C.F.R. § 261.50 (a) and (b), the following acts prohibited on the National Forest System (NFS) lands, roads, and trails within the Black Hills National Forest located in Lawrence, Pennington, Meade, Custer and Fall River Counties of South Dakota and Crook and…",
+    "published": "2025-12-15",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "BKF-185-2025"
+  },
+  {
+    "record_type": "alert",
+    "title": "Prohibition of Motor Vehicles On Beretta Road, Mystic Ranger District",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/prohibition-motor-vehicles-beretta-road-mystic-ranger-district",
+    "description": "A closure of the entirety of NFS Road 366.3 (Beretta Road), located approximately 3.3 miles north-northeast of Keystone, South Dakota, beginning at the intersection with US Highway 16 South and continuing to the intersection with NFS Roads 674. This closure is in effect to protect public health…",
+    "published": "2025-12-11",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "BKF-184-2025"
+  },
+  {
+    "record_type": "alert",
+    "title": "Topaz timber sale near Sturgis, SD Continues Operations",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/topaz-timber-sale-near-sturgis-sd-continues-operations",
+    "description": "The Topaz timber sale near Sturgis, SD continues operations.Tethered fuels reduction (a steep slope logging/fuels treatment system that uses equipment tethered to steel cables) is being utilized to perform chipping and mastication operations.  These operations cause flying debris.The operations…",
+    "published": "2025-04-01",
+    "source_label": "BHNF",
+    "alert_type": "caution"
+  },
+  {
+    "record_type": "alert",
+    "title": "Attention Cavers and Spelunkers",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/attention-cavers-and-spelunkers",
+    "description": "Remember that access to all caves in Region 2 must be authorized through a mandatory registration system that is available Online through the regional office.",
+    "published": "2025-04-01",
+    "source_label": "BHNF",
+    "alert_type": "information"
+  },
+  {
+    "record_type": "alert",
+    "title": "Please Use Caution When Entering the Black Elk Wilderness",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/please-use-caution-when-entering-black-elk-wilderness",
+    "description": "Please use caution when entering the Wilderness. At any given time, trees can fall without warning. Many of the trails located within the Black Elk Wilderness are cleared in early summer, but the number of downed trees across trails can change in an instant from storms passing over the Black…",
+    "published": "2025-04-01",
+    "source_label": "BHNF",
+    "alert_type": "information"
+  },
+  {
+    "record_type": "alert",
+    "title": "Don't Move Firewood & Other Firewood Information",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/dont-move-firewood-other-firewood-information",
+    "description": "The Forest Service sells permits to cut firewood for personal use. Firewood cutting can be a fun outing, can save on your heating bill and can be good exercise. Firewood cutting cleans up dead wood, reduces the potential for wildfires, and avoids waste of a valuable resource, but it can also cause…",
+    "published": "2025-04-01",
+    "source_label": "BHNF",
+    "alert_type": "information"
+  },
+  {
+    "record_type": "alert",
+    "title": "Hwy 385 Construction Updates",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/hwy-385-construction-updates",
+    "description": "Visit https://us-385.com/ for updates on the Hwy 385 Construction project and/or text “US385” to 605-566-4041 to receive updates.",
+    "published": "2025-02-21",
+    "source_label": "BHNF",
+    "alert_type": "caution"
+  },
+  {
+    "record_type": "alert",
+    "title": "Open Fire Restriction - Black Hills NF in South Dakota",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/open-fire-restriction-black-hills-nf-south-dakota",
+    "description": "Prohibition on campfires or fires except for in certain established fireplaces or stoves within the Black Hills Forest Fire Protection District in South Dakota.",
+    "published": "2024-11-16",
+    "source_label": "BHNF",
+    "alert_type": "fire-restriction",
+    "forest_order": "BKF-182-2024"
+  },
+  {
+    "record_type": "alert",
+    "title": "Order 172 - Cook Lake Closure Order",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-172-cook-lake-closure-order",
+    "description": "Pursuant to 16 U.S.C. § 551 and 36 C.F.R. § 261.50 (a) and (b), the following are prohibited on the National Forest System (NFS) lands and trails in the Bearlodge Ranger District, Black Hills National Forest, described below and shown on the attached map incorporated into this Order as Exhibit A…",
+    "published": "2023-08-01",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "172"
+  },
+  {
+    "record_type": "alert",
+    "title": "Order 159 - Occupancy & Use Restrictions - Black Elk Wilderness",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-159-occupancy-use-restrictions-black-elk-wilderness",
+    "description": "Pursuant to 16U.S.C. § 551 and 36 CFR 261.50(a) and (b), the following acts are prohibited on all National Forest System(NFS) lands and trails within the Black Elk Wilderness of the Black Hills National Forest, located in Pennington County and Custer County, South Dakota, and shown on the attached…",
+    "published": "2021-11-10",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "159"
+  },
+  {
+    "record_type": "alert",
+    "title": "Order 114- Special Restriction - Over Snow Travel Order & Map",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-114-special-restriction-over-snow-travel-order-map",
+    "description": "Over Snow Travel Order",
+    "published": "2012-04-09",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "114"
+  },
+  {
+    "record_type": "alert",
+    "title": "Order 082 - Area Closure - Motorized Vehicles within Botanical Area",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-082-area-closure-motorized-vehicles-within-botanical-area",
+    "description": "Acts prohibited information on possessing or operating a motorized vehicle off Forest Development Roads within these Botanical Areas. 36 CFR 261.53 (b).",
+    "published": "2004-10-07",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "082"
+  },
+  {
+    "record_type": "alert",
+    "title": "Order 079 - Area Closure - Craven Canyon",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-079-area-closure-craven-canyon",
+    "description": "Area closure for occupancy and use regulations - Craven Canyon information",
+    "published": "2004-01-27",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "079"
+  },
+  {
+    "record_type": "alert",
+    "title": "Order 074 - Prohibited Entry - Forest Caves/Mines",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-074-prohibited-entry-forest-caves-mines",
+    "description": "Prohibited Entry - Forest Caves/Mines information.",
+    "published": "2003-06-24",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "074"
+  },
+  {
+    "record_type": "alert",
+    "title": "Order 046 - Length of Stay Restrictions & Reservation - Campgrounds",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-046-length-stay-restrictions-reservation-campgrounds",
+    "description": "Length Order Special Restrictions & Reservation.",
+    "published": "1998-12-09",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "046"
+  },
+  {
+    "record_type": "alert",
+    "title": "Order 044 - Area Closure - Concentrated Public Use Areas & Developed Rec. Areas",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-044-area-closure-concentrated-public-use-areas-developed-rec-areas",
+    "description": "Special Closure Order on Concentrated Public Use Areas and Developed Recreation Areas. See Order below for details.",
+    "published": "1998-05-21",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "044"
+  },
+  {
+    "record_type": "alert",
+    "title": "Order 015 - Road Use Regulations - Forest Development",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-015-road-use-regulations-forest-development",
+    "description": "Code of Federal Regulations, the following acts are prohibited on all Forest Development Roads under the jurisdiction of the Black Hills National Forest: 1. Using a National Forest road for commercial hauling of non-federal products, commodities, or materials without a permit or written…",
+    "published": "1993-03-15",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "015"
+  },
+  {
+    "record_type": "alert",
+    "title": "Order 025 - Site Closure - Designated Seismic",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-025-site-closure-designated-seismic",
+    "description": "Pursuant to 36 CFR 261.50 (a) and (b), the following is prohibited: No person(s) may enter or be within the area within 1/2 mile of the Designated Seismic Site, (DSS), or on Forest Development Road 711 or FDR 110.4A within 1/2 mile of the DSS. This prohibited area is described as T.2N., R.1E.,…",
+    "published": "1993-02-09",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "025"
+  },
+  {
+    "record_type": "alert",
+    "title": "Order 024 - Mine Closure - Spokane",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-024-mine-closure-spokane",
+    "description": "Pursuant to 36 CFR 261.50(a), the following are prohibited: a) All motorized vehicles are prohibited from entering the area known as the Spokane Mine. Access is limited to foot travel and by horseback. This prohibited area is shown on the attached map. (36 CFR 261.53(c) and (f)). b) Access is…",
+    "published": "1992-12-03",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "024"
+  },
+  {
+    "record_type": "alert",
+    "title": "Order 019 - Mining Prohibited - Norbeck",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-019-mining-prohibited-norbeck",
+    "description": "In accordance with. \"36 CFR 251.10 PROHIBITION OF LOCATION OF MINING CLAIMS WITHIN CERTAIN AREAS IN THE NORBECK WILDLIFE PRESERVE, SOUTH DAKOTA\", it has been determined that the location of mining claims within the area described below would not be in the public interest. [13 FR 3676, July 1, 1948,…",
+    "published": "1989-09-12",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "019"
+  },
+  {
+    "record_type": "alert",
+    "title": "Order 010 - Nuclear Burial Site - Warren Peak",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-010-nuclear-burial-site-warren-peak",
+    "description": "For public health or safety the use of explosives within the below described area is prohibited. (36 CFR 261.53)",
+    "published": "1979-06-08",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "010"
+  }
+]

@@ -15,7 +15,7 @@ _Updated: April 4, 2026_
 | Source | Slug | Record types | Count |
 |---|---|---|---:|
 | Bhca Calendar | `bhca_calendar` | `event` | 70 |
-| BHNF Alerts | `bhnf_alerts` | — | 0 |
+| BHNF Alerts | `bhnf_alerts` | `alert` | 24 |
 | BHSU | `bhsu_jobs` | `job` | 11 |
 | BHSU Athletics | `bhsu_athletics` | `event` | 86 |
 | BHSU Campus Calendar | `bhsu_calendar` | `event` | 48 |
@@ -72,7 +72,7 @@ _Updated: April 4, 2026_
 | USDA PLANTS Database (Black Hills full pull) | `plants_native_black_hills` | — | 24,984 |
 | USDA PLANTS Database (Native Plant Spotlight) | `native_plants_spotlight` | — | 317 |
 | USGS Stream Gauge — Spearfish Creek (06431500) | `creek_gauge` | — | 4 |
-| Western Hills Humane Society | `whhs_adoptable` | `adoptable` | 36 |
+| Western Hills Humane Society | `whhs_adoptable` | `adoptable` | 35 |
 
 ---
 

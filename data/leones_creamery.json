@@ -19,28 +19,10 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/25E551F6-5BFB-4ED5-8849-46383B70B35F-288-1555779660.jpg",
-    "title": "Jellybean",
-    "slug": "jellybean",
-    "description": "We churned up a creamy base with hints of vanilla and lemon, then riddled it with the holy grail of jelly beans (Starburst, obviously).",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
     "image_url": "https://leonescreamery.com/images/uploads/cropped/MintOreo-146-1524171221.jpg",
     "title": "Mint Oreo",
     "slug": "mint-oreo",
     "description": "Our cool peppermint ice cream is riddled with Oreo cookie pieces (no pesky green dye included).",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/IMG_2965-468-1772295184.jpg",
-    "title": "Lime w/ Tajin Watermelon Seeds",
-    "slug": "lime-w-tajin-watermelon-seeds",
-    "description": "Our 2026 Seed Swap flavor!!! A creamy lime ice cream with tajin coated watermelon seeds. (Tajin is a Mexican spice mix consisting of lime, mild chili peppers and salt). Fruity, tangy, sweet perfection.",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
@@ -55,10 +37,28 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/RedRaspberry-141-1534997337.jpg",
-    "title": "Red Raspberry",
-    "slug": "red-raspberry",
-    "description": "Bright, tart, and fruity! Made from whole raspberries and a touch of lemon.",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/72502AF8-1036-4234-82E1-26493A7C0CF1-173-1540101306.jpg",
+    "title": "Black Licorice",
+    "slug": "black-licorice",
+    "description": "An old-timey classic flavor we love to bring bring back every now and again! Pure anise goodness (no icky food coloring required).",
+    "record_type": "flavor",
+    "source_label": "Leone's Creamery"
+  },
+  {
+    "url": "https://leonescreamery.com/flavors",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/25E551F6-5BFB-4ED5-8849-46383B70B35F-288-1555779660.jpg",
+    "title": "Jellybean",
+    "slug": "jellybean",
+    "description": "We churned up a creamy base with hints of vanilla and lemon, then riddled it with the holy grail of jelly beans (Starburst, obviously).",
+    "record_type": "flavor",
+    "source_label": "Leone's Creamery"
+  },
+  {
+    "url": "https://leonescreamery.com/flavors",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/5E241BC1-BC53-49E8-A15F-86E176ABC8CE-243-1536430032.jpg",
+    "title": "Strawberries-N-Cream",
+    "slug": "strawberries-n-cream",
+    "description": "It's always a classic-- the perfectly balanced strawberry ice cream, made with lots (and lots) of strawberries and fresh sweet cream.",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
