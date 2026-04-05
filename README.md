@@ -35,7 +35,7 @@ _Updated: April 4, 2026_
 | Elementary 3-5 Lunch | `spearfish_elem_35_lunch` | `school_menu` | 40 |
 | Elementary Breakfast | `spearfish_elem_breakfast` | `school_menu` | 40 |
 | Elementary K-2 Lunch | `spearfish_elem_k2_lunch` | `school_menu` | 40 |
-| Grace Balloch Memorial Library | `spearfish_library` | `library_book` | 90 |
+| Grace Balloch Memorial Library | `spearfish_library` | — | 0 |
 | Grace Balloch Memorial Library (circulation) | `library_circulation` | — | 124 |
 | High School Lunch | `spearfish_hs_lunch` | `school_menu` | 40 |
 | Inaturalist Plant Cache | `inaturalist_plant_cache` | — | 317 |
