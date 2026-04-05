@@ -18,7 +18,7 @@ _Updated: April 4, 2026_
 | BHNF Alerts | `bhnf_alerts` | `alert` | 24 |
 | BHSU | `bhsu_jobs` | `job` | 11 |
 | BHSU Athletics | `bhsu_athletics` | `event` | 86 |
-| BHSU Campus Calendar | `bhsu_calendar` | `event` | 48 |
+| BHSU Campus Calendar | `bhsu_calendar` | `event` | 49 |
 | Black Hills National Forest | `bhnf` | `event`, `press_release` | 5 |
 | Black Hills National Forest (public projects) | `bhnf_projects` | — | 48 |
 | Black Hills Pioneer | `bhpioneer_jobs` | `job` | 12 |
@@ -35,7 +35,7 @@ _Updated: April 4, 2026_
 | Elementary 3-5 Lunch | `spearfish_elem_35_lunch` | `school_menu` | 40 |
 | Elementary Breakfast | `spearfish_elem_breakfast` | `school_menu` | 40 |
 | Elementary K-2 Lunch | `spearfish_elem_k2_lunch` | `school_menu` | 40 |
-| Grace Balloch Memorial Library | `spearfish_library` | — | 0 |
+| Grace Balloch Memorial Library | `spearfish_library` | `library_book` | 90 |
 | Grace Balloch Memorial Library (circulation) | `library_circulation` | — | 124 |
 | High School Lunch | `spearfish_hs_lunch` | `school_menu` | 40 |
 | Inaturalist Plant Cache | `inaturalist_plant_cache` | — | 317 |
@@ -54,7 +54,7 @@ _Updated: April 4, 2026_
 | Regional News | `news_feeds` | `news` | 128 |
 | Sawyer Brewing Co. | `sawyer_brewing` | `beer` | 17 |
 | SD Dept. of Agriculture & Natural Resources (contested cases) | `danr_contested_cases` | — | 10 |
-| SD Dept. of Agriculture & Natural Resources (public notices) | `danr_public_notices` | — | 8 |
+| SD Dept. of Agriculture & Natural Resources (public notices) | `danr_public_notices` | — | 74 |
 | Sd Flowering Plants | `sd_flowering_plants` | — | 5 |
 | Sd Living Landscapes | `sd_living_landscapes` | — | 5 |
 | SDPB | `sdpb_news` | `news` | 10 |

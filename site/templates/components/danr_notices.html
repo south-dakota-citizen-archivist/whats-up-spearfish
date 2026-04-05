@@ -47,7 +47,7 @@
   {# ── Public Notices tab ────────────────────────────────────────────────── #}
   {% if notices %}
   <div x-show="tab === 'notices'">
-    <ul class="divide-y divide-gray-100">
+    <ul class="divide-y divide-gray-100 sm:max-h-96 sm:overflow-y-auto">
       {% for n in notices %}
       <li x-data="{ open: false }">
 
@@ -154,7 +154,7 @@
   {# ── Contested Cases tab ───────────────────────────────────────────────── #}
   {% if cases %}
   <div x-show="tab === 'cases'">
-    <ul class="divide-y divide-gray-100">
+    <ul class="divide-y divide-gray-100 sm:max-h-96 sm:overflow-y-auto">
       {% for c in cases %}
       <li x-data="{ open: false }">
 

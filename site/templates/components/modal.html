@@ -200,6 +200,7 @@ document.addEventListener('alpine:init', () => {
     urlLabel: 'View more \u2197',
     list: [],         // sibling records for prev/next nav
     listIndex: -1,
+    _savedScrollY: 0, // save scroll position when modal opens
 
     get hasPrev() { return this.list.length > 1 && this.listIndex > 0; },
     get hasNext() { return this.list.length > 1 && this.listIndex < this.list.length - 1; },
@@ -223,8 +224,10 @@ document.addEventListener('alpine:init', () => {
       this.list      = list  || [];
       this.listIndex = (index !== undefined) ? index : -1;
       this.open      = true;
+      this._savedScrollY = window.scrollY;
       document.body.style.overflow = 'hidden';
       document.body.classList.add('modal-open');
+      document.body.style.top = `-${this._savedScrollY}px`;
     },
 
     prev() {
@@ -249,14 +252,18 @@ document.addEventListener('alpine:init', () => {
       this.fields = []; this.prices = [];
       this.list = []; this.listIndex = -1;
       this.open        = true;
+      this._savedScrollY = window.scrollY;
       document.body.style.overflow = 'hidden';
       document.body.classList.add('modal-open');
+      document.body.style.top = `-${this._savedScrollY}px`;
     },
 
     close() {
       this.open = false;
       document.body.style.overflow = '';
+      document.body.style.top = '';
       document.body.classList.remove('modal-open');
+      window.scrollTo(0, this._savedScrollY);
     },
   });
 });
