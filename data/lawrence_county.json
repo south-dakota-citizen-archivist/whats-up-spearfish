@@ -826,5 +826,41 @@
     "scraped_by": "civic-scraper_0.1.0",
     "record_type": "document",
     "source_label": "Lawrence County"
+  },
+  {
+    "asset_id": "civicplus_www_04062026-1310__agenda",
+    "url": "https://www.lawrence.sd.us/AgendaCenter/ViewFile/Agenda/_04062026-1310",
+    "title": "Butte/Lawrence County Fair Board Proposed Meeting Agenda and Information",
+    "asset_type": "agenda",
+    "committee": "Fair Board",
+    "place": "no_data",
+    "state": "no_data",
+    "meeting_id": "civicplus_www_04062026-1310",
+    "meeting_date": "2026-04-06 00:00:00",
+    "meeting_time": null,
+    "start_dt": "2026-04-06 00:00:00",
+    "content_type": "application/pdf",
+    "content_length": "90225",
+    "scraped_by": "civic-scraper_0.1.0",
+    "record_type": "document",
+    "source_label": "Lawrence County"
+  },
+  {
+    "asset_id": "civicplus_www_04062026-1311__agenda",
+    "url": "https://www.lawrence.sd.us/AgendaCenter/ViewFile/Agenda/_04062026-1311",
+    "title": "Search and Rescue Proposed Meeting Agenda ~ April 6, 2026",
+    "asset_type": "agenda",
+    "committee": "Search & Rescue Board",
+    "place": "no_data",
+    "state": "no_data",
+    "meeting_id": "civicplus_www_04062026-1311",
+    "meeting_date": "2026-04-06 00:00:00",
+    "meeting_time": null,
+    "start_dt": "2026-04-06 00:00:00",
+    "content_type": "application/pdf",
+    "content_length": "382716",
+    "scraped_by": "civic-scraper_0.1.0",
+    "record_type": "document",
+    "source_label": "Lawrence County"
   }
 ]

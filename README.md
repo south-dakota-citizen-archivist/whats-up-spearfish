@@ -24,7 +24,6 @@ _Updated: April 6, 2026_
 | Black Hills Pioneer | `bhpioneer_jobs` | `job` | 12 |
 | Black Hills Pioneer | `black_hills_pioneer` | `news` | 132 |
 | Black Hills Wildflowers | `black_hills_wildflowers` | — | 5 |
-| Building Permits | `building_permits` | — | 3 |
 | City of Spearfish | `spearfish_city` | `document` | 2,093 |
 | City of Spearfish Alert Center | `spearfish_alert_center` | `alert` | 3 |
 | City of Spearfish Blog | `spearfish_blog` | — | 0 |
@@ -42,7 +41,7 @@ _Updated: April 6, 2026_
 | High School Lunch | `spearfish_hs_lunch` | `school_menu` | 40 |
 | Inaturalist Plant Cache | `inaturalist_plant_cache` | — | 317 |
 | Killian's | `killians` | `beer` | 17 |
-| Lawrence County | `lawrence_county` | `document` | 46 |
+| Lawrence County | `lawrence_county` | `document` | 48 |
 | Lawrence County Jobs | `lawrence_county_jobs` | — | 0 |
 | Lawrence County News Flash | `lawrence_county_news` | — | 0 |
 | Leone's Creamery | `leones_creamery` | `flavor` | 8 |

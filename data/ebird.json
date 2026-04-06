@@ -1,6 +1,32 @@
 {
-  "fetched_at": "2026-04-05T17:26:53.939718+00:00",
+  "fetched_at": "2026-04-06T03:37:16.086176+00:00",
   "observations": [
+    {
+      "species_code": "norfli",
+      "common_name": "Northern Flicker",
+      "scientific_name": "Colaptes auratus",
+      "observed_on": "2026-04-05",
+      "count": 1,
+      "location_name": "Iverson Field Road, South Lawrence, South Dakota, US (44.371, -103.792)",
+      "lat": 44.3708409,
+      "lng": -103.7915616,
+      "location_id": "L61977032",
+      "checklist_id": "S317576704",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/123812445/square.jpg"
+    },
+    {
+      "species_code": "bkcchi",
+      "common_name": "Black-capped Chickadee",
+      "scientific_name": "Poecile atricapillus",
+      "observed_on": "2026-04-05",
+      "count": 3,
+      "location_name": "Iverson Field Road, South Lawrence, South Dakota, US (44.371, -103.792)",
+      "lat": 44.3708409,
+      "lng": -103.7915616,
+      "location_id": "L61977032",
+      "checklist_id": "S317576704",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/178279576/square.jpg"
+    },
     {
       "species_code": "towsol",
       "common_name": "Townsend's Solitaire",
@@ -52,19 +78,6 @@
       "location_id": "L61841719",
       "checklist_id": "S316959750",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/114655826/square.jpg"
-    },
-    {
-      "species_code": "bkcchi",
-      "common_name": "Black-capped Chickadee",
-      "scientific_name": "Poecile atricapillus",
-      "observed_on": "2026-04-04",
-      "count": 2,
-      "location_name": "Central City, South Dakota, US (44.378, -103.886)",
-      "lat": 44.3781577,
-      "lng": -103.8858894,
-      "location_id": "L61841719",
-      "checklist_id": "S316959750",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/178279576/square.jpg"
     },
     {
       "species_code": "rebnut",
@@ -299,19 +312,6 @@
       "location_id": "L977435",
       "checklist_id": "S317105306",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/384965723/square.jpg"
-    },
-    {
-      "species_code": "norfli",
-      "common_name": "Northern Flicker",
-      "scientific_name": "Colaptes auratus",
-      "observed_on": "2026-04-02",
-      "count": 1,
-      "location_name": "Tinton Rd - FR 222",
-      "lat": 44.3780783,
-      "lng": -103.965758,
-      "location_id": "L61657373",
-      "checklist_id": "S316090068",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/123812445/square.jpg"
     },
     {
       "species_code": "gryjay",
