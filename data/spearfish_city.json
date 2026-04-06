@@ -33486,5 +33486,21 @@
     "title": "City Council Regular Session Packet 4/6/2026",
     "doc_type": "Agenda Packet",
     "file_url": "https://spearfishsd.portal.civicclerk.com/stream/SPEARFISHSD/b2c089a8-4bc5-4f95-a809-ae3aba16cbce.pdf"
+  },
+  {
+    "event_id": 1553,
+    "event_name": "Library Board of Trustees Meeting",
+    "category": "Library Board of Trustees",
+    "start_dt": "2021-07-08T00:00:00Z",
+    "location": "",
+    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/1553",
+    "has_media": false,
+    "media_url": "",
+    "record_type": "document",
+    "source_label": "City of Spearfish",
+    "url": "https://spearfishsd.portal.civicclerk.com/stream/SPEARFISHSD/55f920ea-21a5-45a9-8e06-3c2eb0c0192e.pdf",
+    "title": "600a-Minutes 070821",
+    "doc_type": "Minutes",
+    "file_url": "https://spearfishsd.portal.civicclerk.com/stream/SPEARFISHSD/55f920ea-21a5-45a9-8e06-3c2eb0c0192e.pdf"
   }
 ]
