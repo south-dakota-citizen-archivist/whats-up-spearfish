@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-05T03:42:00.580728+00:00",
+  "fetched_at": "2026-04-05T17:27:19.376132+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -1574,20 +1574,6 @@
         {
           "label": "Application",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/NewEXNIS.aspx"
-        }
-      ]
-    },
-    {
-      "notice_type": "Mining License",
-      "deadline": "",
-      "comment_url": "",
-      "name": "Fisher Sand & Gravel Company",
-      "description": "Notice to Expand",
-      "location": "1.8 miles West of Vale, SD",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://media.sd.gov/danr/MM/S54145ExpNotice.pdf"
         }
       ]
     },
