@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-04-06T17:47:00.611879+00:00",
+  "fetched_at": "2026-04-07T18:01:08.509829+00:00",
   "lookback_days": 90,
-  "total_bh_sites": 3294,
+  "total_bh_sites": 3295,
   "is_seeded": true,
   "known_ids": [
     84379,
@@ -3297,7 +3297,26 @@
     1313302,
     1314102,
     1314903,
-    1316108
+    1316108,
+    1317711
   ],
-  "new_records": []
+  "new_records": [
+    {
+      "objectid": 1317711,
+      "first_seen": "2026-04-07",
+      "year": 2026,
+      "site_name": "Dahl Fine Arts mineral oil release",
+      "site_type": "Other(See Case File)",
+      "status": "O",
+      "street": "713 7th St",
+      "city": "Rapid City",
+      "county": "Pennington",
+      "spill_cat": "Oil",
+      "material": "Transformer Oil Non-PCB",
+      "sor_type": "Transformer",
+      "resp_party": "Black Hills Energy",
+      "lat": 44.078963,
+      "lon": -103.230137
+    }
+  ]
 }

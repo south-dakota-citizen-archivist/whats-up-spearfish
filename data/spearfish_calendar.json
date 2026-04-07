@@ -338,5 +338,35 @@
     "start_dt": "Fri, 12 Dec 2025 15:08:21 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3240",
+    "title": "Toddler Story TIme",
+    "slug": "toddler-story-time",
+    "description": "<strong>Event date:</strong> April 21, 2026 <br /><strong>Event Time: </strong>09:30 AM - 10:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Early literacy activities for ages 1-3.",
+    "published": "Mon, 15 Dec 2025 12:59:08 -0700",
+    "start_dt": "Mon, 15 Dec 2025 12:59:08 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3210",
+    "title": "Story Time",
+    "slug": "story-time",
+    "description": "<strong>Event date:</strong> April 21, 2026 <br /><strong>Event Time: </strong>10:30 AM - 11:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Stories and activities for ages 4+",
+    "published": "Mon, 15 Dec 2025 12:55:31 -0700",
+    "start_dt": "Mon, 15 Dec 2025 12:55:31 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3393",
+    "title": "Teen Game Day",
+    "slug": "teen-game-day",
+    "description": "<strong>Event date:</strong> April 21, 2026 <br /><strong>Event Time: </strong>03:30 PM - 05:00 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Join us for some gaming fun! We will have a variety of board and card games, multiplayer chess, and even some TTRPGs available...and snacks! Open to grades 6-12.",
+    "published": "Wed, 04 Mar 2026 12:00:02 -0700",
+    "start_dt": "Wed, 04 Mar 2026 12:00:02 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-06T17:42:29.652668+00:00",
+  "fetched_at": "2026-04-07T17:56:20.550854+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -256,23 +256,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/2900-2_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Surface Water Enhancement & Restoration",
-      "deadline": "03/14/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=03/14/2026&name=Garrison Peel&pntype=sw_er&description=Garrison Peel is proposing a project on a tributary to Deer Creek. The project will shape and stabilize the creek banks and create a lined watering pool for wildlife",
-      "name": "Garrison Peel",
-      "description": "Garrison Peel is proposing a project on a tributary to Deer Creek. The project will shape and stabilize the creek banks and create a lined watering pool for wildlife",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/PeelDeerPN.pdf"
-        },
-        {
-          "label": "Application",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/TribDeerPeelapp.pdf"
         }
       ]
     },
@@ -1253,6 +1236,23 @@
       ]
     },
     {
+      "notice_type": "Surface Water Enhancement & Restoration",
+      "deadline": "04/14/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/14/2026&name=Garrison Peel&pntype=sw_er&description=Garrison Peel is proposing a project on a tributary to Deer Creek. The project will shape and stabilize the creek banks and create a lined watering pool for wildlife",
+      "name": "Garrison Peel",
+      "description": "Garrison Peel is proposing a project on a tributary to Deer Creek. The project will shape and stabilize the creek banks and create a lined watering pool for wildlife",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/PeelDeerPN.pdf"
+        },
+        {
+          "label": "Application",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/TribDeerPeelapp.pdf"
+        }
+      ]
+    },
+    {
       "notice_type": "Air Quality Permit",
       "deadline": "04/16/2026",
       "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/16/2026&name=Sioux Falls Regional Sanitary Landfill&pntype=aq&description=Sioux Falls Regional Sanitary Landfill is a municipal solid waste landfill. The Department recommends approval of a renewed Title V air quality operating permit.",
@@ -1433,6 +1433,30 @@
       ]
     },
     {
+      "notice_type": "Water Rights",
+      "deadline": "04/17/2026",
+      "comment_url": "",
+      "application_no": "2904-2",
+      "name": "H & H Land Co. # 2 LLC, c/o Brian Hammerbeck,\u00a0Rapid City\u00a0SD",
+      "location": "Pennington",
+      "water_source": "Inyan Kara Aquifer",
+      "use_type": "Water Distribution System",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/2904-2_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/2904-2_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/2904-2_rec.pdf"
+        }
+      ]
+    },
+    {
       "notice_type": "Surface Water Discharge (NPDES)",
       "deadline": "04/23/2026",
       "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/23/2026&name=City of Summerset&pntype=sw_npdes&description=The City of Summerset is authorized under this permit to discharge to an unnamed tributary of Stagebarn Canyon Creek from its wastewater treatment facility located in Meade County.",
@@ -1539,6 +1563,28 @@
       ]
     },
     {
+      "notice_type": "Surface Water Discharge (NPDES)",
+      "deadline": "05/08/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/08/2026&name=International Paper Co&pntype=sw_npdes&description=International Paper Co is directed by the South Dakota Department of Agriculture and Natural Resources to have no discharge from its facility located southeast of the city of Whitewood in Lawrence County.",
+      "name": "International Paper Co",
+      "description": "International Paper Co is directed by the South Dakota Department of Agriculture and Natural Resources to have no discharge from its facility located southeast of the city of Whitewood in Lawrence County.",
+      "location": "Lawrence County",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/InternationalPaperPNDraft.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/InternationalPaperPermitDraft.pdf"
+        },
+        {
+          "label": "Statement of Basis",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/InternationalPaperSOBDraft.pdf"
+        }
+      ]
+    },
+    {
       "notice_type": "Mineral Exploration",
       "deadline": "",
       "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=&name=Pete Lien and Sons, Inc.&pntype=mm_ex&description=Notice of Intent for Graphite Exploration",
@@ -1549,6 +1595,24 @@
         {
           "label": "Public Notice",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/MineralsMining/EXNI469NoticeofIntent.pdf"
+        },
+        {
+          "label": "Application",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/NewEXNIS.aspx"
+        }
+      ]
+    },
+    {
+      "notice_type": "Mineral Exploration",
+      "deadline": "",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=&name=Solitario Resources, Inc.&pntype=mm_ex&description=Notice of Intent for Gold and Silver Exploration",
+      "name": "Solitario Resources, Inc.",
+      "description": "Notice of Intent for Gold and Silver Exploration",
+      "location": "Seven miles southwest of Lead, SD",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/MineralsMining/EXNI470NOF.pdf"
         },
         {
           "label": "Application",

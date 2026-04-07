@@ -119,5 +119,38 @@
     "image_url": "https://npr.brightspotcdn.com/dc/b9/34d1808c46939a3fca251cdf4390/image-37.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/healthcare/2026-04-07/state-announces-new-round-of-grants-from-opioid-settlement-funds",
+    "title": "State announces new round of grants from opioid settlement funds",
+    "slug": "sdpb-state-announces-new-round-of-grants-from-opioid-settlement-funds",
+    "published": "2026-04-07",
+    "byline": "By Jackie Hendry",
+    "description": "Young people, former inmates and homeless individuals are some of the groups the state is targeting with its latest round of opioid settlement dollars.",
+    "image_url": "https://npr.brightspotcdn.com/55/0d/c7b4a54441168c12221c74706d40/althoff-040226.JPG",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-07/jon-hansen-in-the-moment",
+    "title": "Hansen Outlines Vision for South Dakota’s Economic Future | In The Moment",
+    "slug": "sdpb-hansen-outlines-vision-for-south-dakotas-economic-future-in-the-moment",
+    "published": "2026-04-07",
+    "byline": "By SDPB News Staff",
+    "description": "Republican gubernatorial candidate and Speaker of the House Jon Hansen kicked off his campaign as the first in the field. In a July 2025 appearance on <i>In The Moment</i>, he emphasized his commitment to state freedom and economic growth.",
+    "image_url": "https://npr.brightspotcdn.com/5d/4f/f126fcd34dcd8463b3b396071e7f/jon-hansen-00-23-08-25-still003.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-06/rep-johnson-says-usps-working-on-issues-more-to-be-done",
+    "title": "Rep. Johnson says USPS working on issues, more to be done",
+    "slug": "sdpb-rep-johnson-says-usps-working-on-issues-more-to-be-done",
+    "published": "2026-04-06",
+    "byline": "By Jackson Dircks",
+    "description": "South Dakota’s lone U.S. House of Representatives member says there’s progress at the local USPS.",
+    "image_url": "https://npr.brightspotcdn.com/dc/b9/34d1808c46939a3fca251cdf4390/image-37.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

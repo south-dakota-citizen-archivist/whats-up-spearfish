@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-06T17:44:44.773004+00:00",
+  "fetched_at": "2026-04-07T17:59:05.810487+00:00",
   "lookback_days": 30,
   "records": [
     {
@@ -2102,61 +2102,6 @@
       "contractor": "Tony Hanig",
       "lat": 44.419845,
       "lon": -103.534581
-    },
-    {
-      "date": "2026-03-07",
-      "species": "White-tailed Deer",
-      "highway": "I90",
-      "sex": "Male",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Tony Hanig",
-      "lat": 44.175991,
-      "lon": -103.321576
-    },
-    {
-      "date": "2026-03-07",
-      "species": "White-tailed Deer",
-      "highway": "I90",
-      "sex": "Male",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Tony Hanig",
-      "lat": 44.465849,
-      "lon": -103.629585
-    },
-    {
-      "date": "2026-03-07",
-      "species": "White-tailed Deer",
-      "highway": "I90",
-      "sex": "Male",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Tony Hanig",
-      "lat": 44.545932,
-      "lon": -103.971469
-    },
-    {
-      "date": "2026-03-07",
-      "species": "White-tailed Deer",
-      "highway": "I90",
-      "sex": "Male",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Tony Hanig",
-      "lat": 44.546518,
-      "lon": -104.007096
-    },
-    {
-      "date": "2026-03-07",
-      "species": "Mule Deer",
-      "highway": "I90",
-      "sex": "Unknown",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Tony Hanig",
-      "lat": 44.216471,
-      "lon": -103.36705
     }
   ]
 }
