@@ -1,8 +1,8 @@
 *.har
 swagger.txt
-data/plants_native_black_hills.json
 data/.plants_cache/*
 .claude
+data/*.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
