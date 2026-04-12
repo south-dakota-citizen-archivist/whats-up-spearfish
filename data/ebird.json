@@ -1,18 +1,135 @@
 {
-  "fetched_at": "2026-04-11T17:27:36.465300+00:00",
+  "fetched_at": "2026-04-12T17:30:42.541737+00:00",
   "observations": [
+    {
+      "species_code": "shtgro",
+      "common_name": "Sharp-tailed Grouse",
+      "scientific_name": "Tympanuchus phasianellus",
+      "observed_on": "2026-04-11",
+      "count": 1,
+      "location_name": "1046 Rifle Pit Road, Sundance, Wyoming, US (44.471, -104.24)",
+      "lat": 44.4713337,
+      "lng": -104.2397104,
+      "location_id": "L62536801",
+      "checklist_id": "S320317032",
+      "photo_url": "https://static.inaturalist.org/photos/16142680/square.jpg"
+    },
     {
       "species_code": "turvul",
       "common_name": "Turkey Vulture",
       "scientific_name": "Cathartes aura",
-      "observed_on": "2026-04-10",
-      "count": 2,
-      "location_name": "US-85, Belle Fourche US-SD 44.83612, -103.84054",
-      "lat": 44.836121,
-      "lng": -103.840542,
-      "location_id": "L62393662",
-      "checklist_id": "S319646908",
+      "observed_on": "2026-04-11",
+      "count": 6,
+      "location_name": "1046 Rifle Pit Road, Sundance, Wyoming, US (44.471, -104.24)",
+      "lat": 44.4713337,
+      "lng": -104.2397104,
+      "location_id": "L62536801",
+      "checklist_id": "S320317032",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/52277010/square.jpg"
+    },
+    {
+      "species_code": "norhar2",
+      "common_name": "Northern Harrier",
+      "scientific_name": "Circus hudsonius",
+      "observed_on": "2026-04-11",
+      "count": 1,
+      "location_name": "1046 Rifle Pit Road, Sundance, Wyoming, US (44.471, -104.24)",
+      "lat": 44.4713337,
+      "lng": -104.2397104,
+      "location_id": "L62536801",
+      "checklist_id": "S320317032",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/114355770/square.jpg"
+    },
+    {
+      "species_code": "rethaw",
+      "common_name": "Red-tailed Hawk",
+      "scientific_name": "Buteo jamaicensis",
+      "observed_on": "2026-04-11",
+      "count": 1,
+      "location_name": "1046 Rifle Pit Road, Sundance, Wyoming, US (44.471, -104.24)",
+      "lat": 44.4713337,
+      "lng": -104.2397104,
+      "location_id": "L62536801",
+      "checklist_id": "S320317032",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/101327658/square.jpg"
+    },
+    {
+      "species_code": "amekes",
+      "common_name": "American Kestrel",
+      "scientific_name": "Falco sparverius",
+      "observed_on": "2026-04-11",
+      "count": 4,
+      "location_name": "1046 Rifle Pit Road, Sundance, Wyoming, US (44.471, -104.24)",
+      "lat": 44.4713337,
+      "lng": -104.2397104,
+      "location_id": "L62536801",
+      "checklist_id": "S320317032",
+      "photo_url": "https://static.inaturalist.org/photos/174574440/square.jpg"
+    },
+    {
+      "species_code": "moublu",
+      "common_name": "Mountain Bluebird",
+      "scientific_name": "Sialia currucoides",
+      "observed_on": "2026-04-11",
+      "count": 3,
+      "location_name": "1046 Rifle Pit Road, Sundance, Wyoming, US (44.471, -104.24)",
+      "lat": 44.4713337,
+      "lng": -104.2397104,
+      "location_id": "L62536801",
+      "checklist_id": "S320317032",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/245267194/square.jpg"
+    },
+    {
+      "species_code": "wesmea",
+      "common_name": "Western Meadowlark",
+      "scientific_name": "Sturnella neglecta",
+      "observed_on": "2026-04-11",
+      "count": 12,
+      "location_name": "1046 Rifle Pit Road, Sundance, Wyoming, US (44.471, -104.24)",
+      "lat": 44.4713337,
+      "lng": -104.2397104,
+      "location_id": "L62536801",
+      "checklist_id": "S320317032",
+      "photo_url": "https://static.inaturalist.org/photos/490722638/square.jpg"
+    },
+    {
+      "species_code": "snoowl1",
+      "common_name": "Snowy Owl",
+      "scientific_name": "Bubo scandiacus",
+      "observed_on": "2026-04-11",
+      "count": 1,
+      "location_name": "U.S. 14, Sundance, Wyoming, US (44.472, -104.249)",
+      "lat": 44.4721923,
+      "lng": -104.2487268,
+      "location_id": "L62508598",
+      "checklist_id": "S320194849",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/150549757/square.jpg"
+    },
+    {
+      "species_code": "osprey",
+      "common_name": "Osprey",
+      "scientific_name": "Pandion haliaetus",
+      "observed_on": "2026-04-10",
+      "count": 1,
+      "location_name": "Devil’s Bathtub Trail",
+      "lat": 44.3994641,
+      "lng": -103.8921888,
+      "location_id": "L11142020",
+      "checklist_id": "S320083742",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/6903515/square.jpg"
+    },
+    {
+      "species_code": "sonspa",
+      "common_name": "Song Sparrow",
+      "scientific_name": "Melospiza melodia",
+      "observed_on": "2026-04-10",
+      "count": 1,
+      "location_name": "Devil’s Bathtub Trail",
+      "lat": 44.3994641,
+      "lng": -103.8921888,
+      "location_id": "L11142020",
+      "checklist_id": "S320083742",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/104749271/square.jpg"
     },
     {
       "species_code": "ferhaw",
@@ -106,19 +223,6 @@
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/13823002/square.jpg"
     },
     {
-      "species_code": "sonspa",
-      "common_name": "Song Sparrow",
-      "scientific_name": "Melospiza melodia",
-      "observed_on": "2026-04-06",
-      "count": 9,
-      "location_name": "Savoy, Black Hills NF (44.351, -103.927)",
-      "lat": 44.3512466,
-      "lng": -103.9266615,
-      "location_id": "L62169048",
-      "checklist_id": "S318497542",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/104749271/square.jpg"
-    },
-    {
       "species_code": "haiwoo",
       "common_name": "Hairy Woodpecker",
       "scientific_name": "Leuconotopicus villosus",
@@ -197,19 +301,6 @@
       "photo_url": "https://static.inaturalist.org/photos/23747014/square.jpg"
     },
     {
-      "species_code": "shtgro",
-      "common_name": "Sharp-tailed Grouse",
-      "scientific_name": "Tympanuchus phasianellus",
-      "observed_on": "2026-04-05",
-      "count": 4,
-      "location_name": "Gravel Rd.",
-      "lat": 44.4549817,
-      "lng": -103.3760262,
-      "location_id": "L791647",
-      "checklist_id": "S317946756",
-      "photo_url": "https://static.inaturalist.org/photos/16142680/square.jpg"
-    },
-    {
       "species_code": "sancra",
       "common_name": "Sandhill Crane",
       "scientific_name": "Antigone canadensis",
@@ -221,19 +312,6 @@
       "location_id": "L791647",
       "checklist_id": "S317946756",
       "photo_url": "https://static.inaturalist.org/photos/269274277/square.jpg"
-    },
-    {
-      "species_code": "wesmea",
-      "common_name": "Western Meadowlark",
-      "scientific_name": "Sturnella neglecta",
-      "observed_on": "2026-04-05",
-      "count": null,
-      "location_name": "Gravel Rd.",
-      "lat": 44.4549817,
-      "lng": -103.3760262,
-      "location_id": "L791647",
-      "checklist_id": "S317946756",
-      "photo_url": "https://static.inaturalist.org/photos/490722638/square.jpg"
     },
     {
       "species_code": "attwoo1",
@@ -260,19 +338,6 @@
       "location_id": "L61987345",
       "checklist_id": "S317625212",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/332346026/square.jpeg"
-    },
-    {
-      "species_code": "norhar2",
-      "common_name": "Northern Harrier",
-      "scientific_name": "Circus hudsonius",
-      "observed_on": "2026-04-05",
-      "count": 2,
-      "location_name": "Old Highway 85, Belle Fourche US-SD 44.87228, -103.80725",
-      "lat": 44.872278,
-      "lng": -103.807247,
-      "location_id": "L62041070",
-      "checklist_id": "S317872349",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/114355770/square.jpg"
     },
     {
       "species_code": "cangoo",
@@ -431,32 +496,6 @@
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/247681814/square.jpeg"
     },
     {
-      "species_code": "rethaw",
-      "common_name": "Red-tailed Hawk",
-      "scientific_name": "Buteo jamaicensis",
-      "observed_on": "2026-04-04",
-      "count": 2,
-      "location_name": "4101–4299 WY-24, Aladdin US-WY (44.6438,-104.1423)",
-      "lat": 44.643796,
-      "lng": -104.142265,
-      "location_id": "L61874170",
-      "checklist_id": "S317105104",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/101327658/square.jpg"
-    },
-    {
-      "species_code": "amekes",
-      "common_name": "American Kestrel",
-      "scientific_name": "Falco sparverius",
-      "observed_on": "2026-04-04",
-      "count": 2,
-      "location_name": "4101–4299 WY-24, Aladdin US-WY (44.6438,-104.1423)",
-      "lat": 44.643796,
-      "lng": -104.142265,
-      "location_id": "L61874170",
-      "checklist_id": "S317105104",
-      "photo_url": "https://static.inaturalist.org/photos/174574440/square.jpg"
-    },
-    {
       "species_code": "bkbmag1",
       "common_name": "Black-billed Magpie",
       "scientific_name": "Pica hudsonia",
@@ -468,19 +507,6 @@
       "location_id": "L61874170",
       "checklist_id": "S317105104",
       "photo_url": "https://static.inaturalist.org/photos/29485872/square.jpg"
-    },
-    {
-      "species_code": "moublu",
-      "common_name": "Mountain Bluebird",
-      "scientific_name": "Sialia currucoides",
-      "observed_on": "2026-04-04",
-      "count": 1,
-      "location_name": "4101–4299 WY-24, Aladdin US-WY (44.6438,-104.1423)",
-      "lat": 44.643796,
-      "lng": -104.142265,
-      "location_id": "L61874170",
-      "checklist_id": "S317105104",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/245267194/square.jpg"
     },
     {
       "species_code": "rocpig",
@@ -574,19 +600,6 @@
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/95268822/square.jpg"
     },
     {
-      "species_code": "osprey",
-      "common_name": "Osprey",
-      "scientific_name": "Pandion haliaetus",
-      "observed_on": "2026-04-02",
-      "count": 1,
-      "location_name": "Black Hills NF--Iron Creek Lake",
-      "lat": 44.3710056,
-      "lng": -103.9807766,
-      "location_id": "L9985004",
-      "checklist_id": "S316053828",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/6903515/square.jpg"
-    },
-    {
       "species_code": "baleag",
       "common_name": "Bald Eagle",
       "scientific_name": "Haliaeetus leucocephalus",
@@ -637,19 +650,6 @@
       "location_id": "L319849",
       "checklist_id": "S316017952",
       "photo_url": "https://static.inaturalist.org/photos/25544008/square.jpeg"
-    },
-    {
-      "species_code": "merlin",
-      "common_name": "Merlin",
-      "scientific_name": "Falco columbarius",
-      "observed_on": "2026-04-01",
-      "count": 1,
-      "location_name": "610 McGuigan Road, Spearfish, South Dakota, US (44.488, -103.889)",
-      "lat": 44.4882547,
-      "lng": -103.888684,
-      "location_id": "L61571863",
-      "checklist_id": "S315660833",
-      "photo_url": "https://static.inaturalist.org/photos/57981340/square.jpg"
     }
   ]
 }

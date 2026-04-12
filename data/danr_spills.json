@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "fetched_at": "2026-04-12T16:32:00.625765+00:00",
   "lookback_days": 30,
+=======
+  "fetched_at": "2026-04-12T17:35:37.186231+00:00",
+  "lookback_days": 90,
+>>>>>>> f062936d76022fe1d07745cb4d2b0a15bd912c7c
   "total_bh_sites": 3295,
   "known_ids": [
     84379,
@@ -3449,8 +3454,12 @@
       "resp_party": "Black Hills Energy",
       "lat": 44.078963,
       "lon": -103.230137,
+<<<<<<< HEAD
       "id_raw": 2026.044,
       "pdf_url": "https://danr.sd.gov/spillimages/2026/2026.044.pdf"
+=======
+      "pdf_url": null
+>>>>>>> f062936d76022fe1d07745cb4d2b0a15bd912c7c
     }
   ]
 }

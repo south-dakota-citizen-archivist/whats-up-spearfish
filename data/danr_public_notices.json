@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-11T17:28:04.320127+00:00",
+  "fetched_at": "2026-04-12T17:31:16.501886+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -898,24 +898,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/8128-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Waste Management \u2014 Solid Waste",
-      "deadline": "4/11/2026",
-      "comment_url": "",
-      "name": "Abram Hotz",
-      "description": "Initial permit application to begin operation of a Type III Food Waste Compost Solid Waste Facility located 1.25 miles east and 3.5 miles north of Monroe, SD.",
-      "location": "Monroe, SD",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Abram_Hotz_PN.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_Abram_Hotz_26_IP.pdf"
         }
       ]
     },

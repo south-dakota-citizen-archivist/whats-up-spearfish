@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "fetched_at": "2026-04-12T16:36:23.097873+00:00",
+=======
+  "fetched_at": "2026-04-12T17:33:29.730850+00:00",
+>>>>>>> f062936d76022fe1d07745cb4d2b0a15bd912c7c
   "lookback_days": 30,
   "records": [
     {
@@ -2859,8 +2863,12 @@
       "comments": null,
       "contractor": "Chris Moeller",
       "lat": 44.213049,
+<<<<<<< HEAD
       "lon": -103.368173,
       "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/65909/attachments/8602"
+=======
+      "lon": -103.368173
+>>>>>>> f062936d76022fe1d07745cb4d2b0a15bd912c7c
     }
   ]
 }

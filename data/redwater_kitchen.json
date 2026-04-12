@@ -1,5 +1,18 @@
 [
   {
+    "url": "https://untappd.com/b/modist-brewing-co-heated-rivalry/6634660",
+    "title": "Heated Rivalry",
+    "slug": "heated-rivalry",
+    "category": "IPA - Triple New England / Hazy",
+    "abv": "10%",
+    "ibu": "",
+    "brewery": "Modist Brewing Co.",
+    "rating": "4.16",
+    "image_url": "https://labels.untappd.com/6634660",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
     "url": "https://untappd.com/b/kros-strain-brewing-web-of-lies/3550236",
     "title": "Web of Lies",
     "slug": "web-of-lies",
@@ -139,19 +152,6 @@
     "brewery": "Anheuser-Busch",
     "rating": "2.57",
     "image_url": "https://labels.untappd.com/6655",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
-    "url": "https://untappd.com/b/outer-range-brewing-co-swells/4818606",
-    "title": "Swells",
-    "slug": "swells",
-    "category": "IPA - Triple New England / Hazy",
-    "abv": "10.5%",
-    "ibu": "",
-    "brewery": "Outer Range Brewing Co.",
-    "rating": "4.21",
-    "image_url": "https://labels.untappd.com/4818606",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"
   }

@@ -217,8 +217,8 @@ def fetch_danr_spills() -> None:
     )
 
     print(
-        f"[DANR Spills] {len(all_ids)} total BH sites, {added} added this run, {len(new_records)} in pool → {DATA_FILE.name}"
-    )  # noqa
+        f"[DANR Spills] {len(all_ids)} total BH sites, {added} added this run, {len(new_records)} in pool → {DATA_FILE.name}"  # noqa
+    )
 
 
 if __name__ == "__main__":

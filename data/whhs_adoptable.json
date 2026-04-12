@@ -319,6 +319,17 @@
     "source_label": "Western Hills Humane Society"
   },
   {
+    "url": "https://www.westernhillshumanesociety.com/cats",
+    "title": "Plush",
+    "slug": "cat-plush",
+    "species": "cat",
+    "description": "Female | Underminted Age (~5 years) \nHoping to add to vet run on 4.15.26 for spay check & rabies shot.\nPlush came to us on 4.6.26 after being found up in Spearfish Canyon. She was severely matted so she does have a bald spot on her back where we shaved her. She’s fluffy and very sweet! She’s a very big kitty and doesn’t appear to be bothered by her neighboring cats. If you are ready to keep her beautiful coat brushed, come meet her and put in an application!",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/20671f82-1160-4beb-8fde-5fb4d1cc4426/1000038727.jpg?format=500w",
+    "image_alt": "Plush",
+    "record_type": "adoptable",
+    "source_label": "Western Hills Humane Society"
+  },
+  {
     "url": "https://www.westernhillshumanesociety.com/dogs",
     "title": "Nova",
     "slug": "dog-nova",
@@ -370,17 +381,6 @@
     "description": "Male | Lab/Doodle Mix | Born July 2024\nNeuter & rabies scheduled for 4/15/26\nLeo came to us with his brother and sister on April 3rd. Leo has lived with cats and been around kids but does tend to get excited and jump. Leo is the most mellow his siblings. Leo weighs 52 lbs.",
     "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/149604f2-6ec4-40a1-9322-e32118c4a779/image2+%288%29.jpeg?format=500w",
     "image_alt": "Leo",
-    "record_type": "adoptable",
-    "source_label": "Western Hills Humane Society"
-  },
-  {
-    "url": "https://www.westernhillshumanesociety.com/dogs",
-    "title": "Nala",
-    "slug": "dog-nala",
-    "species": "dog",
-    "description": "Female | Lab/Doodle Mix | Born July 2024\nSpay & rabies scheduled for 4/15/26 \nNala came to us with her brothers, Leo and Rocky, on April 3rd. Nala has lived with cats and been around kids but does tend to get excited and jump. Nala is a very sweet girl and weighs 50 lbs.",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/1b08f6a6-378c-4312-8d7b-5cc0247db4f9/image1+%287%29.jpeg?format=500w",
-    "image_alt": "Nala",
     "record_type": "adoptable",
     "source_label": "Western Hills Humane Society"
   },

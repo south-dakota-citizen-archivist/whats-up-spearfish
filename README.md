@@ -21,23 +21,23 @@ _Updated: April 12, 2026_
 | BHSU Campus Calendar | `bhsu_calendar` | `event` | 53 |
 | Black Hills National Forest | `bhnf` | `event`, `press_release` | 5 |
 | Black Hills National Forest (public projects) | `bhnf_projects` | — | 48 |
-| Black Hills Pioneer | `bhpioneer_jobs` | `job` | 12 |
+| Black Hills Pioneer | `bhpioneer_jobs` | `job` | 10 |
 | Black Hills Pioneer | `black_hills_pioneer` | `news` | 190 |
 | Black Hills Wildflowers | `black_hills_wildflowers` | — | 5 |
 | Building Permits | `building_permits` | — | 3 |
-| City of Spearfish | `spearfish_city` | `document` | 2,100 |
+| City of Spearfish | `spearfish_city` | `document` | 4,195 |
 | City of Spearfish Alert Center | `spearfish_alert_center` | `alert` | 4 |
 | City of Spearfish Blog | `spearfish_blog` | — | 0 |
-| City of Spearfish Calendar | `spearfish_calendar` | `event` | 45 |
+| City of Spearfish Calendar | `spearfish_calendar` | `event` | 46 |
 | City of Spearfish Jobs | `spearfish_jobs` | — | 0 |
 | City of Spearfish News Flash | `spearfish_news` | `press_release` | 5 |
 | Crow Peak Brewing | `crow_peak_brewing` | `beer` | 16 |
-| Danr Spills | `danr_spills` | — | 5 |
+| Danr Spills | `danr_spills` | — | 0 |
 | eBird (recent sightings) | `ebird` | — | 50 |
 | Elementary 3-5 Lunch | `spearfish_elem_35_lunch` | `school_menu` | 40 |
 | Elementary Breakfast | `spearfish_elem_breakfast` | `school_menu` | 40 |
 | Elementary K-2 Lunch | `spearfish_elem_k2_lunch` | `school_menu` | 40 |
-| Grace Balloch Memorial Library | `spearfish_library` | `library_book` | 86 |
+| Grace Balloch Memorial Library | `spearfish_library` | `library_book` | 87 |
 | Grace Balloch Memorial Library (circulation) | `library_circulation` | — | 124 |
 | High School Lunch | `spearfish_hs_lunch` | `school_menu` | 40 |
 | Inaturalist Plant Cache | `inaturalist_plant_cache` | — | 317 |
@@ -54,11 +54,11 @@ _Updated: April 12, 2026_
 | Public Meetings (YouTube) | `public_meetings_youtube` | `youtube_video` | 31 |
 | Rapid City Journal | `rapid_city_journal` | `news` | 205 |
 | Redwater Kitchen | `redwater_kitchen` | `beer` | 12 |
-| Regional News | `news_feeds` | `news` | 145 |
-| Roadkill | `roadkill` | — | 3 |
+| Regional News | `news_feeds` | `news` | 146 |
+| Roadkill | `roadkill` | — | 0 |
 | Sawyer Brewing Co. | `sawyer_brewing` | `beer` | 14 |
 | SD Dept. of Agriculture & Natural Resources (contested cases) | `danr_contested_cases` | — | 10 |
-| SD Dept. of Agriculture & Natural Resources (public notices) | `danr_public_notices` | — | 70 |
+| SD Dept. of Agriculture & Natural Resources (public notices) | `danr_public_notices` | — | 69 |
 | Sd Flowering Plants | `sd_flowering_plants` | — | 5 |
 | Sd Living Landscapes | `sd_living_landscapes` | — | 5 |
 | SDPB | `sdpb_news` | `news` | 24 |

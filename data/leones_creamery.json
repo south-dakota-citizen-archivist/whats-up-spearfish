@@ -10,19 +10,10 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/268ACE90-B380-48D1-82BD-68FB6FE39350-195-1577658609.jpg",
-    "title": "Chocolate Peanut Butter Cup",
-    "slug": "chocolate-peanut-butter-cup",
-    "description": "Creamy chocolate ice cream studded with chopped peanut butter cups.",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/MintOreo-146-1524171221.jpg",
-    "title": "Mint Oreo",
-    "slug": "mint-oreo",
-    "description": "Our cool peppermint ice cream is riddled with Oreo cookie pieces (no pesky green dye included).",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/D2BA2E8C-D8A7-49CF-9722-2027EAAD34CF-167-1539449153.jpg",
+    "title": "Dark Chocolate",
+    "slug": "dark-chocolate",
+    "description": "Rich, velvety, dark chocolate ice cream. The perfect middle-ground between our Milk Chocolate and Double Dark Chocolate ice creams.",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
@@ -41,6 +32,15 @@
     "title": "Jellybean",
     "slug": "jellybean",
     "description": "We churned up a creamy base with hints of vanilla and lemon, then riddled it with the holy grail of jelly beans (Starburst, obviously).",
+    "record_type": "flavor",
+    "source_label": "Leone's Creamery"
+  },
+  {
+    "url": "https://leonescreamery.com/flavors",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/268ACE90-B380-48D1-82BD-68FB6FE39350-195-1577658609.jpg",
+    "title": "Chocolate Peanut Butter Cup",
+    "slug": "chocolate-peanut-butter-cup",
+    "description": "Creamy chocolate ice cream studded with chopped peanut butter cups.",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
