@@ -67,7 +67,7 @@ class ClubhouseSpearfish(BaseScraper):
                     "rating": rating,
                     "image_url": image_url,
                     "record_type": "beer",
-                    "source_label": "The Clubhouse of Spearfish",
+                    "source_label": "The Clubhouse",
                 }
             )
 

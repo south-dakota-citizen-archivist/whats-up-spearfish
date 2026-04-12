@@ -12,6 +12,7 @@ Usage:
 import importlib
 import inspect
 import pkgutil
+import traceback
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from dotenv import load_dotenv
@@ -79,6 +80,7 @@ def run_all():
             if error:
                 msg = f"{name}: ERROR - {error}"
                 print(f"  {msg}")
+                traceback.print_exception(type(error), error, error.__traceback__)
                 summary_lines.append(msg)
             else:
                 status = f"{name}: {count} new record(s)"
