@@ -734,7 +734,7 @@ def load_danr_contested_cases() -> list[dict]:
 
 
 def load_danr_spills() -> dict:
-    """Load DANR spill reports — new records detected since cache was seeded."""
+    """Load DANR spill reports first seen within the past 30 days."""
     path = DATA_DIR / "danr_spills.json"
     if not path.exists():
         return {}
@@ -743,11 +743,13 @@ def load_danr_spills() -> dict:
     except Exception as exc:
         print(f"[build] Warning: could not load danr_spills.json: {exc}")
         return {}
-    records = raw.get("new_records") or []
-    print(f"[build] DANR spills: {len(records)} new record(s) in lookback window")
+    cutoff = (date.today() - timedelta(days=30)).isoformat()
+    all_records = raw.get("new_records") or []
+    records = [r for r in all_records if (r.get("first_seen") or "") >= cutoff]
+    print(f"[build] DANR spills: {len(records)} record(s) in past 30 days (of {len(all_records)} total)")
     return {
         "records": records,
-        "lookback_days": raw.get("lookback_days", 90),
+        "lookback_days": 30,
         "total_bh_sites": raw.get("total_bh_sites", 0),
     }
 

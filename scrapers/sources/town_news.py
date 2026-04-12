@@ -129,6 +129,10 @@ class _TownNewsScraper(BaseScraper):
 
     def scrape(self) -> list[dict]:
         rows = _fetch_articles(self.search_url, self.collection_string)
+        if not rows:
+            raise RuntimeError(
+                f"[{self.name}] API returned 0 rows — possible IP block or endpoint change. URL: {self.search_url}"
+            )
         records = []
         for item in rows:
             record = _parse_record(item, self.name)
