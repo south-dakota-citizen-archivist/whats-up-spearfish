@@ -19,6 +19,15 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/0AAC4A34-E741-4CFE-95F6-0ABD152D7FF0-176-1526843464.jpg",
+    "title": "Cherry Chip",
+    "slug": "cherry-chip",
+    "description": "Sweet, nostalgic cherry ice cream, chock-full of mini chocolate chips",
+    "record_type": "flavor",
+    "source_label": "Leone's Creamery"
+  },
+  {
+    "url": "https://leonescreamery.com/flavors",
     "image_url": "https://leonescreamery.com/images/uploads/cropped/0025C9FF-7582-4168-89E7-6A0E60B07F41-239-1535075972.jpg",
     "title": "Chocolate Kit Kat",
     "slug": "chocolate-kit-kat",
@@ -37,15 +46,6 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/25E551F6-5BFB-4ED5-8849-46383B70B35F-288-1555779660.jpg",
-    "title": "Jellybean",
-    "slug": "jellybean",
-    "description": "We churned up a creamy base with hints of vanilla and lemon, then riddled it with the holy grail of jelly beans (Starburst, obviously).",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
     "image_url": "https://leonescreamery.com/images/uploads/cropped/72502AF8-1036-4234-82E1-26493A7C0CF1-173-1540101306.jpg",
     "title": "Black Licorice",
     "slug": "black-licorice",
@@ -55,10 +55,10 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/5E241BC1-BC53-49E8-A15F-86E176ABC8CE-243-1536430032.jpg",
-    "title": "Strawberries-N-Cream",
-    "slug": "strawberries-n-cream",
-    "description": "It's always a classic-- the perfectly balanced strawberry ice cream, made with lots (and lots) of strawberries and fresh sweet cream.",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/D02BA8D6-F0D8-4AFE-8EFF-B05C7D3DF5AB-194-1534649868.jpg",
+    "title": "Lemon Poppy Seed",
+    "slug": "lemon-poppy-seed",
+    "description": "A Leones' Creamery classic! Sweet, lemony ice cream that tastes JUST like one of our favorite pound cakes.",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
