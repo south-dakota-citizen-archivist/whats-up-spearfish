@@ -1,6 +1,19 @@
 {
-  "fetched_at": "2026-04-13T04:52:13.295932+00:00",
+  "fetched_at": "2026-04-13T17:57:15.324502+00:00",
   "observations": [
+    {
+      "species_code": "rensap",
+      "common_name": "Red-naped Sapsucker",
+      "scientific_name": "Sphyrapicus nuchalis",
+      "observed_on": "2026-04-12",
+      "count": 1,
+      "location_name": "Tinton Trail",
+      "lat": 44.4735012,
+      "lng": -103.8982003,
+      "location_id": "L62671039",
+      "checklist_id": "S320967268",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/26994711/square.jpeg"
+    },
     {
       "species_code": "haiwoo",
       "common_name": "Hairy Woodpecker",
@@ -637,19 +650,6 @@
       "location_id": "L319849",
       "checklist_id": "S316017952",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/244248986/square.jpg"
-    },
-    {
-      "species_code": "dowwoo",
-      "common_name": "Downy Woodpecker",
-      "scientific_name": "Dryobates pubescens",
-      "observed_on": "2026-04-02",
-      "count": 1,
-      "location_name": "McNenny State Fish Hatchery & GPA",
-      "lat": 44.5588735,
-      "lng": -104.0110247,
-      "location_id": "L319849",
-      "checklist_id": "S316017952",
-      "photo_url": "https://static.inaturalist.org/photos/25544008/square.jpeg"
     }
   ]
 }

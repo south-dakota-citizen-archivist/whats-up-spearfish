@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-13T04:52:41.244941+00:00",
+  "fetched_at": "2026-04-13T17:58:06.820055+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -1457,6 +1457,45 @@
         {
           "label": "Statement of Basis",
           "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/InternationalPaperSOBDraft.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "05/13/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/13/2026&name=Northern States Power Company, dba Xcel Energy&pntype=aq&description=Northern States Power dba Xcel Energy is an electrical peaking facility. The Department recommends approval of a renewed Title V air quality operating permit.",
+      "description": "Northern States Power dba Xcel Energy is an electrical peaking facility. The Department recommends approval of a renewed Title V air quality operating permit.",
+      "location": "Sioux Falls",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/NSPpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/NSPdp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/NSPsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Waste Management \u2014 Solid Waste",
+      "deadline": "5/13/2026",
+      "comment_url": "",
+      "name": "City of Lemmon",
+      "description": "Permit renewal application to continue operation of a Type III Combination Restricted Use Solid Waste Facility, Municipal Solid Waste Transfer Station, and Petroleum-Contaminated Soil Treatment Site",
+      "location": "",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Lemmon_PN.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_Lemmon_26_IP.pdf"
         }
       ]
     },

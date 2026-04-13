@@ -262,5 +262,27 @@
     "image_url": "https://npr.brightspotcdn.com/a6/ed/100184cb439dadc43859862b39ab/debate-photo-podiums-empty.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-04-13/president-approves-disaster-declaration-for-destructive-december-windstorm",
+    "title": "President approves disaster declaration for destructive December windstorm",
+    "slug": "sdpb-president-approves-disaster-declaration-for-destructive-december-windstorm",
+    "published": "2026-04-13",
+    "byline": "By SDPB News Staff",
+    "description": "The White House is approving South Dakota’s disaster declaration for a <a href=\"https://www.sdpb.org/2025-12-31/hikers-urged-to-use-caution-as-many-trails-still-damaged-from-windstorm\" target=\"_blank\" link-data=\"{\"cms.site.owner\":{\"_ref\":\"00000178-5ae7-d19d-a1fa-ffef051d0000\",\"_type\":\"ae3387cc-b875-31b7-b82d-63fd8d758c20\"},\"cms.content.publishDate\":1776090224129,\"cms.content.publishUser\":{\"_ref\":\"00000183-c8f3-d798-a5cf-eaff86d60000\",\"_type\":\"6aa69ae1-35be-30dc-87e9-410da9e1cdcc\"},\"cms.content.updateDate\":1776090224129,\"cms.content.updateUser\":{\"_ref\":\"00000183-c8f3-d798-a5cf-eaff86d60000\",\"_type\":\"6aa69ae1-35be-30dc-87e9-410da9e1cdcc\"},\"cms.directory.paths\":[],\"anchorable.showAnchor\":false,\"link\":{\"cms.directory.paths\":[],\"attributes\":[],\"linkText\":\"major winter windstorm\",\"target\":\"NEW\",\"attachSourceUrl\":false,\"url\":\"https://www.sdpb.org/2025-12-31/hikers-urged-to-use-caution-as-many-trails-still-damaged-from-windstorm\",\"_id\":\"0000019d-873a-d006-a99d-977f11520000\",\"_type\":\"ff658216-e70f-39d0-b660-bdfe57a5599a\"},\"_id\":\"0000019d-873a-d006-a99d-977f11520001\",\"_type\":\"809caec9-30e2-3666-8b71-b32ddbffc288\"}\">major winter windstorm</a> in the Black Hills.",
+    "image_url": "https://npr.brightspotcdn.com/95/14/2123069a44708946bf6d8bc9bd73/windstorm202501.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-13/urban-chickens-one-vote-away-from-nesting-in-rapid-city",
+    "title": "Urban chickens one vote away from nesting in Rapid City",
+    "slug": "sdpb-urban-chickens-one-vote-away-from-nesting-in-rapid-city",
+    "published": "2026-04-13",
+    "byline": "By C.J. Keene",
+    "description": "The Rapid City Council is giving residents something to cluck about with tentative approval of a proposal allowing backyard chickens. It’s now one vote away from passage.",
+    "image_url": "https://npr.brightspotcdn.com/legacy/prod/filer_public/kusd-bento-live-pbs/Entertainment%20Blog/Melissa%20Sievers/Chickens/95bde5f43c_3%20Chickens.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]
