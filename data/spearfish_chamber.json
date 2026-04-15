@@ -1246,5 +1246,44 @@
     "website": "",
     "record_type": "event",
     "source_label": "Spearfish Chamber"
+  },
+  {
+    "url": "https://business.spearfishchamber.org/events/details/body-in-balance-fall-prevention-seminar-30753",
+    "title": "Body in Balance: Fall Prevention Seminar",
+    "slug": "body-in-balance-fall-prevention-seminar",
+    "start_dt": "2026-04-27 11:00 AM MDT",
+    "end_dt": "2026-04-27 12:00 PM MDT",
+    "location": "Spearfish Senior Center 1306 N 10th St Spearfish, SD 57783",
+    "fees": "FREE",
+    "description": "Body in Balance: A Fall Prevention Seminar on Monday, April 27th 11AM-12PM. Join us for a lunch-and-learn presentation on fall prevention with Dr. Britt Wickett of Elevate Physical Therapy. He will cover fall statistics and safety precautions, and offer you exercise recommendations based on your individual risk. Please RSVP with Sam by calling her at 605.340.0098 or emailing her at samantha.wager@hmecare.net. Located at the Spearfish Senior Center 1306 N 10th St. Spearfish, SD. Sponsored by Peaceful Pines. Open to the public.",
+    "website": "http://www.spearfishseniorcenter.com",
+    "record_type": "event",
+    "source_label": "Spearfish Chamber"
+  },
+  {
+    "url": "https://business.spearfishchamber.org/events/details/mother-s-tea-party-30755",
+    "title": "Mother's Tea Party",
+    "slug": "mother-s-tea-party",
+    "start_dt": "2026-05-08 1:00 PM MDT",
+    "end_dt": "2026-05-08 2:00 PM MDT",
+    "location": "Spearfish Senior Center 1306 N 10th St Spearfish, SD",
+    "fees": "Free will donation",
+    "description": "Mother’s Tea Party on May 8th. Tea & refreshments in honor of all our mothers on Friday, May 8th at 1PM. Senior Center Chorus will be performing. Party Hats are not required but encouraged! Free will donation at the door. Open to the public. Invite your family, neighbors, & friends!",
+    "website": "http://www.spearfishseniorcenter.com",
+    "record_type": "event",
+    "source_label": "Spearfish Chamber"
+  },
+  {
+    "url": "https://business.spearfishchamber.org/events/details/caramel-rolls-coffee-social-30756",
+    "title": "Caramel Rolls & Coffee Social",
+    "slug": "caramel-rolls-coffee-social",
+    "start_dt": "2026-05-14 8:30 AM MDT",
+    "end_dt": "2026-05-14 10:30 AM MDT",
+    "location": "Spearfish Senior Center 1306 N 10th St Spearfish, SD",
+    "fees": "$3 caramel roll $1 coffee",
+    "description": "Caramel Rolls & Coffee Social. Open to the public, invite your friends!",
+    "website": "http://www.spearfishseniorcenter.com",
+    "record_type": "event",
+    "source_label": "Spearfish Chamber"
   }
 ]

@@ -1316,5 +1316,71 @@
     "category": "Campus Calendar/Events",
     "record_type": "event",
     "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "6534a177-b0c3-425c-a1b3-2a2dbd51dcd4",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/6534a177-b0c3-425c-a1b3-2a2dbd51dcd4",
+    "title": "41st Annual Lakota Omniciye Wacipi",
+    "slug": "41st-annual-lakota-omniciye-wacipi",
+    "description": "\"Elevating Native Voices: Embracing Our Collective Impact\" April 18, 2026 Donald E. Young Center - Spearfish, SD Grand Entry at Noon Everyone is welcome! $8000 in Dance Prize Money 15 Drum Guarantee General Admission: $8 Free for BHSU students, Faculty, Staff, Children under 5, and Seniors 55+ The Lakota Omniciye Wacipi is a drug and alcohol-free event. Persons with disabilities can request accomodation by contacting Jordon Mendoza at the Center for American Indian Studies. Jordon.Mendoza@BHSU.edu 605.642.6578",
+    "start_dt": "2026-04-15T18:00",
+    "end_dt": "2026-04-15T18:30",
+    "location": "Donald E. Young Sports & Fitness Center",
+    "image_url": "https://bhsu.edu/_images/images/events/events-images/41stAnnualLakotaOmniciyeWacipi.jpeg",
+    "image_alt": "Event poster for the 41st Annual Lakota Omniciye Wacipi with sun, mountains, Lakota patterns, and silhouettes of speakers and dancers, April 18, 2026, Donald E. Young Center, Spearfish, SD.",
+    "organizer": "Jordon Mendoza",
+    "tags": [
+      "Community Event",
+      "BHSU Event",
+      "American Indian Awareness Week"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "e164f89e-7a28-44be-ab67-2741c0e9d83e",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/e164f89e-7a28-44be-ab67-2741c0e9d83e",
+    "title": "Earth Day Pre-Festival Guest Presenter",
+    "slug": "earth-day-pre-festival-guest-presenter",
+    "description": "Earth Day Pre-Festival Guest Presenter Saturday, April 18th from 9:30 am-11 am, Meier Hall 9:30am - Social Hour Sponsored by BHSU School of Natural Sciences 10:00am - Introduction Lead by Black Hills Area Community Foundation 10:15am - Guest Presenter - Spearfish Trail Coalition Sponsored by Black Hills Area Community Foundation Immediately after our guest presenter, we will kick off the Earth Day Festival on April 18th from 11:00-2:00 PM on the Campus Green. This year's theme is “Think Global, Act Local,” and there will be educational booths, food trucks, a free plant giveaway, solar panel tours, and much more! Sponsors",
+    "start_dt": "2026-04-18T15:30",
+    "end_dt": "2026-04-18T17:00",
+    "location": "Clare and Josef Meier Hall",
+    "image_url": "https://bhsu.edu/_images/images/events/events-images/BHSUEarthDay.png",
+    "image_alt": "BHSU Earth Day 2026 poster showing hands holding a globe, with event details: April 18, 11 a.m.–2 p.m. on the BHSU Campus Green.",
+    "organizer": "Taryn Davis",
+    "tags": [
+      "Community Event",
+      "BHSU Event"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "7e4b6719-095d-402e-9954-c7a46c592f17",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/7e4b6719-095d-402e-9954-c7a46c592f17",
+    "title": "Tuition Due",
+    "slug": "tuition-due",
+    "description": "Upcoming tuition due dates: Summer 2026 Due Date 6/10/26 Fall 2026 Due Date 09/04/26 Spring 2027 Due Date 01/21/27",
+    "start_dt": "2026-06-10",
+    "end_dt": "2026-06-10",
+    "location": "",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "Ann Greco",
+    "tags": [
+      "Administrative"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
   }
 ]

@@ -328,5 +328,49 @@
     "image_url": "https://npr.brightspotcdn.com/0c/51/8f3a22ff4594ac39da4e561e4f1d/debate.png",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-04-15/national-weather-service-encourages-severe-weather-preparation-this-week",
+    "title": "National Weather Service encourages severe weather preparation this week",
+    "slug": "sdpb-national-weather-service-encourages-severe-weather-preparation-this-week",
+    "published": "2026-04-15",
+    "byline": "By Jackson Dircks",
+    "description": "It’s South Dakota’s Weather Awareness Week, an annual reminder from the National Weather Service encouraging people to stay vigilant and prepare now for severe weather.",
+    "image_url": "https://npr.brightspotcdn.com/31/f9/11b0c882444bb7368c276de8da03/tornado.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-15/despite-some-reservations-state-investment-officer-receives-recommended-increase",
+    "title": "Despite some reservations, state investment officer receives recommended increase",
+    "slug": "sdpb-despite-some-reservations-state-investment-officer-receives-recommended",
+    "published": "2026-04-15",
+    "byline": "By Jackson Dircks",
+    "description": "Despite reservations from some lawmakers, the state’s investment officer is receiving a salary increase in line with other state employees, as well as an incentive bonus.",
+    "image_url": "https://npr.brightspotcdn.com/0e/d7/4bbe540e498bb479f7676b79a34f/capitol-money-legislature-tax-south-dakota.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-15/dan-ahlers-says-50-years-of-republican-leadership-proves-its-time-to-send-a-democrat-to-the-governors-mansion",
+    "title": "Dan Ahlers says 50 years of Republican leadership proves it's time to send a Democrat to the governor's mansion",
+    "slug": "sdpb-dan-ahlers-says-50-years-of-republican-leadership-proves-it-s-time-to-send",
+    "published": "2026-04-15",
+    "byline": "By Lori Walsh",
+    "description": "Dan Ahlers is executive director for South Dakota's Democratic Party. He's running for governor. He says fair taxes, investments in education, and affordability are three key areas of concern for voters.",
+    "image_url": "https://npr.brightspotcdn.com/39/7c/40ba8ab44ce09defe1b606825a91/dan-ahlers-april-26.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-14/school-district-finances-taxes-ai-and-data-centers-legislators-decide-memo-topics",
+    "title": "School district finances, taxes, AI and data centers: Legislators decide memo topics",
+    "slug": "sdpb-school-district-finances-taxes-ai-and-data-centers-legislators-decide-memo",
+    "published": "2026-04-14",
+    "byline": "By Jackson Dircks",
+    "description": "Lawmakers are asking state researchers to look into various topics and report back with their findings. These memos sometimes turn into the foundation for policy and new laws.",
+    "image_url": "https://npr.brightspotcdn.com/e8/b9/7fa916444c9ca92478641f4c5f0b/capital-generic-4-brent-duerre.JPG",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

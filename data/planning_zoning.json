@@ -1,6 +1,22 @@
 {
-  "fetched_at": "2026-04-14T18:02:37.273263+00:00",
+  "fetched_at": "2026-04-15T18:03:55.057685+00:00",
   "records": [
+    {
+      "id": 11786,
+      "record_no": "SP-26-7",
+      "record_type": "Sketch Plat",
+      "record_type_id": 6456,
+      "category": "planning",
+      "status": 1,
+      "date_created": "2026-04-15T15:53:29.023Z",
+      "date_submitted": "2026-04-15T16:07:28.000Z",
+      "last_updated": "2026-04-15T16:09:35.806Z",
+      "address": "",
+      "lat": null,
+      "lon": null,
+      "applicant": "Loren Vrem",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/11786"
+    },
     {
       "id": 11764,
       "record_no": "PMG-26-10",
@@ -4810,7 +4826,7 @@
       "status": 0,
       "date_created": "2024-12-30T02:58:29.183Z",
       "date_submitted": "",
-      "last_updated": "2024-12-30T03:15:58.000Z",
+      "last_updated": "2026-04-15T12:27:57.000Z",
       "address": "586 Fish Hatchery  Loop, Spearfish, SD 57783",
       "lat": 44.460026,
       "lon": -103.877944,

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-14T18:03:38.053955+00:00",
+  "fetched_at": "2026-04-15T18:04:15.633033+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -74,24 +74,6 @@
       ]
     },
     {
-      "notice_type": "Water Rights \u2014 Future Use Review",
-      "deadline": "02/02/2026",
-      "comment_url": "",
-      "application_no": "1833-2",
-      "water_source": "Madison Aquifer",
-      "use_type": "Rural Water System (future use review)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/1833-2_app.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/1833-2_rec.pdf"
-        }
-      ]
-    },
-    {
       "notice_type": "Water Rights",
       "deadline": "02/09/2026",
       "comment_url": "",
@@ -112,78 +94,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/8990-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights \u2014 Future Use Review",
-      "deadline": "02/09/2026",
-      "comment_url": "",
-      "application_no": "192-3",
-      "water_source": "Alluvium along Elm River",
-      "use_type": "Municipal (future use review)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/192-3_app.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/192-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights \u2014 Future Use Review",
-      "deadline": "02/09/2026",
-      "comment_url": "",
-      "application_no": "3427A-3",
-      "water_source": "Elm Aquifer",
-      "use_type": "Municipal (future use review)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/3427A-3_app.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/3427A-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights \u2014 Future Use Review",
-      "deadline": "02/09/2026",
-      "comment_url": "",
-      "application_no": "1218-3",
-      "water_source": "Big Sioux North Aquifer",
-      "use_type": "Municipal (future use review)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/1218-3_app.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/1218-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights \u2014 Future Use Review",
-      "deadline": "02/09/2026",
-      "comment_url": "",
-      "application_no": "2107-3",
-      "water_source": "Big Sioux North Aquifer",
-      "use_type": "Municipal (future use review)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/2107-3_app.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/2107-3_rec.pdf"
         }
       ]
     },
@@ -1108,19 +1018,128 @@
       ]
     },
     {
-      "notice_type": "Surface Water Enhancement & Restoration",
-      "deadline": "04/14/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/14/2026&name=Garrison Peel&pntype=sw_er&description=Garrison Peel is proposing a project on a tributary to Deer Creek. The project will shape and stabilize the creek banks and create a lined watering pool for wildlife",
-      "name": "Garrison Peel",
-      "description": "Garrison Peel is proposing a project on a tributary to Deer Creek. The project will shape and stabilize the creek banks and create a lined watering pool for wildlife",
+      "notice_type": "Air Quality Permit",
+      "deadline": "04/16/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/16/2026&name=Sioux Falls Regional Sanitary Landfill&pntype=aq&description=Sioux Falls Regional Sanitary Landfill is a municipal solid waste landfill. The Department recommends approval of a renewed Title V air quality operating permit.",
+      "description": "Sioux Falls Regional Sanitary Landfill is a municipal solid waste landfill. The Department recommends approval of a renewed Title V air quality operating permit.",
+      "location": "Sioux Falls",
       "links": [
         {
           "label": "Public Notice",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/PeelDeerPN.pdf"
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/SFRLpn.pdf"
         },
         {
-          "label": "Application",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/TribDeerPeelapp.pdf"
+          "label": "Draft Permit",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/SFRLdp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/SFRLsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "04/16/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/16/2026&name=Black Hills Power, Inc. - Ben French&pntype=aq&description=Black Hills Ben French proposes to renew their Title V air quality operating permit for their power generation facility. DANR recommends renewal of a Title V air quality operating permit.",
+      "description": "Black Hills Ben French proposes to renew their Title V air quality operating permit for their power generation facility. DANR recommends renewal of a Title V air quality operating permit.",
+      "location": "Rapid City",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/BHPBFpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/BHPBFdp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/BHPBFsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "04/16/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/16/2026&name=Brookings Regional Landfill&pntype=aq&description=Brookings Regional Landfill is a municipal solid waste landfill. The Department recommends approval of a renewed Title V air quality operating permit.",
+      "description": "Brookings Regional Landfill is a municipal solid waste landfill. The Department recommends approval of a renewed Title V air quality operating permit.",
+      "location": "Brookings",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/BRLpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/BRLdp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/BRLsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "04/17/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/17/2026&name=Dakota Line Energy, LLC&pntype=aq&description=Dakota Line Energy proposes an addition of a new generator and a modification to current permitted units at the renewable natural gas facility. DANR recommend issuance of a modified air quality construction permit.",
+      "description": "Dakota Line Energy proposes an addition of a new generator and a modification to current permitted units at the renewable natural gas facility. DANR recommend issuance of a modified air quality construction permit.",
+      "location": "Humbolt",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/DLEpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/dp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/DLEsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "04/17/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/17/2026&name=Hamlin RNG, LLC&pntype=aq&description=Hamlin RNG, LLC operates a biogas production facility. The Department recommends approval of a minor air quality operating permit.",
+      "description": "Hamlin RNG, LLC operates a biogas production facility. The Department recommends approval of a minor air quality operating permit.",
+      "location": "Bryant",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/HRpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/HRdp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/HRsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "04/17/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/17/2026&name=Hamlin RNG, LLC&pntype=aq&description=Hamlin RNG, LLC operates a biogas production facility. The Department recommends approval of an air quality construction permit modification.",
+      "description": "Hamlin RNG, LLC operates a biogas production facility. The Department recommends approval of an air quality construction permit modification.",
+      "location": "Bryant",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/HRpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/dp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/HRsb.pdf"
         }
       ]
     },
@@ -1266,11 +1285,11 @@
         },
         {
           "label": "Staff Report",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/2026Juno-FoleyDischargePlan.pdf"
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/2026Juno-FoleyTechnicalReviewAnalysis.pdf"
         },
         {
           "label": "Conditions",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/2026Juno-FoleyTechnicalReviewAnalysis.pdf"
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/2026Juno-FoleyDischargePlan.pdf"
         }
       ]
     },
@@ -1341,6 +1360,27 @@
       ]
     },
     {
+      "notice_type": "Air Quality Permit",
+      "deadline": "05/13/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/13/2026&name=Northern States Power Company, dba Xcel Energy&pntype=aq&description=Northern States Power dba Xcel Energy is an electrical peaking facility. The Department recommends approval of a renewed Title V air quality operating permit.",
+      "description": "Northern States Power dba Xcel Energy is an electrical peaking facility. The Department recommends approval of a renewed Title V air quality operating permit.",
+      "location": "Sioux Falls",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/NSPpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/NSPdp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/NSPsb.pdf"
+        }
+      ]
+    },
+    {
       "notice_type": "Waste Management \u2014 Solid Waste",
       "deadline": "5/13/2026",
       "comment_url": "",
@@ -1377,6 +1417,24 @@
         {
           "label": "Statement of Basis",
           "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/USFSBoxelderJCCCCSOBDraftFR.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Waste Management \u2014 Solid Waste",
+      "deadline": "5/15/2026",
+      "comment_url": "",
+      "name": "City of Presho",
+      "description": "Permit renewal application to continue operation of a Type IV Restricted Use Solid Waste Facility",
+      "location": "Presho, SD",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Presho_PN.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_Presho_RU_26_IP.pdf"
         }
       ]
     },

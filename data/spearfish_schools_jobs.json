@@ -46,8 +46,21 @@
     "district": "Spearfish School District",
     "position_type": "High School Teaching/",
     "published": "4/13/2026",
-    "closing": "04/17/2026",
-    "description": "Position type: High School Teaching/ · Location: Spearfish High School · Closes: 04/17/2026",
+    "closing": "04/24/2026",
+    "description": "Position type: High School Teaching/ · Location: Spearfish High School · Closes: 04/24/2026",
+    "record_type": "job",
+    "source_label": "Spearfish School District"
+  },
+  {
+    "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4555&posFirstChoice=Middle%20School%20Teaching/",
+    "title": "Middle School Language Arts Teacher w/wo Social Studies",
+    "slug": "4555-middle-school-language-arts-teacher-w-wo-social-studies",
+    "location": "Spearfish Middle School",
+    "district": "Spearfish School District",
+    "position_type": "Middle School Teaching/",
+    "published": "4/14/2026",
+    "closing": "Open Until Filled",
+    "description": "Position type: Middle School Teaching/ · Location: Spearfish Middle School · Closes: Open Until Filled",
     "record_type": "job",
     "source_label": "Spearfish School District"
   },
@@ -94,12 +107,12 @@
     "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4553&posFirstChoice=Support%20Staff/",
     "title": "High School Cabin - Educational Support Personnel (paraprofessional)",
     "slug": "4553-high-school-cabin-educational-support-personnel-paraprofessional",
-    "location": "",
+    "location": "Spearfish High School",
     "district": "Spearfish School District",
     "position_type": "Support Staff/",
     "published": "4/9/2026",
     "closing": "Open Until Filled",
-    "description": "Position type: Support Staff/ · Closes: Open Until Filled",
+    "description": "Position type: Support Staff/ · Location: Spearfish High School · Closes: Open Until Filled",
     "record_type": "job",
     "source_label": "Spearfish School District"
   }

@@ -478,5 +478,45 @@
     "start_dt": "Wed, 04 Mar 2026 12:00:02 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3560",
+    "title": "Planning Commission Meeting",
+    "slug": "planning-commission-meeting",
+    "description": "<strong>Event date:</strong> April 21, 2026 <br /><strong>Event Time: </strong>05:00 PM - 11:59 PM<br /><strong>Location:</strong> <br />City Hall<br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Wed, 15 Apr 2026 10:15:32 -0700",
+    "start_dt": "Wed, 15 Apr 2026 10:15:32 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3179",
+    "title": "City Council Study Session",
+    "slug": "city-council-study-session",
+    "description": "<strong>Event date:</strong> April 29, 2026 <br /><strong>Event Time: </strong>05:15 PM - 06:15 PM<br /><strong>Location:</strong> <br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Fri, 12 Dec 2025 15:10:43 -0700",
+    "start_dt": "Fri, 12 Dec 2025 15:10:43 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3409",
+    "title": "Autumn Trio musical performance",
+    "slug": "autumn-trio-musical-performance",
+    "description": "<strong>Event date:</strong> April 29, 2026 <br /><strong>Event Time: </strong>05:30 PM - 06:30 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />The Autumn Trio will perform their popular arrangements of folk and classical music. The trio features Katrina Garnett on flute, Chris Davis on guitar, and Rodney Garnett on alto flute and 19th century flute",
+    "published": "Wed, 01 Apr 2026 10:31:25 -0700",
+    "start_dt": "Wed, 01 Apr 2026 10:31:25 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3479",
+    "title": "Town Hall on City Financials",
+    "slug": "town-hall-on-city-financials",
+    "description": "<strong>Event date:</strong> April 29, 2026 <br /><strong>Event Time: </strong>06:00 PM - 11:59 PM<br /><strong>Location:</strong> <br />City Hall<br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Thu, 09 Apr 2026 13:36:03 -0700",
+    "start_dt": "Thu, 09 Apr 2026 13:36:03 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]
