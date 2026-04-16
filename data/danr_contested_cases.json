@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-15T18:06:33.285246+00:00",
+  "fetched_at": "2026-04-16T18:09:10.866099+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -158,6 +158,14 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID129",
       "documents": [
         {
+          "label": "Filings Submitted by Counsel for Chief Engineer",
+          "url": "https://danr.sd.gov/wrimage/pub/8991-3_response_op.pdf"
+        },
+        {
+          "label": "Notice of Appearance - Legal Counsel for Applicant",
+          "url": "https://danr.sd.gov/wrimage/pub/8991-3_notapp_app.pdf"
+        },
+        {
           "label": "Response to Motion to Dismiss a Petitioner - Abarca",
           "url": "https://danr.sd.gov/wrimage/pub/8991-3_Abarca.pdf"
         },
@@ -168,17 +176,9 @@
         {
           "label": "Request to Intervene - PVC Management II, LLC d/b/a Pipestone",
           "url": "https://danr.sd.gov/wrimage/pub/8991-3_intervene.pdf"
-        },
-        {
-          "label": "Notice of Appearance - Legal Counsel for Chief Engineer",
-          "url": "https://danr.sd.gov/wrimage/pub/8991-3_notappear.pdf"
-        },
-        {
-          "label": "Notice of Hearing",
-          "url": "https://danr.sd.gov/wrimage/pub/8991-3_not2.pdf"
         }
       ],
-      "total_docs": 12,
+      "total_docs": 14,
       "latest_doc_date": "0000-00-00"
     },
     {
@@ -223,6 +223,14 @@
       "documents": [
         {
           "label": "Filings Submitted by Counsel for the Chief Engineer",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3_response_op.pdf"
+        },
+        {
+          "label": "Notice of Appearance - Legal Counsel for Applicant",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3_notapp_app.pdf"
+        },
+        {
+          "label": "Filings Submitted by Counsel for the Chief Engineer",
           "url": "https://danr.sd.gov/wrimage/pub/8982-3_con_SO.pdf"
         },
         {
@@ -232,17 +240,9 @@
         {
           "label": "Notice of Appearance - Legal Counsel for Chief Engineer",
           "url": "https://danr.sd.gov/wrimage/pub/8982-3_notappear.pdf"
-        },
-        {
-          "label": "Notice of Hearing",
-          "url": "https://danr.sd.gov/wrimage/pub/8982-3_not_2.pdf"
-        },
-        {
-          "label": "Request to Consolidate Contested Case Hearings",
-          "url": "https://danr.sd.gov/wrimage/pub/8991-3_mot1.pdf"
         }
       ],
-      "total_docs": 13,
+      "total_docs": 15,
       "latest_doc_date": "0000-00-00"
     },
     {

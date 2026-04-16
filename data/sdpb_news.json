@@ -372,5 +372,27 @@
     "image_url": "https://npr.brightspotcdn.com/e8/b9/7fa916444c9ca92478641f4c5f0b/capital-generic-4-brent-duerre.JPG",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-16/gov-larry-rhoden-outlines-policy-priorities-as-early-voting-approaches-in-south-dakota",
+    "title": "Gov. Larry Rhoden outlines policy priorities as early voting approaches in South Dakota",
+    "slug": "sdpb-gov-larry-rhoden-outlines-policy-priorities-as-early-voting-approaches-in",
+    "published": "2026-04-16",
+    "byline": "By Lori Walsh",
+    "description": "Early voting in South Dakota begins on April 17. Gov. Larry Rhoden makes his case to voters for national defense and gun-related industry.",
+    "image_url": "https://npr.brightspotcdn.com/18/a1/d41cf1044278b9ce7f3f8cbb1402/rhoden-candidate.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-04-15/officials-seeking-public-comment-on-proposed-powertech-uranium-project",
+    "title": "Officials seeking public comment on proposed Powertech uranium project",
+    "slug": "sdpb-officials-seeking-public-comment-on-proposed-powertech-uranium-project",
+    "published": "2026-04-15",
+    "byline": "By SDPB News Staff",
+    "description": "The Bureau of Land Management is asking for public comments about the impact of a proposed uranium on public lands in southwest South Dakota.",
+    "image_url": "https://npr.brightspotcdn.com/9c/01/aa8701374235b2e0ac1930684cd6/643427b552-deweyburdockmap.JPG",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

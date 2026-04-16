@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-15T18:06:47.375683+00:00",
+  "fetched_at": "2026-04-16T18:09:28.943598+00:00",
   "projects": [
     {
       "project_id": "67625",
@@ -39,6 +39,45 @@
         "phone": "605-673-9200"
       },
       "last_updated": "1/28/2026"
+    },
+    {
+      "project_id": "68498",
+      "title": "Benchmark Vegetation Management",
+      "url": "https://www.fs.usda.gov/r02/blackhills/projects/68498",
+      "status": "In Progress",
+      "district": "Northern Hills Ranger District",
+      "purpose": "Forest Products|Vegetation Management (Other Than Forest Products)|Fuels Management",
+      "description": "Timber management to provide commercial timber products to local industry, and reduce the risk of insect infestation.",
+      "milestones": [
+        {
+          "name": "Scoping Start",
+          "date": "01/23/2026"
+        },
+        {
+          "name": "Comment Period",
+          "date": "05/2026 (Estimated)"
+        },
+        {
+          "name": "Decision",
+          "date": "07/2026 (Estimated)"
+        },
+        {
+          "name": "Implementation",
+          "date": "10/2026 (Estimated)"
+        }
+      ],
+      "comment_period_date": "05/2026 (Estimated)",
+      "comment_period_sort": "2026-05",
+      "location_summary": "South of Lead-Deadwood, SD, north of Nahant, SD, and north and west of Nemo, SD.",
+      "counties": [
+        "Lawrence"
+      ],
+      "contact": {
+        "name": "Chris Stores",
+        "email": "Chris.Stores@usda.gov",
+        "phone": "605-443-3081"
+      },
+      "last_updated": "4/16/2026"
     },
     {
       "project_id": "232189",

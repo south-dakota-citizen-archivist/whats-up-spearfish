@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-15T18:06:57.007362+00:00",
+  "fetched_at": "2026-04-16T18:09:39.998410+00:00",
   "lookback_days": 30,
   "records": [
     {
@@ -3108,97 +3108,6 @@
       "lat": 43.99199,
       "lon": -103.268311,
       "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/66009/attachments/8703"
-    },
-    {
-      "objectid": 65929,
-      "date": "2026-03-17",
-      "species": "Mule Deer",
-      "highway": "",
-      "sex": "Female",
-      "present": "Yes",
-      "comments": "13519 Frontier Loop",
-      "contractor": "Chris Moeller",
-      "lat": 44.265458,
-      "lon": -103.348206,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/65929/attachments/8622"
-    },
-    {
-      "objectid": 65930,
-      "date": "2026-03-17",
-      "species": "White-tailed Deer",
-      "highway": "",
-      "sex": "Female",
-      "present": "Yes",
-      "comments": "6978 elk creek rd",
-      "contractor": "Chris Moeller",
-      "lat": 44.23056,
-      "lon": -103.337256,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/65930/attachments/8623"
-    },
-    {
-      "objectid": 65931,
-      "date": "2026-03-17",
-      "species": "White-tailed Deer",
-      "highway": "",
-      "sex": "Unknown",
-      "present": "No",
-      "comments": "1747 Iron Horse",
-      "contractor": "Chris Moeller",
-      "lat": 44.482249,
-      "lon": -103.830836,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/65931/attachments/8624"
-    },
-    {
-      "objectid": 65932,
-      "date": "2026-03-17",
-      "species": "White-tailed Deer",
-      "highway": "",
-      "sex": "Female",
-      "present": "Yes",
-      "comments": "Deer lot.",
-      "contractor": "Chris Moeller",
-      "lat": 44.539837,
-      "lon": -103.861472,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/65932/attachments/8625"
-    },
-    {
-      "objectid": 65933,
-      "date": "2026-03-17",
-      "species": "White-tailed Deer",
-      "highway": "",
-      "sex": "Female",
-      "present": "Yes",
-      "comments": "Deer lot",
-      "contractor": "Chris Moeller",
-      "lat": 44.539838,
-      "lon": -103.861466,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/65933/attachments/8626"
-    },
-    {
-      "objectid": 65934,
-      "date": "2026-03-17",
-      "species": "Mule Deer",
-      "highway": "34",
-      "sex": "Female",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Chris Moeller",
-      "lat": 44.574873,
-      "lon": -103.769244,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/65934/attachments/8627"
-    },
-    {
-      "objectid": 65935,
-      "date": "2026-03-17",
-      "species": "White-tailed Deer",
-      "highway": "34",
-      "sex": "Female",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Chris Moeller",
-      "lat": 44.619213,
-      "lon": -103.821168,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/65935/attachments/8628"
     }
   ]
 }

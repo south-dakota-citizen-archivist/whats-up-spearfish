@@ -20894,5 +20894,37 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h202602020913014441c24d7f1c2be42",
+    "url": "https://gobound.com/direct/comps/h202602020913014441c24d7f1c2be42/show",
+    "title": "Softball: Rapid City Stevens vs Spearfish (Junior Varsity)",
+    "slug": "softball-rapid-city-stevens-vs-spearfish-junior-varsity",
+    "sport": "Softball",
+    "level": "Junior Varsity",
+    "sex": "female",
+    "description": "Junior Varsity Softball - Rapid City Stevens vs Spearfish",
+    "start_dt": "2027-04-15T22:30:00",
+    "end_dt": "2027-04-16T00:00:00",
+    "location": "Keating Resources SportsPlex  Softball Fields",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h2026020209124978061f47e57885347",
+    "url": "https://gobound.com/direct/comps/h2026020209124978061f47e57885347/show",
+    "title": "Softball: Rapid City Stevens vs Spearfish (Varsity)",
+    "slug": "softball-rapid-city-stevens-vs-spearfish-varsity",
+    "sport": "Softball",
+    "level": "Varsity",
+    "sex": "female",
+    "description": "Varsity Softball - Rapid City Stevens vs Spearfish",
+    "start_dt": "2027-04-16T00:00:00",
+    "end_dt": "2027-04-16T01:30:00",
+    "location": "Keating Resources SportsPlex  Softball Fields",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]

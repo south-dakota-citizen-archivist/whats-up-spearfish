@@ -26,6 +26,32 @@
     "source_label": "Spearfish School District"
   },
   {
+    "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4559&posFirstChoice=Athletics/Activities/",
+    "title": "High School Varsity Boys Basketball Coach",
+    "slug": "4559-high-school-varsity-boys-basketball-coach",
+    "location": "Spearfish High School",
+    "district": "Spearfish School District",
+    "position_type": "Athletics/Activities/",
+    "published": "4/16/2026",
+    "closing": "Open Until Filled",
+    "description": "Position type: Athletics/Activities/ · Location: Spearfish High School · Closes: Open Until Filled",
+    "record_type": "job",
+    "source_label": "Spearfish School District"
+  },
+  {
+    "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4556&posFirstChoice=Elementary%20School%20Teaching/",
+    "title": "Elementary Classroom Teacher",
+    "slug": "4556-elementary-classroom-teacher",
+    "location": "Spearfish School District",
+    "district": "Spearfish School District",
+    "position_type": "Elementary School Teaching/",
+    "published": "4/16/2026",
+    "closing": "04/29/2026",
+    "description": "Position type: Elementary School Teaching/ · Location: Spearfish School District · Closes: 04/29/2026",
+    "record_type": "job",
+    "source_label": "Spearfish School District"
+  },
+  {
     "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4526&posFirstChoice=High%20School%20Teaching/",
     "title": "High School Building Trades Instructor",
     "slug": "4526-high-school-building-trades-instructor",
@@ -65,13 +91,26 @@
     "source_label": "Spearfish School District"
   },
   {
-    "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4513&posFirstChoice=Student%20Support%20Services/",
+    "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4558&posFirstChoice=Middle%20School%20Teaching/",
+    "title": "Middle School Science/Social Studies Teacher",
+    "slug": "4558-middle-school-science-social-studies-teacher",
+    "location": "Spearfish Middle School",
+    "district": "Spearfish School District",
+    "position_type": "Middle School Teaching/",
+    "published": "4/16/2026",
+    "closing": "Open Until Filled",
+    "description": "Position type: Middle School Teaching/ · Location: Spearfish Middle School · Closes: Open Until Filled",
+    "record_type": "job",
+    "source_label": "Spearfish School District"
+  },
+  {
+    "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4557&posFirstChoice=Student%20Support%20Services/",
     "title": "Elementary School Counselor",
-    "slug": "4513-elementary-school-counselor",
+    "slug": "4557-elementary-school-counselor",
     "location": "Spearfish School District",
     "district": "Spearfish School District",
     "position_type": "Student Support Services/",
-    "published": "1/20/2026",
+    "published": "4/16/2026",
     "closing": "Open Until Filled",
     "description": "Position type: Student Support Services/ · Location: Spearfish School District · Closes: Open Until Filled",
     "record_type": "job",

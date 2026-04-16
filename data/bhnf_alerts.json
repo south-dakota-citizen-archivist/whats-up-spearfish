@@ -31,6 +31,16 @@
   },
   {
     "record_type": "alert",
+    "title": "Stage 1 Fire Restrictions in Bearlodge and Hell Canyon Ranger Districts, Wyoming",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/stage-1-fire-restrictions-bearlodge-and-hell-canyon-ranger-districts-wyoming",
+    "description": "Stage 1 Fire Restrictions are in effect on the Black Hills National Forest in Wyoming. Learn what activities are restricted to help prevent wildfires.",
+    "published": "2026-04-17",
+    "source_label": "BHNF",
+    "alert_type": "fire-restriction",
+    "forest_order": "BKF-188-2026"
+  },
+  {
+    "record_type": "alert",
     "title": "Rochford Exploratory Drill Pads and Access Routes Closure",
     "url": "https://www.fs.usda.gov/r02/blackhills/alerts/rochford-exploratory-drill-pads-and-access-routes-closure",
     "description": "Temporary closure of drill pads and access routes near Rochford, SD, to protect public safety on the Black Hills National Forest.",

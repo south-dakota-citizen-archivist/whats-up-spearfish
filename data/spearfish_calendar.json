@@ -518,5 +518,25 @@
     "start_dt": "Thu, 09 Apr 2026 13:36:03 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3562",
+    "title": "One Time Event",
+    "slug": "one-time-event",
+    "description": "<strong>Event date:</strong> April 16, 2026 <br /><strong>Event Time: </strong>07:00 PM - 11:59 PM<br /><strong>Location:</strong> <br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Wed, 15 Apr 2026 16:10:12 -0700",
+    "start_dt": "Wed, 15 Apr 2026 16:10:12 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3563",
+    "title": "National Prescription Drug Take Back Day",
+    "slug": "national-prescription-drug-take-back-day",
+    "description": "<strong>Event date:</strong> April 25, 2026 <br /><strong>Event Time: </strong>12:00 AM - 11:59 PM<br /><strong>Location:</strong> <br />225 W Illinois St.<br />Spearfish, SD 57783<br /><strong>Description:</strong><br />National Prescription Drug Take Back Day<br />April 25<br />SPEARFISH, SD – It's Spring - time to CLEAN UP your medicine cabinet of unneeded meds and drop them off on National Prescription Drug Take Back Day, April 25, 10 a.m. to 2p.m., for proper disposal. There's a receptacle outside of the front door of the Spearfish Police Department, 225 W Illinois St, where you can drop off unused/expired/unneeded medications 24/7/365. <br />",
+    "published": "Thu, 16 Apr 2026 12:03:33 -0700",
+    "start_dt": "Thu, 16 Apr 2026 12:03:33 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

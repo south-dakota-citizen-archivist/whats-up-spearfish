@@ -183,6 +183,32 @@
   },
   {
     "url": "https://www.sawyerbrewingco.com/menu",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/6e8e56a2-32bc-4eac-930c-930089f72f45/newninjawebsitedark.jpg",
+    "title": "Ninja Juice IPA",
+    "slug": "ninja-juice-ipa",
+    "category": "Hop Heads",
+    "description": "Unleash your inner beast with this tropical + juicy IPA. Mosaic & Citra hops will kick your taste buds into high gear & leave you begging for more. Beware of potential extra stealthy abilities.",
+    "abv": "6.1%",
+    "notes": "",
+    "prices": [
+      {
+        "price": 2.0,
+        "ounces": 5
+      },
+      {
+        "price": 4.0,
+        "ounces": 10
+      },
+      {
+        "price": 6.0,
+        "ounces": 16
+      }
+    ],
+    "record_type": "beer",
+    "source_label": "Sawyer Brewing Co."
+  },
+  {
+    "url": "https://www.sawyerbrewingco.com/menu",
     "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/c628c4d6-03ab-4d46-9805-a7ec11b9a00a/4LO.jpg",
     "title": "4LO PALE ALE",
     "slug": "4lo-pale-ale",
@@ -356,6 +382,19 @@
         "ounces": 16
       }
     ],
+    "record_type": "beer",
+    "source_label": "Sawyer Brewing Co."
+  },
+  {
+    "url": "https://www.sawyerbrewingco.com/menu",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/e40f3f49-ef67-490c-b989-aaafd8ea8678/nightowlstoutdark.jpg",
+    "title": "nightowlstoutdark.jpg",
+    "slug": "nightowlstoutdark-jpg",
+    "category": "Dark Side",
+    "description": "",
+    "abv": "",
+    "notes": "",
+    "prices": [],
     "record_type": "beer",
     "source_label": "Sawyer Brewing Co."
   }
