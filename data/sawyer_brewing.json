@@ -339,28 +339,6 @@
   },
   {
     "url": "https://www.sawyerbrewingco.com/menu",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/63644084-27c4-45bc-8934-a8da251454f0/100ll2026.jpg",
-    "title": "100LL • 2026 Barrel Aged Stout",
-    "slug": "100ll-2026-barrel-aged-stout",
-    "category": "Dark Side",
-    "description": "The 2026 version of 100LL is an imperial stout aged 36 months in a single barrel of Rabbit Hole Rye.",
-    "abv": "",
-    "notes": "Limited Release bottles $12 at the taproom. No Crowler or Growler fills.",
-    "prices": [
-      {
-        "price": 6.0,
-        "ounces": 4
-      },
-      {
-        "price": 8.0,
-        "ounces": 6
-      }
-    ],
-    "record_type": "beer",
-    "source_label": "Sawyer Brewing Co."
-  },
-  {
-    "url": "https://www.sawyerbrewingco.com/menu",
     "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/bf7b604b-320b-4fc9-a44e-203b7e409273/DarkLager2024.jpg",
     "title": "Dark Lager",
     "slug": "dark-lager",
@@ -395,6 +373,28 @@
     "abv": "",
     "notes": "",
     "prices": [],
+    "record_type": "beer",
+    "source_label": "Sawyer Brewing Co."
+  },
+  {
+    "url": "https://www.sawyerbrewingco.com/menu",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/63644084-27c4-45bc-8934-a8da251454f0/100ll2026.jpg",
+    "title": "100LL • 2026 Barrel Aged Stout",
+    "slug": "100ll-2026-barrel-aged-stout",
+    "category": "Dark Side",
+    "description": "The 2026 version of 100LL is an imperial stout aged 36 months in a single barrel of Rabbit Hole Rye.",
+    "abv": "",
+    "notes": "Limited Release bottles $12 at the taproom. No Crowler or Growler fills.",
+    "prices": [
+      {
+        "price": 6.0,
+        "ounces": 4
+      },
+      {
+        "price": 8.0,
+        "ounces": 6
+      }
+    ],
     "record_type": "beer",
     "source_label": "Sawyer Brewing Co."
   }

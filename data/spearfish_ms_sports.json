@@ -2990,5 +2990,37 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish MS Sports"
+  },
+  {
+    "uid": "h20260331063051487ea80a87631dc4a",
+    "url": "https://gobound.com/direct/comps/h20260331063051487ea80a87631dc4a/show",
+    "title": "Girls Track & Field: Belle Fourche Middle School Invite (Middle School)",
+    "slug": "girls-track-field-belle-fourche-middle-school-invite-middle-school",
+    "sport": "Girls Track & Field",
+    "level": "Middle School",
+    "sex": "female",
+    "description": "Middle School Girls Track & Field - Belle Fourche Middle School Invite",
+    "start_dt": "2027-04-16T15:00:00",
+    "end_dt": "2027-04-16T23:00:00",
+    "location": "Belle Fourche High School Track",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish MS Sports"
+  },
+  {
+    "uid": "h20260331063425651871b3e3b3b9048",
+    "url": "https://gobound.com/direct/comps/h20260331063425651871b3e3b3b9048/show",
+    "title": "Boys Track & Field: Belle Fourche Middle School Invite (Middle School)",
+    "slug": "boys-track-field-belle-fourche-middle-school-invite-middle-school",
+    "sport": "Boys Track & Field",
+    "level": "Middle School",
+    "sex": "male",
+    "description": "Middle School Boys Track & Field - Belle Fourche Middle School Invite",
+    "start_dt": "2027-04-16T15:00:00",
+    "end_dt": "2027-04-16T23:00:00",
+    "location": "Belle Fourche High School Track",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish MS Sports"
   }
 ]

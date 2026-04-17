@@ -1382,5 +1382,69 @@
     "category": "Campus Calendar/Events",
     "record_type": "event",
     "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "7673d418-0ced-4cbc-b827-1d4964284366",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/7673d418-0ced-4cbc-b827-1d4964284366",
+    "title": "41st Annual Lakota Omniciye Wacipi",
+    "slug": "41st-annual-lakota-omniciye-wacipi",
+    "description": "\"Elevating Native Voices: Embracing Our Collective Impact\" April 18, 2026 Donald E. Young Center - Spearfish, SD Grand Entry at NOON EVERYONE IS WELCOME! $8000 in Dance Prize Money 15 Drum Guarantee General Admission $8 Free for BHSU Student, Faculty, Staff, Children Under 5, and Seniors 55+ The Lakota Omniciye Wacipi is a drug and alcohol-free event. Persons with diabilities can request accomodations by contacting Jordon Mendoza via email or phone at the Center for American Indian Studies.",
+    "start_dt": "2026-04-18T18:00",
+    "end_dt": "2026-04-18T23:30",
+    "location": "Donald E. Young Sports & Fitness Center",
+    "image_url": "https://bhsu.edu/_images/images/events/events-images/41stAnnualLakotaOmniciyeWacipi.jpeg",
+    "image_alt": "Poster for the 41st Annual Lakota Omniciye Wacipi at Black Hills State University, featuring a large pale yellow sun over orange mountains, event details (“Elevating Native Voices: Embracing Our Collective Impact,” April 18, 2026, Donald E. Young Center i",
+    "organizer": "Jordon Mendoza",
+    "tags": [
+      "Community Event",
+      "BHSU Event",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "383e93c7-bb05-49df-9894-c7a0124d179a",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/383e93c7-bb05-49df-9894-c7a0124d179a",
+    "title": "BHSU End-Of-Year & Retirement Reception",
+    "slug": "bhsu-end-of-year-retirement-reception",
+    "description": "Please join us to celebrate a successful academic year and to wish our retirees well in their new endeavors. Food and refreshments will be available.",
+    "start_dt": "2026-04-28T21:00",
+    "end_dt": "2026-04-28T23:00",
+    "location": "Joy (Proctor) Krautschun Alumni/Foundation Welcome Center",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "",
+    "tags": [],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "aca624fd-c6b0-4bb0-95e6-a39147f6fe1b",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/aca624fd-c6b0-4bb0-95e6-a39147f6fe1b",
+    "title": "Faculty Info-Session: Online Course Quality at BHSU",
+    "slug": "faculty-info-session-online-course-quality-at-bhsu",
+    "description": "In 2025-2026, eight faculty and six staff members developed a plan for elevating the quality and consistency of online courses at BHSU. Join this session to learn about this Academic Affairs initiative and explore some of the resources the group developed, including new BHSU Online Course Quality Standards.",
+    "start_dt": "2026-05-07T19:30",
+    "end_dt": "2026-05-07T20:15",
+    "location": "Jonas 103A",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "Nick Van Kley",
+    "tags": [
+      "BHSU Event",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "https://forms.office.com/Pages/ResponsePage.aspx?id=i_L8mxE610-oE49RnNsNsusAZROMm-hNnJUqFmMw7mlUOTdBWVFMWFVRTzJFQkxZUjI3QzcyVFZMRS4u",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
   }
 ]

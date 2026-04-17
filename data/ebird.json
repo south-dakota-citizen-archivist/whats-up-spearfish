@@ -1,6 +1,58 @@
 {
-  "fetched_at": "2026-04-16T18:06:26.899864+00:00",
+  "fetched_at": "2026-04-17T17:45:09.133860+00:00",
   "observations": [
+    {
+      "species_code": "cangoo",
+      "common_name": "Canada Goose",
+      "scientific_name": "Branta canadensis",
+      "observed_on": "2026-04-16",
+      "count": 10,
+      "location_name": "Sundance Water Treatment Plant",
+      "lat": 44.4043323,
+      "lng": -104.3454732,
+      "location_id": "L11769644",
+      "checklist_id": "S322631208",
+      "photo_url": "https://static.inaturalist.org/photos/181719420/square.jpg"
+    },
+    {
+      "species_code": "buwtea",
+      "common_name": "Blue-winged Teal",
+      "scientific_name": "Spatula discors",
+      "observed_on": "2026-04-16",
+      "count": 3,
+      "location_name": "Sundance Water Treatment Plant",
+      "lat": 44.4043323,
+      "lng": -104.3454732,
+      "location_id": "L11769644",
+      "checklist_id": "S322631208",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/66271250/square.jpeg"
+    },
+    {
+      "species_code": "mallar3",
+      "common_name": "Mallard",
+      "scientific_name": "Anas platyrhynchos",
+      "observed_on": "2026-04-16",
+      "count": 12,
+      "location_name": "Sundance Water Treatment Plant",
+      "lat": 44.4043323,
+      "lng": -104.3454732,
+      "location_id": "L11769644",
+      "checklist_id": "S322631208",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/95268822/square.jpg"
+    },
+    {
+      "species_code": "grbher3",
+      "common_name": "Great Blue Heron",
+      "scientific_name": "Ardea herodias",
+      "observed_on": "2026-04-16",
+      "count": 3,
+      "location_name": "Sundance Water Treatment Plant",
+      "lat": 44.4043323,
+      "lng": -104.3454732,
+      "location_id": "L11769644",
+      "checklist_id": "S322631208",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/65060931/square.jpg"
+    },
     {
       "species_code": "wesmea",
       "common_name": "Western Meadowlark",
@@ -288,19 +340,6 @@
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/150549757/square.jpg"
     },
     {
-      "species_code": "mallar3",
-      "common_name": "Mallard",
-      "scientific_name": "Anas platyrhynchos",
-      "observed_on": "2026-04-11",
-      "count": 1,
-      "location_name": "Centennial Trail--Dalton Lake to Elk Creek",
-      "lat": 44.2312146,
-      "lng": -103.4741414,
-      "location_id": "L5160695",
-      "checklist_id": "S321779870",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/95268822/square.jpg"
-    },
-    {
       "species_code": "rufgro",
       "common_name": "Ruffed Grouse",
       "scientific_name": "Bonasa umbellus",
@@ -470,19 +509,6 @@
       "photo_url": "https://static.inaturalist.org/photos/53465854/square.jpeg"
     },
     {
-      "species_code": "cangoo",
-      "common_name": "Canada Goose",
-      "scientific_name": "Branta canadensis",
-      "observed_on": "2026-04-05",
-      "count": 13,
-      "location_name": "18694–18698 US-85, Belle Fourche US-SD 44.69225, -103.85174",
-      "lat": 44.692248,
-      "lng": -103.851738,
-      "location_id": "L62041114",
-      "checklist_id": "S317872554",
-      "photo_url": "https://static.inaturalist.org/photos/181719420/square.jpg"
-    },
-    {
       "species_code": "norsho",
       "common_name": "Northern Shoveler",
       "scientific_name": "Spatula clypeata",
@@ -624,32 +650,6 @@
       "location_id": "L61874209",
       "checklist_id": "S317105226",
       "photo_url": "https://static.inaturalist.org/photos/61919353/square.jpeg"
-    },
-    {
-      "species_code": "eursta",
-      "common_name": "European Starling",
-      "scientific_name": "Sturnus vulgaris",
-      "observed_on": "2026-04-04",
-      "count": 25,
-      "location_name": "19108–19138 US-85 N, Belle Fourche US-SD 44.63221, -103.86025",
-      "lat": 44.632209,
-      "lng": -103.860246,
-      "location_id": "L61874209",
-      "checklist_id": "S317105226",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/32152001/square.jpg"
-    },
-    {
-      "species_code": "amegfi",
-      "common_name": "American Goldfinch",
-      "scientific_name": "Spinus tristis",
-      "observed_on": "2026-04-03",
-      "count": 15,
-      "location_name": "21019 Alt US-14A, Lead US-SD 44.35243, -103.92898",
-      "lat": 44.352429,
-      "lng": -103.928977,
-      "location_id": "L61874233",
-      "checklist_id": "S317105343",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/384965723/square.jpg"
     }
   ]
 }

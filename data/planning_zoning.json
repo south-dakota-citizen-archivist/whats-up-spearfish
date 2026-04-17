@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-16T18:06:46.973350+00:00",
+  "fetched_at": "2026-04-17T17:45:28.062790+00:00",
   "records": [
     {
       "id": 11797,
@@ -10,7 +10,7 @@
       "status": 1,
       "date_created": "2026-04-16T17:45:14.753Z",
       "date_submitted": "2026-04-16T17:50:19.000Z",
-      "last_updated": "2026-04-16T17:51:19.000Z",
+      "last_updated": "2026-04-16T22:31:02.000Z",
       "address": "820 AMES AVE, Unit 8, SPEARFISH, SD 57783",
       "lat": 44.491584,
       "lon": -103.866844,
@@ -51,14 +51,14 @@
     },
     {
       "id": 11792,
-      "record_no": "",
+      "record_no": "VAR-26-3",
       "record_type": "Variance Application",
       "record_type_id": 6543,
       "category": "planning",
-      "status": 0,
+      "status": 1,
       "date_created": "2026-04-16T14:35:34.663Z",
-      "date_submitted": "",
-      "last_updated": "2026-04-16T14:38:21.000Z",
+      "date_submitted": "2026-04-16T20:23:20.000Z",
+      "last_updated": "2026-04-16T20:23:20.000Z",
       "address": "2615 Colorado  Blvd, Spearfish, SD 57783",
       "lat": 44.475069,
       "lon": -103.815522,

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-16T18:07:06.953408+00:00",
+  "fetched_at": "2026-04-17T17:45:51.315112+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -1014,69 +1014,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/9019-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Air Quality Permit",
-      "deadline": "04/16/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/16/2026&name=Sioux Falls Regional Sanitary Landfill&pntype=aq&description=Sioux Falls Regional Sanitary Landfill is a municipal solid waste landfill. The Department recommends approval of a renewed Title V air quality operating permit.",
-      "description": "Sioux Falls Regional Sanitary Landfill is a municipal solid waste landfill. The Department recommends approval of a renewed Title V air quality operating permit.",
-      "location": "Sioux Falls",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/SFRLpn.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/SFRLdp.pdf"
-        },
-        {
-          "label": "Application Review",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/SFRLsb.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Air Quality Permit",
-      "deadline": "04/16/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/16/2026&name=Black Hills Power, Inc. - Ben French&pntype=aq&description=Black Hills Ben French proposes to renew their Title V air quality operating permit for their power generation facility. DANR recommends renewal of a Title V air quality operating permit.",
-      "description": "Black Hills Ben French proposes to renew their Title V air quality operating permit for their power generation facility. DANR recommends renewal of a Title V air quality operating permit.",
-      "location": "Rapid City",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/BHPBFpn.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/BHPBFdp.pdf"
-        },
-        {
-          "label": "Application Review",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/BHPBFsb.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Air Quality Permit",
-      "deadline": "04/16/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/16/2026&name=Brookings Regional Landfill&pntype=aq&description=Brookings Regional Landfill is a municipal solid waste landfill. The Department recommends approval of a renewed Title V air quality operating permit.",
-      "description": "Brookings Regional Landfill is a municipal solid waste landfill. The Department recommends approval of a renewed Title V air quality operating permit.",
-      "location": "Brookings",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Environment/AirQuality/PN/BRLpn.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/Environment/AirQuality/PN/BRLdp.pdf"
-        },
-        {
-          "label": "Application Review",
-          "url": "https://danr.sd.gov/Environment/AirQuality/PN/BRLsb.pdf"
         }
       ]
     },

@@ -394,5 +394,49 @@
     "image_url": "https://npr.brightspotcdn.com/9c/01/aa8701374235b2e0ac1930684cd6/643427b552-deweyburdockmap.JPG",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-04-17/parks-service-seek-volunteers-for-missouri-river-cleanup-near-yankton",
+    "title": "Parks Service seek volunteers for Missouri River cleanup near Yankton",
+    "slug": "sdpb-parks-service-seek-volunteers-for-missouri-river-cleanup-near-yankton",
+    "published": "2026-04-17",
+    "byline": "By C.J. Keene",
+    "description": "A cleanup effort of the Missouri River near Yankton is nearing its twentieth year of action.",
+    "image_url": "https://npr.brightspotcdn.com/79/65/29cf545545a3b4510048ba983ec9/missouri-river.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-04-17/drought-mandates-fire-restrictions-across-black-hills-until-december",
+    "title": "Drought mandates fire restrictions across Black Hills until December",
+    "slug": "sdpb-drought-mandates-fire-restrictions-across-black-hills-until-december",
+    "published": "2026-04-17",
+    "byline": "By C.J. Keene",
+    "description": "Long-term drought conditions are impacting the Black Hills on both sides of the border, and the complications are compounded by a lack of spring moisture so far.",
+    "image_url": "https://npr.brightspotcdn.com/5f/ec/b0d0ad9e4c2db91118a1294b0cfa/image-44.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/arts-life/2026-04-17/emily-bright-at-augustana-university-for-national-poetry-month",
+    "title": "Emily Bright at Augustana University for National Poetry Month",
+    "slug": "sdpb-emily-bright-at-augustana-university-for-national-poetry-month",
+    "published": "2026-04-17",
+    "byline": "By Lori Walsh",
+    "description": "Minnesota poet Emily Bright talks about the influence of Mary Oliver and the need to respond to difficult historical and cultural events in her poems.",
+    "image_url": "https://npr.brightspotcdn.com/52/a4/27ad8392458d90c0af200f3647e9/website-photo-1.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-16/rhoden-says-demand-justifies-4m-taxpayer-investment-in-firearms-program",
+    "title": "Rhoden says demand justifies $4M taxpayer investment in firearms program",
+    "slug": "sdpb-rhoden-says-demand-justifies-4m-taxpayer-investment-in-firearms-program",
+    "published": "2026-04-16",
+    "byline": "By C.J. Keene",
+    "description": "The governor is using the taxpayer-backed Future Fund to make a $4 million investment in a gunsmithing program at Western Dakota Tech in Rapid City.",
+    "image_url": "https://npr.brightspotcdn.com/10/b4/fafedad846d5a9049d95e6774166/image-33.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]
