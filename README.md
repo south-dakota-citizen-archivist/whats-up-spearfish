@@ -6,7 +6,7 @@ day from scrapers that collect public data across the web.
 
 Source code: [https://github.com/south-dakota-citizen-archivist/whats-up-spearfish](https://github.com/south-dakota-citizen-archivist/whats-up-spearfish)
 
-_Updated: April 12, 2026_
+_Updated: April 18, 2026_
 
 ---
 
@@ -32,6 +32,7 @@ _Updated: April 12, 2026_
 | City of Spearfish Jobs | `spearfish_jobs` | — | 0 |
 | City of Spearfish News Flash | `spearfish_news` | `press_release` | 5 |
 | Crow Peak Brewing | `crow_peak_brewing` | `beer` | 16 |
+| Custer County Chronicle | `custer_county_chronicle` | `news` | 50 |
 | Danr Spills | `danr_spills` | — | 5 |
 | eBird (recent sightings) | `ebird` | — | 50 |
 | Elementary 3-5 Lunch | `spearfish_elem_35_lunch` | `school_menu` | 40 |
