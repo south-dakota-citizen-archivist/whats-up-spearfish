@@ -75,6 +75,7 @@ _Updated: April 18, 2026_
 | Spearfish School District | `spearfish_school_news` | `press_release` | 3 |
 | Spearfish School District | `spearfish_schools` | `event` | 20 |
 | Spearfish School District | `spearfish_schools_jobs` | `job` | 10 |
+| Sundance Times | `sundance_times` | `news` | 24 |
 | The Clubhouse | `clubhouse_spearfish` | `beer` | 8 |
 | USDA PLANTS Database (Black Hills full pull) | `plants_native_black_hills` | — | 24,984 |
 | USDA PLANTS Database (Native Plant Spotlight) | `native_plants_spotlight` | — | 195 |
