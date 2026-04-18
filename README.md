@@ -43,6 +43,7 @@ _Updated: April 18, 2026_
 | High School Lunch | `spearfish_hs_lunch` | `school_menu` | 60 |
 | Inaturalist Plant Cache | `inaturalist_plant_cache` | — | 317 |
 | Killian's | `killians` | `beer` | 17 |
+| KOTA Territory News | `kota` | `news` | 51 |
 | Lawrence County | `lawrence_county` | `document` | 57 |
 | Lawrence County Jobs | `lawrence_county_jobs` | — | 0 |
 | Lawrence County News Flash | `lawrence_county_news` | `press_release` | 1 |
