@@ -1,6 +1,22 @@
 {
-  "fetched_at": "2026-04-17T17:45:28.062790+00:00",
+  "fetched_at": "2026-04-18T17:33:19.090646+00:00",
   "records": [
+    {
+      "id": 11805,
+      "record_no": "",
+      "record_type": "Residential Decks, Covered Patios, or Fences",
+      "record_type_id": 6480,
+      "category": "alterations",
+      "status": 0,
+      "date_created": "2026-04-17T20:47:31.813Z",
+      "date_submitted": "",
+      "last_updated": "2026-04-17T20:59:18.000Z",
+      "address": "268 Standpipe Dr, Spearfish, SD 57783",
+      "lat": 44.468585,
+      "lon": -103.860091,
+      "applicant": "RICHARD SHARMAN",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/11805"
+    },
     {
       "id": 11797,
       "record_no": "PMG-26-13",

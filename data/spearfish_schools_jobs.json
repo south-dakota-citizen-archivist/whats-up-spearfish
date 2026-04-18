@@ -128,18 +128,5 @@
     "description": "Position type: Student Support Services/ · Location: Spearfish School District · Closes: Open Until Filled",
     "record_type": "job",
     "source_label": "Spearfish School District"
-  },
-  {
-    "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4553&posFirstChoice=Support%20Staff/",
-    "title": "High School Cabin - Educational Support Personnel (paraprofessional)",
-    "slug": "4553-high-school-cabin-educational-support-personnel-paraprofessional",
-    "location": "Spearfish High School",
-    "district": "Spearfish School District",
-    "position_type": "Support Staff/",
-    "published": "4/9/2026",
-    "closing": "Open Until Filled",
-    "description": "Position type: Support Staff/ · Location: Spearfish High School · Closes: Open Until Filled",
-    "record_type": "job",
-    "source_label": "Spearfish School District"
   }
 ]

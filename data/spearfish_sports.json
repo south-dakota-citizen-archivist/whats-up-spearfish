@@ -21070,5 +21070,37 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h202603310522296825d94fdc4800d4b",
+    "url": "https://gobound.com/direct/comps/h202603310522296825d94fdc4800d4b/show",
+    "title": "Boys Track & Field: Center of the Nation Invite (Varsity)",
+    "slug": "boys-track-field-center-of-the-nation-invite-varsity",
+    "sport": "Boys Track & Field",
+    "level": "Varsity",
+    "sex": "male",
+    "description": "Varsity Boys Track & Field - Center of the Nation Invite",
+    "start_dt": "2027-04-17T14:00:00",
+    "end_dt": "2027-04-17T23:00:00",
+    "location": "Belle Fourche High School Track",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h202603310519176261ec6f2226f4348",
+    "url": "https://gobound.com/direct/comps/h202603310519176261ec6f2226f4348/show",
+    "title": "Girls Track & Field: Center of the Nation Invite (Varsity)",
+    "slug": "girls-track-field-center-of-the-nation-invite-varsity",
+    "sport": "Girls Track & Field",
+    "level": "Varsity",
+    "sex": "female",
+    "description": "Varsity Girls Track & Field - Center of the Nation Invite",
+    "start_dt": "2027-04-17T14:00:00",
+    "end_dt": "2027-04-17T23:00:00",
+    "location": "Belle Fourche High School Track",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]

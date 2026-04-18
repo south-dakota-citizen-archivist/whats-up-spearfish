@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-17T17:45:51.315112+00:00",
+  "fetched_at": "2026-04-18T17:33:38.862774+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -1018,123 +1018,6 @@
       ]
     },
     {
-      "notice_type": "Air Quality Permit",
-      "deadline": "04/17/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/17/2026&name=Dakota Line Energy, LLC&pntype=aq&description=Dakota Line Energy proposes an addition of a new generator and a modification to current permitted units at the renewable natural gas facility. DANR recommend issuance of a modified air quality construction permit.",
-      "description": "Dakota Line Energy proposes an addition of a new generator and a modification to current permitted units at the renewable natural gas facility. DANR recommend issuance of a modified air quality construction permit.",
-      "location": "Humbolt",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/DLEpn.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/dp.pdf"
-        },
-        {
-          "label": "Application Review",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/DLEsb.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Air Quality Permit",
-      "deadline": "04/17/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/17/2026&name=Hamlin RNG, LLC&pntype=aq&description=Hamlin RNG, LLC operates a biogas production facility. The Department recommends approval of a minor air quality operating permit.",
-      "description": "Hamlin RNG, LLC operates a biogas production facility. The Department recommends approval of a minor air quality operating permit.",
-      "location": "Bryant",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/HRpn.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/HRdp.pdf"
-        },
-        {
-          "label": "Application Review",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/HRsb.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Air Quality Permit",
-      "deadline": "04/17/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/17/2026&name=Hamlin RNG, LLC&pntype=aq&description=Hamlin RNG, LLC operates a biogas production facility. The Department recommends approval of an air quality construction permit modification.",
-      "description": "Hamlin RNG, LLC operates a biogas production facility. The Department recommends approval of an air quality construction permit modification.",
-      "location": "Bryant",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Environment/AirQuality/PN/HRpn.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/Environment/AirQuality/PN/dp.pdf"
-        },
-        {
-          "label": "Application Review",
-          "url": "https://danr.sd.gov/Environment/AirQuality/PN/HRsb.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Concentrated Animal Feeding Operations (NPDES Permit)",
-      "deadline": "04/17/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/17/2026&name=B and K Dairy Farms, LLC&pntype=fp_cafo_npdes&description=Modification to an Existing NPDES Permitted Dairy Cattle Feeding Operation Consisting of Including Additional Land Application Acres for Amended Coverage - NPDES Permit",
-      "name": "B and K Dairy Farms, LLC",
-      "description": "Modification to an Existing NPDES Permitted Dairy Cattle Feeding Operation Consisting of Including Additional Land Application Acres for Amended Coverage - NPDES Permit",
-      "location": "Turner County",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/BKDairyFieldAddPNApril2026.pdf"
-        },
-        {
-          "label": "Recommendation",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/BKDairyFieldAddRecommendationandReportApril2026.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Waste Management \u2014 Solid Waste",
-      "deadline": "4/17/2026",
-      "comment_url": "",
-      "name": "Jensen Rock and Sand, Inc.",
-      "description": "Permit renewal application to continue operation of a Type III Restricted Use Solid Waste Facility",
-      "location": "Glenham, SD",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Jensen_Rock_and_Sand_PN.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_Jensen_Rock_and_Sand_26_IP.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Waste Management \u2014 Solid Waste",
-      "deadline": "4/17/2026",
-      "comment_url": "",
-      "name": "L&M Sanitation",
-      "description": "Permit renewal application to continue operation of a Type III Municipal Solid Waste Transfer Station Facility",
-      "location": "Wessington Springs, SD",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/L&M_Sanitation_PN.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_L&M_Sanitation_26_IP.pdf"
-        }
-      ]
-    },
-    {
       "notice_type": "Water Rights",
       "deadline": "04/17/2026",
       "comment_url": "",
@@ -1201,6 +1084,23 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/9020-3_rec.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Surface Water Enhancement & Restoration",
+      "deadline": "04/28/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/28/2026&name=Garret Kuchenbecker&pntype=sw_er&description=Garret Kuchenbecker is proposing a project on Horse Creek. The project goals are to enhance the aesthetics of the creek by removing vegetation that restricts access to the water.",
+      "name": "Garret Kuchenbecker",
+      "description": "Garret Kuchenbecker is proposing a project on Horse Creek. The project goals are to enhance the aesthetics of the creek by removing vegetation that restricts access to the water.",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/HorseCreekVegPN.pdf"
+        },
+        {
+          "label": "Application",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/DANRResEnhanceFORM.pdf"
         }
       ]
     },
