@@ -406,5 +406,17 @@
     "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/04/Importance-of-Being-Earnest-FBWeb-Cover.png",
     "record_type": "event",
     "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "The Importance of Being Earnest",
+    "url": "https://www.matthewsopera.com/event/2026-earnest/2026-05-16/3/",
+    "slug": "the-importance-of-being-earnest",
+    "start_dt": "2026-05-16T12:00:00-06:00",
+    "end_dt": "2026-05-16T15:00:00-06:00",
+    "description": "Oscar Wilde wrote the funniest play in the English language, and The Importance of Being Earnest is coming to The Matthews with crisp pacing, a stylish look, and laughs that […] \\n",
+    "location": "The Matthews Opera House – Theatre",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/04/Event-Brite-2160-x-1080-px-1.png",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
   }
 ]

@@ -1,6 +1,19 @@
 {
-  "fetched_at": "2026-04-18T22:51:35.268379+00:00",
+  "fetched_at": "2026-04-19T17:31:57.956429+00:00",
   "observations": [
+    {
+      "species_code": "chukar",
+      "common_name": "Chukar",
+      "scientific_name": "Alectoris chukar",
+      "observed_on": "2026-04-18",
+      "count": 1,
+      "location_name": "2735 1st Avenue, Spearfish, South Dakota, US (44.48, -103.812)",
+      "lat": 44.4803346,
+      "lng": -103.8115063,
+      "location_id": "L63188606",
+      "checklist_id": "S323679748",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/225378787/square.jpg"
+    },
     {
       "species_code": "cangoo",
       "common_name": "Canada Goose",
@@ -637,19 +650,6 @@
       "location_id": "L62169048",
       "checklist_id": "S318497542",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/59391481/square.jpg"
-    },
-    {
-      "species_code": "nswowl",
-      "common_name": "Northern Saw-whet Owl",
-      "scientific_name": "Aegolius acadicus",
-      "observed_on": "2026-04-05",
-      "count": 1,
-      "location_name": "Intresection Of Tinton Road with FR134 (44.445, -103.914)",
-      "lat": 44.4454022,
-      "lng": -103.9137978,
-      "location_id": "L62048979",
-      "checklist_id": "S318497193",
-      "photo_url": "https://static.inaturalist.org/photos/23747014/square.jpg"
     }
   ]
 }
