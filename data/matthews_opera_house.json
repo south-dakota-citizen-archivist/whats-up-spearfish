@@ -418,5 +418,53 @@
     "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/04/Event-Brite-2160-x-1080-px-1.png",
     "record_type": "event",
     "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "Ballroom Dance Lessons",
+    "url": "https://www.matthewsopera.com/event/2026-ballroom-dance/2026-05-05/",
+    "slug": "ballroom-dance-lessons",
+    "start_dt": "2026-05-05T18:30:00-06:00",
+    "end_dt": "2026-05-05T19:30:00-06:00",
+    "description": "Get ready to step onto the dance floor with our Beginner Ballroom Medley lesson series at The Matthews! Designed for absolute beginners (and anyone who wants to refresh the basics), […] \\n",
+    "location": "",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/04/Ballroom-Dance-Event-Brite-2160-x-1080-px-2.jpg",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "Ballroom Dance Lessons",
+    "url": "https://www.matthewsopera.com/event/2026-ballroom-dance/2026-05-12/",
+    "slug": "ballroom-dance-lessons",
+    "start_dt": "2026-05-12T18:30:00-06:00",
+    "end_dt": "2026-05-12T19:30:00-06:00",
+    "description": "Get ready to step onto the dance floor with our Beginner Ballroom Medley lesson series at The Matthews! Designed for absolute beginners (and anyone who wants to refresh the basics), […] \\n",
+    "location": "",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/04/Ballroom-Dance-Event-Brite-2160-x-1080-px-2.jpg",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "Ballroom Dance Lessons",
+    "url": "https://www.matthewsopera.com/event/2026-ballroom-dance/2026-05-19/",
+    "slug": "ballroom-dance-lessons",
+    "start_dt": "2026-05-19T18:30:00-06:00",
+    "end_dt": "2026-05-19T19:30:00-06:00",
+    "description": "Get ready to step onto the dance floor with our Beginner Ballroom Medley lesson series at The Matthews! Designed for absolute beginners (and anyone who wants to refresh the basics), […] \\n",
+    "location": "",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/04/Ballroom-Dance-Event-Brite-2160-x-1080-px-2.jpg",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "Ballroom Dance Lessons",
+    "url": "https://www.matthewsopera.com/event/2026-ballroom-dance/2026-05-26/",
+    "slug": "ballroom-dance-lessons",
+    "start_dt": "2026-05-26T18:30:00-06:00",
+    "end_dt": "2026-05-26T19:30:00-06:00",
+    "description": "Get ready to step onto the dance floor with our Beginner Ballroom Medley lesson series at The Matthews! Designed for absolute beginners (and anyone who wants to refresh the basics), […] \\n",
+    "location": "",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/04/Ballroom-Dance-Event-Brite-2160-x-1080-px-2.jpg",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
   }
 ]

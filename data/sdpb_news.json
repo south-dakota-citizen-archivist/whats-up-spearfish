@@ -460,5 +460,49 @@
     "image_url": "https://npr.brightspotcdn.com/52/a4/27ad8392458d90c0af200f3647e9/website-photo-1.png",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/education/2026-04-21/can-the-mississippi-miracle-framework-boost-state-reading-scores",
+    "title": "Can the 'Mississippi Miracle' framework boost state reading scores?",
+    "slug": "sdpb-can-the-mississippi-miracle-framework-boost-state-reading-scores",
+    "published": "2026-04-21",
+    "byline": "By C.J. Keene",
+    "description": "The future of education in South Dakota is a question the state’s Republican gubernatorial hopefuls contended with during the most recent debate.",
+    "image_url": "https://npr.brightspotcdn.com/54/b3/3f9f80784f36997334504a332e1d/classroom-stock-image.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-04-21/dci-rules-troopers-justified-in-shooting-injuring-suspect-after-pursuit",
+    "title": "DCI rules troopers justified in shooting, injuring suspect after pursuit",
+    "slug": "sdpb-dci-rules-troopers-justified-in-shooting-injuring-suspect-after-pursuit",
+    "published": "2026-04-21",
+    "byline": "By SDPB News Staff",
+    "description": "A state investigation finds two Highway Patrol troopers were justified in firing their guns during an arrest West River.",
+    "image_url": "https://npr.brightspotcdn.com/27/70/50a2e81a469a988b12dc3948ac5c/ar15-airsoft-box-elder-shooting.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-21/poll-shows-johnson-near-crucial-threshold-in-gop-primary-race",
+    "title": "Poll shows Johnson near crucial threshold in GOP primary race",
+    "slug": "sdpb-poll-shows-johnson-near-crucial-threshold-in-gop-primary-race",
+    "published": "2026-04-21",
+    "byline": "By Lori Walsh",
+    "description": "A new polls on the South Dakota Republican gubernatorial primary race shows an increase of support for Congressman Dusty Johnson and state lawmaker Jon Hansen. We talk with South Dakota News Watch reporter Alexander Rifaat about the results.",
+    "image_url": "https://npr.brightspotcdn.com/c0/69/499be1714c58a3c1272f6d2522ae/gop-governor-candidates-sdpb-2026.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/healthcare/2026-04-20/avera-receives-largest-single-grant-in-systems-history",
+    "title": "Avera receives largest single grant in system's history",
+    "slug": "sdpb-avera-receives-largest-single-grant-in-system-s-history",
+    "published": "2026-04-20",
+    "byline": "By Jackson Dircks",
+    "description": "Avera receives the largest single gift in the health care system’s history. Avera said the $35 million will support pediatric care “for the next generation.”",
+    "image_url": "https://npr.brightspotcdn.com/c7/4c/2e96992b47fd941d17bcdc1284c0/avera-behavioral-health-exterior.png",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

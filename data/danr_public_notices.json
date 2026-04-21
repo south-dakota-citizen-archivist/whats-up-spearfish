@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-20T17:55:12.589172+00:00",
+  "fetched_at": "2026-04-21T17:58:01.770736+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -879,7 +879,7 @@
       "comment_url": "",
       "application_no": "8110-3",
       "name": "Van Buskirk Farms LLC, Matthew Van Buskirk,\u00a0Hitchcock\u00a0SD",
-      "location": "Beadle",
+      "location": "Spink",
       "water_source": "Tulare: Western Spink Hitchcock Aquifer",
       "use_type": "Irrigation (136 acres)",
       "links": [
@@ -1171,6 +1171,54 @@
         {
           "label": "Statement of Basis",
           "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/LANASTSOBDraftFR.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Water Rights",
+      "deadline": "05/04/2026",
+      "comment_url": "",
+      "application_no": "9024-3",
+      "name": "Gerad or Roger Puterbaugh,\u00a0Cavour\u00a0SD",
+      "location": "Beadle",
+      "water_source": "Floyd: East James Aquifer",
+      "use_type": "Irrigation (320 acres)",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/9024-3_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/9024-3_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/9024-3_rec.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Water Rights",
+      "deadline": "05/04/2026",
+      "comment_url": "",
+      "application_no": "9021-3",
+      "name": "Craig Arthur,\u00a0Watertown\u00a0SD",
+      "location": "Grant",
+      "water_source": "Wilmot Aquifer",
+      "use_type": "Irrigation (80 add'l acres)",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/9021-3_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/9021-3_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/9021-3_rec.pdf"
         }
       ]
     },

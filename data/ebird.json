@@ -1,6 +1,32 @@
 {
-  "fetched_at": "2026-04-20T17:54:30.100766+00:00",
+  "fetched_at": "2026-04-21T17:57:32.509551+00:00",
   "observations": [
+    {
+      "species_code": "eucdov",
+      "common_name": "Eurasian Collared-Dove",
+      "scientific_name": "Streptopelia decaocto",
+      "observed_on": "2026-04-20",
+      "count": null,
+      "location_name": "11011 Kellem Ln, Belle Fourche US-SD 44.55990, -103.84663",
+      "lat": 44.559902,
+      "lng": -103.846634,
+      "location_id": "L63399848",
+      "checklist_id": "S324668958",
+      "photo_url": "https://static.inaturalist.org/photos/61919353/square.jpeg"
+    },
+    {
+      "species_code": "wesmea",
+      "common_name": "Western Meadowlark",
+      "scientific_name": "Sturnella neglecta",
+      "observed_on": "2026-04-20",
+      "count": null,
+      "location_name": "11011 Kellem Ln, Belle Fourche US-SD 44.55990, -103.84663",
+      "lat": 44.559902,
+      "lng": -103.846634,
+      "location_id": "L63399848",
+      "checklist_id": "S324668958",
+      "photo_url": "https://static.inaturalist.org/photos/490722638/square.jpg"
+    },
     {
       "species_code": "logshr",
       "common_name": "Loggerhead Shrike",
@@ -435,7 +461,7 @@
       "common_name": "American White Pelican",
       "scientific_name": "Pelecanus erythrorhynchos",
       "observed_on": "2026-04-14",
-      "count": 5,
+      "count": 6,
       "location_name": "Bear Butte Lake",
       "lat": 44.4563502,
       "lng": -103.4452331,
@@ -468,19 +494,6 @@
       "location_id": "L319397",
       "checklist_id": "S323168842",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/104749271/square.jpg"
-    },
-    {
-      "species_code": "wesmea",
-      "common_name": "Western Meadowlark",
-      "scientific_name": "Sturnella neglecta",
-      "observed_on": "2026-04-14",
-      "count": 3,
-      "location_name": "Bear Butte Lake",
-      "lat": 44.4563502,
-      "lng": -103.4452331,
-      "location_id": "L319397",
-      "checklist_id": "S323168842",
-      "photo_url": "https://static.inaturalist.org/photos/490722638/square.jpg"
     },
     {
       "species_code": "rewbla",
@@ -637,19 +650,6 @@
       "location_id": "L5160695",
       "checklist_id": "S321779870",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4661023/square.jpg"
-    },
-    {
-      "species_code": "brncre",
-      "common_name": "Brown Creeper",
-      "scientific_name": "Certhia americana",
-      "observed_on": "2026-04-11",
-      "count": 2,
-      "location_name": "Centennial Trail--Dalton Lake to Elk Creek",
-      "lat": 44.2312146,
-      "lng": -103.4741414,
-      "location_id": "L5160695",
-      "checklist_id": "S321779870",
-      "photo_url": "https://static.inaturalist.org/photos/31423761/square.jpg"
     }
   ]
 }

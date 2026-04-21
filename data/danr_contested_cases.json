@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-20T17:57:41.296506+00:00",
+  "fetched_at": "2026-04-21T18:00:13.243834+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -9,6 +9,14 @@
       "description": "Proposed uranium exploration project seven miles north of Edgemont, SD.  Up to 50 holes will be drilled to a maximum vertical depth of 700 feet.  In addition, 50 drill platforms will be created with a dimension of 60 feet by 60 feet.  Exploration will be conducted using reverse circulation drilling with sumps.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID123",
       "documents": [
+        {
+          "label": "April 20, 2026 Notice of Entry of Order on Requests for the Board of Minerals and Environment to Overturn Certain Orders of the Hearing Chair",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/42126OrderOverturnHearingChair.pdf"
+        },
+        {
+          "label": "April 20, 2026 Notice of Filing of Sealed Reports Submitted by Clean Nuclear Energy Which Includes Unredacted Versions of Vantage Point Archaeologic Reports",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/42026CNECNoticeofFilingSealedReports.pdf"
+        },
         {
           "label": "April 13, 2026 Notice of Hearing for Clean Nuclear Energy's Uranium Exploration Permit Application to Intervening Parties",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/41326NoticeofHearingtoParties.pdf"
@@ -20,17 +28,9 @@
         {
           "label": "April 8, 2026 DANR Notice of Filing of Sealed Report Which Includes Unredacted Versions of State Historical Preservation Office and Archaeological Research Center Reports",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/4826DANRNoticeSealedFiling.pdf"
-        },
-        {
-          "label": "April 8, 2026 DANR Supplemental Exhibit List Which Includes Redacted Versions of State Historical Preservation Office and Archaeological Research Center Reports",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/4826DANRRedactedExhibitList.pdf"
-        },
-        {
-          "label": "April 7, 2026 Notice of Postponement of April 13 through 17, 2026 Hearing on Clean Nuclear Energy's Uranium Exploration Permit Application",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/CleanNuclearNOTICEOFPOSTPONEMENT.pdf"
         }
       ],
-      "total_docs": 88,
+      "total_docs": 90,
       "latest_doc_date": "0000-00-00"
     },
     {
@@ -74,27 +74,27 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID117",
       "documents": [
         {
+          "label": "Potters' Proposed Order",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Potters - Proposed Order.pdf"
+        },
+        {
+          "label": "Potters' Proposed Findings of Fact and Conclusions of Law",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Potters - Proposed FOF and COL.pdf"
+        },
+        {
+          "label": "Exhibit A and B",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Exhibit A and B.pdf"
+        },
+        {
+          "label": "Potters' Post-Hearing Brief",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Potters - Post Hearing Brief.pdf"
+        },
+        {
           "label": "Extension of Briefing Schedule",
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/BriefingScheduleExtension.pdf"
-        },
-        {
-          "label": "Stipulated Motion for Extension of Briefing Schedule",
-          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Stipulated Extension of Briefing Schedule.pdf"
-        },
-        {
-          "label": "DANR Post-hearing Brief, Proposed Findings of Fact, Conclusions of Law & Order",
-          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/DANR Brief and Proposed Findings Conclusions.Madison RUS Permit Application.service 01 30 2026.pdf"
-        },
-        {
-          "label": "City of Madison's Proposed Findings of Fact",
-          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Proposed Findings of Fact- City of Madison RUS 1.29.2026 FDJJ.pdf"
-        },
-        {
-          "label": "City of Madison's Proposed Conclusions of Law",
-          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Proposed Conclusions of Law - City of Madison RUS 1.29.2026 FDJJ.pdf"
         }
       ],
-      "total_docs": 57,
+      "total_docs": 61,
       "latest_doc_date": "0000-00-00"
     },
     {

@@ -78,6 +78,17 @@
   },
   {
     "url": "https://crowpeakbrewing.com/",
+    "title": "Live At Budokan - Japanese Rice Radler",
+    "slug": "live-at-budokan-japanese-rice-radler",
+    "abv": "4.7%",
+    "ibu": "45",
+    "image_url": "https://crowpeakbrewing.com/wp-content/uploads/2026/04/Live_at_Budokan_Thumbnail.png",
+    "description": "",
+    "record_type": "beer",
+    "source_label": "Crow Peak Brewing"
+  },
+  {
+    "url": "https://crowpeakbrewing.com/",
     "title": "Dill With It - Pickle Gose",
     "slug": "dill-with-it-pickle-gose",
     "abv": "4.4%",
@@ -138,6 +149,28 @@
     "abv": "4.5%",
     "ibu": "13",
     "image_url": "https://crowpeakbrewing.com/wp-content/uploads/2026/02/9.png",
+    "description": "",
+    "record_type": "beer",
+    "source_label": "Crow Peak Brewing"
+  },
+  {
+    "url": "https://crowpeakbrewing.com/",
+    "title": "Fish Flop Apricaught Pale Ale",
+    "slug": "fish-flop-apricaught-pale-ale",
+    "abv": "4.6%",
+    "ibu": "13",
+    "image_url": "https://crowpeakbrewing.com/wp-content/uploads/2026/04/FishFlopApricaughtThumbnail.png",
+    "description": "",
+    "record_type": "beer",
+    "source_label": "Crow Peak Brewing"
+  },
+  {
+    "url": "https://crowpeakbrewing.com/",
+    "title": "Barbarosa - Red Lager",
+    "slug": "barbarosa-red-lager",
+    "abv": "5.7%",
+    "ibu": "36",
+    "image_url": "https://crowpeakbrewing.com/wp-content/uploads/2026/04/Small_Batch_Website_Thumbnail.png",
     "description": "",
     "record_type": "beer",
     "source_label": "Crow Peak Brewing"
