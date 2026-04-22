@@ -504,5 +504,49 @@
     "image_url": "https://npr.brightspotcdn.com/c7/4c/2e96992b47fd941d17bcdc1284c0/avera-behavioral-health-exterior.png",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-04-22/backyard-coops-approved-for-rapid-city-as-enthusiasts-stress-benefits",
+    "title": "Backyard coops approved for Rapid City as enthusiasts stress benefits",
+    "slug": "sdpb-backyard-coops-approved-for-rapid-city-as-enthusiasts-stress-benefits",
+    "published": "2026-04-22",
+    "byline": "By C.J. Keene",
+    "description": "Rapid City leadership has had their say: a ban on backyard chicken coops is for the birds.",
+    "image_url": "https://npr.brightspotcdn.com/8b/ef/1379687547c8bec0059532dc386e/image-64.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/healthcare/2026-04-22/federal-medicaid-expansion-engagement-requirements-could-impact-1-200-south-dakotans",
+    "title": "Federal Medicaid expansion engagement requirements could impact 1,200 South Dakotans",
+    "slug": "sdpb-federal-medicaid-expansion-engagement-requirements-could-impact-1200-south",
+    "published": "2026-04-22",
+    "byline": "By Jackson Dircks",
+    "description": "South Dakota’s Board of Department of Social Services is still wrapping its arms around the impacts of major federal legislation, in particular changes to Medicaid engagement requirements.",
+    "image_url": "https://npr.brightspotcdn.com/e1/d6/fd89716c4fa092842fc4d50344d7/woman-health-checkup.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-22/previewing-the-third-and-final-gop-gubernatorial-primary-debate",
+    "title": "Previewing the third and final GOP gubernatorial primary debate",
+    "slug": "sdpb-previewing-the-third-and-final-gop-gubernatorial-primary-debate",
+    "published": "2026-04-22",
+    "byline": "By Lori Walsh",
+    "description": "Two South Dakota Republican gubernatorial primary debates are in the books, and one more is on the horizon. We get a preview with this week's Dakota Political Junkies.",
+    "image_url": "https://npr.brightspotcdn.com/c1/8a/4a1ee3104d89a930ca42658449df/2026-political-junkies-logo-sdpb-1920x1080.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-21/jackley-tells-feds-communication-lacking-points-to-south-dakota-on-eminent-domain",
+    "title": "Jackley tells feds communication lacking, points to South Dakota on eminent domain",
+    "slug": "sdpb-jackley-tells-feds-communication-lacking-points-to-south-dakota-on-eminent",
+    "published": "2026-04-21",
+    "byline": "By Jackson Dircks",
+    "description": "South Dakota’s top legal official spoke on a Congressional roundtable looking at legal challenges facing American agriculture.",
+    "image_url": "https://npr.brightspotcdn.com/5f/eb/b9a480b249f08a41dae7d523b58a/image-35.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

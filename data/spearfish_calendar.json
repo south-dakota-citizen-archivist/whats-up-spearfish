@@ -568,5 +568,25 @@
     "start_dt": "Wed, 08 Apr 2026 11:04:48 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3565",
+    "title": "Ribbon Cutting - ADA Bench Project",
+    "slug": "ribbon-cutting-ada-bench-project",
+    "description": "<strong>Event date:</strong> April 23, 2026 <br /><strong>Event Time: </strong>01:00 PM - 11:59 PM<br /><strong>Location:</strong> <br />115 S Canyon St.<br />Spearfish, SD 57783",
+    "published": "Tue, 21 Apr 2026 15:08:09 -0700",
+    "start_dt": "Tue, 21 Apr 2026 15:08:09 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3264",
+    "title": "Lego Club (Ages 5+)",
+    "slug": "lego-club-ages-5",
+    "description": "<strong>Event date:</strong> May 6, 2026 <br /><strong>Event Time: </strong>03:30 PM - 04:30 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Join us for a once monthly Lego Club. Imagine. Build. Display! Show off your designs and creations. This program is designed for Ages 5+<br /><br />All ages welcome this time, as we will not have our older group in May due to early voting.<br /><br />Please do not bring your own Legos.",
+    "published": "Fri, 10 Apr 2026 13:31:39 -0700",
+    "start_dt": "Fri, 10 Apr 2026 13:31:39 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

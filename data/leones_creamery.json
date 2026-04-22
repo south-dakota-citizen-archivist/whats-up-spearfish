@@ -19,19 +19,10 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/0025C9FF-7582-4168-89E7-6A0E60B07F41-239-1535075972.jpg",
-    "title": "Chocolate Kit Kat",
-    "slug": "chocolate-kit-kat",
-    "description": "Creamy, malted chocolate ice cream full of chopped KitKat bars!",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/D333DDE8-4B8B-4FCE-BB44-7284B95F20B9-197-1528419924.jpg",
-    "title": "Peanut Butter M&M",
-    "slug": "peanut-butter-m-m",
-    "description": "Creamy peanut butter ice cream, chock-full of mini peanut butter M&Ms!",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/65630E5D-FB51-4AE5-AFCF-79FA31710AB8-287-1556081408.jpg",
+    "title": "Planet Earth",
+    "slug": "planet-earth",
+    "description": "Our vanilla ice cream that we dye blue with butterfly pea flower powder! We toss in pieces of housemade brownies and matcha cake, so each scoop looks like a little planet Earth!",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
@@ -50,6 +41,15 @@
     "title": "Lemon Poppy Seed",
     "slug": "lemon-poppy-seed",
     "description": "A Leones' Creamery classic! Sweet, lemony ice cream that tastes JUST like one of our favorite pound cakes.",
+    "record_type": "flavor",
+    "source_label": "Leone's Creamery"
+  },
+  {
+    "url": "https://leonescreamery.com/flavors",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/0025C9FF-7582-4168-89E7-6A0E60B07F41-239-1535075972.jpg",
+    "title": "Chocolate Kit Kat",
+    "slug": "chocolate-kit-kat",
+    "description": "Creamy, malted chocolate ice cream full of chopped KitKat bars!",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },

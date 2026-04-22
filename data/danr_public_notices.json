@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-21T17:58:01.770736+00:00",
+  "fetched_at": "2026-04-22T17:58:16.005534+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -1223,6 +1223,24 @@
       ]
     },
     {
+      "notice_type": "Concentrated Animal Feeding Operations (NPDES Permit)",
+      "deadline": "05/07/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/07/2026&name=New Fashion Pork, LLP&pntype=fp_cafo_npdes&description=Modification to an Existing NPDES Permitted Swine Feeding Operation Consisting of Including Additional Land Application Acres for Amended Coverage - NPDES Permit",
+      "name": "New Fashion Pork, LLP",
+      "description": "Modification to an Existing NPDES Permitted Swine Feeding Operation Consisting of Including Additional Land Application Acres for Amended Coverage - NPDES Permit",
+      "location": "Miner County",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/NewFashionPorkPN6.pdf"
+        },
+        {
+          "label": "Recommendation",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/NewFashionPorkPN6RecommendationReport.pdf"
+        }
+      ]
+    },
+    {
       "notice_type": "Surface Water Discharge (NPDES)",
       "deadline": "05/08/2026",
       "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/08/2026&name=International Paper Co&pntype=sw_npdes&description=International Paper Co is directed by the South Dakota Department of Agriculture and Natural Resources to have no discharge from its facility located southeast of the city of Whitewood in Lawrence County.",
@@ -1320,6 +1338,27 @@
         {
           "label": "Draft Permit",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_Presho_RU_26_IP.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "05/22/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/22/2026&name=KNTC, LLC, dba Sioux Marble&pntype=aq&description=Sioux Marble proposes to renew their minor operating permit for manufacturing cultured marble products. DANR recommends issuance of a renewed minor air quality permit.",
+      "description": "Sioux Marble proposes to renew their minor operating permit for manufacturing cultured marble products. DANR recommends issuance of a renewed minor air quality permit.",
+      "location": "Brandon",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/KNTCpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/KNTCdp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/KNTCsb.pdf"
         }
       ]
     },

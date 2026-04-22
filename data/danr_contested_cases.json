@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-21T18:00:13.243834+00:00",
+  "fetched_at": "2026-04-22T18:00:19.974952+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -10,11 +10,15 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID123",
       "documents": [
         {
+          "label": "April 2, 2026 Supplemental Exhibit List from Clean Nuclear Energy Containing Redacted Versions of Vantage Point Cultural Resources Reports",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/4226CNECSupplementalExhibitList.pdf"
+        },
+        {
           "label": "April 20, 2026 Notice of Entry of Order on Requests for the Board of Minerals and Environment to Overturn Certain Orders of the Hearing Chair",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/42126OrderOverturnHearingChair.pdf"
         },
         {
-          "label": "April 20, 2026 Notice of Filing of Sealed Reports Submitted by Clean Nuclear Energy Which Includes Unredacted Versions of Vantage Point Archaeologic Reports",
+          "label": "April 20, 2026 Notice of Filing of Sealed Reports Submitted by Clean Nuclear Energy Which Includes Unredacted Versions of Vantage Point Cultural Resources Reports",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/42026CNECNoticeofFilingSealedReports.pdf"
         },
         {
@@ -24,13 +28,9 @@
         {
           "label": "April 13, 2026 Notice of Unavailability of Steven Gunn from May 13 Through 15, 2026 for any potential Board of Minerals and Environment Hearing on Clean Nuclear Energy's Uranium Exploration Permit Application",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/41326GunnNoticeofUnavailability.pdf"
-        },
-        {
-          "label": "April 8, 2026 DANR Notice of Filing of Sealed Report Which Includes Unredacted Versions of State Historical Preservation Office and Archaeological Research Center Reports",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/4826DANRNoticeSealedFiling.pdf"
         }
       ],
-      "total_docs": 90,
+      "total_docs": 91,
       "latest_doc_date": "0000-00-00"
     },
     {

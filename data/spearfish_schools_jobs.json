@@ -102,5 +102,18 @@
     "description": "Position type: Student Support Services/ · Location: Spearfish School District · Closes: Open Until Filled",
     "record_type": "job",
     "source_label": "Spearfish School District"
+  },
+  {
+    "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4569&posFirstChoice=Support%20Staff/",
+    "title": "Elementary Educational Support Personnel(s) (paraprofessionals)",
+    "slug": "4569-elementary-educational-support-personnel-s-paraprofessionals",
+    "location": "Spearfish School District",
+    "district": "Spearfish School District",
+    "position_type": "Support Staff/",
+    "published": "4/21/2026",
+    "closing": "Open Until Filled",
+    "description": "Position type: Support Staff/ · Location: Spearfish School District · Closes: Open Until Filled",
+    "record_type": "job",
+    "source_label": "Spearfish School District"
   }
 ]
