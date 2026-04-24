@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-23T18:11:14.141104+00:00",
+  "fetched_at": "2026-04-24T17:50:59.755128+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -158,6 +158,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID129",
       "documents": [
         {
+          "label": "Notice of Appearance - Legal Counsel for Petitioners (Heinz & Abarca)",
+          "url": "https://danr.sd.gov/wrimage/pub/8991-3_notappear_pet.pdf"
+        },
+        {
           "label": "Pre-Hearing Submission by Counsel for Applicant",
           "url": "https://danr.sd.gov/wrimage/pub/8991-3_prehearingsub_ex.pdf"
         },
@@ -172,13 +176,9 @@
         {
           "label": "Notice of Appearance - Legal Counsel for Applicant",
           "url": "https://danr.sd.gov/wrimage/pub/8991-3_notapp_app.pdf"
-        },
-        {
-          "label": "Response to Motion to Dismiss a Petitioner - Abarca",
-          "url": "https://danr.sd.gov/wrimage/pub/8991-3_Abarca.pdf"
         }
       ],
-      "total_docs": 16,
+      "total_docs": 17,
       "latest_doc_date": "0000-00-00"
     },
     {
@@ -222,6 +222,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID126",
       "documents": [
         {
+          "label": "Notice of Appearance - Legal Counsel for Petitioners (Heinz)",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3_notappear_pet.pdf"
+        },
+        {
           "label": "Pre-Hearing Submission by Counsel for Applicant",
           "url": "https://danr.sd.gov/wrimage/pub/8982-3_prehearingsub_ex.pdf"
         },
@@ -236,13 +240,9 @@
         {
           "label": "Notice of Appearance - Legal Counsel for Applicant",
           "url": "https://danr.sd.gov/wrimage/pub/8982-3_notapp_app.pdf"
-        },
-        {
-          "label": "Filings Submitted by Counsel for the Chief Engineer",
-          "url": "https://danr.sd.gov/wrimage/pub/8982-3_con_SO.pdf"
         }
       ],
-      "total_docs": 17,
+      "total_docs": 18,
       "latest_doc_date": "0000-00-00"
     },
     {

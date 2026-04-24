@@ -466,5 +466,17 @@
     "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/04/Ballroom-Dance-Event-Brite-2160-x-1080-px-2.jpg",
     "record_type": "event",
     "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "Creativity on Tap @ Crow Peak Brewing",
+    "url": "https://www.matthewsopera.com/event/creativity-on-tap-crow-peak-brewing/",
+    "slug": "creativity-on-tap-crow-peak-brewing",
+    "start_dt": "2026-05-10T13:00:00-06:00",
+    "end_dt": "2026-05-10T14:00:00-06:00",
+    "description": "Join Annalina, our Community Outreach Coordinator, for a fun and relaxed Sip & Paint afternoon at Crow Peak Brewing Company! This step-by-step creative workshop is open to artists of all […] \\n",
+    "location": "Crow Peak Brewing",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/04/Creativity-on-Tap-5-10.jpg",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
   }
 ]

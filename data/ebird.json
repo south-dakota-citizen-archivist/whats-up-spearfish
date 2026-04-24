@@ -1,6 +1,19 @@
 {
-  "fetched_at": "2026-04-23T18:08:07.559263+00:00",
+  "fetched_at": "2026-04-24T17:47:06.518425+00:00",
   "observations": [
+    {
+      "species_code": "lazbun",
+      "common_name": "Lazuli Bunting",
+      "scientific_name": "Passerina amoena",
+      "observed_on": "2026-04-23",
+      "count": 1,
+      "location_name": "832 Harmon St, Sturgis US-SD 44.40171, -103.50754",
+      "lat": 44.401707,
+      "lng": -103.507541,
+      "location_id": "L58979115",
+      "checklist_id": "S326028315",
+      "photo_url": "https://static.inaturalist.org/photos/217851140/square.jpeg"
+    },
     {
       "species_code": "baleag",
       "common_name": "Bald Eagle",
@@ -637,19 +650,6 @@
       "location_id": "L319397",
       "checklist_id": "S323168842",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/251848544/square.jpg"
-    },
-    {
-      "species_code": "rudduc",
-      "common_name": "Ruddy Duck",
-      "scientific_name": "Oxyura jamaicensis",
-      "observed_on": "2026-04-14",
-      "count": 5,
-      "location_name": "Bear Butte Lake",
-      "lat": 44.4563502,
-      "lng": -103.4452331,
-      "location_id": "L319397",
-      "checklist_id": "S323168842",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/399154969/square.jpg"
     }
   ]
 }

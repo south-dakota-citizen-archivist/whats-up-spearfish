@@ -1622,5 +1622,27 @@
     "category": "Campus Calendar/Events",
     "record_type": "event",
     "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "06bc58ae-0f3b-4868-8a20-9fa60abf400a",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/06bc58ae-0f3b-4868-8a20-9fa60abf400a",
+    "title": "Breaking Silence: Know My Name Community Book Read and Panel Discussion",
+    "slug": "breaking-silence-know-my-name-community-book-read-and-panel-discussion",
+    "description": "Know My Name by Chanel Miller Henry’s Books In Know My Name, the reader experiences Chanel Miller’s brilliantly-written memoir about her experience of being sexually assaulted by a Stanford University athlete and the many ways she copes and recovers from a life-altering experience. Formerly known as “Emily Doe—the unconscious intoxicated woman,” Chanel Miller comes out to the world to describe what happened after the assault, the process of sharing her story, mental health challenges, bystander awareness, creativity and coping, the legal process, toxic masculinity, and many more themes that are of fundamental concern for our community. Join us for this powerful panel featuring experts that have assisted survivors of sexual violence. Hear local panelists share their knowledge and actionable strategies for social change. Be a part of the conversation tackling social norms...you can make a difference! Please note: this event and book contains mature content and may not be suitable for all readers. Submit Questions for the panel and learn more https://www.artemishouse.org/awareness Join the Community Book Read Facebook Discussion Group in April https://www.facebook.com/groups/readwithartemis Expert Panelists Tracy Dollison Decker, The Network Against Family Violence & Sexual Assault Attorney Consultant & Advisor Rebecka Funk, LPC-MH Black Hills State University Licensed Counselor Samuel Funk, Spearfish PD Detective Jeanie Berns, Artemis House Advocate Tifanie Petro, MS Pennington County Victim Services Director",
+    "start_dt": "2026-05-01T00:30",
+    "end_dt": "2026-05-01T00:30",
+    "location": "Matthews Opera House",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "",
+    "tags": [
+      "Community Event",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
   }
 ]

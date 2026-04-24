@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-23T18:08:53.751737+00:00",
+  "fetched_at": "2026-04-24T17:48:52.054988+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -1038,28 +1038,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/2904-2_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Surface Water Discharge (NPDES)",
-      "deadline": "04/23/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/23/2026&name=City of Summerset&pntype=sw_npdes&description=The City of Summerset is authorized under this permit to discharge to an unnamed tributary of Stagebarn Canyon Creek from its wastewater treatment facility located in Meade County.",
-      "name": "City of Summerset",
-      "description": "The City of Summerset is authorized under this permit to discharge to an unnamed tributary of Stagebarn Canyon Creek from its wastewater treatment facility located in Meade County.",
-      "location": "Meade County",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/SummersetPNDraftFacReview.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/SummersetPermitDraftFacReview.pdf"
-        },
-        {
-          "label": "Statement of Basis",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/SummersetSOBDraftFacRev.pdf"
         }
       ]
     },

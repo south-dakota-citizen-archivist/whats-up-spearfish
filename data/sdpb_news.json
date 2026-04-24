@@ -592,5 +592,60 @@
     "image_url": "https://npr.brightspotcdn.com/27/7e/71088d4240c3948f83478a494867/raccoon.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-24/doc-lacks-population-specific-programs-otherwise-has-right-things-in-place",
+    "title": "DOC lacks population-specific programs, otherwise has 'right things' in place",
+    "slug": "sdpb-doc-lacks-population-specific-programs-otherwise-has-right-things-in-place",
+    "published": "2026-04-24",
+    "byline": "By Jackson Dircks",
+    "description": "South Dakota’s Department of Corrections has the “right” programming, but not the means to implement all its goals. It's also lacking in programming for certain populations, like Native Americans. That’s the latest from a task force aimed at rehabilitation reform and lowering recidivism.",
+    "image_url": "https://npr.brightspotcdn.com/e7/da/eeb707d942d7b0fd405c7058b7c6/img-2161-jpg.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-24/motorcycle-training-range-darn-good-value-for-taxpayers-advocates-say",
+    "title": "Motorcycle training range 'darn good value' for taxpayers, advocates say",
+    "slug": "sdpb-motorcycle-training-range-darn-good-value-for-taxpayers-advocates-say",
+    "published": "2026-04-24",
+    "byline": "By Jackson Dircks",
+    "description": "A new training range in Sioux Falls is something officials are calling a win for taxpayers and roadway safety.",
+    "image_url": "https://npr.brightspotcdn.com/50/cc/489846504489958288c0ad997213/img-2203-1.JPG",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/arts-life/2026-04-24/south-dakota-symphony-premieres-iranian-composers-tribute-to-persistence",
+    "title": "South Dakota Symphony premieres Iranian composer's tribute to persistence",
+    "slug": "sdpb-south-dakota-symphony-premieres-iranian-composer-s-tribute-to-persistence",
+    "published": "2026-04-24",
+    "byline": "By Lori Walsh",
+    "description": "South Dakota's premiere orchestra heads to a season finale with music from the Middle East, a piano concerto, and a showcase of the orchestra's musicians.",
+    "image_url": "https://npr.brightspotcdn.com/52/a4/27ad8392458d90c0af200f3647e9/website-photo-1.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-23/some-county-auditors-still-without-ballots-a-week-after-deadline",
+    "title": "Some county auditors still without ballots a week after deadline",
+    "slug": "sdpb-some-county-auditors-still-without-ballots-a-week-after-deadline",
+    "published": "2026-04-23",
+    "byline": "By C.J. Keene",
+    "description": "A delay in absentee ballot deliveries is continuing to impact voters in communities across the state. As of Thursday, several of the county auditors SDPB reached out to have not yet received their 2026 primary ballots.",
+    "image_url": "https://npr.brightspotcdn.com/12/8e/f3f2d00047c696fbcd7229c16c0f/rapid-city-vote-voting-sign-election.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-04-23/brookings-urban-forest-initiative-returns",
+    "title": "Brookings' Urban Forest Initiative returns",
+    "slug": "sdpb-brookings-urban-forest-initiative-returns",
+    "published": "2026-04-23",
+    "byline": "By SDPB News Staff",
+    "description": "The city of Brookings is bringing back its Urban Forest Initiative this year.",
+    "image_url": "https://npr.brightspotcdn.com/f1/57/a9ba13bd4591a76ca9525611477f/brookings-sign.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]
