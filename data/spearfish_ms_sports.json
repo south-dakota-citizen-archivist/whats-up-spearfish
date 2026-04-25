@@ -3134,5 +3134,37 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish MS Sports"
+  },
+  {
+    "uid": "h20260424070916414763d2fdc486c4b",
+    "url": "https://gobound.com/direct/comps/h20260424070916414763d2fdc486c4b/show",
+    "title": "Boys Track & Field: MS Track Meet - Gillette (Middle School)",
+    "slug": "boys-track-field-ms-track-meet-gillette-middle-school",
+    "sport": "Boys Track & Field",
+    "level": "Middle School",
+    "sex": "male",
+    "description": "Middle School Boys Track & Field - MS Track Meet - Gillette",
+    "start_dt": "2026-05-05T14:00:00",
+    "end_dt": "2026-05-05T23:00:00",
+    "location": "Sage Valley Junior High School",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish MS Sports"
+  },
+  {
+    "uid": "h202604240708585419779999cd29846",
+    "url": "https://gobound.com/direct/comps/h202604240708585419779999cd29846/show",
+    "title": "Girls Track & Field: MS Track Meet - Gillette (Middle School)",
+    "slug": "girls-track-field-ms-track-meet-gillette-middle-school",
+    "sport": "Girls Track & Field",
+    "level": "Middle School",
+    "sex": "female",
+    "description": "Middle School Girls Track & Field - MS Track Meet - Gillette",
+    "start_dt": "2026-05-05T14:00:00",
+    "end_dt": "2026-05-05T23:00:00",
+    "location": "Sage Valley Junior High School",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish MS Sports"
   }
 ]
