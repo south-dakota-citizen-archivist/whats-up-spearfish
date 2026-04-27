@@ -647,5 +647,27 @@
     "image_url": "https://npr.brightspotcdn.com/f1/57/a9ba13bd4591a76ca9525611477f/brookings-sign.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-04-27/state-supreme-court-rules-in-favor-of-officers-in-marsys-law-debate",
+    "title": "State Supreme Court rules in favor of officers in 'Marsy's Law' debate",
+    "slug": "sdpb-state-supreme-court-rules-in-favor-of-officers-in-marsy-s-law-debate",
+    "published": "2026-04-27",
+    "byline": "By C.J. Keene",
+    "description": "The South Dakota Supreme Court unanimously rules that certain crime victim protections extend to law enforcement officers.",
+    "image_url": "https://npr.brightspotcdn.com/ee/ae/9b81af9a40fa81dc76893d02e60e/2146702d0a-supreme-court-29jg.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/healthcare/2026-04-27/rapid-city-leaders-await-next-round-of-opioid-settlement-dollars",
+    "title": "Rapid City leaders await next round of opioid settlement dollars",
+    "slug": "sdpb-rapid-city-leaders-await-next-round-of-opioid-settlement-dollars",
+    "published": "2026-04-27",
+    "byline": "By C.J. Keene",
+    "description": "Pennington County, one of many named in nationwide opioid legal settlements, is now looking to use that windfall wisely. Local leadership heard a presentation on the matter that included the priorities for addiction treatment.",
+    "image_url": "https://npr.brightspotcdn.com/f4/ec/be868c544e028ebaf5ea8aea6abc/4bb6b76d6e-hc-pill-bottle.png",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

@@ -19,6 +19,15 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/0025C9FF-7582-4168-89E7-6A0E60B07F41-239-1535075972.jpg",
+    "title": "Chocolate Kit Kat",
+    "slug": "chocolate-kit-kat",
+    "description": "Creamy, malted chocolate ice cream full of chopped KitKat bars!",
+    "record_type": "flavor",
+    "source_label": "Leone's Creamery"
+  },
+  {
+    "url": "https://leonescreamery.com/flavors",
     "image_url": "https://leonescreamery.com/images/uploads/cropped/IMG_0716-120-1523320712.jpg",
     "title": "Rum Raisin",
     "slug": "rum-raisin",
@@ -46,19 +55,10 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/0025C9FF-7582-4168-89E7-6A0E60B07F41-239-1535075972.jpg",
-    "title": "Chocolate Kit Kat",
-    "slug": "chocolate-kit-kat",
-    "description": "Creamy, malted chocolate ice cream full of chopped KitKat bars!",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/0AAC4A34-E741-4CFE-95F6-0ABD152D7FF0-176-1526843464.jpg",
-    "title": "Cherry Chip",
-    "slug": "cherry-chip",
-    "description": "Sweet, nostalgic cherry ice cream, chock-full of mini chocolate chips",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/Blackberry-Lemon-154-1541962966.jpg",
+    "title": "Blackberry Lemon",
+    "slug": "blackberry-lemon",
+    "description": "Bursting with sweet blackberries and tart lemon, this ice cream is a favorite among fruit fans!",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
