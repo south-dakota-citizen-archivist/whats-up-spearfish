@@ -669,5 +669,38 @@
     "image_url": "https://npr.brightspotcdn.com/f4/ec/be868c544e028ebaf5ea8aea6abc/4bb6b76d6e-hc-pill-bottle.png",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-04-28/flandreau-celebrates-new-boys-girls-club-child-care-center",
+    "title": "Flandreau celebrates new Boys & Girls Club child care center",
+    "slug": "sdpb-flandreau-celebrates-new-boys-girls-club-child-care-center",
+    "published": "2026-04-28",
+    "byline": "By Jackie Hendry",
+    "description": "The Clubhouse Early Childhood Enrichment Center is the result of a partnership between the Boys & Girls Club of the Northern Plains, the Flandreau Santee Sioux Tribe, the City of Flandreau, Dakota Layers egg farm and others.",
+    "image_url": "https://npr.brightspotcdn.com/41/db/13530dbf4293a4c52d873627a1af/image-2.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-04-28/free-customer-service-training-sessions-across-state-next-week",
+    "title": "Free customer service training sessions across state next week",
+    "slug": "sdpb-free-customer-service-training-sessions-across-state-next-week",
+    "published": "2026-04-28",
+    "byline": "By Jackson Dircks",
+    "description": "Travel South Dakota and the South Dakota Retailers Association are holding free seminars to customer service businesses.",
+    "image_url": "https://npr.brightspotcdn.com/78/dd/2c91c36144cbbd1a89f86f41d3cb/south-dakota-retailers-association-sdra.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-27/two-local-governments-violated-open-meeting-laws-commission-says",
+    "title": "Two local governments violated open meeting laws, commission says",
+    "slug": "sdpb-two-local-governments-violated-open-meeting-laws-commission-says",
+    "published": "2026-04-27",
+    "byline": "By Jackson Dircks",
+    "description": "A state commission finds two local government entities violated open meetings laws, while asking for more information on two other complaints.",
+    "image_url": "https://npr.brightspotcdn.com/legacy/prod/blog/20160928_214941_257052_south_dakota_state_capitol_front_with_clouds.jpeg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

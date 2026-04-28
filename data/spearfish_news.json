@@ -88,5 +88,15 @@
     "start_dt": "Mon, 20 Apr 2026 10:26:59 -0700",
     "record_type": "press_release",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/CivicAlerts.aspx?aid=555",
+    "title": "Safety Action Plan Survey",
+    "slug": "safety-action-plan-survey",
+    "description": "Cast your vote for your favorite transportation projects recommended by the city's Safety Action Plan!",
+    "published": "Mon, 27 Apr 2026 15:18:25 -0700",
+    "start_dt": "Mon, 27 Apr 2026 15:18:25 -0700",
+    "record_type": "press_release",
+    "source_label": "City of Spearfish"
   }
 ]

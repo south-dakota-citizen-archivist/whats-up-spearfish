@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-27T18:06:56.856517+00:00",
+  "fetched_at": "2026-04-28T18:18:08.046445+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -9,6 +9,10 @@
       "description": "Proposed uranium exploration project seven miles north of Edgemont, SD.  Up to 50 holes will be drilled to a maximum vertical depth of 700 feet.  In addition, 50 drill platforms will be created with a dimension of 60 feet by 60 feet.  Exploration will be conducted using reverse circulation drilling with sumps.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID123",
       "documents": [
+        {
+          "label": "April 27, 2026 Supplemental Exhibit List from Clean Nuclear Energy Containing the Chord Project Water Quality Evaluation",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/042726SupplementalWaterQualityExhibit.pdf"
+        },
         {
           "label": "April 2, 2026 Supplemental Exhibit List from Clean Nuclear Energy Containing Redacted Versions of Vantage Point Cultural Resources Reports",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/4226CNECSupplementalExhibitList.pdf"
@@ -24,13 +28,9 @@
         {
           "label": "April 13, 2026 Notice of Hearing for Clean Nuclear Energy's Uranium Exploration Permit Application to Intervening Parties",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/41326NoticeofHearingtoParties.pdf"
-        },
-        {
-          "label": "April 13, 2026 Notice of Unavailability of Steven Gunn from May 13 Through 15, 2026 for any potential Board of Minerals and Environment Hearing on Clean Nuclear Energy's Uranium Exploration Permit Application",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/41326GunnNoticeofUnavailability.pdf"
         }
       ],
-      "total_docs": 91,
+      "total_docs": 92,
       "latest_doc_date": "0000-00-00"
     },
     {

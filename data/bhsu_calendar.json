@@ -1644,5 +1644,80 @@
     "category": "Campus Calendar/Events",
     "record_type": "event",
     "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "d1cc6f65-2ee8-4c3a-9105-fe017ae4f1c9",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/d1cc6f65-2ee8-4c3a-9105-fe017ae4f1c9",
+    "title": "BHSU Annual Student Juried Art Exhibit",
+    "slug": "bhsu-annual-student-juried-art-exhibit",
+    "description": "The Ruddell Gallery at BHSU presents the Annual Student Juried Art Exhibit! The Opening Reception will take place in the Ruddell Gallery on Tuesday, April 28th from 5:00PM until 7:00PM. Awards will be announced at 5:30PM. This year's exhibit was juried by Ashley Jones, Professor of Photography from Savannah College of Art and Design (SCAD). Please come celebrate the artistic merit of our BHSU students! Light refreshments will be served. This event is open to the public.",
+    "start_dt": "2026-04-28T23:00",
+    "end_dt": "2026-04-29T01:00",
+    "location": "Ruddell Gallery",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "Desy Schoenewies",
+    "tags": [
+      "BHSU Event",
+      "Student Life",
+      "Academics",
+      "Gallery Exhibition",
+      "College of Liberal Arts",
+      "Career Development",
+      "College of Business and Natural Sciences",
+      "College of Education and Behavioral Sciences",
+      "Home",
+      "Future Yellow Jackets"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "11e21c54-e33b-4eac-a129-7f10902a34f4",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/11e21c54-e33b-4eac-a129-7f10902a34f4",
+    "title": "Intro to Acting/Advanced Creative Writing Showcase: The Girl with a Dolphin Tattoo",
+    "slug": "intro-to-acting-advanced-creative-writing-showcase-the-girl-with-a-dolphin",
+    "description": "Join us in the Black Box Theater for the Grand Premiere of \"The Girl with a Dolphin Tattoo\"--a collaborative play written by this semester's Advanced Creative Writing class and produced/performed by the Introduction to Acting class. Follow the hapless crew of Channel 6 News as they try to survive an absurd News-a-Palooza weekend that might include a mysterious murder, corporate sabotage, a romance (or two), gambling, a ghost, beef stroganoff, a coloscopy, and an art film! This event is free and open to the public with showings on May 6th & May 7th from 7-9pm!",
+    "start_dt": "2026-05-07T01:00",
+    "end_dt": "2026-05-08T03:00",
+    "location": "Woodburn Black Box Theater",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "Casey Hibbert",
+    "tags": [
+      "BHSU Event",
+      "Theatre",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "484a3086-1745-43ad-a88e-40bcf80bc733",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/484a3086-1745-43ad-a88e-40bcf80bc733",
+    "title": "BHSU Senior Thesis Art Exhibit",
+    "slug": "bhsu-senior-thesis-art-exhibit",
+    "description": "Please join us on Friday, May 8th from 5:00PM to 7:00PM at the Dahl Arts Center in Rapid City, SD for the opening reception of the BHSU Senior Art Exhibition. The Black Hills State University Senior Art Exhibition offers a diverse blend of media and methodology, featuring the work of thirty-three Fine Art Seniors. These individuals represent a group of cultural advocates that are making an impact through both their artistic and educational accomplishments. Every spring this popular exhibition introduces the Black Hills State University campus and Northern Hills audiences to the work of our BHSU Senior Fine Art Students. The exhibition highlights a wide range of artistic formats and reflects the broad scope of interests by each graduating student, providing a thought-provoking experience for students, faculty, and community members. Ultimately, the Senior Exhibition catalogs a pivotal moment of many young artists graduating from Black Hills State University. This exhibition is intended to be a reference revealing connections to current students, highlighting their studio practice, while marking a meaningful step further into the art world. The exhibition celebrates senior’s exceptional curiosity, creativity, and inventiveness, focused in an area of concentration and contemplation and further situating their work within the larger discourse which characterizes the practice of art today. Showcasing student works in such a scale has been a tradition at BHSU, it is what makes the Senior Exhibition an unparalleled, seminal experience for students and the campus community. Studio Art Majors Aristotle Dausch Rae Hanzlik Christian Mueller Trinity Mutchler Sophie Nieman Abigail Popken Tam Smith Hollie Hight Katie Farley Rosa Link Art Education Majors Catera Link Reilly Lane Anna Romero Ella Lickei Emma Euneau Photography Alec Butterfield Joshua Hall Mercedes Reed Maralee Rischling McKayli Simpson Noah Westergaard Julia Wilson Journee Bachand Graphic Design Alivia Pautz Brooke Lammle Grace Beck Grant Koening Jesse Powers Katelyn Lueth Elizabeth Richardson Maquelle Strawn Jacob Zundel Amber Aymar",
+    "start_dt": "2026-05-08T23:00",
+    "end_dt": "2026-05-09T01:00",
+    "location": "Dahls Art Center Rapid City",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "Desy Schoenewies",
+    "tags": [
+      "College of Liberal Arts",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
   }
 ]
