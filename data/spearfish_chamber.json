@@ -1467,5 +1467,31 @@
     "website": "https://www.eventbrite.com/e/ballroom-dance-class-registration-1987844439229?aff=oddtdtcreator",
     "record_type": "event",
     "source_label": "Spearfish Chamber"
+  },
+  {
+    "url": "https://business.spearfishchamber.org/events/details/vfw-day-of-service-30776",
+    "title": "VFW Day of Service",
+    "slug": "vfw-day-of-service",
+    "start_dt": "2026-05-02 8:00 AM MDT",
+    "end_dt": "2026-05-02 10:00 AM MDT",
+    "location": "Queen City VFW Post 5860 3102 E Fairground Loop Spearfish, SD 57783",
+    "fees": "",
+    "description": "Meet us at the VFW as we clean up the ditches from the McGuigan Road to Guadalajaras. Bring gloves and sunscreen.",
+    "website": "",
+    "record_type": "event",
+    "source_label": "Spearfish Chamber"
+  },
+  {
+    "url": "https://business.spearfishchamber.org/events/details/northern-hills-republican-women-monthly-mtg-30779",
+    "title": "Northern Hills Republican Women Monthly mtg",
+    "slug": "northern-hills-republican-women-monthly-mtg",
+    "start_dt": "2026-05-05 5:30 PM MDT",
+    "end_dt": "2026-05-05 7:00 PM MDT",
+    "location": "VFW, 3102 Fairground Loop, Spearfish",
+    "fees": "None",
+    "description": "Speaker: We welcome members of Mr. Pat Gainey's \"We The People\" civics class from Spearfish High School. Topic: The students will share their experiences from the 2026 We the People National Finals competition in Washington DC. We the People: The Citizen and the Constitution promotes a greater understanding of our constitutional democracy, its institutions, and its fundamental principles and values. Spearfish High School has offered this curriculum for many years to develop the skills needed to become effective and responsible citizens and to learn how to think rather than what to think. Pizza available for purchase",
+    "website": "https://www.northernhillsrepublicanwomen.org/",
+    "record_type": "event",
+    "source_label": "Spearfish Chamber"
   }
 ]

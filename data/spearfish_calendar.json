@@ -638,5 +638,15 @@
     "start_dt": "Mon, 15 Dec 2025 16:12:37 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3181",
+    "title": "City Council Study Session",
+    "slug": "city-council-study-session",
+    "description": "<strong>Event date:</strong> May 13, 2026 <br /><strong>Event Time: </strong>05:15 PM - 06:15 PM<br /><strong>Location:</strong> <br />City Hall<br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Fri, 12 Dec 2025 15:11:22 -0700",
+    "start_dt": "Fri, 12 Dec 2025 15:11:22 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

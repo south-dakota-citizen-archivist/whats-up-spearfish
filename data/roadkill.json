@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-29T04:00:34.703795+00:00",
+  "fetched_at": "2026-04-29T18:16:17.066218+00:00",
   "lookback_days": 30,
   "records": [
     {
@@ -2640,97 +2640,6 @@
       "lat": 44.485761,
       "lon": -103.650912,
       "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/66363/attachments/9061"
-    },
-    {
-      "objectid": 66255,
-      "date": "2026-03-30",
-      "species": "White-tailed Deer",
-      "highway": "89",
-      "sex": "Female",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Chris Moeller",
-      "lat": 43.514339,
-      "lon": -103.662559,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/66255/attachments/8952"
-    },
-    {
-      "objectid": 66256,
-      "date": "2026-03-30",
-      "species": "Small Animal",
-      "highway": "18",
-      "sex": "",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Chris Moeller",
-      "lat": 43.340746,
-      "lon": -103.379914,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/66256/attachments/8953"
-    },
-    {
-      "objectid": 66257,
-      "date": "2026-03-30",
-      "species": "Small Animal",
-      "highway": "18",
-      "sex": "",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Chris Moeller",
-      "lat": 43.336489,
-      "lon": -103.37531,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/66257/attachments/8954"
-    },
-    {
-      "objectid": 66258,
-      "date": "2026-03-30",
-      "species": "White-tailed Deer",
-      "highway": "18",
-      "sex": "Female",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Chris Moeller",
-      "lat": 43.316543,
-      "lon": -103.352695,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/66258/attachments/8955"
-    },
-    {
-      "objectid": 66265,
-      "date": "2026-03-30",
-      "species": "Mule Deer",
-      "highway": "18",
-      "sex": "Male",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Chris Moeller",
-      "lat": 43.360803,
-      "lon": -103.396073,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/66265/attachments/8962"
-    },
-    {
-      "objectid": 66266,
-      "date": "2026-03-30",
-      "species": "Small Animal",
-      "highway": "18",
-      "sex": "",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Chris Moeller",
-      "lat": 43.392012,
-      "lon": -103.40194,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/66266/attachments/8963"
-    },
-    {
-      "objectid": 66267,
-      "date": "2026-03-30",
-      "species": "Small Animal",
-      "highway": "79",
-      "sex": "",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Chris Moeller",
-      "lat": 43.461391,
-      "lon": -103.349832,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/66267/attachments/8964"
     }
   ]
 }

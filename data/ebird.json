@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-29T03:57:43.969887+00:00",
+  "fetched_at": "2026-04-29T18:12:58.125933+00:00",
   "observations": [
     {
       "species_code": "amecro",
@@ -116,7 +116,7 @@
       "lng": -103.8615489,
       "location_id": "L2265498",
       "checklist_id": "S328099767",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/6903515/square.jpg"
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/91878521/square.jpg"
     },
     {
       "species_code": "haiwoo",

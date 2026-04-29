@@ -1,6 +1,22 @@
 {
-  "fetched_at": "2026-04-29T03:57:56.630359+00:00",
+  "fetched_at": "2026-04-29T18:13:18.775158+00:00",
   "records": [
+    {
+      "id": 11867,
+      "record_no": "MFP-26-6",
+      "record_type": "Major Final Plat",
+      "record_type_id": 6439,
+      "category": "planning",
+      "status": 1,
+      "date_created": "2026-04-29T15:59:43.726Z",
+      "date_submitted": "2026-04-29T16:08:46.000Z",
+      "last_updated": "2026-04-29T16:45:29.613Z",
+      "address": "",
+      "lat": 44.473871,
+      "lon": -103.751873,
+      "applicant": "Kevin Lowe",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/11867"
+    },
     {
       "id": 11864,
       "record_no": "",
@@ -2170,7 +2186,7 @@
       "status": 1,
       "date_created": "2025-11-14T18:59:20.100Z",
       "date_submitted": "2025-11-14T19:13:40.000Z",
-      "last_updated": "2026-04-28T21:07:39.000Z",
+      "last_updated": "2026-04-29T14:24:00.000Z",
       "address": "545 W JACKSON BLVD, SPEARFISH, SD 57783",
       "lat": 44.489902,
       "lon": -103.86679,

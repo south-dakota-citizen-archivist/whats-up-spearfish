@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-29T03:58:15.365984+00:00",
+  "fetched_at": "2026-04-29T18:13:37.520856+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -1066,23 +1066,6 @@
       ]
     },
     {
-      "notice_type": "Surface Water Enhancement & Restoration",
-      "deadline": "04/28/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/28/2026&name=Garret Kuchenbecker&pntype=sw_er&description=Garret Kuchenbecker is proposing a project on Horse Creek. The project goals are to enhance the aesthetics of the creek by removing vegetation that restricts access to the water.",
-      "name": "Garret Kuchenbecker",
-      "description": "Garret Kuchenbecker is proposing a project on Horse Creek. The project goals are to enhance the aesthetics of the creek by removing vegetation that restricts access to the water.",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/HorseCreekVegPN.pdf"
-        },
-        {
-          "label": "Application",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/DANRResEnhanceFORM.pdf"
-        }
-      ]
-    },
-    {
       "notice_type": "Ground Water Discharge",
       "deadline": "5/1/2026",
       "comment_url": "",
@@ -1609,6 +1592,87 @@
         {
           "label": "Application Review",
           "url": "http://danr.sd.gov/Environment/AirQuality/PN/BBNSDsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "05/29/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/29/2026&name=Lakeside Biogas LLC - Blooming Valley Dairy&pntype=aq&description=Lakeside Biogas \u2013 Blooming Valley Dairy operates a biogas production facility. The Department recommends approval of an air quality construction permit modification.",
+      "description": "Lakeside Biogas \u2013 Blooming Valley Dairy operates a biogas production facility. The Department recommends approval of an air quality construction permit modification.",
+      "location": "Summit",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/LBBVDpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/dp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/LBBVDsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "05/29/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/29/2026&name=Lakeside Biogas LLC - Blooming Valley Dairy&pntype=aq&description=Lakeside Biogas \u2013 Blooming Valley Dairy operates a biogas production facility. The Department recommends approval of a minor air quality operating permit.",
+      "description": "Lakeside Biogas \u2013 Blooming Valley Dairy operates a biogas production facility. The Department recommends approval of a minor air quality operating permit.",
+      "location": "Summit",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/LBBVDpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/LBBVDdp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/LBBVDsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "05/29/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/29/2026&name=POET Bioprocessing - Big Stone, LLC&pntype=aq&description=POET Bioprocessing \u2013 Big Stone, LLC is an ethanol plant located in Big Stone City. The department recommends renewal of their title V air quality operating permit.",
+      "description": "POET Bioprocessing \u2013 Big Stone, LLC is an ethanol plant located in Big Stone City. The department recommends renewal of their title V air quality operating permit.",
+      "location": "Big Stone City",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/PBBSpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/PBBSdp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/PBBSsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Mineral Exploration",
+      "deadline": "",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=&name=Clean Nuclear Energy Corp.&pntype=mm_ex&description=Notice of Hearing for Uranium Exploration Permit Application",
+      "name": "Clean Nuclear Energy Corp.",
+      "description": "Notice of Hearing for Uranium Exploration Permit Application",
+      "location": "Seven miles north of Edgemont, SD",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/MineralsMining/CleanNuclearEXNI453NoticeofHearing2026b.pdf"
+        },
+        {
+          "label": "Application",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/NewEXNIS.aspx"
         }
       ]
     },

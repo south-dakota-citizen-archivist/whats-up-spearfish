@@ -735,5 +735,27 @@
     "image_url": "https://npr.brightspotcdn.com/c8/cf/e26bcc0d48a4836855064c1cf0cc/sdsu-campus.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-29/election-observation-training-available-ahead-of-primary-voting",
+    "title": "Election observation training available ahead of primary voting",
+    "slug": "sdpb-election-observation-training-available-ahead-of-primary-voting",
+    "published": "2026-04-29",
+    "byline": "By C.J. Keene",
+    "description": "Poll watching can offer a chance for citizens to be directly involved in ensuring the security of elections. As this continues to be a hot-button issue in Pierre, the state chapter of the ACLU is hoping to teach South Dakotans how to get involved.",
+    "image_url": "https://npr.brightspotcdn.com/26/36/3d75f9394ba5a5d122c63d59f7c4/microsoftteams-image-1.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-04-29/dci-sioux-falls-detectives-were-justified-firing-weapons-during-arrest",
+    "title": "DCI: Sioux Falls detectives were justified firing weapons during arrest",
+    "slug": "sdpb-dci-sioux-falls-detectives-were-justified-firing-weapons-during-arrest",
+    "published": "2026-04-29",
+    "byline": "By SDPB News Staff",
+    "description": "State investigators are ruling two Sioux Falls police officers were justified in shooting and injuring a suspect during an arrest.",
+    "image_url": "https://npr.brightspotcdn.com/d9/43/ba9b37cd4c99927ea1ae1940582b/sioux-falls-police-department-sfpd.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]
