@@ -67374,5 +67374,37 @@
     "title": "City Council Regular Session Minutes 04/20/2026",
     "doc_type": "Minutes",
     "file_url": "https://spearfishsd.portal.civicclerk.com/event/35/files/minutes/6492"
+  },
+  {
+    "event_id": 2185,
+    "event_name": "City Council Study Session",
+    "category": "City Council",
+    "start_dt": "2026-04-29T16:15:00Z",
+    "location": "625 N 5th St, Spearfish, SD, 57783",
+    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2185",
+    "has_media": true,
+    "media_url": "",
+    "record_type": "document",
+    "source_label": "City of Spearfish",
+    "url": "https://spearfishsd.portal.civicclerk.com/event/2185/files/agenda/6501",
+    "title": "City Council Study Session Agenda 5/4/2026",
+    "doc_type": "Agenda",
+    "file_url": "https://spearfishsd.portal.civicclerk.com/event/2185/files/agenda/6501"
+  },
+  {
+    "event_id": 2185,
+    "event_name": "City Council Study Session",
+    "category": "City Council",
+    "start_dt": "2026-04-29T16:15:00Z",
+    "location": "625 N 5th St, Spearfish, SD, 57783",
+    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2185",
+    "has_media": true,
+    "media_url": "",
+    "record_type": "document",
+    "source_label": "City of Spearfish",
+    "url": "https://spearfishsd.portal.civicclerk.com/event/2185/files/agenda-packet/6504",
+    "title": "City Council Study Session Packet 4/29/2026",
+    "doc_type": "Agenda Packet",
+    "file_url": "https://spearfishsd.portal.civicclerk.com/event/2185/files/agenda-packet/6504"
   }
 ]

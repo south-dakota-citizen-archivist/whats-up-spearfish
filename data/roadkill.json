@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-28T18:18:28.243284+00:00",
+  "fetched_at": "2026-04-29T04:00:34.703795+00:00",
   "lookback_days": 30,
   "records": [
     {
@@ -27,6 +27,58 @@
       "lat": 44.363717,
       "lon": -103.464597,
       "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/67157/attachments/9860"
+    },
+    {
+      "objectid": 67158,
+      "date": "2026-04-28",
+      "species": "White-tailed Deer",
+      "highway": "I90",
+      "sex": "Male",
+      "present": "Yes",
+      "comments": null,
+      "contractor": "Tony Hanig",
+      "lat": 44.524721,
+      "lon": -103.938777,
+      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/67158/attachments/9861"
+    },
+    {
+      "objectid": 67159,
+      "date": "2026-04-28",
+      "species": "White-tailed Deer",
+      "highway": "I90",
+      "sex": "Male",
+      "present": "Yes",
+      "comments": null,
+      "contractor": "Tony Hanig",
+      "lat": 44.435473,
+      "lon": -103.581015,
+      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/67159/attachments/9862"
+    },
+    {
+      "objectid": 67160,
+      "date": "2026-04-28",
+      "species": "White-tailed Deer",
+      "highway": "I90",
+      "sex": "Female",
+      "present": "Yes",
+      "comments": null,
+      "contractor": "Tony Hanig",
+      "lat": 44.287782,
+      "lon": -103.427016,
+      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/67160/attachments/9863"
+    },
+    {
+      "objectid": 67176,
+      "date": "2026-04-28",
+      "species": "Mule Deer",
+      "highway": "I90",
+      "sex": "Male",
+      "present": "Yes",
+      "comments": null,
+      "contractor": "Tony Hanig",
+      "lat": 44.106044,
+      "lon": -103.242888,
+      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/67176/attachments/9879"
     },
     {
       "objectid": 66964,

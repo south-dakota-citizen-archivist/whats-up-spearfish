@@ -1096,5 +1096,23 @@
     "scraped_by": "civic-scraper_0.1.0",
     "record_type": "document",
     "source_label": "Lawrence County"
+  },
+  {
+    "asset_id": "civicplus_www_04292026-1317__agenda",
+    "url": "https://www.lawrence.sd.us/AgendaCenter/ViewFile/Agenda/_04292026-1317",
+    "title": "Notice of Quorum ~ Pursuant to SDCL Ch. 1-25-1, NOTICE is hereby given that a quorum of Lawrence County Commissioners may attend the County Commission Candidate Forum at the Mount Rushmore Area Association of Realtors Membership Meeting",
+    "asset_type": "agenda",
+    "committee": "County Commissioner & Board of Adjustment",
+    "place": "no_data",
+    "state": "no_data",
+    "meeting_id": "civicplus_www_04292026-1317",
+    "meeting_date": "2026-04-29 00:00:00",
+    "meeting_time": null,
+    "start_dt": "2026-04-29 00:00:00",
+    "content_type": "application/pdf",
+    "content_length": "123706",
+    "scraped_by": "civic-scraper_0.1.0",
+    "record_type": "document",
+    "source_label": "Lawrence County"
   }
 ]

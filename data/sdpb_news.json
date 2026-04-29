@@ -702,5 +702,38 @@
     "image_url": "https://npr.brightspotcdn.com/legacy/prod/blog/20160928_214941_257052_south_dakota_state_capitol_front_with_clouds.jpeg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-04-28/sfpd-officer-injured-in-shooting-law-enforcement-leaders-renew-calls-for-reform",
+    "title": "SFPD officer injured in shooting; Law enforcement leaders renew calls for reform",
+    "slug": "sdpb-sfpd-officer-injured-in-shooting-law-enforcement-leaders-renew-calls-for",
+    "published": "2026-04-28",
+    "byline": "By Jackson Dircks",
+    "description": "A shooting that left a Sioux Falls police officer injured is spurring law enforcement to renew the call for the state to take a hard look at its parole and prison system as a whole.",
+    "image_url": "https://npr.brightspotcdn.com/46/f7/0ca6d68a4bc288ae5b66b5cd53f8/image-40.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-04-28/sd-supreme-court-upholds-conviction-of-man-charged-with-threatening-trump",
+    "title": "SD Supreme Court upholds conviction of man charged with threatening Trump",
+    "slug": "sdpb-sd-supreme-court-upholds-conviction-of-man-charged-with-threatening-trump",
+    "published": "2026-04-28",
+    "byline": "By SDPB News Staff",
+    "description": "The state Supreme Court is upholding the conviction of a man charged with threatening to kill President Donald Trump at an event in South Dakota.",
+    "image_url": "https://npr.brightspotcdn.com/72/ae/5516378141288c2a8833d175b440/5cfe67db8f-supreme-court-sdpb.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/education/2026-04-28/sdsu-international-journeys",
+    "title": "SDSU International Journeys",
+    "slug": "sdpb-sdsu-international-journeys",
+    "published": "2026-04-28",
+    "byline": "By SDPB News Staff",
+    "description": "South Dakota State University has just over 770 international students representing 76 countries. In recent years, enrollment has remained relatively consistent, though officials say the number is subject to change.",
+    "image_url": "https://npr.brightspotcdn.com/c8/cf/e26bcc0d48a4836855064c1cf0cc/sdsu-campus.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]
