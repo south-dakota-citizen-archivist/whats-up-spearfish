@@ -73,7 +73,11 @@ def _fetch_from_proxy(proxy_url: str) -> list[dict]:
     """Fetch articles from S3 proxy URL (used when GitHub Actions is blocked)."""
     resp = requests.get(proxy_url, headers=_HEADERS, timeout=30)
     resp.raise_for_status()
-    return resp.json().get("rows", [])
+    data = resp.json()
+    # Proxy returns a list directly, not a dict with "rows" key
+    if isinstance(data, list):
+        return data
+    return data.get("rows", [])
 
 
 def _parse_record(item: dict, source_label: str) -> dict | None:
