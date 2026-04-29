@@ -69,6 +69,13 @@ def _fetch_articles(search_url: str, collection_string: str) -> list[dict]:
     return resp.json().get("rows", [])
 
 
+def _fetch_from_proxy(proxy_url: str) -> list[dict]:
+    """Fetch articles from S3 proxy URL (used when GitHub Actions is blocked)."""
+    resp = requests.get(proxy_url, headers=_HEADERS, timeout=30)
+    resp.raise_for_status()
+    return resp.json().get("rows", [])
+
+
 def _parse_record(item: dict, source_label: str) -> dict | None:
     title = (item.get("title") or "").strip()
     url = (item.get("url") or "").strip()
@@ -159,6 +166,20 @@ class BlackHillsPioneer(_TownNewsScraper):
     slug = "black_hills_pioneer"
     search_url = "https://www.bhpioneer.com/search"
     collection_string = "local_news,state_news"
+    # Proxy URL (GitHub Actions blocked, data fetched via external proxy)
+    proxy_url = "https://8085c7a2-365c-4367-aada-45882f0d7164.s3.us-west-2.amazonaws.com/bhp-latest.json"
+
+    def scrape(self) -> list[dict]:
+        rows = _fetch_from_proxy(self.proxy_url)
+        if not rows:
+            raise RuntimeError(f"[{self.name}] Proxy returned 0 rows. URL: {self.proxy_url}")
+        records = []
+        for item in rows:
+            record = _parse_record(item, self.name)
+            if record:
+                records.append(record)
+        print(f"  [{self.name}] {len(records)} articles fetched")
+        return records
 
 
 class RapidCityJournal(_TownNewsScraper):
@@ -166,3 +187,17 @@ class RapidCityJournal(_TownNewsScraper):
     slug = "rapid_city_journal"
     search_url = "https://rapidcityjournal.com/search"
     collection_string = "news/local*,news/state-and-regional*"
+    # Proxy URL (GitHub Actions blocked, data fetched via external proxy)
+    proxy_url = "https://8085c7a2-365c-4367-aada-45882f0d7164.s3.us-west-2.amazonaws.com/rcj-latest.json"
+
+    def scrape(self) -> list[dict]:
+        rows = _fetch_from_proxy(self.proxy_url)
+        if not rows:
+            raise RuntimeError(f"[{self.name}] Proxy returned 0 rows. URL: {self.proxy_url}")
+        records = []
+        for item in rows:
+            record = _parse_record(item, self.name)
+            if record:
+                records.append(record)
+        print(f"  [{self.name}] {len(records)} articles fetched")
+        return records

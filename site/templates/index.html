@@ -112,14 +112,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     {# ── LEFT COLUMN ── 3/5 width on desktop; unwraps on mobile for order-based stacking ── #}
     <div class="max-lg:contents lg:col-span-3 lg:space-y-8 min-w-0">
-      {% for w in _widgets if w.col == 'left' %}
+      {% for w in _widgets | sort(attribute='mo') if w.col == 'left' %}
       <div class="order-[{{ w.mo }}] min-w-0">{% include w.t %}</div>
       {% endfor %}
     </div>{# /left col #}
 
     {# ── RIGHT COLUMN ── 2/5 width on desktop; unwraps on mobile for order-based stacking ── #}
     <div class="max-lg:contents lg:col-span-2 lg:space-y-8 min-w-0">
-      {% for w in _widgets if w.col == 'right' %}
+      {% for w in _widgets | sort(attribute='mo') if w.col == 'right' %}
       <div class="order-[{{ w.mo }}] min-w-0">{% include w.t %}</div>
       {% endfor %}
     </div>{# /right col #}
