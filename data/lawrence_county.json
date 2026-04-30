@@ -1114,5 +1114,23 @@
     "scraped_by": "civic-scraper_0.1.0",
     "record_type": "document",
     "source_label": "Lawrence County"
+  },
+  {
+    "asset_id": "civicplus_www_04282026-1315__minutes",
+    "url": "https://www.lawrence.sd.us/AgendaCenter/ViewFile/Minutes/_04282026-1315",
+    "title": "April 28, 2026 ~ County Commission and BOE Proposed Meeting Agendas and Information Packets. Please follow the links in the proposed agenda to view meeting information items.",
+    "asset_type": "minutes",
+    "committee": "County Commissioner & Board of Adjustment",
+    "place": "no_data",
+    "state": "no_data",
+    "meeting_id": "civicplus_www_04282026-1315",
+    "meeting_date": "2026-04-28 00:00:00",
+    "meeting_time": null,
+    "start_dt": "2026-04-28 00:00:00",
+    "content_type": "application/pdf",
+    "content_length": "124504",
+    "scraped_by": "civic-scraper_0.1.0",
+    "record_type": "document",
+    "source_label": "Lawrence County"
   }
 ]

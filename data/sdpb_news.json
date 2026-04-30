@@ -757,5 +757,49 @@
     "image_url": "https://npr.brightspotcdn.com/d9/43/ba9b37cd4c99927ea1ae1940582b/sioux-falls-police-department-sfpd.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/healthcare/2026-04-30/no-doubt-client-would-have-died-response-leads-to-honors-at-care-campus",
+    "title": "'No doubt client would have died;' Response leads to honors at Care Campus",
+    "slug": "sdpb-no-doubt-client-would-have-died-response-leads-to-honors-at-care-campus",
+    "published": "2026-04-30",
+    "byline": "By C.J. Keene",
+    "description": "Three employees of the Pennington County Sheriff's Department and the Rapid City Care Campus received a meritorious service award for their role in saving a life.",
+    "image_url": "https://npr.brightspotcdn.com/de/4b/980263ee48a8b338d0b3a1ac4af2/image-67.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-04-29/newly-formed-committee-seeks-to-overturn-increased-sales-tax-for-property-tax-relief-law",
+    "title": "Newly formed committee seeks to overturn increased sales tax for property tax relief law",
+    "slug": "sdpb-newly-formed-committee-seeks-to-overturn-increased-sales-tax-for-property",
+    "published": "2026-04-29",
+    "byline": "By Jackson Dircks",
+    "description": "A group, calling itself <a href=\"https://sdcfr.sdsos.gov/Document.aspx?DocumentID=101605&type=doc\" target=\"_blank\" link-data=\"{\"cms.site.owner\":{\"_ref\":\"00000178-5ae7-d19d-a1fa-ffef051d0000\",\"_type\":\"ae3387cc-b875-31b7-b82d-63fd8d758c20\"},\"cms.content.publishDate\":1777498091867,\"cms.content.publishUser\":{\"_ref\":\"0000018f-9cae-de7b-a1df-ffef3dcd0000\",\"_type\":\"6aa69ae1-35be-30dc-87e9-410da9e1cdcc\"},\"cms.content.updateDate\":1777498091867,\"cms.content.updateUser\":{\"_ref\":\"0000018f-9cae-de7b-a1df-ffef3dcd0000\",\"_type\":\"6aa69ae1-35be-30dc-87e9-410da9e1cdcc\"},\"cms.directory.paths\":[],\"anchorable.showAnchor\":false,\"link\":{\"cms.directory.paths\":[],\"attributes\":[],\"linkText\":\"<b>“South Dakotans for Fair Taxes\\\"</b>\",\"target\":\"NEW\",\"attachSourceUrl\":false,\"url\":\"https://sdcfr.sdsos.gov/Document.aspx?DocumentID=101605&type=doc\",\"_id\":\"0000019d-db24-da52-a7fd-ff2e59cd0000\",\"_type\":\"ff658216-e70f-39d0-b660-bdfe57a5599a\"},\"_id\":\"0000019d-db24-da52-a7fd-ff2e59cd0001\",\"_type\":\"809caec9-30e2-3666-8b71-b32ddbffc288\"}\"><b>“South Dakotans for Fair Taxes\"</b></a> is launching a referred law campaign. The campaign committee seeks to overturn a new law that uses a scheduled sales tax increase for property tax relief.",
+    "image_url": "https://npr.brightspotcdn.com/b5/84/1dab0f144a28922a61cf7ebb662e/lee-capitol.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/arts-life/2026-04-29/crews-installing-new-sioux-falls-sculpturewalk-exhibits-this-weekend",
+    "title": "Crews installing new Sioux Falls SculptureWalk exhibits this weekend",
+    "slug": "sdpb-crews-installing-new-sioux-falls-sculpturewalk-exhibits-this-weekend",
+    "published": "2026-04-29",
+    "byline": "By SDPB News Staff",
+    "description": "SculptureWalk features roughly 80 pieces of art sprinkled throughout downtown Sioux Falls.",
+    "image_url": "https://npr.brightspotcdn.com/60/f6/87a24f774e17a26e61ce9250b09b/3rdplace.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/education/2026-04-29/rapid-city-to-boost-security-measures-in-two-public-high-schools",
+    "title": "Rapid City to boost security measures in two public high schools",
+    "slug": "sdpb-rapid-city-to-boost-security-measures-in-two-public-high-schools",
+    "published": "2026-04-29",
+    "byline": "By C.J. Keene",
+    "description": "Two Rapid City schools are increasing security measures with metal detectors students will need to walk through before entry. It’s a matter administration says will increase safety for the facilities in an era of threats against schools.",
+    "image_url": "https://npr.brightspotcdn.com/90/10/4bb711b2435886d2c37a5f187c3e/image-66.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

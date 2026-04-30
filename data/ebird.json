@@ -1,6 +1,227 @@
 {
-  "fetched_at": "2026-04-29T18:12:58.125933+00:00",
+  "fetched_at": "2026-04-30T18:08:19.311530+00:00",
   "observations": [
+    {
+      "species_code": "turvul",
+      "common_name": "Turkey Vulture",
+      "scientific_name": "Cathartes aura",
+      "observed_on": "2026-04-29",
+      "count": 1,
+      "location_name": "2723 East Cleveland Street, Sundance, Wyoming, US (44.416, -104.345)",
+      "lat": 44.4164894,
+      "lng": -104.3449865,
+      "location_id": "L64361606",
+      "checklist_id": "S329565471",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/52277010/square.jpg"
+    },
+    {
+      "species_code": "amerob",
+      "common_name": "American Robin",
+      "scientific_name": "Turdus migratorius",
+      "observed_on": "2026-04-29",
+      "count": 1,
+      "location_name": "2723 East Cleveland Street, Sundance, Wyoming, US (44.416, -104.345)",
+      "lat": 44.4164894,
+      "lng": -104.3449865,
+      "location_id": "L64361606",
+      "checklist_id": "S329565471",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/34859026/square.jpg"
+    },
+    {
+      "species_code": "wesmea",
+      "common_name": "Western Meadowlark",
+      "scientific_name": "Sturnella neglecta",
+      "observed_on": "2026-04-29",
+      "count": 2,
+      "location_name": "2723 East Cleveland Street, Sundance, Wyoming, US (44.416, -104.345)",
+      "lat": 44.4164894,
+      "lng": -104.3449865,
+      "location_id": "L64361606",
+      "checklist_id": "S329565471",
+      "photo_url": "https://static.inaturalist.org/photos/490722638/square.jpg"
+    },
+    {
+      "species_code": "grtgra",
+      "common_name": "Great-tailed Grackle",
+      "scientific_name": "Quiscalus mexicanus",
+      "observed_on": "2026-04-29",
+      "count": 3,
+      "location_name": "2723 East Cleveland Street, Sundance, Wyoming, US (44.416, -104.345)",
+      "lat": 44.4164894,
+      "lng": -104.3449865,
+      "location_id": "L64361606",
+      "checklist_id": "S329565471",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/191985938/square.jpg"
+    },
+    {
+      "species_code": "houspa",
+      "common_name": "House Sparrow",
+      "scientific_name": "Passer domesticus",
+      "observed_on": "2026-04-29",
+      "count": 3,
+      "location_name": "2425 Clear Spring Road, Spearfish, South Dakota, US (44.511, -103.887)",
+      "lat": 44.5109784,
+      "lng": -103.8872191,
+      "location_id": "L60068861",
+      "checklist_id": "S329530019",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4608133/square.jpg"
+    },
+    {
+      "species_code": "houfin",
+      "common_name": "House Finch",
+      "scientific_name": "Haemorhous mexicanus",
+      "observed_on": "2026-04-29",
+      "count": 2,
+      "location_name": "2425 Clear Spring Road, Spearfish, South Dakota, US (44.511, -103.887)",
+      "lat": 44.5109784,
+      "lng": -103.8872191,
+      "location_id": "L60068861",
+      "checklist_id": "S329530019",
+      "photo_url": "https://static.inaturalist.org/photos/178968933/square.jpg"
+    },
+    {
+      "species_code": "cangoo",
+      "common_name": "Canada Goose",
+      "scientific_name": "Branta canadensis",
+      "observed_on": "2026-04-28",
+      "count": 4,
+      "location_name": "Spearfish--DC Booth Fish Hatchery",
+      "lat": 44.4836166,
+      "lng": -103.8615489,
+      "location_id": "L2265498",
+      "checklist_id": "S329419975",
+      "photo_url": "https://static.inaturalist.org/photos/181719420/square.jpg"
+    },
+    {
+      "species_code": "wooduc",
+      "common_name": "Wood Duck",
+      "scientific_name": "Aix sponsa",
+      "observed_on": "2026-04-28",
+      "count": 9,
+      "location_name": "Spearfish--DC Booth Fish Hatchery",
+      "lat": 44.4836166,
+      "lng": -103.8615489,
+      "location_id": "L2265498",
+      "checklist_id": "S329419975",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/171626985/square.jpg"
+    },
+    {
+      "species_code": "mallar3",
+      "common_name": "Mallard",
+      "scientific_name": "Anas platyrhynchos",
+      "observed_on": "2026-04-28",
+      "count": 6,
+      "location_name": "Spearfish--DC Booth Fish Hatchery",
+      "lat": 44.4836166,
+      "lng": -103.8615489,
+      "location_id": "L2265498",
+      "checklist_id": "S329419975",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/95268822/square.jpg"
+    },
+    {
+      "species_code": "eucdov",
+      "common_name": "Eurasian Collared-Dove",
+      "scientific_name": "Streptopelia decaocto",
+      "observed_on": "2026-04-28",
+      "count": 3,
+      "location_name": "Spearfish--DC Booth Fish Hatchery",
+      "lat": 44.4836166,
+      "lng": -103.8615489,
+      "location_id": "L2265498",
+      "checklist_id": "S329419975",
+      "photo_url": "https://static.inaturalist.org/photos/61919353/square.jpeg"
+    },
+    {
+      "species_code": "dowwoo",
+      "common_name": "Downy Woodpecker",
+      "scientific_name": "Dryobates pubescens",
+      "observed_on": "2026-04-28",
+      "count": 1,
+      "location_name": "Spearfish--DC Booth Fish Hatchery",
+      "lat": 44.4836166,
+      "lng": -103.8615489,
+      "location_id": "L2265498",
+      "checklist_id": "S329419975",
+      "photo_url": "https://static.inaturalist.org/photos/25544008/square.jpeg"
+    },
+    {
+      "species_code": "blujay",
+      "common_name": "Blue Jay",
+      "scientific_name": "Cyanocitta cristata",
+      "observed_on": "2026-04-28",
+      "count": 1,
+      "location_name": "Spearfish--DC Booth Fish Hatchery",
+      "lat": 44.4836166,
+      "lng": -103.8615489,
+      "location_id": "L2265498",
+      "checklist_id": "S329419975",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/530721418/square.jpg"
+    },
+    {
+      "species_code": "bkcchi",
+      "common_name": "Black-capped Chickadee",
+      "scientific_name": "Poecile atricapillus",
+      "observed_on": "2026-04-28",
+      "count": 5,
+      "location_name": "Spearfish--DC Booth Fish Hatchery",
+      "lat": 44.4836166,
+      "lng": -103.8615489,
+      "location_id": "L2265498",
+      "checklist_id": "S329419975",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/178279576/square.jpg"
+    },
+    {
+      "species_code": "rebnut",
+      "common_name": "Red-breasted Nuthatch",
+      "scientific_name": "Sitta canadensis",
+      "observed_on": "2026-04-28",
+      "count": 2,
+      "location_name": "Spearfish--DC Booth Fish Hatchery",
+      "lat": 44.4836166,
+      "lng": -103.8615489,
+      "location_id": "L2265498",
+      "checklist_id": "S329419975",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/117331702/square.jpg"
+    },
+    {
+      "species_code": "sonspa",
+      "common_name": "Song Sparrow",
+      "scientific_name": "Melospiza melodia",
+      "observed_on": "2026-04-28",
+      "count": 1,
+      "location_name": "Spearfish--DC Booth Fish Hatchery",
+      "lat": 44.4836166,
+      "lng": -103.8615489,
+      "location_id": "L2265498",
+      "checklist_id": "S329419975",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/104749271/square.jpg"
+    },
+    {
+      "species_code": "spotow",
+      "common_name": "Spotted Towhee",
+      "scientific_name": "Pipilo maculatus",
+      "observed_on": "2026-04-28",
+      "count": 1,
+      "location_name": "Spearfish--DC Booth Fish Hatchery",
+      "lat": 44.4836166,
+      "lng": -103.8615489,
+      "location_id": "L2265498",
+      "checklist_id": "S329419975",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/30818274/square.jpg"
+    },
+    {
+      "species_code": "yerwar",
+      "common_name": "Yellow-rumped Warbler",
+      "scientific_name": "Setophaga coronata",
+      "observed_on": "2026-04-28",
+      "count": 10,
+      "location_name": "Spearfish--DC Booth Fish Hatchery",
+      "lat": 44.4836166,
+      "lng": -103.8615489,
+      "location_id": "L2265498",
+      "checklist_id": "S329419975",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/128439522/square.jpg"
+    },
     {
       "species_code": "amecro",
       "common_name": "American Crow",
@@ -13,19 +234,6 @@
       "location_id": "L11793514",
       "checklist_id": "S328610497",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4661023/square.jpg"
-    },
-    {
-      "species_code": "bkcchi",
-      "common_name": "Black-capped Chickadee",
-      "scientific_name": "Poecile atricapillus",
-      "observed_on": "2026-04-27",
-      "count": 5,
-      "location_name": "Mt. Moriah Cemetery",
-      "lat": 44.375209,
-      "lng": -103.724331,
-      "location_id": "L11793514",
-      "checklist_id": "S328610497",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/178279576/square.jpg"
     },
     {
       "species_code": "whbnut",
@@ -41,19 +249,6 @@
       "photo_url": "https://static.inaturalist.org/photos/25544020/square.jpeg"
     },
     {
-      "species_code": "rebnut",
-      "common_name": "Red-breasted Nuthatch",
-      "scientific_name": "Sitta canadensis",
-      "observed_on": "2026-04-27",
-      "count": 2,
-      "location_name": "Mt. Moriah Cemetery",
-      "lat": 44.375209,
-      "lng": -103.724331,
-      "location_id": "L11793514",
-      "checklist_id": "S328610497",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/117331702/square.jpg"
-    },
-    {
       "species_code": "rewbla",
       "common_name": "Red-winged Blackbird",
       "scientific_name": "Agelaius phoeniceus",
@@ -65,45 +260,6 @@
       "location_id": "L11793514",
       "checklist_id": "S328610497",
       "photo_url": "https://static.inaturalist.org/photos/368048127/square.jpg"
-    },
-    {
-      "species_code": "wooduc",
-      "common_name": "Wood Duck",
-      "scientific_name": "Aix sponsa",
-      "observed_on": "2026-04-26",
-      "count": 2,
-      "location_name": "Spearfish--DC Booth Fish Hatchery",
-      "lat": 44.4836166,
-      "lng": -103.8615489,
-      "location_id": "L2265498",
-      "checklist_id": "S328099767",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/171626985/square.jpg"
-    },
-    {
-      "species_code": "mallar3",
-      "common_name": "Mallard",
-      "scientific_name": "Anas platyrhynchos",
-      "observed_on": "2026-04-26",
-      "count": 4,
-      "location_name": "Spearfish--DC Booth Fish Hatchery",
-      "lat": 44.4836166,
-      "lng": -103.8615489,
-      "location_id": "L2265498",
-      "checklist_id": "S328099767",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/95268822/square.jpg"
-    },
-    {
-      "species_code": "turvul",
-      "common_name": "Turkey Vulture",
-      "scientific_name": "Cathartes aura",
-      "observed_on": "2026-04-26",
-      "count": 2,
-      "location_name": "Spearfish--DC Booth Fish Hatchery",
-      "lat": 44.4836166,
-      "lng": -103.8615489,
-      "location_id": "L2265498",
-      "checklist_id": "S328099767",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/52277010/square.jpg"
     },
     {
       "species_code": "osprey",
@@ -132,19 +288,6 @@
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/1275/square.jpg"
     },
     {
-      "species_code": "blujay",
-      "common_name": "Blue Jay",
-      "scientific_name": "Cyanocitta cristata",
-      "observed_on": "2026-04-26",
-      "count": 2,
-      "location_name": "Spearfish--DC Booth Fish Hatchery",
-      "lat": 44.4836166,
-      "lng": -103.8615489,
-      "location_id": "L2265498",
-      "checklist_id": "S328099767",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/530721418/square.jpg"
-    },
-    {
       "species_code": "eursta",
       "common_name": "European Starling",
       "scientific_name": "Sturnus vulgaris",
@@ -158,19 +301,6 @@
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/32152001/square.jpg"
     },
     {
-      "species_code": "amerob",
-      "common_name": "American Robin",
-      "scientific_name": "Turdus migratorius",
-      "observed_on": "2026-04-26",
-      "count": 2,
-      "location_name": "Spearfish--DC Booth Fish Hatchery",
-      "lat": 44.4836166,
-      "lng": -103.8615489,
-      "location_id": "L2265498",
-      "checklist_id": "S328099767",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/34859026/square.jpg"
-    },
-    {
       "species_code": "chispa",
       "common_name": "Chipping Sparrow",
       "scientific_name": "Spizella passerina",
@@ -182,58 +312,6 @@
       "location_id": "L2265498",
       "checklist_id": "S328099767",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/273251789/square.jpg"
-    },
-    {
-      "species_code": "yerwar",
-      "common_name": "Yellow-rumped Warbler",
-      "scientific_name": "Setophaga coronata",
-      "observed_on": "2026-04-26",
-      "count": 3,
-      "location_name": "Spearfish--DC Booth Fish Hatchery",
-      "lat": 44.4836166,
-      "lng": -103.8615489,
-      "location_id": "L2265498",
-      "checklist_id": "S328099767",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/128439522/square.jpg"
-    },
-    {
-      "species_code": "houspa",
-      "common_name": "House Sparrow",
-      "scientific_name": "Passer domesticus",
-      "observed_on": "2026-04-26",
-      "count": 5,
-      "location_name": "19929 Tom Ct, Spearfish US-SD 44.51434, -103.92667",
-      "lat": 44.514343,
-      "lng": -103.926669,
-      "location_id": "L64110226",
-      "checklist_id": "S328241237",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4608133/square.jpg"
-    },
-    {
-      "species_code": "houfin",
-      "common_name": "House Finch",
-      "scientific_name": "Haemorhous mexicanus",
-      "observed_on": "2026-04-26",
-      "count": 1,
-      "location_name": "19929 Tom Ct, Spearfish US-SD 44.51434, -103.92667",
-      "lat": 44.514343,
-      "lng": -103.926669,
-      "location_id": "L64110226",
-      "checklist_id": "S328241237",
-      "photo_url": "https://static.inaturalist.org/photos/178968933/square.jpg"
-    },
-    {
-      "species_code": "wesmea",
-      "common_name": "Western Meadowlark",
-      "scientific_name": "Sturnella neglecta",
-      "observed_on": "2026-04-26",
-      "count": 2,
-      "location_name": "19929 Tom Ct, Spearfish US-SD 44.51434, -103.92667",
-      "lat": 44.514343,
-      "lng": -103.926669,
-      "location_id": "L64110226",
-      "checklist_id": "S328241237",
-      "photo_url": "https://static.inaturalist.org/photos/490722638/square.jpg"
     },
     {
       "species_code": "pinsis",
@@ -260,19 +338,6 @@
       "location_id": "L63749701",
       "checklist_id": "S326483993",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/27928/square.jpg"
-    },
-    {
-      "species_code": "spotow",
-      "common_name": "Spotted Towhee",
-      "scientific_name": "Pipilo maculatus",
-      "observed_on": "2026-04-24",
-      "count": 1,
-      "location_name": "HOME-13162 Hope Road, Newell, South Dakota, US (44.705, -103.413)",
-      "lat": 44.7054926,
-      "lng": -103.4130828,
-      "location_id": "L63749701",
-      "checklist_id": "S326483993",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/30818274/square.jpg"
     },
     {
       "species_code": "lazbun",
@@ -405,19 +470,6 @@
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/244248986/square.jpg"
     },
     {
-      "species_code": "dowwoo",
-      "common_name": "Downy Woodpecker",
-      "scientific_name": "Dryobates pubescens",
-      "observed_on": "2026-04-21",
-      "count": 2,
-      "location_name": "Sand Creek Public Access Area to Dugout Gulch",
-      "lat": 44.496003,
-      "lng": -104.10497,
-      "location_id": "L19762506",
-      "checklist_id": "S325312408",
-      "photo_url": "https://static.inaturalist.org/photos/25544008/square.jpeg"
-    },
-    {
       "species_code": "amekes",
       "common_name": "American Kestrel",
       "scientific_name": "Falco sparverius",
@@ -483,19 +535,6 @@
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/384965723/square.jpg"
     },
     {
-      "species_code": "sonspa",
-      "common_name": "Song Sparrow",
-      "scientific_name": "Melospiza melodia",
-      "observed_on": "2026-04-21",
-      "count": 2,
-      "location_name": "Sand Creek Public Access Area to Dugout Gulch",
-      "lat": 44.496003,
-      "lng": -104.10497,
-      "location_id": "L19762506",
-      "checklist_id": "S325312408",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/104749271/square.jpg"
-    },
-    {
       "species_code": "brebla",
       "common_name": "Brewer's Blackbird",
       "scientific_name": "Euphagus cyanocephalus",
@@ -546,19 +585,6 @@
       "location_id": "L1527803",
       "checklist_id": "S326651639",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/471179764/square.jpg"
-    },
-    {
-      "species_code": "eucdov",
-      "common_name": "Eurasian Collared-Dove",
-      "scientific_name": "Streptopelia decaocto",
-      "observed_on": "2026-04-20",
-      "count": null,
-      "location_name": "11011 Kellem Ln, Belle Fourche US-SD 44.55990, -103.84663",
-      "lat": 44.559902,
-      "lng": -103.846634,
-      "location_id": "L63399848",
-      "checklist_id": "S324668958",
-      "photo_url": "https://static.inaturalist.org/photos/61919353/square.jpeg"
     },
     {
       "species_code": "logshr",
@@ -624,32 +650,6 @@
       "location_id": "L63188606",
       "checklist_id": "S323679748",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/225378787/square.jpg"
-    },
-    {
-      "species_code": "cangoo",
-      "common_name": "Canada Goose",
-      "scientific_name": "Branta canadensis",
-      "observed_on": "2026-04-16",
-      "count": 10,
-      "location_name": "Sundance Water Treatment Plant",
-      "lat": 44.4043323,
-      "lng": -104.3454732,
-      "location_id": "L11769644",
-      "checklist_id": "S322631208",
-      "photo_url": "https://static.inaturalist.org/photos/181719420/square.jpg"
-    },
-    {
-      "species_code": "buwtea",
-      "common_name": "Blue-winged Teal",
-      "scientific_name": "Spatula discors",
-      "observed_on": "2026-04-16",
-      "count": 3,
-      "location_name": "Sundance Water Treatment Plant",
-      "lat": 44.4043323,
-      "lng": -104.3454732,
-      "location_id": "L11769644",
-      "checklist_id": "S322631208",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/66271250/square.jpeg"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-29T18:13:37.520856+00:00",
+  "fetched_at": "2026-04-30T18:08:59.623408+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -1659,6 +1659,28 @@
       ]
     },
     {
+      "notice_type": "Surface Water Discharge (NPDES)",
+      "deadline": "06/01/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=06/01/2026&name=City of Harrisburg&pntype=sw_npdes&description=The City of Harrisburg is authorized under this permit to discharge to the Big Sioux River from its wastewater treatment facility located in Lincoln County.",
+      "name": "City of Harrisburg",
+      "description": "The City of Harrisburg is authorized under this permit to discharge to the Big Sioux River from its wastewater treatment facility located in Lincoln County.",
+      "location": "Lincoln County",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/HarrisburgPNDraftFR.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/HarrisburgPermitDraftFR.pdf"
+        },
+        {
+          "label": "Statement of Basis",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/HarrisburgSOBDraftFR.pdf"
+        }
+      ]
+    },
+    {
       "notice_type": "Mineral Exploration",
       "deadline": "",
       "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=&name=Clean Nuclear Energy Corp.&pntype=mm_ex&description=Notice of Hearing for Uranium Exploration Permit Application",
@@ -1709,24 +1731,6 @@
         {
           "label": "Application",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/NewEXNIS.aspx"
-        }
-      ]
-    },
-    {
-      "notice_type": "Waste Management \u2014 Hazardous Waste",
-      "deadline": "",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=&name=Tech Ord, a Division of AMTEC Corporation&pntype=wm_hw&description=Hazardous Waste Permit Renewal - Application Received",
-      "name": "Tech Ord, a Division of AMTEC Corporation",
-      "description": "Hazardous Waste Permit Renewal - Application Received",
-      "location": "Clear Lake, SD",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Tech_Ord_Receipt_Notice_PN.pdf"
-        },
-        {
-          "label": "Renewal Application",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/A-Tech Ord 2026 Permit-button.pdf"
         }
       ]
     }

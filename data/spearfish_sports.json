@@ -21550,5 +21550,37 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h2026042909344435060451b1a2ce649",
+    "url": "https://gobound.com/direct/comps/h2026042909344435060451b1a2ce649/show",
+    "title": "Softball: Spearfish vs Yankton (Junior Varsity)",
+    "slug": "softball-spearfish-vs-yankton-junior-varsity",
+    "sport": "Softball",
+    "level": "Junior Varsity",
+    "sex": "female",
+    "description": "Junior Varsity Softball - Spearfish vs Yankton",
+    "start_dt": "2026-05-09T14:00:00",
+    "end_dt": "2026-05-09T15:30:00",
+    "location": "Cadwell Park",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20250611073700000edc4645e3e2a40",
+    "url": "https://gobound.com/direct/comps/h20250611073700000edc4645e3e2a40/show",
+    "title": "Girls Golf: Sturgis Golf Invite (Varsity)",
+    "slug": "girls-golf-sturgis-golf-invite-varsity",
+    "sport": "Girls Golf",
+    "level": "Varsity",
+    "sex": "female",
+    "description": "Varsity Girls Golf - Sturgis Golf Invite",
+    "start_dt": "2027-04-29T15:00:00",
+    "end_dt": "2027-04-29T20:00:00",
+    "location": "Boulder Canyon Golf Club Course",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]

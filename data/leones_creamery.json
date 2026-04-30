@@ -19,15 +19,6 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/0025C9FF-7582-4168-89E7-6A0E60B07F41-239-1535075972.jpg",
-    "title": "Chocolate Kit Kat",
-    "slug": "chocolate-kit-kat",
-    "description": "Creamy, malted chocolate ice cream full of chopped KitKat bars!",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
     "image_url": "https://leonescreamery.com/images/uploads/cropped/IMG_0716-120-1523320712.jpg",
     "title": "Rum Raisin",
     "slug": "rum-raisin",
@@ -50,6 +41,15 @@
     "title": "Planet Earth",
     "slug": "planet-earth",
     "description": "Our vanilla ice cream that we dye blue with butterfly pea flower powder! We toss in pieces of housemade brownies and matcha cake, so each scoop looks like a little planet Earth!",
+    "record_type": "flavor",
+    "source_label": "Leone's Creamery"
+  },
+  {
+    "url": "https://leonescreamery.com/flavors",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/A5443EEA-0E5B-4B69-A661-1BFA381D38CD-208-1530283549.jpg",
+    "title": "Chocolate Mint",
+    "slug": "chocolate-mint",
+    "description": "Creamy milk chocolate and peppermint ice cream.",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
