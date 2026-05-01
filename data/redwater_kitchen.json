@@ -1,5 +1,18 @@
 [
   {
+    "url": "https://untappd.com/b/2-towns-ciderhouse-mango-cosmic-crisp/5884541",
+    "title": "Mango Cosmic Crisp®",
+    "slug": "mango-cosmic-crisp-r",
+    "category": "Cider - Other Fruit",
+    "abv": "9%",
+    "ibu": "",
+    "brewery": "2 Towns Ciderhouse",
+    "rating": "3.87",
+    "image_url": "https://labels.untappd.com/5884541",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
     "url": "https://untappd.com/b/phat-fish-brewery-double-shot-stout/3472613",
     "title": "Double Shot Stout",
     "slug": "double-shot-stout",
@@ -48,19 +61,6 @@
     "brewery": "Kros Strain Brewing",
     "rating": "4.05",
     "image_url": "https://labels.untappd.com/3550236",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
-    "url": "https://untappd.com/b/2-towns-ciderhouse-huckleberry-cosmic-crisp/6386385",
-    "title": "Huckleberry Cosmic Crisp®",
-    "slug": "huckleberry-cosmic-crisp-r",
-    "category": "Cider - Other Fruit",
-    "abv": "8%",
-    "ibu": "",
-    "brewery": "2 Towns Ciderhouse",
-    "rating": "3.96",
-    "image_url": "https://labels.untappd.com/6386385",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"
   },

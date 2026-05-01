@@ -367,9 +367,20 @@
     "title": "Gus",
     "slug": "dog-gus",
     "species": "dog",
-    "description": "Male | ~10 years\nNo cats\nGus was brought to us as a stray on 4/24/26. No one came for this sweet old man. He doesn’t appear to like cats but seems fine with his neighboring dogs. He’s very sweet and well-mannered. He does like to bark since everyone else seems to have something to say…we get it! We aren’t sure of his age - his face says 10 but his teeth are in great shape so he may be a year or two younger than we think.",
+    "description": "Male | Mixed Breed | ~10 years\nNo cats\nGus was brought to us as a stray on 4/24/26. No one came for this sweet old man. He doesn’t appear to like cats but seems fine with his neighboring dogs. He’s very sweet and well-mannered. He does like to bark since everyone else seems to have something to say…we get it! We aren’t sure of his age - his face says 10 but his teeth are in great shape so he may be a year or two younger than we think.",
     "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/f7f58823-bf35-4fa2-b1cd-959556aa59b0/1000040949+%281%29.jpg?format=500w",
     "image_alt": "Gus",
+    "record_type": "adoptable",
+    "source_label": "Western Hills Humane Society"
+  },
+  {
+    "url": "https://www.westernhillshumanesociety.com/dogs",
+    "title": "Cutlass",
+    "slug": "dog-cutlass",
+    "species": "dog",
+    "description": "Male | Heeler Mix | ~3 years\nVaccinations pending (contacting vet)\nCutlass came to us on 4/30/26 after his owner passed away. We are unsure how he does with cats or other dogs but we look forward to getting to know him. We invite you to come visit him and see if you could be his next human!",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/08a28fc8-9ad5-41c2-ad1c-e870a95b33a7/Cutlass.jpg?format=500w",
+    "image_alt": "Cutlass",
     "record_type": "adoptable",
     "source_label": "Western Hills Humane Society"
   }

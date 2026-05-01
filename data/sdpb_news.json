@@ -801,5 +801,38 @@
     "image_url": "https://npr.brightspotcdn.com/90/10/4bb711b2435886d2c37a5f187c3e/image-66.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-05-01/pe-sla-mining-battle-continues-after-protest-at-corporate-office",
+    "title": "Pe' Sla mining battle continues after protest at corporate office",
+    "slug": "sdpb-pe-sla-mining-battle-continues-after-protest-at-corporate-office",
+    "published": "2026-05-01",
+    "byline": "By C.J. Keene",
+    "description": "A second day of protests erupts in response to a mining operation near Pe’Sla, a Black Hills sacred site. This time, at the headquarters of the mining organization behind the development.",
+    "image_url": "https://npr.brightspotcdn.com/76/cd/893eed584ba7ba54ccd0188523f9/image-71.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-05-01/campaign-asks-voters-if-scheduled-tax-increase-should-go-to-property-tax-relief",
+    "title": "Campaign asks voters if scheduled tax increase should go to property tax relief",
+    "slug": "sdpb-campaign-asks-voters-if-scheduled-tax-increase-should-go-to-property-tax",
+    "published": "2026-05-01",
+    "byline": "By Jackson Dircks",
+    "description": "<a href=\"https://www.sdpb.org/politics/2026-04-29/newly-formed-committee-seeks-to-overturn-increased-sales-tax-for-property-tax-relief-law?_gl=1*g3jior*_gcl_au*MTY4OTk2MDI5MC4xNzcxODU4OTYx*_ga*OTE2NjI4NDg0LjE3NjI0NTY4MTU.*_ga_BWGZXV2BJN*czE3Nzc1ODMxNDAkbzM4MyRnMSR0MTc3NzU4MzE0MyRqNTckbDAkaDA.\" target=\"_blank\" link-data=\"{\"cms.site.owner\":{\"_ref\":\"00000178-5ae7-d19d-a1fa-ffef051d0000\",\"_type\":\"ae3387cc-b875-31b7-b82d-63fd8d758c20\"},\"cms.content.publishDate\":1777588213143,\"cms.content.publishUser\":{\"_ref\":\"0000018f-9cae-de7b-a1df-ffef3dcd0000\",\"_type\":\"6aa69ae1-35be-30dc-87e9-410da9e1cdcc\"},\"cms.content.updateDate\":1777588213143,\"cms.content.updateUser\":{\"_ref\":\"0000018f-9cae-de7b-a1df-ffef3dcd0000\",\"_type\":\"6aa69ae1-35be-30dc-87e9-410da9e1cdcc\"},\"cms.directory.paths\":[],\"anchorable.showAnchor\":false,\"link\":{\"cms.directory.paths\":[],\"attributes\":[],\"linkText\":\"<b>Efforts to refer a Legislature-approved bill</b>\",\"target\":\"NEW\",\"attachSourceUrl\":false,\"url\":\"https://www.sdpb.org/politics/2026-04-29/newly-formed-committee-seeks-to-overturn-increased-sales-tax-for-property-tax-relief-law?_gl=1*g3jior*_gcl_au*MTY4OTk2MDI5MC4xNzcxODU4OTYx*_ga*OTE2NjI4NDg0LjE3NjI0NTY4MTU.*_ga_BWGZXV2BJN*czE3Nzc1ODMxNDAkbzM4MyRnMSR0MTc3NzU4MzE0MyRqNTckbDAkaDA.\",\"_id\":\"0000019d-e083-d707-a7df-e3c785410000\",\"_type\":\"ff658216-e70f-39d0-b660-bdfe57a5599a\"},\"_id\":\"0000019d-e083-d707-a7df-e3c785410001\",\"_type\":\"809caec9-30e2-3666-8b71-b32ddbffc288\"}\"><b>Efforts to refer a Legislature-approved bill</b></a> are underway. The campaign disapproves of using a scheduled increase in sales taxes for property tax relief.",
+    "image_url": "https://npr.brightspotcdn.com/0e/d7/4bbe540e498bb479f7676b79a34f/capitol-money-legislature-tax-south-dakota.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-04-30/activists-seek-to-disrupt-mining-operation-near-sacred-black-hills-site",
+    "title": "Activists seek to disrupt mining operation near sacred Black Hills site",
+    "slug": "sdpb-activists-seek-to-disrupt-mining-operation-near-sacred-black-hills-site",
+    "published": "2026-04-30",
+    "byline": "By C.J. Keene",
+    "description": "Opponents of a Black Hills mining operation have sued to halt it and are now acting on the scene. Among the complaints is location, considered a sacred site in Lakota culture.",
+    "image_url": "https://npr.brightspotcdn.com/ce/86/1ea5c09e4d008d868077b3cf62ec/115f1140-3c78-4b7e-a87c-c76ffb99f6b3.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-30T18:11:18.824359+00:00",
+  "fetched_at": "2026-05-01T17:57:50.415186+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -9,6 +9,14 @@
       "description": "Proposed uranium exploration project seven miles north of Edgemont, SD.  Up to 50 holes will be drilled to a maximum vertical depth of 700 feet.  In addition, 50 drill platforms will be created with a dimension of 60 feet by 60 feet.  Exploration will be conducted using reverse circulation drilling with sumps.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID123",
       "documents": [
+        {
+          "label": "April 28, 2026 Motion from Bruce Ellison for Access to Unredacted Archaeologic, Cultural,and Historic Reports Pursuant to Protective Order",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/42826EllisonAccesstoUnredactedReports.pdf"
+        },
+        {
+          "label": "April 28, 2026 Motion for Subpoena to Commissioner Brock Greenfield, SD Office of School and Public Lands from Bruce Ellison",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/42826EllisonSubpoena.pdf"
+        },
         {
           "label": "Newspaper Version of Notice of Hearing for Clean Nuclear Energy's Uranium Exploration Permit Application",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/CleanNuclearEXNI453NoticeofHearing2026b.pdf"
@@ -20,17 +28,9 @@
         {
           "label": "April 2, 2026 Supplemental Exhibit List from Clean Nuclear Energy Containing Redacted Versions of Vantage Point Cultural Resources Reports",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/4226CNECSupplementalExhibitList.pdf"
-        },
-        {
-          "label": "April 20, 2026 Notice of Entry of Order on Requests for the Board of Minerals and Environment to Overturn Certain Orders of the Hearing Chair",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/42126OrderOverturnHearingChair.pdf"
-        },
-        {
-          "label": "April 20, 2026 Notice of Filing of Sealed Reports Submitted by Clean Nuclear Energy Which Includes Unredacted Versions of Vantage Point Cultural Resources Reports",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/42026CNECNoticeofFilingSealedReports.pdf"
         }
       ],
-      "total_docs": 93,
+      "total_docs": 95,
       "latest_doc_date": "0000-00-00"
     },
     {
@@ -190,6 +190,14 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID127",
       "documents": [
         {
+          "label": "Proposed Exhibits submitted by Counsel for the Petitioner",
+          "url": "https://danr.sd.gov/wrimage/pub/8987-3_petexhibits.pdf"
+        },
+        {
+          "label": "Filings Submitted by Counsel for the Petitioner",
+          "url": "https://danr.sd.gov/wrimage/pub/8987-3_petbreif_witnesslist.pdf"
+        },
+        {
           "label": "Notice of Entry of Procedural and Scheduling Order",
           "url": "https://danr.sd.gov/wrimage/pub/8987-3_mcvey.pdf"
         },
@@ -200,17 +208,9 @@
         {
           "label": "Filings Submitted by Counsel for the Applicant",
           "url": "https://danr.sd.gov/wrimage/pub/8987-3_SOresponse.pdf"
-        },
-        {
-          "label": "Filings Submitted by Counsel for the Chief Engineer",
-          "url": "https://danr.sd.gov/wrimage/pub/8987-3_SO.pdf"
-        },
-        {
-          "label": "Notice of Appearance - Legal Counsel for Chief Engineer",
-          "url": "https://danr.sd.gov/wrimage/pub/8987-3_notappear3.pdf"
         }
       ],
-      "total_docs": 16,
+      "total_docs": 18,
       "latest_doc_date": "0000-00-00"
     },
     {
@@ -221,6 +221,10 @@
       "description": "Application for a water permit to appropriate up to 30.68 acre-feet of water annually at a maximum pump rate of 0.11 cubic feet of water per second from one well completed into the Pierre Shale Aquifer (approximately 420 feet deep) located in the NW 1/4 NW 1/4 Section 9  for commercial use in a swine facility located in the NW 1/4 Section 9; all in T121N-R71W.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID126",
       "documents": [
+        {
+          "label": "Proposed Exhibit Submitted by Petitioned (Baer)",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3_BaerEX.pdf"
+        },
         {
           "label": "Notice of Appearance - Legal Counsel for Petitioners (Heinz)",
           "url": "https://danr.sd.gov/wrimage/pub/8982-3_notappear_pet.pdf"
@@ -236,13 +240,9 @@
         {
           "label": "Filings Submitted by Counsel for the Chief Engineer",
           "url": "https://danr.sd.gov/wrimage/pub/8982-3_response_op.pdf"
-        },
-        {
-          "label": "Notice of Appearance - Legal Counsel for Applicant",
-          "url": "https://danr.sd.gov/wrimage/pub/8982-3_notapp_app.pdf"
         }
       ],
-      "total_docs": 18,
+      "total_docs": 19,
       "latest_doc_date": "0000-00-00"
     },
     {

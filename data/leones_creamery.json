@@ -10,19 +10,28 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/D2BA2E8C-D8A7-49CF-9722-2027EAAD34CF-167-1539449153.jpg",
-    "title": "Dark Chocolate",
-    "slug": "dark-chocolate",
-    "description": "Rich, velvety, dark chocolate ice cream. The perfect middle-ground between our Milk Chocolate and Double Dark Chocolate ice creams.",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/A5443EEA-0E5B-4B69-A661-1BFA381D38CD-208-1530283549.jpg",
+    "title": "Chocolate Mint",
+    "slug": "chocolate-mint",
+    "description": "Creamy milk chocolate and peppermint ice cream.",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/IMG_0716-120-1523320712.jpg",
-    "title": "Rum Raisin",
-    "slug": "rum-raisin",
-    "description": "Perfectly nostalgic and classic! With notes of caramel and rum, and riddled with plump rum-soaked raisins throughout.",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/Blackberry-Lemon-154-1541962966.jpg",
+    "title": "Blackberry Lemon",
+    "slug": "blackberry-lemon",
+    "description": "Bursting with sweet blackberries and tart lemon, this ice cream is a favorite among fruit fans!",
+    "record_type": "flavor",
+    "source_label": "Leone's Creamery"
+  },
+  {
+    "url": "https://leonescreamery.com/flavors",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/EC419FEB-0460-4368-B022-F59741DB6FB6-217-1531516628.jpg",
+    "title": "Horchata",
+    "slug": "horchata",
+    "description": "One of our Cinco de Mayo flavors! Fashioned after the classic Latin American drink, this one's made with rice milk, cinnamon, and sweet almond to create a creamy and refreshing scoop.",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
@@ -46,28 +55,19 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/A5443EEA-0E5B-4B69-A661-1BFA381D38CD-208-1530283549.jpg",
-    "title": "Chocolate Mint",
-    "slug": "chocolate-mint",
-    "description": "Creamy milk chocolate and peppermint ice cream.",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/Avocado-165-1620240856.jpg",
+    "title": "Avocado",
+    "slug": "avocado",
+    "description": "Ultra creamy, mellow, and sweet-- it's a surprisingly delicious scoop.",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/Blackberry-Lemon-154-1541962966.jpg",
-    "title": "Blackberry Lemon",
-    "slug": "blackberry-lemon",
-    "description": "Bursting with sweet blackberries and tart lemon, this ice cream is a favorite among fruit fans!",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/IMG_3362-471-1774909906.jpg",
-    "title": "Vegan Almond w/ Orange Marmalade",
-    "slug": "vegan-almond-w-orange-marmalade",
-    "description": "Vegan, coconut milk ice cream with toasted almonds and a swirl of housemade orange marmalade.",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/439F5806-0B58-430A-AE84-23F1E4531432-247-1536967015.jpg",
+    "title": "Vegan Coconut Latte",
+    "slug": "vegan-coconut-latte",
+    "description": "Vegan, gluten-free, and so delicious. Made with Oak Roaster's espresso beans, this tastes like the best coconut latte you've ever had.",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   }

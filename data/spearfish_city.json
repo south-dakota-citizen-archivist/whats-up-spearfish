@@ -67438,5 +67438,37 @@
     "title": "Updated City Council Study Session Packet 4/29/2026 bkmks",
     "doc_type": "Agenda Packet",
     "file_url": "https://spearfishsd.portal.civicclerk.com/event/2185/files/agenda-packet/6515"
+  },
+  {
+    "event_id": 2221,
+    "event_name": "Planning Commission Meeting",
+    "category": "Planning Commission",
+    "start_dt": "2026-05-05T16:00:00Z",
+    "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2221",
+    "has_media": false,
+    "media_url": "",
+    "record_type": "document",
+    "source_label": "City of Spearfish",
+    "url": "https://spearfishsd.portal.civicclerk.com/event/2221/files/agenda/6520",
+    "title": "Planning Commission 05052026 Agenda",
+    "doc_type": "Agenda",
+    "file_url": "https://spearfishsd.portal.civicclerk.com/event/2221/files/agenda/6520"
+  },
+  {
+    "event_id": 2221,
+    "event_name": "Planning Commission Meeting",
+    "category": "Planning Commission",
+    "start_dt": "2026-05-05T16:00:00Z",
+    "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2221",
+    "has_media": false,
+    "media_url": "",
+    "record_type": "document",
+    "source_label": "City of Spearfish",
+    "url": "https://spearfishsd.portal.civicclerk.com/event/2221/files/agenda-packet/6522",
+    "title": "Planning Commission 05052026 Packet",
+    "doc_type": "Agenda Packet",
+    "file_url": "https://spearfishsd.portal.civicclerk.com/event/2221/files/agenda-packet/6522"
   }
 ]

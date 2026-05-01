@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-30T18:08:19.311530+00:00",
+  "fetched_at": "2026-05-01T17:55:01.752694+00:00",
   "observations": [
     {
       "species_code": "turvul",
@@ -272,7 +272,7 @@
       "lng": -103.8615489,
       "location_id": "L2265498",
       "checklist_id": "S328099767",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/91878521/square.jpg"
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/6903515/square.jpg"
     },
     {
       "species_code": "haiwoo",

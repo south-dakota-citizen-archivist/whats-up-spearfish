@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-30T18:08:59.623408+00:00",
+  "fetched_at": "2026-05-01T17:55:36.272489+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -1659,6 +1659,28 @@
       ]
     },
     {
+      "notice_type": "Concentrated Animal Feeding Operations (Individual Permit)",
+      "deadline": "05/31/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/31/2026&name=Dakota Layers, LLC - DL Specialty Eggs&pntype=fp_cafo_individual&description=Expanding Chicken Feeding Operation - Individual Permit",
+      "name": "Dakota Layers, LLC - DL Specialty Eggs",
+      "description": "Expanding Chicken Feeding Operation - Individual Permit",
+      "location": "Brookings County",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/DLSpecialtyEggsPN.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/DLSpecialtyEggsDraftPermit.pdf"
+        },
+        {
+          "label": "Statement of Basis",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/DLSpecialtyEggsSOB.pdf"
+        }
+      ]
+    },
+    {
       "notice_type": "Surface Water Discharge (NPDES)",
       "deadline": "06/01/2026",
       "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=06/01/2026&name=City of Harrisburg&pntype=sw_npdes&description=The City of Harrisburg is authorized under this permit to discharge to the Big Sioux River from its wastewater treatment facility located in Lincoln County.",
@@ -1691,24 +1713,6 @@
         {
           "label": "Public Notice",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/MineralsMining/CleanNuclearEXNI453NoticeofHearing2026b.pdf"
-        },
-        {
-          "label": "Application",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/NewEXNIS.aspx"
-        }
-      ]
-    },
-    {
-      "notice_type": "Mineral Exploration",
-      "deadline": "",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=&name=Pete Lien and Sons, Inc.&pntype=mm_ex&description=Notice of Intent for Graphite Exploration",
-      "name": "Pete Lien and Sons, Inc.",
-      "description": "Notice of Intent for Graphite Exploration",
-      "location": "Five miles southwest of Rochford, SD",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/MineralsMining/EXNI469NoticeofIntent.pdf"
         },
         {
           "label": "Application",

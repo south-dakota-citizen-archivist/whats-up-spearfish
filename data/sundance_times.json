@@ -728,5 +728,25 @@
     "description": "",
     "record_type": "news",
     "source_label": "Sundance Times"
+  },
+  {
+    "url": "https://www.sundancetimes.com/story/2026/04/30/minutes/ccnrd/12488.html",
+    "title": "CCNRD",
+    "slug": "sundance-times-ccnrd",
+    "published": "2026-04-30",
+    "byline": "",
+    "description": "",
+    "record_type": "news",
+    "source_label": "Sundance Times"
+  },
+  {
+    "url": "https://www.sundancetimes.com/story/2026/04/30/minutes/cclupandzc/12489.html",
+    "title": "CCLUP&ZC",
+    "slug": "sundance-times-cclup-zc",
+    "published": "2026-04-30",
+    "byline": "",
+    "description": "",
+    "record_type": "news",
+    "source_label": "Sundance Times"
   }
 ]

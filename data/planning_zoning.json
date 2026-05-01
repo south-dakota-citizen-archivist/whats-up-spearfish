@@ -1,6 +1,22 @@
 {
-  "fetched_at": "2026-04-30T18:08:41.922110+00:00",
+  "fetched_at": "2026-05-01T17:55:19.992445+00:00",
   "records": [
+    {
+      "id": 11873,
+      "record_no": "ENG-16",
+      "record_type": "Subdivision Development Plans",
+      "record_type_id": 6513,
+      "category": "planning",
+      "status": 1,
+      "date_created": "2026-04-30T21:33:47.726Z",
+      "date_submitted": "2026-04-30T21:42:53.000Z",
+      "last_updated": "2026-04-30T21:42:53.000Z",
+      "address": "",
+      "lat": 44.461927,
+      "lon": -103.788029,
+      "applicant": "Bradley LIMBO",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/11873"
+    },
     {
       "id": 11871,
       "record_no": "FP-26-6",
@@ -26,7 +42,7 @@
       "status": 1,
       "date_created": "2026-04-29T20:09:41.400Z",
       "date_submitted": "2026-04-29T20:20:18.000Z",
-      "last_updated": "2026-04-29T20:24:23.000Z",
+      "last_updated": "2026-05-01T15:36:10.000Z",
       "address": "1414 WOODBURN DR, SPEARFISH, SD 57783",
       "lat": 44.494327,
       "lon": -103.878655,
@@ -42,7 +58,7 @@
       "status": 1,
       "date_created": "2026-04-29T15:59:43.726Z",
       "date_submitted": "2026-04-29T16:08:46.000Z",
-      "last_updated": "2026-04-29T16:45:29.613Z",
+      "last_updated": "2026-05-01T14:24:22.556Z",
       "address": "",
       "lat": 44.473871,
       "lon": -103.751873,
@@ -170,7 +186,7 @@
       "status": 1,
       "date_created": "2026-04-23T18:15:04.310Z",
       "date_submitted": "2026-04-23T19:33:00.000Z",
-      "last_updated": "2026-04-23T19:33:00.000Z",
+      "last_updated": "2026-05-01T17:08:15.000Z",
       "address": "",
       "lat": 44.472952,
       "lon": -103.752259,
@@ -290,6 +306,22 @@
       "portal_url": "https://spearfishsd.portal.opengov.com/records/11805"
     },
     {
+      "id": 11800,
+      "record_no": "",
+      "record_type": "Commercial New Construction",
+      "record_type_id": 6477,
+      "category": "new_construction",
+      "status": 0,
+      "date_created": "2026-04-17T16:03:27.793Z",
+      "date_submitted": "",
+      "last_updated": "2026-04-17T16:12:26.000Z",
+      "address": "",
+      "lat": null,
+      "lon": null,
+      "applicant": "Jason Hanson",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/11800"
+    },
+    {
       "id": 11797,
       "record_no": "PMG-26-13",
       "record_type": "Standalone Permits - Plumbing, Mechanical, Gas",
@@ -400,6 +432,22 @@
       "lon": -103.731273,
       "applicant": "Loren Vrem",
       "portal_url": "https://spearfishsd.portal.opengov.com/records/11789"
+    },
+    {
+      "id": 11788,
+      "record_no": "",
+      "record_type": "Right of Way Permit",
+      "record_type_id": 6440,
+      "category": "infrastructure",
+      "status": 0,
+      "date_created": "2026-04-15T21:59:57.556Z",
+      "date_submitted": "",
+      "last_updated": "2026-04-15T22:01:51.000Z",
+      "address": "",
+      "lat": 44.495258,
+      "lon": -103.86738,
+      "applicant": "Mi Pe",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/11788"
     },
     {
       "id": 11786,
@@ -538,7 +586,7 @@
       "status": 1,
       "date_created": "2026-04-01T19:06:46.613Z",
       "date_submitted": "2026-04-01T20:29:22.000Z",
-      "last_updated": "2026-04-10T14:24:18.000Z",
+      "last_updated": "2026-05-01T15:03:41.000Z",
       "address": "",
       "lat": null,
       "lon": null,
@@ -624,6 +672,22 @@
       "lon": -103.858845,
       "applicant": "Greg Moselle",
       "portal_url": "https://spearfishsd.portal.opengov.com/records/11724"
+    },
+    {
+      "id": 11721,
+      "record_no": "",
+      "record_type": "Commercial New Construction",
+      "record_type_id": 6477,
+      "category": "new_construction",
+      "status": 0,
+      "date_created": "2026-03-31T19:31:09.829Z",
+      "date_submitted": "",
+      "last_updated": "2026-03-31T19:31:09.000Z",
+      "address": "",
+      "lat": null,
+      "lon": null,
+      "applicant": "",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/11721"
     },
     {
       "id": 11720,
@@ -720,6 +784,22 @@
       "lon": null,
       "applicant": "",
       "portal_url": "https://spearfishsd.portal.opengov.com/records/11687"
+    },
+    {
+      "id": 11686,
+      "record_no": "",
+      "record_type": "Commercial New Construction",
+      "record_type_id": 6477,
+      "category": "new_construction",
+      "status": 0,
+      "date_created": "2026-03-26T19:27:33.906Z",
+      "date_submitted": "",
+      "last_updated": "2026-03-26T19:27:33.000Z",
+      "address": "",
+      "lat": null,
+      "lon": null,
+      "applicant": "",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/11686"
     },
     {
       "id": 11678,
@@ -946,6 +1026,22 @@
       "portal_url": "https://spearfishsd.portal.opengov.com/records/11609"
     },
     {
+      "id": 11608,
+      "record_no": "",
+      "record_type": "Right of Way Permit",
+      "record_type_id": 6440,
+      "category": "infrastructure",
+      "status": 0,
+      "date_created": "2026-03-09T17:10:14.147Z",
+      "date_submitted": "",
+      "last_updated": "2026-03-09T17:10:14.000Z",
+      "address": "",
+      "lat": null,
+      "lon": null,
+      "applicant": "",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/11608"
+    },
+    {
       "id": 11603,
       "record_no": "CDM-26-1",
       "record_type": "Commercial Demolition",
@@ -1104,6 +1200,22 @@
       "lon": -103.853887,
       "applicant": "Audry Klein",
       "portal_url": "https://spearfishsd.portal.opengov.com/records/11575"
+    },
+    {
+      "id": 11574,
+      "record_no": "",
+      "record_type": "Commercial New Construction",
+      "record_type_id": 6477,
+      "category": "new_construction",
+      "status": 0,
+      "date_created": "2026-02-25T21:20:11.593Z",
+      "date_submitted": "",
+      "last_updated": "2026-02-25T21:20:11.000Z",
+      "address": "",
+      "lat": null,
+      "lon": null,
+      "applicant": "",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/11574"
     },
     {
       "id": 11573,
@@ -1520,6 +1632,22 @@
       "lon": null,
       "applicant": "kevin pfister",
       "portal_url": "https://spearfishsd.portal.opengov.com/records/11420"
+    },
+    {
+      "id": 11418,
+      "record_no": "",
+      "record_type": "Commercial New Construction",
+      "record_type_id": 6477,
+      "category": "new_construction",
+      "status": 0,
+      "date_created": "2026-01-22T18:42:56.023Z",
+      "date_submitted": "",
+      "last_updated": "2026-02-04T01:48:18.000Z",
+      "address": "3165 Venture Court, Spearfish, SD 57783",
+      "lat": 44.490817,
+      "lon": -103.85937,
+      "applicant": "Corey Mosset",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/11418"
     },
     {
       "id": 11403,
@@ -2258,6 +2386,22 @@
       "portal_url": "https://spearfishsd.portal.opengov.com/records/10864"
     },
     {
+      "id": 10852,
+      "record_no": "",
+      "record_type": "Right of Way Permit",
+      "record_type_id": 6440,
+      "category": "infrastructure",
+      "status": 0,
+      "date_created": "2025-11-10T20:05:05.839Z",
+      "date_submitted": "",
+      "last_updated": "2025-11-10T20:05:18.000Z",
+      "address": "",
+      "lat": null,
+      "lon": null,
+      "applicant": "",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10852"
+    },
+    {
       "id": 10850,
       "record_no": "MP-25-12",
       "record_type": "Minor Final Plat",
@@ -2514,6 +2658,22 @@
       "portal_url": "https://spearfishsd.portal.opengov.com/records/10757"
     },
     {
+      "id": 10754,
+      "record_no": "",
+      "record_type": "Right of Way Permit",
+      "record_type_id": 6440,
+      "category": "infrastructure",
+      "status": 0,
+      "date_created": "2025-10-13T20:08:22.872Z",
+      "date_submitted": "",
+      "last_updated": "2025-10-13T20:09:07.000Z",
+      "address": "444 N 8TH ST, SPEARFISH, SD 57783",
+      "lat": 44.488119,
+      "lon": -103.854925,
+      "applicant": "Leah Joy Sanders",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10754"
+    },
+    {
       "id": 10753,
       "record_no": "VAC-25-1",
       "record_type": "Vacate of Right of Way or Easement",
@@ -2642,6 +2802,22 @@
       "portal_url": "https://spearfishsd.portal.opengov.com/records/10709"
     },
     {
+      "id": 10702,
+      "record_no": "",
+      "record_type": "Right of Way Permit",
+      "record_type_id": 6440,
+      "category": "infrastructure",
+      "status": 0,
+      "date_created": "2025-09-26T19:15:12.430Z",
+      "date_submitted": "",
+      "last_updated": "2025-09-26T19:16:05.000Z",
+      "address": "",
+      "lat": null,
+      "lon": null,
+      "applicant": "TJ Evans",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10702"
+    },
+    {
       "id": 10701,
       "record_no": "MFP-25-6",
       "record_type": "Major Final Plat",
@@ -2706,6 +2882,22 @@
       "portal_url": "https://spearfishsd.portal.opengov.com/records/10697"
     },
     {
+      "id": 10674,
+      "record_no": "",
+      "record_type": "Right of Way Permit",
+      "record_type_id": 6440,
+      "category": "infrastructure",
+      "status": 0,
+      "date_created": "2025-09-22T20:57:33.673Z",
+      "date_submitted": "",
+      "last_updated": "2025-09-22T20:57:43.000Z",
+      "address": "",
+      "lat": null,
+      "lon": null,
+      "applicant": "Donna Shinpaugh",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10674"
+    },
+    {
       "id": 10667,
       "record_no": "",
       "record_type": "Sign Permit ",
@@ -2754,6 +2946,22 @@
       "portal_url": "https://spearfishsd.portal.opengov.com/records/10658"
     },
     {
+      "id": 10652,
+      "record_no": "",
+      "record_type": "Right of Way Permit",
+      "record_type_id": 6440,
+      "category": "infrastructure",
+      "status": 0,
+      "date_created": "2025-09-16T21:38:08.393Z",
+      "date_submitted": "",
+      "last_updated": "2025-09-16T21:40:46.000Z",
+      "address": "1112 S 35TH ST, SPEARFISH, SD 57783",
+      "lat": 44.46439,
+      "lon": -103.801572,
+      "applicant": "Richard Lensegrav",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10652"
+    },
+    {
       "id": 10619,
       "record_no": "ROW-25-62",
       "record_type": "Right of Way Permit",
@@ -2784,6 +2992,22 @@
       "lon": null,
       "applicant": "Deryl Miles",
       "portal_url": "https://spearfishsd.portal.opengov.com/records/10609"
+    },
+    {
+      "id": 10539,
+      "record_no": "",
+      "record_type": "Right of Way Permit",
+      "record_type_id": 6440,
+      "category": "infrastructure",
+      "status": 0,
+      "date_created": "2025-08-22T19:02:34.120Z",
+      "date_submitted": "",
+      "last_updated": "2025-08-22T19:05:28.000Z",
+      "address": "931 W JACKSON BLVD, SPEARFISH, SD 57783",
+      "lat": 44.490678,
+      "lon": -103.872995,
+      "applicant": "Dean Hanson",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10539"
     },
     {
       "id": 10538,
@@ -3074,6 +3298,38 @@
       "portal_url": "https://spearfishsd.portal.opengov.com/records/10451"
     },
     {
+      "id": 10449,
+      "record_no": "",
+      "record_type": "Right of Way Permit",
+      "record_type_id": 6440,
+      "category": "infrastructure",
+      "status": 0,
+      "date_created": "2025-08-06T19:23:10.486Z",
+      "date_submitted": "",
+      "last_updated": "2025-08-06T20:05:34.000Z",
+      "address": "",
+      "lat": 44.489687,
+      "lon": -103.874975,
+      "applicant": "TJ Evans",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10449"
+    },
+    {
+      "id": 10447,
+      "record_no": "",
+      "record_type": "Right of Way Permit",
+      "record_type_id": 6440,
+      "category": "infrastructure",
+      "status": 0,
+      "date_created": "2025-08-06T15:45:09.966Z",
+      "date_submitted": "",
+      "last_updated": "2025-08-06T15:55:13.000Z",
+      "address": "1936 PRONGHORN RD, SPEARFISH, SD 57783",
+      "lat": 44.481587,
+      "lon": -103.93193,
+      "applicant": "Dale Leite...",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10447"
+    },
+    {
       "id": 10443,
       "record_no": "CUP-25-4",
       "record_type": "Conditional Use Permit",
@@ -3314,6 +3570,22 @@
       "portal_url": "https://spearfishsd.portal.opengov.com/records/10317"
     },
     {
+      "id": 10312,
+      "record_no": "",
+      "record_type": "Residential New Construction",
+      "record_type_id": 6476,
+      "category": "new_construction",
+      "status": 0,
+      "date_created": "2025-06-27T17:56:10.463Z",
+      "date_submitted": "",
+      "last_updated": "2025-07-08T18:55:29.000Z",
+      "address": "Oliver Bond Street, Dublin, D D08 Y892",
+      "lat": 53.344265,
+      "lon": -6.278903,
+      "applicant": "Kurt Jensen",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10312"
+    },
+    {
       "id": 10298,
       "record_no": "MPP-25-5",
       "record_type": "Major Preliminary Plat",
@@ -3376,6 +3648,22 @@
       "lon": -103.864797,
       "applicant": "Rosalie Aslesen",
       "portal_url": "https://spearfishsd.portal.opengov.com/records/10224"
+    },
+    {
+      "id": 10215,
+      "record_no": "",
+      "record_type": "Residential New Construction",
+      "record_type_id": 6476,
+      "category": "new_construction",
+      "status": 0,
+      "date_created": "2025-06-05T22:06:13.127Z",
+      "date_submitted": "",
+      "last_updated": "2025-06-06T20:11:35.000Z",
+      "address": "109 East Hudson Street, Spearfish, SD 57783",
+      "lat": 44.488801,
+      "lon": -103.85829,
+      "applicant": "Cody Hemeyer",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10215"
     },
     {
       "id": 10202,
@@ -3442,6 +3730,38 @@
       "portal_url": "https://spearfishsd.portal.opengov.com/records/10160"
     },
     {
+      "id": 10153,
+      "record_no": "",
+      "record_type": "Commercial Alterations, Additions, or Tenant Improvements",
+      "record_type_id": 6478,
+      "category": "alterations",
+      "status": 0,
+      "date_created": "2025-05-23T13:13:32.233Z",
+      "date_submitted": "",
+      "last_updated": "2025-05-23T13:18:23.000Z",
+      "address": "184 Pine Cone  Ave, Spearfish, SD 57783",
+      "lat": 44.47258,
+      "lon": -103.864416,
+      "applicant": "Jayson Dunmire",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10153"
+    },
+    {
+      "id": 10152,
+      "record_no": "",
+      "record_type": "Commercial Alterations, Additions, or Tenant Improvements",
+      "record_type_id": 6478,
+      "category": "alterations",
+      "status": 0,
+      "date_created": "2025-05-23T13:10:03.859Z",
+      "date_submitted": "",
+      "last_updated": "2025-05-23T13:11:13.000Z",
+      "address": "184 Pine Cone  Ave, Spearfish, SD 57783",
+      "lat": 44.47258,
+      "lon": -103.864416,
+      "applicant": "Jayson Dunmire",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10152"
+    },
+    {
       "id": 10146,
       "record_no": "",
       "record_type": "Grading Permit",
@@ -3456,6 +3776,38 @@
       "lon": null,
       "applicant": "Todd Schuler",
       "portal_url": "https://spearfishsd.portal.opengov.com/records/10146"
+    },
+    {
+      "id": 10143,
+      "record_no": "",
+      "record_type": "Commercial Alterations, Additions, or Tenant Improvements",
+      "record_type_id": 6478,
+      "category": "alterations",
+      "status": 0,
+      "date_created": "2025-05-21T18:19:15.490Z",
+      "date_submitted": "",
+      "last_updated": "2025-05-21T18:21:24.000Z",
+      "address": "3355 E COLORADO BLVD, SPEARFISH, SD 57783",
+      "lat": 44.475363,
+      "lon": -103.803284,
+      "applicant": "Garrett Burg",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10143"
+    },
+    {
+      "id": 10138,
+      "record_no": "",
+      "record_type": "Commercial Alterations, Additions, or Tenant Improvements",
+      "record_type_id": 6478,
+      "category": "alterations",
+      "status": 0,
+      "date_created": "2025-05-21T16:01:38.882Z",
+      "date_submitted": "",
+      "last_updated": "2025-05-21T16:14:14.000Z",
+      "address": "3355 E COLORADO BLVD, SPEARFISH, SD 57783",
+      "lat": 44.475363,
+      "lon": -103.803284,
+      "applicant": "Garrett Burg",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10138"
     },
     {
       "id": 10134,
@@ -3474,6 +3826,22 @@
       "portal_url": "https://spearfishsd.portal.opengov.com/records/10134"
     },
     {
+      "id": 10122,
+      "record_no": "",
+      "record_type": "Residential New Construction",
+      "record_type_id": 6476,
+      "category": "new_construction",
+      "status": 0,
+      "date_created": "2025-05-19T19:34:22.173Z",
+      "date_submitted": "",
+      "last_updated": "2025-05-19T19:35:13.000Z",
+      "address": "",
+      "lat": null,
+      "lon": null,
+      "applicant": "Mason Meachum",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10122"
+    },
+    {
       "id": 10117,
       "record_no": "",
       "record_type": "Right of Way Permit",
@@ -3490,6 +3858,22 @@
       "portal_url": "https://spearfishsd.portal.opengov.com/records/10117"
     },
     {
+      "id": 10114,
+      "record_no": "",
+      "record_type": "Commercial Alterations, Additions, or Tenant Improvements",
+      "record_type_id": 6478,
+      "category": "alterations",
+      "status": 0,
+      "date_created": "2025-05-19T05:15:49.573Z",
+      "date_submitted": "",
+      "last_updated": "2025-05-19T05:18:35.000Z",
+      "address": "184 Pine Cone  Ave, Spearfish, SD 57783",
+      "lat": 44.47258,
+      "lon": -103.864416,
+      "applicant": "Jayson Dunmire",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10114"
+    },
+    {
       "id": 10093,
       "record_no": "",
       "record_type": "Rezone",
@@ -3504,6 +3888,22 @@
       "lon": null,
       "applicant": "Joe Jorgensen",
       "portal_url": "https://spearfishsd.portal.opengov.com/records/10093"
+    },
+    {
+      "id": 10091,
+      "record_no": "",
+      "record_type": "Commercial Alterations, Additions, or Tenant Improvements",
+      "record_type_id": 6478,
+      "category": "alterations",
+      "status": 0,
+      "date_created": "2025-05-15T16:24:03.233Z",
+      "date_submitted": "",
+      "last_updated": "2025-11-10T03:43:35.000Z",
+      "address": "",
+      "lat": null,
+      "lon": null,
+      "applicant": "Jaymia Ecker",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/10091"
     },
     {
       "id": 10088,
@@ -4258,6 +4658,38 @@
       "portal_url": "https://spearfishsd.portal.opengov.com/records/9848"
     },
     {
+      "id": 9795,
+      "record_no": "",
+      "record_type": "Residential Additions or Alterations",
+      "record_type_id": 6479,
+      "category": "alterations",
+      "status": 0,
+      "date_created": "2025-03-18T19:24:18.143Z",
+      "date_submitted": "",
+      "last_updated": "2025-03-18T19:24:18.000Z",
+      "address": "",
+      "lat": null,
+      "lon": null,
+      "applicant": "",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/9795"
+    },
+    {
+      "id": 9794,
+      "record_no": "",
+      "record_type": "Residential Additions or Alterations",
+      "record_type_id": 6479,
+      "category": "alterations",
+      "status": 0,
+      "date_created": "2025-03-18T19:24:05.563Z",
+      "date_submitted": "",
+      "last_updated": "2025-03-18T19:24:05.000Z",
+      "address": "",
+      "lat": null,
+      "lon": null,
+      "applicant": "",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/9794"
+    },
+    {
       "id": 9787,
       "record_no": "",
       "record_type": "Commercial Alterations, Additions, or Tenant Improvements",
@@ -4448,6 +4880,22 @@
       "lon": null,
       "applicant": "Thomas Myers",
       "portal_url": "https://spearfishsd.portal.opengov.com/records/9749"
+    },
+    {
+      "id": 9744,
+      "record_no": "",
+      "record_type": "Residential Additions or Alterations",
+      "record_type_id": 6479,
+      "category": "alterations",
+      "status": 0,
+      "date_created": "2025-03-04T19:56:14.859Z",
+      "date_submitted": "",
+      "last_updated": "2025-03-04T19:56:14.000Z",
+      "address": "",
+      "lat": null,
+      "lon": null,
+      "applicant": "",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/9744"
     },
     {
       "id": 9743,
