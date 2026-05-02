@@ -131,24 +131,24 @@
   },
   {
     "url": "https://www.sawyerbrewingco.com/menu",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/6b525dc0-5e3a-450e-a566-57f9088839cb/nelsonwebsidedark.jpg",
-    "title": "Nelson Science Hazy Pale Ale",
-    "slug": "nelson-science-hazy-pale-ale",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/911a3464-7505-4846-8c2d-c0d94579e7ce/2strokewebsitedark.jpg",
+    "title": "2-Stroke Haze IPA",
+    "slug": "2-stroke-haze-ipa",
     "category": "Hop Heads",
-    "description": "Complex, juicy, and bursting with tropical New Zealand hops. Soft mouthfeel, vibrant aroma, & just the right amount of haze to keep things interesting. Made for sunshine, good company, and easy drinking.",
-    "abv": "5.5%",
+    "description": "Don't you just love the smell of a two stroke engine? It usually means a good day spent in the woods or yard getting stuff done! 2-Stroke Haze is a juicy + hazy + citrusy IPA featuring citra, mosaic, & amarillo hops.",
+    "abv": "5.7%",
     "notes": "",
     "prices": [
       {
-        "price": 3.0,
+        "price": 2.0,
         "ounces": 5
       },
       {
-        "price": 4.5,
+        "price": 4.0,
         "ounces": 10
       },
       {
-        "price": 6.5,
+        "price": 6.0,
         "ounces": 16
       }
     ],

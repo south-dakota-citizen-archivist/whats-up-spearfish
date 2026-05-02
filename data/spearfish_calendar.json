@@ -648,5 +648,15 @@
     "start_dt": "Fri, 12 Dec 2025 15:11:22 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3580",
+    "title": "Black Hills Writers Gathering",
+    "slug": "black-hills-writers-gathering",
+    "description": "<strong>Event date:</strong> May 10, 2026 <br /><strong>Event Time: </strong>02:00 PM - 04:30 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />This monthly event gives area writers an opportunity to share and discuss their pieces.",
+    "published": "Fri, 01 May 2026 17:16:46 -0700",
+    "start_dt": "Fri, 01 May 2026 17:16:46 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

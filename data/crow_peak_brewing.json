@@ -89,11 +89,11 @@
   },
   {
     "url": "https://crowpeakbrewing.com/",
-    "title": "Dill With It - Pickle Gose",
-    "slug": "dill-with-it-pickle-gose",
-    "abv": "4.4%",
-    "ibu": "13",
-    "image_url": "https://crowpeakbrewing.com/wp-content/uploads/2026/02/11.png",
+    "title": "Volga SMaSH",
+    "slug": "volga-smash",
+    "abv": "5.2%",
+    "ibu": "44",
+    "image_url": "https://crowpeakbrewing.com/wp-content/uploads/2026/05/VolgaSMaSHThumbnail.png",
     "description": "",
     "record_type": "beer",
     "source_label": "Crow Peak Brewing"
@@ -170,7 +170,7 @@
     "slug": "barbarosa-red-lager",
     "abv": "5.7%",
     "ibu": "36",
-    "image_url": "https://crowpeakbrewing.com/wp-content/uploads/2026/04/Small_Batch_Website_Thumbnail.png",
+    "image_url": "https://crowpeakbrewing.com/wp-content/uploads/2026/05/barbarosa.jpg",
     "description": "",
     "record_type": "beer",
     "source_label": "Crow Peak Brewing"

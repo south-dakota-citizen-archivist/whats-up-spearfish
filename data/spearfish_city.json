@@ -67470,5 +67470,37 @@
     "title": "Planning Commission 05052026 Packet",
     "doc_type": "Agenda Packet",
     "file_url": "https://spearfishsd.portal.civicclerk.com/event/2221/files/agenda-packet/6522"
+  },
+  {
+    "event_id": 52,
+    "event_name": "City Council Meeting",
+    "category": "City Council",
+    "start_dt": "2026-05-04T17:30:00Z",
+    "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/52",
+    "has_media": true,
+    "media_url": "",
+    "record_type": "document",
+    "source_label": "City of Spearfish",
+    "url": "https://spearfishsd.portal.civicclerk.com/event/52/files/agenda/6523",
+    "title": "City Council Regular Session Agenda 5/4/2026",
+    "doc_type": "Agenda",
+    "file_url": "https://spearfishsd.portal.civicclerk.com/event/52/files/agenda/6523"
+  },
+  {
+    "event_id": 52,
+    "event_name": "City Council Meeting",
+    "category": "City Council",
+    "start_dt": "2026-05-04T17:30:00Z",
+    "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/52",
+    "has_media": true,
+    "media_url": "",
+    "record_type": "document",
+    "source_label": "City of Spearfish",
+    "url": "https://spearfishsd.portal.civicclerk.com/event/52/files/agenda-packet/6524",
+    "title": "City Council Regular Session Packet 5/4/2026",
+    "doc_type": "Agenda Packet",
+    "file_url": "https://spearfishsd.portal.civicclerk.com/event/52/files/agenda-packet/6524"
   }
 ]

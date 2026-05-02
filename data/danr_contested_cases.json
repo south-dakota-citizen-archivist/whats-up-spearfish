@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-01T17:57:50.415186+00:00",
+  "fetched_at": "2026-05-02T17:42:59.071516+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -190,6 +190,14 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID127",
       "documents": [
         {
+          "label": "Proposed Exhibits Submitted by Counsel for the Applicant",
+          "url": "https://danr.sd.gov/wrimage/pub/8797-3_UtechExhibits.pdf"
+        },
+        {
+          "label": "Filings Submitted by Counsel for the Applicant",
+          "url": "https://danr.sd.gov/wrimage/pub/8797-3_Utech_breif_witlist.pdf"
+        },
+        {
           "label": "Proposed Exhibits submitted by Counsel for the Petitioner",
           "url": "https://danr.sd.gov/wrimage/pub/8987-3_petexhibits.pdf"
         },
@@ -200,17 +208,9 @@
         {
           "label": "Notice of Entry of Procedural and Scheduling Order",
           "url": "https://danr.sd.gov/wrimage/pub/8987-3_mcvey.pdf"
-        },
-        {
-          "label": "Filings Submitted by Counsel for the Petitioner",
-          "url": "https://danr.sd.gov/wrimage/pub/8987-3_SOresponse2.pdf"
-        },
-        {
-          "label": "Filings Submitted by Counsel for the Applicant",
-          "url": "https://danr.sd.gov/wrimage/pub/8987-3_SOresponse.pdf"
         }
       ],
-      "total_docs": 18,
+      "total_docs": 20,
       "latest_doc_date": "0000-00-00"
     },
     {

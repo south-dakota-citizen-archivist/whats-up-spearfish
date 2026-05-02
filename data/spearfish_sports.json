@@ -21694,5 +21694,37 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h2026013010135205412902457b3b445",
+    "url": "https://gobound.com/direct/comps/h2026013010135205412902457b3b445/show",
+    "title": "Girls Track & Field: Howard Wood Dakota Relays (Varsity)",
+    "slug": "girls-track-field-howard-wood-dakota-relays-varsity",
+    "sport": "Girls Track & Field",
+    "level": "Varsity",
+    "sex": "female",
+    "description": "Varsity Girls Track & Field - Howard Wood Dakota Relays",
+    "start_dt": "2027-05-01T14:00:00",
+    "end_dt": "",
+    "location": "Howard Wood Field",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20260130101419938b470464af39447",
+    "url": "https://gobound.com/direct/comps/h20260130101419938b470464af39447/show",
+    "title": "Boys Track & Field: Howard Wood Dakota Relays (Varsity)",
+    "slug": "boys-track-field-howard-wood-dakota-relays-varsity",
+    "sport": "Boys Track & Field",
+    "level": "Varsity",
+    "sex": "male",
+    "description": "Varsity Boys Track & Field - Howard Wood Dakota Relays",
+    "start_dt": "2027-05-01T14:00:00",
+    "end_dt": "",
+    "location": "Howard Wood Field",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]

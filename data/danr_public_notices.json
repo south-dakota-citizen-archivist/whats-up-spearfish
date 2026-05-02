@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-01T17:55:36.272489+00:00",
+  "fetched_at": "2026-05-02T17:41:05.960425+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -1062,54 +1062,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/9020-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Ground Water Discharge",
-      "deadline": "5/1/2026",
-      "comment_url": "",
-      "name": "Wharf Resource Juno Foley",
-      "description": "Groundwater Discharge Plan Renewal and Water Quality Variance Review.",
-      "location": "Lawrence County",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/2026Juno-FoleyPublicNotice.pdf"
-        },
-        {
-          "label": "Application",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/Juno_Foley_Renewal_Application.pdf"
-        },
-        {
-          "label": "Staff Report",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/2026Juno-FoleyTechnicalReviewAnalysis.pdf"
-        },
-        {
-          "label": "Conditions",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/2026Juno-FoleyDischargePlan.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Surface Water Discharge (NPDES)",
-      "deadline": "05/01/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/01/2026&name=City of Custer&pntype=sw_npdes&description=The City of Custer is authorized under this permit to discharge to Flynn Creek and French Creek from its wastewater treatment facility located in Custer County.",
-      "name": "City of Custer",
-      "description": "The City of Custer is authorized under this permit to discharge to Flynn Creek and French Creek from its wastewater treatment facility located in Custer County.",
-      "location": "Custer County",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/CusterPNDraft.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/CusterPermitDraft.pdf"
-        },
-        {
-          "label": "Statement of Basis",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/CusterSOBDraft.pdf"
         }
       ]
     },
