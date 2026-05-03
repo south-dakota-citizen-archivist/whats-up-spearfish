@@ -19,10 +19,19 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/Blackberry-Lemon-154-1541962966.jpg",
-    "title": "Blackberry Lemon",
-    "slug": "blackberry-lemon",
-    "description": "Bursting with sweet blackberries and tart lemon, this ice cream is a favorite among fruit fans!",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/E21D5F21-BBB3-4327-AB7A-589C8DD3E2D2-186-1536630266.jpg",
+    "title": "S’mores",
+    "slug": "smores",
+    "description": "A quintessential summer scoop! Marshmallow ice cream riddled with graham crackers, chocolate chips, and mini marshmallows.",
+    "record_type": "flavor",
+    "source_label": "Leone's Creamery"
+  },
+  {
+    "url": "https://leonescreamery.com/flavors",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/92542EFF-F6FA-4343-BFAB-271E2A5ECF33-198-1528419972.jpg",
+    "title": "Mayan Hot Chocolate",
+    "slug": "mayan-hot-chocolate",
+    "description": "With hints of cayenne and cinnamon, this rich ice cream is ultra-chocolaty and delicious...with a kick!",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
@@ -37,19 +46,10 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/EBCFE440-7DA8-4CB3-AF30-9D6254AA9513-169-1549072771.jpg",
-    "title": "Salted Caramel Cone",
-    "slug": "salted-caramel-cone",
-    "description": "Ice cream made with our signature salted caramel sauce, and full of our gluten-free cone pieces folded in!",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/65630E5D-FB51-4AE5-AFCF-79FA31710AB8-287-1556081408.jpg",
-    "title": "Planet Earth",
-    "slug": "planet-earth",
-    "description": "Our vanilla ice cream that we dye blue with butterfly pea flower powder! We toss in pieces of housemade brownies and matcha cake, so each scoop looks like a little planet Earth!",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/Blackberry-Lemon-154-1541962966.jpg",
+    "title": "Blackberry Lemon",
+    "slug": "blackberry-lemon",
+    "description": "Bursting with sweet blackberries and tart lemon, this ice cream is a favorite among fruit fans!",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },

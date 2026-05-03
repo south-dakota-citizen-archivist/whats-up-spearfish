@@ -232,17 +232,6 @@
   },
   {
     "url": "https://www.westernhillshumanesociety.com/cats",
-    "title": "Smokey",
-    "slug": "cat-smokey",
-    "species": "cat",
-    "description": "Female | Born 9.22.23\nNo children | LOVES men!\nWe got Smokey on 3.23.26. She is not a fan of children and that is why she is with us. Her last owners said she’s more of a night owl but loved to cuddle when the kids weren’t around. She even got along with a calm dog and would snuggle with it! She doesn’t enjoy being chased or playing with other cats/dogs. Her last owners said she enjoyed pawing at her water bowl and even dropping the occasional hunted sock into her water - what a silly girl! \nShe’s a bigger kitty with big gorgeous eyes and would do best in a quiet home with adults (and older, calm animals would be alright, we think).",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/16c29cdb-ffad-47c2-a93b-6249ad148fcd/1000037109.jpg?format=500w",
-    "image_alt": "Smokey",
-    "record_type": "adoptable",
-    "source_label": "Western Hills Humane Society"
-  },
-  {
-    "url": "https://www.westernhillshumanesociety.com/cats",
     "title": "Cleo Catra",
     "slug": "cat-cleo-catra",
     "species": "cat",
@@ -297,11 +286,66 @@
     "source_label": "Western Hills Humane Society"
   },
   {
+    "url": "https://www.westernhillshumanesociety.com/cats",
+    "title": "Guinness",
+    "slug": "cat-guinness",
+    "species": "cat",
+    "description": "Male | Born ~3.12.26\nTaking applications, available 5.5.26\nGuinness came to us on 3.13.26 with siblings and feral mom, Paddy. He’s a cute little fluff and has a twin sister!",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/ed941be3-e2d7-488c-9fc5-e8dea3eb092a/Guiness.jpg?format=500w",
+    "image_alt": "Guinness",
+    "record_type": "adoptable",
+    "source_label": "Western Hills Humane Society"
+  },
+  {
+    "url": "https://www.westernhillshumanesociety.com/cats",
+    "title": "Ireland",
+    "slug": "cat-ireland",
+    "species": "cat",
+    "description": "Female | Born ~3.12.26\nTaking applications, available 5.5.26\nIreland came to us on 3.13.26 with siblings and feral mom, Paddy. She’s a cute little fluff and has a twin brother!",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/9fea128f-87a9-43ce-8203-4ccb7d8f3148/Ireland.jpg?format=500w",
+    "image_alt": "Ireland",
+    "record_type": "adoptable",
+    "source_label": "Western Hills Humane Society"
+  },
+  {
+    "url": "https://www.westernhillshumanesociety.com/cats",
+    "title": "Charm",
+    "slug": "cat-charm",
+    "species": "cat",
+    "description": "Female | Born ~3.12.26\nTaking applications, available 5.5.26\nCharm came to us on 3.13.26 with siblings and feral mom, Paddy. She is vocal, loves to climb up your legs, and is the most mischievous of her siblings.",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/0fee50be-9fed-4f8b-95b5-a70e1dfd9fec/Charm.jpg?format=500w",
+    "image_alt": "Charm",
+    "record_type": "adoptable",
+    "source_label": "Western Hills Humane Society"
+  },
+  {
+    "url": "https://www.westernhillshumanesociety.com/cats",
+    "title": "Jig",
+    "slug": "cat-jig",
+    "species": "cat",
+    "description": "Male | Born ~3.12.26\nTaking applications, available 5.5.26\nJig came to us on 3.13.26 with siblings and feral mom, Paddy. He’s a playful little fluff.",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/75cfbe9d-6dcd-475e-b409-c735495d7cfa/Jig2.jpg?format=500w",
+    "image_alt": "Jig",
+    "record_type": "adoptable",
+    "source_label": "Western Hills Humane Society"
+  },
+  {
+    "url": "https://www.westernhillshumanesociety.com/cats",
+    "title": "Shamrock",
+    "slug": "cat-shamrock",
+    "species": "cat",
+    "description": "Male | Born ~3.12.26\nTaking applications, available 5.5.26\nShamrock came to us on 3.13.26 with siblings and feral mom, Paddy. He’s a little more laid back but is getting more and more rambunctious!",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/18c7781c-3a61-433e-8d38-f1f15723a0cb/Shamrock.jpg?format=500w",
+    "image_alt": "Shamrock",
+    "record_type": "adoptable",
+    "source_label": "Western Hills Humane Society"
+  },
+  {
     "url": "https://www.westernhillshumanesociety.com/dogs",
     "title": "Nova",
     "slug": "dog-nova",
     "species": "dog",
-    "description": "Female | Australian Shepherd Mix | 6 yrs\nCurrently being fostered but accepting applications!\nNo young children, No cats\nOur longest term resident! Nova was brought in with a male dog and a puppy in 2022, though she remains. Being in the shelter for so long has made her reactive and sassy, therefore she requires a slow introduction. For most new introductions we muzzle her to keep everyone safe. Once she is comfortable with you, she is very affectionate. We call her “Our Princess.” \nShe does not get along with female dogs but has shown little to no aggression towards male dogs. Give her some time, you’ll love her as much as we do! \nNova weighs around 30 pounds.",
+    "description": "Female | Australian Shepherd Mix | 6 yrs\nNo young children, No cats\nNova is back from her foster adventure! We learned that she really will do best with only one human in the house and being the only pet. She still needs slow introductions even when in her new home. She had great manners without accidents in her foster home and was not destructive so she would not need to be kenneled when left home alone. Please ask questions and we’d be happy to get you in touch with her former foster dad if you want to get to know her more! \nOur longest term resident! Nova was brought in with a male dog and a puppy in 2022, though she remains. Being in the shelter for so long has made her reactive and sassy, therefore she requires a slow introduction. For most new introductions we muzzle her to keep everyone safe. Once she is comfortable with you, she is very affectionate. We call her “Our Princess.” \nShe does not get along with female dogs but has shown little to no aggression towards male dogs. Give her some time, you’ll love her as much as we do! \nNova weighs around 30 pounds.",
     "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/80fcf260-234d-468e-9a3b-64dafb2b8fed/1000036500.jpg?format=500w",
     "image_alt": "Nova",
     "record_type": "adoptable",
@@ -326,17 +370,6 @@
     "description": "Male | Pitbull Mix | 1 year\nSome dogs, Careful with children\nThis cute little man came to us for Christmas! Based on his behavior, we’re quite sure he was born and raised in a kennel setting, therefore, he does well in a kennel. He could use some more work on potty training and we’re working on commands. He is quite loud and a little protective of his space, so slow introductions are best. It may take a couple of interactions to win him over, but once you do, he won’t get out of your lap!\nFor a pup, he’s a hefty 50 pounds!",
     "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/eb3ab479-0a71-4bd1-a489-e857d9b4aa15/image0+%2818%29.jpeg?format=500w",
     "image_alt": "Chase",
-    "record_type": "adoptable",
-    "source_label": "Western Hills Humane Society"
-  },
-  {
-    "url": "https://www.westernhillshumanesociety.com/dogs",
-    "title": "Mae",
-    "slug": "dog-mae",
-    "species": "dog",
-    "description": "Female | Husky/German Shepherd | 3.5 year\nGood with kids, Some dogs\nMae was brought to us in March 2026 for being a bit of an instigator! She’s shown some food aggression when it comes to other dogs, but loves people! She’s got a lot of energy and needs a little work on her manners. but, once she’s worn out, she’s is a cuddle bug! She loves the snow and in the summer is a water loving dog! Mae weighs about 55 pounds.",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/c370824f-a1bd-4a05-80ca-a5af732af6d0/image3+%286%29.jpeg?format=500w",
-    "image_alt": "Mae",
     "record_type": "adoptable",
     "source_label": "Western Hills Humane Society"
   },
@@ -381,6 +414,28 @@
     "description": "Male | Heeler Doberman Mix | Born 3.8.23\nNo cats, no male dogs, older kids\nCutlass came to us on 4/30/26 after his owner passed away. He does not like cats or male dogs. He doesn’t seem to mind female dogs. We think he would do better with older kids, rather than younger children. We invite you to come visit him and see if you could be his next human! Cutlass is 49 lbs.",
     "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/08a28fc8-9ad5-41c2-ad1c-e870a95b33a7/Cutlass.jpg?format=500w",
     "image_alt": "Cutlass",
+    "record_type": "adoptable",
+    "source_label": "Western Hills Humane Society"
+  },
+  {
+    "url": "https://www.westernhillshumanesociety.com/dogs",
+    "title": "Gertie Mae",
+    "slug": "dog-gertie-mae",
+    "species": "dog",
+    "description": "Female | Akbosh | ~3 years\nMeet Gertie Mae! She joined us on 5.2.26 and has adjusted well already! She’s a big lap dog and her only flaw is food aggression. She’s a lover so as long as animals and humans leave her be while eating, she will be just fine! She does like to bark and alert her family of anything out of the ordinary but hey, she’s a dog protecting her people. She has lived with other dogs, cats, and kids. Gertie weighs about 75 lbs.",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/a75c2f47-a329-4761-b3ac-91a1389eef61/1000041240.jpg?format=500w",
+    "image_alt": "Gertie Mae",
+    "record_type": "adoptable",
+    "source_label": "Western Hills Humane Society"
+  },
+  {
+    "url": "https://www.westernhillshumanesociety.com/dogs",
+    "title": "Apollo",
+    "slug": "dog-apollo",
+    "species": "dog",
+    "description": "Male | Black Lab/Husky Mix | 1.5 years\nApollo came to us on 5.2.26. He is taking some time to adjust and as we get to know him, we will post updates! He has lived with dogs, cats, and children and so we hope we see positive interactions while he is with us.",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/4773ae43-07a9-4b68-87b9-e1cb546a5698/1000041241.jpg?format=500w",
+    "image_alt": "Apollo",
     "record_type": "adoptable",
     "source_label": "Western Hills Humane Society"
   }
