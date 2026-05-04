@@ -1,6 +1,97 @@
 {
-  "fetched_at": "2026-05-04T18:12:17.885612+00:00",
+  "fetched_at": "2026-05-04T23:28:19.639851+00:00",
   "observations": [
+    {
+      "species_code": "swathr",
+      "common_name": "Swainson's Thrush",
+      "scientific_name": "Catharus ustulatus",
+      "observed_on": "2026-05-04",
+      "count": 1,
+      "location_name": "HOME-13162 Hope Road, Newell, South Dakota, US (44.705, -103.413)",
+      "lat": 44.7054926,
+      "lng": -103.4130828,
+      "location_id": "L63749701",
+      "checklist_id": "S332547537",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/194570525/square.jpg"
+    },
+    {
+      "species_code": "houspa",
+      "common_name": "House Sparrow",
+      "scientific_name": "Passer domesticus",
+      "observed_on": "2026-05-04",
+      "count": 10,
+      "location_name": "HOME-13162 Hope Road, Newell, South Dakota, US (44.705, -103.413)",
+      "lat": 44.7054926,
+      "lng": -103.4130828,
+      "location_id": "L63749701",
+      "checklist_id": "S332547537",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4608133/square.jpg"
+    },
+    {
+      "species_code": "whcspa",
+      "common_name": "White-crowned Sparrow",
+      "scientific_name": "Zonotrichia leucophrys",
+      "observed_on": "2026-05-04",
+      "count": 10,
+      "location_name": "HOME-13162 Hope Road, Newell, South Dakota, US (44.705, -103.413)",
+      "lat": 44.7054926,
+      "lng": -103.4130828,
+      "location_id": "L63749701",
+      "checklist_id": "S332547537",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/27928/square.jpg"
+    },
+    {
+      "species_code": "linspa",
+      "common_name": "Lincoln's Sparrow",
+      "scientific_name": "Melospiza lincolnii",
+      "observed_on": "2026-05-04",
+      "count": 1,
+      "location_name": "HOME-13162 Hope Road, Newell, South Dakota, US (44.705, -103.413)",
+      "lat": 44.7054926,
+      "lng": -103.4130828,
+      "location_id": "L63749701",
+      "checklist_id": "S332547537",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/1645880/square.jpg"
+    },
+    {
+      "species_code": "yelwar1",
+      "common_name": "Northern Yellow Warbler",
+      "scientific_name": "Setophaga aestiva",
+      "observed_on": "2026-05-04",
+      "count": 1,
+      "location_name": "HOME-13162 Hope Road, Newell, South Dakota, US (44.705, -103.413)",
+      "lat": 44.7054926,
+      "lng": -103.4130828,
+      "location_id": "L63749701",
+      "checklist_id": "S332547537",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/293515565/square.jpg"
+    },
+    {
+      "species_code": "grbher3",
+      "common_name": "Great Blue Heron",
+      "scientific_name": "Ardea herodias",
+      "observed_on": "2026-05-04",
+      "count": 1,
+      "location_name": "21576 US-385, Deadwood US-SD 44.27467, -103.69411",
+      "lat": 44.274666,
+      "lng": -103.694106,
+      "location_id": "L64962849",
+      "checklist_id": "S332457000",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/65060931/square.jpg"
+    },
+    {
+      "species_code": "sheowl",
+      "common_name": "Short-eared Owl",
+      "scientific_name": "Asio flammeus",
+      "observed_on": "2026-05-04",
+      "count": null,
+      "location_name": "18654 Horse Creek Ln, Newell US-SD 44.69760, -103.44517",
+      "lat": 44.697602,
+      "lng": -103.445167,
+      "location_id": "L64744466",
+      "checklist_id": "S332437785",
+      "photo_url": "https://static.inaturalist.org/photos/30378889/square.jpg"
+    },
     {
       "species_code": "comgra",
       "common_name": "Common Grackle",
@@ -314,19 +405,6 @@
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/117303151/square.jpg"
     },
     {
-      "species_code": "houspa",
-      "common_name": "House Sparrow",
-      "scientific_name": "Passer domesticus",
-      "observed_on": "2026-05-03",
-      "count": 1,
-      "location_name": "18765 US-85, Belle Fourche US-SD 44.68236, -103.85467",
-      "lat": 44.682362,
-      "lng": -103.854668,
-      "location_id": "L64837871",
-      "checklist_id": "S331854800",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4608133/square.jpg"
-    },
-    {
       "species_code": "bkbmag1",
       "common_name": "Black-billed Magpie",
       "scientific_name": "Pica hudsonia",
@@ -351,32 +429,6 @@
       "location_id": "L63749701",
       "checklist_id": "S331756904",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/229994/square.jpg"
-    },
-    {
-      "species_code": "whcspa",
-      "common_name": "White-crowned Sparrow",
-      "scientific_name": "Zonotrichia leucophrys",
-      "observed_on": "2026-05-03",
-      "count": 12,
-      "location_name": "HOME-13162 Hope Road, Newell, South Dakota, US (44.705, -103.413)",
-      "lat": 44.7054926,
-      "lng": -103.4130828,
-      "location_id": "L63749701",
-      "checklist_id": "S331756904",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/27928/square.jpg"
-    },
-    {
-      "species_code": "linspa",
-      "common_name": "Lincoln's Sparrow",
-      "scientific_name": "Melospiza lincolnii",
-      "observed_on": "2026-05-03",
-      "count": 2,
-      "location_name": "HOME-13162 Hope Road, Newell, South Dakota, US (44.705, -103.413)",
-      "lat": 44.7054926,
-      "lng": -103.4130828,
-      "location_id": "L63749701",
-      "checklist_id": "S331756904",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/1645880/square.jpg"
     },
     {
       "species_code": "spotow",
@@ -455,19 +507,6 @@
       "location_id": "L64850289",
       "checklist_id": "S331912033",
       "photo_url": "https://static.inaturalist.org/photos/606784000/square.jpg"
-    },
-    {
-      "species_code": "grbher3",
-      "common_name": "Great Blue Heron",
-      "scientific_name": "Ardea herodias",
-      "observed_on": "2026-05-03",
-      "count": null,
-      "location_name": "57788, Vale US-SD 44.61269, -103.26172",
-      "lat": 44.612686,
-      "lng": -103.261715,
-      "location_id": "L64850289",
-      "checklist_id": "S331912033",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/65060931/square.jpg"
     },
     {
       "species_code": "amwpel",
@@ -611,45 +650,6 @@
       "location_id": "L1195589",
       "checklist_id": "S331482319",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/196885341/square.jpeg"
-    },
-    {
-      "species_code": "rewbla",
-      "common_name": "Red-winged Blackbird",
-      "scientific_name": "Agelaius phoeniceus",
-      "observed_on": "2026-05-02",
-      "count": 2,
-      "location_name": "Belle Fourche Dam and Reservoir",
-      "lat": 44.7160017,
-      "lng": -103.7009811,
-      "location_id": "L1195589",
-      "checklist_id": "S331482319",
-      "photo_url": "https://static.inaturalist.org/photos/368048127/square.jpg"
-    },
-    {
-      "species_code": "bnhcow",
-      "common_name": "Brown-headed Cowbird",
-      "scientific_name": "Molothrus ater",
-      "observed_on": "2026-05-02",
-      "count": 2,
-      "location_name": "Belle Fourche Dam and Reservoir",
-      "lat": 44.7160017,
-      "lng": -103.7009811,
-      "location_id": "L1195589",
-      "checklist_id": "S331482319",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/471179764/square.jpg"
-    },
-    {
-      "species_code": "sheowl",
-      "common_name": "Short-eared Owl",
-      "scientific_name": "Asio flammeus",
-      "observed_on": "2026-05-02",
-      "count": 1,
-      "location_name": "18181–18359 US-85, Belle Fourche US-SD 44.76842, -103.85296",
-      "lat": 44.768421,
-      "lng": -103.852958,
-      "location_id": "L64753343",
-      "checklist_id": "S331442528",
-      "photo_url": "https://static.inaturalist.org/photos/30378889/square.jpg"
     }
   ]
 }

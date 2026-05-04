@@ -878,5 +878,38 @@
     "image_url": "https://npr.brightspotcdn.com/legacy/prod/blog/20160928_214941_257052_south_dakota_state_capitol_front_with_clouds.jpeg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-05-04/appeals-court-upholds-briley-pipers-death-sentence",
+    "title": "Appeals court upholds Briley Piper's death sentence",
+    "slug": "sdpb-appeals-court-upholds-briley-piper-s-death-sentence",
+    "published": "2026-05-04",
+    "byline": "By SDPB News Staff",
+    "description": "A federal appeals court is upholding the sentence of the only inmate on South Dakota’s death row.",
+    "image_url": "https://npr.brightspotcdn.com/ef/61/c45e13954a83b789082b8e4f5c25/f9a564e547-briley-piper-2017.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-05-04/batcheller-neighborhood-empowerment-labs-will-help-sioux-falls-residents-envision-the-future-of-the-city",
+    "title": "Batcheller: 'Neighborhood Empowerment Labs' will help Sioux Falls residents envision the future of the city",
+    "slug": "sdpb-batcheller-neighborhood-empowerment-labs-will-help-sioux-falls-residents-of",
+    "published": "2026-05-04",
+    "byline": "By Lori Walsh",
+    "description": "Urban planner Joe Batcheller wants to be the next mayor of Sioux Falls. He talks about improving transportation and helping neighborhood organizations create the city they want to live in.",
+    "image_url": "https://npr.brightspotcdn.com/a0/99/4d47e0294d569e6c18a2cb9bbb72/joe-batcheller.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-05-04/rhoden-reinstates-rural-tourism-grant-program",
+    "title": "Rhoden reinstates rural tourism grant program",
+    "slug": "sdpb-rhoden-reinstates-rural-tourism-grant-program",
+    "published": "2026-05-04",
+    "byline": "By SDPB News Staff",
+    "description": "Travel South Dakota is reinstating a grant program designed to boost tourism-related businesses and organizations in rural communities.",
+    "image_url": "https://npr.brightspotcdn.com/a8/a1/609d42a6468fa4cb6e1f9a52e060/rhoden-rushmore-tourism-announcement.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

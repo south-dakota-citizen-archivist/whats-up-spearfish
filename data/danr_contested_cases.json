@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-04T18:15:08.057348+00:00",
+  "fetched_at": "2026-05-04T23:31:59.050755+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -42,6 +42,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID124",
       "documents": [
         {
+          "label": "Letter to Binegar with Petitioners' Objections to City's Proposed Modification of Pending Permit's Solid Waste Operations Plan",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/5.04.2026 to Binegar.pdf"
+        },
+        {
           "label": "Notice of Entry of Order to Extend Procedural and Scheduling Order",
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/2026-03-02 Letter and NOE of Order to Extend Procedural and Scheduling Order.pdf"
         },
@@ -56,13 +60,9 @@
         {
           "label": "Department's Witness Disclosure",
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/DANR Witness Disclosure.RC Landfill Renewal Application.service 02 06 2025.pdf"
-        },
-        {
-          "label": "Letter to Binegar with Petitioners' Disclosure of Expert Witness, CV, and Expert Report",
-          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/2.06.26_to_Binegar.pdf"
         }
       ],
-      "total_docs": 23,
+      "total_docs": 24,
       "latest_doc_date": "0000-00-00"
     },
     {

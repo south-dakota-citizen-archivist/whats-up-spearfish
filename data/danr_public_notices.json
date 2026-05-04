@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-04T18:12:56.621746+00:00",
+  "fetched_at": "2026-05-04T23:28:58.450473+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -1371,6 +1371,54 @@
         {
           "label": "Draft Permit",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_Presho_RU_26_IP.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Water Rights",
+      "deadline": "05/18/2026",
+      "comment_url": "",
+      "application_no": "9028-3",
+      "name": "Dakota Deere Farms, LLC, c/o Allen Andrews,\u00a0Beresford\u00a0SD",
+      "location": "Union",
+      "water_source": "Brule Creek Aquifer",
+      "use_type": "Irrigation (187 acres)",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/9028-3_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/9028-3_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/9028-3_rec.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Water Rights",
+      "deadline": "05/18/2026",
+      "comment_url": "",
+      "application_no": "9029-3",
+      "name": "Craig Vanderlei,\u00a0Springfield\u00a0SD",
+      "location": "Bon Homme",
+      "water_source": "Niobrara Aquifer",
+      "use_type": "Irrigation (120 acres)",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/9029-3_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/9029-3_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/9029-3_rec.pdf"
         }
       ]
     },
