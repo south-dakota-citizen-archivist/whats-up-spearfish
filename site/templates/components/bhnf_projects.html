@@ -39,9 +39,9 @@
         </div>
 
         {# comment period badge + chevron #}
-        <div class="flex items-center gap-2 shrink-0">
+        <div class="flex items-center gap-1.5 shrink-0">
           {% if p.comment_period_date %}
-          <span class="text-xs font-medium px-2 py-0.5 rounded-full {% if p.comment_period_past %}bg-gray-100 text-gray-400{% else %}bg-amber-50 text-amber-700 ring-1 ring-amber-200{% endif %}">
+          <span class="text-xs font-medium px-1.5 py-0.5 rounded-full whitespace-nowrap {% if p.comment_period_past %}bg-gray-100 text-gray-400{% else %}bg-amber-50 text-amber-700 ring-1 ring-amber-200{% endif %}">
             {% if not p.comment_period_past %}Comment: {% endif %}{{ p.comment_period_date }}
           </span>
           {% endif %}
