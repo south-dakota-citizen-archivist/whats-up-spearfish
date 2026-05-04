@@ -834,5 +834,49 @@
     "image_url": "https://npr.brightspotcdn.com/ce/86/1ea5c09e4d008d868077b3cf62ec/115f1140-3c78-4b7e-a87c-c76ffb99f6b3.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/healthcare/2026-05-04/rcfd-may-need-to-reduce-ambulance-coverage-area-without-funding-solutions",
+    "title": "RCFD may need to reduce ambulance coverage area without funding solutions",
+    "slug": "sdpb-rcfd-may-need-to-reduce-ambulance-coverage-area-without-funding-solutions",
+    "published": "2026-05-04",
+    "byline": "By Delainey LaHood-Burns",
+    "description": "The Rapid City Fire Department estimates it serves around 150,000 people in Rapid City and the surrounding metro area, but many could lose ambulance coverage outside city limits unless funding agreements are made.",
+    "image_url": "https://npr.brightspotcdn.com/31/f7/365fa99c4793b0655bf95cff5cbf/rapid-city-fire-department-ambulance.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-05-04/report-south-dakotas-average-gas-prices-surpasses-4-per-gallon",
+    "title": "Report: South Dakota's average gas prices surpasses $4 per gallon",
+    "slug": "sdpb-report-south-dakota-s-average-gas-prices-surpasses-4-per-gallon",
+    "published": "2026-05-04",
+    "byline": "By SDPB News Staff",
+    "description": "The latest data from GasBuddy shows  the state’s average is $4.04 a gallon, up 33 cents from last week",
+    "image_url": "https://media.npr.org/assets/img/2013/03/15/gaspumps152way-17bf2133347a7be53f5a63aad31affe45e20e251.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-05-04/south-dakota-receives-10-million-in-purdue-pharma-settlement",
+    "title": "South Dakota receives $10 million in Purdue Pharma settlement",
+    "slug": "sdpb-south-dakota-receives-10-million-in-purdue-pharma-settlement",
+    "published": "2026-05-04",
+    "byline": "By SDPB News Staff",
+    "description": "South Dakota is receiving $10 million dollars as part of a settlement with a major pharmaceutical company for its role in fueling the opioid crisis.",
+    "image_url": "https://npr.brightspotcdn.com/f4/ec/be868c544e028ebaf5ea8aea6abc/4bb6b76d6e-hc-pill-bottle.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-05-04/referred-law-campaign-could-delay-budget-transfer-affect-other-legislation",
+    "title": "Referred law campaign could delay budget transfer, affect other legislation",
+    "slug": "sdpb-referred-law-campaign-could-delay-budget-transfer-affect-other-legislation",
+    "published": "2026-05-04",
+    "byline": "By Jackson Dircks",
+    "description": "Nearly $56 million in South Dakota’s state budget could be in limbo if a referred law campaign gets on the ballot. If the campaign were to succeed, state lawmakers would also have to address other legislation passed this year.",
+    "image_url": "https://npr.brightspotcdn.com/legacy/prod/blog/20160928_214941_257052_south_dakota_state_capitol_front_with_clouds.jpeg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

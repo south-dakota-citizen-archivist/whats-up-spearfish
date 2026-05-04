@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-03T17:43:44.596296+00:00",
+  "fetched_at": "2026-05-04T18:12:56.621746+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -118,30 +118,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/8991-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights",
-      "deadline": "03/02/2026",
-      "comment_url": "",
-      "application_no": "2901-2",
-      "name": "SD Department of the Military, Dana Limbo,\u00a0Rapid City\u00a0SD",
-      "location": "Pennington",
-      "water_source": "Minnelusa Aquifer",
-      "use_type": "Irrigation (12 add'l acres)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/2901-2_app.pdf"
-        },
-        {
-          "label": "Appl.",
-          "url": "https://danr.sd.gov/wrimage/pub/2901-2_apl.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/2901-2_rec.pdf"
         }
       ]
     },
@@ -1687,6 +1663,20 @@
         {
           "label": "Application",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/NewEXNIS.aspx"
+        }
+      ]
+    },
+    {
+      "notice_type": "Mining License",
+      "deadline": "",
+      "comment_url": "",
+      "name": "Boyer Sand & Rock, Inc",
+      "description": "Notice of Intent to Mine gravel",
+      "location": "4 miles south of Hudson, SD.",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://media.sd.gov/danr/MM/S319006PublicNotice.jpg"
         }
       ]
     }

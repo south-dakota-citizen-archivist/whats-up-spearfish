@@ -1766,5 +1766,31 @@
     "website": "http://www.spearfishseniorcenter.com",
     "record_type": "event",
     "source_label": "Spearfish Chamber"
+  },
+  {
+    "url": "https://business.spearfishchamber.org/events/details/casa-40-years-of-advocacy-celebration-30778",
+    "title": "CASA- 40 Years of Advocacy Celebration",
+    "slug": "casa-40-years-of-advocacy-celebration",
+    "start_dt": "2026-06-07 4:00 PM MDT",
+    "end_dt": "2026-06-07 7:00 PM MDT",
+    "location": "The Public House",
+    "fees": "",
+    "description": "Northern Hills Area CASA proudly celebrates 40 years of advocacy serving children in the Fourth Judicial Circuit, covering eight counties in western South Dakota. Please join us on Sunday, June 7, 2026, from 4:00–7:00 PM at the Public House in Spearfish for an evening of reflection and celebration. The event will feature live music, cake, refreshments, and meaningful testimonials from CASA volunteers, members of the judiciary, attorneys, and youth who have experienced the impact of our program. The Food Addiction Truck will also be on-site with food available for purchase. This celebration is open to the public. We invite the community to join us as we honor four decades of service and express our sincere gratitude for the support that has made this work possible.",
+    "website": "http://www.nhcasa.org",
+    "record_type": "event",
+    "source_label": "Spearfish Chamber"
+  },
+  {
+    "url": "https://business.spearfishchamber.org/events/details/all-angels-art-festival-06-13-2026-30780",
+    "title": "All Angels Art Festival",
+    "slug": "all-angels-art-festival",
+    "start_dt": "2026-06-13 8:00 AM MDT",
+    "end_dt": "2026-06-13 2:00 PM MDT",
+    "location": "1044 N 5th St. Spearfish, SD 57783",
+    "fees": "FREE",
+    "description": "The Episcopal Church of All Angels would like to celebrate all our artistic gifts by hosting a Festival of Arts for the community. Vendors will sell and show art, musicians will be playing on the campus green. Come join us!",
+    "website": "https://www.allangelsspearfish.org/",
+    "record_type": "event",
+    "source_label": "Spearfish Chamber"
   }
 ]

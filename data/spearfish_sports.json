@@ -21726,5 +21726,21 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20260202080815123c48d4721ea1941",
+    "url": "https://gobound.com/direct/comps/h20260202080815123c48d4721ea1941/show",
+    "title": "Girls Golf: Spearfish Invitational (Varsity)",
+    "slug": "girls-golf-spearfish-invitational-varsity",
+    "sport": "Girls Golf",
+    "level": "Varsity",
+    "sex": "female",
+    "description": "Varsity Girls Golf - Spearfish Invitational",
+    "start_dt": "2027-05-03T16:00:00",
+    "end_dt": "",
+    "location": "Spearfish Canyon Country Club",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]

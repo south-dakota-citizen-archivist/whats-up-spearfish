@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-03T17:45:50.028555+00:00",
+  "fetched_at": "2026-05-04T18:15:08.057348+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -9,6 +9,10 @@
       "description": "Proposed uranium exploration project seven miles north of Edgemont, SD.  Up to 50 holes will be drilled to a maximum vertical depth of 700 feet.  In addition, 50 drill platforms will be created with a dimension of 60 feet by 60 feet.  Exploration will be conducted using reverse circulation drilling with sumps.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID123",
       "documents": [
+        {
+          "label": "May 1, 2026 Notice of Entry of Order on Motion to Preclude Consideration of Treaty Rights and Notice of Entry of Order on Motion for Access to Unredacted Archaeologic Reports by Hearing Chair Bob Morris",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/5126NOEOrders.pdf"
+        },
         {
           "label": "April 28, 2026 Motion from Bruce Ellison for Access to Unredacted Archaeologic, Cultural,and Historic Reports Pursuant to Protective Order",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/42826EllisonAccesstoUnredactedReports.pdf"
@@ -24,13 +28,9 @@
         {
           "label": "April 27, 2026 Supplemental Exhibit List from Clean Nuclear Energy Containing the Chord Project Water Quality Evaluation",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/042726SupplementalWaterQualityExhibit.pdf"
-        },
-        {
-          "label": "April 2, 2026 Supplemental Exhibit List from Clean Nuclear Energy Containing Redacted Versions of Vantage Point Cultural Resources Reports",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/4226CNECSupplementalExhibitList.pdf"
         }
       ],
-      "total_docs": 95,
+      "total_docs": 96,
       "latest_doc_date": "0000-00-00"
     },
     {
@@ -158,6 +158,14 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID129",
       "documents": [
         {
+          "label": "Pre-Hearing Submission by Counsel for Petitioners",
+          "url": "https://danr.sd.gov/wrimage/pub/8991-3_prehearsub_pet.pdf"
+        },
+        {
+          "label": "Filings Submitted by Counsel for Water Management Board",
+          "url": "https://danr.sd.gov/wrimage/pub/8991-3_greco_2.pdf"
+        },
+        {
           "label": "Notice of Appearance - Legal Counsel for Petitioners (Heinz & Abarca)",
           "url": "https://danr.sd.gov/wrimage/pub/8991-3_notappear_pet.pdf"
         },
@@ -168,17 +176,9 @@
         {
           "label": "Filings Submitted by Counsel for Water Management Board",
           "url": "https://danr.sd.gov/wrimage/pub/8991-3_McVey.pdf"
-        },
-        {
-          "label": "Filings Submitted by Counsel for Chief Engineer",
-          "url": "https://danr.sd.gov/wrimage/pub/8991-3_response_op.pdf"
-        },
-        {
-          "label": "Notice of Appearance - Legal Counsel for Applicant",
-          "url": "https://danr.sd.gov/wrimage/pub/8991-3_notapp_app.pdf"
         }
       ],
-      "total_docs": 17,
+      "total_docs": 19,
       "latest_doc_date": "0000-00-00"
     },
     {
@@ -189,6 +189,10 @@
       "description": "Application for a water permit to appropriate up to 2.45 acre-feet of water annually at a maximum pump rate of 0.22 cubic feet of water per second from one existing well completed into the Grey Goose Aquifer (90 feet deep). The well, located in the NW 1/4 SE 1/4 Section 34, will supply water for commercial use at an RV Park to be located in the SE 1/4 Section 34; all in T113N-R80W.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID127",
       "documents": [
+        {
+          "label": "Filings Submitted by Counsel for the Chief Engineer",
+          "url": "https://danr.sd.gov/wrimage/pub/8987-3_greco_2.pdf"
+        },
         {
           "label": "Proposed Exhibits Submitted by Counsel for the Applicant",
           "url": "https://danr.sd.gov/wrimage/pub/8797-3_UtechExhibits.pdf"
@@ -204,13 +208,9 @@
         {
           "label": "Filings Submitted by Counsel for the Petitioner",
           "url": "https://danr.sd.gov/wrimage/pub/8987-3_petbreif_witnesslist.pdf"
-        },
-        {
-          "label": "Notice of Entry of Procedural and Scheduling Order",
-          "url": "https://danr.sd.gov/wrimage/pub/8987-3_mcvey.pdf"
         }
       ],
-      "total_docs": 20,
+      "total_docs": 21,
       "latest_doc_date": "0000-00-00"
     },
     {
@@ -222,6 +222,14 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID126",
       "documents": [
         {
+          "label": "Pre-Hearing Submission by Counsel for Petitioners",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3_prehearsub_pet.pdf"
+        },
+        {
+          "label": "Filings Submitted by Counsel for the Chief Engineer",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3_greco_2.pdf"
+        },
+        {
           "label": "Proposed Exhibit Submitted by Petitioned (Baer)",
           "url": "https://danr.sd.gov/wrimage/pub/8982-3_BaerEX.pdf"
         },
@@ -232,17 +240,9 @@
         {
           "label": "Pre-Hearing Submission by Counsel for Applicant",
           "url": "https://danr.sd.gov/wrimage/pub/8982-3_prehearingsub_ex.pdf"
-        },
-        {
-          "label": "Filings Submitted by Counsel for the Water Management Board",
-          "url": "https://danr.sd.gov/wrimage/pub/8982-3_McVey.pdf"
-        },
-        {
-          "label": "Filings Submitted by Counsel for the Chief Engineer",
-          "url": "https://danr.sd.gov/wrimage/pub/8982-3_response_op.pdf"
         }
       ],
-      "total_docs": 19,
+      "total_docs": 21,
       "latest_doc_date": "0000-00-00"
     },
     {

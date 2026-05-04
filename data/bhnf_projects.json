@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-03T17:46:07.442380+00:00",
+  "fetched_at": "2026-05-04T18:15:21.224744+00:00",
   "projects": [
     {
       "project_id": "67625",
@@ -362,6 +362,22 @@
       "district": "Northern Hills Ranger District",
       "purpose": "Special Use Management|Road Management",
       "description": "CANCELLED - REQUEST RESCINDED. Issuance of a road use permit to allow a private landowner to haul timber harvested from private land across National Forest System (NFS)land on a NFS road.",
+      "milestones": [],
+      "comment_period_date": null,
+      "comment_period_sort": "9999-99",
+      "location_summary": "",
+      "counties": [],
+      "contact": {},
+      "last_updated": ""
+    },
+    {
+      "project_id": "283042",
+      "title": "Grizzly Prescribed Burn",
+      "url": "https://www.fs.usda.gov/r02/blackhills/projects/283042",
+      "status": "Developing Proposal",
+      "district": "Hell Canyon Ranger District",
+      "purpose": "Fuels Management|Vegetation Management (Other Than Forest Products)",
+      "description": "Collaborative prescribed burn with Mount Rushmore to promote forest health and improve wildfire resilience. Additionally, protect recreational residences through thinning activities.",
       "milestones": [],
       "comment_period_date": null,
       "comment_period_sort": "9999-99",
