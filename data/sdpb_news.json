@@ -911,5 +911,38 @@
     "image_url": "https://npr.brightspotcdn.com/a8/a1/609d42a6468fa4cb6e1f9a52e060/rhoden-rushmore-tourism-announcement.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-05-05/south-dakota-trust-assets-valued-above-900b-despite-chunk-of-assets-exiting",
+    "title": "South Dakota trust assets valued above $900B despite \"chunk of assets\" exiting",
+    "slug": "sdpb-south-dakota-trust-assets-valued-above-900b-despite-chunk-of-assets-exiting",
+    "published": "2026-05-05",
+    "byline": "By Jackson Dircks",
+    "description": "Assets in South Dakota trusts are valued above $900 billion despite a large crypto custodian going elsewhere.",
+    "image_url": "https://npr.brightspotcdn.com/4d/8b/8b49743745998b2b9b9799ce82e7/south-dakota-money-trade-business-budget.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-05-05/smith-sioux-falls-too-rich-to-not-deal-with-homelessness",
+    "title": "Smith: Sioux Falls 'too rich' to not deal with homelessness",
+    "slug": "sdpb-smith-sioux-falls-too-rich-to-not-deal-with-homelessness",
+    "published": "2026-05-05",
+    "byline": "By Lori Walsh",
+    "description": "Jamie Smith wants to be the next mayor of Sioux Falls. He talks about leadership, housing, and how to keep the city a welcoming place for people across the region.",
+    "image_url": "https://npr.brightspotcdn.com/52/a4/27ad8392458d90c0af200f3647e9/website-photo-1.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-05-04/federal-court-grants-two-week-mining-reprieve-at-pe-sla",
+    "title": "Federal court grants two-week mining reprieve at Pe’ Sla",
+    "slug": "sdpb-federal-court-grants-two-week-mining-reprieve-at-pe-sla",
+    "published": "2026-05-04",
+    "byline": "By C.J. Keene",
+    "description": "The events surrounding Pe’ Sla are still unfolding as a federal court grants a two-week drilling restraining order. That ruling came late Monday night.",
+    "image_url": "https://npr.brightspotcdn.com/e1/73/54d0aee84fc28d3ca35e99236d6a/image-72.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

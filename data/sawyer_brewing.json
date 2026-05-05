@@ -261,32 +261,6 @@
   },
   {
     "url": "https://www.sawyerbrewingco.com/menu",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/1686d8f9-4d3d-4551-aeaa-a32d3eed6d67/strawwhipwebsitedark.jpg",
-    "title": "Strawberry Whip Sour Ale",
-    "slug": "strawberry-whip-sour-ale",
-    "category": "Sour Power",
-    "description": "This dreamy dessert in a glass is brewed with real decacent strawberries, a hint of sour with the perfect balance of real vanilla.",
-    "abv": "5.8%",
-    "notes": "",
-    "prices": [
-      {
-        "price": 3.0,
-        "ounces": 5
-      },
-      {
-        "price": 5.0,
-        "ounces": 10
-      },
-      {
-        "price": 7.5,
-        "ounces": 16
-      }
-    ],
-    "record_type": "beer",
-    "source_label": "Sawyer Brewing Co."
-  },
-  {
-    "url": "https://www.sawyerbrewingco.com/menu",
     "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/0d65bfca-005c-40c7-a58d-9663e45f2525/keylimewebsitedark.jpg",
     "title": "Key Lime Sour Ale",
     "slug": "key-lime-sour-ale",

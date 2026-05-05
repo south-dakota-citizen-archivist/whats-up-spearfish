@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-04T23:28:58.450473+00:00",
+  "fetched_at": "2026-05-05T18:09:02.015913+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -1042,28 +1042,6 @@
       ]
     },
     {
-      "notice_type": "Surface Water Discharge (NPDES)",
-      "deadline": "05/04/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/04/2026&name=LANAST LLC, dba Arctic Ice&pntype=sw_npdes&description=LANAST LLC, dba Arctic Ice is authorized under this permit to discharge to an unnamed tributary of McCook Lake from its facility located in North Sioux City in Union County",
-      "name": "LANAST LLC, dba Arctic Ice",
-      "description": "LANAST LLC, dba Arctic Ice is authorized under this permit to discharge to an unnamed tributary of McCook Lake from its facility located in North Sioux City in Union County",
-      "location": "Union County",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/LANASTPNDraftFR.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/LANASTPermitDraftFR.pdf"
-        },
-        {
-          "label": "Statement of Basis",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/LANASTSOBDraftFR.pdf"
-        }
-      ]
-    },
-    {
       "notice_type": "Water Rights",
       "deadline": "05/04/2026",
       "comment_url": "",
@@ -1675,6 +1653,20 @@
         {
           "label": "Statement of Basis",
           "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/HarrisburgSOBDraftFR.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Concentrated Animal Feeding Operations (State Permit)",
+      "deadline": "06/04/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=06/04/2026&name=Modak Dairy, Inc.&pntype=fp_cafo&description=Expanding Dairy Cattle Feeding Operation - State Permit",
+      "name": "Modak Dairy, Inc.",
+      "description": "Expanding Dairy Cattle Feeding Operation - State Permit",
+      "location": "Codington County",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/ModakDairyExpansionPN.pdf"
         }
       ]
     },

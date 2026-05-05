@@ -39,15 +39,15 @@
     "source_label": "Killian's"
   },
   {
-    "url": "https://untappd.com/b/boulevard-brewing-co-unfiltered-wheat-beer/10501",
-    "title": "Unfiltered Wheat Beer",
-    "slug": "unfiltered-wheat-beer",
-    "category": "Wheat Beer - American Pale Wheat",
-    "abv": "4.4%",
-    "ibu": "14",
-    "brewery": "Boulevard Brewing Co.",
-    "rating": "3.6",
-    "image_url": "https://labels.untappd.com/10501",
+    "url": "https://untappd.com/b/lost-cabin-beer-co-hefeweizen/2246158",
+    "title": "Hefeweizen",
+    "slug": "hefeweizen",
+    "category": "Wheat Beer - Hefeweizen",
+    "abv": "5%",
+    "ibu": "20",
+    "brewery": "Lost Cabin Beer Co.",
+    "rating": "3.74",
+    "image_url": "https://labels.untappd.com/2246158",
     "record_type": "beer",
     "source_label": "Killian's"
   },
@@ -124,7 +124,7 @@
     "abv": "",
     "ibu": "",
     "brewery": "Fair State Brewing",
-    "rating": "3.55",
+    "rating": "3.57",
     "image_url": "https://labels.untappd.com/6371660",
     "record_type": "beer",
     "source_label": "Killian's"

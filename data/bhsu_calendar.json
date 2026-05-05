@@ -1719,5 +1719,73 @@
     "category": "Campus Calendar/Events",
     "record_type": "event",
     "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "0d0e3b7f-a95d-407c-9ff5-ef38bda93889",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/0d0e3b7f-a95d-407c-9ff5-ef38bda93889",
+    "title": "Honors Capstone Defense Presentations",
+    "slug": "honors-capstone-defense-presentations",
+    "description": "Please join the University Honors Program for the Capstone Defense Presentations of our graduating seniors. Capstone presentations will take place Thursday, May 7 at the Joy Center. Here is a schedule of presentations: 9:00 AM │ Emma Ohm, “Hormonal Birth Control: Knowledge, Information Sources and Experiences” 9:30 AM │ Julia Mendel, “Examination of Psychological and Physiological Pathways Linking Gratitude, EEG Pain Responses, and COMT genotypes” 10:00 AM │ Olivia Schaefers, “The Effects of Participant Perceptions on Subjective and Objective Results from Sleep and Behavioral Change Intervention Programs” 10:30 AM │ Autumn Westinghouse, “AI-Driven De Novo Design of Ubiquitin Binders” 11:00 AM │ Anna Mueller, “You Can’t Live in Aftertime: A Mother’s Grief in Where Reasons End” 11:30-1:00 Break 1:00 PM │ Sage Robinson, “Lithological Landscapes: An Exploration of Geology Through Art” 1:30 PM │ Marissa Brimmer, “Gender and Age: Intersection of Stereotypes” 2:00 PM │ Maralee Rischling, “Make a Plate: The Documentation of the Family Archive” 2:30 PM │ Johanna Vorwerk, “Cultural Representation through Indigenous Children Shows – Chances and Challenges of Transferring Traditions to New Media” 3:00 PM │ Kaito Mumm, “Examining the Effects of Awe in Reducing State Anxiety”",
+    "start_dt": "2026-05-07T15:00",
+    "end_dt": "2026-05-07T21:30",
+    "location": "Joy (Proctor) Krautschun Alumni/Foundation Welcome Center",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "",
+    "tags": [
+      "BHSU Event",
+      "Academics",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "68fe5c71-a15c-45d3-baa2-a82ebc0b72fd",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/68fe5c71-a15c-45d3-baa2-a82ebc0b72fd",
+    "title": "JacketHub Training: Learn what JH can do for you from the experts",
+    "slug": "jackethub-training-learn-what-jh-can-do-for-you-from-the-experts",
+    "description": "EAB (parent company of Navigate/JacketHub) will be on campus to provide a holistic review of Jacket Hub, including what the platform has to offer and where institutions across the country are making meaningful investments toward intentional retention practices. Who should attend? This would benefit all BHSU faculty and student-facing staff Why attend this presentation? Already using JacketHub extensively? It will be a helpful refresher and may spark some new ideas. JacketHub dabbler? Dig deeper – how can you incorporate new tools and improve old JacketHub practices? JacketHub-curious? Understand how JacketHub is being used currently and discover ways the tools could help you serve students better and work more efficiently Start thinking about how JacketHub can help us with interdepartmental collaboration – how can we “connect the dots” to provide more holistic retention support for students We look forward to seeing you on the 14th! Best wishes for finals week!",
+    "start_dt": "2026-05-14T20:00",
+    "end_dt": "2026-05-14T21:15",
+    "location": "Jonas 315",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "",
+    "tags": [
+      "BHSU Event",
+      "University Advancement",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "07aa5b8b-88bf-4e52-b19b-089af0a1f91f",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/07aa5b8b-88bf-4e52-b19b-089af0a1f91f",
+    "title": "Genes and the Environment Immersion Course",
+    "slug": "genes-and-the-environment-immersion-course",
+    "description": "Black Hills State University–Rapid City invites students to apply for Genes and the Environment, a week‑long, grant‑supported immersion course exploring how genetics and environmental factors interact to influence human health. The course will take place June 1–5, 2025, and is limited to 24 participants. Students who complete the course can earn one elective science credit, receive a stipend, and qualify for travel reimbursement. The experience includes expert‑led lectures, hands‑on genetics modeling sessions, and an independent health communication project. If you have any questions, please contact: Stephanie Higdon Stephanie.higdon@bhsu.edu",
+    "start_dt": "2026-06-01",
+    "end_dt": "2026-06-05",
+    "location": "",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "Stephanie Higdon",
+    "tags": [
+      "Academics",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "https://bit.ly/GenesBHSURC2026.",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
   }
 ]
