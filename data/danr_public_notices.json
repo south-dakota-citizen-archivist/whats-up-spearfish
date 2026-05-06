@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-05T18:09:02.015913+00:00",
+  "fetched_at": "2026-05-06T18:14:15.151895+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -166,30 +166,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/2903-2_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights",
-      "deadline": "03/30/2026",
-      "comment_url": "",
-      "application_no": "9009-3",
-      "name": "Craig Arthur,\u00a0Watertown\u00a0SD",
-      "location": "Codington",
-      "water_source": "Prairie Coteau Aquifer",
-      "use_type": "Irrigation (255 acres)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/9009-3_app.pdf"
-        },
-        {
-          "label": "Appl.",
-          "url": "https://danr.sd.gov/wrimage/pub/9009-3_apl.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/9009-3_rec.pdf"
         }
       ]
     },
@@ -1667,6 +1643,41 @@
         {
           "label": "Public Notice",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/ModakDairyExpansionPN.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "06/05/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=06/05/2026&name=Chevron Mill Valley RNG LLC&pntype=aq&description=Chevron Mill Valley proposes a new minor air quality operating permit for their biogas facility. DANR recommends issuance if a new minor air quality operating permit and a modification to the construction permit.",
+      "description": "Chevron Mill Valley proposes a new minor air quality operating permit for their biogas facility. DANR recommends issuance if a new minor air quality operating permit and a modification to the construction permit.",
+      "location": "Millbank",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/CMVpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/CMVdp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/CMVsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Concentrated Animal Feeding Operations (State Permit)",
+      "deadline": "06/05/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=06/05/2026&name=Bruley Farms, LLC&pntype=fp_cafo&description=Expanding Beef Cattle Feeding Operation - State Permit",
+      "name": "Bruley Farms, LLC",
+      "description": "Expanding Beef Cattle Feeding Operation - State Permit",
+      "location": "Clark County",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/BruleyFarmsLLCPN.pdf"
         }
       ]
     },

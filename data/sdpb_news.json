@@ -944,5 +944,49 @@
     "image_url": "https://npr.brightspotcdn.com/e1/73/54d0aee84fc28d3ca35e99236d6a/image-72.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-05-06/state-approves-variance-request-for-new-lake-mitchell-dam",
+    "title": "State approves variance request for new Lake Mitchell Dam",
+    "slug": "sdpb-state-approves-variance-request-for-new-lake-mitchell-dam",
+    "published": "2026-05-06",
+    "byline": "By SDPB News Staff",
+    "description": "A state panel has paved the way forward for a new dam at Lake Mitchell.",
+    "image_url": "https://npr.brightspotcdn.com/ff/48/f88e6be44e32b38da7f09d5d5ef9/lake-mitchell-city-of-mitchll.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-05-06/governor-activates-south-dakota-drought-task-force",
+    "title": "Governor activates South Dakota Drought Task Force",
+    "slug": "sdpb-governor-activates-south-dakota-drought-task-force",
+    "published": "2026-05-06",
+    "byline": "By SDPB News Staff",
+    "description": "The state Drought Task Force coordinates the exchange of drought-related information among government agencies, officials say.",
+    "image_url": "https://npr.brightspotcdn.com/cd/45/01a000174d05b4098135d21ab7a5/drought-monitor-5-6.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-05-06/electronic-vehicle-titles-and-elk-hunting-changes-discussed-at-rules-meeting",
+    "title": "Electronic vehicle titles and elk hunting changes discussed at rules meeting",
+    "slug": "sdpb-electronic-vehicle-titles-and-elk-hunting-changes-discussed-at-rules",
+    "published": "2026-05-06",
+    "byline": "By Jackson Dircks",
+    "description": "A state legislative committee approved a swath of rule changes at its <a href=\"https://mylrc.sdlegislature.gov/api/Documents/306745.pdf\" target=\"_blank\" link-data=\"{\"cms.site.owner\":{\"_ref\":\"00000178-5ae7-d19d-a1fa-ffef051d0000\",\"_type\":\"ae3387cc-b875-31b7-b82d-63fd8d758c20\"},\"cms.content.publishDate\":1778007661989,\"cms.content.publishUser\":{\"_ref\":\"0000018f-9cae-de7b-a1df-ffef3dcd0000\",\"_type\":\"6aa69ae1-35be-30dc-87e9-410da9e1cdcc\"},\"cms.content.updateDate\":1778007661989,\"cms.content.updateUser\":{\"_ref\":\"0000018f-9cae-de7b-a1df-ffef3dcd0000\",\"_type\":\"6aa69ae1-35be-30dc-87e9-410da9e1cdcc\"},\"cms.directory.paths\":[],\"anchorable.showAnchor\":false,\"link\":{\"cms.directory.paths\":[],\"attributes\":[],\"linkText\":\"<b>May 05 meeting</b>\",\"target\":\"NEW\",\"attachSourceUrl\":false,\"url\":\"https://mylrc.sdlegislature.gov/api/Documents/306745.pdf\",\"_id\":\"0000019d-f983-dc23-a7dd-f9d7d0e60000\",\"_type\":\"ff658216-e70f-39d0-b660-bdfe57a5599a\"},\"_id\":\"0000019d-f983-dc23-a7dd-f9d7d0e60001\",\"_type\":\"809caec9-30e2-3666-8b71-b32ddbffc288\"}\"><b>May 5 meeting</b></a>. including one that could make buying a new car easier and changes to elk hunting.",
+    "image_url": "https://npr.brightspotcdn.com/1a/72/3fe9d929463cb4e53a87c6a95cec/capital-generic-2-brent-duerre.JPG",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/education/2026-05-05/new-state-math-standards-leaves-teachers-holding-breath-for-changes",
+    "title": "New state math standards leaves teachers holding breath for changes",
+    "slug": "sdpb-new-state-math-standards-leaves-teachers-holding-breath-for-changes",
+    "published": "2026-05-05",
+    "byline": "By C.J. Keene",
+    "description": "The governor announced this week a change in standards for state math students. At the same time, educators say there could be some issues with the plan.",
+    "image_url": "https://npr.brightspotcdn.com/78/39/777e7d0d44fdacea1b69143ffbe7/julia-s-chalk-3789462-1920.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

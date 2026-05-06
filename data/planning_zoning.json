@@ -1,6 +1,22 @@
 {
-  "fetched_at": "2026-05-05T18:08:37.568136+00:00",
+  "fetched_at": "2026-05-06T18:13:46.843826+00:00",
   "records": [
+    {
+      "id": 11895,
+      "record_no": "WSA-26-3",
+      "record_type": "Water/Sewer Service Agreement Application",
+      "record_type_id": 6515,
+      "category": "infrastructure",
+      "status": 1,
+      "date_created": "2026-05-05T20:50:10.107Z",
+      "date_submitted": "2026-05-05T21:01:22.000Z",
+      "last_updated": "2026-05-05T21:01:22.000Z",
+      "address": "1030 Maitland  Rd, Spearfish, SD 57783",
+      "lat": 44.466685,
+      "lon": -103.78928,
+      "applicant": "Roland Keranen",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/11895"
+    },
     {
       "id": 11890,
       "record_no": "",
@@ -714,7 +730,7 @@
       "status": 1,
       "date_created": "2026-04-01T15:23:41.373Z",
       "date_submitted": "2026-04-01T15:38:23.000Z",
-      "last_updated": "2026-04-28T19:16:32.000Z",
+      "last_updated": "2026-05-05T20:54:49.000Z",
       "address": "",
       "lat": 44.441386,
       "lon": -103.821406,
@@ -1210,7 +1226,7 @@
       "status": 1,
       "date_created": "2026-03-02T21:58:07.423Z",
       "date_submitted": "2026-03-02T22:10:27.000Z",
-      "last_updated": "2026-04-08T20:02:12.300Z",
+      "last_updated": "2026-05-06T17:54:04.000Z",
       "address": "100 Valley  Dr, Spearfish, SD 57783",
       "lat": 44.517876,
       "lon": -103.885475,

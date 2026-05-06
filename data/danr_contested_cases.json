@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-05T18:11:00.104778+00:00",
+  "fetched_at": "2026-05-06T18:16:20.177729+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -126,6 +126,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID125",
       "documents": [
         {
+          "label": "Draft Response to Comments",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/DraftResponseComments.pdf"
+        },
+        {
           "label": "Petitions",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/Petitions.pdf"
         },
@@ -140,13 +144,9 @@
         {
           "label": "Draft NPDES Permit",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/NPDESPermitDraft.pdf"
-        },
-        {
-          "label": "State Permit Statement of Basis",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/StatePermitSoB.pdf"
         }
       ],
-      "total_docs": 7,
+      "total_docs": 8,
       "latest_doc_date": "0000-00-00"
     },
     {
