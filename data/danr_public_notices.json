@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-06T18:14:15.151895+00:00",
+  "fetched_at": "2026-05-07T18:21:27.591762+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -760,20 +760,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/8128-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Management Board (Miscellaneous)",
-      "deadline": "04/13/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=04/13/2026&name=City of Mitchell&pntype=wmb&description=Variance request from Safety of Dams Rules for Lake Mitchell Dam. Provided link includes public notice, variance request, report, and recommendation. Contact the Chief Engineer for information or documents - danrmail@state.sd.us.",
-      "name": "City of Mitchell",
-      "description": "Variance request from Safety of Dams Rules for Lake Mitchell Dam. Provided link includes public notice, variance request, report, and recommendation. Contact the Chief Engineer for information or documents - danrmail@state.sd.us.",
-      "location": "Davison County",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/Lake Mitchell Dam Varience.pdf"
         }
       ]
     },
@@ -1678,6 +1664,67 @@
         {
           "label": "Public Notice",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/BruleyFarmsLLCPN.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "06/06/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=06/06/2026&name=Chevron Full Circle RNG LLC&pntype=aq&description=Chevron Full Circle proposes a new minor air quality operating permit for their biogas facility. DANR recommend issuance if a new minor air quality operating permit and a modification to the construction permit.",
+      "description": "Chevron Full Circle proposes a new minor air quality operating permit for their biogas facility. DANR recommend issuance if a new minor air quality operating permit and a modification to the construction permit.",
+      "location": "Hurley",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/CFCRpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/CFCRdp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/CFCRsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Waste Management \u2014 Solid Waste",
+      "deadline": "6/6/2026",
+      "comment_url": "",
+      "name": "Morris, Inc.",
+      "description": "Permit renewal application to continue operation of a Type IIA Construction and Demolition Debris Disposal Solid Waste Facility",
+      "location": "Pierre, SD",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Morris_PN.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_Morris_26_IP.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Surface Water Discharge (NPDES)",
+      "deadline": "06/08/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=06/08/2026&name=City of Alcester&pntype=sw_npdes&description=The City of Alcester is authorized under this permit to discharge to East Brule Creek from its wastewater treatment facility located in Union County.",
+      "name": "City of Alcester",
+      "description": "The City of Alcester is authorized under this permit to discharge to East Brule Creek from its wastewater treatment facility located in Union County.",
+      "location": "Union County",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/AlcesterDraftPNFR.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/AlcesterPermitDraftFR.pdf"
+        },
+        {
+          "label": "Statement of Basis",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/AlcesterSOBDraftFR.pdf"
         }
       ]
     },

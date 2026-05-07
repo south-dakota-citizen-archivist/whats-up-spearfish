@@ -988,5 +988,27 @@
     "image_url": "https://npr.brightspotcdn.com/78/39/777e7d0d44fdacea1b69143ffbe7/julia-s-chalk-3789462-1920.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-05-07/operation-prairie-thunder-completes-operation-in-mitchell",
+    "title": "Operation: Prairie Thunder completes operation in Mitchell",
+    "slug": "sdpb-operation-prairie-thunder-completes-operation-in-mitchell",
+    "published": "2026-05-07",
+    "byline": "By Jackson Dircks",
+    "description": "The Department of Public Safety <a href=\"https://news.sd.gov/news?id=news_kb_article_view&sys_id=1cecebc81bf047547e05ea85624bcbaf\" target=\"_blank\" link-data=\"{\"cms.site.owner\":{\"_ref\":\"00000178-5ae7-d19d-a1fa-ffef051d0000\",\"_type\":\"ae3387cc-b875-31b7-b82d-63fd8d758c20\"},\"cms.content.publishDate\":1778170877669,\"cms.content.publishUser\":{\"_ref\":\"0000018f-9cae-de7b-a1df-ffef3dcd0000\",\"_type\":\"6aa69ae1-35be-30dc-87e9-410da9e1cdcc\"},\"cms.content.updateDate\":1778170877669,\"cms.content.updateUser\":{\"_ref\":\"0000018f-9cae-de7b-a1df-ffef3dcd0000\",\"_type\":\"6aa69ae1-35be-30dc-87e9-410da9e1cdcc\"},\"cms.directory.paths\":[],\"anchorable.showAnchor\":false,\"link\":{\"cms.directory.paths\":[],\"attributes\":[],\"linkText\":\"<b>released the latest figures</b>\",\"target\":\"NEW\",\"attachSourceUrl\":false,\"url\":\"https://news.sd.gov/news?id=news_kb_article_view&sys_id=1cecebc81bf047547e05ea85624bcbaf\",\"_id\":\"0000019e-033e-dc23-a7df-6b7e47480000\",\"_type\":\"ff658216-e70f-39d0-b660-bdfe57a5599a\"},\"_id\":\"0000019e-033e-dc23-a7df-6b7e469d0000\",\"_type\":\"809caec9-30e2-3666-8b71-b32ddbffc288\"}\"><b>released the latest figures</b></a> from a public safety campaign. <a href=\"https://www.sdpb.org/crime-courts/2025-07-28/rhoden-announces-new-public-safety-initiative-to-reduce-crime\" target=\"_blank\" link-data=\"{\"cms.site.owner\":{\"_ref\":\"00000178-5ae7-d19d-a1fa-ffef051d0000\",\"_type\":\"ae3387cc-b875-31b7-b82d-63fd8d758c20\"},\"cms.content.publishDate\":1778171015410,\"cms.content.publishUser\":{\"_ref\":\"0000018f-9cae-de7b-a1df-ffef3dcd0000\",\"_type\":\"6aa69ae1-35be-30dc-87e9-410da9e1cdcc\"},\"cms.content.updateDate\":1778171015410,\"cms.content.updateUser\":{\"_ref\":\"0000018f-9cae-de7b-a1df-ffef3dcd0000\",\"_type\":\"6aa69ae1-35be-30dc-87e9-410da9e1cdcc\"},\"cms.directory.paths\":[],\"anchorable.showAnchor\":false,\"link\":{\"cms.directory.paths\":[],\"attributes\":[],\"linkText\":\"<b>Operation: Prairie Thunder</b>\",\"target\":\"NEW\",\"attachSourceUrl\":false,\"url\":\"https://www.sdpb.org/crime-courts/2025-07-28/rhoden-announces-new-public-safety-initiative-to-reduce-crime\",\"_id\":\"0000019e-0340-da3d-a59f-e76a5f080000\",\"_type\":\"ff658216-e70f-39d0-b660-bdfe57a5599a\"},\"_id\":\"0000019e-0340-da3d-a59f-e76a5f080001\",\"_type\":\"809caec9-30e2-3666-8b71-b32ddbffc288\"}\"><b>Operation: Prairie Thunder</b></a> led to just under a dozen arrests during a two-day patrol in Mitchell.",
+    "image_url": "https://npr.brightspotcdn.com/67/a7/8da25aea4ea28afbc7f60e81ced7/image-6.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-05-07/south-dakota-voter-registration-deadline-is-may-18",
+    "title": "South Dakota voter registration deadline is May 18",
+    "slug": "sdpb-south-dakota-voter-registration-deadline-is-may-18",
+    "published": "2026-05-07",
+    "byline": "By SDPB News Staff",
+    "description": "Election officials are reminding South Dakotans the deadline to register before the June primaries is approaching.",
+    "image_url": "https://npr.brightspotcdn.com/legacy/prod/filer_public/kusd-bento-live-pbs/News%20Blog/Lee%20Strubinger/53f6676e80_I%20voted.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

@@ -1186,5 +1186,41 @@
     "scraped_by": "civic-scraper_0.1.0",
     "record_type": "document",
     "source_label": "Lawrence County"
+  },
+  {
+    "asset_id": "civicplus_www_05072026-1319__agenda",
+    "url": "https://www.lawrence.sd.us/AgendaCenter/ViewFile/Agenda/_05072026-1319",
+    "title": "Lawrence County Planning & Zoning Regular Meeting Info - May 7, 2026 All applications and handouts are directly linked within the agenda. Please open the agenda and find links attached to every agenda item. Questions? planning.zoning@lawrence.sd.us.",
+    "asset_type": "agenda",
+    "committee": "Planning & Zoning Board",
+    "place": "no_data",
+    "state": "no_data",
+    "meeting_id": "civicplus_www_05072026-1319",
+    "meeting_date": "2026-05-07 00:00:00",
+    "meeting_time": null,
+    "start_dt": "2026-05-07 00:00:00",
+    "content_type": "application/pdf",
+    "content_length": "191088",
+    "scraped_by": "civic-scraper_0.1.0",
+    "record_type": "document",
+    "source_label": "Lawrence County"
+  },
+  {
+    "asset_id": "civicplus_www_05042026-1321__minutes",
+    "url": "https://www.lawrence.sd.us/AgendaCenter/ViewFile/Minutes/_05042026-1321",
+    "title": "Search and Rescue Proposed Meeting Agenda ~ May 4, 2026",
+    "asset_type": "minutes",
+    "committee": "Search & Rescue Board",
+    "place": "no_data",
+    "state": "no_data",
+    "meeting_id": "civicplus_www_05042026-1321",
+    "meeting_date": "2026-05-04 00:00:00",
+    "meeting_time": null,
+    "start_dt": "2026-05-04 00:00:00",
+    "content_type": "application/pdf",
+    "content_length": "134361",
+    "scraped_by": "civic-scraper_0.1.0",
+    "record_type": "document",
+    "source_label": "Lawrence County"
   }
 ]

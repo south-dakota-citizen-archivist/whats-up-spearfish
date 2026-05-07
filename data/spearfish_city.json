@@ -67566,5 +67566,37 @@
     "title": "05072026 Planning Commission Agenda Packet",
     "doc_type": "Agenda Packet",
     "file_url": "https://spearfishsd.portal.civicclerk.com/event/3333/files/agenda-packet/6533"
+  },
+  {
+    "event_id": 2256,
+    "event_name": "Library Board of Trustees Meeting",
+    "category": "Library Board of Trustees",
+    "start_dt": "2026-05-12T16:00:00Z",
+    "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2256",
+    "has_media": false,
+    "media_url": "",
+    "record_type": "document",
+    "source_label": "City of Spearfish",
+    "url": "https://spearfishsd.portal.civicclerk.com/event/2256/files/agenda/6534",
+    "title": "Library Board of Trustees 05-12-2026",
+    "doc_type": "Agenda",
+    "file_url": "https://spearfishsd.portal.civicclerk.com/event/2256/files/agenda/6534"
+  },
+  {
+    "event_id": 52,
+    "event_name": "City Council Meeting",
+    "category": "City Council",
+    "start_dt": "2026-05-04T17:30:00Z",
+    "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/52",
+    "has_media": true,
+    "media_url": "https://cpmedia.azureedge.net/spearfishsd/1871a188a6.mp4",
+    "record_type": "document",
+    "source_label": "City of Spearfish",
+    "url": "https://spearfishsd.portal.civicclerk.com/event/52/files/minutes/6536",
+    "title": "City Council Regular Session Minutes 5/4/2026",
+    "doc_type": "Minutes",
+    "file_url": "https://spearfishsd.portal.civicclerk.com/event/52/files/minutes/6536"
   }
 ]

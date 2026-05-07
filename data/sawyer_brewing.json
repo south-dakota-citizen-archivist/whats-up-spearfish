@@ -131,10 +131,23 @@
   },
   {
     "url": "https://www.sawyerbrewingco.com/menu",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/df81054c-2de5-4a19-89e9-6f7f09a4a445/razzwebsitedark.jpg",
+    "title": "razzwebsitedark.jpg",
+    "slug": "razzwebsitedark-jpg",
+    "category": "Light & Easy",
+    "description": "",
+    "abv": "",
+    "notes": "",
+    "prices": [],
+    "record_type": "beer",
+    "source_label": "Sawyer Brewing Co."
+  },
+  {
+    "url": "https://www.sawyerbrewingco.com/menu",
     "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/911a3464-7505-4846-8c2d-c0d94579e7ce/2strokewebsitedark.jpg",
     "title": "2-Stroke Haze IPA",
     "slug": "2-stroke-haze-ipa",
-    "category": "Hop Heads",
+    "category": "Light & Easy",
     "description": "Don't you just love the smell of a two stroke engine? It usually means a good day spent in the woods or yard getting stuff done! 2-Stroke Haze is a juicy + hazy + citrusy IPA featuring citra, mosaic, & amarillo hops.",
     "abv": "5.7%",
     "notes": "",
@@ -282,6 +295,19 @@
         "ounces": 16
       }
     ],
+    "record_type": "beer",
+    "source_label": "Sawyer Brewing Co."
+  },
+  {
+    "url": "https://www.sawyerbrewingco.com/menu",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/c882c462-d4a5-401f-b6df-2c4599c1ad6b/lucky17websitedark.jpg",
+    "title": "lucky17websitedark.jpg",
+    "slug": "lucky17websitedark-jpg",
+    "category": "Dark Side",
+    "description": "",
+    "abv": "",
+    "notes": "",
+    "prices": [],
     "record_type": "beer",
     "source_label": "Sawyer Brewing Co."
   },

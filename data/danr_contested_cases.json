@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-06T18:16:20.177729+00:00",
+  "fetched_at": "2026-05-07T18:23:32.386456+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -190,6 +190,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID127",
       "documents": [
         {
+          "label": "Petitioner's Response to Applicant's Pre-Hearing Submission",
+          "url": "https://danr.sd.gov/wrimage/pub/8987-3_petresponse.pdf"
+        },
+        {
           "label": "Filings Submitted by Counsel for the Chief Engineer",
           "url": "https://danr.sd.gov/wrimage/pub/8987-3_greco_2.pdf"
         },
@@ -204,13 +208,9 @@
         {
           "label": "Proposed Exhibits submitted by Counsel for the Petitioner",
           "url": "https://danr.sd.gov/wrimage/pub/8987-3_petexhibits.pdf"
-        },
-        {
-          "label": "Filings Submitted by Counsel for the Petitioner",
-          "url": "https://danr.sd.gov/wrimage/pub/8987-3_petbreif_witnesslist.pdf"
         }
       ],
-      "total_docs": 21,
+      "total_docs": 22,
       "latest_doc_date": "0000-00-00"
     },
     {

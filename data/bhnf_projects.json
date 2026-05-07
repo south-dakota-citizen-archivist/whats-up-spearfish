@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-06T18:16:28.572486+00:00",
+  "fetched_at": "2026-05-07T18:23:46.936540+00:00",
   "projects": [
     {
       "project_id": "67625",
@@ -330,22 +330,6 @@
       "district": "Bearlodge Ranger District",
       "purpose": "Wildlife, Fish, Rare Plants|Forest Products|Vegetation Management (Other Than Forest Products)|Fuels Management|Watershed Management",
       "description": "Thinning, prescribed fire, watershed improvements, oak management, and wildlife habitat improvement",
-      "milestones": [],
-      "comment_period_date": null,
-      "comment_period_sort": "9999-99",
-      "location_summary": "",
-      "counties": [],
-      "contact": {},
-      "last_updated": ""
-    },
-    {
-      "project_id": "67387",
-      "title": "Frass Forest Health Project",
-      "url": "https://www.fs.usda.gov/r02/blackhills/projects/67387",
-      "status": "Completed",
-      "district": "Hell Canyon Ranger District",
-      "purpose": "Forest Products|Vegetation Management (Other Than Forest Products)|Fuels Management",
-      "description": "Project to primarily salvage harvest beetle infected and/or killed trees to reduce the extent of a rapidly spreading bark beetle infestation and recover value of beetle-hit trees; increase forest health resiliency and reduce risk of wildfire.",
       "milestones": [],
       "comment_period_date": null,
       "comment_period_sort": "9999-99",
