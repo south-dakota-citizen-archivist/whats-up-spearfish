@@ -478,5 +478,17 @@
     "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/04/Creativity-on-Tap-5-10.jpg",
     "record_type": "event",
     "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "Auditions: Rose Hill Cemetery Walk",
+    "url": "https://www.matthewsopera.com/event/2026-auditions-rose-hill-cemetery-walk/",
+    "slug": "auditions-rose-hill-cemetery-walk",
+    "start_dt": "2026-05-20T18:00:00-06:00",
+    "end_dt": "2026-05-20T19:00:00-06:00",
+    "description": "Do you love history and storytelling? Join us for a unique outdoor theater experience that brings local history to life! We are seeking actors to portray early settlers of the […] \\n",
+    "location": "The Matthews Opera House – Theatre",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/05/Auditions-Website-Header-Cemetery-Walk-2026.jpg",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
   }
 ]

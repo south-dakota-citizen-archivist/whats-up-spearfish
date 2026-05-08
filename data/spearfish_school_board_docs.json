@@ -1051,5 +1051,14 @@
     "asset_type": "minutes",
     "record_type": "document",
     "source_label": "Spearfish School Board"
+  },
+  {
+    "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/5977/Ssd/2b37a80c-66e7-4817-8521-9cf0d81b33e6/May-11%2C-2026-School-Board-Agenda.pdf?disposition=inline",
+    "title": "May 11, 2026 School Board Agenda",
+    "slug": "spearfish-board-agenda-may-11-2026-school-board-agenda",
+    "published": "2026-05-11",
+    "asset_type": "agenda",
+    "record_type": "document",
+    "source_label": "Spearfish School Board"
   }
 ]

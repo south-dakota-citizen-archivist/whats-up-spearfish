@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-07T18:21:27.591762+00:00",
+  "fetched_at": "2026-05-08T18:07:54.952148+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -190,96 +190,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/9012-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights \u2014 Future Use Review",
-      "deadline": "03/30/2026",
-      "comment_url": "",
-      "application_no": "217-3",
-      "water_source": "Big Sioux: Aurora Aquifer",
-      "use_type": "Municipal (future use review)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/217-3_app.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/217-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights \u2014 Future Use Review",
-      "deadline": "03/30/2026",
-      "comment_url": "",
-      "application_no": "549-3",
-      "water_source": "Veblan Aquifer",
-      "use_type": "Municipal (future use review)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/549-3_app.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/549-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights \u2014 Future Use Review",
-      "deadline": "03/30/2026",
-      "comment_url": "",
-      "application_no": "1780-2",
-      "water_source": "Inyan Kara Aquifer (Fall River-Lakota Formation)",
-      "use_type": "Municipal (future use review)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/1780-2_app.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/1780-2_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights \u2014 Future Use Review",
-      "deadline": "03/30/2026",
-      "comment_url": "",
-      "application_no": "135-3",
-      "water_source": "Missouri: Pierre Aquifer",
-      "use_type": "Municipal (future use review)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/135-3_app.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/135-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights \u2014 Future Use Review",
-      "deadline": "03/30/2026",
-      "comment_url": "",
-      "application_no": "5003-3",
-      "water_source": "Missouri: Pierre Aquifer",
-      "use_type": "Municipal (future use review)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/5003-3_app.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/5003-3_rec.pdf"
         }
       ]
     },
@@ -1052,24 +962,6 @@
       ]
     },
     {
-      "notice_type": "Concentrated Animal Feeding Operations (NPDES Permit)",
-      "deadline": "05/07/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/07/2026&name=New Fashion Pork, LLP&pntype=fp_cafo_npdes&description=Modification to an Existing NPDES Permitted Swine Feeding Operation Consisting of Including Additional Land Application Acres for Amended Coverage - NPDES Permit",
-      "name": "New Fashion Pork, LLP",
-      "description": "Modification to an Existing NPDES Permitted Swine Feeding Operation Consisting of Including Additional Land Application Acres for Amended Coverage - NPDES Permit",
-      "location": "Miner County",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/NewFashionPorkPN6.pdf"
-        },
-        {
-          "label": "Recommendation",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/NewFashionPorkPN6RecommendationReport.pdf"
-        }
-      ]
-    },
-    {
       "notice_type": "Surface Water Discharge (NPDES)",
       "deadline": "05/08/2026",
       "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/08/2026&name=International Paper Co&pntype=sw_npdes&description=International Paper Co is directed by the South Dakota Department of Agriculture and Natural Resources to have no discharge from its facility located southeast of the city of Whitewood in Lawrence County.",
@@ -1635,8 +1527,8 @@
     {
       "notice_type": "Air Quality Permit",
       "deadline": "06/05/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=06/05/2026&name=Chevron Mill Valley RNG LLC&pntype=aq&description=Chevron Mill Valley proposes a new minor air quality operating permit for their biogas facility. DANR recommends issuance if a new minor air quality operating permit and a modification to the construction permit.",
-      "description": "Chevron Mill Valley proposes a new minor air quality operating permit for their biogas facility. DANR recommends issuance if a new minor air quality operating permit and a modification to the construction permit.",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=06/05/2026&name=Chevron Mill Valley RNG LLC&pntype=aq&description=Chevron Mill Valley proposes a new minor air quality operating permit for their biogas facility. DANR recommends issuance of a new minor air quality operating permit.",
+      "description": "Chevron Mill Valley proposes a new minor air quality operating permit for their biogas facility. DANR recommends issuance of a new minor air quality operating permit.",
       "location": "Millbank",
       "links": [
         {
@@ -1646,6 +1538,27 @@
         {
           "label": "Draft Permit",
           "url": "https://danr.sd.gov/Environment/AirQuality/PN/CMVdp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/CMVsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "06/05/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=06/05/2026&name=Chevron Mill Valley RNG LLC&pntype=aq&description=Chevron Mill Valley operates a biogas production facility in Millbank. The department recommends modification to their air quality construction permit.",
+      "description": "Chevron Mill Valley operates a biogas production facility in Millbank. The department recommends modification to their air quality construction permit.",
+      "location": "Millbank",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/CMVpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/dp.pdf"
         },
         {
           "label": "Application Review",
@@ -1670,8 +1583,8 @@
     {
       "notice_type": "Air Quality Permit",
       "deadline": "06/06/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=06/06/2026&name=Chevron Full Circle RNG LLC&pntype=aq&description=Chevron Full Circle proposes a new minor air quality operating permit for their biogas facility. DANR recommend issuance if a new minor air quality operating permit and a modification to the construction permit.",
-      "description": "Chevron Full Circle proposes a new minor air quality operating permit for their biogas facility. DANR recommend issuance if a new minor air quality operating permit and a modification to the construction permit.",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=06/06/2026&name=Chevron Full Circle RNG LLC&pntype=aq&description=Chevron Full Circle proposes a new minor air quality operating permit for their biogas facility. DANR recommend issuance of a new minor air quality operating permit.",
+      "description": "Chevron Full Circle proposes a new minor air quality operating permit for their biogas facility. DANR recommend issuance of a new minor air quality operating permit.",
       "location": "Hurley",
       "links": [
         {
@@ -1681,6 +1594,27 @@
         {
           "label": "Draft Permit",
           "url": "http://danr.sd.gov/Environment/AirQuality/PN/CFCRdp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/CFCRsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "06/06/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=06/06/2026&name=Chevron Full Circle RNG LLC&pntype=aq&description=Chevron Full Circle RNG LLC operates a biogas production facility in Hurley. The department recommends modification to their air quality construction permit.",
+      "description": "Chevron Full Circle RNG LLC operates a biogas production facility in Hurley. The department recommends modification to their air quality construction permit.",
+      "location": "Hurley",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/CFCRpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/dp.pdf"
         },
         {
           "label": "Application Review",

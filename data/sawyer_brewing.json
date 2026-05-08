@@ -300,6 +300,19 @@
   },
   {
     "url": "https://www.sawyerbrewingco.com/menu",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/18f7624c-4710-4df6-b35e-20775dc1d7ab/pinneapplepeacheswebsitedark.jpg",
+    "title": "pinneapplepeacheswebsitedark.jpg",
+    "slug": "pinneapplepeacheswebsitedark-jpg",
+    "category": "Sour Power",
+    "description": "",
+    "abv": "",
+    "notes": "",
+    "prices": [],
+    "record_type": "beer",
+    "source_label": "Sawyer Brewing Co."
+  },
+  {
+    "url": "https://www.sawyerbrewingco.com/menu",
     "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/c882c462-d4a5-401f-b6df-2c4599c1ad6b/lucky17websitedark.jpg",
     "title": "lucky17websitedark.jpg",
     "slug": "lucky17websitedark-jpg",

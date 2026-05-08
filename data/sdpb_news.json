@@ -1010,5 +1010,49 @@
     "image_url": "https://npr.brightspotcdn.com/legacy/prod/filer_public/kusd-bento-live-pbs/News%20Blog/Lee%20Strubinger/53f6676e80_I%20voted.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-05-08/gfp-outlines-plans-to-communicate-invasive-specie-to-boaters",
+    "title": "GFP outlines plans to communicate invasive species danger to boaters",
+    "slug": "sdpb-gfp-outlines-plans-to-communicate-invasive-species-danger-to-boaters",
+    "published": "2026-05-08",
+    "byline": "By Jackson Dircks",
+    "description": "A state commission heard plans to mitigate the introduction of aquatic invasive species to South Dakota waterways.",
+    "image_url": "https://npr.brightspotcdn.com/78/d5/a6287a3b46eb983c688cfd0c86f3/lczm4.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/science/2026-05-08/surf-marks-major-construction-milestone-in-neutrino-research-project",
+    "title": "SURF marks major construction milestone in neutrino research project",
+    "slug": "sdpb-surf-marks-major-construction-milestone-in-neutrino-research-project",
+    "published": "2026-05-08",
+    "byline": "By SDPB News Staff",
+    "description": "The Sanford Underground Research or Facility, or SURF, has marked a milestone in the development of its cutting edge physics project.",
+    "image_url": "https://npr.brightspotcdn.com/6b/06/033688c14e4ba24eab6b0e13a70b/surf-steel-event.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-05-08/erickson-literacy-is-key-to-public-safety-progress-in-sioux-falls",
+    "title": "Erickson: Literacy is key to public safety progress in Sioux Falls",
+    "slug": "sdpb-erickson-literacy-is-key-to-public-safety-progress-in-sioux-falls",
+    "published": "2026-05-08",
+    "byline": "By Lori Walsh",
+    "description": "Christine Erickson wants to be the next mayor of Sioux Falls. She talks about youth diversion programs, literacy initiatives, and 'thoughtful investment' in neighborhood growth.",
+    "image_url": "https://npr.brightspotcdn.com/9a/7e/3929c94e4533a791931b84a4f7ca/christine-erickson-and-jason-wilson.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-05-07/officer-shooting-sparks-efforts-to-tighten-parole-policy",
+    "title": "Officer shooting sparks efforts to tighten parole policy",
+    "slug": "sdpb-officer-shooting-sparks-efforts-to-tighten-parole-policy",
+    "published": "2026-05-07",
+    "byline": "By C.J. Keene",
+    "description": "After an officer was injured in Sioux Falls by a parolee, law enforcement leaders and the governor are asking for a tighter leash on parole regulations.",
+    "image_url": "https://npr.brightspotcdn.com/d9/43/ba9b37cd4c99927ea1ae1940582b/sioux-falls-police-department-sfpd.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

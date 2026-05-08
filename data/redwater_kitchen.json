@@ -1,5 +1,18 @@
 [
   {
+    "url": "https://untappd.com/b/anderson-valley-brewing-company-boont-amber-ale/4481",
+    "title": "Boont Amber Ale",
+    "slug": "boont-amber-ale",
+    "category": "Red Ale - American Amber / Red",
+    "abv": "5.8%",
+    "ibu": "15",
+    "brewery": "Anderson Valley Brewing Company",
+    "rating": "3.52",
+    "image_url": "https://labels.untappd.com/4481",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
     "url": "https://untappd.com/b/2-towns-ciderhouse-mango-cosmic-crisp/5884541",
     "title": "Mango Cosmic Crisp®",
     "slug": "mango-cosmic-crisp-r",
@@ -78,19 +91,6 @@
     "source_label": "Redwater Kitchen"
   },
   {
-    "url": "https://untappd.com/b/crow-peak-brewing-company-red-water-irish-red-ale/80124",
-    "title": "Red Water Irish Red Ale",
-    "slug": "red-water-irish-red-ale",
-    "category": "Red Ale - Irish",
-    "abv": "6.5%",
-    "ibu": "20",
-    "brewery": "Crow Peak Brewing Company",
-    "rating": "3.63",
-    "image_url": "https://labels.untappd.com/80124",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
     "url": "https://untappd.com/b/buffalo-ridge-brewing-project-oaksville-amber/2937051",
     "title": "Oaksville Amber",
     "slug": "oaksville-amber",
@@ -124,7 +124,7 @@
     "abv": "5%",
     "ibu": "15",
     "brewery": "Sturgis Brewing Company",
-    "rating": "3.54",
+    "rating": "3.53",
     "image_url": "https://labels.untappd.com/4838398",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"

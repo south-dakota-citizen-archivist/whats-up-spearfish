@@ -313,5 +313,14 @@
     "source_label": "Lawrence County",
     "channel_url": "https://www.youtube.com/channel/UC2CZKGr9OGrsMcCZkW0_HMA",
     "record_type": "youtube_video"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Sj-oNkTPEpc",
+    "title": "Lawrence County Planning & Zoning Meeting - May 7, 2026",
+    "published": "2026-05-08",
+    "thumbnail_url": "https://i4.ytimg.com/vi/Sj-oNkTPEpc/hqdefault.jpg",
+    "source_label": "Lawrence County",
+    "channel_url": "https://www.youtube.com/channel/UC2CZKGr9OGrsMcCZkW0_HMA",
+    "record_type": "youtube_video"
   }
 ]

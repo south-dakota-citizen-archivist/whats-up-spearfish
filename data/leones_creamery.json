@@ -1,19 +1,19 @@
 [
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/SweetCream-123-1528425973.jpg",
-    "title": "Sweet Cream",
-    "slug": "sweet-cream",
-    "description": "An old-style classic that never disappoints! Made from the simplest ingredients-- milk, cream, sugar, eggs. Bonus: perfect with any topping!",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/VanillaBean-5ad129052039e-130-1539449209.jpg",
+    "title": "Vanilla Bean",
+    "slug": "vanilla-bean",
+    "description": "A tried and true classic! Made with whole Madagascar vanilla beans, it's the perfect scoop.",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/A5443EEA-0E5B-4B69-A661-1BFA381D38CD-208-1530283549.jpg",
-    "title": "Chocolate Mint",
-    "slug": "chocolate-mint",
-    "description": "Creamy milk chocolate and peppermint ice cream.",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/ChocolateOreo-5ad1847d4f94b-135-1579456300.jpg",
+    "title": "Chocolate Oreo",
+    "slug": "chocolate-oreo",
+    "description": "One of our favorite chocolate ice creams! Addictive Oreo pieces riddled through creamy milk chocolate ice cream-- simple and delicious.",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
@@ -46,10 +46,10 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/Blackberry-Lemon-154-1541962966.jpg",
-    "title": "Blackberry Lemon",
-    "slug": "blackberry-lemon",
-    "description": "Bursting with sweet blackberries and tart lemon, this ice cream is a favorite among fruit fans!",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/IMG_2770-465-1771036087.jpg",
+    "title": "Pink Dragon Fruit",
+    "slug": "pink-dragon-fruit",
+    "description": "Our pink dragon fruit ice cream is subtly fruity and sweet, and SO gorgeous. The all-natural hue comes solely from the dragon fruit!",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },

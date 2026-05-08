@@ -1857,5 +1857,18 @@
     "website": "",
     "record_type": "event",
     "source_label": "Spearfish Chamber"
+  },
+  {
+    "url": "https://business.spearfishchamber.org/events/details/guided-imagery-creative-expression-30773",
+    "title": "Guided Imagery & Creative Expression",
+    "slug": "guided-imagery-creative-expression",
+    "start_dt": "2026-05-16 10:00 AM CDT",
+    "end_dt": "2026-05-16 11:30 AM CDT",
+    "location": "The Matthews Opera House & Arts Center",
+    "fees": "$15",
+    "description": "This offering begins with a gentle warm-up, followed by a guided imagery journey that invites participants to connect with their inner landscape through embodied awareness, visualization, imagination, and intuition. Following the journey, participants are invited into creative expression – writing, drawing, painting, etc. – to integrate and give form to what emerged. Time & space will be offered for optional sharing of your experience and/or creation. Art supplies will be provided. No artistic experience is needed. Participants leave feeling grounded, resourced, & connected, along with a tangible artistic creation and a self-care tool they can carry with them wherever they go.",
+    "website": "https://www.matthewsopera.com/event/guided-imagery-creative-expression/2026-05-16/",
+    "record_type": "event",
+    "source_label": "Spearfish Chamber"
   }
 ]
