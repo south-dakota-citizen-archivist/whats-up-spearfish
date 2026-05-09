@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-08T18:07:54.952148+00:00",
+  "fetched_at": "2026-05-09T17:45:36.663102+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -958,28 +958,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/9021-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Surface Water Discharge (NPDES)",
-      "deadline": "05/08/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/08/2026&name=International Paper Co&pntype=sw_npdes&description=International Paper Co is directed by the South Dakota Department of Agriculture and Natural Resources to have no discharge from its facility located southeast of the city of Whitewood in Lawrence County.",
-      "name": "International Paper Co",
-      "description": "International Paper Co is directed by the South Dakota Department of Agriculture and Natural Resources to have no discharge from its facility located southeast of the city of Whitewood in Lawrence County.",
-      "location": "Lawrence County",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/InternationalPaperPNDraft.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/InternationalPaperPermitDraft.pdf"
-        },
-        {
-          "label": "Statement of Basis",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/InternationalPaperSOBDraft.pdf"
         }
       ]
     },

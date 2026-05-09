@@ -1,5 +1,18 @@
 [
   {
+    "url": "https://untappd.com/b/dakota-point-brewing-long-trek-ipa/3792761",
+    "title": "Long Trek IPA",
+    "slug": "long-trek-ipa",
+    "category": "IPA - American",
+    "abv": "6.9%",
+    "ibu": "69",
+    "brewery": "Dakota Point Brewing",
+    "rating": "3.81",
+    "image_url": "https://labels.untappd.com/3792761",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
     "url": "https://untappd.com/b/anderson-valley-brewing-company-boont-amber-ale/4481",
     "title": "Boont Amber Ale",
     "slug": "boont-amber-ale",
@@ -39,19 +52,6 @@
     "source_label": "Redwater Kitchen"
   },
   {
-    "url": "https://untappd.com/b/ben-s-brewing-co-west-side-park/2246176",
-    "title": "West Side Park",
-    "slug": "west-side-park",
-    "category": "IPA - American",
-    "abv": "6%",
-    "ibu": "56",
-    "brewery": "Ben's Brewing Co.",
-    "rating": "3.88",
-    "image_url": "https://labels.untappd.com/2246176",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
     "url": "https://untappd.com/b/modist-brewing-co-heated-rivalry/6634660",
     "title": "Heated Rivalry",
     "slug": "heated-rivalry",
@@ -59,7 +59,7 @@
     "abv": "10%",
     "ibu": "",
     "brewery": "Modist Brewing Co.",
-    "rating": "4.12",
+    "rating": "4.11",
     "image_url": "https://labels.untappd.com/6634660",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"

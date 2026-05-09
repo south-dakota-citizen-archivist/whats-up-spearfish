@@ -111,17 +111,6 @@
   },
   {
     "url": "https://www.westernhillshumanesociety.com/cats",
-    "title": "Luna",
-    "slug": "cat-luna",
-    "species": "cat",
-    "description": "Female | Born 2021\nLuna was surrendered to us in June 2025. Her owners loved her but could no longer care for her. Luna does not like dogs and is not a big fan of other cats but may do well with another cat that keeps to itself.",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/5470cebd-c51b-4338-b070-38dc27729b61/IMG_1167.jpg?format=500w",
-    "image_alt": "Luna",
-    "record_type": "adoptable",
-    "source_label": "Western Hills Humane Society"
-  },
-  {
-    "url": "https://www.westernhillshumanesociety.com/cats",
     "title": "Cobweb",
     "slug": "cat-cobweb",
     "species": "cat",
@@ -224,7 +213,7 @@
     "title": "Cleo Catra",
     "slug": "cat-cleo-catra",
     "species": "cat",
-    "description": "Female | Born April 2022\nAvailable following vet appt for ear infection on 5.8.26 - taking applications!\nNo other animals | Indoor only\nCleo Catra came to us on 3.27.26. She is a sweet girl that adores pets and is just a little unsure in her new environment. Cleo does not like other animals and will pee on things if other animals are present in the home. She does not like big groups so would do best in a quiet home with fewer people. She might not do well with younger children. She is affectionate to her human and it was a hard surrender for her former owner. Orange females are rare and she’s a total catch.",
+    "description": "Female | Born April 2022\nAccepting applications! \nFYI - Currently on antibiotics for ear infection. Follow up appt scheduled 5.22.26\nNo other animals | Indoor only\nCleo Catra came to us on 3.27.26. She is a sweet girl that adores pets and is just a little unsure in her new environment. Cleo does not like other animals and will pee on things if other animals are present in the home. She does not like big groups so would do best in a quiet home with fewer people. She might not do well with younger children. She is affectionate to her human and it was a hard surrender for her former owner. Orange females are rare and she’s a total catch.",
     "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/8315fe29-f725-4a6d-8d4c-825f14240b95/CleoCatra+awake.jpg?format=500w",
     "image_alt": "Cleo Catra",
     "record_type": "adoptable",
@@ -271,17 +260,6 @@
     "description": "Male | Born ~3.12.26\nGuinness came to us on 3.13.26 with siblings and feral mom, Paddy. He’s a cute little fluff and has a twin sister!",
     "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/ed941be3-e2d7-488c-9fc5-e8dea3eb092a/Guiness.jpg?format=500w",
     "image_alt": "Guinness",
-    "record_type": "adoptable",
-    "source_label": "Western Hills Humane Society"
-  },
-  {
-    "url": "https://www.westernhillshumanesociety.com/cats",
-    "title": "Ireland",
-    "slug": "cat-ireland",
-    "species": "cat",
-    "description": "Female | Born ~3.12.26\nIreland came to us on 3.13.26 with siblings and feral mom, Paddy. She’s a cute little fluff and has a twin brother!",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/9fea128f-87a9-43ce-8203-4ccb7d8f3148/Ireland.jpg?format=500w",
-    "image_alt": "Ireland",
     "record_type": "adoptable",
     "source_label": "Western Hills Humane Society"
   },
@@ -535,6 +513,17 @@
     "description": "Male | Husky/Mix | <2 years old \nMaverick came to us on 4.28.26 as a stray that was never picked up. We do know his former family was trying to rehome him. Maybe he escaped… but in the end they didn’t come looking for him. He is high-energy but very sweet. He does want to play rough but he’s a youngster still so we think a home with a yard and someone(s) to play with would be great for him to burn off energy. We aren’t sure how he does with other dogs but welcome a meet-and-greet! Maverick weighs 49 lbs.",
     "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/8307893f-d00a-45a0-99fa-a376effb74e9/1000041572.jpg?format=500w",
     "image_alt": "Maverick",
+    "record_type": "adoptable",
+    "source_label": "Western Hills Humane Society"
+  },
+  {
+    "url": "https://www.westernhillshumanesociety.com/dogs",
+    "title": "Guster",
+    "slug": "dog-guster",
+    "species": "dog",
+    "description": "Male | Shepherd Mix | Born 2025\nNo cats, some dogs\nGuster (formally Junior) is back with us after not fitting in with his family. They gave it a go but he did not get along with the family cat and did not care for one of the family members smelling like her own dog… and unfortunately it did end with a bite. He does very well with younger kids and would do best as the only pet but we can facilitate a meet-and-greet with another dog to see if they get along. Guster weighs 40 lbs.",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/d9ad3738-31eb-4f04-9287-a51b793da48f/Junior.jpg?format=500w",
+    "image_alt": "Guster",
     "record_type": "adoptable",
     "source_label": "Western Hills Humane Society"
   }

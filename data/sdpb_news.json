@@ -1054,5 +1054,38 @@
     "image_url": "https://npr.brightspotcdn.com/d9/43/ba9b37cd4c99927ea1ae1940582b/sioux-falls-police-department-sfpd.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-05-08/company-behind-mining-project-near-pe-sla-withdraws-plan",
+    "title": "Company behind mining project near Pe' Sla withdraws plan",
+    "slug": "sdpb-company-behind-mining-project-near-pe-sla-withdraws-plan",
+    "published": "2026-05-08",
+    "byline": "By Josh Chilson",
+    "description": "Opponents of a mining operation near the Pe’ Sla site in the Black Hills says the company behind project is backing off the plan.",
+    "image_url": "https://npr.brightspotcdn.com/ce/86/1ea5c09e4d008d868077b3cf62ec/115f1140-3c78-4b7e-a87c-c76ffb99f6b3.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-05-08/missing-infant-found-dead-in-rapid-city-father-facing-murder-charge",
+    "title": "Missing infant found dead in Rapid City; Father facing murder charge",
+    "slug": "sdpb-missing-infant-found-dead-in-rapid-city-father-facing-murder-charge",
+    "published": "2026-05-08",
+    "byline": "By C.J. Keene",
+    "description": "After a short missing and endangered person’s advisory, a missing baby was found dead in Rapid City. Melinko Ivan Bagola was nine weeks old.",
+    "image_url": "https://npr.brightspotcdn.com/a2/f8/81a427f54443a74ee8bcd3bf8750/tyler-slow-bear.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/healthcare/2026-05-08/sanford-health-announces-merger-with-minnesota-based-north-memorial-health",
+    "title": "Sanford Health announces merger with Minnesota-based North Memorial Health",
+    "slug": "sdpb-sanford-health-announces-merger-with-minnesota-based-north-memorial-health",
+    "published": "2026-05-08",
+    "byline": "By Josh Chilson",
+    "description": "Officials with Sanford Health say they’ve signed an agreement to merge with North Memorial Health, a nonprofit health care provider based in the Twin Cities.",
+    "image_url": "https://npr.brightspotcdn.com/legacy/prod/filer_public/kusd-bento-live-pbs/Jackie%20Hendry/b9ce8df009_102416SanfordHealthHospitalMedical.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]
