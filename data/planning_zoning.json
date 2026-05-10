@@ -1,6 +1,38 @@
 {
-  "fetched_at": "2026-05-09T17:45:13.927622+00:00",
+  "fetched_at": "2026-05-10T17:46:18.306136+00:00",
   "records": [
+    {
+      "id": 11910,
+      "record_no": "",
+      "record_type": "Residential Decks, Covered Patios, or Fences",
+      "record_type_id": 6480,
+      "category": "alterations",
+      "status": 0,
+      "date_created": "2026-05-08T20:48:50.763Z",
+      "date_submitted": "",
+      "last_updated": "2026-05-08T20:55:42.000Z",
+      "address": "2121 MUSTANG LN, SPEARFISH, SD 57783",
+      "lat": 44.487853,
+      "lon": -103.826747,
+      "applicant": "Elliot Rayman",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/11910"
+    },
+    {
+      "id": 11906,
+      "record_no": "",
+      "record_type": "Residential Decks, Covered Patios, or Fences",
+      "record_type_id": 6480,
+      "category": "alterations",
+      "status": 0,
+      "date_created": "2026-05-07T19:24:24.783Z",
+      "date_submitted": "",
+      "last_updated": "2026-05-07T19:26:08.000Z",
+      "address": "1421 LOOKOUT VALLEY CT, SPEARFISH, SD 57783",
+      "lat": 44.4986,
+      "lon": -103.858302,
+      "applicant": "Titus Roberts",
+      "portal_url": "https://spearfishsd.portal.opengov.com/records/11906"
+    },
     {
       "id": 11900,
       "record_no": "FP-26-7",
@@ -138,7 +170,7 @@
       "status": 1,
       "date_created": "2026-04-30T21:33:47.726Z",
       "date_submitted": "2026-04-30T21:42:53.000Z",
-      "last_updated": "2026-05-07T16:58:30.000Z",
+      "last_updated": "2026-05-09T23:53:29.000Z",
       "address": "",
       "lat": 44.461927,
       "lon": -103.788029,

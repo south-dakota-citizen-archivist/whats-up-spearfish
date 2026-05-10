@@ -728,5 +728,15 @@
     "start_dt": "Wed, 06 May 2026 13:12:29 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3322",
+    "title": "Library CLOSED for Memorial Day",
+    "slug": "library-closed-for-memorial-day",
+    "description": "<strong>Event dates:</strong> May 24, 2026 - May 25, 2026<br /><strong>Event Time: </strong>12:00 AM - 11:59 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />The Library will be CLOSED Sunday & Monday for Memorial Day.",
+    "published": "Tue, 06 Jan 2026 13:40:44 -0700",
+    "start_dt": "Tue, 06 Jan 2026 13:40:44 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]
