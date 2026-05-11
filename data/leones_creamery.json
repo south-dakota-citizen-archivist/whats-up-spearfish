@@ -19,37 +19,19 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/F731BBC2-6725-406D-AF38-A9B932AEFAB1-342-1620492734.jpg",
-    "title": "The Yellow Jacket",
-    "slug": "the-yellow-jacket",
-    "description": "Made in honor of our favorite local mascot (hi Sting!). Sweet cream ice cream gets a heavy swirl of our honey-caramel sauce, and riddled with honeycomb-shaped chocolate pieces!",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/92542EFF-F6FA-4343-BFAB-271E2A5ECF33-198-1528419972.jpg",
-    "title": "Mayan Hot Chocolate",
-    "slug": "mayan-hot-chocolate",
-    "description": "With hints of cayenne and cinnamon, this rich ice cream is ultra-chocolaty and delicious...with a kick!",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/EC419FEB-0460-4368-B022-F59741DB6FB6-217-1531516628.jpg",
-    "title": "Horchata",
-    "slug": "horchata",
-    "description": "One of our Cinco de Mayo flavors! Fashioned after the classic Latin American drink, this one's made with rice milk, cinnamon, and sweet almond to create a creamy and refreshing scoop.",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
     "image_url": "https://leonescreamery.com/images/uploads/cropped/IMG_2770-465-1771036087.jpg",
     "title": "Pink Dragon Fruit",
     "slug": "pink-dragon-fruit",
     "description": "Our pink dragon fruit ice cream is subtly fruity and sweet, and SO gorgeous. The all-natural hue comes solely from the dragon fruit!",
+    "record_type": "flavor",
+    "source_label": "Leone's Creamery"
+  },
+  {
+    "url": "https://leonescreamery.com/flavors",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/F731BBC2-6725-406D-AF38-A9B932AEFAB1-342-1620492734.jpg",
+    "title": "The Yellow Jacket",
+    "slug": "the-yellow-jacket",
+    "description": "Made in honor of our favorite local mascot (hi Sting!). Sweet cream ice cream gets a heavy swirl of our honey-caramel sauce, and riddled with honeycomb-shaped chocolate pieces!",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
@@ -64,10 +46,28 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/439F5806-0B58-430A-AE84-23F1E4531432-247-1536967015.jpg",
-    "title": "Vegan Coconut Latte",
-    "slug": "vegan-coconut-latte",
-    "description": "Vegan, gluten-free, and so delicious. Made with Oak Roaster's espresso beans, this tastes like the best coconut latte you've ever had.",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/4B256FB4-8C1F-432B-A4B5-88E1ACF59E8D-207-1530283492.jpg",
+    "title": "Orange Speckled Chocolate",
+    "slug": "orange-speckled-chocolate",
+    "description": "Our favorite citrus/chocolate combo! Creamy orange ice cream and melt-in-your-mouth chocolate flakes make for one tasty treat.",
+    "record_type": "flavor",
+    "source_label": "Leone's Creamery"
+  },
+  {
+    "url": "https://leonescreamery.com/flavors",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/AB14E89D-356E-4589-84C5-00B303F65065-168-1525900040.jpg",
+    "title": "Lemon Bar",
+    "slug": "lemon-bar",
+    "description": "Our addictive lemon-vanilla ice cream with ribbons of housemade lemon curd and sugar cookie crust pieces...one of our favorites!",
+    "record_type": "flavor",
+    "source_label": "Leone's Creamery"
+  },
+  {
+    "url": "https://leonescreamery.com/flavors",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/VeganCoconutChip-144-1567270733.jpg",
+    "title": "Vegan Coconut Chip",
+    "slug": "vegan-coconut-chip",
+    "description": "",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   }

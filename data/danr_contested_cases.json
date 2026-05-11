@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-10T17:48:35.777894+00:00",
+  "fetched_at": "2026-05-11T19:10:47.971848+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -10,27 +10,27 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID123",
       "documents": [
         {
+          "label": "May 11, 2026 Subpoena Issued to SD DANR Employee Roberta Hudson",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/51126HudsonSubpoena.pdf"
+        },
+        {
+          "label": "May 1, 2026 Subpoena Issued to SD School and Public Lands Commissioner Brock Greenfield",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/5126GreenfieldSubpoena.pdf"
+        },
+        {
+          "label": "May 8, 2026 Motion for Subpoena to DANR Employee Roberta Hudson from Lilias Jarding",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/5826HudsonMotionforSubpoena.pdf"
+        },
+        {
           "label": "May 1, 2026 Notice of Entry of Order on Motion to Preclude Consideration of Treaty Rights and Notice of Entry of Order on Motion for Access to Unredacted Archaeologic Reports by Hearing Chair Bob Morris",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/5126NOEOrders.pdf"
         },
         {
           "label": "April 28, 2026 Motion from Bruce Ellison for Access to Unredacted Archaeologic, Cultural,and Historic Reports Pursuant to Protective Order",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/42826EllisonAccesstoUnredactedReports.pdf"
-        },
-        {
-          "label": "April 28, 2026 Motion for Subpoena to Commissioner Brock Greenfield, SD Office of School and Public Lands from Bruce Ellison",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/42826EllisonSubpoena.pdf"
-        },
-        {
-          "label": "Newspaper Version of Notice of Hearing for Clean Nuclear Energy's Uranium Exploration Permit Application",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/CleanNuclearEXNI453NoticeofHearing2026b.pdf"
-        },
-        {
-          "label": "April 27, 2026 Supplemental Exhibit List from Clean Nuclear Energy Containing the Chord Project Water Quality Evaluation",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/042726SupplementalWaterQualityExhibit.pdf"
         }
       ],
-      "total_docs": 96,
+      "total_docs": 99,
       "latest_doc_date": "0000-00-00"
     },
     {

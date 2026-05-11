@@ -1087,5 +1087,27 @@
     "image_url": "https://npr.brightspotcdn.com/legacy/prod/filer_public/kusd-bento-live-pbs/Jackie%20Hendry/b9ce8df009_102416SanfordHealthHospitalMedical.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-05-11/xcel-energy-settles-for-reduced-rate-increase-in-south-dakota",
+    "title": "Xcel Energy settles for reduced rate increase in South Dakota",
+    "slug": "sdpb-xcel-energy-settles-for-reduced-rate-increase-in-south-dakota",
+    "published": "2026-05-11",
+    "byline": "By SDPB News Staff",
+    "description": "State regulators are approving Xcel Energy’s request for a rate hike, though it’s a smaller increase than the provider asked for.",
+    "image_url": "https://npr.brightspotcdn.com/legacy/prod/filer_public/kusd-bento-live-pbs/Art/BrianG/RuralConnection/f1ad781eba_powerPole-thumb-small.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-05-11/as-anti-panhandling-campaign-returns-to-sioux-falls-so-does-criticism",
+    "title": "As anti-panhandling campaign returns to Sioux Falls, so does criticism",
+    "slug": "sdpb-as-anti-panhandling-campaign-returns-to-sioux-falls-so-does-criticism",
+    "published": "2026-05-11",
+    "byline": "By Jackson Dircks",
+    "description": "A campaign to prevent panhandling in Sioux Falls is again facing pushback. A small protest in the city continues the conversation about the campaign.",
+    "image_url": "https://npr.brightspotcdn.com/fa/32/2b2194cb4a02bfaa5f920edb58b8/image-42.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]
