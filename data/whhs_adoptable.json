@@ -254,17 +254,6 @@
   },
   {
     "url": "https://www.westernhillshumanesociety.com/cats",
-    "title": "Guinness",
-    "slug": "cat-guinness",
-    "species": "cat",
-    "description": "Male | Born ~3.12.26\nGuinness came to us on 3.13.26 with siblings and feral mom, Paddy. He’s a cute little fluff and has a twin sister!",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/ed941be3-e2d7-488c-9fc5-e8dea3eb092a/Guiness.jpg?format=500w",
-    "image_alt": "Guinness",
-    "record_type": "adoptable",
-    "source_label": "Western Hills Humane Society"
-  },
-  {
-    "url": "https://www.westernhillshumanesociety.com/cats",
     "title": "Charm",
     "slug": "cat-charm",
     "species": "cat",
@@ -353,17 +342,6 @@
   },
   {
     "url": "https://www.westernhillshumanesociety.com/cats",
-    "title": "Finch",
-    "slug": "cat-finch",
-    "species": "cat",
-    "description": "Male | Born ~3.1.26\nON HOLD (5/7 - 5/9)\nFinch, his siblings, and their mom were left at a gas station here in Spearfish. A kind woman worked with Animal Control to bring them to us 5.1.26. All 4 kittens are sweet, playful, and love napping. Finch stands out the most with his dark stripes and is looking forward to his new home and humans to love him for his whole life. We are still getting to know each kitten’s personality!",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/43747eda-2db0-4009-9e8f-06f1a10558d9/1000041536.jpg?format=500w",
-    "image_alt": "Finch",
-    "record_type": "adoptable",
-    "source_label": "Western Hills Humane Society"
-  },
-  {
-    "url": "https://www.westernhillshumanesociety.com/cats",
     "title": "Lark",
     "slug": "cat-lark",
     "species": "cat",
@@ -403,6 +381,39 @@
     "description": "Male | Undetermined age\nAvailable after neuter appt 5.13.26 \nBARN/SHOP CAT ONLY (feral)",
     "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/3747fd91-989a-4cb3-9fab-2df0f8b5f0f2/1000041579.jpg?format=500w",
     "image_alt": "Mr. Black",
+    "record_type": "adoptable",
+    "source_label": "Western Hills Humane Society"
+  },
+  {
+    "url": "https://www.westernhillshumanesociety.com/cats",
+    "title": "Munchie",
+    "slug": "cat-munchie",
+    "species": "cat",
+    "description": "Male | Born around 3.13.26\nMunchie came from STARS rescue with his two sisters. We had a mama cat still nursing and they were accepted into her family. Munchie loves to climb legs but is definitely the most calm of his siblings. He does cuddle, but you’ll often find him napping with himself.",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/6e42a9b3-f99a-413c-865a-84fd1e8ceab8/Munchie.jpg?format=500w",
+    "image_alt": "Munchie",
+    "record_type": "adoptable",
+    "source_label": "Western Hills Humane Society"
+  },
+  {
+    "url": "https://www.westernhillshumanesociety.com/cats",
+    "title": "Chow",
+    "slug": "cat-chow",
+    "species": "cat",
+    "description": "Female | Born around 3.13.26\nChow came from STARS rescue with her sister and brother. We had a mama cat nursing that accepted them all into her family. Chow loves a nap pile, gets a little fiesty when sharing food, but is a little lover. She, like all her siblings, enjoy climbing your legs.",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/f89fa109-cdf0-46e1-9e0b-b0aef699a451/Chow.jpg?format=500w",
+    "image_alt": "Chow",
+    "record_type": "adoptable",
+    "source_label": "Western Hills Humane Society"
+  },
+  {
+    "url": "https://www.westernhillshumanesociety.com/cats",
+    "title": "Snack Attack",
+    "slug": "cat-snack-attack",
+    "species": "cat",
+    "description": "Female | Born around 3.13.26\nSnack Attack came from STARS rescue with her sister and brother. We had a mama cat nursing that accepted them all into her family. She, like all her siblings, enjoy climbing your legs. Snack Attack used to be the most rambunctious, but she is now calming down and enjoys being talked to and cuddling.",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/7d194cf1-4196-4913-8c92-b49fe244b24e/Snack+Attack.jpg?format=500w",
+    "image_alt": "Snack Attack",
     "record_type": "adoptable",
     "source_label": "Western Hills Humane Society"
   },

@@ -19,15 +19,6 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/IMG_2770-465-1771036087.jpg",
-    "title": "Pink Dragon Fruit",
-    "slug": "pink-dragon-fruit",
-    "description": "Our pink dragon fruit ice cream is subtly fruity and sweet, and SO gorgeous. The all-natural hue comes solely from the dragon fruit!",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
     "image_url": "https://leonescreamery.com/images/uploads/cropped/F731BBC2-6725-406D-AF38-A9B932AEFAB1-342-1620492734.jpg",
     "title": "The Yellow Jacket",
     "slug": "the-yellow-jacket",
@@ -41,6 +32,15 @@
     "title": "Avocado",
     "slug": "avocado",
     "description": "Ultra creamy, mellow, and sweet-- it's a surprisingly delicious scoop.",
+    "record_type": "flavor",
+    "source_label": "Leone's Creamery"
+  },
+  {
+    "url": "https://leonescreamery.com/flavors",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/3F83621C-C716-4654-A355-38F8DA690745-231-1532984950.jpg",
+    "title": "Mountain Huckleberry",
+    "slug": "mountain-huckleberry",
+    "description": "We use real huckleberries (no syrups or extracts!) to make this deeeelicious, fruity concoction. This crowd-favorite goes fast, so stop in soon if you catch it on our board!",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },

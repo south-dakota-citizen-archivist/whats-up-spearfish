@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-11T19:10:47.971848+00:00",
+  "fetched_at": "2026-05-12T18:57:17.685442+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -222,6 +222,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID126",
       "documents": [
         {
+          "label": "Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3_NOH_3.pdf"
+        },
+        {
           "label": "Pre-Hearing Submission by Counsel for Petitioners",
           "url": "https://danr.sd.gov/wrimage/pub/8982-3_prehearsub_pet.pdf"
         },
@@ -236,13 +240,9 @@
         {
           "label": "Notice of Appearance - Legal Counsel for Petitioners (Heinz)",
           "url": "https://danr.sd.gov/wrimage/pub/8982-3_notappear_pet.pdf"
-        },
-        {
-          "label": "Pre-Hearing Submission by Counsel for Applicant",
-          "url": "https://danr.sd.gov/wrimage/pub/8982-3_prehearingsub_ex.pdf"
         }
       ],
-      "total_docs": 21,
+      "total_docs": 22,
       "latest_doc_date": "0000-00-00"
     },
     {
@@ -253,6 +253,10 @@
       "description": "Application No. 8990-3 proposes to appropriate and reserve for future use 1,120 acre-feet of water annually from the Antelope Valley Aquifer.  The area to be reserved for future use is Section 21 and 22; all in T120N-R51W.  The water is to be reserved as a future water supply for municipal and water distribution system use by the City of Milbank, in Grant County. Approval of this application would not authorize construction of works or application of water to beneficial use.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID128",
       "documents": [
+        {
+          "label": "Notice of Hearing",
+          "url": "https://danr.sd.gov/wrimage/pub/8990-3_NOH_2.pdf"
+        },
         {
           "label": "Notice of Automatic Delay of Hearing",
           "url": "https://danr.sd.gov/wrimage/pub/8990-3_not2_dly.pdf"
@@ -268,13 +272,9 @@
         {
           "label": "Comments",
           "url": "https://danr.sd.gov/wrimage/pub/8990-3_com.pdf"
-        },
-        {
-          "label": "Petitions in Opposition",
-          "url": "https://danr.sd.gov/wrimage/pub/8990-3_pet.pdf"
         }
       ],
-      "total_docs": 8,
+      "total_docs": 9,
       "latest_doc_date": "0000-00-00"
     },
     {

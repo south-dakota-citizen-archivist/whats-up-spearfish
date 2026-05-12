@@ -1109,5 +1109,38 @@
     "image_url": "https://npr.brightspotcdn.com/fa/32/2b2194cb4a02bfaa5f920edb58b8/image-42.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/healthcare/2026-05-12/postpartum-research-project-combines-personal-experience-with-poetry-and-art",
+    "title": "Postpartum research project combines personal experience with poetry and art",
+    "slug": "sdpb-postpartum-research-project-combines-personal-experience-with-poetry-and",
+    "published": "2026-05-12",
+    "byline": "By Jackie Hendry",
+    "description": "A researcher at South Dakota State University hopes a forthcoming project can help doctors and patients navigate the feelings that come after giving birth through a project driven by her own lived experience.",
+    "image_url": "https://npr.brightspotcdn.com/be/bb/d27156974a35b4f743fc07489a5a/sketches-mov-00-03-22-08-still002.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-05-12/tourism-up-in-glacial-lakes-and-prairies-area",
+    "title": "Tourism up in Glacial Lakes and prairies area",
+    "slug": "sdpb-tourism-up-in-glacial-lakes-and-prairies-area",
+    "published": "2026-05-12",
+    "byline": "By C.J. Keene",
+    "description": "As one of the state’s largest industries, communities across South Dakota are getting their slice of the tourism pie. For Brookings, that means utilizing location and maximizing the infrastructure the community already has.",
+    "image_url": "https://npr.brightspotcdn.com/4d/fa/d9714a3f478f9db0f735af0b80ec/brookings.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-05-11/gfp-commission-approves-reduced-deer-hunting-licenses-in-some-areas",
+    "title": "GFP commission approves reduced deer hunting licenses in some areas",
+    "slug": "sdpb-gfp-commission-approves-reduced-deer-hunting-licenses-in-some-areas",
+    "published": "2026-05-11",
+    "byline": "By Jackson Dircks",
+    "description": "A state commission seeks to reduce deer hunting license and tag numbers across the state due to growing struggles with the population.",
+    "image_url": "https://npr.brightspotcdn.com/legacy/prod/blog/20190416_182120_155622_deer.jpeg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

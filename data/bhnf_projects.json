@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-11T19:10:57.153337+00:00",
+  "fetched_at": "2026-05-12T18:57:33.903809+00:00",
   "projects": [
     {
       "project_id": "67625",
@@ -202,6 +202,22 @@
       "district": "Bearlodge Ranger District",
       "purpose": "Minerals And Geology",
       "description": "Development of rare earth minerals mine.  This project has been suspended.",
+      "milestones": [],
+      "comment_period_date": null,
+      "comment_period_sort": "9999-99",
+      "location_summary": "",
+      "counties": [],
+      "contact": {},
+      "last_updated": ""
+    },
+    {
+      "project_id": "291093",
+      "title": "Bear Lodge Rare Earth Project",
+      "url": "https://www.fs.usda.gov/r02/blackhills/projects/291093",
+      "status": "Developing Proposal",
+      "district": "Bearlodge Ranger District",
+      "purpose": "Minerals And Geology",
+      "description": "Rare Element Resources Inc. has submitted a Mine Plan of Operations to the Black Hills National Forest. The project proposes to develop an open-pit mine with associated infrastructure and support facilities. The project also includes reclamation, monitoring, mitigation, and closing.",
       "milestones": [],
       "comment_period_date": null,
       "comment_period_sort": "9999-99",

@@ -22046,5 +22046,21 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20260512064826336ba1285fc914e4b",
+    "url": "https://gobound.com/direct/comps/h20260512064826336ba1285fc914e4b/show",
+    "title": "Football: Belle Fourche vs Spearfish (Junior Varsity)",
+    "slug": "football-belle-fourche-vs-spearfish-junior-varsity",
+    "sport": "Football",
+    "level": "Junior Varsity",
+    "sex": "male",
+    "description": "Junior Varsity Football - Belle Fourche vs Spearfish",
+    "start_dt": "2026-09-21T22:00:00",
+    "end_dt": "2026-09-22T00:00:00",
+    "location": "Spearfish High School Football Field",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]
