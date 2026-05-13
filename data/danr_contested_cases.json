@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-12T18:57:17.685442+00:00",
+  "fetched_at": "2026-05-13T18:58:26.921963+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -9,6 +9,14 @@
       "description": "Proposed uranium exploration project seven miles north of Edgemont, SD.  Up to 50 holes will be drilled to a maximum vertical depth of 700 feet.  In addition, 50 drill platforms will be created with a dimension of 60 feet by 60 feet.  Exploration will be conducted using reverse circulation drilling with sumps.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID123",
       "documents": [
+        {
+          "label": "May 13, 2026 Motion by School and Public Lands Commissioner Brock Greenfield to Quash Bruce Ellison's Motion for Subpoena and Limited Notice of Appearance",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/51326GreenfieldQuashMotion.pdf"
+        },
+        {
+          "label": "May 12, 2026 Supplemental Notice of Witnesses and Exhibits by Intervenor Bruce Ellison",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/51226EllisonNoticeAdditionalWitnessesExhibits.pdf"
+        },
         {
           "label": "May 11, 2026 Subpoena Issued to SD DANR Employee Roberta Hudson",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/51126HudsonSubpoena.pdf"
@@ -20,17 +28,9 @@
         {
           "label": "May 8, 2026 Motion for Subpoena to DANR Employee Roberta Hudson from Lilias Jarding",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/5826HudsonMotionforSubpoena.pdf"
-        },
-        {
-          "label": "May 1, 2026 Notice of Entry of Order on Motion to Preclude Consideration of Treaty Rights and Notice of Entry of Order on Motion for Access to Unredacted Archaeologic Reports by Hearing Chair Bob Morris",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/5126NOEOrders.pdf"
-        },
-        {
-          "label": "April 28, 2026 Motion from Bruce Ellison for Access to Unredacted Archaeologic, Cultural,and Historic Reports Pursuant to Protective Order",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/42826EllisonAccesstoUnredactedReports.pdf"
         }
       ],
-      "total_docs": 99,
+      "total_docs": 100,
       "latest_doc_date": "0000-00-00"
     },
     {

@@ -1,32 +1,6 @@
 [
   {
     "url": "https://www.sawyerbrewingco.com/menu",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/b66f01d4-a0c3-464d-bbfc-571508e0a627/pilsdark.jpg",
-    "title": "PILS",
-    "slug": "pils",
-    "category": "Light & Easy",
-    "description": "Bright, golden, & refreshingly crisp. Our German-style pilsner is brewed with light malt & noble hops for that signature snappy finish. Pours clear with a beautiful floral aroma. Prost to simplicity done right.",
-    "abv": "5.6%",
-    "notes": "",
-    "prices": [
-      {
-        "price": 2.0,
-        "ounces": 5
-      },
-      {
-        "price": 3.5,
-        "ounces": 10
-      },
-      {
-        "price": 5.5,
-        "ounces": 16
-      }
-    ],
-    "record_type": "beer",
-    "source_label": "Sawyer Brewing Co."
-  },
-  {
-    "url": "https://www.sawyerbrewingco.com/menu",
     "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/886dc41f-ef5c-411b-a594-7389de6df6a5/pcldark.jpg",
     "title": "Premium Craft Lager",
     "slug": "premium-craft-lager",
@@ -105,7 +79,7 @@
   },
   {
     "url": "https://www.sawyerbrewingco.com/menu",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/3a582e27-d8be-4bbe-b3fb-cb98e419bc46/amberlagerwebsite.jpg",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/d2bef704-c257-46ef-8385-2feedc3dde9b/amberlagerwebsite.jpg",
     "title": "Amber Lager",
     "slug": "amber-lager",
     "category": "Light & Easy",
@@ -147,7 +121,7 @@
     "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/911a3464-7505-4846-8c2d-c0d94579e7ce/2strokewebsitedark.jpg",
     "title": "2-Stroke Haze IPA",
     "slug": "2-stroke-haze-ipa",
-    "category": "Light & Easy",
+    "category": "Hop Heads",
     "description": "Don't you just love the smell of a two stroke engine? It usually means a good day spent in the woods or yard getting stuff done! 2-Stroke Haze is a juicy + hazy + citrusy IPA featuring citra, mosaic, & amarillo hops.",
     "abv": "5.7%",
     "notes": "",

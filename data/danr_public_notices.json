@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-12T18:55:10.183260+00:00",
+  "fetched_at": "2026-05-13T18:56:04.105771+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -677,6 +677,28 @@
         {
           "label": "Statement of Basis",
           "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/AlcesterSOBDraftFR.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Surface Water Discharge (NPDES)",
+      "deadline": "06/12/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=06/12/2026&name=City of Flandreau&pntype=sw_npdes&description=The City of Flandreau is authorized under this permit to discharge to the Big Sioux River from its wastewater treatment facility located in Moody County.",
+      "name": "City of Flandreau",
+      "description": "The City of Flandreau is authorized under this permit to discharge to the Big Sioux River from its wastewater treatment facility located in Moody County.",
+      "location": "Moody County",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/FlandreauPN.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/FlandreauPermit.pdf"
+        },
+        {
+          "label": "Statement of Basis",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/FlandreauSOB.pdf"
         }
       ]
     },

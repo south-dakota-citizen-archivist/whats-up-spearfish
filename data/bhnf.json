@@ -44,5 +44,45 @@
     "description": "Register by April 17 for our free April 2026 environmental education workshop featuring Project WILD, South Dakota Game, Fish & Parks Aquatic… Times: All Day Dates: April 24 - 26, 2026 Contact information: Bradley Block, bradley.block@usda.gov , 605-673-9239",
     "record_type": "event",
     "source_label": "Black Hills National Forest"
+  },
+  {
+    "url": "https://www.fs.usda.gov/r02/blackhills/events/june-27-2026-moon-walk-cone-collection-and-reforestation-methods",
+    "title": "June 27, 2026 Moon Walk: Cone Collection and Reforestation Methods",
+    "slug": "bhnf-event-june-27-2026-moon-walk-cone-collection-and-reforestation-methods",
+    "start_dt": "2026-06-27",
+    "location": "Black Hills National Forest",
+    "description": "Learn about cone collecting and reforestation in Black Hills National Forest! Join our Moon Walk to discover how we plant trees and manage the forest. Times: 7:00pm - 9:00pm Dates: June 27, 2026 Contact information: Bearlodge Ranger District, (307) 283-1361",
+    "record_type": "event",
+    "source_label": "Black Hills National Forest"
+  },
+  {
+    "url": "https://www.fs.usda.gov/r02/blackhills/events/july-25-2026-moon-walk-lets-turn-dark",
+    "title": "July 25, 2026 Moon Walk: Let’s Turn On the Dark",
+    "slug": "bhnf-event-july-25-2026-moon-walk-lets-turn-on-the-dark",
+    "start_dt": "2026-07-25",
+    "location": "Black Hills National Forest",
+    "description": "Explore the mysterious world of bats on a Black Hills Moon Walk! Learn about their vital role in our ecosystem. Times: 7:00pm - 9:00pm Dates: July 25, 2026 Contact information: Northern Hills Ranger District, (605) 642-4622",
+    "record_type": "event",
+    "source_label": "Black Hills National Forest"
+  },
+  {
+    "url": "https://www.fs.usda.gov/r02/blackhills/events/august-29-2026-moon-walk-walking-through-past-see-future",
+    "title": "August 29, 2026 Moon Walk: Walking through the Past to See the Future",
+    "slug": "bhnf-event-august-29-2026-moon-walk-walking-through-the-past-to-see-the-future",
+    "start_dt": "2026-08-29",
+    "location": "Black Hills National Forest",
+    "description": "Discover historic Meeker Ranch in the Black Hills National Forest on our expert-guided Moon Walk. Times: 7:00pm - 9:00pm Dates: August 29, 2026 Contact information: Hell Canyon Ranger District (Custer, SD), (605) 673-9292",
+    "record_type": "event",
+    "source_label": "Black Hills National Forest"
+  },
+  {
+    "url": "https://www.fs.usda.gov/r02/blackhills/events/september-26-2026-moon-walk-meet-your-friendly-insect-neighbors",
+    "title": "September 26, 2026 Moon Walk: Meet Your Friendly Insect Neighbors",
+    "slug": "bhnf-event-september-26-2026-moon-walk-meet-your-friendly-insect-neighbors",
+    "start_dt": "2026-09-26",
+    "location": "Black Hills National Forest",
+    "description": "Uncover the amazing world of insects in the Black Hills on our autumn Moon Walk and learn about beneficial & interesting insect species. Times: 7:00pm - 9:00pm Dates: September 26, 2026 Contact information: Mystic Ranger District, (605) 343-1567",
+    "record_type": "event",
+    "source_label": "Black Hills National Forest"
   }
 ]

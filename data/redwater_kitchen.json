@@ -1,5 +1,18 @@
 [
   {
+    "url": "https://untappd.com/b/surly-brewing-company-this-beer-is-niiice/6097469",
+    "title": "This Beer Is NIIICE!",
+    "slug": "this-beer-is-niiice",
+    "category": "Blonde / Golden Ale - American",
+    "abv": "4.5%",
+    "ibu": "",
+    "brewery": "Surly Brewing Company",
+    "rating": "3.53",
+    "image_url": "https://labels.untappd.com/6097469",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
     "url": "https://untappd.com/b/dakota-point-brewing-long-trek-ipa/3792761",
     "title": "Long Trek IPA",
     "slug": "long-trek-ipa",
@@ -113,19 +126,6 @@
     "brewery": "Sawyer Brewing Co",
     "rating": "3.61",
     "image_url": "https://labels.untappd.com/3627064",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
-    "url": "https://untappd.com/b/sturgis-brewing-company-fools-gold-light-lager/4838398",
-    "title": "Fools Gold Light Lager",
-    "slug": "fools-gold-light-lager",
-    "category": "Lager - American Light",
-    "abv": "5%",
-    "ibu": "15",
-    "brewery": "Sturgis Brewing Company",
-    "rating": "3.54",
-    "image_url": "https://labels.untappd.com/4838398",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"
   },

@@ -340,5 +340,14 @@
     "source_label": "Spearfish School District",
     "channel_url": "https://www.youtube.com/@spearfishschooldistrictliv3794/streams",
     "record_type": "youtube_video"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Grm4fR2ZkeM",
+    "title": "Lawrence County Commission, Board of Adjustment and Board of Equalization Meetings - May 12,2026",
+    "published": "2026-05-12",
+    "thumbnail_url": "https://i4.ytimg.com/vi/Grm4fR2ZkeM/hqdefault.jpg",
+    "source_label": "Lawrence County",
+    "channel_url": "https://www.youtube.com/channel/UC2CZKGr9OGrsMcCZkW0_HMA",
+    "record_type": "youtube_video"
   }
 ]

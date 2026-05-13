@@ -1142,5 +1142,27 @@
     "image_url": "https://npr.brightspotcdn.com/legacy/prod/blog/20190416_182120_155622_deer.jpeg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-05-13/housing-authority-unsure-how-rural-program-impacted-by-airport-loans",
+    "title": "Housing Authority unsure how rural program impacted by airport loans",
+    "slug": "sdpb-housing-authority-unsure-how-rural-program-impacted-by-airport-loans",
+    "published": "2026-05-13",
+    "byline": "By Jackson Dircks",
+    "description": "Members of a state housing board are unsure the impacts of recently passed legislation on rural housing if demand for currently unused loans begins to rise.",
+    "image_url": "https://npr.brightspotcdn.com/99/22/699ec0c542f3b3b0e3ded137f62d/image-9.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-05-12/black-hills-mining-opponents-look-ahead-after-company-backs-off-pe-sla-project",
+    "title": "Black Hills mining opponents look ahead after company backs off Pe' Sla project",
+    "slug": "sdpb-black-hills-mining-opponents-look-ahead-after-company-backs-off-pe-sla",
+    "published": "2026-05-12",
+    "byline": "By C.J. Keene",
+    "description": "With Pete Lien and Sons backing down in the standoff over mining at Pe’ Sla, a sacred Black Hills site, many are chalking this in the win column for opposition. Though many contend work is not yet finished.",
+    "image_url": "https://npr.brightspotcdn.com/e1/73/54d0aee84fc28d3ca35e99236d6a/image-72.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]
