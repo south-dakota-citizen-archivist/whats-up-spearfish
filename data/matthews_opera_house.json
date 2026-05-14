@@ -490,5 +490,17 @@
     "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/05/Auditions-Website-Header-Cemetery-Walk-2026.jpg",
     "record_type": "event",
     "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "Spearfish ArtWalk",
+    "url": "https://www.matthewsopera.com/event/spearfish-artwalk/",
+    "slug": "spearfish-artwalk",
+    "start_dt": "2026-06-20T16:00:00-06:00",
+    "end_dt": "2026-06-20T18:00:00-06:00",
+    "description": "Experience downtown Spearfish transformed into a vibrant, walkable gallery during the Spearfish ArtWalk. Starting on June 20, local businesses throughout Main Street will showcase artwork from artists of all ages […] \\n",
+    "location": "",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/05/Art-Walk-Web-Banner.jpg",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
   }
 ]

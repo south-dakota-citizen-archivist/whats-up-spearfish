@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-13T18:56:04.105771+00:00",
+  "fetched_at": "2026-05-14T18:51:33.391672+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -142,45 +142,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/9025-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Air Quality Permit",
-      "deadline": "05/13/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/13/2026&name=Northern States Power Company, dba Xcel Energy&pntype=aq&description=Northern States Power dba Xcel Energy is an electrical peaking facility. The Department recommends approval of a renewed Title V air quality operating permit.",
-      "description": "Northern States Power dba Xcel Energy is an electrical peaking facility. The Department recommends approval of a renewed Title V air quality operating permit.",
-      "location": "Sioux Falls",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/NSPpn.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/NSPdp.pdf"
-        },
-        {
-          "label": "Application Review",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/NSPsb.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Waste Management \u2014 Solid Waste",
-      "deadline": "5/13/2026",
-      "comment_url": "",
-      "name": "City of Lemmon",
-      "description": "Permit renewal application to continue operation of a Type III Combination Restricted Use Solid Waste Facility, Municipal Solid Waste Transfer Station, and Petroleum-Contaminated Soil Treatment Site",
-      "location": "",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Lemmon_PN.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_Lemmon_26_IP.pdf"
         }
       ]
     },
@@ -703,6 +664,49 @@
       ]
     },
     {
+      "notice_type": "Air Quality Permit",
+      "deadline": "06/13/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=06/13/2026&name=CoAxis Energy&pntype=aq&description=CoAxis proposes construction for its liquid natural gas facility. The DANR recommends issuance of an air quality construction permit.\u201d",
+      "description": "CoAxis proposes construction for its liquid natural gas facility. The DANR recommends issuance of an air quality construction permit.\u201d",
+      "location": "Buffalo",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/CAEpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/CAEdp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/CAEsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Surface Water Discharge (NPDES)",
+      "deadline": "06/15/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=06/15/2026&name=City of Canistota&pntype=sw_npdes&description=The City of Canistota is authorized under this permit to discharge to Unnamed Tributary of West Fork Vermillion River from its wastewater treatment facility located in McCook County",
+      "name": "City of Canistota",
+      "description": "The City of Canistota is authorized under this permit to discharge to Unnamed Tributary of West Fork Vermillion River from its wastewater treatment facility located in McCook County",
+      "location": "McCook County",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/PublicNotice.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/CanistotaPermit.pdf"
+        },
+        {
+          "label": "Statement of Basis",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/CanistotaSOB.pdf"
+        }
+      ]
+    },
+    {
       "notice_type": "Mineral Exploration",
       "deadline": "",
       "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=&name=Clean Nuclear Energy Corp.&pntype=mm_ex&description=Notice of Hearing for Uranium Exploration Permit Application",
@@ -749,6 +753,20 @@
         {
           "label": "Public Notice",
           "url": "https://media.sd.gov/danr/MM/S319006PublicNotice.jpg"
+        }
+      ]
+    },
+    {
+      "notice_type": "Mining License",
+      "deadline": "",
+      "comment_url": "",
+      "name": "Sterzinger Crushing, Inc",
+      "description": "Notice of Intent to Mine Gravel",
+      "location": "181St, Clear Lake Township",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://media.sd.gov/danr/MM/S997007PublicNotice.pdf"
         }
       ]
     }

@@ -1164,5 +1164,49 @@
     "image_url": "https://npr.brightspotcdn.com/e1/73/54d0aee84fc28d3ca35e99236d6a/image-72.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-05-14/sd-wheat-yields-expected-better-than-southern-states-official-says",
+    "title": "SD wheat yields expected better than southern states, official says",
+    "slug": "sdpb-sd-wheat-yields-expected-better-than-southern-states-official-says",
+    "published": "2026-05-14",
+    "byline": "By Jackson Dircks",
+    "description": "While the national wheat crop is projected to be the smallest in decades, South Dakota’s crop isn’t expected to see large reductions.",
+    "image_url": "https://npr.brightspotcdn.com/35/d9/d877cd2d406eb314c562189cc0f4/wheat-1.JPG",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/education/2026-05-14/collegebound-tips-for-navigating-dual-credit-and-ap-classes-in-south-dakota",
+    "title": "Collegebound: Tips for navigating dual credit and AP classes in South Dakota",
+    "slug": "sdpb-collegebound-tips-for-navigating-dual-credit-and-ap-classes-in-south-dakota",
+    "published": "2026-05-14",
+    "byline": "By Lori Walsh",
+    "description": "Teacher Talk explores the many opportunities for South Dakota students to study at the college level long before they get to college.",
+    "image_url": "https://npr.brightspotcdn.com/ec/4b/1ce713804e879465901907aee778/sdpb-tt-podcast-icon-1.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-05-13/a-matter-of-scale-venhuizen-says-corrections",
+    "title": "A matter of scale: Lt. Gov. says corrections programming must build capacity for better outcomes",
+    "slug": "sdpb-a-matter-of-scale-lt-gov-says-corrections-programming-must-build-capacity",
+    "published": "2026-05-13",
+    "byline": "By Lori Walsh",
+    "description": "Lt. Gov. Tony Venhuizen provides an update from the governor's Corrections Rehabilitation Task Force.",
+    "image_url": "https://npr.brightspotcdn.com/52/a4/27ad8392458d90c0af200f3647e9/website-photo-1.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/education/2026-05-13/south-dakota-teaching-apprenticeship-cohorts-to-expand",
+    "title": "South Dakota teaching apprenticeship cohorts to expand",
+    "slug": "sdpb-south-dakota-teaching-apprenticeship-cohorts-to-expand",
+    "published": "2026-05-13",
+    "byline": "By C.J. Keene",
+    "description": "The state Teacher Apprenticeship Pathway has both increased its cohort size and endowed about 50 new teachers. Advocates say in a state with a noted teacher shortage, it represents steps toward closing the gap for educators.",
+    "image_url": "https://npr.brightspotcdn.com/e6/d5/9d648e2243f3bb420e1ce53f5525/school-teaching-education-sdpb.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-13T18:58:26.921963+00:00",
+  "fetched_at": "2026-05-14T18:53:34.414766+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -9,6 +9,10 @@
       "description": "Proposed uranium exploration project seven miles north of Edgemont, SD.  Up to 50 holes will be drilled to a maximum vertical depth of 700 feet.  In addition, 50 drill platforms will be created with a dimension of 60 feet by 60 feet.  Exploration will be conducted using reverse circulation drilling with sumps.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID123",
       "documents": [
+        {
+          "label": "May 13, 2026 Supplemental Exhibit List from Clean Nuclear Energy Containing Edgement Chamber of Commerce Letter and City of Edgemont Resolution",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/51326CNECSupplementalExhibitList2.pdf"
+        },
         {
           "label": "May 13, 2026 Motion by School and Public Lands Commissioner Brock Greenfield to Quash Bruce Ellison's Motion for Subpoena and Limited Notice of Appearance",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/51326GreenfieldQuashMotion.pdf"
@@ -24,10 +28,6 @@
         {
           "label": "May 1, 2026 Subpoena Issued to SD School and Public Lands Commissioner Brock Greenfield",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/5126GreenfieldSubpoena.pdf"
-        },
-        {
-          "label": "May 8, 2026 Motion for Subpoena to DANR Employee Roberta Hudson from Lilias Jarding",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/5826HudsonMotionforSubpoena.pdf"
         }
       ],
       "total_docs": 100,
@@ -190,6 +190,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID127",
       "documents": [
         {
+          "label": "Notice of Entry of Order",
+          "url": "https://danr.sd.gov/wrimage/pub/8987-3_Utech_denied.pdf"
+        },
+        {
           "label": "Petitioner's Response to Applicant's Pre-Hearing Submission",
           "url": "https://danr.sd.gov/wrimage/pub/8987-3_petresponse.pdf"
         },
@@ -204,13 +208,9 @@
         {
           "label": "Filings Submitted by Counsel for the Applicant",
           "url": "https://danr.sd.gov/wrimage/pub/8797-3_Utech_breif_witlist.pdf"
-        },
-        {
-          "label": "Proposed Exhibits submitted by Counsel for the Petitioner",
-          "url": "https://danr.sd.gov/wrimage/pub/8987-3_petexhibits.pdf"
         }
       ],
-      "total_docs": 22,
+      "total_docs": 23,
       "latest_doc_date": "0000-00-00"
     },
     {

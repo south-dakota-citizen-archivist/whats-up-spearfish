@@ -19,15 +19,6 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/F731BBC2-6725-406D-AF38-A9B932AEFAB1-342-1620492734.jpg",
-    "title": "The Yellow Jacket",
-    "slug": "the-yellow-jacket",
-    "description": "Made in honor of our favorite local mascot (hi Sting!). Sweet cream ice cream gets a heavy swirl of our honey-caramel sauce, and riddled with honeycomb-shaped chocolate pieces!",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
     "image_url": "https://leonescreamery.com/images/uploads/cropped/Avocado-165-1620240856.jpg",
     "title": "Avocado",
     "slug": "avocado",
@@ -41,6 +32,15 @@
     "title": "Mountain Huckleberry",
     "slug": "mountain-huckleberry",
     "description": "We use real huckleberries (no syrups or extracts!) to make this deeeelicious, fruity concoction. This crowd-favorite goes fast, so stop in soon if you catch it on our board!",
+    "record_type": "flavor",
+    "source_label": "Leone's Creamery"
+  },
+  {
+    "url": "https://leonescreamery.com/flavors",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/4247D09E-2D5C-4A7B-BA78-6B03F724194C-216-1531075261.jpg",
+    "title": "Maple Walnut",
+    "slug": "maple-walnut",
+    "description": "Perfectly delicious and nostalgic. Creamy maple ice cream, chock-full of toasty, maple, salty-sweet pecans.",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
