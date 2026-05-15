@@ -502,5 +502,29 @@
     "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/05/Art-Walk-Web-Banner.jpg",
     "record_type": "event",
     "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "Rose Hill Cemetery Walk",
+    "url": "https://www.matthewsopera.com/event/rose-hill-cemetery-walk-2026/2026-06-22/",
+    "slug": "rose-hill-cemetery-walk",
+    "start_dt": "2026-06-22T18:30:00-06:00",
+    "end_dt": "2026-06-22T20:30:00-06:00",
+    "description": "June 22 and 23, 2026 from 6:30 PM to 8:30 PM Rose Hill Cemetery - 255 Ash St, Spearfish, SD The Matthews Opera House presents the Rose Hill Cemetery Walk […] \\n",
+    "location": "Rose Hill Cemetery",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/05/Event-Brite-2160-x-1080-px-6.jpg",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "Rose Hill Cemetery Walk",
+    "url": "https://www.matthewsopera.com/event/rose-hill-cemetery-walk-2026/2026-06-23/",
+    "slug": "rose-hill-cemetery-walk",
+    "start_dt": "2026-06-23T18:30:00-06:00",
+    "end_dt": "2026-06-23T20:30:00-06:00",
+    "description": "June 22 and 23, 2026 from 6:30 PM to 8:30 PM Rose Hill Cemetery - 255 Ash St, Spearfish, SD The Matthews Opera House presents the Rose Hill Cemetery Walk […] \\n",
+    "location": "Rose Hill Cemetery",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/05/Event-Brite-2160-x-1080-px-6.jpg",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
   }
 ]

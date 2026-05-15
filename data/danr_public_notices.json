@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-14T18:51:33.391672+00:00",
+  "fetched_at": "2026-05-15T18:20:20.001469+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -142,28 +142,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/9025-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Surface Water Discharge (NPDES)",
-      "deadline": "05/14/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=05/14/2026&name=United States Forest Service -Boxelder Job Corp Civilian Conservation Center&pntype=sw_npdes&description=The United States Forest Service - Boxelder Job Corp Civilian Conservation Center is authorized under this permit to discharge to Box Elder Creek from its wastewater treatment facility located in Lawrence County.",
-      "name": "United States Forest Service -Boxelder Job Corp Civilian Conservation Center",
-      "description": "The United States Forest Service - Boxelder Job Corp Civilian Conservation Center is authorized under this permit to discharge to Box Elder Creek from its wastewater treatment facility located in Lawrence County.",
-      "location": "Lawrence County",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/USFSBoxelderJCCCCPNDraftFR.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/USFSBoxelderJCCCCPermitDraftFR.pdf"
-        },
-        {
-          "label": "Statement of Basis",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/USFSBoxelderJCCCCSOBDraftFR.pdf"
         }
       ]
     },
@@ -717,24 +695,6 @@
         {
           "label": "Public Notice",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/MineralsMining/CleanNuclearEXNI453NoticeofHearing2026b.pdf"
-        },
-        {
-          "label": "Application",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/NewEXNIS.aspx"
-        }
-      ]
-    },
-    {
-      "notice_type": "Mineral Exploration",
-      "deadline": "",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=&name=Solitario Resources, Inc.&pntype=mm_ex&description=Notice of Intent for Gold and Silver Exploration",
-      "name": "Solitario Resources, Inc.",
-      "description": "Notice of Intent for Gold and Silver Exploration",
-      "location": "Seven miles southwest of Lead, SD",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/MineralsMining/EXNI470NOF.pdf"
         },
         {
           "label": "Application",

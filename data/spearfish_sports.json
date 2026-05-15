@@ -22286,5 +22286,21 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h2025061107370167926f0283da24047",
+    "url": "https://gobound.com/direct/comps/h2025061107370167926f0283da24047/show",
+    "title": "Girls Golf: Mitchell Invitational (Varsity)",
+    "slug": "girls-golf-mitchell-invitational-varsity",
+    "sport": "Girls Golf",
+    "level": "Varsity",
+    "sex": "female",
+    "description": "Varsity Girls Golf - Mitchell Invitational",
+    "start_dt": "2027-05-14T15:30:00",
+    "end_dt": "2027-05-14T21:00:00",
+    "location": "Lakeview Municipal Golf Course",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]

@@ -1208,5 +1208,60 @@
     "image_url": "https://npr.brightspotcdn.com/e6/d5/9d648e2243f3bb420e1ce53f5525/school-teaching-education-sdpb.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-05-15/planting-season-for-major-south-dakota-crops-underway-in-some-areas",
+    "title": "Planting season for major South Dakota crops underway in some areas",
+    "slug": "sdpb-planting-season-for-major-south-dakota-crops-underway-in-some-areas",
+    "published": "2026-05-15",
+    "byline": "By Jackson Dircks",
+    "description": "It's prime planting season for corn, soybean and other crops after a record-breaking harvest last year.",
+    "image_url": "https://npr.brightspotcdn.com/ce/3b/e55a824c44c1ab5080ff0ff71223/image-43.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-05-15/fertilizer-costs-at-forefront-of-farmers-minds-and-u-s-senate-committee",
+    "title": "Fertilizer costs at forefront of farmers minds and U.S. Senate committee",
+    "slug": "sdpb-fertilizer-costs-at-forefront-of-farmers-minds-and-u-s-senate-committee",
+    "published": "2026-05-15",
+    "byline": "By Jackson Dircks",
+    "description": "Fertilizer costs are at the forefront of many farmers minds and at a recent U.S. Senate Committee this week.",
+    "image_url": "https://npr.brightspotcdn.com/15/41/5be34e43439ca9aa63a49566c4b8/screenshot-14-5-2026-16598-www-agriculture-senate-gov.jpeg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/healthcare/2026-05-15/how-the-screen-youre-looking-at-is-affecting-your-health",
+    "title": "How the screen you're looking at is affecting your health",
+    "slug": "sdpb-how-the-screen-you-re-looking-at-is-affecting-your-health",
+    "published": "2026-05-15",
+    "byline": "By Lori Walsh",
+    "description": "Our modern screen-filled lives may have impacts on our health in unexpected ways. A new book explores the implications.",
+    "image_url": "https://npr.brightspotcdn.com/legacy/prod/filer_public/kusd-bento-live-pbs/Learn/Blog%20Images/08f58f8016_app.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-05-14/attorney-general-expects-execution-in-piper-case-by-end-of-2026",
+    "title": "Attorney General expects execution in Piper case by end of 2026",
+    "slug": "sdpb-attorney-general-expects-execution-in-piper-case-by-end-of-2026",
+    "published": "2026-05-14",
+    "byline": "By C.J. Keene",
+    "description": "With appeal options nearly exhausted, it appears likely the life of the state's lone death row inmate will end by way of lethal injection. The state Attorney General said that execution is likely by the end of this year.",
+    "image_url": "https://npr.brightspotcdn.com/ef/61/c45e13954a83b789082b8e4f5c25/f9a564e547-briley-piper-2017.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-05-14/centerville-man-sentenced-to-life-in-prison-for-2024-triple-homicide",
+    "title": "Centerville man sentenced to life in prison for 2024 triple homicide",
+    "slug": "sdpb-centerville-man-sentenced-to-life-in-prison-for-2024-triple-homicide",
+    "published": "2026-05-14",
+    "byline": "By SDPB News Staff",
+    "description": "A Centerville man has been sentenced to life in prison after being convicted in a triple homicide.",
+    "image_url": "https://npr.brightspotcdn.com/90/c4/032382334c3b9a19df8b0a6cba09/graphics-882726-1280.png",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]
