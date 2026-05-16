@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-15T18:22:19.097589+00:00",
+  "fetched_at": "2026-05-16T17:55:40.087618+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -9,6 +9,10 @@
       "description": "Proposed uranium exploration project seven miles north of Edgemont, SD.  Up to 50 holes will be drilled to a maximum vertical depth of 700 feet.  In addition, 50 drill platforms will be created with a dimension of 60 feet by 60 feet.  Exploration will be conducted using reverse circulation drilling with sumps.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID123",
       "documents": [
+        {
+          "label": "May 15, 2026 Supplemental Notice of Witnesses and Exhibits by Dr. Ben Sharp",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/51526SharpExhibits.pdf"
+        },
         {
           "label": "May 15, 2026 Notice of Hearing Affidavit of Publication from Rapid City Journal",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/RCJAffidavit.pdf"
@@ -24,10 +28,6 @@
         {
           "label": "May 13, 2026 Motion by School and Public Lands Commissioner Brock Greenfield to Quash Bruce Ellison's Motion for Subpoena and Limited Notice of Appearance",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/51326GreenfieldQuashMotion.pdf"
-        },
-        {
-          "label": "May 12, 2026 Supplemental Notice of Witnesses and Exhibits by Intervenor Bruce Ellison",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/51226EllisonNoticeAdditionalWitnessesExhibits.pdf"
         }
       ],
       "total_docs": 100,

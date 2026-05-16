@@ -22302,5 +22302,37 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h2026051507532279365efb75c6fd745",
+    "url": "https://gobound.com/direct/comps/h20260515075322719b7ee7f9c41b34c/show",
+    "title": "Boys Tennis: 2026 State Tennis Tournamnet  (Varsity)",
+    "slug": "boys-tennis-2026-state-tennis-tournamnet-varsity",
+    "sport": "Boys Tennis",
+    "level": "Varsity",
+    "sex": "male",
+    "description": "Varsity Boys Tennis - 2026 State Tennis Tournamnet",
+    "start_dt": "2026-05-18",
+    "end_dt": "",
+    "location": "Sioux Park",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20260515075322819c88500dcb49244",
+    "url": "https://gobound.com/direct/comps/h20260515075322719b7ee7f9c41b34c/show",
+    "title": "Boys Tennis: 2026 State Tennis Tournamnet  (Varsity)",
+    "slug": "boys-tennis-2026-state-tennis-tournamnet-varsity",
+    "sport": "Boys Tennis",
+    "level": "Varsity",
+    "sex": "male",
+    "description": "Varsity Boys Tennis - 2026 State Tennis Tournamnet",
+    "start_dt": "2026-05-19",
+    "end_dt": "",
+    "location": "Sioux Park",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-15T18:20:20.001469+00:00",
+  "fetched_at": "2026-05-16T17:53:33.595542+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -142,24 +142,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/9025-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Waste Management \u2014 Solid Waste",
-      "deadline": "5/15/2026",
-      "comment_url": "",
-      "name": "City of Presho",
-      "description": "Permit renewal application to continue operation of a Type IV Restricted Use Solid Waste Facility",
-      "location": "Presho, SD",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Presho_PN.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_Presho_RU_26_IP.pdf"
         }
       ]
     },

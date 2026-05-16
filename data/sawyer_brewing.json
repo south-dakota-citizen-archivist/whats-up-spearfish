@@ -118,6 +118,19 @@
   },
   {
     "url": "https://www.sawyerbrewingco.com/menu",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/0117285c-ff3f-4f2e-b9ed-2763ac236558/pineappleninjaweb.jpg",
+    "title": "pineappleninjaweb.jpg",
+    "slug": "pineappleninjaweb-jpg",
+    "category": "Hop Heads",
+    "description": "",
+    "abv": "",
+    "notes": "",
+    "prices": [],
+    "record_type": "beer",
+    "source_label": "Sawyer Brewing Co."
+  },
+  {
+    "url": "https://www.sawyerbrewingco.com/menu",
     "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/911a3464-7505-4846-8c2d-c0d94579e7ce/2strokewebsitedark.jpg",
     "title": "2-Stroke Haze IPA",
     "slug": "2-stroke-haze-ipa",
