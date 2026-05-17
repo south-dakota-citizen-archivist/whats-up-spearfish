@@ -19,15 +19,6 @@
   },
   {
     "url": "https://leonescreamery.com/flavors",
-    "image_url": "https://leonescreamery.com/images/uploads/cropped/Avocado-165-1620240856.jpg",
-    "title": "Avocado",
-    "slug": "avocado",
-    "description": "Ultra creamy, mellow, and sweet-- it's a surprisingly delicious scoop.",
-    "record_type": "flavor",
-    "source_label": "Leone's Creamery"
-  },
-  {
-    "url": "https://leonescreamery.com/flavors",
     "image_url": "https://leonescreamery.com/images/uploads/cropped/3F83621C-C716-4654-A355-38F8DA690745-231-1532984950.jpg",
     "title": "Mountain Huckleberry",
     "slug": "mountain-huckleberry",
@@ -59,6 +50,15 @@
     "title": "Lemon Bar",
     "slug": "lemon-bar",
     "description": "Our addictive lemon-vanilla ice cream with ribbons of housemade lemon curd and sugar cookie crust pieces...one of our favorites!",
+    "record_type": "flavor",
+    "source_label": "Leone's Creamery"
+  },
+  {
+    "url": "https://leonescreamery.com/flavors",
+    "image_url": "https://leonescreamery.com/images/uploads/cropped/IMG_0716-120-1523320712.jpg",
+    "title": "Rum Raisin",
+    "slug": "rum-raisin",
+    "description": "Perfectly nostalgic and classic! With notes of caramel and rum, and riddled with plump rum-soaked raisins throughout.",
     "record_type": "flavor",
     "source_label": "Leone's Creamery"
   },
