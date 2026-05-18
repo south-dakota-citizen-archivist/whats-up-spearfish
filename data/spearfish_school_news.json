@@ -34,5 +34,14 @@
     "description": "Application",
     "record_type": "press_release",
     "source_label": "Spearfish School District"
+  },
+  {
+    "url": "https://www.spearfish.k12.sd.us/article/2910314",
+    "title": "School Board Forum",
+    "slug": "school-board-forum",
+    "published": "2026-05-18",
+    "description": "Tuesday, May 19, 2026 5:30 - 6:00 p.m.  Meet & Greet 6:00 - 7:00 p.m. Forum Spearfish District Office - Board Room",
+    "record_type": "press_release",
+    "source_label": "Spearfish School District"
   }
 ]

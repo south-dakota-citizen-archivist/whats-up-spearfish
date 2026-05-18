@@ -1263,5 +1263,27 @@
     "image_url": "https://npr.brightspotcdn.com/90/c4/032382334c3b9a19df8b0a6cba09/graphics-882726-1280.png",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-05-18/sba-disaster-loans-available-to-some-south-dakota-counties-affected-by-drought",
+    "title": "SBA disaster loans available to some South Dakota counties affected by drought",
+    "slug": "sdpb-sba-disaster-loans-available-to-some-south-dakota-counties-affected-by",
+    "published": "2026-05-18",
+    "byline": "By SDPB News Staff",
+    "description": "The U.S. Small Business Administration said it’s making low-interest disaster loans available to some small businesses in South Dakota impacted by drought.",
+    "image_url": "https://npr.brightspotcdn.com/4d/8b/8b49743745998b2b9b9799ce82e7/south-dakota-money-trade-business-budget.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-05-18/investigating-missing-persons-cases-in-south-dakota",
+    "title": "Investigating missing persons cases in South Dakota",
+    "slug": "sdpb-investigating-missing-persons-cases-in-south-dakota",
+    "published": "2026-05-18",
+    "byline": "By Lori Walsh",
+    "description": "Attorney General Marty Jackley says there are over 100 missing persons cases in South Dakota, and more than half involve Native individuals. Jackley talks about ways the state is trying to improve how these cases are investigated.",
+    "image_url": "https://npr.brightspotcdn.com/24/3c/fec3860147d884d6388da159625c/marty-jackley.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]
