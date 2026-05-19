@@ -243,39 +243,6 @@
   },
   {
     "url": "https://www.westernhillshumanesociety.com/cats",
-    "title": "Charm",
-    "slug": "cat-charm",
-    "species": "cat",
-    "description": "Female | Born ~3.12.26\nCharm came to us on 3.13.26 with siblings and feral mom, Paddy. She is vocal, loves to climb up your legs, and is the most mischievous of her siblings.",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/0fee50be-9fed-4f8b-95b5-a70e1dfd9fec/Charm.jpg?format=500w",
-    "image_alt": "Charm",
-    "record_type": "adoptable",
-    "source_label": "Western Hills Humane Society"
-  },
-  {
-    "url": "https://www.westernhillshumanesociety.com/cats",
-    "title": "Jig",
-    "slug": "cat-jig",
-    "species": "cat",
-    "description": "Male | Born ~3.12.26\nJig came to us on 3.13.26 with siblings and feral mom, Paddy. He’s a playful little fluff.",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/75cfbe9d-6dcd-475e-b409-c735495d7cfa/Jig2.jpg?format=500w",
-    "image_alt": "Jig",
-    "record_type": "adoptable",
-    "source_label": "Western Hills Humane Society"
-  },
-  {
-    "url": "https://www.westernhillshumanesociety.com/cats",
-    "title": "Shamrock",
-    "slug": "cat-shamrock",
-    "species": "cat",
-    "description": "Male | Born ~3.12.26\nShamrock came to us on 3.13.26 with siblings and feral mom, Paddy. He’s a little more laid back but is getting more and more rambunctious and talkative!",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/18c7781c-3a61-433e-8d38-f1f15723a0cb/Shamrock.jpg?format=500w",
-    "image_alt": "Shamrock",
-    "record_type": "adoptable",
-    "source_label": "Western Hills Humane Society"
-  },
-  {
-    "url": "https://www.westernhillshumanesociety.com/cats",
     "title": "Prego",
     "slug": "cat-prego",
     "species": "cat",
@@ -301,8 +268,8 @@
     "title": "Eggo",
     "slug": "cat-eggo",
     "species": "cat",
-    "description": "Male | Undetermined age (~3 years)\nEggo came to us as a stray on 4.29.26. He’s a big gentle boy that appears to have once had a home because he’s not feral like we first thought - he’s just scared. He was definitely in some fights in his day and has some scars. He did mess up his nose in the trap before coming in that should heal over and we will post a new photo when it does. There may have been a human that was unkind to him, so he needs a quiet home where he can feel safe and come out of his shell. We are not sure how he does with other cats or dogs.",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/80c7ebcc-e597-480a-a987-b311bbfdde57/1000041553.jpg?format=500w",
+    "description": "Male | Undetermined age (~3 years)\nEggo came to us as a stray on 4.29.26. He’s a big gentle boy with beautiful blue eyes that appears to have once had a home because he’s not feral like we first thought - he’s just scared. He was definitely in some fights in his day and has some scars. There may have been a human that was unkind to him, so he needs a quiet home where he can feel safe and come out of his shell. We are not sure how he does with other cats or dogs.",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/45b60ecb-41e3-49d9-ba4c-4900c5939cce/1000042773.jpg?format=500w",
     "image_alt": "Eggo",
     "record_type": "adoptable",
     "source_label": "Western Hills Humane Society"
@@ -315,28 +282,6 @@
     "description": "Female | ~1-2 years \nNo dogs\nTweet and her 4 kittens were left at a gas station here in Spearfish. A kind woman worked with Animal Control to bring them to us on 5.1.26. Tweet is talkative and stir crazy here and she is SO very affectionate - so affectionate that we can’t get a good photo of her as she’s too busy rubbing on the camera! We are excited for her to find her new home.",
     "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/a958f601-e2fa-4735-ac75-f025cccbe415/1000041852.jpg?format=500w",
     "image_alt": "Tweet",
-    "record_type": "adoptable",
-    "source_label": "Western Hills Humane Society"
-  },
-  {
-    "url": "https://www.westernhillshumanesociety.com/cats",
-    "title": "Munchie",
-    "slug": "cat-munchie",
-    "species": "cat",
-    "description": "Male | Born around 3.13.26\nMunchie came from STARS rescue with his two sisters. We had a mama cat still nursing and they were accepted into her family. Munchie loves to climb legs but is definitely the most calm of his siblings. He does cuddle, but you’ll often find him napping with himself.",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/6e42a9b3-f99a-413c-865a-84fd1e8ceab8/Munchie.jpg?format=500w",
-    "image_alt": "Munchie",
-    "record_type": "adoptable",
-    "source_label": "Western Hills Humane Society"
-  },
-  {
-    "url": "https://www.westernhillshumanesociety.com/cats",
-    "title": "Snack Attack",
-    "slug": "cat-snack-attack",
-    "species": "cat",
-    "description": "Female | Born around 3.13.26\nSnack Attack came from STARS rescue with her sister and brother. We had a mama cat nursing that accepted them all into her family. She, like all her siblings, enjoy climbing your legs. Snack Attack used to be the most rambunctious, but she is now calming down and enjoys being talked to and cuddling.",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/7d194cf1-4196-4913-8c92-b49fe244b24e/Snack+Attack.jpg?format=500w",
-    "image_alt": "Snack Attack",
     "record_type": "adoptable",
     "source_label": "Western Hills Humane Society"
   },

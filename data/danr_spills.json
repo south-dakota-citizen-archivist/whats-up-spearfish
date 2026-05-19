@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-05-18T18:35:28.254222+00:00",
+  "fetched_at": "2026-05-19T19:03:14.109979+00:00",
   "lookback_days": 30,
-  "total_bh_sites": 3295,
+  "total_bh_sites": 3296,
   "known_ids": [
     84379,
     84380,
@@ -3297,9 +3297,29 @@
     1314102,
     1314903,
     1316108,
-    1317711
+    1317711,
+    1323723
   ],
   "new_records": [
+    {
+      "objectid": 1323723,
+      "first_seen": "2026-05-19",
+      "id_raw": 2026.073,
+      "year": 2026,
+      "pdf_url": "https://danr.sd.gov/spillimages/2026/2026.073.pdf",
+      "site_name": "FEDEX Truck Fire - Cheyenne River",
+      "site_type": "Other(See Case File)",
+      "status": "O",
+      "street": "W-bound I-90 near MM 98",
+      "city": "Wasta",
+      "county": "Pennington",
+      "spill_cat": "Petroleum",
+      "material": "Diesel",
+      "sor_type": "Fuel Tank",
+      "resp_party": "FEDEX",
+      "lat": 44.064446,
+      "lon": -102.442657
+    },
     {
       "objectid": 1311294,
       "first_seen": "2026-05-13",

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-18T18:29:48.405384+00:00",
+  "fetched_at": "2026-05-19T18:58:44.234707+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -446,6 +446,30 @@
         {
           "label": "Statement of Basis",
           "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/HarrisburgSOBDraftFR.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Water Rights",
+      "deadline": "06/01/2026",
+      "comment_url": "",
+      "application_no": "9023-3",
+      "name": "Chris Howard Ranch LLC, c/o Chris Howard,\u00a0Miller\u00a0SD",
+      "location": "Hand",
+      "water_source": "Dakota Aquifer & incidental runoff",
+      "use_type": "Irrigation (25 acres)",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/9023-3_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/9023-3_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/9023-3_rec.pdf"
         }
       ]
     },

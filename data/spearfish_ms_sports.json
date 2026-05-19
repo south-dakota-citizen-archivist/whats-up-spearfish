@@ -3166,5 +3166,21 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish MS Sports"
+  },
+  {
+    "uid": "h202605190154262703241121bce7941",
+    "url": "https://gobound.com/direct/comps/h202605190154262703241121bce7941/show",
+    "title": "Girls Tennis: Spearfish MS vs Pierre T.F. Riggs (Middle School - Club)",
+    "slug": "girls-tennis-spearfish-ms-vs-pierre-t-f-riggs-middle-school-club",
+    "sport": "Girls Tennis",
+    "level": "Middle School - Club",
+    "sex": "female",
+    "description": "Middle School - Club Girls Tennis - Spearfish MS vs Pierre T.F. Riggs",
+    "start_dt": "2026-09-22T15:00:00",
+    "end_dt": "2026-09-22T19:00:00",
+    "location": "Griffin Park",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish MS Sports"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-18T18:31:50.587852+00:00",
+  "fetched_at": "2026-05-19T19:00:53.028750+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -10,24 +10,24 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID123",
       "documents": [
         {
+          "label": "May 17, 2026 Additional Exhibits from Bruce Ellison",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/51726EllisonAdditionalExhibits.pdf"
+        },
+        {
+          "label": "May 16, 2026 CRST and OST Supplemental Exhibits 3",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/51626Gunn436.pdf"
+        },
+        {
+          "label": "May 16, 2026 CRST and OST Supplemental Exhibits 2",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/51626Gunn435.pdf"
+        },
+        {
+          "label": "May 16, 2026 CRST and OST Supplemental Exhibits 1",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/51626Gunn434.pdf"
+        },
+        {
           "label": "May 15, 2026 Supplemental Notice of Witnesses and Exhibits by Dr. Ben Sharp",
           "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/51526SharpExhibits.pdf"
-        },
-        {
-          "label": "May 15, 2026 Notice of Hearing Affidavit of Publication from Rapid City Journal",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/RCJAffidavit.pdf"
-        },
-        {
-          "label": "May 14, 2026 Notice of Hearing Affidavit of Publication from Fall River County Herald Star",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/FallRiverCountyHeraldTribune.pdf"
-        },
-        {
-          "label": "May 13, 2026 Supplemental Exhibit List from Clean Nuclear Energy Containing Edgement Chamber of Commerce Letter and City of Edgemont Resolution",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/51326CNECSupplementalExhibitList2.pdf"
-        },
-        {
-          "label": "May 13, 2026 Motion by School and Public Lands Commissioner Brock Greenfield to Quash Bruce Ellison's Motion for Subpoena and Limited Notice of Appearance",
-          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/51326GreenfieldQuashMotion.pdf"
         }
       ],
       "total_docs": 100,

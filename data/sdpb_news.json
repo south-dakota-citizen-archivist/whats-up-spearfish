@@ -1285,5 +1285,60 @@
     "image_url": "https://npr.brightspotcdn.com/24/3c/fec3860147d884d6388da159625c/marty-jackley.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-05-19/spending-on-gop-gubernatorial-primary-sharply-outpaces-recent-races",
+    "title": "Spending on GOP gubernatorial primary sharply outpaces recent races",
+    "slug": "sdpb-spending-on-gop-gubernatorial-primary-sharply-outpaces-recent-races",
+    "published": "2026-05-19",
+    "byline": "By Jackson Dircks",
+    "description": "The Republican candidate atop the governor’s race polls spent more money for this primary election than both GOP candidates combined in 2018. That’s the last time the Republican primary for South Dakota’s top seat in Pierre was this hotly contested.",
+    "image_url": "https://npr.brightspotcdn.com/0c/51/8f3a22ff4594ac39da4e561e4f1d/debate.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-05-19/operation-prairie-thunder-expanding-though-some-fears-in-communities-persist",
+    "title": "Operation: Prairie Thunder expanding, though some fears in communities persist",
+    "slug": "sdpb-operation-prairie-thunder-expanding-though-some-fears-in-communities",
+    "published": "2026-05-19",
+    "byline": "By Jackson Dircks",
+    "description": "A public safety initiative is expanding following what officials are touting as successful results, though the initiative has faced criticism over its partnership with federal immigration enforcement efforts.",
+    "image_url": "https://npr.brightspotcdn.com/97/a8/08c9bc374540936ecb0ce2bf699b/image-5.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-05-19/analysis-court-recognizes-land-that-carries-historic-and-spiritual-significance",
+    "title": "Analysis: Court recognizes land that carries historic and spiritual significance",
+    "slug": "sdpb-analysis-court-recognizes-land-that-carries-historic-and-spiritual",
+    "published": "2026-05-19",
+    "byline": "By Lori Walsh",
+    "description": "Mike Thompson, J.D., says a recent temporary restraining order that halted Pe'Sla mining exploration offers insight into treaty rights and need for environmental impact information.",
+    "image_url": "https://npr.brightspotcdn.com/52/a4/27ad8392458d90c0af200f3647e9/website-photo-1.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-05-18/uranium-exploration-near-hot-springs-sparks-latest-black-hills-mining-battle",
+    "title": "Uranium exploration near Hot Springs sparks latest Black Hills mining battle",
+    "slug": "sdpb-uranium-exploration-near-hot-springs-sparks-latest-black-hills-mining",
+    "published": "2026-05-18",
+    "byline": "By C.J. Keene",
+    "description": "The long-running debate over mining in the Black Hills continues with a hearing tied to uranium mining in Fall River County.",
+    "image_url": "https://npr.brightspotcdn.com/ad/8f/e28bff5b414594c5872c98ae5797/image-80.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-05-18/rapid-city-police-tally-tenth-stolen-gun-from-vehicle-of-2026",
+    "title": "Rapid City police tally tenth stolen gun from vehicle of 2026",
+    "slug": "sdpb-rapid-city-police-tally-tenth-stolen-gun-from-vehicle-of-2026",
+    "published": "2026-05-18",
+    "byline": "By C.J. Keene",
+    "description": "Yet another firearm was stolen from a car in Rapid City, according to police. While law enforcement say the yearly total is trending down, it’s still a problem for the community.",
+    "image_url": "https://npr.brightspotcdn.com/legacy/prod/filer_public/kusd-bento-live-pbs/9b864fd196_RCPD_Parade_Charger.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

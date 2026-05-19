@@ -31,6 +31,16 @@
   },
   {
     "record_type": "alert",
+    "title": "Temporary Road Closure: NFSR 353.2C near Keystone, SD",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/temporary-road-closure-nfsr-3532c-near-keystone-sd",
+    "description": "Forest Road 353.2C near Keystone, SD is closed to motor vehicles, June 1–July 1, 2026. Check the Black Hills NF alerts page or call for details.",
+    "published": "2026-06-01",
+    "source_label": "BHNF",
+    "alert_type": "information",
+    "forest_order": "BKF-191-2026"
+  },
+  {
+    "record_type": "alert",
     "title": "Stage 1 Fire Restrictions in Bearlodge and Hell Canyon Ranger Districts, Wyoming",
     "url": "https://www.fs.usda.gov/r02/blackhills/alerts/stage-1-fire-restrictions-bearlodge-and-hell-canyon-ranger-districts-wyoming",
     "description": "Stage 1 Fire Restrictions are in effect on the Black Hills National Forest in Wyoming. Learn what activities are restricted to help prevent wildfires.",
@@ -53,7 +63,7 @@
     "record_type": "alert",
     "title": "Topaz timber sale near Sturgis, SD Continues Operations",
     "url": "https://www.fs.usda.gov/r02/blackhills/alerts/topaz-timber-sale-near-sturgis-sd-continues-operations",
-    "description": "The Topaz timber sale near Sturgis, SD continues operations.Tethered fuels reduction (a steep slope logging/fuels treatment system that uses equipment tethered to steel cables) is being utilized to perform chipping and mastication operations.  These operations cause flying debris.The operations…",
+    "description": "Topaz timber sale near Sturgis, SD continues. Tethered logging with chipping/mastication may cause flying debris near trails. Watch signs and flaggers.",
     "published": "2025-04-01",
     "source_label": "BHNF",
     "alert_type": "caution"
