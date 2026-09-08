@@ -2248,5 +2248,55 @@
     "start_dt": "Mon, 15 Dec 2025 13:20:46 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3740",
+    "title": "9/11 25th Anniversary  Memorial Stair Climb",
+    "slug": "9-11-25th-anniversary-memorial-stair-climb",
+    "description": "<strong>Event date:</strong> September 11, 2026 <br /><strong>Event Time: </strong>06:00 PM - 11:59 PM<br /><strong>Location:</strong> <br />1615 St Joe St<br />Spearfish, SD 57783<br /><strong>Description:</strong><br />There will be a 9/11 25th Anniversary Memorial Stair Climb at 6 p.m. at Black Hills State University Lyle Hare Stadium to remember and honor those who lost their lives on September 11, 2001, including the 343 firefighters, 60 police officers, and 10 EMS personnel, as well as those who have passed since. Everyone is welcome to climb and/or watch. The climb will begin after a brief memorial and moment of silence.",
+    "published": "Tue, 08 Sep 2026 08:48:01 -0700",
+    "start_dt": "Tue, 08 Sep 2026 08:48:01 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3668",
+    "title": "Toddler Story Time",
+    "slug": "toddler-story-time",
+    "description": "<strong>Event date:</strong> September 22, 2026 <br /><strong>Event Time: </strong>09:30 AM - 10:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Early literacy activities for ages 1-3.",
+    "published": "Thu, 06 Aug 2026 10:16:29 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:16:29 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3646",
+    "title": "Story Time",
+    "slug": "story-time",
+    "description": "<strong>Event date:</strong> September 22, 2026 <br /><strong>Event Time: </strong>10:30 AM - 11:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Stories and activities for ages 4+",
+    "published": "Thu, 06 Aug 2026 10:14:02 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:14:02 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3736",
+    "title": "Library Resources Session",
+    "slug": "library-resources-session",
+    "description": "<strong>Event date:</strong> September 22, 2026 <br /><strong>Event Time: </strong>02:00 PM - 03:00 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />In honor of Library Card Sign-up Month, come learn about all the library has to offer, tips and tricks for using your library account online, and more!",
+    "published": "Tue, 01 Sep 2026 09:15:17 -0700",
+    "start_dt": "Tue, 01 Sep 2026 09:15:17 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3726",
+    "title": "Spanish Conversation Hour",
+    "slug": "spanish-conversation-hour",
+    "description": "<strong>Event date:</strong> September 22, 2026 <br /><strong>Event Time: </strong>05:45 PM - 06:45 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />If you are looking to brush up on or improve your Spanish-speaking skills, this program is for you. This is not a class but rather an opportunity to visit with others in Spanish in a supportive and friendly environment to improve comfort and fluency.",
+    "published": "Tue, 01 Sep 2026 09:11:52 -0700",
+    "start_dt": "Tue, 01 Sep 2026 09:11:52 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

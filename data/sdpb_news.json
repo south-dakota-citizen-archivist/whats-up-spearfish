@@ -4123,5 +4123,49 @@
     "image_url": "https://npr.brightspotcdn.com/c1/05/fc3fb1974a35a80cc0f9b34c948f/201710e07090907-img-6143.JPG",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/healthcare/2026-09-08/feeding-south-dakota-reports-over-130-000-face-food-insecurity-in-state",
+    "title": "Feeding South Dakota reports over 130,000 face food insecurity in state",
+    "slug": "sdpb-feeding-south-dakota-reports-over-130000-face-food-insecurity-in-state",
+    "published": "2026-09-08",
+    "byline": "By C.J. Keene",
+    "description": "September marks Hunger Action Month, and that’s even more important in a state with significant food insecurity. According to Feeding South Dakota, one in five of the state’s children face food insecurity.",
+    "image_url": "https://npr.brightspotcdn.com/fb/13/3efc93ca444c8b33fd1cb4154b20/grocery-bag-of-food.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/education/2026-09-08/families-can-now-apply-for-free-or-reduced-price-school-meal-program",
+    "title": "Families can now apply for free or reduced-price school meal program",
+    "slug": "sdpb-families-can-now-apply-for-free-or-reduced-price-school-meal-program",
+    "published": "2026-09-08",
+    "byline": "By SDPB News Staff",
+    "description": "Applications are now open for South Dakota’s free or reduced-price meals for eligible families for the 2026-27 school year.",
+    "image_url": "https://npr.brightspotcdn.com/4b/32/32c1f4c948fe89c7377cc181adc9/1-a-lunch-tray.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/healthcare/2026-09-08/on-988-day-operators-remind-south-dakota-value-of-speaking-out",
+    "title": "On 988 Day, operators remind South Dakota value of speaking out",
+    "slug": "sdpb-on-988-day-operators-remind-south-dakota-value-of-speaking-out",
+    "published": "2026-09-08",
+    "byline": "By C.J. Keene",
+    "description": "Tuesday is 988 Day, dedicated to highlighting lifesaving, free to use suicide prevention resources. The day is more important now than ever, as South Dakota 988 resources report more call volume year after year.",
+    "image_url": "https://npr.brightspotcdn.com/56/51/fc8973ff4b108fde282ffcc5de3f/phone-call-smartphone-technology-dial.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/arts-life/2026-09-07/photographer-paul-horsted-celebrates-release-of-new-book-south-dakota-yesterday-today",
+    "title": "Photographer Paul Horsted celebrates release of new book 'South Dakota Yesterday & Today'",
+    "slug": "sdpb-photographer-paul-horsted-celebrates-release-of-new-book-south-dakota-today",
+    "published": "2026-09-07",
+    "byline": "By Delainey LaHood-Burns, Jordyn Henderson",
+    "description": "Horsted's latest book features 350 \"then and now\" photo pairs resulting from over a decade of research and fieldwork.",
+    "image_url": "https://npr.brightspotcdn.com/d5/7f/086bad0f447e84f089b7f054b6df/paul-horsted-book-release-party-1.png",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

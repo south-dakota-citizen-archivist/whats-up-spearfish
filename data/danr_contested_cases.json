@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-07T20:24:37.249219+00:00",
+  "fetched_at": "2026-09-08T19:46:55.833497+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -42,6 +42,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID124",
       "documents": [
         {
+          "label": "DANR Motion to Amend Procedural and Scheduling Order",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/DANR Mtn to Amend Procedural and Scheduling Order.service 09 04 26.pdf"
+        },
+        {
           "label": "Resubmittal of Petitioners' July 8 2026 Joint Motion Regarding Coordination and Use of Discovery",
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Resubmittal of Petitioners' Joint Motion Regarding Coordination and Use of Discovery.pdf"
         },
@@ -56,13 +60,9 @@
         {
           "label": "DANR Response to City's Interogatories and Requests for Production",
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/DANR Response Citys Interrogatories and Requests for Production.service 08 20 2026.pdf"
-        },
-        {
-          "label": "City of Rapid City's Objection to Petitioners' Joint Motion to Extend Scheduling Order",
-          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/City of Rapid City Objection to Petitioner Joint Motion to Extend Scheduling Order.pdf"
         }
       ],
-      "total_docs": 40,
+      "total_docs": 41,
       "latest_doc_date": "0000-00-00"
     },
     {
