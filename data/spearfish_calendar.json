@@ -2298,5 +2298,15 @@
     "start_dt": "Tue, 01 Sep 2026 09:11:52 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3723",
+    "title": "Library OPENS at 2 PM",
+    "slug": "library-opens-at-2-pm",
+    "description": "<strong>Event date:</strong> September 23, 2026 <br /><strong>Event Time: </strong>12:00 AM - 11:59 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />The library will open late due to an all-staff training event. Hours for this day will be 2 PM to 7 PM.",
+    "published": "Tue, 01 Sep 2026 09:05:25 -0700",
+    "start_dt": "Tue, 01 Sep 2026 09:05:25 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

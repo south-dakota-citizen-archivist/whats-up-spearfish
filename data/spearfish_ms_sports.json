@@ -6142,5 +6142,21 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish MS Sports"
+  },
+  {
+    "uid": "h202609090639185126e52659bbb8346",
+    "url": "https://gobound.com/direct/comps/h202609090639185126e52659bbb8346/show",
+    "title": "Volleyball: Stagebarn MS vs Spearfish MS (8th Grade)",
+    "slug": "volleyball-stagebarn-ms-vs-spearfish-ms-8th-grade",
+    "sport": "Volleyball",
+    "level": "8th Grade",
+    "sex": "female",
+    "description": "8th Grade Volleyball - Stagebarn MS vs Spearfish MS",
+    "start_dt": "2026-09-10T22:00:00",
+    "end_dt": "2026-09-11T01:00:00",
+    "location": "Stagebarn Middle School",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish MS Sports"
   }
 ]

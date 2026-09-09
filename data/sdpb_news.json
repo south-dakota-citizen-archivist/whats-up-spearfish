@@ -4167,5 +4167,49 @@
     "image_url": "https://npr.brightspotcdn.com/d5/7f/086bad0f447e84f089b7f054b6df/paul-horsted-book-release-party-1.png",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-09-09/leola-data-center-electricity-to-be-served-by-mdu-next-faces-county-permitting",
+    "title": "Leola Data Center electricity to be served by MDU; next faces county permitting",
+    "slug": "sdpb-leola-data-center-electricity-to-be-served-by-mdu-next-faces-county",
+    "published": "2026-09-09",
+    "byline": "By Jackson Dircks",
+    "description": "A proposed cryptocurrency mining data center in Leola. which is in north central South Dakota, has found its electric provider. However, it still faces hurdles to becoming reality at the county level.",
+    "image_url": "https://npr.brightspotcdn.com/d6/d9/92adee324e9ea96cbbb9d36d036b/screenshot-8-9-2026-165718-leoladatacenter-com.jpeg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-09-09/goac-hears-attorney-generals-report-on-state-employee-fraud-abuse-complaints",
+    "title": "GOAC hears attorney general's report on state employee fraud, abuse complaints",
+    "slug": "sdpb-goac-hears-attorney-general-s-report-on-state-employee-fraud-abuse",
+    "published": "2026-09-09",
+    "byline": "By Jackson Dircks",
+    "description": "In 2025 legislative changes made it more streamlined for state government fraud to be reported. As part of those changes a legislative committee that investigates state government fraud and abuse heard a first-of-its-kind report.",
+    "image_url": "https://npr.brightspotcdn.com/e8/b9/7fa916444c9ca92478641f4c5f0b/capital-generic-4-brent-duerre.JPG",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/arts-life/2026-09-09/film-about-north-dakota-cold-case-airs-in-sioux-falls-aberdeen-next-week",
+    "title": "Film about North Dakota cold case airs in Sioux Falls, Aberdeen next week",
+    "slug": "sdpb-film-about-north-dakota-cold-case-airs-in-sioux-falls-aberdeen-next-week",
+    "published": "2026-09-09",
+    "byline": "By Jackson Dircks",
+    "description": "A documentary about the decades-long search for a woman from Bismarck, North Dakota, who disappeared in the 1990s is showing in Sioux Falls and Aberdeen this month.",
+    "image_url": "https://npr.brightspotcdn.com/a8/6c/daa0622d4378835a3ce23f69271a/call-me-shelly-film-logo.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-09-08/crews-battle-wildfires-near-spearfish-porcupine",
+    "title": "Crews battle wildfires near Spearfish, Porcupine",
+    "slug": "sdpb-crews-battle-wildfires-near-spearfish-porcupine",
+    "published": "2026-09-08",
+    "byline": "By SDPB News Staff",
+    "description": "Crews are contending with several wildfires burning in western South Dakota, including one approaching the northern edge of Spearfish.",
+    "image_url": "https://npr.brightspotcdn.com/e3/83/b725064a43569b8052de5dde4dd2/lookout-fire.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

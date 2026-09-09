@@ -1,24 +1,6 @@
 {
-  "fetched_at": "2026-09-08T19:43:43.940711+00:00",
+  "fetched_at": "2026-09-09T19:39:13.920657+00:00",
   "notices": [
-    {
-      "notice_type": "Concentrated Animal Feeding Operations (NPDES Permit)",
-      "deadline": "09/08/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=09/08/2026&name=New Fashion Pork, LLP&pntype=fp_cafo_npdes&description=Modification to an Existing NPDES Permitted Swine Feeding Operation Consisting of Including Additional Land Application Acres for Amended Coverage - NPDES Permit",
-      "name": "New Fashion Pork, LLP",
-      "description": "Modification to an Existing NPDES Permitted Swine Feeding Operation Consisting of Including Additional Land Application Acres for Amended Coverage - NPDES Permit",
-      "location": "Miner County",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/NewFashionPorkPN7.pdf"
-        },
-        {
-          "label": "Recommendation",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/NewFashionPorkPN7RecommendReport.pdf"
-        }
-      ]
-    },
     {
       "notice_type": "Air Quality Permit",
       "deadline": "09/11/2026",
@@ -171,6 +153,20 @@
         {
           "label": "Statement of Basis",
           "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/Harrisburg Modified SOB.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Concentrated Animal Feeding Operations (State Permit)",
+      "deadline": "10/09/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/09/2026&name=Frontier Pork RE, LLC&pntype=fp_cafo&description=New Swine Feeding Operation - State Permit",
+      "name": "Frontier Pork RE, LLC",
+      "description": "New Swine Feeding Operation - State Permit",
+      "location": "Tripp County",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/FrontierPorkRELLCPN.pdf"
         }
       ]
     },
