@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-09T19:39:13.920657+00:00",
+  "fetched_at": "2026-09-10T19:29:17.490747+00:00",
   "notices": [
     {
       "notice_type": "Air Quality Permit",
@@ -51,6 +51,19 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/7393-3_rec.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Surface Water Enhancement & Restoration",
+      "deadline": "09/20/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=09/20/2026&name=Jeremy Hoff-dugout fill/wetland restoration&pntype=sw_er&description=The projects will remove watering dugouts that are no longer viable and restore wetland features to their original grade and aquatic community. The locations will be seeded with appropriate native grasses.",
+      "name": "Jeremy Hoff-dugout fill/wetland restoration",
+      "description": "The projects will remove watering dugouts that are no longer viable and restore wetland features to their original grade and aquatic community. The locations will be seeded with appropriate native grasses.",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/Hoff wetland McPherson PN.pdf"
         }
       ]
     },
@@ -167,6 +180,24 @@
         {
           "label": "Public Notice",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/FrontierPorkRELLCPN.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Waste Management \u2014 Solid Waste",
+      "deadline": "10/10/2026",
+      "comment_url": "",
+      "name": "Dakota Recycling and Transport, LLC",
+      "description": "Initial permit application to begin operation of a Type IIB Automobile and White Goods/Salvageable Metal Shredding Solid Waste Facility located within the northern city limits of Volga, SD.",
+      "location": "Volga, SD",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Dakota_Recycling__Transport_26_Public_Notice.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Dakota_Recycling__Transport_26_IP_DRAFT.pdf"
         }
       ]
     },

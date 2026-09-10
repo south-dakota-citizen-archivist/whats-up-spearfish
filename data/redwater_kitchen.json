@@ -1,5 +1,18 @@
 [
   {
+    "url": "https://untappd.com/b/phat-fish-brewery-jalapeno-honey-blonde-ale/3743484",
+    "title": "Jalapeno Honey Blonde Ale",
+    "slug": "jalapeno-honey-blonde-ale",
+    "category": "Blonde / Golden Ale - Other",
+    "abv": "5.6%",
+    "ibu": "22",
+    "brewery": "Phat Fish Brewery",
+    "rating": "3.58",
+    "image_url": "https://labels.untappd.com/3743484",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
     "url": "https://untappd.com/b/surly-brewing-company-overrated/302880",
     "title": "OverRated",
     "slug": "overrated",
@@ -126,19 +139,6 @@
     "brewery": "Central Waters Brewing Company",
     "rating": "4.21",
     "image_url": "https://labels.untappd.com/6756630",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
-    "url": "https://untappd.com/b/phat-fish-brewery-pronghorn-peach/4159588",
-    "title": "Pronghorn Peach",
-    "slug": "pronghorn-peach",
-    "category": "Wheat Beer - Fruited",
-    "abv": "4.7%",
-    "ibu": "18",
-    "brewery": "Phat Fish Brewery",
-    "rating": "3.71",
-    "image_url": "https://labels.untappd.com/4159588",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"
   },

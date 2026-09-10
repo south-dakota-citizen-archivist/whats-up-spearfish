@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-09T19:44:07.017976+00:00",
+  "fetched_at": "2026-09-10T19:32:28.711747+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -72,9 +72,30 @@
       "title": "Petitions to Deny the City of Madison Restricted Use Solid Waste Facility Permit",
       "description": "Petitioners seeks that the Department of Agriculture and Natural Resources deny the city of Madison restricted use solid waste facility permit initial request.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID117",
-      "documents": [],
-      "total_docs": 0,
-      "latest_doc_date": ""
+      "documents": [
+        {
+          "label": "Department's Response to Potters' Post-Hearing Brief, and Department's Objection to Potters' Proposed Findings of Fact & Conclusions of Law",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/DANR Response Brief and Objxn FOF & COL.Madison RUS Permit Application.service 06 12 2026.pdf"
+        },
+        {
+          "label": "Potters' Proposed Order",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Potters - Proposed Order.pdf"
+        },
+        {
+          "label": "Potters' Proposed Findings of Fact and Conclusions of Law",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Potters - Proposed FOF and COL.pdf"
+        },
+        {
+          "label": "Exhibit A and B",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Exhibit A and B.pdf"
+        },
+        {
+          "label": "Potters' Post-Hearing Brief",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Potters - Post Hearing Brief.pdf"
+        }
+      ],
+      "total_docs": 62,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "24",
@@ -83,9 +104,18 @@
       "title": "Powertech (USA) Inc. Large Scale Mine Permit Application",
       "description": "Proposed uranium in situ leach mine and processing facility. Injection wells will be used to pump groundwater fortified with oxygen and carbon dioxide into the ore deposits to dissolve uranium. Production wells will be used to pump the uranium-laden fluids to the surface for recovery.  The fluids from the production wells will be processed at two separate facilities at the mine site to extract and concentrate the uranium.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID24",
-      "documents": [],
-      "total_docs": 0,
-      "latest_doc_date": ""
+      "documents": [
+        {
+          "label": "Powertech (USA), Inc. - Large Scale Mine Permit Application",
+          "url": "https://danr.sd.gov/powertech/PtechMiningPermitApp.aspx"
+        },
+        {
+          "label": "Powertech (USA), Inc. - Exploration and Mine Permits",
+          "url": "https://danr.sd.gov/powertech/ptechExplorationPermits.aspx"
+        }
+      ],
+      "total_docs": 2,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "130",
@@ -256,7 +286,11 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID127",
       "documents": [
         {
-          "label": "Notice of Appearance to Sixth Judicial Circuit Court",
+          "label": "Notice of Appearance to Sixth Judicial Circuit Court - Counsel for Applicant",
+          "url": "https://danr.sd.gov/wrimage/pub/8987-3_6thcircuitcourt_NOP_app.pdf"
+        },
+        {
+          "label": "Notice of Appearance to Sixth Judicial Circuit Court - Counsel for Petitioner",
           "url": "https://danr.sd.gov/wrimage/pub/8987-3_6thcircuitcourt_NOP_pet.pdf"
         },
         {
@@ -270,13 +304,9 @@
         {
           "label": "Findings of Fact, Conclusions of Law, and Decision",
           "url": "https://danr.sd.gov/wrimage/pub/8987-3_FOF.pdf"
-        },
-        {
-          "label": "Filings Submitted by Counsel for the Applicant",
-          "url": "https://danr.sd.gov/wrimage/pub/8987-3_objFOF_app.pdf"
         }
       ],
-      "total_docs": 30,
+      "total_docs": 31,
       "latest_doc_date": "0000-00-00"
     },
     {
@@ -286,9 +316,30 @@
       "title": "8982-3 Century Swine RE, LLC.",
       "description": "Application for a water permit to appropriate up to 30.68 acre-feet of water annually at a maximum pump rate of 0.11 cubic feet of water per second from one well completed into the Pierre Shale Aquifer (approximately 420 feet deep) located in the NW 1/4 NW 1/4 Section 9  for commercial use in a swine facility located in the NW 1/4 Section 9; all in T121N-R71W.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID126",
-      "documents": [],
-      "total_docs": 0,
-      "latest_doc_date": ""
+      "documents": [
+        {
+          "label": "Response to Proposed Findings of Fact - Counsel for Applicant",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3_FOF_res_app.pdf"
+        },
+        {
+          "label": "Proposed Findings of Fact & Conclusions of Law",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3 Century Swine_propFOF.pdf"
+        },
+        {
+          "label": "Supplemental Pre-Hearing Submission by Counsel for the Applicant",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3_CenturySwine Sub.pdf"
+        },
+        {
+          "label": "Supplemental Pre-Hearing Submission by Counsel for the Petitioners",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3_Petitioners' Supplemental Pre-Hearing Submission.pdf"
+        },
+        {
+          "label": "Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3_NOH_3.pdf"
+        }
+      ],
+      "total_docs": 26,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "17",
@@ -345,9 +396,30 @@
       "title": "8990-3 City of Milbank",
       "description": "Application No. 8990-3 proposes to appropriate and reserve for future use 1,120 acre-feet of water annually from the Antelope Valley Aquifer.  The area to be reserved for future use is Section 21 and 22; all in T120N-R51W.  The water is to be reserved as a future water supply for municipal and water distribution system use by the City of Milbank, in Grant County. Approval of this application would not authorize construction of works or application of water to beneficial use.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID128",
-      "documents": [],
-      "total_docs": 0,
-      "latest_doc_date": ""
+      "documents": [
+        {
+          "label": "Objections to Proposed Finding of Fact & Conclusions of Law",
+          "url": "https://danr.sd.gov/wrimage/pub/8990-3 CityofMilbank_objFOF.pdf"
+        },
+        {
+          "label": "Proposed Finding of Fact & Conclusions of Law",
+          "url": "https://danr.sd.gov/wrimage/pub/8990-3 CityofMilbank_propFOF.pdf"
+        },
+        {
+          "label": "Filings Submitted by Chief Engineer's Counsel - Pre Hearing Submission",
+          "url": "https://danr.sd.gov/wrimage/pub/8990-3_filings by WR counsel.pdf"
+        },
+        {
+          "label": "Filings Submitted by Petitioner's Counsel - Pre Hearing Submission",
+          "url": "https://danr.sd.gov/wrimage/pub/8990-3_filings by pet counsel.pdf"
+        },
+        {
+          "label": "Filings Submitted by Applicant's Counsel - Pre Hearing Submission",
+          "url": "https://danr.sd.gov/wrimage/pub/8990-3_filings by applicants counsel.pdf"
+        }
+      ],
+      "total_docs": 18,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "95",
@@ -356,9 +428,30 @@
       "title": "Powertech (USA) Inc. - Water Permit Appl. Nos. 2685-2 & 2686-2 and GWD 1-13",
       "description": "Consolidated case for applications to appropriate water from the Madison aquifer and Inyan Kara aquifer and for a ground water discharge permit.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID95",
-      "documents": [],
-      "total_docs": 0,
-      "latest_doc_date": ""
+      "documents": [
+        {
+          "label": "Notice of Appeal, Order for Transcript, Order Waiving Case Filing Statements for Individual Intervenors, and Statement of Issues - Powertech (USA), Inc.",
+          "url": "https://danr.sd.gov/wrimage/pub/PT_apl1.pdf"
+        },
+        {
+          "label": "Links to the Parties of Record mailing lists and the Parties of Record list based on the Water Management Board adopting the December 8, 2021 Order are available here.",
+          "url": "https://danr.sd.gov/powertech/wmb.aspx"
+        },
+        {
+          "label": "Adoption of Order denying Powertech's Motion to amend procedural order denying Clean Water Alliance's motion to allow electronic service, and updating parties of record",
+          "url": "https://danr.sd.gov/wrimage/pub/PT_ord2.pdf"
+        },
+        {
+          "label": "Objections to Order Denying Powertech's Motion to amend procedural order denying Clean Water Alliance's motion to allow electronic service, and updating parties of record - Richard M. Williams, Counsel for Powertech (USA), Inc.",
+          "url": "https://danr.sd.gov/wrimage/pub/PT_rsp4.pdf"
+        },
+        {
+          "label": "Notice of hearing concerning order denying Powertech motion to amend procedural order, denying Clean Water Alliance's motion to allow electronic service, and updating parties of record",
+          "url": "https://danr.sd.gov/wrimage/pub/PT_not1.pdf"
+        }
+      ],
+      "total_docs": 28,
+      "latest_doc_date": "0000-00-00"
     }
   ]
 }
