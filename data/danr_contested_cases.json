@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-10T19:32:28.711747+00:00",
+  "fetched_at": "2026-09-11T19:29:24.685755+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -42,6 +42,14 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID124",
       "documents": [
         {
+          "label": "City of Rapid City's Notice to Take Deposition of Steve Kropp",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Notice to Take Deposition of Steve Kropp.pdf"
+        },
+        {
+          "label": "Notice of Entry of Amended Procedural and Scheduling Order",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/ltr_dmm Rapid City Landfill - Letter and NOE Amended Procedural  Scheduling Order 9-8-2026.pdf"
+        },
+        {
           "label": "DANR Motion to Amend Procedural and Scheduling Order",
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/DANR Mtn to Amend Procedural and Scheduling Order.service 09 04 26.pdf"
         },
@@ -52,17 +60,9 @@
         {
           "label": "Petitioner's Joint Reply to City of Rapid City's Objection to Petitioner's Joint Motion to Extend Scheduling Order",
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Aug 21 2026 Pet Reply City Obj Ext Sch Order.pdf"
-        },
-        {
-          "label": "Notice of Entry of Order on Fern and Ross Johnson Joint Motion to Extend Scheduling Order",
-          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Rapid City Landfill - NOE Order on Fern and Ross Johnson Joint Motion to Extend Deadline 8-21-26 (002).pdf"
-        },
-        {
-          "label": "DANR Response to City's Interogatories and Requests for Production",
-          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/DANR Response Citys Interrogatories and Requests for Production.service 08 20 2026.pdf"
         }
       ],
-      "total_docs": 41,
+      "total_docs": 43,
       "latest_doc_date": "0000-00-00"
     },
     {

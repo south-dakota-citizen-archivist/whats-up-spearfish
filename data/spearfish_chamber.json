@@ -3638,5 +3638,31 @@
     "website": "http://www.westernheritagecenter.com",
     "record_type": "event",
     "source_label": "Spearfish Chamber"
+  },
+  {
+    "url": "https://business.spearfishchamber.org/events/details/senior-expo-30864",
+    "title": "Senior Expo",
+    "slug": "senior-expo",
+    "start_dt": "2026-09-18 10:30 AM MDT",
+    "end_dt": "2026-09-18 2:00 PM MDT",
+    "location": "Spearfish Senior Center 1306 N 10th St Spearfish, SD 57783",
+    "fees": "FREE",
+    "description": "Spearfish Senior Expo on Friday, Sept. 18thfrom 10:30AM-2PM. How do South Dakotans remain independent, active, healthy & connected to friends & family through retirement? This event is for Seniors & their families. Resources to be featured at Expo include: Senior Day Programs, Medical Care Providers, Medicare Health Insurance, Education, Legal Services, Tech Support, In-Home Help, Skilled Nursing, Assisted Living, Memory Care, Hospice, Support Groups, & more! We all know that one accident can change everything. Knowing the resources available lessons the stress. Free admission, open to the public. Located at the Spearfish Senior Center 1306 N 10th St. Spearfish, SD.",
+    "website": "http://www.spearfishseniorcenter.com",
+    "record_type": "event",
+    "source_label": "Spearfish Chamber"
+  },
+  {
+    "url": "https://business.spearfishchamber.org/events/details/teddy-roosevelt-performance-30865",
+    "title": "Teddy Roosevelt Performance",
+    "slug": "teddy-roosevelt-performance",
+    "start_dt": "2026-09-22 6:00 PM MDT",
+    "end_dt": "2026-09-22 7:00 PM MDT",
+    "location": "Spearfish Senior Center 1306 N 10th St Spearfish, SD 57783",
+    "fees": "Free will donation at the door.",
+    "description": "Performing as Theodore Roosevelt, Joe Wiegand will share stories from T.R.'s lifetime. From battling asthma & taking boxing lessons as a young boy, to battling the special interests as President of the United States, Joe brings Theodore Roosevelt to life with energy, intelligence & wit, reminiscent of the original. Free will donation at the door. Light Refreshments & coffee. Open to the public.",
+    "website": "http://www.spearfishseniorcenter.com",
+    "record_type": "event",
+    "source_label": "Spearfish Chamber"
   }
 ]

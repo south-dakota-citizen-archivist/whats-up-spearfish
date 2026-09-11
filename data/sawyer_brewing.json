@@ -323,5 +323,18 @@
     ],
     "record_type": "beer",
     "source_label": "Sawyer Brewing Co."
+  },
+  {
+    "url": "https://www.sawyerbrewingco.com/menu",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/3e69c6fc-5d9e-4898-9be0-d41d0c4b1e1d/oktoberfestweb.jpg",
+    "title": "oktoberfestweb.jpg",
+    "slug": "oktoberfestweb-jpg",
+    "category": "Dark Side",
+    "description": "",
+    "abv": "",
+    "notes": "",
+    "prices": [],
+    "record_type": "beer",
+    "source_label": "Sawyer Brewing Co."
   }
 ]

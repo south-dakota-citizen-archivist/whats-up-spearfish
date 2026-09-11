@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-10T19:29:17.490747+00:00",
+  "fetched_at": "2026-09-11T19:26:37.788930+00:00",
   "notices": [
     {
       "notice_type": "Air Quality Permit",
@@ -254,24 +254,6 @@
         {
           "label": "Public Notice",
           "url": "https://media.sd.gov/danr/MM/S227012PublicNotice.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Waste Management \u2014 Municipal Solid Waste",
-      "deadline": "",
-      "comment_url": "",
-      "name": "Roberts County",
-      "description": "Permit amendment issued on August 7, 2026 to continue operation of a municipal solid waste landfill. This courtesy notice only serves to announce issuance of the permit. All opportunities to contest the permit have passed.",
-      "location": "Sisseton, SD",
-      "links": [
-        {
-          "label": "Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Roberts_County _LF_26_Web_Notice.pdf"
-        },
-        {
-          "label": "Issued Permit",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Roberts County LF 2026 Permit amendment.pdf"
         }
       ]
     }

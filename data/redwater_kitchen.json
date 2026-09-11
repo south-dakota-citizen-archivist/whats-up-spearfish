@@ -1,5 +1,18 @@
 [
   {
+    "url": "https://untappd.com/b/samuel-adams-octoberfest/3942",
+    "title": "Octoberfest",
+    "slug": "octoberfest",
+    "category": "Märzen",
+    "abv": "5.3%",
+    "ibu": "16",
+    "brewery": "Samuel Adams",
+    "rating": "3.61",
+    "image_url": "https://labels.untappd.com/3942",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
     "url": "https://untappd.com/b/phat-fish-brewery-jalapeno-honey-blonde-ale/3743484",
     "title": "Jalapeno Honey Blonde Ale",
     "slug": "jalapeno-honey-blonde-ale",
@@ -7,7 +20,7 @@
     "abv": "5.6%",
     "ibu": "22",
     "brewery": "Phat Fish Brewery",
-    "rating": "3.58",
+    "rating": "3.59",
     "image_url": "https://labels.untappd.com/3743484",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"
@@ -113,19 +126,6 @@
     "brewery": "Sawyer Brewing Co",
     "rating": "3.8",
     "image_url": "https://labels.untappd.com/3198339",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
-    "url": "https://untappd.com/b/eponymous-brewing-company-microcosm/6676461",
-    "title": "Microcosm",
-    "slug": "microcosm",
-    "category": "IPA - Imperial / Double New England / Hazy",
-    "abv": "7.7%",
-    "ibu": "",
-    "brewery": "Eponymous Brewing Company",
-    "rating": "3.98",
-    "image_url": "https://labels.untappd.com/6676461",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"
   },

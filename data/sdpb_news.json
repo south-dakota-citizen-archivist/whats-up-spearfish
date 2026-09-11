@@ -4244,5 +4244,49 @@
     "image_url": "https://npr.brightspotcdn.com/a7/c7/7d1153aa4e3190f155b279f3c26c/dakota-life-aberdeen-web-image-1920.png",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/sports-rec/2026-09-11/usd-ewu-to-become-first-di-football-teams-to-compete-with-helmets-featuring-indigenous-languages",
+    "title": "USD, EWU to become first DI football teams to compete with helmets featuring Indigenous languages",
+    "slug": "sdpb-usd-ewu-to-become-first-di-football-teams-to-compete-with-helmets-featuring",
+    "published": "2026-09-11",
+    "byline": "By Jackson Dircks",
+    "description": "Saturday in Vermillion will be a historic day for college football. It’s the first time two Division One teams facing off against one another will both be wearing helmets featuring Indigenous languages, officials say.",
+    "image_url": "https://npr.brightspotcdn.com/e1/8d/cc1e6ac14b5f90996b9dcadd42e5/screenshot-10-9-2026-16583-goyotes-com.jpeg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/healthcare/2026-09-11/south-dakota-expands-access-to-free-womens-cancer-screenings",
+    "title": "South Dakota expands access to free women's cancer screenings",
+    "slug": "sdpb-south-dakota-expands-access-to-free-women-s-cancer-screenings",
+    "published": "2026-09-11",
+    "byline": "By C.J. Keene",
+    "description": "As South Dakota faces a healthcare shortage, a marked one for women’s health providers, the state is expanding a screening program for breast and cervical cancers.",
+    "image_url": "https://npr.brightspotcdn.com/7b/2c/2f06d06d427f9f4981fa1edda337/breast-cancer-stock-image.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-09-10/several-new-bird-flu-outbreaks-reported-in-south-dakota-flocks",
+    "title": "Several new bird flu outbreaks reported in South Dakota flocks",
+    "slug": "sdpb-several-new-bird-flu-outbreaks-reported-in-south-dakota-flocks",
+    "published": "2026-09-10",
+    "byline": "By SDPB News Staff",
+    "description": "Health officials are confirming several new avian flu outbreaks at commercial flocks in South Dakota.",
+    "image_url": "https://npr.brightspotcdn.com/4d/97/c269c1d740bd82cc08d000f21340/domestic-turkey.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-09-10/mt-rushmore-road-organization-says-development-must-be-measured",
+    "title": "Mt. Rushmore Road organization says development must be measured",
+    "slug": "sdpb-mt-rushmore-road-organization-says-development-must-be-measured",
+    "published": "2026-09-10",
+    "byline": "By C.J. Keene",
+    "description": "Rapid City’s Mount Rushmore Road, a major thoroughfare, continues to develop quickly. That leaves businessowners and neighborhoods in the area curious what’s to come for the area.",
+    "image_url": "https://npr.brightspotcdn.com/60/f2/610a197f4da89b4fc4d428910751/image-2026-09-10t142813-734.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

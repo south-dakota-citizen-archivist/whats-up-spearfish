@@ -6222,5 +6222,37 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish MS Sports"
+  },
+  {
+    "uid": "h20260910075727746341e6dea2e434c",
+    "url": "https://gobound.com/direct/comps/h20260910075727746341e6dea2e434c/show",
+    "title": "Girls Track & Field:  (Varsity)",
+    "slug": "girls-track-field-varsity",
+    "sport": "Girls Track & Field",
+    "level": "",
+    "sex": "female",
+    "description": "Varsity Girls Track & Field -",
+    "start_dt": "2027-04-08T15:00:00",
+    "end_dt": "2027-04-09T00:00:00",
+    "location": "Douglas High School",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish MS Sports"
+  },
+  {
+    "uid": "h2026091007592921602343e8ba3974f",
+    "url": "https://gobound.com/direct/comps/h2026091007592921602343e8ba3974f/show",
+    "title": "Boys Track & Field:  (Varsity)",
+    "slug": "boys-track-field-varsity",
+    "sport": "Boys Track & Field",
+    "level": "",
+    "sex": "male",
+    "description": "Varsity Boys Track & Field -",
+    "start_dt": "2027-04-08T15:00:00",
+    "end_dt": "2027-04-09T00:00:00",
+    "location": "Douglas High School",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish MS Sports"
   }
 ]
