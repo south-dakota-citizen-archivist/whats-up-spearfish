@@ -1,27 +1,6 @@
 {
-  "fetched_at": "2026-09-11T19:26:37.788930+00:00",
+  "fetched_at": "2026-09-12T18:56:34.872497+00:00",
   "notices": [
-    {
-      "notice_type": "Air Quality Permit",
-      "deadline": "09/11/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=09/11/2026&name=Agropur Inc.&pntype=aq&description=Agropur proposes to construct a new dryer to replace an old dryer for their dairy processing plant. DANR recommends issuance of an air quality construction permit.",
-      "description": "Agropur proposes to construct a new dryer to replace an old dryer for their dairy processing plant. DANR recommends issuance of an air quality construction permit.",
-      "location": "Lake Norden",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/AIpn.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/AIdp.pdf"
-        },
-        {
-          "label": "Application Review",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/AIsb.pdf"
-        }
-      ]
-    },
     {
       "notice_type": "Concentrated Animal Feeding Operations (State Permit)",
       "deadline": "09/12/2026",

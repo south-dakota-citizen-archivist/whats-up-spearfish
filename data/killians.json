@@ -182,15 +182,15 @@
     "source_label": "Killian's"
   },
   {
-    "url": "https://untappd.com/b/dakota-point-brewing-black-hills-porter/3814701",
-    "title": "Black Hills Porter",
-    "slug": "black-hills-porter",
-    "category": "Porter - American",
-    "abv": "6%",
-    "ibu": "38",
-    "brewery": "Dakota Point Brewing",
-    "rating": "3.8",
-    "image_url": "https://labels.untappd.com/3814701",
+    "url": "https://untappd.com/b/schell-s-brewery-dark/22324",
+    "title": "Dark",
+    "slug": "dark",
+    "category": "Lager - Dark",
+    "abv": "4.8%",
+    "ibu": "20",
+    "brewery": "Schell’s Brewery",
+    "rating": "3.43",
+    "image_url": "https://labels.untappd.com/22324",
     "record_type": "beer",
     "source_label": "Killian's"
   },
@@ -202,7 +202,7 @@
     "abv": "4.2%",
     "ibu": "",
     "brewery": "Crow Peak Brewing Company",
-    "rating": "3.24",
+    "rating": "3.27",
     "image_url": "https://labels.untappd.com/6790683",
     "record_type": "beer",
     "source_label": "Killian's"
