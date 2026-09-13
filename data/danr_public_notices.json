@@ -1,20 +1,6 @@
 {
-  "fetched_at": "2026-09-12T18:56:34.872497+00:00",
+  "fetched_at": "2026-09-13T19:14:03.580240+00:00",
   "notices": [
-    {
-      "notice_type": "Concentrated Animal Feeding Operations (State Permit)",
-      "deadline": "09/12/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=09/12/2026&name=Christensen Farms and Feedlots, Inc.&pntype=fp_cafo&description=New Swine Feeding Operation Replacing an Existing Permitted Beef Cattle Feeding Operation - State Permit",
-      "name": "Christensen Farms and Feedlots, Inc.",
-      "description": "New Swine Feeding Operation Replacing an Existing Permitted Beef Cattle Feeding Operation - State Permit",
-      "location": "McPherson County",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/ChristensenFarmsandFeedlotsIncPN.pdf"
-        }
-      ]
-    },
     {
       "notice_type": "Water Rights \u2014 Future Use Review",
       "deadline": "09/14/2026",

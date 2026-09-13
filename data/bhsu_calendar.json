@@ -2200,5 +2200,27 @@
     "category": "Campus Calendar/Events",
     "record_type": "event",
     "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "463ab0a3-f629-49de-868c-81541775ca25",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/463ab0a3-f629-49de-868c-81541775ca25",
+    "title": "Fall Commencement",
+    "slug": "fall-commencement",
+    "description": "Congratulations to the graduating class.",
+    "start_dt": "2026-12-12T17:00",
+    "end_dt": "2026-12-12T19:00",
+    "location": "Donald E. Young Sports & Fitness Center",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "",
+    "tags": [
+      "Commencement",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
   }
 ]
