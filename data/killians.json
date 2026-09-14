@@ -1,14 +1,14 @@
 [
   {
-    "url": "https://untappd.com/b/jeremiah-johnson-brewing-co-citra-ipa/2523540",
-    "title": "Citra IPA",
-    "slug": "citra-ipa",
+    "url": "https://untappd.com/b/odell-brewing-co-ipa/28",
+    "title": "IPA",
+    "slug": "ipa",
     "category": "IPA - American",
-    "abv": "6.5%",
-    "ibu": "65",
-    "brewery": "Jeremiah Johnson Brewing Co.",
-    "rating": "3.62",
-    "image_url": "https://labels.untappd.com/2523540",
+    "abv": "7%",
+    "ibu": "60",
+    "brewery": "Odell Brewing Co.",
+    "rating": "3.84",
+    "image_url": "https://labels.untappd.com/28",
     "record_type": "beer",
     "source_label": "Killian's"
   },

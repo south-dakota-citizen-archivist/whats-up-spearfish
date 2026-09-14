@@ -1,6 +1,19 @@
 {
-  "fetched_at": "2026-09-13T19:13:32.282554+00:00",
+  "fetched_at": "2026-09-14T20:44:27.324121+00:00",
   "observations": [
+    {
+      "species_code": "prafal",
+      "common_name": "Prairie Falcon",
+      "scientific_name": "Falco mexicanus",
+      "observed_on": "2026-09-13",
+      "count": 1,
+      "location_name": "CanAm Highway, Belle Fourche, South Dakota, US (44.779, -103.853)",
+      "lat": 44.779401,
+      "lng": -103.852754,
+      "location_id": "L77157611",
+      "checklist_id": "S392726663",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/112241286/square.jpg"
+    },
     {
       "species_code": "rethaw",
       "common_name": "Red-tailed Hawk",
@@ -220,7 +233,7 @@
       "lng": -103.934309,
       "location_id": "L77095665",
       "checklist_id": "S392314732",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/341016703/square.jpeg"
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/609326180/square.jpg"
     },
     {
       "species_code": "swathr",
@@ -637,19 +650,6 @@
       "location_id": "L1195589",
       "checklist_id": "S391655793",
       "photo_url": "https://static.inaturalist.org/photos/518522154/square.jpg"
-    },
-    {
-      "species_code": "grbher3",
-      "common_name": "Great Blue Heron",
-      "scientific_name": "Ardea herodias",
-      "observed_on": "2026-09-10",
-      "count": 1,
-      "location_name": "Castle Creek Walk in Fishing Area",
-      "lat": 44.044353,
-      "lng": -103.771332,
-      "location_id": "L76986851",
-      "checklist_id": "S391654285",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/65060931/square.jpg"
     }
   ]
 }

@@ -3664,5 +3664,18 @@
     "website": "http://www.spearfishseniorcenter.com",
     "record_type": "event",
     "source_label": "Spearfish Chamber"
+  },
+  {
+    "url": "https://business.spearfishchamber.org/events/details/high-plains-live-doug-figgs-with-ramblin-rangers-30866",
+    "title": "High Plains Live! Doug Figgs with Ramblin' Rangers",
+    "slug": "high-plains-live-doug-figgs-with-ramblin-rangers",
+    "start_dt": "2026-09-27 2:00 PM MDT",
+    "end_dt": "2026-09-27 4:00 PM MDT",
+    "location": "High Plains Western Heritage Center",
+    "fees": "$20 Reserved Seating $15 At the Door",
+    "description": "Join us for an afternoon of western music with award winning singer, songwriter Doug Figgs with special guests Ramblin' Rangers. Concert Sponsored by Perkins Restaurant",
+    "website": "http://www.westernheritagecenter.com",
+    "record_type": "event",
+    "source_label": "Spearfish Chamber"
   }
 ]

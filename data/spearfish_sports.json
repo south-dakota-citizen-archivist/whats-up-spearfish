@@ -25950,5 +25950,21 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h2026060204111619335a2bd38367e4b",
+    "url": "https://gobound.com/direct/comps/h2026060204111619335a2bd38367e4b/show",
+    "title": "Boys Golf (Fall): Southern Hills Invite (Varsity)",
+    "slug": "boys-golf-fall-southern-hills-invite-varsity",
+    "sport": "Boys Golf (Fall)",
+    "level": "Varsity",
+    "sex": "male",
+    "description": "Varsity Boys Golf (Fall) - Southern Hills Invite",
+    "start_dt": "2026-09-14T15:00:00",
+    "end_dt": "2026-09-14T21:00:00",
+    "location": "Southern Hills Golf Course",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]

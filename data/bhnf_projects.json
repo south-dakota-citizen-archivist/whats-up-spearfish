@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-13T19:17:27.909488+00:00",
+  "fetched_at": "2026-09-14T20:48:17.760558+00:00",
   "projects": [
     {
       "project_id": "66463",
@@ -348,6 +348,22 @@
       "district": "Mystic Ranger District",
       "purpose": "Special Use Management",
       "description": "Hills West LLC is requesting authorization to maintain, plow, and use National Forest System (NFS) roads to access private property located off NFSR 354.1B, as well as authorization for a private road use permit across NFS lands to provide legal access to the property.",
+      "milestones": [],
+      "comment_period_date": null,
+      "comment_period_sort": "9999-99",
+      "location_summary": "",
+      "counties": [],
+      "contact": {},
+      "last_updated": ""
+    },
+    {
+      "project_id": "413995",
+      "title": "Jackalope Forest Management Project",
+      "url": "https://www.fs.usda.gov/r02/blackhills/projects/413995",
+      "status": "Developing Proposal",
+      "district": "Mystic Ranger District",
+      "purpose": "Vegetation Management (Other Than Forest Products)",
+      "description": "The proposed action includes a range of commercial and non-commercial vegetation management and restoration treatments designed to achieve the project\u2019s purpose and need.",
       "milestones": [],
       "comment_period_date": null,
       "comment_period_sort": "9999-99",

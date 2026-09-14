@@ -2338,5 +2338,15 @@
     "start_dt": "Tue, 21 Jul 2026 08:38:31 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3714",
+    "title": "Teen Game Day",
+    "slug": "teen-game-day",
+    "description": "<strong>Event date:</strong> September 28, 2026 <br /><strong>Event Time: </strong>03:30 PM - 05:00 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Join us for some gaming fun! We will have a variety of board and card games, multiplayer chess, and even some TTRPGs available...and snacks! Open to grades 6-12.",
+    "published": "Tue, 01 Sep 2026 09:02:41 -0700",
+    "start_dt": "Tue, 01 Sep 2026 09:02:41 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]
