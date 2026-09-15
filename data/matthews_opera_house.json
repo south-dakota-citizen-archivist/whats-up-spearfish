@@ -1066,5 +1066,29 @@
     "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/09/EPK11Blank.webp",
     "record_type": "event",
     "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "Auditions: Nuncrackers",
+    "url": "https://www.matthewsopera.com/event/auditions-nuncrackers/",
+    "slug": "auditions-nuncrackers",
+    "start_dt": "2026-09-29T18:00:00-06:00",
+    "end_dt": "2026-09-29T20:00:00-06:00",
+    "description": "Auditions for Nuncrackers: The Nunsense Christmas Musical — Tuesday and Wednesday, September 29 and 30, 6 to 8 p.m. Five nuns, one male role and four youth roles. Open to community performers of all experience levels. \\n",
+    "location": "The Matthews Opera House – Theatre",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/08/Sept-5-12-6PM-1.png",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "Auditions: Nuncrackers",
+    "url": "https://www.matthewsopera.com/event/auditions-nuncrackers-2/",
+    "slug": "auditions-nuncrackers",
+    "start_dt": "2026-09-30T18:00:00-06:00",
+    "end_dt": "2026-09-30T20:00:00-06:00",
+    "description": "Auditions for Nuncrackers: The Nunsense Christmas Musical — Tuesday and Wednesday, September 29 and 30, 6 to 8 p.m. Five nuns, one male role and four youth roles. Open to community performers of all experience levels. \\n",
+    "location": "The Matthews Opera House – Theatre",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/08/Sept-5-12-6PM-1.png",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
   }
 ]

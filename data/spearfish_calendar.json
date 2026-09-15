@@ -2348,5 +2348,55 @@
     "start_dt": "Tue, 01 Sep 2026 09:02:41 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3744",
+    "title": "Historic Preservation Commission",
+    "slug": "historic-preservation-commission",
+    "description": "<strong>Event date:</strong> September 17, 2026 <br /><strong>Event Time: </strong>06:00 PM - 11:59 PM<br /><strong>Location:</strong> <br />222 W Hudson St<br />Spearfish, SD 57783",
+    "published": "Mon, 14 Sep 2026 14:54:12 -0700",
+    "start_dt": "Mon, 14 Sep 2026 14:54:12 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3745",
+    "title": "City offices closed for all-staff training",
+    "slug": "city-offices-closed-for-all-staff-training",
+    "description": "<strong>Event date:</strong> September 23, 2026 <br /><strong>Event Time: </strong>08:00 AM - 02:00 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />City offices, Grace Balloch Memorial Library, and the Spearfish Rec Center will be closed from 8 a.m. to 2 p.m. Wednesday, September 23rd, due to all-staff training. The rec center will be open from 5:30 a.m. to 8 a.m., and normal hours of operation resume at 2 p.m. for City offices, Grace Balloch Memorial Library, and the Spearfish Rec Center. There are no changes to the trash collection schedule, and the Restricted Use Site will remain open. <br /><br />",
+    "published": "Tue, 15 Sep 2026 13:51:31 -0700",
+    "start_dt": "Tue, 15 Sep 2026 13:51:31 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3669",
+    "title": "Toddler Story Time",
+    "slug": "toddler-story-time",
+    "description": "<strong>Event date:</strong> September 29, 2026 <br /><strong>Event Time: </strong>09:30 AM - 10:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Early literacy activities for ages 1-3.",
+    "published": "Thu, 06 Aug 2026 10:16:29 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:16:29 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3647",
+    "title": "Story Time",
+    "slug": "story-time",
+    "description": "<strong>Event date:</strong> September 29, 2026 <br /><strong>Event Time: </strong>10:30 AM - 11:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Stories and activities for ages 4+",
+    "published": "Thu, 06 Aug 2026 10:14:02 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:14:02 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3727",
+    "title": "Spanish Conversation Hour",
+    "slug": "spanish-conversation-hour",
+    "description": "<strong>Event date:</strong> September 29, 2026 <br /><strong>Event Time: </strong>05:45 PM - 06:45 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />If you are looking to brush up on or improve your Spanish-speaking skills, this program is for you. This is not a class but rather an opportunity to visit with others in Spanish in a supportive and friendly environment to improve comfort and fluency.",
+    "published": "Tue, 01 Sep 2026 09:11:52 -0700",
+    "start_dt": "Tue, 01 Sep 2026 09:11:52 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

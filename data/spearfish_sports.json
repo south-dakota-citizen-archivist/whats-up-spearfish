@@ -25966,5 +25966,53 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20260915070741567e99554f4b27a49",
+    "url": "https://gobound.com/direct/comps/h20260915070741567e99554f4b27a49/show",
+    "title": "Girls Tennis: MS/JV Festival (Junior Varsity)",
+    "slug": "girls-tennis-ms-jv-festival-junior-varsity",
+    "sport": "Girls Tennis",
+    "level": "Junior Varsity",
+    "sex": "female",
+    "description": "Junior Varsity Girls Tennis - MS/JV Festival",
+    "start_dt": "2026-09-19T15:00:00",
+    "end_dt": "",
+    "location": "Sioux Park Complex",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20260915071505300aa47a9160ea34b",
+    "url": "https://gobound.com/direct/comps/h20260915071505300aa47a9160ea34b/show",
+    "title": "Girls Tennis: RC Christian MS/JV Festival (Junior Varsity)",
+    "slug": "girls-tennis-rc-christian-ms-jv-festival-junior-varsity",
+    "sport": "Girls Tennis",
+    "level": "Junior Varsity",
+    "sex": "female",
+    "description": "Junior Varsity Girls Tennis - RC Christian MS/JV Festival",
+    "start_dt": "2026-10-03T15:00:00",
+    "end_dt": "",
+    "location": "Sioux Park",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h2026091504114719926f19851a19e4d",
+    "url": "https://gobound.com/direct/comps/h2026091504114719926f19851a19e4d/show",
+    "title": "Girls Wrestling: 2026 Battle for the Paddle (Varsity)",
+    "slug": "girls-wrestling-2026-battle-for-the-paddle-varsity",
+    "sport": "Girls Wrestling",
+    "level": "Varsity",
+    "sex": "female",
+    "description": "Varsity Girls Wrestling - 2026 Battle for the Paddle",
+    "start_dt": "2026-12-19T15:00:00",
+    "end_dt": "2026-12-19T21:00:00",
+    "location": "Canton High School Armory Gym",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-14T20:48:07.717248+00:00",
+  "fetched_at": "2026-09-15T20:02:01.760904+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -286,6 +286,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID127",
       "documents": [
         {
+          "label": "Filings Submitted to Sully County Clerk of Courts",
+          "url": "https://danr.sd.gov/wrimage/pub/8987-3_Utech_Chronodex.pdf"
+        },
+        {
           "label": "Notice of Appearance to Sixth Judicial Circuit Court - Counsel for Applicant",
           "url": "https://danr.sd.gov/wrimage/pub/8987-3_6thcircuitcourt_NOP_app.pdf"
         },
@@ -300,13 +304,9 @@
         {
           "label": "Notice of Entry of Order",
           "url": "https://danr.sd.gov/wrimage/pub/8987-3_NOE_denial.pdf"
-        },
-        {
-          "label": "Findings of Fact, Conclusions of Law, and Decision",
-          "url": "https://danr.sd.gov/wrimage/pub/8987-3_FOF.pdf"
         }
       ],
-      "total_docs": 31,
+      "total_docs": 32,
       "latest_doc_date": "0000-00-00"
     },
     {

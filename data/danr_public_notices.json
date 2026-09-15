@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-14T20:44:58.589685+00:00",
+  "fetched_at": "2026-09-15T19:59:00.237357+00:00",
   "notices": [
     {
       "notice_type": "Water Rights \u2014 Future Use Review",
@@ -135,6 +135,198 @@
       ]
     },
     {
+      "notice_type": "Water Rights",
+      "deadline": "09/28/2026",
+      "comment_url": "",
+      "application_no": "9018-3",
+      "name": "Danny Peterson,\u00a0Hitchcock\u00a0SD",
+      "location": "Spink",
+      "water_source": "Tulare: Western Spink Hitchcock Aquifer",
+      "use_type": "Irrigation (56 add'l acres)",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/9018-3_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/9018-3_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/9018-3_rec.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Water Rights",
+      "deadline": "09/28/2026",
+      "comment_url": "",
+      "application_no": "9017-3",
+      "name": "Danny Peterson,\u00a0Hitchcock\u00a0SD",
+      "location": "Beadle",
+      "water_source": "Tulare: Western Spink Hitchcock Aquifer",
+      "use_type": "Irrigation (25 add'l acres)",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/9017-3_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/9017-3_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/9017-3_rec.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Water Rights",
+      "deadline": "09/28/2026",
+      "comment_url": "",
+      "application_no": "9016-3",
+      "name": "Danny Peterson,\u00a0Hitchcock\u00a0SD",
+      "location": "Spink",
+      "water_source": "Tulare: Western Spink Hitchcock Aquifer",
+      "use_type": "Irrigation (30 add'l acres)",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/9016-3_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/9016-3_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/9016-3_rec.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Water Rights",
+      "deadline": "09/28/2026",
+      "comment_url": "",
+      "application_no": "9015-3",
+      "name": "Danny Peterson,\u00a0Hitchcock\u00a0SD",
+      "location": "Spink",
+      "water_source": "Tulare: Western Spink Hitchcock Aquifer",
+      "use_type": "Irrigation (28 add'l acres)",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/9015-3_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/9015-3_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/9015-3_rec.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Water Rights",
+      "deadline": "09/28/2026",
+      "comment_url": "",
+      "application_no": "9014-3",
+      "name": "Danny Peterson,\u00a0Hitchcock\u00a0SD",
+      "location": "Spink",
+      "water_source": "Tulare: Western Spink Hitchcock Aquifer",
+      "use_type": "Irrigation (45 add'l acres)",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/9014-3_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/9014-3_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/9014-3_rec.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Water Rights",
+      "deadline": "09/28/2026",
+      "comment_url": "",
+      "application_no": "9013-3",
+      "name": "Danny Peterson,\u00a0Hitchcock\u00a0SD",
+      "location": "Spink",
+      "water_source": "Tulare: Western Spink Hitchcock Aquifer",
+      "use_type": "Irrigation (25 add'l acres)",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/9013-3_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/9013-3_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/9013-3_rec.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Water Rights",
+      "deadline": "09/28/2026",
+      "comment_url": "",
+      "application_no": "9031-3",
+      "name": "South Lincoln Rural Water System, c/o John Stearns,\u00a0Beresford\u00a0SD",
+      "location": "Lincoln",
+      "water_source": "Dakota Aquifer",
+      "use_type": "Rural Water System",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/9031-3_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/9031-3_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/9031-3_rec.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Water Rights",
+      "deadline": "09/28/2026",
+      "comment_url": "",
+      "application_no": "2908-2",
+      "name": "JKRK Properties, LLC., Ryan Kaski,\u00a0Rapid City\u00a0SD",
+      "location": "Pennington",
+      "water_source": "Madison Aquifer",
+      "use_type": "Water Distribution System",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/2908-2_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/2908-2_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/2908-2_rec.pdf"
+        }
+      ]
+    },
+    {
       "notice_type": "Concentrated Animal Feeding Operations (State Permit)",
       "deadline": "10/09/2026",
       "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/09/2026&name=Frontier Pork RE, LLC&pntype=fp_cafo&description=New Swine Feeding Operation - State Permit",
@@ -163,6 +355,57 @@
         {
           "label": "Draft Permit",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Dakota_Recycling__Transport_26_IP_DRAFT.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "General Permits",
+      "deadline": "10/15/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/15/2026&name=General Permit for Yard Waste Compost Facilities&pntype=gp&description=Notice of reissuance of the solid waste general permit for yard waste compost facilities.",
+      "name": "General Permit for Yard Waste Compost Facilities",
+      "description": "Notice of reissuance of the solid waste general permit for yard waste compost facilities.",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/2026 General Permits Pub Notice Compost.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_Compost General Permit GPCF 26-XX.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "General Permits",
+      "deadline": "10/15/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/15/2026&name=General Permit for Municipal Solid Waste Transfer Station Facilities&pntype=gp&description=Notice of reissuance of the solid waste general permit for municipal solid waste transfer station facilities.",
+      "name": "General Permit for Municipal Solid Waste Transfer Station Facilities",
+      "description": "Notice of reissuance of the solid waste general permit for municipal solid waste transfer station facilities.",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/2026 General Permits Pub Notice XFR.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_XFR General Permit GPTS 26-XX.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "General Permits",
+      "deadline": "10/15/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/15/2026&name=General Permit for Petroleum-Contaminated Soil Treatment Facilities&pntype=gp&description=Notice of reissuance and amendment of the language of the solid waste general permit for petroleum-contaminated soil treatment facilities.",
+      "name": "General Permit for Petroleum-Contaminated Soil Treatment Facilities",
+      "description": "Notice of reissuance and amendment of the language of the solid waste general permit for petroleum-contaminated soil treatment facilities.",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/2026 General Permits Pub Notice PCS.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_PCS General Permit GPPCS 26-XX.pdf"
         }
       ]
     },

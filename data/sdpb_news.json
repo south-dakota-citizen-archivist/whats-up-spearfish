@@ -4343,5 +4343,38 @@
     "image_url": "https://npr.brightspotcdn.com/d0/7f/67caaa6e4a56934e101e13ae48e6/untitled-september-11-2026-at-10-56-12-1.jpeg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/elections/2026-09-14/2026-south-dakota-us-senate-debate",
+    "title": "2026 South Dakota US Senate Debate",
+    "slug": "sdpb-2026-south-dakota-us-senate-debate",
+    "published": "2026-09-14",
+    "byline": "By SDPB News Staff",
+    "description": "The 2026 South Dakota US Senate Debate between Sen. Mike Rounds and Brian Bengs",
+    "image_url": "https://npr.brightspotcdn.com/99/dc/a90e9c6749deb3648b70b75f6e0c/screenshot-2026-09-15-085708.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-09-15/longtime-legislator-state-democratic-party-leader-dies-at-age-80",
+    "title": "Longtime legislator, state Democratic Party leader dies at age 80",
+    "slug": "sdpb-longtime-legislator-state-democratic-party-leader-dies-at-age-80",
+    "published": "2026-09-15",
+    "byline": "By SDPB News Staff",
+    "description": "R. Lars Herseth served in the South Dakota Legislature for 20 years, representing Brown County in both the House and the Senate from the 1970s to the 1990s.",
+    "image_url": "https://npr.brightspotcdn.com/36/3a/16440e934c5e90ec29274c0533de/lars-herseth.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/arts-life/2026-09-15/tayko-jones-finds-freedom-in-breaking-the-music-mold",
+    "title": "Tayko Jones finds freedom in breaking the music mold",
+    "slug": "sdpb-tayko-jones-finds-freedom-in-breaking-the-music-mold",
+    "published": "2026-09-15",
+    "byline": "By Lori Walsh",
+    "description": "For the kids who wanted to make music in the garage with their friends and then also joined the jazz band, Tayko Jones busts open genre to launch a new album and a fresh sound.",
+    "image_url": "https://npr.brightspotcdn.com/ff/80/bcd08f674c42bf9523b2d573402b/headers-768x432.png",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]
