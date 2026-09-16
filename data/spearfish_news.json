@@ -318,5 +318,25 @@
     "start_dt": "Thu, 10 Sep 2026 12:55:56 -0700",
     "record_type": "press_release",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/CivicAlerts.aspx?aid=577",
+    "title": "Main Street asphalt mill and overlay work to begin on September 28, 2026",
+    "slug": "main-street-asphalt-mill-and-overlay-work-to-begin-on-september-28-2026",
+    "description": "Main Street is tentatively scheduled to be closed downtown beginning on September 28, 2026 while Johner & Sons, Inc. of Spearfish completes a mill and overlay project from Jackson Boulevard through the Grant Street intersection for the City of Spearfish.",
+    "published": "Wed, 16 Sep 2026 12:02:52 -0700",
+    "start_dt": "Wed, 16 Sep 2026 12:02:52 -0700",
+    "record_type": "press_release",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/CivicAlerts.aspx?aid=576",
+    "title": "Spearfish Announces Selection of New City Administrator",
+    "slug": "spearfish-announces-selection-of-new-city-administrator",
+    "description": "The City of Spearfish is pleased to announce the selection of Peter Wysocki as its new City Administrator. Wysocki has accepted the position following the completion of the city's search process.",
+    "published": "Tue, 15 Sep 2026 14:59:52 -0700",
+    "start_dt": "Tue, 15 Sep 2026 14:59:52 -0700",
+    "record_type": "press_release",
+    "source_label": "City of Spearfish"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-15T20:02:01.760904+00:00",
+  "fetched_at": "2026-09-16T19:55:10.133056+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -42,6 +42,14 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID124",
       "documents": [
         {
+          "label": "Petitioners' Supplemental Report to Expert Report of Harold Barber, Jr.",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Petitioners_Supplemental_Report_to_Expert_Report_of_Harold_Barber.pdf"
+        },
+        {
+          "label": "Petitioners' Notice to Take Depositions of Hunter Roberts and Steven Kropp",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Binegar electronic Sept 11 2026 Cover ltr Notice of Depostions Roberts  Kropp.pdf"
+        },
+        {
           "label": "City of Rapid City's Notice to Take Deposition of Steve Kropp",
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Notice to Take Deposition of Steve Kropp.pdf"
         },
@@ -52,17 +60,9 @@
         {
           "label": "DANR Motion to Amend Procedural and Scheduling Order",
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/DANR Mtn to Amend Procedural and Scheduling Order.service 09 04 26.pdf"
-        },
-        {
-          "label": "Resubmittal of Petitioners' July 8 2026 Joint Motion Regarding Coordination and Use of Discovery",
-          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Resubmittal of Petitioners' Joint Motion Regarding Coordination and Use of Discovery.pdf"
-        },
-        {
-          "label": "Petitioner's Joint Reply to City of Rapid City's Objection to Petitioner's Joint Motion to Extend Scheduling Order",
-          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Aug 21 2026 Pet Reply City Obj Ext Sch Order.pdf"
         }
       ],
-      "total_docs": 43,
+      "total_docs": 45,
       "latest_doc_date": "0000-00-00"
     },
     {

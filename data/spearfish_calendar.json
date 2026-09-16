@@ -2398,5 +2398,35 @@
     "start_dt": "Tue, 01 Sep 2026 09:11:52 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3680",
+    "title": "Toddler Story Time",
+    "slug": "toddler-story-time",
+    "description": "<strong>Event date:</strong> September 30, 2026 <br /><strong>Event Time: </strong>10:30 AM - 11:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Early literacy activities for ages 1-3.",
+    "published": "Thu, 06 Aug 2026 10:21:51 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:21:51 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3747",
+    "title": "Open House: Spearfish Creek Preservation Plan and Shape Spearfish",
+    "slug": "open-house-spearfish-creek-preservation-plan-and-shape-spearfish",
+    "description": "<strong>Event date:</strong> September 30, 2026 <br /><strong>Event Time: </strong>03:00 PM - 06:00 PM<br /><strong>Location:</strong> <br />115 S Canyon<br />Spearfish, SD 57783<br /><strong>Description:</strong><br />The community is invited to a \"drop-in\" style open house for the second phase of the Spearfish Creek Preservation Plan and Shape Spearfish, a project to create a new Unified Development Code (UDC). Join us to learn more about these exciting projects, ask questions, and offer input.",
+    "published": "Wed, 16 Sep 2026 10:57:27 -0700",
+    "start_dt": "Wed, 16 Sep 2026 10:57:27 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3279",
+    "title": "City Council Study Session",
+    "slug": "city-council-study-session",
+    "description": "<strong>Event date:</strong> September 30, 2026 <br /><strong>Event Time: </strong>05:15 PM - 06:15 PM<br /><strong>Location:</strong> <br />City Hall<br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Mon, 15 Dec 2025 13:20:59 -0700",
+    "start_dt": "Mon, 15 Dec 2025 13:20:59 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

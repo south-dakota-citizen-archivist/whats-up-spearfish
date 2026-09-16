@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-15T19:59:00.237357+00:00",
+  "fetched_at": "2026-09-16T19:51:48.777546+00:00",
   "notices": [
     {
       "notice_type": "Water Rights \u2014 Future Use Review",
@@ -410,6 +410,48 @@
       ]
     },
     {
+      "notice_type": "Air Quality Permit",
+      "deadline": "10/16/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/16/2026&name=Marshall 2 RNG, LLC&pntype=aq&description=Marshall 2 RNG, LLC operates a biogas production facility. The Department recommends approval of an air quality construction permit modification.",
+      "description": "Marshall 2 RNG, LLC operates a biogas production facility. The Department recommends approval of an air quality construction permit modification.",
+      "location": "Veblen",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/M2Rpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/dp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/M2Rsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "10/16/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/16/2026&name=Marshall 2 RNG, LLC&pntype=aq&description=Marshall 2 RNG, LLC operates a biogas production facility. The Department recommends approval of a minor air quality operating permit.",
+      "description": "Marshall 2 RNG, LLC operates a biogas production facility. The Department recommends approval of a minor air quality operating permit.",
+      "location": "Veblen",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/M2Rpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/M2Rdp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/M2Rsb.pdf"
+        }
+      ]
+    },
+    {
       "notice_type": "Mining License",
       "deadline": "",
       "comment_url": "",
@@ -455,6 +497,20 @@
       "notice_type": "Mining License",
       "deadline": "",
       "comment_url": "",
+      "name": "Greg Kroupa",
+      "description": "Notice of Intent to Mine Gravel",
+      "location": "17 miles NW of White Lake, SD",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://media.sd.gov/danr/MM/S1165001PublicNotice.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Mining License",
+      "deadline": "",
+      "comment_url": "",
       "name": "Hanson County Highway Department",
       "description": "Notice of Intent to mine gravel",
       "location": "2 miles west & 1/4 mile south of Salem SD.",
@@ -462,6 +518,62 @@
         {
           "label": "Public Notice",
           "url": "https://media.sd.gov/danr/MM/S227012PublicNotice.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Mining License",
+      "deadline": "",
+      "comment_url": "",
+      "name": "Kelly Jackson",
+      "description": "Notice of Intent to Mine Gravel",
+      "location": "1.5 miles SE of Crow Lake",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://media.sd.gov/danr/MM/S1168001PublicNotice.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Mining License",
+      "deadline": "",
+      "comment_url": "",
+      "name": "Northern Plains, LLC",
+      "description": "Notice of Intent to mine gravel",
+      "location": "West central Tripp County near the intersection of 282nd St, along 304th ave.",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://media.sd.gov/danr/MM/S634008PublicNotice.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Mining License",
+      "deadline": "",
+      "comment_url": "",
+      "name": "Northern Plains, LLC",
+      "description": "Notice of Intent to Mine gravel",
+      "location": "West centeral Tripp County near the intersection of 282ns St, along 304th ave",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://media.sd.gov/danr/MM/S634009PublicNotice.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Mining License",
+      "deadline": "",
+      "comment_url": "",
+      "name": "Troy Baloun",
+      "description": "Notice of Intent to Mine Gravel",
+      "location": "2 miles west of intersection hwy 47 and 176th st, Hyde County.",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://media.sd.gov/danr/MM/S1164001PublicNotice.pdf"
         }
       ]
     }

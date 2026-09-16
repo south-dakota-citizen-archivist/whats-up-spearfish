@@ -4376,5 +4376,38 @@
     "image_url": "https://npr.brightspotcdn.com/ff/80/bcd08f674c42bf9523b2d573402b/headers-768x432.png",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-09-16/corps-of-engineers-union-county-partner-on-study-in-wake-of-2024-flooding",
+    "title": "Corps of Engineers, Union County partner on study in wake of 2024 flooding",
+    "slug": "sdpb-corps-of-engineers-union-county-partner-on-study-in-wake-of-2024-flooding",
+    "published": "2026-09-16",
+    "byline": "By SDPB News Staff",
+    "description": "A local and federal partnership is moving forward with a flood risk study for a portion of the Big Sioux River that recently faced major flooding.",
+    "image_url": "https://npr.brightspotcdn.com/1b/ca/84a83ca74981810b727822f4cafa/mccook-lake-flood-aerial.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/elections/2026-09-16/new-guidance-issued-on-federal-only-voters-by-secretary-of-state-amid-lawsuit",
+    "title": "New guidance issued on federal-only voters by secretary of state amid lawsuit",
+    "slug": "sdpb-new-guidance-issued-on-federal-only-voters-by-secretary-of-state-amid",
+    "published": "2026-09-16",
+    "byline": "By Jackson Dircks",
+    "description": "South Dakota’s Secretary of State is offering new guidance to county auditors on how to address voters who are deemed “federal-only” under a new state law. It comes amid a lawsuit in which a voter rights group sued Secretary Monae Johnson.",
+    "image_url": "https://npr.brightspotcdn.com/e8/5e/cc6c89a74adfb25ec1b10c843f06/monae-johnson-sdpb.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-09-15/sioux-falls-leaders-working-to-put-executive-order-targeting-license-plate-readers",
+    "title": "Sioux Falls leaders working to put executive order targeting license plate readers",
+    "slug": "sdpb-sioux-falls-leaders-working-to-put-executive-order-targeting-license-plate",
+    "published": "2026-09-15",
+    "byline": "By Jackson Dircks",
+    "description": "Sioux Falls City leaders are collaborating on an executive order to put guardrails around automatic license plate reading cameras. The cameras have seen recent public pushback.",
+    "image_url": "https://npr.brightspotcdn.com/65/03/10f7326a414ba0e139dc438bfea2/erickson-and-thum.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]
