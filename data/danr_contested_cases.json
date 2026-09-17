@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-16T19:55:10.133056+00:00",
+  "fetched_at": "2026-09-17T20:04:52.547764+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -126,27 +126,27 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID130",
       "documents": [
         {
-          "label": "DANR's Response to Petitioners' Objections to Venue",
-          "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/DANRs Response to Petitioners Objections to Venue.pdf"
+          "label": "Correspondence re Certificate of Service for City of Custer's Expert Disclosures",
+          "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/Corr re Certificate of Service for Custer Expert Disclosures.pdf"
         },
         {
-          "label": "Custer's Brief in Response to Motion to Transfer to Office of Hearing Examiners",
-          "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/Custers Brief in Response to Motion to Transfer to OHE.pdf"
+          "label": "DANR's Disclosure of Expert Witnesses",
+          "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/DANR Disclosure of Expert Witnesses.pdf"
         },
         {
-          "label": "Response to Motion to Transfer to Office of Hearing Examiners",
-          "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/Response to Motion to Transfer to OHE.pdf"
+          "label": "Reply in Support of Motion to Transfer & Affidavit",
+          "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/Reply in Support of Motion to Transfer & Affidavit.pdf"
         },
         {
-          "label": "Affidavit of Michelle Jeffrey for Support & Joinder to Transfer to Office of Hearing Examiners",
-          "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/Affidavit MJ Support and Joinder to Transfer to OHE.pdf"
+          "label": "Petitioner's Reply in Support of Motion to Transfer to OHE & Affidavits",
+          "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/Petitioners Reply in Support of Motion to Transfer to OHE & Affidavits.pdf"
         },
         {
-          "label": "Affidavit of Todd Konechne for Support & Joinder to Transfer to Office of Hearing Examiners",
-          "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/Affidavit TK Support and Joinder to Transfer to OHE.pdf"
+          "label": "Letter to All Parties re City of Custer's Response to Petitioner's Objections to Venue",
+          "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/Letter re Custers Response to Petitioners Objections to Venue.pdf"
         }
       ],
-      "total_docs": 31,
+      "total_docs": 36,
       "latest_doc_date": "0000-00-00"
     },
     {
@@ -157,6 +157,10 @@
       "description": "Reissuance of the CAFO general permit as two separate general permits: a federally delegated National Pollutant Discharge Elimination System (NPDES) general permit and a state issued general permit.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID125",
       "documents": [
+        {
+          "label": "Amended Comments",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/CommentsAmended.pdf"
+        },
         {
           "label": "Public Notice of Contested Case Hearing",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/HearingPublicNotice.pdf"
@@ -172,13 +176,9 @@
         {
           "label": "Sending Draft Response to Comments to Petitioners and Commenters",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/DraftResponseCommentsLtr.pdf"
-        },
-        {
-          "label": "Draft Response to Comments",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/DraftResponseComments.pdf"
         }
       ],
-      "total_docs": 12,
+      "total_docs": 13,
       "latest_doc_date": "0000-00-00"
     },
     {
