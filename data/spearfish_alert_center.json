@@ -138,5 +138,15 @@
     "start_dt": "Thu, 03 Sep 2026 08:14:10 -0700",
     "record_type": "alert",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/AlertCenter.aspx?AID=71",
+    "title": "City of Spearfish - City Hall, Library & Rec Center Closure",
+    "slug": "city-of-spearfish-city-hall-library-rec-center-closure",
+    "description": "City offices, Library & Spearfish Rec Center will be closed from 8am-2pm on Wed, Sept 23rd for an all-staff training. There are no changes to the trash collection schedule & the Restricted Use Site will remain open during its normal operation hours.",
+    "published": "Tue, 15 Sep 2026 15:35:49 -0700",
+    "start_dt": "Tue, 15 Sep 2026 15:35:49 -0700",
+    "record_type": "alert",
+    "source_label": "City of Spearfish"
   }
 ]

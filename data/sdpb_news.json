@@ -4464,5 +4464,49 @@
     "image_url": "https://npr.brightspotcdn.com/3d/11/cefa292d49d9ab636ce01f2e9a80/promising-futures-photo.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/elections/2026-09-18/preliminary-injunction-on-voter-case-moot-after-secretary-of-state-reissues-guidance",
+    "title": "Preliminary injunction on voter case 'moot' after Secretary of State reissues guidance",
+    "slug": "sdpb-preliminary-injunction-on-voter-case-moot-after-secretary-of-state-reissues",
+    "published": "2026-09-18",
+    "byline": "By Jackson Dircks",
+    "description": "A federal court judge denies a preliminary injunction ordering the Secretary of State to issue new guidance on a new state voting law, following Secretary Monae Johnson voluntarily resolving the issue. District Court Judge Eric Schulte called the issue “moot” following the recent development.",
+    "image_url": "https://npr.brightspotcdn.com/8b/dc/c48aaec94310aaded418eb03f5c4/d9c85df94f-federalbuilding.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-09-18/sd-lottery-surpasses-4-billion-in-revenue-since-inception-in-1987",
+    "title": "SD lottery surpasses $4 billion in revenue since inception in 1987",
+    "slug": "sdpb-sd-lottery-surpasses-4-billion-in-revenue-since-inception-in-1987",
+    "published": "2026-09-18",
+    "byline": "By Jackson Dircks",
+    "description": "Since implementing the lottery, South Dakota has seen returns, and the state just surpassed a revenue milestone. The lottery commission also projects flat growth in total revenue this fiscal year.",
+    "image_url": "https://npr.brightspotcdn.com/05/12/31e08c3244c7a85008b9a12abfa7/screenshot-17-9-2026-143212-boardsandcommissions-sd-gov.jpeg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/healthcare/2026-09-18/award-winning-health-and-science-reporter-explores-midlife-momentum",
+    "title": "Award-winning health and science reporter explores midlife momentum",
+    "slug": "sdpb-award-winning-health-and-science-reporter-explores-midlife-momentum",
+    "published": "2026-09-18",
+    "byline": "By Lori Walsh",
+    "description": "A midlife moment sparked a new assignment for NPR's Allison Aubrey: Find women who were thrilled about midlife. Ask them their secrets. Study the research. Write a book about it.",
+    "image_url": "https://npr.brightspotcdn.com/49/96/c6d25bab45f79f71624cd8af42f0/your-turn-9781668207253-lg.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-09-17/taking-stock-of-the-response-to-lookout-fire-near-spearfish",
+    "title": "Taking stock of the response to Lookout Fire near Spearfish",
+    "slug": "sdpb-taking-stock-of-the-response-to-lookout-fire-near-spearfish",
+    "published": "2026-09-17",
+    "byline": "By C.J. Keene",
+    "description": "The Lookout Fire was within striking distance of the community of Spearfish before it was contained. Looking back on it, state fire officials say just because the temperatures are cooling off doesn’t mean fire season ends in the Black Hills.",
+    "image_url": "https://npr.brightspotcdn.com/e3/83/b725064a43569b8052de5dde4dd2/lookout-fire.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

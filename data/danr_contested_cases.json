@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-17T20:04:52.547764+00:00",
+  "fetched_at": "2026-09-18T19:29:09.285110+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -158,6 +158,14 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID125",
       "documents": [
         {
+          "label": "Order to Stay - Office of the Secretary",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/OrderStaySec.pdf"
+        },
+        {
+          "label": "Motion to Stay - Livestock Services Program",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/MotionStayLSP.pdf"
+        },
+        {
           "label": "Amended Comments",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/CommentsAmended.pdf"
         },
@@ -168,17 +176,9 @@
         {
           "label": "Notice of Prehearing Conference",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/PrehearingConfNotice.pdf"
-        },
-        {
-          "label": "Sending Contested Case Hearing Information to Commenters",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/HearingInfoLtr.pdf"
-        },
-        {
-          "label": "Sending Draft Response to Comments to Petitioners and Commenters",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/DraftResponseCommentsLtr.pdf"
         }
       ],
-      "total_docs": 13,
+      "total_docs": 15,
       "latest_doc_date": "0000-00-00"
     },
     {
