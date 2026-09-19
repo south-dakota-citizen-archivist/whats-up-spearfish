@@ -4508,5 +4508,16 @@
     "image_url": "https://npr.brightspotcdn.com/e3/83/b725064a43569b8052de5dde4dd2/lookout-fire.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/education/2026-09-18/harrisburg-educator-named-state-teacher-of-the-year",
+    "title": "Harrisburg educator named state Teacher of the Year",
+    "slug": "sdpb-harrisburg-educator-named-state-teacher-of-the-year",
+    "published": "2026-09-18",
+    "byline": "By SDPB News Staff",
+    "description": "The Department of Education announced Christian Berger as the Teacher of the Year this week.",
+    "image_url": "https://npr.brightspotcdn.com/5b/53/cb4435864571b5c5f71fe1314f71/7399e94d-d1ff-4751-9527-338010117628.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

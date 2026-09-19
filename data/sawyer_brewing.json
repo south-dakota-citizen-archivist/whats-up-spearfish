@@ -40,32 +40,6 @@
   },
   {
     "url": "https://www.sawyerbrewingco.com/menu",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/886dc41f-ef5c-411b-a594-7389de6df6a5/pcldark.jpg",
-    "title": "Premium Craft Lager",
-    "slug": "premium-craft-lager",
-    "category": "Light & Easy",
-    "description": "Premium ingredients for a premium craft lager.",
-    "abv": "4.2%",
-    "notes": "",
-    "prices": [
-      {
-        "price": 2.0,
-        "ounces": 5
-      },
-      {
-        "price": 3.5,
-        "ounces": 10
-      },
-      {
-        "price": 5.5,
-        "ounces": 16
-      }
-    ],
-    "record_type": "beer",
-    "source_label": "Sawyer Brewing Co."
-  },
-  {
-    "url": "https://www.sawyerbrewingco.com/menu",
     "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/9d6aa08f-2ea1-4189-83f3-1b6520fbbdf7/cadwebsitedarkpsd.jpg",
     "title": "Cadillac Couch Mexican Lager",
     "slug": "cadillac-couch-mexican-lager",

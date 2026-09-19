@@ -1,5 +1,18 @@
 [
   {
+    "url": "https://untappd.com/b/sawyer-brewing-co-dark-lager/5954054",
+    "title": "Dark Lager",
+    "slug": "dark-lager",
+    "category": "Lager - Dark",
+    "abv": "5.8%",
+    "ibu": "",
+    "brewery": "Sawyer Brewing Co",
+    "rating": "3.86",
+    "image_url": "https://labels.untappd.com/5954054",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
     "url": "https://untappd.com/b/samuel-adams-octoberfest/3942",
     "title": "Octoberfest",
     "slug": "octoberfest",
@@ -74,19 +87,6 @@
     "brewery": "Dakota Point Brewing",
     "rating": "3.76",
     "image_url": "https://labels.untappd.com/5991597",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
-    "url": "https://untappd.com/b/sawyer-brewing-co-citra-science/5920938",
-    "title": "Citra Science",
-    "slug": "citra-science",
-    "category": "Pale Ale - American",
-    "abv": "5.5%",
-    "ibu": "",
-    "brewery": "Sawyer Brewing Co",
-    "rating": "3.84",
-    "image_url": "https://labels.untappd.com/5920938",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"
   },
