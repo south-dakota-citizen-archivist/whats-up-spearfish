@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-19T19:09:29.981600+00:00",
+  "fetched_at": "2026-09-21T20:45:34.209635+00:00",
   "notices": [
     {
       "notice_type": "Water Rights \u2014 Future Use Review",
@@ -16,19 +16,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/7393-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Surface Water Enhancement & Restoration",
-      "deadline": "09/20/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=09/20/2026&name=Jeremy Hoff-dugout fill/wetland restoration&pntype=sw_er&description=The projects will remove watering dugouts that are no longer viable and restore wetland features to their original grade and aquatic community. The locations will be seeded with appropriate native grasses.",
-      "name": "Jeremy Hoff-dugout fill/wetland restoration",
-      "description": "The projects will remove watering dugouts that are no longer viable and restore wetland features to their original grade and aquatic community. The locations will be seeded with appropriate native grasses.",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/Hoff wetland McPherson PN.pdf"
         }
       ]
     },

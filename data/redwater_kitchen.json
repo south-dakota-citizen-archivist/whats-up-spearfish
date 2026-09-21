@@ -1,5 +1,18 @@
 [
   {
+    "url": "https://untappd.com/b/heavy-riff-brewing-company-love-gun/2862628",
+    "title": "Love Gun",
+    "slug": "love-gun",
+    "category": "Cream Ale",
+    "abv": "5.7%",
+    "ibu": "10",
+    "brewery": "Heavy Riff Brewing Company",
+    "rating": "3.87",
+    "image_url": "https://labels.untappd.com/2862628",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
     "url": "https://untappd.com/b/sawyer-brewing-co-dark-lager/5954054",
     "title": "Dark Lager",
     "slug": "dark-lager",
@@ -9,19 +22,6 @@
     "brewery": "Sawyer Brewing Co",
     "rating": "3.86",
     "image_url": "https://labels.untappd.com/5954054",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
-    "url": "https://untappd.com/b/samuel-adams-octoberfest/3942",
-    "title": "Octoberfest",
-    "slug": "octoberfest",
-    "category": "Märzen",
-    "abv": "5.3%",
-    "ibu": "16",
-    "brewery": "Samuel Adams",
-    "rating": "3.61",
-    "image_url": "https://labels.untappd.com/3942",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"
   },

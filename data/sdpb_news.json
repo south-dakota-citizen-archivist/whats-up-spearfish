@@ -4519,5 +4519,27 @@
     "image_url": "https://npr.brightspotcdn.com/5b/53/cb4435864571b5c5f71fe1314f71/7399e94d-d1ff-4751-9527-338010117628.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/healthcare/2026-09-21/mobridge-regional-hospital-and-clinics-complete-multimillion-dollar-expansion",
+    "title": "Mobridge Regional Hospital and Clinics complete multimillion dollar expansion",
+    "slug": "sdpb-mobridge-regional-hospital-and-clinics-complete-multimillion-dollar",
+    "published": "2026-09-21",
+    "byline": "By Jackson Dircks",
+    "description": "A community in north central South Dakota is celebrating one of the largest expansions in its regional hospital’s history.",
+    "image_url": "https://npr.brightspotcdn.com/f8/e2/4fd468094605af4c08f2aa82bc33/260910-p-rd462-1015.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-09-21/state-aeronautics-commission-adjusts-funding-policy-for-airports",
+    "title": "State Aeronautics Commission adjusts funding policy for airports",
+    "slug": "sdpb-state-aeronautics-commission-adjusts-funding-policy-for-airports",
+    "published": "2026-09-21",
+    "byline": "By C.J. Keene",
+    "description": "The keys to airport funding were loosened by the state Aeronautics Commission as several airports across South Dakota seek further funding.",
+    "image_url": "https://npr.brightspotcdn.com/a0/23/22b2ec244bf6b46dbfb7d7ca4f11/image-58.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

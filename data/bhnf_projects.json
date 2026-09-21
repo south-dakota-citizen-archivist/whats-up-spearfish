@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-19T19:12:24.539066+00:00",
+  "fetched_at": "2026-09-21T20:48:33.121738+00:00",
   "projects": [
     {
       "project_id": "66463",
@@ -396,22 +396,6 @@
       "district": "Mystic Ranger District",
       "purpose": "Special Use Management",
       "description": "Merztiotis Mining LLC is requesting authorization for a Private FLPMA Road Use Permit to provide legal access to private property located off NFSR 389 and NFSR 389.1G.",
-      "milestones": [],
-      "comment_period_date": null,
-      "comment_period_sort": "9999-99",
-      "location_summary": "",
-      "counties": [],
-      "contact": {},
-      "last_updated": ""
-    },
-    {
-      "project_id": "247339",
-      "title": "Michael Goodhope FLPMA Special Use Permit Project",
-      "url": "https://www.fs.usda.gov/r02/blackhills/projects/247339",
-      "status": "Completed",
-      "district": "Mystic Ranger District",
-      "purpose": "Special Use Management",
-      "description": "The Forest Service is proposes to issue a special use permit to construct and use a short, single land access road across National Forest System lands, providing reasonable access to a landlocked private parcel from an existing Forest road.",
       "milestones": [],
       "comment_period_date": null,
       "comment_period_sort": "9999-99",
