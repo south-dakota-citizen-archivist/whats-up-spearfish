@@ -529,5 +529,14 @@
     "source_label": "Spearfish School District",
     "channel_url": "https://www.youtube.com/@spearfishschooldistrictliv3794/streams",
     "record_type": "youtube_video"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=5Oedfp2QTY4",
+    "title": "Lawrence County Commission and Board of Adjustment Meetings - September 22, 2026",
+    "published": "2026-09-22",
+    "thumbnail_url": "https://i2.ytimg.com/vi/5Oedfp2QTY4/hqdefault.jpg",
+    "source_label": "Lawrence County",
+    "channel_url": "https://www.youtube.com/channel/UC2CZKGr9OGrsMcCZkW0_HMA",
+    "record_type": "youtube_video"
   }
 ]

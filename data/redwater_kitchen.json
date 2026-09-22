@@ -1,5 +1,18 @@
 [
   {
+    "url": "https://untappd.com/b/heavy-riff-brewing-company-runnin-riot/3675477",
+    "title": "Runnin' Riot",
+    "slug": "runnin-riot",
+    "category": "IPA - American",
+    "abv": "6.4%",
+    "ibu": "55",
+    "brewery": "Heavy Riff Brewing Company",
+    "rating": "3.7",
+    "image_url": "https://labels.untappd.com/3675477",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
     "url": "https://untappd.com/b/heavy-riff-brewing-company-love-gun/2862628",
     "title": "Love Gun",
     "slug": "love-gun",
@@ -61,19 +74,6 @@
     "brewery": "Outer Range Brewing Co.",
     "rating": "4.09",
     "image_url": "https://labels.untappd.com/2002572",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
-    "url": "https://untappd.com/b/kros-strain-brewing-fairy-nectar-ipa/2155786",
-    "title": "Fairy Nectar IPA",
-    "slug": "fairy-nectar-ipa",
-    "category": "IPA - New England / Hazy",
-    "abv": "6.2%",
-    "ibu": "62",
-    "brewery": "Kros Strain Brewing",
-    "rating": "3.96",
-    "image_url": "https://labels.untappd.com/2155786",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"
   },

@@ -2468,5 +2468,45 @@
     "start_dt": "Thu, 18 Jun 2026 16:04:43 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3670",
+    "title": "Toddler Story Time",
+    "slug": "toddler-story-time",
+    "description": "<strong>Event date:</strong> October 6, 2026 <br /><strong>Event Time: </strong>09:30 AM - 10:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Early literacy activities for ages 1-3.",
+    "published": "Thu, 06 Aug 2026 10:16:29 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:16:29 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3648",
+    "title": "Story Time",
+    "slug": "story-time",
+    "description": "<strong>Event date:</strong> October 6, 2026 <br /><strong>Event Time: </strong>10:30 AM - 11:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Stories and activities for ages 4+",
+    "published": "Thu, 06 Aug 2026 10:14:02 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:14:02 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3422",
+    "title": "Planning Commission",
+    "slug": "planning-commission",
+    "description": "<strong>Event date:</strong> October 6, 2026 <br /><strong>Event Time: </strong>04:00 PM - 05:00 PM<br /><strong>Location:</strong> <br />City Hall <br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Wed, 08 Apr 2026 11:04:48 -0700",
+    "start_dt": "Wed, 08 Apr 2026 11:04:48 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3728",
+    "title": "Spanish Conversation Hour",
+    "slug": "spanish-conversation-hour",
+    "description": "<strong>Event date:</strong> October 6, 2026 <br /><strong>Event Time: </strong>05:45 PM - 06:45 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />If you are looking to brush up on or improve your Spanish-speaking skills, this program is for you. This is not a class but rather an opportunity to visit with others in Spanish in a supportive and friendly environment to improve comfort and fluency.",
+    "published": "Tue, 01 Sep 2026 09:11:52 -0700",
+    "start_dt": "Tue, 01 Sep 2026 09:11:52 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]
