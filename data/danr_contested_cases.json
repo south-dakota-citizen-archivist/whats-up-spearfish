@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-22T20:04:10.169603+00:00",
+  "fetched_at": "2026-09-23T20:03:39.199882+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -350,6 +350,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID17",
       "documents": [
         {
+          "label": "Notice of Withdrawal",
+          "url": "https://danr.sd.gov/wrimage/pub/2685-2_2686-2_WITHDRAWLAPPROVAL.pdf"
+        },
+        {
           "label": "Request to Withdraw Application for",
           "url": "https://danr.sd.gov/wrimage/pub/2685-2_2686-2_WithdrawalRequest.pdf"
         },
@@ -362,7 +366,7 @@
           "url": "https://danr.sd.gov/powertech/wrptech.aspx"
         }
       ],
-      "total_docs": 3,
+      "total_docs": 4,
       "latest_doc_date": "0000-00-00"
     },
     {
@@ -373,6 +377,10 @@
       "description": "Appropriate and place to beneficial use up to 18.938 cubic feet of water per second (cfs) limited to an annual consumptive use volume up to 274.2 acre feet of water (equivalent to 0.38 cfs or 170 gpm) from multiple wells completed into the Inyan Kara aquifer at a depth between 200 to 800 feet.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID18",
       "documents": [
+        {
+          "label": "Notice of Withdrawal",
+          "url": "https://danr.sd.gov/wrimage/pub/2685-2_2686-2_WITHDRAWLAPPROVAL.pdf"
+        },
         {
           "label": "Request to Withdraw Application",
           "url": "https://danr.sd.gov/wrimage/pub/2685-2_2686-2_WithdrawalRequest.pdf"
@@ -386,7 +394,7 @@
           "url": "https://danr.sd.gov/powertech/wrptech.aspx"
         }
       ],
-      "total_docs": 3,
+      "total_docs": 4,
       "latest_doc_date": "0000-00-00"
     },
     {
@@ -430,6 +438,14 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID95",
       "documents": [
         {
+          "label": "Approval of Request for Withdrawal of Application Nos. 2685-2 & 2686-2",
+          "url": "https://danr.sd.gov/wrimage/pub/2685-2_2686-2_WITHDRAWLAPPROVAL.pdf"
+        },
+        {
+          "label": "Request for Withdrawal of Application Nos. 2685-2 & 2686-2",
+          "url": "https://danr.sd.gov/wrimage/pub/2685-2_2686-2_WithdrawalRequest.pdf"
+        },
+        {
           "label": "Notice of Appeal, Order for Transcript, Order Waiving Case Filing Statements for Individual Intervenors, and Statement of Issues - Powertech (USA), Inc.",
           "url": "https://danr.sd.gov/wrimage/pub/PT_apl1.pdf"
         },
@@ -440,17 +456,9 @@
         {
           "label": "Adoption of Order denying Powertech's Motion to amend procedural order denying Clean Water Alliance's motion to allow electronic service, and updating parties of record",
           "url": "https://danr.sd.gov/wrimage/pub/PT_ord2.pdf"
-        },
-        {
-          "label": "Objections to Order Denying Powertech's Motion to amend procedural order denying Clean Water Alliance's motion to allow electronic service, and updating parties of record - Richard M. Williams, Counsel for Powertech (USA), Inc.",
-          "url": "https://danr.sd.gov/wrimage/pub/PT_rsp4.pdf"
-        },
-        {
-          "label": "Notice of hearing concerning order denying Powertech motion to amend procedural order, denying Clean Water Alliance's motion to allow electronic service, and updating parties of record",
-          "url": "https://danr.sd.gov/wrimage/pub/PT_not1.pdf"
         }
       ],
-      "total_docs": 28,
+      "total_docs": 30,
       "latest_doc_date": "0000-00-00"
     }
   ]

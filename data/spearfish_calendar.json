@@ -2508,5 +2508,25 @@
     "start_dt": "Tue, 01 Sep 2026 09:11:52 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3681",
+    "title": "Toddler Story Time",
+    "slug": "toddler-story-time",
+    "description": "<strong>Event date:</strong> October 7, 2026 <br /><strong>Event Time: </strong>10:30 AM - 11:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Early literacy activities for ages 1-3.",
+    "published": "Thu, 06 Aug 2026 10:21:51 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:21:51 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3512",
+    "title": "Lego Club (Ages 5-7)",
+    "slug": "lego-club-ages-5-7",
+    "description": "<strong>Event date:</strong> October 7, 2026 <br /><strong>Event Time: </strong>03:30 PM - 04:30 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Join us for a once monthly Lego Club. Imagine. Build. Display! Show off your designs and creations. This program is designed for AGES 5-7.<br /><br />Please do not bring your own Legos.",
+    "published": "Fri, 10 Apr 2026 13:40:59 -0700",
+    "start_dt": "Fri, 10 Apr 2026 13:40:59 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

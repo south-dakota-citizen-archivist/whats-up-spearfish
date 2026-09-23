@@ -85,7 +85,7 @@
     "abv": "7.1%",
     "ibu": "",
     "brewery": "Sawyer Brewing Co",
-    "rating": "3.78",
+    "rating": "3.8",
     "image_url": "https://labels.untappd.com/6040733",
     "record_type": "beer",
     "source_label": "Killian's"
@@ -208,15 +208,15 @@
     "source_label": "Killian's"
   },
   {
-    "url": "https://untappd.com/b/left-hand-brewing-company-milk-stout-nitro/82680",
-    "title": "Milk Stout Nitro",
-    "slug": "milk-stout-nitro",
-    "category": "Stout - Milk / Sweet",
-    "abv": "6%",
-    "ibu": "25",
+    "url": "https://untappd.com/b/left-hand-brewing-company-pumpkin-spice-latte-nitro-2026/6874160",
+    "title": "Pumpkin Spice Latte Nitro (2026)",
+    "slug": "pumpkin-spice-latte-nitro-2026",
+    "category": "Pumpkin / Yam Beer",
+    "abv": "7%",
+    "ibu": "",
     "brewery": "Left Hand Brewing Company",
-    "rating": "3.93",
-    "image_url": "https://labels.untappd.com/82680",
+    "rating": "N/A",
+    "image_url": "https://labels.untappd.com/6874160",
     "record_type": "beer",
     "source_label": "Killian's"
   }
