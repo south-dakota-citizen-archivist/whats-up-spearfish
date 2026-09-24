@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-23T20:03:52.668918+00:00",
+  "fetched_at": "2026-09-24T20:21:07.804220+00:00",
   "projects": [
     {
       "project_id": "66463",
@@ -35,37 +35,6 @@
         "phone": "605-642-4622"
       },
       "last_updated": "7/2/2024"
-    },
-    {
-      "project_id": "421275",
-      "title": "World Choice Investments LLC (1880s Train) Special Use Permit & Road Use Permit",
-      "url": "https://www.fs.usda.gov/r02/blackhills/projects/421275",
-      "status": "In Progress",
-      "district": "Mystic Ranger District",
-      "purpose": "Special Use Management",
-      "description": "The proposed action is to issue three special use authorizations to the new owner: a special use permit for the existing storage yard, a Private FLPMA Road Use Permit, and a Forest FLPMA Road Use Permit.",
-      "milestones": [
-        {
-          "name": "NEPA Start Date",
-          "date": "6/6/2026"
-        },
-        {
-          "name": "Finding/Decision Date",
-          "date": "9/23/2026"
-        }
-      ],
-      "comment_period_date": null,
-      "comment_period_sort": "9999-99",
-      "location_summary": "National Forest System (NFS) lands associated with operation of the 1880 Train, including a storage yard and road access near NFSR 354.1H",
-      "counties": [
-        "Pennington"
-      ],
-      "contact": {
-        "name": "Thawney Stottler",
-        "email": "thawney.stottler@usda.gov",
-        "phone": "605-343-1567"
-      },
-      "last_updated": "9/23/2026"
     },
     {
       "project_id": "48758",
@@ -731,6 +700,22 @@
       "district": "Northern Hills Ranger District",
       "purpose": "Recreation Management|Special Use Management",
       "description": "The proponent has requested a one-year special use permit to conduct a marathon that would begin at Cement Ridge in WY and follow National Forest System roads and US Hwy 14 to the finish in Spearfish, SD.",
+      "milestones": [],
+      "comment_period_date": null,
+      "comment_period_sort": "9999-99",
+      "location_summary": "",
+      "counties": [],
+      "contact": {},
+      "last_updated": ""
+    },
+    {
+      "project_id": "421275",
+      "title": "World Choice Investments LLC (1880s Train) Special Use Permit & Road Use Permit",
+      "url": "https://www.fs.usda.gov/r02/blackhills/projects/421275",
+      "status": "Completed",
+      "district": "Mystic Ranger District",
+      "purpose": "Special Use Management",
+      "description": "The proposed action is to issue three special use authorizations to the new owner: a special use permit for the existing storage yard, a Private FLPMA Road Use Permit, and a Forest FLPMA Road Use Permit.",
       "milestones": [],
       "comment_period_date": null,
       "comment_period_sort": "9999-99",

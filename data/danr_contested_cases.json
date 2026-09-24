@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-23T20:03:39.199882+00:00",
+  "fetched_at": "2026-09-24T20:20:57.557485+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -42,6 +42,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID124",
       "documents": [
         {
+          "label": "Petitioners' Joint Motion to Set Contested Hearing Location in Rapid City",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Sept 23 2026 Motion Hrg Held in RC.pdf"
+        },
+        {
           "label": "Petitioners' Supplemental Report to Expert Report of Harold Barber, Jr.",
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Petitioners_Supplemental_Report_to_Expert_Report_of_Harold_Barber.pdf"
         },
@@ -56,13 +60,9 @@
         {
           "label": "Notice of Entry of Amended Procedural and Scheduling Order",
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/ltr_dmm Rapid City Landfill - Letter and NOE Amended Procedural  Scheduling Order 9-8-2026.pdf"
-        },
-        {
-          "label": "DANR Motion to Amend Procedural and Scheduling Order",
-          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/DANR Mtn to Amend Procedural and Scheduling Order.service 09 04 26.pdf"
         }
       ],
-      "total_docs": 45,
+      "total_docs": 46,
       "latest_doc_date": "0000-00-00"
     },
     {
@@ -158,6 +158,14 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID125",
       "documents": [
         {
+          "label": "Sending Draft Amended Response to Comments",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/DraftAmendedRTCLtr.pdf"
+        },
+        {
+          "label": "Draft Amended Response to Comments",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/DraftAmendedRTC.pdf"
+        },
+        {
           "label": "Order to Stay - Office of the Secretary",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/OrderStaySec.pdf"
         },
@@ -168,17 +176,9 @@
         {
           "label": "Amended Comments",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/CommentsAmended.pdf"
-        },
-        {
-          "label": "Public Notice of Contested Case Hearing",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/HearingPublicNotice.pdf"
-        },
-        {
-          "label": "Notice of Prehearing Conference",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/PrehearingConfNotice.pdf"
         }
       ],
-      "total_docs": 15,
+      "total_docs": 17,
       "latest_doc_date": "0000-00-00"
     },
     {

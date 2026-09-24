@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-23T20:00:41.429486+00:00",
+  "fetched_at": "2026-09-24T20:17:53.339069+00:00",
   "notices": [
     {
       "notice_type": "Concentrated Animal Feeding Operations (State Permit)",
@@ -428,44 +428,20 @@
       ]
     },
     {
-      "notice_type": "Mining License",
+      "notice_type": "Mining Permit",
       "deadline": "",
-      "comment_url": "",
-      "name": "Carlson Crushing & Excavating, LLC",
-      "description": "Notice of intent to mine gravel",
-      "location": "6 miles north, 8 miles east, and 1 mile south of Britton SD.",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=&name=Bret Aye&pntype=mm_app&description=DANR Recommendation for transfer of small scale mine permit.",
+      "name": "Bret Aye",
+      "description": "DANR Recommendation for transfer of small scale mine permit.",
+      "location": "Three miles east of Rochford, SD",
       "links": [
         {
           "label": "Public Notice",
-          "url": "https://media.sd.gov/danr/MM/S904010PublicNotice.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Mining License",
-      "deadline": "",
-      "comment_url": "",
-      "name": "Central Specialties, Inc",
-      "description": "Notice of Intent to Mine Gravel",
-      "location": "south side of 109th Street, 1.0 mile east of the intersection of 109th Street with 429th Avenue, within Nordland Township",
-      "links": [
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/MineralsMining/AyeSMTransferRecommendation.pdf"
+        },
         {
-          "label": "Public Notice",
-          "url": "https://media.sd.gov/danr/MM/S733008PublicNotice.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Mining License",
-      "deadline": "",
-      "comment_url": "",
-      "name": "Dixie Veurink Trucking",
-      "description": "Notice of Intent to Mine Gravel",
-      "location": "NW of Mitchell",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://media.sd.gov/danr/MM/S167042PublicNotice.pdf"
+          "label": "Application",
+          "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/NewMinePermitTransfers.aspx"
         }
       ]
     },
@@ -480,20 +456,6 @@
         {
           "label": "Public Notice",
           "url": "https://media.sd.gov/danr/MM/S1165001PublicNotice.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Mining License",
-      "deadline": "",
-      "comment_url": "",
-      "name": "Hanson County Highway Department",
-      "description": "Notice of Intent to mine gravel",
-      "location": "2 miles west & 1/4 mile south of Salem SD.",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://media.sd.gov/danr/MM/S227012PublicNotice.pdf"
         }
       ]
     },

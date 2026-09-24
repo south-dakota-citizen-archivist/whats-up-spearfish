@@ -1138,5 +1138,29 @@
     "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/09/Play-Some-Petty-Date-6.png",
     "record_type": "event",
     "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "A Midnight Menagerie",
+    "url": "https://www.matthewsopera.com/event/a-midnight-menagerie/",
+    "slug": "a-midnight-menagerie",
+    "start_dt": "2026-10-29T19:00:00-06:00",
+    "end_dt": "2026-10-29T21:00:00-06:00",
+    "description": "You’re invited into a world of music, movement, and a little Halloween magic. On October 29, The Matthews Opera House & Arts Center will welcome The Midnight Menagerie, a colorful ... Read more \\n",
+    "location": "",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/09/Play-Some-Petty-Date-8.png",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "Play Some Petty",
+    "url": "https://www.matthewsopera.com/event/play-some-petty-2026/",
+    "slug": "play-some-petty",
+    "start_dt": "2026-11-06T19:00:00-07:00",
+    "end_dt": "2026-11-06T21:30:00-07:00",
+    "description": "The Biscuit Lifters play a Tom Petty tribute at The Matthews on Friday, November 6. Doors at 6:30 PM, tickets $25 to $40. \\n",
+    "location": "The Matthews Opera House – Theatre",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/09/play-some-petty-nov-6-2026.jpg",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
   }
 ]

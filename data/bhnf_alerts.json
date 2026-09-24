@@ -31,6 +31,16 @@
   },
   {
     "record_type": "alert",
+    "title": "Stage 2 Fire Restrictions in Black Hills NF in Wyoming",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/stage-2-fire-restrictions-black-hills-nf-wyoming",
+    "description": "Stage 2 Fire Restrictions will remain in effect on all National Forest lands in the Bearlodge and Hell Canyon Ranger Districts on the Black Hills National Forest in the State of Wyoming beginning 12:00 p.m., September 24, 2026. This order supersedes BKF-194-2026 prohibiting the same or similar…",
+    "published": "2026-09-24",
+    "source_label": "BHNF",
+    "alert_type": "fire-restriction",
+    "forest_order": "BKF-198-2026"
+  },
+  {
+    "record_type": "alert",
     "title": "Veteran's Point Area and Trail Closure",
     "url": "https://www.fs.usda.gov/r02/blackhills/alerts/veterans-point-area-and-trail-closure",
     "description": "Area and trail closure for Veteran's Point while construction work is being conducted.",
@@ -58,16 +68,6 @@
     "source_label": "BHNF",
     "alert_type": "information",
     "forest_order": "BKF"
-  },
-  {
-    "record_type": "alert",
-    "title": "Stage 2 Fire Restrictions in Black Hills NF in WY and SD begin July 27, 2026",
-    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/stage-2-fire-restrictions-black-hills-nf-wy-and-sd-begin-july-27-2026",
-    "description": "Stage 2 Fire Restrictions will take effect on all National Forest lands in the Bearlodge, Northern Hills, Mystic, and Hell Canyon Ranger Districts on the Black Hills National Forest in the State of South Dakota and the State of Wyoming beginning 12:01 am, July 27, 2026. Stage 2 Restrictions…",
-    "published": "2026-07-27",
-    "source_label": "BHNF",
-    "alert_type": "fire-restriction",
-    "forest_order": "BKF-194-2026"
   },
   {
     "record_type": "alert",

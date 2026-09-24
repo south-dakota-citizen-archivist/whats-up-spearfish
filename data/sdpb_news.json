@@ -4618,5 +4618,27 @@
     "image_url": "https://npr.brightspotcdn.com/76/ee/dc7feecb4c7bb0065a1f8221e09e/0a9b26b03f-buffalo-round-up-chad-coppess.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-09-24/rapid-city-monument-health-hospital-open-after-bomb-threat",
+    "title": "Rapid City Monument Health hospital open after bomb threat",
+    "slug": "sdpb-rapid-city-monument-health-hospital-open-after-bomb-threat",
+    "published": "2026-09-24",
+    "byline": "By C.J. Keene",
+    "description": "A bomb threat called into Rapid City’s main hospital was ultimately deemed a hoax. It comes amid a string of supposed bombs across the nation, and local leaders say the origin of such calls remains unclear.",
+    "image_url": "https://npr.brightspotcdn.com/01/3b/d7db9d284103aab6ed6185d575d6/image-2026-09-24t135132-708.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-09-23/northrop-grumman-facility-coming-to-rapid-city",
+    "title": "Northrop Grumman facility coming to Rapid City",
+    "slug": "sdpb-northrop-grumman-facility-coming-to-rapid-city",
+    "published": "2026-09-23",
+    "byline": "By C.J. Keene",
+    "description": "Northrop Grumman, an aircraft manufacturer among the world’s largest defense contractors, is coming to Rapid City. It coincides with the incoming arrival of the B-21 bomber, manufactured by the corporation. Leaders say it symbolizes an investment in the community.",
+    "image_url": "https://npr.brightspotcdn.com/c5/2c/eba76e4846dfbe3bd33525774d02/image-2026-09-23t140024-408.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]
