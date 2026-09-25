@@ -148,5 +148,15 @@
     "start_dt": "Tue, 15 Sep 2026 15:35:49 -0700",
     "record_type": "alert",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/AlertCenter.aspx?AID=72",
+    "title": "City of Spearfish - Downtown Street Closure",
+    "slug": "city-of-spearfish-downtown-street-closure",
+    "description": "Temporary Main Street closure from Jackson Blvd to Grant St beginning on September 28, 2026.",
+    "published": "Fri, 25 Sep 2026 08:09:25 -0700",
+    "start_dt": "Fri, 25 Sep 2026 08:09:25 -0700",
+    "record_type": "alert",
+    "source_label": "City of Spearfish"
   }
 ]

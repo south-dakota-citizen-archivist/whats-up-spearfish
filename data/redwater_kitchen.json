@@ -1,5 +1,18 @@
 [
   {
+    "url": "https://untappd.com/b/sawyer-brewing-co-night-owl-coffee-stout/5678992",
+    "title": "Night Owl Coffee Stout",
+    "slug": "night-owl-coffee-stout",
+    "category": "Stout - Coffee",
+    "abv": "7%",
+    "ibu": "",
+    "brewery": "Sawyer Brewing Co",
+    "rating": "3.9",
+    "image_url": "https://labels.untappd.com/5678992",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
     "url": "https://untappd.com/b/sawyer-brewing-co-blood-orange-blonde-ale/3627064",
     "title": "Blood Orange Blonde Ale",
     "slug": "blood-orange-blonde-ale",
@@ -137,7 +150,7 @@
     "abv": "11.9%",
     "ibu": "",
     "brewery": "Central Waters Brewing Company",
-    "rating": "4.21",
+    "rating": "4.2",
     "image_url": "https://labels.untappd.com/6756630",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"

@@ -2337,5 +2337,50 @@
     "category": "Campus Calendar/Events",
     "record_type": "event",
     "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "646fe32e-f456-4a54-b06d-d79e7c9e7167",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/646fe32e-f456-4a54-b06d-d79e7c9e7167",
+    "title": "Veteran Author and BHSU Alum Van Ormer to Visit BHSU",
+    "slug": "veteran-author-and-bhsu-alum-van-ormer-to-visit-bhsu",
+    "description": "Join us on Friday, September 25 at 1:00 PM in the Veterans Resource Center, located in the basement of the Student Union at the Spearfish campus, for a special presentation by Marine Corps veteran, accomplished author, and BHSU alumnus Alan Van Ormer. Alan has built a prolific writing career, authoring several works of fiction that explore life and experiences in the Midwest. During his visit, he’ll share stories from his time in the Marine Corps, his experience as a student at Black Hills State University, and his journey to becoming a published fiction author. Alan will also take a closer look at the books he has written, discussing the experiences and inspiration behind his work. The presentation will conclude with an open Q&A session, giving you an opportunity to ask questions about his military service, his time at BHSU, his writing career, and his books. Alan's BIO: https://wingedpublications.com/authors/alan-van-ormer",
+    "start_dt": "2026-09-25T19:00",
+    "end_dt": "2026-09-25T19:00",
+    "location": "Student Union Veterans Resource Center located on bottom floor",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "Greg Krajewski",
+    "tags": [
+      "BHSU Event",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "99273713-dba7-45ca-92ae-e38bc2befa37",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/99273713-dba7-45ca-92ae-e38bc2befa37",
+    "title": "Lakota Omniciye Indian Taco Fundraiser",
+    "slug": "lakota-omniciye-indian-taco-fundraiser",
+    "description": "Come support the Lakota Omniciye as they host the first Indian Taco Sale Fundraiser of the semester. Tacos will be sold 10/07/2026 under the BHSU Student Union bookstore at 11 am until sold out. All proceeds will support the annual Wacipi held in April 17th, 2027. Thank you!",
+    "start_dt": "2026-10-07T17:00",
+    "end_dt": "2026-10-07T17:00",
+    "location": "Student Union Under Bookstore",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "Jordon Mendoza",
+    "tags": [
+      "BHSU Event",
+      "Center for American Indian Studies",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
   }
 ]

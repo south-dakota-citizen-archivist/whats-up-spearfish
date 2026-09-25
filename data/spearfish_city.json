@@ -69774,5 +69774,37 @@
     "title": "PRFAB Minutes September 17, 2026",
     "doc_type": "Minutes",
     "file_url": "https://spearfishsd.portal.civicclerk.com/event/2245/files/minutes/8880"
+  },
+  {
+    "event_id": 2175,
+    "event_name": "City Council Meeting",
+    "category": "City Council",
+    "start_dt": "2026-09-21T17:30:00Z",
+    "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2175",
+    "has_media": true,
+    "media_url": "https://cpmedia.azureedge.net/spearfishsd/aefed7ab5f.mp4",
+    "record_type": "document",
+    "source_label": "City of Spearfish",
+    "url": "https://spearfishsd.portal.civicclerk.com/event/2175/files/minutes/8882",
+    "title": "City Council Regular Session Minutes 9/21/2026",
+    "doc_type": "Minutes",
+    "file_url": "https://spearfishsd.portal.civicclerk.com/event/2175/files/minutes/8882"
+  },
+  {
+    "event_id": 2194,
+    "event_name": "City Council Study Session",
+    "category": "City Council",
+    "start_dt": "2026-09-16T16:15:00Z",
+    "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2194",
+    "has_media": true,
+    "media_url": "https://cpmedia.azureedge.net/spearfishsd/607614c315.mp4",
+    "record_type": "document",
+    "source_label": "City of Spearfish",
+    "url": "https://spearfishsd.portal.civicclerk.com/event/2194/files/minutes/8881",
+    "title": "City Council Study Session Minutes 9/16/2026",
+    "doc_type": "Minutes",
+    "file_url": "https://spearfishsd.portal.civicclerk.com/event/2194/files/minutes/8881"
   }
 ]

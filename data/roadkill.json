@@ -1,7 +1,111 @@
 {
-  "fetched_at": "2026-09-24T20:21:19.914385+00:00",
+  "fetched_at": "2026-09-25T20:18:42.212218+00:00",
   "lookback_days": 30,
   "records": [
+    {
+      "objectid": 70756,
+      "date": "2026-09-25",
+      "species": "Mule Deer",
+      "highway": "I90",
+      "sex": "Female",
+      "present": "Yes",
+      "comments": null,
+      "contractor": "Tony Hanig",
+      "lat": 44.116519,
+      "lon": -103.11498,
+      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70756/attachments/13473"
+    },
+    {
+      "objectid": 70759,
+      "date": "2026-09-25",
+      "species": "White-tailed Deer",
+      "highway": "I90",
+      "sex": "Unknown",
+      "present": "Yes",
+      "comments": null,
+      "contractor": "Tony Hanig",
+      "lat": 44.476822,
+      "lon": -103.653539,
+      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70759/attachments/13476"
+    },
+    {
+      "objectid": 70761,
+      "date": "2026-09-25",
+      "species": "Small Animal",
+      "highway": "79",
+      "sex": "",
+      "present": "Yes",
+      "comments": null,
+      "contractor": "Chris Moeller",
+      "lat": 43.814027,
+      "lon": -103.203497,
+      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70761/attachments/13478"
+    },
+    {
+      "objectid": 70763,
+      "date": "2026-09-25",
+      "species": "White-tailed Deer",
+      "highway": "I90",
+      "sex": "Female",
+      "present": "Yes",
+      "comments": null,
+      "contractor": "Tony Hanig",
+      "lat": 44.546049,
+      "lon": -104.015299,
+      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70763/attachments/13480"
+    },
+    {
+      "objectid": 70764,
+      "date": "2026-09-25",
+      "species": "White-tailed Deer",
+      "highway": "I90",
+      "sex": "Female",
+      "present": "Yes",
+      "comments": null,
+      "contractor": "Tony Hanig",
+      "lat": 44.525869,
+      "lon": -103.941431,
+      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70764/attachments/13481"
+    },
+    {
+      "objectid": 70766,
+      "date": "2026-09-25",
+      "species": "White-tailed Deer",
+      "highway": "I90",
+      "sex": "Female",
+      "present": "Yes",
+      "comments": null,
+      "contractor": "Tony Hanig",
+      "lat": 44.403114,
+      "lon": -103.520566,
+      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70766/attachments/13483"
+    },
+    {
+      "objectid": 70769,
+      "date": "2026-09-25",
+      "species": "Mule Deer",
+      "highway": "I90",
+      "sex": "Unknown",
+      "present": "Yes",
+      "comments": null,
+      "contractor": "Tony Hanig",
+      "lat": 44.284487,
+      "lon": -103.425033,
+      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70769/attachments/13486"
+    },
+    {
+      "objectid": 70770,
+      "date": "2026-09-25",
+      "species": "White-tailed Deer",
+      "highway": "I90",
+      "sex": "Male",
+      "present": "Yes",
+      "comments": null,
+      "contractor": "Tony Hanig",
+      "lat": 44.105848,
+      "lon": -103.243585,
+      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70770/attachments/13487"
+    },
     {
       "objectid": 70694,
       "date": "2026-09-22",
@@ -4304,32 +4408,6 @@
       "lat": 44.2276,
       "lon": -103.128355,
       "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70105/attachments/12819"
-    },
-    {
-      "objectid": 69938,
-      "date": "2026-08-26",
-      "species": "White-tailed Deer",
-      "highway": "18",
-      "sex": "Female",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "G Arrow Livestock",
-      "lat": 44.332723,
-      "lon": -103.439224,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/69938/attachments/12652"
-    },
-    {
-      "objectid": 69939,
-      "date": "2026-08-26",
-      "species": "Mule Deer",
-      "highway": "18",
-      "sex": "Male",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "G Arrow Livestock",
-      "lat": 44.347813,
-      "lon": -103.450731,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/69939/attachments/12653"
     }
   ]
 }
