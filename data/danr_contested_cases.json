@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-25T20:18:18.622976+00:00",
+  "fetched_at": "2026-09-26T19:37:08.492405+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -158,6 +158,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID125",
       "documents": [
         {
+          "label": "Notice of Amended Response to Comments",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/NoticeDraftAmendedRTC.pdf"
+        },
+        {
           "label": "Sending Draft Amended Response to Comments",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/DraftAmendedRTCLtr.pdf"
         },
@@ -172,13 +176,9 @@
         {
           "label": "Motion to Stay - Livestock Services Program",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/MotionStayLSP.pdf"
-        },
-        {
-          "label": "Amended Comments",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/CommentsAmended.pdf"
         }
       ],
-      "total_docs": 17,
+      "total_docs": 18,
       "latest_doc_date": "0000-00-00"
     },
     {
