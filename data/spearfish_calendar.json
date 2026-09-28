@@ -2558,5 +2558,25 @@
     "start_dt": "Thu, 24 Sep 2026 14:51:41 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3749",
+    "title": "Black Hills Literacy Council Training",
+    "slug": "black-hills-literacy-council-training",
+    "description": "<strong>Event date:</strong> October 10, 2026 <br /><strong>Event Time: </strong>12:00 PM - 05:00 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Become an Adult Literacy Volunteer Tutor with free training from Literacy Council of the Black Hills. Call 605-391-0854 for more information about the program, or talk to a librarian.",
+    "published": "Mon, 28 Sep 2026 14:59:30 -0700",
+    "start_dt": "Mon, 28 Sep 2026 14:59:30 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3326",
+    "title": "Library CLOSED for Native American Day",
+    "slug": "library-closed-for-native-american-day",
+    "description": "<strong>Event date:</strong> October 12, 2026 <br /><strong>Event Time: </strong>12:00 AM - 11:59 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783",
+    "published": "Tue, 06 Jan 2026 13:44:20 -0700",
+    "start_dt": "Tue, 06 Jan 2026 13:44:20 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

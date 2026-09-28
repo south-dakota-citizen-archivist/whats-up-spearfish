@@ -1,28 +1,6 @@
 {
-  "fetched_at": "2026-09-27T20:00:26.253666+00:00",
+  "fetched_at": "2026-09-28T22:24:20.035930+00:00",
   "notices": [
-    {
-      "notice_type": "Surface Water Discharge (NPDES)",
-      "deadline": "09/27/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=09/27/2026&name=City of Harrisburg&pntype=sw_npdes&description=Proposing to modify to correct a technical mistake in the calculation of the effluent ammonia-nitrogen limits. A unit conversion error was made during the water quality-based effluent limit calculation. Ammonia-nitrogen limits are modified as shown below.",
-      "name": "City of Harrisburg",
-      "description": "Proposing to modify to correct a technical mistake in the calculation of the effluent ammonia-nitrogen limits. A unit conversion error was made during the water quality-based effluent limit calculation. Ammonia-nitrogen limits are modified as shown below.",
-      "location": "Lincoln",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/Harrisburg Mod PN.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/Harrisburg Modified Permit.pdf"
-        },
-        {
-          "label": "Statement of Basis",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/Harrisburg Modified SOB.pdf"
-        }
-      ]
-    },
     {
       "notice_type": "Water Rights",
       "deadline": "09/28/2026",

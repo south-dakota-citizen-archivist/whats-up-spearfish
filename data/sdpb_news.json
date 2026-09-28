@@ -4684,5 +4684,38 @@
     "image_url": "https://npr.brightspotcdn.com/19/9e/1a11c25046b1b07cae5ab7e1c890/eda-uzunlar-interviewing-woman-cafe-1.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/elections/2026-09-28/sdpb-news-sd-news-watch-gubernatorial-debate-airs-tonight",
+    "title": "SDPB News/SD News Watch gubernatorial debate airs tonight",
+    "slug": "sdpb-sdpb-news-sd-news-watch-gubernatorial-debate-airs-tonight",
+    "published": "2026-09-28",
+    "byline": "By SDPB News Staff",
+    "description": "<br/>The two candidates vying for South Dakota governor meet Monday night in a debate hosted by SDPB and South Dakota News Watch.",
+    "image_url": "https://npr.brightspotcdn.com/1e/01/1fb3ae904ab084a1e0008a1d77f2/rhoden-ahlers.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-09-28/state-ag-releases-policy-on-constitutional-disclosure-requirements-for-criminal-cases",
+    "title": "State AG releases policy on Constitutional disclosure requirements for criminal cases",
+    "slug": "sdpb-state-ag-releases-policy-on-constitutional-disclosure-requirements-for",
+    "published": "2026-09-28",
+    "byline": "By SDPB News Staff",
+    "description": "A state task force has developed a recommended model policy to help South Dakota prosecutors and law enforcement agencies address constitutional disclosure requirements in criminal cases.",
+    "image_url": "https://npr.brightspotcdn.com/c4/a6/444f1f7445cb993bbc74dca324a2/gavel-2492011-1280.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-09-28/asia-society-listening-tour-comes-as-u-s-china-relationship-looms-over-states-top-industry",
+    "title": "Asia Society Listening Tour comes as U.S.-China relationship looms over state’s top industry",
+    "slug": "sdpb-asia-society-listening-tour-comes-as-u-s-china-relationship-looms-over-top",
+    "published": "2026-09-28",
+    "byline": "By Jackson Dircks",
+    "description": "South Dakota farmers are coming off the sting of a 2025 harvest where China bought significantly less U.S. soybeans. That includes South Dakota soybeans.",
+    "image_url": "https://npr.brightspotcdn.com/56/f3/e1a0a181455280445bb5c81d8580/image-73.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

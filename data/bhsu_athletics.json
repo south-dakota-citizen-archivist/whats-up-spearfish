@@ -7822,5 +7822,29 @@
     "result_opp": null,
     "record_type": "event",
     "source_label": "BHSU Athletics"
+  },
+  {
+    "game_id": 10765,
+    "url": "https://bhsuathletics.com/schedule.aspx?schedule=528",
+    "title": "Women's Triathlon at Prairie State Cup",
+    "slug": "women-s-triathlon-at-prairie-state-cup",
+    "sport": "Women's Triathlon",
+    "sport_shortname": "wtri",
+    "opponent": "Prairie State Cup",
+    "home_away": "A",
+    "is_conference": false,
+    "start_dt": "2026-10-03T00:00:00",
+    "time": "TBA",
+    "tbd": true,
+    "location": "Clinton Lake State Recreation Area, Dewitt, Ill.",
+    "conference": null,
+    "status": "A",
+    "video_url": null,
+    "stats_url": null,
+    "tickets_url": null,
+    "result_team": null,
+    "result_opp": null,
+    "record_type": "event",
+    "source_label": "BHSU Athletics"
   }
 ]

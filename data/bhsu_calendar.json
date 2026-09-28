@@ -2382,5 +2382,51 @@
     "category": "Campus Calendar/Events",
     "record_type": "event",
     "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "8ee7ca64-acf2-4fa6-9026-96e72394e09a",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/8ee7ca64-acf2-4fa6-9026-96e72394e09a",
+    "title": "Brett Kallusky | Artist Talk",
+    "slug": "brett-kallusky-artist-talk",
+    "description": "Join Brett Kallusky for an artist talk exploring the ideas, places, and photographic practices behind Waste Land. Taking its title from T.S. Eliot’s landmark poem, Waste Land explores landscapes shaped by environmental change, industrial intervention, and social precarity. Through photography, Brett Kallusky examines the uneasy coexistence of destruction and renewal, asking what remains after human ambition, consumption, and neglect have altered the landscape and what forms of life continue to emerge within those spaces.",
+    "start_dt": "2026-10-02T19:00",
+    "end_dt": "2026-10-02T20:00",
+    "location": "Club Buzz",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "Michael Baum",
+    "tags": [
+      "BHSU Event",
+      "Academics",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "f8ae362c-4a13-48f8-a525-120941c88b32",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/f8ae362c-4a13-48f8-a525-120941c88b32",
+    "title": "Rachel Berg SURF AiR Exhibition Reception",
+    "slug": "rachel-berg-surf-air-exhibition-reception",
+    "description": "Kapemni | twisting between worlds Rachel Olivia Berg, 2026 Artist in Residence at the Sanford Underground Research Facility, explores questions that emerge at the convergence of scientific investigations into the fundamental nature of matter and Indigenous ways of knowing. Drawing upon creation stories and star knowledge of the Oceti Sakowin, Berg investigates the intersections of art, science, spirit, and land. Through painting, sculpture, cyanotype, and installation, Berg considers the movement of knowledge, the development of new ways of understanding, and the methodologies humans use to approach unseen dimensions of existence. Centering on He Sapa (The Black Hills), her work reflects on the complex histories held within the land, examines how art and scientific inquiry open pathways toward knowledge, healing, and an expansive relationship with understanding matter in the universe.",
+    "start_dt": "2026-10-15T23:00",
+    "end_dt": "2026-10-16T01:00",
+    "location": "Ruddell Gallery Inside Student Union",
+    "image_url": "https://bhsu.edu/_images/images/events/events-images/Rachel_Berg%20SURF.jpg",
+    "image_alt": "Globe and triangle next to each other, representing the Twist between Worlds.",
+    "organizer": "Michael Baum",
+    "tags": [
+      "BHSU Event",
+      "Academics",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
   }
 ]
