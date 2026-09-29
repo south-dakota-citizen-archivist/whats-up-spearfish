@@ -2428,5 +2428,28 @@
     "category": "Campus Calendar/Events",
     "record_type": "event",
     "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "6d22b37e-db73-4ebe-b42e-bcecb0eac3a0",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/6d22b37e-db73-4ebe-b42e-bcecb0eac3a0",
+    "title": "Endgame Play",
+    "slug": "endgame-play",
+    "description": "End Game By Samuel Beckett Directed by Owen Vaughn An absurdist masterpiece! Play Woodburn Black Box November 6, 7, 13, 14 at 7 pm | November 8, 15 at 2 pm Mild Adult Themes Endgame is an absurdist, tragicomic one-act play by the Irish playwright Samuel Beckett. First performed in London in 1957, it is about a blind, paralyzed, domineering elderly man, his geriatric parents, and his servile companion in an abandoned house in a fictional post-apocalyptic wasteland, all of whom await an unspecified “end”. Much of the play’s content consists of terse, back and forth dialogue between the characters reminiscent of bantering, along with trivial stage actions. The plot is also supplanted by the development of a grotesque story-within-a-story that the character Hamm is relating. The play’s title refers to chess and frames the characters as acting out a losing battle with each other or their fate. Ticket Info: Adult - $20 Seniors (62+) & Military - $12 Youth (K-12) & Non-BHSU Students - $10 All BHSU Faculty, Staff and Students with ID – FREE",
+    "start_dt": "2026-11-07T02:00",
+    "end_dt": "2026-11-07T04:00",
+    "location": "Woodburn Black Box Theater",
+    "image_url": "https://bhsu.edu/_images/images/events/events-images/Endgame.jpg",
+    "image_alt": "Black Endgame play poster ",
+    "organizer": "Casey Hibbert",
+    "tags": [
+      "BHSU Event",
+      "Theatre",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "https://black-hills-state-university-theatre-ai1a.vivenushop.com/section/end-game-wz7h",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
   }
 ]

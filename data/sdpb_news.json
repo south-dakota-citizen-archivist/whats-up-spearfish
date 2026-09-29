@@ -4717,5 +4717,60 @@
     "image_url": "https://npr.brightspotcdn.com/56/f3/e1a0a181455280445bb5c81d8580/image-73.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-09-29/rapid-city-votes-to-take-legal-action-against-star-village",
+    "title": "Rapid City votes to take legal action against Star Village landlords",
+    "slug": "sdpb-rapid-city-votes-to-take-legal-action-against-star-village-landlords",
+    "published": "2026-09-29",
+    "byline": "By C.J. Keene",
+    "description": "Rapid City’s Council has moved to pursue legal action against a land management business for a half-million dollars in unpaid utility bills. Tzadik Management owns Star Village, Oxford Square Apartments, and the Lacrosse Estates Apartments.",
+    "image_url": "https://npr.brightspotcdn.com/d1/2f/e57e0f9346a981baca0486934e10/bac00fed25-rapid-city-hall.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/arts-life/2026-09-29/sanford-lab-seeking-applications-for-artists-in-residency-program",
+    "title": "Sanford lab seeking applications for Artists in Residency program",
+    "slug": "sdpb-sanford-lab-seeking-applications-for-artists-in-residency-program",
+    "published": "2026-09-29",
+    "byline": "By C.J. Keene",
+    "description": "Each year, one artist is selected as the artist in residence in partnership with Black Hills State University.",
+    "image_url": "https://npr.brightspotcdn.com/ae/37/e3cf7b694b3eaff346fd258115f8/surf-2023-by-stephen-kenny.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/arts-life/2026-09-29/new-jan-and-herb-conn-documentary-gets-south-dakota-premiere-at-black-hills-film-festival",
+    "title": "New Jan and Herb Conn documentary gets South Dakota premiere at Black Hills Film Festival",
+    "slug": "sdpb-new-jan-and-herb-conn-documentary-gets-south-dakota-premiere-at-black-hills",
+    "published": "2026-09-29",
+    "byline": "By Lori Walsh",
+    "description": "A new feature-length documentary about the Conns showcases how an adventurous couple found freedom on the spires and in the caves of South Dakota.",
+    "image_url": "https://npr.brightspotcdn.com/59/e0/7173c10d4a4c88531b6e088e0057/jan-herb-truck.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/elections/2026-09-28/rhoden-ahlers-discuss-affordability-water-infrastructure-and-other-issues-at-sdpb-sd-news-watch-debate",
+    "title": "Rhoden, Ahlers discuss affordability, water infrastructure and other issues at SDPB/SD News Watch debate",
+    "slug": "sdpb-rhoden-ahlers-discuss-affordability-water-infrastructure-and-other-issues",
+    "published": "2026-09-28",
+    "byline": "By Jackson Dircks",
+    "description": "Incumbent Republican Gov. Larry Rhoden and Democrat Dan Ahlers squared off in a gubernatorial debate where they fielded questions on over a dozen different topics.",
+    "image_url": "https://npr.brightspotcdn.com/3f/6c/4807baa240cda12465706a88f92d/dsc-6865.JPG",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/elections/2026-09-28/2026-south-dakota-gubernatorial-debate",
+    "title": "2026 South Dakota Gubernatorial Debate",
+    "slug": "sdpb-2026-south-dakota-gubernatorial-debate",
+    "published": "2026-09-28",
+    "byline": "By SDPB Staff, SDPB News Staff",
+    "description": "The 2026 South Dakota Gubernatorial Debate between Gov. Larry Rhoden and Dan Ahlers.",
+    "image_url": "https://i.ytimg.com/vi/ldDEvE7YNSU/hqdefault.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

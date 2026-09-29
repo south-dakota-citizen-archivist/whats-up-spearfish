@@ -1,5 +1,31 @@
 [
   {
+    "url": "https://untappd.com/b/samuel-adams-octoberfest/3942",
+    "title": "Octoberfest",
+    "slug": "octoberfest",
+    "category": "Märzen",
+    "abv": "5.3%",
+    "ibu": "16",
+    "brewery": "Samuel Adams",
+    "rating": "3.61",
+    "image_url": "https://labels.untappd.com/3942",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
+    "url": "https://untappd.com/b/left-hand-brewing-company-oktoberfest/6775",
+    "title": "Oktoberfest",
+    "slug": "oktoberfest",
+    "category": "Märzen",
+    "abv": "6.6%",
+    "ibu": "24",
+    "brewery": "Left Hand Brewing Company",
+    "rating": "3.59",
+    "image_url": "https://labels.untappd.com/6775",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
     "url": "https://untappd.com/b/sawyer-brewing-co-night-owl-coffee-stout/5678992",
     "title": "Night Owl Coffee Stout",
     "slug": "night-owl-coffee-stout",
@@ -65,19 +91,6 @@
     "source_label": "Redwater Kitchen"
   },
   {
-    "url": "https://untappd.com/b/phat-fish-brewery-jalapeno-honey-blonde-ale/3743484",
-    "title": "Jalapeno Honey Blonde Ale",
-    "slug": "jalapeno-honey-blonde-ale",
-    "category": "Blonde / Golden Ale - Other",
-    "abv": "5.6%",
-    "ibu": "22",
-    "brewery": "Phat Fish Brewery",
-    "rating": "3.59",
-    "image_url": "https://labels.untappd.com/3743484",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
     "url": "https://untappd.com/b/surly-brewing-company-overrated/302880",
     "title": "OverRated",
     "slug": "overrated",
@@ -117,19 +130,6 @@
     "source_label": "Redwater Kitchen"
   },
   {
-    "url": "https://untappd.com/b/infusion-brewing-company-pumpkin-vanilla-bean/2366611",
-    "title": "Pumpkin Vanilla Bean",
-    "slug": "pumpkin-vanilla-bean",
-    "category": "Pumpkin / Yam Beer",
-    "abv": "4.8%",
-    "ibu": "18",
-    "brewery": "Infusion Brewing Company",
-    "rating": "3.66",
-    "image_url": "https://labels.untappd.com/2366611",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
     "url": "https://untappd.com/b/blake-s-hard-cider-co-cider-mill-donut/5938883",
     "title": "Cider Mill Donut",
     "slug": "cider-mill-donut",
@@ -139,19 +139,6 @@
     "brewery": "Blake’s Hard Cider Co.",
     "rating": "3.62",
     "image_url": "https://labels.untappd.com/5938883",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
-    "url": "https://untappd.com/b/central-waters-brewing-company-brewer-s-reserve-chocolate-kringle-stout/6756630",
-    "title": "Brewer's Reserve Chocolate Kringle Stout",
-    "slug": "brewer-s-reserve-chocolate-kringle-stout",
-    "category": "Stout - Imperial / Double Pastry",
-    "abv": "11.9%",
-    "ibu": "",
-    "brewery": "Central Waters Brewing Company",
-    "rating": "4.2",
-    "image_url": "https://labels.untappd.com/6756630",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"
   },

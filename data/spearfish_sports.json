@@ -26574,5 +26574,53 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20260929012546460cce18b92acfd4e",
+    "url": "https://gobound.com/direct/comps/h20260929012546460cce18b92acfd4e/show",
+    "title": "Debate & Individual Events: Spearfish Novice (Varsity)",
+    "slug": "debate-individual-events-spearfish-novice-varsity",
+    "sport": "Debate & Individual Events",
+    "level": "Varsity",
+    "sex": "coed",
+    "description": "Varsity Debate & Individual Events - Spearfish Novice",
+    "start_dt": "2026-11-03T23:00:00",
+    "end_dt": "2026-11-04T04:00:00",
+    "location": "Spearfish High School",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h202506110858588140b7ee26523474b",
+    "url": "https://gobound.com/direct/comps/h202506110858588140b7ee26523474b/show",
+    "title": "Debate & Individual Events: Spearfish Tournament (Varsity)",
+    "slug": "debate-individual-events-spearfish-tournament-varsity",
+    "sport": "Debate & Individual Events",
+    "level": "",
+    "sex": "coed",
+    "description": "Varsity Debate & Individual Events - Spearfish Tournament",
+    "start_dt": "2026-12-04T23:00:00",
+    "end_dt": "2026-12-05T04:00:00",
+    "location": "Spearfish High School",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20250611085904494a99809dcd16c46",
+    "url": "https://gobound.com/direct/comps/h20250611085904494a99809dcd16c46/show",
+    "title": "Debate & Individual Events: Spearfish Tournament (Varsity)",
+    "slug": "debate-individual-events-spearfish-tournament-varsity",
+    "sport": "Debate & Individual Events",
+    "level": "",
+    "sex": "coed",
+    "description": "Varsity Debate & Individual Events - Spearfish Tournament",
+    "start_dt": "2026-12-05T16:00:00",
+    "end_dt": "2026-12-06T00:00:00",
+    "location": "Spearfish High School",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]
