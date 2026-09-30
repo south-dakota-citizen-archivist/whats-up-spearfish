@@ -2618,5 +2618,55 @@
     "start_dt": "Tue, 01 Sep 2026 09:11:52 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3758",
+    "title": "City Council Special Session",
+    "slug": "city-council-special-session",
+    "description": "<strong>Event date:</strong> September 30, 2026 <br /><strong>Event Time: </strong>04:15 PM - 11:59 PM<br /><strong>Location:</strong> <br />City Hall<br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Tue, 29 Sep 2026 15:56:52 -0700",
+    "start_dt": "Tue, 29 Sep 2026 15:56:52 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3660",
+    "title": "Story Time",
+    "slug": "story-time",
+    "description": "<strong>Event date:</strong> October 14, 2026 <br /><strong>Event Time: </strong>09:30 AM - 10:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Stories and activities for ages 4+",
+    "published": "Thu, 24 Sep 2026 14:51:41 -0700",
+    "start_dt": "Thu, 24 Sep 2026 14:51:41 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3682",
+    "title": "Toddler Story Time",
+    "slug": "toddler-story-time",
+    "description": "<strong>Event date:</strong> October 14, 2026 <br /><strong>Event Time: </strong>10:30 AM - 11:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Early literacy activities for ages 1-3.",
+    "published": "Thu, 06 Aug 2026 10:21:51 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:21:51 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3281",
+    "title": "City Council Study Session",
+    "slug": "city-council-study-session",
+    "description": "<strong>Event date:</strong> October 14, 2026 <br /><strong>Event Time: </strong>05:15 PM - 06:15 PM<br /><strong>Location:</strong> <br />City Hall<br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Mon, 15 Dec 2025 13:21:25 -0700",
+    "start_dt": "Mon, 15 Dec 2025 13:21:25 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3618",
+    "title": "Autumn Trio musical performance",
+    "slug": "autumn-trio-musical-performance",
+    "description": "<strong>Event date:</strong> October 14, 2026 <br /><strong>Event Time: </strong>05:30 PM - 06:30 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />The Autumn Trio will perform their popular arrangements of folk and classical music. The trio features Katrina Garnett on flute, Chris Davis on guitar, and Rodney Garnett on alto flute and 19th century flute",
+    "published": "Tue, 16 Jun 2026 09:44:47 -0700",
+    "start_dt": "Tue, 16 Jun 2026 09:44:47 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

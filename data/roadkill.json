@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-29T21:17:05.815898+00:00",
+  "fetched_at": "2026-09-30T21:14:49.060293+00:00",
   "lookback_days": 30,
   "records": [
     {
@@ -6033,84 +6033,6 @@
       "lat": 44.539785,
       "lon": -103.86149,
       "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70371/attachments/13086"
-    },
-    {
-      "objectid": 70120,
-      "date": "2026-08-31",
-      "species": "White-tailed Deer",
-      "highway": "16",
-      "sex": "Female",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Chris Moeller",
-      "lat": 43.973174,
-      "lon": -103.310453,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70120/attachments/12834"
-    },
-    {
-      "objectid": 70121,
-      "date": "2026-08-31",
-      "species": "White-tailed Deer",
-      "highway": "385",
-      "sex": "Female",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Chris Moeller",
-      "lat": 43.762539,
-      "lon": -103.608767,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70121/attachments/12835"
-    },
-    {
-      "objectid": 70122,
-      "date": "2026-08-31",
-      "species": "White-tailed Deer",
-      "highway": "385",
-      "sex": "Unknown",
-      "present": "No",
-      "comments": null,
-      "contractor": "Chris Moeller",
-      "lat": 43.738084,
-      "lon": -103.606509,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70122/attachments/12836"
-    },
-    {
-      "objectid": 70123,
-      "date": "2026-08-31",
-      "species": "Small Animal",
-      "highway": "18",
-      "sex": "",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Chris Moeller",
-      "lat": 43.41907,
-      "lon": -103.458632,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70123/attachments/12837"
-    },
-    {
-      "objectid": 70124,
-      "date": "2026-08-31",
-      "species": "Small Animal",
-      "highway": "18",
-      "sex": "",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Chris Moeller",
-      "lat": 43.419068,
-      "lon": -103.458646,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70124/attachments/12838"
-    },
-    {
-      "objectid": 70134,
-      "date": "2026-08-31",
-      "species": "White-tailed Deer",
-      "highway": "",
-      "sex": "Male",
-      "present": "Yes",
-      "comments": "Hwy 16b mm 67.4",
-      "contractor": "Chris Moeller",
-      "lat": 44.032361,
-      "lon": -103.20566,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70134/attachments/12848"
     }
   ]
 }

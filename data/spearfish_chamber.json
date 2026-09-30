@@ -3716,5 +3716,18 @@
     "website": "https://www.spearfishmuseum.org/events",
     "record_type": "event",
     "source_label": "Spearfish Chamber"
+  },
+  {
+    "url": "https://business.spearfishchamber.org/events/details/reagan-day-celebration-with-vfw-30875",
+    "title": "Reagan Day Celebration with VFW",
+    "slug": "reagan-day-celebration-with-vfw",
+    "start_dt": "2026-10-10 5:00 PM MDT",
+    "end_dt": "2026-10-10 8:00 PM MDT",
+    "location": "VFW Spearfish",
+    "fees": "Event Tickets $50 Rifle Raffle: $20 Per Chance",
+    "description": "7th Annual Reagan Day Celebration Social starts at 5:00 PM and Dinner will be served at 6:00 PM",
+    "website": "",
+    "record_type": "event",
+    "source_label": "Spearfish Chamber"
   }
 ]

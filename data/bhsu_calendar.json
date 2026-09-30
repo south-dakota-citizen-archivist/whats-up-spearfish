@@ -2451,5 +2451,28 @@
     "category": "Campus Calendar/Events",
     "record_type": "event",
     "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "e8a682d2-9510-41b5-ba26-ec0851f78383",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/e8a682d2-9510-41b5-ba26-ec0851f78383",
+    "title": "Fiddler on the Roof",
+    "slug": "fiddler-on-the-roof",
+    "description": "Fiddler on the Roof Book by Joseph Stein Music by Jerry Bock Lyrics by Sheldon Harwick Original Production Directed & Choreographed by Jerome Robbins Award Winning Musical! In collaboration with the BHSU Music Department Directed by Dr. Nancy Roberts Music Direction by Dr. Nancy Roberts and Dr. Jonathon Nero Musical Newly Renovated Woodburn Theatre, 2nd Floor Woodburn Hall October 9, 10, 16, 17 at 7 pm | October 11 and 18 at 2 pm For the Whole Family! Based on Sholom Aleichem’s Tevye and his Daughters, Fiddler on the Roof is the beloved story of the small, tradition-steeped town of Anatevka, Russia, where Jews and Russians live in delicate balance. During the course of the show, the time-honored traditions of Anatevka are both embraced and challenged by Tevye and his colorful community, as they witness his daughters, Tzeitel, Hodel and Chava, grow up and fall in love in a time of extraordinary change. Fiddler on the Roof’s Broadway premier became the longest-running Broadway musical in history, a title it maintained for almost 10 years. It is a story that captures the essential human longings for love, community, success, freedom, family, and meaning. Fiddler features such iconic songs as the beautiful “Sunrise, Sunset,” the boisterous “If I Were a Rich Man”, and the classic “Matchmaker, Matchmaker.” Ticket Info: Adult - $27 Seniors (62+) & Military- $20 Youth (K-12) & Non-BHSU Students - $15 All BHSU Faculty, Staff and Students with ID – FREE",
+    "start_dt": "2026-10-10T01:00",
+    "end_dt": "2026-10-10T03:00",
+    "location": "Woodburn Theatre 2nd Floor Woodburn Hall",
+    "image_url": "https://bhsu.edu/_images/images/events/events-images/FiddlerRoof.jpg",
+    "image_alt": "Man with instrument on the top of a roof with a moon behind him.",
+    "organizer": "Casey Hibbert",
+    "tags": [
+      "BHSU Event",
+      "Theatre",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "https://black-hills-state-university-theatre-ai1a.vivenushop.com/section/fiddler-on-the-roof-krt1",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
   }
 ]

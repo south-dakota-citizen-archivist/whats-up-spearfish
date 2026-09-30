@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-29T21:16:39.564529+00:00",
+  "fetched_at": "2026-09-30T21:14:23.667159+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -190,27 +190,27 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID132",
       "documents": [
         {
+          "label": "Supplemental Pre-Hearing Submission - Counsel for Applicant",
+          "url": "https://danr.sd.gov/wrimage/pub/9008-3_PreHearingSub2_App.pdf"
+        },
+        {
+          "label": "Pre-Hearing Submission - Counsel for Applicant",
+          "url": "https://danr.sd.gov/wrimage/pub/9008-3_PreHearingSub_App.pdf"
+        },
+        {
+          "label": "Notice of Appearance - Counsel for Applicant",
+          "url": "https://danr.sd.gov/wrimage/pub/9008-3_NoticeOfAppear_App.pdf"
+        },
+        {
           "label": "Notice of Hearing",
           "url": "https://danr.sd.gov/wrimage/pub/9008-3_NOH_1.pdf"
         },
         {
           "label": "Petition in Opposition",
           "url": "https://danr.sd.gov/wrimage/pub/9008-3_pet.pdf"
-        },
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/9008-3_app.pdf"
-        },
-        {
-          "label": "Report & Recommendation",
-          "url": "https://danr.sd.gov/wrimage/pub/9008-3_rec.pdf"
-        },
-        {
-          "label": "Application for Water Permit",
-          "url": "https://danr.sd.gov/wrimage/pub/9008-3_apl.pdf"
         }
       ],
-      "total_docs": 5,
+      "total_docs": 8,
       "latest_doc_date": "0000-00-00"
     },
     {

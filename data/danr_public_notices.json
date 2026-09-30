@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-29T21:13:53.849532+00:00",
+  "fetched_at": "2026-09-30T21:11:30.389038+00:00",
   "notices": [
     {
       "notice_type": "Surface Water Enhancement & Restoration",
@@ -292,6 +292,27 @@
         {
           "label": "Application Review",
           "url": "http://danr.sd.gov/Environment/AirQuality/PN/GL15sb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "10/30/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/30/2026&name=Huron Energy, LLC&pntype=aq&description=Huron Energy, LLC operates an ethanol plant in Huron. The Department recommends issuance of an air quality construction permit.",
+      "description": "Huron Energy, LLC operates an ethanol plant in Huron. The Department recommends issuance of an air quality construction permit.",
+      "location": "Huron",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/HE16pn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/HE16dp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "http://danr.sd.gov/Environment/AirQuality/PN/HE16sb.pdf"
         }
       ]
     },

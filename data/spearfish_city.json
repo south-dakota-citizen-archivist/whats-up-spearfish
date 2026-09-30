@@ -69854,5 +69854,53 @@
     "title": "City Council Study Session Packet 9/30/2026",
     "doc_type": "Agenda Packet",
     "file_url": "https://spearfishsd.portal.civicclerk.com/event/2195/files/agenda-packet/8893"
+  },
+  {
+    "event_id": 2195,
+    "event_name": "City Council Study Session",
+    "category": "City Council",
+    "start_dt": "2026-09-30T16:15:00Z",
+    "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2195",
+    "has_media": true,
+    "media_url": "",
+    "record_type": "document",
+    "source_label": "City of Spearfish",
+    "url": "https://spearfishsd.portal.civicclerk.com/event/2195/files/agenda-packet/8901",
+    "title": "Updated Packet City Council Study Session 9/30/2026",
+    "doc_type": "Agenda Packet",
+    "file_url": "https://spearfishsd.portal.civicclerk.com/event/2195/files/agenda-packet/8901"
+  },
+  {
+    "event_id": 3362,
+    "event_name": "City Council Special Session",
+    "category": "General",
+    "start_dt": "2026-09-30T16:15:00Z",
+    "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/3362",
+    "has_media": true,
+    "media_url": "",
+    "record_type": "document",
+    "source_label": "City of Spearfish",
+    "url": "https://spearfishsd.portal.civicclerk.com/event/3362/files/agenda/8896",
+    "title": "City Council Special Session Agenda 9/30/2026",
+    "doc_type": "Agenda",
+    "file_url": "https://spearfishsd.portal.civicclerk.com/event/3362/files/agenda/8896"
+  },
+  {
+    "event_id": 3362,
+    "event_name": "City Council Special Session",
+    "category": "General",
+    "start_dt": "2026-09-30T16:15:00Z",
+    "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/3362",
+    "has_media": true,
+    "media_url": "",
+    "record_type": "document",
+    "source_label": "City of Spearfish",
+    "url": "https://spearfishsd.portal.civicclerk.com/event/3362/files/agenda-packet/8897",
+    "title": "City Council Special Session Packet 9/30/2026",
+    "doc_type": "Agenda Packet",
+    "file_url": "https://spearfishsd.portal.civicclerk.com/event/3362/files/agenda-packet/8897"
   }
 ]
