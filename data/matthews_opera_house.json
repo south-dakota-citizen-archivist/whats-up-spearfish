@@ -1162,5 +1162,17 @@
     "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/09/play-some-petty-nov-6-2026.jpg",
     "record_type": "event",
     "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "Vitalant Blood Drive",
+    "url": "https://www.matthewsopera.com/event/vitalant-blood-drive-4/",
+    "slug": "vitalant-blood-drive",
+    "start_dt": "2026-10-12T11:00:00-06:00",
+    "end_dt": "2026-10-12T15:30:00-06:00",
+    "description": "Help save lives right here in Spearfish and across the Black Hills at our upcoming Vitalant blood drive on October 12 from 11:00 a.m. to 3:30 p.m. Your blood donation takes about an hour, ... Read more \\n",
+    "location": "",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/10/Website-Header-4.png",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
   }
 ]

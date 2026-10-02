@@ -31,6 +31,16 @@
   },
   {
     "record_type": "alert",
+    "title": "Pactola North Boat Ramp Closure",
+    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/pactola-north-boat-ramp-closure",
+    "description": "The Pactola North Boat Ramp will be closed from October 5, 2026 through January 31, 2027 during construction activities that will extend the boat ramp 70 feet.",
+    "published": "2026-10-05",
+    "source_label": "BHNF",
+    "alert_type": "caution",
+    "forest_order": "BKF"
+  },
+  {
+    "record_type": "alert",
     "title": "Stage 2 Fire Restrictions in Black Hills NF in Wyoming",
     "url": "https://www.fs.usda.gov/r02/blackhills/alerts/stage-2-fire-restrictions-black-hills-nf-wyoming",
     "description": "Stage 2 Fire Restrictions will remain in effect on all National Forest lands in the Bearlodge and Hell Canyon Ranger Districts on the Black Hills National Forest in the State of Wyoming beginning 12:00 p.m., September 24, 2026. This order supersedes BKF-194-2026 prohibiting the same or similar…",

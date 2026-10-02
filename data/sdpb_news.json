@@ -4838,5 +4838,60 @@
     "image_url": "https://npr.brightspotcdn.com/4a/ab/bf09ef49448cb286f184d6c12df8/gronli-presser-093026.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-10-02/lawsuit-over-states-ballot-petition-deadline-change-heads-to-full-federal-appeals-court-hearing",
+    "title": "Lawsuit over state's ballot petition deadline change heads to full federal appeals court hearing",
+    "slug": "sdpb-lawsuit-over-state-s-ballot-petition-deadline-change-heads-to-full-federal",
+    "published": "2026-10-02",
+    "byline": "By SDPB News Staff",
+    "description": "A federal appeals court is granting a new hearing in a case involving a lawsuit over South Dakota’s new law reducing time for ballot question petitioning.",
+    "image_url": "https://npr.brightspotcdn.com/0b/37/bb47d06d4c25926e610ee96c4540/gavel.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/elections/2026-10-01/2026-south-dakota-u-s-house-debate",
+    "title": "2026 South Dakota U.S. House Debate",
+    "slug": "sdpb-2026-south-dakota-u-s-house-debate",
+    "published": "2026-10-01",
+    "byline": "By SDPB Staff, SDPB News Staff",
+    "description": "The 2026 South Dakota U.S. House Debate between Nicole Gronli and Marty Jackley. This debate is in partnership with South Dakota News Watch.",
+    "image_url": "https://npr.brightspotcdn.com/48/77/34ab6233434ea25b4be1153b4226/screenshot-2026-10-02-082149.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-10-02/rhoden-among-coalition-of-governors-opposing-missouri-river-use-rule",
+    "title": "Rhoden among coalition of governors opposing Missouri River use rule",
+    "slug": "sdpb-rhoden-among-coalition-of-governors-opposing-missouri-river-use-rule",
+    "published": "2026-10-02",
+    "byline": "By SDPB News Staff",
+    "description": "Gov. Larry Rhoden is joining a group of colleagues urging Congress to change a rule regarding access rights to the Missouri River.",
+    "image_url": "https://npr.brightspotcdn.com/5c/b4/a46394c84e6eb6d2979419e83e5e/1250d1594e-missouri-river.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-10-02/zebra-mussels-confirmed-in-traverse-lake",
+    "title": "Zebra mussels confirmed in Traverse Lake",
+    "slug": "sdpb-zebra-mussels-confirmed-in-traverse-lake",
+    "published": "2026-10-02",
+    "byline": "By SDPB News Staff",
+    "description": "State officials say zebra mussels have spread to another lake in northeast South Dakota.",
+    "image_url": "https://npr.brightspotcdn.com/d4/93/55a23a5d443397b16d65e823cbd5/zebra-mussels.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/elections/2026-10-01/as-state-farmers-stress-agriculture-woes-us-house-candidates-target-solutions",
+    "title": "As state farmers stress agriculture woes, US House candidates target solutions",
+    "slug": "sdpb-as-state-farmers-stress-agriculture-woes-us-house-candidates-target",
+    "published": "2026-10-01",
+    "byline": "By C.J. Keene",
+    "description": "Democrat Nikki Gronli squared off against Republican Marty Jackley in the SDPB/South Dakota News Watch Debate Thursday night. With no incumbent’s advantage, how did the two separate themselves?",
+    "image_url": "https://npr.brightspotcdn.com/58/3c/d2c9af7245f884f5298fe9620e9d/jackley-gronli-debate.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]
