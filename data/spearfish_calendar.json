@@ -2688,5 +2688,15 @@
     "start_dt": "Mon, 17 Aug 2026 09:13:54 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3591",
+    "title": "Friends of the Library Book Club",
+    "slug": "friends-of-the-library-book-club",
+    "description": "<strong>Event date:</strong> October 17, 2026 <br /><strong>Event Time: </strong>09:30 AM - 10:30 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Stop by the library to check out a copy of this month's selection and join in the discussion. All are welcome!",
+    "published": "Fri, 08 May 2026 15:41:02 -0700",
+    "start_dt": "Fri, 08 May 2026 15:41:02 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

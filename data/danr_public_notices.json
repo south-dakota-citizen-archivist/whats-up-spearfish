@@ -1,23 +1,6 @@
 {
-  "fetched_at": "2026-10-02T21:09:22.625054+00:00",
+  "fetched_at": "2026-10-03T19:41:44.039163+00:00",
   "notices": [
-    {
-      "notice_type": "Surface Water Enhancement & Restoration",
-      "deadline": "10/02/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/02/2026&name=Andrew Fink-watering dugout restoration&pntype=sw_er&description=Removal a watering dugout within an unnamed tributary of the Big Sioux River on his property in Brookings County",
-      "name": "Andrew Fink-watering dugout restoration",
-      "description": "Removal a watering dugout within an unnamed tributary of the Big Sioux River on his property in Brookings County",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/Fink PN.pdf"
-        },
-        {
-          "label": "Application",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/Fink Application.pdf"
-        }
-      ]
-    },
     {
       "notice_type": "Concentrated Animal Feeding Operations (State Permit)",
       "deadline": "10/09/2026",
