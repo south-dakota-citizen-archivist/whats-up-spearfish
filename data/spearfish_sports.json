@@ -26702,5 +26702,37 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h202610040158488301e924946898843",
+    "url": "https://gobound.com/direct/comps/h202610040158488301e924946898843/show",
+    "title": "Girls Soccer: Spearfish vs Harrisburg (Varsity)",
+    "slug": "girls-soccer-spearfish-vs-harrisburg-varsity",
+    "sport": "Girls Soccer",
+    "level": "Varsity",
+    "sex": "female",
+    "description": "Varsity Girls Soccer - Spearfish vs Harrisburg",
+    "start_dt": "2026-10-06",
+    "end_dt": "",
+    "location": "",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h2026100402121829746efe260ee3545",
+    "url": "https://gobound.com/direct/comps/h2026100402121829746efe260ee3545/show",
+    "title": "Boys Soccer: Sioux Falls Roosevelt vs Spearfish (Varsity)",
+    "slug": "boys-soccer-sioux-falls-roosevelt-vs-spearfish-varsity",
+    "sport": "Boys Soccer",
+    "level": "Varsity",
+    "sex": "male",
+    "description": "Varsity Boys Soccer - Sioux Falls Roosevelt vs Spearfish",
+    "start_dt": "2026-10-06T23:00:00",
+    "end_dt": "2026-10-07T01:00:00",
+    "location": "Black Hills Power Sports Complex",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]
