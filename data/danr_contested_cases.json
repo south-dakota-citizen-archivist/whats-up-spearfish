@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-04T20:01:58.935895+00:00",
+  "fetched_at": "2026-10-05T23:06:06.338248+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -74,6 +74,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID117",
       "documents": [
         {
+          "label": "OHE Proposed Decision Findings of Fact, Conclusions of Law, and Order",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/OHE Madison Contested Case Proposed Decision Findings of Fact, Conclusions of Law, and Order.pdf"
+        },
+        {
           "label": "Department's Response to Potters' Post-Hearing Brief, and Department's Objection to Potters' Proposed Findings of Fact & Conclusions of Law",
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/DANR Response Brief and Objxn FOF & COL.Madison RUS Permit Application.service 06 12 2026.pdf"
         },
@@ -88,13 +92,9 @@
         {
           "label": "Exhibit A and B",
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Exhibit A and B.pdf"
-        },
-        {
-          "label": "Potters' Post-Hearing Brief",
-          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Potters - Post Hearing Brief.pdf"
         }
       ],
-      "total_docs": 62,
+      "total_docs": 63,
       "latest_doc_date": "0000-00-00"
     },
     {

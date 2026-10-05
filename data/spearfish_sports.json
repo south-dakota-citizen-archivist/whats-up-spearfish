@@ -26734,5 +26734,37 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20261005035731446aa80caf23d2f48",
+    "url": "https://gobound.com/direct/comps/h2026100503551328549700e86bc814a/show",
+    "title": "Girls Tennis: Class A State Girls Tennis Tournament  (Varsity)",
+    "slug": "girls-tennis-class-a-state-girls-tennis-tournament-varsity",
+    "sport": "Girls Tennis",
+    "level": "Varsity",
+    "sex": "female",
+    "description": "Varsity Girls Tennis - Class A State Girls Tennis Tournament",
+    "start_dt": "2026-10-05T14:00:00",
+    "end_dt": "2026-10-06T00:00:00",
+    "location": ", Parkview Tennis Courts",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20261005035513715f1b7e0689e3b46",
+    "url": "https://gobound.com/direct/comps/h2026100503551328549700e86bc814a/show",
+    "title": "Girls Tennis: Class A State Girls Tennis Tournament  (Varsity)",
+    "slug": "girls-tennis-class-a-state-girls-tennis-tournament-varsity",
+    "sport": "Girls Tennis",
+    "level": "Varsity",
+    "sex": "female",
+    "description": "Varsity Girls Tennis - Class A State Girls Tennis Tournament",
+    "start_dt": "2026-10-06T14:00:00",
+    "end_dt": "2026-10-07T00:00:00",
+    "location": "Sioux Park",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]

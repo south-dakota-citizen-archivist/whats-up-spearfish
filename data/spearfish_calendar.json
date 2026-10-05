@@ -2918,5 +2918,35 @@
     "start_dt": "Fri, 08 May 2026 15:41:02 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/m/calendar/event/detail/3777",
+    "title": "Park, Recreation, and Forestry Advisory Board Meeting",
+    "slug": "park-recreation-and-forestry-advisory-board-meeting",
+    "description": "<strong>Event date:</strong> October 15, 2026 <br /><strong>Event Time: </strong>07:30 AM - 11:59 PM<br /><strong>Location:</strong> <br />City Hall<br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Mon, 05 Oct 2026 14:14:53 -0700",
+    "start_dt": "Mon, 05 Oct 2026 14:14:53 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/m/calendar/event/detail/3717",
+    "title": "Teen Game Day",
+    "slug": "teen-game-day",
+    "description": "<strong>Event date:</strong> October 19, 2026 <br /><strong>Event Time: </strong>03:30 PM - 05:00 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Join us for some gaming fun! We will have a variety of board and card games, multiplayer chess, and even some TTRPGs available...and snacks! Open to grades 6-12.",
+    "published": "Tue, 01 Sep 2026 09:02:41 -0700",
+    "start_dt": "Tue, 01 Sep 2026 09:02:41 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/m/calendar/event/detail/3282",
+    "title": "City Council Meeting",
+    "slug": "city-council-meeting",
+    "description": "<strong>Event date:</strong> October 19, 2026 <br /><strong>Event Time: </strong>05:30 PM - 06:30 PM<br /><strong>Location:</strong> <br />City Hall<br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Mon, 05 Oct 2026 13:14:25 -0700",
+    "start_dt": "Mon, 05 Oct 2026 13:14:25 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

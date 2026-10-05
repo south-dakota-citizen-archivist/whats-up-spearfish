@@ -4893,5 +4893,49 @@
     "image_url": "https://npr.brightspotcdn.com/58/3c/d2c9af7245f884f5298fe9620e9d/jackley-gronli-debate.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-10-05/groups-ask-states-largest-city-for-data-center-permitting-pause",
+    "title": "Groups ask state's largest city for data center permitting pause",
+    "slug": "sdpb-groups-ask-state-s-largest-city-for-data-center-permitting-pause",
+    "published": "2026-10-05",
+    "byline": "By Jackson Dircks",
+    "description": "Multiple groups are banding together and asking the state’s largest city to press “pause” on data centers until ordinances are in place.",
+    "image_url": "https://npr.brightspotcdn.com/e1/eb/94d12c43497a9b2b96c4a8fd1292/untitled-design-30.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-10-05/south-dakotas-annual-police-management-study-released",
+    "title": "South Dakota's annual police management study released",
+    "slug": "sdpb-south-dakota-s-annual-police-management-study-released",
+    "published": "2026-10-05",
+    "byline": "By SDPB News Staff",
+    "description": "It’s an annual survey of police departments to gauge a variety metrics, like salary and staff size.",
+    "image_url": "https://npr.brightspotcdn.com/fc/60/2e17defe4e39bede03e91907b95f/ef452505a5-policelights-thumb.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/elections/2026-10-05/u-s-house-candidates-agree-congress-has-role-in-ai-regulation-differ-on-path",
+    "title": "U.S. House candidates agree Congress has role in AI regulation, differ on path",
+    "slug": "sdpb-u-s-house-candidates-agree-congress-has-role-in-ai-regulation-differ-on",
+    "published": "2026-10-05",
+    "byline": "By C.J. Keene",
+    "description": "Artificial Intelligence is making waves, for better or worse, in Washington. As South Dakota prepares to elect its next US House Representative, what to do with this technology is front of mind.",
+    "image_url": "https://npr.brightspotcdn.com/48/77/34ab6233434ea25b4be1153b4226/screenshot-2026-10-02-082149.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-10-05/ujs-releases-yearly-report-results-show-some-wins-and-some-challenges",
+    "title": "UJS releases yearly report, results show some wins and some challenges",
+    "slug": "sdpb-ujs-releases-yearly-report-results-show-some-wins-and-some-challenges",
+    "published": "2026-10-05",
+    "byline": "By C.J. Keene",
+    "description": "The annual report of the state judicial network shows the year in review for the state courts. In total, the state Unified Judicial System tallied over 208,000 filings in circuit courts over the last fiscal year.",
+    "image_url": "https://npr.brightspotcdn.com/c3/2e/68c6ba3741e1a7f9df1500607881/sdnet-thumbnail-ujs.png",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]
