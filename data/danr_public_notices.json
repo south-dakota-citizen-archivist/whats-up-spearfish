@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-05T23:03:17.138366+00:00",
+  "fetched_at": "2026-10-06T21:26:33.797431+00:00",
   "notices": [
     {
       "notice_type": "Concentrated Animal Feeding Operations (State Permit)",
@@ -492,6 +492,45 @@
       ]
     },
     {
+      "notice_type": "Air Quality Permit",
+      "deadline": "11/05/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=11/05/2026&name=Crenlo Engineered Cabs&pntype=aq&description=Crenlo Engineered Cabs proposes to construct a paint booth for their steel processing facility. The department recommends issuance of an air quality construction permit.",
+      "description": "Crenlo Engineered Cabs proposes to construct a paint booth for their steel processing facility. The department recommends issuance of an air quality construction permit.",
+      "location": "Watertown",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/CECpn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/CECdp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/CECsb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Waste Management \u2014 Solid Waste",
+      "deadline": "11/6/2026",
+      "comment_url": "",
+      "name": "Roberts County",
+      "description": "Permit renewal application to continue operation of a Type IIB municipal solid waste landfill",
+      "location": "Roberts County",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Roberts County LF Permit Renewal Public Notice 2026.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Roberts County LF 2026 draft permit renewal.pdf"
+        }
+      ]
+    },
+    {
       "notice_type": "Mineral Exploration",
       "deadline": "",
       "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=&name=DTRC LLC&pntype=mm_ex&description=Notice of Intent for Gold Exploration",
@@ -531,6 +570,20 @@
       "notice_type": "Mining License",
       "deadline": "",
       "comment_url": "",
+      "name": "Argo Excavating, LLC",
+      "description": "Notice of Intent to Mine Gravel",
+      "location": "16 miles west of Wessington Springs and 1&1/2 miles south",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://media.sd.gov/danr/MM/S1169001PublicNotice.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Mining License",
+      "deadline": "",
+      "comment_url": "",
       "name": "Greg Kroupa",
       "description": "Notice of Intent to Mine Gravel",
       "location": "17 miles NW of White Lake, SD",
@@ -552,6 +605,20 @@
         {
           "label": "Public Notice",
           "url": "https://media.sd.gov/danr/MM/S1168001PublicNotice.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Mining License",
+      "deadline": "",
+      "comment_url": "",
+      "name": "Morris, Inc",
+      "description": "Notice of Intent to Mine Rock, Sand, and Gravel",
+      "location": "141/2 miles northeast of Blunt, SD",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://media.sd.gov/danr/MM/S2058PublicNotice.pdf"
         }
       ]
     },

@@ -1,14 +1,14 @@
 [
   {
-    "url": "https://untappd.com/b/spearfish-brewing-half-a-horse/3201277",
-    "title": "Half A Horse",
-    "slug": "half-a-horse",
-    "category": "IPA - American",
-    "abv": "6.5%",
-    "ibu": "",
-    "brewery": "Spearfish Brewing",
-    "rating": "3.65",
-    "image_url": "https://labels.untappd.com/3201277",
+    "url": "https://untappd.com/b/sawyer-brewing-co-2-stroke-haze-ipa/3801218",
+    "title": "2-Stroke Haze IPA",
+    "slug": "2-stroke-haze-ipa",
+    "category": "IPA - New England / Hazy",
+    "abv": "5.7%",
+    "ibu": "42",
+    "brewery": "Sawyer Brewing Co",
+    "rating": "3.82",
+    "image_url": "https://labels.untappd.com/3801218",
     "record_type": "beer",
     "source_label": "Killian's"
   },
@@ -33,7 +33,7 @@
     "abv": "6%",
     "ibu": "20",
     "brewery": "Laughing Sun Brewing Co.",
-    "rating": "3.64",
+    "rating": "3.65",
     "image_url": "https://labels.untappd.com/3991096",
     "record_type": "beer",
     "source_label": "Killian's"
@@ -215,7 +215,7 @@
     "abv": "7%",
     "ibu": "",
     "brewery": "Left Hand Brewing Company",
-    "rating": "3.76",
+    "rating": "3.77",
     "image_url": "https://labels.untappd.com/6874160",
     "record_type": "beer",
     "source_label": "Killian's"

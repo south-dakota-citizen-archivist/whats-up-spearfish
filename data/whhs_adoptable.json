@@ -246,8 +246,8 @@
     "title": "Chuckie Finster",
     "slug": "cat-chuckie-finster",
     "species": "cat",
-    "description": "Male | Born 8/1/26\nThe Rugrats came to us in Sept. 2026 after the health decline of their owner. There were lots of kitties in her possession and 9 came to us - The Rugrats! They are 2 different litters. \nYou can’t get this kid to sit still for a photo! He’s very shy and needs more socialization. He’s sweet once he knows you’re there to love him up. He’s the biggest out of his litter.",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/6afc7d1b-ee55-494a-bbc4-5f2ceae1799f/Chuckie+Finster.jpg?format=500w",
+    "description": "Male | Born 8/1/26\nThe Rugrats came to us in Sept. 2026 after the health decline of their owner. There were lots of kitties in her possession and 9 came to us - The Rugrats! They are 2 different litters. \nChuckie is a silly, playful boy!",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/26c32866-49ed-4e01-9812-aa023298c213/1000056470.jpg?format=500w",
     "image_alt": "Chuckie Finster",
     "record_type": "adoptable",
     "source_label": "Western Hills Humane Society"
@@ -403,6 +403,17 @@
     "description": "Male | Born ~2025",
     "image_url": "",
     "image_alt": "Gotham",
+    "record_type": "adoptable",
+    "source_label": "Western Hills Humane Society"
+  },
+  {
+    "url": "https://www.westernhillshumanesociety.com/cats",
+    "title": "Officer Hopps",
+    "slug": "cat-officer-hopps",
+    "species": "cat",
+    "description": "Male | Born July 2016",
+    "image_url": "",
+    "image_alt": "Officer Hopps",
     "record_type": "adoptable",
     "source_label": "Western Hills Humane Society"
   },
