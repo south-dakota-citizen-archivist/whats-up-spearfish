@@ -91,14 +91,14 @@
     "source_label": "Killian's"
   },
   {
-    "url": "https://untappd.com/b/surly-brewing-company-surly-lake-bait/6998640",
-    "title": "Surly Lake Bait",
-    "slug": "surly-lake-bait",
+    "url": "https://untappd.com/b/surly-brewing-company-lake-bait/6998640",
+    "title": "Lake Bait",
+    "slug": "lake-bait",
     "category": "IPA - American",
     "abv": "7%",
     "ibu": "",
     "brewery": "Surly Brewing Company",
-    "rating": "4.01",
+    "rating": "4.02",
     "image_url": "https://labels.untappd.com/6998640",
     "record_type": "beer",
     "source_label": "Killian's"
@@ -163,7 +163,7 @@
     "abv": "5.6%",
     "ibu": "18",
     "brewery": "Sturgis Brewing Company",
-    "rating": "3.78",
+    "rating": "3.79",
     "image_url": "https://labels.untappd.com/5649229",
     "record_type": "beer",
     "source_label": "Killian's"

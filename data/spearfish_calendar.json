@@ -2988,5 +2988,45 @@
     "start_dt": "Tue, 01 Sep 2026 09:11:52 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/m/calendar/event/detail/3806",
+    "title": "News Literacy Presentation",
+    "slug": "news-literacy-presentation",
+    "description": "<strong>Event date:</strong> October 20, 2026 <br /><strong>Event Time: </strong>04:00 PM - 05:00 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Overwhelmed by social media feeds, trying to figure out what is real news and what is bogus? Join Mark Watson, editor of the Black Hills Pioneer, for a discussion on news literacy and tips for distinguishing legitimate news from false stories.",
+    "published": "Wed, 07 Oct 2026 15:36:48 -0700",
+    "start_dt": "Wed, 07 Oct 2026 15:36:48 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/m/calendar/event/detail/3661",
+    "title": "Story Time",
+    "slug": "story-time",
+    "description": "<strong>Event date:</strong> October 21, 2026 <br /><strong>Event Time: </strong>09:30 AM - 10:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Stories and activities for ages 4+",
+    "published": "Thu, 24 Sep 2026 14:51:41 -0700",
+    "start_dt": "Thu, 24 Sep 2026 14:51:41 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/m/calendar/event/detail/3683",
+    "title": "Toddler Story Time",
+    "slug": "toddler-story-time",
+    "description": "<strong>Event date:</strong> October 21, 2026 <br /><strong>Event Time: </strong>10:30 AM - 11:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Early literacy activities for ages 1-3.",
+    "published": "Thu, 06 Aug 2026 10:21:51 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:21:51 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/m/calendar/event/detail/3487",
+    "title": "Lego Club (Ages 8+)",
+    "slug": "lego-club-ages-8",
+    "description": "<strong>Event date:</strong> October 21, 2026 <br /><strong>Event Time: </strong>03:30 PM - 04:30 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Join us for a once monthly Lego Club. Imagine. Build. Display! Show off your designs and creations. This program is designed for AGES 8+.<br /><br />Please do not bring your own Legos.",
+    "published": "Fri, 10 Apr 2026 13:29:27 -0700",
+    "start_dt": "Fri, 10 Apr 2026 13:29:27 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

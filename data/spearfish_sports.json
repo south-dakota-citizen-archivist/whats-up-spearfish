@@ -26766,5 +26766,21 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20261004021231983922402077e9149",
+    "url": "https://gobound.com/direct/comps/h20261004021231983922402077e9149/show",
+    "title": "Boys Soccer: Spearfish vs Watertown (Varsity)",
+    "slug": "boys-soccer-spearfish-vs-watertown-varsity",
+    "sport": "Boys Soccer",
+    "level": "Varsity",
+    "sex": "male",
+    "description": "Varsity Boys Soccer - Spearfish vs Watertown",
+    "start_dt": "2026-10-10T22:00:00",
+    "end_dt": "2026-10-10T23:30:00",
+    "location": "Allen Mitchell Athletic Complex Turf",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]

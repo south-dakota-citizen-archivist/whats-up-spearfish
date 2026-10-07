@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-06T21:29:40.195468+00:00",
+  "fetched_at": "2026-10-07T21:48:10.487742+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -190,6 +190,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID132",
       "documents": [
         {
+          "label": "Supplemental Pre-Hearing Submission - Petitioner",
+          "url": "https://danr.sd.gov/wrimage/pub/9008-3_Cathy Jessen Supplemental Petition.pdf"
+        },
+        {
           "label": "Supplemental Pre-Hearing Submission - Counsel for Applicant",
           "url": "https://danr.sd.gov/wrimage/pub/9008-3_PreHearingSub2_App.pdf"
         },
@@ -204,13 +208,9 @@
         {
           "label": "Notice of Hearing",
           "url": "https://danr.sd.gov/wrimage/pub/9008-3_NOH_1.pdf"
-        },
-        {
-          "label": "Petition in Opposition",
-          "url": "https://danr.sd.gov/wrimage/pub/9008-3_pet.pdf"
         }
       ],
-      "total_docs": 8,
+      "total_docs": 9,
       "latest_doc_date": "0000-00-00"
     },
     {
@@ -318,6 +318,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID126",
       "documents": [
         {
+          "label": "Findings of Fact, Conclusions of Law, and Decision",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3_final FOF.pdf"
+        },
+        {
           "label": "Response to Proposed Findings of Fact - Counsel for Applicant",
           "url": "https://danr.sd.gov/wrimage/pub/8982-3_FOF_res_app.pdf"
         },
@@ -332,13 +336,9 @@
         {
           "label": "Supplemental Pre-Hearing Submission by Counsel for the Petitioners",
           "url": "https://danr.sd.gov/wrimage/pub/8982-3_Petitioners' Supplemental Pre-Hearing Submission.pdf"
-        },
-        {
-          "label": "Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/8982-3_NOH_3.pdf"
         }
       ],
-      "total_docs": 26,
+      "total_docs": 27,
       "latest_doc_date": "0000-00-00"
     },
     {
@@ -406,6 +406,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID128",
       "documents": [
         {
+          "label": "Findings of Fact, Conclusions of Law, and Decision",
+          "url": "https://danr.sd.gov/wrimage/pub/8990-3_final FOF.pdf"
+        },
+        {
           "label": "Objections to Proposed Finding of Fact & Conclusions of Law",
           "url": "https://danr.sd.gov/wrimage/pub/8990-3 CityofMilbank_objFOF.pdf"
         },
@@ -420,13 +424,9 @@
         {
           "label": "Filings Submitted by Petitioner's Counsel - Pre Hearing Submission",
           "url": "https://danr.sd.gov/wrimage/pub/8990-3_filings by pet counsel.pdf"
-        },
-        {
-          "label": "Filings Submitted by Applicant's Counsel - Pre Hearing Submission",
-          "url": "https://danr.sd.gov/wrimage/pub/8990-3_filings by applicants counsel.pdf"
         }
       ],
-      "total_docs": 18,
+      "total_docs": 19,
       "latest_doc_date": "0000-00-00"
     },
     {

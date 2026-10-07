@@ -1234,5 +1234,17 @@
     "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/10/2026-CAS-1920x1080-1.jpg",
     "record_type": "event",
     "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "Inspire Community Health Talk",
+    "url": "https://www.matthewsopera.com/event/inspire-community-health-talk/",
+    "slug": "inspire-community-health-talk",
+    "start_dt": "2026-10-28T18:00:00-06:00",
+    "end_dt": "2026-10-28T19:30:00-06:00",
+    "description": "We’re proud to host an upcoming Inspire Community Health Talk, bringing valuable health education and local healthcare expertise to our community. Make plans at The Matthews on October 28 at ... Read more \\n",
+    "location": "",
+    "image_url": "",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
   }
 ]

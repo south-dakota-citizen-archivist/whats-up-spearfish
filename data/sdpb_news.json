@@ -5003,5 +5003,49 @@
     "image_url": "https://npr.brightspotcdn.com/cf/ad/e123e1b14c44b6c7a9aa1072341b/microsoftteams-image-3.png",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-10-07/rapid-city-council-says-all-aboard-to-relocation-of-railyard",
+    "title": "Rapid City Council says 'all aboard' to relocation of railyard",
+    "slug": "sdpb-rapid-city-council-says-all-aboard-to-relocation-of-railyard",
+    "published": "2026-10-07",
+    "byline": "By C.J. Keene",
+    "description": "The railyard in Rapid City is likely on borrowed time after the city council voted to approve a relocation plan. As downtown Rapid City grows, some officials say the railyard is a hindrance for the neighborhood.",
+    "image_url": "https://npr.brightspotcdn.com/0b/91/f723f6634063865b28cd839d9d44/image-2026-10-07t144623-557.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/elections/2026-10-07/analysis-voters-are-angry-about-money-in-politics-but-are-they-angry-enough-to-oust-popular-republicans",
+    "title": "Analysis: Voters are angry about money in politics. But are they angry enough to oust popular Republicans?",
+    "slug": "sdpb-analysis-voters-are-angry-about-money-in-politics-but-are-they-angry-enough",
+    "published": "2026-10-07",
+    "byline": "By Lori Walsh",
+    "description": "Journalists Kevin Woster and Seth Tupper check in on the campaigns and measure the effects of big money in state politics. They also explore the confusion of Amendment I.",
+    "image_url": "https://npr.brightspotcdn.com/c1/8a/4a1ee3104d89a930ca42658449df/2026-political-junkies-logo-sdpb-1920x1080.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/elections/2026-10-07/puc-candidates-talk-data-centers-and-affordability-in-utility-pricing",
+    "title": "PUC candidates talk data centers and affordability in utility pricing",
+    "slug": "sdpb-puc-candidates-talk-data-centers-and-affordability-in-utility-pricing",
+    "published": "2026-10-07",
+    "byline": "By Lori Walsh",
+    "description": "The candidates for Public Utilities Commission will influence the future of South Dakota's energy infrastructure. We hear from Republican Don Haggar and Democrat Frank Kloucek.",
+    "image_url": "https://npr.brightspotcdn.com/52/a4/27ad8392458d90c0af200f3647e9/website-photo-1.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-10-07/oahe-dam-upgraded-to-very-high-risk-following-corps-of-engineers-study",
+    "title": "Oahe Dam upgraded to 'very high risk\" following Corps of Engineers study",
+    "slug": "sdpb-oahe-dam-upgraded-to-very-high-risk-following-corps-of-engineers-study",
+    "published": "2026-10-07",
+    "byline": "By SDPB News Staff",
+    "description": "The U.S. Army Corps of Engineers is upgrading the risk classification of the Oahe Dam in central South Dakota. The dam moved from “high” to “very high” risk, according to a <a href=\"https://www.nwo.usace.army.mil/Media/News-Releases/Article/4615430/us-army-corps-of-engineers-advances-dam-safety-work-at-oahe-dam-initiates-dam-s/\">new report</a>.",
+    "image_url": "https://npr.brightspotcdn.com/e2/fa/f1ba45ab4306a98285447def3bc1/377e8d1c82-kayak-oahe-dam.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

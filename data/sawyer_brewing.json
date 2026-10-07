@@ -297,5 +297,18 @@
     ],
     "record_type": "beer",
     "source_label": "Sawyer Brewing Co."
+  },
+  {
+    "url": "https://www.sawyerbrewingco.com/menu",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/7adb41f3-c788-418f-b300-3e8cf7c27a34/pints%26ponytails.jpg",
+    "title": "pints%26ponytails.jpg",
+    "slug": "pints-26ponytails-jpg",
+    "category": "Dark Side",
+    "description": "",
+    "abv": "",
+    "notes": "",
+    "prices": [],
+    "record_type": "beer",
+    "source_label": "Sawyer Brewing Co."
   }
 ]
