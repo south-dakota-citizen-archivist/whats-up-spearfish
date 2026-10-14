@@ -2474,5 +2474,27 @@
     "category": "Campus Calendar/Events",
     "record_type": "event",
     "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "684ec03a-b880-4576-911c-a151b136110d",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/684ec03a-b880-4576-911c-a151b136110d",
+    "title": "Madrigal Dinner",
+    "slug": "madrigal-dinner",
+    "description": "Date: December 3-5, 2026 Time: Social hour at 5:30PM and dinner at 6:30PM Where: Meier Hall The event features a 20-member vocal ensemble performing early Renaissance music in costume as a sixteenth-century royal court. Guests will enjoy a holiday meal and entertainment that includes a recorder ensemble, herald trumpets, silly humor, and a short post-dinner concert. The concert will include music by Johann Hermann Schein, Ralph Vaughan Williams, Cristóbal de Morales, John Dowland, and others. During dinner, the ensemble and court jester will perform traditional carols such as Deck the Halls, A Wassail Song, and Silent Night. Dinner is $65 per person and includes: Starter: Roasted pumpkin soup with maple-glazed pecans and toasted coconut Entrée: Pork chop stuffed with bacon, smoked Gouda, and apple, served with cranberry wild rice stuffing and roasted tri-colored baby carrots Dessert: Red wine-poached pear with Amaretto crème anglaise and candied pecans Please mention any dietary needs, such as vegetarian meals or nut allergies, when making your reservation. For questions, contact Katherine Kemp at 605.642.6420 (Monday–Friday, 8 a.m.–5 p.m.)",
+    "start_dt": "2026-12-04T00:30",
+    "end_dt": "2026-12-04T01:30",
+    "location": "Clare and Josef Meier Hall",
+    "image_url": "https://bhsu.edu/_images/images/events/events-images/Madrigal.png",
+    "image_alt": "Singers in Renaissance costumes perform with music folders and a tambourine behind a table set with an evergreen and candle centerpiece.",
+    "organizer": "Katherine Kemp",
+    "tags": [
+      "Community Event",
+      "BHSU Event"
+    ],
+    "featured": false,
+    "ticket_url": "https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FBHSU_BHGEN%3Fcname%3DMUSIC&data=05%7C02%7CCharles.Williams%40bhsu.edu%7C7ebdb5238cf444b6e30f08df296c5862%7C9bfcf28b3a114fd7a8138f519cdb0db2%7C0%7C0%7C6392752174414923",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
   }
 ]

@@ -398,5 +398,25 @@
     "start_dt": "Tue, 06 Oct 2026 13:52:23 -0700",
     "record_type": "press_release",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/CivicAlerts.aspx?aid=584",
+    "title": "Trenchless Sewer Project to Start October 16, 2026",
+    "slug": "trenchless-sewer-project-to-start-october-16-2026",
+    "description": "On Friday, October 16, 2026, the City of Spearfish will launch its Cured-In-Place Pipe (CIPP) project to improve the city's aging sewer system with minimal disruption to homes, roads, and businesses.",
+    "published": "Wed, 14 Oct 2026 09:29:05 -0700",
+    "start_dt": "Wed, 14 Oct 2026 09:29:05 -0700",
+    "record_type": "press_release",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/CivicAlerts.aspx?aid=583",
+    "title": "Planning Commission Vacancy",
+    "slug": "planning-commission-vacancy",
+    "description": "The City of Spearfish is seeking applications to fill a vacancy on the Planning Commission.",
+    "published": "Wed, 07 Oct 2026 16:50:45 -0700",
+    "start_dt": "Wed, 07 Oct 2026 16:50:45 -0700",
+    "record_type": "press_release",
+    "source_label": "City of Spearfish"
   }
 ]

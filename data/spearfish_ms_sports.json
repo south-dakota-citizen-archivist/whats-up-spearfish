@@ -6254,5 +6254,53 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish MS Sports"
+  },
+  {
+    "uid": "h20261013092112988f10717d7c5ec44",
+    "url": "https://gobound.com/direct/comps/h20261013092112988f10717d7c5ec44/show",
+    "title": "Volleyball: Spearfish MS vs Douglas MS (7th Grade)",
+    "slug": "volleyball-spearfish-ms-vs-douglas-ms-7th-grade",
+    "sport": "Volleyball",
+    "level": "7th Grade",
+    "sex": "female",
+    "description": "7th Grade Volleyball - Spearfish MS vs Douglas MS",
+    "start_dt": "2026-10-13T22:00:00",
+    "end_dt": "2026-10-13T23:00:00",
+    "location": "Douglas High School",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish MS Sports"
+  },
+  {
+    "uid": "h202610130931075656ece2d24366841",
+    "url": "https://gobound.com/direct/comps/h202610130931075656ece2d24366841/show",
+    "title": "Volleyball: Douglas MS vs Spearfish MS (7th Grade)",
+    "slug": "volleyball-douglas-ms-vs-spearfish-ms-7th-grade",
+    "sport": "Volleyball",
+    "level": "7th Grade",
+    "sex": "female",
+    "description": "7th Grade Volleyball - Douglas MS vs Spearfish MS",
+    "start_dt": "2026-10-15T22:00:00",
+    "end_dt": "2026-10-16T00:00:00",
+    "location": "Spearfish Middle School",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish MS Sports"
+  },
+  {
+    "uid": "h202610130931426971401c9baed1d42",
+    "url": "https://gobound.com/direct/comps/h202610130931426971401c9baed1d42/show",
+    "title": "Volleyball: Spearfish MS vs Douglas MS (8th Grade)",
+    "slug": "volleyball-spearfish-ms-vs-douglas-ms-8th-grade",
+    "sport": "Volleyball",
+    "level": "8th Grade",
+    "sex": "female",
+    "description": "8th Grade Volleyball - Spearfish MS vs Douglas MS",
+    "start_dt": "2026-10-15T22:00:00",
+    "end_dt": "2026-10-16T00:00:00",
+    "location": "Douglas High School",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish MS Sports"
   }
 ]

@@ -1,38 +1,6 @@
 {
-  "fetched_at": "2026-10-07T21:45:05.946889+00:00",
+  "fetched_at": "2026-10-14T20:25:17.034012+00:00",
   "notices": [
-    {
-      "notice_type": "Concentrated Animal Feeding Operations (State Permit)",
-      "deadline": "10/09/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/09/2026&name=Frontier Pork RE, LLC&pntype=fp_cafo&description=New Swine Feeding Operation - State Permit",
-      "name": "Frontier Pork RE, LLC",
-      "description": "New Swine Feeding Operation - State Permit",
-      "location": "Tripp County",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotPermit/FrontierPorkRELLCPN.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Waste Management \u2014 Solid Waste",
-      "deadline": "10/10/2026",
-      "comment_url": "",
-      "name": "Dakota Recycling and Transport, LLC",
-      "description": "Initial permit application to begin operation of a Type IIB Automobile and White Goods/Salvageable Metal Shredding Solid Waste Facility located within the northern city limits of Volga, SD.",
-      "location": "Volga, SD",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Dakota_Recycling__Transport_26_Public_Notice.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Dakota_Recycling__Transport_26_IP_DRAFT.pdf"
-        }
-      ]
-    },
     {
       "notice_type": "Water Rights",
       "deadline": "10/13/2026",
@@ -429,6 +397,23 @@
       ]
     },
     {
+      "notice_type": "Surface Water Enhancement & Restoration",
+      "deadline": "10/20/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/20/2026&name=SDGFP-Rapid Creek&pntype=sw_er&description=Improve aquatic habitat in Rapid Creek below Pactola Reservoir through strategically placed instream features (boulders and wood).",
+      "name": "SDGFP-Rapid Creek",
+      "description": "Improve aquatic habitat in Rapid Creek below Pactola Reservoir through strategically placed instream features (boulders and wood).",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/26-041 GFPRapidCreekPN.pdf"
+        },
+        {
+          "label": "Application",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/26-041 GFPRapidCreek Application.pdf"
+        }
+      ]
+    },
+    {
       "notice_type": "Air Quality Permit",
       "deadline": "10/22/2026",
       "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/22/2026&name=Smithfield Packaged Meats Corporation&pntype=aq&description=Smithfield Packaged Meats Corp. is a pork processing facility in Sioux Falls. The department recommends issuance of an air quality construction permit.",
@@ -467,6 +452,30 @@
         {
           "label": "Application Review",
           "url": "http://danr.sd.gov/Environment/AirQuality/PN/GL15sb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Water Rights",
+      "deadline": "10/26/2026",
+      "comment_url": "",
+      "application_no": "9049-3",
+      "name": "Rogge Excavating, Lawrence Rogge,\u00a0Ghent\u00a0MN",
+      "location": "Deuel",
+      "water_source": "Big Sioux: Brookings aquifer; incidental runoff",
+      "use_type": "Industrial",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/9049-3_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/9049-3_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/9049-3_rec.pdf"
         }
       ]
     },
@@ -527,6 +536,24 @@
         {
           "label": "Draft Permit",
           "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Roberts County LF 2026 draft permit renewal.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Waste Management \u2014 Hazardous Waste",
+      "deadline": "11/28/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=11/28/2026&name=Tech Ord, a Division of AMTEC Corporation&pntype=wm_hw&description=Permit Renewal to Continue Operation of a Hazardous Waste Treatment &amp; Storage Facility",
+      "name": "Tech Ord, a Division of AMTEC Corporation",
+      "description": "Permit Renewal to Continue Operation of a Hazardous Waste Treatment & Storage Facility",
+      "location": "Clear Lake, SD",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/Final - Tech Ord 2026 Public Notice.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/A-Tech Ord Permit 2026 - Final.pdf"
         }
       ]
     },

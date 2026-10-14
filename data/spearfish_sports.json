@@ -26782,5 +26782,53 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h202610050357314461d02784910d643",
+    "url": "https://gobound.com/direct/comps/h2026100503551328549700e86bc814a/show",
+    "title": "Girls Tennis: Class A State Girls Tennis Tournament  (Varsity)",
+    "slug": "girls-tennis-class-a-state-girls-tennis-tournament-varsity",
+    "sport": "Girls Tennis",
+    "level": "Varsity",
+    "sex": "female",
+    "description": "Varsity Girls Tennis - Class A State Girls Tennis Tournament",
+    "start_dt": "2026-10-05T14:00:00",
+    "end_dt": "2026-10-06T00:00:00",
+    "location": "Parkview Tennis Courts,",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20261012125528163e5f6c9a6787644",
+    "url": "https://gobound.com/direct/noncomps/h20261012125528163e5f6c9a6787644/h2020103041013609fadc7efab4bcbb3/show",
+    "title": "Knowledge Bowl @ Spearfish",
+    "slug": "knowledge-bowl-spearfish",
+    "sport": "Knowledge Bowl",
+    "level": "",
+    "sex": "coed",
+    "description": "Knowledge Bowl @ Spearfish",
+    "start_dt": "2026-10-17T15:00:00",
+    "end_dt": "2026-10-17T21:00:00",
+    "location": "Spearfish High School",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20260921112422634753a1b32f6db49",
+    "url": "https://gobound.com/direct/comps/h20260921112422634753a1b32f6db49/show",
+    "title": "Boys Wrestling: Holiday Extravaganza Tourney (Junior Varsity)",
+    "slug": "boys-wrestling-holiday-extravaganza-tourney-junior-varsity",
+    "sport": "Boys Wrestling",
+    "level": "Junior Varsity",
+    "sex": "male",
+    "description": "Junior Varsity Boys Wrestling - Holiday Extravaganza Tourney",
+    "start_dt": "2026-12-19T16:00:00",
+    "end_dt": "2026-12-20T02:00:00",
+    "location": "Case Auditorium",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]

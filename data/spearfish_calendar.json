@@ -3028,5 +3028,215 @@
     "start_dt": "Fri, 10 Apr 2026 13:29:27 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3807",
+    "title": "City Council Special Session",
+    "slug": "city-council-special-session",
+    "description": "<strong>Event date:</strong> October 14, 2026 <br /><strong>Event Time: </strong>04:15 PM - 11:59 PM<br /><strong>Location:</strong> <br />City Hall<br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Fri, 09 Oct 2026 12:33:33 -0700",
+    "start_dt": "Fri, 09 Oct 2026 12:33:33 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3777",
+    "title": "Park, Recreation, and Forestry Advisory Board Meeting",
+    "slug": "park-recreation-and-forestry-advisory-board-meeting",
+    "description": "<strong>Event date:</strong> October 15, 2026 <br /><strong>Event Time: </strong>07:30 AM - 11:59 PM<br /><strong>Location:</strong> <br />City Hall<br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Mon, 05 Oct 2026 14:14:53 -0700",
+    "start_dt": "Mon, 05 Oct 2026 14:14:53 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3717",
+    "title": "Teen Game Day",
+    "slug": "teen-game-day",
+    "description": "<strong>Event date:</strong> October 19, 2026 <br /><strong>Event Time: </strong>03:30 PM - 05:00 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Join us for some gaming fun! We will have a variety of board and card games, multiplayer chess, and even some TTRPGs available...and snacks! Open to grades 6-12.",
+    "published": "Tue, 01 Sep 2026 09:02:41 -0700",
+    "start_dt": "Tue, 01 Sep 2026 09:02:41 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3282",
+    "title": "City Council Meeting",
+    "slug": "city-council-meeting",
+    "description": "<strong>Event date:</strong> October 19, 2026 <br /><strong>Event Time: </strong>05:30 PM - 06:30 PM<br /><strong>Location:</strong> <br />City Hall<br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Mon, 05 Oct 2026 13:14:25 -0700",
+    "start_dt": "Mon, 05 Oct 2026 13:14:25 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3672",
+    "title": "Toddler Story Time",
+    "slug": "toddler-story-time",
+    "description": "<strong>Event date:</strong> October 20, 2026 <br /><strong>Event Time: </strong>09:30 AM - 10:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Early literacy activities for ages 1-3.",
+    "published": "Thu, 06 Aug 2026 10:16:29 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:16:29 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3650",
+    "title": "Story Time",
+    "slug": "story-time",
+    "description": "<strong>Event date:</strong> October 20, 2026 <br /><strong>Event Time: </strong>10:30 AM - 11:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Stories and activities for ages 4+",
+    "published": "Thu, 06 Aug 2026 10:14:02 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:14:02 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3464",
+    "title": "Planning Commission",
+    "slug": "planning-commission",
+    "description": "<strong>Event date:</strong> October 20, 2026 <br /><strong>Event Time: </strong>04:00 PM - 05:00 PM<br /><strong>Location:</strong> <br />City Hall <br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Wed, 08 Apr 2026 11:15:56 -0700",
+    "start_dt": "Wed, 08 Apr 2026 11:15:56 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3806",
+    "title": "News Literacy Presentation",
+    "slug": "news-literacy-presentation",
+    "description": "<strong>Event date:</strong> October 20, 2026 <br /><strong>Event Time: </strong>04:00 PM - 05:00 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Overwhelmed by social media feeds, trying to figure out what is real news and what is bogus? Join Mark Watson, editor of the Black Hills Pioneer, for a discussion on news literacy and tips for distinguishing legitimate news from false stories.",
+    "published": "Wed, 07 Oct 2026 15:36:48 -0700",
+    "start_dt": "Wed, 07 Oct 2026 15:36:48 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3730",
+    "title": "Spanish Conversation Hour",
+    "slug": "spanish-conversation-hour",
+    "description": "<strong>Event date:</strong> October 20, 2026 <br /><strong>Event Time: </strong>05:45 PM - 06:45 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />If you are looking to brush up on or improve your Spanish-speaking skills, this program is for you. This is not a class but rather an opportunity to visit with others in Spanish in a supportive and friendly environment to improve comfort and fluency.",
+    "published": "Tue, 01 Sep 2026 09:11:52 -0700",
+    "start_dt": "Tue, 01 Sep 2026 09:11:52 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3661",
+    "title": "Story Time",
+    "slug": "story-time",
+    "description": "<strong>Event date:</strong> October 21, 2026 <br /><strong>Event Time: </strong>09:30 AM - 10:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Stories and activities for ages 4+",
+    "published": "Thu, 24 Sep 2026 14:51:41 -0700",
+    "start_dt": "Thu, 24 Sep 2026 14:51:41 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3683",
+    "title": "Toddler Story Time",
+    "slug": "toddler-story-time",
+    "description": "<strong>Event date:</strong> October 21, 2026 <br /><strong>Event Time: </strong>10:30 AM - 11:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Early literacy activities for ages 1-3.",
+    "published": "Thu, 06 Aug 2026 10:21:51 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:21:51 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3487",
+    "title": "Lego Club (Ages 8+)",
+    "slug": "lego-club-ages-8",
+    "description": "<strong>Event date:</strong> October 21, 2026 <br /><strong>Event Time: </strong>03:30 PM - 04:30 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Join us for a once monthly Lego Club. Imagine. Build. Display! Show off your designs and creations. This program is designed for AGES 8+.<br /><br />Please do not bring your own Legos.",
+    "published": "Fri, 10 Apr 2026 13:29:27 -0700",
+    "start_dt": "Fri, 10 Apr 2026 13:29:27 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3778",
+    "title": "National Prescription Drug Take Back Day",
+    "slug": "national-prescription-drug-take-back-day",
+    "description": "<strong>Event date:</strong> October 24, 2026 <br /><strong>Event Time: </strong>10:00 AM - 02:00 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />It's time to clean your medicine cabinet of unneeded meds and drop them off on National Prescription Drug Take Back Day, October 24, 10 a.m. to 2 p.m., for proper disposal. There's a receptacle outside of the front door of the Spearfish Police Department, 225 W Illinois St, where you can drop off unused/expired/unneeded medications 24/7/365. Find out more at www.DEATakeBack.com.",
+    "published": "Wed, 07 Oct 2026 10:57:34 -0700",
+    "start_dt": "Wed, 07 Oct 2026 10:57:34 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3643",
+    "title": "Black Hills Writers Gathering",
+    "slug": "black-hills-writers-gathering",
+    "description": "<strong>Event date:</strong> October 25, 2026 <br /><strong>Event Time: </strong>02:00 PM - 04:30 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />This monthly event gives area writers an opportunity to share and discuss their work.",
+    "published": "Tue, 21 Jul 2026 08:38:31 -0700",
+    "start_dt": "Tue, 21 Jul 2026 08:38:31 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3718",
+    "title": "Teen Game Day",
+    "slug": "teen-game-day",
+    "description": "<strong>Event date:</strong> October 26, 2026 <br /><strong>Event Time: </strong>03:30 PM - 05:00 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Join us for some gaming fun! We will have a variety of board and card games, multiplayer chess, and even some TTRPGs available...and snacks! Open to grades 6-12.",
+    "published": "Tue, 01 Sep 2026 09:02:41 -0700",
+    "start_dt": "Tue, 01 Sep 2026 09:02:41 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3673",
+    "title": "Toddler Story Time",
+    "slug": "toddler-story-time",
+    "description": "<strong>Event date:</strong> October 27, 2026 <br /><strong>Event Time: </strong>09:30 AM - 10:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Early literacy activities for ages 1-3.",
+    "published": "Thu, 06 Aug 2026 10:16:29 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:16:29 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3651",
+    "title": "Story Time",
+    "slug": "story-time",
+    "description": "<strong>Event date:</strong> October 27, 2026 <br /><strong>Event Time: </strong>10:30 AM - 11:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Stories and activities for ages 4+",
+    "published": "Thu, 06 Aug 2026 10:14:02 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:14:02 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3731",
+    "title": "Spanish Conversation Hour",
+    "slug": "spanish-conversation-hour",
+    "description": "<strong>Event date:</strong> October 27, 2026 <br /><strong>Event Time: </strong>05:45 PM - 06:45 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />If you are looking to brush up on or improve your Spanish-speaking skills, this program is for you. This is not a class but rather an opportunity to visit with others in Spanish in a supportive and friendly environment to improve comfort and fluency.",
+    "published": "Tue, 01 Sep 2026 09:11:52 -0700",
+    "start_dt": "Tue, 01 Sep 2026 09:11:52 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3662",
+    "title": "Story Time",
+    "slug": "story-time",
+    "description": "<strong>Event date:</strong> October 28, 2026 <br /><strong>Event Time: </strong>09:30 AM - 10:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Stories and activities for ages 4+",
+    "published": "Thu, 24 Sep 2026 14:51:41 -0700",
+    "start_dt": "Thu, 24 Sep 2026 14:51:41 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3684",
+    "title": "Toddler Story Time",
+    "slug": "toddler-story-time",
+    "description": "<strong>Event date:</strong> October 28, 2026 <br /><strong>Event Time: </strong>10:30 AM - 11:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Early literacy activities for ages 1-3.",
+    "published": "Thu, 06 Aug 2026 10:21:51 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:21:51 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3283",
+    "title": "City Council Study Session",
+    "slug": "city-council-study-session",
+    "description": "<strong>Event date:</strong> October 28, 2026 <br /><strong>Event Time: </strong>04:15 PM - 06:15 PM<br /><strong>Location:</strong> <br />City Hall<br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Mon, 05 Oct 2026 13:59:59 -0700",
+    "start_dt": "Mon, 05 Oct 2026 13:59:59 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

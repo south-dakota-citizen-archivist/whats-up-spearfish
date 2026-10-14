@@ -1,5 +1,18 @@
 [
   {
+    "url": "https://untappd.com/b/laughing-sun-brewing-co-droppin-cones/1391906",
+    "title": "Droppin' Cones",
+    "slug": "droppin-cones",
+    "category": "IPA - Imperial / Double",
+    "abv": "9.5%",
+    "ibu": "100",
+    "brewery": "Laughing Sun Brewing Co.",
+    "rating": "3.86",
+    "image_url": "https://labels.untappd.com/1391906",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
     "url": "https://untappd.com/b/kros-strain-brewing-dark-lager/5790934",
     "title": "Dark Lager",
     "slug": "dark-lager",
@@ -59,7 +72,7 @@
     "abv": "4.9%",
     "ibu": "18",
     "brewery": "Sawyer Brewing Co",
-    "rating": "3.62",
+    "rating": "3.61",
     "image_url": "https://labels.untappd.com/3627064",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"
@@ -87,19 +100,6 @@
     "brewery": "Heavy Riff Brewing Company",
     "rating": "3.87",
     "image_url": "https://labels.untappd.com/2862628",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
-    "url": "https://untappd.com/b/surly-brewing-company-overrated/302880",
-    "title": "OverRated",
-    "slug": "overrated",
-    "category": "IPA - American",
-    "abv": "7.3%",
-    "ibu": "69",
-    "brewery": "Surly Brewing Company",
-    "rating": "3.86",
-    "image_url": "https://labels.untappd.com/302880",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"
   },

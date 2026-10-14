@@ -5047,5 +5047,71 @@
     "image_url": "https://npr.brightspotcdn.com/e2/fa/f1ba45ab4306a98285447def3bc1/377e8d1c82-kayak-oahe-dam.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-10-14/man-accused-in-fatal-shooting-of-deputy-faces-new-charges",
+    "title": "Man accused in fatal shooting of deputy faces new charges",
+    "slug": "sdpb-man-accused-in-fatal-shooting-of-deputy-faces-new-charges",
+    "published": "2026-10-14",
+    "byline": "By SDPB Staff",
+    "description": "The man accused in the fatal shooting of a Minnehaha County Deputy now faces additional charges.",
+    "image_url": "https://npr.brightspotcdn.com/d6/f4/03b0084b43648ada282d33c90f79/image-83.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/education/2026-10-14/usd-president-sheila-gestring-announces-retirement",
+    "title": "USD president Sheila Gestring announces retirement",
+    "slug": "sdpb-usd-president-sheila-gestring-announces-retirement",
+    "published": "2026-10-14",
+    "byline": "By SDPB News Staff",
+    "description": "Gestring's retirement is effective June of 2027. She has been president of USD since 2018.",
+    "image_url": "https://npr.brightspotcdn.com/f4/f1/d66dab494a9494ffd3e9b8bf6bd2/sheila-gestring.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-10-14/analysis-sioux-falls-stories-of-statewide-interest",
+    "title": "Analysis: Sioux Falls stories of statewide interest",
+    "slug": "sdpb-analysis-sioux-falls-stories-of-statewide-interest",
+    "published": "2026-10-14",
+    "byline": "By Lori Walsh",
+    "description": "Journalists Patrick Lalley and Jonathan Ellis discuss top news headlines that reflect what's happening in Sioux Falls.",
+    "image_url": "https://npr.brightspotcdn.com/c1/8a/4a1ee3104d89a930ca42658449df/2026-political-junkies-logo-sdpb-1920x1080.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/elections/2026-10-13/state-treasurer-candidates-discuss-security-and-unclaimed-property-returns",
+    "title": "State Treasurer candidates discuss security and unclaimed property returns",
+    "slug": "sdpb-state-treasurer-candidates-discuss-security-and-unclaimed-property-returns",
+    "published": "2026-10-13",
+    "byline": "By Lori Walsh",
+    "description": "Two candidates say they are ready to become the next chief banking officer for South Dakota. Republican Melissa Hull and Democrat Margaret Kuipers make their case to voters.",
+    "image_url": "https://npr.brightspotcdn.com/eb/58/8c001ea847bc95c0c610ea1c94e3/untitled-october-02-2026-at-08-42-24-7.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/education/2026-10-13/department-of-education-report-highlights-standardization-preschool-funding",
+    "title": "Department of Education report highlights standardization, preschool funding",
+    "slug": "sdpb-department-of-education-report-highlights-standardization-preschool-funding",
+    "published": "2026-10-13",
+    "byline": "By C.J. Keene",
+    "description": "The Department of Education delivered its annual report to the Government Operations and Audit Committee, or GOAC. The state is still grappling with challenges in education, from standards changes to how to tackle questions of school choice or homeschooling.",
+    "image_url": "https://npr.brightspotcdn.com/3e/24/a059224d492a8390dbb9b537a837/education-school-central-meade-school-uploaded-2023-sdpb.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-10-13/south-dakota-launches-down-payment-assistance-program-for-first-time-homebuyers",
+    "title": "South Dakota launches down payment assistance program for first-time homebuyers",
+    "slug": "sdpb-south-dakota-launches-down-payment-assistance-program-for-first-time",
+    "published": "2026-10-13",
+    "byline": "By SDPB News Staff",
+    "description": "Officials are calling it the \"Give Me Five\" program. Eligible first-time home buyers can receive a five-percent boost toward down payment through a five-year forgivable loan.<br/>",
+    "image_url": "https://npr.brightspotcdn.com/e7/03/8ec0f8db4bd2ae835fa0ba643d82/pacific-wa-new-house-under-construction-01.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

@@ -92,19 +92,6 @@
   },
   {
     "url": "https://www.sawyerbrewingco.com/menu",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/951fc841-b2e4-4d5f-b63c-c689c5bf1a46/lemonsunburstwheatdark.jpg",
-    "title": "lemonsunburstwheatdark.jpg",
-    "slug": "lemonsunburstwheatdark-jpg",
-    "category": "Light & Easy",
-    "description": "",
-    "abv": "",
-    "notes": "",
-    "prices": [],
-    "record_type": "beer",
-    "source_label": "Sawyer Brewing Co."
-  },
-  {
-    "url": "https://www.sawyerbrewingco.com/menu",
     "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/c116d393-6245-4da6-9eed-1e55fde1e467/amberlagerwebsite.jpg",
     "title": "Amber Lager",
     "slug": "amber-lager",
@@ -222,6 +209,19 @@
   },
   {
     "url": "https://www.sawyerbrewingco.com/menu",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/b7338ad0-c608-473b-9843-6f9c67b5266b/Phazerdark.jpg",
+    "title": "Phazerdark.jpg",
+    "slug": "phazerdark-jpg",
+    "category": "Hop Heads",
+    "description": "",
+    "abv": "",
+    "notes": "",
+    "prices": [],
+    "record_type": "beer",
+    "source_label": "Sawyer Brewing Co."
+  },
+  {
+    "url": "https://www.sawyerbrewingco.com/menu",
     "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/0d54566a-8384-4f0f-810c-f1b670f2fa96/pinneapplepeacheswebsitedark.jpg",
     "title": "pinneapplepeacheswebsitedark.jpg",
     "slug": "pinneapplepeacheswebsitedark-jpg",
@@ -266,32 +266,6 @@
       },
       {
         "price": 5.5,
-        "ounces": 16
-      }
-    ],
-    "record_type": "beer",
-    "source_label": "Sawyer Brewing Co."
-  },
-  {
-    "url": "https://www.sawyerbrewingco.com/menu",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/d5b0558c-d1b6-4e91-a70c-4f68d7f83fae/DarkLager2024.jpg",
-    "title": "Dark Lager",
-    "slug": "dark-lager",
-    "category": "Dark Side",
-    "description": "Our Dark Lager is malty sweet with smooth dark roasty notes and a light body.",
-    "abv": "5.8%",
-    "notes": "",
-    "prices": [
-      {
-        "price": 2.5,
-        "ounces": 5
-      },
-      {
-        "price": 4.0,
-        "ounces": 10
-      },
-      {
-        "price": 6.0,
         "ounces": 16
       }
     ],
