@@ -1,6 +1,19 @@
 {
-  "fetched_at": "2026-10-14T20:24:47.692503+00:00",
+  "fetched_at": "2026-10-15T20:10:22.730460+00:00",
   "observations": [
+    {
+      "species_code": "rthhum",
+      "common_name": "Ruby-throated Hummingbird",
+      "scientific_name": "Archilochus colubris",
+      "observed_on": "2026-10-14",
+      "count": 1,
+      "location_name": "1209 Pineview Dr",
+      "lat": 44.3873969,
+      "lng": -103.5116816,
+      "location_id": "L2346915",
+      "checklist_id": "S402374856",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/221352761/square.jpg"
+    },
     {
       "species_code": "wiltur",
       "common_name": "Wild Turkey",
@@ -104,19 +117,6 @@
       "location_id": "L1527803",
       "checklist_id": "S401853612",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/106405630/square.jpg"
-    },
-    {
-      "species_code": "rthhum",
-      "common_name": "Ruby-throated Hummingbird",
-      "scientific_name": "Archilochus colubris",
-      "observed_on": "2026-10-12",
-      "count": 1,
-      "location_name": "1209 Pineview Dr",
-      "lat": 44.3873969,
-      "lng": -103.5116816,
-      "location_id": "L2346915",
-      "checklist_id": "S401846311",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/221352761/square.jpg"
     },
     {
       "species_code": "rufgro",
@@ -246,7 +246,7 @@
       "lng": -103.733604,
       "location_id": "L78463980",
       "checklist_id": "S401393514",
-      "photo_url": "https://static.inaturalist.org/photos/25544020/square.jpeg"
+      "photo_url": "https://static.inaturalist.org/photos/750695537/square.jpg"
     },
     {
       "species_code": "houfin",

@@ -5113,5 +5113,38 @@
     "image_url": "https://npr.brightspotcdn.com/e7/03/8ec0f8db4bd2ae835fa0ba643d82/pacific-wa-new-house-under-construction-01.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/elections/2026-10-15/program-aims-to-support-indigenous-candidates-and-empower-native-voters",
+    "title": "Program aims to support Indigenous candidates and empower Native voters",
+    "slug": "sdpb-program-aims-to-support-indigenous-candidates-and-empower-native-voters",
+    "published": "2026-10-15",
+    "byline": "By C.J. Keene",
+    "description": "South Dakota’s Native candidates are looking for new ways to support Indigenous candidates and get the vote out in reservation communities. An organization representing them say voter apathy isn’t the problem — it’s overcoming decades of policy.",
+    "image_url": "https://npr.brightspotcdn.com/26/36/3d75f9394ba5a5d122c63d59f7c4/microsoftteams-image-1.png",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/arts-life/2026-10-15/twenty-four-hour-film-project-fuels-conversation-around-homelessness-and-helping",
+    "title": "Twenty-four-hour film project fuels conversation around homelessness and helping",
+    "slug": "sdpb-twenty-four-hour-film-project-fuels-conversation-around-homelessness-and",
+    "published": "2026-10-15",
+    "byline": "By Lori Walsh",
+    "description": "The documentary \"24 Hours on 8th Street\" is having a moment in Sioux Falls. The filmmakers discuss how an idea became a call to action, and how a call to action might become a movement.",
+    "image_url": "https://npr.brightspotcdn.com/fb/68/f1cca49747ed80accacf3d881fe5/8th-street.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-10-14/rapid-city-seeks-input-on-local-data-center-policy",
+    "title": "Rapid City seeks input on local data center policy",
+    "slug": "sdpb-rapid-city-seeks-input-on-local-data-center-policy",
+    "published": "2026-10-14",
+    "byline": "By C.J. Keene",
+    "description": "Rapid City surveyed citizens in a town hall to get to the bottom of the ongoing data center debate. The results were clear – most believe data centers are at best necessary evils, at worst drains on natural resources which should be banned from city limits.",
+    "image_url": "https://npr.brightspotcdn.com/dc/0e/81d3fd554164a87c34491f5ada55/image-2026-10-14t193007-317.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

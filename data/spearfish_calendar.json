@@ -3238,5 +3238,25 @@
     "start_dt": "Mon, 05 Oct 2026 13:59:59 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3809",
+    "title": "Historic Preservation Commission 10-15-2026",
+    "slug": "historic-preservation-commission-10-15-2026",
+    "description": "<strong>Event date:</strong> October 15, 2026 <br /><strong>Event Time: </strong>06:00 PM - 11:59 PM<br /><strong>Location:</strong> <br />222 W. Hudson St.<br />Spearfish, SD 57783",
+    "published": "Wed, 14 Oct 2026 17:07:25 -0700",
+    "start_dt": "Wed, 14 Oct 2026 17:07:25 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3737",
+    "title": "Friends of the Library Book Sale",
+    "slug": "friends-of-the-library-book-sale",
+    "description": "<strong>Event dates:</strong> October 29, 2026 - November 1, 2026<br /><strong>Event Time: </strong>12:00 AM - 11:59 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Purchase a bag of books and media for $5 and help support library programming.",
+    "published": "Tue, 01 Sep 2026 13:45:11 -0700",
+    "start_dt": "Tue, 01 Sep 2026 13:45:11 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

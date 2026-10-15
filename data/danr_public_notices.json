@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-14T20:25:17.034012+00:00",
+  "fetched_at": "2026-10-15T20:10:54.412802+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -497,6 +497,40 @@
         {
           "label": "Application Review",
           "url": "http://danr.sd.gov/Environment/AirQuality/PN/HE16sb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Funding (State Revolving Fund Intended Use Plans)",
+      "deadline": "11/04/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=11/04/2026&name=Fiscal Year 2027 Clean Water State Revolving Fund Intended Use Plan and Project Priority List&pntype=wra&description=The Intended Use Plan describes how the state intends to use available funds for the year to meet the objectives of the Clean Water Act and further the goal of protecting public health.  It also includes a project priority list.",
+      "name": "Fiscal Year 2027 Clean Water State Revolving Fund Intended Use Plan and Project Priority List",
+      "description": "The Intended Use Plan describes how the state intends to use available funds for the year to meet the objectives of the Clean Water Act and further the goal of protecting public health.  It also includes a project priority list.",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "http://danr.sd.gov/wrimage/pub/staterevolvingfund/2027 CW IUP Hearing ad.pdf"
+        },
+        {
+          "label": "Plan",
+          "url": "https://danr.sd.gov/wrimage/pub/staterevolvingfund/2027 CW IUP Draft.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Funding (State Revolving Fund Intended Use Plans)",
+      "deadline": "11/04/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=11/04/2026&name=Fiscal Year 2027 Drinking Water State Revolving Fund Intended Use Plan and Project Priority List&pntype=wra&description=The Intended Use Plan describes how the state intends to use available funds for the year to meet the objectives of the Safe Drinking Water Act and further the goal of protecting public health.  It also includes a project priority list.",
+      "name": "Fiscal Year 2027 Drinking Water State Revolving Fund Intended Use Plan and Project Priority List",
+      "description": "The Intended Use Plan describes how the state intends to use available funds for the year to meet the objectives of the Safe Drinking Water Act and further the goal of protecting public health.  It also includes a project priority list.",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "http://danr.sd.gov/wrimage/pub/staterevolvingfund/2027 DW IUP Hearing Ad.pdf"
+        },
+        {
+          "label": "Plan",
+          "url": "https://danr.sd.gov/wrimage/pub/staterevolvingfund/2027 DW IUP Draft.pdf"
         }
       ]
     },

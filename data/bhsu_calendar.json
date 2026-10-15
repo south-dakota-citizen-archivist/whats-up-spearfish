@@ -2496,5 +2496,31 @@
     "category": "Campus Calendar/Events",
     "record_type": "event",
     "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "bdb65ab5-64b6-4ec9-951c-656aad34c9da",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/bdb65ab5-64b6-4ec9-951c-656aad34c9da",
+    "title": "BHSU E-Waste Drive",
+    "slug": "bhsu-e-waste-drive",
+    "description": "The office of sustainability is hosting its bi-annual E-Waste Drive! If you have old computers, printers, keyboards, hard drives, etc. that you would like to properly dispose of this is the time! This event is FREE for all BHSU students, staff, and faculty! If students, staff, faculty, or community members have electronic waste that they would like to properly dispose of now is the time! The sustainability office is hosting our bi-annual e-waste drive Friday October, 23rd from 9am-5pm located at the Facilities Building, 1234 Yellow Jacket Lane, Spearfish, SD. This event is free for all BHSU students, staff, and faculty! Below is the price community members are required to pay for waste: CTRS:$10 MacBook's: $10 Large printers: $10 Smart boards: $50 Standalone copiers: $50 TVs: $50 Hard drives: $50 If you have any questions please contact the sustainability department at Sustainability@bhsu.edu Persons with disabilities requesting accommodations for this event should contact the sustainability department at least 48 business hours prior to the start of the event.",
+    "start_dt": "2026-10-23T15:00",
+    "end_dt": "2026-10-23T23:00",
+    "location": "BHSU Facilities Building",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "",
+    "tags": [
+      "Alumni Event",
+      "Community Event",
+      "Student Life",
+      "BHSU Event",
+      "Academics",
+      "University Advancement"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
   }
 ]
