@@ -2522,5 +2522,49 @@
     "category": "Campus Calendar/Events",
     "record_type": "event",
     "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "1747f191-c51e-4f35-ad44-27c8f2f84f6c",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/1747f191-c51e-4f35-ad44-27c8f2f84f6c",
+    "title": "Civic Life @ America's 250th - Dr. Nicholas W. Drummond Civic Engagement Speaker Series",
+    "slug": "civic-life-america-s-250th-dr-nicholas-w-drummond-civic-engagement-speaker",
+    "description": "Join us for a lively panel discussion on civic life at the 250th anniversary of America's founding. Where are we today, and where are we headed? Distinguished Panelists: Benjamin Jones, Director of South Dakota State Historical Society Kelly Kirk, Director of Sanford Lab Homestake Visitor Center Mary Witlacil, Assistant Professor at South Dakota School for Mines & Technology",
+    "start_dt": "2026-10-20T22:00",
+    "end_dt": "2026-10-20T22:00",
+    "location": "Student Union Crow Peak Conference Room",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "Jason McConnell",
+    "tags": [
+      "Academics",
+      "Center for Civic Engagement",
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "046f26e3-011d-4c80-aa62-9dd2669eff01",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/046f26e3-011d-4c80-aa62-9dd2669eff01",
+    "title": "a Yellow Rose Project - Responses, Reflections and Reactions to the 19th Amendment",
+    "slug": "a-yellow-rose-project-responses-reflections-and-reactions-to-the-19th-amendment",
+    "description": "Join us for a public presentation by editors Meg Griffiths and Frances Jakubek, with time for questions from the audience Cost is free to the public More information at www.ayellowroseproject.com A Yellow Rose project is a photographic collaboration of responses, reflections, and reactions to the 19th Amendment from over one hundred women across the United States. Today, the project lives as a traveling exhibition, a published book, and an evolving conversation about representation, encouragement, and the creation and erasure of histories.",
+    "start_dt": "2026-10-29T00:00",
+    "end_dt": "2026-10-29T00:00",
+    "location": "Joy (Proctor) Krautschun Alumni/Foundation Welcome Center",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "Jason McConnell",
+    "tags": [
+      "Home"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
   }
 ]

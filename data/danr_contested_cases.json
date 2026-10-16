@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-15T20:13:35.179133+00:00",
+  "fetched_at": "2026-10-16T19:51:34.582384+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -40,9 +40,30 @@
       "title": "Petition to Modify the Recommended Solid Waste Permit for the Rapid City Landfill",
       "description": "Petitioners seeks that the Board of Minerals and Environment modify the proposed solid waste permit for the Rapid City landfill",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID124",
-      "documents": [],
-      "total_docs": 0,
-      "latest_doc_date": ""
+      "documents": [
+        {
+          "label": "City of Rapid City's Objection to Petitioners' First Set of Supplemental Interrogatories and Requests for Production",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Rapid City Objection to Petitioners' First Set of Supplemental Interrogatories and Requests for Production.pdf"
+        },
+        {
+          "label": "Petitioners' September 11 2026 First Set Supplemental Interrogatories and Request for Production to City of Rapid City, South Dakota for the Rapid City Landfill",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Sept 11 2026 Pet 1st Set Supp Inter  RFDs to City RC.pdf"
+        },
+        {
+          "label": "Petitioners' Joint Motion to Set Contested Hearing Location in Rapid City",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Sept 23 2026 Motion Hrg Held in RC.pdf"
+        },
+        {
+          "label": "Petitioners' Supplemental Report to Expert Report of Harold Barber, Jr.",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Petitioners_Supplemental_Report_to_Expert_Report_of_Harold_Barber.pdf"
+        },
+        {
+          "label": "Petitioners' Notice to Take Depositions of Hunter Roberts and Steven Kropp",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Binegar electronic Sept 11 2026 Cover ltr Notice of Depostions Roberts  Kropp.pdf"
+        }
+      ],
+      "total_docs": 48,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "117",
@@ -51,9 +72,30 @@
       "title": "Petitions to Deny the City of Madison Restricted Use Solid Waste Facility Permit",
       "description": "Petitioners seeks that the Department of Agriculture and Natural Resources deny the city of Madison restricted use solid waste facility permit initial request.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID117",
-      "documents": [],
-      "total_docs": 0,
-      "latest_doc_date": ""
+      "documents": [
+        {
+          "label": "Potters' Request to Establish Deadline to Make Written Objection to Recommended Decision and Request to Present Oral Argument",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Request to Establish Deadline to Make Written Objection and to Present Oral Argument.pdf"
+        },
+        {
+          "label": "OHE Proposed Decision Findings of Fact, Conclusions of Law, and Order",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/OHE Madison Contested Case Proposed Decision Findings of Fact, Conclusions of Law, and Order.pdf"
+        },
+        {
+          "label": "Department's Response to Potters' Post-Hearing Brief, and Department's Objection to Potters' Proposed Findings of Fact & Conclusions of Law",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/DANR Response Brief and Objxn FOF & COL.Madison RUS Permit Application.service 06 12 2026.pdf"
+        },
+        {
+          "label": "Potters' Proposed Order",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Potters - Proposed Order.pdf"
+        },
+        {
+          "label": "Potters' Proposed Findings of Fact and Conclusions of Law",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/MadisonContestedCase2024/Potters - Proposed FOF and COL.pdf"
+        }
+      ],
+      "total_docs": 64,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "24",
@@ -62,9 +104,18 @@
       "title": "Powertech (USA) Inc. Large Scale Mine Permit Application",
       "description": "Proposed uranium in situ leach mine and processing facility. Injection wells will be used to pump groundwater fortified with oxygen and carbon dioxide into the ore deposits to dissolve uranium. Production wells will be used to pump the uranium-laden fluids to the surface for recovery.  The fluids from the production wells will be processed at two separate facilities at the mine site to extract and concentrate the uranium.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID24",
-      "documents": [],
-      "total_docs": 0,
-      "latest_doc_date": ""
+      "documents": [
+        {
+          "label": "Powertech (USA), Inc. - Large Scale Mine Permit Application",
+          "url": "https://danr.sd.gov/powertech/PtechMiningPermitApp.aspx"
+        },
+        {
+          "label": "Powertech (USA), Inc. - Exploration and Mine Permits",
+          "url": "https://danr.sd.gov/powertech/ptechExplorationPermits.aspx"
+        }
+      ],
+      "total_docs": 2,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "130",
@@ -73,9 +124,30 @@
       "title": "City of Custer Surface Water Discharge Permit",
       "description": "Reissuance of the city of Custer's Surface Water Discharge Permit.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID130",
-      "documents": [],
-      "total_docs": 0,
-      "latest_doc_date": ""
+      "documents": [
+        {
+          "label": "Ordering Transferring File to OHE & Stay of Previous Deadlines",
+          "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/Order Transfer OHE & Stay of Deadlines.pdf"
+        },
+        {
+          "label": "Joint Stipulation to Stay Deadlines",
+          "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/Joint Stipulation.pdf"
+        },
+        {
+          "label": "Correspondence re Certificate of Service for City of Custer's Expert Disclosures",
+          "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/Corr re Certificate of Service for Custer Expert Disclosures.pdf"
+        },
+        {
+          "label": "DANR's Disclosure of Expert Witnesses",
+          "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/DANR Disclosure of Expert Witnesses.pdf"
+        },
+        {
+          "label": "Reply in Support of Motion to Transfer & Affidavit",
+          "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/Reply in Support of Motion to Transfer & Affidavit.pdf"
+        }
+      ],
+      "total_docs": 38,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "125",
@@ -180,9 +252,30 @@
       "title": "8991-3 Century Swine RE, LLC.",
       "description": "Application for a water permit to appropriate up to 154 acre-feet of water annually at a maximum combined pump rate of 0.50 cubic feet of water per second from one existing well and up to two additional wells to be completed into the Dakota Aquifer (approximately 1,540 feet deep) located in the NW 1/4 NW 1/4 Section 9 for commercial use in a swine facility located in the NW 1/4 Section 9; all in T121N-R71W.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID129",
-      "documents": [],
-      "total_docs": 0,
-      "latest_doc_date": ""
+      "documents": [
+        {
+          "label": "Findings of Fact, Conclusions of Law, and Decision",
+          "url": "https://danr.sd.gov/wrimage/pub/8991-3_FOF.pdf"
+        },
+        {
+          "label": "Proposed Findings of Fact & Conclusions of Law - Counsel for Petitioners",
+          "url": "https://danr.sd.gov/wrimage/pub/8991-3_propFOF_pet.pdf"
+        },
+        {
+          "label": "Response to Applicant's Findings of Fact - Counsel for Chief Engineer",
+          "url": "https://danr.sd.gov/wrimage/pub/8991-3_Response to Applicant's Findings of Fact.pdf"
+        },
+        {
+          "label": "Proposed Findings of Fact & Conclusions of Law - Counsel for Applicant",
+          "url": "https://danr.sd.gov/wrimage/pub/8991-3_propFOF_app.pdf"
+        },
+        {
+          "label": "Pre-Hearing Submission by Counsel for Petitioners",
+          "url": "https://danr.sd.gov/wrimage/pub/8991-3_prehearsub_pet.pdf"
+        }
+      ],
+      "total_docs": 23,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "127",
@@ -191,9 +284,30 @@
       "title": "8987-3 Vic Utech",
       "description": "Application for a water permit to appropriate up to 2.45 acre-feet of water annually at a maximum pump rate of 0.22 cubic feet of water per second from one existing well completed into the Grey Goose Aquifer (90 feet deep). The well, located in the NW 1/4 SE 1/4 Section 34, will supply water for commercial use at an RV Park to be located in the SE 1/4 Section 34; all in T113N-R80W.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID127",
-      "documents": [],
-      "total_docs": 0,
-      "latest_doc_date": ""
+      "documents": [
+        {
+          "label": "Appellant's Brief to Sixth Judicial Circuit Court",
+          "url": "https://danr.sd.gov/wrimage/pub/8987-3_Utech appeal brief 10-14-2026.pdf"
+        },
+        {
+          "label": "Filings Submitted to Sully County Clerk of Courts",
+          "url": "https://danr.sd.gov/wrimage/pub/8987-3_Utech_Chronodex.pdf"
+        },
+        {
+          "label": "Notice of Appearance to Sixth Judicial Circuit Court - Counsel for Applicant",
+          "url": "https://danr.sd.gov/wrimage/pub/8987-3_6thcircuitcourt_NOP_app.pdf"
+        },
+        {
+          "label": "Notice of Appearance to Sixth Judicial Circuit Court - Counsel for Petitioner",
+          "url": "https://danr.sd.gov/wrimage/pub/8987-3_6thcircuitcourt_NOP_pet.pdf"
+        },
+        {
+          "label": "Appeal to Sixth Judicial Circuit Court",
+          "url": "https://danr.sd.gov/wrimage/pub/8987-3_Appeal.pdf"
+        }
+      ],
+      "total_docs": 33,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "126",
@@ -202,9 +316,30 @@
       "title": "8982-3 Century Swine RE, LLC.",
       "description": "Application for a water permit to appropriate up to 30.68 acre-feet of water annually at a maximum pump rate of 0.11 cubic feet of water per second from one well completed into the Pierre Shale Aquifer (approximately 420 feet deep) located in the NW 1/4 NW 1/4 Section 9  for commercial use in a swine facility located in the NW 1/4 Section 9; all in T121N-R71W.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID126",
-      "documents": [],
-      "total_docs": 0,
-      "latest_doc_date": ""
+      "documents": [
+        {
+          "label": "Findings of Fact, Conclusions of Law, and Decision",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3_final FOF.pdf"
+        },
+        {
+          "label": "Response to Proposed Findings of Fact - Counsel for Applicant",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3_FOF_res_app.pdf"
+        },
+        {
+          "label": "Proposed Findings of Fact & Conclusions of Law",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3 Century Swine_propFOF.pdf"
+        },
+        {
+          "label": "Supplemental Pre-Hearing Submission by Counsel for the Applicant",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3_CenturySwine Sub.pdf"
+        },
+        {
+          "label": "Supplemental Pre-Hearing Submission by Counsel for the Petitioners",
+          "url": "https://danr.sd.gov/wrimage/pub/8982-3_Petitioners' Supplemental Pre-Hearing Submission.pdf"
+        }
+      ],
+      "total_docs": 27,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "17",
@@ -241,9 +376,26 @@
       "title": "2686-2 Powertech (USA) Inc.",
       "description": "Appropriate and place to beneficial use up to 18.938 cubic feet of water per second (cfs) limited to an annual consumptive use volume up to 274.2 acre feet of water (equivalent to 0.38 cfs or 170 gpm) from multiple wells completed into the Inyan Kara aquifer at a depth between 200 to 800 feet.",
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID18",
-      "documents": [],
-      "total_docs": 0,
-      "latest_doc_date": ""
+      "documents": [
+        {
+          "label": "Notice of Withdrawal",
+          "url": "https://danr.sd.gov/wrimage/pub/2685-2_2686-2_WITHDRAWLAPPROVAL.pdf"
+        },
+        {
+          "label": "Request to Withdraw Application",
+          "url": "https://danr.sd.gov/wrimage/pub/2685-2_2686-2_WithdrawalRequest.pdf"
+        },
+        {
+          "label": "Powertech (USA) Inc. Consolidated Contested Case webpage",
+          "url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID95"
+        },
+        {
+          "label": "Application for Water Right Permit",
+          "url": "https://danr.sd.gov/powertech/wrptech.aspx"
+        }
+      ],
+      "total_docs": 4,
+      "latest_doc_date": "0000-00-00"
     },
     {
       "ccid": "128",

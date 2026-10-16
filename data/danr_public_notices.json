@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-15T20:10:54.412802+00:00",
+  "fetched_at": "2026-10-16T19:48:37.212709+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -94,57 +94,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/2911-2_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "General Permits",
-      "deadline": "10/15/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/15/2026&name=General Permit for Yard Waste Compost Facilities&pntype=gp&description=Notice of reissuance of the solid waste general permit for yard waste compost facilities.",
-      "name": "General Permit for Yard Waste Compost Facilities",
-      "description": "Notice of reissuance of the solid waste general permit for yard waste compost facilities.",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/2026 General Permits Pub Notice Compost.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_Compost General Permit GPCF 26-XX.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "General Permits",
-      "deadline": "10/15/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/15/2026&name=General Permit for Municipal Solid Waste Transfer Station Facilities&pntype=gp&description=Notice of reissuance of the solid waste general permit for municipal solid waste transfer station facilities.",
-      "name": "General Permit for Municipal Solid Waste Transfer Station Facilities",
-      "description": "Notice of reissuance of the solid waste general permit for municipal solid waste transfer station facilities.",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/2026 General Permits Pub Notice XFR.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_XFR General Permit GPTS 26-XX.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "General Permits",
-      "deadline": "10/15/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/15/2026&name=General Permit for Petroleum-Contaminated Soil Treatment Facilities&pntype=gp&description=Notice of reissuance and amendment of the language of the solid waste general permit for petroleum-contaminated soil treatment facilities.",
-      "name": "General Permit for Petroleum-Contaminated Soil Treatment Facilities",
-      "description": "Notice of reissuance and amendment of the language of the solid waste general permit for petroleum-contaminated soil treatment facilities.",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/2026 General Permits Pub Notice PCS.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_PCS General Permit GPPCS 26-XX.pdf"
         }
       ]
     },
@@ -574,6 +523,27 @@
       ]
     },
     {
+      "notice_type": "Air Quality Permit",
+      "deadline": "11/15/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=11/15/2026&name=South Dakota Soybean Processors&pntype=aq&description=South Dakota Soybean Processors is a soybean processing facility. The Department recommends issuance of an air quality construction permit and administrative amendments.",
+      "description": "South Dakota Soybean Processors is a soybean processing facility. The Department recommends issuance of an air quality construction permit and administrative amendments.",
+      "location": "Volga",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/SDSP16pn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/SDSP16dp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/SDSP16sb.pdf"
+        }
+      ]
+    },
+    {
       "notice_type": "Waste Management \u2014 Hazardous Waste",
       "deadline": "11/28/2026",
       "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=11/28/2026&name=Tech Ord, a Division of AMTEC Corporation&pntype=wm_hw&description=Permit Renewal to Continue Operation of a Hazardous Waste Treatment &amp; Storage Facility",
@@ -645,34 +615,6 @@
       "notice_type": "Mining License",
       "deadline": "",
       "comment_url": "",
-      "name": "Greg Kroupa",
-      "description": "Notice of Intent to Mine Gravel",
-      "location": "17 miles NW of White Lake, SD",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://media.sd.gov/danr/MM/S1165001PublicNotice.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Mining License",
-      "deadline": "",
-      "comment_url": "",
-      "name": "Kelly Jackson",
-      "description": "Notice of Intent to Mine Gravel",
-      "location": "1.5 miles SE of Crow Lake",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://media.sd.gov/danr/MM/S1168001PublicNotice.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Mining License",
-      "deadline": "",
-      "comment_url": "",
       "name": "Morris, Inc",
       "description": "Notice of Intent to Mine Rock, Sand, and Gravel",
       "location": "141/2 miles northeast of Blunt, SD",
@@ -680,48 +622,6 @@
         {
           "label": "Public Notice",
           "url": "https://media.sd.gov/danr/MM/S2058PublicNotice.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Mining License",
-      "deadline": "",
-      "comment_url": "",
-      "name": "Northern Plains, LLC",
-      "description": "Notice of Intent to mine gravel",
-      "location": "West central Tripp County near the intersection of 282nd St, along 304th ave.",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://media.sd.gov/danr/MM/S634008PublicNotice.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Mining License",
-      "deadline": "",
-      "comment_url": "",
-      "name": "Northern Plains, LLC",
-      "description": "Notice of Intent to Mine gravel",
-      "location": "West centeral Tripp County near the intersection of 282ns St, along 304th ave",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://media.sd.gov/danr/MM/S634009PublicNotice.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Mining License",
-      "deadline": "",
-      "comment_url": "",
-      "name": "Troy Baloun",
-      "description": "Notice of Intent to Mine Gravel",
-      "location": "2 miles west of intersection hwy 47 and 176th st, Hyde County.",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://media.sd.gov/danr/MM/S1164001PublicNotice.pdf"
         }
       ]
     }

@@ -248,32 +248,6 @@
   },
   {
     "url": "https://www.sawyerbrewingco.com/menu",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/2ddb2f53-3861-45b0-b2f5-9b07143ac4fa/scotchdarkweb.jpg",
-    "title": "Smoldering Scotch Ale",
-    "slug": "smoldering-scotch-ale",
-    "category": "Dark Side",
-    "description": "A roasty, and slightly sweet malty treat. Hints of caramel and maple will make this an instant favorite.",
-    "abv": "7.1%",
-    "notes": "",
-    "prices": [
-      {
-        "price": 2.0,
-        "ounces": 5
-      },
-      {
-        "price": 3.5,
-        "ounces": 10
-      },
-      {
-        "price": 5.5,
-        "ounces": 16
-      }
-    ],
-    "record_type": "beer",
-    "source_label": "Sawyer Brewing Co."
-  },
-  {
-    "url": "https://www.sawyerbrewingco.com/menu",
     "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/7adb41f3-c788-418f-b300-3e8cf7c27a34/pints%26ponytails.jpg",
     "title": "pints%26ponytails.jpg",
     "slug": "pints-26ponytails-jpg",
