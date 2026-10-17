@@ -46,7 +46,7 @@
     "abv": "4.9%",
     "ibu": "",
     "brewery": "Sawyer Brewing Co",
-    "rating": "3.7",
+    "rating": "3.69",
     "image_url": "https://labels.untappd.com/6828413",
     "record_type": "beer",
     "source_label": "Killian's"
@@ -208,15 +208,15 @@
     "source_label": "Killian's"
   },
   {
-    "url": "https://untappd.com/b/left-hand-brewing-company-pumpkin-spice-latte-nitro-2026/6874160",
-    "title": "Pumpkin Spice Latte Nitro (2026)",
-    "slug": "pumpkin-spice-latte-nitro-2026",
-    "category": "Pumpkin / Yam Beer",
-    "abv": "7%",
-    "ibu": "",
-    "brewery": "Left Hand Brewing Company",
-    "rating": "3.78",
-    "image_url": "https://labels.untappd.com/6874160",
+    "url": "https://untappd.com/b/guinness-guinness-draught/4473",
+    "title": "Guinness Draught",
+    "slug": "guinness-draught",
+    "category": "Stout - Irish Dry",
+    "abv": "4.2%",
+    "ibu": "45",
+    "brewery": "Guinness",
+    "rating": "3.77",
+    "image_url": "https://labels.untappd.com/4473",
     "record_type": "beer",
     "source_label": "Killian's"
   }

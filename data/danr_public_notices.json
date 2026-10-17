@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-16T19:48:37.212709+00:00",
+  "fetched_at": "2026-10-17T19:00:31.526764+00:00",
   "notices": [
     {
       "notice_type": "Water Rights",
@@ -94,48 +94,6 @@
         {
           "label": "Recom. Action",
           "url": "https://danr.sd.gov/wrimage/pub/2911-2_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Air Quality Permit",
-      "deadline": "10/16/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/16/2026&name=Marshall 2 RNG, LLC&pntype=aq&description=Marshall 2 RNG, LLC operates a biogas production facility. The Department recommends approval of an air quality construction permit modification.",
-      "description": "Marshall 2 RNG, LLC operates a biogas production facility. The Department recommends approval of an air quality construction permit modification.",
-      "location": "Veblen",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/M2Rpn.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/dp.pdf"
-        },
-        {
-          "label": "Application Review",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/M2Rsb.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Air Quality Permit",
-      "deadline": "10/16/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/16/2026&name=Marshall 2 RNG, LLC&pntype=aq&description=Marshall 2 RNG, LLC operates a biogas production facility. The Department recommends approval of a minor air quality operating permit.",
-      "description": "Marshall 2 RNG, LLC operates a biogas production facility. The Department recommends approval of a minor air quality operating permit.",
-      "location": "Veblen",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/M2Rpn.pdf"
-        },
-        {
-          "label": "Draft Permit",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/M2Rdp.pdf"
-        },
-        {
-          "label": "Application Review",
-          "url": "http://danr.sd.gov/Environment/AirQuality/PN/M2Rsb.pdf"
         }
       ]
     },

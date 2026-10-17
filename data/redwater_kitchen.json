@@ -1,5 +1,18 @@
 [
   {
+    "url": "https://untappd.com/b/sawyer-brewing-co-citra-science/5920938",
+    "title": "Citra Science",
+    "slug": "citra-science",
+    "category": "Pale Ale - American",
+    "abv": "5.5%",
+    "ibu": "",
+    "brewery": "Sawyer Brewing Co",
+    "rating": "3.83",
+    "image_url": "https://labels.untappd.com/5920938",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
     "url": "https://untappd.com/b/angry-orchard-hard-cider-crisp-apple/84251",
     "title": "Crisp Apple",
     "slug": "crisp-apple",
@@ -100,19 +113,6 @@
     "brewery": "Heavy Riff Brewing Company",
     "rating": "3.7",
     "image_url": "https://labels.untappd.com/3675477",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
-    "url": "https://untappd.com/b/heavy-riff-brewing-company-love-gun/2862628",
-    "title": "Love Gun",
-    "slug": "love-gun",
-    "category": "Cream Ale",
-    "abv": "5.7%",
-    "ibu": "10",
-    "brewery": "Heavy Riff Brewing Company",
-    "rating": "3.87",
-    "image_url": "https://labels.untappd.com/2862628",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"
   },
