@@ -46,7 +46,7 @@
     "abv": "4.9%",
     "ibu": "",
     "brewery": "Sawyer Brewing Co",
-    "rating": "3.69",
+    "rating": "3.68",
     "image_url": "https://labels.untappd.com/6828413",
     "record_type": "beer",
     "source_label": "Killian's"
@@ -156,15 +156,15 @@
     "source_label": "Killian's"
   },
   {
-    "url": "https://untappd.com/b/sturgis-brewing-company-huckleberry-sour/5649229",
-    "title": "Huckleberry Sour",
-    "slug": "huckleberry-sour",
+    "url": "https://untappd.com/b/jefferson-beer-supply-pour-the-cure/5514031",
+    "title": "Pour the Cure",
+    "slug": "pour-the-cure",
     "category": "Sour - Fruited",
-    "abv": "5.6%",
-    "ibu": "18",
-    "brewery": "Sturgis Brewing Company",
-    "rating": "3.79",
-    "image_url": "https://labels.untappd.com/5649229",
+    "abv": "5.5%",
+    "ibu": "",
+    "brewery": "Jefferson Beer Supply",
+    "rating": "3.97",
+    "image_url": "https://labels.untappd.com/5514031",
     "record_type": "beer",
     "source_label": "Killian's"
   },
