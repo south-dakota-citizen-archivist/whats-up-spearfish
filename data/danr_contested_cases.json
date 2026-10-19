@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-18T19:14:36.817083+00:00",
+  "fetched_at": "2026-10-19T21:23:59.362713+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -222,6 +222,10 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID131",
       "documents": [
         {
+          "label": "Notice of Hearing",
+          "url": "https://danr.sd.gov/wrimage/pub/2049-1_goschke_NOH_2.pdf"
+        },
+        {
           "label": "Notice of Automatic Delay of Hearing",
           "url": "https://danr.sd.gov/wrimage/pub/2049-1_notdly.pdf"
         },
@@ -236,13 +240,9 @@
         {
           "label": "Petitions in Opposition",
           "url": "https://danr.sd.gov/wrimage/pub/2049-1_pet.pdf"
-        },
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/2049-1_app.pdf"
         }
       ],
-      "total_docs": 7,
+      "total_docs": 8,
       "latest_doc_date": "0000-00-00"
     },
     {

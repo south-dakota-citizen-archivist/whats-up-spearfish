@@ -26830,5 +26830,37 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20261019034555045b134e0de2e3b44",
+    "url": "https://gobound.com/direct/comps/h20261019034555045b134e0de2e3b44/show",
+    "title": "Girls Tennis: Madison Girls Tennis Invitational  (Varsity)",
+    "slug": "girls-tennis-madison-girls-tennis-invitational-varsity",
+    "sport": "Girls Tennis",
+    "level": "Varsity",
+    "sex": "female",
+    "description": "Varsity Girls Tennis - Madison Girls Tennis Invitational",
+    "start_dt": "2027-08-20T14:00:00",
+    "end_dt": "2027-08-21T00:00:00",
+    "location": "Madison High School Tennis Courts",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20261019034559071584256b93ebe4d",
+    "url": "https://gobound.com/direct/comps/h20261019034559071584256b93ebe4d/show",
+    "title": "Girls Tennis: Madison Girls Tennis Invitational (Varsity)",
+    "slug": "girls-tennis-madison-girls-tennis-invitational-varsity",
+    "sport": "Girls Tennis",
+    "level": "Varsity",
+    "sex": "female",
+    "description": "Varsity Girls Tennis - Madison Girls Tennis Invitational",
+    "start_dt": "2027-08-21T13:00:00",
+    "end_dt": "2027-08-21T21:00:00",
+    "location": "Madison High School Tennis Courts",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]

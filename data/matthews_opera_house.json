@@ -1246,5 +1246,29 @@
     "image_url": "",
     "record_type": "event",
     "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "Bellman Presentation",
+    "url": "https://www.matthewsopera.com/event/bellman-presentation-4/2026-11-11/",
+    "slug": "bellman-presentation",
+    "start_dt": "2026-11-11T12:00:00-07:00",
+    "end_dt": "2026-11-11T13:00:00-07:00",
+    "description": "About the Bellman Brown Bag Series... The Bellman Brown Bag series is a humanities program designed to explore ideas, history, literature, art, and culture. The Brown Bag program was developed ... Read more \\n",
+    "location": "The Matthews Opera House – Theatre",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/06/Website-Header-2.png",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
+  },
+  {
+    "title": "Bellman Presentation",
+    "url": "https://www.matthewsopera.com/event/bellman-presentation-4/2026-12-09/",
+    "slug": "bellman-presentation",
+    "start_dt": "2026-12-09T12:00:00-07:00",
+    "end_dt": "2026-12-09T13:00:00-07:00",
+    "description": "About the Bellman Brown Bag Series... The Bellman Brown Bag series is a humanities program designed to explore ideas, history, literature, art, and culture. The Brown Bag program was developed ... Read more \\n",
+    "location": "The Matthews Opera House – Theatre",
+    "image_url": "https://www.matthewsopera.com/wp-content/uploads/2026/06/Website-Header-2.png",
+    "record_type": "event",
+    "source_label": "Matthews Opera House"
   }
 ]

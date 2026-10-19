@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-18T19:14:45.702754+00:00",
+  "fetched_at": "2026-10-19T21:24:09.050211+00:00",
   "projects": [
     {
       "project_id": "66463",
@@ -476,22 +476,6 @@
       "district": "R2 - Rocky Mt. Region All Units",
       "purpose": "Land Management Planning|Minerals And Geology",
       "description": "The USFS requested 20,574 acres of NFS lands be withdrawn (closed) to all forms of entry, appropriation, and disposal under the mining laws, mineral and geothermal leasing laws, and public land laws, subject to valid existing rights",
-      "milestones": [],
-      "comment_period_date": null,
-      "comment_period_sort": "9999-99",
-      "location_summary": "",
-      "counties": [],
-      "contact": {},
-      "last_updated": ""
-    },
-    {
-      "project_id": "68690",
-      "title": "Palmer Creek Trailhead Bridge Replacement",
-      "url": "https://www.fs.usda.gov/r02/blackhills/projects/68690",
-      "status": "Completed",
-      "district": "Hell Canyon Ranger District",
-      "purpose": "Recreation Management|Watershed Management",
-      "description": "Installation of a new bridge to replace a prior bridge destroyed in the 2022 Palmer Gulch Fire.",
       "milestones": [],
       "comment_period_date": null,
       "comment_period_sort": "9999-99",

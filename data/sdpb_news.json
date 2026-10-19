@@ -5168,5 +5168,49 @@
     "image_url": "https://npr.brightspotcdn.com/52/a4/27ad8392458d90c0af200f3647e9/website-photo-1.png",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/elections/2026-10-19/poll-shows-rhoden-leading-ahlers-in-race-for-south-dakota-governor",
+    "title": "Poll shows Rhoden leading Ahlers in race for South Dakota governor",
+    "slug": "sdpb-poll-shows-rhoden-leading-ahlers-in-race-for-south-dakota-governor",
+    "published": "2026-10-19",
+    "byline": "By SDPB News Staff",
+    "description": "The poll, sponsored by <a href=\"https://www.sdnewswatch.org/\">South Dakota News Watch</a> and the <a href=\"https://www.usd.edu/Academics/Colleges-and-Schools/college-of-arts-sciences/Chiesman-Center-for-Democracy\">Chiesman Center for Democracy at USD</a>, shows Rhoden with 56 percent support, compared to 36 percent for Ahlers.",
+    "image_url": "https://npr.brightspotcdn.com/3f/6c/4807baa240cda12465706a88f92d/dsc-6865.JPG",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-10-19/althoff-out-as-south-dakota-social-services-secretary",
+    "title": "Althoff out as South Dakota Social Services Secretary",
+    "slug": "sdpb-althoff-out-as-south-dakota-social-services-secretary",
+    "published": "2026-10-19",
+    "byline": "By SDPB News Staff",
+    "description": "The leader of South Dakota’s Department of Social Services is being replaced effective immediately.",
+    "image_url": "https://npr.brightspotcdn.com/55/0d/c7b4a54441168c12221c74706d40/althoff-040226.JPG",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-10-19/as-trump-irs-ok-dyed-diesel-for-road-use-but-some-farmers-arent-sure-as-they-await-tax-certainty",
+    "title": "As Trump, IRS 'OK' dyed-diesel for road use, some farmers aren't sure as they await tax certainty",
+    "slug": "sdpb-as-trump-irs-ok-dyed-diesel-for-road-use-some-farmers-aren-t-sure-as-they",
+    "published": "2026-10-19",
+    "byline": "By Jackson Dircks",
+    "description": "While the IRS and Trump say it’s okay for farmers to fill up on dyed diesel for on-road use, many producers are still cautious to do so.",
+    "image_url": "https://npr.brightspotcdn.com/a5/99/a7724ea74b6ab9e80ebc1a863cb3/image-85.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/healthcare/2026-10-19/the-lighthouse-of-agency-village-dakota-life",
+    "title": "The Lighthouse of Agency Village | Dakota Life",
+    "slug": "sdpb-the-lighthouse-of-agency-village-dakota-life",
+    "published": "2026-10-19",
+    "byline": "By Jackie Hendry",
+    "description": "Curtis Bissonette has helped secure funding to build The Lighthouse—a supportive, home-like sanctuary that keeps Native children connected to their community, culture, and roots.",
+    "image_url": "https://npr.brightspotcdn.com/83/7b/711f89b34811b0c1559d413e0032/dl-agencyvillage-social-the-lighthouse-w-curtis-bissonette-00-04-31-03-still002.png",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]
