@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-19T21:23:59.362713+00:00",
+  "fetched_at": "2026-10-20T20:19:48.191771+00:00",
   "cases": [
     {
       "ccid": "123",
@@ -42,6 +42,14 @@
       "docs_url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID124",
       "documents": [
         {
+          "label": "Petitioners' Joint Motion and Exhibits to Compel Discovery by City of Rapid City",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Petitioners' Joint Motion and Exhibits to Compel Discovery by City of Rapid City.pdf"
+        },
+        {
+          "label": "Petitioners' Amended Notices to Take Depositions of Hunter Roberts and Steve Kropp",
+          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Petitioners Amended Notices to Take Depositions of Hunter Roberts and Steve Kropp.pdf"
+        },
+        {
           "label": "City of Rapid City's Objection to Petitioners' First Set of Supplemental Interrogatories and Requests for Production",
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Rapid City Objection to Petitioners' First Set of Supplemental Interrogatories and Requests for Production.pdf"
         },
@@ -52,17 +60,9 @@
         {
           "label": "Petitioners' Joint Motion to Set Contested Hearing Location in Rapid City",
           "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Sept 23 2026 Motion Hrg Held in RC.pdf"
-        },
-        {
-          "label": "Petitioners' Supplemental Report to Expert Report of Harold Barber, Jr.",
-          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Petitioners_Supplemental_Report_to_Expert_Report_of_Harold_Barber.pdf"
-        },
-        {
-          "label": "Petitioners' Notice to Take Depositions of Hunter Roberts and Steven Kropp",
-          "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Binegar electronic Sept 11 2026 Cover ltr Notice of Depostions Roberts  Kropp.pdf"
         }
       ],
-      "total_docs": 48,
+      "total_docs": 50,
       "latest_doc_date": "0000-00-00"
     },
     {

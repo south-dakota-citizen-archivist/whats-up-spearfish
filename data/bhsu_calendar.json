@@ -2566,5 +2566,32 @@
     "category": "Campus Calendar/Events",
     "record_type": "event",
     "source_label": "BHSU Campus Calendar"
+  },
+  {
+    "event_id": "1ab8fd33-f4ef-4865-9634-bc164ca91423",
+    "url": "https://bhsu.edu/campus-calendar.html#event-details/1ab8fd33-f4ef-4865-9634-bc164ca91423",
+    "title": "Join Henry's Books for \"He Sapa: Poetry, History, & Storytelling\"",
+    "slug": "join-henry-s-books-for-he-sapa-poetry-history-storytelling",
+    "description": "Join Henry's Books at the High Plains Western Heritage Center on Thursday, November 19 from 6 pm to 8 pm for our final event in our Community History Series, “He Sapa: Poetry, History, and Storytelling”. We have some great expert panelists who will be sure to inspire & remind you of the beautiful sacredness of The Hills, including local Indigenous poets & activists, long-time forest service employee, scholars of Native American literature & BHSU's own Dr. Rosie Sprague! This event is free to the public, + The Henry’s Books Foundation will be sponsoring books for all who attend!",
+    "start_dt": "2026-11-20T01:00",
+    "end_dt": "2026-11-20T03:00",
+    "location": "High Plains Western Heritage Center",
+    "image_url": "",
+    "image_alt": "",
+    "organizer": "",
+    "tags": [
+      "Alumni Event",
+      "Community Event",
+      "Academics",
+      "College of Liberal Arts",
+      "Career Development",
+      "College of Business and Natural Sciences",
+      "University Advancement"
+    ],
+    "featured": false,
+    "ticket_url": "",
+    "category": "Campus Calendar/Events",
+    "record_type": "event",
+    "source_label": "BHSU Campus Calendar"
   }
 ]

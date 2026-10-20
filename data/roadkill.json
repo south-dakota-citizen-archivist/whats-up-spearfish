@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-19T21:24:20.732255+00:00",
+  "fetched_at": "2026-10-20T20:20:08.430031+00:00",
   "lookback_days": 30,
   "records": [
     {
@@ -3303,19 +3303,6 @@
       "lat": 44.534336,
       "lon": -103.860951,
       "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70857/attachments/13574"
-    },
-    {
-      "objectid": 70635,
-      "date": "2026-09-20",
-      "species": "White-tailed Deer",
-      "highway": "36",
-      "sex": "Unknown",
-      "present": "Yes",
-      "comments": null,
-      "contractor": "Chris Moeller",
-      "lat": 43.812427,
-      "lon": -103.260706,
-      "image_url": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0/70635/attachments/13351"
     }
   ]
 }
