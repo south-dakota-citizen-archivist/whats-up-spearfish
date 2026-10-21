@@ -188,17 +188,6 @@
   },
   {
     "url": "https://www.westernhillshumanesociety.com/cats",
-    "title": "Phil DeVille",
-    "slug": "cat-phil-deville",
-    "species": "cat",
-    "description": "Male | Kitten Born 8/1/26 \nNever been around dogs\nThe Rugrats came to us in Sept. 2026 after the health decline of their owner. There were lots of kitties in her possession and 9 came to us - The Rugrats! They are 2 different litters. \nPhil is a little sweetie but still a bit shy.",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/83ea6f4d-de99-454c-ba5a-b9f1bbea146b/Phil+DeVille.jpg?format=500w",
-    "image_alt": "Phil DeVille",
-    "record_type": "adoptable",
-    "source_label": "Western Hills Humane Society"
-  },
-  {
-    "url": "https://www.westernhillshumanesociety.com/cats",
     "title": "Dil Pickles",
     "slug": "cat-dil-pickles",
     "species": "cat",
@@ -381,6 +370,17 @@
     "description": "Female | Born 2/2025\nAvailable soon - getting allergies under control - Margaret is currently on some medications to get her skin/ears feeling better but we hope with the right food, that’s all she’ll need!\nMargaret came to us in Sept. 2026 after experiencing allergies her former owner couldn’t continue to handle. It can be expensive to figure out the cause and we’ve made great progress with our vet at Animal Care Center - whew! She is currently eating the Royal Canin Hydrolyzed Protein food for cats and it’s working miracles. She will most likely need to stay on this food for the remainder of her life. It’s $81.99 for a 7.7lb bag. We want to be very transparent of her needs and feeding her will be a little more expensive than most cats - she’s worth it! Margaret is playful, affectionate, and very silly. She’s going to be a WONDERFUL pet for the right person(s).",
     "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/cc99e6ee-e521-4095-bf80-5ec4fad12d24/1000058609.jpg?format=500w",
     "image_alt": "Margaret",
+    "record_type": "adoptable",
+    "source_label": "Western Hills Humane Society"
+  },
+  {
+    "url": "https://www.westernhillshumanesociety.com/cats",
+    "title": "Blizzard",
+    "slug": "cat-blizzard",
+    "species": "cat",
+    "description": "Male | Born 2026\nAvailable soon!",
+    "image_url": "",
+    "image_alt": "Blizzard",
     "record_type": "adoptable",
     "source_label": "Western Hills Humane Society"
   },

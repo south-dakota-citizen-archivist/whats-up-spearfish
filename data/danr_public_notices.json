@@ -1,215 +1,6 @@
 {
-  "fetched_at": "2026-10-20T20:16:37.743061+00:00",
+  "fetched_at": "2026-10-21T20:27:09.312597+00:00",
   "notices": [
-    {
-      "notice_type": "Water Rights",
-      "deadline": "10/19/2026",
-      "comment_url": "",
-      "application_no": "8999-3",
-      "name": "Craig Brock,\u00a0Hitchcock\u00a0SD",
-      "location": "Beadle",
-      "water_source": "Tulare: Western Spink Hitchcock Aquifer",
-      "use_type": "Irrigation (155 acres)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/8999-3_app.pdf"
-        },
-        {
-          "label": "Appl.",
-          "url": "https://danr.sd.gov/wrimage/pub/8999-3_apl.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/8999-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights",
-      "deadline": "10/19/2026",
-      "comment_url": "",
-      "application_no": "9038-3",
-      "name": "Erik Cimpl,\u00a0Dante\u00a0SD",
-      "location": "Lincoln",
-      "water_source": "Runoff; Unnamed Tributary of Choteau Creek",
-      "use_type": "Recreation and Fish & Wildlife Propagation",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/9038-3_app.pdf"
-        },
-        {
-          "label": "Appl.",
-          "url": "https://danr.sd.gov/wrimage/pub/9038-3_apl.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/9038-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights",
-      "deadline": "10/19/2026",
-      "comment_url": "",
-      "application_no": "2052-1",
-      "name": "Peter Sobotka,\u00a0Whitewood\u00a0SD",
-      "location": "Meade",
-      "water_source": "Quaternary Aged Alluvium",
-      "use_type": "Irrigation (80 acres)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/2052-1_app.pdf"
-        },
-        {
-          "label": "Appl.",
-          "url": "https://danr.sd.gov/wrimage/pub/2052-1_apl.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/2052-1_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights",
-      "deadline": "10/19/2026",
-      "comment_url": "",
-      "application_no": "2053-1",
-      "name": "Randy Orbeck,\u00a0Nisland\u00a0SD",
-      "location": "Butte",
-      "water_source": "Belle Fourche River",
-      "use_type": "Irrigation (no addt'l acres)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/2053-1_app.pdf"
-        },
-        {
-          "label": "Appl.",
-          "url": "https://danr.sd.gov/wrimage/pub/2053-1_apl.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/2053-1_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights",
-      "deadline": "10/19/2026",
-      "comment_url": "",
-      "application_no": "9044-3",
-      "name": "MDB Properties, LLC., Michael Brown,\u00a0Sioux Falls\u00a0SD",
-      "location": "Lincoln",
-      "water_source": "Shindler Aquifer",
-      "use_type": "Irrigation (300 acres)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/9044-3_app.pdf"
-        },
-        {
-          "label": "Appl.",
-          "url": "https://danr.sd.gov/wrimage/pub/9044-3_apl.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/9044-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights",
-      "deadline": "10/19/2026",
-      "comment_url": "",
-      "application_no": "2913-2",
-      "name": "True North Retreat, Amy Hook,\u00a0Rapid City\u00a0SD",
-      "location": "Custer",
-      "water_source": "Crystaline Rock Aquifer",
-      "use_type": "Commercial & Recreation (campground)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/2913-2_app.pdf"
-        },
-        {
-          "label": "Appl.",
-          "url": "https://danr.sd.gov/wrimage/pub/2913-2_apl.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/2913-2_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights",
-      "deadline": "10/19/2026",
-      "comment_url": "",
-      "application_no": "2006A-1",
-      "name": "Thomas Simons,\u00a0Howes\u00a0SD",
-      "location": "Meade",
-      "water_source": "Cheyenne River",
-      "use_type": "Irrigation (no addt'l acres)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/2006A-1_app.pdf"
-        },
-        {
-          "label": "Appl.",
-          "url": "https://danr.sd.gov/wrimage/pub/2006A-1_apl.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/2006A-1_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Water Rights",
-      "deadline": "10/19/2026",
-      "comment_url": "",
-      "application_no": "9050-3",
-      "name": "Grant-Roberts Rural Water System, Inc., Brent Hoffmann,\u00a0Milbank\u00a0SD",
-      "location": "Codington",
-      "water_source": "Antelope Valley Aquifer",
-      "use_type": "FU Reserve (Rural Water System)",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/wrimage/pub/9050-3_app.pdf"
-        },
-        {
-          "label": "Appl.",
-          "url": "https://danr.sd.gov/wrimage/pub/9050-3_apl.pdf"
-        },
-        {
-          "label": "Recom. Action",
-          "url": "https://danr.sd.gov/wrimage/pub/9050-3_rec.pdf"
-        }
-      ]
-    },
-    {
-      "notice_type": "Surface Water Enhancement & Restoration",
-      "deadline": "10/20/2026",
-      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=10/20/2026&name=SDGFP-Rapid Creek&pntype=sw_er&description=Improve aquatic habitat in Rapid Creek below Pactola Reservoir through strategically placed instream features (boulders and wood).",
-      "name": "SDGFP-Rapid Creek",
-      "description": "Improve aquatic habitat in Rapid Creek below Pactola Reservoir through strategically placed instream features (boulders and wood).",
-      "links": [
-        {
-          "label": "Public Notice",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/26-041 GFPRapidCreekPN.pdf"
-        },
-        {
-          "label": "Application",
-          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/26-041 GFPRapidCreek Application.pdf"
-        }
-      ]
-    },
     {
       "notice_type": "Air Quality Permit",
       "deadline": "10/22/2026",
@@ -294,6 +85,78 @@
         {
           "label": "Application Review",
           "url": "http://danr.sd.gov/Environment/AirQuality/PN/HE16sb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Water Rights",
+      "deadline": "11/02/2026",
+      "comment_url": "",
+      "application_no": "2051-1",
+      "name": "Continental Resources, c/o Peter MacIntyre,\u00a0Oklahoma City\u00a0OK",
+      "location": "Harding",
+      "water_source": "Inyan Kara Aquifer",
+      "use_type": "Industrial",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/2051-1_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/2051-1_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/2051-1_rec.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Water Rights",
+      "deadline": "11/02/2026",
+      "comment_url": "",
+      "application_no": "2918-2",
+      "name": "Jeff Johnson,\u00a0Martin\u00a0SD",
+      "location": "Bennett",
+      "water_source": "Ogallala Aquifer",
+      "use_type": "Irrigation (156 acres)",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/2918-2_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/2918-2_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/2918-2_rec.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Water Rights",
+      "deadline": "11/03/2026",
+      "comment_url": "",
+      "application_no": "9061-3",
+      "name": "Dakota Mainstem Regional Water System, Ryan Johnson,\u00a0Madison\u00a0SD",
+      "location": "Hughes",
+      "water_source": "Missouri River",
+      "use_type": "FU Reserve (Rural Water System & Municiple)",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/wrimage/pub/9061-3_app.pdf"
+        },
+        {
+          "label": "Appl.",
+          "url": "https://danr.sd.gov/wrimage/pub/9061-3_apl.pdf"
+        },
+        {
+          "label": "Recom. Action",
+          "url": "https://danr.sd.gov/wrimage/pub/9061-3_rec.pdf"
         }
       ]
     },
@@ -388,6 +251,27 @@
         {
           "label": "Application Review",
           "url": "https://danr.sd.gov/Environment/AirQuality/PN/SDSP16sb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Air Quality Permit",
+      "deadline": "11/20/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=11/20/2026&name=Red River Energy, LLC&pntype=aq&description=Red River Energy, LLC operates an ethanol production facility. The Department recommends issuance of an air quality construction permit.",
+      "description": "Red River Energy, LLC operates an ethanol production facility. The Department recommends issuance of an air quality construction permit.",
+      "location": "Rosholt",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/RRE16pn.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/RRE16dp.pdf"
+        },
+        {
+          "label": "Application Review",
+          "url": "https://danr.sd.gov/Environment/AirQuality/PN/RRE16sb.pdf"
         }
       ]
     },
