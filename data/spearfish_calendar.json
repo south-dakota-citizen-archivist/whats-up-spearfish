@@ -3388,5 +3388,25 @@
     "start_dt": "Wed, 21 Oct 2026 08:57:25 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3812",
+    "title": "The Haunting of Fire Station 2",
+    "slug": "the-haunting-of-fire-station-2",
+    "description": "<strong>Event date:</strong> October 24, 2026 <br /><strong>Event Time: </strong>06:00 PM - 09:00 PM<br /><strong>Location:</strong> <br />710 Heritage Drive<br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Come out and have a scary good time at Fire Station 2, 710 Heritage Drive, from 6-9 p.m. Saturday, October 24th! Freewill donations accepted but not expected.",
+    "published": "Wed, 21 Oct 2026 15:44:55 -0700",
+    "start_dt": "Wed, 21 Oct 2026 15:44:55 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3697",
+    "title": "Fiber Arts Group",
+    "slug": "fiber-arts-group",
+    "description": "<strong>Event date:</strong> November 5, 2026 <br /><strong>Event Time: </strong>05:00 PM - 06:30 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Join fellow hobbyists for social time while you knit, crochet, stitch, etc. All ages welcome, but children should be accompanied by an adult. No instruction will be provided. Bring your own project.",
+    "published": "Mon, 17 Aug 2026 09:12:44 -0700",
+    "start_dt": "Mon, 17 Aug 2026 09:12:44 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

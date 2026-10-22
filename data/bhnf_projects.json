@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-21T20:30:02.876872+00:00",
+  "fetched_at": "2026-10-22T20:27:02.069955+00:00",
   "projects": [
     {
       "project_id": "66463",
@@ -9,32 +9,13 @@
       "district": "Northern Hills Ranger District",
       "purpose": "Special Use Management",
       "description": "The Black Hills National Forest is considering authorizing a 20 year FLPMA Special Use Permit for Lead-Deadwood Sanitation District to access proposed roads that lead to the LDSD Pipeline system.",
-      "milestones": [
-        {
-          "name": "Scoping Start",
-          "date": "07/02/2024"
-        },
-        {
-          "name": "Decision",
-          "date": "07/2024 (Estimated)"
-        },
-        {
-          "name": "Implementation",
-          "date": "08/2024 (Estimated)"
-        }
-      ],
+      "milestones": [],
       "comment_period_date": null,
       "comment_period_sort": "9999-99",
-      "location_summary": "Township 3 N, Range 2E, 9 Miles Southwest of Lead",
-      "counties": [
-        "Lawrence"
-      ],
-      "contact": {
-        "name": "Valerie Jagim",
-        "email": "valerie.jagim@usda.gov",
-        "phone": "605-642-4622"
-      },
-      "last_updated": "7/2/2024"
+      "location_summary": "",
+      "counties": [],
+      "contact": {},
+      "last_updated": ""
     },
     {
       "project_id": "48758",

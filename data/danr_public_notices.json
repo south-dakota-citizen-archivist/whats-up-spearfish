@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-21T20:27:09.312597+00:00",
+  "fetched_at": "2026-10-22T20:23:49.782658+00:00",
   "notices": [
     {
       "notice_type": "Air Quality Permit",
@@ -85,6 +85,23 @@
         {
           "label": "Application Review",
           "url": "http://danr.sd.gov/Environment/AirQuality/PN/HE16sb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Surface Water Enhancement & Restoration",
+      "deadline": "11/01/2026",
+      "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=11/01/2026&name=City of Aberdeen Public Works-Moccasin Creek Dredging&pntype=sw_er&description=Extending the project of Moccasin Creek from Melgaard Road to 135th Street Southeast.  Installation of sheet piling and an earthen dam to isolate each reach.",
+      "name": "City of Aberdeen Public Works-Moccasin Creek Dredging",
+      "description": "Extending the project of Moccasin Creek from Melgaard Road to 135th Street Southeast.  Installation of sheet piling and an earthen dam to isolate each reach.",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/26-039 CityAberdeen MoccasinPN.pdf"
+        },
+        {
+          "label": "Application",
+          "url": "https://danr.sd.gov/officeofwater/surfacewaterquality/pn/26-039 CityAberdeen Moccasin Application.pdf"
         }
       ]
     },
@@ -272,6 +289,24 @@
         {
           "label": "Application Review",
           "url": "https://danr.sd.gov/Environment/AirQuality/PN/RRE16sb.pdf"
+        }
+      ]
+    },
+    {
+      "notice_type": "Waste Management \u2014 Solid Waste",
+      "deadline": "11/21/2026",
+      "comment_url": "",
+      "name": "City of New Underwood",
+      "description": "Permit renewal application to continue operation of a Type IV Restricted Use Solid Waste Facility",
+      "location": "New Underwood, SD",
+      "links": [
+        {
+          "label": "Public Notice",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/New Underwood RU Public Notice.pdf"
+        },
+        {
+          "label": "Draft Permit",
+          "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_New_Underwood_26_IP.pdf"
         }
       ]
     },

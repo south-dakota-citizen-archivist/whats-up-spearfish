@@ -26862,5 +26862,21 @@
     "status": "CONFIRMED",
     "record_type": "event",
     "source_label": "Spearfish HS Sports"
+  },
+  {
+    "uid": "h20261022035452044e4097214640b43",
+    "url": "https://gobound.com/direct/noncomps/h20261022035452044e4097214640b43/h2020103041013609fadc7efab4bcbb3/show",
+    "title": "HOSA Fall Launch Academy",
+    "slug": "hosa-fall-launch-academy",
+    "sport": "HOSA",
+    "level": "",
+    "sex": "coed",
+    "description": "HOSA Fall Launch Academy",
+    "start_dt": "2026-11-06",
+    "end_dt": "",
+    "location": "",
+    "status": "CONFIRMED",
+    "record_type": "event",
+    "source_label": "Spearfish HS Sports"
   }
 ]

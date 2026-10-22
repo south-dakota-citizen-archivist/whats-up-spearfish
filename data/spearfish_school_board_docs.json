@@ -1249,5 +1249,14 @@
     "asset_type": "minutes",
     "record_type": "document",
     "source_label": "Spearfish School Board"
+  },
+  {
+    "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/5977/Ssd/19b4b8a5-b702-4e82-8198-b0a6f7915737/October-27%2C-2026-Special-School-Board-Agenda.pdf?disposition=inline",
+    "title": "October 27, 2026 Special School Board Agenda",
+    "slug": "spearfish-board-agenda-october-27-2026-special-school-board-agenda",
+    "published": "2026-10-27",
+    "asset_type": "agenda",
+    "record_type": "document",
+    "source_label": "Spearfish School Board"
   }
 ]
