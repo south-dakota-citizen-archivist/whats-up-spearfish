@@ -14,7 +14,7 @@
           {% for d in menu_days %}
           <button type="button" role="tab" @click="day = {{ loop.index0 }}" :aria-selected="day === {{ loop.index0 }}"
                   :class="day === {{ loop.index0 }} ? 'bg-pine-700 text-white border-pine-700' : 'bg-white text-stone-700 border-stone-300 hover:border-pine-600'"
-                  class="shrink-0 px-3 py-1 rounded-full border text-sm">{{ d.date | fmt_day('%a %-m/%-d') }}</button>
+                  class="shrink-0 px-3 py-1 border text-sm">{{ d.date | fmt_day('%a %-m/%-d') }}</button>
           {% endfor %}
         </div>
         {% for d in menu_days %}
@@ -22,7 +22,7 @@
           <h3 class="font-bold mb-2">{{ d.date | day_heading }}</h3>
           <div class="grid sm:grid-cols-2 gap-3">
             {% for m in d.menus %}
-            <div class="rounded-xl border border-stone-200 p-3">
+            <div class="border border-stone-200 p-3">
               <p class="text-xs font-bold uppercase tracking-wide text-stone-500">{{ m.meal }}</p>
               <p class="font-semibold">{{ m.level }}</p>
               <ul class="mt-1 text-sm text-stone-700 list-disc pl-4">

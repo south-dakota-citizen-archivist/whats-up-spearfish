@@ -15,3 +15,7 @@
 
 /* Long lists inside cards scroll instead of stretching the page */
 .scroll-list { max-height: 28rem; overflow-y: auto; }
+
+/* No rounded corners, anywhere — including native form controls */
+*, ::before, ::after { border-radius: 0 !important; }
+input[type="search"] { -webkit-appearance: none; appearance: none; }

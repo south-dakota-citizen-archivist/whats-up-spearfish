@@ -58,8 +58,8 @@
       {% for b in birds %}
       <li>
         <a href="{{ b.url }}" target="_blank" rel="noopener" class="group block">
-          {% if b.photo_url %}<img src="{{ b.photo_url }}" alt="" loading="lazy" class="w-full aspect-square object-cover rounded-lg bg-stone-100">
-          {% else %}<div class="w-full aspect-square rounded-lg bg-stone-100"></div>{% endif %}
+          {% if b.photo_url %}<img src="{{ b.photo_url }}" alt="" loading="lazy" class="w-full aspect-square object-cover bg-stone-100">
+          {% else %}<div class="w-full aspect-square bg-stone-100"></div>{% endif %}
           <p class="text-sm font-medium mt-1 group-hover:text-pine-700">{{ b.common_name }}</p>
           <p class="text-xs text-stone-500">{{ b.published | fmt_day('%b %-d') }}{% if b.count %} · {{ b.count }} seen{% endif %}</p>
           <p class="text-xs text-stone-500 truncate">{{ b.location_name }}</p>

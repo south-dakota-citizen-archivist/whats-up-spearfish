@@ -10,7 +10,7 @@
   <div x-data="nwsAlerts()" x-init="load()" x-cloak>
     <template x-for="a in alerts" :key="a.id">
       <a :href="a.url" target="_blank" rel="noopener"
-         class="block rounded-xl border px-4 py-3 text-sm"
+         class="block border px-4 py-3 text-sm"
          :class="a.severe ? 'bg-red-50 border-red-200 text-red-900' : 'bg-amber-50 border-amber-200 text-amber-900'">
         <span class="font-bold" x-text="a.event"></span>
         <span x-text="' — ' + a.headline"></span>
@@ -18,12 +18,12 @@
     </template>
   </div>
   {% for a in alerts %}
-  <a href="{{ a.url }}" target="_blank" rel="noopener" class="block rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+  <a href="{{ a.url }}" target="_blank" rel="noopener" class="block border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
     <span class="font-bold">City alert:</span> {{ a.title }} <span class="text-amber-700">· {{ a.published | fmt_day }}</span>
   </a>
   {% endfor %}
   {% if fire.restricted or fire.local_danger %}
-  <a href="{{ root }}outdoors/#fire" class="flex flex-wrap items-center gap-2 rounded-xl border border-stone-200 bg-white px-4 py-3 text-sm">
+  <a href="{{ root }}outdoors/#fire" class="flex flex-wrap items-center gap-2 border border-stone-200 bg-white px-4 py-3 text-sm">
     <span class="font-bold">🔥 Fire:</span>
     {% if fire.local_danger %}{{ danger_badge(fire.local_danger.level) }}{% endif %}
     {% if fire.restricted %}<span>{{ fire.restricted | length }} area{{ 's' if fire.restricted | length != 1 }} with burn restrictions</span>{% else %}<span>No burn restrictions listed</span>{% endif %}
@@ -82,7 +82,7 @@
   {# ── side column ── #}
   <div class="min-w-0 space-y-6">
 
-    <section id="weather" x-data="weather()" x-init="load()" class="bg-white rounded-2xl border border-stone-200 shadow-sm p-5">
+    <section id="weather" x-data="weather()" x-init="load()" class="bg-white border border-stone-200 shadow-sm p-5">
       <div class="flex items-baseline justify-between">
         <h2 class="text-lg font-bold">Weather</h2>
         <a href="https://forecast.weather.gov/MapClick.php?lat=44.4908&lon=-103.8594" target="_blank" rel="noopener" class="text-sm font-semibold text-pine-700 hover:underline">NWS →</a>
@@ -136,7 +136,7 @@
         {% for b in birds %}
         <li>
           <a href="{{ b.url }}" target="_blank" rel="noopener" class="group block">
-            {% if b.photo_url %}<img src="{{ b.photo_url }}" alt="" loading="lazy" class="w-full aspect-square object-cover rounded-lg bg-stone-100">{% endif %}
+            {% if b.photo_url %}<img src="{{ b.photo_url }}" alt="" loading="lazy" class="w-full aspect-square object-cover bg-stone-100">{% endif %}
             <p class="text-sm font-medium mt-1 group-hover:text-pine-700">{{ b.common_name }}</p>
             <p class="text-xs text-stone-500 truncate">{{ b.location_name }}</p>
           </a>

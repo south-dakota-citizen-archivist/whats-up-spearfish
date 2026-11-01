@@ -11,7 +11,7 @@
     </div>
     <div>
       <label for="outlet" class="sr-only">Outlet</label>
-      <select id="outlet" x-model="outlet" class="rounded-lg border border-stone-300 bg-white px-3 py-2 text-sm">
+      <select id="outlet" x-model="outlet" class="border border-stone-300 bg-white px-3 py-2 text-sm">
         <option value="">All outlets</option>
         {% for o in outlets %}<option>{{ o }}</option>{% endfor %}
       </select>
@@ -21,7 +21,7 @@
   {% for day, items in news_days %}
   <section class="mb-5">
     <h2 class="text-sm font-bold uppercase tracking-wide text-pine-800 mb-1.5">{{ day | day_heading }}</h2>
-    <ul class="bg-white rounded-2xl border border-stone-200 divide-y divide-stone-100">
+    <ul class="bg-white border border-stone-200 divide-y divide-stone-100">
       {% for n in items %}
       <li class="px-4 py-3" x-show="!outlet || outlet === {{ n.source_label | tojson | forceescape }}">
         <a href="{{ n.url }}" target="_blank" rel="noopener" class="font-medium hover:text-pine-700 hover:underline">{{ n.title }}</a>

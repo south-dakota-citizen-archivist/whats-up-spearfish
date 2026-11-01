@@ -29,7 +29,7 @@
         {% for path, label in NAV %}
         <li>
           <a href="{{ root }}{{ path }}"
-             class="block px-3 py-1.5 rounded-full {{ 'bg-white text-pine-800' if path == page_path else 'text-pine-50 hover:bg-pine-700' }}"
+             class="block px-3 py-1.5 {{ 'bg-white text-pine-800' if path == page_path else 'text-pine-50 hover:bg-pine-700' }}"
              {% if path == page_path %}aria-current="page"{% endif %}>{{ label }}</a>
         </li>
         {% endfor %}
@@ -46,9 +46,9 @@
       <span>Built {{ build_time.strftime('%b %-d, %-I:%M %p') }} MT from public data.</span>
       <a href="{{ root }}status/" class="hover:text-pine-700 underline-offset-2 hover:underline">
         {% if health.bad %}
-        <span class="inline-block w-2 h-2 rounded-full bg-amber-500 mr-1"></span>{{ health.total - health.bad }} of {{ health.total }} sources up to date
+        <span class="inline-block w-2 h-2 bg-amber-500 mr-1"></span>{{ health.total - health.bad }} of {{ health.total }} sources up to date
         {% else %}
-        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-1"></span>All {{ health.total }} sources up to date
+        <span class="inline-block w-2 h-2 bg-emerald-500 mr-1"></span>All {{ health.total }} sources up to date
         {% endif %}
       </a>
       <a href="{{ root }}calendar.ics" class="hover:text-pine-700 hover:underline">Calendar feed (.ics)</a>

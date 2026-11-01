@@ -10,7 +10,7 @@
       {% for b in library.records %}
       <li>
         <a href="{{ b.url }}" target="_blank" rel="noopener" class="group block">
-          <img src="{{ b.image_url }}" alt="" loading="lazy" class="w-full aspect-[2/3] object-cover rounded bg-stone-100">
+          <img src="{{ b.image_url }}" alt="" loading="lazy" class="w-full aspect-[2/3] object-cover bg-stone-100">
           <p class="text-xs font-medium mt-1 line-clamp-2 group-hover:text-pine-700">{{ b.title }}</p>
         </a>
       </li>
@@ -25,7 +25,7 @@
       {% for p in pets.records %}
       <li>
         <a href="{{ p.url }}" target="_blank" rel="noopener" class="group block">
-          {% if p.image_url %}<img src="{{ p.image_url }}" alt="{{ p.image_alt or '' }}" loading="lazy" class="w-full aspect-square object-cover rounded-lg bg-stone-100">{% endif %}
+          {% if p.image_url %}<img src="{{ p.image_url }}" alt="{{ p.image_alt or '' }}" loading="lazy" class="w-full aspect-square object-cover bg-stone-100">{% endif %}
           <p class="text-sm font-medium mt-1 group-hover:text-pine-700">{{ p.title }}</p>
           {% if p.species %}<p class="text-xs text-stone-500">{{ p.species }}</p>{% endif %}
         </a>
