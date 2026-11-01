@@ -1,25 +1,25 @@
 """
 tests/test_base.py
 
-Tests for scrapers/base.py: BaseScraper dedup, persistence, and run() logic.
+Tests for scrapers/base.py: envelopes, normalization on save, merge/replace,
+retention windows and the empty-result guard.
 """
 
 from __future__ import annotations
 
 import json
+from datetime import timedelta
 
 import pytest
 
-from scrapers.base import BaseScraper
-
-# ---------------------------------------------------------------------------
-# Test double — minimal concrete subclass
-# ---------------------------------------------------------------------------
+from scrapers import dates
+from scrapers.base import BaseScraper, ScrapeEmpty
 
 
 class _Scraper(BaseScraper):
     name = "Test Scraper"
     slug = "test_scraper"
+    kind = "news"
 
     def __init__(self, records=None):
         super().__init__()
@@ -29,9 +29,17 @@ class _Scraper(BaseScraper):
         return list(self._fresh)
 
 
-# ---------------------------------------------------------------------------
-# Initialisation
-# ---------------------------------------------------------------------------
+def _news(url, days_ago=0, **kw):
+    return {
+        "url": url,
+        "title": f"Story {url}",
+        "published": (dates.today() - timedelta(days=days_ago)).isoformat(),
+        **kw,
+    }
+
+
+def _saved(data_dir, slug="test_scraper"):
+    return json.loads((data_dir / f"{slug}.json").read_text())
 
 
 class TestInit:
@@ -56,212 +64,120 @@ class TestInit:
             S()
 
     def test_data_file_path(self, data_dir):
-        s = _Scraper()
-        assert s.data_file == data_dir / "test_scraper.json"
+        assert _Scraper().data_file == data_dir / "test_scraper.json"
 
 
-# ---------------------------------------------------------------------------
-# load_existing
-# ---------------------------------------------------------------------------
+class TestEnvelope:
+    def test_writes_envelope(self, data_dir):
+        _Scraper([_news("a")]).run()
+        env = _saved(data_dir)
+        assert env["slug"] == "test_scraper"
+        assert env["kind"] == "news"
+        assert env["count"] == 1
+        assert env["fetched_at"]
+        assert env["records"][0]["url"] == "a"
+
+    def test_records_are_normalized(self, data_dir):
+        _Scraper([_news("a")]).run()
+        rec = _saved(data_dir)["records"][0]
+        assert rec["source"] == "test_scraper"
+        assert rec["source_label"] == "Test Scraper"
+        assert rec["kind"] == "news"
+        assert rec["date"] == dates.today().isoformat()
+        assert len(rec["id"]) == 12
+        assert rec["_first_seen"] == dates.today().isoformat()
+
+    def test_legacy_list_file_is_readable(self, data_dir):
+        (data_dir / "test_scraper.json").write_text(json.dumps([{"url": "old"}]))
+        assert _Scraper().load_existing() == [{"url": "old"}]
+
+    def test_malformed_file_reads_as_empty(self, data_dir):
+        (data_dir / "test_scraper.json").write_text("{not json")
+        assert _Scraper().load_existing() == []
+
+    def test_object_source_saves_data(self, data_dir):
+        class Obj(BaseScraper):
+            name, slug, kind = "Obj", "obj", "gauge"
+
+            def scrape(self):
+                return {"current": {"cfs": 10}}
+
+        Obj().run()
+        assert _saved(data_dir, "obj")["data"] == {"current": {"cfs": 10}}
 
 
-class TestLoadExisting:
-    def test_returns_empty_when_file_absent(self, data_dir):
-        s = _Scraper()
-        assert s.load_existing() == []
+class TestMerge:
+    def test_new_count(self, data_dir):
+        _Scraper([_news("a")]).run()
+        result = _Scraper([_news("a"), _news("b")]).run()
+        assert result.new == 1
+        assert result.count == 2
 
-    def test_loads_valid_json(self, data_dir):
-        records = [{"url": "http://a.com", "title": "A"}]
-        (data_dir / "test_scraper.json").write_text(json.dumps(records))
-        s = _Scraper()
-        assert s.load_existing() == records
+    def test_keeps_records_no_longer_listed(self, data_dir):
+        _Scraper([_news("a"), _news("b")]).run()
+        _Scraper([_news("b"), _news("c")]).run()
+        assert {r["url"] for r in _saved(data_dir)["records"]} == {"a", "b", "c"}
 
-    def test_returns_empty_on_malformed_json(self, data_dir):
-        (data_dir / "test_scraper.json").write_text("{bad json")
-        s = _Scraper()
-        assert s.load_existing() == []
+    def test_fresh_record_wins_but_keeps_first_seen(self, data_dir):
+        _Scraper([_news("a", title="Old title")]).run()
+        env = _saved(data_dir)
+        env["records"][0]["_first_seen"] = "2026-01-01"
+        (data_dir / "test_scraper.json").write_text(json.dumps(env))
+        _Scraper([_news("a", title="New title")]).run()
+        rec = _saved(data_dir)["records"][0]
+        assert rec["title"] == "New title"
+        assert rec["_first_seen"] == "2026-01-01"
 
-    def test_returns_empty_on_non_list_json(self, data_dir):
-        (data_dir / "test_scraper.json").write_text('{"not": "a list"}')
-        # load_existing returns whatever is in the file; non-list is still returned
-        # (it's group_records / run() callers that care about the type).
-        # The important thing is it doesn't crash.
-        s = _Scraper()
-        result = s.load_existing()
-        assert isinstance(result, (list, dict))
+    def test_prunes_records_outside_window(self, data_dir):
+        _Scraper([_news("old", days_ago=45), _news("new")]).run()  # news window is 30 days
+        assert [r["url"] for r in _saved(data_dir)["records"]] == ["new"]
 
-
-# ---------------------------------------------------------------------------
-# save
-# ---------------------------------------------------------------------------
-
-
-class TestSave:
-    def test_writes_json_file(self, data_dir):
-        s = _Scraper()
-        records = [{"url": "http://a.com"}]
-        s.save(records)
-        on_disk = json.loads(s.data_file.read_text())
-        assert on_disk == records
-
-    def test_creates_data_directory(self, tmp_path):
-        import scrapers.base as base_module
-
-        nested = tmp_path / "deep" / "data"
-        original = base_module.DATA_DIR
-        base_module.DATA_DIR = nested
-        try:
-            s = _Scraper()
-            s.save([])
-            assert nested.exists()
-        finally:
-            base_module.DATA_DIR = original
-
-    def test_overwrites_existing_file(self, data_dir):
-        s = _Scraper()
-        s.save([{"url": "http://old.com"}])
-        s.save([{"url": "http://new.com"}])
-        on_disk = json.loads(s.data_file.read_text())
-        assert len(on_disk) == 1
-        assert on_disk[0]["url"] == "http://new.com"
+    def test_dedupes_within_batch(self, data_dir):
+        _Scraper([_news("a"), _news("a")]).run()
+        assert _saved(data_dir)["count"] == 1
 
 
-# ---------------------------------------------------------------------------
-# run() — dedup and merge logic
-# ---------------------------------------------------------------------------
-
-
-class TestRun:
-    def test_all_new_records_returned(self, data_dir):
-        fresh = [{"url": "http://a.com"}, {"url": "http://b.com"}]
-        s = _Scraper(records=fresh)
-        new = s.run()
-        assert len(new) == 2
-
-    def test_all_duplicates_returns_empty(self, data_dir):
-        existing = [{"url": "http://a.com", "title": "Original"}]
-        fresh = [{"url": "http://a.com", "title": "Updated"}]
-        s = _Scraper(records=fresh)
-        s.save(existing)
-        assert s.run() == []
-
-    def test_mixed_returns_only_new(self, data_dir):
-        existing = [{"url": "http://a.com"}]
-        fresh = [{"url": "http://a.com"}, {"url": "http://b.com"}]
-        s = _Scraper(records=fresh)
-        s.save(existing)
-        new = s.run()
-        assert len(new) == 1
-        assert new[0]["url"] == "http://b.com"
-
-    def test_existing_record_not_clobbered_on_collision(self, data_dir):
-        existing = [{"url": "http://a.com", "title": "Keep", "extra": "preserved"}]
-        fresh = [{"url": "http://a.com", "title": "Overwrite attempt"}]
-        s = _Scraper(records=fresh)
-        s.save(existing)
-        s.run()
-        on_disk = json.loads(s.data_file.read_text())
-        assert on_disk[0]["title"] == "Keep"
-        assert on_disk[0]["extra"] == "preserved"
-
-    def test_merged_list_saved_to_disk(self, data_dir):
-        existing = [{"url": "http://a.com"}]
-        fresh = [{"url": "http://b.com"}]
-        s = _Scraper(records=fresh)
-        s.save(existing)
-        s.run()
-        on_disk = json.loads(s.data_file.read_text())
-        assert len(on_disk) == 2
-
-    def test_custom_dedup_key(self, data_dir):
-        class SlugScraper(_Scraper):
-            dedup_key = "slug"
-
-        existing = [{"slug": "foo", "url": "http://a.com"}]
-        fresh = [
-            {"slug": "foo", "url": "http://a-updated.com"},  # dup
-            {"slug": "bar", "url": "http://b.com"},  # new
-        ]
-        s = SlugScraper(records=fresh)
-        s.save(existing)
-        new = s.run()
-        assert len(new) == 1
-        assert new[0]["slug"] == "bar"
-
-    def test_records_missing_dedup_key_do_not_crash(self, data_dir):
-        existing = [{"title": "no url here"}]
-        fresh = [{"url": "http://b.com"}]
-        s = _Scraper(records=fresh)
-        s.save(existing)
-        new = s.run()
-        assert len(new) == 1
-
-    def test_empty_fresh_returns_empty(self, data_dir):
-        existing = [{"url": "http://a.com"}]
-        s = _Scraper(records=[])
-        s.save(existing)
-        assert s.run() == []
-
-    def test_empty_existing_all_new(self, data_dir):
-        fresh = [{"url": "http://a.com"}, {"url": "http://b.com"}]
-        s = _Scraper(records=fresh)
-        # No pre-existing file
-        new = s.run()
-        assert len(new) == 2
-
-
-# ---------------------------------------------------------------------------
-# run() — replace=True (kill-and-fill) mode
-# ---------------------------------------------------------------------------
-
-
-class TestRunReplace:
-    def _make_scraper(self, records):
-        class ReplaceScraper(_Scraper):
+class TestReplace:
+    def test_replace_drops_missing_records(self, data_dir):
+        class Taps(_Scraper):
+            kind = "beer"
             replace = True
 
-        return ReplaceScraper(records=records)
+        Taps([{"url": "x", "title": "IPA"}, {"url": "y", "title": "Stout"}]).run()
+        Taps([{"url": "y", "title": "Stout"}]).run()
+        assert [r["title"] for r in _saved(data_dir)["records"]] == ["Stout"]
 
-    def test_replace_saves_only_fresh_records(self, data_dir):
-        existing = [{"url": "http://old.com"}]
-        fresh = [{"url": "http://new.com"}]
-        s = self._make_scraper(fresh)
-        s.save(existing)
-        s.run()
-        on_disk = json.loads(s.data_file.read_text())
-        assert len(on_disk) == 1
-        assert on_disk[0]["url"] == "http://new.com"
 
-    def test_replace_removes_record_not_in_fresh(self, data_dir):
-        existing = [{"url": "http://a.com"}, {"url": "http://b.com"}]
-        fresh = [{"url": "http://a.com"}]  # b disappeared
-        s = self._make_scraper(fresh)
-        s.save(existing)
-        s.run()
-        on_disk = json.loads(s.data_file.read_text())
-        urls = [r["url"] for r in on_disk]
-        assert "http://b.com" not in urls
+class TestGuards:
+    def test_empty_scrape_raises_and_keeps_previous(self, data_dir):
+        _Scraper([_news("a")]).run()
+        before = (data_dir / "test_scraper.json").read_text()
+        with pytest.raises(ScrapeEmpty):
+            _Scraper([]).run()
+        assert (data_dir / "test_scraper.json").read_text() == before
 
-    def test_replace_returns_all_fresh_records(self, data_dir):
-        fresh = [{"url": "http://a.com"}, {"url": "http://b.com"}]
-        s = self._make_scraper(fresh)
-        returned = s.run()
-        assert len(returned) == 2
+    def test_min_records_zero_allows_empty(self, data_dir):
+        class Alerts(_Scraper):
+            kind = "alert"
+            replace = True
+            min_records = 0
 
-    def test_replace_with_empty_fresh_clears_file(self, data_dir):
-        existing = [{"url": "http://a.com"}]
-        s = self._make_scraper([])
-        s.save(existing)
-        s.run()
-        on_disk = json.loads(s.data_file.read_text())
-        assert on_disk == []
+        assert Alerts([]).run().count == 0
+        assert _saved(data_dir)["records"] == []
 
-    def test_replace_does_not_merge_existing(self, data_dir):
-        existing = [{"url": "http://a.com"}, {"url": "http://b.com"}]
-        fresh = [{"url": "http://c.com"}]
-        s = self._make_scraper(fresh)
-        s.save(existing)
-        s.run()
-        on_disk = json.loads(s.data_file.read_text())
-        # Only fresh record should be on disk, not the merged union
-        assert len(on_disk) == 1
+    def test_invalid_records_dropped(self, data_dir):
+        result = _Scraper([_news("a"), {"url": "no-title"}, "junk"]).run()
+        assert result.count == 1
+        assert result.dropped == 2
+
+    def test_all_invalid_counts_as_empty(self, data_dir):
+        with pytest.raises(ScrapeEmpty, match="invalid"):
+            _Scraper([{"url": "no-title"}]).run()
+
+    def test_fix_hook_runs_before_normalize(self, data_dir):
+        class Fixed(_Scraper):
+            def fix(self, record):
+                return {**record, "title": record["title"].upper()}
+
+        Fixed([_news("a")]).run()
+        assert _saved(data_dir)["records"][0]["title"] == "STORY A"

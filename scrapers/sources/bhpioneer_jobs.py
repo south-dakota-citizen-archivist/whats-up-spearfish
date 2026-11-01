@@ -10,9 +10,9 @@ from __future__ import annotations
 import json
 import time
 
-import requests
 from bs4 import BeautifulSoup
 
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -73,6 +73,9 @@ def _has_next(html: str) -> bool:
 class BHPioneerJobs(BaseScraper):
     name = "Black Hills Pioneer"
     slug = "bhpioneer_jobs"
+    url = "https://www.bhpioneer.com/classifieds/job/"
+    kind = "job"
+    min_records = 0
     dedup_key = "url"
     replace = True
 
@@ -81,7 +84,7 @@ class BHPioneerJobs(BaseScraper):
         offset = 0
         while True:
             url = _LIST_URL.format(offset=offset)
-            resp = requests.get(url, headers=_HEADERS, timeout=20)
+            resp = net.get(url, headers=_HEADERS, timeout=20)
             resp.raise_for_status()
             page_records = _parse_page(resp.text)
             records.extend(page_records)

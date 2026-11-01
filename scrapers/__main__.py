@@ -1,3 +1,3 @@
-from scrapers import run_all
+from scrapers.runner import main
 
-run_all()
+main()

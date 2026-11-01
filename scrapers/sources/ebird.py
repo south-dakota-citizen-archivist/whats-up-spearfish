@@ -6,23 +6,15 @@ then enriches each unique species with a photo from iNaturalist.
 
 Requires EBIRD_API_KEY in the environment (free at https://ebird.org/api/keygen).
 
-Not a BaseScraper subclass — run directly or from the daily scrape workflow.
-
-Usage:
-    uv run python -c "from scrapers.sources.ebird import fetch_ebird; fetch_ebird()"
 """
 
 from __future__ import annotations
 
-import json
 import os
 import time
-from datetime import datetime, timezone
-from pathlib import Path
 
-import requests
-
-DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "ebird.json"
+from scrapers import dates, net
+from scrapers.base import BaseScraper
 
 LAT, LNG = 44.48, -103.86
 RADIUS_KM = 50
@@ -42,7 +34,7 @@ def _inat_photo(scientific_name: str) -> str:
     parts = scientific_name.split()
     query = " ".join(parts[:2]) if len(parts) >= 2 else scientific_name
     try:
-        resp = requests.get(
+        resp = net.get(
             f"{INAT_API}/taxa/autocomplete",
             params={"q": query, "rank": "species", "per_page": 3},
             headers=INAT_HEADERS,
@@ -60,22 +52,23 @@ def _inat_photo(scientific_name: str) -> str:
     return ""
 
 
-def fetch_ebird() -> None:
-    api_key = os.environ.get("EBIRD_API_KEY", "")
-    if not api_key:
-        print("[eBird] EBIRD_API_KEY not set — skipping")
-        DATA_FILE.write_text(
-            json.dumps({"fetched_at": None, "observations": []}, indent=2),
-            encoding="utf-8",
-        )
-        return
+class EBird(BaseScraper):
+    name = "eBird recent sightings"
+    slug = "ebird"
+    kind = "sighting"
+    url = "https://ebird.org/region/US-SD-081"
+    replace = True
+    dedup_key = "obs_key"
+    naive_tz = dates.MT  # obsDt is local time
 
-    headers = {"X-eBirdApiToken": api_key}
+    def scrape(self) -> list[dict]:
+        api_key = os.environ.get("EBIRD_API_KEY", "")
+        if not api_key:
+            raise RuntimeError("EBIRD_API_KEY not set")
 
-    try:
-        resp = requests.get(
+        resp = net.get(
             f"{EBIRD_API}/data/obs/geo/recent",
-            headers=headers,
+            headers={"X-eBirdApiToken": api_key},
             params={
                 "lat": LAT,
                 "lng": LNG,
@@ -89,51 +82,35 @@ def fetch_ebird() -> None:
         )
         resp.raise_for_status()
         raw = resp.json()
-    except Exception as exc:
-        print(f"[eBird] Warning: fetch failed: {exc}")
-        return
 
-    # Fetch iNat photos for each unique species (by scientific name)
-    photo_cache: dict[str, str] = {}
-    seen_sci: set[str] = set()
-    for obs in raw:
-        sci = obs.get("sciName", "")
-        if sci and sci not in seen_sci:
-            seen_sci.add(sci)
-            photo_cache[sci] = _inat_photo(sci)
-            time.sleep(0.3)
+        # One iNaturalist photo lookup per species
+        photos: dict[str, str] = {}
+        for obs in raw:
+            sci = obs.get("sciName", "")
+            if sci and sci not in photos:
+                photos[sci] = _inat_photo(sci)
+                time.sleep(0.3)
 
-    print(f"[eBird] photos: {sum(1 for v in photo_cache.values() if v)}/{len(photo_cache)} found")
-
-    observations = []
-    for obs in raw:
-        sci = obs.get("sciName", "")
-        observations.append(
-            {
-                "species_code": obs.get("speciesCode", ""),
-                "common_name": obs.get("comName", ""),
-                "scientific_name": sci,
-                "observed_on": obs.get("obsDt", "")[:10],
-                "count": obs.get("howMany"),
-                "location_name": obs.get("locName", ""),
-                "lat": obs.get("lat"),
-                "lng": obs.get("lng"),
-                "location_id": obs.get("locId", ""),
-                "checklist_id": obs.get("subId", ""),
-                "photo_url": photo_cache.get(sci, ""),
-            }
-        )
-
-    DATA_FILE.write_text(
-        json.dumps(
-            {"fetched_at": datetime.now(timezone.utc).isoformat(), "observations": observations},
-            indent=2,
-            ensure_ascii=False,
-        ),
-        encoding="utf-8",
-    )
-    print(f"[eBird] {len(observations)} recent sightings → {DATA_FILE.name}")
-
-
-if __name__ == "__main__":
-    fetch_ebird()
+        observations = []
+        for obs in raw:
+            sci = obs.get("sciName", "")
+            sub_id = obs.get("subId", "")
+            observations.append(
+                {
+                    "obs_key": f"{sub_id}:{obs.get('speciesCode', '')}",
+                    "title": obs.get("comName", ""),
+                    "url": f"https://ebird.org/checklist/{sub_id}" if sub_id else self.url,
+                    "species_code": obs.get("speciesCode", ""),
+                    "common_name": obs.get("comName", ""),
+                    "scientific_name": sci,
+                    "observed_on": obs.get("obsDt", ""),
+                    "count": obs.get("howMany"),
+                    "location_name": obs.get("locName", ""),
+                    "lat": obs.get("lat"),
+                    "lng": obs.get("lng"),
+                    "location_id": obs.get("locId", ""),
+                    "checklist_id": sub_id,
+                    "photo_url": photos.get(sci, ""),
+                }
+            )
+        return observations

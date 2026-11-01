@@ -25,6 +25,8 @@ import json
 import re
 from pathlib import Path
 
+from scrapers.base import BaseScraper
+
 ROOT = Path(__file__).resolve().parent.parent.parent
 SOURCE_FILE = ROOT / "data" / "plants_native_black_hills.json"
 OUTPUT_FILE = ROOT / "data" / "native_plants_spotlight.json"
@@ -298,3 +300,16 @@ def build_spotlight() -> None:
 
 if __name__ == "__main__":
     build_spotlight()
+
+
+class NativePlantSpotlight(BaseScraper):
+    """On ice: kept for later, not run. Still uses its own standalone fetch
+    function and file format; port it to scrape() before enabling."""
+
+    name = "Native plant spotlight"
+    slug = "native_plants_spotlight"
+    kind = "plant"
+    enabled = False
+
+    def scrape(self) -> list[dict]:
+        raise NotImplementedError("native_plants_spotlight is on ice")

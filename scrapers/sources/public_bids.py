@@ -13,9 +13,9 @@ from __future__ import annotations
 import re
 from datetime import datetime
 
-import requests
 from bs4 import BeautifulSoup
 
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -115,6 +115,9 @@ def _parse_bids(html: str, base_url: str, source_label: str) -> list[dict]:
 class PublicBids(BaseScraper):
     name = "Public Bids"
     slug = "public_bids"
+    url = "https://www.spearfish.gov/Bids.aspx"
+    kind = "bid"
+    min_records = 0
     dedup_key = "slug"
     replace = True
 
@@ -122,7 +125,7 @@ class PublicBids(BaseScraper):
         records = []
         for src in _SOURCES:
             url = src["base_url"] + src["list_path"]
-            resp = requests.get(url, headers=_HEADERS, timeout=20)
+            resp = net.get(url, headers=_HEADERS, timeout=20)
             resp.raise_for_status()
             bids = _parse_bids(resp.text, src["base_url"], src["source_label"])
             print(f"  [{src['source_label']}] {len(bids)} open bids")

@@ -12,27 +12,18 @@ Strategy:
   3. Deadline dates live inside inline <script> tags — extracted via regex
   4. Filter rows whose location / description mentions a west-river county
 
-Not a BaseScraper subclass — run directly or from the daily scrape workflow.
-
-Usage:
-    uv run python -c "
-    from scrapers.sources.danr_public_notices import fetch_danr_notices
-    fetch_danr_notices()
-    "
 """
 
 from __future__ import annotations
 
-import json
 import re
 import time
-from datetime import datetime, timezone
-from pathlib import Path
 
-import requests
 from bs4 import BeautifulSoup
 
-DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "danr_public_notices.json"
+from scrapers import net
+from scrapers.base import BaseScraper
+
 DANR_URL = "https://danr.sd.gov/public/default.aspx"
 
 WEST_RIVER = {
@@ -86,7 +77,7 @@ def _build_section_map() -> list[tuple[str, str, str]]:
     Fetch static HTML and return list of (heading, subdomain, appkey) tuples.
     Preserves document order so notice_type labels match the correct tables.
     """
-    resp = requests.get(DANR_URL, timeout=20, headers=_HEADERS)
+    resp = net.get(DANR_URL, timeout=20, headers=_HEADERS)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
 
@@ -113,7 +104,7 @@ def _build_section_map() -> list[tuple[str, str, str]]:
 def _fetch_table(subdomain: str, appkey: str) -> BeautifulSoup | None:
     url = f"https://{subdomain}/dp/{appkey}"
     try:
-        resp = requests.get(url, headers=_HEADERS, timeout=20)
+        resp = net.get(url, headers=_HEADERS, timeout=20)
         if not resp.ok:
             return None
         return BeautifulSoup(resp.text, "html.parser")
@@ -212,36 +203,35 @@ def _parse_table(soup: BeautifulSoup, notice_type: str) -> list[dict]:
     return rows
 
 
-def _deadline_sort_key(n: dict) -> str:
-    d = n.get("deadline", "") or ""
-    m = re.match(r"(\d{1,2})/(\d{1,2})/(\d{4})", d)
-    return f"{m.group(3)}-{int(m.group(1)):02d}-{int(m.group(2)):02d}" if m else "9999-99-99"
+def _deadline_iso(n: dict) -> str:
+    m = re.match(r"(\d{1,2})/(\d{1,2})/(\d{4})", n.get("deadline", "") or "")
+    return f"{m.group(3)}-{int(m.group(1)):02d}-{int(m.group(2)):02d}" if m else ""
 
 
-def fetch_danr_notices() -> None:
-    sections = _build_section_map()
-    notices: list[dict] = []
+class DANRPublicNotices(BaseScraper):
+    name = "SD DANR public notices (West River)"
+    slug = "danr_public_notices"
+    kind = "notice"
+    url = DANR_URL
+    replace = True
+    dedup_key = "notice_key"
+    min_records = 0  # some weeks there are no West River notices
 
-    for heading, subdomain, appkey in sections:
-        soup = _fetch_table(subdomain, appkey)
-        if soup is None:
-            continue
-        rows = _parse_table(soup, heading)
-        print(f"  {heading}: {len(rows)} notice(s)")
-        notices.extend(rows)
-        time.sleep(0.3)
+    def scrape(self) -> list[dict]:
+        notices: list[dict] = []
+        for heading, subdomain, appkey in _build_section_map():
+            soup = _fetch_table(subdomain, appkey)
+            if soup is None:
+                continue
+            notices.extend(_parse_table(soup, heading))
+            time.sleep(0.3)
 
-    notices.sort(key=_deadline_sort_key)
-
-    DATA_FILE.write_text(
-        json.dumps(
-            {"fetched_at": datetime.now(timezone.utc).isoformat(), "notices": notices},
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
-    print(f"[DANR] {len(notices)} notice(s) → {DATA_FILE.name}")
-
-
-if __name__ == "__main__":
-    fetch_danr_notices()
+        for n in notices:
+            n["title"] = n.get("name") or n.get("description", "")[:120] or n["notice_type"]
+            n["url"] = n.get("comment_url") or next((link["url"] for link in n.get("links", [])), DANR_URL)
+            n["deadline_iso"] = _deadline_iso(n)
+            n["notice_key"] = "|".join(
+                [n["notice_type"], n.get("application_no", ""), n["title"], n.get("location", "")]
+            )
+        notices.sort(key=lambda n: n["deadline_iso"] or "9999")
+        return notices

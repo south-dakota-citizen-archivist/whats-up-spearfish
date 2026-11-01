@@ -1,43 +1,29 @@
 """
 scrapers/sources/building_permits.py
 
-Downloads and parses monthly building permit PDF reports from the City of Spearfish.
-Historical data (2013–2025-09) must be seeded once from the existing
-spearfish-building-permits combined CSV before first deployment.
-
-Seeding (run once locally):
-    uv run python -c "
-    from scrapers.sources.building_permits import seed_from_csv
-    seed_from_csv('/Users/cjwinchester/spearfish-building-permits/spearfish-building-permits.csv')
-    "
-
-Ongoing scraping (picks up new PDFs not already in the data file):
-    uv run python -c "
-    from scrapers.sources.building_permits import fetch_building_permits
-    fetch_building_permits()
-    "
+Monthly building permit reports (PDF) from the City of Spearfish archive.
+Each run parses the most recent RECENT_MONTHS reports; the long-run archive
+of these reports lives in the separate spearfish-building-permits project.
 """
 
 from __future__ import annotations
 
-import csv
-import json
 import re
 import tempfile
 import time
-from datetime import datetime, timezone
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin
 
-import requests
 from bs4 import BeautifulSoup
 
-DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "building_permits.json"
+from scrapers import net
+from scrapers.base import BaseScraper
 
 BASE_URL = "https://www.cityofspearfish.com"
 ARCHIVE_URL = f"{BASE_URL}/Archive.aspx?AMID=37"
 
-USER_AGENT = "whats-up-in-spearfish/1.0 (public data aggregator)"
+RECENT_MONTHS = 6
 
 MONTH_YEAR_FORMATS = ["%B %Y", "%B%Y"]
 
@@ -239,7 +225,7 @@ def _parse_pdf(pdf_path: Path, year: str, month: str) -> list[dict]:
 
 def _scrape_archive() -> list[dict]:
     """Scrape city archive page; return list of {year, month, url} dicts."""
-    resp = requests.get(ARCHIVE_URL, headers={"User-Agent": USER_AGENT}, timeout=20)
+    resp = net.get(ARCHIVE_URL, timeout=20)
     resp.raise_for_status()
     time.sleep(1)
 
@@ -280,183 +266,28 @@ def _scrape_archive() -> list[dict]:
     return reports
 
 
-def fetch_building_permits() -> None:
-    """
-    Fetch new building permit PDFs and merge into data/building_permits.json.
-    Only downloads PDFs for year-month combos not already present in the data file.
-    """
-    # Load existing data
-    existing: list[dict] = []
-    existing_month_urls: dict[str, str] = {}
-    if DATA_FILE.exists():
-        try:
-            raw = json.loads(DATA_FILE.read_text(encoding="utf-8"))
-            raw_records = raw.get("records") or []
-            existing = [r for r in raw_records if _is_valid_permit(r)]
-            existing_month_urls = raw.get("month_urls") or {}
-        except Exception as exc:
-            print(f"[BuildingPermits] Warning: could not load existing data: {exc}")
+class BuildingPermits(BaseScraper):
+    name = "Spearfish building permit reports"
+    slug = "building_permits"
+    kind = "building_permit"
+    url = ARCHIVE_URL
+    replace = True
+    dedup_key = "permit_number"
+    max_stale_hours = 24 * 7
 
-    covered_months: set[tuple[str, str]] = {
-        (str(r.get("year", "")), str(r.get("month", "")).zfill(2)) for r in existing
-    }  # noqa
-
-    # Scrape archive — always update month_urls even if no new PDFs
-    try:
-        archive = _scrape_archive()
-    except Exception as exc:
-        print(f"[BuildingPermits] Warning: could not scrape archive: {exc}")
-        return
-
-    # Update month_urls from archive (merge with existing)
-    month_urls = dict(existing_month_urls)
-    for item in archive:
-        key = f"{item['year']}-{item['month']}"
-        month_urls[key] = item["url"]
-
-    new_months = [(r["year"], r["month"], r["url"]) for r in archive if (r["year"], r["month"]) not in covered_months]
-    print(
-        f"[BuildingPermits] Archive: {len(archive)} reports; {len(covered_months)} covered; {len(new_months)} to fetch"
-    )  # noqa
-
-    new_records: list[dict] = []
-
-    for year, month, url in new_months:
-        print(f"[BuildingPermits] Downloading {year}-{month} ...")
-        tmp_path = Path(tempfile.mktemp(suffix=".pdf"))
-        try:
-            with requests.get(url, stream=True, headers={"User-Agent": USER_AGENT}, timeout=30) as r:
-                r.raise_for_status()
-                with open(tmp_path, "wb") as f:
-                    for chunk in r.iter_content(chunk_size=8192):
-                        f.write(chunk)
+    def scrape(self) -> list[dict]:
+        reports = sorted(_scrape_archive(), key=lambda r: (r["year"], r["month"]), reverse=True)
+        records: list[dict] = []
+        for report in reports[:RECENT_MONTHS]:
+            with tempfile.TemporaryDirectory() as tmp:
+                pdf = Path(tmp) / "report.pdf"
+                resp = net.get(report["url"], timeout=60)
+                resp.raise_for_status()
+                pdf.write_bytes(resp.content)
+                parsed = [r for r in _parse_pdf(pdf, report["year"], report["month"]) if _is_valid_permit(r)]
+            for r in parsed:
+                r["url"] = report["url"]
+                r["title"] = " — ".join(x for x in (r["construction_type"], r["site_address"]) if x)
+            records.extend(parsed)
             time.sleep(1)
-
-            records = _parse_pdf(tmp_path, year, month)
-            print(f"[BuildingPermits]   Parsed {len(records)} permits from {year}-{month}")
-            new_records.extend(records)
-        except Exception as exc:
-            print(f"[BuildingPermits] Warning: could not process {year}-{month}: {exc}")
-        finally:
-            tmp_path.unlink(missing_ok=True)
-
-    all_records = existing + new_records
-    all_records.sort(
-        key=lambda r: (r.get("year", ""), r.get("month", ""), r.get("cost_approximate") or 0), reverse=True
-    )
-
-    DATA_FILE.write_text(
-        json.dumps(
-            {
-                "fetched_at": datetime.now(timezone.utc).isoformat(),
-                "month_urls": month_urls,
-                "records": all_records,
-            },
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
-    print(f"[BuildingPermits] {len(all_records)} total records, {len(month_urls)} month URLs → {DATA_FILE.name}")
-
-
-def populate_month_urls() -> None:
-    """
-    One-time backfill: scrape the city archive and add month_urls to the data file.
-    Run after seeding from CSV.
-
-    Usage:
-        uv run python -c "
-        from scrapers.sources.building_permits import populate_month_urls
-        populate_month_urls()
-        "
-    """
-    if not DATA_FILE.exists():
-        print("[BuildingPermits] No data file found — run seed_from_csv first.")
-        return
-    try:
-        raw = json.loads(DATA_FILE.read_text(encoding="utf-8"))
-    except Exception as exc:
-        print(f"[BuildingPermits] Could not read data file: {exc}")
-        return
-
-    try:
-        archive = _scrape_archive()
-    except Exception as exc:
-        print(f"[BuildingPermits] Could not scrape archive: {exc}")
-        return
-
-    month_urls = raw.get("month_urls") or {}
-    for item in archive:
-        key = f"{item['year']}-{item['month']}"
-        month_urls[key] = item["url"]
-
-    raw["month_urls"] = month_urls
-    DATA_FILE.write_text(json.dumps(raw, indent=2), encoding="utf-8")
-    print(f"[BuildingPermits] Saved {len(month_urls)} month URLs → {DATA_FILE.name}")
-
-
-def seed_from_csv(csv_path: str | Path) -> None:
-    """
-    One-time seed: import historical records from the combined spearfish-building-permits CSV.
-    Run this locally before first deployment, then commit data/building_permits.json.
-
-    Usage:
-        uv run python -c "
-        from scrapers.sources.building_permits import seed_from_csv
-        seed_from_csv('/Users/cjwinchester/spearfish-building-permits/spearfish-building-permits.csv')
-        "
-    """
-    csv_path = Path(csv_path).expanduser()
-    records: list[dict] = []
-
-    with open(csv_path, newline="", encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            year = str(row.get("year", "")).strip()
-            month = str(row.get("month", "")).strip().zfill(2)
-            const_type = (row.get("construction_type") or "").strip()
-            # Skip rows with no permit ID or summary/total rows
-            if not _is_valid_permit(row):
-                continue
-
-            # Skip non-building permit types
-            if const_type.upper() in SKIP_TYPES:
-                continue
-
-            outside_raw = (row.get("outside_city_limits") or "").strip().lower()
-            outside = outside_raw == "true"
-
-            records.append(
-                {
-                    "year": year,
-                    "month": month,
-                    "date": f"{year}-{month}-01",
-                    "permit_number": (row.get("permit_number") or "").strip(),
-                    "applicant_name": (row.get("applicant_name") or "").strip(),
-                    "site_address": (row.get("site_address") or "").strip(),
-                    "construction_type": const_type,
-                    "category": _categorize(const_type),
-                    "contractor": (row.get("contractor") or "").strip(),
-                    "cost_approximate": _clean_money(row.get("cost_approximate")),
-                    "permit_fee": _clean_money(row.get("permit_fee")),
-                    "outside_city_limits": outside,
-                }
-            )
-
-    records.sort(key=lambda r: (r.get("year", ""), r.get("month", ""), r.get("cost_approximate") or 0), reverse=True)
-
-    DATA_FILE.write_text(
-        json.dumps(
-            {
-                "fetched_at": datetime.now(timezone.utc).isoformat(),
-                "records": records,
-            },
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
-    print(f"[BuildingPermits] Seeded {len(records)} records from {csv_path}")
-    print(f"[BuildingPermits] → {DATA_FILE}")
-
-
-if __name__ == "__main__":
-    fetch_building_permits()
+        return records

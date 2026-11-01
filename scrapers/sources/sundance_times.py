@@ -9,9 +9,9 @@ from __future__ import annotations
 
 import re
 
-import requests
 from bs4 import BeautifulSoup
 
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -31,9 +31,11 @@ _HEADERS = {
 class SundanceTimes(BaseScraper):
     name = "Sundance Times"
     slug = "sundance_times"
+    url = "https://www.sundancetimes.com"
+    kind = "news"
 
     def scrape(self) -> list[dict]:
-        r = requests.get(BASE_URL + "/", headers=_HEADERS, timeout=20)
+        r = net.get(BASE_URL + "/", headers=_HEADERS, timeout=20)
         r.raise_for_status()
         soup = BeautifulSoup(r.text, "html.parser")
 

@@ -8,8 +8,7 @@ Portal:  https://spearfishsd.portal.civicclerk.com/
 API:     https://spearfishsd.api.civicclerk.com/v1/
 """
 
-import requests
-
+from scrapers import net
 from scrapers.base import BaseScraper
 
 API_BASE = "https://spearfishsd.api.civicclerk.com/v1"
@@ -21,6 +20,8 @@ PAGE_SIZE = 15
 class SpearfishCity(BaseScraper):
     name = "City of Spearfish"
     slug = "spearfish_city"
+    kind = "document"
+    url = "https://spearfishsd.portal.civicclerk.com/"
     dedup_key = "url"
 
     def scrape(self) -> list[dict]:
@@ -32,7 +33,7 @@ class SpearfishCity(BaseScraper):
                 "$skip": skip,
                 "$orderby": "startDateTime desc",
             }
-            resp = requests.get(
+            resp = net.get(
                 f"{API_BASE}/Events",
                 params=params,
                 headers={"Accept": "application/json"},

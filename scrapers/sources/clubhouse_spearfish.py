@@ -17,8 +17,12 @@ _STATS_RE = re.compile(r"([\d.]+)%\s*ABV(?:\s*•\s*([\d.]+)\s*IBU)?", re.IGNORE
 class ClubhouseSpearfish(BaseScraper):
     name = "The Clubhouse"
     slug = "clubhouse_spearfish"
+    kind = "beer"
+    url = "https://untappd.com/v/the-clubhouse-of-spearfish/9898973"
     dedup_key = "slug"
     replace = True
+    # Disabled 2026-11-01: the venue no longer publishes a menu on Untappd.
+    enabled = False
 
     def scrape(self) -> list[dict]:
         soup = fetch_html(SOURCE_URL)

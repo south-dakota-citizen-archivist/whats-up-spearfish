@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% from "macros.html" import card, empty, ext %}
+
+{% block content %}
+<h1 class="text-2xl font-extrabold mb-4">On tap</h1>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {% for v in venues %}
+  {% call card(v.name, v.slug, sources=v, more=v.url, more_label="Menu") %}
+    {% if v.records %}
+    <ul class="divide-y divide-stone-100 text-sm">
+      {% for b in v.records | sort(attribute='title') %}
+      <li class="py-2">
+        <p class="font-medium">{{ b.title }}</p>
+        <p class="text-xs text-stone-500">
+          {{ [b.category or b.style or '', (b.abv ~ ' ABV') if b.abv else '', b.brewery if b.brewery and b.brewery != v.name else ''] | select | join(' · ') }}
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}{{ empty("Tap list unavailable.") }}{% endif %}
+  {% endcall %}
+  {% endfor %}
+</div>
+
+<div class="mt-6">
+  {% call card(leones.name ~ " flavors", "leones", sources=leones, more=leones.url, more_label="Leone's") %}
+    {% if leones.records %}
+    <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      {% for f in leones.records %}
+      <li>
+        {% if f.image_url %}<img src="{{ f.image_url }}" alt="" loading="lazy" class="w-full aspect-square object-cover rounded-lg bg-stone-100">{% endif %}
+        <p class="text-sm font-medium mt-1">{{ f.title }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}{{ empty("Flavor board unavailable.") }}{% endif %}
+  {% endcall %}
+</div>
+{% endblock %}

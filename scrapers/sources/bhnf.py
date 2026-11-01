@@ -10,10 +10,10 @@ from __future__ import annotations
 
 import re
 
-import requests
 from bs4 import BeautifulSoup
 from dateutil import parser as dateutil_parser
 
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -36,7 +36,7 @@ _WS_RE = re.compile(r"\s+")
 
 
 def _get(url: str) -> BeautifulSoup:
-    r = requests.get(url, headers=_HEADERS, timeout=20)
+    r = net.get(url, headers=_HEADERS, timeout=20)
     r.raise_for_status()
     return BeautifulSoup(r.text, "html.parser")
 
@@ -124,6 +124,8 @@ def _scrape_events() -> list[dict]:
 class BHNF(BaseScraper):
     name = "Black Hills National Forest"
     slug = "bhnf"
+    kind = "press_release"
+    url = "https://www.fs.usda.gov/r02/blackhills/newsroom/releases"
     dedup_key = "slug"
 
     def scrape(self) -> list[dict]:

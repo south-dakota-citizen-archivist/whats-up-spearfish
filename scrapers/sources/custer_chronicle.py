@@ -7,10 +7,10 @@ Both papers share custercountychronicle.com; term/8 is the "News" tag.
 
 from __future__ import annotations
 
-import requests
 from bs4 import BeautifulSoup
 from dateutil import parser as dateutil_parser
 
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -29,7 +29,7 @@ _HEADERS = {
 
 
 def _get(url: str, params: dict | None = None) -> BeautifulSoup:
-    r = requests.get(url, headers=_HEADERS, params=params, timeout=20)
+    r = net.get(url, headers=_HEADERS, params=params, timeout=20)
     r.raise_for_status()
     return BeautifulSoup(r.text, "html.parser")
 
@@ -82,6 +82,8 @@ def _parse_page(soup: BeautifulSoup) -> list[dict]:
 class CusterCountyChronicle(BaseScraper):
     name = "Custer County Chronicle"
     slug = "custer_county_chronicle"
+    kind = "news"
+    url = "https://custercountychronicle.com"
 
     def scrape(self) -> list[dict]:
         records = []

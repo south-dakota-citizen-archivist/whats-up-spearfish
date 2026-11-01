@@ -21,8 +21,8 @@ import requests
 from playwright.sync_api import sync_playwright
 from playwright_stealth import Stealth
 
+from scrapers import net
 from scrapers.base import BaseScraper
-from scrapers.slack import send_alert
 from scrapers.utils import make_slug
 
 BASE_URL = "https://www.sdpb.org"
@@ -59,7 +59,7 @@ def _fetch_article_urls() -> list[str]:
 def _parse_article(url: str) -> dict | None:
     """Fetch an article page and extract fields from its NewsArticle ld+json."""
     try:
-        resp = requests.get(url, headers=_HEADERS, timeout=20)
+        resp = net.get(url, headers=_HEADERS, timeout=20)
         resp.raise_for_status()
     except requests.RequestException as exc:
         print(f"[SDPB] Warning: could not fetch {url}: {exc}")
@@ -119,18 +119,12 @@ def _parse_article(url: str) -> dict | None:
     }
 
 
-def _slack_blocks(record: dict) -> list[dict]:
-    header = (f"*<{record['url']}|{record['title']}>*\n{record['published']}   {record['byline']}").strip()
-    blocks = [{"type": "section", "text": {"type": "mrkdwn", "text": header}}]
-    desc = record.get("description", "")
-    if desc:
-        blocks.append({"type": "section", "text": {"type": "mrkdwn", "text": desc}})
-    return blocks
-
-
 class SDPBNews(BaseScraper):
     name = "SDPB"
     slug = "sdpb_news"
+    kind = "news"
+    url = "https://www.sdpb.org/news"
+    browser = True
     dedup_key = "url"
 
     def scrape(self) -> list[dict]:
@@ -143,12 +137,3 @@ class SDPBNews(BaseScraper):
                 records.append(record)
         print(f"  [SDPB] {len(records)} articles parsed")
         return records
-
-    def run(self) -> list[dict]:
-        new_records = super().run()
-        for record in new_records:
-            send_alert(
-                text=f"SDPB: {record['title']}",
-                blocks=_slack_blocks(record),
-            )
-        return new_records

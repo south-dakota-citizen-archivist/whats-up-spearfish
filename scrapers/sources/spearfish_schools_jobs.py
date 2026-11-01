@@ -156,6 +156,9 @@ def _get_jobs_for_category(session: requests.Session, category: str) -> list[dic
 class SpearfishSchoolsJobs(BaseScraper):
     name = "Spearfish School District"
     slug = "spearfish_schools_jobs"
+    kind = "job"
+    url = "https://www.applitrack.com/bhssc/onlineapp/default.aspx"
+    min_records = 0
     dedup_key = "slug"
     replace = True
 

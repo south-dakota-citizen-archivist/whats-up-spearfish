@@ -16,9 +16,9 @@ from __future__ import annotations
 import re
 from datetime import datetime
 
-import requests
 from bs4 import BeautifulSoup
 
+from scrapers import net
 from scrapers.base import BaseScraper
 
 BASE_URL = "https://www.fs.usda.gov"
@@ -48,10 +48,14 @@ def _parse_date(text: str) -> str:
 class BHNFAlerts(BaseScraper):
     name = "BHNF Alerts"
     slug = "bhnf_alerts"
+    url = "https://www.fs.usda.gov/r02/blackhills/alerts"
+    kind = "alert"
+    tier = "frequent"
+    min_records = 0
     replace = True  # Page reflects current live state
 
     def scrape(self) -> list[dict]:
-        resp = requests.get(ALERTS_URL, headers=_HEADERS, timeout=20)
+        resp = net.get(ALERTS_URL, headers=_HEADERS, timeout=20)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
 

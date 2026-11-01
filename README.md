@@ -1,156 +1,135 @@
 # What's up, Spearfish?
 
-A static website that aggregates events, public documents, beers on tap, and other
-things happening in Spearfish, SD. It runs as a static site, rebuilt a few times a
-day from scrapers that collect public data across the web.
+A static site that collects what's happening in and around Spearfish, S.D. and the
+Northern Black Hills — a unified events calendar, school menus, creek flow, bird
+sightings, public meetings, permits, tap lists and more — rebuilt several times a
+day from public sources.
 
-Source code: [https://github.com/south-dakota-citizen-archivist/whats-up-spearfish](https://github.com/south-dakota-citizen-archivist/whats-up-spearfish)
+**Live:** https://south-dakota-citizen-archivist.github.io/whats-up-spearfish/
+· **Source health:** [/status/](https://south-dakota-citizen-archivist.github.io/whats-up-spearfish/status/)
 
-_Updated: November 1, 2026_
+## How it works
 
----
-
-## Data sources
-
-| Source | Slug | Record types | Count |
-|---|---|---|---:|
-| Bhca Calendar | `bhca_calendar` | `event` | 70 |
-| BHNF Alerts | `bhnf_alerts` | `alert` | 27 |
-| BHSU | `bhsu_jobs` | `job` | 12 |
-| BHSU Athletics | `bhsu_athletics` | `event` | 331 |
-| BHSU Campus Calendar | `bhsu_calendar` | `event` | 131 |
-| Black Hills National Forest | `bhnf` | `event`, `press_release` | 24 |
-| Black Hills National Forest (public projects) | `bhnf_projects` | — | 44 |
-| Black Hills Pioneer | `bhpioneer_jobs` | `job` | 6 |
-| Black Hills Pioneer | `black_hills_pioneer` | `news` | 1,793 |
-| Black Hills Wildflowers | `black_hills_wildflowers` | — | 5 |
-| Building Permits | `building_permits` | — | 3 |
-| City of Spearfish | `spearfish_city` | `document` | 4,390 |
-| City of Spearfish Alert Center | `spearfish_alert_center` | `alert` | 16 |
-| City of Spearfish Blog | `spearfish_blog` | — | 0 |
-| City of Spearfish Calendar | `spearfish_calendar` | `event` | 341 |
-| City of Spearfish Jobs | `spearfish_jobs` | — | 0 |
-| City of Spearfish News Flash | `spearfish_news` | `press_release` | 43 |
-| Crow Peak Brewing | `crow_peak_brewing` | `beer` | 16 |
-| Custer County Chronicle | `custer_county_chronicle` | `news` | 288 |
-| Danr Spills | `danr_spills` | — | 5 |
-| eBird (recent sightings) | `ebird` | — | 50 |
-| Elementary 3-5 Lunch | `spearfish_elem_35_lunch` | `school_menu` | 60 |
-| Elementary Breakfast | `spearfish_elem_breakfast` | `school_menu` | 60 |
-| Elementary K-2 Lunch | `spearfish_elem_k2_lunch` | `school_menu` | 60 |
-| Grace Balloch Memorial Library | `spearfish_library` | `library_book` | 86 |
-| Grace Balloch Memorial Library (circulation) | `library_circulation` | — | 126 |
-| High School Lunch | `spearfish_hs_lunch` | `school_menu` | 60 |
-| Inaturalist Plant Cache | `inaturalist_plant_cache` | — | 317 |
-| Killian's | `killians` | `beer` | 17 |
-| Lawrence County | `lawrence_county` | `document` | 77 |
-| Lawrence County Jobs | `lawrence_county_jobs` | — | 0 |
-| Lawrence County News Flash | `lawrence_county_news` | `press_release` | 3 |
-| Leone's Creamery | `leones_creamery` | — | 0 |
-| Matthews Opera House | `matthews_opera_house` | `event` | 106 |
-| Middle School Lunch | `spearfish_ms_lunch` | `school_menu` | 60 |
-| MS/HS Breakfast | `spearfish_mshs_breakfast` | `school_menu` | 60 |
-| OpenGov / Spearfish Planning & Zoning Portal | `planning_zoning` | `Annexation`, `Change of Use or Occupancy`, `Commercial Alterations, Additions, or Tenant Improvements`, `Commercial Demolition`, `Commercial New Construction`, `Conditional Use Permit`, `Development Review District`, `Encroachment Agreement Request`, `Fire Code Permit`, `Floodplain Development`, `Grading Permit`, `Major Final Plat`, `Major Preliminary Plat`, `Minor Final Plat`, `Residential Additions or Alterations`, `Residential Decks, Covered Patios, or Fences`, `Residential Demolition`, `Residential New Construction`, `Rezone`, `Right of Way Permit`, `Sign Permit `, `Sketch Plat`, `Standalone Permits - Plumbing, Mechanical, Gas`, `Subdivision Development Plans`, `Tax Increment Financing (TIF)`, `Vacate of Right of Way or Easement`, `Variance Application`, `Water/Sewer Service Agreement Application` | 618 |
-| Public Bids | `public_bids` | `bid` | 1 |
-| Public Meetings (YouTube) | `public_meetings_youtube` | `youtube_video` | 64 |
-| Rapid City Journal | `rapid_city_journal` | `news` | 1,482 |
-| Redwater Kitchen | `redwater_kitchen` | `beer` | 12 |
-| Regional News | `news_feeds` | `news` | 773 |
-| Roadkill | `roadkill` | — | 3 |
-| Sawyer Brewing Co. | `sawyer_brewing` | `beer` | 13 |
-| SD Dept. of Agriculture & Natural Resources (contested cases) | `danr_contested_cases` | — | 15 |
-| SD Dept. of Agriculture & Natural Resources (public notices) | `danr_public_notices` | — | 20 |
-| Sd Flowering Plants | `sd_flowering_plants` | — | 5 |
-| Sd Living Landscapes | `sd_living_landscapes` | — | 5 |
-| SDPB | `sdpb_news` | `news` | 479 |
-| Spearfish Agenda Center | `spearfish_agenda_center` | — | 0 |
-| Spearfish Brewing Company | `spearfish_brewing` | `beer` | 14 |
-| Spearfish Chamber | `spearfish_chamber` | `event` | 329 |
-| Spearfish HS Sports | `spearfish_sports` | `event` | 1,680 |
-| Spearfish MS Sports | `spearfish_ms_sports` | `event` | 394 |
-| Spearfish Sasquatch | `spearfish_sasquatch` | `event` | 32 |
-| Spearfish Sasquatch Theme | `spearfish_sasquatch_theme` | — | 3 |
-| Spearfish School Board | `spearfish_school_board_docs` | `document` | 140 |
-| Spearfish School District | `spearfish_school_news` | `press_release` | 24 |
-| Spearfish School District | `spearfish_schools` | `event` | 20 |
-| Spearfish School District | `spearfish_schools_jobs` | `job` | 7 |
-| Sundance Times | `sundance_times` | `news` | 590 |
-| The Clubhouse | `clubhouse_spearfish` | — | 0 |
-| USDA PLANTS Database (Black Hills full pull) | `plants_native_black_hills` | — | 24,984 |
-| USDA PLANTS Database (Native Plant Spotlight) | `native_plants_spotlight` | — | 195 |
-| USGS Stream Gauge — Spearfish Creek (06431500) | `creek_gauge` | — | 4 |
-| Western Hills Humane Society | `whhs_adoptable` | `adoptable` | 44 |
-
----
-
-## Adding a new scraper
-
-1. Create a new Python module inside `scrapers/sources/`, e.g.
-   `scrapers/sources/city_council.py`.
-
-2. Subclass `BaseScraper` and implement `scrape()`:
-
-   ```python
-   from scrapers.base import BaseScraper
-
-   class CityCouncilScraper(BaseScraper):
-       name = "City Council Meetings"
-       slug = "city_council"
-
-       def scrape(self) -> list[dict]:
-           # fetch + parse remote data, return list of dicts
-           return []
-   ```
-
-3. That's it — `uv run python -m scrapers` will discover and run it automatically.
-
-**Common record fields:**
-
-| Field | Description |
-|---|---|
-| `title` | Display title (required) |
-| `url` | Link to the original source page |
-| `record_type` | Controls which widget the record appears in |
-| `start_dt` | ISO date/datetime string — marks the record as an event |
-| `end_dt` | ISO date/datetime — optional event end time |
-| `date` | Fallback date for documents/news |
-| `location` | Human-readable location string |
-| `description` | Free-text body |
-| `doc_type` | Document category badge (e.g. `"Agenda"`, `"Permit"`) |
-
----
-
-## How to run locally
-
-```bash
-# 1. Clone the repo
-git clone https://github.com/south-dakota-citizen-archivist/whats-up-spearfish.git
-cd whats-up-in-spearfish
-
-# 2. Install dependencies (uv creates .venv automatically)
-uv sync
-
-# 3. Run scrapers (populates data/*.json)
-uv run python -m scrapers
-
-# 4. Build the site (outputs to _site/)
-uv run python build.py
-
-# 5. Preview locally
-uv run python -m http.server 8000 --directory _site
-# Open http://localhost:8000
+```
+scrapers (GitHub Actions, scheduled)  →  data branch (JSON snapshots)  →  sitegen  →  GitHub Pages
 ```
 
----
+- **`scrapers/`** — one class per source in `scrapers/sources/`. The runner
+  (`python -m scrapers`) runs them in parallel, normalizes every record
+  (`scrapers/schema.py`), and writes `data/<slug>.json` plus `data/_health.json`.
+  A source that errors or comes back empty never overwrites its last good data.
+- **`data` branch** — scraped data lives on its own branch, so `main` history is
+  code only. Files are snapshots: news, documents and events are pruned to a
+  rolling window (see `KINDS` in `scrapers/schema.py`), not archived forever.
+- **`sitegen/`** — renders `site/templates/` with Jinja into `_site/`: separate
+  pages for Today, Events, Schools, Outdoors, On tap, Civic, News, Jobs,
+  Community and Status, plus `events.json`, `calendar.ics` and `events.xml`.
+  Tailwind is compiled with `pytailwindcss`; Alpine.js is vendored in
+  `site/static/vendor/`. No Node toolchain.
+- **Workflows** — `.github/workflows/scrape.yml` runs the daily tier each morning
+  and the `frequent` tier (creek gauge, fire, alerts) every three hours, commits
+  to the `data` branch, builds and deploys. `ci.yml` lints and tests pull requests.
+  Sources failing three runs in a row are listed in a "Scraper health" issue.
 
-## GitHub Actions setup
+## Running locally
 
-The workflow runs scrapers + build automatically. If you want Slack notifications,
-add these secrets under **Settings → Secrets and variables → Actions**:
+```sh
+uv sync --group dev
+uv run playwright install chromium            # only needed for browser sources
 
-| Secret | Description |
-|---|---|
-| `SLACK_BOT_TOKEN` | Slack bot token (starts with `xoxb-`) |
-| `SLACK_CHANNEL_ID` | Channel ID to post scrape summaries to |
+# get the current data (a worktree of the data branch at data/)
+git fetch origin data && git worktree add data data
 
-Both are optional — the pipeline runs fine without them.
+uv run python -m scrapers --list               # registry
+uv run python -m scrapers --only creek_gauge   # run some sources
+uv run python -m scrapers                      # run everything enabled
+uv run python -m sitegen                       # build _site/
+python -m http.server -d _site 8000
+
+uv run pytest && uv run ruff check .
+```
+
+Set `WUS_DATA_DIR=/some/dir` to scrape into a scratch directory instead of `data/`.
+eBird needs `EBIRD_API_KEY` (a repo secret in Actions).
+
+## Adding a source
+
+1. Add a module to `scrapers/sources/` with a `BaseScraper` subclass: set `name`,
+   `slug`, `kind` (see `KINDS` in `scrapers/schema.py`), `url`, and implement
+   `scrape()` returning a list of dicts with at least `title` and `url` (events
+   also need `start_dt`). Use `scrapers.net.get()` for HTTP.
+2. Set `replace = True` if each scrape is the complete current state (tap lists,
+   job boards); leave it `False` for feeds that only show the latest items.
+3. Set `naive_tz = dates.MT` if the source's timestamps are local time without an
+   offset (the default assumes UTC), `min_records = 0` if it can legitimately be
+   empty, and `category` for events (`community`, `arts`, `sports`, …).
+4. Run it with `uv run python -m scrapers --only <slug>` and check the output.
+5. Show it on a page in `sitegen/pages.py` + `site/templates/pages/`.
+
+Set `enabled = False` to put a source on ice without deleting it.
+
+## Sources
+
+<!-- sources:start -->
+| Source | Slug | Kind | Notes |
+|---|---|---|---|
+| [Western Hills Humane Society](https://www.westernhillshumanesociety.com/) | `whhs_adoptable` | adoptable | full snapshot |
+| [BHNF Alerts](https://www.fs.usda.gov/r02/blackhills/alerts) | `bhnf_alerts` | alert | frequent tier, full snapshot |
+| [City of Spearfish Alert Center](https://www.spearfish.gov/AlertCenter.aspx) | `spearfish_alert_center` | alert | frequent tier |
+| [Crow Peak Brewing](https://crowpeakbrewing.com/) | `crow_peak_brewing` | beer | full snapshot |
+| [Killian's](https://untappd.com) | `killians` | beer | full snapshot |
+| [Redwater Kitchen](https://untappd.com) | `redwater_kitchen` | beer | full snapshot |
+| [Sawyer Brewing Co.](https://www.sawyerbrewingco.com/menu) | `sawyer_brewing` | beer | full snapshot |
+| [Spearfish Brewing Company](https://www.spearfishbrewing.com/beers/) | `spearfish_brewing` | beer | full snapshot |
+| [Public Bids](https://www.spearfish.gov/Bids.aspx) | `public_bids` | bid | full snapshot |
+| [Spearfish building permit reports](https://www.cityofspearfish.com/Archive.aspx?AMID=37) | `building_permits` | building_permit | full snapshot |
+| [City of Spearfish](https://spearfishsd.portal.civicclerk.com/) | `spearfish_city` | document |  |
+| [Lawrence County Agenda Center](https://www.lawrence.sd.us/AgendaCenter) | `lawrence_county` | document |  |
+| [Spearfish School Board](https://www.spearfish.k12.sd.us/documents/board-of-education/board-meeting-agendas/25745609) | `spearfish_school_board_docs` | document |  |
+| [BHSU Athletics](https://bhsuathletics.com/calendar) | `bhsu_athletics` | event |  |
+| [BHSU Campus Calendar](https://bhsu.edu/campus-calendar.html) | `bhsu_calendar` | event |  |
+| [City of Spearfish Calendar](https://www.spearfish.gov/Calendar.aspx) | `spearfish_calendar` | event |  |
+| [Matthews Opera House](https://www.matthewsopera.com/events/) | `matthews_opera_house` | event |  |
+| [Spearfish Chamber](https://business.spearfishchamber.org/events/calendar/) | `spearfish_chamber` | event |  |
+| [Spearfish HS Sports](https://gobound.com/sd/schools/spearfish) | `spearfish_sports` | event |  |
+| [Spearfish MS Sports](https://gobound.com/sd/schools/spearfishmiddleschool) | `spearfish_ms_sports` | event |  |
+| [Spearfish Sasquatch](https://www.spearfishsasquatch.com) | `spearfish_sasquatch` | event |  |
+| [Spearfish School District](https://www.spearfish.k12.sd.us/) | `spearfish_schools` | event |  |
+| [Fire restrictions, danger & wildfires](https://www.blackhillsfirerestrictions.com/) | `fire` | fire | frequent tier |
+| [Leone's Creamery](https://leonescreamery.com/flavors) | `leones_creamery` | flavor | full snapshot |
+| [Spearfish Creek gauge (USGS)](https://waterdata.usgs.gov/monitoring-location/06431500/) | `creek_gauge` | gauge | frequent tier |
+| [BHSU](https://yourfuture.sdbor.edu/) | `bhsu_jobs` | job | full snapshot |
+| [Black Hills Pioneer](https://www.bhpioneer.com/classifieds/job/) | `bhpioneer_jobs` | job | full snapshot |
+| [City of Spearfish Jobs](https://www.spearfish.gov/Jobs.aspx) | `spearfish_jobs` | job | full snapshot |
+| [Lawrence County Jobs](https://www.lawrence.sd.us/Jobs.aspx) | `lawrence_county_jobs` | job | full snapshot |
+| [Spearfish School District](https://www.applitrack.com/bhssc/onlineapp/default.aspx) | `spearfish_schools_jobs` | job | full snapshot |
+| [Grace Balloch Memorial Library](https://spearfish.blackhills.bywatersolutions.com) | `spearfish_library` | library_book | needs browser, full snapshot |
+| [Black Hills Pioneer](https://www.bhpioneer.com/) | `black_hills_pioneer` | news |  |
+| [Custer County Chronicle](https://custercountychronicle.com) | `custer_county_chronicle` | news |  |
+| [Rapid City Journal](https://rapidcityjournal.com/) | `rapid_city_journal` | news |  |
+| [Regional News](https://www.sdnewswatch.org/) | `news_feeds` | news |  |
+| [SDPB](https://www.sdpb.org/news) | `sdpb_news` | news | needs browser |
+| [Sundance Times](https://www.sundancetimes.com) | `sundance_times` | news |  |
+| [SD DANR public notices (West River)](https://danr.sd.gov/public/default.aspx) | `danr_public_notices` | notice | full snapshot |
+| [Spearfish planning & permits (OpenGov)](https://spearfishsd.portal.opengov.com/) | `planning_zoning` | permit | full snapshot |
+| [Black Hills National Forest](https://www.fs.usda.gov/r02/blackhills/newsroom/releases) | `bhnf` | press_release |  |
+| [City of Spearfish Blog](https://www.spearfish.gov/Blog.aspx) | `spearfish_blog` | press_release |  |
+| [City of Spearfish News Flash](https://www.spearfish.gov/CivicAlerts.aspx) | `spearfish_news` | press_release |  |
+| [Lawrence County News Flash](https://www.lawrence.sd.us/CivicAlerts.aspx) | `lawrence_county_news` | press_release |  |
+| [Spearfish School District](https://www.spearfish.k12.sd.us/news) | `spearfish_school_news` | press_release |  |
+| [Black Hills National Forest projects](https://www.fs.usda.gov/r02/blackhills/projects) | `bhnf_projects` | project | full snapshot |
+| [Elementary 3-5 Lunch](https://menus.healthepro.com/organizations/524/sites/4523/menus/124131) | `spearfish_elem_35_lunch` | school_menu |  |
+| [Elementary Breakfast](https://menus.healthepro.com/organizations/524/sites/4519/menus/124134) | `spearfish_elem_breakfast` | school_menu |  |
+| [Elementary K-2 Lunch](https://menus.healthepro.com/organizations/524/sites/4523/menus/124132) | `spearfish_elem_k2_lunch` | school_menu |  |
+| [High School Lunch](https://menus.healthepro.com/organizations/524/sites/4520/menus/124137) | `spearfish_hs_lunch` | school_menu |  |
+| [Middle School Lunch](https://menus.healthepro.com/organizations/524/sites/4521/menus/124136) | `spearfish_ms_lunch` | school_menu |  |
+| [MS/HS Breakfast](https://menus.healthepro.com/organizations/524/sites/4520/menus/124135) | `spearfish_mshs_breakfast` | school_menu |  |
+| [eBird recent sightings](https://ebird.org/region/US-SD-081) | `ebird` | sighting | full snapshot |
+| [Public Meetings (YouTube)](https://www.youtube.com/@spearfishschooldistrictliv3794/streams) | `public_meetings_youtube` | youtube_video |  |
+| [The Clubhouse](https://untappd.com/v/the-clubhouse-of-spearfish/9898973) | `clubhouse_spearfish` | beer | 🧊 on ice, full snapshot |
+| SD DANR contested cases | `danr_contested_cases` | notice | 🧊 on ice |
+| SD DANR spill reports | `danr_spills` | notice | 🧊 on ice |
+| Native plant spotlight | `native_plants_spotlight` | plant | 🧊 on ice |
+| Wildlife carcass pickups (SD DOT) | `roadkill` | sighting | 🧊 on ice |
+| Library circulation stats | `library_circulation` | stats | 🧊 on ice |
+<!-- sources:end -->

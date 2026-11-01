@@ -24,8 +24,10 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-import requests
 from bs4 import BeautifulSoup
+
+from scrapers import net
+from scrapers.base import BaseScraper
 
 DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "danr_contested_cases.json"
 DANR_BASE = "https://danr.sd.gov"
@@ -51,7 +53,7 @@ def _doc_sort_key(doc: dict) -> str:
 
 def _fetch_listing() -> list[dict]:
     """Fetch the contested cases listing from Caspio and return structured cases."""
-    resp = requests.get(LISTING_URL, headers=_HEADERS, timeout=20)
+    resp = net.get(LISTING_URL, headers=_HEADERS, timeout=20)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
 
@@ -163,3 +165,16 @@ def fetch_danr_contested_cases() -> None:
 
 if __name__ == "__main__":
     fetch_danr_contested_cases()
+
+
+class DANRContestedCases(BaseScraper):
+    """On ice: kept for later, not run. Still uses its own standalone fetch
+    function and file format; port it to scrape() before enabling."""
+
+    name = "SD DANR contested cases"
+    slug = "danr_contested_cases"
+    kind = "notice"
+    enabled = False
+
+    def scrape(self) -> list[dict]:
+        raise NotImplementedError("danr_contested_cases is on ice")

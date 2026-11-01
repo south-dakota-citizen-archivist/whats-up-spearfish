@@ -10,8 +10,7 @@ with type=events, sport_id=0 (all sports), and a 90-day lookahead window.
 
 from datetime import date, timedelta
 
-import requests
-
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -23,11 +22,21 @@ LOOKAHEAD_DAYS = 90
 class BHSUAthletics(BaseScraper):
     name = "BHSU Athletics"
     slug = "bhsu_athletics"
+    kind = "event"
+    url = "https://bhsuathletics.com/calendar"
+    category = "sports"
     dedup_key = "game_id"
+
+    def fix(self, record: dict) -> dict:
+        # TBA games carry a midnight placeholder time; keep them on their date as all-day.
+        if record.get("tbd") or (record.get("time") or "").upper() in ("TBA", "TBD", "ALL DAY"):
+            record["start_dt"] = (record.get("start_dt") or "")[:10]
+            record["all_day"] = True
+        return record
 
     def scrape(self) -> list[dict]:
         today = date.today()
-        resp = requests.get(
+        resp = net.get(
             API_URL,
             params={
                 "type": "events",

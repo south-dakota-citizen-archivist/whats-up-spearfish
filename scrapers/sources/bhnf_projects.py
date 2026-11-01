@@ -7,24 +7,18 @@ pages for in-progress projects to pull milestones and contact info.
 
 https://www.fs.usda.gov/r02/blackhills/projects
 
-Not a BaseScraper subclass — run directly or from the daily scrape workflow.
-
-Usage:
-    uv run python -c "from scrapers.sources.bhnf_projects import fetch_bhnf_projects; fetch_bhnf_projects()"
 """
 
 from __future__ import annotations
 
-import json
 import re
 import time
-from datetime import datetime, timezone
-from pathlib import Path
 
-import requests
 from bs4 import BeautifulSoup
 
-DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "bhnf_projects.json"
+from scrapers import net
+from scrapers.base import BaseScraper
+
 BASE_URL = "https://www.fs.usda.gov"
 LISTING_URL = f"{BASE_URL}/r02/blackhills/projects"
 
@@ -42,7 +36,7 @@ _PHONE_RE = re.compile(r"^\d{3}[-.\s]\d{3}[-.\s]\d{4}$")
 
 
 def _get(url: str) -> BeautifulSoup:
-    r = requests.get(url, headers=_HEADERS, timeout=20)
+    r = net.get(url, headers=_HEADERS, timeout=20)
     r.raise_for_status()
     return BeautifulSoup(r.text, "html.parser")
 
@@ -173,45 +167,30 @@ def _scrape_detail(url: str) -> dict:
     return result
 
 
-def fetch_bhnf_projects() -> None:
-    print("[bhnf_projects] Fetching project listing…")
-    projects = _scrape_listing()
-    print(f"[bhnf_projects] {len(projects)} total projects")
+class BHNFProjects(BaseScraper):
+    name = "Black Hills National Forest projects"
+    slug = "bhnf_projects"
+    kind = "project"
+    url = LISTING_URL
+    replace = True
 
-    in_progress = [p for p in projects if p.get("status") == "In Progress"]
-    print(f"[bhnf_projects] {len(in_progress)} in-progress — fetching detail pages")
+    def scrape(self) -> list[dict]:
+        projects = _scrape_listing()
+        for p in projects:
+            if p.get("status") != "In Progress":
+                continue
+            time.sleep(0.5)
+            p.update(_scrape_detail(p["url"]))
+            ms = p.get("milestones") or []
+            comment_ms = next((m for m in ms if "comment" in m["name"].lower()), None)
+            p["comment_period_date"] = comment_ms["date"] if comment_ms else None
+            p["comment_period_sort"] = _milestone_sort_key(comment_ms["date"]) if comment_ms else "9999-99"
 
-    for i, p in enumerate(projects):
-        if p.get("status") != "In Progress":
-            continue
-        time.sleep(0.5)
-        detail = _scrape_detail(p["url"])
-        p.update(detail)
-
-        ms = p.get("milestones") or []
-        comment_ms = next((m for m in ms if "comment" in m["name"].lower()), None)
-        p["comment_period_date"] = comment_ms["date"] if comment_ms else None
-        p["comment_period_sort"] = _milestone_sort_key(comment_ms["date"]) if comment_ms else "9999-99"
-        print(f"  [{i + 1}] {p['title']} — comment: {p['comment_period_date']}")
-
-    # Sort: in-progress first (by comment period soonest), then others by title
-    projects.sort(
-        key=lambda p: (
-            0 if p["status"] == "In Progress" else 1,
-            p.get("comment_period_sort", "9999-99"),
-            p.get("title", "").lower(),
+        projects.sort(
+            key=lambda p: (
+                0 if p["status"] == "In Progress" else 1,
+                p.get("comment_period_sort", "9999-99"),
+                p.get("title", "").lower(),
+            )
         )
-    )
-
-    DATA_FILE.write_text(
-        json.dumps(
-            {"fetched_at": datetime.now(timezone.utc).isoformat(), "projects": projects},
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
-    print(f"[bhnf_projects] {len(projects)} projects → {DATA_FILE.name}")
-
-
-if __name__ == "__main__":
-    fetch_bhnf_projects()
+        return projects

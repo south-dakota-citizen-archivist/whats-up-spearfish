@@ -10,9 +10,9 @@ SchoolMessenger Presence CMS. Exposes a public iCalendar feed at
 
 from datetime import date, datetime, timezone
 
-import requests
 from icalendar import Calendar
 
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -39,10 +39,13 @@ def _to_iso(dt_val) -> str:
 class SpearfishSchools(BaseScraper):
     name = "Spearfish School District"
     slug = "spearfish_schools"
+    url = "https://www.spearfish.k12.sd.us/"
+    kind = "event"
+    category = "schools"
     dedup_key = "uid"
 
     def scrape(self) -> list[dict]:
-        resp = requests.get(ICAL_URL, timeout=30, headers={"User-Agent": "Mozilla/5.0"})
+        resp = net.get(ICAL_URL, timeout=30, headers={"User-Agent": "Mozilla/5.0"})
         resp.raise_for_status()
 
         cal = Calendar.from_ical(resp.content)

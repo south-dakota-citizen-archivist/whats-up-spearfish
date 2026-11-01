@@ -1,16 +1,17 @@
 @import "tailwindcss";
-@source "../../../site/templates";
+@source "../../templates";
+@source "../js";
 
-/* Bump base font size — scales all rem-based Tailwind utilities */
-html { font-size: 106.25%; } /* ~17px */
+@theme {
+  --color-pine-50: #f0f7f3;
+  --color-pine-100: #dcede3;
+  --color-pine-600: #2f6b4f;
+  --color-pine-700: #24543e;
+  --color-pine-800: #1c4231;
+  --color-pine-900: #14301f;
+}
 
-/* Alpine x-cloak: hide elements until Alpine initialises */
 [x-cloak] { display: none !important; }
 
-/* Modal open: prevent body scrolling on mobile */
-.modal-open {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-}
+/* Long lists inside cards scroll instead of stretching the page */
+.scroll-list { max-height: 28rem; overflow-y: auto; }

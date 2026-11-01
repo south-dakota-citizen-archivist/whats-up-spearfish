@@ -14,9 +14,9 @@ from __future__ import annotations
 import re
 from datetime import date, timedelta
 
-import requests
 from bs4 import BeautifulSoup
 
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -28,7 +28,7 @@ _TIME_SEP_RE = re.compile(r"\s*[-–]\s*")
 
 
 def _get_soup(url: str) -> BeautifulSoup:
-    resp = requests.get(url, headers=_HEADERS, timeout=20)
+    resp = net.get(url, headers=_HEADERS, timeout=20)
     resp.raise_for_status()
     return BeautifulSoup(resp.text, "html.parser")
 
@@ -128,6 +128,9 @@ def _parse_detail(date_str: str, url: str, link_title: str = "") -> dict | None:
 class SpearfishChamber(BaseScraper):
     name = "Spearfish Chamber"
     slug = "spearfish_chamber"
+    kind = "event"
+    url = "https://business.spearfishchamber.org/events/calendar/"
+    category = "community"
     dedup_key = "url"
 
     def scrape(self) -> list[dict]:

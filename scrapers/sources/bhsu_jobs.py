@@ -10,8 +10,7 @@ from __future__ import annotations
 import re
 from xml.etree import ElementTree as ET
 
-import requests
-
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -27,11 +26,14 @@ _TAG_RE = re.compile(r"<[^>]+>")
 class BHSUJobs(BaseScraper):
     name = "BHSU"
     slug = "bhsu_jobs"
+    url = "https://yourfuture.sdbor.edu/"
+    kind = "job"
+    min_records = 0
     dedup_key = "url"
     replace = True
 
     def scrape(self) -> list[dict]:
-        resp = requests.get(FEED_URL, timeout=20)
+        resp = net.get(FEED_URL, timeout=20)
         resp.raise_for_status()
         root = ET.fromstring(resp.content)
 

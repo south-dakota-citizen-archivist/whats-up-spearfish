@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% from "macros.html" import card, empty, event_row, ext, freshness %}
+
+{% block content %}
+<h1 class="text-2xl font-extrabold mb-4">Schools</h1>
+
+<div class="grid lg:grid-cols-3 gap-6">
+  <div class="min-w-0 lg:col-span-2 space-y-6">
+
+    {% call card("School menus", "menus", sources=menu_sources) %}
+      {% if menu_days %}
+      <div x-data="{ day: 0 }">
+        <div class="flex gap-1.5 overflow-x-auto pb-2 mb-3" role="tablist">
+          {% for d in menu_days %}
+          <button type="button" role="tab" @click="day = {{ loop.index0 }}" :aria-selected="day === {{ loop.index0 }}"
+                  :class="day === {{ loop.index0 }} ? 'bg-pine-700 text-white border-pine-700' : 'bg-white text-stone-700 border-stone-300 hover:border-pine-600'"
+                  class="shrink-0 px-3 py-1 rounded-full border text-sm">{{ d.date | fmt_day('%a %-m/%-d') }}</button>
+          {% endfor %}
+        </div>
+        {% for d in menu_days %}
+        <div x-show="day === {{ loop.index0 }}" {% if not loop.first %}x-cloak{% endif %}>
+          <h3 class="font-bold mb-2">{{ d.date | day_heading }}</h3>
+          <div class="grid sm:grid-cols-2 gap-3">
+            {% for m in d.menus %}
+            <div class="rounded-xl border border-stone-200 p-3">
+              <p class="text-xs font-bold uppercase tracking-wide text-stone-500">{{ m.meal }}</p>
+              <p class="font-semibold">{{ m.level }}</p>
+              <ul class="mt-1 text-sm text-stone-700 list-disc pl-4">
+                {% for item in m.entrees %}<li>{{ item }}</li>{% endfor %}
+              </ul>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <p class="text-xs text-stone-500 mt-3">Entrées only; full menus with sides and nutrition are on {{ ext(menu_sources[0].url, "HealthePro") }}.</p>
+      {% else %}{{ empty("No upcoming menus have been posted.") }}{% endif %}
+    {% endcall %}
+
+    {% call card("School events, next two weeks", "events", sources=[district_calendar], more=root ~ "events/") %}
+      {% if school_events %}
+      {% for day, items in school_events | groupby('date') %}
+      <h3 class="text-xs font-bold uppercase tracking-wide text-pine-800 mt-3 first:mt-0">{{ day | day_heading }}</h3>
+      <ul class="divide-y divide-stone-100">{% for e in items %}{{ event_row(e) }}{% endfor %}</ul>
+      {% endfor %}
+      {% else %}{{ empty("No school events found.") }}{% endif %}
+    {% endcall %}
+  </div>
+
+  <div class="min-w-0 space-y-6">
+    {% call card("District news", "news") %}
+      {% if news %}
+      <ul class="space-y-3">
+        {% for n in news %}
+        <li><a href="{{ n.url }}" target="_blank" rel="noopener" class="font-medium hover:text-pine-700 hover:underline">{{ n.title }}</a>
+          <p class="text-xs text-stone-500">{{ n.published | fmt_day }}</p></li>
+        {% endfor %}
+      </ul>
+      {% else %}{{ empty("No recent news.") }}{% endif %}
+    {% endcall %}
+
+    {% call card("School board", "board", more=root ~ "civic/#meetings") %}
+      {% if board %}
+      <ul class="space-y-2 text-sm">
+        {% for m in board %}
+        <li><span class="font-semibold">{{ m.date | fmt_day('%b %-d') }}</span>
+          {% for d in m.docs %}{{ ext(d.url, d.label, 'text-pine-700 hover:underline ml-2') }}{% endfor %}</li>
+        {% endfor %}
+      </ul>
+      {% else %}{{ empty("No recent board documents.") }}{% endif %}
+    {% endcall %}
+
+    {% call card("District jobs", "jobs", sources=jobs, more=root ~ "jobs/") %}
+      {% if jobs.records %}
+      <ul class="space-y-2 text-sm">
+        {% for j in jobs.records[:8] %}<li>{{ ext(j.url, j.title, 'font-medium hover:text-pine-700 hover:underline') }}{% if j.location %} <span class="text-stone-500">· {{ j.location }}</span>{% endif %}</li>{% endfor %}
+      </ul>
+      {% else %}{{ empty("No open positions listed.") }}{% endif %}
+    {% endcall %}
+  </div>
+</div>
+{% endblock %}

@@ -103,6 +103,9 @@ def _fetch_all_books() -> list[dict]:
 class SpearfishLibrary(BaseScraper):
     name = "Grace Balloch Memorial Library"
     slug = "spearfish_library"
+    kind = "library_book"
+    url = "https://spearfish.blackhills.bywatersolutions.com"
+    browser = True
     dedup_key = "url"
     replace = True
 

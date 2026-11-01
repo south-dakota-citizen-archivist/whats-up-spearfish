@@ -10,8 +10,7 @@ Fetches the next 90 days of events from the Campus Calendar/Events category.
 
 from datetime import date, timedelta
 
-import requests
-
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -25,6 +24,9 @@ LOOKAHEAD_DAYS = 90
 class BHSUCalendar(BaseScraper):
     name = "BHSU Campus Calendar"
     slug = "bhsu_calendar"
+    kind = "event"
+    url = "https://bhsu.edu/campus-calendar.html"
+    category = "campus"
     dedup_key = "event_id"
 
     def scrape(self) -> list[dict]:
@@ -34,7 +36,7 @@ class BHSUCalendar(BaseScraper):
             "end": (today + timedelta(days=LOOKAHEAD_DAYS)).isoformat(),
             "category": CAT_ID,
         }
-        resp = requests.get(
+        resp = net.get(
             f"{API_BASE}/events",
             params=params,
             timeout=30,

@@ -3,138 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% block title %}What's up in Spearfish?{% endblock %}</title>
-  <link rel="icon" type="image/png" href="static/favicon.png">
-  <link rel="alternate" type="application/rss+xml" title="What's up in Spearfish? — Events" href="feed.xml">
-  <meta name="description" content="A dashboard with news, events and other features of life in Spearfish, S.D. Updated daily."/>
-  <style>{{ inline_css | safe }}</style>
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="What's up, Spearfish?"/>
-  <meta property="og:description" content="A dashboard with news, events and other features of life in Spearfish, S.D. Updated daily."/>
-  <meta property="og:url" content="https://south-dakota-citizen-archivist.github.io/whats-up-spearfish/"/>
-  <meta property="og:image" content="https://south-dakota-citizen-archivist.github.io/whats-up-spearfish/static/spearfish-canyon.png"/>
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image" content="https://south-dakota-citizen-archivist.github.io/whats-up-spearfish/static/spearfish-canyon.png"/>
-  {% block extra_head %}{% endblock %}
+  <title>{% if page_title %}{{ page_title }} · {% endif %}What's up, Spearfish?</title>
+  <meta name="description" content="Events, school menus, creek flow, bird sightings, meetings and more in Spearfish and the Northern Black Hills. Updated daily.">
+  <link rel="icon" type="image/png" href="{{ root }}static/favicon.png">
+  <link rel="stylesheet" href="{{ root }}static/site.css?v={{ css_version }}">
+  <link rel="alternate" type="application/rss+xml" title="Upcoming events" href="{{ root }}events.xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="What's up, Spearfish?">
+  <meta property="og:description" content="What's happening in Spearfish and the Northern Black Hills.">
+  <meta property="og:url" content="{{ SITE_URL }}/{{ page_path }}">
+  <meta property="og:image" content="{{ SITE_URL }}/static/spearfish-canyon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  {% block head %}{% endblock %}
+  <script defer src="{{ root }}static/vendor/alpine-3.14.9.min.js"></script>
 </head>
-<body class="min-h-screen flex flex-col bg-gray-100 text-gray-900">
+<body class="min-h-screen flex flex-col bg-stone-100 text-stone-900 antialiased">
 
-  <header class="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-40">
-    
-    <!--
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center h-13">
-        <a href="/" class="text-lg font-bold text-gray-900 hover:text-blue-700 transition-colors tracking-tight">
-          What's up, Spearfish?
-        </a>
-      </div>
+  <header class="bg-pine-800 text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-4 pb-2 flex items-baseline justify-between gap-4">
+      <a href="{{ root }}" class="text-xl sm:text-2xl font-extrabold tracking-tight hover:text-pine-100">What's up, Spearfish?</a>
+      <span class="text-sm text-pine-100 whitespace-nowrap">{{ today.strftime('%a, %b %-d') }}</span>
     </div>
-    -->
-
-    <!-- Section pill strip -->
-    {% block subnav %}{% endblock %}
+    <nav class="max-w-6xl mx-auto px-2 sm:px-4 overflow-x-auto" aria-label="Sections">
+      <ul class="flex gap-1 text-sm font-medium whitespace-nowrap pb-2">
+        {% for path, label in NAV %}
+        <li>
+          <a href="{{ root }}{{ path }}"
+             class="block px-3 py-1.5 rounded-full {{ 'bg-white text-pine-800' if path == page_path else 'text-pine-50 hover:bg-pine-700' }}"
+             {% if path == page_path %}aria-current="page"{% endif %}>{{ label }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
   </header>
 
-  <main class="flex-1 w-full">
+  <main class="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 py-6">
     {% block content %}{% endblock %}
   </main>
 
-  <footer class="bg-white border-t border-gray-300 mt-auto" x-data="{ aboutOpen: false }">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-xs text-gray-500 flex items-center gap-4">
-      <button @click="aboutOpen = true"
-              class="cursor-pointer hover:text-gray-800 transition-colors font-medium"
-              aria-label="Open about dialog">
-        About
-      </button>
-    </div>
-
-    {# ── about modal ───────────────────────────────────────────────────────── #}
-    <div x-show="aboutOpen" x-cloak
-         @keydown.escape.window="aboutOpen = false"
-         class="fixed inset-0 z-50 flex items-center justify-center p-4"
-         x-transition:enter="transition ease-out duration-150"
-         x-transition:enter-start="opacity-0"
-         x-transition:enter-end="opacity-100"
-         x-transition:leave="transition ease-in duration-100"
-         x-transition:leave-start="opacity-100"
-         x-transition:leave-end="opacity-0">
-      <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" @click="aboutOpen = false"></div>
-      <div class="relative bg-white rounded-2xl shadow-2xl w-full max-w-lg max-h-[85vh] flex flex-col overflow-hidden">
-
-        {# header #}
-        <div class="flex items-center justify-between px-6 py-4 border-b border-gray-200 shrink-0">
-          <h2 class="text-base font-bold text-gray-900">About</h2>
-          <button @click="aboutOpen = false"
-                  class="cursor-pointer text-gray-400 hover:text-gray-600 transition-colors p-1 rounded"
-                  aria-label="Close about dialog">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-            </svg>
-          </button>
-        </div>
-
-        {# body #}
-        <div class="overflow-y-auto px-6 py-5 text-sm text-gray-700 space-y-5">
-
-          <p>
-            A local news and events dashboard for Spearfish, S.D., vibe-coded by <a href="https://codywinchester.com" class="text-blue-700 font-medium hover:underline">Cody Winchester</a> with Claude and Gemini AI agents. Updated daily.
-          </p>
-          <p><a href="https://github.com/south-dakota-citizen-archivist/whats-up-spearfish"
-               target="_blank" rel="noopener noreferrer"
-               class="text-blue-700 font-medium hover:underline">Source code on GitHub ↗</a>
-          </p>
-
-          <div>
-            <p class="font-semibold text-gray-900 mb-2">Data sources</p>
-            <ul class="space-y-1 text-gray-600">
-              <li class="font-medium text-gray-700 mt-3.5 first:mt-0 text-xs uppercase tracking-wide">Events</li>
-              <li><a href="https://bhsu.edu" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">BHSU Campus Calendar</a></li>
-              <li><a href="https://bhsu.edu/athletics" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">BHSU Athletics</a></li>
-              <li><a href="https://www.matthewsopera.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Matthews Opera House</a></li>
-              <li><a href="https://spearfishchamber.org" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Spearfish Chamber of Commerce</a></li>
-
-              <li class="font-medium text-gray-700 mt-3.5 text-xs uppercase tracking-wide">News</li>
-              <li><a href="https://www.bhpioneer.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Black Hills Pioneer</a></li>
-              <li><a href="https://www.rapidcityjournal.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Rapid City Journal</a></li>
-              <li><a href="https://www.sdpb.org/news" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">South Dakota Public Broadcasting</a></li>
-              <li><a href="https://www.sdnewswatch.org" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">SD Newswatch</a></li>
-              <li><a href="https://southdakotasearchlight.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">South Dakota Searchlight</a></li>
-
-              <li class="font-medium text-gray-700 mt-3.5 text-xs uppercase tracking-wide">Government</li>
-              <li><a href="https://www.spearfish.gov" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">City of Spearfish</a></li>
-              <li><a href="https://www.lawrence.sd.us" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Lawrence County</a></li>
-              <li><a href="https://www.spearfish.k12.sd.us" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Spearfish School District</a></li>
-              <li><a href="https://www.fs.usda.gov/blackhills" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Black Hills National Forest</a></li>
-              <li><a href="https://danr.sd.gov/public/default.aspx" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">SD Dept. of Agriculture &amp; Natural Resources</a></li>
-              <li><a href="https://www.weather.gov" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">National Weather Service</a></li>
-              <li><a href="https://spearfishsd.portal.opengov.com/search" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Spearfish Permits &amp; Applications (OpenGov)</a></li>
-
-              <li class="font-medium text-gray-700 mt-3.5 text-xs uppercase tracking-wide">Beer & ice cream</li>
-              <li><a href="https://crowpeakbrewing.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Crow Peak Brewing</a></li>
-              <li><a href="https://www.sawyerbrewingco.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Sawyer Brewing Co.</a></li>
-              <li><a href="https://spearfishbrewing.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Spearfish Brewing Company</a></li>
-              <li><a href="https://untappd.com/v/the-clubhouse-of-spearfish/9898973" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">The Clubhouse of Spearfish</a></li>
-              <li><a href="https://untappd.com/v/killians/556648" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Killian's</a></li>
-              <li><a href="https://untappd.com/v/redwater-kitchen/7654441" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Redwater Kitchen</a></li>
-              <li><a href="https://leonescreamery.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Leone's Creamery</a></li>
-
-              <li class="font-medium text-gray-700 mt-3.5 text-xs uppercase tracking-wide">Community &amp; environment</li>
-              <li><a href="https://spearfish.blackhills.bywatersolutions.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Grace Balloch Memorial Library</a></li>
-              <li><a href="https://www.westernhillshumanesociety.com" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Western Hills Humane Society</a></li>
-              <li><a href="https://ebird.org" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">eBird (Cornell Lab of Ornithology)</a></li>
-              <li><a href="https://waterdata.usgs.gov/monitoring-location/06431500/" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">USGS — Spearfish Creek stream gauge</a></li>
-
-              <li class="font-medium text-gray-700 mt-3.5 text-xs uppercase tracking-wide">Native plants</li>
-              <li><a href="https://plants.usda.gov" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">USDA PLANTS Database</a></li>
-              <li><a href="https://www.fs.usda.gov/blackhills" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">Black Hills National Forest — Native Plants</a></li>
-              <li><a href="https://www.nrcs.usda.gov" target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-700">USDA Natural Resources Conservation Service</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+  <footer class="border-t border-stone-300 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-5 text-sm text-stone-600 flex flex-wrap gap-x-6 gap-y-2 items-center">
+      <span>Built {{ build_time.strftime('%b %-d, %-I:%M %p') }} MT from public data.</span>
+      <a href="{{ root }}status/" class="hover:text-pine-700 underline-offset-2 hover:underline">
+        {% if health.bad %}
+        <span class="inline-block w-2 h-2 rounded-full bg-amber-500 mr-1"></span>{{ health.total - health.bad }} of {{ health.total }} sources up to date
+        {% else %}
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-1"></span>All {{ health.total }} sources up to date
+        {% endif %}
+      </a>
+      <a href="{{ root }}calendar.ics" class="hover:text-pine-700 hover:underline">Calendar feed (.ics)</a>
+      <a href="https://github.com/south-dakota-citizen-archivist/whats-up-spearfish" class="hover:text-pine-700 hover:underline">Source code</a>
     </div>
   </footer>
 
-  {% block extra_scripts %}{% endblock %}
+  {% block scripts %}{% endblock %}
 </body>
 </html>

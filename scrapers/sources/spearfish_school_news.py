@@ -7,10 +7,10 @@ https://www.spearfish.k12.sd.us/news
 Apptegy CMS — SSR'd HTML when fetched without a custom User-Agent.
 """
 
-import requests
 from bs4 import BeautifulSoup
 from dateutil import parser as dateutil_parser
 
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -21,10 +21,12 @@ NEWS_URL = f"{BASE_URL}/news"
 class SpearfishSchoolNews(BaseScraper):
     name = "Spearfish School District"
     slug = "spearfish_school_news"
+    url = "https://www.spearfish.k12.sd.us/news"
+    kind = "press_release"
     dedup_key = "url"
 
     def scrape(self) -> list[dict]:
-        resp = requests.get(NEWS_URL, timeout=30)
+        resp = net.get(NEWS_URL, timeout=30)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
 

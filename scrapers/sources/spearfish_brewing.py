@@ -21,6 +21,8 @@ _ABV_RE = re.compile(r"ABV\s*([\d.]+)\s*%", re.IGNORECASE)
 class SpearfishBrewing(BaseScraper):
     name = "Spearfish Brewing Company"
     slug = "spearfish_brewing"
+    kind = "beer"
+    url = "https://www.spearfishbrewing.com/beers/"
     dedup_key = "image_url"
     replace = True
 

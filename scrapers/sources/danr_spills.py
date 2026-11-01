@@ -21,7 +21,8 @@ import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-import requests
+from scrapers import net
+from scrapers.base import BaseScraper
 
 DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "danr_spills.json"
 
@@ -97,7 +98,7 @@ def _fetch_all() -> list[dict]:
             "f": "json",
         }
         try:
-            resp = requests.get(BASE_URL, params=params, headers=HEADERS, timeout=30)
+            resp = net.get(BASE_URL, params=params, headers=HEADERS, timeout=30)
             resp.raise_for_status()
             data = resp.json()
         except Exception as exc:
@@ -223,3 +224,16 @@ def fetch_danr_spills() -> None:
 
 if __name__ == "__main__":
     fetch_danr_spills()
+
+
+class DANRSpills(BaseScraper):
+    """On ice: kept for later, not run. Still uses its own standalone fetch
+    function and file format; port it to scrape() before enabling."""
+
+    name = "SD DANR spill reports"
+    slug = "danr_spills"
+    kind = "notice"
+    enabled = False
+
+    def scrape(self) -> list[dict]:
+        raise NotImplementedError("danr_spills is on ice")

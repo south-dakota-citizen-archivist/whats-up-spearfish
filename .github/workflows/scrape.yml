@@ -1,0 +1,113 @@
+name: Scrape, build and deploy
+
+on:
+  schedule:
+    - cron: "15 12 * * *"   # daily tier — 6:15 AM MDT / 5:15 AM MST
+    - cron: "45 */3 * * *"  # frequent tier (creek gauge, fire, alerts) — every 3 hours
+  push:
+    branches: [main]        # code changes: rebuild and deploy, no scrape
+  workflow_dispatch:
+    inputs:
+      tier:
+        description: Which sources to scrape before building
+        type: choice
+        options: [daily, frequent, all, none]
+        default: daily
+
+concurrency:
+  group: scrape-deploy
+  cancel-in-progress: false  # never kill a scrape midway; queue instead
+
+jobs:
+  run:
+    # Pinned: Playwright can't install Chromium on ubuntu-26.04 (ubuntu-latest) yet.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    environment: github-pages
+    permissions:
+      contents: write   # push to the data branch
+      pages: write
+      id-token: write
+      issues: write     # scraper health issue
+
+    steps:
+      - name: Pick tier
+        id: tier
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            tier="${{ inputs.tier }}"
+          elif [ "${{ github.event_name }}" = "push" ]; then
+            tier="none"
+          elif [ "${{ github.event.schedule }}" = "15 12 * * *" ]; then
+            tier="daily"
+          else
+            tier="frequent"
+          fi
+          echo "tier=$tier" >> "$GITHUB_OUTPUT"
+          echo "Tier: $tier"
+
+      - uses: actions/checkout@v4
+
+      - name: Check out data branch
+        uses: actions/checkout@v4
+        with:
+          ref: data
+          path: data
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - run: uv sync
+
+      - name: Install Chromium (browser sources)
+        if: steps.tier.outputs.tier == 'daily' || steps.tier.outputs.tier == 'all'
+        run: uv run playwright install --with-deps chromium
+
+      - name: Scrape
+        if: steps.tier.outputs.tier != 'none'
+        env:
+          EBIRD_API_KEY: ${{ secrets.EBIRD_API_KEY }}
+        run: |
+          case "${{ steps.tier.outputs.tier }}" in
+            all) uv run python -m scrapers ;;
+            *)   uv run python -m scrapers --tier "${{ steps.tier.outputs.tier }}" ;;
+          esac
+
+      - name: Commit data
+        if: steps.tier.outputs.tier != 'none'
+        working-directory: data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No data changes"
+            exit 0
+          fi
+          git commit -q -m "data: ${{ steps.tier.outputs.tier }} scrape $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            git pull -q --rebase origin data && git push -q origin HEAD:data && exit 0
+            sleep 5
+          done
+          exit 1
+
+      - name: Update scraper health issue
+        if: steps.tier.outputs.tier != 'none'
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: uv run python scripts/health_issue.py data/_health.json
+
+      - name: Build site
+        run: uv run python -m sitegen --data data --out _site
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

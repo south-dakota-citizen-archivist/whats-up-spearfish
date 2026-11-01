@@ -15,9 +15,7 @@ import html
 import json
 import re
 
-from playwright.sync_api import sync_playwright
-from playwright_stealth import Stealth
-
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -95,39 +93,27 @@ def _parse_event(item: dict) -> dict | None:
     }
 
 
-def _fetch_all_events() -> list[dict]:
+def _fetch_all_events(max_pages: int = 15) -> list[dict]:
     records = []
-    with Stealth().use_sync(sync_playwright()) as p:
-        browser = p.chromium.launch(headless=True)
-        page_obj = browser.new_page()
-        page_num = 1
-        while True:
-            url = LIST_URL if page_num == 1 else f"{LIST_URL}page/{page_num}/"
-            try:
-                page_obj.goto(url, wait_until="domcontentloaded", timeout=30000)
-                html_content = page_obj.content()
-            except Exception as exc:
-                print(f"[MatthewsOperaHouse] Warning: page {page_num} failed: {exc}")
-                break
-
-            items = _extract_events(html_content)
-            if not items:
-                break
-
-            for item in items:
-                record = _parse_event(item)
-                if record:
-                    records.append(record)
-
-            page_num += 1
-
-        browser.close()
+    for page_num in range(1, max_pages + 1):
+        url = LIST_URL if page_num == 1 else f"{LIST_URL}page/{page_num}/"
+        resp = net.get(url)
+        if resp.status_code == 404:
+            break
+        resp.raise_for_status()
+        items = _extract_events(resp.text)
+        if not items:
+            break
+        records.extend(r for r in (_parse_event(item) for item in items) if r)
     return records
 
 
 class MatthewsOperaHouse(BaseScraper):
     name = "Matthews Opera House"
     slug = "matthews_opera_house"
+    kind = "event"
+    url = "https://www.matthewsopera.com/events/"
+    category = "arts"
     dedup_key = "url"
 
     def scrape(self) -> list[dict]:

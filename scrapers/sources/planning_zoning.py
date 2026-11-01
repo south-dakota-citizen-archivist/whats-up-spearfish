@@ -2,28 +2,15 @@
 scrapers/sources/planning_zoning.py
 
 Fetches permit and application records from the ViewpointCloud REST API
-for Spearfish, SD. Accumulates history across runs by merging with the
-existing data file (old records are kept, new ones added).
-
-Not a BaseScraper subclass — run directly or from the daily scrape workflow.
-
-Usage:
-    uv run python -c "
-    from scrapers.sources.planning_zoning import fetch_planning_zoning
-    fetch_planning_zoning()
-    "
+for Spearfish, SD. Every run pulls the full current set of records.
 """
 
 from __future__ import annotations
 
-import json
 import time
-from datetime import datetime, timezone
-from pathlib import Path
 
-import requests
-
-DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "planning_zoning.json"
+from scrapers import net
+from scrapers.base import BaseScraper
 
 BASE_URL = "https://api-east.viewpointcloud.com/v2/spearfishsd"
 
@@ -83,7 +70,7 @@ LIMIT = 100
 
 def _get(path: str, params: dict | None = None) -> dict:
     url = f"{BASE_URL}{path}"
-    resp = requests.get(url, headers=_HEADERS, params=params, timeout=30)
+    resp = net.get(url, headers=_HEADERS, params=params, timeout=30)
     resp.raise_for_status()
     return resp.json()
 
@@ -134,9 +121,11 @@ def _normalize(attrs: dict) -> dict:
     applicant = (attrs.get("applicantFullName") or attrs.get("ownerName") or "").strip()
 
     return {
-        "id": record_id,
+        "record_id": record_id,
         "record_no": attrs.get("recordNo") or "",
-        "record_type": attrs.get("recordTypeName") or "",
+        "title": attrs.get("recordTypeName") or "",
+        "url": f"{PORTAL_BASE}/{record_id}",
+        "permit_type": attrs.get("recordTypeName") or "",
         "record_type_id": record_type_id,
         "category": CATEGORIES.get(record_type_id, "infrastructure"),
         "status": attrs.get("status"),
@@ -184,57 +173,17 @@ def _fetch_all_for_type(record_type_id: int) -> list[dict]:
     return records
 
 
-# ---------------------------------------------------------------------------
-# Entry point
-# ---------------------------------------------------------------------------
+class PlanningZoning(BaseScraper):
+    name = "Spearfish planning & permits (OpenGov)"
+    slug = "planning_zoning"
+    kind = "permit"
+    url = "https://spearfishsd.portal.opengov.com/"
+    replace = True
+    dedup_key = "record_id"
 
-
-def fetch_planning_zoning() -> None:
-    type_ids = _fetch_record_type_ids()
-
-    # Load existing records to merge (accumulate history)
-    existing: dict[int, dict] = {}
-    if DATA_FILE.exists():
-        try:
-            raw = json.loads(DATA_FILE.read_text(encoding="utf-8"))
-            for r in raw.get("records") or []:
-                existing[r["id"]] = r
-            print(f"[planning_zoning] Loaded {len(existing)} existing record(s) from {DATA_FILE.name}")
-        except Exception as exc:
-            print(f"[planning_zoning] Warning: could not read existing data: {exc}")
-
-    # Fetch fresh records from API
-    fresh: dict[int, dict] = {}
-    for type_id in type_ids:
-        records = _fetch_all_for_type(type_id)
-        for r in records:
-            fresh[r["id"]] = r
-        type_name = records[0]["record_type"] if records else str(type_id)
-        print(f"  {type_name}: {len(records)} record(s)")
-
-    # Merge: start with existing, overwrite/add fresh records
-    merged = {**existing, **fresh}
-
-    # Filter out isEnabled=false records (already excluded during fetch,
-    # but also purge any that may have been disabled since last run)
-    # We can only do this for types we fetched; existing-only records stay.
-    all_records = list(merged.values())
-
-    # Sort by date_created descending (empty strings sort last)
-    all_records.sort(key=lambda r: r.get("date_created") or "", reverse=True)
-
-    DATA_FILE.write_text(
-        json.dumps(
-            {
-                "fetched_at": datetime.now(timezone.utc).isoformat(),
-                "records": all_records,
-            },
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
-    print(f"[planning_zoning] {len(all_records)} total record(s) → {DATA_FILE.name}")
-
-
-if __name__ == "__main__":
-    fetch_planning_zoning()
+    def scrape(self) -> list[dict]:
+        records: dict[int, dict] = {}
+        for type_id in _fetch_record_type_ids():
+            for r in _fetch_all_for_type(type_id):
+                records[r["record_id"]] = r
+        return sorted(records.values(), key=lambda r: r.get("date_created") or "", reverse=True)

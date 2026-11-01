@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% from "macros.html" import card, empty, ext, badge %}
+
+{% macro meeting_list(items) %}
+<ul class="divide-y divide-stone-100">
+  {% for m in items %}
+  <li class="py-2.5">
+    <p class="text-xs font-semibold text-stone-500 uppercase tracking-wide">{{ m.date | fmt_day('%a, %b %-d') }} · {{ m.body }}</p>
+    {{ ext(m.url, m.name, 'font-medium hover:text-pine-700 hover:underline') }}
+    <span class="text-sm">
+      {% for d in m.docs %}{{ ext(d.url, d.label, 'text-pine-700 hover:underline ml-2') }}{% endfor %}
+      {% if m.video %}{{ ext(m.video, 'Video', 'text-pine-700 hover:underline ml-2') }}{% endif %}
+    </span>
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}
+
+{% block content %}
+<h1 class="text-2xl font-extrabold mb-4">Civic</h1>
+
+<div class="grid lg:grid-cols-2 gap-6">
+
+  {% call card("Upcoming meetings", "meetings", sources=meeting_sources) %}
+    {% if upcoming %}{{ meeting_list(upcoming) }}{% else %}{{ empty("No upcoming agendas posted yet.") }}{% endif %}
+  {% endcall %}
+
+  {% call card("Recent meetings", "recent-meetings") %}
+    <div class="scroll-list">
+    {% if recent %}{{ meeting_list(recent) }}{% else %}{{ empty("Nothing in the past six weeks.") }}{% endif %}
+    </div>
+  {% endcall %}
+
+  {% call card("Meeting video", "video", sources=youtube, class="lg:col-span-2") %}
+    {% if videos %}
+    <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {% for v in videos %}
+      <li>
+        <a href="{{ v.url }}" target="_blank" rel="noopener" class="group block">
+          {% if v.thumbnail_url %}<img src="{{ v.thumbnail_url }}" alt="" loading="lazy" class="w-full aspect-video object-cover rounded-lg bg-stone-100">{% endif %}
+          <p class="text-sm font-medium mt-1 group-hover:text-pine-700">{{ v.title }}</p>
+          <p class="text-xs text-stone-500">{{ v.source_label }} · {{ v.published | fmt_day }}</p>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}{{ empty("No recent recordings.") }}{% endif %}
+  {% endcall %}
+
+  {% call card("Planning & permit applications", "permits", sources=permits, more=permits.url, more_label="OpenGov portal", class="lg:col-span-2") %}
+    {% if recent_permits %}
+    {% if not permits_windowed %}<p class="text-sm text-stone-500 mb-2">No applications in the past 60 days; showing the most recent on file.</p>{% endif %}
+    <div class="overflow-x-auto scroll-list">
+      <table class="w-full text-sm">
+        <thead class="text-left text-xs uppercase tracking-wide text-stone-500 sticky top-0 bg-white">
+          <tr><th class="py-1.5 pr-3">Submitted</th><th class="pr-3">Type</th><th class="pr-3">Address</th><th class="pr-3">Status</th></tr>
+        </thead>
+        <tbody class="divide-y divide-stone-100">
+          {% for p in recent_permits %}
+          <tr>
+            <td class="py-1.5 pr-3 whitespace-nowrap">{{ (p.date_submitted or p.date_created) | fmt_day('%b %-d') }}</td>
+            <td class="pr-3">{{ ext(p.url, p.permit_type or p.title) }}</td>
+            <td class="pr-3">{{ p.address }}</td>
+            <td class="pr-3 text-stone-600">{{ p.status or '' }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}{{ empty("No applications in the past 60 days.") }}{% endif %}
+  {% endcall %}
+
+  {% call card("Building permits issued", "building-permits", sources=building_permits, more=building_permits.url, more_label="Monthly reports") %}
+    {% if building_records %}
+    <ul class="divide-y divide-stone-100 text-sm scroll-list">
+      {% for p in building_records %}
+      <li class="py-2">
+        <p class="font-medium">{{ p.construction_type }}{% if p.cost_approximate %} <span class="text-stone-500 font-normal">· ${{ p.cost_approximate | intcomma }}</span>{% endif %}</p>
+        <p class="text-xs text-stone-500">{{ p.site_address }}{% if p.contractor %} · {{ p.contractor | title }}{% endif %} · {{ p.date | fmt_day('%B %Y') }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}{{ empty("No recent permit reports.") }}{% endif %}
+  {% endcall %}
+
+  <div class="min-w-0 space-y-6">
+    {% call card("Open city bids", "bids", sources=bids, more=bids.url, more_label="Bids") %}
+      {% if bids.records %}
+      <ul class="space-y-2 text-sm">
+        {% for b in bids.records %}
+        <li>{{ ext(b.url, b.title, 'font-medium hover:text-pine-700 hover:underline') }}
+          {% if b.closes %}<p class="text-xs text-stone-500">Closes {{ b.closes }}</p>{% endif %}</li>
+        {% endfor %}
+      </ul>
+      {% else %}{{ empty("No open bids.") }}{% endif %}
+    {% endcall %}
+
+    {% call card("DANR public notices (West River)", "notices", sources=notices, more=notices.url, more_label="DANR") %}
+      {% if notices.records %}
+      <ul class="space-y-2.5 text-sm scroll-list">
+        {% for n in notices.records %}
+        <li>{{ ext(n.url, n.title, 'font-medium hover:text-pine-700 hover:underline') }}
+          <p class="text-xs text-stone-500">{{ n.notice_type }}{% if n.location %} · {{ n.location }}{% endif %}{% if n.deadline %} · comments due {{ n.deadline }}{% endif %}</p></li>
+        {% endfor %}
+      </ul>
+      {% else %}{{ empty("No current West River notices.") }}{% endif %}
+    {% endcall %}
+  </div>
+
+  {% call card("Press releases", "press", class="lg:col-span-2") %}
+    {% if press %}
+    <ul class="grid md:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+      {% for p in press %}
+      <li>{{ ext(p.url, p.title, 'font-medium hover:text-pine-700 hover:underline') }}
+        <p class="text-xs text-stone-500">{{ p.source_label }} · {{ p.published | fmt_day }}</p></li>
+      {% endfor %}
+    </ul>
+    {% else %}{{ empty("No recent releases.") }}{% endif %}
+  {% endcall %}
+</div>
+{% endblock %}

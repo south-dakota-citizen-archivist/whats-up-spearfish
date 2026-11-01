@@ -12,6 +12,7 @@ import xml.etree.ElementTree as ET
 
 import requests
 
+from scrapers import net
 from scrapers.base import BaseScraper
 
 SOURCES = [
@@ -48,7 +49,7 @@ def _resolve_channel_id(handle: str) -> str | None:
     """Extract channel ID from a YouTube @handle page."""
     url = f"https://www.youtube.com/@{handle}"
     try:
-        resp = requests.get(url, headers=_HEADERS, timeout=20)
+        resp = net.get(url, headers=_HEADERS, timeout=20)
         resp.raise_for_status()
         m = re.search(r'"channelId"\s*:\s*"(UC[^"]+)"', resp.text)
         if not m:
@@ -63,7 +64,7 @@ def _fetch_feed(channel_id: str, source_name: str, channel_url: str, n: int = 15
     """Parse the YouTube Atom feed for a channel, return up to n records."""
     url = FEED_URL.format(channel_id=channel_id)
     try:
-        resp = requests.get(url, headers=_HEADERS, timeout=20)
+        resp = net.get(url, headers=_HEADERS, timeout=20)
         resp.raise_for_status()
     except requests.RequestException as exc:
         print(f"[YouTube] Warning: feed fetch failed for {source_name}: {exc}")
@@ -114,6 +115,8 @@ def _fetch_feed(channel_id: str, source_name: str, channel_url: str, n: int = 15
 class PublicMeetingsYouTube(BaseScraper):
     name = "Public Meetings (YouTube)"
     slug = "public_meetings_youtube"
+    kind = "youtube_video"
+    url = "https://www.youtube.com/@spearfishschooldistrictliv3794/streams"
     dedup_key = "url"
 
     def scrape(self) -> list[dict]:

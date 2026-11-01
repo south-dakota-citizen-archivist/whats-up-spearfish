@@ -10,9 +10,9 @@ from __future__ import annotations
 
 import re
 
-import requests
 from dateutil import parser as dateutil_parser
 
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -45,7 +45,7 @@ def _parse_date(title: str) -> str:
 
 
 def _get_json(folder_id: int) -> dict:
-    r = requests.get(API_BASE, params={"folder_id": folder_id}, timeout=15)
+    r = net.get(API_BASE, params={"folder_id": folder_id}, timeout=15)
     r.raise_for_status()
     return r.json()
 
@@ -88,6 +88,8 @@ def _fetch_folder(folder_id: int, doc_type: str) -> list[dict]:
 class SpearfishSchoolBoardDocs(BaseScraper):
     name = "Spearfish School Board"
     slug = "spearfish_school_board_docs"
+    kind = "document"
+    url = "https://www.spearfish.k12.sd.us/documents/board-of-education/board-meeting-agendas/25745609"
     dedup_key = "slug"
 
     def scrape(self) -> list[dict]:

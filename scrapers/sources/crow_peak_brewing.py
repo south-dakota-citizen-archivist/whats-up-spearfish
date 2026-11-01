@@ -43,6 +43,8 @@ def _fetch_descriptions() -> dict[str, str]:
 class CrowPeakBrewing(BaseScraper):
     name = "Crow Peak Brewing"
     slug = "crow_peak_brewing"
+    kind = "beer"
+    url = "https://crowpeakbrewing.com/"
     dedup_key = "slug"
     replace = True
 

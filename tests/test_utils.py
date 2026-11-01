@@ -142,24 +142,18 @@ class TestFetchHtml:
     def test_returns_beautifulsoup(self):
         from bs4 import BeautifulSoup
 
-        with patch("scrapers.utils.requests.get", return_value=self._mock_resp()):
+        with patch("scrapers.utils.net.get", return_value=self._mock_resp()):
             result = fetch_html("http://example.com")
         assert isinstance(result, BeautifulSoup)
 
     def test_default_timeout_30(self):
-        with patch("scrapers.utils.requests.get", return_value=self._mock_resp()) as mock_get:
+        with patch("scrapers.utils.net.get", return_value=self._mock_resp()) as mock_get:
             fetch_html("http://example.com")
         _, kwargs = mock_get.call_args
         assert kwargs.get("timeout") == 30
 
-    def test_default_headers_set(self):
-        with patch("scrapers.utils.requests.get", return_value=self._mock_resp()) as mock_get:
-            fetch_html("http://example.com")
-        _, kwargs = mock_get.call_args
-        assert "User-Agent" in kwargs.get("headers", {})
-
     def test_caller_can_override_timeout(self):
-        with patch("scrapers.utils.requests.get", return_value=self._mock_resp()) as mock_get:
+        with patch("scrapers.utils.net.get", return_value=self._mock_resp()) as mock_get:
             fetch_html("http://example.com", timeout=5)
         _, kwargs = mock_get.call_args
         assert kwargs.get("timeout") == 5
@@ -167,7 +161,7 @@ class TestFetchHtml:
     def test_raises_on_http_error(self):
         resp = MagicMock()
         resp.raise_for_status.side_effect = requests.HTTPError("404")
-        with patch("scrapers.utils.requests.get", return_value=resp):
+        with patch("scrapers.utils.net.get", return_value=resp):
             with pytest.raises(requests.HTTPError):
                 fetch_html("http://example.com")
 
@@ -180,12 +174,12 @@ class TestFetchJson:
         return resp
 
     def test_returns_parsed_json(self):
-        with patch("scrapers.utils.requests.get", return_value=self._mock_resp({"key": "val"})):
+        with patch("scrapers.utils.net.get", return_value=self._mock_resp({"key": "val"})):
             result = fetch_json("http://example.com/api")
         assert result == {"key": "val"}
 
     def test_default_timeout_30(self):
-        with patch("scrapers.utils.requests.get", return_value=self._mock_resp()) as mock_get:
+        with patch("scrapers.utils.net.get", return_value=self._mock_resp()) as mock_get:
             fetch_json("http://example.com/api")
         _, kwargs = mock_get.call_args
         assert kwargs.get("timeout") == 30
@@ -193,6 +187,6 @@ class TestFetchJson:
     def test_raises_on_http_error(self):
         resp = MagicMock()
         resp.raise_for_status.side_effect = requests.HTTPError("500")
-        with patch("scrapers.utils.requests.get", return_value=resp):
+        with patch("scrapers.utils.net.get", return_value=resp):
             with pytest.raises(requests.HTTPError):
                 fetch_json("http://example.com/api")

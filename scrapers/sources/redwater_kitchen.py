@@ -17,6 +17,8 @@ _STATS_RE = re.compile(r"([\d.]+)%\s*ABV(?:\s*•\s*([\d.]+)\s*IBU)?", re.IGNORE
 class RedwaterKitchen(BaseScraper):
     name = "Redwater Kitchen"
     slug = "redwater_kitchen"
+    kind = "beer"
+    url = "https://untappd.com"
     dedup_key = "slug"
     replace = True
 

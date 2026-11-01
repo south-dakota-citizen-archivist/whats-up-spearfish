@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% from "macros.html" import card, empty, ext %}
+
+{% block content %}
+<h1 class="text-2xl font-extrabold mb-4">Jobs</h1>
+<div class="grid md:grid-cols-2 gap-6">
+  {% for s in employers %}
+  {% call card(s.name, s.slug, sources=s, more=s.url, more_label="All postings") %}
+    {% if s.records %}
+    <ul class="space-y-2.5 text-sm scroll-list">
+      {% for j in s.records | sort(attribute='published', reverse=true) %}
+      <li>{{ ext(j.url, j.title, 'font-medium hover:text-pine-700 hover:underline') }}
+        <p class="text-xs text-stone-500">{{ [j.department or j.location or j.category or '', ('posted ' ~ (j.published | fmt_day('%b %-d'))) if j.published else '', ('closes ' ~ j.closing) if j.closing else ''] | select | join(' · ') }}</p></li>
+      {% endfor %}
+    </ul>
+    {% else %}{{ empty("No open positions listed.") }}{% endif %}
+  {% endcall %}
+  {% endfor %}
+</div>
+{% endblock %}

@@ -38,6 +38,9 @@ def _parse_feed(url: str, record_type: str, source_label: str) -> list[dict]:
 class LawrenceCountyJobs(BaseScraper):
     name = "Lawrence County Jobs"
     slug = "lawrence_county_jobs"
+    kind = "job"
+    url = "https://www.lawrence.sd.us/Jobs.aspx"
+    min_records = 0
     dedup_key = "url"
     replace = True
 
@@ -52,6 +55,9 @@ class LawrenceCountyJobs(BaseScraper):
 class LawrenceCountyNews(BaseScraper):
     name = "Lawrence County News Flash"
     slug = "lawrence_county_news"
+    kind = "press_release"
+    url = "https://www.lawrence.sd.us/CivicAlerts.aspx"
+    min_records = 0
     dedup_key = "url"
 
     def scrape(self) -> list[dict]:

@@ -21,9 +21,9 @@ import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-import requests
-
 from black_hills import BBOX
+from scrapers import net
+from scrapers.base import BaseScraper
 
 DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "roadkill.json"
 
@@ -70,7 +70,7 @@ def fetch_roadkill() -> None:
     }
 
     try:
-        resp = requests.get(BASE_URL, params=params, headers=HEADERS, timeout=30)
+        resp = net.get(BASE_URL, params=params, headers=HEADERS, timeout=30)
         resp.raise_for_status()
         data = resp.json()
     except Exception as exc:
@@ -124,7 +124,7 @@ def fetch_roadkill() -> None:
     for i in range(0, len(oids), batch_size):
         batch = oids[i : i + batch_size]
         try:
-            att_resp = requests.get(
+            att_resp = net.get(
                 ATTACHMENTS_URL,
                 params={
                     "objectIds": ",".join(str(o) for o in batch),
@@ -167,3 +167,16 @@ def fetch_roadkill() -> None:
 
 if __name__ == "__main__":
     fetch_roadkill()
+
+
+class Roadkill(BaseScraper):
+    """On ice: kept for later, not run. Still uses its own standalone fetch
+    function and file format; port it to scrape() before enabling."""
+
+    name = "Wildlife carcass pickups (SD DOT)"
+    slug = "roadkill"
+    kind = "sighting"
+    enabled = False
+
+    def scrape(self) -> list[dict]:
+        raise NotImplementedError("roadkill is on ice")

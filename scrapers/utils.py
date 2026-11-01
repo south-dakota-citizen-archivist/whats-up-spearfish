@@ -12,20 +12,15 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-import requests
 from bs4 import BeautifulSoup
 from slugify import slugify
+
+from scrapers import net
 
 # ---------------------------------------------------------------------------
 # Paths
 # ---------------------------------------------------------------------------
-
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
-
-# Common user-agent to avoid trivial blocks.
-DEFAULT_HEADERS = {
-    "User-Agent": ("Mozilla/5.0 (compatible; SpearfishBulletinBot/1.0; +https://github.com/spearfish-bulletin)")
-}
+from scrapers.base import DATA_DIR  # noqa: E402,F401
 
 # ---------------------------------------------------------------------------
 # HTTP helpers
@@ -36,12 +31,11 @@ def fetch_html(url: str, **kwargs) -> BeautifulSoup:
     """
     GET *url* and return a BeautifulSoup object.
 
-    Any keyword arguments are forwarded to ``requests.get()``.  A
+    Any keyword arguments are forwarded to ``net.get()``.  A
     ``timeout`` of 30 seconds is applied by default.
     """
     kwargs.setdefault("timeout", 30)
-    kwargs.setdefault("headers", DEFAULT_HEADERS)
-    response = requests.get(url, **kwargs)
+    response = net.get(url, **kwargs)
     response.raise_for_status()
     return BeautifulSoup(response.text, "html.parser")
 
@@ -50,12 +44,11 @@ def fetch_json(url: str, **kwargs) -> Any:
     """
     GET *url* and return the parsed JSON body (dict or list).
 
-    Any keyword arguments are forwarded to ``requests.get()``.  A
+    Any keyword arguments are forwarded to ``net.get()``.  A
     ``timeout`` of 30 seconds is applied by default.
     """
     kwargs.setdefault("timeout", 30)
-    kwargs.setdefault("headers", DEFAULT_HEADERS)
-    response = requests.get(url, **kwargs)
+    response = net.get(url, **kwargs)
     response.raise_for_status()
     return response.json()
 

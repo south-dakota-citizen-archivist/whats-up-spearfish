@@ -85,15 +85,15 @@ class TestIsWestRiver:
 
 
 # ---------------------------------------------------------------------------
-# _deadline_sort_key
+# _deadline_iso
 # ---------------------------------------------------------------------------
 
 
-class TestDeadlineSortKey:
+class TestDeadlineIso:
     def _fn(self, notice):
-        from scrapers.sources.danr_public_notices import _deadline_sort_key
+        from scrapers.sources.danr_public_notices import _deadline_iso
 
-        return _deadline_sort_key(notice)
+        return _deadline_iso(notice)
 
     def test_mm_dd_yyyy(self):
         assert self._fn({"deadline": "04/23/2026"}) == "2026-04-23"
@@ -101,24 +101,12 @@ class TestDeadlineSortKey:
     def test_single_digit_month_day(self):
         assert self._fn({"deadline": "5/1/2026"}) == "2026-05-01"
 
-    def test_empty_deadline_sorts_last(self):
-        assert self._fn({"deadline": ""}) == "9999-99-99"
+    def test_empty_or_missing(self):
+        assert self._fn({"deadline": ""}) == ""
+        assert self._fn({}) == ""
 
-    def test_missing_deadline_sorts_last(self):
-        assert self._fn({}) == "9999-99-99"
-
-    def test_unparseable_sorts_last(self):
-        assert self._fn({"deadline": "Unknown"}) == "9999-99-99"
-
-    def test_earlier_date_sorts_before_later(self):
-        a = self._fn({"deadline": "03/01/2026"})
-        b = self._fn({"deadline": "05/01/2026"})
-        assert a < b
-
-    def test_no_deadline_sorts_after_any_date(self):
-        dated = self._fn({"deadline": "12/31/2099"})
-        none = self._fn({"deadline": ""})
-        assert dated < none
+    def test_unparseable(self):
+        assert self._fn({"deadline": "Unknown"}) == ""
 
 
 # ---------------------------------------------------------------------------

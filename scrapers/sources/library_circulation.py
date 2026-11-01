@@ -18,7 +18,8 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-import requests
+from scrapers import net
+from scrapers.base import BaseScraper
 
 DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "library_circulation.json"
 
@@ -43,7 +44,7 @@ def _int_or_none(val: str) -> int | None:
 
 def fetch_circulation() -> None:
     try:
-        resp = requests.get(SHEET_URL, timeout=20, allow_redirects=True)
+        resp = net.get(SHEET_URL, timeout=20, allow_redirects=True)
         resp.raise_for_status()
         text = resp.text
     except Exception as exc:
@@ -96,3 +97,16 @@ def fetch_circulation() -> None:
 
 if __name__ == "__main__":
     fetch_circulation()
+
+
+class LibraryCirculation(BaseScraper):
+    """On ice: kept for later, not run. Still uses its own standalone fetch
+    function and file format; port it to scrape() before enabling."""
+
+    name = "Library circulation stats"
+    slug = "library_circulation"
+    kind = "stats"
+    enabled = False
+
+    def scrape(self) -> list[dict]:
+        raise NotImplementedError("library_circulation is on ice")

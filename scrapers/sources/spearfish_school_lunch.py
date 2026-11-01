@@ -13,8 +13,7 @@ import json
 import re
 from datetime import date, timedelta
 
-import requests
-
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -33,7 +32,7 @@ _HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 def _fetch_month_overwrites(org: int, menu: int, year: int, month: int) -> list[dict]:
     url = _OVERWRITES_URL.format(org=org, menu=menu, year=year, month=month)
-    resp = requests.get(url, headers=_HEADERS, timeout=15)
+    resp = net.get(url, headers=_HEADERS, timeout=15)
     if resp.status_code == 400:
         return []
     resp.raise_for_status()
@@ -42,7 +41,7 @@ def _fetch_month_overwrites(org: int, menu: int, year: int, month: int) -> list[
 
 def _fetch_recipes(org: int, menu: int, start: str, end: str) -> dict[int, dict]:
     url = _RECIPES_URL.format(org=org, menu=menu, start=start, end=end)
-    resp = requests.get(url, headers=_HEADERS, timeout=30)
+    resp = net.get(url, headers=_HEADERS, timeout=30)
     resp.raise_for_status()
     lookup: dict[int, dict] = {}
     for r in resp.json().get("data", []):
@@ -169,6 +168,7 @@ def _parse_day(
 class SchoolMenuScraper(BaseScraper):
     """Base class for HealthePro/NutriSlice school menu scrapers."""
 
+    kind = "school_menu"
     dedup_key = "slug"
     menu_id: int = 0
     source_url: str = ""
@@ -201,6 +201,7 @@ class SpearfishHSLunch(SchoolMenuScraper):
     slug = "spearfish_hs_lunch"
     menu_id = 124137
     source_url = "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137"
+    url = "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137"
 
 
 class SpearfishMSLunch(SchoolMenuScraper):
@@ -208,6 +209,7 @@ class SpearfishMSLunch(SchoolMenuScraper):
     slug = "spearfish_ms_lunch"
     menu_id = 124136
     source_url = "https://menus.healthepro.com/organizations/524/sites/4521/menus/124136"
+    url = "https://menus.healthepro.com/organizations/524/sites/4521/menus/124136"
 
 
 class SpearfishElemK2Lunch(SchoolMenuScraper):
@@ -215,6 +217,7 @@ class SpearfishElemK2Lunch(SchoolMenuScraper):
     slug = "spearfish_elem_k2_lunch"
     menu_id = 124132
     source_url = "https://menus.healthepro.com/organizations/524/sites/4523/menus/124132"
+    url = "https://menus.healthepro.com/organizations/524/sites/4523/menus/124132"
 
 
 class SpearfishElem35Lunch(SchoolMenuScraper):
@@ -222,6 +225,7 @@ class SpearfishElem35Lunch(SchoolMenuScraper):
     slug = "spearfish_elem_35_lunch"
     menu_id = 124131
     source_url = "https://menus.healthepro.com/organizations/524/sites/4523/menus/124131"
+    url = "https://menus.healthepro.com/organizations/524/sites/4523/menus/124131"
 
 
 # ── Breakfast menus ────────────────────────────────────────────────────────────
@@ -232,6 +236,7 @@ class SpearfishElemBreakfast(SchoolMenuScraper):
     slug = "spearfish_elem_breakfast"
     menu_id = 124134
     source_url = "https://menus.healthepro.com/organizations/524/sites/4519/menus/124134"
+    url = "https://menus.healthepro.com/organizations/524/sites/4519/menus/124134"
 
 
 class SpearfishMSHSBreakfast(SchoolMenuScraper):
@@ -239,3 +244,4 @@ class SpearfishMSHSBreakfast(SchoolMenuScraper):
     slug = "spearfish_mshs_breakfast"
     menu_id = 124135
     source_url = "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135"
+    url = "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135"

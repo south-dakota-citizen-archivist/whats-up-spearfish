@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% from "macros.html" import freshness %}
+
+{% block head %}<script defer src="{{ root }}static/js/events.js"></script>{% endblock %}
+
+{% block content %}
+<div class="flex flex-wrap items-end justify-between gap-3 mb-4">
+  <div>
+    <h1 class="text-2xl font-extrabold">Events</h1>
+    <p class="text-stone-600 text-sm">{{ event_count | intcomma }} upcoming events from {{ event_sources | length }} calendars around Spearfish.</p>
+  </div>
+  <div class="flex gap-3 text-sm">
+    <a href="{{ root }}calendar.ics" class="font-semibold text-pine-700 hover:underline">Subscribe (.ics)</a>
+    <a href="{{ root }}events.xml" class="font-semibold text-pine-700 hover:underline">RSS</a>
+  </div>
+</div>
+
+<div x-data="calendar('{{ root }}events.json')" class="grid lg:grid-cols-4 gap-6">
+
+  {# filters #}
+  <aside class="lg:col-span-1 space-y-5">
+    <div>
+      <label for="q" class="sr-only">Search events</label>
+      <input id="q" type="search" x-model.debounce.200ms="q" placeholder="Search events…"
+             class="w-full rounded-lg border border-stone-300 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pine-600">
+    </div>
+    <div>
+      <p class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-2">When</p>
+      <div class="flex flex-wrap gap-1.5">
+        {% for key, label in [('today', 'Today'), ('weekend', 'This weekend'), ('week', 'Next 7 days'), ('month', 'Next 30 days'), ('all', 'All')] %}
+        <button type="button" @click="range = '{{ key }}'; limit = 150"
+                :class="range === '{{ key }}' ? 'bg-pine-700 text-white border-pine-700' : 'bg-white text-stone-700 border-stone-300 hover:border-pine-600'"
+                class="px-3 py-1 rounded-full border text-sm">{{ label }}</button>
+        {% endfor %}
+      </div>
+    </div>
+    <div>
+      <p class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-2">Type</p>
+      <div class="flex flex-wrap gap-1.5">
+        {% for key, label, n in categories %}
+        <button type="button" @click="toggle('{{ key }}')"
+                :class="cats.includes('{{ key }}') ? 'bg-pine-700 text-white border-pine-700' : 'bg-white text-stone-700 border-stone-300 hover:border-pine-600'"
+                class="px-3 py-1 rounded-full border text-sm">{{ label }} <span class="opacity-60">{{ n }}</span></button>
+        {% endfor %}
+      </div>
+    </div>
+    <div>
+      <label for="src" class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-2 block">Calendar</label>
+      <select id="src" x-model="source" class="w-full rounded-lg border border-stone-300 bg-white px-3 py-2 text-sm">
+        <option value="">All calendars</option>
+        {% for name, n in event_sources %}<option value="{{ name }}">{{ name }} ({{ n }})</option>{% endfor %}
+      </select>
+    </div>
+    <div class="text-xs">{{ freshness(event_source_objs) }}</div>
+  </aside>
+
+  {# results #}
+  <div class="lg:col-span-3">
+    <p x-show="loading" class="text-stone-500">Loading events…</p>
+    <p x-show="!loading" x-cloak class="text-sm text-stone-500 mb-3"><span x-text="filtered.length"></span> events</p>
+    <p x-show="!loading && !filtered.length" x-cloak class="bg-white rounded-2xl border border-stone-200 p-6 text-stone-500">No events match those filters.</p>
+
+    <template x-for="day in days" :key="day.date">
+      <section class="mb-5">
+        <h2 class="sticky top-0 bg-stone-100/95 backdrop-blur py-1.5 text-sm font-bold uppercase tracking-wide text-pine-800 z-10" x-text="heading(day.date)"></h2>
+        <ul class="bg-white rounded-2xl border border-stone-200 divide-y divide-stone-100">
+          <template x-for="e in day.events" :key="e.id">
+            <li class="px-4 py-3 flex gap-4">
+              <span class="w-24 shrink-0 text-sm font-semibold text-stone-700 tabular-nums" x-text="e.time"></span>
+              <div class="min-w-0">
+                <a :href="e.url" target="_blank" rel="noopener" class="font-medium hover:text-pine-700 hover:underline" x-text="e.title"></a>
+                <p class="text-xs text-stone-500">
+                  <span x-show="e.location" x-text="e.location + ' · '"></span>
+                  <span x-text="e.source_label"></span>
+                  <template x-for="a in e.also"><span>, <a :href="a.url" target="_blank" rel="noopener" class="hover:underline" x-text="a.source"></a></span></template>
+                </p>
+                <p x-show="e.description" class="text-sm text-stone-600 mt-1 line-clamp-2" x-text="e.description"></p>
+              </div>
+            </li>
+          </template>
+        </ul>
+      </section>
+    </template>
+
+    <button x-show="filtered.length > limit" x-cloak @click="limit += 150"
+            class="w-full py-2.5 rounded-xl border border-stone-300 bg-white text-sm font-semibold text-pine-700 hover:border-pine-600">
+      Show more
+    </button>
+  </div>
+</div>
+
+<noscript><p class="mt-4">The calendar needs JavaScript. You can also <a href="{{ root }}calendar.ics" class="text-pine-700 underline">subscribe to the calendar feed</a>.</p></noscript>
+{% endblock %}

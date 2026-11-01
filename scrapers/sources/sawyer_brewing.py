@@ -14,7 +14,6 @@ import json
 from pathlib import Path
 
 from scrapers.base import BaseScraper
-from scrapers.slack import send_alert
 from scrapers.utils import fetch_html, make_slug
 
 SOURCE_URL = "https://www.sawyerbrewingco.com/menu"
@@ -37,6 +36,8 @@ def _load_lookup() -> dict[str, dict]:
 class SawyerBrewing(BaseScraper):
     name = "Sawyer Brewing Co."
     slug = "sawyer_brewing"
+    kind = "beer"
+    url = "https://www.sawyerbrewingco.com/menu"
     dedup_key = "image_url"
     replace = True
 
@@ -94,21 +95,7 @@ class SawyerBrewing(BaseScraper):
             )
 
         if unmatched:
-            lines = "\n".join(f"• `{u.rsplit('/', 1)[-1]}`" for u in unmatched)
-            send_alert(
-                text=f"Sawyer Brewing: {len(unmatched)} beer(s) not in sawyer_brewing.json — add entries to get names/descriptions.",  # noqa: E501
-                blocks=[
-                    {
-                        "type": "section",
-                        "text": {
-                            "type": "mrkdwn",
-                            "text": (
-                                f":beer: *Sawyer Brewing* — {len(unmatched)} unrecognised image(s) found on the menu.\n"
-                                f"Add entries to `scrapers/sources/sawyer_brewing.json` for:\n{lines}"
-                            ),
-                        },
-                    }
-                ],
-            )
+            names = ", ".join(u.rsplit("/", 1)[-1] for u in unmatched)
+            print(f"[{self.slug}] Warning: {len(unmatched)} beer image(s) not in sawyer_brewing.json: {names}")
 
         return records

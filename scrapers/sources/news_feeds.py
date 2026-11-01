@@ -63,6 +63,8 @@ def _parse_feed(url: str, source_label: str) -> list[dict]:
 class NewsFeeds(BaseScraper):
     name = "Regional News"
     slug = "news_feeds"
+    kind = "news"
+    url = "https://www.sdnewswatch.org/"
     dedup_key = "slug"
 
     def scrape(self) -> list[dict]:

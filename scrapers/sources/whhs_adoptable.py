@@ -15,10 +15,10 @@ import html
 import json
 import re
 
-import requests
 import urllib3
 from bs4 import BeautifulSoup
 
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -29,7 +29,7 @@ _TAG_RE = re.compile(r"<[^>]+>")
 
 
 def _fetch_pets(url: str, species: str) -> list[dict]:
-    resp = requests.get(url, timeout=20, verify=False)
+    resp = net.get(url, timeout=20, verify=False)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "html.parser")
 
@@ -80,6 +80,8 @@ def _fetch_pets(url: str, species: str) -> list[dict]:
 class WHHSAdoptable(BaseScraper):
     name = "Western Hills Humane Society"
     slug = "whhs_adoptable"
+    kind = "adoptable"
+    url = "https://www.westernhillshumanesociety.com/"
     dedup_key = "slug"
     replace = True
 

@@ -12,9 +12,9 @@ X-BND-ACTIVITYNAME), practices, and cancelled events are skipped.
 import re
 from datetime import datetime, timezone
 
-import requests
 from icalendar import Calendar
 
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -40,7 +40,7 @@ class GoBoundSportsScraper(BaseScraper):
     source_url: str = ""
 
     def scrape(self) -> list[dict]:
-        resp = requests.get(self.ical_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
+        resp = net.get(self.ical_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
         resp.raise_for_status()
 
         cal = Calendar.from_ical(resp.content)
@@ -90,6 +90,9 @@ class GoBoundSportsScraper(BaseScraper):
 class SpearfishSports(GoBoundSportsScraper):
     name = "Spearfish HS Sports"
     slug = "spearfish_sports"
+    kind = "event"
+    url = "https://gobound.com/sd/schools/spearfish"
+    category = "school sports"
     ical_url = "https://gobound.com/sd/schools/spearfish/calendar/ical"
     source_url = "https://www.gobound.com/sd/schools/spearfish/calendar"
 
@@ -97,5 +100,8 @@ class SpearfishSports(GoBoundSportsScraper):
 class SpearfishMSSports(GoBoundSportsScraper):
     name = "Spearfish MS Sports"
     slug = "spearfish_ms_sports"
+    kind = "event"
+    url = "https://gobound.com/sd/schools/spearfishmiddleschool"
+    category = "school sports"
     ical_url = "https://gobound.com/sd/schools/spearfishmiddleschool/calendar/ical"
     source_url = "https://www.gobound.com/sd/schools/spearfishmiddleschool/calendar"
