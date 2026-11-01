@@ -5267,5 +5267,71 @@
     "image_url": "https://npr.brightspotcdn.com/9a/73/bc82bd9043698ba41610ea02dc65/pennington-county-courthouse.jpg",
     "record_type": "news",
     "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/environment/2026-10-30/officials-say-beloved-black-hills-bald-eagle-died-from-lead-poisoning",
+    "title": "Officials say beloved Black Hills bald eagle died from lead poisoning",
+    "slug": "sdpb-officials-say-beloved-black-hills-bald-eagle-died-from-lead-poisoning",
+    "published": "2026-10-30",
+    "byline": "By C.J. Keene",
+    "description": "Hope, a famous bald eagle which roosted in Rapid City’s Canyon Lake neighborhood for nearly a decade, has died. An autopsy confirmed the cause was lead poisoning.",
+    "image_url": "https://npr.brightspotcdn.com/72/a2/6b9c93154ba5a2d89ba0193fdb46/f09366cf-1a15-48a2-8dd4-3b00dcf7d52b.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-10-30/south-dakotas-economy-buoyed-by-federal-ag-assistance-state-economic-council-says",
+    "title": "South Dakota's economy buoyed by federal ag assistance, state economic council says",
+    "slug": "sdpb-south-dakota-s-economy-buoyed-by-federal-ag-assistance-state-economic-says",
+    "published": "2026-10-30",
+    "byline": "By Jackson Dircks",
+    "description": "South Dakota’s economy is a mixed bag, officials say. Part of that is the fact that farmers are getting a chunk of their income from the government, not markets.",
+    "image_url": "https://npr.brightspotcdn.com/18/a8/1d3cccac48699f2989fa2d40ef3d/untitled-design-44.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/business-economics/2026-10-30/south-dakota-receives-share-of-nationwide-gm-settlement-over-driver-data-misuse",
+    "title": "South Dakota receives share of nationwide GM settlement over driver data misuse",
+    "slug": "sdpb-south-dakota-receives-share-of-nationwide-gm-settlement-over-driver-data",
+    "published": "2026-10-30",
+    "byline": "By SDPB News Staff",
+    "description": "South Dakota is receiving $2.6 million dollars in a settlement from General Motors over allegations the company illegally sold consumers’ data.",
+    "image_url": "https://npr.brightspotcdn.com/cd/be/09f8d0334a63b746dc496cb98c79/money-gavel-court-lawsuit-bank-financial.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-10-30/yearslong-process-to-reduce-states-recidivism-rate-requires-money-culture-changes",
+    "title": "'Yearslong process' to reduce state's recidivism rate requires money, culture changes",
+    "slug": "sdpb-yearslong-process-to-reduce-state-s-recidivism-rate-requires-money-culture",
+    "published": "2026-10-30",
+    "byline": "By Jackson Dircks",
+    "description": "If South Dakota wants to see real change in its prison system as it pursues a stronger push for rehabilitation, it has a few things to clean up. While many are already underway administratively, it’s going to take time and cost some money, according to a report created for a legislative task force studying these issues.",
+    "image_url": "https://npr.brightspotcdn.com/dc/d3/4ee1be8f436eb58c3a5748d49e5f/img-4250.JPG",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
+    "title": "Republican state Sen. Taffy Howard faces campaign finance crime allegation",
+    "slug": "sdpb-republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
+    "published": "2026-10-29",
+    "byline": "By C.J. Keene",
+    "description": "A complaint against state Republican Senator Taffy Howard alleges improper campaign contributions violated state campaign finance law.",
+    "image_url": "https://npr.brightspotcdn.com/0e/d7/4bbe540e498bb479f7676b79a34f/capitol-money-legislature-tax-south-dakota.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
+  },
+  {
+    "url": "https://www.sdpb.org/crime-courts/2026-10-29/u-s-supreme-court-cases-deal-with-cost-of-climate-change-discrimination-death-penalty",
+    "title": "U.S. Supreme Court cases deal with cost of climate change, discrimination, death penalty",
+    "slug": "sdpb-u-s-supreme-court-cases-deal-with-cost-of-climate-change-discrimination",
+    "published": "2026-10-29",
+    "byline": "By Lori Walsh",
+    "description": "Mike Thompson previews U.S. Supreme Court arguments, from climate change accountability to habeas corpus in a death penalty case.",
+    "image_url": "https://npr.brightspotcdn.com/c2/ae/f2e57a4045d7a644c4cdeb8cad72/scotus.jpg",
+    "record_type": "news",
+    "source_label": "SDPB"
   }
 ]

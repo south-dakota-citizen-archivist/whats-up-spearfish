@@ -1,5 +1,31 @@
 [
   {
+    "url": "https://untappd.com/b/sawyer-brewing-co-dark-lager/5954054",
+    "title": "Dark Lager",
+    "slug": "dark-lager",
+    "category": "Lager - Dark",
+    "abv": "5.8%",
+    "ibu": "",
+    "brewery": "Sawyer Brewing Co",
+    "rating": "3.87",
+    "image_url": "https://labels.untappd.com/5954054",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
+    "url": "https://untappd.com/b/surly-brewing-company-darkness/2100546",
+    "title": "Darkness",
+    "slug": "darkness",
+    "category": "Stout - Russian Imperial",
+    "abv": "12%",
+    "ibu": "",
+    "brewery": "Surly Brewing Company",
+    "rating": "4.17",
+    "image_url": "https://labels.untappd.com/2100546",
+    "record_type": "beer",
+    "source_label": "Redwater Kitchen"
+  },
+  {
     "url": "https://untappd.com/b/sawyer-brewing-co-citra-science/5920938",
     "title": "Citra Science",
     "slug": "citra-science",
@@ -7,7 +33,7 @@
     "abv": "5.5%",
     "ibu": "",
     "brewery": "Sawyer Brewing Co",
-    "rating": "3.83",
+    "rating": "3.82",
     "image_url": "https://labels.untappd.com/5920938",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"
@@ -46,34 +72,8 @@
     "abv": "5.2%",
     "ibu": "",
     "brewery": "Kros Strain Brewing",
-    "rating": "3.9",
+    "rating": "3.91",
     "image_url": "https://labels.untappd.com/5790934",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
-    "url": "https://untappd.com/b/samuel-adams-octoberfest/3942",
-    "title": "Octoberfest",
-    "slug": "octoberfest",
-    "category": "Märzen",
-    "abv": "5.3%",
-    "ibu": "16",
-    "brewery": "Samuel Adams",
-    "rating": "3.61",
-    "image_url": "https://labels.untappd.com/3942",
-    "record_type": "beer",
-    "source_label": "Redwater Kitchen"
-  },
-  {
-    "url": "https://untappd.com/b/left-hand-brewing-company-oktoberfest/6775",
-    "title": "Oktoberfest",
-    "slug": "oktoberfest",
-    "category": "Märzen",
-    "abv": "6.6%",
-    "ibu": "24",
-    "brewery": "Left Hand Brewing Company",
-    "rating": "3.59",
-    "image_url": "https://labels.untappd.com/6775",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"
   },
@@ -137,7 +137,7 @@
     "abv": "5.7%",
     "ibu": "21",
     "brewery": "Dakota Point Brewing",
-    "rating": "3.76",
+    "rating": "3.75",
     "image_url": "https://labels.untappd.com/5991597",
     "record_type": "beer",
     "source_label": "Redwater Kitchen"

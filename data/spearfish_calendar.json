@@ -3408,5 +3408,85 @@
     "start_dt": "Mon, 17 Aug 2026 09:12:44 -0700",
     "record_type": "event",
     "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3818",
+    "title": "City Administrator Meet and Greet",
+    "slug": "city-administrator-meet-and-greet",
+    "description": "<strong>Event date:</strong> November 5, 2026 <br /><strong>Event Time: </strong>04:30 PM - 06:00 PM<br /><strong>Location:</strong> <br />222 W Hudson St<br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Please join in an opportunity to meet the new City Administrator, Peter Wysocki, share introductions, ask questions, and build connections within our community. Light refreshments included.",
+    "published": "Wed, 28 Oct 2026 09:18:06 -0700",
+    "start_dt": "Wed, 28 Oct 2026 09:18:06 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3720",
+    "title": "Teen Game Day",
+    "slug": "teen-game-day",
+    "description": "<strong>Event date:</strong> November 9, 2026 <br /><strong>Event Time: </strong>03:30 PM - 05:00 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Join us for some gaming fun! We will have a variety of board and card games, multiplayer chess, and even some TTRPGs available...and snacks! Open to grades 6-12.",
+    "published": "Tue, 01 Sep 2026 09:02:41 -0700",
+    "start_dt": "Tue, 01 Sep 2026 09:02:41 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3675",
+    "title": "Toddler Story Time",
+    "slug": "toddler-story-time",
+    "description": "<strong>Event date:</strong> November 10, 2026 <br /><strong>Event Time: </strong>09:30 AM - 10:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Early literacy activities for ages 1-3.",
+    "published": "Thu, 06 Aug 2026 10:16:29 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:16:29 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3653",
+    "title": "Story Time",
+    "slug": "story-time",
+    "description": "<strong>Event date:</strong> November 10, 2026 <br /><strong>Event Time: </strong>10:30 AM - 11:15 AM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Stories and activities for ages 4+",
+    "published": "Thu, 06 Aug 2026 10:14:02 -0700",
+    "start_dt": "Thu, 06 Aug 2026 10:14:02 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3594",
+    "title": "Library Board Meeting",
+    "slug": "library-board-meeting",
+    "description": "<strong>Event date:</strong> November 10, 2026 <br /><strong>Event Time: </strong>04:00 PM - 05:00 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />Library Board of Trustees Meeting",
+    "published": "Wed, 13 May 2026 13:02:48 -0700",
+    "start_dt": "Wed, 13 May 2026 13:02:48 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3733",
+    "title": "Spanish Conversation Hour",
+    "slug": "spanish-conversation-hour",
+    "description": "<strong>Event date:</strong> November 10, 2026 <br /><strong>Event Time: </strong>05:45 PM - 06:45 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />If you are looking to brush up on or improve your Spanish-speaking skills, this program is for you. This is not a class but rather an opportunity to visit with others in Spanish in a supportive and friendly environment to improve comfort and fluency.",
+    "published": "Tue, 01 Sep 2026 09:11:52 -0700",
+    "start_dt": "Tue, 01 Sep 2026 09:11:52 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3327",
+    "title": "Library CLOSED for Veterans Day",
+    "slug": "library-closed-for-veterans-day",
+    "description": "<strong>Event date:</strong> November 11, 2026 <br /><strong>Event Time: </strong>12:00 AM - 11:59 PM<br /><strong>Location:</strong> <br />Spearfish, SD 57783<br /><strong>Description:</strong><br />The library will be CLOSED for Veterans Day.",
+    "published": "Tue, 06 Jan 2026 13:46:11 -0700",
+    "start_dt": "Tue, 06 Jan 2026 13:46:11 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
+  },
+  {
+    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3285",
+    "title": "City Council Study Session",
+    "slug": "city-council-study-session",
+    "description": "<strong>Event date:</strong> November 12, 2026 <br /><strong>Event Time: </strong>04:15 PM - 05:15 PM<br /><strong>Location:</strong> <br />City Hall<br />625 N 5th St<br />Spearfish, SD 57783",
+    "published": "Mon, 15 Dec 2025 13:22:14 -0700",
+    "start_dt": "Mon, 15 Dec 2025 13:22:14 -0700",
+    "record_type": "event",
+    "source_label": "City of Spearfish"
   }
 ]

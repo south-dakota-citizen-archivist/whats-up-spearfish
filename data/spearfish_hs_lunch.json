@@ -8663,5 +8663,2710 @@
     ],
     "record_type": "school_menu",
     "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Made Fresh Glazed Chicken over Rice, Cheeseburger, Crispy Chicken Deli Wrap",
+    "slug": "spearfish-hs-lunch-2026-11-02",
+    "start_dt": "2026-11-02",
+    "description": "With: Steamed Carrots, Fruit and Veggie Bar, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 128786,
+        "name": "Made Fresh Glazed Chicken over Rice",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/LU4A8qmAry373nJJ1yEDq7JWkPmbiLlCpX71LXj8/500w/pqshpL1fYAs9K7R27MkpILYPUy6HszTIH3L5hiRM.jpg",
+        "serving_size": "1 Serving",
+        "nutrition": {
+          "calories": 504,
+          "fat_g": 16,
+          "sat_fat_g": 3.3,
+          "carbs_g": 72,
+          "fiber_g": 5.3,
+          "protein_g": 22,
+          "sodium_mg": 762
+        }
+      },
+      {
+        "id": 368535,
+        "name": "Cheeseburger",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/XN8F5skbxDNvHi2nmSUPkUS6CLlV47Vc0jfUNR6g/500w/Zjm0vXZS6S9VkKzKejmqElHge0B2wOmneSziV5Jv.png",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 335,
+          "fat_g": 16,
+          "sat_fat_g": 6.5,
+          "carbs_g": 30,
+          "fiber_g": 3.0,
+          "protein_g": 18,
+          "sodium_mg": 565
+        }
+      },
+      {
+        "id": 127944,
+        "name": "Crispy Chicken Deli Wrap",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Don't skip all the toppings at the Fruit and Veggie Bar",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/m41DtIIG1TOelSuxRkt4bBkBpnSsCP9pWdSmISRW/500w/KboMrrQHQBU0SvAGwnTpr1EcaqVc8whPhCAI1GHC.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 366,
+          "fat_g": 15,
+          "sat_fat_g": 6.1,
+          "carbs_g": 37,
+          "fiber_g": 6.2,
+          "protein_g": 20,
+          "sodium_mg": 640
+        }
+      },
+      {
+        "id": 368523,
+        "name": "Steamed Carrots",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/7Adgsange98kEdWNwd0CfBLbd2x9Km0WYZXOdZKL/500w/C6jFxi9lzivXdDbpE6QSoa4lDTxVys9kL0uLqRt1.jpg",
+        "serving_size": "1/2 cup",
+        "nutrition": {
+          "calories": 37,
+          "carbs_g": 7.5,
+          "fiber_g": 2.1,
+          "sodium_mg": 64
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Beef Taco in a Bag, Grilled Cheese Sandwich, Fresh Baked Ham & Cheese Sub",
+    "slug": "spearfish-hs-lunch-2026-11-03",
+    "start_dt": "2026-11-03",
+    "description": "With: Refried Beans, Fruit and Veggie Bar, Fresh Baked Chocolate Chip Cookie, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 128874,
+        "name": "Beef Taco in a Bag",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/ejNvsWBWcsbSOuF2Q3RimRLwo5nQuiYDjo4OO7Tf/500w/QqupTwDfaRHI1Cb2uOH3X686N32OhgG4xzAF8XRc.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 333,
+          "fat_g": 21,
+          "sat_fat_g": 8.4,
+          "carbs_g": 21,
+          "fiber_g": 2.0,
+          "protein_g": 15,
+          "sodium_mg": 525
+        }
+      },
+      {
+        "id": 288172,
+        "name": "Grilled Cheese Sandwich",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HahxszZyHgArFcke1Ziz1wogCDHaIYUS793CO3nf/500w/WoHawL0vxsxNbPiQwWfA04hSRmWKWc5yaPRPXO7b.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 394,
+          "fat_g": 24,
+          "sat_fat_g": 11,
+          "carbs_g": 32,
+          "fiber_g": 2.0,
+          "protein_g": 16,
+          "sodium_mg": 810
+        }
+      },
+      {
+        "id": 127955,
+        "name": "Fresh Baked Ham & Cheese Sub",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Don't skip all the toppings at the Fruit and Veggie Bar",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/8fNY8jbXLCS2qDlHWSpmGKtLJ5jwiMLnxLVF2vdm/500w/mb05KZabwJKzH6778O9NH9ht0gzoQZPlCSVD8kfY.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 341,
+          "fat_g": 16,
+          "sat_fat_g": 6.5,
+          "carbs_g": 32,
+          "fiber_g": 3.0,
+          "protein_g": 21
+        }
+      },
+      {
+        "id": 127957,
+        "name": "Refried Beans",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/ZnkD97OvPbLw136ecZawgaNIyELZemGF3suy1L0L/500w/DoCrlRLBLliWjgyYxy7bLy3oySUNKybdicFwYofq.jpg",
+        "serving_size": "1/2 cup",
+        "nutrition": {
+          "calories": 178,
+          "fat_g": 1.6,
+          "sat_fat_g": 0.5,
+          "carbs_g": 29,
+          "fiber_g": 12,
+          "protein_g": 12,
+          "sodium_mg": 655
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 370555,
+        "name": "Fresh Baked Chocolate Chip Cookie",
+        "category": "Desserts",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/COf963joScqSfCrPxfquDhAZAMUGBqbakr0UjnhJ/500w/eZXbZvR89pQbJBZtXERtkrCXUzlK1WOO3QlTqH4z.png",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 3.5,
+          "sat_fat_g": 1.0,
+          "carbs_g": 18,
+          "fiber_g": 1.0,
+          "protein_g": 2.0,
+          "sodium_mg": 85
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "🏈Game Day Eats! 7 Layer Dip w/ Chips, Chicken Nugs with Garlic Breadstick, Pizza Station: Fresh Baked Chicken Alfredo Pizza",
+    "slug": "spearfish-hs-lunch-2026-11-04",
+    "start_dt": "2026-11-04",
+    "description": "With: Green Beans, Fruit and Veggie Bar, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 2091896,
+        "name": "🏈Game Day Eats! 7 Layer Dip w/ Chips",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Our original recipe with a down-home flavor. ",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JdXErFVBrI9TvgPKMv4gKSd5RDhNHLKqp8mX5OFU/500w/MaP0GGwK9RAFFNT9NZTVslEz4Jyp2xXwn9dg3l7D.png",
+        "serving_size": "3/4 Cup",
+        "nutrition": {
+          "calories": 554,
+          "fat_g": 33,
+          "sat_fat_g": 12,
+          "carbs_g": 47,
+          "fiber_g": 6.8,
+          "protein_g": 17,
+          "sodium_mg": 715
+        }
+      },
+      {
+        "id": 320678,
+        "name": "Chicken Nugs with Garlic Breadstick",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/RDosd3q1Eoa6eo7S1ycltd2QRg5P9fNv0XkN8HX4/500w/mZIt4e2WllQaQbAHTQ50Vt0sTU4CFQFhTckFupAo.jpg",
+        "serving_size": "6 nuggets",
+        "nutrition": {
+          "calories": 308,
+          "fat_g": 12,
+          "sat_fat_g": 2.4,
+          "carbs_g": 30,
+          "fiber_g": 4.4,
+          "protein_g": 21,
+          "sodium_mg": 563
+        }
+      },
+      {
+        "id": 128595,
+        "name": "Pizza Station: Fresh Baked Chicken Alfredo Pizza",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rXxHKvXzEIviSQ4uVHbfAlHmCbQp4dcqmn4Gsjkt/500w/r08wWHPtcarwZcHT6jLuPawZ7mbv9q7T3FvS6EEg.jpg",
+        "serving_size": "1 piece",
+        "nutrition": {
+          "calories": 362,
+          "fat_g": 14,
+          "sat_fat_g": 5.9,
+          "carbs_g": 34,
+          "fiber_g": 2.0,
+          "protein_g": 25,
+          "sodium_mg": 672
+        }
+      },
+      {
+        "id": 368520,
+        "name": "Green Beans",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/L3tKZAJ1Wiq3zgpGUUXJ9hSNxi7T2aGEMh5o7gqz/500w/MgOLNER1r6ZB8hLGmFPAIFqUb0zsqMCGmNFfIdmv.jpg",
+        "serving_size": "1/2 cup",
+        "nutrition": {
+          "calories": 22,
+          "carbs_g": 4.3,
+          "fiber_g": 2.2,
+          "protein_g": 1.1,
+          "sodium_mg": 152
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Chicken & Gravy with Dinner Roll, Cheeseburger Calzone, Fresh Baked Combo Sub",
+    "slug": "spearfish-hs-lunch-2026-11-05",
+    "start_dt": "2026-11-05",
+    "description": "With: Mashed Potatoes with Chicken Gravy, Fruit and Veggie Bar, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 370865,
+        "name": "Chicken & Gravy with Dinner Roll",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/uKdFb8v7upnovx0jsZI6z3gB6QsPMbGj9j6Q09DF/500w/SlGwNjc8p5RAicni0muNHLJtY4akRylAEFzBI6YE.jpg",
+        "serving_size": "3/4 cup",
+        "nutrition": {
+          "calories": 372,
+          "fat_g": 7.1,
+          "sat_fat_g": 1.7,
+          "carbs_g": 39,
+          "fiber_g": 3.0,
+          "protein_g": 39
+        }
+      },
+      {
+        "id": 2051955,
+        "name": "Cheeseburger Calzone",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "<p><b><b>Cheeseburger Calzone</b></b></p><p><p>CRUST: Water, Whole Wheat Flour, Wheat flour enriched (niacin, reduced iron, thiamine mononitrate, riboflavin, folic acid),&nbsp;Malted Barley Flour, Isolated Soy Protein (isolated soy protein with less than 2% soy lecithin), Soybean oil (citric acid), Sugar, Yeast (sorbitan&nbsp;monostearate, ascorbic acid), Salt (yellow prussiate of soda), Corn meal. FILLING: Beef Patty Crumbles (Ground Beef [No More Than 30%&nbsp;Fat], Water, Textured Vegetable Protein [Soy Protein Concentrate, Caramel Color], Textured Vegetable Protein [Soy Flour, Caramel Color],&nbsp;Salt, Spice, Sugar, Flavoring), Mozzarella Cheese (pasteurized part-skim milk, cheese culture, salt, enzymes. May contain: Pasteurized Milk&nbsp;and Skim Milk, Modified Corn Starch, Nonfat Milk, Modified Food Starch, Powdered Cellulose, Potassium Chloride, Natural Flavors, Ascorbic&nbsp;Acid [to protect flavor]), Cheese Sauce (Whey, Maltodextrin, Dehydrated Cheddar Cheese [pasteurized milk, cheese culture, salt, enzymes],&nbsp;Modified Corn Starch, Salt, Dry Whole Milk, Buttermilk Powder, Sodium Phosphate, Lactic Acid, Natural Flavors, Dehydrated Butter,&nbsp;Extractives of Annatto[color], and Turmeric[color]) Tomato Ketchup (Tomato Concentrate From Red Ripe Tomatoes, Distilled Vinegar, High&nbsp;Fructose Corn Syrup, Corn Syrup, Salt, Spice, Onion Powder, Natural Flavoring.), Mustard ( Distilled Vinegar, #1 Grade Mustard Seeds, Salt,&nbsp;Turmeric, Spices, &amp; Paprika.), Pickle Relish (Cucumbers, Vinegar, Salt, Spices, Xanthan Gum, Sodium Benzoate (Preservative), Potassium&nbsp;Sorbate (Preservative), Yellow 5, Polysorbate 80), Onion.</p></p><br>",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/35zbG2MyVwg52e16OpV1LlrZ91cSMJfg4m2EEgZo/500w/d6SX2t1DdWkrAN54ATD8WNJyrHdssjWHvJCZCEZP.png",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 310,
+          "fat_g": 10,
+          "sat_fat_g": 4.0,
+          "carbs_g": 35,
+          "fiber_g": 4.0,
+          "protein_g": 16,
+          "sodium_mg": 660
+        }
+      },
+      {
+        "id": 368522,
+        "name": "Fresh Baked Combo Sub",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Don't skip all the toppings at the Fruit and Veggie Bar",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/UUg8pWr4cHi7ByBHivk61xpeud8wxoCQRKvIcTge/500w/UmYCsy1dDJkWL0Tbj8mhyqHXwoV0eMPjmzgbsrKf.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 360,
+          "fat_g": 19,
+          "sat_fat_g": 7.2,
+          "carbs_g": 34,
+          "fiber_g": 3.0,
+          "protein_g": 17,
+          "sodium_mg": 885
+        }
+      },
+      {
+        "id": 128879,
+        "name": "Mashed Potatoes with Chicken Gravy",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HvfMP0IVr0UE5vCSfdRM0OTFJX9Guowju3rVJzIJ/500w/96cOoilWGFekhICNxBgqzrgIuPc3nDofu8glZgvd.jpg",
+        "serving_size": "1/2 cup",
+        "nutrition": {
+          "calories": 97,
+          "fat_g": 0.7,
+          "sat_fat_g": 0.2,
+          "carbs_g": 20,
+          "fiber_g": 1.2,
+          "protein_g": 2.9,
+          "sodium_mg": 720
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Twisted Dog, Cheese Pizza, Pepperoni Pizza…",
+    "slug": "spearfish-hs-lunch-2026-11-06",
+    "start_dt": "2026-11-06",
+    "description": "With: Golden Corn, Fruit and Veggie Bar, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 1193818,
+        "name": "Twisted Dog",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/MnLy5sX9DwWowJm8kXHrW02qwpezq23FJIhUYGuL/500w/OuDwF5jVFKuZfJ3ODqtyoq5vNGNEuVazBWD2GEUu.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 329,
+          "fat_g": 20,
+          "sat_fat_g": 7.5,
+          "carbs_g": 32,
+          "fiber_g": 3.0,
+          "protein_g": 13,
+          "sodium_mg": 311
+        }
+      },
+      {
+        "id": 368530,
+        "name": "Cheese Pizza",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/kramkcOuiPemZZRQeQSQkgLqhk6GTKRIL9AStLSw/500w/cVvU1WpMBbhMXuXkGmSx7FdwYgSaDoGvTZkeWwlp.png",
+        "serving_size": "1 slice",
+        "nutrition": {
+          "calories": 280,
+          "fat_g": 11,
+          "sat_fat_g": 5.0,
+          "carbs_g": 31,
+          "fiber_g": 4.0,
+          "protein_g": 16,
+          "sodium_mg": 430
+        }
+      },
+      {
+        "id": 368531,
+        "name": "Pepperoni Pizza",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/xxZMPmByFEf5dDWLfMOmc9zZNthC3mvU8TjDOpAN/500w/fM2gRBsshJKNON8nuKiQYMd6NdWqqGz7KVHi8SAG.jpg",
+        "serving_size": "1 slice",
+        "nutrition": {
+          "calories": 280,
+          "fat_g": 11,
+          "sat_fat_g": 3.5,
+          "carbs_g": 33,
+          "fiber_g": 4.0,
+          "protein_g": 15,
+          "sodium_mg": 540
+        }
+      },
+      {
+        "id": 370842,
+        "name": "Fresh Baked Turkey & Cheese Sub",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Don't skip all the toppings at the Fruit and Veggie Bar",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/IgIjnHuRLZMIqq2yvMdBaSeZ5rovQNDMxtzhVVp6/500w/xMXT9BHqepZe9y7EsTs5z4ZqbfDtfhAaKo7Au5dq.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 330,
+          "fat_g": 14,
+          "sat_fat_g": 5.5,
+          "carbs_g": 33,
+          "fiber_g": 3.0,
+          "protein_g": 22
+        }
+      },
+      {
+        "id": 368534,
+        "name": "Golden Corn",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/BHHKPIG5za0UhpJEKKpsrDSDYVzq8tVBeDyn40Pd/500w/B2Q6aCDet011h4Opg7Z1y10IZIc6s3O8ZuGmntaV.png",
+        "serving_size": "1/2 cup",
+        "nutrition": {
+          "calories": 71,
+          "fat_g": 0.4,
+          "carbs_g": 17,
+          "fiber_g": 1.8,
+          "protein_g": 2.7
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Made Fresh Macaroni & Cheese with Breadstick, BBQ Rib Sandwich, Crispy Chicken Deli Wrap",
+    "slug": "spearfish-hs-lunch-2026-11-09",
+    "start_dt": "2026-11-09",
+    "description": "With: BBQ Baked Beans, Fruit and Veggie Bar, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 320685,
+        "name": "Made Fresh Macaroni & Cheese with Breadstick",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Our original recipe with a down-home flavor.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/fVTN7lC4gGanY4F7yEUPKV0q6OgsIVisQB6z0xFc/500w/Q9x9smgUFwNv5U3C24nVx0BFDQrdF45Yza54jprO.jpg",
+        "serving_size": "1 Cup",
+        "nutrition": {
+          "calories": 536,
+          "fat_g": 27,
+          "sat_fat_g": 13,
+          "carbs_g": 52,
+          "fiber_g": 3.4,
+          "protein_g": 22,
+          "sodium_mg": 792
+        }
+      },
+      {
+        "id": 368539,
+        "name": "BBQ Rib Sandwich",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/PtD5uLuW2wOSWZbPSCHBvkn0OnOxGDiIaG8FMh9K/500w/97y7AS8gseQoZMWuS4VbtN1dT6JkS4r01l2DPUOX.png",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 340,
+          "fat_g": 12,
+          "sat_fat_g": 3.5,
+          "carbs_g": 40,
+          "fiber_g": 4.0,
+          "protein_g": 18,
+          "sodium_mg": 685
+        }
+      },
+      {
+        "id": 127944,
+        "name": "Crispy Chicken Deli Wrap",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Don't skip all the toppings at the Fruit and Veggie Bar",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/m41DtIIG1TOelSuxRkt4bBkBpnSsCP9pWdSmISRW/500w/KboMrrQHQBU0SvAGwnTpr1EcaqVc8whPhCAI1GHC.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 366,
+          "fat_g": 15,
+          "sat_fat_g": 6.1,
+          "carbs_g": 37,
+          "fiber_g": 6.2,
+          "protein_g": 20,
+          "sodium_mg": 640
+        }
+      },
+      {
+        "id": 368550,
+        "name": "BBQ Baked Beans",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/jt4QWIewCl5FHI6EqnMNyo8YEiffhQbPgB2OnQK2/500w/2HQ3zdkGLuMYBkl7JtF2D5kD6zVDasje0Rnlbh57.jpg",
+        "serving_size": "1/2 Cup",
+        "nutrition": {
+          "calories": 163,
+          "fat_g": 1.0,
+          "carbs_g": 30,
+          "fiber_g": 5.0,
+          "protein_g": 8.0,
+          "sodium_mg": 453
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Brunch for Lunch: Biscuit & Gravy with Scrambled Eggs, Popcorn Chicken with Garlic Breadstick, Fresh Baked Ham & Cheese Sub",
+    "slug": "spearfish-hs-lunch-2026-11-10",
+    "start_dt": "2026-11-10",
+    "description": "With: Tater Tots, Fruit and Veggie Bar, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 128597,
+        "name": "Brunch for Lunch: Biscuit & Gravy with Scrambled Eggs",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/GJTCzPftUyEriuJ3Oi2fu9DP3rWonUhKyfzKyXmP/500w/KMGArnr4IsFy9r1YFKOT8Dst5dcv7BX5396tlPiM.png",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 442,
+          "fat_g": 24,
+          "sat_fat_g": 10,
+          "carbs_g": 38,
+          "fiber_g": 2.0,
+          "protein_g": 17,
+          "sodium_mg": 827
+        }
+      },
+      {
+        "id": 320688,
+        "name": "Popcorn Chicken with Garlic Breadstick",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/f1cEIkKSalBTXumnfzUr2csVo2oaVfklc0FUtpMv/500w/QCv2VWUfwqQIIvmcd3kb1Ffg2bXP7ot9hLAIYpi4.jpg",
+        "serving_size": "10 pieces",
+        "nutrition": {
+          "calories": 350,
+          "fat_g": 14,
+          "sat_fat_g": 3.0,
+          "carbs_g": 33,
+          "fiber_g": 5.0,
+          "protein_g": 22,
+          "sodium_mg": 575
+        }
+      },
+      {
+        "id": 127955,
+        "name": "Fresh Baked Ham & Cheese Sub",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Don't skip all the toppings at the Fruit and Veggie Bar",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/8fNY8jbXLCS2qDlHWSpmGKtLJ5jwiMLnxLVF2vdm/500w/mb05KZabwJKzH6778O9NH9ht0gzoQZPlCSVD8kfY.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 341,
+          "fat_g": 16,
+          "sat_fat_g": 6.5,
+          "carbs_g": 32,
+          "fiber_g": 3.0,
+          "protein_g": 21
+        }
+      },
+      {
+        "id": 304586,
+        "name": "Tater Tots",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JSKjQ0U8SMyBRfltFAQRKIapt4dKDrLyd5DRAvVd/500w/RLhyZBQ2rTMUUrZ3h8qnEl8Xbm76N2KVH3e9RpQY.png",
+        "serving_size": "1/2 cup",
+        "nutrition": {
+          "calories": 113,
+          "fat_g": 6.1,
+          "sat_fat_g": 1.0,
+          "carbs_g": 14,
+          "fiber_g": 1.0,
+          "protein_g": 1.0,
+          "sodium_mg": 317
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "🎖️Salute to Service Feast, Breaded Drumstick, Made Fresh Beef Chili…",
+    "slug": "spearfish-hs-lunch-2026-11-11",
+    "start_dt": "2026-11-11",
+    "description": "With: Golden Corn, Fruit and Veggie Bar, Fresh Baked Holiday Cinnamon Bun, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 2136895,
+        "name": "🎖️Salute to Service Feast",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Thank a Veteran",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/jhw360vQTSLLpG8HPW8WZH85cEsUGFnGnHWyNkXW/500w/IaOw4XoFUNNDpnexGRHobSDnV12zbPWZEXF4f5RG.jpg",
+        "serving_size": "1 1",
+        "nutrition": {}
+      },
+      {
+        "id": 1995424,
+        "name": "Breaded Drumstick",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 414,
+          "fat_g": 24,
+          "sat_fat_g": 5.0,
+          "carbs_g": 21,
+          "fiber_g": 2.9,
+          "protein_g": 30,
+          "sodium_mg": 786
+        }
+      },
+      {
+        "id": 128750,
+        "name": "Made Fresh Beef Chili",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1anfgKlf8gIyXjzbE00skroCm4ljijkxiyALmPsu/500w/PLkgNT3IU4RMhd1NLlZ8MOAcS12NO5i7JMbkAbxT.jpg",
+        "serving_size": "1 Cup",
+        "nutrition": {
+          "calories": 308,
+          "fat_g": 16,
+          "sat_fat_g": 5.9,
+          "carbs_g": 19,
+          "fiber_g": 5.3,
+          "protein_g": 20,
+          "sodium_mg": 634
+        }
+      },
+      {
+        "id": 128344,
+        "name": "Pizza Station: Fresh Baked Pepperoni Pizza",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/aHY2UTd3OTfaliU2cD7qK3OUMeWD4JbswdiuvxVe/500w/0HEXJrTXQuxsRFXEB88n2SmZ1BliokZghpqnFFb0.jpg",
+        "serving_size": "1 piece",
+        "nutrition": {
+          "calories": 364,
+          "fat_g": 16,
+          "sat_fat_g": 7.6,
+          "carbs_g": 34,
+          "fiber_g": 2.4,
+          "protein_g": 19,
+          "sodium_mg": 827
+        }
+      },
+      {
+        "id": 368534,
+        "name": "Golden Corn",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/BHHKPIG5za0UhpJEKKpsrDSDYVzq8tVBeDyn40Pd/500w/B2Q6aCDet011h4Opg7Z1y10IZIc6s3O8ZuGmntaV.png",
+        "serving_size": "1/2 cup",
+        "nutrition": {
+          "calories": 71,
+          "fat_g": 0.4,
+          "carbs_g": 17,
+          "fiber_g": 1.8,
+          "protein_g": 2.7
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 325837,
+        "name": "Fresh Baked Holiday Cinnamon Bun",
+        "category": "Desserts",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/fdpM0cS3YZ97oNFE5R1VEYxckHkUApwgk6WmBztz/500w/l3aMoMfv01r6VNsQ2VfrEDJodYwLAcpcbjS8TMEn.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 343,
+          "fat_g": 6.1,
+          "sat_fat_g": 2.5,
+          "carbs_g": 67,
+          "fiber_g": 3.0,
+          "protein_g": 5.2,
+          "sodium_mg": 188
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Italian Chicken Pasta w/ Breadstick, Corn Dog, Fresh Baked Combo Sub",
+    "slug": "spearfish-hs-lunch-2026-11-12",
+    "start_dt": "2026-11-12",
+    "description": "With: Mixed Vegetables, Fruit and Veggie Bar, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 1746601,
+        "name": "Italian Chicken Pasta w/ Breadstick",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Grilled chicken tossed in marinara sauce and pasta then baked to perfection.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/oRq2Z2ItVisX7NA13LR7DIuQEXweg7zxnPTaYLtp/500w/l4Ra49gT7SllcGmbX5U6INFfTk3lGZDg7tC2CIaK.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 460,
+          "fat_g": 8.8,
+          "sat_fat_g": 3.6,
+          "carbs_g": 59,
+          "fiber_g": 3.4,
+          "protein_g": 35,
+          "sodium_mg": 823
+        }
+      },
+      {
+        "id": 368545,
+        "name": "Corn Dog",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/L8RToxJGWjM5ax4mLW4wcnDtj7r3PIk1IlLcXjqK/500w/W65nmbFtvadSlkYsuvx4QM5M56WaW7roirs5Szcz.png",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 240,
+          "fat_g": 9.0,
+          "sat_fat_g": 2.5,
+          "carbs_g": 30,
+          "fiber_g": 2.0,
+          "protein_g": 9.0,
+          "sodium_mg": 470
+        }
+      },
+      {
+        "id": 368522,
+        "name": "Fresh Baked Combo Sub",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Don't skip all the toppings at the Fruit and Veggie Bar",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/UUg8pWr4cHi7ByBHivk61xpeud8wxoCQRKvIcTge/500w/UmYCsy1dDJkWL0Tbj8mhyqHXwoV0eMPjmzgbsrKf.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 360,
+          "fat_g": 19,
+          "sat_fat_g": 7.2,
+          "carbs_g": 34,
+          "fiber_g": 3.0,
+          "protein_g": 17,
+          "sodium_mg": 885
+        }
+      },
+      {
+        "id": 368532,
+        "name": "Mixed Vegetables",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/b5DD5zyANN9xa84qJPy9O65fa7GBuVWgS9Rnnq61/500w/GRBnyxQ1qhg8w2jwf1aUv8HdaylSkqdnB2FATyKE.jpg",
+        "serving_size": "1/2 cup",
+        "nutrition": {
+          "calories": 33,
+          "carbs_g": 6.7,
+          "fiber_g": 4.0,
+          "protein_g": 1.3,
+          "sodium_mg": 47
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Teriyaki Chicken over Rice, Cheese Pizza, Pepperoni Pizza…",
+    "slug": "spearfish-hs-lunch-2026-11-13",
+    "start_dt": "2026-11-13",
+    "description": "With: Steamed Broccoli Florets, Fruit and Veggie Bar, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 2030590,
+        "name": "Teriyaki Chicken over Rice",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/yDs27FqUAYNVMmkqn2KMfbShRwe2JEzsawQzKZMP/500w/jvOxsbqb1vGrPc9WmHNStJU2wGdGsragnj4pMwj9.jpg",
+        "serving_size": "1 #10 scoop",
+        "nutrition": {
+          "calories": 447,
+          "fat_g": 5.3,
+          "sat_fat_g": 1.1,
+          "carbs_g": 66,
+          "fiber_g": 2.6,
+          "protein_g": 35
+        }
+      },
+      {
+        "id": 368530,
+        "name": "Cheese Pizza",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/kramkcOuiPemZZRQeQSQkgLqhk6GTKRIL9AStLSw/500w/cVvU1WpMBbhMXuXkGmSx7FdwYgSaDoGvTZkeWwlp.png",
+        "serving_size": "1 slice",
+        "nutrition": {
+          "calories": 280,
+          "fat_g": 11,
+          "sat_fat_g": 5.0,
+          "carbs_g": 31,
+          "fiber_g": 4.0,
+          "protein_g": 16,
+          "sodium_mg": 430
+        }
+      },
+      {
+        "id": 368531,
+        "name": "Pepperoni Pizza",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/xxZMPmByFEf5dDWLfMOmc9zZNthC3mvU8TjDOpAN/500w/fM2gRBsshJKNON8nuKiQYMd6NdWqqGz7KVHi8SAG.jpg",
+        "serving_size": "1 slice",
+        "nutrition": {
+          "calories": 280,
+          "fat_g": 11,
+          "sat_fat_g": 3.5,
+          "carbs_g": 33,
+          "fiber_g": 4.0,
+          "protein_g": 15,
+          "sodium_mg": 540
+        }
+      },
+      {
+        "id": 370842,
+        "name": "Fresh Baked Turkey & Cheese Sub",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Don't skip all the toppings at the Fruit and Veggie Bar",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/IgIjnHuRLZMIqq2yvMdBaSeZ5rovQNDMxtzhVVp6/500w/xMXT9BHqepZe9y7EsTs5z4ZqbfDtfhAaKo7Au5dq.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 330,
+          "fat_g": 14,
+          "sat_fat_g": 5.5,
+          "carbs_g": 33,
+          "fiber_g": 3.0,
+          "protein_g": 22
+        }
+      },
+      {
+        "id": 368536,
+        "name": "Steamed Broccoli Florets",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/gW31g7w2bUZi8KzIAjxZCjmFCeekX5sUQt35WBeC/500w/iZIMjLatw9v1bZleUxe9Pjj2BkYn7VZF4ZvawM6l.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 22,
+          "carbs_g": 4.4,
+          "fiber_g": 3.3,
+          "protein_g": 2.2,
+          "sodium_mg": 22
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Appe-Thai-zing Chicken over Rice, Cheeseburger, Crispy Chicken Deli Wrap",
+    "slug": "spearfish-hs-lunch-2026-11-16",
+    "start_dt": "2026-11-16",
+    "description": "With: Honey Glazed Carrots, Fruit and Veggie Bar, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 2036148,
+        "name": "Appe-Thai-zing Chicken over Rice",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/brmq9o5aDlMnOE4lXeB5ST4Y9wyW8g7cHs5zFb6Z/500w/EsYT5QcF9YahhlxLPMth8fOoohiQCaHNZyH6J8kL.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 415,
+          "fat_g": 5.2,
+          "sat_fat_g": 1.1,
+          "carbs_g": 59,
+          "fiber_g": 3.7,
+          "protein_g": 33,
+          "sodium_mg": 406
+        }
+      },
+      {
+        "id": 368535,
+        "name": "Cheeseburger",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/XN8F5skbxDNvHi2nmSUPkUS6CLlV47Vc0jfUNR6g/500w/Zjm0vXZS6S9VkKzKejmqElHge0B2wOmneSziV5Jv.png",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 335,
+          "fat_g": 16,
+          "sat_fat_g": 6.5,
+          "carbs_g": 30,
+          "fiber_g": 3.0,
+          "protein_g": 18,
+          "sodium_mg": 565
+        }
+      },
+      {
+        "id": 127944,
+        "name": "Crispy Chicken Deli Wrap",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Don't skip all the toppings at the Fruit and Veggie Bar",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/m41DtIIG1TOelSuxRkt4bBkBpnSsCP9pWdSmISRW/500w/KboMrrQHQBU0SvAGwnTpr1EcaqVc8whPhCAI1GHC.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 366,
+          "fat_g": 15,
+          "sat_fat_g": 6.1,
+          "carbs_g": 37,
+          "fiber_g": 6.2,
+          "protein_g": 20,
+          "sodium_mg": 640
+        }
+      },
+      {
+        "id": 371367,
+        "name": "Honey Glazed Carrots",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/8PJ8TdUDTcU6tf3pu8jIZx7vt70LYpoaohjDv4UX/500w/QqfIYgk0CXJBxljwlJgDyyzDYKPEadnVkoulWpmr.jpg",
+        "serving_size": "1/2 cup",
+        "nutrition": {
+          "calories": 48,
+          "fat_g": 0.1,
+          "sat_fat_g": 0.0,
+          "carbs_g": 13,
+          "fiber_g": 1.8,
+          "protein_g": 0.4,
+          "sodium_mg": 48
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Super Nachos with Breadstick, Stuffed Cheese Quesadilla, Fresh Baked Ham & Cheese Sub",
+    "slug": "spearfish-hs-lunch-2026-11-17",
+    "start_dt": "2026-11-17",
+    "description": "With: Refried Beans, Fruit and Veggie Bar, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 128910,
+        "name": "Super Nachos with Breadstick",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/7fuJELAw3d315ED4kaWg1Gu9NHhNWj7pRy8mqABO/500w/3tHnGhub6zXKPeAhFURoa22KNpLizOfod5nj2WvW.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 470,
+          "fat_g": 25,
+          "sat_fat_g": 6.8,
+          "carbs_g": 45,
+          "fiber_g": 4.0,
+          "protein_g": 19,
+          "sodium_mg": 932
+        }
+      },
+      {
+        "id": 128475,
+        "name": "Stuffed Cheese Quesadilla",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/qpWJ9OzTxNrHwci6yJ0acAhdMlcs0kYmabHogqBK/500w/9mIFAh7cEAr9TyQXWGKfhyKKVjzmez2DFkDezYwC.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 363,
+          "fat_g": 22,
+          "sat_fat_g": 14,
+          "carbs_g": 23,
+          "fiber_g": 3.0,
+          "protein_g": 16,
+          "sodium_mg": 605
+        }
+      },
+      {
+        "id": 127955,
+        "name": "Fresh Baked Ham & Cheese Sub",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Don't skip all the toppings at the Fruit and Veggie Bar",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/8fNY8jbXLCS2qDlHWSpmGKtLJ5jwiMLnxLVF2vdm/500w/mb05KZabwJKzH6778O9NH9ht0gzoQZPlCSVD8kfY.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 341,
+          "fat_g": 16,
+          "sat_fat_g": 6.5,
+          "carbs_g": 32,
+          "fiber_g": 3.0,
+          "protein_g": 21
+        }
+      },
+      {
+        "id": 127957,
+        "name": "Refried Beans",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/ZnkD97OvPbLw136ecZawgaNIyELZemGF3suy1L0L/500w/DoCrlRLBLliWjgyYxy7bLy3oySUNKybdicFwYofq.jpg",
+        "serving_size": "1/2 cup",
+        "nutrition": {
+          "calories": 178,
+          "fat_g": 1.6,
+          "sat_fat_g": 0.5,
+          "carbs_g": 29,
+          "fiber_g": 12,
+          "protein_g": 12,
+          "sodium_mg": 655
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "🦃The Great Thanksgiving Feast, Roasted Turkey with Dinner Roll, Chicken Nugs with Garlic Breadstick…",
+    "slug": "spearfish-hs-lunch-2026-11-18",
+    "start_dt": "2026-11-18",
+    "description": "With: Mashed Potatoes with Chicken Gravy, Classic Green Bean Casserole, Fruit and Veggie Bar, Frosted Pumpkin Bar, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 2136884,
+        "name": "🦃The Great Thanksgiving Feast",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Enjoy our traditional Holiday Meal",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/cMEVcdpxYXw5gs6XASZ3vNyLl0jJCrKUBI5mBk7e/500w/x9PlRLn1cT96laa7Dc8vKcTfuLFEH0g9moXwLcy3.jpg",
+        "serving_size": "1 1",
+        "nutrition": {}
+      },
+      {
+        "id": 215770,
+        "name": "Roasted Turkey with Dinner Roll",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/4qwUqQbC86afofZ8G1WtVHvcAw4MOyaV1zJJImJX/500w/uxMavqG68Lbou0RtqYI6PyQqxDCuoYkXZDOfqnBc.jpg",
+        "serving_size": "1 slice",
+        "nutrition": {
+          "calories": 279,
+          "fat_g": 9.3,
+          "sat_fat_g": 1.2,
+          "carbs_g": 30,
+          "fiber_g": 3.0,
+          "protein_g": 21,
+          "sodium_mg": 713
+        }
+      },
+      {
+        "id": 320678,
+        "name": "Chicken Nugs with Garlic Breadstick",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/RDosd3q1Eoa6eo7S1ycltd2QRg5P9fNv0XkN8HX4/500w/mZIt4e2WllQaQbAHTQ50Vt0sTU4CFQFhTckFupAo.jpg",
+        "serving_size": "6 nuggets",
+        "nutrition": {
+          "calories": 308,
+          "fat_g": 12,
+          "sat_fat_g": 2.4,
+          "carbs_g": 30,
+          "fiber_g": 4.4,
+          "protein_g": 21,
+          "sodium_mg": 563
+        }
+      },
+      {
+        "id": 365881,
+        "name": "Hot Dog",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/QwKXn62jA97aNVQbnCc3maHWzTGNd00MmGlNuOHL/500w/BRjaW1CBkkoe9n142O1iG4lmDOE5AkYhtmr9YCoa.png",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 309,
+          "fat_g": 19,
+          "sat_fat_g": 7.0,
+          "carbs_g": 30,
+          "fiber_g": 3.0,
+          "protein_g": 12,
+          "sodium_mg": 321
+        }
+      },
+      {
+        "id": 128879,
+        "name": "Mashed Potatoes with Chicken Gravy",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HvfMP0IVr0UE5vCSfdRM0OTFJX9Guowju3rVJzIJ/500w/96cOoilWGFekhICNxBgqzrgIuPc3nDofu8glZgvd.jpg",
+        "serving_size": "1/2 cup",
+        "nutrition": {
+          "calories": 97,
+          "fat_g": 0.7,
+          "sat_fat_g": 0.2,
+          "carbs_g": 20,
+          "fiber_g": 1.2,
+          "protein_g": 2.9,
+          "sodium_mg": 720
+        }
+      },
+      {
+        "id": 370590,
+        "name": "Classic Green Bean Casserole",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/NhZ75bLTRVctuBmYY84Z0fgRUpEIg2gHwyFgwIub/500w/7EcFJN5J2tJTQ85FUk7SNhGkjnUMW7CH1b7S9tAy.jpg",
+        "serving_size": "1/3 cup",
+        "nutrition": {
+          "calories": 68,
+          "fat_g": 1.2,
+          "sat_fat_g": 1.6,
+          "carbs_g": 7.2,
+          "fiber_g": 1.5,
+          "protein_g": 1.3,
+          "sodium_mg": 298
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 208671,
+        "name": "Frosted Pumpkin Bar",
+        "category": "Desserts",
+        "is_entree": false,
+        "description": "Moist spiced pumpkin bar topped with our original cream cheese frosting.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/crC7ZV3Tnzd6xQfmn3VBrLFyuUuWnJoOCa4vvROQ/500w/R2pBVULEw74DV7kDH3x2CK9Ns6w9C2BmxM5F2OYq.jpg",
+        "serving_size": "1 piece",
+        "nutrition": {
+          "calories": 173,
+          "fat_g": 9.4,
+          "sat_fat_g": 2.3,
+          "carbs_g": 21,
+          "fiber_g": 0.9,
+          "protein_g": 1.7,
+          "sodium_mg": 172
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Made Fresh Chicken Ranch Pasta with Breadstick, Hot Pepperoni Sub, Fresh Baked Combo Sub",
+    "slug": "spearfish-hs-lunch-2026-11-19",
+    "start_dt": "2026-11-19",
+    "description": "With: Steamed Broccoli Florets, Fruit and Veggie Bar, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 1197424,
+        "name": "Made Fresh Chicken Ranch Pasta with Breadstick",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Grilled chicken tossed in a cheesy ranch sauce and pasta then baked to perfection.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/Q7KVF5P2mHCZ7IhakNc4jN7DIDOqpAuLeRfVbNdd/500w/hICFwUDluWq7A1ShnBeHSPfD80OCosdHjrivJ06Z.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 514,
+          "fat_g": 16,
+          "sat_fat_g": 7.3,
+          "carbs_g": 58,
+          "fiber_g": 3.5,
+          "protein_g": 32
+        }
+      },
+      {
+        "id": 304585,
+        "name": "Hot Pepperoni Sub",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/6z3gUH0jVqpNR4wxLP8H1mPKMLK2o6gpVI21blLs/500w/mARN2n3hBlIyDl3KjQa8AvMnpwLcLIKfZaVCJlWg.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 376,
+          "fat_g": 17,
+          "sat_fat_g": 7.8,
+          "carbs_g": 34,
+          "fiber_g": 3.0,
+          "protein_g": 21,
+          "sodium_mg": 886
+        }
+      },
+      {
+        "id": 368522,
+        "name": "Fresh Baked Combo Sub",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Don't skip all the toppings at the Fruit and Veggie Bar",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/UUg8pWr4cHi7ByBHivk61xpeud8wxoCQRKvIcTge/500w/UmYCsy1dDJkWL0Tbj8mhyqHXwoV0eMPjmzgbsrKf.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 360,
+          "fat_g": 19,
+          "sat_fat_g": 7.2,
+          "carbs_g": 34,
+          "fiber_g": 3.0,
+          "protein_g": 17,
+          "sodium_mg": 885
+        }
+      },
+      {
+        "id": 368536,
+        "name": "Steamed Broccoli Florets",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/gW31g7w2bUZi8KzIAjxZCjmFCeekX5sUQt35WBeC/500w/iZIMjLatw9v1bZleUxe9Pjj2BkYn7VZF4ZvawM6l.jpg",
+        "serving_size": "0.5 cup",
+        "nutrition": {
+          "calories": 22,
+          "carbs_g": 4.4,
+          "fiber_g": 3.3,
+          "protein_g": 2.2,
+          "sodium_mg": 22
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Honey Glazed Chicken on a Biscuit, Domino's Pizza, Fresh Baked Turkey & Cheese Sub",
+    "slug": "spearfish-hs-lunch-2026-11-20",
+    "start_dt": "2026-11-20",
+    "description": "With: Mixed Vegetables, Fruit and Veggie Bar, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 295709,
+        "name": "Honey Glazed Chicken on a Biscuit",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "A crispy chicken sandwich baked in our original honey garlic glaze on a fresh baked biscuit.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/93UfDavsUSQ0Lr6BTZxqr0jHffBfDARVHKFsZYzu/500w/ThvPY0E2tI72igp1JOEgp9zUFSzjNvts3Me1qcr7.png",
+        "serving_size": "1 sandwich",
+        "nutrition": {
+          "calories": 454,
+          "fat_g": 19,
+          "sat_fat_g": 6.1,
+          "carbs_g": 54,
+          "fiber_g": 4.4,
+          "protein_g": 20,
+          "sodium_mg": 712
+        }
+      },
+      {
+        "id": 344048,
+        "name": "Domino's Pizza",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/GHveMEC7l4yljM4j2XCNvTp0ei00SvvQdN25uKpp/500w/SG2vEiaeBD2TPYUegVDhxsWih0irqkuy5yWNw0ZF.jpg",
+        "serving_size": "1 slice",
+        "nutrition": {
+          "calories": 265,
+          "fat_g": 8.0,
+          "sat_fat_g": 3.8,
+          "carbs_g": 29,
+          "fiber_g": 3.0,
+          "protein_g": 20,
+          "sodium_mg": 555
+        }
+      },
+      {
+        "id": 370842,
+        "name": "Fresh Baked Turkey & Cheese Sub",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Don't skip all the toppings at the Fruit and Veggie Bar",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/IgIjnHuRLZMIqq2yvMdBaSeZ5rovQNDMxtzhVVp6/500w/xMXT9BHqepZe9y7EsTs5z4ZqbfDtfhAaKo7Au5dq.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 330,
+          "fat_g": 14,
+          "sat_fat_g": 5.5,
+          "carbs_g": 33,
+          "fiber_g": 3.0,
+          "protein_g": 22
+        }
+      },
+      {
+        "id": 368532,
+        "name": "Mixed Vegetables",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/b5DD5zyANN9xa84qJPy9O65fa7GBuVWgS9Rnnq61/500w/GRBnyxQ1qhg8w2jwf1aUv8HdaylSkqdnB2FATyKE.jpg",
+        "serving_size": "1/2 cup",
+        "nutrition": {
+          "calories": 33,
+          "carbs_g": 6.7,
+          "fiber_g": 4.0,
+          "protein_g": 1.3,
+          "sodium_mg": 47
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Made Fresh Cheeseburger Macaroni Skillet  with Garlic Breadstick, Popcorn Chicken with Garlic Breadstick, Crispy Chicken Deli Wrap",
+    "slug": "spearfish-hs-lunch-2026-11-23",
+    "start_dt": "2026-11-23",
+    "description": "With: BBQ Baked Beans, Fruit and Veggie Bar, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 128012,
+        "name": "Made Fresh Cheeseburger Macaroni Skillet  with Garlic Breadstick",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/sSHkvIgqm3iZGih7JOn6O2IlVfW86m83N7idDczT/500w/Y2yBJnBmF1sgGBg6RGFLmBsYfbysiqAoy9Qtm8IY.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 463,
+          "fat_g": 20,
+          "sat_fat_g": 9.2,
+          "carbs_g": 47,
+          "fiber_g": 3.4,
+          "protein_g": 22,
+          "sodium_mg": 653
+        }
+      },
+      {
+        "id": 320688,
+        "name": "Popcorn Chicken with Garlic Breadstick",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/f1cEIkKSalBTXumnfzUr2csVo2oaVfklc0FUtpMv/500w/QCv2VWUfwqQIIvmcd3kb1Ffg2bXP7ot9hLAIYpi4.jpg",
+        "serving_size": "10 pieces",
+        "nutrition": {
+          "calories": 350,
+          "fat_g": 14,
+          "sat_fat_g": 3.0,
+          "carbs_g": 33,
+          "fiber_g": 5.0,
+          "protein_g": 22,
+          "sodium_mg": 575
+        }
+      },
+      {
+        "id": 127944,
+        "name": "Crispy Chicken Deli Wrap",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Don't skip all the toppings at the Fruit and Veggie Bar",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/m41DtIIG1TOelSuxRkt4bBkBpnSsCP9pWdSmISRW/500w/KboMrrQHQBU0SvAGwnTpr1EcaqVc8whPhCAI1GHC.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 366,
+          "fat_g": 15,
+          "sat_fat_g": 6.1,
+          "carbs_g": 37,
+          "fiber_g": 6.2,
+          "protein_g": 20,
+          "sodium_mg": 640
+        }
+      },
+      {
+        "id": 368550,
+        "name": "BBQ Baked Beans",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/jt4QWIewCl5FHI6EqnMNyo8YEiffhQbPgB2OnQK2/500w/2HQ3zdkGLuMYBkl7JtF2D5kD6zVDasje0Rnlbh57.jpg",
+        "serving_size": "1/2 Cup",
+        "nutrition": {
+          "calories": 163,
+          "fat_g": 1.0,
+          "carbs_g": 30,
+          "fiber_g": 5.0,
+          "protein_g": 8.0,
+          "sodium_mg": 453
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Chicken Enchilada Empanada, Corn Dog, Fresh Baked Ham & Cheese Sub",
+    "slug": "spearfish-hs-lunch-2026-11-24",
+    "start_dt": "2026-11-24",
+    "description": "With: Steamed Carrots, Fruit and Veggie Bar, Rice Crispy Treat, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 2051953,
+        "name": "Chicken Enchilada Empanada",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "<p><b><b>Chicken Enchilada Empanada</b></b></p><p><p>CRUST: Water, Whole Wheat Flour, Wheat flour enriched (niacin, reduced iron, thiamine mononitrate,&nbsp;riboflavin, folic acid), Malted Barley Flour, Sugar, Soybean oil (citric acid), Yeast (sorbitan monostearate, ascorbic acid), Salt&nbsp;(yellow prussiate of soda). FILLING: Enchilada Sauce (water, corn syrup solids, tomato powder, modified corn starch, salt,&nbsp;sugar, spices, dextrose, dehydrated onion, dehydrated garlic, xanthan gum, and contains less than 2% silicon dioxide (anti&nbsp;caking agent), Mozzarella Cheese (pasteurized part-skim milk, cheese culture, salt, enzymes) May contain: Pasteurized Milk&nbsp;and Skim Milk, Modified Corn Starch, Nonfat Milk, Modified Food Starch, Powdered Cellulose, Potassium Chloride, Natural&nbsp;Flavors, Ascorbic Acid (to protect flavor), Cooked Chicken Meat, (chicken breast meat with rib meat attached, water,&nbsp;isolated soy protein, salt, sodium phosphate).</p></p><br>",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/WIP8FEAFb0i5t3wyzcpjl8uMV4iv3DRvHBxxGZTJ/500w/phmWTmeSlMEIVSm6RcFsCV5ZxB0k1byZvThcJWgp.png",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 300,
+          "fat_g": 10,
+          "sat_fat_g": 4.0,
+          "carbs_g": 36,
+          "fiber_g": 4.0,
+          "protein_g": 17,
+          "sodium_mg": 570
+        }
+      },
+      {
+        "id": 368545,
+        "name": "Corn Dog",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/L8RToxJGWjM5ax4mLW4wcnDtj7r3PIk1IlLcXjqK/500w/W65nmbFtvadSlkYsuvx4QM5M56WaW7roirs5Szcz.png",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 240,
+          "fat_g": 9.0,
+          "sat_fat_g": 2.5,
+          "carbs_g": 30,
+          "fiber_g": 2.0,
+          "protein_g": 9.0,
+          "sodium_mg": 470
+        }
+      },
+      {
+        "id": 127955,
+        "name": "Fresh Baked Ham & Cheese Sub",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Don't skip all the toppings at the Fruit and Veggie Bar",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/8fNY8jbXLCS2qDlHWSpmGKtLJ5jwiMLnxLVF2vdm/500w/mb05KZabwJKzH6778O9NH9ht0gzoQZPlCSVD8kfY.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 341,
+          "fat_g": 16,
+          "sat_fat_g": 6.5,
+          "carbs_g": 32,
+          "fiber_g": 3.0,
+          "protein_g": 21
+        }
+      },
+      {
+        "id": 368523,
+        "name": "Steamed Carrots",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/7Adgsange98kEdWNwd0CfBLbd2x9Km0WYZXOdZKL/500w/C6jFxi9lzivXdDbpE6QSoa4lDTxVys9kL0uLqRt1.jpg",
+        "serving_size": "1/2 cup",
+        "nutrition": {
+          "calories": 37,
+          "carbs_g": 7.5,
+          "fiber_g": 2.1,
+          "sodium_mg": 64
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 321648,
+        "name": "Rice Crispy Treat",
+        "category": "Desserts",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/WzDagOdicGyDOcDGvt7nolC9A9ONirNpFk1C2Avk/500w/hHDSGguz7UMwwLT0ZnGhHP2f6N53I0LkiGsgkFq5.jpg",
+        "serving_size": "1 piece",
+        "nutrition": {
+          "calories": 131,
+          "fat_g": 3.3,
+          "sat_fat_g": 1.1,
+          "carbs_g": 25,
+          "protein_g": 1.5,
+          "sodium_mg": 113
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Happy Holiday",
+    "slug": "spearfish-hs-lunch-2026-11-25",
+    "start_dt": "2026-11-25",
+    "description": "With: Happy Holiday",
+    "menu_items": [
+      {
+        "id": 1803595,
+        "name": "Happy Holiday",
+        "category": "Misc.",
+        "is_entree": false,
+        "description": "Enjoy our traditional Holiday Meal",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/0WIZXJg9ZH44xgNOtQhY0YMtrmWsbxs3O6f74WF4/500w/v65sbeloIw2OewkBU40XRiwD6iaNZNTETKegO74h.png",
+        "serving_size": "1 1",
+        "nutrition": {}
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Happy Holiday",
+    "slug": "spearfish-hs-lunch-2026-11-26",
+    "start_dt": "2026-11-26",
+    "description": "With: Happy Holiday",
+    "menu_items": [
+      {
+        "id": 1803595,
+        "name": "Happy Holiday",
+        "category": "Misc.",
+        "is_entree": false,
+        "description": "Enjoy our traditional Holiday Meal",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/0WIZXJg9ZH44xgNOtQhY0YMtrmWsbxs3O6f74WF4/500w/v65sbeloIw2OewkBU40XRiwD6iaNZNTETKegO74h.png",
+        "serving_size": "1 1",
+        "nutrition": {}
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Happy Holiday",
+    "slug": "spearfish-hs-lunch-2026-11-27",
+    "start_dt": "2026-11-27",
+    "description": "With: Happy Holiday",
+    "menu_items": [
+      {
+        "id": 1803595,
+        "name": "Happy Holiday",
+        "category": "Misc.",
+        "is_entree": false,
+        "description": "Enjoy our traditional Holiday Meal",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/0WIZXJg9ZH44xgNOtQhY0YMtrmWsbxs3O6f74WF4/500w/v65sbeloIw2OewkBU40XRiwD6iaNZNTETKegO74h.png",
+        "serving_size": "1 1",
+        "nutrition": {}
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
+  },
+  {
+    "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137",
+    "title": "Ham & Pasta Hotdish with Breadstick, Peppy Tortilla, Crispy Chicken Deli Wrap",
+    "slug": "spearfish-hs-lunch-2026-11-30",
+    "start_dt": "2026-11-30",
+    "description": "With: Golden Corn, Fruit and Veggie Bar, 1% Unflavored Milk, Chocolate Skim Milk",
+    "menu_items": [
+      {
+        "id": 2030032,
+        "name": "Ham & Pasta Hotdish with Breadstick",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Baked pasta dish with diced ham tossed in a creamy sauce and topped with gooey cheese",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/lyntmooo20USbGG3N09CPSw8vDUO30MR7YmYDDNi/500w/L9Ickb7tkjRnZbRRryHh3Jq7ajWYpHhMGbYr1J2F.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 397,
+          "fat_g": 12,
+          "sat_fat_g": 6.4,
+          "carbs_g": 49,
+          "fiber_g": 3.3,
+          "protein_g": 22
+        }
+      },
+      {
+        "id": 128739,
+        "name": "Peppy Tortilla",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "A Lunchtime Solution's Employee Inspired Recipe loads this warm tortilla with pepperoni, cheddar, mozzarella,and salsa.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/fDPQBlbToHybi6Yh518oXwcLBhlClwCfCMs6ng6T/500w/k6AWmUIV6AgYMUaY8mTUJoyrlhFa8lowKS5kHrcN.png",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 398,
+          "fat_g": 23,
+          "sat_fat_g": 13,
+          "carbs_g": 26,
+          "fiber_g": 3.5,
+          "protein_g": 19,
+          "sodium_mg": 836
+        }
+      },
+      {
+        "id": 127944,
+        "name": "Crispy Chicken Deli Wrap",
+        "category": "Lunch Entree",
+        "is_entree": true,
+        "description": "Don't skip all the toppings at the Fruit and Veggie Bar",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/m41DtIIG1TOelSuxRkt4bBkBpnSsCP9pWdSmISRW/500w/KboMrrQHQBU0SvAGwnTpr1EcaqVc8whPhCAI1GHC.jpg",
+        "serving_size": "1 each",
+        "nutrition": {
+          "calories": 366,
+          "fat_g": 15,
+          "sat_fat_g": 6.1,
+          "carbs_g": 37,
+          "fiber_g": 6.2,
+          "protein_g": 20,
+          "sodium_mg": 640
+        }
+      },
+      {
+        "id": 368534,
+        "name": "Golden Corn",
+        "category": "Vegetables",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/BHHKPIG5za0UhpJEKKpsrDSDYVzq8tVBeDyn40Pd/500w/B2Q6aCDet011h4Opg7Z1y10IZIc6s3O8ZuGmntaV.png",
+        "serving_size": "1/2 cup",
+        "nutrition": {
+          "calories": 71,
+          "fat_g": 0.4,
+          "carbs_g": 17,
+          "fiber_g": 1.8,
+          "protein_g": 2.7
+        }
+      },
+      {
+        "id": 128010,
+        "name": "Fruit and Veggie Bar",
+        "category": "Fruit",
+        "is_entree": false,
+        "description": "Unlimited Fruit and Veggie Bar loaded with 3 fruit options along with a daily assortment of fresh vegetables.",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/bs35ztsvpQ5gDGiJAPMcrM0g2Ddbkccc3Qu9vyQt/500w/tQ82aY4pMtIBtfhkiu4xxF3nEdzKk6JqPhEiH102.jpg",
+        "serving_size": "1 serving",
+        "nutrition": {
+          "calories": 140,
+          "fat_g": 2.0,
+          "sat_fat_g": 0.5,
+          "carbs_g": 31,
+          "fiber_g": 3.0,
+          "protein_g": 1.1,
+          "sodium_mg": 293
+        }
+      },
+      {
+        "id": 368516,
+        "name": "1% Unflavored Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "fat_g": 2.5,
+          "sat_fat_g": 1.5,
+          "carbs_g": 13,
+          "protein_g": 8.0,
+          "sodium_mg": 130
+        }
+      },
+      {
+        "id": 368517,
+        "name": "Chocolate Skim Milk",
+        "category": "Milk",
+        "is_entree": false,
+        "description": "",
+        "ingredients": "",
+        "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+        "serving_size": "1 cup",
+        "nutrition": {
+          "calories": 110,
+          "carbs_g": 19,
+          "protein_g": 8.0,
+          "sodium_mg": 210
+        }
+      }
+    ],
+    "record_type": "school_menu",
+    "source_label": "High School Lunch"
   }
 ]

@@ -222,6 +222,19 @@
   },
   {
     "url": "https://www.sawyerbrewingco.com/menu",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/35661dbc-dd4d-4189-a961-04f92ad4481d/showwebsite.jpg",
+    "title": "showwebsite.jpg",
+    "slug": "showwebsite-jpg",
+    "category": "Hop Heads",
+    "description": "",
+    "abv": "",
+    "notes": "",
+    "prices": [],
+    "record_type": "beer",
+    "source_label": "Sawyer Brewing Co."
+  },
+  {
+    "url": "https://www.sawyerbrewingco.com/menu",
     "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/0d54566a-8384-4f0f-810c-f1b670f2fa96/pinneapplepeacheswebsitedark.jpg",
     "title": "pinneapplepeacheswebsitedark.jpg",
     "slug": "pinneapplepeacheswebsitedark-jpg",
@@ -248,14 +261,23 @@
   },
   {
     "url": "https://www.sawyerbrewingco.com/menu",
-    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/7adb41f3-c788-418f-b300-3e8cf7c27a34/pints%26ponytails.jpg",
-    "title": "pints%26ponytails.jpg",
-    "slug": "pints-26ponytails-jpg",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/375bf99f-ce09-4020-8c90-886312cedbfc/100ll2026.jpg",
+    "title": "100LL • 2026 Barrel Aged Stout",
+    "slug": "100ll-2026-barrel-aged-stout",
     "category": "Dark Side",
-    "description": "",
+    "description": "The 2026 version of 100LL is an imperial stout aged 36 months in a single barrel of Rabbit Hole Rye.",
     "abv": "",
-    "notes": "",
-    "prices": [],
+    "notes": "Limited Release bottles $12 at the taproom. No Crowler or Growler fills.",
+    "prices": [
+      {
+        "price": 6.0,
+        "ounces": 4
+      },
+      {
+        "price": 8.0,
+        "ounces": 6
+      }
+    ],
     "record_type": "beer",
     "source_label": "Sawyer Brewing Co."
   }

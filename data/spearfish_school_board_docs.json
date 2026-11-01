@@ -1258,5 +1258,14 @@
     "asset_type": "agenda",
     "record_type": "document",
     "source_label": "Spearfish School Board"
+  },
+  {
+    "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/5977/Ssd/0d1feaf3-76ef-4619-826a-e3f1f7c98b31/October-27%2C-2026-Special-School-Board-Meeting-Minutes.pdf?disposition=inline",
+    "title": "October 27, 2026 Special School Board Meeting Minutes",
+    "slug": "spearfish-board-minutes-october-27-2026-special-school-board-meeting-minutes",
+    "published": "2026-10-27",
+    "asset_type": "minutes",
+    "record_type": "document",
+    "source_label": "Spearfish School Board"
   }
 ]
