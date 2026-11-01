@@ -10,11 +10,12 @@ on:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   scrape-and-build:
-    runs-on: ubuntu-latest
+    # Pinned: Playwright doesn't support Chromium on ubuntu-26.04 (ubuntu-latest)
+    runs-on: ubuntu-24.04
     environment: github-pages
 
     permissions:
@@ -46,9 +47,11 @@ jobs:
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
+        continue-on-error: true
         run: uv run python -m scrapers
 
       - name: Fetch eBird sightings
+        continue-on-error: true
         env:
           EBIRD_API_KEY: ${{ secrets.EBIRD_API_KEY }}
         run: |
@@ -58,6 +61,7 @@ jobs:
           "
 
       - name: Fetch planning and zoning records
+        continue-on-error: true
         run: |
           uv run python -c "
           from scrapers.sources.planning_zoning import fetch_planning_zoning
@@ -65,6 +69,7 @@ jobs:
           "
 
       - name: Fetch DANR public notices
+        continue-on-error: true
         run: |
           uv run python -c "
           from scrapers.sources.danr_public_notices import fetch_danr_notices
@@ -72,6 +77,7 @@ jobs:
           "
 
       - name: Fetch DANR contested cases
+        continue-on-error: true
         run: |
           uv run python -c "
           from scrapers.sources.danr_contested_cases import fetch_danr_contested_cases
@@ -79,6 +85,7 @@ jobs:
           "
 
       - name: Fetch BHNF public projects
+        continue-on-error: true
         run: |
           uv run python -c "
           from scrapers.sources.bhnf_projects import fetch_bhnf_projects
@@ -86,6 +93,7 @@ jobs:
           "
 
       - name: Fetch library circulation data
+        continue-on-error: true
         run: |
           uv run python -c "
           from scrapers.sources.library_circulation import fetch_circulation
@@ -93,6 +101,7 @@ jobs:
           "
 
       - name: Fetch creek gauge data
+        continue-on-error: true
         run: |
           uv run python -c "
           from scrapers.sources.creek_gauge import CreekGaugeScraper
@@ -100,6 +109,7 @@ jobs:
           "
 
       - name: Fetch wildlife roadkill pickups
+        continue-on-error: true
         run: |
           uv run python -c "
           from scrapers.sources.roadkill import fetch_roadkill
@@ -107,6 +117,7 @@ jobs:
           "
 
       - name: Fetch building permit PDFs
+        continue-on-error: true
         run: |
           uv run python -c "
           from scrapers.sources.building_permits import fetch_building_permits
@@ -114,6 +125,7 @@ jobs:
           "
 
       - name: Fetch DANR spill reports
+        continue-on-error: true
         run: |
           uv run python -c "
           from scrapers.sources.danr_spills import fetch_danr_spills
@@ -125,7 +137,11 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
           git add data/*.json
-          git diff --staged --quiet || git commit -m "chore: update scraped data [skip ci]" && git push
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update scraped data [skip ci]"
+            git pull --rebase
+            git push
+          fi
 
       - name: Build site
         run: uv run python build.py

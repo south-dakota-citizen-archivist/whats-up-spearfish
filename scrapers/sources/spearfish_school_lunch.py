@@ -199,29 +199,29 @@ class SchoolMenuScraper(BaseScraper):
 class SpearfishHSLunch(SchoolMenuScraper):
     name = "High School Lunch"
     slug = "spearfish_hs_lunch"
-    menu_id = 100124
-    source_url = "https://menus.healthepro.com/organizations/524/sites/4520/menus/100124"
+    menu_id = 124137
+    source_url = "https://menus.healthepro.com/organizations/524/sites/4520/menus/124137"
 
 
 class SpearfishMSLunch(SchoolMenuScraper):
     name = "Middle School Lunch"
     slug = "spearfish_ms_lunch"
-    menu_id = 100125
-    source_url = "https://menus.healthepro.com/organizations/524/sites/4521/menus/100125"
+    menu_id = 124136
+    source_url = "https://menus.healthepro.com/organizations/524/sites/4521/menus/124136"
 
 
 class SpearfishElemK2Lunch(SchoolMenuScraper):
     name = "Elementary K-2 Lunch"
     slug = "spearfish_elem_k2_lunch"
-    menu_id = 119106
-    source_url = "https://menus.healthepro.com/organizations/524/sites/4523/menus/119106"
+    menu_id = 124132
+    source_url = "https://menus.healthepro.com/organizations/524/sites/4523/menus/124132"
 
 
 class SpearfishElem35Lunch(SchoolMenuScraper):
     name = "Elementary 3-5 Lunch"
     slug = "spearfish_elem_35_lunch"
-    menu_id = 100127
-    source_url = "https://menus.healthepro.com/organizations/524/sites/4523/menus/100127"
+    menu_id = 124131
+    source_url = "https://menus.healthepro.com/organizations/524/sites/4523/menus/124131"
 
 
 # ── Breakfast menus ────────────────────────────────────────────────────────────
@@ -230,12 +230,12 @@ class SpearfishElem35Lunch(SchoolMenuScraper):
 class SpearfishElemBreakfast(SchoolMenuScraper):
     name = "Elementary Breakfast"
     slug = "spearfish_elem_breakfast"
-    menu_id = 100128
-    source_url = "https://menus.healthepro.com/organizations/524/sites/4519/menus/100128"
+    menu_id = 124134
+    source_url = "https://menus.healthepro.com/organizations/524/sites/4519/menus/124134"
 
 
 class SpearfishMSHSBreakfast(SchoolMenuScraper):
     name = "MS/HS Breakfast"
     slug = "spearfish_mshs_breakfast"
-    menu_id = 100126
-    source_url = "https://menus.healthepro.com/organizations/524/sites/4520/menus/100126"
+    menu_id = 124135
+    source_url = "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135"
