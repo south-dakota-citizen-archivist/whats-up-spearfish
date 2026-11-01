@@ -1,0 +1,66 @@
+{
+ "slug": "bhnf",
+ "name": "Black Hills National Forest",
+ "kind": "press_release",
+ "url": "https://www.fs.usda.gov/r02/blackhills/newsroom/releases",
+ "fetched_at": "2026-11-01T15:30:31-07:00",
+ "count": 4,
+ "records": [
+  {
+   "url": "https://www.fs.usda.gov/r02/blackhills/newsroom/releases/safety-alert-closure-pactola-north-boat-ramp",
+   "title": "Safety Alert: Closure for Pactola North Boat Ramp",
+   "slug": "bhnf-release-safety-alert-closure-for-pactola-north-boat-ramp",
+   "published": "2026-10-02",
+   "description": "(Rapid City, SD, October 2, 2026) — The Black Hills National Forest has issued a temporary closure order for the Pactola North Boat Ramp to…",
+   "record_type": "press_release",
+   "source_label": "Black Hills National Forest",
+   "kind": "press_release",
+   "source": "bhnf",
+   "id": "a0a4a41d7f04",
+   "date": "2026-10-02",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.fs.usda.gov/r02/blackhills/newsroom/releases/prescribed-fire-notification",
+   "title": "Prescribed fire notification",
+   "slug": "bhnf-release-prescribed-fire-notification",
+   "published": "2026-10-05",
+   "description": "(Custer, SD, October 5, 2026) — The Hell Canyon Ranger District is planning the Schenk prescribed fire on Thursday, Oct. 8, pending all required…",
+   "record_type": "press_release",
+   "source_label": "Black Hills National Forest",
+   "kind": "press_release",
+   "source": "bhnf",
+   "id": "42dddeca3aa1",
+   "date": "2026-10-05",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.fs.usda.gov/r02/blackhills/newsroom/releases/black-hills-national-forest-seeking-applicants-resource-advisory",
+   "title": "Black Hills National Forest Seeking Applicants for Resource Advisory Committee",
+   "slug": "bhnf-release-black-hills-national-forest-seeking-applicants-for-resource",
+   "published": "2026-10-05",
+   "description": "The Black Hills National Forest is seeking citizens, locally elected officials and special-interest group representatives as nominees for the Black…",
+   "record_type": "press_release",
+   "source_label": "Black Hills National Forest",
+   "kind": "press_release",
+   "source": "bhnf",
+   "id": "0a3387301e97",
+   "date": "2026-10-05",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.fs.usda.gov/r02/blackhills/newsroom/releases/benjamin-goodin-announced-acting-forest-supervisor-black-hills",
+   "title": "Benjamin Goodin Announced as Acting Forest Supervisor of the Black Hills National Forest",
+   "slug": "bhnf-release-benjamin-goodin-announced-as-acting-forest-supervisor-of-the-black",
+   "published": "2026-10-06",
+   "description": "Ben Goodin comes from the Fremont-Winema National Forest and will serve as Acting Forest Supervisor for 120 days.",
+   "record_type": "press_release",
+   "source_label": "Black Hills National Forest",
+   "kind": "press_release",
+   "source": "bhnf",
+   "id": "78cce3c1ee54",
+   "date": "2026-10-06",
+   "_first_seen": "2026-11-01"
+  }
+ ]
+}

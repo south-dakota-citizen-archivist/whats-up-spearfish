@@ -1,0 +1,28 @@
+{
+ "slug": "public_bids",
+ "name": "Public Bids",
+ "kind": "bid",
+ "url": "https://www.spearfish.gov/Bids.aspx",
+ "fetched_at": "2026-11-01T15:30:41-07:00",
+ "count": 1,
+ "records": [
+  {
+   "url": "https://www.spearfish.gov/bids.aspx?bidID=90",
+   "title": "Grace Balloch Memorial Library Furniture",
+   "slug": "city-of-spearfish-2026-40",
+   "bid_no": "2026-40",
+   "status": "Open",
+   "closes": "11/4/2026 1:30 PM",
+   "closes_iso": "2026-11-04T13:30:00",
+   "description": "",
+   "record_type": "bid",
+   "source_label": "City of Spearfish",
+   "kind": "bid",
+   "source": "public_bids",
+   "id": "efaa524f39f3",
+   "published": "2026-11-04T06:30:00-07:00",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-01"
+  }
+ ]
+}

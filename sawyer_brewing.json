@@ -1,0 +1,348 @@
+{
+ "slug": "sawyer_brewing",
+ "name": "Sawyer Brewing Co.",
+ "kind": "beer",
+ "url": "https://www.sawyerbrewingco.com/menu",
+ "fetched_at": "2026-11-01T15:30:42-07:00",
+ "count": 14,
+ "records": [
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/0303c668-371a-48cb-9cbe-f715b126c3f1/nzpilsdarkwebsite.jpg",
+   "title": "nzpilsdarkwebsite.jpg",
+   "slug": "nzpilsdarkwebsite-jpg",
+   "category": "Light & Easy",
+   "description": "",
+   "abv": "",
+   "notes": "",
+   "prices": [],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "5506c2ba4e99",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/827fa4f2-fd6e-4985-963f-22b7976fbc8f/pilsdark.jpg",
+   "title": "PILS",
+   "slug": "pils",
+   "category": "Light & Easy",
+   "description": "Bright, golden, & refreshingly crisp. Our German-style pilsner is brewed with light malt & noble hops for that signature snappy finish. Pours clear with a beautiful floral aroma. Prost to simplicity done right.",
+   "abv": "5.6%",
+   "notes": "",
+   "prices": [
+    {
+     "price": 2.0,
+     "ounces": 5
+    },
+    {
+     "price": 3.5,
+     "ounces": 10
+    },
+    {
+     "price": 5.5,
+     "ounces": 16
+    }
+   ],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "2372445d11d5",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/9d6aa08f-2ea1-4189-83f3-1b6520fbbdf7/cadwebsitedarkpsd.jpg",
+   "title": "Cadillac Couch Mexican Lager",
+   "slug": "cadillac-couch-mexican-lager",
+   "category": "Light & Easy",
+   "description": "Cadillac Couch is a refreshing lager that is light, crisp, & perfect for any occasion. It is brewed with real lime puree and we serve it with a lime wedge for extra swank.",
+   "abv": "5.5%",
+   "notes": "",
+   "prices": [
+    {
+     "price": 2.0,
+     "ounces": 5
+    },
+    {
+     "price": 3.5,
+     "ounces": 10
+    },
+    {
+     "price": 5.5,
+     "ounces": 16
+    }
+   ],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "e774b8ad895a",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/dd3d9953-b1a1-4abb-8bd0-fb00686e039e/bloodorangedarkweb.jpg",
+   "title": "Blood Orange Blonde",
+   "slug": "blood-orange-blonde",
+   "category": "Light & Easy",
+   "description": "Blood Orange Blonde Ale is highlighted with real blood orange puree. Brewed with williamette hops to add a spicy fruity aroma. Subtle and easy drinkin'",
+   "abv": "4.9%",
+   "notes": "",
+   "prices": [
+    {
+     "price": 2.0,
+     "ounces": 5
+    },
+    {
+     "price": 3.5,
+     "ounces": 10
+    },
+    {
+     "price": 5.5,
+     "ounces": 16
+    }
+   ],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "72e8231a7f45",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/c116d393-6245-4da6-9eed-1e55fde1e467/amberlagerwebsite.jpg",
+   "title": "Amber Lager",
+   "slug": "amber-lager",
+   "category": "Light & Easy",
+   "description": "A variety of different malts offer up layers of delicate toasty caramel sweetness rounding out with a crisp lager finish.",
+   "abv": "4.2%",
+   "notes": "",
+   "prices": [
+    {
+     "price": 2.0,
+     "ounces": 5
+    },
+    {
+     "price": 3.5,
+     "ounces": 10
+    },
+    {
+     "price": 5.5,
+     "ounces": 16
+    }
+   ],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "a985ad2d9df1",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/84ae23d3-8bc9-42ea-b99c-5b821b26b3b6/primewebsitedark.jpg",
+   "title": "Prime Real Estate West Coast IPA",
+   "slug": "prime-real-estate-west-coast-ipa",
+   "category": "Hop Heads",
+   "description": "What's your prime real estate? McMansion? Cozy cabin? Around here it seems to be all of the above, so it seems fitting to name a beer about it. Bright & clean with complex stone fruit citrus zest. Featuring Citra, Simcoe, Mosaic, & Nectaron hops.",
+   "abv": "6.5%",
+   "notes": "",
+   "prices": [
+    {
+     "price": 3.0,
+     "ounces": 5
+    },
+    {
+     "price": 4.5,
+     "ounces": 10
+    },
+    {
+     "price": 7.0,
+     "ounces": 16
+    }
+   ],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "cd51a0c2c68c",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/c628c4d6-03ab-4d46-9805-a7ec11b9a00a/4LO.jpg",
+   "title": "4LO PALE ALE",
+   "slug": "4lo-pale-ale",
+   "category": "Hop Heads",
+   "description": "All of the flavor none of the \"I should have gone home energy.\" Our low alcohol pale ale brings a pop of real pineapple for a little tropical lift wihout the heavy buzz. A brew that's perfect for trails, tailgates, & everything in between.",
+   "abv": "3.2%",
+   "notes": "",
+   "prices": [
+    {
+     "price": 2.0,
+     "ounces": 5
+    },
+    {
+     "price": 3.5,
+     "ounces": 10
+    },
+    {
+     "price": 5.5,
+     "ounces": 16
+    }
+   ],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "c662161fe6ef",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/d4ee3072-12ee-434c-b1a7-847774c2e2a9/newninjawebsitedark.jpg",
+   "title": "Ninja Juice IPA",
+   "slug": "ninja-juice-ipa",
+   "category": "Hop Heads",
+   "description": "Unleash your inner beast with this tropical + juicy IPA. Mosaic & Citra hops will kick your taste buds into high gear & leave you begging for more. Beware of potential extra stealthy abilities.",
+   "abv": "6.1%",
+   "notes": "",
+   "prices": [
+    {
+     "price": 2.0,
+     "ounces": 5
+    },
+    {
+     "price": 4.0,
+     "ounces": 10
+    },
+    {
+     "price": 6.0,
+     "ounces": 16
+    }
+   ],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "69c8ba89a6d6",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/fa8b51ed-b925-45d8-8e46-94b22551fb1d/citradarkwebsite.jpg",
+   "title": "citradarkwebsite.jpg",
+   "slug": "citradarkwebsite-jpg",
+   "category": "Hop Heads",
+   "description": "",
+   "abv": "",
+   "notes": "",
+   "prices": [],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "b7b174b2b38f",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/b7338ad0-c608-473b-9843-6f9c67b5266b/Phazerdark.jpg",
+   "title": "Phazerdark.jpg",
+   "slug": "phazerdark-jpg",
+   "category": "Hop Heads",
+   "description": "",
+   "abv": "",
+   "notes": "",
+   "prices": [],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "0f77b4b5dc8b",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/35661dbc-dd4d-4189-a961-04f92ad4481d/showwebsite.jpg",
+   "title": "showwebsite.jpg",
+   "slug": "showwebsite-jpg",
+   "category": "Hop Heads",
+   "description": "",
+   "abv": "",
+   "notes": "",
+   "prices": [],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "9125edb5d620",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/0d54566a-8384-4f0f-810c-f1b670f2fa96/pinneapplepeacheswebsitedark.jpg",
+   "title": "pinneapplepeacheswebsitedark.jpg",
+   "slug": "pinneapplepeacheswebsitedark-jpg",
+   "category": "Sour Power",
+   "description": "",
+   "abv": "",
+   "notes": "",
+   "prices": [],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "0de4e3dfdd06",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/0303e4cf-d549-4455-beba-236127273587/nightowlstoutdark.jpg",
+   "title": "nightowlstoutdark.jpg",
+   "slug": "nightowlstoutdark-jpg",
+   "category": "Dark Side",
+   "description": "",
+   "abv": "",
+   "notes": "",
+   "prices": [],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "243971712409",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/375bf99f-ce09-4020-8c90-886312cedbfc/100ll2026.jpg",
+   "title": "100LL • 2026 Barrel Aged Stout",
+   "slug": "100ll-2026-barrel-aged-stout",
+   "category": "Dark Side",
+   "description": "The 2026 version of 100LL is an imperial stout aged 36 months in a single barrel of Rabbit Hole Rye.",
+   "abv": "",
+   "notes": "Limited Release bottles $12 at the taproom. No Crowler or Growler fills.",
+   "prices": [
+    {
+     "price": 6.0,
+     "ounces": 4
+    },
+    {
+     "price": 8.0,
+     "ounces": 6
+    }
+   ],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "a46e9ef2c5e8",
+   "_first_seen": "2026-11-01"
+  }
+ ]
+}

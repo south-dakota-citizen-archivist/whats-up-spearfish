@@ -1,0 +1,106 @@
+{
+ "slug": "leones_creamery",
+ "name": "Leone's Creamery",
+ "kind": "flavor",
+ "url": "https://leonescreamery.com/flavors",
+ "fetched_at": "2026-11-01T15:30:35-07:00",
+ "count": 8,
+ "records": [
+  {
+   "url": "https://leonescreamery.com/flavor-detail/sweet-cream",
+   "image_url": "https://leonescreamery.com/images/uploads/cropped/SweetCream-123-1528425973.jpg",
+   "title": "Sweet Cream",
+   "slug": "sweet-cream",
+   "record_type": "flavor",
+   "source_label": "Leone's Creamery",
+   "kind": "flavor",
+   "source": "leones_creamery",
+   "id": "07e02941b4b9",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://leonescreamery.com/flavor-detail/chocolate-mint",
+   "image_url": "https://leonescreamery.com/images/uploads/cropped/A5443EEA-0E5B-4B69-A661-1BFA381D38CD-208-1530283549.jpg",
+   "title": "Chocolate Mint",
+   "slug": "chocolate-mint",
+   "record_type": "flavor",
+   "source_label": "Leone's Creamery",
+   "kind": "flavor",
+   "source": "leones_creamery",
+   "id": "3beb4ffff1c2",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://leonescreamery.com/flavor-detail/blueberry-goats-cheese",
+   "image_url": "https://leonescreamery.com/images/uploads/cropped/Blue-Goat-159-1534649838.jpg",
+   "title": "Blueberry Goat’s Cheese",
+   "slug": "blueberry-goats-cheese",
+   "record_type": "flavor",
+   "source_label": "Leone's Creamery",
+   "kind": "flavor",
+   "source": "leones_creamery",
+   "id": "a4225f6859f3",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://leonescreamery.com/flavor-detail/the-shadow",
+   "image_url": "https://leonescreamery.com/images/uploads/cropped/D07FD1A1-6C84-43B4-B73B-15338EAF7E38-339-1623524139.jpg",
+   "title": "Shady Vanilla",
+   "slug": "shady-vanilla",
+   "record_type": "flavor",
+   "source_label": "Leone's Creamery",
+   "kind": "flavor",
+   "source": "leones_creamery",
+   "id": "cc624d43ebb2",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://leonescreamery.com/flavor-detail/salted-caramel-cone",
+   "image_url": "https://leonescreamery.com/images/uploads/cropped/EBCFE440-7DA8-4CB3-AF30-9D6254AA9513-169-1549072771.jpg",
+   "title": "Salted Caramel Cone",
+   "slug": "salted-caramel-cone",
+   "record_type": "flavor",
+   "source_label": "Leone's Creamery",
+   "kind": "flavor",
+   "source": "leones_creamery",
+   "id": "147b8a3565ea",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://leonescreamery.com/flavor-detail/butterbeer",
+   "image_url": "https://leonescreamery.com/images/uploads/cropped/1B3EE3E3-34E8-46F3-8FC9-E2154E29A554-262-1579041149.jpg",
+   "title": "Butterbeer",
+   "slug": "butterbeer",
+   "record_type": "flavor",
+   "source_label": "Leone's Creamery",
+   "kind": "flavor",
+   "source": "leones_creamery",
+   "id": "e7048e7663c2",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://leonescreamery.com/flavor-detail/curry-with-peanut-butter-swirl",
+   "image_url": "https://leonescreamery.com/images/uploads/cropped/CurryWithPB-139-1552248466.jpg",
+   "title": "Curry with Peanut Butter Swirl",
+   "slug": "curry-with-peanut-butter-swirl",
+   "record_type": "flavor",
+   "source_label": "Leone's Creamery",
+   "kind": "flavor",
+   "source": "leones_creamery",
+   "id": "33b8a97c5338",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://leonescreamery.com/flavor-detail/vegan-maple-walnut",
+   "image_url": "https://leonescreamery.com/images/uploads/cropped/4CE0D19C-38F7-4584-9F5E-0AB7307A290D-238-1534788415.jpg",
+   "title": "Vegan Maple Walnut",
+   "slug": "vegan-maple-walnut",
+   "record_type": "flavor",
+   "source_label": "Leone's Creamery",
+   "kind": "flavor",
+   "source": "leones_creamery",
+   "id": "8e96de747531",
+   "_first_seen": "2026-11-01"
+  }
+ ]
+}

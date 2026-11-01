@@ -1,0 +1,52 @@
+{
+ "slug": "lawrence_county",
+ "name": "Lawrence County Agenda Center",
+ "kind": "document",
+ "url": "https://www.lawrence.sd.us/AgendaCenter",
+ "fetched_at": "2026-11-01T15:30:33-07:00",
+ "count": 3,
+ "records": [
+  {
+   "url": "https://www.lawrence.sd.us/AgendaCenter/PreviousVersions/1358",
+   "title": "October 27, 2026 ~ County Commission and BOA Proposed Meeting Agendas and Information Packet",
+   "meeting_date": "October 27, 2026",
+   "published": "2026-10-27",
+   "updated_note": "minutes",
+   "record_type": "document",
+   "source_label": "Lawrence County",
+   "kind": "document",
+   "source": "lawrence_county",
+   "id": "cd03a72d4e6d",
+   "date": "2026-10-27",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.lawrence.sd.us/AgendaCenter/PreviousVersions/1363",
+   "title": "Search and Rescue Proposed Meeting Agenda ~ November 2, 2026",
+   "meeting_date": "November 2, 2026",
+   "published": "2026-11-02",
+   "updated_note": "",
+   "record_type": "document",
+   "source_label": "Lawrence County",
+   "kind": "document",
+   "source": "lawrence_county",
+   "id": "fe0cd35f94af",
+   "date": "2026-11-02",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.lawrence.sd.us/AgendaCenter/PreviousVersions/1361",
+   "title": "Lawrence County Planning & Zoning Regular Meeting Info - November 5, 2026",
+   "meeting_date": "November 5, 2026",
+   "published": "2026-11-05",
+   "updated_note": "",
+   "record_type": "document",
+   "source_label": "Lawrence County",
+   "kind": "document",
+   "source": "lawrence_county",
+   "id": "ba1c80523a72",
+   "date": "2026-11-05",
+   "_first_seen": "2026-11-01"
+  }
+ ]
+}

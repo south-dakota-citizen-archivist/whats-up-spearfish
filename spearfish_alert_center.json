@@ -1,0 +1,9 @@
+{
+ "slug": "spearfish_alert_center",
+ "name": "City of Spearfish Alert Center",
+ "kind": "alert",
+ "url": "https://www.spearfish.gov/AlertCenter.aspx",
+ "fetched_at": "2026-11-01T15:30:43-07:00",
+ "count": 0,
+ "records": []
+}

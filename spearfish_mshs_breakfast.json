@@ -1,0 +1,3403 @@
+{
+ "slug": "spearfish_mshs_breakfast",
+ "name": "MS/HS Breakfast",
+ "kind": "school_menu",
+ "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+ "fetched_at": "2026-11-01T15:31:00-07:00",
+ "count": 21,
+ "records": [
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Sausage Breakfast Pizza, Cereal Choices with Toast, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-02",
+   "start_dt": "2026-11-02",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 370506,
+     "name": "Sausage Breakfast Pizza",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/EkxQrQ2jncJ2oYprRiyJhv8txjgtqD7dkMFXqkmv/500w/h804uJZGWQbCUdIzX1z0zTE8f0MU8eeN1dMcz421.png",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 200,
+      "fat_g": 7.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 25,
+      "fiber_g": 2.0,
+      "protein_g": 9.0,
+      "sodium_mg": 330
+     }
+    },
+    {
+     "id": 294557,
+     "name": "Cereal Choices with Toast",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/500w/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 238,
+      "fat_g": 4.9,
+      "sat_fat_g": 0.7,
+      "carbs_g": 47,
+      "fiber_g": 3.5,
+      "protein_g": 5.5,
+      "sodium_mg": 296
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "ac4fa7dfd702",
+   "published": "2026-11-02",
+   "date": "2026-11-02",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Chewy Iced Granola Bar, Glazed Donut, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-03",
+   "start_dt": "2026-11-03",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 370801,
+     "name": "Chewy Iced Granola Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "Our original recipe with pops of cinnamon and vanilla topped home-style icing.",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/yjErXNpvLzgCLowAcCunzgmDYIeo9zMp6BlAUjqW/500w/fwWOWgx75AIcFoEXpy7O6y7TPV0hBJe3Ls3JgYVj.jpg",
+     "serving_size": "1 bar",
+     "nutrition": {
+      "calories": 383,
+      "fat_g": 14,
+      "sat_fat_g": 4.3,
+      "carbs_g": 60,
+      "fiber_g": 3.2,
+      "protein_g": 4.4,
+      "sodium_mg": 215
+     }
+    },
+    {
+     "id": 370921,
+     "name": "Glazed Donut",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/MNlM0gnL3mij23V4BxTKRne7jlYgPFjMeHh43GNB/500w/KV5pPr7N6SlJ0L9zpUuFhMI5Qh7xepWmhYUAxLxA.png",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 303,
+      "fat_g": 10,
+      "sat_fat_g": 4.5,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.1,
+      "sodium_mg": 332
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "b7c7a01446a1",
+   "published": "2026-11-03",
+   "date": "2026-11-03",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Scrambled Eggs with Toast, Toast with Toppings, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-04",
+   "start_dt": "2026-11-04",
+   "description": "With: Tater Tots, 100% Fruit Juice, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 2051266,
+     "name": "Scrambled Eggs with Toast",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5m5LI7zcOe0Bw7lToQk3QgbYI2HFF37wrl5Ydkg6/500w/IVD6sEnj5FP5q9tb7YMdNMw2fob8FdAzByeoPH4Q.jpg",
+     "serving_size": "1/2 cup",
+     "nutrition": {
+      "calories": 146,
+      "fat_g": 9.4,
+      "sat_fat_g": 3.1,
+      "carbs_g": 3.1,
+      "protein_g": 10,
+      "sodium_mg": 167
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 128053,
+     "name": "Mini Chocolate Chip French Toast Bites",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1cv5qrFbdhnj3XoJPeLJBiLHspzyeFE9wizuzvzH/500w/pEsbvc6P6OT3QeKsEAKwXFix6pUAQKPnYOqBRvsv.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 190,
+      "fat_g": 5.0,
+      "sat_fat_g": 1.5,
+      "carbs_g": 37,
+      "fiber_g": 6.0,
+      "protein_g": 4.0,
+      "sodium_mg": 210
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 304586,
+     "name": "Tater Tots",
+     "category": "Vegetables",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JSKjQ0U8SMyBRfltFAQRKIapt4dKDrLyd5DRAvVd/500w/RLhyZBQ2rTMUUrZ3h8qnEl8Xbm76N2KVH3e9RpQY.png",
+     "serving_size": "1/2 cup",
+     "nutrition": {
+      "calories": 113,
+      "fat_g": 6.1,
+      "sat_fat_g": 1.0,
+      "carbs_g": 14,
+      "fiber_g": 1.0,
+      "protein_g": 1.0,
+      "sodium_mg": 317
+     }
+    },
+    {
+     "id": 338998,
+     "name": "100% Fruit Juice",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HQ1dlJp9GWC1Fzzn5voOaUSkCkD7m6538YglL3Wm/500w/LnDEsQLUZMbGF8cOciA3GjSdsXJUr9xPCCe3apGb.jpg",
+     "serving_size": "4 oz",
+     "nutrition": {
+      "calories": 67,
+      "carbs_g": 16,
+      "protein_g": 0.3,
+      "sodium_mg": 15
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "ab70c7eac85f",
+   "published": "2026-11-04",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Oatmeal with Topping Bar, Ultimate Chocolate Chip Breakfast Round, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-05",
+   "start_dt": "2026-11-05",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 370523,
+     "name": "Oatmeal with Topping Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/SPS0V5becLVpVNldL4AprhklfptAkPdfpqTmkZlY/500w/GYcpa3OE0X7hZ74H7rgm8DuXvhYxtEMMbVH2iGOV.jpg",
+     "serving_size": "1 Cup",
+     "nutrition": {
+      "calories": 250,
+      "fat_g": 4.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 44,
+      "fiber_g": 4.5,
+      "protein_g": 9.8,
+      "sodium_mg": 139
+     }
+    },
+    {
+     "id": 370500,
+     "name": "Ultimate Chocolate Chip Breakfast Round",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/juNB9UkLRgevJWB1g13GEHFfGxmaEPedP2ApRjYc/500w/RRSCCZvSpaBmp0tAdMAAEOsvYL3VLpYAq8hdxbIf.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 250,
+      "fat_g": 7.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 6.0,
+      "protein_g": 5.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "5d05e7066370",
+   "published": "2026-11-05",
+   "date": "2026-11-05",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Fresh Baked Cinnamon Roll, Cereal Choices with Toast, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-06",
+   "start_dt": "2026-11-06",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 370507,
+     "name": "Fresh Baked Cinnamon Roll",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/EhK2Ytq0h2oMCONZ6o77ILQTmdXgzcCFDn9EsE7D/500w/VcizGIWAWbR6ZAHUAzNYkzPHOUMdKoRGTNchLBFW.jpg",
+     "serving_size": "1 Roll",
+     "nutrition": {
+      "calories": 434,
+      "fat_g": 9.1,
+      "sat_fat_g": 3.0,
+      "carbs_g": 80,
+      "fiber_g": 6.0,
+      "protein_g": 8.2,
+      "sodium_mg": 303
+     }
+    },
+    {
+     "id": 294557,
+     "name": "Cereal Choices with Toast",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/500w/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 238,
+      "fat_g": 4.9,
+      "sat_fat_g": 0.7,
+      "carbs_g": 47,
+      "fiber_g": 3.5,
+      "protein_g": 5.5,
+      "sodium_mg": 296
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "853a5156a45f",
+   "published": "2026-11-06",
+   "date": "2026-11-06",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Bacon & Egg Breakfast Pizza, Cereal Choices with Toast, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-09",
+   "start_dt": "2026-11-09",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 370519,
+     "name": "Bacon & Egg Breakfast Pizza",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/zZFq47pimbtbjw4CDCxzfNBJNftulwpbYUOIhvvN/500w/Xk5RYI7jzRwb8zY4R6VlaMAD2vOt4tznPBj9rJw0.png",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 200,
+      "fat_g": 8.0,
+      "sat_fat_g": 4.0,
+      "carbs_g": 22,
+      "fiber_g": 2.0,
+      "protein_g": 10,
+      "sodium_mg": 330
+     }
+    },
+    {
+     "id": 294557,
+     "name": "Cereal Choices with Toast",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/500w/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 238,
+      "fat_g": 4.9,
+      "sat_fat_g": 0.7,
+      "carbs_g": 47,
+      "fiber_g": 3.5,
+      "protein_g": 5.5,
+      "sodium_mg": 296
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "9f9855359af6",
+   "published": "2026-11-09",
+   "date": "2026-11-09",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "French Toast Sticks with Syrup Dipping Sauce, Dutch Waffle, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-10",
+   "start_dt": "2026-11-10",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 370514,
+     "name": "French Toast Sticks with Syrup Dipping Sauce",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/HfvAZiHsO8N76ETohuWv6GwH9SGi2mjNLDb3AY2q/500w/3DlwBrVPR1Sk73kXNw95nsUE3bDWGQ7TycCzFbBI.jpg",
+     "serving_size": "3 sticks",
+     "nutrition": {
+      "calories": 323,
+      "fat_g": 9.0,
+      "sat_fat_g": 1.5,
+      "carbs_g": 56,
+      "fiber_g": 3.0,
+      "protein_g": 6.0,
+      "sodium_mg": 333
+     }
+    },
+    {
+     "id": 370518,
+     "name": "Dutch Waffle",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/a4XvPt4nqUwvjlwCgRd2uhrWAmIo6xKKT5WvIk86/500w/4QEpCk6Vv0JFk2fYqjsv7TQLqxOdH7hDdvAgfckh.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 335,
+      "fat_g": 19,
+      "sat_fat_g": 3.0,
+      "carbs_g": 39,
+      "fiber_g": 3.0,
+      "protein_g": 4.0,
+      "sodium_mg": 330
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "c2f8a7278cd3",
+   "published": "2026-11-10",
+   "date": "2026-11-10",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Fresh Baked Egg & Cheese Biscuit Sandwich, Toast with Toppings, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-11",
+   "start_dt": "2026-11-11",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 370509,
+     "name": "Fresh Baked Egg & Cheese Biscuit Sandwich",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/pb0Ai3orA3zFMw001JMjk66JAtOWPXWkkXqgoM2Y/500w/uualGrYzOLxbBaWvOp7iRkREtcRzD3nyxTfdmAJ0.png",
+     "serving_size": "1 sandwich",
+     "nutrition": {
+      "calories": 335,
+      "fat_g": 18,
+      "sat_fat_g": 8.0,
+      "carbs_g": 30,
+      "fiber_g": 2.0,
+      "protein_g": 12,
+      "sodium_mg": 555
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 128053,
+     "name": "Mini Chocolate Chip French Toast Bites",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1cv5qrFbdhnj3XoJPeLJBiLHspzyeFE9wizuzvzH/500w/pEsbvc6P6OT3QeKsEAKwXFix6pUAQKPnYOqBRvsv.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 190,
+      "fat_g": 5.0,
+      "sat_fat_g": 1.5,
+      "carbs_g": 37,
+      "fiber_g": 6.0,
+      "protein_g": 4.0,
+      "sodium_mg": 210
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "b0dc244802d6",
+   "published": "2026-11-11",
+   "date": "2026-11-11",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Fresh Baked Biscuits and Gravy, Ultimate Chocolate Chip Breakfast Round, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-12",
+   "start_dt": "2026-11-12",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 128061,
+     "name": "Fresh Baked Biscuits and Gravy",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/dONLQwnyQFNQyjFFI0PqcwMXjPTlqmGbvGmgl5Ls/500w/v1d1eaJRqxKBa15kCO7CTCt1Cp2DYaxpJl7Wl2jz.png",
+     "serving_size": "1 serving",
+     "nutrition": {
+      "calories": 296,
+      "fat_g": 15,
+      "sat_fat_g": 6.9,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 7.0,
+      "sodium_mg": 659
+     }
+    },
+    {
+     "id": 370500,
+     "name": "Ultimate Chocolate Chip Breakfast Round",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/juNB9UkLRgevJWB1g13GEHFfGxmaEPedP2ApRjYc/500w/RRSCCZvSpaBmp0tAdMAAEOsvYL3VLpYAq8hdxbIf.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 250,
+      "fat_g": 7.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 6.0,
+      "protein_g": 5.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "e14a70ccf66c",
+   "published": "2026-11-12",
+   "date": "2026-11-12",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Fresh Baked Cinnamon Roll, Cereal Choices with Toast, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-13",
+   "start_dt": "2026-11-13",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 370507,
+     "name": "Fresh Baked Cinnamon Roll",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/EhK2Ytq0h2oMCONZ6o77ILQTmdXgzcCFDn9EsE7D/500w/VcizGIWAWbR6ZAHUAzNYkzPHOUMdKoRGTNchLBFW.jpg",
+     "serving_size": "1 Roll",
+     "nutrition": {
+      "calories": 434,
+      "fat_g": 9.1,
+      "sat_fat_g": 3.0,
+      "carbs_g": 80,
+      "fiber_g": 6.0,
+      "protein_g": 8.2,
+      "sodium_mg": 303
+     }
+    },
+    {
+     "id": 294557,
+     "name": "Cereal Choices with Toast",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/500w/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 238,
+      "fat_g": 4.9,
+      "sat_fat_g": 0.7,
+      "carbs_g": 47,
+      "fiber_g": 3.5,
+      "protein_g": 5.5,
+      "sodium_mg": 296
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "f195ade4d160",
+   "published": "2026-11-13",
+   "date": "2026-11-13",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Bacon & Egg Breakfast Pizza, Cereal Choices with Toast, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-16",
+   "start_dt": "2026-11-16",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 370519,
+     "name": "Bacon & Egg Breakfast Pizza",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/zZFq47pimbtbjw4CDCxzfNBJNftulwpbYUOIhvvN/500w/Xk5RYI7jzRwb8zY4R6VlaMAD2vOt4tznPBj9rJw0.png",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 200,
+      "fat_g": 8.0,
+      "sat_fat_g": 4.0,
+      "carbs_g": 22,
+      "fiber_g": 2.0,
+      "protein_g": 10,
+      "sodium_mg": 330
+     }
+    },
+    {
+     "id": 294557,
+     "name": "Cereal Choices with Toast",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/500w/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 238,
+      "fat_g": 4.9,
+      "sat_fat_g": 0.7,
+      "carbs_g": 47,
+      "fiber_g": 3.5,
+      "protein_g": 5.5,
+      "sodium_mg": 296
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "7772fdcbfc96",
+   "published": "2026-11-16",
+   "date": "2026-11-16",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Chewy Iced Granola Bar, Glazed Donut, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-17",
+   "start_dt": "2026-11-17",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 370801,
+     "name": "Chewy Iced Granola Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "Our original recipe with pops of cinnamon and vanilla topped home-style icing.",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/yjErXNpvLzgCLowAcCunzgmDYIeo9zMp6BlAUjqW/500w/fwWOWgx75AIcFoEXpy7O6y7TPV0hBJe3Ls3JgYVj.jpg",
+     "serving_size": "1 bar",
+     "nutrition": {
+      "calories": 383,
+      "fat_g": 14,
+      "sat_fat_g": 4.3,
+      "carbs_g": 60,
+      "fiber_g": 3.2,
+      "protein_g": 4.4,
+      "sodium_mg": 215
+     }
+    },
+    {
+     "id": 370921,
+     "name": "Glazed Donut",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/MNlM0gnL3mij23V4BxTKRne7jlYgPFjMeHh43GNB/500w/KV5pPr7N6SlJ0L9zpUuFhMI5Qh7xepWmhYUAxLxA.png",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 303,
+      "fat_g": 10,
+      "sat_fat_g": 4.5,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.1,
+      "sodium_mg": 332
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "8e695880d32c",
+   "published": "2026-11-17",
+   "date": "2026-11-17",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Eggoji Waffle with Syrup, Toast with Toppings, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-18",
+   "start_dt": "2026-11-18",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 1555440,
+     "name": "Eggoji Waffle with Syrup",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/CPraIKGoGeS14hCnMlZeuv4iYnXizRbAaRJFldRh/500w/rldp6xwpcZTAFdmsfCTqsOA7Zm6ws2OpTg47CC1e.jpg",
+     "serving_size": "2 each",
+     "nutrition": {
+      "calories": 243,
+      "fat_g": 5.0,
+      "sat_fat_g": 1.5,
+      "carbs_g": 47,
+      "fiber_g": 4.0,
+      "protein_g": 4.0,
+      "sodium_mg": 243
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 128053,
+     "name": "Mini Chocolate Chip French Toast Bites",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1cv5qrFbdhnj3XoJPeLJBiLHspzyeFE9wizuzvzH/500w/pEsbvc6P6OT3QeKsEAKwXFix6pUAQKPnYOqBRvsv.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 190,
+      "fat_g": 5.0,
+      "sat_fat_g": 1.5,
+      "carbs_g": 37,
+      "fiber_g": 6.0,
+      "protein_g": 4.0,
+      "sodium_mg": 210
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "15485f960f52",
+   "published": "2026-11-18",
+   "date": "2026-11-18",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Fresh Baked Biscuits and Gravy, Ultimate Chocolate Chip Breakfast Round, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-19",
+   "start_dt": "2026-11-19",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 128061,
+     "name": "Fresh Baked Biscuits and Gravy",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/dONLQwnyQFNQyjFFI0PqcwMXjPTlqmGbvGmgl5Ls/500w/v1d1eaJRqxKBa15kCO7CTCt1Cp2DYaxpJl7Wl2jz.png",
+     "serving_size": "1 serving",
+     "nutrition": {
+      "calories": 296,
+      "fat_g": 15,
+      "sat_fat_g": 6.9,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 7.0,
+      "sodium_mg": 659
+     }
+    },
+    {
+     "id": 370500,
+     "name": "Ultimate Chocolate Chip Breakfast Round",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/juNB9UkLRgevJWB1g13GEHFfGxmaEPedP2ApRjYc/500w/RRSCCZvSpaBmp0tAdMAAEOsvYL3VLpYAq8hdxbIf.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 250,
+      "fat_g": 7.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 6.0,
+      "protein_g": 5.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "abe383c51b32",
+   "published": "2026-11-19",
+   "date": "2026-11-19",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Fresh Baked Cinnamon Roll, Cereal Choices with Toast, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-20",
+   "start_dt": "2026-11-20",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 370507,
+     "name": "Fresh Baked Cinnamon Roll",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/EhK2Ytq0h2oMCONZ6o77ILQTmdXgzcCFDn9EsE7D/500w/VcizGIWAWbR6ZAHUAzNYkzPHOUMdKoRGTNchLBFW.jpg",
+     "serving_size": "1 Roll",
+     "nutrition": {
+      "calories": 434,
+      "fat_g": 9.1,
+      "sat_fat_g": 3.0,
+      "carbs_g": 80,
+      "fiber_g": 6.0,
+      "protein_g": 8.2,
+      "sodium_mg": 303
+     }
+    },
+    {
+     "id": 294557,
+     "name": "Cereal Choices with Toast",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/500w/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 238,
+      "fat_g": 4.9,
+      "sat_fat_g": 0.7,
+      "carbs_g": 47,
+      "fiber_g": 3.5,
+      "protein_g": 5.5,
+      "sodium_mg": 296
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "316d6f7c5901",
+   "published": "2026-11-20",
+   "date": "2026-11-20",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Sausage Breakfast Pizza, Cereal Choices with Toast, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-23",
+   "start_dt": "2026-11-23",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 370506,
+     "name": "Sausage Breakfast Pizza",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/EkxQrQ2jncJ2oYprRiyJhv8txjgtqD7dkMFXqkmv/500w/h804uJZGWQbCUdIzX1z0zTE8f0MU8eeN1dMcz421.png",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 200,
+      "fat_g": 7.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 25,
+      "fiber_g": 2.0,
+      "protein_g": 9.0,
+      "sodium_mg": 330
+     }
+    },
+    {
+     "id": 294557,
+     "name": "Cereal Choices with Toast",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/500w/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 238,
+      "fat_g": 4.9,
+      "sat_fat_g": 0.7,
+      "carbs_g": 47,
+      "fiber_g": 3.5,
+      "protein_g": 5.5,
+      "sodium_mg": 296
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "8c4cff6651b3",
+   "published": "2026-11-23",
+   "date": "2026-11-23",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Ham, Egg & Cheese Biscuit Bake, Dutch Waffle, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-24",
+   "start_dt": "2026-11-24",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 264402,
+     "name": "Ham, Egg & Cheese Biscuit Bake",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "Fresh baked biscuit topped with diced ham, fluffy scrambled eggs and melted cheese.",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/mzs8wm7xHtY0YIOrsJJtQQled9nlFq0Yj3iGJx3m/500w/idtAUNyydE1vea8OWmfyH9WjjnXjwsaB9BRiF36G.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 213,
+      "fat_g": 12,
+      "sat_fat_g": 5.4,
+      "carbs_g": 15,
+      "fiber_g": 1.0,
+      "protein_g": 11,
+      "sodium_mg": 481
+     }
+    },
+    {
+     "id": 370518,
+     "name": "Dutch Waffle",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/a4XvPt4nqUwvjlwCgRd2uhrWAmIo6xKKT5WvIk86/500w/4QEpCk6Vv0JFk2fYqjsv7TQLqxOdH7hDdvAgfckh.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 335,
+      "fat_g": 19,
+      "sat_fat_g": 3.0,
+      "carbs_g": 39,
+      "fiber_g": 3.0,
+      "protein_g": 4.0,
+      "sodium_mg": 330
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "9c5f75dff56b",
+   "published": "2026-11-24",
+   "date": "2026-11-24",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Happy Holiday",
+   "slug": "spearfish-mshs-breakfast-2026-11-25",
+   "start_dt": "2026-11-25",
+   "description": "With: Happy Holiday",
+   "menu_items": [
+    {
+     "id": 1803595,
+     "name": "Happy Holiday",
+     "category": "Misc.",
+     "is_entree": false,
+     "description": "Enjoy our traditional Holiday Meal",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/0WIZXJg9ZH44xgNOtQhY0YMtrmWsbxs3O6f74WF4/500w/v65sbeloIw2OewkBU40XRiwD6iaNZNTETKegO74h.png",
+     "serving_size": "1 1",
+     "nutrition": {}
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "9a576aabfc8e",
+   "published": "2026-11-25",
+   "date": "2026-11-25",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Happy Holiday",
+   "slug": "spearfish-mshs-breakfast-2026-11-26",
+   "start_dt": "2026-11-26",
+   "description": "With: Happy Holiday",
+   "menu_items": [
+    {
+     "id": 1803595,
+     "name": "Happy Holiday",
+     "category": "Misc.",
+     "is_entree": false,
+     "description": "Enjoy our traditional Holiday Meal",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/0WIZXJg9ZH44xgNOtQhY0YMtrmWsbxs3O6f74WF4/500w/v65sbeloIw2OewkBU40XRiwD6iaNZNTETKegO74h.png",
+     "serving_size": "1 1",
+     "nutrition": {}
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "e0eaaa90e542",
+   "published": "2026-11-26",
+   "date": "2026-11-26",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Happy Holiday",
+   "slug": "spearfish-mshs-breakfast-2026-11-27",
+   "start_dt": "2026-11-27",
+   "description": "With: Happy Holiday",
+   "menu_items": [
+    {
+     "id": 1803595,
+     "name": "Happy Holiday",
+     "category": "Misc.",
+     "is_entree": false,
+     "description": "Enjoy our traditional Holiday Meal",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/0WIZXJg9ZH44xgNOtQhY0YMtrmWsbxs3O6f74WF4/500w/v65sbeloIw2OewkBU40XRiwD6iaNZNTETKegO74h.png",
+     "serving_size": "1 1",
+     "nutrition": {}
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "56123c79bb6e",
+   "published": "2026-11-27",
+   "date": "2026-11-27",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://menus.healthepro.com/organizations/524/sites/4520/menus/124135",
+   "title": "Bacon & Egg Breakfast Pizza, Cereal Choices with Toast, Cream Cheese Stuffed Mini Bagels…",
+   "slug": "spearfish-mshs-breakfast-2026-11-30",
+   "start_dt": "2026-11-30",
+   "description": "With: Cafe Fruit & Juice Choices, 1% Unflavored Milk, Chocolate Skim Milk",
+   "menu_items": [
+    {
+     "id": 370519,
+     "name": "Bacon & Egg Breakfast Pizza",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/zZFq47pimbtbjw4CDCxzfNBJNftulwpbYUOIhvvN/500w/Xk5RYI7jzRwb8zY4R6VlaMAD2vOt4tznPBj9rJw0.png",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 200,
+      "fat_g": 8.0,
+      "sat_fat_g": 4.0,
+      "carbs_g": 22,
+      "fiber_g": 2.0,
+      "protein_g": 10,
+      "sodium_mg": 330
+     }
+    },
+    {
+     "id": 294557,
+     "name": "Cereal Choices with Toast",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/5b2SmdqeiDGFtYKncEbxIUuQsT73Ok52pqtssGF2/500w/VNbvnXkNB0ZgwoA7HTlYId9CREynlJlC3GCnp1y0.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 238,
+      "fat_g": 4.9,
+      "sat_fat_g": 0.7,
+      "carbs_g": 47,
+      "fiber_g": 3.5,
+      "protein_g": 5.5,
+      "sodium_mg": 296
+     }
+    },
+    {
+     "id": 127963,
+     "name": "Cream Cheese Stuffed Mini Bagels",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/iXXpjVjdVKPQRzNYLl6UNPjRc6MBKaKMD81Px21m/500w/9zIGI6wVFaPoKE91yivEnlakjiGowtJOasZxMB3d.jpg",
+     "serving_size": "1 Package",
+     "nutrition": {
+      "calories": 240,
+      "fat_g": 6.0,
+      "sat_fat_g": 2.0,
+      "carbs_g": 42,
+      "fiber_g": 2.0,
+      "protein_g": 6.0,
+      "sodium_mg": 190
+     }
+    },
+    {
+     "id": 128037,
+     "name": "Warm Cherry Frudel",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/r08R8ckRv7iVfdtu6sX62ikn3vbYok4foOqsD7nW/500w/Vm5Z63HtGiwIBb2B88xQD6qIGaWr1C1IvM8O171i.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 180,
+      "fat_g": 4.0,
+      "carbs_g": 34,
+      "fiber_g": 2.0,
+      "protein_g": 4.0,
+      "sodium_mg": 240
+     }
+    },
+    {
+     "id": 127962,
+     "name": "Banana Chocolate Chunk BeneFIT Bar",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/AUI3JjRdukwMIdGrAn2cVwrRrsaBJlPSs3NNP2gl/500w/cyGlvTlksEGagA6WM4vQTUad2Df992TFKpMIdI8r.jpg",
+     "serving_size": "1 each",
+     "nutrition": {
+      "calories": 280,
+      "fat_g": 8.0,
+      "sat_fat_g": 3.0,
+      "carbs_g": 47,
+      "fiber_g": 3.0,
+      "protein_g": 5.0,
+      "sodium_mg": 220
+     }
+    },
+    {
+     "id": 370807,
+     "name": "Toast with Toppings",
+     "category": "Breakfast Entree",
+     "is_entree": true,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/1yg3YWUs3HIVwEM15GG11yteMvDnkGtfAalaGeLn/500w/8XXKs8kObrMsahYctSpFyPRL9bgnjr0ygc8zx4zq.png",
+     "serving_size": "2 slices",
+     "nutrition": {
+      "calories": 254,
+      "fat_g": 6.5,
+      "sat_fat_g": 1.4,
+      "carbs_g": 46,
+      "fiber_g": 2.3,
+      "protein_g": 6.0,
+      "sodium_mg": 277
+     }
+    },
+    {
+     "id": 371352,
+     "name": "Cafe Fruit & Juice Choices",
+     "category": "Fruit",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/JKJcQ1s7XoF4bMSqeUjC26K1huaAKL8X4yJWh8wW/500w/nqrRQIO8JhTYyPE4SykB5EmabkYYOh4jHAtyNXWM.jpg",
+     "serving_size": "1/2 cup fruit & juice",
+     "nutrition": {
+      "calories": 92,
+      "fat_g": 0.2,
+      "sat_fat_g": 0.0,
+      "carbs_g": 23,
+      "fiber_g": 2.5,
+      "protein_g": 0.6,
+      "sodium_mg": 4.0
+     }
+    },
+    {
+     "id": 368516,
+     "name": "1% Unflavored Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/YlZj4jl35ij9b5jw56SV4QzSsfxqyyqjE11ls1QF/500w/ZVCIjQS41ghdBYvhIMu88IG0XKRZQnnjB3T9L2kb.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "fat_g": 2.5,
+      "sat_fat_g": 1.5,
+      "carbs_g": 13,
+      "protein_g": 8.0,
+      "sodium_mg": 130
+     }
+    },
+    {
+     "id": 368517,
+     "name": "Chocolate Skim Milk",
+     "category": "Milk",
+     "is_entree": false,
+     "description": "",
+     "ingredients": "",
+     "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/rcms3ZKeu9r782Oj855iR9gFrrQviK3AOLxa1vnz/500w/oKuquts1aiBI383sNesRotxcHICnV1aDgq00gnJ2.jpg",
+     "serving_size": "1 cup",
+     "nutrition": {
+      "calories": 110,
+      "carbs_g": 19,
+      "protein_g": 8.0,
+      "sodium_mg": 210
+     }
+    }
+   ],
+   "record_type": "school_menu",
+   "source_label": "MS/HS Breakfast",
+   "kind": "school_menu",
+   "source": "spearfish_mshs_breakfast",
+   "id": "a0b711bc3b07",
+   "published": "2026-11-30",
+   "date": "2026-11-30",
+   "_first_seen": "2026-11-01"
+  }
+ ]
+}

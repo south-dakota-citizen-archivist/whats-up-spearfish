@@ -1,0 +1,38 @@
+{
+ "slug": "fire",
+ "name": "Fire restrictions, danger & wildfires",
+ "kind": "fire",
+ "url": "https://www.blackhillsfirerestrictions.com/",
+ "fetched_at": "2026-11-01T15:31:00-07:00",
+ "data": {
+  "errors": [
+   "restrictions: SSLError: HTTPSConnectionPool(host='www.blackhillsfirerestrictions.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)')))"
+  ],
+  "restrictions": null,
+  "incidents": [
+   {
+    "name": "Lookout Fire  - SDSDS",
+    "type": "Wildfire",
+    "size": "444 Acres",
+    "updated": "1 month 2 weeks ago",
+    "url": "https://inciweb.wildfire.gov/incident-information/sdsds-lookout-fire"
+   }
+  ],
+  "danger": {
+   "issued": "151 AM MST Sun Nov 1 2026",
+   "zones": [
+    {
+     "name": "Butte, Pennington Co Plains, Haakon, Northern Oglala Lakota, Southern Meade Co Plains",
+     "level": "High",
+     "description": "The grassland fire danger index will reach the high category this afternoon. Unfavorable weather conditions and low moisture content of grasses, and other dry organic material on the ground, indicate that there is high potential for a fire to spread. Outdoor burning should be restricted to early morning or evening hours when wind speeds are usually lower and the relative humidity is higher."
+    },
+    {
+     "name": "Harding, Northern Perkins, Northern Meade Co Plains, Ziebach, Northern Foothills, Rapid City, Southern Foothills, Custer Co Plains, Western Fall River, Northern Jackson, Bennett, Mellette, Todd, Tripp, Sturgis/Piedmont Foothills, Hermosa Foothills, Eastern Fall River, Southern Oglala Lakota, Southern Jackson, Southern Perkins",
+     "level": "Moderate",
+     "description": "The grassland fire danger index will reach the moderate category this afternoon. Marginal weather conditions or a lowering moisture content of grasses, and other dry organic material on the ground, indicate that there is some potential for a fire to spread. Any outdoor burning should be closely monitored."
+    }
+   ],
+   "url": "https://forecast.weather.gov/product.php?site=UNR&issuedby=UNR&product=RFD&format=TXT&version=1&glossary=0"
+  }
+ }
+}
