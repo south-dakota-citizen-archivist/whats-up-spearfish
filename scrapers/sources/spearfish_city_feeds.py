@@ -65,6 +65,15 @@ def parse_calendar_entry(entry: dict) -> dict:
         start = _calendar_dt(days[0], times[0])
         end = _calendar_dt(days[-1], times[-1]) if len(times) > 1 else ""
     summary = entry.get("summary", "")
+    # The feed's location field runs lines together ("625 N 5th StSpearfish, SD");
+    # the same address in the summary keeps its line breaks.
+    loc = re.search(r"Location:\s*</strong>\s*(?:<br\s*/?>)?(.*?)(?:<br\s*/?>\s*<strong>|$)", summary, re.S | re.I)
+    lines = re.split(r"<br\s*/?>", loc.group(1), flags=re.I) if loc else []
+    location = ", ".join(x.strip() for x in lines if x.strip())
+    if not location:
+        location = ", ".join(
+            x.strip() for x in re.split(r"<br\s*/?>", entry.get("calendarevent_location", ""), flags=re.I) if x.strip()
+        )
     parts = re.split(r"Description:\s*</strong>\s*(?:<br>)?", summary, maxsplit=1)
     description = parts[1] if len(parts) == 2 else ""
     return {
@@ -72,7 +81,7 @@ def parse_calendar_entry(entry: dict) -> dict:
         "title": entry.get("title", ""),
         "slug": make_slug(entry.get("title", "")),
         "description": description,
-        "location": entry.get("calendarevent_location", ""),
+        "location": location,
         "start_dt": start,
         "end_dt": end if end != start else "",
         "all_day": all_day,

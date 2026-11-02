@@ -41,6 +41,20 @@ class TestCityCalendar:
             parse_calendar_entry(self._entry("November 3, 2026", "", summary))["description"] == "Early literacy fun."
         )
 
+    def test_address_lines_kept_apart(self):
+        # the feed's own location field reads "City Hall<br>625 N 5th StSpearfish, SD 57783"
+        summary = (
+            "<strong>Event date:</strong> November 2, 2026 <br><strong>Location:</strong> <br>City Hall<br>"
+            "625 N 5th St<br>Spearfish, SD 57783<br><strong>Description:</strong><br>Regular meeting."
+        )
+        r = parse_calendar_entry(self._entry("November 2, 2026", "05:30 PM - 06:30 PM", summary))
+        assert r["location"] == "City Hall, 625 N 5th St, Spearfish, SD 57783"
+        assert r["description"] == "Regular meeting."
+
+    def test_location_without_summary_block(self):
+        r = parse_calendar_entry(self._entry("November 2, 2026", "05:30 PM"))
+        assert r["location"] == "Spearfish, SD 57783"
+
     def test_no_description_section(self):
         summary = "<strong>Event date:</strong> November 3, 2026<br><strong>Event Time: </strong>05:30 PM"
         assert parse_calendar_entry(self._entry("November 3, 2026", "", summary))["description"] == ""

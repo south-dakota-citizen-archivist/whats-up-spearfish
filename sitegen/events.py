@@ -78,6 +78,45 @@ def fmt_clock(dt: datetime) -> str:
     return dt.strftime("%-I %p" if dt.minute == 0 else "%-I:%M %p")
 
 
+def _words(s: str) -> str:
+    return " ".join(re.findall(r"[a-z0-9]+", (s or "").lower()))
+
+
+def undouble(text: str) -> str:
+    """Drop a phrase repeated back to back, as some feeds join a venue and its room:
+    'Lyman High School Lyman High School' → 'Lyman High School',
+    'Student Union Student Union Lobby' → 'Student Union Lobby'. Single repeated words
+    ('Walla Walla') are left alone."""
+    words = (text or "").split()
+    changed = True
+    while changed:
+        changed = False
+        for n in range(len(words) // 2, 1, -1):
+            for i in range(len(words) - 2 * n + 1):
+                if [w.lower().strip(",") for w in words[i : i + n]] == [
+                    w.lower().strip(",") for w in words[i + n : i + 2 * n]
+                ]:
+                    del words[i + n : i + 2 * n]
+                    changed = True
+                    break
+            if changed:
+                break
+    return " ".join(words)
+
+
+def tidy_description(title: str, description: str) -> str:
+    """A description that only repeats the title says nothing; one that starts with it
+    gets the repeat trimmed off."""
+    desc = (description or "").strip()
+    if not desc or _words(desc) == _words(title):
+        return ""
+    if title and desc.lower().startswith(title.strip().lower()):
+        rest = desc[len(title.strip()) :].lstrip(" .,:;-–—")
+        if rest and _words(rest) != _words(title):
+            return rest[0].upper() + rest[1:]
+    return desc
+
+
 def unified_events(site: Site, today: date | None = None) -> list[dict]:
     today = today or dates.today()
     horizon = today + timedelta(days=HORIZON_DAYS)
@@ -101,7 +140,7 @@ def unified_events(site: Site, today: date | None = None) -> list[dict]:
             if kept["source"] != r["source"] and _same(kept["_tokens"], toks):
                 kept["also"].append({"source": r["source_label"], "url": r["url"]})
                 if not kept["location"] and r.get("location"):
-                    kept["location"] = r["location"]
+                    kept["location"] = undouble(r["location"])
                 break
         else:
             bucket.append(
@@ -113,8 +152,8 @@ def unified_events(site: Site, today: date | None = None) -> list[dict]:
                     "all_day": bool(r.get("all_day")),
                     "date": r["date"],
                     "time": time_label(r["start"], r.get("end", ""), bool(r.get("all_day"))),
-                    "location": r.get("location", ""),
-                    "description": (r.get("description") or "")[:400],
+                    "location": undouble(r.get("location", "")),
+                    "description": tidy_description(r["title"], r.get("description") or "")[:400],
                     "url": r["url"],
                     "category": r.get("event_category", "community"),
                     "source": r["source"],

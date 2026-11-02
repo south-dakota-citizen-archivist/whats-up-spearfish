@@ -537,3 +537,33 @@ def test_recent_sites_keep_full_history():
     out = recent_sites(sites, today)
     assert [s["k"] for s in out] == ["new", "edge"]
     assert len(out[0]["r"]) == 2  # older records ride along, so a place's history is complete
+
+
+# ── event text tidying ───────────────────────────────────────────────────────
+
+
+def test_undouble_repeated_venue():
+    from sitegen.events import undouble
+
+    assert undouble("Lyman High School Lyman High School") == "Lyman High School"
+    assert undouble("Student Union Student Union Lobby near Starbucks") == "Student Union Lobby near Starbucks"
+    assert undouble("Spearfish High School Spearfish High School Auditorium") == "Spearfish High School Auditorium"
+    assert undouble("Walla Walla") == "Walla Walla"  # one word repeated is a real name
+    assert undouble("City Hall, 625 N 5th St") == "City Hall, 625 N 5th St"
+    assert undouble("") == ""
+
+
+def test_tidy_description():
+    from sitegen.events import tidy_description
+
+    assert tidy_description("Fall Play", "Fall Play") == ""
+    assert tidy_description("Fall Play", "fall play.") == ""
+    assert (
+        tidy_description(
+            "Lawrence County Democrats Monthly Meetings",
+            "Lawrence County Democrats Monthly Meetings held on the 2nd Wednesday.",
+        )
+        == "Held on the 2nd Wednesday."
+    )
+    assert tidy_description("Story Time", "Songs and stories for toddlers.") == "Songs and stories for toddlers."
+    assert tidy_description("Story Time", "") == ""
