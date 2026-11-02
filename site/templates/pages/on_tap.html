@@ -2,7 +2,10 @@
 {% from "macros.html" import card, empty, ext %}
 
 {% block content %}
-<h1 class="text-2xl font-extrabold mb-4">On tap</h1>
+<div>
+  <h1 class="text-2xl font-extrabold">On tap</h1>
+  <p class="text-stone-600 text-sm">For local venues that post their tap lists online.</p>
+</div>
 
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
   {% for v in venues %}

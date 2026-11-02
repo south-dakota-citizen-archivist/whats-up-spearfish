@@ -1,9 +1,8 @@
 # What's up, Spearfish?
 
-A static site that collects what's happening in and around Spearfish, S.D. and the
-Northern Black Hills — a unified events calendar, school menus, creek flow, bird
-sightings, public meetings, permits, tap lists and more — rebuilt several times a
-day from public sources.
+_Built by Claude_
+
+A website that collects what's happening in and around Spearfish, S.D. and the Northern Black Hills — events calendar, school menus, creek flow, bird sightings, public meetings, permits, tap lists and more — rebuilt several times a day from public sources.
 
 **Live:** https://south-dakota-citizen-archivist.github.io/whats-up-spearfish/
 · **Source health:** [`_health.json` on the data branch](https://github.com/south-dakota-citizen-archivist/whats-up-spearfish/blob/data/_health.json)
@@ -108,7 +107,7 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [Spearfish Brewing Company](https://www.spearfishbrewing.com/beers/) | `spearfish_brewing` | beer | full snapshot |
 | [The Clubhouse](https://clubhouseofspearfish.com/food-and-drink/) | `clubhouse_spearfish` | beer | full snapshot |
 | [Public Bids](https://www.spearfish.gov/Bids.aspx) | `public_bids` | bid | full snapshot |
-| [Spearfish building permit reports](https://www.cityofspearfish.com/Archive.aspx?AMID=37) | `building_permits` | building_permit |  |
+| [Spearfish building permit reports](https://www.spearfish.gov/Archive.aspx?AMID=37) | `building_permits` | building_permit |  |
 | [City of Spearfish](https://spearfishsd.portal.civicclerk.com/) | `spearfish_city` | document |  |
 | [Lawrence County Agenda Center](https://www.lawrence.sd.us/AgendaCenter) | `lawrence_county` | document |  |
 | [Spearfish School Board](https://www.spearfish.k12.sd.us/documents/board-of-education/board-meeting-agendas/25745609) | `spearfish_school_board_docs` | document |  |
@@ -151,11 +150,11 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [Middle School Lunch](https://menus.healthepro.com/organizations/524/sites/4521/menus/124136) | `spearfish_ms_lunch` | school_menu |  |
 | [MS/HS Breakfast](https://menus.healthepro.com/organizations/524/sites/4520/menus/124135) | `spearfish_mshs_breakfast` | school_menu |  |
 | [eBird recent sightings](https://ebird.org/region/US-SD-081) | `ebird` | sighting | full snapshot |
+| [Library checkouts](https://spearfish.blackhills.bywatersolutions.com) | `library_circulation` | stats |  |
 | [Public Meetings (YouTube)](https://www.youtube.com/@spearfishschooldistrictliv3794/streams) | `public_meetings_youtube` | youtube_video |  |
 | SD DANR contested cases | `danr_contested_cases` | notice | 🧊 on ice |
 | SD DANR spill reports | `danr_spills` | notice | 🧊 on ice |
 | [Spearfish planning & permits (OpenGov)](https://spearfishsd.portal.opengov.com/) | `planning_zoning` | permit | 🧊 on ice, full snapshot |
 | Native plant spotlight | `native_plants_spotlight` | plant | 🧊 on ice |
 | Wildlife carcass pickups (SD DOT) | `roadkill` | sighting | 🧊 on ice |
-| Library circulation stats | `library_circulation` | stats | 🧊 on ice |
 <!-- sources:end -->

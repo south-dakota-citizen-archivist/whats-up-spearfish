@@ -10,8 +10,7 @@
 <div class="mb-4">
   <h1 class="text-2xl font-extrabold">What's being built here?</h1>
   <p class="text-stone-600 text-sm max-w-3xl">
-    Passing a construction site? Find out what's going on there. Use your location, search by address, permit number,
-    contractor or owner, or tap a dot on the map.
+    Find out what's being built in and around Spearfish. Use your location to see nearby projects, or search by address, permit number, contractor or owner.
   </p>
 </div>
 
@@ -90,7 +89,7 @@
               </div>
               <button type="button" @click="clear(true)" class="text-sm text-stone-500 hover:text-stone-900 px-1 self-start" aria-label="Close details">✕</button>
             </div>
-            <ul class="divide-y divide-stone-100 max-h-[60vh] overflow-y-auto">
+            <ul class="divide-y divide-stone-100 lg:max-h-[60vh] lg:overflow-y-auto">
               <template x-for="(r, i) in selected.r" :key="i">
                 <li class="px-4 py-3 text-sm">
                   <p class="text-xs font-semibold uppercase tracking-wide"
@@ -132,7 +131,7 @@
       <p x-show="loadingAll && !loading" x-cloak class="text-stone-500 text-sm mb-1.5">Loading older records too…</p>
       <h2 x-show="!loading && !failed" x-cloak class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-1.5"
           x-text="q ? 'Matching addresses' : (here ? 'Closest to you' : (since === 'latest' ? 'Newest permits' : 'Most recent activity'))"></h2>
-      <ul x-show="!loading && !failed" x-cloak class="bg-white border border-stone-300 divide-y divide-stone-100 max-h-[45vh] lg:max-h-[60vh] overflow-y-auto">
+      <ul x-show="!loading && !failed" x-cloak class="bg-white border border-stone-300 divide-y divide-stone-100 lg:max-h-[60vh] lg:overflow-y-auto">
         <template x-for="s in results" :key="s.k">
           <li>
             <button type="button" @click="select(s)" class="w-full text-left px-4 py-2.5 hover:bg-pine-50" :class="selected && selected.k === s.k ? 'bg-pine-50' : ''">

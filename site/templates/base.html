@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page_title %}{{ page_title }} · {% endif %}What's up, Spearfish?</title>
-  <meta name="description" content="Events, school menus, creek flow, bird sightings, meetings and more in Spearfish and the Northern Black Hills. Updated daily.">
+  <meta name="description" content="Spearfish and the Northern Hills: Events, school menus, fire weather, planning applications, bird sightings, public meetings and more. Updated daily.">
   <link rel="icon" type="image/png" href="{{ root }}static/favicon.png">
   <link rel="stylesheet" href="{{ root }}static/site.css?v={{ css_version }}">
   <link rel="alternate" type="application/rss+xml" title="Upcoming events" href="{{ root }}events.xml">
   <meta property="og:type" content="website">
   <meta property="og:title" content="What's up, Spearfish?">
-  <meta property="og:description" content="What's happening in Spearfish and the Northern Black Hills.">
+  <meta property="og:description" content="What's happening in Spearfish and the Northern Hills.">
   <meta property="og:url" content="{{ SITE_URL }}/{{ page_path }}">
   <meta property="og:image" content="{{ SITE_URL }}/static/spearfish-canyon.jpg">
   <meta name="twitter:card" content="summary_large_image">
@@ -34,6 +34,7 @@
     })();
   </script>
   <script defer src="{{ root }}static/js/time.js"></script>
+  <script defer src="{{ root }}static/js/more.js"></script>
   {% block head %}{% endblock %}
   <script defer src="{{ root }}static/vendor/alpine-3.14.9.min.js"></script>
 </head>

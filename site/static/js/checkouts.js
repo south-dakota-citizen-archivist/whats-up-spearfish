@@ -1,5 +1,5 @@
 // Library checkouts by month: one line per way of borrowing (physical items, Libby,
-// hoopla). Zero baseline, hairline grid, each line labeled at its end, crosshair
+// Hoopla). Zero baseline, hairline grid, each line labeled at its end, crosshair
 // and readout on hover. Colors come from the --series-N custom properties.
 document.addEventListener("alpine:init", () => {
   const NS = "http://www.w3.org/2000/svg";

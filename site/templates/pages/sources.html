@@ -1,18 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="text-2xl font-extrabold">Where this comes from</h1>
-<p class="text-sm text-stone-600 mb-5 max-w-2xl">
-  Everything on this site comes from the public websites below. We check them for updates throughout the day.
-  Follow a link to go straight to the original.
-</p>
+<h1 class="text-2xl font-extrabold">Data sources</h1>
 
 <div class="bg-white border border-stone-200 overflow-x-auto">
   <table class="w-full min-w-[36rem] text-sm">
     <thead class="text-left text-xs uppercase tracking-wide text-stone-500 border-b border-stone-300">
       <tr>
-        <th class="px-4 py-2.5 font-semibold w-[30%]">From</th>
-        <th class="px-4 py-2.5 font-semibold">What we show</th>
+        <th class="px-4 py-2.5 font-semibold w-[30%]">Source</th>
+        <th class="px-4 py-2.5 font-semibold">Records</th>
         <th class="px-4 py-2.5 font-semibold w-[26%]">Last updated</th>
       </tr>
     </thead>
@@ -45,8 +41,6 @@
 </div>
 
 <p class="mt-6 text-sm text-stone-600 max-w-2xl">
-  What's up, Spearfish? is a volunteer project and isn't affiliated with any of these organizations.
-  Spot a problem, or know of something that should be here?
-  <a href="https://github.com/south-dakota-citizen-archivist/whats-up-spearfish/issues" class="text-pine-700 underline">Let us know</a>.
+  Built by Claude and Spearfish resident Cody Winchester ✨ <a href="https://github.com/south-dakota-citizen-archivist/whats-up-spearfish/" target="_blank" rel="noopener" class="hover:text-pine-700 hover:underline">Source code on GitHub</a>.
 </p>
 {% endblock %}

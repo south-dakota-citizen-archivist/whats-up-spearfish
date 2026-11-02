@@ -7,7 +7,7 @@
   {% for s in employers %}
   {% call card(s.label, s.slug, sources=s, more=s.url, more_label="All postings") %}
     {% if s.records %}
-    <ul class="space-y-2.5 text-sm scroll-list">
+    <ul class="space-y-2.5 text-sm" data-more="8">
       {% for j in s.records | sort(attribute='published', reverse=true) %}
       <li>{{ ext(j.url, j.title, 'font-medium hover:text-pine-700 hover:underline') }}
         <p class="text-xs text-stone-500">{{ [((j.department or j.location or j.category or '') | replace(s.label, '')), ('posted ' ~ (j.published | fmt_day('%b %-d'))) if j.published else '', ('closes ' ~ j.closing) if j.closing else ''] | select | join(' · ') }}</p></li>

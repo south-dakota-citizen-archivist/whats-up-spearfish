@@ -2,7 +2,7 @@
 {% from "macros.html" import card, empty, ext, badge %}
 
 {% macro meeting_list(items) %}
-<ul class="divide-y divide-stone-100">
+<ul class="divide-y divide-stone-100" data-more="8">
   {% for m in items %}
   <li class="py-2.5">
     <p class="text-xs font-semibold text-stone-500 uppercase tracking-wide">{{ m.date | fmt_day('%a, %b %-d') }} · {{ m.body }}</p>
@@ -26,9 +26,7 @@
   {% endcall %}
 
   {% call card("Recent meetings", "recent-meetings") %}
-    <div class="scroll-list">
     {% if recent %}{{ meeting_list(recent) }}{% else %}{{ empty("Nothing in the past six weeks.") }}{% endif %}
-    </div>
   {% endcall %}
 
   {% call card("Meeting video", "video", sources=youtube, class="lg:col-span-2") %}
@@ -54,7 +52,7 @@
 
   {% call card("Planning applications", "planning", sources=planning, more=root ~ "permits/", more_label="Look up an address") %}
     {% if planning_items %}
-    <ul class="divide-y divide-stone-100 text-sm scroll-list">
+    <ul class="divide-y divide-stone-100 text-sm" data-more="8">
       {% for p in planning_items %}
       <li class="py-2">
         <p class="text-xs font-semibold text-stone-500 uppercase tracking-wide">{{ p.meeting_date | fmt_day('%b %-d, %Y') }} · {{ p.app_type }}</p>
@@ -68,8 +66,7 @@
 
   {% call card("Building permits issued", "building-permits", sources=building_permits, more=root ~ "permits/", more_label="Look up an address") %}
     {% if building_records %}
-    {# no links inside, so the list itself takes keyboard focus to be scrollable #}
-    <ul class="divide-y divide-stone-100 text-sm scroll-list" tabindex="0" aria-label="Building permits issued, newest first">
+    <ul class="divide-y divide-stone-100 text-sm" data-more="8">
       {% for p in building_records %}
       <li class="py-2">
         <p class="font-medium">{{ p.construction_type | permit_type }}{% if p.cost_approximate %} <span class="text-stone-500 font-normal">· ${{ p.cost_approximate | intcomma }}</span>{% endif %}</p>
@@ -94,7 +91,7 @@
 
     {% call card("State environmental notices", "notices", sources=notices, more=notices.url, more_label="All notices") %}
       {% if notices.records %}
-      <ul class="space-y-2.5 text-sm scroll-list">
+      <ul class="space-y-2.5 text-sm" data-more="8">
         {% for n in notices.records %}
         <li>{{ ext(n.url, n.title, 'font-medium hover:text-pine-700 hover:underline') }}
           <p class="text-xs text-stone-500">{{ n.notice_type }}{% if n.location %} · {{ n.location }}{% endif %}{% if n.deadline %} · comments due {{ n.deadline }}{% endif %}</p></li>

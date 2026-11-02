@@ -19,8 +19,6 @@
 /* Chart series colors, in fixed order (validated together for color-blind separation) */
 :root { --series-1: #2a78d6; --series-2: #eb6834; --series-3: #1baf7a; }
 
-/* Long lists inside cards scroll instead of stretching the page */
-.scroll-list { max-height: 28rem; overflow-y: auto; }
 
 /* No rounded corners, anywhere — including native form controls */
 *, ::before, ::after { border-radius: 0 !important; }

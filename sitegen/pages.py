@@ -533,7 +533,7 @@ def community(site: Site, events: list[dict], today: date) -> dict:
 CHECKOUT_SERIES = [
     ("loans", "Physical items", "Books, movies and other things you can hold"),
     ("overdrive", "Libby", "E-books and audiobooks through Libby (OverDrive)"),
-    ("hoopla", "hoopla", "Streaming movies, music, e-books and audiobooks through hoopla"),
+    ("hoopla", "Hoopla", "Streaming movies, music, e-books and audiobooks through Hoopla"),
 ]
 
 

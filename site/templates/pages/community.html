@@ -64,7 +64,7 @@
       <p class="text-sm text-stone-700 mb-3">
         In {{ month }}: <span class="font-bold">{{ latest.loans | intcomma }}</span> physical items checked out
         {%- if latest.overdrive is not none %}, plus <span class="font-bold">{{ latest.overdrive | intcomma }}</span> e-books and audiobooks on Libby{% endif %}
-        {%- if latest.hoopla is not none %} and <span class="font-bold">{{ latest.hoopla | intcomma }}</span> on hoopla{% endif %}.
+        {%- if latest.hoopla is not none %} and <span class="font-bold">{{ latest.hoopla | intcomma }}</span> on Hoopla{% endif %}.
       </p>
       <div x-data="checkoutsChart()">
         <script type="application/json" x-ref="data">{{ {"rows": checkouts.rows, "series": checkouts.series} | tojson }}</script>
@@ -75,7 +75,7 @@
         </ul>
         <div class="relative">
           <div x-ref="box" class="h-56 w-full" role="img"
-               aria-label="Monthly library checkouts from {{ (checkouts.first ~ '-01') | fmt_day('%B %Y') }} to {{ month }}, by physical items, Libby and hoopla. The numbers are in the table below."></div>
+               aria-label="Monthly library checkouts from {{ (checkouts.first ~ '-01') | fmt_day('%B %Y') }} to {{ month }}, by physical items, Libby and Hoopla. The numbers are in the table below."></div>
           <div x-show="readout" x-cloak class="pointer-events-none absolute top-0 -translate-x-1/2 bg-white border border-stone-300 shadow-sm px-2.5 py-1.5 text-xs whitespace-nowrap z-10"
                :style="readout && 'left:' + readout.left + 'px'">
             <p class="font-semibold text-stone-900 mb-0.5" x-text="readout && readout.when"></p>
@@ -87,7 +87,7 @@
             </template>
           </div>
         </div>
-        <p class="mt-1 text-xs text-stone-500">Libby and hoopla weren't counted before 2022; hoopla counts stop after 2025.</p>
+        <p class="mt-1 text-xs text-stone-500">Libby and Hoopla weren't counted before 2022; Hoopla counts stop after 2025.</p>
       </div>
       <details class="mt-3 text-xs text-stone-700">
         <summary class="cursor-pointer font-semibold text-pine-700">See the numbers by year</summary>

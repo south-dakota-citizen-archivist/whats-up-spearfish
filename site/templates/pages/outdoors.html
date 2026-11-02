@@ -91,7 +91,7 @@
 
   {% call card("National forest alerts", "forest-alerts", sources=bhnf_alerts, more=bhnf_alerts.url, more_label="All alerts") %}
     {% if forest_alerts %}
-    <ul class="space-y-2.5 text-sm scroll-list">
+    <ul class="space-y-2.5 text-sm" data-more="8">
       {% for a in forest_alerts %}
       <li>{{ ext(a.url, a.title, 'font-medium hover:text-pine-700 hover:underline') }}
         <p class="text-xs text-stone-500">{% if a.alert_type %}{{ a.alert_type }} · {% endif %}{{ a.published | fmt_day('%b %-d, %Y') }}</p></li>
@@ -102,7 +102,7 @@
 
   {% call card("Forest projects open for review", "projects", sources=bhnf_projects, more=bhnf_projects.url, more_label="All projects") %}
     {% if projects %}
-    <ul class="space-y-2.5 text-sm scroll-list">
+    <ul class="space-y-2.5 text-sm" data-more="8">
       {% for p in projects %}
       <li>{{ ext(p.url, p.title, 'font-medium hover:text-pine-700 hover:underline') }}
         {% if p.comment_period_date %}<p class="text-xs text-stone-500">Comment period: {{ p.comment_period_date }}</p>{% endif %}</li>

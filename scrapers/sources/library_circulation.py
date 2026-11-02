@@ -4,7 +4,7 @@ scrapers/sources/library_circulation.py
 Monthly checkouts at the Grace Balloch Memorial Library, from a Google Sheet
 kept by hand from the library board's meeting packets: print and physical
 items ("loans", plus renewals through 2021) and digital checkouts through
-OverDrive/Libby (2022 on) and hoopla (2022–2025). Each month links to the board
+OverDrive/Libby (2022 on) and Hoopla (2022–2025). Each month links to the board
 minutes it came from.
 """
 
