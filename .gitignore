@@ -247,3 +247,6 @@ Temporary Items
 
 # Build output (deployed via Pages artifact)
 _site/
+
+# raw parcel snapshots stay on your machine; only parcel_links.json is published
+*.parquet
