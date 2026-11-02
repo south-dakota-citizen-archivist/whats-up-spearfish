@@ -99,6 +99,40 @@ def menus_for_day(site: Site, day: str) -> list[dict]:
                 "items": [_menu_item(i) for i in items],
             }
         )
+    return merge_identical(out)
+
+
+# Names for school groups whose menus are merged because they're the same that day
+_MERGED_LEVELS = {
+    frozenset({"Elementary K–2", "Elementary 3–5"}): "Elementary (K–5)",
+    frozenset({"Middle School", "High School"}): "Middle & High School",
+}
+
+
+def merge_identical(menus: list[dict]) -> list[dict]:
+    """
+    One entry per distinct menu: when two school groups get exactly the same
+    meal (every dish, not just the main ones), they share a single entry
+    (e.g. "Middle & High School" lunch) instead of repeating it.
+    """
+    out: list[dict] = []
+    seen: dict[tuple, dict] = {}
+    for m in menus:
+        sig = (m["meal"], tuple(i.get("name", "") for i in m["items"]) or tuple(m["entrees"]))
+        if first := seen.get(sig):
+            first["slugs"].append(m["slug"])
+            first["levels"].append(m["level"])
+            continue
+        m = dict(m, slugs=[m["slug"]], levels=[m["level"]])
+        seen[sig] = m
+        out.append(m)
+    for m in out:
+        if len(m["levels"]) > 1:
+            same_meal = [x for x in menus if x["meal"] == m["meal"]]
+            if len(m["levels"]) == len(same_meal) and len(same_meal) > 2:
+                m["level"] = "All schools"
+            else:
+                m["level"] = _MERGED_LEVELS.get(frozenset(m["levels"]), " & ".join(m["levels"]))
     return out
 
 
@@ -120,19 +154,27 @@ def _menu_item(i: dict) -> dict:
 
 def menu_grid(menus: list[dict]) -> list[dict]:
     """
-    Rows for the menu table. A breakfast shared by consecutive rows is shown
-    once with a rowspan; the rows it covers get breakfast_span 0 (render no cell).
+    Rows for the menu table. School groups whose breakfast and lunch are both
+    the same that day share one row; a breakfast shared by consecutive rows is
+    shown once with a rowspan (the rows it covers get breakfast_span 0).
     """
-    by_slug = {m["slug"]: m for m in menus}
-    rows = [
-        {"level": level, "b_slug": b, "breakfast": by_slug.get(b), "lunch": by_slug.get(lunch)}
-        for level, b, lunch in MENU_GRID
-        if by_slug.get(b) or by_slug.get(lunch)
-    ]
+    by_slug = {slug: m for m in menus for slug in m.get("slugs", [m["slug"]])}
+    rows: list[dict] = []
+    for level, b, lunch in MENU_GRID:
+        row = {"level": level, "breakfast": by_slug.get(b), "lunch": by_slug.get(lunch)}
+        if not (row["breakfast"] or row["lunch"]):
+            continue
+        prev = rows[-1] if rows else None
+        if prev and prev["breakfast"] is row["breakfast"] and prev["lunch"] is row["lunch"]:
+            prev["levels"].append(level)
+            continue
+        rows.append({**row, "levels": [level]})
+    for r in rows:
+        r["level"] = _MERGED_LEVELS.get(frozenset(r["levels"]), " & ".join(r["levels"]))
     i = 0
     while i < len(rows):
         j = i
-        while j + 1 < len(rows) and rows[j + 1]["b_slug"] == rows[i]["b_slug"]:
+        while j + 1 < len(rows) and rows[j + 1]["breakfast"] is rows[i]["breakfast"]:
             j += 1
         rows[i]["breakfast_span"] = j - i + 1
         for k in range(i + 1, j + 1):

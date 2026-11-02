@@ -381,3 +381,40 @@ def test_pet_picks_alternate_species(tmp_path):
     picks = pet_picks(Site(tmp_path), 6, TODAY)
     assert [p["species"] for p in picks][:4] == ["cat", "dog", "cat", "dog"]
     assert len(picks) == 6
+
+
+def _menu(slug, level, meal, dishes):
+    return {
+        "slug": slug,
+        "key": f"{slug}|d",
+        "level": level,
+        "meal": meal,
+        "entrees": dishes[:1],
+        "items": [{"name": d} for d in dishes],
+    }
+
+
+def test_identical_menus_merge_into_one_group():
+    from sitegen.pages import menu_grid, merge_identical
+
+    lunch = ["Pizza", "Corn", "Milk"]
+    menus = merge_identical(
+        [
+            _menu("spearfish_elem_breakfast", "Elementary", "Breakfast", ["Cereal"]),
+            _menu("spearfish_elem_k2_lunch", "Elementary K–2", "Lunch", ["Tacos", "Milk"]),
+            _menu("spearfish_elem_35_lunch", "Elementary 3–5", "Lunch", ["Tacos", "Rice", "Milk"]),  # differs by a side
+            _menu("spearfish_mshs_breakfast", "Middle & High School", "Breakfast", ["Bagel"]),
+            _menu("spearfish_ms_lunch", "Middle School", "Lunch", lunch),
+            _menu("spearfish_hs_lunch", "High School", "Lunch", lunch),
+        ]
+    )
+    lunches = [m["level"] for m in menus if m["meal"] == "Lunch"]
+    assert lunches == ["Elementary K–2", "Elementary 3–5", "Middle & High School"]
+
+    rows = menu_grid(menus)
+    assert [(r["level"], r["breakfast_span"]) for r in rows] == [
+        ("Elementary K–2", 2),
+        ("Elementary 3–5", 0),
+        ("Middle & High School", 1),
+    ]
+    assert rows[2]["lunch"]["slugs"] == ["spearfish_ms_lunch", "spearfish_hs_lunch"]
