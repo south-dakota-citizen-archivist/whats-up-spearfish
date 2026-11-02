@@ -47,28 +47,10 @@
     {% else %}{{ empty("No recent recordings.") }}{% endif %}
   {% endcall %}
 
-  {% call card("Planning & permit applications", "permits", sources=permits, more=permits.url, more_label="OpenGov portal", class="lg:col-span-2") %}
-    {% if recent_permits %}
-    {% if not permits_windowed %}<p class="text-sm text-stone-500 mb-2">No applications in the past 60 days; showing the most recent on file.</p>{% endif %}
-    <div class="overflow-x-auto scroll-list">
-      <table class="w-full text-sm">
-        <thead class="text-left text-xs uppercase tracking-wide text-stone-500 sticky top-0 bg-white">
-          <tr><th class="py-1.5 pr-3">Submitted</th><th class="pr-3">Type</th><th class="pr-3">Address</th><th class="pr-3">Status</th></tr>
-        </thead>
-        <tbody class="divide-y divide-stone-100">
-          {% for p in recent_permits %}
-          <tr>
-            <td class="py-1.5 pr-3 whitespace-nowrap">{{ (p.date_submitted or p.date_created) | fmt_day('%b %-d') }}</td>
-            <td class="pr-3">{{ ext(p.url, p.permit_type or p.title) }}</td>
-            <td class="pr-3">{{ p.address }}</td>
-            <td class="pr-3 text-stone-600">{{ p.status or '' }}</td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-    {% else %}{{ empty("No applications in the past 60 days.") }}{% endif %}
-  {% endcall %}
+  <a href="{{ root }}permits/" class="lg:col-span-2 block bg-pine-800 text-white px-5 py-4 hover:bg-pine-700">
+    <p class="text-lg font-bold">What's being built here? →</p>
+    <p class="text-sm text-pine-100">Look up permits and planning applications by address, by permit number, or from where you're standing. Covers 2012 to now.</p>
+  </a>
 
   {% call card("Building permits issued", "building-permits", sources=building_permits, more=building_permits.url, more_label="Monthly reports") %}
     {% if building_records %}

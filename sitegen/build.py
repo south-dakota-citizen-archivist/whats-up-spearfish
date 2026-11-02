@@ -49,6 +49,7 @@ NAV = [
     ("outdoors/", "Outdoors"),
     ("on-tap/", "On tap"),
     ("civic/", "Civic"),
+    ("permits/", "Permits"),
     ("news/", "News"),
     ("jobs/", "Jobs"),
     ("community/", "Community"),
@@ -62,6 +63,7 @@ PAGES = [
     ("outdoors/", "pages/outdoors.html", "Outdoors", pages.outdoors),
     ("on-tap/", "pages/on_tap.html", "On tap", pages.on_tap),
     ("civic/", "pages/civic.html", "Civic", pages.civic),
+    ("permits/", "pages/permits.html", "What's being built here?", pages.permits_page),
     ("news/", "pages/news.html", "News", pages.news),
     ("jobs/", "pages/jobs.html", "Jobs", pages.jobs),
     ("community/", "pages/community.html", "Community", pages.community),
@@ -202,6 +204,7 @@ def build(data_dir: Path, out_dir: Path) -> None:
     )
 
     feeds.write_json(events, out_dir / "events.json")
+    feeds.write_json(pages.permit_sites(site), out_dir / "permits" / "sites.json")
     feeds.write_ics(events, out_dir / "calendar.ics", SITE_URL)
     feeds.write_rss(events, out_dir / "events.xml", SITE_URL)
     (out_dir / ".nojekyll").touch()

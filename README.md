@@ -21,9 +21,14 @@ scrapers (GitHub Actions, scheduled)  →  data branch (JSON snapshots)  →  si
 - **`data` branch** — scraped data lives on its own branch, so `main` history is
   code only. Files are snapshots: news, documents and events are pruned to a
   rolling window (see `KINDS` in `scrapers/schema.py`), not archived forever.
+  Two exceptions are kept in full: building permits from the city's monthly
+  reports (2013–), and `archive/` — every planning/permit record collected from
+  the city's OpenGov portal (2012–July 2026) before the city turned off public
+  access. That archive is rebuilt only by `scripts/build_planning_archive.py`.
 - **`sitegen/`** — renders `site/templates/` with Jinja into `_site/`: separate
-  pages for Today, Events, Schools, Outdoors, On tap, Civic, News, Jobs,
-  Community and Status, plus `events.json`, `calendar.ics` and `events.xml`.
+  pages for Today, Events, Schools, Outdoors, On tap, Civic, Permits ("What's
+  being built here?" — permits and applications by address, search or your
+  location), News, Jobs, Community and Status, plus `events.json`, `calendar.ics` and `events.xml`.
   Tailwind is compiled with `pytailwindcss`; Alpine.js is vendored in
   `site/static/vendor/`. No Node toolchain.
 - **Workflows** — `.github/workflows/scrape.yml` runs the daily tier each morning
@@ -82,7 +87,7 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [Sawyer Brewing Co.](https://www.sawyerbrewingco.com/menu) | `sawyer_brewing` | beer | full snapshot |
 | [Spearfish Brewing Company](https://www.spearfishbrewing.com/beers/) | `spearfish_brewing` | beer | full snapshot |
 | [Public Bids](https://www.spearfish.gov/Bids.aspx) | `public_bids` | bid | full snapshot |
-| [Spearfish building permit reports](https://www.cityofspearfish.com/Archive.aspx?AMID=37) | `building_permits` | building_permit | full snapshot |
+| [Spearfish building permit reports](https://www.cityofspearfish.com/Archive.aspx?AMID=37) | `building_permits` | building_permit |  |
 | [City of Spearfish](https://spearfishsd.portal.civicclerk.com/) | `spearfish_city` | document |  |
 | [Lawrence County Agenda Center](https://www.lawrence.sd.us/AgendaCenter) | `lawrence_county` | document |  |
 | [Spearfish School Board](https://www.spearfish.k12.sd.us/documents/board-of-education/board-meeting-agendas/25745609) | `spearfish_school_board_docs` | document |  |
@@ -111,7 +116,6 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [SDPB](https://www.sdpb.org/news) | `sdpb_news` | news | needs browser |
 | [Sundance Times](https://www.sundancetimes.com) | `sundance_times` | news |  |
 | [SD DANR public notices (West River)](https://danr.sd.gov/public/default.aspx) | `danr_public_notices` | notice | full snapshot |
-| [Spearfish planning & permits (OpenGov)](https://spearfishsd.portal.opengov.com/) | `planning_zoning` | permit | full snapshot |
 | [Black Hills National Forest](https://www.fs.usda.gov/r02/blackhills/newsroom/releases) | `bhnf` | press_release |  |
 | [City of Spearfish Blog](https://www.spearfish.gov/Blog.aspx) | `spearfish_blog` | press_release |  |
 | [City of Spearfish News Flash](https://www.spearfish.gov/CivicAlerts.aspx) | `spearfish_news` | press_release |  |
@@ -129,6 +133,7 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [The Clubhouse](https://untappd.com/v/the-clubhouse-of-spearfish/9898973) | `clubhouse_spearfish` | beer | 🧊 on ice, full snapshot |
 | SD DANR contested cases | `danr_contested_cases` | notice | 🧊 on ice |
 | SD DANR spill reports | `danr_spills` | notice | 🧊 on ice |
+| [Spearfish planning & permits (OpenGov)](https://spearfishsd.portal.opengov.com/) | `planning_zoning` | permit | 🧊 on ice, full snapshot |
 | Native plant spotlight | `native_plants_spotlight` | plant | 🧊 on ice |
 | Wildlife carcass pickups (SD DOT) | `roadkill` | sighting | 🧊 on ice |
 | Library circulation stats | `library_circulation` | stats | 🧊 on ice |

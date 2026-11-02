@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% from "macros.html" import freshness %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ root }}static/vendor/leaflet-1.9.4/leaflet.css">
+<script defer src="{{ root }}static/vendor/leaflet-1.9.4/leaflet.js"></script>
+<script defer src="{{ root }}static/js/permits.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="mb-4">
+  <h1 class="text-2xl font-extrabold">What's being built here?</h1>
+  <p class="text-stone-600 text-sm max-w-3xl">
+    Look up permits and planning applications for any address in Spearfish: use your location when you're standing
+    in front of a construction site, search by address, permit number, contractor or owner, or tap the map.
+  </p>
+</div>
+
+<div x-data="permits('{{ root }}permits/sites.json')">
+  <div class="flex flex-wrap gap-2 items-center mb-3">
+    <button type="button" @click="near()" :disabled="locating"
+            class="px-4 py-2 bg-pine-700 text-white font-semibold text-sm hover:bg-pine-800 disabled:opacity-60">
+      <span x-text="locating ? 'Locating…' : '📍 What\'s near me?'"></span>
+    </button>
+    <label for="pq" class="sr-only">Search permits</label>
+    <input id="pq" type="search" x-model.debounce.250ms="q" @input="here = null; selected = null"
+           placeholder="Address, permit #, contractor, owner…"
+           class="flex-1 min-w-[14rem] border border-stone-300 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pine-600">
+    <label for="since" class="sr-only">Time period</label>
+    <select id="since" x-model="since" class="border border-stone-300 bg-white px-3 py-2 text-sm">
+      <option value="1">Past year</option>
+      <option value="2">Past 2 years</option>
+      <option value="5">Past 5 years</option>
+      <option value="all">All years (2012–)</option>
+    </select>
+  </div>
+  <p x-show="error" x-cloak class="text-sm text-red-700 mb-3" x-text="error"></p>
+
+  <div class="grid lg:grid-cols-5 gap-4">
+    <div class="lg:col-span-3 min-w-0 order-2 lg:order-1">
+      <div x-ref="map" class="h-[40vh] lg:h-[60vh] min-h-72 border border-stone-300 bg-stone-200 z-0"></div>
+      <p class="text-xs text-stone-500 mt-1.5 flex flex-wrap gap-x-4">
+        <span><span class="inline-block w-2.5 h-2.5 align-middle" style="background:#c2410c"></span> activity in the past year</span>
+        <span><span class="inline-block w-2.5 h-2.5 align-middle" style="background:#2f6b4f"></span> 1–5 years ago</span>
+        <span><span class="inline-block w-2.5 h-2.5 align-middle" style="background:#78716c"></span> older</span>
+      </p>
+    </div>
+
+    <div class="lg:col-span-2 min-w-0 order-1 lg:order-2">
+      {# selected site #}
+      <section x-show="selected" x-cloak x-ref="detail" class="bg-white border border-stone-300 mb-4 scroll-mt-4">
+        <template x-if="selected">
+          <div>
+            <div class="px-4 py-3 border-b border-stone-200 flex justify-between gap-3">
+              <div>
+                <h2 class="font-bold text-lg" x-text="selected.a"></h2>
+                <p class="text-xs text-stone-500" x-text="selected.r.length + (selected.r.length === 1 ? ' record' : ' records')"></p>
+              </div>
+              <button type="button" @click="selected = null; history.replaceState(null, '', location.pathname)" class="text-sm text-stone-500 hover:text-stone-900" aria-label="Close">✕</button>
+            </div>
+            <ul class="divide-y divide-stone-100 max-h-[60vh] overflow-y-auto">
+              <template x-for="(r, i) in selected.r" :key="i">
+                <li class="px-4 py-3 text-sm">
+                  <p class="text-xs font-semibold uppercase tracking-wide"
+                     :class="r.src === 'permit' ? 'text-pine-700' : 'text-sky-800'">
+                    <span x-text="r.src === 'permit' ? 'Permit issued' : 'Application'"></span>
+                    · <span x-text="r.src === 'permit' ? day((r.d || '').slice(0, 7)) : day(r.d)"></span>
+                    <span x-show="r.s" x-text="'· ' + r.s"></span>
+                  </p>
+                  <p class="font-semibold" x-text="r.t"></p>
+                  <p x-show="r.desc" class="text-stone-700" x-text="r.desc"></p>
+                  <dl class="mt-1 grid grid-cols-[auto_1fr] gap-x-3 text-xs text-stone-600">
+                    <template x-if="r.no"><dt class="text-stone-400">Number</dt></template><template x-if="r.no"><dd x-text="r.no"></dd></template>
+                    <template x-if="r.v"><dt class="text-stone-400">Value</dt></template><template x-if="r.v"><dd x-text="money(r.v)"></dd></template>
+                    <template x-if="r.con"><dt class="text-stone-400">Contractor</dt></template><template x-if="r.con"><dd x-text="r.con + (r.con_c ? ' · ' + r.con_c : '')"></dd></template>
+                    <template x-if="r.own"><dt class="text-stone-400">Owner</dt></template><template x-if="r.own"><dd x-text="r.own + (r.own_c ? ' · ' + r.own_c : '')"></dd></template>
+                    <template x-if="r.who && r.who !== r.own"><dt class="text-stone-400">Applicant</dt></template><template x-if="r.who && r.who !== r.own"><dd x-text="r.who"></dd></template>
+                  </dl>
+                  <a x-show="r.u" :href="r.u" target="_blank" rel="noopener" class="text-xs font-semibold text-pine-700 hover:underline">Monthly permit report (PDF) →</a>
+                </li>
+              </template>
+            </ul>
+          </div>
+        </template>
+      </section>
+
+      {# results #}
+      <p x-show="loading" class="text-stone-500 text-sm">Loading records…</p>
+      <h2 x-show="!loading" x-cloak class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-1.5"
+          x-text="q ? 'Matching addresses' : (here ? 'Closest to you' : 'Most recent activity')"></h2>
+      <ul x-show="!loading" x-cloak class="bg-white border border-stone-300 divide-y divide-stone-100 max-h-[45vh] lg:max-h-[60vh] overflow-y-auto">
+        <template x-for="s in results" :key="s.k">
+          <li>
+            <button type="button" @click="select(s)" class="w-full text-left px-4 py-2.5 hover:bg-pine-50" :class="selected && selected.k === s.k ? 'bg-pine-50' : ''">
+              <span class="flex justify-between gap-3">
+                <span class="font-medium" x-text="s.a"></span>
+                <span x-show="s.dist != null" class="text-xs text-stone-500 whitespace-nowrap" x-text="feet(s.dist)"></span>
+              </span>
+              <span class="block text-xs text-stone-500">
+                <span x-text="s.r[0].t"></span> · <span x-text="s.lp ? day(s.last.slice(0, 7)) : day(s.last)"></span>
+                <span x-show="s.r.length > 1" x-text="'· ' + s.r.length + ' records'"></span>
+              </span>
+            </button>
+          </li>
+        </template>
+        <li x-show="!results.length" class="px-4 py-3 text-sm text-stone-500">No matching addresses.</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="mt-6 text-sm text-stone-600 max-w-3xl space-y-2">
+    <h2 class="font-bold text-stone-900">About this data</h2>
+    <p>
+      <strong>Permits issued</strong> come from the city's monthly building permit reports
+      ({{ permit_count | intcomma }} permits, 2013 through {{ latest_report | fmt_day('%B %Y') }}), updated as new reports are posted.
+      {{ freshness(building_permits) }}
+    </p>
+    <p>
+      <strong>Applications</strong> come from the city's OpenGov permitting portal: {{ archive_meta.count | default(0) | intcomma }} records
+      from 2012 through {{ archive_meta.newest_created | default('') | fmt_day('%B %Y') }}, including records migrated from the city's
+      pre-2020 system. The city turned off public access to that portal in 2026, so no newer applications are available
+      online; this archive is what was collected before then.
+      A few addresses (mostly brand-new streets) couldn't be placed on the map but are still searchable.
+    </p>
+  </section>
+</div>
+{% endblock %}

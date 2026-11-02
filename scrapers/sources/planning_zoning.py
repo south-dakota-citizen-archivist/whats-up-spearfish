@@ -180,6 +180,11 @@ class PlanningZoning(BaseScraper):
     url = "https://spearfishsd.portal.opengov.com/"
     replace = True
     dedup_key = "record_id"
+    # Disabled 2026-11-01: the city turned off its public OpenGov portal (general_settings shows
+    # publicPortalEnabled=false, allowPublicRecordSearch=false), so the API returns 403. Everything
+    # collected before then is in the data branch's archive/ (scripts/build_planning_archive.py).
+    # Re-enable if the city turns public search back on.
+    enabled = False
 
     def scrape(self) -> list[dict]:
         records: dict[int, dict] = {}

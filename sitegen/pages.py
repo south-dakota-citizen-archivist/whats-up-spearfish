@@ -7,10 +7,12 @@ list and today's date, and returns the template variables for that page.
 
 from __future__ import annotations
 
+import json
 import statistics
 from collections import defaultdict
 from datetime import date, timedelta
 
+from scrapers import geo
 from sitegen.data import Site, Source
 from sitegen.events import CATEGORY_LABELS
 
@@ -287,12 +289,6 @@ def on_tap(site: Site, events: list[dict], today: date) -> dict:
 def civic(site: Site, events: list[dict], today: date) -> dict:
     t = today.isoformat()
     all_meetings = meetings(site)
-    permits = site.get("planning_zoning")
-    recent_permits = [
-        r
-        for r in permits.records
-        if (r.get("date_submitted") or r.get("date_created") or "") >= (today - timedelta(days=60)).isoformat()
-    ]
     bp = site.get("building_permits")
     return {
         "upcoming": [m for m in all_meetings if m["date"] >= t][:20],
@@ -300,10 +296,6 @@ def civic(site: Site, events: list[dict], today: date) -> dict:
         "meeting_sources": sources_of(site, ["spearfish_city", "lawrence_county", "spearfish_school_board_docs"]),
         "videos": newest(site.get("public_meetings_youtube").records)[:9],
         "youtube": site.get("public_meetings_youtube"),
-        "permits": permits,
-        # Nothing in the window (e.g. the source is stale): show the latest on file instead
-        "recent_permits": newest(recent_permits or permits.records, "date_submitted")[: 200 if recent_permits else 25],
-        "permits_windowed": bool(recent_permits),
         "building_permits": bp,
         "building_records": sorted(
             bp.records, key=lambda r: (r.get("date", ""), r.get("cost_approximate") or 0), reverse=True
@@ -351,3 +343,109 @@ def status_summary(site: Site) -> dict:
     live = [s for s in site.sources.values() if s.enabled]
     bad = [s for s in live if s.status not in ("ok",)]
     return {"total": len(live), "bad": len(bad)}
+
+
+# ── page: permits ("What's being built here?") ─────────────────────────────
+
+
+def load_planning_archive(site: Site) -> dict:
+    path = site.data_dir / "archive" / "planning_index.json"
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {"meta": {}, "records": []}
+
+
+_KEEP_UPPER = {"SD", "N", "S", "E", "W", "NE", "NW", "SE", "SW", "US", "HWY", "PO", "STE", "LLC"}
+
+
+def pretty_address(a: str) -> str:
+    """'2312 PLATINUM DRIVE, SPEARFISH, SD 57783' → '2312 Platinum Drive, Spearfish, SD 57783'."""
+    a = " ".join((a or "").split())
+    if a != a.upper():
+        return a
+    return " ".join(w if w.strip(",.") in _KEEP_UPPER or w[:1].isdigit() else w.capitalize() for w in a.split())
+
+
+def _compact(d: dict) -> dict:
+    return {k: v for k, v in d.items() if v not in ("", None, [], 0)}
+
+
+def permit_sites(site: Site) -> list[dict]:
+    """
+    Every planning application (OpenGov archive) and issued building permit
+    (monthly reports), grouped by normalized street address.
+    """
+    groups: dict[str, dict] = {}
+
+    def add(key, address, lat, lon, rec):
+        if not key:
+            return
+        g = groups.setdefault(key, {"k": key, "a": pretty_address(address), "r": []})
+        if lat and lon and "lat" not in g:
+            g["lat"], g["lon"] = round(lat, 5), round(lon, 5)
+        g["r"].append(_compact(rec))
+
+    for r in load_planning_archive(site)["records"]:
+        if not r.get("site"):
+            continue
+        add(
+            geo.normalize_address(r.get("address", "")),
+            r.get("address"),
+            r.get("lat"),
+            r.get("lon"),
+            {
+                "src": "app",
+                "d": r.get("submitted") or r.get("created"),
+                "t": r.get("type"),
+                "s": r.get("status"),
+                "no": r.get("no") or r.get("historical_no"),
+                "v": r.get("valuation") if isinstance(r.get("valuation"), (int, float)) else None,
+                "desc": r.get("description"),
+                "who": r.get("applicant"),
+                "own": r.get("owner"),
+                "own_c": " · ".join(x for x in (r.get("owner_phone"), r.get("owner_email")) if x),
+                "con": r.get("contractor"),
+                "con_c": " · ".join(x for x in (r.get("contractor_phone"), r.get("contractor_email")) if x),
+            },
+        )
+
+    for r in site.get("building_permits").records:
+        add(
+            geo.normalize_address(r.get("site_address", "")),
+            r.get("site_address"),
+            r.get("lat"),
+            r.get("lon"),
+            {
+                "src": "permit",
+                "d": r.get("date"),
+                "t": (r.get("construction_type") or "").title(),
+                "no": r.get("permit_number"),
+                "v": r.get("cost_approximate"),
+                "who": (r.get("applicant_name") or "").title(),
+                "con": (r.get("contractor") or "").title(),
+                "u": r.get("url"),
+            },
+        )
+
+    out = []
+    for g in groups.values():
+        g["r"].sort(key=lambda x: x.get("d") or "", reverse=True)
+        g["last"] = g["r"][0].get("d", "")
+        if g["r"][0].get("src") == "permit":
+            g["lp"] = 1  # latest record only has a month
+        out.append(g)
+    out.sort(key=lambda g: g["last"], reverse=True)
+    return out
+
+
+def permits_page(site: Site, events: list[dict], today: date) -> dict:
+    archive = load_planning_archive(site)
+    bp = site.get("building_permits")
+    latest_report = max((r.get("date", "") for r in bp.records), default="")
+    return {
+        "archive_meta": archive["meta"],
+        "building_permits": bp,
+        "latest_report": latest_report,
+        "permit_count": len(bp.records),
+    }

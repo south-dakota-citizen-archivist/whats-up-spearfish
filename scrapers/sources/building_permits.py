@@ -2,8 +2,11 @@
 scrapers/sources/building_permits.py
 
 Monthly building permit reports (PDF) from the City of Spearfish archive.
-Each run parses the most recent RECENT_MONTHS reports; the long-run archive
-of these reports lives in the separate spearfish-building-permits project.
+Each run parses the most recent RECENT_MONTHS reports and merges them into the
+saved history, which is kept indefinitely: with the city's OpenGov portal closed
+to the public, these reports are the only ongoing record of permits issued.
+History before the scraper (2013–2025) was seeded by scripts/build_planning_archive.py
+from the spearfish-building-permits project.
 """
 
 from __future__ import annotations
@@ -17,7 +20,7 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
-from scrapers import net
+from scrapers import geo, net
 from scrapers.base import BaseScraper
 
 BASE_URL = "https://www.cityofspearfish.com"
@@ -271,8 +274,7 @@ class BuildingPermits(BaseScraper):
     slug = "building_permits"
     kind = "building_permit"
     url = ARCHIVE_URL
-    replace = True
-    dedup_key = "permit_number"
+    dedup_key = "permit_key"
     max_stale_hours = 24 * 7
 
     def scrape(self) -> list[dict]:
@@ -287,7 +289,23 @@ class BuildingPermits(BaseScraper):
                 parsed = [r for r in _parse_pdf(pdf, report["year"], report["month"]) if _is_valid_permit(r)]
             for r in parsed:
                 r["url"] = report["url"]
-                r["title"] = " — ".join(x for x in (r["construction_type"], r["site_address"]) if x)
+                finish_record(r)
             records.extend(parsed)
             time.sleep(1)
+        add_coordinates(records)
         return records
+
+
+def finish_record(r: dict) -> dict:
+    """Fields shared by scraped and seeded permit records."""
+    r["title"] = " — ".join(x for x in (r.get("construction_type"), r.get("site_address")) if x)
+    r["permit_key"] = f"{r.get('permit_number')}|{r.get('year')}-{str(r.get('month')).zfill(2)}"
+    r["address_key"] = geo.normalize_address(r.get("site_address", ""))
+    return r
+
+
+def add_coordinates(records: list[dict]) -> None:
+    coords = geo.geocode(r["site_address"] for r in records if r.get("site_address"))
+    for r in records:
+        if c := coords.get(r.get("address_key", "")):
+            r["lat"], r["lon"] = c
