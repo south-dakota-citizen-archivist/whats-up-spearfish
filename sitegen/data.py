@@ -14,6 +14,9 @@ from pathlib import Path
 from scrapers import dates
 from sitegen.sources import CREDIT
 
+#: Data-branch files that aren't scraper output (see scripts/import_parcels.py)
+NOT_SOURCES = {"parcel_links.json"}
+
 
 @dataclass
 class Source:
@@ -70,7 +73,7 @@ class Site:
             )
 
         for path in sorted(data_dir.glob("*.json")):
-            if path.name.startswith("_"):
+            if path.name.startswith("_") or path.name in NOT_SOURCES:
                 continue
             try:
                 env = json.loads(path.read_text(encoding="utf-8"))

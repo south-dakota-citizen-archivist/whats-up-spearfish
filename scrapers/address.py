@@ -58,9 +58,6 @@ class Address:
     def loose(self) -> str:
         return " ".join(x for x in (self.number, self.street, self.type) if x)
 
-    def line1(self) -> str:
-        return self.key() + (f" {self.unit}" if self.unit else "")
-
 
 def _clean(text: str) -> str:
     s = " ".join((text or "").upper().replace("\n", " ").split())

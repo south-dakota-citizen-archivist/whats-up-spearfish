@@ -3,19 +3,21 @@ scrapers/sources/danr_public_notices.py
 
 South Dakota DANR public notices, filtered to west river / Black Hills counties.
 
-The DANR page embeds Caspio database tables via <script> tags.  Each Caspio
-endpoint can be fetched directly as a standalone HTML page, no browser required.
+The DANR page embeds Caspio database tables via <script> tags. No browser needed:
 
-Strategy:
   1. Fetch the static DANR HTML to map AppKey → section heading
-  2. For each Caspio URL, GET the endpoint and parse the HTML table
+  2. For each section, request the table the way Caspio's embed script does
+     (/dp/<appkey>?cbqe=<base64 query>); the answer is JavaScript whose
+     parseAndLoadDatapage(…) call carries the table HTML as an escaped string
   3. Deadline dates live inside inline <script> tags — extracted via regex
-  4. Filter rows whose location / description mentions a west-river county
+  4. Keep rows whose location / description mentions a west-river county
 
 """
 
 from __future__ import annotations
 
+import base64
+import json
 import re
 import time
 
@@ -101,16 +103,33 @@ def _build_section_map() -> list[tuple[str, str, str]]:
     return sections
 
 
+_DATAPAGE_RE = re.compile(r"parseAndLoadDatapage\('[^']*',\s*'[^']*',\s*'((?:[^'\\]|\\.)*)'")
+
+
+def datapage_html(script: str) -> str | None:
+    """The table HTML inside Caspio's embed response (a single-quoted JS string)."""
+    m = _DATAPAGE_RE.search(script)
+    if not m:
+        return None
+    # JS single-quoted → JSON double-quoted: its escapes (\u003c, \", \n) are JSON's too
+    return json.loads('"' + m.group(1).replace("\\'", "'") + '"')
+
+
 def _fetch_table(subdomain: str, appkey: str) -> BeautifulSoup | None:
-    url = f"https://{subdomain}/dp/{appkey}"
+    query = (
+        f"AppKey={appkey}&js=true&cbEmbDeployWith=new_async_embedjs&cbDatapageAnchorId=dp_anchor_id_1"
+        f"&pathname={DANR_URL}&cbScreenWidth=1280&cbEmbQueryStr=&cbParamList="
+    )
+    url = f"https://{subdomain}/dp/{appkey}?cbqe=" + base64.b64encode(query.encode()).decode()
     try:
-        resp = net.get(url, headers=_HEADERS, timeout=20)
+        resp = net.get(url, headers=_HEADERS, timeout=30)
         if not resp.ok:
             return None
-        return BeautifulSoup(resp.text, "html.parser")
-    except Exception as exc:
-        print(f"  [DANR] Warning: {url}: {exc}")
+    except Exception as exc:  # noqa: BLE001
+        print(f"  [DANR] Warning: {subdomain}/dp/{appkey}: {exc}")
         return None
+    html = datapage_html(resp.text)
+    return BeautifulSoup(html, "html.parser") if html else None
 
 
 def _parse_deadline_cell(cell) -> tuple[str, str]:
@@ -184,7 +203,7 @@ def _parse_table(soup: BeautifulSoup, notice_type: str) -> list[dict]:
             if label_text and value.startswith(label_text):
                 value = value[len(label_text) :].lstrip(":").strip()
 
-            if any(k in header for k in ("facility", "name", "applicant")):
+            if any(k in header for k in ("facility", "name", "applicant", "business")):
                 record["name"] = value
             elif "description" in header:
                 record["description"] = value
@@ -219,12 +238,22 @@ class DANRPublicNotices(BaseScraper):
 
     def scrape(self) -> list[dict]:
         notices: list[dict] = []
+        tables = 0
         for heading, subdomain, appkey in _build_section_map():
             soup = _fetch_table(subdomain, appkey)
             if soup is None:
                 continue
+            tables += 1
             notices.extend(_parse_table(soup, heading))
             time.sleep(0.3)
+        if not tables:
+            # zero notices is normal for West River; zero *tables* means the page changed
+            raise RuntimeError("no notice tables could be read from the DANR page")
+        notices = [
+            n
+            for n in notices
+            if _is_west_river(" ".join(str(n.get(k) or "") for k in ("location", "name", "description")))
+        ]
 
         for n in notices:
             n["title"] = n.get("name") or n.get("description", "")[:120] or n["notice_type"]

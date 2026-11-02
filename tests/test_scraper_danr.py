@@ -195,3 +195,62 @@ class TestParseDeadlineCellScript:
         date, url = self._fn(html)
         assert date == "05/01/2026"
         assert url == ""
+
+
+# ---------------------------------------------------------------------------
+# Caspio embed responses and the West River filter (whole scrape)
+# ---------------------------------------------------------------------------
+
+_TABLE = (
+    '<table class="cbResultSetTable"><thead><tr class="cbResultSetTableHeader">'
+    "<th>Business</th><th>Location</th><th>Comment Deadline</th></tr></thead>"
+    "<tbody>"
+    '<tr class="cbResultSetDataRow"><td class="cbResultSetData">Clint Krambeck</td>'
+    '<td class="cbResultSetData">Lawrence</td><td class="cbResultSetData">11/16/2026</td></tr>'
+    '<tr class="cbResultSetDataRow"><td class="cbResultSetData">Crenlo Cabs</td>'
+    '<td class="cbResultSetData">Watertown</td><td class="cbResultSetData">11/05/2026</td></tr>'
+    "</tbody></table>"
+)
+
+
+def _embed(html: str) -> str:
+    """What Caspio sends back: JS with the table as an escaped, single-quoted string."""
+    escaped = html.replace("<", "\\u003c").replace(">", "\\u003e").replace('"', '\\"').replace("'", "\\'")
+    return f"function f(){{}};\r\nnew f_dpLoadObj().parseAndLoadDatapage('dp_anchor_id_1', 'abc', '{escaped}');"
+
+
+def test_datapage_html_unescapes_the_table():
+    from scrapers.sources.danr_public_notices import datapage_html
+
+    assert datapage_html(_embed(_TABLE)) == _TABLE
+    assert datapage_html("no datapage here") is None
+
+
+def test_scrape_keeps_west_river_and_fails_loudly_without_tables(monkeypatch):
+    import pytest
+
+    from scrapers.sources import danr_public_notices as danr
+
+    page = (
+        '<section><h2>Water Rights</h2><script src="https://b4.caspio.com/dp/31cf1000aaaaaaaaaaaaaaaaaaaa/emb">'
+        "</script></section>"
+    )
+
+    class Resp:
+        def __init__(self, text):
+            self.text, self.ok = text, True
+
+        def raise_for_status(self):
+            pass
+
+    monkeypatch.setattr(danr.time, "sleep", lambda s: None)
+    monkeypatch.setattr(danr.net, "get", lambda url, **kw: Resp(page if url == danr.DANR_URL else _embed(_TABLE)))
+    notices = danr.DANRPublicNotices().scrape()
+    assert [n["location"] for n in notices] == ["Lawrence"]  # Watertown is East River
+    assert notices[0]["notice_type"] == "Water Rights" and notices[0]["deadline_iso"] == "2026-11-16"
+    assert notices[0]["title"] == "Clint Krambeck"  # the "Business" column names the applicant
+
+    # the page answers, but no table can be read: that's breakage, not a quiet week
+    monkeypatch.setattr(danr.net, "get", lambda url, **kw: Resp(page if url == danr.DANR_URL else "<html></html>"))
+    with pytest.raises(RuntimeError):
+        danr.DANRPublicNotices().scrape()

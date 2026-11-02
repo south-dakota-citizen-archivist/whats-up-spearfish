@@ -35,7 +35,7 @@ from markupsafe import Markup
 from scrapers import dates
 from sitegen import feeds, pages
 from sitegen.data import Site
-from sitegen.events import CATEGORY_LABELS, unified_events
+from sitegen.events import CATEGORY_LABELS, fmt_clock, unified_events
 from sitegen.images import thumb_attrs
 from sitegen.parcels import ParcelLinks
 
@@ -92,7 +92,7 @@ def fmt_time(value) -> str:
     d = _dt(value)
     if not isinstance(d, datetime):
         return ""
-    return d.strftime("%-I %p" if d.minute == 0 else "%-I:%M %p")
+    return fmt_clock(d)
 
 
 def _ago_text(d: datetime) -> str:

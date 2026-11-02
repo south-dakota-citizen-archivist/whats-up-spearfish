@@ -49,16 +49,6 @@ def _extract_html(js_text: str) -> str:
     return "".join(parts)
 
 
-def _label_text(soup_el) -> str:
-    """Return the text of the .normal span that follows a .label span."""
-    label = soup_el.find("span", class_="label")
-    if label:
-        nrm = label.find_next_sibling("span", class_="normal")
-        if nrm:
-            return nrm.get_text(" ", strip=True)
-    return ""
-
-
 def _parse_posting(ul) -> dict | None:
     """Parse one <ul class='postingsList'> into a record dict, or None to skip."""
     ul_id = ul.get("id", "")
