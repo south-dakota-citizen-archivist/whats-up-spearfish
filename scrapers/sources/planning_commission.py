@@ -44,16 +44,27 @@ FIRST_ITEMIZED = "2025-08-01"  # earlier meetings have only agenda/minutes PDFs 
 APP_TYPES = [
     ("Variance", r"variance"),
     ("Conditional use permit", r"conditional use"),
-    ("Rezone", r"\brezon|zoning (map )?amendment|change (of|in) zoning|zoning (district )?(designation|change)"),
+    (
+        "Rezone",
+        r"\brezon|zoning (map )?amendment|change (of|in) zoning|zoning (district )?(designation|change)"
+        r"|boundary between .{0,60} zoning",
+    ),
     ("Preliminary plat", r"preliminary plat"),
     ("Final plat", r"final plat"),
     ("Minor plat", r"minor plat"),
     ("Plat", r"\bplat\b|replat"),
     ("Annexation", r"annex"),
     ("Vacation of right-of-way or easement", r"\bvacat"),
-    ("Planned development", r"planned (unit |residential )?development|\bPUD\b|\bDRD\b|development review district"),
+    (
+        "Planned development",
+        r"planned (unit |residential )?development|\bPUD\b|\bDRD\b|development review district"
+        r"|concept(ual)?[ /]+(final )?plan|final plan\b|master plan|phase \w+ .{0,5}final plan",
+    ),
     ("Design review", r"design review|site plan|building exterior"),
     ("Tax increment financing district", r"\bTIF\b|tax increment"),
+    ("Downtown redevelopment incentive", r"redevelopment incentive"),
+    ("Exception to requirements", r"\bexception\b"),
+    ("Area plan or study", r"corridor|area study|land use plan"),
     ("Sign", r"\bsign\b"),
     ("Comprehensive plan amendment", r"comprehensive plan"),
     (
@@ -64,7 +75,11 @@ APP_TYPES = [
     ("Subdivision", r"subdivision"),
 ]
 # Types that change the rules everywhere rather than at one site
-NOT_A_SITE = {"Code amendment", "Comprehensive plan amendment"}
+NOT_A_SITE = {"Code amendment", "Comprehensive plan amendment", "Area plan or study"}
+# Locations that aren't one place: whole zoning districts, the city, or the meeting room
+_NOT_A_PLACE = re.compile(
+    r"^(city[- ]?wide|all\b|to be determined)|zoning districts?\.?$|council cham|625 (fifth|5th) st", re.I
+)
 
 LABELS = {
     "request": "request",
@@ -85,7 +100,39 @@ _STREET_RE = re.compile(
 )
 
 
+# Changes to the zoning code's text, whatever part of it they touch (signs, conditional uses…)
+_CODE_TEXT = re.compile(
+    r"zoning (ordinance )?text|text amendment|\b1[56]\d\.\d{3}\b|appendix a\b|chapter 15[0-9]|"
+    r"(sign|zoning) (ordinance|regulations?|code)( update)?\b(?! for)|permitted uses|ordinance (update|text)|"
+    r"setback requirements for|zoning setbacks|revised ordinances|parking requirements|energy systems|"
+    r"rv parking",
+    re.I,
+)
+
+
+# The city's project numbers name the type: [PROJECT ID: CUP19-001]
+_PROJECT_TYPES = {
+    "CUP": "Conditional use permit",
+    "VAR": "Variance",
+    "CZN": "Rezone",
+    "RZ": "Rezone",
+    "DRD": "Planned development",
+    "ORD": "Code amendment",
+    "ANX": "Annexation",
+}
+_PROJECT_ID = re.compile(r"\b(%s)\d{2}-\d{3}\b" % "|".join(_PROJECT_TYPES))
+# A variance for one site, even when its wording quotes the zoning code it varies from
+_SITE_VARIANCE = re.compile(r"^(approve |review )?(a )?variances?\b|\b(a|for a) variance\b", re.I)
+
+
 def app_type(text: str) -> str:
+    text = text or ""
+    if m := _PROJECT_ID.search(text):
+        return _PROJECT_TYPES[m.group(1)]
+    if _SITE_VARIANCE.search(text):
+        return "Variance"
+    if _CODE_TEXT.search(text):
+        return "Code amendment"
     for name, pattern in APP_TYPES:
         if re.search(pattern, text or "", re.I):
             return name
@@ -188,7 +235,11 @@ def parse_agenda_text(text: str) -> list[dict]:
     blocks: list[dict] = []
     current: dict | None = None
     key = None
-    label_re = re.compile(r"^\s*(?:\d+\.\s*)?(%s):\s*(.*)$" % "|".join(re.escape(k) for k in LABELS), re.I)
+    # older agendas: "ACTION (Revised):", and the odd stray mark before a label
+    label_re = re.compile(
+        r"^\s*[^\w\s]?\s*(?:\d+\.\s*)?(%s)\s*(?:\([^)]*\))?\s*:\s*(.*)$" % "|".join(re.escape(k) for k in LABELS),
+        re.I,
+    )
     for raw in text.splitlines():
         line = raw.rstrip()
         if m := label_re.match(line):
@@ -201,7 +252,13 @@ def parse_agenda_text(text: str) -> list[dict]:
                 current[key] = value
             continue
         stripped = line.strip()
-        if current is None or not stripped:
+        if not stripped:
+            # a blank line ends a field that's finished a sentence; one cut off mid-sentence
+            # ("…to City Council on the") continues after it
+            if key and current is not None and re.search(r"[.;:)]$", current[key]):
+                key = None
+            continue
+        if current is None:
             continue
         # a new outline entry ("G. Items for Action", "2. Approve …") ends the block
         if re.match(r"^([A-Z]|\d+)\.\s", stripped) and not raw.startswith(" " * 12):
@@ -291,7 +348,7 @@ def item_record(item: dict, section: str, event: dict, report: dict) -> dict:
         "meeting_url": f"{PORTAL}/event/{eid}/files",
         "section": section,
         "app_type": kind,
-        "site": kind not in NOT_A_SITE and bool(address or location),
+        "site": kind not in NOT_A_SITE and bool(address or location) and not _NOT_A_PLACE.search(location),
         "title": f"{kind} — {location or address}" if (location or address) else kind,
         "agenda_text": agenda_text,
         "request": request,
@@ -311,6 +368,43 @@ def item_record(item: dict, section: str, event: dict, report: dict) -> dict:
             if a.get("isPublished", True)
         ],
     }
+
+
+# ── before itemized agendas (2016 – July 2025) ───────────────────────────────
+#
+# Older meetings have only an agenda PDF (some years a combined packet), whose
+# applications use the same Request / Applicant / Location / Action labels. The
+# one-time backfill (scripts/backfill_planning_commission.py) reads them with
+# parse_agenda_text and turns each block into a record here.
+
+_ACRONYM_RE = re.compile(
+    r"\(([A-Z0-9][A-Z0-9-]*)\)|\b([A-Z]{1,3}-?\d+[A-Z]?|[A-Z]*\d[A-Z\d-]*|TIF|DRD|PUD|CUP|LLC|ROW|SD|US|HWY)\b"
+)
+
+
+def sentence_case(text: str) -> str:
+    """'CHANGE IN ZONING FROM AGRICULTURE (AG) TO C-2' → 'Change in zoning from agriculture (AG) to C-2'.
+    Text that isn't shouting is left alone."""
+    letters = [c for c in text if c.isalpha()]
+    if not letters or sum(c.isupper() for c in letters) / len(letters) < 0.8:
+        return text
+    out = list(text.lower())
+    for m in _ACRONYM_RE.finditer(text):  # acronyms and lot numbers keep their capitals
+        out[m.start() : m.end()] = text[m.start() : m.end()]
+    return "".join(out[:1]).upper() + "".join(out[1:])
+
+
+_STAFF_LINK_RE = re.compile(r"\s*click here to view (the )?staff report\.?", re.I)
+_TRAILING_NOTICE_RE = re.compile(r"\s*ADA Compliance:.*$", re.I | re.S)
+
+
+def agenda_block_record(block: dict, n: int, event: dict) -> dict:
+    """A record like an itemized one, from the n-th labeled block of an older meeting's agenda."""
+    block = {k: _TRAILING_NOTICE_RE.sub("", _STAFF_LINK_RE.sub("", sentence_case(v))).strip() for k, v in block.items()}
+    item = {"id": f"{event['id']}-{n}", "agendaObjectItemName": block.get("request", "")}
+    rec = item_record(item, "", event, block)
+    rec["from_agenda_pdf"] = True
+    return rec
 
 
 class PlanningCommission(BaseScraper):

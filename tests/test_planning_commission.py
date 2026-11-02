@@ -115,6 +115,17 @@ def test_agenda_blocks():
         ("Consider the creation of TIF District 9", "Tax increment financing district"),
         ("Proposed revisions to Chapter 154: Subdivisions", "Code amendment"),
         ("Elect a Chair and Vice-Chair", "Other"),
+        # older agendas
+        ("Approve the revised Findings, Project ID: CUP19-001.", "Conditional use permit"),
+        ("Provide input on camper/RV parking issues. [PROJECT ID: ORD19-001]", "Code amendment"),
+        ("Variance to rear setback; zoning code requires 15 feet.", "Variance"),
+        ("Approve a variance for parking requirements", "Variance"),
+        ("Zoning Ordinance Text Amendment, Article VI, Section 2, Variances.", "Code amendment"),
+        ("Revisions to the uses eligible for a CUP in residential zoning district ordinance text", "Code amendment"),
+        ("Approve a DRD Final Plan for phase 1 building at Spearfish Canyon Village", "Planned development"),
+        ("Hold a public hearing to adjust the boundary between C-2 and ag zoning", "Rezone"),
+        ("Approve a C-1 Redevelopment Incentive Plan", "Downtown redevelopment incentive"),
+        ("East Colorado Boulevard Corridor Study", "Area plan or study"),
     ],
 )
 def test_app_type(text, kind):
@@ -224,3 +235,81 @@ def test_permit_sites_include_planning_items(tmp_path):
     )
     pines = sites["LOC INTERSECTION OF ST. ONGE ROAD AND HIGHWAY 14"]
     assert "lat" not in pines and pines["r"][0]["t"] == "Preliminary plat"
+
+
+# ── older agendas (backfill, 2016 – July 2025) ───────────────────────────────
+
+
+def _old_agenda():
+    from pathlib import Path
+
+    return (Path(__file__).parent / "fixtures" / "pc_agenda_2016_01_05.txt").read_text()
+
+
+def test_older_agenda_capital_labels_and_stray_marks():
+    from scrapers.sources.planning_commission import parse_agenda_text
+
+    blocks = parse_agenda_text(_old_agenda())
+    assert len(blocks) == 2  # the election of officers isn't an application
+    zoning, cup = blocks
+    assert zoning["request"].startswith("HOLD A PUBLIC HEARING FOR A CHANGE IN ZONING")
+    assert zoning["request"].endswith("COMMERCIAL (C-2).")  # wrapped lines joined
+    assert zoning["location"].endswith("(See maps attached to the staff report).")
+    assert cup["applicant"] == "Jared Capp"  # despite the stray "." before the label
+    assert cup["recommendation"].startswith("Set a Public Hearing for January 19, 2016")  # "ACTION (Revised):"
+
+
+def test_older_agenda_records():
+    from scrapers.sources.planning_commission import agenda_block_record, parse_agenda_text
+
+    event = {"id": 1149, "startDateTime": "2016-01-05T00:00:00Z"}
+    zoning, cup = (agenda_block_record(b, n, event) for n, b in enumerate(parse_agenda_text(_old_agenda()), 1))
+    assert zoning["item_id"] == "1149-1" and zoning["from_agenda_pdf"]
+    assert zoning["app_type"] == "Rezone" and cup["app_type"] == "Conditional use permit"
+    assert zoning["request"].startswith("Hold a public hearing for a change in zoning from development review")
+    assert "(DRD)" in zoning["request"] and "(C-2)" in zoning["request"]
+    assert zoning["site"] and zoning["report_url"] == "" and zoning["url"].endswith("/event/1149/files")
+
+
+@pytest.mark.parametrize(
+    "text, expected",
+    [
+        ("VARIANCE TO FRONT YARD SETBACK", "Variance to front yard setback"),
+        ("CONDITIONAL USE FOR A BUSINESS ON US HWY 14", "Conditional use for a business on US HWY 14"),
+        ("LOTS 6A-2 & 7C, T6N R2E", "Lots 6A-2 & 7C, T6N R2E"),
+        ("Already in Sentence case (DRD)", "Already in Sentence case (DRD)"),
+    ],
+)
+def test_sentence_case(text, expected):
+    from scrapers.sources.planning_commission import sentence_case
+
+    assert sentence_case(text) == expected
+
+
+def test_whole_districts_and_the_meeting_room_are_not_sites():
+    from scrapers.sources.planning_commission import agenda_block_record
+
+    event = {"id": 1, "startDateTime": "2022-07-19T00:00:00Z"}
+    for location in ("C-1 zoning districts", "City Council Chamber, 625 Fifth Street, Spearfish", "To be determined"):
+        rec = agenda_block_record({"request": "Approve a variance for parking", "location": location}, 1, event)
+        assert not rec["site"], location
+    rec = agenda_block_record({"request": "Approve a variance", "location": "437 N Main St"}, 1, event)
+    assert rec["site"] and rec["address"] == "437 N Main St"
+
+
+def test_agenda_fields_continue_past_a_blank_line_only_mid_sentence():
+    from scrapers.sources.planning_commission import parse_agenda_text
+
+    text = """
+    F. Items for Action
+       1.  Request:  Hold a public hearing and make a recommendation to City Council on the
+
+                     preliminary plat of the Eastside Acres subdivision
+           Applicant: Eastside Developers LLC
+           Location:  6025 East Colorado Blvd.
+
+                     This paragraph is body text, not part of the location.
+    """
+    (block,) = parse_agenda_text(text)
+    assert block["request"].endswith("on the preliminary plat of the Eastside Acres subdivision")
+    assert block["location"] == "6025 East Colorado Blvd."

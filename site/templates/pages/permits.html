@@ -141,9 +141,9 @@
               </dl>
               <template x-if="r.src === 'pc'">
                 <p class="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-xs font-semibold">
-                  <a x-show="r.u" :href="r.u" target="_blank" rel="noopener" class="text-pine-700 hover:underline">Staff report<span aria-hidden="true"> →</span></a>
+                  <a x-show="r.u" :href="r.u" target="_blank" rel="noopener" class="whitespace-nowrap text-pine-700 hover:underline">Staff report<span aria-hidden="true"> →</span></a>
                   <template x-for="a in r.att || []"><a :href="a[1]" target="_blank" rel="noopener" class="text-pine-700 hover:underline"><span x-text="a[0]"></span><span aria-hidden="true"> →</span></a></template>
-                  <a :href="r.mu" target="_blank" rel="noopener" class="text-pine-700 hover:underline">Meeting agenda<span aria-hidden="true"> →</span></a>
+                  <a :href="r.mu" target="_blank" rel="noopener" class="whitespace-nowrap text-pine-700 hover:underline">Meeting agenda<span aria-hidden="true"> →</span></a>
                 </p>
               </template>
               <a x-show="r.u && r.src === 'permit'" :href="r.u" target="_blank" rel="noopener" class="text-xs font-semibold text-pine-700 hover:underline">That month's permit list (PDF)<span aria-hidden="true"> →</span></a>
