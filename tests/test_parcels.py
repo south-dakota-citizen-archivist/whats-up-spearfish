@@ -207,6 +207,9 @@ def test_import_keeps_spearfish_drops_mailing_address(tmp_path, monkeypatch):
             }
         )
     )
+    (data / "archive").mkdir()
+    (data / "archive" / "planning_index.json").write_text(json.dumps({"records": [{"id": 1, "type": "Variance"}]}))
+    (data / "planning_commission.json").write_text(json.dumps({"records": [{"item_id": 1, "title": "Variance"}]}))
     assert import_parcels.main([]) == 0
     assert not (data / "parcels.json").exists()  # the parcel table itself is never written
     text = (data / "parcel_links.json").read_text()
@@ -225,3 +228,18 @@ def test_import_skips_without_snapshot(tmp_path, monkeypatch, capsys):
     assert "skipping" in capsys.readouterr().out
     assert not (tmp_path / "parcel_links.json").exists()
     assert import_parcels.find_snapshot(tmp_path / "missing") is None
+
+
+def test_import_refuses_a_data_folder_without_planning_records(tmp_path, monkeypatch, capsys):
+    """A stale local data/ (no archive, no agenda records) would link almost nothing and look fine."""
+    snapshot = tmp_path / "parcels.parquet"
+    _snapshot(snapshot, [{"PARCEL_ID": "1", "SITUS": "", "LEGAL": "", "PLAT": "", "S_T_R": "", "Acres": 1,
+                          "CLASS": "", "CURRENT_OW": "", "Owner2": "", "MAIL_ADD": "",
+                          "geom": box(-103.87, 44.48, -103.869, 44.481)}])  # fmt: skip
+    data = tmp_path / "data"
+    data.mkdir()
+    (data / "building_permits.json").write_text(json.dumps({"records": [{"site_address": "1 Main St"}]}))
+    monkeypatch.setattr("scrapers.base.DATA_DIR", data)
+    assert import_parcels.main(["--snapshot", str(snapshot)]) == 1
+    assert "WUS_DATA_DIR" in capsys.readouterr().out
+    assert not (data / "parcel_links.json").exists()

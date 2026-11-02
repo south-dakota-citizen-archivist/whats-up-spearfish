@@ -145,6 +145,13 @@ def main(argv: list[str] | None = None) -> int:
     archive = records("archive/planning_index.json")
     permits = records("building_permits.json")
     agenda = records("planning_commission.json")
+    if not archive or not agenda:
+        # most likely a stale local data/ folder rather than the data branch
+        print(
+            f"[parcels] {data} has no planning archive or Planning Commission records; point WUS_DATA_DIR "
+            "at a checkout of the data branch. Nothing written."
+        )
+        return 1
     links = link_records(Parcels(table), archive, permits, agenda)
     used = set(links.values())
     parcels = {
