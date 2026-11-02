@@ -72,3 +72,59 @@ class TestReadme:
 
     def test_appends_when_markers_missing(self):
         assert render("# Title\n", "TABLE").rstrip().endswith(END)
+
+
+class TestSchoolApis:
+    def test_event(self):
+        from scrapers.sources.spearfish_schools import parse_event
+
+        r = parse_event(
+            {
+                "id": 1,
+                "title": "Early Release",
+                "start_at": "2026-11-04T13:00:00.000-07:00",
+                "end_at": "2026-11-04T13:30:00.000-07:00",
+                "all_day": False,
+                "venue": "HS",
+                "city_state": "",
+            }
+        )
+        assert r["start_dt"].startswith("2026-11-04T13:00") and r["location"] == "HS"
+        allday = parse_event(
+            {"id": 2, "title": "No School", "start_at": "2026-11-26T00:00:00.000-07:00", "all_day": True}
+        )
+        assert allday["start_dt"] == "2026-11-26"
+        assert parse_event({"id": 3, "title": ""}) is None
+
+    def test_article(self):
+        from scrapers.sources.spearfish_school_news import parse_article
+
+        r = parse_article(
+            {
+                "title": " Tiny Home ",
+                "link": "https://x/article/1",
+                "published_at": "2026-10-28T13:44:34-06:00",
+                "snippet": "  Open   house ",
+            }
+        )
+        assert r == {
+            "title": "Tiny Home",
+            "url": "https://x/article/1",
+            "published": "2026-10-28T13:44:34-06:00",
+            "description": "Open house",
+            "image_url": "",
+        }
+
+    def test_nutrition_facts(self):
+        from scrapers.sources.spearfish_school_lunch import nutrition_facts
+
+        rows = nutrition_facts(
+            {
+                "calories_kcal": "504.000*",
+                "saturated_fat_grams": "3.25",
+                "calcium": "27.4",
+                "calcium_measurement": "mg",
+                "iron": "x",
+            }
+        )
+        assert rows == [["Calories", "504", False], ["Saturated fat", "3.2 g", True], ["Calcium", "27 mg", False]]

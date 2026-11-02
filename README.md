@@ -107,8 +107,8 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [Spearfish HS Sports](https://gobound.com/sd/schools/spearfish) | `spearfish_sports` | event |  |
 | [Spearfish MS Sports](https://gobound.com/sd/schools/spearfishmiddleschool) | `spearfish_ms_sports` | event |  |
 | [Spearfish Sasquatch](https://www.spearfishsasquatch.com) | `spearfish_sasquatch` | event |  |
-| [Spearfish School District](https://www.spearfish.k12.sd.us/) | `spearfish_schools` | event |  |
-| [Fire restrictions, danger & wildfires](https://www.blackhillsfirerestrictions.com/) | `fire` | fire | frequent tier |
+| [Spearfish School District](https://www.spearfish.k12.sd.us/events) | `spearfish_schools` | event |  |
+| [Fire danger & wildfires](https://www.weather.gov/unr/) | `fire` | fire | frequent tier |
 | [Leone's Creamery](https://leonescreamery.com/flavors) | `leones_creamery` | flavor | full snapshot |
 | [Spearfish Creek gauge (USGS)](https://waterdata.usgs.gov/monitoring-location/06431500/) | `creek_gauge` | gauge | frequent tier |
 | [BHSU](https://yourfuture.sdbor.edu/) | `bhsu_jobs` | job | full snapshot |
@@ -128,7 +128,7 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [City of Spearfish Blog](https://www.spearfish.gov/Blog.aspx) | `spearfish_blog` | press_release |  |
 | [City of Spearfish News Flash](https://www.spearfish.gov/CivicAlerts.aspx) | `spearfish_news` | press_release |  |
 | [Lawrence County News Flash](https://www.lawrence.sd.us/CivicAlerts.aspx) | `lawrence_county_news` | press_release |  |
-| [Spearfish School District](https://www.spearfish.k12.sd.us/news) | `spearfish_school_news` | press_release |  |
+| [Spearfish School District](https://www.spearfish.k12.sd.us/news) | `spearfish_school_news` | press_release | full snapshot |
 | [Black Hills National Forest projects](https://www.fs.usda.gov/r02/blackhills/projects) | `bhnf_projects` | project | full snapshot |
 | [Elementary 3-5 Lunch](https://menus.healthepro.com/organizations/524/sites/4523/menus/124131) | `spearfish_elem_35_lunch` | school_menu |  |
 | [Elementary Breakfast](https://menus.healthepro.com/organizations/524/sites/4519/menus/124134) | `spearfish_elem_breakfast` | school_menu |  |

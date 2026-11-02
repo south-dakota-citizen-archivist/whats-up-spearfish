@@ -19,7 +19,8 @@
   </div>
 
   {% for day, items in news_days %}
-  <section class="mb-5">
+  {# hide the whole day when the chosen outlet has nothing that day #}
+  <section class="mb-5" x-show="!outlet || {{ items | map(attribute='source_label') | unique | list | tojson | forceescape }}.includes(outlet)">
     <h2 class="text-sm font-bold uppercase tracking-wide text-pine-800 mb-1.5">{{ day | day_heading }}</h2>
     <ul class="bg-white border border-stone-200 divide-y divide-stone-100">
       {% for n in items %}

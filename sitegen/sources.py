@@ -193,9 +193,9 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
                 ),
             ),
             Org(
-                "Black Hills Fire Restrictions",
-                "https://www.blackhillsfirerestrictions.com/",
-                (_i("Burn restrictions by county and city", "fire", needs="restrictions"),),
+                "InciWeb",
+                "https://inciweb.wildfire.gov/",
+                (_i("Active South Dakota wildfires", "fire", needs="incidents"),),
             ),
             Org(
                 "U.S. Geological Survey",

@@ -2,7 +2,6 @@
 scrapers/sources/fire.py
 
 Fire conditions for the Black Hills:
-  - restrictions by jurisdiction from blackhillsfirerestrictions.com
   - active South Dakota wildfires from InciWeb
   - fire danger by zone from the NWS Rapid City Rangeland Fire Danger statement
 
@@ -18,15 +17,11 @@ from bs4 import BeautifulSoup
 from scrapers import net
 from scrapers.base import BaseScraper
 
-RESTRICTIONS_URL = "https://www.blackhillsfirerestrictions.com/"
 INCIWEB_URL = "https://inciweb.wildfire.gov/accessible-view"
 INCIWEB_BASE = "https://inciweb.wildfire.gov"
 NWS_RFD_URL = (
     "https://forecast.weather.gov/product.php?site=UNR&issuedby=UNR&product=RFD&format=TXT&version=1&glossary=0"
 )
-
-#: Column order of the restrictions table's icon cells.
-RESTRICTION_COLUMNS = ["Campfires", "Smoking", "Charcoal", "Gas grills", "Wood stoves", "Welding", "Fireworks"]
 
 _LEVEL_RE = re.compile(r"\.\.\.(LOW|MODERATE|HIGH|VERY HIGH|EXTREME)\s+FIRE\s+DANGER\.\.\.", re.IGNORECASE)
 
@@ -42,38 +37,6 @@ def _fmt_acres(raw: str) -> str:
     if not m:
         return raw
     return f"{int(m.group().replace(',', '')):,} {raw[m.end() :].strip() or 'acres'}"
-
-
-def fetch_restrictions() -> list[dict]:
-    soup = _soup(RESTRICTIONS_URL)
-    table = soup.find("table", attrs={"cellpadding": "0", "cellspacing": "1"})
-    rows: list[dict] = []
-    if not table:
-        return rows
-    section = ""
-    for tr in table.find_all("tr", recursive=False):
-        if sub := tr.find("td", bgcolor="#fcf0c8"):
-            section = sub.get_text(strip=True)
-            continue
-        cells = tr.find_all("td", attrs={"width": "35"})
-        if len(cells) != 7 or not (name_td := tr.find("td")):
-            continue
-        restricted = []
-        for col, cell in zip(RESTRICTION_COLUMNS, cells):
-            img = cell.find("img")
-            stem = str(img.get("src") or "").split("/")[-1].replace(".gif", "") if img else "blank"
-            if stem != "blank":
-                restricted.append(col)
-        more = next((str(a["href"]) for a in tr.find_all("a", href=True) if ".pdf" in str(a["href"]).lower()), "")
-        rows.append(
-            {
-                "name": name_td.get_text(" ", strip=True),
-                "section": section,
-                "restricted": restricted,
-                "more_info_url": more,
-            }
-        )
-    return rows
 
 
 def fetch_incidents() -> list[dict]:
@@ -148,16 +111,16 @@ def fetch_danger() -> dict:
 
 
 class Fire(BaseScraper):
-    name = "Fire restrictions, danger & wildfires"
+    name = "Fire danger & wildfires"
     slug = "fire"
     kind = "fire"
-    url = RESTRICTIONS_URL
+    url = "https://www.weather.gov/unr/"
     tier = "frequent"
     max_stale_hours = 12
 
     def scrape(self) -> dict:
         out: dict = {"errors": []}
-        for key, fn in (("restrictions", fetch_restrictions), ("incidents", fetch_incidents), ("danger", fetch_danger)):
+        for key, fn in (("incidents", fetch_incidents), ("danger", fetch_danger)):
             try:
                 out[key] = fn()
             except Exception as exc:  # noqa: BLE001
@@ -166,4 +129,4 @@ class Fire(BaseScraper):
         return out
 
     def is_empty(self, payload: dict) -> bool:
-        return all(payload.get(k) is None for k in ("restrictions", "incidents", "danger"))
+        return all(payload.get(k) is None for k in ("incidents", "danger"))

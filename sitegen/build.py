@@ -218,6 +218,7 @@ def build(data_dir: Path, out_dir: Path) -> None:
 
     feeds.write_json(events, out_dir / "events.json")
     feeds.write_json(pages.permit_sites(site), out_dir / "permits" / "sites.json")
+    feeds.write_json(pages.menu_details(site, today), out_dir / "schools" / "menus.json")
     feeds.write_ics(events, out_dir / "calendar.ics", SITE_URL)
     feeds.write_rss(events, out_dir / "events.xml", SITE_URL)
     (out_dir / ".nojekyll").touch()

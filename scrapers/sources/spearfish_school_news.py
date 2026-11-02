@@ -1,21 +1,30 @@
 """
 scrapers/sources/spearfish_school_news.py
 
-Spearfish School District news articles.
-https://www.spearfish.k12.sd.us/news
+Spearfish School District news (https://www.spearfish.k12.sd.us/news).
 
-Apptegy CMS — SSR'd HTML when fetched without a custom User-Agent.
+Read from Apptegy's public Thrillshare API (news section 547209) rather than
+the page, which sits behind a bot check.
 """
 
-from bs4 import BeautifulSoup
-from dateutil import parser as dateutil_parser
+from __future__ import annotations
 
 from scrapers import net
 from scrapers.base import BaseScraper
-from scrapers.utils import make_slug
 
-BASE_URL = "https://www.spearfish.k12.sd.us"
-NEWS_URL = f"{BASE_URL}/news"
+API_URL = "https://thrillshare-cmsv2.services.thrillshare.com/api/v2/s/547209/articles"
+
+
+def parse_article(a: dict) -> dict | None:
+    if not a.get("title") or not a.get("link"):
+        return None
+    return {
+        "title": a["title"].strip(),
+        "url": a["link"],
+        "published": a.get("published_at") or "",
+        "description": " ".join((a.get("snippet") or "").split()),
+        "image_url": a.get("cover_image") or "",
+    }
 
 
 class SpearfishSchoolNews(BaseScraper):
@@ -24,45 +33,9 @@ class SpearfishSchoolNews(BaseScraper):
     url = "https://www.spearfish.k12.sd.us/news"
     kind = "press_release"
     dedup_key = "url"
+    replace = True  # the API always returns the latest articles
 
     def scrape(self) -> list[dict]:
-        resp = net.get(NEWS_URL, timeout=30)
+        resp = net.get(API_URL, params={"locale": "en"})
         resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, "html.parser")
-
-        records = []
-        for item in soup.select("div.article-info"):
-            title_el = item.select_one(".title a")
-            date_el = item.select_one(".article-date")
-            desc_el = item.select_one(".content")
-
-            if not title_el:
-                continue
-
-            title = title_el.get_text(strip=True)
-            href = title_el.get("href", "")
-            url = href if href.startswith("http") else BASE_URL + href
-
-            date_str = date_el.get_text(strip=True) if date_el else ""
-            published = ""
-            if date_str:
-                try:
-                    published = dateutil_parser.parse(date_str).date().isoformat()
-                except (ValueError, OverflowError):
-                    pass
-
-            description = desc_el.get_text(" ", strip=True) if desc_el else ""
-
-            records.append(
-                {
-                    "url": url,
-                    "title": title,
-                    "slug": make_slug(title),
-                    "published": published,
-                    "description": description,
-                    "record_type": "press_release",
-                    "source_label": self.name,
-                }
-            )
-
-        return records
+        return [r for r in map(parse_article, resp.json().get("articles") or []) if r]

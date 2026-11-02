@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% from "macros.html" import card, empty, ext, badge, danger_badge %}
 
+{% block head %}<script defer src="{{ root }}static/js/creek.js"></script>{% endblock %}
+
 {% block content %}
 <h1 class="text-2xl font-extrabold mb-4">Outdoors</h1>
 
@@ -8,23 +10,49 @@
 
   {% call card("Spearfish Creek", "creek", sources=creek.source, more=creek.source.url, more_label="Live readings") %}
     {% if creek.current %}
-    <p class="flex items-baseline gap-2"><span class="text-4xl font-extrabold tabular-nums">{{ creek.current.cfs | intcomma }}</span><span class="text-stone-600">cubic feet per second</span>
-      {% if creek.current.ft %}<span class="text-stone-500 text-sm">· water level {{ creek.current.ft }} ft</span>{% endif %}</p>
+    <p class="flex flex-wrap items-baseline gap-x-2"><span class="text-4xl font-extrabold tabular-nums">{{ creek.current.cfs | intcomma }}</span><span class="text-stone-600">cubic feet per second</span>
+      {% if creek.current.ft %}<span class="text-stone-500 text-sm basis-full">Water level {{ creek.current.ft }} ft</span>{% endif %}</p>
     <p class="text-sm text-stone-500">Measured {{ creek.current.time | fmt_time }} {{ creek.current.time | fmt_day }}{% if creek.median30 %} · typical for the past month: {{ creek.median30 | intcomma }}{% endif %}</p>
-    {% if creek.chart %}
-    <svg viewBox="0 0 {{ creek.chart.width }} {{ creek.chart.height }}" class="w-full h-36 mt-4" preserveAspectRatio="none" role="img" aria-label="Daily average flow over the past 30 days">
-      <polyline points="{{ creek.chart.points }}" fill="none" stroke="currentColor" stroke-width="2" class="text-sky-600" vector-effect="non-scaling-stroke"/>
-    </svg>
-    <div class="flex justify-between text-xs text-stone-500">
-      <span>{{ creek.daily[0].date | fmt_day('%b %-d') }}</span>
-      <span>Daily average, {{ creek.chart.min }} to {{ creek.chart.max }}</span>
-      <span>{{ creek.daily[-1].date | fmt_day('%b %-d') }}</span>
+    {% if creek.daily or creek.series %}
+    <div x-data="creekChart()" class="mt-4">
+      <script type="application/json" x-ref="data">{{ {"series7d": creek.series, "daily30": creek.daily} | tojson }}</script>
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+        <p class="text-sm font-semibold text-stone-700">Water flow, cubic feet per second</p>
+        <div class="flex gap-1.5 text-sm" role="group" aria-label="Time period">
+          <button type="button" @click="range = '7'" :aria-pressed="range === '7'"
+                  :class="range === '7' ? 'bg-pine-700 text-white border-pine-700' : 'bg-white text-stone-700 border-stone-300 hover:border-pine-600'"
+                  class="px-3 py-1 border">Past 7 days</button>
+          <button type="button" @click="range = '30'" :aria-pressed="range === '30'"
+                  :class="range === '30' ? 'bg-pine-700 text-white border-pine-700' : 'bg-white text-stone-700 border-stone-300 hover:border-pine-600'"
+                  class="px-3 py-1 border">Past 30 days</button>
+        </div>
+      </div>
+      <div class="relative">
+        <div x-ref="box" class="h-60 w-full" role="img"
+             :aria-label="range === '7' ? 'Spearfish Creek flow over the past 7 days' : 'Spearfish Creek daily average flow over the past 30 days'"></div>
+        <div x-show="readout" x-cloak class="pointer-events-none absolute top-0 -translate-x-1/2 bg-white border border-stone-300 shadow-sm px-2.5 py-1.5 text-xs whitespace-nowrap"
+             :style="readout && 'left:' + readout.left + 'px'">
+          <p><span class="font-bold text-sm text-stone-900" x-text="readout && readout.value"></span> <span class="text-stone-500">cu ft/sec</span></p>
+          <p class="text-stone-500" x-text="readout && readout.when"></p>
+        </div>
+      </div>
+      <details class="mt-2 text-xs text-stone-600">
+        <summary class="cursor-pointer font-semibold text-pine-700">See the numbers</summary>
+        <table class="mt-1 w-full max-w-xs">
+          <thead><tr class="text-left text-stone-500"><th class="py-0.5 font-medium">Day</th><th class="py-0.5 font-medium text-right">Daily average</th></tr></thead>
+          <tbody>
+            {% for d in creek.daily | reverse %}
+            <tr class="border-t border-stone-100"><td class="py-0.5">{{ d.date | fmt_day('%a, %b %-d') }}</td><td class="py-0.5 text-right tabular-nums">{{ d.cfs | intcomma }}</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </details>
     </div>
     {% endif %}
     {% else %}{{ empty("Creek readings aren't available right now.") }}{% endif %}
   {% endcall %}
 
-  {% call card("Fire", "fire", sources=fire.source, more=fire.source.url, more_label="Restrictions") %}
+  {% call card("Fire", "fire", sources=fire.source, more="https://www.fs.usda.gov/r02/blackhills/alerts", more_label="Burn bans & closures") %}
     {% if fire.danger and fire.danger.zones %}
     <h3 class="text-sm font-bold mb-1">Fire danger <span class="font-normal text-stone-500">· National Weather Service{% if fire.danger.issued %}, {{ fire.danger.issued }}{% endif %}</span></h3>
     <ul class="space-y-1.5 text-sm mb-4">
@@ -33,23 +61,14 @@
       {% endfor %}
     </ul>
     {% endif %}
-    <h3 class="text-sm font-bold mb-1">Burn restrictions</h3>
-    {% if fire.restricted %}
-    <ul class="space-y-1.5 text-sm">
-      {% for r in fire.restricted %}
-      <li><span class="font-medium">{{ r.name }}</span> <span class="text-stone-500">({{ r.section }})</span>: {{ r.restricted | join(', ') }}
-        {% if r.more_info_url %}{{ ext(r.more_info_url, 'details') }}{% endif %}</li>
-      {% endfor %}
-    </ul>
-    {% elif fire.restrictions %}
-    {{ empty("No burn restrictions in any of the " ~ fire.restrictions | length ~ " Black Hills counties and cities we follow.") }}
-    {% else %}<p class="text-sm text-stone-500 italic">Burn restrictions aren't available right now. Restriction orders are also posted with the <a href="#forest-alerts" class="text-pine-700 underline">national forest alerts</a>.</p>{% endif %}
     {% if fire.incidents %}
     <h3 class="text-sm font-bold mt-4 mb-1">Active South Dakota wildfires</h3>
     <ul class="space-y-1 text-sm">
       {% for i in fire.incidents %}<li>{{ ext(i.url, i.name) }} <span class="text-stone-500">· {{ i.type }}{% if i.size %} · {{ i.size }}{% endif %}</span></li>{% endfor %}
     </ul>
     {% endif %}
+    {% if not (fire.danger and fire.danger.zones) and not fire.incidents %}{{ empty("No fire danger statement out and no active South Dakota wildfires.") }}{% endif %}
+    <p class="text-xs text-stone-500 mt-4">Burn bans and fire closures in the national forest are posted with the <a href="#forest-alerts" class="text-pine-700 underline">forest alerts</a> below.</p>
   {% endcall %}
 
   {% call card("Bird sightings, past two weeks", "birds", sources=ebird, more="https://ebird.org/region/US-SD-081", more_label="eBird", class="lg:col-span-2") %}

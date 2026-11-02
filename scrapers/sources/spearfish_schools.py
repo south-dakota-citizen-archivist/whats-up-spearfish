@@ -1,82 +1,60 @@
 """
 scrapers/sources/spearfish_schools.py
 
-Spearfish School District — campus calendar via iCal feed.
-https://spearfish.ss20.sharpschool.com/calendar
+Spearfish School District calendar (https://www.spearfish.k12.sd.us/events).
 
-SchoolMessenger Presence CMS. Exposes a public iCalendar feed at
-/ICalendarHandler?calendarId=300447 — no auth required.
+The district site (Apptegy) puts a bot check in front of its pages, but the
+page itself loads events from Apptegy's public Thrillshare API, which we call
+directly. 32630 is the district's organization id.
 """
 
-from datetime import date, datetime, timezone
+from __future__ import annotations
 
-from icalendar import Calendar
+from datetime import timedelta
 
-from scrapers import net
+from scrapers import dates, net
 from scrapers.base import BaseScraper
-from scrapers.utils import make_slug
 
-ICAL_URL = "https://spearfish.ss20.sharpschool.com/ICalendarHandler?calendarId=300447"
-SOURCE_URL = "https://spearfish.ss20.sharpschool.com/calendar"
+API_URL = "https://thrillshare-cmsv2.services.thrillshare.com/api/v4/o/32630/cms/events"
+EVENTS_URL = "https://www.spearfish.k12.sd.us/events"
+DAYS_AHEAD = 120
 
 
-def _to_iso(dt_val) -> str:
-    """Convert a vDatetime / vDate / date / datetime to ISO 8601 string."""
-    if dt_val is None:
-        return ""
-    # icalendar wraps values in vDDDTypes etc.; unwrap with .dt
-    val = getattr(dt_val, "dt", dt_val)
-    if isinstance(val, datetime):
-        # Normalise to UTC then strip tz for a consistent naive ISO string
-        if val.tzinfo is not None:
-            val = val.astimezone(timezone.utc).replace(tzinfo=None)
-        return val.isoformat()
-    if isinstance(val, date):
-        return val.isoformat()
-    return str(val)
+def parse_event(e: dict) -> dict | None:
+    title = (e.get("title") or "").strip()
+    if not title or not e.get("start_at"):
+        return None
+    location = ", ".join(x for x in (e.get("venue"), e.get("address"), e.get("city_state")) if x)
+    all_day = bool(e.get("all_day"))
+    return {
+        "event_id": e.get("id"),
+        "title": title,
+        "url": EVENTS_URL,
+        "start_dt": e["start_at"][:10] if all_day else e["start_at"],
+        "end_dt": (e.get("end_at") or "")[:10] if all_day else e.get("end_at") or "",
+        "all_day": all_day,
+        "location": location,
+        "description": e.get("description") or "",
+    }
 
 
 class SpearfishSchools(BaseScraper):
     name = "Spearfish School District"
     slug = "spearfish_schools"
-    url = "https://www.spearfish.k12.sd.us/"
+    url = EVENTS_URL
     kind = "event"
     category = "schools"
-    dedup_key = "uid"
+    dedup_key = "event_id"
+    min_records = 0  # summer can be empty
 
     def scrape(self) -> list[dict]:
-        resp = net.get(ICAL_URL, timeout=30, headers={"User-Agent": "Mozilla/5.0"})
+        today = dates.today()
+        params = {
+            "start_date": today.isoformat(),
+            "end_date": (today + timedelta(days=DAYS_AHEAD)).isoformat(),
+            "paginate": "false",
+            "locale": "en",
+        }
+        resp = net.get(API_URL, params=params)
         resp.raise_for_status()
-
-        cal = Calendar.from_ical(resp.content)
-        records = []
-
-        for component in cal.walk():
-            if component.name != "VEVENT":
-                continue
-
-            uid = str(component.get("UID", ""))
-            title = str(component.get("SUMMARY", "")).strip()
-            description = str(component.get("DESCRIPTION", "")).strip()
-            location = str(component.get("LOCATION", "")).strip()
-            url = str(component.get("URL", SOURCE_URL)).strip() or SOURCE_URL
-
-            start_dt = _to_iso(component.get("DTSTART"))
-            end_dt = _to_iso(component.get("DTEND"))
-
-            records.append(
-                {
-                    "uid": uid,
-                    "url": url,
-                    "title": title,
-                    "slug": make_slug(title),
-                    "description": description,
-                    "start_dt": start_dt,
-                    "end_dt": end_dt,
-                    "location": location,
-                    "record_type": "event",
-                    "source_label": "Spearfish School District",
-                }
-            )
-
-        return records
+        return [r for r in map(parse_event, resp.json().get("events") or []) if r]

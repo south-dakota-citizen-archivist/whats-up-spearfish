@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% from "macros.html" import card, empty, event_row, ext, freshness %}
 
+{% block head %}<script defer src="{{ root }}static/js/menus.js"></script>{% endblock %}
+
 {% block content %}
 <h1 class="text-2xl font-extrabold mb-4">Schools</h1>
 
@@ -9,7 +11,7 @@
 
     {% call card("School menus", "menus", sources=menu_sources) %}
       {% if menu_days %}
-      <div x-data="{ day: 0 }">
+      <div x-data="menus('{{ root }}schools/menus.json')">
         <div class="flex gap-1.5 overflow-x-auto pb-2 mb-3" role="tablist">
           {% for d in menu_days %}
           <button type="button" role="tab" @click="day = {{ loop.index0 }}" :aria-selected="day === {{ loop.index0 }}"
@@ -22,19 +24,68 @@
           <h3 class="font-bold mb-2">{{ d.date | day_heading }}</h3>
           <div class="grid sm:grid-cols-2 gap-3">
             {% for m in d.menus %}
-            <div class="border border-stone-200 p-3">
+            <button type="button" @click="open({{ m.key | tojson | forceescape }})"
+                    class="flex flex-col items-start text-left border border-stone-200 p-3 hover:border-pine-600 hover:bg-pine-50 group">
               <p class="text-xs font-bold uppercase tracking-wide text-stone-500">{{ m.meal }}</p>
               <p class="font-semibold">{{ m.level }}</p>
               <ul class="mt-1 text-sm text-stone-700 list-disc pl-4">
                 {% for item in m.entrees %}<li>{{ item }}</li>{% endfor %}
               </ul>
-            </div>
+              <p class="mt-auto pt-2 text-xs font-semibold text-pine-700 group-hover:underline">Full menu, photos &amp; nutrition →</p>
+            </button>
             {% endfor %}
           </div>
         </div>
         {% endfor %}
+
+        {# full menu pop-up #}
+        <dialog x-ref="dialog" @close="closed()" @click.self="close()"
+                class="m-auto w-full max-w-2xl max-h-[90vh] p-0 border border-stone-300 shadow-xl backdrop:bg-stone-900/50">
+          <template x-if="menu">
+            <div>
+              <div class="sticky top-0 bg-white border-b border-stone-200 px-5 py-3 flex justify-between gap-3 z-10">
+                <div>
+                  <p class="text-xs font-bold uppercase tracking-wide text-stone-500" x-text="heading(menu.date)"></p>
+                  <h2 class="text-lg font-bold" x-text="menu.level + ' ' + menu.meal.toLowerCase()"></h2>
+                </div>
+                <button type="button" @click="close()" class="text-stone-500 hover:text-stone-900 text-lg" aria-label="Close">✕</button>
+              </div>
+              <ul class="divide-y divide-stone-100">
+                <template x-for="(item, i) in menu.items" :key="i">
+                  <li class="px-5 py-4 flex gap-4">
+                    <img x-show="item.image_url" :src="item.image_url" alt="" loading="lazy" class="w-24 h-24 shrink-0 object-cover bg-stone-100">
+                    <div class="min-w-0 flex-1 text-sm">
+                      <p class="text-xs font-semibold uppercase tracking-wide text-stone-500" x-text="item.category"></p>
+                      <p class="font-semibold text-base" x-text="item.name"></p>
+                      <p x-show="item.description" class="text-stone-600" x-text="item.description"></p>
+                      <p x-show="item.serving_size" class="text-xs text-stone-500 mt-1" x-text="'Serving: ' + item.serving_size"></p>
+                      <p x-show="item.food_groups" class="text-xs text-stone-500" x-text="'Counts as: ' + (item.food_groups || []).join(', ')"></p>
+                      <div class="flex flex-wrap gap-1 mt-1.5">
+                        <template x-for="a in item.allergens || []"><span class="px-1.5 py-0.5 text-xs bg-amber-100 text-amber-900" x-text="'Contains ' + a.toLowerCase()"></span></template>
+                        <span x-show="item.no_allergens" class="px-1.5 py-0.5 text-xs bg-stone-100 text-stone-700">No common allergens</span>
+                        <template x-for="t in item.tags || []"><span class="px-1.5 py-0.5 text-xs bg-pine-100 text-pine-800" x-text="t"></span></template>
+                      </div>
+                      <p x-show="item.ingredients" class="text-xs text-stone-500 mt-1.5" x-text="'Ingredients: ' + item.ingredients"></p>
+                      <details x-show="item.nutrition_facts" class="mt-2">
+                        <summary class="text-xs font-semibold text-pine-700 cursor-pointer">Nutrition facts</summary>
+                        <table class="mt-1 text-xs w-full max-w-xs">
+                          <template x-for="row in item.nutrition_facts || []">
+                            <tr class="border-b border-stone-100">
+                              <td class="py-0.5" :class="row[2] ? 'pl-4 text-stone-600' : 'font-semibold'" x-text="row[0]"></td>
+                              <td class="py-0.5 text-right tabular-nums" x-text="row[1]"></td>
+                            </tr>
+                          </template>
+                        </table>
+                      </details>
+                    </div>
+                  </li>
+                </template>
+              </ul>
+              <p class="px-5 py-3 border-t border-stone-200 text-xs"><a :href="menu.url" target="_blank" rel="noopener" class="text-pine-700 hover:underline">The district's menu website →</a></p>
+            </div>
+          </template>
+        </dialog>
       </div>
-      <p class="text-xs text-stone-500 mt-3">Main dishes only. {{ ext(menu_sources[0].url, "See full menus with sides and nutrition facts") }}.</p>
       {% else %}{{ empty("No upcoming menus have been posted.") }}{% endif %}
     {% endcall %}
 

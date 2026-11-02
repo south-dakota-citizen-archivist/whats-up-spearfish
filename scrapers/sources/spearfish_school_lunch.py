@@ -58,8 +58,55 @@ def _fetch_recipes(org: int, menu: int, start: str, end: str) -> dict[int, dict]
             "is_entree": bool((r.get("category") or {}).get("entree")),
             "category_name": (r.get("category") or {}).get("category", ""),
             "nutrition": _parse_nutrition(nutr),
+            "nutrition_facts": nutrition_facts(nutr),
+            "allergens": [a["name"] for a in r.get("allergens") or [] if a.get("name")],
+            "tags": [a["name"] for a in r.get("attributes") or [] if a.get("name")],
+            "food_groups": [
+                FOOD_GROUPS.get(k, k.replace("_", " "))
+                for k, v in (r.get("offer_vs_serve_components") or {}).items()
+                if v
+            ],
         }
     return lookup
+
+
+FOOD_GROUPS = {"meat_and_meat_alternatives": "protein"}
+
+#: Nutrition label rows: (label, API field, unit or the API field holding the unit, indented)
+NUTRITION_ROWS = [
+    ("Calories", "calories_kcal", "", False),
+    ("Total fat", "total_fat_grams", "g", False),
+    ("Saturated fat", "saturated_fat_grams", "g", True),
+    ("Trans fat", "trans_fat_grams", "g", True),
+    ("Cholesterol", "cholesterol_milligrams", "mg", False),
+    ("Sodium", "sodium_milligrams", "mg", False),
+    ("Total carbohydrate", "carbohydrates_grams", "g", False),
+    ("Dietary fiber", "fiber_grams", "g", True),
+    ("Total sugars", "sugars_grams", "g", True),
+    ("Added sugars", "added_sugars_grams", "g", True),
+    ("Protein", "protein_grams", "g", False),
+    ("Vitamin A", "vitamin_a", "vitamin_a_measurement", False),
+    ("Vitamin C", "vitamin_c", "vitamin_c_measurement", False),
+    ("Vitamin D", "vitamin_d", "vitamin_d_measurement", False),
+    ("Calcium", "calcium", "calcium_measurement", False),
+    ("Iron", "iron", "iron_measurement", False),
+    ("Potassium", "potassium", "potassium_measurement", False),
+]
+
+
+def nutrition_facts(nutr: dict) -> list[list]:
+    """Every nutrient the API reports, as [label, "12 g", indented] rows in label order."""
+    rows = []
+    for label, field, unit, indented in NUTRITION_ROWS:
+        raw = str(nutr.get(field) or "").rstrip("*").strip()
+        try:
+            val = float(raw)
+        except ValueError:
+            continue
+        unit = nutr.get(unit, "") if unit.endswith("_measurement") else unit
+        num = f"{val:.1f}".rstrip("0").rstrip(".") if val < 10 else f"{round(val):,}"
+        rows.append([label, f"{num} {unit}".strip(), indented])
+    return rows
 
 
 def _parse_nutrition(nutr: dict) -> dict:
@@ -124,6 +171,10 @@ def _parse_day(
                     "image_url": info["image_url"],
                     "serving_size": info["serving_size"],
                     "nutrition": info["nutrition"],
+                    "nutrition_facts": info.get("nutrition_facts", []),
+                    "allergens": info.get("allergens", []),
+                    "tags": info.get("tags", []),
+                    "food_groups": info.get("food_groups", []),
                 }
             )
         else:

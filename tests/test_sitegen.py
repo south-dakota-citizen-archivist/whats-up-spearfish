@@ -152,7 +152,7 @@ def fixture_data(tmp_path):
         },
         kind="gauge",
     )
-    _write(d, "fire", data={"restrictions": None, "incidents": [], "danger": {"zones": []}, "errors": []}, kind="fire")
+    _write(d, "fire", data={"incidents": [], "danger": {"zones": []}, "errors": []}, kind="fire")
     _write(
         d,
         "ebird",
@@ -288,9 +288,37 @@ def test_sources_page_flags_a_missing_part(tmp_path):
     from sitegen.pages import sources_page
 
     _write(
-        tmp_path, "fire", data={"restrictions": [], "danger": {"zones": [{"name": "x", "level": "Low"}]}}, kind="fire"
+        tmp_path, "fire", data={"incidents": None, "danger": {"zones": [{"name": "x", "level": "Low"}]}}, kind="fire"
     )
     groups = {g["heading"]: g for g in sources_page(Site(tmp_path), [], TODAY)["groups"]}
     offers = {i["what"]: i for o in groups["Outdoors"]["orgs"] for i in o["offers"]}
     assert offers["Fire danger"]["ok"] is True
-    assert offers["Burn restrictions by county and city"]["ok"] is False
+    assert offers["Active South Dakota wildfires"]["ok"] is False  # that part failed
+
+
+def test_menu_details_full_record(tmp_path):
+    from sitegen.pages import menu_details
+
+    items = [
+        {
+            "name": "Pizza",
+            "is_entree": True,
+            "allergens": ["Milk", "Wheat"],
+            "nutrition_facts": [["Calories", "200", False]],
+        },
+        {"name": "Juice", "allergens": ["No Allergens"], "image_url": "https://x/j.png"},
+        {"name": "Cereal", "allergens": ["Not Available"]},
+    ]
+    _write(
+        tmp_path,
+        "spearfish_hs_lunch",
+        [{"id": "1", "kind": "school_menu", "title": "Pizza", "url": "u", "date": _iso(1), "menu_items": items}],
+        kind="school_menu",
+    )
+    menus = menu_details(Site(tmp_path), TODAY)
+    m = menus[f"spearfish_hs_lunch|{_iso(1)}"]
+    assert m["level"] == "High School" and m["meal"] == "Lunch"
+    pizza, juice, cereal = m["items"]
+    assert pizza["allergens"] == ["Milk", "Wheat"] and pizza["nutrition_facts"]
+    assert juice["no_allergens"] is True and juice["image_url"]
+    assert "allergens" not in cereal and "no_allergens" not in cereal

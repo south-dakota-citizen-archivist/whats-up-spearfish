@@ -22,11 +22,11 @@
     <span class="font-bold">City alert:</span> {{ a.title }} <span class="text-amber-700">· {{ a.published | fmt_day }}</span>
   </a>
   {% endfor %}
-  {% if fire.restricted or fire.local_danger %}
+  {% if fire.local_danger %}
   <a href="{{ root }}outdoors/#fire" class="flex flex-wrap items-center gap-2 border border-stone-200 bg-white px-4 py-3 text-sm">
     <span class="font-bold">🔥 Fire:</span>
-    {% if fire.local_danger %}{{ danger_badge(fire.local_danger.level) }}{% endif %}
-    {% if fire.restricted %}<span>{{ fire.restricted | length }} area{{ 's' if fire.restricted | length != 1 }} with burn restrictions</span>{% else %}<span>No burn restrictions listed</span>{% endif %}
+    {{ danger_badge(fire.local_danger.level) }}
+    {% if fire.incidents %}<span>{{ fire.incidents | length }} active South Dakota wildfire{{ 's' if fire.incidents | length != 1 }}</span>{% endif %}
     <span class="text-pine-700 font-semibold ml-auto">Details →</span>
   </a>
   {% endif %}
@@ -106,7 +106,7 @@
       <dl class="space-y-2 text-sm">
         {% for m in day.menus %}
         <div>
-          <dt class="font-semibold">{{ m.level }} {{ m.meal | lower }}</dt>
+          <dt class="font-semibold"><a href="{{ root }}schools/#menu={{ m.key | urlencode }}" class="hover:text-pine-700 hover:underline">{{ m.level }} {{ m.meal | lower }}</a></dt>
           <dd class="text-stone-600">{{ m.entrees | join(' · ') }}</dd>
         </div>
         {% endfor %}

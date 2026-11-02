@@ -78,8 +78,44 @@ def menus_for_day(site: Site, day: str) -> list[dict]:
             entrees = [rec["title"]]
         if any("no school" in e.lower() for e in entrees):
             continue
-        out.append({"slug": slug, "level": level, "meal": meal, "entrees": entrees, "url": site.get(slug).url})
+        out.append(
+            {
+                "key": f"{slug}|{day}",
+                "slug": slug,
+                "level": level,
+                "meal": meal,
+                "date": day,
+                "entrees": entrees,
+                "url": site.get(slug).url,
+                "items": [_menu_item(i) for i in items],
+            }
+        )
     return out
+
+
+def _menu_item(i: dict) -> dict:
+    keep = ("name", "category", "is_entree", "description", "ingredients", "image_url", "serving_size")
+    item = {k: i.get(k) for k in keep if i.get(k)}
+    for k in ("tags", "food_groups", "nutrition_facts"):
+        if i.get(k):
+            item[k] = i[k]
+    # The menu system lists "No Allergens" / "Not Available" as if they were allergens
+    allergens = i.get("allergens") or []
+    real = [a for a in allergens if a.lower() not in ("no allergens", "not available")]
+    if real:
+        item["allergens"] = real
+    elif any(a.lower() == "no allergens" for a in allergens):
+        item["no_allergens"] = True
+    return item
+
+
+def menu_details(site: Site, today: date) -> dict:
+    """Full menus (every dish, with photos, allergens and nutrition) keyed "slug|date", for the menu pop-up."""
+    return {
+        m["key"]: {k: m[k] for k in ("level", "meal", "date", "url", "items")}
+        for d in menu_days(site, today, 10)
+        for m in d["menus"]
+    }
 
 
 def menu_days(site: Site, today: date, count: int) -> list[dict]:
@@ -108,8 +144,8 @@ def creek_context(site: Site) -> dict:
         "current": current,
         "median30": round(median) if median is not None else None,
         "spark": sparkline([p["cfs"] for p in series], 240, 48),
-        "chart": sparkline([d["cfs"] for d in daily], 600, 140),
         "daily": daily,
+        "series": series,
     }
 
 
@@ -142,15 +178,12 @@ def sparkline(values: list[float], width: int, height: int) -> dict | None:
 def fire_context(site: Site) -> dict:
     src = site.get("fire")
     data = src.data or {}
-    restrictions = data.get("restrictions") or []
     danger = data.get("danger") or {}
     zones = danger.get("zones") or []
     # Spearfish sits in the NWS "Northern Foothills" rangeland zone
     local = next((z for z in zones if "Northern Foothills" in z["name"]), None)
     return {
         "source": src,
-        "restrictions": restrictions,
-        "restricted": [r for r in restrictions if r["restricted"]],
         "danger": danger,
         "local_danger": local,
         "incidents": data.get("incidents") or [],
@@ -347,7 +380,7 @@ def sources_page(site: Site, events: list[dict], today: date) -> dict:
                 srcs = [s for s in srcs if s.enabled]
                 fetched = max((s.fetched_at for s in srcs if s.fetched_at), default=None)
                 ok = all(s.status == "ok" for s in srcs)
-                if item.needs and not any((s.data or {}).get(item.needs) for s in srcs):
+                if item.needs and all((s.data or {}).get(item.needs) is None for s in srcs):
                     ok, fetched = False, None  # the source ran, but this part of it came back empty
                 items.append({"what": item.what, "note": item.note, "ok": ok, "updated": fetched})
             if items:
