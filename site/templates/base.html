@@ -38,7 +38,7 @@
   {% block head %}{% endblock %}
   <script defer src="{{ root }}static/vendor/alpine-3.14.9.min.js"></script>
 </head>
-<body class="min-h-screen flex flex-col bg-stone-100 text-stone-900 antialiased">
+<body class="min-h-screen flex flex-col bg-stone-100 text-stone-900 antialiased {% block body_class %}{% endblock %}">
 
   <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[2000] focus:bg-white focus:text-pine-800 focus:font-semibold focus:px-4 focus:py-2 focus:shadow-lg">Skip to content</a>
 
@@ -92,11 +92,11 @@
     <p class="max-w-6xl mx-auto px-4 sm:px-6 py-2"><span class="font-semibold">This page hasn't updated since {{ build_time.strftime('%a, %b %-d at %-I:%M %p') }}.</span> Some of what's here may be out of date.</p>
   </div>
 
-  <main id="main" tabindex="-1" class="focus:outline-none flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 py-6">
+  <main id="main" tabindex="-1" class="focus:outline-none flex-1 w-full max-w-6xl mx-auto {% block main_class %}px-4 sm:px-6 py-6{% endblock %}">
     {% block content %}{% endblock %}
   </main>
 
-  <footer class="border-t border-stone-300 bg-white">
+  <footer class="border-t border-stone-300 bg-white {% block footer_class %}{% endblock %}">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-5 text-sm text-stone-600 flex flex-wrap gap-x-6 gap-y-2 items-center">
       <span>Updated {{ build_time.strftime('%b %-d at %-I:%M %p') }}</span>
       <a href="{{ root }}sources/" class="hover:text-pine-700 hover:underline">Data sources</a>

@@ -26,6 +26,32 @@ document.addEventListener("alpine:init", () => {
     3: ["Finding your location took too long.", "Try again, ideally with a clear view of the sky or on Wi-Fi."],
   };
 
+  // Double-tap to zoom in. Leaflet waits for the browser's dblclick, which iPhones (WebKit)
+  // don't send for touches, so watch the taps ourselves; and handle dblclick here too, so a
+  // browser that sends both (Chrome on Android) doesn't zoom twice.
+  function doubleTapZoom(map) {
+    map.doubleClickZoom.disable();
+    let last = null;
+    let touchZoomAt = 0;
+    const zoomAround = (point, out) => map.setZoomAround(point, map.getZoom() + (out ? -1 : 1), glide());
+    map.getContainer().addEventListener("pointerup", (e) => {
+      if (e.pointerType !== "touch" || !e.isPrimary) return;
+      const now = Date.now();
+      const here = map.mouseEventToContainerPoint(e);
+      if (last && now - last.t < 300 && here.distanceTo(last.p) < 30) {
+        touchZoomAt = now;
+        last = null;
+        zoomAround(here, false);
+      } else {
+        last = { t: now, p: here };
+      }
+    });
+    map.on("dblclick", (e) => {
+      if (Date.now() - touchZoomAt < 600) return; // the double-tap above already zoomed
+      zoomAround(e.containerPoint, e.originalEvent.shiftKey);
+    });
+  }
+
   // recentUrl: places active in the past two years (what the page opens on);
   // allUrl: every place, fetched when a reader searches or looks further back
   Alpine.data("permits", (recentUrl, allUrl, latestReport, outlinesUrl, beacon) => {
@@ -51,6 +77,7 @@ document.addEventListener("alpine:init", () => {
       locating: false,
       selected: null,
       open: false, // phones: the bottom sheet pulled up to show the list
+      swipeFrom: null, // where a swipe on the sheet's handle began
       errorHelp: "",
       canUseCenter: false, // offer "places near the middle of the map" when location fails
       hereLabel: "",
@@ -72,11 +99,22 @@ document.addEventListener("alpine:init", () => {
           // phones pinch to zoom, so the +/− buttons only appear on large screens
           map = L.map(this.$refs.map, { preferCanvas: true, zoomControl: false }).setView([44.4906, -103.8594], 13);
           if (large()) L.control.zoom({ position: "topright" }).addTo(map);
+          doubleTapZoom(map);
+          // the zoom level on the page, for tests and anyone curious
+          const noteZoom = () => (this.$refs.map.dataset.zoom = map.getZoom());
+          map.on("zoomend", noteZoom);
+          noteZoom();
           L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
             maxZoom: 19,
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
           }).addTo(map);
           markers = L.layerGroup().addTo(map);
+          // a tap on open map (not a dot) tucks the sheet away, so the map is always one tap from full view
+          map.on("click", () => {
+            if (large()) return;
+            this.open = false;
+            if (this.selected) this.back();
+          });
           this.draw();
           const key = decodeURIComponent(location.hash.replace(/^#site=/, ""));
           if (!key || key === location.hash) return;
@@ -161,7 +199,10 @@ document.addEventListener("alpine:init", () => {
         for (const s of this.inRange()) {
           if (s.lat == null) continue;
           L.circleMarker([s.lat, s.lon], { radius: 6, weight: 1, color: "#1c1917", fillColor: this.color(s), fillOpacity: 0.9 })
-            .on("click", () => this.pick(s))
+            .on("click", (e) => {
+              L.DomEvent.stopPropagation(e); // a dot, not open map
+              this.pick(s);
+            })
             .addTo(markers);
         }
       },
@@ -251,6 +292,25 @@ document.addEventListener("alpine:init", () => {
         this.error = message;
         this.errorHelp = help;
         this.canUseCenter = offerCenter && !!map;
+      },
+
+      // Phones: tap the handle to open or close the sheet, or swipe it up or down
+      toggleSheet() {
+        if (Date.now() - (this._swiped || 0) < 400) return;
+        if (this.open || this.selected) {
+          this.open = false;
+          if (this.selected) this.back();
+        } else this.open = true;
+      },
+
+      swipeSheet(y) {
+        if (this.swipeFrom == null) return;
+        const dy = y - this.swipeFrom;
+        this.swipeFrom = null;
+        if (Math.abs(dy) < 25) return; // a tap; the click handler takes it
+        const up = dy < 0;
+        if (up !== (this.open || !!this.selected)) this.toggleSheet();
+        this._swiped = Date.now(); // the click that follows a swipe shouldn't undo it
       },
 
       sheetTitle() {

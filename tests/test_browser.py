@@ -403,3 +403,29 @@ def test_permits_location_refused_explains_and_offers_the_map(open_page, browser
     assert "Location sharing is off" in alert.inner_text() and "Settings" in alert.inner_text()
     page.get_by_role("button", name="Show places near the middle of the map instead").click()
     assert "Closest to the middle of the map" in page.locator("button[aria-controls=sheet-body]").inner_text()
+
+
+def test_permits_map_double_tap_zooms_one_level(browser, site_url):
+    # a phone (touch) context; iPhones don't send dblclick for taps, so the page watches taps itself
+    ctx = browser.new_context(viewport=PHONE, has_touch=True, is_mobile=True)
+    page = ctx.new_page()
+    page.route(lambda url: not url.startswith(site_url.split("/whats-up")[0]), lambda r: r.abort())
+    page.goto(site_url + "permits/")
+    page.wait_for_selector(".permits-map[data-zoom]")
+    start = int(page.locator(".permits-map").get_attribute("data-zoom"))
+    page.touchscreen.tap(60, 560)
+    page.wait_for_timeout(80)
+    page.touchscreen.tap(60, 560)
+    page.wait_for_function(f"document.querySelector('.permits-map').dataset.zoom != '{start}'")
+    page.wait_for_timeout(600)  # a second (browser) zoom would land by now
+    assert int(page.locator(".permits-map").get_attribute("data-zoom")) == start + 1
+    ctx.close()
+
+
+def test_permits_on_a_phone_is_one_screen(open_page):
+    # the page itself never scrolls, so swiping the list can't drag the map along
+    page = open_page("permits/", viewport=PHONE, wait=".permits-map[data-zoom]")
+    assert page.evaluate("document.documentElement.scrollHeight") <= PHONE["height"]
+    assert page.locator("footer").is_hidden()
+    page.locator("[aria-controls=sheet-body]").click()
+    assert "About this map" in page.locator("#sheet-body details summary").inner_text()

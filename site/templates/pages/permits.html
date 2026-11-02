@@ -6,17 +6,35 @@
 <script defer src="{{ root }}static/js/permits.js"></script>
 {% endblock %}
 
+{# Phones: an app-like screen. The page itself doesn't scroll (so swiping the list can't
+   drag the map along); the map fills what's below the menu. Large screens scroll as usual. #}
+{% block body_class %}max-lg:h-[100dvh] max-lg:overflow-hidden{% endblock %}
+{% block main_class %}lg:px-6 lg:py-6 max-lg:min-h-0 max-lg:flex max-lg:flex-col{% endblock %}
+{% block footer_class %}max-lg:hidden{% endblock %}
+
+
+
 {% block content %}
+{% set about %}
+<p>Find out what's being built in and around Spearfish. Use your location to see nearby projects, or search by address, permit number, contractor or owner.</p>
+<p>
+  Includes building permits issued from {{ first_permit | fmt_day('%B %Y') }} through {{ latest_report | fmt_day('%B %Y') }}
+  and planning applications filed from 2012 through {{ archive_meta.newest_created | default('') | fmt_day('%B %Y') }}{% if pc_first %},
+  plus every application on a Planning Commission agenda since {{ pc_first | fmt_day('%B %Y') }}{% endif %}.
+  The city posts a list of new permits each month, and they show up here soon after.
+  Some addresses can't be placed on the map, but you can still find them by searching.
+</p>
+{% endset %}
 {#
   Mobile first: the map fills the screen; search and filters float over its top,
   and a sheet along the bottom holds the list and the chosen place (pull it up to
   read more). On large screens the sheet becomes a panel down the left side.
 #}
 <div x-data="permits('{{ root }}permits/recent.json', '{{ root }}permits/sites.json', '{{ latest_report[:7] }}', '{{ root }}permits/parcels.json', '{{ beacon }}')"
-     class="-mx-4 sm:-mx-6 -mt-6 lg:mx-0 lg:mt-0">
+     class="max-lg:flex-1 max-lg:min-h-0 max-lg:flex max-lg:flex-col">
   <h1 class="sr-only lg:not-sr-only lg:text-2xl lg:font-extrabold lg:mb-3">What's being built here?</h1>
 
-  <section class="relative h-[calc(100svh-6.25rem)] min-h-[30rem] lg:h-[78vh] lg:border lg:border-stone-300 overflow-hidden">
+  <section class="relative max-lg:flex-1 max-lg:min-h-0 lg:h-[78vh] lg:border lg:border-stone-300 overflow-hidden">
     <div x-ref="map" class="permits-map absolute inset-0 z-0 bg-stone-200" role="region"
          aria-label="Map of building permits and planning applications. Every place on it is also in the list."></div>
 
@@ -35,7 +53,7 @@
       </div>
       <div class="flex gap-1.5 overflow-x-auto [scrollbar-width:none] pointer-events-auto" role="group" aria-label="Filters">
         <label for="since" class="sr-only">Time period</label>
-        <select id="since" x-model="since" class="shrink-0 border border-stone-300 bg-white shadow-sm px-2 py-1 text-xs font-semibold text-stone-800">
+        <select id="since" x-model="since" class="shrink-0 border border-stone-300 bg-white shadow-sm px-2 py-1.5 text-xs font-semibold text-stone-800">
           {% if latest_report %}<option value="latest">Issued {{ latest_report | fmt_day('%b %Y') }}</option>{% endif %}
           <option value="1">Past year</option>
           <option value="2">Past 2 years</option>
@@ -44,7 +62,7 @@
         </select>
         <template x-for="(cat, key) in categories" :key="key">
           <button type="button" @click="show[key] = !show[key]" :aria-pressed="show[key]" :aria-label="'Show ' + cat.label.toLowerCase()"
-                  class="shrink-0 flex items-center gap-1.5 border shadow-sm px-2 py-1 text-xs whitespace-nowrap"
+                  class="shrink-0 flex items-center gap-1.5 border shadow-sm px-2.5 py-1.5 text-xs whitespace-nowrap"
                   :class="show[key] ? 'border-stone-400 bg-white text-stone-800' : 'border-stone-300 bg-stone-100 text-stone-500 line-through'">
             <span class="inline-block w-2.5 h-2.5 border border-stone-800" :style="'background:' + (show[key] ? cat.color : 'transparent')"></span>
             <span x-text="cat.label"></span>
@@ -69,8 +87,10 @@
     <div class="absolute z-[800] inset-x-0 bottom-0 flex flex-col bg-white border-t border-stone-300 shadow-[0_-4px_14px_rgba(0,0,0,0.12)]
                 lg:inset-x-auto lg:top-2 lg:bottom-2 lg:left-2 lg:w-96 lg:border lg:shadow-lg lg:max-h-none transition-[max-height] duration-200"
          :class="open || selected ? 'max-h-[62%]' : 'max-h-[4.25rem]'">
-      <button type="button" @click="open = !open; if (!open) selected = null" :aria-expanded="open || !!selected" aria-controls="sheet-body"
-              class="lg:hidden shrink-0 w-full px-4 pt-1.5 pb-2 text-left">
+      <button type="button" @click="toggleSheet()" :aria-expanded="open || !!selected" aria-controls="sheet-body"
+              @touchstart.passive="swipeFrom = $event.touches[0].clientY"
+              @touchend="swipeSheet($event.changedTouches[0].clientY)"
+              class="lg:hidden shrink-0 w-full px-4 pt-1.5 pb-2 text-left touch-none">
         <span aria-hidden="true" class="block mx-auto mb-1.5 w-10 h-1 bg-stone-300"></span>
         <span class="flex items-center justify-between gap-3">
           <span class="text-sm font-semibold text-stone-900" x-text="loading ? 'Loading records…' : sheetTitle()"></span>
@@ -157,21 +177,16 @@
           <button type="button" x-show="!loading && matches.length > limit" x-cloak @click="limit += 40"
                   class="w-full py-2.5 border-t border-stone-200 text-sm font-semibold text-pine-700 hover:bg-pine-50"
                   x-text="'Show more (' + (matches.length - limit).toLocaleString() + ' more)'"></button>
+          <details class="lg:hidden border-t border-stone-200 px-4 py-3 text-xs text-stone-600">
+            <summary class="cursor-pointer font-semibold text-pine-700">About this map</summary>
+            <div class="mt-2 space-y-2">{{ about }}<p><a href="{{ root }}sources/" class="text-pine-700 underline">Data sources</a> · Updated {{ build_time.strftime('%b %-d at %-I:%M %p') }}</p></div>
+          </details>
         </div>
       </div>
     </div>
     <p class="sr-only" role="status" x-text="loading ? '' : (matches.length ? matches.length.toLocaleString() + (matches.length === 1 ? ' place' : ' places') + ' in the list' : 'Nothing matches')"></p>
   </section>
 
-  <div class="px-4 sm:px-6 lg:px-0 mt-4 space-y-2 text-sm text-stone-600 max-w-3xl">
-    <p>Find out what's being built in and around Spearfish. Use your location to see nearby projects, or search by address, permit number, contractor or owner.</p>
-    <p>
-      Includes building permits issued from {{ first_permit | fmt_day('%B %Y') }} through {{ latest_report | fmt_day('%B %Y') }}
-      and planning applications filed from 2012 through {{ archive_meta.newest_created | default('') | fmt_day('%B %Y') }}{% if pc_first %},
-      plus every application on a Planning Commission agenda since {{ pc_first | fmt_day('%B %Y') }}{% endif %}.
-      The city posts a list of new permits each month, and they show up here soon after.
-      Some addresses can't be placed on the map, but you can still find them by searching.
-    </p>
-  </div>
+  <div class="hidden lg:block mt-4 space-y-2 text-sm text-stone-600 max-w-3xl">{{ about }}</div>
 </div>
 {% endblock %}
