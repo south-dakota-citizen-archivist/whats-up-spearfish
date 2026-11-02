@@ -43,13 +43,6 @@
         {% endfor %}
       </div>
     </div>
-    <div>
-      <label for="src" class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-2 block">Hosted by</label>
-      <select id="src" x-model="source" class="w-full border border-stone-300 bg-white px-3 py-2 text-sm">
-        <option value="">Anyone</option>
-        {% for name, n in event_sources %}<option value="{{ name }}">{{ name }} ({{ n }})</option>{% endfor %}
-      </select>
-    </div>
     <div class="text-xs">{{ freshness(event_source_objs) }}</div>
   </aside>
 
@@ -65,7 +58,7 @@
         <ul class="bg-white border border-stone-200 divide-y divide-stone-100">
           <template x-for="e in day.events" :key="e.id">
             <li class="px-4 py-3 flex gap-4">
-              <span class="w-24 shrink-0 text-sm font-semibold text-stone-700 tabular-nums" x-text="e.time"></span>
+              <span class="w-[7.5rem] sm:w-[8.5rem] shrink-0 whitespace-nowrap text-xs sm:text-sm font-semibold text-stone-700 tabular-nums" x-text="e.time"></span>
               <div class="min-w-0">
                 <a :href="e.url" target="_blank" rel="noopener" class="font-medium hover:text-pine-700 hover:underline" x-text="e.title"></a>
                 <p class="text-xs text-stone-500">

@@ -6,7 +6,6 @@ document.addEventListener("alpine:init", () => {
     q: "",
     range: "week",
     cats: [],
-    source: "",
     limit: 150,
 
     async init() {
@@ -50,7 +49,6 @@ document.addEventListener("alpine:init", () => {
         const end = e.end ? e.end.slice(0, 10) : e.date;
         if (end < lo || e.date > hi) return false;
         if (this.cats.length && !this.cats.includes(e.category)) return false;
-        if (this.source && e.source_label !== this.source && !e.also.some((a) => a.source === this.source)) return false;
         if (q && !`${e.title} ${e.location} ${e.description}`.toLowerCase().includes(q)) return false;
         return true;
       });

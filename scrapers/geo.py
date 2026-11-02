@@ -4,8 +4,8 @@ scrapers/geo.py
 Address normalization and geocoding for Spearfish addresses.
 
 - normalize_address() turns "2312 Platinum Drive, Spearfish, SD 57783" and
-  "2312 PLATINUM DR" into the same key, so records from different sources
-  can be grouped by site.
+  "2312 PLATINUM DR" into the same key (via scrapers.address), so records
+  from different sources can be grouped by site.
 - geocode() resolves addresses to (lat, lon) with the free US Census batch
   geocoder, caching every answer (including misses) in {DATA_DIR}/_geocode_cache.json
   so each address is only ever looked up once.
@@ -16,39 +16,14 @@ from __future__ import annotations
 import csv
 import io
 import json
-import re
 
-from scrapers import base, net
+from scrapers import address, base, net
 
 # Rough box around Spearfish and its outskirts; coordinates outside it are bad data.
 BBOX = {"min_lat": 44.40, "max_lat": 44.60, "min_lon": -104.05, "max_lon": -103.70}
 
 CENSUS_BATCH = "https://geocoding.geo.census.gov/geocoder/locations/addressbatch"
 BATCH_SIZE = 2000
-
-_SUFFIXES = {
-    "STREET": "ST",
-    "AVENUE": "AVE",
-    "AV": "AVE",
-    "DRIVE": "DR",
-    "ROAD": "RD",
-    "LANE": "LN",
-    "COURT": "CT",
-    "CIRCLE": "CIR",
-    "PLACE": "PL",
-    "BOULEVARD": "BLVD",
-    "PARKWAY": "PKWY",
-    "HIGHWAY": "HWY",
-    "TRAIL": "TRL",
-    "TERRACE": "TER",
-    "LOOP": "LOOP",
-    "WAY": "WAY",
-    "NORTH": "N",
-    "SOUTH": "S",
-    "EAST": "E",
-    "WEST": "W",
-}
-_CITY_RE = re.compile(r",?\s*(SPEARFISH|SPEARISH)\b.*$")
 
 
 def in_spearfish(lat, lon) -> bool:
@@ -59,27 +34,9 @@ def in_spearfish(lat, lon) -> bool:
     return BBOX["min_lat"] <= lat <= BBOX["max_lat"] and BBOX["min_lon"] <= lon <= BBOX["max_lon"]
 
 
-def normalize_address(address: str) -> str:
-    """Comparable key for a street address ('' if there's no usable house number + street)."""
-    s = (address or "").upper()
-    s = _CITY_RE.sub("", s)
-    s = re.sub(r",?\s*SD\s*\d{5}(-\d{4})?\s*$", "", s)
-    s = re.sub(r"[^\w\s&/-]", " ", s)
-    words = [_SUFFIXES.get(w, w) for w in s.split()]
-    if len(words) < 2 or not re.match(r"^\d", words[0]):
-        return ""
-    # Group units/suites with their building: drop "UNIT 3", "STE B", "#4" and a bare trailing unit number
-    for i, w in enumerate(words[1:], 1):
-        if w in ("UNIT", "STE", "SUITE", "APT", "BLDG", "LOT", "SPACE") or w.startswith("#"):
-            words = words[:i]
-            break
-    street_suffixes = set(_SUFFIXES.values()) - {"N", "S", "E", "W", "HWY"}
-    if len(words) > 2 and re.fullmatch(r"\d+[A-Z]?", words[-1]) and words[-2] in street_suffixes:
-        words = words[:-1]
-    # "515 27TH ST N" and "515 N 27TH ST" are the same place
-    if len(words) > 2 and words[-1] in ("N", "S", "E", "W") and words[1] not in ("N", "S", "E", "W"):
-        words = [words[0], words[-1], *words[1:-1]]
-    return " ".join(words)
+def normalize_address(text: str) -> str:
+    """Matching key for a street address ('' if there's no usable house number + street). See scrapers.address."""
+    return address.key(text)
 
 
 def _cache_path():

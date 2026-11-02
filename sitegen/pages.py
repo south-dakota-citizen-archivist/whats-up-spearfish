@@ -396,13 +396,10 @@ def home(site: Site, events: list[dict], today: date) -> dict:
 
 def events_page(site: Site, events: list[dict], today: date) -> dict:
     cats = defaultdict(int)
-    srcs = defaultdict(int)
     for e in events:
         cats[e["category"]] += 1
-        srcs[e["source_label"]] += 1
     return {
         "categories": [(k, CATEGORY_LABELS.get(k, k.title()), n) for k, n in sorted(cats.items(), key=lambda x: -x[1])],
-        "event_sources": sorted(srcs.items()),
         "event_count": len(events),
         "event_source_objs": [s for s in site.by_kind("event")],
     }
