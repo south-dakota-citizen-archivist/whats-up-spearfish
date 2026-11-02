@@ -3,7 +3,7 @@
  "name": "Leone's Creamery",
  "kind": "flavor",
  "url": "https://leonescreamery.com/flavors",
- "fetched_at": "2026-11-01T20:07:30-07:00",
+ "fetched_at": "2026-11-01T20:21:26-07:00",
  "count": 8,
  "records": [
   {
@@ -13,6 +13,12 @@
    "slug": "sweet-cream",
    "record_type": "flavor",
    "source_label": "Leone's Creamery",
+   "gluten_free": true,
+   "contains": [
+    "Eggs",
+    "Dairy"
+   ],
+   "description": "An old-style classic that never disappoints! Made from the simplest ingredients-- milk, cream, sugar, eggs. Bonus: perfect with any topping!",
    "kind": "flavor",
    "source": "leones_creamery",
    "id": "07e02941b4b9",
@@ -25,6 +31,12 @@
    "slug": "chocolate-mint",
    "record_type": "flavor",
    "source_label": "Leone's Creamery",
+   "gluten_free": true,
+   "contains": [
+    "Eggs",
+    "Dairy"
+   ],
+   "description": "Creamy milk chocolate and peppermint ice cream.",
    "kind": "flavor",
    "source": "leones_creamery",
    "id": "3beb4ffff1c2",
@@ -37,6 +49,12 @@
    "slug": "blueberry-goats-cheese",
    "record_type": "flavor",
    "source_label": "Leone's Creamery",
+   "gluten_free": true,
+   "contains": [
+    "Eggs",
+    "Dairy"
+   ],
+   "description": "An OG favorite at Leones' Creamery. Bursting with sweet blueberries and a lil' bit of goat cheese funk. It's creamy, sweet, tangy, and perfect.",
    "kind": "flavor",
    "source": "leones_creamery",
    "id": "a4225f6859f3",
@@ -49,6 +67,13 @@
    "slug": "shady-vanilla",
    "record_type": "flavor",
    "source_label": "Leone's Creamery",
+   "gluten_free": false,
+   "contains": [
+    "Dairy",
+    "Eggs",
+    "Gluten"
+   ],
+   "description": "Dyed with activated charcoal, this vanilla ice cream is chock full of Nilla Wafer cookie bits and mini white chocolate chips! Perfect for the spooky season!",
    "kind": "flavor",
    "source": "leones_creamery",
    "id": "cc624d43ebb2",
@@ -61,6 +86,12 @@
    "slug": "salted-caramel-cone",
    "record_type": "flavor",
    "source_label": "Leone's Creamery",
+   "gluten_free": true,
+   "contains": [
+    "Eggs",
+    "Dairy"
+   ],
+   "description": "Ice cream made with our signature salted caramel sauce, and full of our gluten-free cone pieces folded in!",
    "kind": "flavor",
    "source": "leones_creamery",
    "id": "147b8a3565ea",
@@ -73,6 +104,12 @@
    "slug": "butterbeer",
    "record_type": "flavor",
    "source_label": "Leone's Creamery",
+   "gluten_free": true,
+   "contains": [
+    "Eggs",
+    "Dairy"
+   ],
+   "description": "A once-a-year seasonal favorite!! We make a butter rum ice cream and swirl it with a thick ribbon of our house-made butter beer caramel. Loved by witches and wizards alike!",
    "kind": "flavor",
    "source": "leones_creamery",
    "id": "e7048e7663c2",
@@ -85,6 +122,13 @@
    "slug": "curry-with-peanut-butter-swirl",
    "record_type": "flavor",
    "source_label": "Leone's Creamery",
+   "gluten_free": true,
+   "contains": [
+    "Eggs",
+    "Dairy",
+    "Peanuts"
+   ],
+   "description": "Creamy, sweet, curry ice cream with a thick ribbon of peanut butter. Crazy delicious, and surprisingly addictive!",
    "kind": "flavor",
    "source": "leones_creamery",
    "id": "33b8a97c5338",
@@ -97,6 +141,12 @@
    "slug": "vegan-maple-walnut",
    "record_type": "flavor",
    "source_label": "Leone's Creamery",
+   "gluten_free": true,
+   "contains": [
+    "Coconut",
+    "Walnuts"
+   ],
+   "description": "A classic flavor, made vegan! Creamy coconut-maple ice cream, studded with candied maple walnuts.",
    "kind": "flavor",
    "source": "leones_creamery",
    "id": "8e96de747531",
