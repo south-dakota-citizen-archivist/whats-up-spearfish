@@ -1,0 +1,2138 @@
+{
+ "slug": "planning_commission",
+ "name": "Spearfish Planning Commission applications",
+ "kind": "planning_item",
+ "url": "https://spearfishsd.portal.civicclerk.com/",
+ "fetched_at": "2026-11-01T21:45:27-07:00",
+ "count": 47,
+ "records": [
+  {
+   "item_id": 1984,
+   "item_number": "2025-139",
+   "event_id": 2015,
+   "meeting_date": "2025-10-07T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2015/files",
+   "section": "Items for Action",
+   "app_type": "Variance",
+   "site": true,
+   "title": "Variance — 1955 Maitland Road.",
+   "agenda_text": "Continue considering a variance to certain subdivision standards Section 154.067 (C) and associated preliminary plat.",
+   "request": "Continue considering a variance to certain subdivision standards Section 154.067 (C) and associated preliminary plat.",
+   "applicant": "Brad Limbo.",
+   "owner": "",
+   "location": "1955 Maitland Road.",
+   "address": "1955 Maitland Road",
+   "address_key": "1955 MAITLAND RD",
+   "recommendation": "Consider.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2015/files",
+   "attachments": [
+    {
+     "name": "Staff Report",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2015/files/attachment/1076"
+    }
+   ],
+   "lat": 44.455694,
+   "lon": -103.801937,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "c39038e940b3",
+   "published": "2025-10-07T10:00:00-06:00",
+   "date": "2025-10-07",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 2010,
+   "item_number": "2025-155",
+   "event_id": 2202,
+   "meeting_date": "2025-10-21T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2202/files",
+   "section": "Items for Action",
+   "app_type": "Preliminary plat",
+   "site": true,
+   "title": "Preliminary plat — 4025 E Colorado Boulevard.",
+   "agenda_text": "Continue the consideration of a preliminary plat of Lots 2 through 6 of Tract R, False Bottom Addition.",
+   "request": "Continue the consideration of a preliminary plat of Lots 2 through 6 of Tract R, False Bottom Addition.",
+   "applicant": "City of Spearfish.",
+   "owner": "",
+   "location": "4025 E Colorado Boulevard.",
+   "address": "4025 E Colorado Boulevard",
+   "address_key": "4025 E COLORADO BLVD",
+   "recommendation": "Make a recommendation to City Council.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2202/files",
+   "attachments": [
+    {
+     "name": "Combined Staff Report and Attachments",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2202/files/attachment/1110"
+    }
+   ],
+   "lat": 44.474345,
+   "lon": -103.794137,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "fde599a9ccf3",
+   "published": "2025-10-21T10:00:00-06:00",
+   "date": "2025-10-21",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 2011,
+   "item_number": "2025-156",
+   "event_id": 2202,
+   "meeting_date": "2025-10-21T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2202/files",
+   "section": "Items for Action",
+   "app_type": "Variance",
+   "site": true,
+   "title": "Variance — South of the intersection of E Colorado Boulevard and Maitland Road, next to Terry Peak Lane; outside of city limits, within the ETJ.",
+   "agenda_text": "Consider variances to certain subdivision standards (4.3 Road Design & 4.7 (D) Blocks) associated with a preliminary plat of Lots 1 through 10 of Blue Sky Estates.",
+   "request": "Consider variances to certain subdivision standards (4.3 Road Design & 4.7 (D) Blocks) associated with a preliminary plat of Lots 1 through 10 of Blue Sky Estates.",
+   "applicant": "Rory Maynard.",
+   "owner": "",
+   "location": "South of the intersection of E Colorado Boulevard and Maitland Road, next to Terry Peak Lane; outside of city limits, within the ETJ.",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Continue the consideration and make a recommendation to City Council.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2202/files",
+   "attachments": [
+    {
+     "name": "Staff Report and Attachments",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2202/files/attachment/2105"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "cc3e76b40eee",
+   "published": "2025-10-21T10:00:00-06:00",
+   "date": "2025-10-21",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 3147,
+   "item_number": "2025-193",
+   "event_id": 2215,
+   "meeting_date": "2025-11-04T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2215/files",
+   "section": "Items for Action",
+   "app_type": "Plat",
+   "site": true,
+   "title": "Plat — 3825 Caballo Drive; outside of city limits, within the Extraterritorial Jurdisdictional (ETJ) Area.",
+   "agenda_text": "Consider a sketch plat within the Extraterritorial Jurisdictional (ETJ) Area of Lots 1 through 3 of Gov't Lot 2, Less Tract A.",
+   "request": "Consider a sketch plat within the Extraterritorial Jurisdictional (ETJ) Area of Lots 1 through 3 of Gov't Lot 2, Less Tract A.",
+   "applicant": "Ryan W. and Whitney N. Wordeman.",
+   "owner": "",
+   "location": "3825 Caballo Drive; outside of city limits, within the Extraterritorial Jurdisdictional (ETJ) Area.",
+   "address": "3825 Caballo Drive",
+   "address_key": "3825 CABALLO DR",
+   "recommendation": "Approve the sketch plat.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2215/files/report/2139",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2215/files/report/2139",
+   "attachments": [
+    {
+     "name": "Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2215/files/attachment/2142"
+    },
+    {
+     "name": "Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2215/files/attachment/2143"
+    }
+   ],
+   "lat": 44.531484,
+   "lon": -103.925841,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "08bc57bbf800",
+   "published": "2025-11-04T09:00:00-07:00",
+   "date": "2025-11-04",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 3148,
+   "item_number": "2025-194",
+   "event_id": 2215,
+   "meeting_date": "2025-11-04T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2215/files",
+   "section": "Items for Action",
+   "app_type": "Plat",
+   "site": true,
+   "title": "Plat — 10563 Homestake Road; outside of city limits, within the Extraterritorial Jurdisdictional (ETJ) Area.",
+   "agenda_text": "Consider a sketch plat within the Extraterritorial Jurisdictional (ETJ) Area of Lot H Revised.",
+   "request": "Consider a sketch plat within the Extraterritorial Jurisdictional (ETJ) Area of Lot H Revised.",
+   "applicant": "James Metzger, Bob and Sherry Ewing.",
+   "owner": "",
+   "location": "10563 Homestake Road; outside of city limits, within the Extraterritorial Jurdisdictional (ETJ) Area.",
+   "address": "10563 Homestake Road",
+   "address_key": "10563 HOMESTAKE RD",
+   "recommendation": "Approve the sketch plat.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2215/files/report/2140",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2215/files/report/2140",
+   "attachments": [
+    {
+     "name": "Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2215/files/attachment/2146"
+    },
+    {
+     "name": "Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2215/files/attachment/2147"
+    }
+   ],
+   "lat": 44.519723,
+   "lon": -103.941553,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "e9e52daef752",
+   "published": "2025-11-04T09:00:00-07:00",
+   "date": "2025-11-04",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 4355,
+   "item_number": "2025-259",
+   "event_id": 2016,
+   "meeting_date": "2025-11-18T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2016/files",
+   "section": "Items for Action",
+   "app_type": "Rezone",
+   "site": true,
+   "title": "Rezone — 621 and 701 Christensen Drive, Spearfish.",
+   "agenda_text": "Rezone three parcels located on Christensen Drive from Agricultural (AG) and Planned Unit Development (PUD) to Multi-Family Residential (R-3).",
+   "request": "Rezone three parcels located at 621 and 701 Christensen Drive from Agricultural (AG) and Planned Unit Development (PUD) to Multi-Family Residential (R-3).",
+   "applicant": "Lanna Christensen.",
+   "owner": "",
+   "location": "621 and 701 Christensen Drive, Spearfish.",
+   "address": "701 Christensen Drive",
+   "address_key": "701 CHRISTENSEN DR",
+   "recommendation": "Initiate further study of the request or set a public hearing.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2016/files/report/3148",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2016/files/report/3148",
+   "attachments": [
+    {
+     "name": "Proposed development sketch",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2016/files/attachment/3161"
+    },
+    {
+     "name": "Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2016/files/attachment/3172"
+    },
+    {
+     "name": "Area to be rezoned",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2016/files/attachment/3173"
+    }
+   ],
+   "lat": 44.470619,
+   "lon": -103.826547,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "5386470a258c",
+   "published": "2025-11-18T09:00:00-07:00",
+   "date": "2025-11-18",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 4449,
+   "item_number": "2025-259",
+   "event_id": 2216,
+   "meeting_date": "2025-12-02T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2216/files",
+   "section": "Items for Action",
+   "app_type": "Rezone",
+   "site": true,
+   "title": "Rezone — 621 and 701 Christensen Drive.",
+   "agenda_text": "Rezone three parcels located on Christensen Drive from Agricultural (AG) and Planned Unit Development (PUD) to Multi-Family Residential (R-3).",
+   "request": "Rezone three parcels located at 621 and 701 Christensen Drive from Agricultural (AG) and Planned Unit Development (PUD) to Multi-Family Residential (R-3).",
+   "applicant": "Lanna Christensen.",
+   "owner": "",
+   "location": "621 and 701 Christensen Drive.",
+   "address": "701 Christensen Drive",
+   "address_key": "701 CHRISTENSEN DR",
+   "recommendation": "Hold a public hearing and make a recommendation to City Council.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2216/files/report/3169",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2216/files/report/3169",
+   "attachments": [
+    {
+     "name": "Proposed development sketch",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2216/files/attachment/3191"
+    },
+    {
+     "name": "Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2216/files/attachment/3192"
+    },
+    {
+     "name": "Area to be rezoned",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2216/files/attachment/3193"
+    }
+   ],
+   "lat": 44.470619,
+   "lon": -103.826547,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "158c678f29c6",
+   "published": "2025-12-02T09:00:00-07:00",
+   "date": "2025-12-02",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 4467,
+   "item_number": "2025-298",
+   "event_id": 2216,
+   "meeting_date": "2025-12-02T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2216/files",
+   "section": "Items for Action",
+   "app_type": "Variance",
+   "site": true,
+   "title": "Variance — Southeast of 641 Maitland Road.",
+   "agenda_text": "<span style=\"color: rgb(21, 20, 20); font-family: Lato, -apple-system, BlinkMacSystemFont, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;\" id=\"isPasted\">Consider a variance to 154.075 Blocks and associated preliminary plat of the Soncy Subdivision</span>",
+   "request": "Approve a preliminary plat for the Soncy Subdivision.",
+   "applicant": "Schipporeit Farms LLC.",
+   "owner": "",
+   "location": "Southeast of 641 Maitland Road.",
+   "address": "641 Maitland Road",
+   "address_key": "641 MAITLAND RD",
+   "recommendation": "Make a recommendation to City Council.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2216/files/report/3209",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2216/files/report/3209",
+   "attachments": [
+    {
+     "name": "Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2216/files/attachment/3219"
+    },
+    {
+     "name": "Preliminary Street Network Entire Tract",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2216/files/attachment/3221"
+    },
+    {
+     "name": "MPP-25-4 Soncy Subdivision Variance Request",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2216/files/attachment/3226"
+    },
+    {
+     "name": "Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2216/files/attachment/3260"
+    }
+   ],
+   "lat": 44.46957,
+   "lon": -103.789997,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "503d407f7b7d",
+   "published": "2025-12-02T09:00:00-07:00",
+   "date": "2025-12-02",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 4469,
+   "item_number": "2025-300",
+   "event_id": 2216,
+   "meeting_date": "2025-12-02T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2216/files",
+   "section": "Items for Action",
+   "app_type": "Minor plat",
+   "site": true,
+   "title": "Minor plat — 3825 Caballo Drive; outside of city limits, within the Extraterritorial Jurdisdictional (ETJ) Area.",
+   "agenda_text": "​Make a recommendation on ​a ​minor plat within the ETJ.",
+   "request": "Consider a minor plat within the Extraterritorial Jurisdictional (ETJ) Area of Lots 1 through 3 of Gov't Lot 2, Less Tract A.",
+   "applicant": "Ryan & Whitney Wordeman.",
+   "owner": "",
+   "location": "3825 Caballo Drive; outside of city limits, within the Extraterritorial Jurdisdictional (ETJ) Area.",
+   "address": "3825 Caballo Drive",
+   "address_key": "3825 CABALLO DR",
+   "recommendation": "Make a recommendation to City Council.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2216/files/report/3201",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2216/files/report/3201",
+   "attachments": [
+    {
+     "name": "PLAT",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2216/files/attachment/3213"
+    },
+    {
+     "name": "Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2216/files/attachment/3261"
+    }
+   ],
+   "lat": 44.531484,
+   "lon": -103.925841,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "e63b98a3678d",
+   "published": "2025-12-02T09:00:00-07:00",
+   "date": "2025-12-02",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 4514,
+   "item_number": "2025-330",
+   "event_id": 2017,
+   "meeting_date": "2025-12-16T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2017/files",
+   "section": "Items for Action",
+   "app_type": "Variance",
+   "site": true,
+   "title": "Variance — Southeast of 641 Maitland Road.",
+   "agenda_text": "<span style=\"color: rgb(21, 20, 20); font-family: Lato, -apple-system, BlinkMacSystemFont, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;\" id=\"isPasted\">Consider a variance to 154.075 Blocks and associated preliminary plat of the Soncy Subdivision</span>",
+   "request": "Consider a variance to 154.075 Blocks and associated preliminary plat of the Soncy Subdivision",
+   "applicant": "Schipporeit Farms LLC.",
+   "owner": "",
+   "location": "Southeast of 641 Maitland Road.",
+   "address": "641 Maitland Road",
+   "address_key": "641 MAITLAND RD",
+   "recommendation": "Make a recommendation to City Council.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2017/files/report/4248",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2017/files/report/4248",
+   "attachments": [
+    {
+     "name": "Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2017/files/attachment/3243"
+    },
+    {
+     "name": "Preliminary Street Network Entire Tract",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2017/files/attachment/3245"
+    },
+    {
+     "name": "Email Correspondence",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2017/files/attachment/4281"
+    },
+    {
+     "name": "MPP-25-4 Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2017/files/attachment/3283"
+    },
+    {
+     "name": "MPP-25-4 Soncy Subdivision Variance Request",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2017/files/attachment/4282"
+    },
+    {
+     "name": "Utility Preliminary Construction Design",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2017/files/attachment/4297"
+    }
+   ],
+   "lat": 44.46957,
+   "lon": -103.789997,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "73f693f792ca",
+   "published": "2025-12-16T09:00:00-07:00",
+   "date": "2025-12-16",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 4985,
+   "item_number": "2025-404",
+   "event_id": 2017,
+   "meeting_date": "2025-12-16T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2017/files",
+   "section": "Items for Action",
+   "app_type": "Final plat",
+   "site": true,
+   "title": "Final plat — 10563 Homestake Road; outside of city limits, within the Extraterritorial Jurdisdictional (ETJ) Area.",
+   "agenda_text": "Consider a final plat within the Extraterritorial Jurisdictional (ETJ) Area of Lot H Revised.",
+   "request": "Consider a final plat within the Extraterritorial Jurisdictional (ETJ) Area of Lot H Revised.",
+   "applicant": "James Metzger, Bob and Sherry Ewing.",
+   "owner": "",
+   "location": "10563 Homestake Road; outside of city limits, within the Extraterritorial Jurdisdictional (ETJ) Area.",
+   "address": "10563 Homestake Road",
+   "address_key": "10563 HOMESTAKE RD",
+   "recommendation": "Approve the final plat.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2017/files/report/3263",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2017/files/report/3263",
+   "attachments": [
+    {
+     "name": "Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2017/files/attachment/3281"
+    },
+    {
+     "name": "MP-25-12 Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2017/files/attachment/3284"
+    }
+   ],
+   "lat": 44.519723,
+   "lon": -103.941553,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "e5d383a6c0cb",
+   "published": "2025-12-16T09:00:00-07:00",
+   "date": "2025-12-16",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 5230,
+   "item_number": "2025-434",
+   "event_id": 2217,
+   "meeting_date": "2026-01-06T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2217/files",
+   "section": "Items for Action",
+   "app_type": "Preliminary plat",
+   "site": true,
+   "title": "Preliminary plat — West of the intersection of Green Spot Lane and Suntory Avenue.",
+   "agenda_text": "Preliminary Plat of the Top Shelf Subdivision",
+   "request": "Hold a public hearing and make a Recommendation on the Preliminary Plat of the Top Shelf Subdivision",
+   "applicant": "ETR LLC, David and Spencer Rossi",
+   "owner": "",
+   "location": "West of the intersection of Green Spot Lane and Suntory Avenue.",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Make a Recommendation to City Council.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2217/files/report/4290",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2217/files/report/4290",
+   "attachments": [
+    {
+     "name": "Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2217/files/attachment/4300"
+    },
+    {
+     "name": "Preliminary Construction Drawings",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2217/files/attachment/4329"
+    },
+    {
+     "name": "Top Shelf 2018 Development Agreement and Layout",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2217/files/attachment/4316"
+    },
+    {
+     "name": "Amended and Restated Agreement DRAFT",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2217/files/attachment/4334"
+    },
+    {
+     "name": "Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2217/files/attachment/4330"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "66f7afabc99f",
+   "published": "2026-01-06T09:00:00-07:00",
+   "date": "2026-01-06",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 5316,
+   "item_number": "2026-16",
+   "event_id": 2218,
+   "meeting_date": "2026-02-03T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2218/files",
+   "section": "Items for Action",
+   "app_type": "Conditional use permit",
+   "site": true,
+   "title": "Conditional use permit — 621 and 701 Christensen Drive.",
+   "agenda_text": "Conditional use permit (CUP) for a manufactured home park in R-3 zoning.",
+   "request": "Consider a conditional use permit (CUP) for a manufactured home park in R-3 zoning.",
+   "applicant": "Chris' Campground LLC.",
+   "owner": "",
+   "location": "621 and 701 Christensen Drive.",
+   "address": "701 Christensen Drive",
+   "address_key": "701 CHRISTENSEN DR",
+   "recommendation": "Hold a public hearing and consider a conditional use permit (CUP) for a manufactured home park in R-3 zoning.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2218/files/report/4345",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2218/files/report/4345",
+   "attachments": [
+    {
+     "name": "Preliminary Plans",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2218/files/attachment/4412"
+    },
+    {
+     "name": "Criteria Response Letter",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2218/files/attachment/4413"
+    },
+    {
+     "name": "Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2218/files/attachment/4411"
+    }
+   ],
+   "lat": 44.470619,
+   "lon": -103.826547,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "35a60344fb76",
+   "published": "2026-02-03T09:00:00-07:00",
+   "date": "2026-02-03",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 5373,
+   "item_number": "2026-38",
+   "event_id": 2218,
+   "meeting_date": "2026-02-03T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2218/files",
+   "section": "Items for Action",
+   "app_type": "Planned development",
+   "site": true,
+   "title": "Planned development — Intersection of St. Onge Road and HWY 85; East of existing Peaceful Pines Senior Living.",
+   "agenda_text": "Peaceful Pines Phase 2 Development Review District Concept and Final Plan.",
+   "request": "Review the Peaceful Pines Phase 2 Development Review District Concept and Final Plan.",
+   "applicant": "HME Companies",
+   "owner": "",
+   "location": "Intersection of St. Onge Road and HWY 85; East of existing Peaceful Pines Senior Living.",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Initiate further study or set a public hearing.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2218/files/report/4349",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2218/files/report/4349",
+   "attachments": [
+    {
+     "name": "Concept Plan",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2218/files/attachment/4424"
+    },
+    {
+     "name": "Proposed Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2218/files/attachment/4423"
+    },
+    {
+     "name": "Multi-family Building Render",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2218/files/attachment/4414"
+    },
+    {
+     "name": "Parks, Lighting, Parking Plan",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2218/files/attachment/4425"
+    },
+    {
+     "name": "Preliminary Architectural Floor Plans",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2218/files/attachment/4415"
+    },
+    {
+     "name": "R-3 Zoning Regulations",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2218/files/attachment/4421"
+    },
+    {
+     "name": "2021 Approved DRD Concept and Final Plan",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2218/files/attachment/4402"
+    },
+    {
+     "name": "DRD Approval Conditions Elkhorn Ridge 2022 Master Plan Update",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2218/files/attachment/4422"
+    },
+    {
+     "name": "Concept Plan w/ Zoning Overlay",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2218/files/attachment/4427"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "650e4a874338",
+   "published": "2026-02-03T09:00:00-07:00",
+   "date": "2026-02-03",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 5558,
+   "item_number": "2026-106",
+   "event_id": 2019,
+   "meeting_date": "2026-02-17T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2019/files",
+   "section": "Items for Action",
+   "app_type": "Preliminary plat",
+   "site": true,
+   "title": "Preliminary plat — Near intersection of Duke Parkway and St. Onge Road.",
+   "agenda_text": "Preliminary Plat for Block 2 of Elkhorn Ridge Golf Estates.",
+   "request": "Consider a major preliminary plat for Block 2 of Elkhorn Ridge Golf Estates.",
+   "applicant": "Elkhorn Ridge @ Frawley Ranches LLC.",
+   "owner": "",
+   "location": "Near intersection of Duke Parkway and St. Onge Road.",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Hold a public hearing and make a recommendation to City Council.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2019/files/report/4373",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2019/files/report/4373",
+   "attachments": [
+    {
+     "name": "Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2019/files/attachment/4471"
+    },
+    {
+     "name": "DRD Approval Conditions  Elkhorn Ridge 2022 Master Plan Update",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2019/files/attachment/4444"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "e2042634b30c",
+   "published": "2026-02-17T09:00:00-07:00",
+   "date": "2026-02-17",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 5559,
+   "item_number": "2026-107",
+   "event_id": 2019,
+   "meeting_date": "2026-02-17T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2019/files",
+   "section": "Peaceful Pines Phase 2 Development Review District Concept and Final Plan.",
+   "app_type": "Preliminary plat",
+   "site": true,
+   "title": "Preliminary plat — Intersection of St. Onge Road and HWY 85; East of existing Peaceful Pines Senior Living.",
+   "agenda_text": "Peaceful Pines Phase 2 Preliminary Plat.",
+   "request": "Consider a preliminary plat for Peaceful Pines Phase 2.",
+   "applicant": "SLH Holdings LLC.",
+   "owner": "",
+   "location": "Intersection of St. Onge Road and HWY 85; East of existing Peaceful Pines Senior Living.",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Hold a public hearing and make a recommendation to City Council.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2019/files/report/4372",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2019/files/report/4372",
+   "attachments": [
+    {
+     "name": "Revised Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2019/files/attachment/4463"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "245e377b72f8",
+   "published": "2026-02-17T09:00:00-07:00",
+   "date": "2026-02-17",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 5576,
+   "item_number": "2026-114",
+   "event_id": 2219,
+   "meeting_date": "2026-03-03T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2219/files",
+   "section": "Items for Action",
+   "app_type": "Variance",
+   "site": true,
+   "title": "Variance — 120 Birch Street",
+   "agenda_text": "Variance to the minimum rear setback regulation",
+   "request": "Consider a request for a variance to the minimum rear setback regulation (§ 156.033.D Area Regulations).",
+   "applicant": "Donovan Lerew",
+   "owner": "",
+   "location": "120 Birch Street",
+   "address": "120 Birch Street",
+   "address_key": "120 BIRCH ST",
+   "recommendation": "Make a recommendation and set a public hearing for the Board of Adjustment.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2219/files/report/6391",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2219/files/report/6391",
+   "attachments": [
+    {
+     "name": "Variance Justification and Plans",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2219/files/attachment/6511"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "02f9fbf7213f",
+   "published": "2026-03-03T09:00:00-07:00",
+   "date": "2026-03-03",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 7710,
+   "item_number": "2026-158",
+   "event_id": 2219,
+   "meeting_date": "2026-03-03T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2219/files",
+   "section": "Items for Action",
+   "app_type": "Preliminary plat",
+   "site": true,
+   "title": "Preliminary plat — Near intersection of Duke Parkway and St. Onge Road.",
+   "agenda_text": "Preliminary Plat for Block 2 of Elkhorn Ridge Golf Estates.",
+   "request": "Consider a major preliminary plat for Block 2 of Elkhorn Ridge Golf Estates.",
+   "applicant": "Elkhorn Ridge @ Frawley Ranches LLC.",
+   "owner": "",
+   "location": "Near intersection of Duke Parkway and St. Onge Road.",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Make a recommendation to City Council.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2219/files/report/6385",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2219/files/report/6385",
+   "attachments": [
+    {
+     "name": "Preliminary Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2219/files/attachment/6517"
+    },
+    {
+     "name": "DRD Approval Conditions  Elkhorn Ridge 2022 Master Plan Update",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2219/files/attachment/5505"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "ec48fc5e83f7",
+   "published": "2026-03-03T09:00:00-07:00",
+   "date": "2026-03-03",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 8758,
+   "item_number": "2026-171",
+   "event_id": 2020,
+   "meeting_date": "2026-03-17T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2020/files",
+   "section": "Items for Action",
+   "app_type": "Conditional use permit",
+   "site": true,
+   "title": "Conditional use permit — 1414 W Jackson Boulevard.",
+   "agenda_text": "Conditional Use Permit for an in-home childcare center.",
+   "request": "Consider a conditional use permit for an in-home childcare center.",
+   "applicant": "Tristyn Jackson.",
+   "owner": "",
+   "location": "1414 W Jackson Boulevard.",
+   "address": "1414 W Jackson Boulevard",
+   "address_key": "1414 W JACKSON BLVD",
+   "recommendation": "Hold a public hearing and approve the conditional use permit.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/report/6424",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/report/6424",
+   "attachments": [
+    {
+     "name": "Permission from Owner",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/attachment/6565"
+    },
+    {
+     "name": "Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/attachment/6566"
+    },
+    {
+     "name": "§ 156.082 CONDITIONAL USE PERMITS (CUP).",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/attachment/6573"
+    }
+   ],
+   "lat": 44.491659,
+   "lon": -103.878444,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "3e7866d7731f",
+   "published": "2026-03-17T10:00:00-06:00",
+   "date": "2026-03-17",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 8759,
+   "item_number": "2026-172",
+   "event_id": 2020,
+   "meeting_date": "2026-03-17T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2020/files",
+   "section": "Items for Action",
+   "app_type": "Plat",
+   "site": true,
+   "title": "Plat — Intersection of Mineral Place and Oliver Street.",
+   "agenda_text": "Sketch plat of Tract M3 and M4 in the Extraterritorial Jurisdictional (ETJ) Area.",
+   "request": "Consider a sketch plat in the ETJ.",
+   "applicant": "Jeanne Rogers.",
+   "owner": "",
+   "location": "Intersection of Mineral Place and Oliver Street.",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Approve the sketch plat.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/report/6425",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/report/6425",
+   "attachments": [
+    {
+     "name": "Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/attachment/6567"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "ad31036771d0",
+   "published": "2026-03-17T10:00:00-06:00",
+   "date": "2026-03-17",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 8824,
+   "item_number": "2026-192",
+   "event_id": 2020,
+   "meeting_date": "2026-03-17T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2020/files",
+   "section": "Items for Action",
+   "app_type": "Tax increment financing district",
+   "site": true,
+   "title": "Tax increment financing district — Intersection of Paramount Drive and North 27th Street.",
+   "agenda_text": "Tax Increment Finance (TIF) District 9 Boundary and Project Plan",
+   "request": "Consider the creation of TIF District 9 -- Stone Ridge Commons",
+   "applicant": "Lloyd Companies.",
+   "owner": "",
+   "location": "Intersection of Paramount Drive and North 27th Street.",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Hold a public hearing and make a recommendation on the creation of TIF District 9 -- Stone Ridge Commons",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/report/6428",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/report/6428",
+   "attachments": [
+    {
+     "name": "TIF Review Committee Recommendation",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/attachment/6568"
+    },
+    {
+     "name": "Project Plan",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/attachment/6569"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "6269200777d2",
+   "published": "2026-03-17T10:00:00-06:00",
+   "date": "2026-03-17",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 8835,
+   "item_number": "2026-203",
+   "event_id": 2020,
+   "meeting_date": "2026-03-17T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2020/files",
+   "section": "Items for Action",
+   "app_type": "Variance",
+   "site": true,
+   "title": "Variance — 3075 Burno Gulch Road.",
+   "agenda_text": "Variance and associated sketch plat for 3075 Burno Gulch Road in the Extraterritorial Jurisdictional (ETJ) Area.",
+   "request": "Consider variance and associated sketch plat in the ETJ.",
+   "applicant": "Kyle Craig.",
+   "owner": "",
+   "location": "3075 Burno Gulch Road.",
+   "address": "3075 Burno Gulch Road",
+   "address_key": "3075 BURNO GULCH RD",
+   "recommendation": "Approve the variance and sketch plat in the ETJ.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/report/6426",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/report/6426",
+   "attachments": [
+    {
+     "name": "Sketch Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/attachment/6570"
+    },
+    {
+     "name": "Sketch Plat pg. 2",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/attachment/6592"
+    },
+    {
+     "name": "Draft Fire Mitigation Plan",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/attachment/6571"
+    },
+    {
+     "name": "Variance Request",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2020/files/attachment/6575"
+    }
+   ],
+   "lat": 44.441281,
+   "lon": -103.820613,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "19315ba2e415",
+   "published": "2026-03-17T10:00:00-06:00",
+   "date": "2026-03-17",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 8977,
+   "item_number": "2026-240",
+   "event_id": 2220,
+   "meeting_date": "2026-04-07T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2220/files",
+   "section": "Items for Action",
+   "app_type": "Final plat",
+   "site": true,
+   "title": "Final plat — Intersection of Mineral Place and Oliver Street.",
+   "agenda_text": "Minor final plat: Tract M3 and Tract M4 (ETJ)",
+   "request": "Consider a minor final plat in the ETJ.",
+   "applicant": "Jeanne Rogers.",
+   "owner": "",
+   "location": "Intersection of Mineral Place and Oliver Street.",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Make a recommendation to City Council.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/report/6450",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/report/6450",
+   "attachments": [
+    {
+     "name": "Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/attachment/6654"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "cb1267df050e",
+   "published": "2026-04-07T10:00:00-06:00",
+   "date": "2026-04-07",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 8978,
+   "item_number": "2026-241",
+   "event_id": 2220,
+   "meeting_date": "2026-04-07T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2220/files",
+   "section": "Items for Action",
+   "app_type": "Sign",
+   "site": true,
+   "title": "Sign — 1120 N 5th Street.",
+   "agenda_text": "Signage for a nonresidential use located in R-2 Zoning.",
+   "request": "Approval of a freestanding sign for a nonresidential use located within a residential zoning district.",
+   "applicant": "Jason Nehl.",
+   "owner": "",
+   "location": "1120 N 5th Street.",
+   "address": "1120 N 5th Street",
+   "address_key": "1120 N 5TH ST",
+   "recommendation": "Move to approve a freestanding sign not to exceed 24 square feet.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/report/6454",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/report/6454",
+   "attachments": [
+    {
+     "name": "Sign Permit Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/attachment/6608"
+    },
+    {
+     "name": "Proposed sign location",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/attachment/6605"
+    },
+    {
+     "name": "Proposed copy",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/attachment/6607"
+    },
+    {
+     "name": "Existing sign to be removed",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/attachment/6606"
+    }
+   ],
+   "lat": 44.4944,
+   "lon": -103.861649,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "20a71602e8b6",
+   "published": "2026-04-07T10:00:00-06:00",
+   "date": "2026-04-07",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 8984,
+   "item_number": "2026-246",
+   "event_id": 2220,
+   "meeting_date": "2026-04-07T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2220/files",
+   "section": "Items for Action",
+   "app_type": "Final plat",
+   "site": true,
+   "title": "Final plat — South of the intersection of E Colorado Boulevard and Maitland Road, next to Terry Peak Lane; within the ETJ.",
+   "agenda_text": "Major final plat: Maitland Vistas Subdivision (ETJ)",
+   "request": "Consider the final plat of Maitland Vistas Subdivision",
+   "applicant": "Brad Limbo c/o Legendary Investments LLC, New Risk VII LLC, Blue Sky Storage LLC, & New Risk V LLC",
+   "owner": "",
+   "location": "South of the intersection of E Colorado Boulevard and Maitland Road, next to Terry Peak Lane; within the ETJ.",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Make a recommendation to City Council",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/report/6460",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/report/6460",
+   "attachments": [
+    {
+     "name": "Submitted Final Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/attachment/6634"
+    },
+    {
+     "name": "Submitted Construction Drawings",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/attachment/6636"
+    },
+    {
+     "name": "Draft Road Maintenance Agreement",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/attachment/6635"
+    },
+    {
+     "name": "Preliminary Plat Staff Report - October 21st, 2025",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/attachment/6631"
+    },
+    {
+     "name": "Approved Preliminary Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/attachment/6632"
+    },
+    {
+     "name": "Preliminary Road Design",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/attachment/6633"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "19def0d27fa9",
+   "published": "2026-04-07T10:00:00-06:00",
+   "date": "2026-04-07",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 8985,
+   "item_number": "2026-247",
+   "event_id": 2220,
+   "meeting_date": "2026-04-07T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2220/files",
+   "section": "Items for Action",
+   "app_type": "Code amendment",
+   "site": false,
+   "title": "Code amendment",
+   "agenda_text": "Proposed revisions to Chapter 154: Subdivisions",
+   "request": "Review the proposed revisions to Chapter 154: Subdivisions",
+   "applicant": "Community Development Department",
+   "owner": "",
+   "location": "",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Hold a public hearing and make a recommendation to City Council.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/report/6465",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/report/6465",
+   "attachments": [
+    {
+     "name": "Chapter 154 Subdivisions w/tracked changes",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/attachment/6659"
+    },
+    {
+     "name": "Public Comment Bradley Limbo",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/attachment/6665"
+    },
+    {
+     "name": "Public Comment Randy Deibert",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/attachment/6667"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "fd057c4e21b8",
+   "published": "2026-04-07T10:00:00-06:00",
+   "date": "2026-04-07",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 9039,
+   "item_number": "2026-277",
+   "event_id": 2220,
+   "meeting_date": "2026-04-07T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2220/files",
+   "section": "Items for Action",
+   "app_type": "Code amendment",
+   "site": false,
+   "title": "Code amendment",
+   "agenda_text": "Proposed revisions to Chapter 151: Flood Prevention and Protection",
+   "request": "Review the proposed revisions to Chapter 151: Flood Prevention and Protection",
+   "applicant": "Community Development Department",
+   "owner": "",
+   "location": "",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Hold a public hearing and make a recommendation to City Council.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/report/6471",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/report/6471",
+   "attachments": [
+    {
+     "name": "Draft Ordinance",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2220/files/attachment/6651"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "260571f8bd07",
+   "published": "2026-04-07T10:00:00-06:00",
+   "date": "2026-04-07",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 9167,
+   "item_number": "2026-334",
+   "event_id": 2208,
+   "meeting_date": "2026-04-21T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2208/files",
+   "section": "Items for Action",
+   "app_type": "Tax increment financing district",
+   "site": true,
+   "title": "Tax increment financing district — Along St. Onge Road, south of Interstate 90 (near the Peaceful Pines Senior Living facility).",
+   "agenda_text": "Consideration of creating a new Tax Increment Financing District boundary and adoption of a Project Plan for the Pines at Elkhorn Ridge affordable housing development.",
+   "request": "Approve a TIF boundary and Project Plan for the Pines at Elkhorn Ridge affordable housing development.",
+   "applicant": "Elkhorn Ridge Apartments, LLC/HME Companies",
+   "owner": "",
+   "location": "Along St. Onge Road, south of Interstate 90 (near the Peaceful Pines Senior Living facility).",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Hold a public hearing and recommend approval to the City Council.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2208/files/report/6529",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2208/files/report/6529",
+   "attachments": [
+    {
+     "name": "Spearfish TIF V13 Planning Commission 4-21-2026",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2208/files/attachment/6721"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "4a510352c5e8",
+   "published": "2026-04-21T10:00:00-06:00",
+   "date": "2026-04-21",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 9125,
+   "item_number": "2026-300",
+   "event_id": 2208,
+   "meeting_date": "2026-04-21T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2208/files",
+   "section": "Items for Action",
+   "app_type": "Conditional use permit",
+   "site": true,
+   "title": "Conditional use permit — 1120 N 5th Street.",
+   "agenda_text": "Public hearing and approval of a conditional use permit for a church in R-2 zoning.",
+   "request": "Approve a conditional use permit for a church in R-2 zoning.",
+   "applicant": "Jason Nehl; New Covenant Presbytarian Church.",
+   "owner": "",
+   "location": "1120 N 5th Street.",
+   "address": "1120 N 5th Street",
+   "address_key": "1120 N 5TH ST",
+   "recommendation": "Hold a public hearing and approve a conditional use permit for a church in R-2 zoning.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2208/files/report/6523",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2208/files/report/6523",
+   "attachments": [],
+   "lat": 44.4944,
+   "lon": -103.861649,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "72e5bf2bc61b",
+   "published": "2026-04-21T10:00:00-06:00",
+   "date": "2026-04-21",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 9147,
+   "item_number": "2026-247",
+   "event_id": 2208,
+   "meeting_date": "2026-04-21T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2208/files",
+   "section": "Items for Action",
+   "app_type": "Code amendment",
+   "site": false,
+   "title": "Code amendment",
+   "agenda_text": "Public hearing and recommendation to City Council on proposed revisions to City Code, Chapter 154 (Subdivisions).",
+   "request": "Continue the public hearing from the April 7, 2026 Planning Commission meeting and make a recommendation to City Council on the proposed ordinance.",
+   "applicant": "Community Development Department",
+   "owner": "",
+   "location": "",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Hold a public hearing and make a recommendation to City Council on the proposed ordinance.",
+   "public_hearing": "",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2208/files/report/6497",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2208/files/report/6497",
+   "attachments": [
+    {
+     "name": "Ordinance Revisions for Standards and Specs Planning - V2 - Clean",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2208/files/attachment/6733"
+    },
+    {
+     "name": "Chapter 154 Subdivision Ordinance tracked changes",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2208/files/attachment/6732"
+    },
+    {
+     "name": "Table of Comments and V2 Edits",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2208/files/attachment/6710"
+    },
+    {
+     "name": "Subdivision Process Flow Chart",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2208/files/attachment/6711"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "fdd0402ff1c2",
+   "published": "2026-04-21T10:00:00-06:00",
+   "date": "2026-04-21",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 9321,
+   "item_number": "2026-342",
+   "event_id": 3333,
+   "meeting_date": "2026-05-07T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/3333/files",
+   "section": "Items for Action",
+   "app_type": "Minor plat",
+   "site": true,
+   "title": "Minor plat — 3075 Burno Gulch Road; ETJ",
+   "agenda_text": "Minor plat in the Extraterritorial Jurisdictional (ETJ) area subdividing 3 lots at 3075 Burno Gulch Road.",
+   "request": "Approve a minor final plat in the Extraterritorial Jurisdictional (ETJ) area subdividing a 93-acre lot into 3 lots.",
+   "applicant": "Bradley Limbo c/o Kyle Craig",
+   "owner": "",
+   "location": "3075 Burno Gulch Road; ETJ",
+   "address": "3075 Burno Gulch Road",
+   "address_key": "3075 BURNO GULCH RD",
+   "recommendation": "Recommend approval of the minor final plat to the City Council subdividing a 92-acre property into 3 lots.",
+   "public_hearing": "No",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/3333/files/report/6589",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/3333/files/report/6589",
+   "attachments": [
+    {
+     "name": "Final Plat V1 (April 28th Submission)",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/3333/files/attachment/6799"
+    },
+    {
+     "name": "Final Plat V2 (May 6th Submission)",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/3333/files/attachment/6800"
+    },
+    {
+     "name": "2004-08462 Lot 3",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/3333/files/attachment/6804"
+    },
+    {
+     "name": "Access Easement 2024-03668",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/3333/files/attachment/6794"
+    },
+    {
+     "name": "Fire Mitigation Plan",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/3333/files/attachment/6802"
+    },
+    {
+     "name": "Fire Mitigation Plan Staff Review",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/3333/files/attachment/6803"
+    }
+   ],
+   "lat": 44.441281,
+   "lon": -103.820613,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "0b66ae6854e3",
+   "published": "2026-05-07T10:00:00-06:00",
+   "date": "2026-05-07",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 9322,
+   "item_number": "2026-351",
+   "event_id": 3333,
+   "meeting_date": "2026-05-07T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/3333/files",
+   "section": "Items for Action",
+   "app_type": "Conditional use permit",
+   "site": true,
+   "title": "Conditional use permit — 1020 State Street.",
+   "agenda_text": "Approve signage for a church with an active CUP.",
+   "request": "Approve the allocation of 24 square feet of signage for a church in R-1 zoning with an active Conditional Use Permit.",
+   "applicant": "Andy Binder, c/o Our Saviors Lutheran Church.",
+   "owner": "",
+   "location": "1020 State Street.",
+   "address": "1020 State Street",
+   "address_key": "1020 STATE ST",
+   "recommendation": "Approve.",
+   "public_hearing": "No",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/3333/files/report/6601",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/3333/files/report/6601",
+   "attachments": [
+    {
+     "name": "Existing Sign",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/3333/files/attachment/6795"
+    },
+    {
+     "name": "Proposed Sign",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/3333/files/attachment/6796"
+    },
+    {
+     "name": "Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/3333/files/attachment/6797"
+    }
+   ],
+   "lat": 44.494162,
+   "lon": -103.855326,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "9ff1297071a9",
+   "published": "2026-05-07T10:00:00-06:00",
+   "date": "2026-05-07",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 9258,
+   "item_number": "2026-352",
+   "event_id": 2022,
+   "meeting_date": "2026-05-19T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2022/files",
+   "section": "Items for Action",
+   "app_type": "Variance",
+   "site": true,
+   "title": "Variance — 2615 Colorado Boulevard.",
+   "agenda_text": "A variance to reduce the required rear-yard setback from 10 feet to 5 feet for the construction of a gas station located at 2615 Colorado Avenue.",
+   "request": "The applicant requests a variance to reduce the rear-yard setback from 10 feet to 5 feet for a gas station on a property zoned Highway Service Commercial (C-2).",
+   "applicant": "Branden Ginter, c/o Randy Bender.",
+   "owner": "",
+   "location": "2615 Colorado Boulevard.",
+   "address": "2615 Colorado Boulevard",
+   "address_key": "2615 COLORADO BLVD",
+   "recommendation": "Staff recommends denial of the variance to the Board of Adjustment, based on the finding that the variance request does not meet the review criteria set forth in City Code Section 156.081.D.",
+   "public_hearing": "No",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/report/6581",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/report/6581",
+   "attachments": [
+    {
+     "name": "Existing and Proposed Building Setback",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/attachment/6850"
+    },
+    {
+     "name": "Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/attachment/6736"
+    },
+    {
+     "name": "§ 156.081 Variances - Ordinance Section",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/attachment/6766"
+    },
+    {
+     "name": "Property Owner Authorization Email",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/attachment/6758"
+    }
+   ],
+   "lat": 44.475615,
+   "lon": -103.815552,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "517a49b3bc67",
+   "published": "2026-05-19T10:00:00-06:00",
+   "date": "2026-05-19",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 9265,
+   "item_number": "2026-359",
+   "event_id": 2022,
+   "meeting_date": "2026-05-19T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2022/files",
+   "section": "Items for Action",
+   "app_type": "Code amendment",
+   "site": false,
+   "title": "Code amendment",
+   "agenda_text": "Proposed revisions to Chapter 154. Subdivisions",
+   "request": "Continue public hearing and make recommendation to City Council on proposed revisions to City Code, Chapter 154 (Subdivisions).",
+   "applicant": "City of Spearfish",
+   "owner": "",
+   "location": "",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Staff recommend approval of the proposed revisions to Chapter 154. Subdivisions, based on the finding that the revisions meet the criteria set forth in City Code Section § 156.084",
+   "public_hearing": "Yes",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/report/6639",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/report/6639",
+   "attachments": [
+    {
+     "name": "Ordinance Revisions for Standards and Specs Planning V3 - Clean",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/attachment/6772"
+    },
+    {
+     "name": "Chapter 154 Subdivision Ordinance tracked changes V3",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/attachment/6859"
+    },
+    {
+     "name": "Title V Chapter 52 Water Service and 53 Sanitary Sewer Service",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/attachment/6860"
+    },
+    {
+     "name": "Title V: Chapter 52 and Chapter 53",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/attachment/6888"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "c55ae422d229",
+   "published": "2026-05-19T10:00:00-06:00",
+   "date": "2026-05-19",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 9416,
+   "item_number": "2026-414",
+   "event_id": 2022,
+   "meeting_date": "2026-05-19T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2022/files",
+   "section": "Items for Action",
+   "app_type": "Final plat",
+   "site": true,
+   "title": "Final plat — South of the intersection of E Colorado Boulevard and Maitland Road, next to Terry Peak Lane; within the ETJ.",
+   "agenda_text": "Major Final Plat of Maitland Vistas Subdivision within the City's Extraterritorial Jurisdiction.",
+   "request": "The applicant seeks approval of a final major plat of Maitland Vistas Subdivision to create 10 lots and a remainder tract.",
+   "applicant": "Brad Limbo c/o Legendary Investments LLC, New Risk VII LLC, Blue Sky Storage LLC, & New Risk V LLC.",
+   "owner": "",
+   "location": "South of the intersection of E Colorado Boulevard and Maitland Road, next to Terry Peak Lane; within the ETJ.",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Recommend approval to the City Council of the final major plat for Maitland Vistas Subdivision, based on the finding that the final plat is in substantial compliance with the preliminary plat, subject to the following condition: 1. Final plat may not be recorded until a road district or road maintenance agreement is established.",
+   "public_hearing": "No",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/report/6614",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/report/6614",
+   "attachments": [
+    {
+     "name": "Final Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/attachment/6851"
+    },
+    {
+     "name": "Approved Preliminary Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/attachment/6817"
+    },
+    {
+     "name": "Preliminary vs. Final Plat Overlay",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/attachment/6852"
+    },
+    {
+     "name": "Draft Road Maintenance Agreement",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2022/files/attachment/6815"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "da296b627454",
+   "published": "2026-05-19T10:00:00-06:00",
+   "date": "2026-05-19",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 9552,
+   "item_number": "2026-494",
+   "event_id": 2223,
+   "meeting_date": "2026-07-07T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2223/files",
+   "section": "Items for Action",
+   "app_type": "Minor plat",
+   "site": true,
+   "title": "Minor plat — 500 Thoen Stone Road.",
+   "agenda_text": "Minor plat located within the ETJ Area creating 2 lots.",
+   "request": "Make a recommendation to City Council.",
+   "applicant": "Bradley Limbo, c/o Johanna Meier Della Vecchia.",
+   "owner": "",
+   "location": "500 Thoen Stone Road.",
+   "address": "500 Thoen Stone Road",
+   "address_key": "500 THOEN STONE RD",
+   "recommendation": "Approve the plat on the basis that it meets subdivision criteria defined in the Spearfish ETJ Area Subdivision Ordinance, aligns with the city's Comprehensive Plan and satisfies the conditions of the approved variance request.",
+   "public_hearing": "No",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2223/files/report/6706",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2223/files/report/6706",
+   "attachments": [
+    {
+     "name": "Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2223/files/attachment/8013"
+    },
+    {
+     "name": "Farm/Ranch Conservation Easement",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2223/files/attachment/8014"
+    },
+    {
+     "name": "Sketch Plat Approval",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2223/files/attachment/8083"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "b7c35cbde0de",
+   "published": "2026-07-07T10:00:00-06:00",
+   "date": "2026-07-07",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 10603,
+   "item_number": "2026-533",
+   "event_id": 2223,
+   "meeting_date": "2026-07-07T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2223/files",
+   "section": "Items for Action",
+   "app_type": "Rezone",
+   "site": true,
+   "title": "Rezone — Intersection of Maitland Road and Aspen Drive.",
+   "agenda_text": "Rezone a parcel located at the intersection of Maitland Road and Aspen Drive from Heavy Industrial (HI) to Highway Service Commercial (C2).",
+   "request": "Review the request and set a public hearing for July 21st, 2026.",
+   "applicant": "Richard Clayton, Camp K9",
+   "owner": "",
+   "location": "Intersection of Maitland Road and Aspen Drive.",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Approve the rezoning of the property from Heavy Industrial (HI) to Highway-Service Commercial (C-2) as the application meets the criteria for an amendment to Chapter 156 as described in § 156.084 Amendments.",
+   "public_hearing": "No",
+   "legal_description": "Lot 5 of Tract R, False Bottom Addition to the City of Spearfish, Located in the NE1/4NE1/4 and the E1/2NW1/4NE1/4, All of Section 19, T6N, R3E, B.H.M, Lawrence County, South Dakota",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2223/files/report/7755",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2223/files/report/7755",
+   "attachments": [
+    {
+     "name": "Land Use Narrative and Site Plan",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2223/files/attachment/8045"
+    },
+    {
+     "name": "Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2223/files/attachment/7995"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "f5651f5313a8",
+   "published": "2026-07-07T10:00:00-06:00",
+   "date": "2026-07-07",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 10723,
+   "item_number": "2026-533",
+   "event_id": 2024,
+   "meeting_date": "2026-07-21T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2024/files",
+   "section": "Items for Action",
+   "app_type": "Rezone",
+   "site": true,
+   "title": "Rezone — Intersection of Maitland Road and Aspen Drive.",
+   "agenda_text": "Hold a public hearing and make a recommendation to City Council to rezone a parcel located at the intersection of Maitland Road and Aspen Drive from Heavy Industrial (HI) to Highway Service Commercial (C2).",
+   "request": "Hold a public hearing and make a recommendation to City Council.",
+   "applicant": "Richard Clayton, Camp K9",
+   "owner": "",
+   "location": "Intersection of Maitland Road and Aspen Drive.",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Recommend approval of rezoning the subject property from Heavy Industrial (HI) to Highway-Service Commercial (C- 2) to the City Council, based on the finding that the rezoning meets the review criteria set forth in City Code of Ordinances, Section 156.084.",
+   "public_hearing": "Yes",
+   "legal_description": "Lot 5 of Tract R, False Bottom Addition to the City of Spearfish, Located in the NE1/4NE1/4 and the E1/2NW1/4NE1/4, All of Section 19, T6N, R3E, B.H.M, Lawrence County, South Dakota",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2024/files/report/7790",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2024/files/report/7790",
+   "attachments": [
+    {
+     "name": "Land Use Narrative and Site Plan",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2024/files/attachment/8066"
+    },
+    {
+     "name": "Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2024/files/attachment/8068"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "8158f7e15237",
+   "published": "2026-07-21T10:00:00-06:00",
+   "date": "2026-07-21",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 10742,
+   "item_number": "2026-580",
+   "event_id": 2024,
+   "meeting_date": "2026-07-21T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2024/files",
+   "section": "Items for Action",
+   "app_type": "Variance",
+   "site": true,
+   "title": "Variance — 345 N 8th Street.",
+   "agenda_text": "​Variance to ​front yard setbacks for 345 N 8th Street, reducing the required setback from 25' ​to 5'.",
+   "request": "Consider the variance and set a public hearing for the Board of Adjustment on August 3rd, 2026.",
+   "applicant": "SJ Bailey c/o Laigh Kamstra",
+   "owner": "",
+   "location": "345 N 8th Street.",
+   "address": "345 N 8th Street",
+   "address_key": "345 N 8TH ST",
+   "recommendation": "Recommend approval of the variance to the Board of Adjustment based on the finding that the variance meets the review criteria set forth in City Code of Ordinances, Section 156.081, and set a public hearing at the Board of Adjustment for August 3rd, 2026.",
+   "public_hearing": "No",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2024/files/report/7791",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2024/files/report/7791",
+   "attachments": [
+    {
+     "name": "Exhibit",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2024/files/attachment/8096"
+    },
+    {
+     "name": "Plot plan of proposed carport",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2024/files/attachment/8097"
+    },
+    {
+     "name": "Property Owner Authorization Letter",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2024/files/attachment/8098"
+    }
+   ],
+   "lat": 44.486647,
+   "lon": -103.854993,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "2b0434d9179e",
+   "published": "2026-07-21T10:00:00-06:00",
+   "date": "2026-07-21",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 10739,
+   "item_number": "2026-578",
+   "event_id": 2212,
+   "meeting_date": "2026-08-18T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2212/files",
+   "section": "Items for Action - New Business",
+   "app_type": "Conditional use permit",
+   "site": true,
+   "title": "Conditional use permit — Intersection of Maitland Road and Aspen Drive.",
+   "agenda_text": "Hold a public hearing and consider a conditional use permit for outdoor dog runs on a property zoned C-2.",
+   "request": "Hold a public hearing and make a determination on a conditional use permit for outdoor dog runs on a property zoned C-2.",
+   "applicant": "Richard Clayton; Camp K9",
+   "owner": "",
+   "location": "Intersection of Maitland Road and Aspen Drive.",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Staff find that the request meets the criteria in section § 156.082 of city code and recommend approval with conditions.",
+   "public_hearing": "Yes",
+   "legal_description": "Lot 5 of Tract R, False Bottom Addition to the City of Spearfish, Located in the NE1/4NE1/4 and the E1/2NW1/4NE1/4, All of Section 19, T6N, R3E, B.H.M, Lawrence County, South Dakota",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2212/files/report/8853",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2212/files/report/8853",
+   "attachments": [
+    {
+     "name": "Landscaping and Site Plan",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2212/files/attachment/9173"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "6736b0308dac",
+   "published": "2026-08-18T10:00:00-06:00",
+   "date": "2026-08-18",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 11908,
+   "item_number": "2026-655",
+   "event_id": 2212,
+   "meeting_date": "2026-08-18T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2212/files",
+   "section": "Items for Action - New Business",
+   "app_type": "Variance",
+   "site": true,
+   "title": "Variance — 1407 Charles Street",
+   "agenda_text": "A variance to reduce the required side-yard setback from 10' to 5' on the west side of 1407 Charles Street.",
+   "request": "Make a recommendation on, and set a public hearing for the Board of Adjustment on September 8th, 2026, to hear and consider a variance to the side-yard setback for 1407 Charles Street, reducing it from 10' to 5'.",
+   "applicant": "Andy Van Deest.",
+   "owner": "",
+   "location": "1407 Charles Street",
+   "address": "1407 Charles Street",
+   "address_key": "1407 CHARLES ST",
+   "recommendation": "Staff do not recommend approval of the variance as presented finding that it does not meet the evaluation criteria outlined in § 156.081 D. The Commission may consider a reduction of the side-yard setback on the west property line from 10' to 8' to align with the existing zoning code, providing the minimum necessary relief for the use of the property.",
+   "public_hearing": "No",
+   "legal_description": "Lot 2 of Block 2 of the Ruby Ridge Addition to the City of Spearfish",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2212/files/report/8851",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2212/files/report/8851",
+   "attachments": [
+    {
+     "name": "Proposed Addition Sketch",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2212/files/attachment/9186"
+    },
+    {
+     "name": "Existing home",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2212/files/attachment/9187"
+    },
+    {
+     "name": "Mock-up of proposed addition",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2212/files/attachment/9188"
+    },
+    {
+     "name": "Copy of plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2212/files/attachment/9189"
+    }
+   ],
+   "lat": 44.490741,
+   "lon": -103.879028,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "e8934576db01",
+   "published": "2026-08-18T10:00:00-06:00",
+   "date": "2026-08-18",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 13020,
+   "item_number": "2026-655",
+   "event_id": 2225,
+   "meeting_date": "2026-09-01T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2225/files",
+   "section": "Items for Action - Old Business",
+   "app_type": "Variance",
+   "site": true,
+   "title": "Variance — 1407 Charles Street",
+   "agenda_text": "A variance to reduce the required side-yard setback from 10' to 5' on the west side of 1407 Charles Street, and set a public hearing for the Board of Adjustment for September 8th, 2026.",
+   "request": "Make a recommendation on, and set a public hearing for the Board of Adjustment on September 8th, 2026, to hear and consider a variance to the side-yard setback for 1407 Charles Street, reducing it from 10' to 5'.",
+   "applicant": "Andy Van Deest.",
+   "owner": "",
+   "location": "1407 Charles Street",
+   "address": "1407 Charles Street",
+   "address_key": "1407 CHARLES ST",
+   "recommendation": "Staff recommends denial of the variance as presented from 10 feet to 5 feet, based on the finding that it does not meet the evaluation criteria outlined in § 156.081 D. Staff supports the variance from 10' to 8' to align the plat note with the existing zoning code, providing the minimum necessary relief for the use of the property. Staff recommend setting the public hearing for the Board of Adjustment for September 8th.",
+   "public_hearing": "No",
+   "legal_description": "Lot 2 of Block 2 of the Ruby Ridge Addition to the City of Spearfish",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2225/files/report/9870",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2225/files/report/9870",
+   "attachments": [
+    {
+     "name": "Proposed Addition Sketch",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2225/files/attachment/10207"
+    },
+    {
+     "name": "Existing home",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2225/files/attachment/10208"
+    },
+    {
+     "name": "Mock-up of proposed addition",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2225/files/attachment/10209"
+    },
+    {
+     "name": "Copy of plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2225/files/attachment/10210"
+    }
+   ],
+   "lat": 44.490741,
+   "lon": -103.879028,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "d114c5c2db36",
+   "published": "2026-09-01T10:00:00-06:00",
+   "date": "2026-09-01",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 13147,
+   "item_number": "2026-736",
+   "event_id": 2026,
+   "meeting_date": "2026-09-15T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2026/files",
+   "section": "Items for Action - New Business",
+   "app_type": "Plat",
+   "site": true,
+   "title": "Plat — 2630 Lookout Mountain Road",
+   "agenda_text": "Review and approve a sketch plat located within the ETJ Area combining two residential lots into one.",
+   "request": "Review and approve a sketch plat located within the ETJ area combining two lots into one.",
+   "applicant": "Loren Vrem, c/o Terry Liddick.",
+   "owner": "",
+   "location": "2630 Lookout Mountain Road",
+   "address": "2630 Lookout Mountain Road",
+   "address_key": "2630 LOOKOUT MOUNTAIN RD",
+   "recommendation": "Staff recommend approval of the sketch plat on the basis that it aligns with the ETJ Subdivision Ordinance and Lawrence County Zoning standards for the A-1 zoning district.",
+   "public_hearing": "No",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2026/files/report/9910",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2026/files/report/9910",
+   "attachments": [
+    {
+     "name": "Sketch Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2026/files/attachment/10294"
+    }
+   ],
+   "lat": 44.519448,
+   "lon": -103.826723,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "83e6dc0321ff",
+   "published": "2026-09-15T10:00:00-06:00",
+   "date": "2026-09-15",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 13223,
+   "item_number": "2026-792",
+   "event_id": 2226,
+   "meeting_date": "2026-10-06T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2226/files",
+   "section": "Items for Action - New Business",
+   "app_type": "Conditional use permit",
+   "site": true,
+   "title": "Conditional use permit — Intersection of E. Grant Street and N. Main Street; 446 N Main Street",
+   "agenda_text": "Hold a public hearing and consider a conditional use permit for a used car lot in the downtown area (C-1 zoning).",
+   "request": "Hold a public hearing and consider a conditional use permit for a used car lot in the downtown area (C-1 zoning).",
+   "applicant": "Scott Odenbach",
+   "owner": "",
+   "location": "Intersection of E. Grant Street and N. Main Street; 446 N Main Street",
+   "address": "446 N Main Street",
+   "address_key": "446 N MAIN ST",
+   "recommendation": "Staff recommend denial based on the finding the proposal fails to address the criteria in section § 156.082 of city code.",
+   "public_hearing": "Yes",
+   "legal_description": "Original Town Spearfish Lot A sub of Lots 11 & 12 Blk 52 Plat Bk3 Pg77, Lawrence County, South Dakota",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2226/files/report/9945",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2226/files/report/9945",
+   "attachments": [
+    {
+     "name": "Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2226/files/attachment/10350"
+    },
+    {
+     "name": "Email Comms - Redacted",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2226/files/attachment/10349"
+    },
+    {
+     "name": "Sidewalk Report",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2226/files/attachment/10353"
+    }
+   ],
+   "lat": 44.487326,
+   "lon": -103.858149,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "994b5ad1b3fb",
+   "published": "2026-10-06T10:00:00-06:00",
+   "date": "2026-10-06",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 13224,
+   "item_number": "2026-793",
+   "event_id": 2226,
+   "meeting_date": "2026-10-06T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2226/files",
+   "section": "Items for Action - New Business",
+   "app_type": "Variance",
+   "site": true,
+   "title": "Variance — 430 Meier Avenue.",
+   "agenda_text": "Review, make a recommendation, and set a public hearing for a variance request to reduce the required side-yard setback from 8' to 6' 9\" for 430 Meier Avenue.",
+   "request": "1. Make a recommendation to the Board of Adjustment on a variance request to reduce the required side-yard setback from 8' to 6' 9\" for 430 Meier Avenue. 2. Set a public hearing for the Board of Adjustment on October 19th, 2026 at 5:00 p.m.",
+   "applicant": "Glenn Umphrey",
+   "owner": "",
+   "location": "430 Meier Avenue.",
+   "address": "430 Meier Avenue",
+   "address_key": "430 MEIER AVE",
+   "recommendation": "Staff recommend approval of the requested variance with conditions based on the finding that it meets the criteria in § 156.081 of city code.",
+   "public_hearing": "No",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2226/files/report/9965",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2226/files/report/9965",
+   "attachments": [
+    {
+     "name": "Plot Plan and Building Plans",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2226/files/attachment/10360"
+    },
+    {
+     "name": "Application",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2226/files/attachment/10361"
+    },
+    {
+     "name": "Site Visit Photo",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2226/files/attachment/10362"
+    },
+    {
+     "name": "Ditch Company Recorded Agreement",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2226/files/attachment/10365"
+    },
+    {
+     "name": "Applicant Narrative",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2226/files/attachment/10368"
+    }
+   ],
+   "lat": 44.485981,
+   "lon": -103.864066,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "5b0fd96230a0",
+   "published": "2026-10-06T10:00:00-06:00",
+   "date": "2026-10-06",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 13220,
+   "item_number": "2026-755",
+   "event_id": 2214,
+   "meeting_date": "2026-10-20T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2214/files",
+   "section": "Items for Action - New Business",
+   "app_type": "Final plat",
+   "site": true,
+   "title": "Final plat — W1/2 of the E1/2 of Section 22, T7N, R2E, BHM, City of Spearfish Located East of Highway 85 North between Johnson and Kellem Lanes",
+   "agenda_text": "Final Plat of Lots A, B, and C Spring Creek Ranch Estates",
+   "request": "Make a Recommendation to the City Council on the Final Plat of Lots A, B, and C, Spring Creek Ranch Estates",
+   "applicant": "Spring Creek Ranch LLC. C/O Augusta Kickbusch",
+   "owner": "",
+   "location": "W1/2 of the E1/2 of Section 22, T7N, R2E, BHM, City of Spearfish Located East of Highway 85 North between Johnson and Kellem Lanes",
+   "address": "",
+   "address_key": "",
+   "recommendation": "Staff find that the final plat complies with the terms and conditions of the annexation agreement and requirements of § 154 of City Code. Staff recommends approval with two conditions.",
+   "public_hearing": "No",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2214/files/report/9982",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2214/files/report/9982",
+   "attachments": [
+    {
+     "name": "Spearfish Prairie Annexation Resolution and Agreement",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2214/files/attachment/10333"
+    },
+    {
+     "name": "Final Plat V2",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2214/files/attachment/10409"
+    }
+   ],
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "f4b85c26fde3",
+   "published": "2026-10-20T10:00:00-06:00",
+   "date": "2026-10-20",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "item_id": 13439,
+   "item_number": "2026-736",
+   "event_id": 2214,
+   "meeting_date": "2026-10-20T16:00:00Z",
+   "meeting_url": "https://spearfishsd.portal.civicclerk.com/event/2214/files",
+   "section": "Items for Action - New Business",
+   "app_type": "Final plat",
+   "site": true,
+   "title": "Final plat — 2630 Lookout Mountain Road.",
+   "agenda_text": "Final plat located within the ETJ Area, combining two residential lots into one.",
+   "request": "Review and approve a sketch plat located within the ETJ area combining two lots into one.",
+   "applicant": "Loren Vrem, c/o Terry Liddick.",
+   "owner": "",
+   "location": "2630 Lookout Mountain Road.",
+   "address": "2630 Lookout Mountain Road",
+   "address_key": "2630 LOOKOUT MOUNTAIN RD",
+   "recommendation": "Staff recommend approval of the final plat on the basis that it aligns with the ETJ Subdivision Ordinance and Lawrence County Zoning standards for the A-1 zoning district.",
+   "public_hearing": "No",
+   "legal_description": "",
+   "report_url": "https://spearfishsd.portal.civicclerk.com/event/2214/files/report/9979",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2214/files/report/9979",
+   "attachments": [
+    {
+     "name": "Final Plat",
+     "url": "https://spearfishsd.portal.civicclerk.com/event/2214/files/attachment/10387"
+    }
+   ],
+   "lat": 44.519448,
+   "lon": -103.826723,
+   "kind": "planning_item",
+   "record_type": "planning_item",
+   "source": "planning_commission",
+   "source_label": "Spearfish Planning Commission applications",
+   "id": "9ee139b33a1c",
+   "published": "2026-10-20T10:00:00-06:00",
+   "date": "2026-10-20",
+   "_first_seen": "2026-11-01"
+  }
+ ]
+}
