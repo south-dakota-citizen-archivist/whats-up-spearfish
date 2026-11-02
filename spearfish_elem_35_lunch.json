@@ -3,7 +3,7 @@
  "name": "Elementary 3-5 Lunch",
  "kind": "school_menu",
  "url": "https://menus.healthepro.com/organizations/524/sites/4523/menus/124131",
- "fetched_at": "2026-11-01T15:30:52-07:00",
+ "fetched_at": "2026-11-01T20:01:06-07:00",
  "count": 21,
  "records": [
   {
@@ -30,7 +30,107 @@
       "fiber_g": 5.3,
       "protein_g": 22,
       "sodium_mg": 762
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "504",
+       false
+      ],
+      [
+       "Total fat",
+       "16 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "3.3 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "71 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "762 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "72 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "5.3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "9.7 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "9.6 g",
+       true
+      ],
+      [
+       "Protein",
+       "22 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "22 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0.3 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "27 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2.1 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "534 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Made from Scratch",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368535,
@@ -49,7 +149,106 @@
       "fiber_g": 3.0,
       "protein_g": 18,
       "sodium_mg": 565
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "335",
+       false
+      ],
+      [
+       "Total fat",
+       "16 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "6.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "1 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "38 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "565 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "30 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "4 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "3 g",
+       true
+      ],
+      [
+       "Protein",
+       "18 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "60 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2.9 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "94 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368523,
@@ -65,7 +264,103 @@
       "carbs_g": 7.5,
       "fiber_g": 2.1,
       "sodium_mg": 64
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "37",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "64 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "7.5 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "2.1 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "0 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "33 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "213 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "No Allergens"
+     ],
+     "tags": [
+      "Vegetarian"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -84,7 +379,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 368516,
@@ -102,7 +495,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -118,7 +605,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -154,7 +735,104 @@
       "fiber_g": 2.0,
       "protein_g": 13,
       "sodium_mg": 464
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "302",
+       false
+      ],
+      [
+       "Total fat",
+       "19 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "7.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "48 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "464 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "21 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "2 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0.5 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "13 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "1.8 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "59 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.2 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "254 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 288172,
@@ -173,7 +851,107 @@
       "fiber_g": 2.0,
       "protein_g": 16,
       "sodium_mg": 810
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "394",
+       false
+      ],
+      [
+       "Total fat",
+       "24 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "11 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "50 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "810 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "32 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "2 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "2 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "2 g",
+       true
+      ],
+      [
+       "Protein",
+       "16 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "40 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.4 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "188 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Vegetarian",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 127957,
@@ -192,7 +970,103 @@
       "fiber_g": 12,
       "protein_g": 12,
       "sodium_mg": 655
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "178",
+       false
+      ],
+      [
+       "Total fat",
+       "1.6 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "655 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "29 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "12 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "12 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "56 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "535 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "No Allergens"
+     ],
+     "tags": [
+      "Vegetarian"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -211,7 +1085,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 370555,
@@ -230,7 +1202,105 @@
       "fiber_g": 1.0,
       "protein_g": 2.0,
       "sodium_mg": 85
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "3.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "85 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "18 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "1 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "8 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "8 g",
+       true
+      ],
+      [
+       "Protein",
+       "2 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "10 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.8 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "60 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Vegetarian",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": []
     },
     {
      "id": 368516,
@@ -248,7 +1318,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -264,7 +1428,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -300,7 +1558,107 @@
       "fiber_g": 2.0,
       "protein_g": 18,
       "sodium_mg": 907
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "356",
+       false
+      ],
+      [
+       "Total fat",
+       "14 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "6.6 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "30 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "907 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "38 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "2 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "2 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "1.6 g",
+       true
+      ],
+      [
+       "Protein",
+       "18 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0.2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "400 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2.3 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "433 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Made from Scratch",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368546,
@@ -319,7 +1677,105 @@
       "fiber_g": 2.0,
       "protein_g": 15,
       "sodium_mg": 390
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "190",
+       false
+      ],
+      [
+       "Total fat",
+       "9 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "2 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "35 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "390 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "2 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0.5 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0.5 g",
+       true
+      ],
+      [
+       "Protein",
+       "15 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "20 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.4 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "210 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368520,
@@ -336,7 +1792,103 @@
       "fiber_g": 2.2,
       "protein_g": 1.1,
       "sodium_mg": 152
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "22",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "152 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "4.3 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "2.2 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "33 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.4 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "108 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "No Allergens"
+     ],
+     "tags": [
+      "Vegetarian"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -355,7 +1907,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 368516,
@@ -373,7 +2023,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -389,7 +2133,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -425,7 +2263,109 @@
       "fiber_g": 1.0,
       "protein_g": 27,
       "sodium_mg": 779
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "232",
+       false
+      ],
+      [
+       "Total fat",
+       "3.7 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.9 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "72 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "779 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "21 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "1 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "1 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "1 g",
+       true
+      ],
+      [
+       "Protein",
+       "27 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "22 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.1 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "292 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Sesame",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Made from Scratch",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 2051955,
@@ -444,7 +2384,106 @@
       "fiber_g": 4.0,
       "protein_g": 16,
       "sodium_mg": 660
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "310",
+       false
+      ],
+      [
+       "Total fat",
+       "10 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "4 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "20 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "660 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "35 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "4 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "6 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "3 g",
+       true
+      ],
+      [
+       "Protein",
+       "16 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "170 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "320 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 128879,
@@ -463,7 +2502,104 @@
       "fiber_g": 1.2,
       "protein_g": 2.9,
       "sodium_mg": 720
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "97",
+       false
+      ],
+      [
+       "Total fat",
+       "0.7 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.2 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "720 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "20 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "1.2 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0.7 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "2.9 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "2.7 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "16 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.2 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "15 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -482,7 +2618,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 368516,
@@ -500,7 +2734,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -516,7 +2844,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -552,7 +2974,108 @@
       "fiber_g": 3.0,
       "protein_g": 13,
       "sodium_mg": 311
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "329",
+       false
+      ],
+      [
+       "Total fat",
+       "20 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "7.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "35 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "311 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "32 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "4 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "3 g",
+       true
+      ],
+      [
+       "Protein",
+       "13 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "21 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.7 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "198 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Contains Pork",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368530,
@@ -571,7 +3094,107 @@
       "fiber_g": 4.0,
       "protein_g": 16,
       "sodium_mg": 430
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "280",
+       false
+      ],
+      [
+       "Total fat",
+       "11 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "25 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "430 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "4 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "8 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "2 g",
+       true
+      ],
+      [
+       "Protein",
+       "16 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "50 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "260 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2.2 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "350 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Vegetarian",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368531,
@@ -590,7 +3213,107 @@
       "fiber_g": 4.0,
       "protein_g": 15,
       "sodium_mg": 540
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "280",
+       false
+      ],
+      [
+       "Total fat",
+       "11 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "3.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "15 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "540 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "33 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "4 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "2 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "2 g",
+       true
+      ],
+      [
+       "Protein",
+       "15 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "240 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2.7 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "550 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Contains Pork",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368534,
@@ -607,7 +3330,103 @@
       "carbs_g": 17,
       "fiber_g": 1.8,
       "protein_g": 2.7
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "71",
+       false
+      ],
+      [
+       "Total fat",
+       "0.4 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "0 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "17 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "1.8 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "2.7 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "0 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.4 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "178 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "No Allergens"
+     ],
+     "tags": [
+      "Vegetarian"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -626,7 +3445,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 368516,
@@ -644,7 +3561,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -660,7 +3671,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -696,7 +3801,110 @@
       "fiber_g": 3.0,
       "protein_g": 17,
       "sodium_mg": 619
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "423",
+       false
+      ],
+      [
+       "Total fat",
+       "20 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "9.7 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "45 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "619 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "42 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "4.7 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "2 g",
+       true
+      ],
+      [
+       "Protein",
+       "17 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "1.4 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "78 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.7 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "143 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Sesame",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Made from Scratch",
+      "Vegetarian",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368539,
@@ -715,7 +3923,106 @@
       "fiber_g": 4.0,
       "protein_g": 18,
       "sodium_mg": 685
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "340",
+       false
+      ],
+      [
+       "Total fat",
+       "12 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "3.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "30 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "685 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "40 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "4 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "13 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "10 g",
+       true
+      ],
+      [
+       "Protein",
+       "18 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "70 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2.6 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "429 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Contains Pork",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368550,
@@ -733,7 +4040,103 @@
       "fiber_g": 5.0,
       "protein_g": 8.0,
       "sodium_mg": 453
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "163",
+       false
+      ],
+      [
+       "Total fat",
+       "1 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "453 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "30 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "5 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "7.7 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7.3 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "55 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "490 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "No Allergens"
+     ],
+     "tags": [
+      "Contains Pork"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -752,7 +4155,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 368516,
@@ -770,7 +4271,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -786,7 +4381,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -822,7 +4511,108 @@
       "fiber_g": 2.0,
       "protein_g": 17,
       "sodium_mg": 827
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "442",
+       false
+      ],
+      [
+       "Total fat",
+       "24 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "10 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "374 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "827 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "38 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "2 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "3 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "2 g",
+       true
+      ],
+      [
+       "Protein",
+       "17 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "215 mg",
+       false
+      ],
+      [
+       "Iron",
+       "3.8 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "620 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Contains Pork",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368549,
@@ -841,7 +4631,106 @@
       "fiber_g": 3.0,
       "protein_g": 19,
       "sodium_mg": 480
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "270",
+       false
+      ],
+      [
+       "Total fat",
+       "13 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "3 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "70 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "480 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "19 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "20 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.4 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "430 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 304586,
@@ -860,7 +4749,103 @@
       "fiber_g": 1.0,
       "protein_g": 1.0,
       "sodium_mg": 317
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "113",
+       false
+      ],
+      [
+       "Total fat",
+       "6.1 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "317 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "14 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "1 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "0 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "215 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Soy"
+     ],
+     "tags": [
+      "Vegetarian"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -879,7 +4864,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 368516,
@@ -897,7 +4980,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -913,7 +5090,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -941,7 +5212,100 @@
      "ingredients": "",
      "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/jhw360vQTSLLpG8HPW8WZH85cEsUGFnGnHWyNkXW/500w/IaOw4XoFUNNDpnexGRHobSDnV12zbPWZEXF4f5RG.jpg",
      "serving_size": "1 1",
-     "nutrition": {}
+     "nutrition": {},
+     "nutrition_facts": [
+      [
+       "Calories",
+       "0",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "0 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "0 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "0 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "0 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [],
+     "tags": [],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 1354725,
@@ -960,7 +5324,103 @@
       "fiber_g": 4.0,
       "protein_g": 15,
       "sodium_mg": 476
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "231",
+       false
+      ],
+      [
+       "Total fat",
+       "12 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "4.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0.7 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "42 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "476 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "15 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "4 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0.5 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "15 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "17 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0.1 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "37 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2.4 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "568 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Soy"
+     ],
+     "tags": [
+      "Made from Scratch"
+     ],
+     "food_groups": [
+      "protein"
+     ]
     },
     {
      "id": 368542,
@@ -979,7 +5439,105 @@
       "fiber_g": 4.0,
       "protein_g": 21,
       "sodium_mg": 650
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "340",
+       false
+      ],
+      [
+       "Total fat",
+       "11 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "2 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "35 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "650 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "41 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "4 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "4.5 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "3.5 g",
+       true
+      ],
+      [
+       "Protein",
+       "21 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "60 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2.9 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "304 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368534,
@@ -996,7 +5554,103 @@
       "carbs_g": 17,
       "fiber_g": 1.8,
       "protein_g": 2.7
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "71",
+       false
+      ],
+      [
+       "Total fat",
+       "0.4 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "0 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "17 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "1.8 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "2.7 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "0 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.4 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "178 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "No Allergens"
+     ],
+     "tags": [
+      "Vegetarian"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -1015,7 +5669,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 370664,
@@ -1034,7 +5786,105 @@
       "fiber_g": 2.0,
       "protein_g": 3.1,
       "sodium_mg": 92
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "177",
+       false
+      ],
+      [
+       "Total fat",
+       "3.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5.2 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "92 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "33 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "2 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "21 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "20 g",
+       true
+      ],
+      [
+       "Protein",
+       "3.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0.1 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "19 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.8 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "118 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Vegetarian",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": []
     },
     {
      "id": 368516,
@@ -1052,7 +5902,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -1068,7 +6012,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -1104,7 +6142,109 @@
       "fiber_g": 3.1,
       "protein_g": 27,
       "sodium_mg": 645
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "367",
+       false
+      ],
+      [
+       "Total fat",
+       "6.9 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "2.7 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "58 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "645 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "48 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3.1 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "2 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "2.8 g",
+       true
+      ],
+      [
+       "Protein",
+       "27 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0.4 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "150 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2.6 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "545 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Sesame",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Made from Scratch",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368545,
@@ -1123,7 +6263,106 @@
       "fiber_g": 2.0,
       "protein_g": 9.0,
       "sodium_mg": 470
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "240",
+       false
+      ],
+      [
+       "Total fat",
+       "9 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "2.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "40 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "470 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "30 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "2 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "8 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "9 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "60 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.4 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "240 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368532,
@@ -1140,7 +6379,103 @@
       "fiber_g": 4.0,
       "protein_g": 1.3,
       "sodium_mg": 47
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "33",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "47 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "6.7 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "4 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.3 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "53 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.7 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "267 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "No Allergens"
+     ],
+     "tags": [
+      "Vegetarian"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -1159,7 +6494,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 368516,
@@ -1177,7 +6610,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -1193,7 +6720,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -1228,7 +6849,101 @@
       "carbs_g": 66,
       "fiber_g": 2.6,
       "protein_g": 35
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "447",
+       false
+      ],
+      [
+       "Total fat",
+       "5.3 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.1 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "90 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "66 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "2.6 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "16 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "13 g",
+       true
+      ],
+      [
+       "Protein",
+       "35 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "10 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.3 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "361 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Made from Scratch",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368530,
@@ -1247,7 +6962,107 @@
       "fiber_g": 4.0,
       "protein_g": 16,
       "sodium_mg": 430
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "280",
+       false
+      ],
+      [
+       "Total fat",
+       "11 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "25 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "430 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "4 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "8 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "2 g",
+       true
+      ],
+      [
+       "Protein",
+       "16 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "50 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "260 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2.2 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "350 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Vegetarian",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368531,
@@ -1266,7 +7081,107 @@
       "fiber_g": 4.0,
       "protein_g": 15,
       "sodium_mg": 540
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "280",
+       false
+      ],
+      [
+       "Total fat",
+       "11 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "3.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "15 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "540 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "33 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "4 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "2 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "2 g",
+       true
+      ],
+      [
+       "Protein",
+       "15 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "240 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2.7 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "550 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Contains Pork",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368536,
@@ -1283,7 +7198,103 @@
       "fiber_g": 3.3,
       "protein_g": 2.2,
       "sodium_mg": 22
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "22",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "22 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "4.4 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3.3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "2.2 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "46 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "22 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.4 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "No Allergens"
+     ],
+     "tags": [
+      "Vegetarian"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -1302,7 +7313,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 368516,
@@ -1320,7 +7429,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -1336,7 +7539,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -1372,7 +7669,104 @@
       "fiber_g": 3.7,
       "protein_g": 33,
       "sodium_mg": 406
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "415",
+       false
+      ],
+      [
+       "Total fat",
+       "5.2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.1 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "88 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "406 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "59 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3.7 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "8.7 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "33 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "55 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "1.8 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "27 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "424 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "No Allergens"
+     ],
+     "tags": [
+      "Made from Scratch"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368535,
@@ -1391,7 +7785,106 @@
       "fiber_g": 3.0,
       "protein_g": 18,
       "sodium_mg": 565
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "335",
+       false
+      ],
+      [
+       "Total fat",
+       "16 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "6.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "1 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "38 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "565 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "30 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "4 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "3 g",
+       true
+      ],
+      [
+       "Protein",
+       "18 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "60 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2.9 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "94 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 371367,
@@ -1410,7 +7903,104 @@
       "fiber_g": 1.8,
       "protein_g": 0.4,
       "sodium_mg": 48
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "48",
+       false
+      ],
+      [
+       "Total fat",
+       "0.1 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "48 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "1.8 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "2.9 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "0.4 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "1.6 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "20 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.6 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "6.2 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "No Allergens"
+     ],
+     "tags": [
+      "Made from Scratch",
+      "Vegetarian"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -1429,7 +8019,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 368516,
@@ -1447,7 +8135,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -1463,7 +8245,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -1499,7 +8375,108 @@
       "fiber_g": 4.0,
       "protein_g": 16,
       "sodium_mg": 839
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "422",
+       false
+      ],
+      [
+       "Total fat",
+       "21 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "5.4 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0.7 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "41 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "839 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "44 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "4 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "4.1 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "2.5 g",
+       true
+      ],
+      [
+       "Protein",
+       "16 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "2.3 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0.4 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "53 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.9 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "352 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Sesame",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 128475,
@@ -1518,7 +8495,107 @@
       "fiber_g": 3.0,
       "protein_g": 16,
       "sodium_mg": 605
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "363",
+       false
+      ],
+      [
+       "Total fat",
+       "22 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "14 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "61 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "605 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "23 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "1 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "16 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "17 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "189 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Vegetarian",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 127957,
@@ -1537,7 +8614,103 @@
       "fiber_g": 12,
       "protein_g": 12,
       "sodium_mg": 655
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "178",
+       false
+      ],
+      [
+       "Total fat",
+       "1.6 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "655 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "29 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "12 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "12 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "56 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "535 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "No Allergens"
+     ],
+     "tags": [
+      "Vegetarian"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -1556,7 +8729,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 368516,
@@ -1574,7 +8845,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -1590,7 +8955,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -1618,7 +9077,100 @@
      "ingredients": "",
      "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/cMEVcdpxYXw5gs6XASZ3vNyLl0jJCrKUBI5mBk7e/500w/x9PlRLn1cT96laa7Dc8vKcTfuLFEH0g9moXwLcy3.jpg",
      "serving_size": "1 1",
-     "nutrition": {}
+     "nutrition": {},
+     "nutrition_facts": [
+      [
+       "Calories",
+       "0",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "0 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "0 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "0 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "0 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [],
+     "tags": [],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 215771,
@@ -1637,7 +9189,106 @@
       "fiber_g": 1.0,
       "protein_g": 17,
       "sodium_mg": 583
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "189",
+       false
+      ],
+      [
+       "Total fat",
+       "6.8 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.7 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "40 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "583 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "14 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "1 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "1 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "1 g",
+       true
+      ],
+      [
+       "Protein",
+       "17 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "20 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.6 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "188 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Sesame",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368546,
@@ -1656,7 +9307,105 @@
       "fiber_g": 2.0,
       "protein_g": 15,
       "sodium_mg": 390
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "190",
+       false
+      ],
+      [
+       "Total fat",
+       "9 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "2 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "35 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "390 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "2 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0.5 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0.5 g",
+       true
+      ],
+      [
+       "Protein",
+       "15 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "20 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.4 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "210 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 128879,
@@ -1675,7 +9424,104 @@
       "fiber_g": 1.2,
       "protein_g": 2.9,
       "sodium_mg": 720
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "97",
+       false
+      ],
+      [
+       "Total fat",
+       "0.7 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.2 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "720 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "20 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "1.2 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0.7 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "2.9 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "2.7 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "16 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.2 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "15 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 370590,
@@ -1694,7 +9540,106 @@
       "fiber_g": 1.5,
       "protein_g": 1.3,
       "sodium_mg": 298
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "68",
+       false
+      ],
+      [
+       "Total fat",
+       "1.2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.6 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "298 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "7.2 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "1.5 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0.6 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.3 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0.1 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "36 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.3 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "98 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Made from Scratch",
+      "Vegetarian"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -1713,7 +9658,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 208671,
@@ -1732,7 +9775,105 @@
       "fiber_g": 0.9,
       "protein_g": 1.7,
       "sodium_mg": 172
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "173",
+       false
+      ],
+      [
+       "Total fat",
+       "9.4 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "2.3 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "25 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "172 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "21 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0.9 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "15 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "5.8 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.7 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "22 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "57 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Made from Scratch",
+      "Vegetarian"
+     ],
+     "food_groups": []
     },
     {
      "id": 368516,
@@ -1750,7 +9891,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -1766,7 +10001,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -1802,7 +10131,107 @@
       "fiber_g": 1.1,
       "protein_g": 22,
       "sodium_mg": 851
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "328",
+       false
+      ],
+      [
+       "Total fat",
+       "12 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "5.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "60 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "851 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "33 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "1.1 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "22 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "6.1 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "220 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Made from Scratch"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 304584,
@@ -1821,7 +10250,107 @@
       "fiber_g": 3.0,
       "protein_g": 17,
       "sodium_mg": 776
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "319",
+       false
+      ],
+      [
+       "Total fat",
+       "13 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "5.7 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "29 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "776 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "34 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "4 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "3.2 g",
+       true
+      ],
+      [
+       "Protein",
+       "17 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0.2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "337 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.9 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "275 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Contains Pork",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368536,
@@ -1838,7 +10367,103 @@
       "fiber_g": 3.3,
       "protein_g": 2.2,
       "sodium_mg": 22
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "22",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "22 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "4.4 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3.3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "2.2 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "46 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "22 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.4 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "No Allergens"
+     ],
+     "tags": [
+      "Vegetarian"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -1857,7 +10482,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 368516,
@@ -1875,7 +10598,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -1891,7 +10708,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -1927,7 +10838,106 @@
       "fiber_g": 4.4,
       "protein_g": 20,
       "sodium_mg": 712
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "454",
+       false
+      ],
+      [
+       "Total fat",
+       "19 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "6.1 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "35 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "712 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "54 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "4.4 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "8 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "6.9 g",
+       true
+      ],
+      [
+       "Protein",
+       "20 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "2 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0.1 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "140 mg",
+       false
+      ],
+      [
+       "Iron",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "582 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368530,
@@ -1946,7 +10956,107 @@
       "fiber_g": 4.0,
       "protein_g": 16,
       "sodium_mg": 430
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "280",
+       false
+      ],
+      [
+       "Total fat",
+       "11 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "25 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "430 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "4 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "8 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "2 g",
+       true
+      ],
+      [
+       "Protein",
+       "16 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "50 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "260 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2.2 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "350 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Vegetarian",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368531,
@@ -1965,7 +11075,107 @@
       "fiber_g": 4.0,
       "protein_g": 15,
       "sodium_mg": 540
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "280",
+       false
+      ],
+      [
+       "Total fat",
+       "11 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "3.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "15 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "540 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "33 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "4 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "2 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "2 g",
+       true
+      ],
+      [
+       "Protein",
+       "15 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "240 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2.7 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "550 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Contains Pork",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368532,
@@ -1982,7 +11192,103 @@
       "fiber_g": 4.0,
       "protein_g": 1.3,
       "sodium_mg": 47
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "33",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "47 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "6.7 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "4 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.3 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "53 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.7 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "267 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "No Allergens"
+     ],
+     "tags": [
+      "Vegetarian"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -2001,7 +11307,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 368516,
@@ -2019,7 +11423,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -2035,7 +11533,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -2071,7 +11663,107 @@
       "fiber_g": 1.0,
       "protein_g": 14,
       "sodium_mg": 419
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "287",
+       false
+      ],
+      [
+       "Total fat",
+       "14 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "6.9 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0.3 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "43 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "419 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "25 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "1 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "1.9 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "14 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "1 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0.4 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0.8 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "52 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.4 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "133 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Made from Scratch"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368549,
@@ -2090,7 +11782,106 @@
       "fiber_g": 3.0,
       "protein_g": 19,
       "sodium_mg": 480
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "270",
+       false
+      ],
+      [
+       "Total fat",
+       "13 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "3 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "70 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "480 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "19 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "20 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.4 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "430 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368550,
@@ -2108,7 +11899,103 @@
       "fiber_g": 5.0,
       "protein_g": 8.0,
       "sodium_mg": 453
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "163",
+       false
+      ],
+      [
+       "Total fat",
+       "1 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "453 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "30 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "5 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "7.7 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7.3 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "55 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "490 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "No Allergens"
+     ],
+     "tags": [
+      "Contains Pork"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -2127,7 +12014,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 368516,
@@ -2145,7 +12130,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -2161,7 +12240,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -2197,7 +12370,107 @@
       "fiber_g": 4.0,
       "protein_g": 17,
       "sodium_mg": 570
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "300",
+       false
+      ],
+      [
+       "Total fat",
+       "10 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "4 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "30 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "570 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "36 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "4 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "5 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "3 g",
+       true
+      ],
+      [
+       "Protein",
+       "17 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "224 mg",
+       false
+      ],
+      [
+       "Iron",
+       "2 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "234 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Buy American",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368545,
@@ -2216,7 +12489,106 @@
       "fiber_g": 2.0,
       "protein_g": 9.0,
       "sodium_mg": 470
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "240",
+       false
+      ],
+      [
+       "Total fat",
+       "9 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "2.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "40 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "470 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "30 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "2 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "8 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "9 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "60 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.4 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "240 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368523,
@@ -2232,7 +12604,103 @@
       "carbs_g": 7.5,
       "fiber_g": 2.1,
       "sodium_mg": 64
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "37",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "64 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "7.5 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "2.1 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "0 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "33 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "213 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "No Allergens"
+     ],
+     "tags": [
+      "Vegetarian"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -2251,7 +12719,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 321648,
@@ -2269,7 +12835,102 @@
       "carbs_g": 25,
       "protein_g": 1.5,
       "sodium_mg": 113
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "131",
+       false
+      ],
+      [
+       "Total fat",
+       "3.3 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.1 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "113 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "25 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "11 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "11 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.5 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "8.5 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0.4 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "1.1 mg",
+       false
+      ],
+      [
+       "Iron",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "12 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Soy"
+     ],
+     "tags": [
+      "Contains Pork",
+      "Made from Scratch"
+     ],
+     "food_groups": []
     },
     {
      "id": 368516,
@@ -2287,7 +12948,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -2303,7 +13058,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -2331,7 +13180,100 @@
      "ingredients": "",
      "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/0WIZXJg9ZH44xgNOtQhY0YMtrmWsbxs3O6f74WF4/500w/v65sbeloIw2OewkBU40XRiwD6iaNZNTETKegO74h.png",
      "serving_size": "1 1",
-     "nutrition": {}
+     "nutrition": {},
+     "nutrition_facts": [
+      [
+       "Calories",
+       "0",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "0 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "0 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "0 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "0 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [],
+     "tags": [],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -2359,7 +13301,100 @@
      "ingredients": "",
      "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/0WIZXJg9ZH44xgNOtQhY0YMtrmWsbxs3O6f74WF4/500w/v65sbeloIw2OewkBU40XRiwD6iaNZNTETKegO74h.png",
      "serving_size": "1 1",
-     "nutrition": {}
+     "nutrition": {},
+     "nutrition_facts": [
+      [
+       "Calories",
+       "0",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "0 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "0 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "0 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "0 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [],
+     "tags": [],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -2387,7 +13422,100 @@
      "ingredients": "",
      "image_url": "https://dfys7w6w6h5jg.cloudfront.net/assets/0WIZXJg9ZH44xgNOtQhY0YMtrmWsbxs3O6f74WF4/500w/v65sbeloIw2OewkBU40XRiwD6iaNZNTETKegO74h.png",
      "serving_size": "1 1",
-     "nutrition": {}
+     "nutrition": {},
+     "nutrition_facts": [
+      [
+       "Calories",
+       "0",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "0 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "0 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "0 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "0 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [],
+     "tags": [],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     }
    ],
    "record_type": "school_menu",
@@ -2423,7 +13551,107 @@
       "fiber_g": 1.0,
       "protein_g": 14,
       "sodium_mg": 699
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "238",
+       false
+      ],
+      [
+       "Total fat",
+       "8.3 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "4.8 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "36 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "699 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "27 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "1 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0.4 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0.4 g",
+       true
+      ],
+      [
+       "Protein",
+       "14 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "8.9 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.2 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "117 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Made from Scratch"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 128739,
@@ -2442,7 +13670,108 @@
       "fiber_g": 3.5,
       "protein_g": 19,
       "sodium_mg": 836
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "398",
+       false
+      ],
+      [
+       "Total fat",
+       "23 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "13 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "58 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "836 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "26 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3.5 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "1.5 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "19 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0.1 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "222 mg",
+       false
+      ],
+      [
+       "Iron",
+       "1.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "317 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [
+      "Contains Pork",
+      "Made from Scratch",
+      "Whole Grain-Rich"
+     ],
+     "food_groups": [
+      "protein",
+      "grains"
+     ]
     },
     {
      "id": 368534,
@@ -2459,7 +13788,103 @@
       "carbs_g": 17,
       "fiber_g": 1.8,
       "protein_g": 2.7
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "71",
+       false
+      ],
+      [
+       "Total fat",
+       "0.4 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "0 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "0 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "17 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "1.8 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "2.7 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "0 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.4 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "178 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "No Allergens"
+     ],
+     "tags": [
+      "Vegetarian"
+     ],
+     "food_groups": [
+      "vegetables"
+     ]
     },
     {
      "id": 128010,
@@ -2478,7 +13903,105 @@
       "fiber_g": 3.0,
       "protein_g": 1.1,
       "sodium_mg": 293
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "140",
+       false
+      ],
+      [
+       "Total fat",
+       "2 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "3.5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "293 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "31 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "3 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "22 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "1.1 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "25 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "0 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "23 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0.5 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "0 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Eggs",
+      "Milk",
+      "Soy",
+      "Wheat"
+     ],
+     "tags": [],
+     "food_groups": [
+      "vegetables",
+      "fruits"
+     ]
     },
     {
      "id": 368516,
@@ -2496,7 +14019,101 @@
       "carbs_g": 13,
       "protein_g": 8.0,
       "sodium_mg": 130
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "2.5 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "1.5 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "10 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "130 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "13 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "12 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "0 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "2 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "250 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     },
     {
      "id": 368517,
@@ -2512,7 +14129,101 @@
       "carbs_g": 19,
       "protein_g": 8.0,
       "sodium_mg": 210
-     }
+     },
+     "nutrition_facts": [
+      [
+       "Calories",
+       "110",
+       false
+      ],
+      [
+       "Total fat",
+       "0 g",
+       false
+      ],
+      [
+       "Saturated fat",
+       "0 g",
+       true
+      ],
+      [
+       "Trans fat",
+       "0 g",
+       true
+      ],
+      [
+       "Cholesterol",
+       "5 mg",
+       false
+      ],
+      [
+       "Sodium",
+       "210 mg",
+       false
+      ],
+      [
+       "Total carbohydrate",
+       "19 g",
+       false
+      ],
+      [
+       "Dietary fiber",
+       "0 g",
+       true
+      ],
+      [
+       "Total sugars",
+       "18 g",
+       true
+      ],
+      [
+       "Added sugars",
+       "7 g",
+       true
+      ],
+      [
+       "Protein",
+       "8 g",
+       false
+      ],
+      [
+       "Vitamin A",
+       "0 mcg RAE",
+       false
+      ],
+      [
+       "Vitamin C",
+       "0 mg",
+       false
+      ],
+      [
+       "Vitamin D",
+       "3 mcg",
+       false
+      ],
+      [
+       "Calcium",
+       "200 mg",
+       false
+      ],
+      [
+       "Iron",
+       "0 mg",
+       false
+      ],
+      [
+       "Potassium",
+       "376 mg",
+       false
+      ]
+     ],
+     "allergens": [
+      "Milk"
+     ],
+     "tags": [],
+     "food_groups": [
+      "milk"
+     ]
     }
    ],
    "record_type": "school_menu",
