@@ -109,7 +109,29 @@ def select(classes, *, tier: str | None, only: list[str] | None, browser: bool |
     return out
 
 
-def run(*, tier: str | None = None, only: list[str] | None = None, browser: bool | None = None, workers: int = 6):
+def retry_candidates(classes, health: dict, tier: str | None) -> list:
+    """Sources from other tiers whose last run failed (a site that timed out once
+    shouldn't wait a whole day for its next try). Browser sources are left out:
+    the frequent run doesn't install a browser."""
+    sources = health.get("sources", {})
+    return [
+        cls
+        for cls in classes
+        if cls.enabled
+        and not cls.browser
+        and cls.tier != tier
+        and sources.get(cls.slug, {}).get("status") in ("error", "empty")
+    ]
+
+
+def run(
+    *,
+    tier: str | None = None,
+    only: list[str] | None = None,
+    browser: bool | None = None,
+    workers: int = 6,
+    retry_failed: bool = False,
+):
     load_dotenv()
     classes = discover()
     health = load_health()
@@ -135,6 +157,8 @@ def run(*, tier: str | None = None, only: list[str] | None = None, browser: bool
             del sources[slug]
 
     todo = [c for c in select(classes, tier=tier, only=only, browser=browser) if c.enabled or only]
+    if retry_failed and not only:
+        todo += [c for c in retry_candidates(classes, health, tier) if c not in todo]
     print(f"Running {len(todo)} source(s): {', '.join(c.slug for c in todo)}")
 
     pool = ThreadPoolExecutor(max_workers=workers)
@@ -186,6 +210,7 @@ def main(argv: list[str] | None = None) -> None:
     browser.add_argument("--no-browser", dest="browser", action="store_false", help="skip Playwright sources")
     ap.add_argument("--list", action="store_true", help="list sources and exit")
     ap.add_argument("--workers", type=int, default=6)
+    ap.add_argument("--retry-failed", action="store_true", help="also rerun other tiers' sources that failed last time")
     args = ap.parse_args(argv)
 
     if args.list:
@@ -201,4 +226,5 @@ def main(argv: list[str] | None = None) -> None:
         only=args.only.split(",") if args.only else None,
         browser=args.browser,
         workers=args.workers,
+        retry_failed=args.retry_failed,
     )

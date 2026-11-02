@@ -576,7 +576,8 @@ def sources_page(site: Site, events: list[dict], today: date) -> dict:
                     continue  # switched off; readers don't need to know
                 srcs = [s for s in srcs if s.enabled]
                 fetched = max((s.fetched_at for s in srcs if s.fetched_at), default=None)
-                ok = all(s.status == "ok" for s in srcs)
+                # current unless the data is past its freshness limit; one failed try doesn't count
+                ok = not any(s.stale for s in srcs)
                 if item.needs and all((s.data or {}).get(item.needs) is None for s in srcs):
                     ok, fetched = False, None  # the source ran, but this part of it came back empty
                 items.append({"what": item.what, "note": item.note, "ok": ok, "updated": fetched})

@@ -190,3 +190,31 @@ class TestFetchJson:
         with patch("scrapers.utils.net.get", return_value=resp):
             with pytest.raises(requests.HTTPError):
                 fetch_json("http://example.com/api")
+
+
+def test_fetch_feed_raises_instead_of_returning_an_empty_feed(monkeypatch):
+    import pytest
+
+    from scrapers import utils
+
+    class Resp:
+        def __init__(self, body, status=200):
+            self.content, self.status = body, status
+
+        def raise_for_status(self):
+            if self.status >= 400:
+                raise RuntimeError(f"HTTP {self.status}")
+
+    rss = b"<?xml version='1.0'?><rss version='2.0'><channel><title>City</title></channel></rss>"
+    monkeypatch.setattr(utils.net, "get", lambda url, **kw: Resp(rss))
+    assert utils.fetch_feed("https://example.com/rss").entries == []  # a real feed that's just empty: fine
+
+    def timeout(url, **kw):
+        raise TimeoutError("connect timeout")
+
+    monkeypatch.setattr(utils.net, "get", timeout)
+    with pytest.raises(TimeoutError):
+        utils.fetch_feed("https://example.com/rss")
+    monkeypatch.setattr(utils.net, "get", lambda url, **kw: Resp(b"<html>Access denied</html>"))
+    with pytest.raises(ValueError):
+        utils.fetch_feed("https://example.com/rss")

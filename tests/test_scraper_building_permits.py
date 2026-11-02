@@ -112,9 +112,9 @@ def test_archive_links(monkeypatch):
     monkeypatch.setattr(bp.time, "sleep", lambda s: None)
     reports = bp._scrape_archive()
     assert reports == [
-        {"year": "2026", "month": "09", "url": "https://www.cityofspearfish.com/Archive.aspx?ADID=1587"},
-        {"year": "2026", "month": "08", "url": "https://www.cityofspearfish.com/Archive.aspx?ADID=1584"},
-        {"year": "2023", "month": "07", "url": "https://www.cityofspearfish.com/Archive.aspx?ADID=1500"},  # known fix
+        {"year": "2026", "month": "09", "url": "https://www.spearfish.gov/Archive.aspx?ADID=1587"},
+        {"year": "2026", "month": "08", "url": "https://www.spearfish.gov/Archive.aspx?ADID=1584"},
+        {"year": "2023", "month": "07", "url": "https://www.spearfish.gov/Archive.aspx?ADID=1500"},  # known fix
     ]
 
 

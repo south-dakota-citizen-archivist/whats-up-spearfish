@@ -9,16 +9,14 @@ Two sources backed by the same CivicEngage RSS endpoint:
   LawrenceCountyNewsFlash → /RSSFeed.aspx?ModID=1&CID=All-newsflash.xml
 """
 
-import feedparser
-
 from scrapers.base import BaseScraper
-from scrapers.utils import make_slug
+from scrapers.utils import fetch_feed, make_slug
 
 BASE = "https://www.lawrence.sd.us"
 
 
 def _parse_feed(url: str, record_type: str, source_label: str) -> list[dict]:
-    feed = feedparser.parse(url)
+    feed = fetch_feed(url)
     records = []
     for entry in feed.entries:
         records.append(

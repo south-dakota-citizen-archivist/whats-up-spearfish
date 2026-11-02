@@ -16,17 +16,15 @@ real agendas/minutes come from spearfish_city.py via the CivicClerk API):
 import re
 from datetime import datetime
 
-import feedparser
-
 from scrapers import dates
 from scrapers.base import BaseScraper
-from scrapers.utils import make_slug
+from scrapers.utils import fetch_feed, make_slug
 
 BASE = "https://www.spearfish.gov"
 
 
 def _parse_feed(url: str, record_type: str, source_label: str) -> list[dict]:
-    feed = feedparser.parse(url)
+    feed = fetch_feed(url)
     records = []
     for entry in feed.entries:
         records.append(
@@ -128,7 +126,7 @@ class SpearfishCalendar(BaseScraper):
     dedup_key = "url"
 
     def scrape(self) -> list[dict]:
-        feed = feedparser.parse(f"{BASE}/RSSFeed.aspx?ModID=58&CID=All-calendar.xml")
+        feed = fetch_feed(f"{BASE}/RSSFeed.aspx?ModID=58&CID=All-calendar.xml")
         return [parse_calendar_entry(e) for e in feed.entries if e.get("calendarevent_eventdates")]
 
 

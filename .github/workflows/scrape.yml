@@ -85,6 +85,9 @@ jobs:
         run: |
           case "${{ steps.tier.outputs.tier }}" in
             all) uv run python -m scrapers ;;
+            # the 3-hourly run also retries daily sources that failed (a site timing out once
+            # shouldn't leave its listings a day old)
+            frequent) uv run python -m scrapers --tier frequent --retry-failed ;;
             *)   uv run python -m scrapers --tier "${{ steps.tier.outputs.tier }}" ;;
           esac
           case "${{ steps.tier.outputs.tier }}" in

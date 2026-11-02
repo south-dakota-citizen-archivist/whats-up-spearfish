@@ -296,7 +296,8 @@ def test_credit_relabels_records(tmp_path):
 def test_sources_page_plain_status(tmp_path):
     from sitegen.pages import sources_page
 
-    _write(tmp_path, "black_hills_pioneer", [], kind="news", status="error")
+    _write(tmp_path, "black_hills_pioneer", [], kind="news", status="error")  # one failed try, data still fresh
+    _write(tmp_path, "rapid_city_journal", [], kind="news", status="error", fetched=False)  # nothing current
     _write(tmp_path, "sdpb_news", [], kind="news")
     _write(tmp_path, "planning_zoning", [], kind="permit")
     h = _health(tmp_path)
@@ -305,7 +306,8 @@ def test_sources_page_plain_status(tmp_path):
 
     groups = {g["heading"]: g for g in sources_page(Site(tmp_path), [], TODAY)["groups"]}
     orgs = {o["name"]: o for o in groups["News"]["orgs"]}
-    assert orgs["Black Hills Pioneer"]["offers"][0]["ok"] is False
+    assert orgs["Black Hills Pioneer"]["offers"][0]["ok"] is True  # not "not updating" over one blip
+    assert orgs["Rapid City Journal"]["offers"][0]["ok"] is False
     assert orgs["SDPB"]["offers"][0]["ok"] is True
     city = next(o for o in groups["Local government"]["orgs"] if o["name"] == "City of Spearfish")
     assert all("OpenGov" not in i["what"] for i in city["offers"])

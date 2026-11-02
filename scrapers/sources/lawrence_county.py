@@ -11,9 +11,8 @@ from __future__ import annotations
 
 import re
 
-import feedparser
-
 from scrapers.base import BaseScraper
+from scrapers.utils import fetch_feed
 
 FEED_URL = "https://www.lawrence.sd.us/RSSFeed.aspx?ModID=65&CID=All-0"
 
@@ -47,5 +46,5 @@ class LawrenceCounty(BaseScraper):
     dedup_key = "url"
 
     def scrape(self) -> list[dict]:
-        feed = feedparser.parse(FEED_URL)
+        feed = fetch_feed(FEED_URL)
         return [parse_entry(e) for e in feed.entries]

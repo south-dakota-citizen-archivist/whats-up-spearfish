@@ -6,11 +6,10 @@ Regional news RSS feeds.
 
 from __future__ import annotations
 
-import feedparser
 from dateutil import parser as dateutil_parser
 
 from scrapers.base import BaseScraper
-from scrapers.utils import make_slug
+from scrapers.utils import fetch_feed, make_slug
 
 _FEEDS = [
     {
@@ -26,8 +25,7 @@ _FEEDS = [
 ]
 
 
-def _parse_feed(url: str, source_label: str, key: str = "") -> list[dict]:
-    feed = feedparser.parse(url)
+def _parse_feed(feed, source_label: str, key: str = "") -> list[dict]:
     records = []
     for entry in feed.entries:
         title = entry.get("title", "").strip()
@@ -72,7 +70,7 @@ class NewsFeeds(BaseScraper):
     def scrape(self) -> list[dict]:
         records = []
         for feed in _FEEDS:
-            items = _parse_feed(feed["url"], feed["source_label"], feed["key"])
+            items = _parse_feed(fetch_feed(feed["url"]), feed["source_label"], feed["key"])
             print(f"  [{feed['source_label']}] {len(items)} items")
             records.extend(items)
         return records

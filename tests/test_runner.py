@@ -117,3 +117,25 @@ def test_health_issue_threshold():
     rows = failing(health)
     assert [slug for slug, _ in rows] == ["a"]
     assert "`a` (A)" in body(rows)
+
+
+def test_frequent_run_retries_failed_daily_sources(data_dir, monkeypatch):
+    class Frequent(Good):
+        slug, tier = "frequent", "frequent"
+
+    class Flaky(Broken):
+        slug = "flaky"
+
+    class BrowserFlaky(Broken):
+        slug, browser = "browser_flaky", True
+
+    _run(monkeypatch, [Good, Frequent, Flaky, BrowserFlaky])  # flaky sources fail their daily run
+    ran = []
+    monkeypatch.setattr(
+        runner, "_run_one", lambda cls: ran.append(cls.slug) or {"status": "ok", "count": 0, "new": 0, "dropped": 0}
+    )
+    _run(monkeypatch, [Good, Frequent, Flaky, BrowserFlaky], tier="frequent", retry_failed=True)
+    assert sorted(ran) == ["flaky", "frequent"]  # the good daily source waits; no browser in frequent runs
+    ran.clear()
+    _run(monkeypatch, [Good, Frequent, Flaky, BrowserFlaky], tier="frequent", retry_failed=True)
+    assert ran == ["frequent"]  # flaky recovered, so it's back to its daily schedule

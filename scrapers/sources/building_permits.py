@@ -23,7 +23,7 @@ from bs4 import BeautifulSoup
 from scrapers import geo, net
 from scrapers.base import BaseScraper
 
-BASE_URL = "https://www.cityofspearfish.com"
+BASE_URL = "https://www.spearfish.gov"  # cityofspearfish.com redirects here
 ARCHIVE_URL = f"{BASE_URL}/Archive.aspx?AMID=37"
 
 RECENT_MONTHS = 6
