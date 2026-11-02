@@ -3,8 +3,8 @@
  "name": "Spearfish School District",
  "kind": "job",
  "url": "https://www.applitrack.com/bhssc/onlineapp/default.aspx",
- "fetched_at": "2026-11-02T07:23:33-07:00",
- "count": 7,
+ "fetched_at": "2026-11-02T13:57:03-07:00",
+ "count": 6,
  "records": [
   {
    "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4340&posFirstChoice=Student%20Support%20Services/",
@@ -112,24 +112,6 @@
    "source": "spearfish_schools_jobs",
    "id": "d28700c2e055",
    "date": "2026-07-13",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4651&posFirstChoice=Secretarial/Clerical/",
-   "title": "High School Administrative Assistant",
-   "slug": "4651-high-school-administrative-assistant",
-   "location": "Spearfish High School",
-   "district": "Spearfish School District",
-   "position_type": "Secretarial/Clerical/",
-   "published": "2026-10-19",
-   "closing": "10/30/2026",
-   "description": "Position type: Secretarial/Clerical/ · Location: Spearfish High School · Closes: 10/30/2026",
-   "record_type": "job",
-   "source_label": "Spearfish School District",
-   "kind": "job",
-   "source": "spearfish_schools_jobs",
-   "id": "d551465a521e",
-   "date": "2026-10-19",
    "_first_seen": "2026-11-01"
   }
  ]

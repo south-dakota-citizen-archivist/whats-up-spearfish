@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-02T07:21:17-07:00",
- "count": 76,
+ "fetched_at": "2026-11-02T13:56:23-07:00",
+ "count": 77,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/03/whatever-the-motivation-republicans-endorsement-of-democrat-deserves-points-for-facts-and-reason/",
@@ -1143,6 +1143,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "86a2cd3ac200",
+   "date": "2026-11-02",
+   "_first_seen": "2026-11-02"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/02/rural-south-dakotas-growth-strategy-has-to-start-under-a-roof/",
+   "title": "Commentary: Rural South Dakota’s growth strategy has to start under a roof",
+   "slug": "south-dakota-searchlight-commentary-rural-south-dakotas-growth-strategy-has-to-a",
+   "published": "2026-11-02",
+   "byline": "Marcia Erickson",
+   "description": "On any given day in Sisseton, Milbank or Winner, you will pass an employer with a hiring sign in the window, or you will see an advertisement on social media or in the local newspaper. Some have been advertising for six months. Some for a year. The applicants are out there, and they&#8217;re interested. The [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "5f3bf1ee01e9",
    "date": "2026-11-02",
    "_first_seen": "2026-11-02"
   }

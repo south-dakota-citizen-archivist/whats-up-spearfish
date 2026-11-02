@@ -3,7 +3,7 @@
  "name": "SD DANR contested cases",
  "kind": "case",
  "url": "https://danr.sd.gov/public/ContestedCase.aspx",
- "fetched_at": "2026-11-02T13:02:36-07:00",
+ "fetched_at": "2026-11-02T13:56:22-07:00",
  "count": 6,
  "records": [
   {
@@ -49,6 +49,11 @@
    "url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID124",
    "documents": [
     {
+     "title": "City of Rapid City's Motion for Protective Order and Response to Johnsons' Joint Motion to Compel Discovery",
+     "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/City of Rapid City Ltr and Motion for Protective Order and Response to Johnsons' Joint Motion to Compel Discovery.pdf",
+     "added": "2026-11-02"
+    },
+    {
      "title": "City of Rapid City's Withdrawal of Notice to Take Deposition of Steve Kropp",
      "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/LTR re Withdrawal of Notice to Take Deposition of Steve Kropp.pdf",
      "added": "2026-10-26"
@@ -57,14 +62,9 @@
      "title": "Petitioners' Joint Motion and Exhibits to Compel Discovery by City of Rapid City",
      "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Petitioners' Joint Motion and Exhibits to Compel Discovery by City of Rapid City.pdf",
      "added": "2026-10-20"
-    },
-    {
-     "title": "Petitioners' Amended Notices to Take Depositions of Hunter Roberts and Steve Kropp",
-     "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Petitioners Amended Notices to Take Depositions of Hunter Roberts and Steve Kropp.pdf",
-     "added": "2026-10-20"
     }
    ],
-   "updated": "2026-10-26",
+   "updated": "2026-11-02",
    "kind": "case",
    "record_type": "case",
    "source": "danr_contested_cases",

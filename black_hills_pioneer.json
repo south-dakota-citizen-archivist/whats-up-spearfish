@@ -3,8 +3,8 @@
  "name": "Black Hills Pioneer",
  "kind": "news",
  "url": "https://www.bhpioneer.com/",
- "fetched_at": "2026-11-02T07:20:48-07:00",
- "count": 100,
+ "fetched_at": "2026-11-02T13:56:08-07:00",
+ "count": 102,
  "records": [
   {
    "url": "https://www.bhpioneer.com/local_news/deadwood-earns-gold-level-safety-achievement-award/article_cb8d5032-bc35-4929-af3e-f392b1b85be2.html",
@@ -1505,6 +1505,36 @@
    "id": "567e3c785c35",
    "date": "2026-10-31",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.bhpioneer.com/local_news/internet-outage-prompts-auditors-to-make-calls-to-verify-voters/article_9719d335-b359-4d2a-82c9-b9baba1989e4.html",
+   "title": "Internet outage prompts auditors to make calls to verify voters",
+   "slug": "black-hills-pioneer-internet-outage-prompts-auditors-to-make-calls-to-verify",
+   "published": "2026-11-02",
+   "byline": "By Mark Watson Black Hills Pioneer",
+   "description": "Voters casting absentee ballots Thursday saw a slight delay in obtaining their ballots after a large internet outage prompted election workers to verify voter registration status a alternate way. Pioneer photo by Sierra Ferguson",
+   "record_type": "news",
+   "source_label": "Black Hills Pioneer",
+   "kind": "news",
+   "source": "black_hills_pioneer",
+   "id": "74cd5c0a2796",
+   "date": "2026-11-02",
+   "_first_seen": "2026-11-02"
+  },
+  {
+   "url": "https://www.bhpioneer.com/local_news/deadwood-gets-ghoulish/article_4148f6ba-6a07-46d6-b132-3ec04b5d205a.html",
+   "title": "Deadwood gets ghoulish",
+   "slug": "black-hills-pioneer-deadwood-gets-ghoulish",
+   "published": "2026-11-02",
+   "byline": "",
+   "description": "Deadwood opened its streets to ghouls, ghosts, and spooks this weekend, celebrating Halloween with its usual style for Deadweird. Pioneer file photos by Sara Morgan",
+   "record_type": "news",
+   "source_label": "Black Hills Pioneer",
+   "kind": "news",
+   "source": "black_hills_pioneer",
+   "id": "1a1295c2c1fc",
+   "date": "2026-11-02",
+   "_first_seen": "2026-11-02"
   }
  ]
 }

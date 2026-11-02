@@ -3,7 +3,7 @@
  "name": "Library checkouts",
  "kind": "stats",
  "url": "https://spearfish.blackhills.bywatersolutions.com",
- "fetched_at": "2026-11-02T10:18:43-07:00",
+ "fetched_at": "2026-11-02T13:56:21-07:00",
  "data": {
   "rows": [
    {
@@ -535,6 +535,22 @@
     "minutes": "https://spearfishsd.portal.civicclerk.com/event/1535/files/agenda/2076"
    },
    {
+    "month": "2021-05",
+    "loans": 5138,
+    "renewals": 1450,
+    "overdrive": null,
+    "hoopla": null,
+    "minutes": "https://spearfishsd.portal.civicclerk.com/event/1553/files/agenda/6443"
+   },
+   {
+    "month": "2021-06",
+    "loans": 6857,
+    "renewals": 1597,
+    "overdrive": null,
+    "hoopla": null,
+    "minutes": "https://spearfishsd.portal.civicclerk.com/event/1553/files/agenda/6443"
+   },
+   {
     "month": "2021-07",
     "loans": 6692,
     "renewals": 1747,
@@ -997,6 +1013,38 @@
     "overdrive": 3569,
     "hoopla": null,
     "minutes": "https://spearfishsd.portal.civicclerk.com/event/2256/files/agenda/6550"
+   },
+   {
+    "month": "2026-05",
+    "loans": 5318,
+    "renewals": null,
+    "overdrive": 4198,
+    "hoopla": null,
+    "minutes": "https://spearfishsd.portal.civicclerk.com/event/2258/files/agenda/8840"
+   },
+   {
+    "month": "2026-06",
+    "loans": 7057,
+    "renewals": null,
+    "overdrive": 4164,
+    "hoopla": null,
+    "minutes": "https://spearfishsd.portal.civicclerk.com/event/2258/files/agenda/8840"
+   },
+   {
+    "month": "2026-07",
+    "loans": 7128,
+    "renewals": null,
+    "overdrive": 4238,
+    "hoopla": null,
+    "minutes": "https://spearfishsd.portal.civicclerk.com/event/2258/files/agenda/8840"
+   },
+   {
+    "month": "2026-08",
+    "loans": 5869,
+    "renewals": null,
+    "overdrive": 4024,
+    "hoopla": null,
+    "minutes": "https://spearfishsd.portal.civicclerk.com/event/2258/files/agenda/8840"
    }
   ]
  }
