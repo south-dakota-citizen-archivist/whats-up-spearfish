@@ -145,13 +145,20 @@
    "url": "https://www.cityofspearfish.com/Archive.aspx?AMID=37"
   },
   "clubhouse_spearfish": {
-   "enabled": false,
+   "count": 8,
+   "dropped": 0,
+   "enabled": true,
+   "error": "",
+   "failures": 0,
    "kind": "beer",
+   "last_run": "2026-11-02T10:14:00-07:00",
+   "last_success": "2026-11-02T10:14:00-07:00",
    "max_stale_hours": 48,
    "name": "The Clubhouse",
-   "status": "disabled",
+   "new": 8,
+   "status": "ok",
    "tier": "daily",
-   "url": "https://untappd.com/v/the-clubhouse-of-spearfish/9898973"
+   "url": "https://clubhouseofspearfish.com/food-and-drink/"
   },
   "creek_gauge": {
    "count": 1,
@@ -915,5 +922,5 @@
    "url": "https://www.westernhillshumanesociety.com/"
   }
  },
- "updated": "2026-11-02T07:25:30-07:00"
+ "updated": "2026-11-02T10:14:00-07:00"
 }
