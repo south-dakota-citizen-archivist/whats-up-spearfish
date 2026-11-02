@@ -265,6 +265,36 @@ def meetings(site: Site) -> list[dict]:
     return sorted(out.values(), key=lambda m: m["date"])
 
 
+def rotate(items: list, n: int, today: date) -> list:
+    """n items starting at a different place each day, so the front page changes."""
+    if not items:
+        return []
+    start = today.toordinal() % len(items)
+    return (items[start:] + items[:start])[:n]
+
+
+def tap_picks(site: Site, n: int, today: date) -> list[dict]:
+    """Beers with pictures, taking turns across venues, rotating daily."""
+    by_venue = []
+    for src in sources_of(site, TAP_SOURCES):
+        beers = [dict(b, venue=src.name, venue_slug=src.slug) for b in src.records if b.get("image_url")]
+        if beers:
+            by_venue.append(rotate(beers, len(beers), today))
+    picks = []
+    for i in range(max((len(v) for v in by_venue), default=0)):
+        picks += [v[i] for v in by_venue if i < len(v)]
+    return rotate(picks, n, today) if len(picks) > n else picks
+
+
+def menu_lists(menus: list[dict]) -> dict:
+    """Front-page menus: breakfast and lunch lists, one line per school group."""
+    out: dict[str, list] = {"Breakfast": [], "Lunch": []}
+    short = {"Elementary": "Elementary (K–5)", "Middle & High School": "Middle & high school"}
+    for m in menus:
+        out[m["meal"]].append(dict(m, label=short.get(m["level"], m["level"])))
+    return out
+
+
 def home(site: Site, events: list[dict], today: date) -> dict:
     t = today.isoformat()
     week_end = (today + timedelta(days=6)).isoformat()
@@ -283,18 +313,22 @@ def home(site: Site, events: list[dict], today: date) -> dict:
             birds.append(r)
 
     upcoming_meetings = [m for m in meetings(site) if t <= m["date"] <= week_end]
+    next_menus = menu_days(site, today, 1)
     alerts = newest(since(site.get("spearfish_alert_center").records, 14, today))
 
     return {
         "today_events": todays,
         "weekend_count": sum(1 for e in events if e["date"] <= wk_hi and (e["end"][:10] or e["date"]) >= wk_lo),
         "week_count": sum(1 for e in events if e["date"] <= week_end),
-        "menu_days": menu_days(site, today, 1),
+        "menu_days": next_menus,
+        "menu_lists": menu_lists(next_menus[0]["menus"]) if next_menus else {},
+        "pets": rotate([p for p in site.get("whhs_adoptable").records], 8, today),
+        "beers": tap_picks(site, 8, today),
+        "books": site.get("spearfish_library").records[:8],
         "creek": creek_context(site),
         "fire": fire_context(site),
         "birds": birds[:4],
         "ebird": site.get("ebird"),
-        "taps": [s for s in sources_of(site, TAP_SOURCES) if s.records],
         "leones": site.get("leones_creamery"),
         "headlines": newest(site.records(kind="news"))[:8],
         "meetings": upcoming_meetings[:6],

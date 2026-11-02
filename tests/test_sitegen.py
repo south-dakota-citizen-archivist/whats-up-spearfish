@@ -361,3 +361,12 @@ def test_menu_grid_spans_shared_breakfasts():
     ]
     assert rows[1]["lunch"] is None and rows[3]["lunch"]["slug"] == "spearfish_hs_lunch"
     assert menu_grid([]) == []
+
+
+def test_rotate_changes_daily_and_wraps():
+    from sitegen.pages import rotate
+
+    items = list(range(10))
+    a, b = rotate(items, 4, TODAY), rotate(items, 4, TODAY + timedelta(days=1))
+    assert len(a) == 4 and a != b and b[0] == (a[0] + 1) % 10
+    assert rotate([], 4, TODAY) == []

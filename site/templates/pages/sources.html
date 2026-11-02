@@ -2,43 +2,49 @@
 
 {% block content %}
 <h1 class="text-2xl font-extrabold">Where this comes from</h1>
-<p class="text-sm text-stone-600 mb-6 max-w-2xl">
+<p class="text-sm text-stone-600 mb-5 max-w-2xl">
   Everything on this site comes from the public websites below. We check them for updates throughout the day.
   Follow a link to go straight to the original.
 </p>
 
-<div class="grid md:grid-cols-2 gap-6">
-  {% for g in groups %}
-  <section class="min-w-0 bg-white border border-stone-200 shadow-sm">
-    <h2 class="px-5 pt-4 pb-3 border-b border-stone-100 text-lg font-bold">{{ g.heading }}</h2>
-    <ul class="px-5 py-2 divide-y divide-stone-100">
+<div class="bg-white border border-stone-200 overflow-x-auto">
+  <table class="w-full min-w-[36rem] text-sm">
+    <thead class="text-left text-xs uppercase tracking-wide text-stone-500 border-b border-stone-300">
+      <tr>
+        <th class="px-4 py-2.5 font-semibold w-[30%]">From</th>
+        <th class="px-4 py-2.5 font-semibold">What we show</th>
+        <th class="px-4 py-2.5 font-semibold w-[26%]">Last updated</th>
+      </tr>
+    </thead>
+    {% for g in groups %}
+    <tbody>
+      <tr class="bg-stone-100 border-y border-stone-200">
+        <th colspan="3" scope="colgroup" class="px-4 py-2 text-left text-xs font-bold uppercase tracking-wide text-pine-800">{{ g.heading }}</th>
+      </tr>
       {% for o in g.orgs %}
-      <li class="py-3">
-        <a href="{{ o.url }}" target="_blank" rel="noopener" class="font-semibold hover:text-pine-700 hover:underline">{{ o.name }}</a>
-        <ul class="mt-1 space-y-0.5 text-sm">
-          {% for i in o.offers %}
-          <li class="flex flex-wrap justify-between gap-x-3">
-            <span class="text-stone-700">{{ i.what }}</span>
-            {% if i.note %}
-            <span class="text-xs text-stone-500 basis-full">{{ i.note }}</span>
-            {% elif i.ok and i.updated %}
-            <span class="text-xs text-stone-500">Updated {{ i.updated | ago }}</span>
-            {% elif i.updated %}
-            <span class="text-xs text-amber-700">⚠ Not updating right now · last updated {{ i.updated | ago }}</span>
-            {% else %}
-            <span class="text-xs text-amber-700">⚠ Not available right now</span>
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
-      </li>
+      {% for i in o.offers %}
+      <tr class="border-t border-stone-100 align-top">
+        {% if loop.first %}
+        <td rowspan="{{ o.offers | length }}" class="px-4 py-2.5 font-semibold">
+          <a href="{{ o.url }}" target="_blank" rel="noopener" class="hover:text-pine-700 hover:underline">{{ o.name }}</a>
+        </td>
+        {% endif %}
+        <td class="px-4 py-2.5 text-stone-700">{{ i.what }}</td>
+        <td class="px-4 py-2.5 text-xs">
+          {% if i.note %}<span class="text-stone-500">{{ i.note }}</span>
+          {% elif i.ok and i.updated %}<span class="text-stone-500">{{ i.updated | ago | capitalize }}</span>
+          {% elif i.updated %}<span class="text-amber-700">⚠ Not updating right now (last {{ i.updated | ago }})</span>
+          {% else %}<span class="text-amber-700">⚠ Not available right now</span>{% endif %}
+        </td>
+      </tr>
       {% endfor %}
-    </ul>
-  </section>
-  {% endfor %}
+      {% endfor %}
+    </tbody>
+    {% endfor %}
+  </table>
 </div>
 
-<p class="mt-8 text-sm text-stone-600 max-w-2xl">
+<p class="mt-6 text-sm text-stone-600 max-w-2xl">
   What's up, Spearfish? is a volunteer project and isn't affiliated with any of these organizations.
   Spot a problem, or know of something that should be here?
   <a href="https://github.com/south-dakota-citizen-archivist/whats-up-spearfish/issues" class="text-pine-700 underline">Let us know</a>.

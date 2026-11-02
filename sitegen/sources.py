@@ -88,7 +88,7 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
                     _i("Monthly building permit reports", "building_permits"),
                     _i(
                         "Planning and permit applications, 2012 to July 2026",
-                        note="The city no longer posts these online. We saved what was available before then.",
+                        note="No longer posted online; we kept a copy",
                     ),
                     _i("Bids", "public_bids"),
                     _i("Job openings", "spearfish_jobs"),
@@ -187,10 +187,7 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
             Org(
                 "National Weather Service",
                 "https://www.weather.gov/unr/",
-                (
-                    _i("Weather forecast and warnings", note="Shown live when you open the page."),
-                    _i("Fire danger", "fire", needs="danger"),
-                ),
+                (_i("Fire danger", "fire", needs="danger"),),
             ),
             Org(
                 "InciWeb",

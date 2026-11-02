@@ -162,3 +162,17 @@ def test_inciweb_containment():
     )
     assert parse_containment(BeautifulSoup(html, "html.parser")) == 100
     assert parse_containment(BeautifulSoup("<table><tr><th>Size</th><td>5</td></tr></table>", "html.parser")) is None
+
+
+def test_leones_detail():
+    from bs4 import BeautifulSoup
+
+    from scrapers.sources.leones_creamery import parse_detail
+
+    html = """<p class="text-size-medium">Bursting with sweet blueberries.</p>
+    <p class="text-size-medium">Gluten-free: Yes</p><p class="text-size-medium">Contains: Eggs, dairy</p>"""
+    assert parse_detail(BeautifulSoup(html, "html.parser")) == {
+        "description": "Bursting with sweet blueberries.",
+        "gluten_free": True,
+        "contains": ["Eggs", "Dairy"],
+    }
