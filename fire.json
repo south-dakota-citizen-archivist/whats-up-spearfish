@@ -1,23 +1,12 @@
 {
  "slug": "fire",
- "name": "Fire restrictions, danger & wildfires",
+ "name": "Fire danger & wildfires",
  "kind": "fire",
- "url": "https://www.blackhillsfirerestrictions.com/",
- "fetched_at": "2026-11-01T15:31:00-07:00",
+ "url": "https://www.weather.gov/unr/",
+ "fetched_at": "2026-11-01T20:11:57-07:00",
  "data": {
-  "errors": [
-   "restrictions: SSLError: HTTPSConnectionPool(host='www.blackhillsfirerestrictions.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)')))"
-  ],
-  "restrictions": null,
-  "incidents": [
-   {
-    "name": "Lookout Fire  - SDSDS",
-    "type": "Wildfire",
-    "size": "444 Acres",
-    "updated": "1 month 2 weeks ago",
-    "url": "https://inciweb.wildfire.gov/incident-information/sdsds-lookout-fire"
-   }
-  ],
+  "errors": [],
+  "incidents": [],
   "danger": {
    "issued": "151 AM MST Sun Nov 1 2026",
    "zones": [
