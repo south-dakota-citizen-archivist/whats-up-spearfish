@@ -68,7 +68,9 @@ def time_label(start: str, end: str, all_day: bool) -> str:
     label = fmt_clock(s)
     e = dates.parse(end) if end else None
     if isinstance(e, datetime) and e.date() == s.date() and e > s:
-        label += f"–{fmt_clock(e)}"
+        # "3–5 PM", but "11 AM–1:30 PM" when the range crosses noon
+        start = label.removesuffix(s.strftime(" %p")) if s.strftime("%p") == e.strftime("%p") else label
+        label = f"{start}–{fmt_clock(e)}"
     return label
 
 

@@ -30,6 +30,15 @@ MENU_SOURCES = [
     ("spearfish_hs_lunch", "High School", "Lunch"),
 ]
 
+# The daily menu table: one row per school group, breakfast and lunch columns.
+# Breakfast menus are shared (one for K–5, one for 6–12), so they span rows.
+MENU_GRID = [
+    ("Elementary K–2", "spearfish_elem_breakfast", "spearfish_elem_k2_lunch"),
+    ("Elementary 3–5", "spearfish_elem_breakfast", "spearfish_elem_35_lunch"),
+    ("Middle School", "spearfish_mshs_breakfast", "spearfish_ms_lunch"),
+    ("High School", "spearfish_mshs_breakfast", "spearfish_hs_lunch"),
+]
+
 NEWS_SOURCES = [
     "black_hills_pioneer",
     "rapid_city_journal",
@@ -109,6 +118,29 @@ def _menu_item(i: dict) -> dict:
     return item
 
 
+def menu_grid(menus: list[dict]) -> list[dict]:
+    """
+    Rows for the menu table. A breakfast shared by consecutive rows is shown
+    once with a rowspan; the rows it covers get breakfast_span 0 (render no cell).
+    """
+    by_slug = {m["slug"]: m for m in menus}
+    rows = [
+        {"level": level, "b_slug": b, "breakfast": by_slug.get(b), "lunch": by_slug.get(lunch)}
+        for level, b, lunch in MENU_GRID
+        if by_slug.get(b) or by_slug.get(lunch)
+    ]
+    i = 0
+    while i < len(rows):
+        j = i
+        while j + 1 < len(rows) and rows[j + 1]["b_slug"] == rows[i]["b_slug"]:
+            j += 1
+        rows[i]["breakfast_span"] = j - i + 1
+        for k in range(i + 1, j + 1):
+            rows[k]["breakfast_span"] = 0
+        i = j + 1
+    return rows
+
+
 def menu_details(site: Site, today: date) -> dict:
     """Full menus (every dish, with photos, allergens and nutrition) keyed "slug|date", for the menu pop-up."""
     return {
@@ -126,7 +158,7 @@ def menu_days(site: Site, today: date, count: int) -> list[dict]:
             continue
         menus = menus_for_day(site, d)
         if menus:
-            days.append({"date": d, "menus": menus})
+            days.append({"date": d, "menus": menus, "grid": menu_grid(menus)})
         if len(days) >= count:
             break
     return days

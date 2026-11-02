@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import card, empty, event_row, ext, badge, danger_badge, freshness %}
+{% from "macros.html" import card, empty, event_row, ext, badge, danger_badge, freshness, menu_table %}
 
 {% block head %}<script defer src="{{ root }}static/js/live.js"></script>{% endblock %}
 
@@ -112,14 +112,7 @@
       {% if menu_days %}
       {% set day = menu_days[0] %}
       <p class="text-sm font-semibold text-stone-500 mb-2">{{ day.date | day_heading }}</p>
-      <dl class="space-y-2 text-sm">
-        {% for m in day.menus %}
-        <div>
-          <dt class="font-semibold"><a href="{{ root }}schools/#menu={{ m.key | urlencode }}" class="hover:text-pine-700 hover:underline">{{ m.level }} {{ m.meal | lower }}</a></dt>
-          <dd class="text-stone-600">{{ m.entrees | join(' · ') }}</dd>
-        </div>
-        {% endfor %}
-      </dl>
+      {{ menu_table(day, root, popup=false, max_items=2) }}
       {% else %}{{ empty("No upcoming menus posted.") }}{% endif %}
     {% endcall %}
 

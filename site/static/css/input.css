@@ -19,3 +19,9 @@
 /* No rounded corners, anywhere — including native form controls */
 *, ::before, ::after { border-radius: 0 !important; }
 input[type="search"] { -webkit-appearance: none; appearance: none; }
+
+/* Everything clickable shows the hand cursor (Tailwind's reset gives buttons the arrow) */
+a[href], button, [role="button"], [role="tab"], summary, select, label[for],
+input[type="checkbox"], input[type="radio"], input[type="submit"], input[type="button"],
+.leaflet-interactive, .leaflet-container a { cursor: pointer; }
+button:disabled, [aria-disabled="true"] { cursor: not-allowed; }

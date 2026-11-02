@@ -67,3 +67,49 @@
 {% set c = {'Low': 'pine', 'Moderate': 'sky', 'High': 'amber', 'Very High': 'red', 'Extreme': 'red'} %}
 {{ badge(level ~ ' fire danger', c.get(level, 'stone')) }}
 {% endmacro %}
+
+{#
+  One day's school menus as a table: school groups down the side, breakfast and
+  lunch across. Shared breakfasts span their rows. Each cell opens the full menu:
+  on the Schools page via the menus() pop-up, elsewhere by linking there.
+#}
+{% macro menu_table(day, root, popup=true, max_items=0) %}
+{% macro cell(m) %}
+{% if m %}
+{% set inner %}
+  {% set shown = m.entrees[:max_items] if max_items else m.entrees %}
+  <ul class="space-y-0.5 list-disc pl-4 marker:text-stone-400">{% for e in shown %}<li>{{ e }}</li>{% endfor %}</ul>
+  {% if m.entrees | length > shown | length %}<p class="mt-0.5 text-xs text-stone-500">+{{ m.entrees | length - shown | length }} more</p>{% endif %}
+{% endset %}
+{% if popup %}
+<button type="button" @click="open({{ m.key | tojson | forceescape }})" aria-label="Full {{ m.level }} {{ m.meal | lower }} menu"
+        class="flex flex-col justify-start w-full h-full text-left px-2.5 py-2 hover:bg-pine-50 hover:text-pine-800">{{ inner }}</button>
+{% else %}
+<a href="{{ root }}schools/#menu={{ m.key | urlencode }}" aria-label="Full {{ m.level }} {{ m.meal | lower }} menu"
+   class="block w-full h-full px-2.5 py-2 hover:bg-pine-50 hover:text-pine-800">{{ inner }}</a>
+{% endif %}
+{% else %}
+<p class="px-2.5 py-2 text-stone-400">—</p>
+{% endif %}
+{% endmacro %}
+<table class="w-full table-fixed border-collapse text-[13px] sm:text-sm leading-snug">
+  <thead>
+    <tr class="text-left text-xs uppercase tracking-wide text-stone-500">
+      <th class="w-[26%] pb-1.5 font-semibold"><span class="sr-only">School</span></th>
+      <th class="pb-1.5 px-2.5 font-semibold">Breakfast</th>
+      <th class="pb-1.5 px-2.5 font-semibold">Lunch</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for r in day.grid %}
+    <tr class="border-t border-stone-200">
+      <th scope="row" class="py-2 pr-2 text-left align-top font-semibold">{{ r.level }}</th>
+      {% if r.breakfast_span %}
+      <td rowspan="{{ r.breakfast_span }}" class="h-px p-0 align-top border-l border-stone-200 {{ 'border-b' if r.breakfast_span > 1 }}">{{ cell(r.breakfast) }}</td>
+      {% endif %}
+      <td class="h-px p-0 align-top border-l border-stone-200">{{ cell(r.lunch) }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endmacro %}

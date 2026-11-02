@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import card, empty, event_row, ext, freshness %}
+{% from "macros.html" import card, empty, event_row, ext, freshness, menu_table %}
 
 {% block head %}<script defer src="{{ root }}static/js/menus.js"></script>{% endblock %}
 
@@ -22,19 +22,8 @@
         {% for d in menu_days %}
         <div x-show="day === {{ loop.index0 }}" {% if not loop.first %}x-cloak{% endif %}>
           <h3 class="font-bold mb-2">{{ d.date | day_heading }}</h3>
-          <div class="grid sm:grid-cols-2 gap-3">
-            {% for m in d.menus %}
-            <button type="button" @click="open({{ m.key | tojson | forceescape }})"
-                    class="flex flex-col items-start text-left border border-stone-200 p-3 hover:border-pine-600 hover:bg-pine-50 group">
-              <p class="text-xs font-bold uppercase tracking-wide text-stone-500">{{ m.meal }}</p>
-              <p class="font-semibold">{{ m.level }}</p>
-              <ul class="mt-1 text-sm text-stone-700 list-disc pl-4">
-                {% for item in m.entrees %}<li>{{ item }}</li>{% endfor %}
-              </ul>
-              <p class="mt-auto pt-2 text-xs font-semibold text-pine-700 group-hover:underline">Full menu, photos &amp; nutrition →</p>
-            </button>
-            {% endfor %}
-          </div>
+          {{ menu_table(d, root) }}
+          <p class="mt-2 text-xs text-stone-500">Tap a menu for every dish, with photos, allergens and nutrition facts.</p>
         </div>
         {% endfor %}
 

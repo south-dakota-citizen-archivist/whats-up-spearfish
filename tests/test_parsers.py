@@ -149,3 +149,16 @@ $3.00 5 oz/ $4.50 10 o2/ $6.50 16 oz
     assert r["prices"] == [{"price": 3.0, "ounces": 5}, {"price": 4.5, "ounces": 10}, {"price": 6.5, "ounces": 16}]
     assert parse_label("100LL ¢ 2026 Barrel Aged Stout")["title"] == "100LL • 2026 Barrel Aged Stout"
     assert parse_label("") == {}
+
+
+def test_inciweb_containment():
+    from bs4 import BeautifulSoup
+
+    from scrapers.sources.fire import parse_containment
+
+    html = (
+        "<table><tr><th>Size</th><td>444 Acres</td></tr>"
+        "<tr><th>Percent of Perimeter Contained</th><td>100%</td></tr></table>"
+    )
+    assert parse_containment(BeautifulSoup(html, "html.parser")) == 100
+    assert parse_containment(BeautifulSoup("<table><tr><th>Size</th><td>5</td></tr></table>", "html.parser")) is None

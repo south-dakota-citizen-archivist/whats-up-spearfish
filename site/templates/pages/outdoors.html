@@ -64,7 +64,7 @@
     {% if fire.incidents %}
     <h3 class="text-sm font-bold mt-4 mb-1">Active South Dakota wildfires</h3>
     <ul class="space-y-1 text-sm">
-      {% for i in fire.incidents %}<li>{{ ext(i.url, i.name) }} <span class="text-stone-500">· {{ i.type }}{% if i.size %} · {{ i.size }}{% endif %}</span></li>{% endfor %}
+      {% for i in fire.incidents %}<li>{{ ext(i.url, i.name) }} <span class="text-stone-500">· {{ i.type }}{% if i.size %} · {{ i.size }}{% endif %}{% if i.contained is not none %} · {{ i.contained }}% contained{% endif %}</span></li>{% endfor %}
     </ul>
     {% endif %}
     {% if not (fire.danger and fire.danger.zones) and not fire.incidents %}{{ empty("No fire danger statement out and no active South Dakota wildfires.") }}{% endif %}

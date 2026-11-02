@@ -108,7 +108,7 @@ class TestUnifiedEvents:
             [_event("x", "Show", time="19:30", end=f"{_iso()}T21:00:00-07:00"), _event("x", "Fair", time=None)],
         )
         labels = {e["title"]: e["time"] for e in unified_events(Site(tmp_path), TODAY)}
-        assert labels == {"Show": "7:30 PM–9 PM", "Fair": "All day"}
+        assert labels == {"Show": "7:30–9 PM", "Fair": "All day"}
 
 
 class TestSiteData:
@@ -322,3 +322,42 @@ def test_menu_details_full_record(tmp_path):
     assert pizza["allergens"] == ["Milk", "Wheat"] and pizza["nutrition_facts"]
     assert juice["no_allergens"] is True and juice["image_url"]
     assert "allergens" not in cereal and "no_allergens" not in cereal
+
+
+@pytest.mark.parametrize(
+    "start, end, label",
+    [
+        ("2026-11-02T15:00:00-07:00", "2026-11-02T17:00:00-07:00", "3–5 PM"),
+        ("2026-11-02T11:00:00-07:00", "2026-11-02T13:30:00-07:00", "11 AM–1:30 PM"),
+        ("2026-11-02T09:15:00-07:00", "2026-11-02T10:00:00-07:00", "9:15–10 AM"),
+        ("2026-11-02T19:00:00-07:00", "", "7 PM"),
+    ],
+)
+def test_time_range_drops_repeated_am_pm(start, end, label):
+    from sitegen.events import time_label
+
+    assert time_label(start, end, False) == label
+
+
+def test_menu_grid_spans_shared_breakfasts():
+    from sitegen.pages import menu_grid
+
+    def m(slug):
+        return {"slug": slug, "key": slug, "entrees": ["x"]}
+
+    rows = menu_grid(
+        [
+            m("spearfish_elem_breakfast"),
+            m("spearfish_elem_k2_lunch"),
+            m("spearfish_mshs_breakfast"),
+            m("spearfish_hs_lunch"),
+        ]
+    )
+    assert [(r["level"], r["breakfast_span"]) for r in rows] == [
+        ("Elementary K–2", 2),
+        ("Elementary 3–5", 0),
+        ("Middle School", 2),
+        ("High School", 0),
+    ]
+    assert rows[1]["lunch"] is None and rows[3]["lunch"]["slug"] == "spearfish_hs_lunch"
+    assert menu_grid([]) == []

@@ -60,16 +60,42 @@ def fetch_incidents() -> list[dict]:
         size = cell(cells, "views-field-field-incident-size")
         kind = cell(cells, "views-field-field-incident-type")
         updated = cell(cells, "views-field-field-last-209-update")
+        updated_text = updated.get_text(strip=True) if updated else ""
+        if re.search(r"\b(month|year)s?\b", updated_text):
+            continue  # no update in over a month: not an active fire
+        url = INCIWEB_BASE + href if href.startswith("/") else href
+        contained = containment(url)
+        if contained is not None and contained >= 100:
+            continue  # fully contained
         incidents.append(
             {
-                "name": (a or title).get_text(strip=True),
+                "name": re.sub(r"\s+-\s+[A-Z]{4,6}$", "", (a or title).get_text(" ", strip=True)),
                 "type": kind.get_text(strip=True) if kind else "",
                 "size": _fmt_acres(size.get_text(strip=True)) if size else "",
-                "updated": updated.get_text(strip=True) if updated else "",
-                "url": INCIWEB_BASE + href if href.startswith("/") else href,
+                "contained": contained,
+                "updated": updated_text,
+                "url": url,
             }
         )
     return incidents
+
+
+def containment(url: str) -> int | None:
+    """'Percent of Perimeter Contained' from an InciWeb incident page; None if not listed or unreachable."""
+    try:
+        soup = _soup(url)
+    except Exception:  # noqa: BLE001
+        return None
+    return parse_containment(soup)
+
+
+def parse_containment(soup: BeautifulSoup) -> int | None:
+    for th in soup.find_all("th"):
+        if "contained" in th.get_text().lower() and (td := th.find_next("td")):
+            m = re.search(r"(\d+)\s*%", td.get_text())
+            if m:
+                return int(m.group(1))
+    return None
 
 
 def fetch_danger() -> dict:
