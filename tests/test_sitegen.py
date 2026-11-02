@@ -79,7 +79,7 @@ class TestUnifiedEvents:
         events = unified_events(Site(tmp_path), TODAY)
         assert len(events) == 1
         assert events[0]["source"] == "spearfish_calendar"  # higher priority source wins
-        assert events[0]["also"][0]["source"] == "Spearfish Chamber"
+        assert events[0]["also"][0]["source"] == "Spearfish Chamber of Commerce"
 
     def test_different_times_not_merged(self, tmp_path):
         _write(tmp_path, "spearfish_calendar", [_event("spearfish_calendar", "Planning Commission", time="14:00")])
@@ -203,7 +203,8 @@ def test_smoke_build(fixture_data, tmp_path):
         "news/",
         "jobs/",
         "community/",
-        "status/",
+        "sources/",
+        "status/",  # redirect to sources/
     ]:
         assert (out / page / "index.html").exists(), page
     for f in ["events.json", "calendar.ics", "events.xml", "404.html", "static/site.css", ".nojekyll"]:
@@ -219,8 +220,11 @@ def test_smoke_build(fixture_data, tmp_path):
     assert [e["title"] for e in events] == ["Story Time", "Nutcracker"]
     assert b"BEGIN:VEVENT" in (out / "calendar.ics").read_bytes()
 
-    status = (out / "status" / "index.html").read_text()
-    assert "Failing" in status and "boom" in status
+    sources = (out / "sources" / "index.html").read_text()
+    assert "Black Hills Pioneer" in sources
+    assert "boom" not in sources  # no error messages for readers
+    assert "planning_zoning" not in sources  # no internal names
+    assert "url=../sources/" in (out / "status" / "index.html").read_text()
 
 
 def test_relative_links(fixture_data, tmp_path):
@@ -232,3 +236,61 @@ def test_relative_links(fixture_data, tmp_path):
 
 def test_today_is_date():
     assert isinstance(TODAY, date)
+
+
+def test_every_enabled_source_is_in_the_directory():
+    from scrapers.runner import discover
+    from sitegen.sources import directory_slugs
+
+    enabled = {cls.slug for cls in discover() if cls.enabled}
+    assert enabled - directory_slugs() == set()
+
+
+def test_credit_relabels_records(tmp_path):
+    _write(
+        tmp_path,
+        "spearfish_news",
+        [
+            {
+                "id": "1",
+                "kind": "press_release",
+                "title": "t",
+                "url": "u",
+                "source_label": "City of Spearfish News Flash",
+            }
+        ],
+        kind="press_release",
+    )
+    site = Site(tmp_path)
+    assert site.get("spearfish_news").records[0]["source_label"] == "City of Spearfish"
+    assert site.get("spearfish_news").label == "City of Spearfish"
+
+
+def test_sources_page_plain_status(tmp_path):
+    from sitegen.pages import sources_page
+
+    _write(tmp_path, "black_hills_pioneer", [], kind="news", status="error")
+    _write(tmp_path, "sdpb_news", [], kind="news")
+    _write(tmp_path, "planning_zoning", [], kind="permit")
+    h = _health(tmp_path)
+    h["sources"]["planning_zoning"]["enabled"] = False
+    (tmp_path / "_health.json").write_text(json.dumps(h))
+
+    groups = {g["heading"]: g for g in sources_page(Site(tmp_path), [], TODAY)["groups"]}
+    orgs = {o["name"]: o for o in groups["News"]["orgs"]}
+    assert orgs["Black Hills Pioneer"]["offers"][0]["ok"] is False
+    assert orgs["SDPB"]["offers"][0]["ok"] is True
+    city = next(o for o in groups["Local government"]["orgs"] if o["name"] == "City of Spearfish")
+    assert all("OpenGov" not in i["what"] for i in city["offers"])
+
+
+def test_sources_page_flags_a_missing_part(tmp_path):
+    from sitegen.pages import sources_page
+
+    _write(
+        tmp_path, "fire", data={"restrictions": [], "danger": {"zones": [{"name": "x", "level": "Low"}]}}, kind="fire"
+    )
+    groups = {g["heading"]: g for g in sources_page(Site(tmp_path), [], TODAY)["groups"]}
+    offers = {i["what"]: i for o in groups["Outdoors"]["orgs"] for i in o["offers"]}
+    assert offers["Fire danger"]["ok"] is True
+    assert offers["Burn restrictions by county and city"]["ok"] is False

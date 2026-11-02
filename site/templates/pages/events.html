@@ -7,11 +7,10 @@
 <div class="flex flex-wrap items-end justify-between gap-3 mb-4">
   <div>
     <h1 class="text-2xl font-extrabold">Events</h1>
-    <p class="text-stone-600 text-sm">{{ event_count | intcomma }} upcoming events from {{ event_sources | length }} calendars around Spearfish.</p>
+    <p class="text-stone-600 text-sm">{{ event_count | intcomma }} upcoming events around Spearfish.</p>
   </div>
   <div class="flex gap-3 text-sm">
-    <a href="{{ root }}calendar.ics" class="font-semibold text-pine-700 hover:underline">Subscribe (.ics)</a>
-    <a href="{{ root }}events.xml" class="font-semibold text-pine-700 hover:underline">RSS</a>
+    <a href="{{ root }}calendar.ics" class="font-semibold text-pine-700 hover:underline">Add to your calendar</a>
   </div>
 </div>
 
@@ -45,9 +44,9 @@
       </div>
     </div>
     <div>
-      <label for="src" class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-2 block">Calendar</label>
+      <label for="src" class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-2 block">Hosted by</label>
       <select id="src" x-model="source" class="w-full border border-stone-300 bg-white px-3 py-2 text-sm">
-        <option value="">All calendars</option>
+        <option value="">Anyone</option>
         {% for name, n in event_sources %}<option value="{{ name }}">{{ name }} ({{ n }})</option>{% endfor %}
       </select>
     </div>
@@ -70,9 +69,7 @@
               <div class="min-w-0">
                 <a :href="e.url" target="_blank" rel="noopener" class="font-medium hover:text-pine-700 hover:underline" x-text="e.title"></a>
                 <p class="text-xs text-stone-500">
-                  <span x-show="e.location" x-text="e.location + ' · '"></span>
-                  <span x-text="e.source_label"></span>
-                  <template x-for="a in e.also"><span>, <a :href="a.url" target="_blank" rel="noopener" class="hover:underline" x-text="a.source"></a></span></template>
+                  <span x-text="e.location || e.source_label"></span>
                 </p>
                 <p x-show="e.description" class="text-sm text-stone-600 mt-1 line-clamp-2" x-text="e.description"></p>
               </div>
@@ -89,5 +86,5 @@
   </div>
 </div>
 
-<noscript><p class="mt-4">The calendar needs JavaScript. You can also <a href="{{ root }}calendar.ics" class="text-pine-700 underline">subscribe to the calendar feed</a>.</p></noscript>
+<noscript><p class="mt-4">The calendar needs JavaScript turned on in your browser. You can also <a href="{{ root }}calendar.ics" class="text-pine-700 underline">add these events to your own calendar</a>.</p></noscript>
 {% endblock %}

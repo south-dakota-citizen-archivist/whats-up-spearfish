@@ -12,7 +12,7 @@ Renders the static site into _site/:
     /news/            regional headlines
     /jobs/            local job postings
     /community/       library new arrivals, adoptable pets
-    /status/          scraper health
+    /sources/         where the information comes from (/status/ redirects here)
 
 Usage: python -m sitegen [--data DIR] [--out DIR]
 """
@@ -67,7 +67,7 @@ PAGES = [
     ("news/", "pages/news.html", "News", pages.news),
     ("jobs/", "pages/jobs.html", "Jobs", pages.jobs),
     ("community/", "pages/community.html", "Community", pages.community),
-    ("status/", "pages/status.html", "Source status", pages.status),
+    ("sources/", "pages/sources.html", "Where this comes from", pages.sources_page),
 ]
 
 
@@ -139,7 +139,13 @@ def make_env() -> Environment:
         lstrip_blocks=True,
     )
     env.filters.update(
-        fmt_day=fmt_day, fmt_time=fmt_time, ago=ago, day_heading=day_heading, domain=domain, intcomma=intcomma
+        fmt_day=fmt_day,
+        fmt_time=fmt_time,
+        ago=ago,
+        day_heading=day_heading,
+        domain=domain,
+        intcomma=intcomma,
+        permit_type=pages.friendly_type,
     )
     env.globals.update(NAV=NAV, CATEGORY_LABELS=CATEGORY_LABELS, SITE_URL=SITE_URL)
     return env
@@ -186,7 +192,6 @@ def build(data_dir: Path, out_dir: Path) -> None:
         "build_time": dates.now(),
         "today": today,
         "css_version": css_version,
-        "health": pages.status_summary(site),
     }
     for path, template, title, ctx_fn in PAGES:
         depth = path.count("/")
@@ -200,6 +205,14 @@ def build(data_dir: Path, out_dir: Path) -> None:
         env.get_template("pages/404.html").render(
             **common, page_path="404", page_title="Not found", root="/whats-up-spearfish/"
         ),
+        encoding="utf-8",
+    )
+
+    # The old technical status page moved; keep its URL working
+    (out_dir / "status").mkdir(exist_ok=True)
+    (out_dir / "status" / "index.html").write_text(
+        '<!DOCTYPE html><meta charset="utf-8"><title>Moved</title>'
+        '<meta http-equiv="refresh" content="0; url=../sources/"><a href="../sources/">Where this comes from</a>',
         encoding="utf-8",
     )
 

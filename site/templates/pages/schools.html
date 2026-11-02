@@ -34,7 +34,7 @@
         </div>
         {% endfor %}
       </div>
-      <p class="text-xs text-stone-500 mt-3">Entrées only; full menus with sides and nutrition are on {{ ext(menu_sources[0].url, "HealthePro") }}.</p>
+      <p class="text-xs text-stone-500 mt-3">Main dishes only. {{ ext(menu_sources[0].url, "See full menus with sides and nutrition facts") }}.</p>
       {% else %}{{ empty("No upcoming menus have been posted.") }}{% endif %}
     {% endcall %}
 

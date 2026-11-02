@@ -85,7 +85,7 @@
     <section id="weather" x-data="weather()" x-init="load()" class="bg-white border border-stone-200 shadow-sm p-5">
       <div class="flex items-baseline justify-between">
         <h2 class="text-lg font-bold">Weather</h2>
-        <a href="https://forecast.weather.gov/MapClick.php?lat=44.4908&lon=-103.8594" target="_blank" rel="noopener" class="text-sm font-semibold text-pine-700 hover:underline">NWS →</a>
+        <a href="https://forecast.weather.gov/MapClick.php?lat=44.4908&lon=-103.8594" target="_blank" rel="noopener" class="text-sm font-semibold text-pine-700 hover:underline">Full forecast →</a>
       </div>
       <p x-show="!ready && !error" class="text-sm text-stone-500 mt-2">Loading…</p>
       <p x-show="error" x-cloak class="text-sm text-stone-500 mt-2">Weather unavailable right now.</p>
@@ -116,18 +116,18 @@
 
     {% call card("Spearfish Creek", "creek", sources=creek.source, more=root ~ "outdoors/#creek", more_label="Chart") %}
       {% if creek.current %}
-      <p class="flex items-baseline gap-2"><span class="text-3xl font-extrabold tabular-nums">{{ creek.current.cfs | intcomma }}</span><span class="text-stone-600">cubic feet/sec</span></p>
+      <p class="flex items-baseline gap-2"><span class="text-3xl font-extrabold tabular-nums">{{ creek.current.cfs | intcomma }}</span><span class="text-stone-600">cubic feet per second</span></p>
       <p class="text-sm text-stone-500">
-        {% if creek.current.ft %}Gauge height {{ creek.current.ft }} ft. {% endif %}
-        {% if creek.median30 %}30-day median {{ creek.median30 | intcomma }} cfs.{% endif %}
+        {% if creek.current.ft %}Water level {{ creek.current.ft }} ft. {% endif %}
+        {% if creek.median30 %}Typical for the past month: {{ creek.median30 | intcomma }}.{% endif %}
       </p>
       {% if creek.spark %}
       <svg viewBox="0 0 {{ creek.spark.width }} {{ creek.spark.height }}" class="w-full h-12 mt-3" preserveAspectRatio="none" role="img" aria-label="Flow over the past 7 days">
         <polyline points="{{ creek.spark.points }}" fill="none" stroke="currentColor" stroke-width="2" class="text-sky-600" vector-effect="non-scaling-stroke"/>
       </svg>
-      <p class="text-xs text-stone-500">Past 7 days · {{ creek.spark.min }}–{{ creek.spark.max }} cfs</p>
+      <p class="text-xs text-stone-500">Past 7 days · {{ creek.spark.min }} to {{ creek.spark.max }}</p>
       {% endif %}
-      {% else %}{{ empty("Gauge data unavailable.") }}{% endif %}
+      {% else %}{{ empty("Creek readings aren't available right now.") }}{% endif %}
     {% endcall %}
 
     {% call card("Recent bird sightings", "birds", sources=ebird, more=root ~ "outdoors/#birds") %}

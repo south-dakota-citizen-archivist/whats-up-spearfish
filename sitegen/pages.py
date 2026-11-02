@@ -8,6 +8,7 @@ list and today's date, and returns the template variables for that page.
 from __future__ import annotations
 
 import json
+import re
 import statistics
 from collections import defaultdict
 from datetime import date, timedelta
@@ -15,6 +16,7 @@ from datetime import date, timedelta
 from scrapers import geo
 from sitegen.data import Site, Source
 from sitegen.events import CATEGORY_LABELS
+from sitegen.sources import DIRECTORY
 
 # ── shared helpers ──────────────────────────────────────────────────────────
 
@@ -328,21 +330,31 @@ def community(site: Site, events: list[dict], today: date) -> dict:
     return {"library": site.get("spearfish_library"), "pets": site.get("whhs_adoptable")}
 
 
-STATUS_ORDER = {"error": 0, "empty": 1, "stale": 2, "missing": 3, "ok": 4, "disabled": 5}
+# ── page: sources ───────────────────────────────────────────────────────────
 
 
-def status(site: Site, events: list[dict], today: date) -> dict:
-    rows = sorted(site.sources.values(), key=lambda s: (STATUS_ORDER.get(s.status, 9), s.name.lower()))
-    counts = defaultdict(int)
-    for s in rows:
-        counts[s.status] += 1
-    return {"rows": rows, "counts": dict(counts), "health_updated": site.health.get("updated")}
-
-
-def status_summary(site: Site) -> dict:
-    live = [s for s in site.sources.values() if s.enabled]
-    bad = [s for s in live if s.status not in ("ok",)]
-    return {"total": len(live), "bad": len(bad)}
+def sources_page(site: Site, events: list[dict], today: date) -> dict:
+    """The plain-language "Where this comes from" page: what we show, and whether it's current."""
+    groups = []
+    for heading, orgs in DIRECTORY:
+        rows = []
+        for org in orgs:
+            items = []
+            for item in org.items:
+                srcs = [site.get(slug) for slug in item.slugs]
+                if item.slugs and not any(s.enabled for s in srcs):
+                    continue  # switched off; readers don't need to know
+                srcs = [s for s in srcs if s.enabled]
+                fetched = max((s.fetched_at for s in srcs if s.fetched_at), default=None)
+                ok = all(s.status == "ok" for s in srcs)
+                if item.needs and not any((s.data or {}).get(item.needs) for s in srcs):
+                    ok, fetched = False, None  # the source ran, but this part of it came back empty
+                items.append({"what": item.what, "note": item.note, "ok": ok, "updated": fetched})
+            if items:
+                rows.append({"name": org.name, "url": org.url, "offers": items})
+        if rows:
+            groups.append({"heading": heading, "orgs": rows})
+    return {"groups": groups}
 
 
 # ── page: permits ("What's being built here?") ─────────────────────────────
@@ -354,6 +366,139 @@ def load_planning_archive(site: Site) -> dict:
         return json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         return {"meta": {}, "records": []}
+
+
+# Permit categories for the map: residential, commercial, land & streets, other.
+# Permit numbers carry the clearest signal (RNC-26-55 residential, CAA-25-3 commercial);
+# otherwise the type name decides.
+_COMMERCIAL = re.compile(
+    r"\b(com|comm|co mm|commercial|tenant|sign|sing|change of use|occupancy|business|vendor|food|c of occ"
+    r"|fire (alarm|supp|code|suppression))",
+    re.I,
+)
+_RESIDENTIAL = re.compile(
+    r"\b(res|residential|dwelling|manuf|mfg|mh|mobile home|basement|garage|carport|deck|shed|fence|greenhouse"
+    r"|studio|patio)",
+    re.I,
+)
+_LAND = re.compile(
+    r"\b(plat|zone|zoning|rezone|grading|right of way|rt of way|row|floodplain|flood|encroach|vacate|annex"
+    r"|subdivision|development|tap|wa/se|wa extend|water|sewer|engineerin|legal|tif|tax increment"
+    r"|conditional use|variance|moving)",
+    re.I,
+)
+
+
+def permit_category(type_name: str, number: str = "") -> str:
+    """'r' residential, 'c' commercial, 'l' land/streets/zoning, 'o' other."""
+    no = (number or "").strip().lstrip("*X")
+    if re.match(r"R[A-Z]{2}\b", no):
+        return "r"
+    if re.match(r"C[A-Z]{2}\b", no):
+        return "c"
+    t = type_name or ""
+    if _COMMERCIAL.search(t):
+        return "c"
+    if _RESIDENTIAL.search(t):
+        return "r"
+    if _LAND.search(t):
+        return "l"
+    return "o"
+
+
+# Abbreviated type names from the city's old (pre-2020) permit system
+_OLD_TYPES = {
+    "res new": "Residential new construction",
+    "res alt": "Residential alteration",
+    "res add": "Residential addition",
+    "res garage": "Residential garage",
+    "res deck": "Residential deck",
+    "res repair": "Residential repair",
+    "res demo": "Residential demolition",
+    "res roof": "Residential roof",
+    "res mech": "Residential heating/cooling",
+    "res plumb": "Residential plumbing",
+    "res ret": "Residential retaining wall",
+    "res drive": "Residential driveway",
+    "res side": "Residential siding",
+    "com new": "Commercial new construction",
+    "com alt": "Commercial alteration",
+    "com add": "Commercial addition",
+    "com roof": "Commercial roof",
+    "com repair": "Commercial repair",
+    "com demo": "Commercial demolition",
+    "com mech": "Commercial heating/cooling",
+    "com plumb": "Commercial plumbing",
+    "com deck": "Commercial deck",
+    "com side": "Commercial siding",
+    "zone/dev": "Zoning or development",
+    "rt of way": "Street or sidewalk work",
+    "row": "Street or sidewalk work",
+    "mech perm": "Heating/cooling",
+    "mechanical permit": "Heating/cooling",
+    "manuf mh": "Manufactured home",
+    "mfg mh placement": "Manufactured home",
+    "wa/se rep": "Water/sewer repair",
+    "wa extend": "Water line extension",
+    "tap": "Water/sewer hookup",
+    "encroach": "Encroachment",
+    "flood": "Floodplain",
+    "engineerin": "Engineering",
+    "retaining": "Retaining wall",
+    "fire supp": "Fire sprinklers",
+    "c of occ": "Certificate of occupancy",
+    "moving": "Moving a building",
+}
+_ABBREVIATIONS = {
+    "alt": "alteration",
+    "addn": "addition",
+    "bsmt": "basement",
+    "bldg": "building",
+    "fndn": "foundation",
+    "mh": "mobile home",
+    "twnhs": "townhouses",
+}
+_JUNK_TYPE = re.compile(r"^(\$|owner$|permit fee$)", re.I)
+_KNOWN_TYPE = re.compile(
+    _COMMERCIAL.pattern
+    + "|"
+    + _RESIDENTIAL.pattern
+    + "|"
+    + _LAND.pattern
+    + r"|mech|plumb|gas|demo|roof|retain|wall|elect|repair|finish|addition|alteration|new|permit|sign",
+    re.I,
+)
+
+
+def friendly_type(t: str) -> str:
+    """'Res-New Dwelling' → 'Residential new dwelling'; 'Com Alt (pre-2020 system)' → 'Commercial alteration'."""
+    t = re.sub(r"\(.*?\)|\*|\s+-\s+spearfish$", "", t or "", flags=re.I)
+    t = " ".join(t.split()).strip(" -")
+    if not t or _JUNK_TYPE.match(t) or not _KNOWN_TYPE.search(t):
+        return "Building permit"  # the report's type column held something else
+    if t.lower() in _OLD_TYPES:
+        return _OLD_TYPES[t.lower()]
+    t = re.sub(r"^res\b[-\s]*", "Residential ", t, flags=re.I)
+    t = re.sub(r"^(comm?|co mm)\b[-\s]*", "Commercial ", t, flags=re.I)
+    for short, word in _ABBREVIATIONS.items():
+        t = re.sub(rf"\b{short}\b\.?", word, t, flags=re.I)
+    return t[:1].upper() + t[1:].lower()
+
+
+_STATUS = {
+    "complete": "Completed",
+    "open": "Open",
+    "active": "In progress",
+    "draft": "Not submitted",
+    "voided": "Canceled",
+    "no insp": "No inspection",
+    "stopped": "Stopped",
+    "suspended": "Suspended",
+}
+
+
+def friendly_status(s: str) -> str:
+    return _STATUS.get((s or "").strip().lower(), "")
 
 
 _KEEP_UPPER = {"SD", "N", "S", "E", "W", "NE", "NW", "SE", "SW", "US", "HWY", "PO", "STE", "LLC"}
@@ -374,7 +519,8 @@ def _compact(d: dict) -> dict:
 def permit_sites(site: Site) -> list[dict]:
     """
     Every planning application (OpenGov archive) and issued building permit
-    (monthly reports), grouped by normalized street address.
+    (monthly reports), grouped by normalized street address. Each record gets
+    a reader-friendly type, status and map category ("c").
     """
     groups: dict[str, dict] = {}
 
@@ -387,7 +533,7 @@ def permit_sites(site: Site) -> list[dict]:
         g["r"].append(_compact(rec))
 
     for r in load_planning_archive(site)["records"]:
-        if not r.get("site"):
+        if not r.get("site") or "practice record" in (r.get("type") or "").lower():
             continue
         add(
             geo.normalize_address(r.get("address", "")),
@@ -397,8 +543,9 @@ def permit_sites(site: Site) -> list[dict]:
             {
                 "src": "app",
                 "d": r.get("submitted") or r.get("created"),
-                "t": r.get("type"),
-                "s": r.get("status"),
+                "t": friendly_type(r.get("type")),
+                "c": permit_category(r.get("type"), r.get("no") or r.get("historical_no")),
+                "s": friendly_status(r.get("status")),
                 "no": r.get("no") or r.get("historical_no"),
                 "v": r.get("valuation") if isinstance(r.get("valuation"), (int, float)) else None,
                 "desc": r.get("description"),
@@ -419,7 +566,8 @@ def permit_sites(site: Site) -> list[dict]:
             {
                 "src": "permit",
                 "d": r.get("date"),
-                "t": (r.get("construction_type") or "").title(),
+                "t": friendly_type(r.get("construction_type")),
+                "c": permit_category(r.get("construction_type"), r.get("permit_number")),
                 "no": r.get("permit_number"),
                 "v": r.get("cost_approximate"),
                 "who": (r.get("applicant_name") or "").title(),
@@ -447,5 +595,5 @@ def permits_page(site: Site, events: list[dict], today: date) -> dict:
         "archive_meta": archive["meta"],
         "building_permits": bp,
         "latest_report": latest_report,
-        "permit_count": len(bp.records),
+        "first_permit": min((r.get("date", "") for r in bp.records if r.get("date")), default=""),
     }

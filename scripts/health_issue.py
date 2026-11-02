@@ -19,7 +19,7 @@ import requests
 
 TITLE = "Scraper health"
 THRESHOLD = 3
-SITE_STATUS = "https://south-dakota-citizen-archivist.github.io/whats-up-spearfish/status/"
+HEALTH_JSON = "https://github.com/south-dakota-citizen-archivist/whats-up-spearfish/blob/data/_health.json"
 
 
 def failing(health: dict) -> list[tuple[str, dict]]:
@@ -42,7 +42,7 @@ def body(rows: list[tuple[str, dict]]) -> str:
         lines.append(
             f"| `{slug}` ({s.get('name', '')}) | {s.get('failures')} | {s.get('last_success') or 'never'} | {err} |"
         )
-    lines += ["", f"Live status: {SITE_STATUS}", "", "_Updated automatically by the scrape workflow._"]
+    lines += ["", f"Full details: {HEALTH_JSON}", "", "_Updated automatically by the scrape workflow._"]
     return "\n".join(lines)
 
 

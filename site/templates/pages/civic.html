@@ -49,20 +49,20 @@
 
   <a href="{{ root }}permits/" class="lg:col-span-2 block bg-pine-800 text-white px-5 py-4 hover:bg-pine-700">
     <p class="text-lg font-bold">What's being built here? →</p>
-    <p class="text-sm text-pine-100">Look up permits and planning applications by address, by permit number, or from where you're standing. Covers 2012 to now.</p>
+    <p class="text-sm text-pine-100">Look up permits by address or permit number, or see what's near where you're standing.</p>
   </a>
 
-  {% call card("Building permits issued", "building-permits", sources=building_permits, more=building_permits.url, more_label="Monthly reports") %}
+  {% call card("Building permits issued", "building-permits", sources=building_permits, more=root ~ "permits/", more_label="Look up an address") %}
     {% if building_records %}
     <ul class="divide-y divide-stone-100 text-sm scroll-list">
       {% for p in building_records %}
       <li class="py-2">
-        <p class="font-medium">{{ p.construction_type }}{% if p.cost_approximate %} <span class="text-stone-500 font-normal">· ${{ p.cost_approximate | intcomma }}</span>{% endif %}</p>
+        <p class="font-medium">{{ p.construction_type | permit_type }}{% if p.cost_approximate %} <span class="text-stone-500 font-normal">· ${{ p.cost_approximate | intcomma }}</span>{% endif %}</p>
         <p class="text-xs text-stone-500">{{ p.site_address }}{% if p.contractor %} · {{ p.contractor | title }}{% endif %} · {{ p.date | fmt_day('%B %Y') }}</p>
       </li>
       {% endfor %}
     </ul>
-    {% else %}{{ empty("No recent permit reports.") }}{% endif %}
+    {% else %}{{ empty("No recent permits.") }}{% endif %}
   {% endcall %}
 
   <div class="min-w-0 space-y-6">
@@ -77,7 +77,7 @@
       {% else %}{{ empty("No open bids.") }}{% endif %}
     {% endcall %}
 
-    {% call card("DANR public notices (West River)", "notices", sources=notices, more=notices.url, more_label="DANR") %}
+    {% call card("State environmental notices", "notices", sources=notices, more=notices.url, more_label="All notices") %}
       {% if notices.records %}
       <ul class="space-y-2.5 text-sm scroll-list">
         {% for n in notices.records %}
@@ -85,11 +85,11 @@
           <p class="text-xs text-stone-500">{{ n.notice_type }}{% if n.location %} · {{ n.location }}{% endif %}{% if n.deadline %} · comments due {{ n.deadline }}{% endif %}</p></li>
         {% endfor %}
       </ul>
-      {% else %}{{ empty("No current West River notices.") }}{% endif %}
+      {% else %}{{ empty("No current notices for western South Dakota.") }}{% endif %}
     {% endcall %}
   </div>
 
-  {% call card("Press releases", "press", class="lg:col-span-2") %}
+  {% call card("Announcements", "press", class="lg:col-span-2") %}
     {% if press %}
     <ul class="grid md:grid-cols-2 gap-x-6 gap-y-3 text-sm">
       {% for p in press %}
@@ -97,7 +97,7 @@
         <p class="text-xs text-stone-500">{{ p.source_label }} · {{ p.published | fmt_day }}</p></li>
       {% endfor %}
     </ul>
-    {% else %}{{ empty("No recent releases.") }}{% endif %}
+    {% else %}{{ empty("No recent announcements.") }}{% endif %}
   {% endcall %}
 </div>
 {% endblock %}

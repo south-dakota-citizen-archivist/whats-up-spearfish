@@ -6,7 +6,7 @@ sightings, public meetings, permits, tap lists and more — rebuilt several time
 day from public sources.
 
 **Live:** https://south-dakota-citizen-archivist.github.io/whats-up-spearfish/
-· **Source health:** [/status/](https://south-dakota-citizen-archivist.github.io/whats-up-spearfish/status/)
+· **Source health:** [`_health.json` on the data branch](https://github.com/south-dakota-citizen-archivist/whats-up-spearfish/blob/data/_health.json)
 
 ## How it works
 
@@ -28,9 +28,14 @@ scrapers (GitHub Actions, scheduled)  →  data branch (JSON snapshots)  →  si
 - **`sitegen/`** — renders `site/templates/` with Jinja into `_site/`: separate
   pages for Today, Events, Schools, Outdoors, On tap, Civic, Permits ("What's
   being built here?" — permits and applications by address, search or your
-  location), News, Jobs, Community and Status, plus `events.json`, `calendar.ics` and `events.xml`.
+  location), News, Jobs, Community and Sources, plus `events.json`, `calendar.ics` and `events.xml`.
   Tailwind is compiled with `pytailwindcss`; Alpine.js is vendored in
   `site/static/vendor/`. No Node toolchain.
+- **Audience** — the site is written for people who live here, not for
+  developers: plain language, no error codes, no source chatter on content pages.
+  How sources are named to readers, and the "Where this comes from" page, both
+  live in `sitegen/sources.py`. Technical health stays in `_health.json`, the
+  workflow run summary and the "Scraper health" issue.
 - **Workflows** — `.github/workflows/scrape.yml` runs the daily tier each morning
   and the `frequent` tier (creek gauge, fire, alerts) every three hours, commits
   to the `data` branch, builds and deploys. `ci.yml` lints and tests pull requests.
@@ -70,6 +75,9 @@ eBird needs `EBIRD_API_KEY` (a repo secret in Actions).
    empty, and `category` for events (`community`, `arts`, `sports`, …).
 4. Run it with `uv run python -m scrapers --only <slug>` and check the output.
 5. Show it on a page in `sitegen/pages.py` + `site/templates/pages/`.
+6. Add it to `DIRECTORY` in `sitegen/sources.py` (what readers get from it, in
+   plain words) and, if its name isn't how locals know it, to `CREDIT`. A test
+   fails if an enabled source is missing from the directory.
 
 Set `enabled = False` to put a source on ice without deleting it.
 

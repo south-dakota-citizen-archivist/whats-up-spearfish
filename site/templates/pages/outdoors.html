@@ -6,27 +6,27 @@
 
 <div class="grid lg:grid-cols-2 gap-6">
 
-  {% call card("Spearfish Creek", "creek", sources=creek.source, more=creek.source.url, more_label="USGS") %}
+  {% call card("Spearfish Creek", "creek", sources=creek.source, more=creek.source.url, more_label="Live readings") %}
     {% if creek.current %}
-    <p class="flex items-baseline gap-2"><span class="text-4xl font-extrabold tabular-nums">{{ creek.current.cfs | intcomma }}</span><span class="text-stone-600">cfs</span>
-      {% if creek.current.ft %}<span class="text-stone-500 text-sm">· gauge {{ creek.current.ft }} ft</span>{% endif %}</p>
-    <p class="text-sm text-stone-500">Reading at {{ creek.current.time | fmt_time }} {{ creek.current.time | fmt_day }}{% if creek.median30 %} · 30-day median {{ creek.median30 | intcomma }} cfs{% endif %}</p>
+    <p class="flex items-baseline gap-2"><span class="text-4xl font-extrabold tabular-nums">{{ creek.current.cfs | intcomma }}</span><span class="text-stone-600">cubic feet per second</span>
+      {% if creek.current.ft %}<span class="text-stone-500 text-sm">· water level {{ creek.current.ft }} ft</span>{% endif %}</p>
+    <p class="text-sm text-stone-500">Measured {{ creek.current.time | fmt_time }} {{ creek.current.time | fmt_day }}{% if creek.median30 %} · typical for the past month: {{ creek.median30 | intcomma }}{% endif %}</p>
     {% if creek.chart %}
-    <svg viewBox="0 0 {{ creek.chart.width }} {{ creek.chart.height }}" class="w-full h-36 mt-4" preserveAspectRatio="none" role="img" aria-label="Daily mean flow over the past 30 days">
+    <svg viewBox="0 0 {{ creek.chart.width }} {{ creek.chart.height }}" class="w-full h-36 mt-4" preserveAspectRatio="none" role="img" aria-label="Daily average flow over the past 30 days">
       <polyline points="{{ creek.chart.points }}" fill="none" stroke="currentColor" stroke-width="2" class="text-sky-600" vector-effect="non-scaling-stroke"/>
     </svg>
     <div class="flex justify-between text-xs text-stone-500">
       <span>{{ creek.daily[0].date | fmt_day('%b %-d') }}</span>
-      <span>Daily mean, {{ creek.chart.min }}–{{ creek.chart.max }} cfs</span>
+      <span>Daily average, {{ creek.chart.min }} to {{ creek.chart.max }}</span>
       <span>{{ creek.daily[-1].date | fmt_day('%b %-d') }}</span>
     </div>
     {% endif %}
-    {% else %}{{ empty("Gauge data unavailable.") }}{% endif %}
+    {% else %}{{ empty("Creek readings aren't available right now.") }}{% endif %}
   {% endcall %}
 
   {% call card("Fire", "fire", sources=fire.source, more=fire.source.url, more_label="Restrictions") %}
     {% if fire.danger and fire.danger.zones %}
-    <h3 class="text-sm font-bold mb-1">Fire danger <span class="font-normal text-stone-500">· NWS Rapid City{% if fire.danger.issued %}, {{ fire.danger.issued }}{% endif %}</span></h3>
+    <h3 class="text-sm font-bold mb-1">Fire danger <span class="font-normal text-stone-500">· National Weather Service{% if fire.danger.issued %}, {{ fire.danger.issued }}{% endif %}</span></h3>
     <ul class="space-y-1.5 text-sm mb-4">
       {% for z in fire.danger.zones %}
       <li class="flex items-start gap-2">{{ danger_badge(z.level) }}<span class="text-stone-700">{{ z.name }}</span></li>
@@ -42,8 +42,8 @@
       {% endfor %}
     </ul>
     {% elif fire.restrictions %}
-    {{ empty("No restrictions listed for " ~ fire.restrictions | length ~ " Black Hills jurisdictions.") }}
-    {% else %}<p class="text-sm text-stone-500 italic">blackhillsfirerestrictions.com isn't responding. Fire restriction orders are also posted with the <a href="#forest-alerts" class="text-pine-700 underline">national forest alerts</a>.</p>{% endif %}
+    {{ empty("No burn restrictions in any of the " ~ fire.restrictions | length ~ " Black Hills counties and cities we follow.") }}
+    {% else %}<p class="text-sm text-stone-500 italic">Burn restrictions aren't available right now. Restriction orders are also posted with the <a href="#forest-alerts" class="text-pine-700 underline">national forest alerts</a>.</p>{% endif %}
     {% if fire.incidents %}
     <h3 class="text-sm font-bold mt-4 mb-1">Active South Dakota wildfires</h3>
     <ul class="space-y-1 text-sm">
@@ -70,7 +70,7 @@
     {% else %}{{ empty("No sightings available.") }}{% endif %}
   {% endcall %}
 
-  {% call card("National forest alerts", "forest-alerts", sources=bhnf_alerts, more=bhnf_alerts.url, more_label="BHNF") %}
+  {% call card("National forest alerts", "forest-alerts", sources=bhnf_alerts, more=bhnf_alerts.url, more_label="All alerts") %}
     {% if forest_alerts %}
     <ul class="space-y-2.5 text-sm scroll-list">
       {% for a in forest_alerts %}

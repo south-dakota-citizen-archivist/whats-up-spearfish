@@ -14,7 +14,7 @@ import pytest
 from scrapers import geo
 from scripts.build_planning_archive import HISTORICAL_LABELS, index_row
 from sitegen.data import Site
-from sitegen.pages import permit_sites, pretty_address
+from sitegen.pages import friendly_status, friendly_type, permit_category, permit_sites, pretty_address
 
 
 class TestNormalizeAddress:
@@ -48,6 +48,47 @@ class TestNormalizeAddress:
 def test_pretty_address():
     assert pretty_address("2312 PLATINUM DRIVE, SPEARFISH, SD 57783") == "2312 Platinum Drive, Spearfish, SD 57783"
     assert pretty_address("515 N 27th St") == "515 N 27th St"  # mixed case left alone
+
+
+class TestFriendly:
+    @pytest.mark.parametrize(
+        "raw, nice",
+        [
+            ("Res New (pre-2020 system)", "Residential new construction"),
+            ("Rt Of Way (pre-2020 system)", "Street or sidewalk work"),
+            ("Res-New Dwelling", "Residential new dwelling"),
+            ("Comm-Alteration", "Commercial alteration"),
+            ("BASEMENT FINISH", "Basement finish"),
+            ("Business Occupancy Permit - Spearfish", "Business occupancy permit"),
+            ("$ 216.00", "Building permit"),  # column misread in the PDF
+            ("ALLIED CON", "Building permit"),  # a contractor name in the type column
+            ("", "Building permit"),
+        ],
+    )
+    def test_type(self, raw, nice):
+        assert friendly_type(raw) == nice
+
+    @pytest.mark.parametrize(
+        "type_name, number, cat",
+        [
+            ("Residential New Construction", "RNC-26-55", "r"),
+            ("Standalone Permits - Plumbing, Mechanical, Gas", "CBP-25-3", "c"),  # number wins
+            ("Com Roof (pre-2020 system)", "130303", "c"),
+            ("Res Garage (pre-2020 system)", "", "r"),
+            ("Basement", "", "r"),
+            ("Sign Permit", "", "c"),
+            ("Minor Final Plat", "", "l"),
+            ("Rt Of Way (pre-2020 system)", "", "l"),
+            ("Mech Perm (pre-2020 system)", "", "o"),
+        ],
+    )
+    def test_category(self, type_name, number, cat):
+        assert permit_category(type_name, number) == cat
+
+    def test_status(self):
+        assert friendly_status("Complete") == "Completed"
+        assert friendly_status("Voided") == "Canceled"
+        assert friendly_status("HERITAGE DRIVE") == ""  # misfiled street name
 
 
 class TestIndexRow:
@@ -134,4 +175,6 @@ def test_permit_sites_groups_by_address(tmp_path):
     assert s["k"] == "2430 PLATINUM DR"
     assert s["lat"] == 44.47
     assert [r["src"] for r in s["r"]] == ["permit", "app"]  # newest first
+    assert [r["c"] for r in s["r"]] == ["r", "c"]
+    assert s["r"][0]["t"] == "Shed"
     assert s["lp"] == 1

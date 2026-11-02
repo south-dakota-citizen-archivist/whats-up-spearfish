@@ -43,16 +43,9 @@
 
   <footer class="border-t border-stone-300 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-5 text-sm text-stone-600 flex flex-wrap gap-x-6 gap-y-2 items-center">
-      <span>Built {{ build_time.strftime('%b %-d, %-I:%M %p') }} MT from public data.</span>
-      <a href="{{ root }}status/" class="hover:text-pine-700 underline-offset-2 hover:underline">
-        {% if health.bad %}
-        <span class="inline-block w-2 h-2 bg-amber-500 mr-1"></span>{{ health.total - health.bad }} of {{ health.total }} sources up to date
-        {% else %}
-        <span class="inline-block w-2 h-2 bg-emerald-500 mr-1"></span>All {{ health.total }} sources up to date
-        {% endif %}
-      </a>
-      <a href="{{ root }}calendar.ics" class="hover:text-pine-700 hover:underline">Calendar feed (.ics)</a>
-      <a href="https://github.com/south-dakota-citizen-archivist/whats-up-spearfish" class="hover:text-pine-700 hover:underline">Source code</a>
+      <span>Updated {{ build_time.strftime('%b %-d at %-I:%M %p') }}</span>
+      <a href="{{ root }}sources/" class="hover:text-pine-700 hover:underline">Where this comes from</a>
+      <a href="{{ root }}calendar.ics" class="hover:text-pine-700 hover:underline">Add events to your calendar</a>
     </div>
   </footer>
 

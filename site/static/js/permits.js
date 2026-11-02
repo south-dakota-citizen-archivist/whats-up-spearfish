@@ -1,6 +1,14 @@
 // "What's being built here?" — permit and application lookup by address, search or location.
 document.addEventListener("alpine:init", () => {
-  Alpine.data("permits", (url) => {
+  // Map dot colors by category (see permit_category in sitegen/pages.py)
+  const CATEGORIES = {
+    r: { label: "Residential", color: "#2563eb" },
+    c: { label: "Commercial", color: "#ea580c" },
+    l: { label: "Land, streets & zoning", color: "#a21caf" },
+    o: { label: "Other", color: "#a8a29e" },
+  };
+
+  Alpine.data("permits", (url, latestReport) => {
     // Leaflet objects live outside Alpine's reactive state.
     let map = null;
     let markers = null;
@@ -12,6 +20,8 @@ document.addEventListener("alpine:init", () => {
       error: "",
       q: "",
       since: "2",
+      categories: CATEGORIES,
+      show: { r: true, c: true, l: true, o: true },
       here: null,
       locating: false,
       selected: null,
@@ -32,6 +42,7 @@ document.addEventListener("alpine:init", () => {
           if (s) this.select(s);
         });
         this.$watch("since", () => this.draw());
+        this.$watch("show", () => this.draw(), { deep: true });
         this.$watch("q", () => {
           const pts = this.q.trim() ? this.results.filter((s) => s.lat != null).map((s) => [s.lat, s.lon]) : [];
           if (map && pts.length) map.fitBounds(pts, { maxZoom: 17, padding: [30, 30] });
@@ -39,20 +50,31 @@ document.addEventListener("alpine:init", () => {
       },
 
       cutoff() {
-        if (this.since === "all") return "";
+        if (this.since === "all" || this.since === "latest") return "";
         const d = new Date();
         d.setFullYear(d.getFullYear() - Number(this.since));
         return d.toISOString().slice(0, 10);
       },
 
-      inRange() {
+      // Records that fall in the chosen time period
+      inPeriod(r) {
+        if (this.since === "latest") return r.src === "permit" && (r.d || "").startsWith(latestReport);
         const c = this.cutoff();
-        return c ? this.sites.filter((s) => s.last >= c) : this.sites;
+        return !c || (r.d || "") >= c;
+      },
+
+      // A site's category: its most recent residential/commercial/land record in the period
+      category(s) {
+        const recs = s.r.filter((r) => this.inPeriod(r));
+        return (recs.find((r) => r.c && r.c !== "o") || recs[0] || s.r[0]).c || "o";
+      },
+
+      inRange() {
+        return this.sites.filter((s) => s.r.some((r) => this.inPeriod(r)) && this.show[this.category(s)]);
       },
 
       color(s) {
-        const age = (Date.now() - new Date(s.last).getTime()) / 31557600000;
-        return age <= 1 ? "#c2410c" : age <= 5 ? "#2f6b4f" : "#78716c";
+        return CATEGORIES[this.category(s)].color;
       },
 
       draw() {
@@ -60,7 +82,7 @@ document.addEventListener("alpine:init", () => {
         markers.clearLayers();
         for (const s of this.inRange()) {
           if (s.lat == null) continue;
-          L.circleMarker([s.lat, s.lon], { radius: 6, weight: 1, color: "#1c1917", fillColor: this.color(s), fillOpacity: 0.85 })
+          L.circleMarker([s.lat, s.lon], { radius: 6, weight: 1, color: "#1c1917", fillColor: this.color(s), fillOpacity: 0.9 })
             .on("click", () => this.select(s))
             .addTo(markers);
         }

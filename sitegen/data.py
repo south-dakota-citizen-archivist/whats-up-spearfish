@@ -12,6 +12,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 from scrapers import dates
+from sitegen.sources import CREDIT
 
 
 @dataclass
@@ -24,6 +25,11 @@ class Source:
     records: list[dict] = field(default_factory=list)
     data: dict | None = None
     health: dict = field(default_factory=dict)
+
+    @property
+    def label(self) -> str:
+        """How readers know this source ("City of Spearfish", not "City of Spearfish News Flash")."""
+        return CREDIT.get(self.slug, self.name)
 
     @property
     def enabled(self) -> bool:
@@ -82,6 +88,9 @@ class Site:
             src.url = src.url or env.get("url", "")
             src.fetched_at = dates.parse(env.get("fetched_at")) if env.get("fetched_at") else None
             src.records = env.get("records") or []
+            if path.stem in CREDIT:
+                for r in src.records:
+                    r["source_label"] = CREDIT[path.stem]
             src.data = env.get("data")
 
     def get(self, slug: str) -> Source:

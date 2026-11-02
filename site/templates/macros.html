@@ -1,14 +1,15 @@
 {# Shared building blocks for page templates. #}
 
-{# "Updated 3 hours ago" for one or more sources, with a warning when stale. #}
+{# "Updated 3 hours ago" for one or more sources, with a plain warning when something is out of date. #}
 {% macro freshness(sources) %}
 {% set srcs = sources if sources is sequence else [sources] %}
 {% set stale = srcs | selectattr('stale') | list %}
 {% set newest = srcs | selectattr('fetched_at') | map(attribute='fetched_at') | sort | list %}
 <p class="text-xs {{ 'text-amber-700' if stale else 'text-stone-500' }}">
-  {% if stale %}
-  <span class="font-semibold">⚠ Not updated recently</span> —
-  {{ stale | map(attribute='name') | join(', ') }}{% if stale | length == 1 and stale[0].fetched_at %} (last good data {{ stale[0].fetched_at | ago }}){% endif %}.
+  {% if stale and stale | length == srcs | length %}
+  <span class="font-semibold">⚠ May be out of date</span>{% if newest %} · last updated {{ newest[-1] | ago }}{% endif %}
+  {% elif stale %}
+  Updated {{ newest[-1] | ago }} · <span class="font-semibold">some of this may be out of date</span>
   {% elif newest %}
   Updated {{ newest[-1] | ago }}
   {% endif %}
@@ -44,7 +45,7 @@
   <div class="min-w-0">
     <a href="{{ e.url }}" class="font-medium text-stone-900 hover:text-pine-700 hover:underline" target="_blank" rel="noopener">{{ e.title }}</a>
     <p class="text-xs text-stone-500">
-      {% if e.location %}{{ e.location }} · {% endif %}{{ e.source_label }}{% for a in e.also %}, {{ a.source }}{% endfor %}
+      {{ e.location or e.source_label }}
     </p>
   </div>
 </li>
