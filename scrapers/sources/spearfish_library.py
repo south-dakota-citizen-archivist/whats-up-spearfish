@@ -14,11 +14,13 @@ browser to bypass the bot challenge.
 from __future__ import annotations
 
 import re
+from concurrent.futures import ThreadPoolExecutor
 
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 from playwright_stealth import Stealth
 
+from scrapers import net
 from scrapers.base import BaseScraper
 
 BASE_URL = "https://spearfish.blackhills.bywatersolutions.com"
@@ -28,6 +30,29 @@ API_URL = f"{BASE_URL}/api/v1/contrib/coverflow/reports/{{report_id}}"
 REPORT_IDS = [260, 261, 281, 282, 373, 1168, 1171, 1348]
 
 _TRAILING_PUNCT_RE = re.compile(r"[\s/:,]+$")
+
+# Amazon answers a missing cover with a 1×1 GIF (43 bytes) instead of an error
+_STUB_BYTES = 200
+_AMAZON_SIZE_RE = re.compile(r"\.01\.[A-Z]+\.jpg$")
+
+
+def has_cover(image_url: str) -> bool:
+    """Whether a cover image is a real picture. Unreachable counts as yes; the page copes."""
+    # the medium Amazon size is enough to tell, at a tenth of the download
+    probe = _AMAZON_SIZE_RE.sub(".01.MZZZZZZZ.jpg", image_url)
+    try:
+        resp = net.get(probe, timeout=15)
+    except Exception:  # noqa: BLE001
+        return True
+    return resp.ok and len(resp.content) > _STUB_BYTES
+
+
+def drop_missing_covers(records: list[dict]) -> None:
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        found = list(pool.map(lambda r: has_cover(r["image_url"]) if r["image_url"] else False, records))
+    for r, ok in zip(records, found):
+        if not ok:
+            r["image_url"] = ""
 
 
 def _parse_html(html: str, report_id: int) -> list[dict]:
@@ -110,4 +135,6 @@ class SpearfishLibrary(BaseScraper):
     replace = True
 
     def scrape(self) -> list[dict]:
-        return _fetch_all_books()
+        books = _fetch_all_books()
+        drop_missing_covers(books)
+        return books

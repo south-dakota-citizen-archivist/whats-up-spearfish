@@ -390,24 +390,76 @@ def test_menu_grid_spans_shared_breakfasts():
     assert menu_grid([]) == []
 
 
-def test_rotate_changes_daily_and_wraps():
-    from sitegen.pages import rotate
+def _pets(species, n, photo=True):
+    return [
+        {
+            "id": f"{species}{i}",
+            "kind": "adoptable",
+            "title": f"{species} {i}",
+            "url": "u",
+            "species": species,
+            "image_url": f"https://example.com/{species}{i}.jpg" if photo else "",
+        }
+        for i in range(n)
+    ]
 
-    items = list(range(10))
-    a, b = rotate(items, 4, TODAY), rotate(items, 4, TODAY + timedelta(days=1))
-    assert len(a) == 4 and a != b and b[0] == (a[0] + 1) % 10
-    assert rotate([], 4, TODAY) == []
 
+def test_pet_picks_even_split_with_photos(tmp_path):
+    import random
 
-def test_pet_picks_alternate_species(tmp_path):
     from sitegen.pages import pet_picks
 
-    pets = [{"id": f"c{i}", "kind": "adoptable", "title": f"Cat {i}", "url": "u", "species": "cat"} for i in range(6)]
-    pets += [{"id": f"d{i}", "kind": "adoptable", "title": f"Dog {i}", "url": "u", "species": "dog"} for i in range(2)]
-    _write(tmp_path, "whhs_adoptable", pets, kind="adoptable")
-    picks = pet_picks(Site(tmp_path), 6, TODAY)
-    assert [p["species"] for p in picks][:4] == ["cat", "dog", "cat", "dog"]
-    assert len(picks) == 6
+    _write(
+        tmp_path, "whhs_adoptable", _pets("cat", 30) + _pets("dog", 6) + _pets("dog", 3, photo=False), kind="adoptable"
+    )
+    site = Site(tmp_path)
+    picks = pet_picks(site, 8, random.Random(1))
+    assert [p["species"] for p in picks] == ["cat", "dog"] * 4  # even split, alternating
+    assert all(p["image_url"] for p in picks)
+    assert picks != pet_picks(site, 8, random.Random(2))  # a different mix each build
+
+    # not enough dogs with photos: cats make up the difference
+    _write(tmp_path, "whhs_adoptable", _pets("cat", 30) + _pets("dog", 2), kind="adoptable")
+    picks = pet_picks(Site(tmp_path), 8, random.Random(1))
+    assert sorted(p["species"] for p in picks).count("dog") == 2 and len(picks) == 8
+
+
+def test_tap_picks_every_venue_represented(tmp_path):
+    import random
+
+    from sitegen.pages import tap_picks
+
+    def beers(venue, n, photo=True):
+        return [
+            {"id": f"{venue}{i}", "kind": "beer", "title": f"{venue} beer {i}", "url": "u", "slug": f"{venue}-{i}",
+             "image_url": f"https://example.com/{venue}{i}.png" if photo else ""}
+            for i in range(n)
+        ]  # fmt: skip
+
+    _write(tmp_path, "sawyer_brewing", beers("sawyer", 20), kind="beer")
+    _write(tmp_path, "killians", beers("killians", 3), kind="beer")
+    _write(tmp_path, "clubhouse_spearfish", beers("clubhouse", 4, photo=False), kind="beer")
+    site = Site(tmp_path)
+    for seed in range(5):
+        picks = tap_picks(site, 8, random.Random(seed))
+        assert len(picks) == 8 and len({p["id"] for p in picks}) == 8
+        assert {p["venue_slug"] for p in picks} == {"sawyer_brewing", "killians", "clubhouse_spearfish"}
+        assert sum(1 for p in picks if not p["image_url"]) == 1  # only the venue without photos goes without
+
+
+def test_book_picks_only_with_covers(tmp_path):
+    import random
+
+    from sitegen.pages import book_picks
+
+    books = [
+        {"id": f"b{i}", "kind": "library_book", "title": f"Book {i}", "url": f"u{i}",
+         "image_url": f"https://example.com/{i}.jpg" if i % 2 else ""}
+        for i in range(20)
+    ]  # fmt: skip
+    _write(tmp_path, "spearfish_library", books, kind="library_book")
+    picks = book_picks(Site(tmp_path), 8, random.Random(3))
+    assert len(picks) == 8 and all(b["image_url"] for b in picks)
 
 
 def _menu(slug, level, meal, dishes):

@@ -1,44 +1,113 @@
 {% extends "base.html" %}
 {% from "macros.html" import card, empty %}
 
+{% block head %}<script defer src="{{ root }}static/js/checkouts.js"></script>{% endblock %}
+
 {% block content %}
 <h1 class="text-2xl font-extrabold mb-4">Community</h1>
-<div class="min-w-0 space-y-6">
-  {% call card("New at the library", "library", sources=library, more=library.url, more_label="Catalog") %}
-    {% if library.records %}
-    <ul class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
-      {% for b in library.records %}
-      <li>
-        <a href="{{ b.url }}" target="_blank" rel="noopener" class="group block">
-          <div class="relative w-full aspect-[2/3] bg-stone-200 flex flex-col items-center justify-center gap-1 text-stone-500">
-            <span class="text-3xl" aria-hidden="true">📖</span><span class="text-[10px] uppercase tracking-wide">No cover</span>
-            {% if b.image_url %}<img {{ thumb_attrs(b.image_url, 250) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" data-placeholder>{% endif %}
-          </div>
-          <p class="text-xs font-medium mt-1 line-clamp-2 group-hover:text-pine-700">{{ b.title }}</p>
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-    {% else %}{{ empty("No new arrivals listed.") }}{% endif %}
-  {% endcall %}
 
-  {% call card("Adoptable pets", "pets", sources=pets, more=pets.url, more_label="Western Hills Humane Society") %}
+<div class="space-y-6">
+  {# ── pets first: a dozen, the rest a tap away ── #}
+  {% call card("Pets up for adoption", "pets", sources=pets, more=pets.url, more_label="Western Hills Humane Society") %}
     {% if pets.records %}
-    <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-      {% for p in pets.records %}
-      <li>
-        <a href="{{ p.url }}" target="_blank" rel="noopener" class="group block">
-          <div class="relative w-full aspect-square bg-stone-200 flex flex-col items-center justify-center gap-1 text-stone-500">
-            <span class="text-3xl" aria-hidden="true">🐾</span><span class="text-[10px] uppercase tracking-wide">No photo yet</span>
-            {% if p.image_url %}<img {{ thumb_attrs(p.image_url, 500) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" data-placeholder>{% endif %}
-          </div>
-          <p class="text-sm font-medium mt-1 group-hover:text-pine-700">{{ p.title }}</p>
-          {% if p.species %}<p class="text-xs text-stone-500">{{ p.species }}</p>{% endif %}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
+    {% set shown = 12 %}
+    <div x-data="{ all: false }">
+      <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        {% for p in pet_list %}
+        <li {% if loop.index > shown %}x-show="all" x-cloak{% endif %}>
+          <a href="{{ p.url }}" target="_blank" rel="noopener" class="group block">
+            <div class="relative w-full aspect-square bg-stone-200 flex flex-col items-center justify-center gap-1 text-stone-500">
+              <span class="text-3xl" aria-hidden="true">🐾</span><span class="text-[10px] uppercase tracking-wide">No photo yet</span>
+              {% if p.image_url %}<img {{ thumb_attrs(p.image_url, 500) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" data-placeholder>{% endif %}
+            </div>
+            <p class="text-sm font-medium mt-1 group-hover:text-pine-700">{{ p.title }}</p>
+            {% if p.species %}<p class="text-xs text-stone-500">{{ p.species | capitalize }}</p>{% endif %}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% if pets.records | length > shown %}
+      <button type="button" @click="all = !all" :aria-expanded="all"
+              class="mt-4 w-full py-2 border border-stone-300 bg-white text-sm font-semibold text-pine-700 hover:border-pine-600"
+              x-text="all ? 'Show fewer pets' : 'Show all {{ pets.records | length }} pets'">Show all {{ pets.records | length }} pets</button>
+      {% endif %}
+    </div>
     {% else %}{{ empty("No pets listed right now.") }}{% endif %}
   {% endcall %}
+
+  <div class="grid lg:grid-cols-2 gap-6 items-start">
+    {# ── new books: one scrolling shelf instead of a wall of covers ── #}
+    {% call card("New at the library", "library", sources=library, more=library.url, more_label="Catalog") %}
+      {% if books %}
+      <p class="text-sm text-stone-600 mb-3">{{ books | length }} new books and movies. Scroll sideways for more.</p>
+      <ul class="flex gap-3 overflow-x-auto snap-x pb-3" aria-label="New books and movies">
+        {% for b in books %}
+        <li class="w-24 shrink-0 snap-start">
+          <a href="{{ b.url }}" target="_blank" rel="noopener" class="group block">
+            <div class="relative w-24 aspect-[2/3] bg-stone-200 flex flex-col items-center justify-center gap-1 text-stone-500">
+              <span class="text-2xl" aria-hidden="true">📖</span><span class="text-[10px] uppercase tracking-wide">No cover</span>
+              {% if b.image_url %}<img {{ thumb_attrs(b.image_url, 200) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" data-placeholder>{% endif %}
+            </div>
+            <p class="text-xs font-medium mt-1 line-clamp-2 group-hover:text-pine-700">{{ b.title }}</p>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}{{ empty("No new arrivals listed.") }}{% endif %}
+    {% endcall %}
+
+    {# ── checkouts over time ── #}
+    {% call card("Library checkouts", "checkouts", sources=checkouts.source) %}
+      {% if checkouts.rows %}
+      {% set latest = checkouts.latest %}
+      {% set month = (latest.month ~ '-01') | fmt_day('%B %Y') %}
+      <p class="text-sm text-stone-700 mb-3">
+        In {{ month }}: <span class="font-bold">{{ latest.loans | intcomma }}</span> physical items checked out
+        {%- if latest.overdrive is not none %}, plus <span class="font-bold">{{ latest.overdrive | intcomma }}</span> e-books and audiobooks on Libby{% endif %}
+        {%- if latest.hoopla is not none %} and <span class="font-bold">{{ latest.hoopla | intcomma }}</span> on hoopla{% endif %}.
+      </p>
+      <div x-data="checkoutsChart()">
+        <script type="application/json" x-ref="data">{{ {"rows": checkouts.rows, "series": checkouts.series} | tojson }}</script>
+        <ul class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-stone-700 mb-2" aria-hidden="true">
+          {% for key, label, about in checkouts.series %}
+          <li class="flex items-center gap-1.5"><span class="inline-block w-3 h-0.5" style="background: var(--series-{{ loop.index }})"></span>{{ label }}</li>
+          {% endfor %}
+        </ul>
+        <div class="relative">
+          <div x-ref="box" class="h-56 w-full" role="img"
+               aria-label="Monthly library checkouts from {{ (checkouts.first ~ '-01') | fmt_day('%B %Y') }} to {{ month }}, by physical items, Libby and hoopla. The numbers are in the table below."></div>
+          <div x-show="readout" x-cloak class="pointer-events-none absolute top-0 -translate-x-1/2 bg-white border border-stone-300 shadow-sm px-2.5 py-1.5 text-xs whitespace-nowrap z-10"
+               :style="readout && 'left:' + readout.left + 'px'">
+            <p class="font-semibold text-stone-900 mb-0.5" x-text="readout && readout.when"></p>
+            <template x-for="line in (readout ? readout.lines : [])" :key="line.label">
+              <p class="flex items-center gap-1.5 text-stone-700">
+                <span class="inline-block w-2.5 h-0.5" :style="'background:' + line.color"></span>
+                <span x-text="line.label + ': '"></span><span class="font-semibold tabular-nums" x-text="line.value"></span>
+              </p>
+            </template>
+          </div>
+        </div>
+        <p class="mt-1 text-xs text-stone-500">Libby and hoopla weren't counted before 2022; hoopla counts stop after 2025.</p>
+      </div>
+      <details class="mt-3 text-xs text-stone-700">
+        <summary class="cursor-pointer font-semibold text-pine-700">See the numbers by year</summary>
+        <table class="mt-2 w-full max-w-md tabular-nums">
+          <thead><tr class="text-left text-stone-500">
+            <th class="py-1 font-medium">Year</th>
+            {% for key, label, about in checkouts.series %}<th class="py-1 font-medium text-right"><abbr title="{{ about }}" class="no-underline">{{ label }}</abbr></th>{% endfor %}
+          </tr></thead>
+          <tbody>
+            {% for y in checkouts.years %}
+            <tr class="border-t border-stone-100">
+              <td class="py-1">{{ y.year }}{% if y.months < 12 %} <span class="text-stone-500">({{ y.months }} month{{ 's' if y.months != 1 }})</span>{% endif %}</td>
+              {% for key, label, about in checkouts.series %}<td class="py-1 text-right">{{ y[key] | intcomma if y[key] is defined else '—' }}</td>{% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </details>
+      {% else %}{{ empty("Checkout numbers aren't available right now.") }}{% endif %}
+    {% endcall %}
+  </div>
 </div>
 {% endblock %}

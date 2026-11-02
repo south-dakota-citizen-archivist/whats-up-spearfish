@@ -16,6 +16,9 @@
 
 [x-cloak] { display: none !important; }
 
+/* Chart series colors, in fixed order (validated together for color-blind separation) */
+:root { --series-1: #2a78d6; --series-2: #eb6834; --series-3: #1baf7a; }
+
 /* Long lists inside cards scroll instead of stretching the page */
 .scroll-list { max-height: 28rem; overflow-y: auto; }
 
@@ -43,8 +46,10 @@ button:disabled, [aria-disabled="true"] { cursor: not-allowed; }
 /* Screen readers hear that a link opens a new tab */
 a[target="_blank"]::after {
   content: " (opens in a new tab)";
-  position: absolute; width: 1px; height: 1px; overflow: hidden;
-  clip-path: inset(50%); white-space: nowrap;
+  /* in the flow (not position: absolute), so a link inside a scrolling shelf
+     can't stretch the page: it stays clipped with the shelf */
+  display: inline-block; width: 1px; height: 1px; margin: -1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap; vertical-align: top;
 }
 
 /* Readers who ask for less motion get none */

@@ -178,7 +178,10 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
             Org(
                 "Grace Balloch Memorial Library",
                 "https://spearfish.blackhills.bywatersolutions.com",
-                (_i("New books and movies", "spearfish_library"),),
+                (
+                    _i("New books and movies", "spearfish_library"),
+                    _i("Checkouts by month", "library_circulation", note="From the library board's monthly reports"),
+                ),
             ),
             Org(
                 "Western Hills Humane Society",
@@ -247,11 +250,11 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
             ),
             Org("Rapid City Journal", "https://rapidcityjournal.com/", (_i("Regional news", "rapid_city_journal"),)),
             Org("SDPB", "https://www.sdpb.org/news", (_i("Statewide news", "sdpb_news"),)),
+            # two newsrooms, read by one scraper (news_feeds)
             Org(
-                "South Dakota Searchlight and SD News Watch",
-                "https://southdakotasearchlight.com/",
-                (_i("Statewide news", "news_feeds"),),
+                "South Dakota Searchlight", "https://southdakotasearchlight.com/", (_i("Statewide news", "news_feeds"),)
             ),
+            Org("South Dakota News Watch", "https://www.sdnewswatch.org/", (_i("Statewide news", "news_feeds"),)),
             Org("Sundance Times", "https://www.sundancetimes.com", (_i("Northeast Wyoming news", "sundance_times"),)),
             Org(
                 "Custer County Chronicle",

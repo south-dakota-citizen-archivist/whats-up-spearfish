@@ -143,6 +143,40 @@ def site_url(tmp_path_factory):
         kind="news",
     )
 
+    # community: a long shelf of new books (with links that open new tabs), pets, checkouts
+    _write(
+        data,
+        "spearfish_library",
+        [
+            {"id": f"b{i}", "kind": "library_book", "title": f"A rather long book title number {i}",
+             "url": f"https://example.com/book/{i}", "image_url": ""}
+            for i in range(30)
+        ],
+        kind="library_book",
+    )  # fmt: skip
+    _write(
+        data,
+        "whhs_adoptable",
+        [
+            {"id": f"p{i}", "kind": "adoptable", "title": f"Pet {i}", "url": f"https://example.com/pet/{i}",
+             "species": "cat" if i % 3 else "dog", "image_url": ""}
+            for i in range(20)
+        ],
+        kind="adoptable",
+    )  # fmt: skip
+    _write(
+        data,
+        "library_circulation",
+        data={
+            "rows": [
+                {"month": f"{y}-{m:02d}", "loans": 6000 + (m * 97) % 900, "overdrive": 3500 if y >= 2022 else None,
+                 "hoopla": 800 if 2022 <= y <= 2025 else None}
+                for y in range(2019, 2027) for m in range(1, 13) if (y, m) <= (2026, 4) and (y, m) != (2021, 5)
+            ]
+        },
+        kind="stats",
+    )  # fmt: skip
+
     # served the way GitHub Pages serves it, under /whats-up-spearfish/
     root = tmp / "root"
     build(data, root / "whats-up-spearfish")
@@ -343,3 +377,18 @@ def test_permits_open_with_recent_places_and_fetch_the_rest_on_search(open_page)
 def test_permits_say_so_when_records_dont_load(open_page):
     page = open_page("permits/", block=["recent.json"])
     assert "didn't load" in page.get_by_role("alert").inner_text()
+
+
+# ── community ────────────────────────────────────────────────────────────────
+
+
+def test_community_chart_and_pets(open_page):
+    page = open_page("community/", wait="#checkouts svg")
+    assert page.locator("#checkouts svg path").count() == 3  # one line per way of borrowing
+    assert "In April 2026" in page.locator("#checkouts").inner_text()
+    shown = page.locator("#pets li:visible")
+    assert shown.count() == 12
+    assert "Dog" in page.locator("#pets").inner_text().split("Show all")[0]  # dogs mixed in, not after all the cats
+    page.get_by_role("button", name="Show all 20 pets").click()
+    page.locator("#pets li").nth(19).wait_for(state="visible")
+    assert page.locator("#pets li:visible").count() == 20

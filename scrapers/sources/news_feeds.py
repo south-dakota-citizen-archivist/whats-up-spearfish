@@ -15,16 +15,18 @@ from scrapers.utils import make_slug
 _FEEDS = [
     {
         "url": "https://www.sdnewswatch.org/rss/",
-        "source_label": "SD Newswatch",
+        "source_label": "South Dakota News Watch",
+        "key": "SD Newswatch",  # its former label; story ids are built from it, so it stays
     },
     {
         "url": "https://southdakotasearchlight.com/feed/localFeed/",
         "source_label": "South Dakota Searchlight",
+        "key": "South Dakota Searchlight",
     },
 ]
 
 
-def _parse_feed(url: str, source_label: str) -> list[dict]:
+def _parse_feed(url: str, source_label: str, key: str = "") -> list[dict]:
     feed = feedparser.parse(url)
     records = []
     for entry in feed.entries:
@@ -49,7 +51,7 @@ def _parse_feed(url: str, source_label: str) -> list[dict]:
             {
                 "url": link,
                 "title": title,
-                "slug": make_slug(f"{source_label}-{title}"),
+                "slug": make_slug(f"{key or source_label}-{title}"),
                 "published": published,
                 "byline": byline,
                 "description": description,
@@ -70,7 +72,7 @@ class NewsFeeds(BaseScraper):
     def scrape(self) -> list[dict]:
         records = []
         for feed in _FEEDS:
-            items = _parse_feed(feed["url"], feed["source_label"])
+            items = _parse_feed(feed["url"], feed["source_label"], feed["key"])
             print(f"  [{feed['source_label']}] {len(items)} items")
             records.extend(items)
         return records

@@ -1,27 +1,20 @@
 """
 scrapers/sources/library_circulation.py
 
-Fetches library circulation statistics from a manually-maintained
-Google Sheets CSV and saves to data/library_circulation.json.
-
-Not a BaseScraper subclass — run directly or from the daily scrape workflow.
-
-Usage:
-    uv run python -c "from scrapers.sources.library_circulation import fetch_circulation; fetch_circulation()"
+Monthly checkouts at the Grace Balloch Memorial Library, from a Google Sheet
+kept by hand from the library board's meeting packets: print and physical
+items ("loans", plus renewals through 2021) and digital checkouts through
+OverDrive/Libby (2022 on) and hoopla (2022–2025). Each month links to the board
+minutes it came from.
 """
 
 from __future__ import annotations
 
 import csv
 import io
-import json
-from datetime import datetime, timezone
-from pathlib import Path
 
 from scrapers import net
 from scrapers.base import BaseScraper
-
-DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "library_circulation.json"
 
 SHEET_URL = (
     "https://docs.google.com/spreadsheets/d/e/"
@@ -29,84 +22,45 @@ SHEET_URL = (
     "/pub?gid=0&single=true&output=csv"
 )
 
-MONTH_NAMES = ["", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
-
-def _int_or_none(val: str) -> int | None:
-    val = val.strip()
-    if not val:
-        return None
+def _int_or_none(val: str | None) -> int | None:
     try:
-        return int(val)
+        return int((val or "").replace(",", "").strip())
     except ValueError:
         return None
 
 
-def fetch_circulation() -> None:
-    try:
-        resp = net.get(SHEET_URL, timeout=20, allow_redirects=True)
-        resp.raise_for_status()
-        text = resp.text
-    except Exception as exc:
-        print(f"[LibraryCirculation] Warning: fetch failed: {exc}")
-        return
-
+def parse_rows(text: str) -> list[dict]:
     rows = []
-    reader = csv.DictReader(io.StringIO(text))
-    for raw in reader:
-        year = _int_or_none(raw.get("year", ""))
-        month = _int_or_none(raw.get("month", ""))
-        if not year or not month:
+    for raw in csv.DictReader(io.StringIO(text)):
+        year, month = _int_or_none(raw.get("year")), _int_or_none(raw.get("month"))
+        if not year or not month or not 1 <= month <= 12:
             continue
-
-        loans = _int_or_none(raw.get("loans", ""))
-        renewals = _int_or_none(raw.get("renewals", ""))
-        overdrive = _int_or_none(raw.get("overdrive_loans", ""))
-        hoopla = _int_or_none(raw.get("hoopla_loans", ""))
-        minutes_link = (raw.get("minutes_link") or "").strip()
-
-        # Skip completely empty rows (no data at all)
-        if loans is None and overdrive is None and hoopla is None and not minutes_link:
-            continue
-
-        rows.append(
-            {
-                "year": year,
-                "month": month,
-                "month_name": MONTH_NAMES[month],
-                "loans": loans,
-                "renewals": renewals,
-                "overdrive_loans": overdrive,
-                "hoopla_loans": hoopla,
-                "minutes_link": minutes_link or None,
-            }
-        )
-
-    DATA_FILE.write_text(
-        json.dumps(
-            {
-                "fetched_at": datetime.now(timezone.utc).isoformat(),
-                "rows": rows,
-            },
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
-    print(f"[LibraryCirculation] {len(rows)} months of data → {DATA_FILE.name}")
-
-
-if __name__ == "__main__":
-    fetch_circulation()
+        row = {
+            "month": f"{year}-{month:02d}",
+            "loans": _int_or_none(raw.get("loans")),
+            "renewals": _int_or_none(raw.get("renewals")),
+            "overdrive": _int_or_none(raw.get("overdrive_loans")),
+            "hoopla": _int_or_none(raw.get("hoopla_loans")),
+            "minutes": (raw.get("minutes_link") or "").strip(),
+        }
+        if row["loans"] is None and row["overdrive"] is None and row["hoopla"] is None:
+            continue  # a month not filled in yet
+        rows.append(row)
+    return sorted(rows, key=lambda r: r["month"])
 
 
 class LibraryCirculation(BaseScraper):
-    """On ice: kept for later, not run. Still uses its own standalone fetch
-    function and file format; port it to scrape() before enabling."""
-
-    name = "Library circulation stats"
+    name = "Library checkouts"
     slug = "library_circulation"
     kind = "stats"
-    enabled = False
+    url = "https://spearfish.blackhills.bywatersolutions.com"
+    max_stale_hours = 24 * 7
 
-    def scrape(self) -> list[dict]:
-        raise NotImplementedError("library_circulation is on ice")
+    def scrape(self) -> dict:
+        resp = net.get(SHEET_URL, timeout=20, allow_redirects=True)
+        resp.raise_for_status()
+        return {"rows": parse_rows(resp.text)}
+
+    def is_empty(self, payload: dict) -> bool:
+        return not payload.get("rows")

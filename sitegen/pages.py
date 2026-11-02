@@ -8,6 +8,7 @@ list and today's date, and returns the template variables for that page.
 from __future__ import annotations
 
 import json
+import random
 import re
 import statistics
 from collections import Counter, defaultdict
@@ -308,37 +309,61 @@ def meetings(site: Site) -> list[dict]:
     return sorted(out.values(), key=lambda m: m["date"])
 
 
-def rotate(items: list, n: int, today: date) -> list:
-    """n items starting at a different place each day, so the front page changes."""
-    if not items:
-        return []
-    start = today.toordinal() % len(items)
-    return (items[start:] + items[:start])[:n]
+def _interleave(groups: list[list]) -> list:
+    """[a1, b1, c1, a2, b2, …]: one from each group in turn."""
+    out = []
+    for i in range(max((len(g) for g in groups), default=0)):
+        out += [g[i] for g in groups if i < len(g)]
+    return out
 
 
-def pet_picks(site: Site, n: int, today: date) -> list[dict]:
-    """Dogs and cats taking turns (the shelter usually has far more cats), rotating daily."""
+def mixed_pets(pets: list[dict]) -> list[dict]:
+    """Every pet, species taking turns (the shelter lists its many cats first), photos first."""
+    by_species: dict[str, list] = defaultdict(list)
+    for p in pets:
+        by_species[(p.get("species") or "other").lower()].append(p)
+    mixed = _interleave([v for _, v in sorted(by_species.items())])
+    return sorted(mixed, key=lambda p: not p.get("image_url"))
+
+
+def pet_picks(site: Site, n: int, rng: random.Random) -> list[dict]:
+    """Pets with photos, chosen at random with an even split between species (the
+    shelter usually has far more cats than dogs), alternating so the row looks mixed."""
     by_species: dict[str, list] = defaultdict(list)
     for p in site.get("whhs_adoptable").records:
-        by_species[(p.get("species") or "other").lower()].append(p)
-    groups = [rotate(v, len(v), today) for _, v in sorted(by_species.items())]
-    picks = []
-    for i in range(max((len(g) for g in groups), default=0)):
-        picks += [g[i] for g in groups if i < len(g)]
-    return picks[:n]
+        if p.get("image_url"):
+            by_species[(p.get("species") or "other").lower()].append(p)
+    groups = [rng.sample(v, len(v)) for _, v in sorted(by_species.items())]
+    # deal shares smallest group first, so a species short of its share leaves the rest to the others
+    picked: dict[int, list] = {}
+    left = n
+    for i, g in sorted(enumerate(groups), key=lambda ig: len(ig[1])):
+        share = left // (len(groups) - len(picked))
+        picked[i] = g[:share]
+        left -= len(picked[i])
+    return _interleave([picked[i] for i in range(len(groups))])
 
 
-def tap_picks(site: Site, n: int, today: date) -> list[dict]:
-    """Beers with pictures, taking turns across venues, rotating daily."""
-    by_venue = []
+def tap_picks(site: Site, n: int, rng: random.Random) -> list[dict]:
+    """Beers chosen at random with every venue represented (one each, a photo when the
+    venue has any), then random beers with photos to fill the row, in random order."""
+    venues = []
     for src in sources_of(site, TAP_SOURCES):
-        beers = [dict(b, venue=src.name, venue_slug=src.slug) for b in src.records if b.get("image_url")]
+        beers = [dict(b, venue=src.label, venue_slug=src.slug) for b in src.records]
         if beers:
-            by_venue.append(rotate(beers, len(beers), today))
-    picks = []
-    for i in range(max((len(v) for v in by_venue), default=0)):
-        picks += [v[i] for v in by_venue if i < len(v)]
-    return rotate(picks, n, today) if len(picks) > n else picks
+            venues.append(rng.sample(beers, len(beers)))
+    if len(venues) > n:
+        venues = rng.sample(venues, n)
+    picks = [next((b for b in v if b.get("image_url")), v[0]) for v in venues]
+    rest = [b for v in venues for b in v if b.get("image_url") and b not in picks]
+    picks += rng.sample(rest, min(len(rest), n - len(picks)))
+    return rng.sample(picks, len(picks))
+
+
+def book_picks(site: Site, n: int, rng: random.Random) -> list[dict]:
+    """New books with a cover, chosen at random."""
+    books = [b for b in site.get("spearfish_library").records if b.get("image_url")]
+    return rng.sample(books, min(n, len(books)))
 
 
 def menu_lists(menus: list[dict]) -> dict:
@@ -351,6 +376,7 @@ def menu_lists(menus: list[dict]) -> dict:
 
 
 def home(site: Site, events: list[dict], today: date) -> dict:
+    rng = random.Random()
     t = today.isoformat()
     week_end = (today + timedelta(days=6)).isoformat()
     if today.weekday() == 6:
@@ -377,9 +403,10 @@ def home(site: Site, events: list[dict], today: date) -> dict:
         "week_count": sum(1 for e in events if e["date"] <= week_end),
         "menu_days": next_menus,
         "menu_lists": menu_lists(next_menus[0]["menus"]) if next_menus else {},
-        "pets": pet_picks(site, 8, today),
-        "beers": tap_picks(site, 8, today),
-        "books": site.get("spearfish_library").records[:8],
+        # a fresh mix on every build (several times a day)
+        "pets": pet_picks(site, 8, rng),
+        "beers": tap_picks(site, 8, rng),
+        "books": book_picks(site, 8, rng),
         "creek": creek_context(site),
         "fire": fire_context(site),
         "birds": birds[:4],
@@ -491,7 +518,46 @@ def jobs(site: Site, events: list[dict], today: date) -> dict:
 
 
 def community(site: Site, events: list[dict], today: date) -> dict:
-    return {"library": site.get("spearfish_library"), "pets": site.get("whhs_adoptable")}
+    library = site.get("spearfish_library")
+    return {
+        "library": library,
+        # covers first: a shelf of placeholders up front looks broken
+        "books": sorted(library.records, key=lambda b: not b.get("image_url")),
+        "pets": site.get("whhs_adoptable"),
+        "pet_list": mixed_pets(site.get("whhs_adoptable").records),
+        "checkouts": checkouts_context(site),
+    }
+
+
+#: Monthly library checkouts, by how people borrow (keys in library_circulation rows)
+CHECKOUT_SERIES = [
+    ("loans", "Physical items", "Books, movies and other things you can hold"),
+    ("overdrive", "Libby", "E-books and audiobooks through Libby (OverDrive)"),
+    ("hoopla", "hoopla", "Streaming movies, music, e-books and audiobooks through hoopla"),
+]
+
+
+def checkouts_context(site: Site) -> dict:
+    src = site.get("library_circulation")
+    rows = (src.data or {}).get("rows") or []
+    if not rows:
+        return {"source": src, "rows": []}
+    years: dict[str, dict] = {}
+    for r in rows:
+        y = years.setdefault(r["month"][:4], {"year": r["month"][:4], "months": 0})
+        y["months"] += 1
+        for key, *_ in CHECKOUT_SERIES:
+            if r.get(key) is not None:
+                y[key] = y.get(key, 0) + r[key]
+    latest = rows[-1]
+    return {
+        "source": src,
+        "rows": [{k: r.get(k) for k in ("month", *[s[0] for s in CHECKOUT_SERIES])} for r in rows],
+        "series": CHECKOUT_SERIES,
+        "latest": latest,
+        "years": sorted(years.values(), key=lambda y: y["year"], reverse=True),
+        "first": rows[0]["month"],
+    }
 
 
 # ── page: sources ───────────────────────────────────────────────────────────
