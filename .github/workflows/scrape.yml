@@ -3,7 +3,8 @@ name: Scrape, build and deploy
 on:
   schedule:
     - cron: "15 12 * * *"   # daily tier — 6:15 AM MDT / 5:15 AM MST
-    - cron: "45 */3 * * *"  # frequent tier (creek gauge, fire, alerts) — every 3 hours
+    - cron: "10 1-22/3 * * *"  # frequent tier (creek gauge, fire, alerts) — every 3 hours; the 07:10 UTC
+                                #   run lands just after midnight Mountain time, so dates roll over promptly
   push:
     branches: [main]        # code changes: rebuild and deploy, no scrape
   workflow_dispatch:
@@ -31,21 +32,6 @@ jobs:
       issues: write     # scraper health issue
 
     steps:
-      - name: Pick tier
-        id: tier
-        run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            tier="${{ inputs.tier }}"
-          elif [ "${{ github.event_name }}" = "push" ]; then
-            tier="none"
-          elif [ "${{ github.event.schedule }}" = "15 12 * * *" ]; then
-            tier="daily"
-          else
-            tier="frequent"
-          fi
-          echo "tier=$tier" >> "$GITHUB_OUTPUT"
-          echo "Tier: $tier"
-
       - uses: actions/checkout@v4
 
       - name: Check out data branch
@@ -53,6 +39,30 @@ jobs:
         with:
           ref: data
           path: data
+
+      # GitHub's schedules are best-effort: runs are sometimes late or dropped
+      # entirely (2026-11-02 lost both the 09:45 and 12:15 UTC runs). So any
+      # scheduled run upgrades itself to the daily tier when the last daily
+      # scrape is more than 20 hours old, and the daily slot steps down to the
+      # frequent tier if a catch-up daily already ran in the past 6 hours.
+      - name: Pick tier
+        id: tier
+        run: |
+          last=$(cat data/_last_daily 2>/dev/null || echo 0)
+          age=$(( $(date +%s) - last ))
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            tier="${{ inputs.tier }}"
+          elif [ "${{ github.event_name }}" = "push" ]; then
+            tier="none"
+          elif [ "$age" -gt $(( 20 * 3600 )) ]; then
+            tier="daily"
+          elif [ "${{ github.event.schedule }}" = "15 12 * * *" ] && [ "$age" -gt $(( 6 * 3600 )) ]; then
+            tier="daily"
+          else
+            tier="frequent"
+          fi
+          echo "tier=$tier" >> "$GITHUB_OUTPUT"
+          echo "Tier: $tier (last daily scrape $(( age / 3600 ))h ago)"
 
       - uses: astral-sh/setup-uv@v5
         with:
@@ -76,6 +86,9 @@ jobs:
           case "${{ steps.tier.outputs.tier }}" in
             all) uv run python -m scrapers ;;
             *)   uv run python -m scrapers --tier "${{ steps.tier.outputs.tier }}" ;;
+          esac
+          case "${{ steps.tier.outputs.tier }}" in
+            daily|all) date +%s > data/_last_daily ;;
           esac
 
       - name: Commit data
