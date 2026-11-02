@@ -167,14 +167,14 @@
    "error": "",
    "failures": 0,
    "kind": "gauge",
-   "last_run": "2026-11-01T23:53:34-07:00",
-   "last_success": "2026-11-01T23:53:34-07:00",
+   "last_run": "2026-11-02T12:36:12-07:00",
+   "last_success": "2026-11-02T12:36:12-07:00",
    "max_stale_hours": 12,
    "name": "Spearfish Creek gauge (USGS)",
    "new": 0,
    "status": "ok",
    "tier": "frequent",
-   "url": "https://waterdata.usgs.gov/monitoring-location/06431500/"
+   "url": "https://waterdata.usgs.gov/monitoring-location/USGS-06431500/"
   },
   "crow_peak_brewing": {
    "count": 16,
@@ -936,5 +936,5 @@
    "url": "https://www.westernhillshumanesociety.com/"
   }
  },
- "updated": "2026-11-02T12:33:45-07:00"
+ "updated": "2026-11-02T12:36:13-07:00"
 }
