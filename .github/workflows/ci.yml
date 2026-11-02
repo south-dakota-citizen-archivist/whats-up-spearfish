@@ -8,7 +8,8 @@ on:
 
 jobs:
   lint-and-test:
-    runs-on: ubuntu-latest
+    # Same as scrape.yml: Playwright can't install Chromium on newer Ubuntu images yet
+    runs-on: ubuntu-24.04
 
     steps:
       - uses: actions/checkout@v4
