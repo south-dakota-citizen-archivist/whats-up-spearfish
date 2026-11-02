@@ -37,18 +37,26 @@
       <a href="{{ root }}" class="text-xl sm:text-2xl font-extrabold tracking-tight hover:text-pine-100">What's up, Spearfish?</a>
       <span class="text-sm text-pine-100 whitespace-nowrap">{{ today.strftime('%a, %b %-d') }}</span>
     </div>
-    <nav class="max-w-6xl mx-auto px-2 sm:px-4 overflow-x-auto" aria-label="Sections">
-      <ul class="flex gap-1 text-sm font-medium whitespace-nowrap pb-2">
-        {% for path, label in NAV %}
-        <li>
-          <a href="{{ root }}{{ path }}"
-             class="block px-3 py-1.5 {{ 'bg-white text-pine-800' if path == page_path else 'text-pine-50 hover:bg-pine-700' }}"
-             {% if path == page_path %}aria-current="page"{% endif %}>{{ label }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </nav>
   </header>
+  {# The section menu stays pinned to the top on small screens, so long pages don't need a scroll back up #}
+  <nav class="sticky top-0 z-[1100] lg:static bg-pine-800 text-white shadow-md lg:shadow-none" aria-label="Sections">
+    <ul class="max-w-6xl mx-auto px-2 sm:px-4 flex gap-1 text-sm font-medium whitespace-nowrap overflow-x-auto py-1.5 lg:pt-0 lg:pb-2">
+      {% for path, label in NAV %}
+      <li>
+        <a href="{{ root }}{{ path }}"
+           class="block px-3 py-1.5 {{ 'bg-white text-pine-800' if path == page_path else 'text-pine-50 hover:bg-pine-700' }}"
+           {% if path == page_path %}aria-current="page"{% endif %}>{{ label }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <script>
+      // keep the current section's tab in view when the menu scrolls sideways
+      (() => {
+        const cur = document.currentScript.parentElement.querySelector("[aria-current]");
+        if (cur) cur.closest("ul").scrollLeft = cur.offsetLeft - 16;
+      })();
+    </script>
+  </nav>
 
   <main class="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 py-6">
     {% block content %}{% endblock %}

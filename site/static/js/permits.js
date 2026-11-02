@@ -13,6 +13,7 @@ document.addEventListener("alpine:init", () => {
     let map = null;
     let markers = null;
     let youAreHere = null;
+    let ring = null; // highlight around the selected site
 
     return {
       sites: [],
@@ -25,6 +26,7 @@ document.addEventListener("alpine:init", () => {
       here: null,
       locating: false,
       selected: null,
+      peek: null, // small-screen preview card shown over the map after tapping a dot
 
       async init() {
         this.sites = await (await fetch(url)).json();
@@ -45,7 +47,7 @@ document.addEventListener("alpine:init", () => {
         this.$watch("show", () => this.draw(), { deep: true });
         this.$watch("q", () => {
           const pts = this.q.trim() ? this.results.filter((s) => s.lat != null).map((s) => [s.lat, s.lon]) : [];
-          if (map && pts.length) map.fitBounds(pts, { maxZoom: 17, padding: [30, 30] });
+          if (map && pts.length) map.flyToBounds(pts, { maxZoom: 17, padding: [30, 30], duration: 0.8 });
         });
       },
 
@@ -83,7 +85,7 @@ document.addEventListener("alpine:init", () => {
         for (const s of this.inRange()) {
           if (s.lat == null) continue;
           L.circleMarker([s.lat, s.lon], { radius: 6, weight: 1, color: "#1c1917", fillColor: this.color(s), fillOpacity: 0.9 })
-            .on("click", () => this.select(s))
+            .on("click", () => this.pick(s))
             .addTo(markers);
         }
       },
@@ -121,11 +123,11 @@ document.addEventListener("alpine:init", () => {
           (pos) => {
             this.locating = false;
             this.q = "";
-            this.selected = null;
+            this.clear();
             this.here = { lat: pos.coords.latitude, lon: pos.coords.longitude };
             if (youAreHere) youAreHere.remove();
             youAreHere = L.circleMarker([this.here.lat, this.here.lon], { radius: 8, weight: 3, color: "#0369a1", fillColor: "#38bdf8", fillOpacity: 1 }).addTo(map);
-            map.setView([this.here.lat, this.here.lon], 17);
+            map.flyTo([this.here.lat, this.here.lon], 17, { duration: 0.8 });
           },
           () => {
             this.locating = false;
@@ -135,10 +137,49 @@ document.addEventListener("alpine:init", () => {
         );
       },
 
+      // Chosen from the list, a search result or a shared link: glide the map there.
       select(s) {
+        this.show_(s);
+        this.peek = null;
+        if (s.lat != null && map) map.flyTo([s.lat, s.lon], Math.max(map.getZoom(), 16), { duration: 0.8 });
+        this.$nextTick(() => this.reveal());
+      },
+
+      // Tapped on the map: the reader is already looking at it, so leave the map alone.
+      pick(s) {
+        this.show_(s);
+        if (window.matchMedia("(min-width: 1024px)").matches) this.$nextTick(() => this.reveal());
+        else this.peek = s;
+      },
+
+      show_(s) {
         this.selected = s;
         history.replaceState(null, "", "#site=" + encodeURIComponent(s.k));
-        if (s.lat != null && map) map.setView([s.lat, s.lon], Math.max(map.getZoom(), 17));
+        if (ring) ring.remove();
+        ring = null;
+        if (s.lat != null && map) {
+          ring = L.circleMarker([s.lat, s.lon], { radius: 11, weight: 3, color: "#1c1917", fill: false, interactive: false }).addTo(map);
+        }
+      },
+
+      clear() {
+        this.selected = null;
+        this.peek = null;
+        if (ring) ring.remove();
+        ring = null;
+        history.replaceState(null, "", location.pathname);
+      },
+
+      // Scroll the details into view only if they aren't already on screen.
+      reveal() {
+        const el = this.$refs.detail;
+        if (!el) return;
+        const r = el.getBoundingClientRect();
+        if (r.top < 60 || r.top > window.innerHeight * 0.5) el.scrollIntoView({ behavior: "smooth", block: "start" });
+      },
+
+      showDetail() {
+        this.peek = null;
         this.$nextTick(() => this.$refs.detail?.scrollIntoView({ behavior: "smooth", block: "start" }));
       },
 
