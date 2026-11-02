@@ -1,4 +1,4 @@
-// "What's being built here?" — permit and application lookup by address, search or location.
+// Building permits and planning records — lookup by address, search or location.
 document.addEventListener("alpine:init", () => {
   // Map dot colors by category (see permit_category in sitegen/pages.py)
   const CATEGORIES = {
@@ -84,6 +84,8 @@ document.addEventListener("alpine:init", () => {
       limit: 40, // how many places the list shows before "Show more"
 
       async init() {
+        // The map comes up right away, under a loading notice; the dots follow the records.
+        this.$nextTick(() => this.makeMap());
         try {
           const r = await fetch(recentUrl);
           if (!r.ok) throw new Error(r.status);
@@ -96,25 +98,6 @@ document.addEventListener("alpine:init", () => {
         }
         this.loading = false;
         this.$nextTick(() => {
-          // phones pinch to zoom, so the +/− buttons only appear on large screens
-          map = L.map(this.$refs.map, { preferCanvas: true, zoomControl: false }).setView([44.4906, -103.8594], 13);
-          if (large()) L.control.zoom({ position: "topright" }).addTo(map);
-          doubleTapZoom(map);
-          // the zoom level on the page, for tests and anyone curious
-          const noteZoom = () => (this.$refs.map.dataset.zoom = map.getZoom());
-          map.on("zoomend", noteZoom);
-          noteZoom();
-          L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-            maxZoom: 19,
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-          }).addTo(map);
-          markers = L.layerGroup().addTo(map);
-          // a tap on open map (not a dot) tucks the sheet away, so the map is always one tap from full view
-          map.on("click", () => {
-            if (large()) return;
-            this.open = false;
-            if (this.selected) this.back();
-          });
           this.draw();
           const key = decodeURIComponent(location.hash.replace(/^#site=/, ""));
           if (!key || key === location.hash) return;
@@ -125,6 +108,32 @@ document.addEventListener("alpine:init", () => {
             if (old) this.select(old);
           });
         });
+        this.watchFilters();
+      },
+
+      makeMap() {
+        // phones pinch to zoom, so the +/− buttons only appear on large screens
+        map = L.map(this.$refs.map, { preferCanvas: true, zoomControl: false }).setView([44.4906, -103.8594], 13);
+        if (large()) L.control.zoom({ position: "topright" }).addTo(map);
+        doubleTapZoom(map);
+        // the zoom level on the page, for tests and anyone curious
+        const noteZoom = () => (this.$refs.map.dataset.zoom = map.getZoom());
+        map.on("zoomend", noteZoom);
+        noteZoom();
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          maxZoom: 19,
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+        markers = L.layerGroup().addTo(map);
+        // a tap on open map (not a dot) tucks the sheet away, so the map is always one tap from full view
+        map.on("click", () => {
+          if (large()) return;
+          this.open = false;
+          if (this.selected) this.back();
+        });
+      },
+
+      watchFilters() {
         this.$watch("since", (v) => {
           this.limit = 40;
           if (v === "5" || v === "all") this.loadAll();

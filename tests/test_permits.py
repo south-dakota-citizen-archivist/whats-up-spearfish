@@ -2,7 +2,7 @@
 tests/test_permits.py
 
 Address normalization, the planning archive index, and the per-address grouping
-behind the "What's being built here?" page.
+behind the "Building permits and planning records" page.
 """
 
 from __future__ import annotations

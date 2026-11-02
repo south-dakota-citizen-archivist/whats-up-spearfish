@@ -66,7 +66,7 @@ PAGES = [
     ("outdoors/", "pages/outdoors.html", "Outdoors", pages.outdoors),
     ("on-tap/", "pages/on_tap.html", "On tap", pages.on_tap),
     ("civic/", "pages/civic.html", "Civic", pages.civic),
-    ("permits/", "pages/permits.html", "What's being built here?", pages.permits_page),
+    ("permits/", "pages/permits.html", "Building permits and planning records", pages.permits_page),
     ("news/", "pages/news.html", "News", pages.news),
     ("jobs/", "pages/jobs.html", "Jobs", pages.jobs),
     ("community/", "pages/community.html", "Community", pages.community),

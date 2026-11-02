@@ -425,6 +425,23 @@ def test_permits_location_refused_explains_and_offers_the_map(open_page, browser
     assert "Closest to the middle of the map" in page.locator("button[aria-controls=sheet-body]").inner_text()
 
 
+def test_permits_map_shows_at_once_and_says_records_are_loading(browser, site_url):
+    ctx = browser.new_context(viewport=DESKTOP)
+    page = ctx.new_page()
+    page.route(lambda url: not url.startswith(site_url.split("/whats-up")[0]), lambda r: r.abort())
+    held = []
+    page.route("**/recent.json", lambda r: held.append(r))  # the records are slow to come
+    page.goto(site_url + "permits/")
+    page.wait_for_selector(".permits-map[data-zoom]")  # the map is up without them
+    notice = page.get_by_role("status").filter(has_text="Loading permits and applications")
+    assert notice.is_visible()
+    for r in held:
+        r.continue_()
+    notice.wait_for(state="hidden")
+    page.locator("#sheet-body li button").first.wait_for()
+    ctx.close()
+
+
 def test_permits_map_double_tap_zooms_one_level(browser, site_url):
     # a phone (touch) context; iPhones don't send dblclick for taps, so the page watches taps itself
     ctx = browser.new_context(viewport=PHONE, has_touch=True, is_mobile=True)

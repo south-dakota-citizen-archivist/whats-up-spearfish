@@ -29,9 +29,8 @@ scrapers (GitHub Actions, scheduled)  →  data branch (JSON snapshots)  →  si
   fields, attachments), also kept in full. To re-backfill, set
   `PlanningCommission.since = FIRST_ITEMIZED` for one run.
 - **`sitegen/`** — renders `site/templates/` with Jinja into `_site/`: separate
-  pages for Today, Events, Schools, Outdoors, On tap, Civic, Permits ("What's
-  being built here?" — permits and applications by address, search or your
-  location), News, Jobs, Community and Sources, plus `events.json`, `calendar.ics` and `events.xml`.
+  pages for Today, Events, Schools, Outdoors, On tap, Civic, Permits ("Building
+  permits and planning records" — by address, search or your location), News, Jobs, Community and Sources, plus `events.json`, `calendar.ics` and `events.xml`.
   Tailwind is compiled with `pytailwindcss`; Alpine.js is vendored in
   `site/static/vendor/`. No Node toolchain.
 - **Audience** — the site is written for people who live here, not for

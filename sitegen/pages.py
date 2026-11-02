@@ -631,7 +631,7 @@ def sources_page(site: Site, events: list[dict], today: date) -> dict:
     return {"groups": groups}
 
 
-# ── page: permits ("What's being built here?") ─────────────────────────────
+# ── page: permits ("Building permits and planning records") ─────────────────
 
 
 def load_planning_archive(site: Site) -> dict:
