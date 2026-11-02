@@ -27,6 +27,7 @@
       document.addEventListener("DOMContentLoaded", () => document.querySelectorAll("img[data-placeholder]").forEach(stub));
     })();
   </script>
+  <script defer src="{{ root }}static/js/time.js"></script>
   {% block head %}{% endblock %}
   <script defer src="{{ root }}static/vendor/alpine-3.14.9.min.js"></script>
 </head>
@@ -40,7 +41,7 @@
       {% if page_path == '' %}<h1 class="text-xl sm:text-2xl font-extrabold tracking-tight">{% endif %}
       <a href="{{ root }}" class="{{ '' if page_path == '' else 'text-xl sm:text-2xl font-extrabold tracking-tight ' }}hover:text-pine-100">What's up, Spearfish?</a>
       {% if page_path == '' %}</h1>{% endif %}
-      <span class="text-sm text-pine-100 whitespace-nowrap">{{ today.strftime('%a, %b %-d') }}</span>
+      <span class="text-sm text-pine-100 whitespace-nowrap" data-today>{{ today.strftime('%a, %b %-d') }}</span>
     </div>
   </header>
   {# The section menu stays pinned to the top on small screens, so long pages don't need a scroll back up #}
@@ -62,6 +63,11 @@
       })();
     </script>
   </nav>
+
+  {# shown by time.js when the site has stopped updating, so nobody mistakes old listings for current ones #}
+  <div id="behind" data-built="{{ build_time.isoformat() }}" hidden class="bg-amber-50 border-b border-amber-200 text-amber-900 text-sm">
+    <p class="max-w-6xl mx-auto px-4 sm:px-6 py-2"><span class="font-semibold">This page hasn't updated since {{ build_time.strftime('%a, %b %-d at %-I:%M %p') }}.</span> Some of what's here may be out of date.</p>
+  </div>
 
   <main id="main" tabindex="-1" class="focus:outline-none flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 py-6">
     {% block content %}{% endblock %}

@@ -11,7 +11,8 @@
 
     {% call card("School menus", "menus", sources=menu_sources) %}
       {% if menu_days %}
-      <div x-data="menus('{{ root }}schools/menus.json')">
+      <div x-data="menus('{{ root }}schools/menus.json', {{ menu_days | map(attribute='date') | list | tojson | forceescape }})">
+        <p x-show="error" x-cloak role="alert" class="mb-3 text-sm text-amber-900 bg-amber-50 border border-amber-200 px-3 py-2" x-text="error"></p>
         <div class="flex gap-1.5 overflow-x-auto pb-2 mb-3" role="group" aria-label="Pick a day">
           {% for d in menu_days %}
           <button type="button" @click="day = {{ loop.index0 }}" :aria-pressed="day === {{ loop.index0 }}"

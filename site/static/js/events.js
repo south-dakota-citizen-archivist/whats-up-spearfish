@@ -90,6 +90,7 @@ document.addEventListener("alpine:init", () => {
   Alpine.data("calendar", (url) => ({
     all: [],
     loading: true,
+    error: false,
     q: "",
     range: "week",
     cats: [],
@@ -104,12 +105,25 @@ document.addEventListener("alpine:init", () => {
       } catch {
         this.picked = [];
       }
-      const r = await fetch(url);
-      this.all = await r.json();
+      try {
+        const r = await fetch(url);
+        if (!r.ok) throw new Error(r.status);
+        this.all = await r.json();
+      } catch {
+        this.error = true;
+        this.loading = false;
+        return;
+      }
       // events that have since passed drop off the list
       const ids = new Set(this.all.map((e) => e.id));
       this.picked = this.picked.filter((id) => ids.has(id));
-      this.$watch("picked", (v) => localStorage.setItem(PICKS_KEY, JSON.stringify(v)));
+      this.$watch("picked", (v) => {
+        try {
+          localStorage.setItem(PICKS_KEY, JSON.stringify(v));
+        } catch {
+          // picks still work for this visit; they just won't be remembered
+        }
+      });
       this.loading = false;
     },
 
@@ -145,21 +159,16 @@ document.addEventListener("alpine:init", () => {
       setTimeout(() => URL.revokeObjectURL(a.href), 1000);
     },
 
-    iso(d) {
-      const z = new Date(d.getTime() - d.getTimezoneOffset() * 60000);
-      return z.toISOString().slice(0, 10);
-    },
-
+    // Date ranges in Spearfish time (wus helpers from time.js), whatever the reader's time zone
     bounds() {
-      const today = new Date();
-      const t = this.iso(today);
-      const plus = (n) => this.iso(new Date(today.getFullYear(), today.getMonth(), today.getDate() + n));
+      const t = wus.today();
+      const plus = (n) => wus.addDays(t, n);
       switch (this.range) {
         case "today":
           return [t, t];
         case "weekend": {
           // Saturday–Sunday; on a Sunday, just today
-          const dow = today.getDay();
+          const dow = wus.weekday(t);
           if (dow === 0) return [t, t];
           return [plus(6 - dow), plus(7 - dow)];
         }
@@ -205,17 +214,12 @@ document.addEventListener("alpine:init", () => {
     },
 
     shortDay(iso) {
-      const [y, m, d] = iso.split("-").map(Number);
-      return new Date(y, m - 1, d).toLocaleDateString("en-US", { month: "short", day: "numeric" });
+      return wus.fmtDay(iso, { month: "short", day: "numeric" });
     },
 
     heading(iso) {
-      const t = this.iso(new Date());
-      const tomorrow = this.iso(new Date(Date.now() + 86400000));
-      if (iso === t) return "Today";
-      if (iso === tomorrow) return "Tomorrow";
-      const [y, m, d] = iso.split("-").map(Number);
-      return new Date(y, m - 1, d).toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+      const label = wus.dayLabel(iso);
+      return label === "Yesterday" ? wus.fmtDay(iso, { weekday: "long", month: "long", day: "numeric" }) : label;
     },
   }));
 });

@@ -36,7 +36,7 @@
   {# ── main column ── #}
   <div class="min-w-0 lg:col-span-2 space-y-6">
 
-    {% call card("Happening today", "today", more=root ~ "events/", more_label=week_count ~ " events this week") %}
+    {% call card("Happening " ~ (today.isoformat() | day_heading(lower=true)), "today", more=root ~ "events/", more_label=week_count ~ " events this week") %}
       {% if today_events %}
       <ul class="divide-y divide-stone-100 scroll-list">
         {% for e in today_events %}{{ event_row(e) }}{% endfor %}

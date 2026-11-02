@@ -61,8 +61,9 @@
   {# results #}
   <div class="min-w-0 lg:col-span-3">
     <p x-show="loading" class="text-stone-500">Loading events…</p>
-    <p x-show="!loading" x-cloak class="text-sm text-stone-500 mb-3" role="status"><span x-text="filtered.length"></span> events</p>
-    <p x-show="!loading && !filtered.length" x-cloak class="bg-white border border-stone-200 p-6 text-stone-500">No events match those filters.</p>
+    <p x-show="error" x-cloak role="alert" class="bg-white border border-amber-300 p-6 text-amber-900">The events list didn't load. Check your connection and reload the page.</p>
+    <p x-show="!loading && !error" x-cloak class="text-sm text-stone-500 mb-3" role="status"><span x-text="filtered.length"></span> events</p>
+    <p x-show="!loading && !error && !filtered.length" x-cloak class="bg-white border border-stone-200 p-6 text-stone-500">No events match those filters.</p>
 
     <template x-for="day in days" :key="day.date">
       <section class="mb-5">

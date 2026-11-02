@@ -34,7 +34,7 @@
       <option value="all">All years</option>
     </select>
   </div>
-  <p x-show="error" x-cloak class="text-sm text-red-700 mb-3" x-text="error"></p>
+  <p x-show="error" x-cloak role="alert" class="text-sm text-red-700 mb-3" x-text="error"></p>
 
   <div class="grid lg:grid-cols-5 gap-4">
     <div class="lg:col-span-3 min-w-0 order-2 lg:order-1">
@@ -129,9 +129,9 @@
 
       {# results #}
       <p x-show="loading" class="text-stone-500 text-sm">Loading records…</p>
-      <h2 x-show="!loading" x-cloak class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-1.5"
+      <h2 x-show="!loading && !failed" x-cloak class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-1.5"
           x-text="q ? 'Matching addresses' : (here ? 'Closest to you' : (since === 'latest' ? 'Newest permits' : 'Most recent activity'))"></h2>
-      <ul x-show="!loading" x-cloak class="bg-white border border-stone-300 divide-y divide-stone-100 max-h-[45vh] lg:max-h-[60vh] overflow-y-auto">
+      <ul x-show="!loading && !failed" x-cloak class="bg-white border border-stone-300 divide-y divide-stone-100 max-h-[45vh] lg:max-h-[60vh] overflow-y-auto">
         <template x-for="s in results" :key="s.k">
           <li>
             <button type="button" @click="select(s)" class="w-full text-left px-4 py-2.5 hover:bg-pine-50" :class="selected && selected.k === s.k ? 'bg-pine-50' : ''">

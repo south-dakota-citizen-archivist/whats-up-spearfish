@@ -32,7 +32,7 @@
         <td class="px-4 py-2.5 text-stone-700">{{ i.what }}</td>
         <td class="px-4 py-2.5 text-xs">
           {% if i.note %}<span class="text-stone-500">{{ i.note }}</span>
-          {% elif i.ok and i.updated %}<span class="text-stone-500">{{ i.updated | ago | capitalize }}</span>
+          {% elif i.ok and i.updated %}<span class="text-stone-500">{{ i.updated | ago(cap=true) }}</span>
           {% elif i.updated %}<span class="text-amber-700">⚠ Not updating right now (last {{ i.updated | ago }})</span>
           {% else %}<span class="text-amber-700">⚠ Not available right now</span>{% endif %}
         </td>

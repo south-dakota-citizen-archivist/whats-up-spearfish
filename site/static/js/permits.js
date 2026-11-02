@@ -24,6 +24,7 @@ document.addEventListener("alpine:init", () => {
     return {
       sites: [],
       loading: true,
+      failed: false, // the records didn't load; nothing else on the page can work
       error: "",
       q: "",
       since: "2",
@@ -36,7 +37,16 @@ document.addEventListener("alpine:init", () => {
       limit: 40, // how many places the list shows before "Show more"
 
       async init() {
-        this.sites = await (await fetch(url)).json();
+        try {
+          const r = await fetch(url);
+          if (!r.ok) throw new Error(r.status);
+          this.sites = await r.json();
+        } catch {
+          this.error = "The permit records didn't load. Check your connection and reload the page.";
+          this.failed = true;
+          this.loading = false;
+          return;
+        }
         this.loading = false;
         this.$nextTick(() => {
           map = L.map(this.$refs.map, { preferCanvas: true }).setView([44.4906, -103.8594], 13);
@@ -185,7 +195,15 @@ document.addEventListener("alpine:init", () => {
 
       // Swap the ring for the parcel's outline once outlines are loaded
       async outline(s) {
-        if (!outlines) outlines = await (await fetch(outlinesUrl)).json();
+        if (!outlines) {
+          try {
+            const r = await fetch(outlinesUrl);
+            if (!r.ok) throw new Error(r.status);
+            outlines = await r.json();
+          } catch {
+            return; // keep the circle; the outline is a nicety
+          }
+        }
         const rings = outlines[s.pid];
         if (!rings || this.selected !== s) return;
         if (ring) ring.remove();

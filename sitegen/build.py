@@ -25,11 +25,12 @@ import os
 import shutil
 import subprocess
 import sys
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from markupsafe import Markup
 
 from scrapers import dates
 from sitegen import feeds, pages
@@ -93,10 +94,7 @@ def fmt_time(value) -> str:
     return d.strftime("%-I %p" if d.minute == 0 else "%-I:%M %p")
 
 
-def ago(value) -> str:
-    d = _dt(value)
-    if not isinstance(d, datetime):
-        return "never"
+def _ago_text(d: datetime) -> str:
     secs = (dates.now() - d).total_seconds()
     if secs < 90:
         return "just now"
@@ -107,10 +105,19 @@ def ago(value) -> str:
     return "just now"
 
 
-def day_heading(value: str) -> str:
-    d = dates.to_date(value)
-    if not d:
-        return ""
+def ago(value, cap: bool = False) -> Markup | str:
+    """'3 hours ago' as of the build, in a <time> that static/js/time.js keeps current."""
+    d = _dt(value)
+    if not isinstance(d, datetime):
+        return "never"
+    text = _ago_text(d)
+    if cap:
+        text = text[0].upper() + text[1:]
+    flag = Markup(" data-cap") if cap else ""
+    return Markup('<time datetime="{}" data-ago{}>{}</time>').format(d.isoformat(), flag, text)
+
+
+def _day_text(d: date) -> str:
     delta = (d - dates.today()).days
     if delta == 0:
         return "Today"
@@ -119,6 +126,19 @@ def day_heading(value: str) -> str:
     if delta == -1:
         return "Yesterday"
     return d.strftime("%A, %B %-d")
+
+
+def day_heading(value: str, lower: bool = False) -> Markup | str:
+    """'Today', 'Tomorrow', 'Yesterday' or 'Monday, November 2', in a <time> that
+    static/js/time.js relabels if the page is read on a later day than it was built."""
+    d = dates.to_date(value)
+    if not d:
+        return ""
+    text = _day_text(d)
+    if lower and text in ("Today", "Tomorrow", "Yesterday"):
+        text = text.lower()
+    flag = Markup(" data-lower") if lower else ""
+    return Markup('<time datetime="{}" data-day{}>{}</time>').format(d.isoformat(), flag, text)
 
 
 def domain(url: str) -> str:

@@ -13,7 +13,7 @@ from datetime import date, timedelta
 import pytest
 
 from scrapers import dates
-from sitegen.build import build
+from sitegen.build import ago, build, day_heading
 from sitegen.data import Site
 from sitegen.events import unified_events
 
@@ -234,6 +234,10 @@ def test_smoke_build(fixture_data, tmp_path):
         assert 'role="tab"' not in html, page  # toggle buttons use aria-pressed instead
     assert ":aria-pressed=\"range === 'week'\"" in events_page  # filter buttons say which one is on
 
+    # every page carries its build time for the "hasn't updated" note, and loads the script that shows it
+    assert 'id="behind" data-built="' in home and "static/js/time.js" in home
+    assert "Happening <time" in home
+
     sources = (out / "sources" / "index.html").read_text()
     assert "Black Hills Pioneer" in sources
     assert "boom" not in sources  # no error messages for readers
@@ -432,3 +436,26 @@ def test_identical_menus_merge_into_one_group():
         ("Middle & High School", 1),
     ]
     assert rows[2]["lunch"]["slugs"] == ["spearfish_ms_lunch", "spearfish_hs_lunch"]
+
+
+# ── dates that stay true after the build (static/js/time.js keeps them current) ──
+
+
+def test_ago_is_a_time_element_the_browser_can_update():
+    when = dates.now() - timedelta(hours=3)
+    out = str(ago(when))
+    assert out == f'<time datetime="{when.isoformat()}" data-ago>3 hours ago</time>'
+    assert ">3 hours ago<" in str(ago(when.isoformat()))
+    assert "data-cap>Just now<" in str(ago(dates.now(), cap=True))
+    assert ago(None) == "never"
+
+
+def test_day_heading_is_a_time_element_the_browser_can_relabel():
+    today = dates.today()
+    assert str(day_heading(today.isoformat())) == f'<time datetime="{today.isoformat()}" data-day>Today</time>'
+    assert ">Tomorrow<" in str(day_heading((today + timedelta(days=1)).isoformat()))
+    # mid-sentence ("Happening today") it's lowercase and flagged so the browser keeps it that way
+    assert "data-lower>today<" in str(day_heading(today.isoformat(), lower=True))
+    far = today + timedelta(days=9)
+    assert f">{far.strftime('%A, %B %-d')}<" in str(day_heading(far.isoformat(), lower=True))
+    assert day_heading("") == ""
