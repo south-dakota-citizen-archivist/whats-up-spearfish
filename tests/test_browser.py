@@ -283,7 +283,7 @@ def test_events_picks_become_a_calendar_file(open_page, tmp_path):
     page.get_by_label("Add Craft Fair to my calendar").check()
     assert page.get_by_role("status").filter(has_text="picked").inner_text().startswith("2 events picked")
     with page.expect_download() as dl:
-        page.get_by_role("button", name="Add to my calendar").click()
+        page.get_by_role("button", name="Add to calendar", exact=True).click()
     path = tmp_path / "picked.ics"
     dl.value.save_as(path)
     events = {str(e["summary"]): e for e in Calendar.from_ical(path.read_bytes()).walk("VEVENT")}

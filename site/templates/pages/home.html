@@ -216,6 +216,7 @@
       {% endfor %}
     </ul>
     {% else %}{{ empty("No agendas posted for the next seven days yet.") }}{% endif %}
+    {% if recent_permits %}<p class="mt-3 text-sm"><a href="{{ root }}permits/" class="font-semibold text-pine-700 hover:underline">{{ recent_permits }} recent building permit{{ 's' if recent_permits != 1 }} and planning application{{ 's' if recent_permits != 1 }}<span aria-hidden="true"> →</span></a></p>{% endif %}
     {% if bids %}<p class="mt-3 text-sm"><a href="{{ root }}civic/#bids" class="font-semibold text-pine-700 hover:underline">{{ bids | length }} open city bid{{ 's' if bids | length != 1 }}<span aria-hidden="true"> →</span></a></p>{% endif %}
   {% endcall %}
 </div>

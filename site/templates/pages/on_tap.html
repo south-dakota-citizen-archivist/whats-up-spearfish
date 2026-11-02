@@ -23,7 +23,7 @@
         <div class="min-w-0">
           <p class="font-medium">{{ b.title }}</p>
           <p class="text-xs text-stone-500">
-            {{ [b.category or b.style or '', (b.abv ~ ' ABV') if b.abv else '', b.brewery if b.brewery and b.brewery != v.name else ''] | select | join(' · ') }}
+            {{ [b.category or b.style or '', (b.abv ~ ' ABV') if b.abv else '', (b.ibu ~ ' IBU') if b.ibu else '', b.brewery if b.brewery and b.brewery != v.name else ''] | select | join(' · ') }}
           </p>
           {% if b.description %}<p class="text-xs text-stone-600 mt-0.5 line-clamp-2">{{ b.description }}</p>{% endif %}
         </div>

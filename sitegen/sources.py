@@ -39,8 +39,8 @@ CREDIT = {
     "spearfish_school_news": DISTRICT,
     "spearfish_school_board_docs": DISTRICT,
     "spearfish_schools_jobs": DISTRICT,
-    "spearfish_sports": "Spearfish High School sports",
-    "spearfish_ms_sports": "Spearfish Middle School sports",
+    "spearfish_sports": DISTRICT,
+    "spearfish_ms_sports": DISTRICT,
     "bhsu_calendar": BHSU,
     "bhsu_jobs": BHSU,
     "bhsu_athletics": "BHSU Yellow Jackets",
@@ -141,12 +141,8 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
                     _i("District news", "spearfish_school_news"),
                     _i("School board agendas", "spearfish_school_board_docs"),
                     _i("Job openings", "spearfish_schools_jobs"),
+                    _i("High school and middle school game schedules", "spearfish_sports", "spearfish_ms_sports"),
                 ),
-            ),
-            Org(
-                "Spartan athletics",
-                "https://gobound.com/sd/schools/spearfish",
-                (_i("High school and middle school game schedules", "spearfish_sports", "spearfish_ms_sports"),),
             ),
             Org(
                 BHSU,
@@ -217,7 +213,11 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
                     _i("Projects open for public comment", "bhnf_projects"),
                 ),
             ),
-            Org("eBird", "https://ebird.org/region/US-SD-081", (_i("Bird sightings in Lawrence County", "ebird"),)),
+            Org(
+                "eBird",
+                "https://ebird.org/explore",
+                (_i("Bird sightings within about 30 miles of Spearfish", "ebird"),),
+            ),
         ],
     ),
     (

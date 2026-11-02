@@ -81,10 +81,15 @@
 
     {% call card("School events, next two weeks", "events", sources=[district_calendar], more=root ~ "events/") %}
       {% if school_events %}
-      {% for day, items in school_events | groupby('date') %}
-      <h3 class="text-xs font-bold uppercase tracking-wide text-pine-800 mt-3 first:mt-0">{{ day | day_heading }}</h3>
-      <ul class="divide-y divide-stone-100">{% for e in items %}{{ event_row(e) }}{% endfor %}</ul>
-      {% endfor %}
+      {# a few days at a time, so the cards below stay within reach #}
+      <div data-more="3" data-more-lg="4" data-more-noun="days">
+        {% for day, items in school_events | groupby('date') %}
+        <div class="mt-3 first:mt-0">
+          <h3 class="text-xs font-bold uppercase tracking-wide text-pine-800">{{ day | day_heading }}</h3>
+          <ul class="divide-y divide-stone-100">{% for e in items %}{{ event_row(e) }}{% endfor %}</ul>
+        </div>
+        {% endfor %}
+      </div>
       {% else %}{{ empty("No school events found.") }}{% endif %}
     {% endcall %}
   </div>

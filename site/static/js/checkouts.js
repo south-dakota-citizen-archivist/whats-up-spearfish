@@ -65,6 +65,14 @@ document.addEventListener("alpine:init", () => {
       const svg = el("svg", { width: W, height: H, viewBox: `0 0 ${W} ${H}`, class: "block select-none" });
       svg.setAttribute("aria-hidden", "true");
 
+      // the pandemic years, behind everything else: they explain the 2020 dip
+      const c0 = Math.max(monthTime("2020-03") - 15 * 86400000, t0);
+      const c1 = Math.min(Date.UTC(2022, 0, 1), t1);
+      if (c1 > c0) {
+        svg.append(el("rect", { x: x(c0), y: M.top, width: x(c1) - x(c0), height: ih, fill: "#efedeb" }));
+        svg.append(el("text", { x: x(c0) + 4, y: M.top + 12, "font-size": 11, fill: INK }, "COVID-19"));
+      }
+
       for (let v = 0; v <= ymax; v += step) {
         svg.append(el("line", { x1: M.left, x2: W - M.right, y1: y(v), y2: y(v), stroke: GRID, "stroke-width": 1 }));
         svg.append(el("text", { x: M.left - 6, y: y(v) + 4, "text-anchor": "end", "font-size": 11, fill: INK }, v.toLocaleString()));

@@ -1,12 +1,16 @@
 // Long lists (marked data-more="N") show their first N items and a "Show more" button,
 // instead of scrolling inside their card, which feels like a trap on a phone.
-// Without JavaScript every item simply shows.
+// data-more-lg="M" sets a different count for large screens (a photo grid shows more
+// per row there); data-more-noun names what's hidden ("days"). Without JavaScript every
+// item simply shows.
 document.addEventListener("DOMContentLoaded", () => {
+  const large = window.matchMedia("(min-width: 1024px)").matches;
   for (const list of document.querySelectorAll("[data-more]")) {
-    const limit = Number(list.dataset.more) || 8;
+    const limit = Number((large && list.dataset.moreLg) || list.dataset.more) || 8;
     const extra = [...list.children].slice(limit);
     if (extra.length < 3) continue; // not worth a button for one or two more
-    const label = `Show ${extra.length} more`;
+    const noun = list.dataset.moreNoun ? ` ${list.dataset.moreNoun}` : ""; // "Show 6 more days"
+    const label = `Show ${extra.length} more${noun}`;
     const button = document.createElement("button");
     button.type = "button";
     button.className =

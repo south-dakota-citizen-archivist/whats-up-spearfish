@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="text-2xl font-extrabold">Data sources</h1>
+<h1 class="text-2xl font-extrabold mb-4">Data sources</h1>
 
-<div class="bg-white border border-stone-200 overflow-x-auto">
-  <table class="w-full min-w-[36rem] text-sm">
-    <thead class="text-left text-xs uppercase tracking-wide text-stone-500 border-b border-stone-300">
+{# a table on wider screens; on phones each row stacks (source, what, when) so nothing hides off to the side #}
+<div class="bg-white border border-stone-200">
+  <table class="w-full text-sm block sm:table">
+    <thead class="hidden sm:table-header-group text-left text-xs uppercase tracking-wide text-stone-500 border-b border-stone-300">
       <tr>
         <th class="px-4 py-2.5 font-semibold w-[30%]">Source</th>
         <th class="px-4 py-2.5 font-semibold">Records</th>
@@ -13,20 +14,20 @@
       </tr>
     </thead>
     {% for g in groups %}
-    <tbody>
-      <tr class="bg-stone-100 border-y border-stone-200">
-        <th colspan="3" scope="colgroup" class="px-4 py-2 text-left text-xs font-bold uppercase tracking-wide text-pine-800">{{ g.heading }}</th>
+    <tbody class="block sm:table-row-group">
+      <tr class="block sm:table-row bg-stone-100 border-y border-stone-200">
+        <th colspan="3" scope="colgroup" class="block sm:table-cell px-4 py-2 text-left text-xs font-bold uppercase tracking-wide text-pine-800">{{ g.heading }}</th>
       </tr>
       {% for o in g.orgs %}
       {% for i in o.offers %}
-      <tr class="border-t border-stone-100 align-top">
+      <tr class="block sm:table-row {{ 'border-t border-stone-200' if loop.first else 'sm:border-t sm:border-stone-100' }} align-top pb-2.5 sm:pb-0">
         {% if loop.first %}
-        <td rowspan="{{ o.offers | length }}" class="px-4 py-2.5 font-semibold">
+        <td rowspan="{{ o.offers | length }}" class="block sm:table-cell px-4 pt-2.5 sm:py-2.5 font-semibold">
           <a href="{{ o.url }}" target="_blank" rel="noopener" class="hover:text-pine-700 hover:underline">{{ o.name }}</a>
         </td>
         {% endif %}
-        <td class="px-4 py-2.5 text-stone-700">{{ i.what }}</td>
-        <td class="px-4 py-2.5 text-xs">
+        <td class="block sm:table-cell px-4 pt-1 sm:py-2.5 text-stone-700">{{ i.what }}</td>
+        <td class="block sm:table-cell px-4 sm:py-2.5 text-xs">
           {% if i.note %}<span class="text-stone-500">{{ i.note }}</span>
           {% elif i.ok and i.updated %}<span class="text-stone-500">{{ i.updated | ago(cap=true) }}</span>
           {% elif i.updated %}<span class="text-amber-700">⚠ Not updating right now (last {{ i.updated | ago }})</span>

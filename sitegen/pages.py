@@ -317,6 +317,20 @@ def _interleave(groups: list[list]) -> list:
     return out
 
 
+def recent_permit_count(site: Site, today: date) -> int:
+    """Building permits in the city's latest monthly report, plus applications on
+    Planning Commission agendas in the past 30 days: the front page's permits callout."""
+    permits = site.get("building_permits").records
+    latest = max((r.get("date", "") for r in permits), default="")
+    cutoff = (today - timedelta(days=30)).isoformat()
+    applications = [
+        r
+        for r in site.get("planning_commission").records
+        if r.get("site") and (r.get("meeting_date") or "")[:10] >= cutoff
+    ]
+    return sum(1 for r in permits if latest and r.get("date") == latest) + len(applications)
+
+
 def mixed_pets(pets: list[dict]) -> list[dict]:
     """Every pet, species taking turns (the shelter lists its many cats first), photos first."""
     by_species: dict[str, list] = defaultdict(list)
@@ -415,6 +429,7 @@ def home(site: Site, events: list[dict], today: date) -> dict:
         "headlines": newest(site.records(kind="news"))[:8],
         "meetings": upcoming_meetings[:6],
         "bids": site.get("public_bids").records,
+        "recent_permits": recent_permit_count(site, today),
         "alerts": alerts,
     }
 

@@ -71,9 +71,10 @@
     <p class="text-xs text-stone-500 mt-4">Burn bans and fire closures in the national forest are posted with the <a href="#forest-alerts" class="text-pine-700 underline">forest alerts</a> below.</p>
   {% endcall %}
 
-  {% call card("Bird sightings, past two weeks", "birds", sources=ebird, more="https://ebird.org/region/US-SD-081", more_label="eBird", class="lg:col-span-2") %}
+  {% call card("Bird sightings, past two weeks", "birds", sources=ebird, more="https://ebird.org/explore", more_label="eBird", class="lg:col-span-2") %}
+    <p class="text-sm text-stone-600 mb-3">Reported to eBird within about 30 miles of Spearfish.</p>
     {% if birds %}
-    <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+    <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4" data-more="6" data-more-lg="12" data-more-noun="birds">
       {% for b in birds %}
       <li>
         <a href="{{ b.url }}" target="_blank" rel="noopener" class="group block">
