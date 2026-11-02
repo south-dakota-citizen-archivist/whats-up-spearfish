@@ -1,0 +1,208 @@
+{
+ "slug": "danr_contested_cases",
+ "name": "SD DANR contested cases",
+ "kind": "case",
+ "url": "https://danr.sd.gov/public/ContestedCase.aspx",
+ "fetched_at": "2026-11-02T13:02:36-07:00",
+ "count": 6,
+ "records": [
+  {
+   "ccid": "123",
+   "board": "Board of Minerals and Environment",
+   "permit_type": "Uranium Exploration Permit",
+   "title": "Clean Nuclear Energy Corp. Uranium Exploration Permit Application",
+   "description": "Proposed uranium exploration project seven miles north of Edgemont, SD. Up to 50 holes will be drilled to a maximum vertical depth of 700 feet. In addition, 50 drill platforms will be created with a dimension of 60 feet by 60 feet. Exploration will be conducted using reverse circulation drilling with sumps.",
+   "area": "",
+   "url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID123",
+   "documents": [
+    {
+     "title": "Notice of Entry of Order on Clean Nuclear Energy Corp's Motion to Expedite Hearing",
+     "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/72326BMEOrderCNECMotion.pdf",
+     "added": "2026-07-24"
+    },
+    {
+     "title": "July 6, 2026 Response from Black Hills Group of the Sierra Club and Jay Davis in Opposition to Clean Nuclear Energy's Motion to Expedite Hearing",
+     "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/070626SierraClubDavisResponse.pdf",
+     "added": "2026-07-13"
+    },
+    {
+     "title": "July 9, 2026 Response from Joint Intervenors in Opposition to Clean Nuclear Energy's Motion to Expedite Hearing",
+     "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/docs/070926JointIntervenorMotion.pdf",
+     "added": "2026-07-10"
+    }
+   ],
+   "updated": "2026-07-24",
+   "kind": "case",
+   "record_type": "case",
+   "source": "danr_contested_cases",
+   "source_label": "SD DANR contested cases",
+   "id": "1755d8353fe3",
+   "_first_seen": "2026-11-02"
+  },
+  {
+   "ccid": "124",
+   "board": "Board of Minerals and Environment",
+   "permit_type": "Solid Waste Permit",
+   "title": "Petition to Modify the Recommended Solid Waste Permit for the Rapid City Landfill",
+   "description": "Petitioners seeks that the Board of Minerals and Environment modify the proposed solid waste permit for the Rapid City landfill",
+   "area": "",
+   "url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID124",
+   "documents": [
+    {
+     "title": "City of Rapid City's Withdrawal of Notice to Take Deposition of Steve Kropp",
+     "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/LTR re Withdrawal of Notice to Take Deposition of Steve Kropp.pdf",
+     "added": "2026-10-26"
+    },
+    {
+     "title": "Petitioners' Joint Motion and Exhibits to Compel Discovery by City of Rapid City",
+     "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Petitioners' Joint Motion and Exhibits to Compel Discovery by City of Rapid City.pdf",
+     "added": "2026-10-20"
+    },
+    {
+     "title": "Petitioners' Amended Notices to Take Depositions of Hunter Roberts and Steve Kropp",
+     "url": "https://danr.sd.gov/Environment/WasteManagement/docs/RapidCityContestedCase2025/Petitioners Amended Notices to Take Depositions of Hunter Roberts and Steve Kropp.pdf",
+     "added": "2026-10-20"
+    }
+   ],
+   "updated": "2026-10-26",
+   "kind": "case",
+   "record_type": "case",
+   "source": "danr_contested_cases",
+   "source_label": "SD DANR contested cases",
+   "id": "e70aabcc5e32",
+   "_first_seen": "2026-11-02"
+  },
+  {
+   "ccid": "130",
+   "board": "DANR Secretary's Office",
+   "permit_type": "Surface Water Discharge Individual Permit",
+   "title": "City of Custer Surface Water Discharge Permit",
+   "description": "Reissuance of the city of Custer's Surface Water Discharge Permit.",
+   "area": "",
+   "url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID130",
+   "documents": [
+    {
+     "title": "Ordering Transferring File to OHE & Stay of Previous Deadlines",
+     "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/Order Transfer OHE & Stay of Deadlines.pdf",
+     "added": "2026-10-08"
+    },
+    {
+     "title": "Joint Stipulation to Stay Deadlines",
+     "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/Joint Stipulation.pdf",
+     "added": "2026-10-08"
+    },
+    {
+     "title": "Correspondence re Certificate of Service for City of Custer's Expert Disclosures",
+     "url": "https://danr.sd.gov/OfficeOfWater/SurfaceWaterQuality/docs/CCH/Custer/Corr re Certificate of Service for Custer Expert Disclosures.pdf",
+     "added": "2026-09-17"
+    }
+   ],
+   "updated": "2026-10-08",
+   "kind": "case",
+   "record_type": "case",
+   "source": "danr_contested_cases",
+   "source_label": "SD DANR contested cases",
+   "id": "ae13359ef80c",
+   "_first_seen": "2026-11-02"
+  },
+  {
+   "ccid": "125",
+   "board": "DANR Secretary's Office",
+   "permit_type": "General Permit",
+   "title": "General Water Pollution Control Permits for Concentrated Animal Feeding Operations (CAFOs)",
+   "description": "Reissuance of the CAFO general permit as two separate general permits: a federally delegated National Pollutant Discharge Elimination System (NPDES) general permit and a state issued general permit.",
+   "area": "Statewide",
+   "url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID125",
+   "documents": [
+    {
+     "title": "Order to Grant Petition from Dakota Rural Action - Office of the Secretary",
+     "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/OrderGrantSec.pdf",
+     "added": "2026-10-30"
+    },
+    {
+     "title": "Petition: Dakota Rural Action",
+     "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/PetitionDakotaRural.pdf",
+     "added": "2026-10-29"
+    },
+    {
+     "title": "Notice of Amended Response to Comments",
+     "url": "https://danr.sd.gov/Press/docs/publicnotices/FeedlotCCH/NoticeDraftAmendedRTC.pdf",
+     "added": "2026-09-25"
+    }
+   ],
+   "updated": "2026-10-30",
+   "kind": "case",
+   "record_type": "case",
+   "source": "danr_contested_cases",
+   "source_label": "SD DANR contested cases",
+   "id": "f6ea1591699a",
+   "_first_seen": "2026-11-02"
+  },
+  {
+   "ccid": "133",
+   "board": "Water Management Board",
+   "permit_type": "Water Right Permit Application",
+   "title": "2052-1 Peter Sobotka",
+   "description": "Application for a water permit to appropriate 0.40 cubic feet of water per second from an infiltration gallery to be completed into the Quaternary Aged Alluvium (approximately 30 feet deep) located in NE 1/4 NW 1/4 Section 29 for irrigation of 80 acres located in the E 1/2 NW 1/4, W 1/2 NE 1/4, NE 1/4 NE 1/4 Section 29; all in T6N-R5E. This site is located in Meade County, approximately four and one-half miles east of Whitewood SD.",
+   "area": "",
+   "url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID133",
+   "documents": [
+    {
+     "title": "Notice of Hearing",
+     "url": "https://danr.sd.gov/wrimage/pub/2052-1_NOH_mail cert_1.pdf",
+     "added": "2026-10-28"
+    },
+    {
+     "title": "Petition in Opposition",
+     "url": "https://danr.sd.gov/wrimage/pub/2052-1_pet_1.pdf",
+     "added": "2026-10-27"
+    },
+    {
+     "title": "Public Notice",
+     "url": "https://danr.sd.gov/wrimage/pub/2052-1_pub_aff.pdf",
+     "added": "2026-10-27"
+    }
+   ],
+   "updated": "2026-10-28",
+   "kind": "case",
+   "record_type": "case",
+   "source": "danr_contested_cases",
+   "source_label": "SD DANR contested cases",
+   "id": "04fc2c288e03",
+   "_first_seen": "2026-11-02"
+  },
+  {
+   "ccid": "131",
+   "board": "Water Management Board",
+   "permit_type": "Water Right Permit Application",
+   "title": "2049-1 Stanley R Goschke",
+   "description": "Application for a water permit to appropriate up to 10 acre-feet of water annually at a maximum pump rate of 0.17 cubic feet of water per second from one well to be completed into the Minnelusa Aquifer (approximately 260 feet deep) located in Lot 1 of Lot E NW 1/4 SW 1/4 Section 20-T4N-R6E, for a water distribution system and domestic purposes located in the same area.",
+   "area": "",
+   "url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID131",
+   "documents": [
+    {
+     "title": "Applicant's Request to Withdraw Application",
+     "url": "https://danr.sd.gov/wrimage/pub/2049-1_withdraw request.pdf",
+     "added": "2026-11-02"
+    },
+    {
+     "title": "Notice of Hearing",
+     "url": "https://danr.sd.gov/wrimage/pub/2049-1_goschke_NOH_2.pdf",
+     "added": "2026-10-19"
+    },
+    {
+     "title": "Notice of Automatic Delay of Hearing",
+     "url": "https://danr.sd.gov/wrimage/pub/2049-1_notdly.pdf",
+     "added": "2026-08-25"
+    }
+   ],
+   "updated": "2026-11-02",
+   "kind": "case",
+   "record_type": "case",
+   "source": "danr_contested_cases",
+   "source_label": "SD DANR contested cases",
+   "id": "9ae4aeb0eb07",
+   "_first_seen": "2026-11-02"
+  }
+ ]
+}

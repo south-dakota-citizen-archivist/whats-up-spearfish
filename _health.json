@@ -209,13 +209,20 @@
    "url": "https://custercountychronicle.com"
   },
   "danr_contested_cases": {
-   "enabled": false,
-   "kind": "notice",
-   "max_stale_hours": 48,
+   "count": 6,
+   "dropped": 0,
+   "enabled": true,
+   "error": "",
+   "failures": 0,
+   "kind": "case",
+   "last_run": "2026-11-02T13:02:30-07:00",
+   "last_success": "2026-11-02T13:02:30-07:00",
+   "max_stale_hours": 72,
    "name": "SD DANR contested cases",
-   "status": "disabled",
+   "new": 6,
+   "status": "ok",
    "tier": "daily",
-   "url": ""
+   "url": "https://danr.sd.gov/public/ContestedCase.aspx"
   },
   "danr_public_notices": {
    "count": 6,
@@ -224,23 +231,30 @@
    "error": "",
    "failures": 0,
    "kind": "notice",
-   "last_run": "2026-11-02T10:52:44-07:00",
-   "last_success": "2026-11-02T10:52:44-07:00",
+   "last_run": "2026-11-02T13:02:30-07:00",
+   "last_success": "2026-11-02T13:02:30-07:00",
    "max_stale_hours": 48,
    "name": "SD DANR public notices (West River)",
-   "new": 6,
+   "new": 0,
    "status": "ok",
    "tier": "daily",
    "url": "https://danr.sd.gov/public/default.aspx"
   },
   "danr_spills": {
-   "enabled": false,
-   "kind": "notice",
-   "max_stale_hours": 48,
+   "count": 66,
+   "dropped": 0,
+   "enabled": true,
+   "error": "",
+   "failures": 0,
+   "kind": "spill",
+   "last_run": "2026-11-02T13:05:46-07:00",
+   "last_success": "2026-11-02T13:05:46-07:00",
+   "max_stale_hours": 72,
    "name": "SD DANR spill reports",
-   "status": "disabled",
+   "new": 0,
+   "status": "ok",
    "tier": "daily",
-   "url": ""
+   "url": "https://apps.sd.gov/NR42InteractiveMap/"
   },
   "ebird": {
    "count": 50,
@@ -936,5 +950,5 @@
    "url": "https://www.westernhillshumanesociety.com/"
   }
  },
- "updated": "2026-11-02T12:36:13-07:00"
+ "updated": "2026-11-02T13:06:19-07:00"
 }
