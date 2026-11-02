@@ -21,7 +21,6 @@ import json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from black_hills import BBOX
 from scrapers import net
 from scrapers.base import BaseScraper
 
@@ -39,7 +38,11 @@ HEADERS = {"User-Agent": "whats-up-in-spearfish/1.0 (public data aggregator)"}
 # How far back to fetch
 LOOKBACK_DAYS = 30
 
-# ArcGIS envelope geometry (WGS84) from black_hills BBOX
+# The Black Hills and the towns around them, Hot Springs/Edgemont to Spearfish/Belle Fourche
+# and Rapid City into the Wyoming foothills (WGS84)
+BBOX = {"min_lat": 43.30, "max_lat": 44.80, "min_lon": -104.70, "max_lon": -103.00}
+
+# ArcGIS envelope geometry for BBOX
 BH_ENVELOPE = (
     f'{{"xmin":{BBOX["min_lon"]},"ymin":{BBOX["min_lat"]},'
     f'"xmax":{BBOX["max_lon"]},"ymax":{BBOX["max_lat"]},'

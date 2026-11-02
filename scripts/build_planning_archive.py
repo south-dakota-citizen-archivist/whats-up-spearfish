@@ -8,8 +8,8 @@ one-time consolidation, not a scraper.
 
 Inputs
   - raw API dumps (one directory per record: record, form fields + entries,
-    locations, attachments, docs, multi-entry items) from the old
-    spearfish-planning-records projects — complete records through mid-2025
+    locations, attachments, docs, multi-entry items) made from the portal
+    before it closed — complete records through mid-2025
   - every version of data/planning_zoning.json in git history on main —
     summary fields only, through July 2026
 
@@ -24,7 +24,7 @@ Outputs (into --out, default $WUS_DATA_DIR/archive or data/archive)
 
 Usage:
   uv run python scripts/build_planning_archive.py \
-      --raw ~/spearfish-planning-records/records --raw ~/spearfish-planning-records-working/records
+      --raw <folder of raw record dumps> [--raw <another folder> …]
 """
 
 from __future__ import annotations
