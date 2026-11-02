@@ -10,7 +10,7 @@ from __future__ import annotations
 import json
 import re
 import statistics
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import date, timedelta
 
 from scrapers import geo
@@ -471,13 +471,13 @@ def civic(site: Site, events: list[dict], today: date) -> dict:
 
 def news(site: Site, events: list[dict], today: date) -> dict:
     items = newest(since(site.records(kind="news", slugs=NEWS_SOURCES), 14, today))
-    outlets = sorted({r["source_label"] for r in items})
+    outlet_counts = Counter(r["source_label"] for r in items)
     by_day: dict[str, list] = defaultdict(list)
     for r in items:
         by_day[r.get("date", "")].append(r)
     return {
         "news_days": sorted(by_day.items(), reverse=True),
-        "outlets": outlets,
+        "outlets": dict(sorted(outlet_counts.items())),
         "news_sources": sources_of(site, NEWS_SOURCES),
         "news_count": len(items),
     }

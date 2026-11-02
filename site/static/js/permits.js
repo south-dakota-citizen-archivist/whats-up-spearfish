@@ -8,6 +8,11 @@ document.addEventListener("alpine:init", () => {
     o: { label: "Other", color: "#a8a29e" },
   };
 
+  // Readers who ask for less motion get instant jumps instead of glides
+  const calm = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const glide = () => (calm() ? { animate: false } : { duration: 0.8 });
+  const scrollMode = () => (calm() ? "auto" : "smooth");
+
   Alpine.data("permits", (url, latestReport, outlinesUrl, beacon) => {
     // Leaflet objects live outside Alpine's reactive state.
     let map = null;
@@ -28,6 +33,7 @@ document.addEventListener("alpine:init", () => {
       locating: false,
       selected: null,
       peek: null, // small-screen preview card shown over the map after tapping a dot
+      limit: 40, // how many places the list shows before "Show more"
 
       async init() {
         this.sites = await (await fetch(url)).json();
@@ -44,11 +50,18 @@ document.addEventListener("alpine:init", () => {
           const s = key && this.sites.find((x) => x.k === key);
           if (s) this.select(s);
         });
-        this.$watch("since", () => this.draw());
-        this.$watch("show", () => this.draw(), { deep: true });
+        this.$watch("since", () => {
+          this.limit = 40;
+          this.draw();
+        });
+        this.$watch("show", () => {
+          this.limit = 40;
+          this.draw();
+        }, { deep: true });
         this.$watch("q", () => {
+          this.limit = 40;
           const pts = this.q.trim() ? this.results.filter((s) => s.lat != null).map((s) => [s.lat, s.lon]) : [];
-          if (map && pts.length) map.flyToBounds(pts, { maxZoom: 17, padding: [30, 30], duration: 0.8 });
+          if (map && pts.length) map.flyToBounds(pts, { maxZoom: 17, padding: [30, 30], ...glide() });
         });
       },
 
@@ -92,6 +105,11 @@ document.addEventListener("alpine:init", () => {
       },
 
       get results() {
+        return this.matches.slice(0, this.limit);
+      },
+
+      // Every place matching the search, location or filters, in list order
+      get matches() {
         const q = this.q.trim().toLowerCase();
         if (q) {
           const words = q.split(/\s+/);
@@ -99,18 +117,16 @@ document.addEventListener("alpine:init", () => {
             .filter((s) => {
               const hay = (s.a + " " + (s.own || "") + " " + (s.pid || "") + " " + s.r.map((r) => [r.no, r.t, r.con, r.who, r.own, r.desc, r.loc, r.legal].join(" ")).join(" ")).toLowerCase();
               return words.every((w) => hay.includes(w));
-            })
-            .slice(0, 60);
+            });
         }
         const pool = this.inRange();
         if (this.here) {
           return pool
             .filter((s) => s.lat != null)
             .map((s) => ({ ...s, dist: this.distance(this.here, s) }))
-            .sort((a, b) => a.dist - b.dist)
-            .slice(0, 30);
+            .sort((a, b) => a.dist - b.dist);
         }
-        return pool.slice(0, 40);
+        return pool;
       },
 
       near() {
@@ -128,7 +144,7 @@ document.addEventListener("alpine:init", () => {
             this.here = { lat: pos.coords.latitude, lon: pos.coords.longitude };
             if (youAreHere) youAreHere.remove();
             youAreHere = L.circleMarker([this.here.lat, this.here.lon], { radius: 8, weight: 3, color: "#0369a1", fillColor: "#38bdf8", fillOpacity: 1 }).addTo(map);
-            map.flyTo([this.here.lat, this.here.lon], 17, { duration: 0.8 });
+            map.flyTo([this.here.lat, this.here.lon], 17, glide());
           },
           () => {
             this.locating = false;
@@ -142,8 +158,12 @@ document.addEventListener("alpine:init", () => {
       select(s) {
         this.show_(s);
         this.peek = null;
-        if (s.lat != null && map) map.flyTo([s.lat, s.lon], Math.max(map.getZoom(), 16), { duration: 0.8 });
-        this.$nextTick(() => this.reveal());
+        if (s.lat != null && map) map.flyTo([s.lat, s.lon], Math.max(map.getZoom(), 16), glide());
+        this.$nextTick(() => {
+          this.reveal();
+          // keyboard and screen-reader users land on the details they asked for
+          this.$refs.detailTitle?.focus({ preventScroll: true });
+        });
       },
 
       // Tapped on the map: the reader is already looking at it, so leave the map alone.
@@ -178,7 +198,9 @@ document.addEventListener("alpine:init", () => {
         return beacon + encodeURIComponent(s.pid);
       },
 
-      clear() {
+      // returnFocus: closed from the details panel, so put focus back on the search box
+      clear(returnFocus = false) {
+        if (returnFocus) document.getElementById("pq")?.focus();
         this.selected = null;
         this.peek = null;
         if (ring) ring.remove();
@@ -191,12 +213,15 @@ document.addEventListener("alpine:init", () => {
         const el = this.$refs.detail;
         if (!el) return;
         const r = el.getBoundingClientRect();
-        if (r.top < 60 || r.top > window.innerHeight * 0.5) el.scrollIntoView({ behavior: "smooth", block: "start" });
+        if (r.top < 60 || r.top > window.innerHeight * 0.5) el.scrollIntoView({ behavior: scrollMode(), block: "start" });
       },
 
       showDetail() {
         this.peek = null;
-        this.$nextTick(() => this.$refs.detail?.scrollIntoView({ behavior: "smooth", block: "start" }));
+        this.$nextTick(() => {
+          this.$refs.detail?.scrollIntoView({ behavior: scrollMode(), block: "start" });
+          this.$refs.detailTitle?.focus({ preventScroll: true });
+        });
       },
 
       distance(a, b) {

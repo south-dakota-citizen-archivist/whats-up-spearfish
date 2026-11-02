@@ -24,7 +24,7 @@
       <h2 class="text-lg font-bold text-stone-900">{{ title }}</h2>
       {% if sources is not none %}{{ freshness(sources) }}{% endif %}
     </div>
-    {% if more %}<a href="{{ more }}" class="shrink-0 text-sm font-semibold text-pine-700 hover:underline">{{ more_label }} →</a>{% endif %}
+    {% if more %}<a href="{{ more }}" class="shrink-0 text-sm font-semibold text-pine-700 hover:underline">{{ more_label }}<span aria-hidden="true"> →</span></a>{% endif %}
   </div>
   <div class="px-5 py-4">
     {{ caller() }}
@@ -78,18 +78,21 @@
 {% if m %}
 {% set inner %}
   {% set shown = m.entrees[:max_items] if max_items else m.entrees %}
-  <ul class="space-y-0.5 list-disc pl-4 marker:text-stone-400">{% for e in shown %}<li>{{ e }}</li>{% endfor %}</ul>
-  {% if m.entrees | length > shown | length %}<p class="mt-0.5 text-xs text-stone-500">+{{ m.entrees | length - shown | length }} more</p>{% endif %}
+  {# spans, not a list: a button may only hold inline content. The hidden lead-in names the meal for screen readers. #}
+  <span class="sr-only">{{ m.level }} {{ m.meal | lower }}: </span>
+  <span class="block space-y-0.5 list-disc pl-4 marker:text-stone-400">{% for e in shown %}<span class="list-item">{{ e }}{% if not loop.last %}<span class="sr-only">, </span>{% endif %}</span>{% endfor %}</span>
+  {% if m.entrees | length > shown | length %}<span class="block mt-0.5 text-xs text-stone-500">+{{ m.entrees | length - shown | length }} more</span>{% endif %}
+  <span class="sr-only">. See the full menu.</span>
 {% endset %}
 {% if popup %}
-<button type="button" @click="open({{ m.key | tojson | forceescape }})" aria-label="Full {{ m.level }} {{ m.meal | lower }} menu"
+<button type="button" @click="open({{ m.key | tojson | forceescape }})"
         class="flex flex-col justify-start w-full h-full text-left px-2.5 py-2 hover:bg-pine-50 hover:text-pine-800">{{ inner }}</button>
 {% else %}
-<a href="{{ root }}schools/#menu={{ m.key | urlencode }}" aria-label="Full {{ m.level }} {{ m.meal | lower }} menu"
+<a href="{{ root }}schools/#menu={{ m.key | urlencode }}"
    class="block w-full h-full px-2.5 py-2 hover:bg-pine-50 hover:text-pine-800">{{ inner }}</a>
 {% endif %}
 {% else %}
-<p class="px-2.5 py-2 text-stone-400">—</p>
+<p class="px-2.5 py-2 text-stone-500"><span aria-hidden="true">—</span><span class="sr-only">None posted</span></p>
 {% endif %}
 {% endmacro %}
 <table class="w-full table-fixed border-collapse text-[13px] sm:text-sm leading-snug">

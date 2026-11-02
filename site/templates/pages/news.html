@@ -2,7 +2,7 @@
 {% from "macros.html" import freshness %}
 
 {% block content %}
-<div x-data="{ outlet: '' }">
+<div x-data="{ outlet: '', counts: {{ outlets | tojson | forceescape }}, total: {{ news_count }} }">
   <div class="flex flex-wrap items-end justify-between gap-3 mb-4">
     <div>
       <h1 class="text-2xl font-extrabold">News</h1>
@@ -10,11 +10,12 @@
       {{ freshness(news_sources) }}
     </div>
     <div>
-      <label for="outlet" class="sr-only">Outlet</label>
+      <label for="outlet" class="sr-only">Show stories from</label>
       <select id="outlet" x-model="outlet" class="border border-stone-300 bg-white px-3 py-2 text-sm">
         <option value="">All outlets</option>
-        {% for o in outlets %}<option>{{ o }}</option>{% endfor %}
+        {% for o, n in outlets.items() %}<option value="{{ o }}">{{ o }} ({{ n }})</option>{% endfor %}
       </select>
+      <p class="sr-only" role="status" x-text="outlet ? counts[outlet] + ' stories from ' + outlet : ''"></p>
     </div>
   </div>
 

@@ -32,9 +32,14 @@
 </head>
 <body class="min-h-screen flex flex-col bg-stone-100 text-stone-900 antialiased">
 
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[2000] focus:bg-white focus:text-pine-800 focus:font-semibold focus:px-4 focus:py-2 focus:shadow-lg">Skip to content</a>
+
   <header class="bg-pine-800 text-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-4 pb-2 flex items-baseline justify-between gap-4">
-      <a href="{{ root }}" class="text-xl sm:text-2xl font-extrabold tracking-tight hover:text-pine-100">What's up, Spearfish?</a>
+      {# the home page has no title of its own, so the site name is its main heading #}
+      {% if page_path == '' %}<h1 class="text-xl sm:text-2xl font-extrabold tracking-tight">{% endif %}
+      <a href="{{ root }}" class="{{ '' if page_path == '' else 'text-xl sm:text-2xl font-extrabold tracking-tight ' }}hover:text-pine-100">What's up, Spearfish?</a>
+      {% if page_path == '' %}</h1>{% endif %}
       <span class="text-sm text-pine-100 whitespace-nowrap">{{ today.strftime('%a, %b %-d') }}</span>
     </div>
   </header>
@@ -58,7 +63,7 @@
     </script>
   </nav>
 
-  <main class="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 py-6">
+  <main id="main" tabindex="-1" class="focus:outline-none flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 py-6">
     {% block content %}{% endblock %}
   </main>
 

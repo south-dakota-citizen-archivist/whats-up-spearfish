@@ -20,10 +20,10 @@
   {% set fire_key = 'fire|' ~ fire.local_danger.level ~ '|' ~ (fire.danger.issued or '') ~ '|' ~ fire.incidents | length %}
   <div x-show="!$store.dismissed.has({{ fire_key | tojson | forceescape }})" class="flex items-stretch border border-stone-200 bg-white text-sm">
     <a href="{{ root }}outdoors/#fire" class="flex-1 flex flex-wrap items-center gap-2 px-4 py-3">
-      <span class="font-bold">🔥 Fire:</span>
+      <span class="font-bold"><span aria-hidden="true">🔥 </span>Fire:</span>
       {{ danger_badge(fire.local_danger.level) }}
       {% if fire.incidents %}<span>{{ fire.incidents | length }} active South Dakota wildfire{{ 's' if fire.incidents | length != 1 }}</span>{% endif %}
-      <span class="text-pine-700 font-semibold ml-auto">Details →</span>
+      <span class="text-pine-700 font-semibold ml-auto">Details<span aria-hidden="true"> →</span></span>
     </a>
     <button type="button" @click="$store.dismissed.add({{ fire_key | tojson | forceescape }})" class="shrink-0 px-3 text-lg leading-none opacity-60 hover:opacity-100" aria-label="Dismiss this alert">✕</button>
   </div>
@@ -45,7 +45,7 @@
       {{ empty("Nothing on the calendars for today.") }}
       {% endif %}
       {% if weekend_count %}
-      <p class="mt-3 text-sm"><a href="{{ root }}events/#weekend" class="font-semibold text-pine-700 hover:underline">{{ weekend_count }} events this weekend →</a></p>
+      <p class="mt-3 text-sm"><a href="{{ root }}events/#weekend" class="font-semibold text-pine-700 hover:underline">{{ weekend_count }} events this weekend<span aria-hidden="true"> →</span></a></p>
       {% endif %}
     {% endcall %}
 
@@ -61,7 +61,7 @@
             <li>
               <a href="{{ root }}schools/#menu={{ m.key | urlencode }}" class="group block">
                 <span class="font-semibold group-hover:text-pine-700">{{ m.label }}</span>
-                <span class="block text-stone-600">{{ m.entrees[:3] | join(' · ') }}{% if m.entrees | length > 3 %} <span class="text-stone-400">+{{ m.entrees | length - 3 }} more</span>{% endif %}</span>
+                <span class="block text-stone-600">{{ m.entrees[:3] | join(' · ') }}{% if m.entrees | length > 3 %} <span class="text-stone-500">+{{ m.entrees | length - 3 }} more</span>{% endif %}</span>
               </a>
             </li>
             {% endfor %}
@@ -211,12 +211,12 @@
       <li class="py-2.5">
         <p class="text-xs font-semibold text-stone-500 uppercase tracking-wide">{{ m.date | day_heading }} · {{ m.body }}</p>
         <a href="{{ m.url }}" target="_blank" rel="noopener" class="font-medium hover:text-pine-700 hover:underline">{{ m.name }}</a>
-        <span class="text-xs text-stone-500">{% for d in m.docs %}{{ ext(d.url, d.label, 'text-pine-700 hover:underline ml-2') }}{% endfor %}</span>
+        <span class="text-xs text-stone-500">{% for d in m.docs %}{{ ext(d.url, d.label, 'inline-block py-1 text-pine-700 hover:underline ml-2') }}{% endfor %}</span>
       </li>
       {% endfor %}
     </ul>
     {% else %}{{ empty("No agendas posted for the next seven days yet.") }}{% endif %}
-    {% if bids %}<p class="mt-3 text-sm"><a href="{{ root }}civic/#bids" class="font-semibold text-pine-700 hover:underline">{{ bids | length }} open city bid{{ 's' if bids | length != 1 }} →</a></p>{% endif %}
+    {% if bids %}<p class="mt-3 text-sm"><a href="{{ root }}civic/#bids" class="font-semibold text-pine-700 hover:underline">{{ bids | length }} open city bid{{ 's' if bids | length != 1 }}<span aria-hidden="true"> →</span></a></p>{% endif %}
   {% endcall %}
 </div>
 {% endblock %}

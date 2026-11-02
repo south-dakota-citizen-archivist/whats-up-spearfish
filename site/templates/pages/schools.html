@@ -12,9 +12,9 @@
     {% call card("School menus", "menus", sources=menu_sources) %}
       {% if menu_days %}
       <div x-data="menus('{{ root }}schools/menus.json')">
-        <div class="flex gap-1.5 overflow-x-auto pb-2 mb-3" role="tablist">
+        <div class="flex gap-1.5 overflow-x-auto pb-2 mb-3" role="group" aria-label="Pick a day">
           {% for d in menu_days %}
-          <button type="button" role="tab" @click="day = {{ loop.index0 }}" :aria-selected="day === {{ loop.index0 }}"
+          <button type="button" @click="day = {{ loop.index0 }}" :aria-pressed="day === {{ loop.index0 }}"
                   :class="day === {{ loop.index0 }} ? 'bg-pine-700 text-white border-pine-700' : 'bg-white text-stone-700 border-stone-300 hover:border-pine-600'"
                   class="shrink-0 px-3 py-1 border text-sm">{{ d.date | fmt_day('%a %-m/%-d') }}</button>
           {% endfor %}
@@ -28,16 +28,16 @@
         {% endfor %}
 
         {# full menu pop-up #}
-        <dialog x-ref="dialog" @close="closed()" @click.self="close()"
+        <dialog x-ref="dialog" @close="closed()" @click.self="close()" aria-labelledby="menu-title"
                 class="m-auto w-full max-w-2xl max-h-[90vh] p-0 border border-stone-300 shadow-xl backdrop:bg-stone-900/50">
           <template x-if="menu">
             <div>
               <div class="sticky top-0 bg-white border-b border-stone-200 px-5 py-3 flex justify-between gap-3 z-10">
                 <div>
                   <p class="text-xs font-bold uppercase tracking-wide text-stone-500" x-text="heading(menu.date)"></p>
-                  <h2 class="text-lg font-bold" x-text="menu.level + ' ' + menu.meal.toLowerCase()"></h2>
+                  <h2 id="menu-title" class="text-lg font-bold" x-text="menu.level + ' ' + menu.meal.toLowerCase()"></h2>
                 </div>
-                <button type="button" @click="close()" class="text-stone-500 hover:text-stone-900 text-lg" aria-label="Close">✕</button>
+                <button type="button" @click="close()" class="text-stone-500 hover:text-stone-900 text-lg px-2" aria-label="Close menu">✕</button>
               </div>
               <ul class="divide-y divide-stone-100">
                 <template x-for="(item, i) in menu.items" :key="i">
@@ -70,7 +70,7 @@
                   </li>
                 </template>
               </ul>
-              <p class="px-5 py-3 border-t border-stone-200 text-xs"><a :href="menu.url" target="_blank" rel="noopener" class="text-pine-700 hover:underline">The district's menu website →</a></p>
+              <p class="px-5 py-3 border-t border-stone-200 text-xs"><a :href="menu.url" target="_blank" rel="noopener" class="text-pine-700 hover:underline">The district's menu website<span aria-hidden="true"> →</span></a></p>
             </div>
           </template>
         </dialog>
@@ -105,7 +105,7 @@
       <ul class="space-y-2 text-sm">
         {% for m in board %}
         <li><span class="font-semibold">{{ m.date | fmt_day('%b %-d') }}</span>
-          {% for d in m.docs %}{{ ext(d.url, d.label, 'text-pine-700 hover:underline ml-2') }}{% endfor %}</li>
+          {% for d in m.docs %}{{ ext(d.url, d.label, 'inline-block py-1 text-pine-700 hover:underline ml-2') }}{% endfor %}</li>
         {% endfor %}
       </ul>
       {% else %}{{ empty("No recent board documents.") }}{% endif %}

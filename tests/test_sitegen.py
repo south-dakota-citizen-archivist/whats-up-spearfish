@@ -224,6 +224,16 @@ def test_smoke_build(fixture_data, tmp_path):
     events_page = (out / "events" / "index.html").read_text()
     assert "webcal://" in events_page and "calendar.google.com/calendar/render?cid=" in events_page
 
+    # accessibility basics on every page
+    for page in out.rglob("index.html"):
+        html = page.read_text()
+        if "Moved" in html:
+            continue
+        assert 'href="#main"' in html and 'id="main"' in html, page  # skip link and its target
+        assert html.count("<h1") == 1, page
+        assert 'role="tab"' not in html, page  # toggle buttons use aria-pressed instead
+    assert ":aria-pressed=\"range === 'week'\"" in events_page  # filter buttons say which one is on
+
     sources = (out / "sources" / "index.html").read_text()
     assert "Black Hills Pioneer" in sources
     assert "boom" not in sources  # no error messages for readers

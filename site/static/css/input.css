@@ -9,6 +9,9 @@
   --color-pine-700: #24543e;
   --color-pine-800: #1c4231;
   --color-pine-900: #14301f;
+  /* A shade darker than Tailwind's stone-500, so small gray text stays readable
+     (4.5:1 or better) on white, the page background and the gray photo placeholders */
+  --color-stone-500: #67605a;
 }
 
 [x-cloak] { display: none !important; }
@@ -25,3 +28,29 @@ a[href], button, [role="button"], [role="tab"], summary, select, label[for],
 input[type="checkbox"], input[type="radio"], input[type="submit"], input[type="button"],
 .leaflet-interactive, .leaflet-container a { cursor: pointer; }
 button:disabled, [aria-disabled="true"] { cursor: not-allowed; }
+
+/* Keyboard focus: a thick outline that shows on light pages and the dark green header alike.
+   In the base layer so a component's own focus style (e.g. the search boxes' ring) still wins. */
+@layer base {
+  :focus-visible { outline: 3px solid var(--color-pine-700); outline-offset: 2px; }
+  header :focus-visible, nav :focus-visible, .bg-pine-800 :focus-visible, .bg-pine-700:focus-visible { outline-color: #fde047; }
+  .leaflet-container:focus-visible { outline-offset: -3px; }
+}
+
+/* Screen readers hear that a link opens a new tab */
+a[target="_blank"]::after {
+  content: " (opens in a new tab)";
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap;
+}
+
+/* Readers who ask for less motion get none */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important; animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important; scroll-behavior: auto !important;
+  }
+}
+
+/* Small screens pin the section menu to the top; keep focused and linked-to things out from under it */
+@media (max-width: 1023px) { html { scroll-padding-top: 3.5rem; } }

@@ -19,7 +19,7 @@
   <div class="flex flex-wrap gap-2 items-center mb-3">
     <button type="button" @click="near()" :disabled="locating"
             class="px-4 py-2 bg-pine-700 text-white font-semibold text-sm hover:bg-pine-800 disabled:opacity-60">
-      <span x-text="locating ? 'Locating…' : '📍 What\'s near me?'"></span>
+      <span aria-hidden="true" x-show="!locating">📍 </span><span x-text="locating ? 'Locating…' : 'What\'s near me?'"></span>
     </button>
     <label for="pq" class="sr-only">Search permits</label>
     <input id="pq" type="search" x-model.debounce.250ms="q" @input="here = null; clear()"
@@ -39,7 +39,7 @@
   <div class="grid lg:grid-cols-5 gap-4">
     <div class="lg:col-span-3 min-w-0 order-2 lg:order-1">
       <div class="relative">
-        <div x-ref="map" class="h-[40vh] lg:h-[60vh] min-h-72 border border-stone-300 bg-stone-200 z-0"></div>
+        <div x-ref="map" role="region" aria-label="Map of permit and application sites. Every site on it is also in the list." class="h-[40vh] lg:h-[60vh] min-h-72 border border-stone-300 bg-stone-200 z-0"></div>
         {# small screens: a preview of the tapped site, instead of jumping the page #}
         <div x-show="peek" x-cloak x-transition.opacity class="absolute inset-x-2 bottom-2 z-[1000] bg-white border border-stone-300 shadow-lg p-3 text-sm lg:hidden">
           <template x-if="peek">
@@ -49,10 +49,10 @@
                 <p class="text-xs text-stone-500">
                   <span x-text="peek.r[0].t"></span> · <span x-text="peek.lp ? day(peek.last.slice(0, 7)) : day(peek.last)"></span>
                 </p>
-                <button type="button" @click="showDetail()" class="mt-1.5 text-xs font-semibold text-pine-700 hover:underline"
-                        x-text="'See ' + (peek.r.length === 1 ? 'the record' : 'all ' + peek.r.length + ' records') + ' ↑'"></button>
+                <button type="button" @click="showDetail()" class="mt-1.5 text-xs font-semibold text-pine-700 hover:underline">
+                  <span x-text="'See ' + (peek.r.length === 1 ? 'the record' : 'all ' + peek.r.length + ' records')"></span><span aria-hidden="true"> ↑</span></button>
               </div>
-              <button type="button" @click="clear()" class="text-stone-500 hover:text-stone-900" aria-label="Close">✕</button>
+              <button type="button" @click="clear()" class="text-stone-500 hover:text-stone-900 px-1" aria-label="Close preview">✕</button>
             </div>
           </template>
         </div>
@@ -61,12 +61,12 @@
         <template x-for="(cat, key) in categories" :key="key">
           <button type="button" @click="show[key] = !show[key]" :aria-pressed="show[key]"
                   class="flex items-center gap-1.5 border px-2 py-1"
-                  :class="show[key] ? 'border-stone-400 bg-white text-stone-800' : 'border-stone-200 bg-stone-100 text-stone-400 line-through'">
+                  :class="show[key] ? 'border-stone-400 bg-white text-stone-800' : 'border-stone-200 bg-stone-100 text-stone-500 line-through'">
             <span class="inline-block w-2.5 h-2.5 border border-stone-800" :style="'background:' + (show[key] ? cat.color : 'transparent')"></span>
             <span x-text="cat.label"></span>
           </button>
         </template>
-        <span class="self-center text-stone-500">Tap to show or hide.</span>
+        <span class="self-center text-stone-500">Show or hide a type.</span>
       </div>
     </div>
 
@@ -77,18 +77,18 @@
           <div>
             <div class="px-4 py-3 border-b border-stone-200 flex justify-between gap-3">
               <div>
-                <h2 class="font-bold text-lg" x-text="selected.a"></h2>
+                <h2 x-ref="detailTitle" tabindex="-1" class="font-bold text-lg focus:outline-none" x-text="selected.a"></h2>
                 <p class="text-xs text-stone-500" x-text="selected.r.length + (selected.r.length === 1 ? ' record' : ' records')"></p>
                 <template x-if="selected.pid">
                   <dl class="mt-1.5 grid grid-cols-[auto_1fr] gap-x-3 text-xs text-stone-600">
-                    <template x-if="selected.own"><dt class="text-stone-400">Owner</dt></template><template x-if="selected.own"><dd x-text="selected.own"></dd></template>
-                    <template x-if="selected.ac"><dt class="text-stone-400">Size</dt></template><template x-if="selected.ac"><dd x-text="selected.ac + (selected.ac === 1 ? ' acre' : ' acres')"></dd></template>
-                    <dt class="text-stone-400">Parcel</dt>
-                    <dd><a :href="parcelUrl(selected)" target="_blank" rel="noopener" class="font-semibold text-pine-700 hover:underline"><span x-text="selected.pid"></span> · county record →</a></dd>
+                    <template x-if="selected.own"><dt class="text-stone-500">Owner</dt></template><template x-if="selected.own"><dd x-text="selected.own"></dd></template>
+                    <template x-if="selected.ac"><dt class="text-stone-500">Size</dt></template><template x-if="selected.ac"><dd x-text="selected.ac + (selected.ac === 1 ? ' acre' : ' acres')"></dd></template>
+                    <dt class="text-stone-500">Parcel</dt>
+                    <dd><a :href="parcelUrl(selected)" target="_blank" rel="noopener" class="font-semibold text-pine-700 hover:underline"><span x-text="selected.pid"></span> · county record<span aria-hidden="true"> →</span></a></dd>
                   </dl>
                 </template>
               </div>
-              <button type="button" @click="clear()" class="text-sm text-stone-500 hover:text-stone-900" aria-label="Close">✕</button>
+              <button type="button" @click="clear(true)" class="text-sm text-stone-500 hover:text-stone-900 px-1 self-start" aria-label="Close details">✕</button>
             </div>
             <ul class="divide-y divide-stone-100 max-h-[60vh] overflow-y-auto">
               <template x-for="(r, i) in selected.r" :key="i">
@@ -103,23 +103,23 @@
                   <p class="font-semibold" x-text="r.t"></p>
                   <p x-show="r.desc" class="text-stone-700" x-text="r.desc"></p>
                   <dl class="mt-1 grid grid-cols-[auto_1fr] gap-x-3 text-xs text-stone-600">
-                    <template x-if="r.no"><dt class="text-stone-400">Number</dt></template><template x-if="r.no"><dd x-text="r.no"></dd></template>
-                    <template x-if="r.v"><dt class="text-stone-400">Value</dt></template><template x-if="r.v"><dd x-text="money(r.v)"></dd></template>
-                    <template x-if="r.con"><dt class="text-stone-400">Contractor</dt></template><template x-if="r.con"><dd x-text="r.con + (r.con_c ? ' · ' + r.con_c : '')"></dd></template>
-                    <template x-if="r.own"><dt class="text-stone-400">Owner</dt></template><template x-if="r.own"><dd x-text="r.own + (r.own_c ? ' · ' + r.own_c : '')"></dd></template>
-                    <template x-if="r.who && r.who !== r.own"><dt class="text-stone-400">Applicant</dt></template><template x-if="r.who && r.who !== r.own"><dd x-text="r.who"></dd></template>
-                    <template x-if="r.loc"><dt class="text-stone-400">Location</dt></template><template x-if="r.loc"><dd x-text="r.loc"></dd></template>
-                    <template x-if="r.legal"><dt class="text-stone-400">Legal</dt></template><template x-if="r.legal"><dd x-text="r.legal"></dd></template>
-                    <template x-if="r.rec"><dt class="text-stone-400">City staff</dt></template><template x-if="r.rec"><dd x-text="r.rec"></dd></template>
+                    <template x-if="r.no"><dt class="text-stone-500">Number</dt></template><template x-if="r.no"><dd x-text="r.no"></dd></template>
+                    <template x-if="r.v"><dt class="text-stone-500">Value</dt></template><template x-if="r.v"><dd x-text="money(r.v)"></dd></template>
+                    <template x-if="r.con"><dt class="text-stone-500">Contractor</dt></template><template x-if="r.con"><dd x-text="r.con + (r.con_c ? ' · ' + r.con_c : '')"></dd></template>
+                    <template x-if="r.own"><dt class="text-stone-500">Owner</dt></template><template x-if="r.own"><dd x-text="r.own + (r.own_c ? ' · ' + r.own_c : '')"></dd></template>
+                    <template x-if="r.who && r.who !== r.own"><dt class="text-stone-500">Applicant</dt></template><template x-if="r.who && r.who !== r.own"><dd x-text="r.who"></dd></template>
+                    <template x-if="r.loc"><dt class="text-stone-500">Location</dt></template><template x-if="r.loc"><dd x-text="r.loc"></dd></template>
+                    <template x-if="r.legal"><dt class="text-stone-500">Legal</dt></template><template x-if="r.legal"><dd x-text="r.legal"></dd></template>
+                    <template x-if="r.rec"><dt class="text-stone-500">City staff</dt></template><template x-if="r.rec"><dd x-text="r.rec"></dd></template>
                   </dl>
                   <template x-if="r.src === 'pc'">
                     <p class="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-xs font-semibold">
-                      <a x-show="r.u" :href="r.u" target="_blank" rel="noopener" class="text-pine-700 hover:underline">Staff report →</a>
-                      <template x-for="a in r.att || []"><a :href="a[1]" target="_blank" rel="noopener" class="text-pine-700 hover:underline" x-text="a[0] + ' →'"></a></template>
-                      <a :href="r.mu" target="_blank" rel="noopener" class="text-pine-700 hover:underline">Meeting agenda →</a>
+                      <a x-show="r.u" :href="r.u" target="_blank" rel="noopener" class="text-pine-700 hover:underline">Staff report<span aria-hidden="true"> →</span></a>
+                      <template x-for="a in r.att || []"><a :href="a[1]" target="_blank" rel="noopener" class="text-pine-700 hover:underline"><span x-text="a[0]"></span><span aria-hidden="true"> →</span></a></template>
+                      <a :href="r.mu" target="_blank" rel="noopener" class="text-pine-700 hover:underline">Meeting agenda<span aria-hidden="true"> →</span></a>
                     </p>
                   </template>
-                  <a x-show="r.u && r.src === 'permit'" :href="r.u" target="_blank" rel="noopener" class="text-xs font-semibold text-pine-700 hover:underline">That month's permit list (PDF) →</a>
+                  <a x-show="r.u && r.src === 'permit'" :href="r.u" target="_blank" rel="noopener" class="text-xs font-semibold text-pine-700 hover:underline">That month's permit list (PDF)<span aria-hidden="true"> →</span></a>
                 </li>
               </template>
             </ul>
@@ -148,6 +148,10 @@
         </template>
         <li x-show="!results.length" class="px-4 py-3 text-sm text-stone-500">Nothing matches. Try a different time period or search.</li>
       </ul>
+      <button type="button" x-show="!loading && matches.length > limit" x-cloak @click="limit += 40"
+              class="w-full mt-2 py-2 border border-stone-300 bg-white text-sm font-semibold text-pine-700 hover:border-pine-600"
+              x-text="'Show more (' + (matches.length - limit).toLocaleString() + ' more)'"></button>
+      <p class="sr-only" role="status" x-text="loading ? '' : (matches.length ? matches.length.toLocaleString() + (matches.length === 1 ? ' place' : ' places') + ' in the list' : 'Nothing matches')"></p>
     </div>
   </div>
 

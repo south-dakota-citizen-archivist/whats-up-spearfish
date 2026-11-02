@@ -15,6 +15,8 @@ document.addEventListener("alpine:init", () => {
       this.menu = this.all[key] || null;
       if (!this.menu) return;
       history.replaceState(null, "", "#menu=" + encodeURIComponent(key));
+      // open once the contents are drawn, so focus lands inside them
+      await this.$nextTick();
       this.$refs.dialog.showModal();
     },
 

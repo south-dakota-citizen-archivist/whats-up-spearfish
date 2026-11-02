@@ -12,7 +12,7 @@
   {% set feed = SITE_URL ~ '/calendar.ics' %}
   {% set webcal = feed | replace('https://', 'webcal://') %}
   <details class="relative text-sm">
-    <summary class="cursor-pointer font-semibold text-pine-700 hover:underline list-none">Subscribe to every event ▾</summary>
+    <summary class="cursor-pointer font-semibold text-pine-700 hover:underline list-none">Subscribe to every event<span aria-hidden="true"> ▾</span></summary>
     <div class="absolute right-0 z-20 mt-2 w-72 bg-white border border-stone-300 shadow-lg p-4 space-y-2">
       <p class="text-stone-600">Your calendar will keep itself up to date with everything on this page.</p>
       <ul class="space-y-1.5 font-semibold">
@@ -29,29 +29,29 @@
 <div x-data="calendar('{{ root }}events.json')" class="grid lg:grid-cols-4 gap-6">
 
   {# filters #}
-  <aside class="lg:col-span-1 space-y-5">
+  <aside class="min-w-0 lg:col-span-1 space-y-5" aria-label="Filter events">
     <div>
       <label for="q" class="sr-only">Search events</label>
       <input id="q" type="search" x-model.debounce.200ms="q" placeholder="Search events…"
              class="w-full border border-stone-300 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pine-600">
     </div>
     <div>
-      <p class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-2">When</p>
-      <div class="flex flex-wrap gap-1.5">
+      <p id="when-label" class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-2">When</p>
+      <div class="flex flex-wrap gap-1.5" role="group" aria-labelledby="when-label">
         {% for key, label in [('today', 'Today'), ('weekend', 'This weekend'), ('week', 'Next 7 days'), ('month', 'Next 30 days'), ('all', 'All')] %}
-        <button type="button" @click="range = '{{ key }}'; limit = 150"
+        <button type="button" @click="range = '{{ key }}'; limit = 150" :aria-pressed="range === '{{ key }}'"
                 :class="range === '{{ key }}' ? 'bg-pine-700 text-white border-pine-700' : 'bg-white text-stone-700 border-stone-300 hover:border-pine-600'"
                 class="px-3 py-1 border text-sm">{{ label }}</button>
         {% endfor %}
       </div>
     </div>
     <div>
-      <p class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-2">Type</p>
-      <div class="flex flex-wrap gap-1.5">
+      <p id="type-label" class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-2">Type</p>
+      <div class="flex flex-wrap gap-1.5" role="group" aria-labelledby="type-label">
         {% for key, label, n in categories %}
-        <button type="button" @click="toggle('{{ key }}')"
+        <button type="button" @click="toggle('{{ key }}')" :aria-pressed="cats.includes('{{ key }}')"
                 :class="cats.includes('{{ key }}') ? 'bg-pine-700 text-white border-pine-700' : 'bg-white text-stone-700 border-stone-300 hover:border-pine-600'"
-                class="px-3 py-1 border text-sm">{{ label }} <span class="opacity-60">{{ n }}</span></button>
+                class="px-3 py-1 border text-sm">{{ label }} <span class="font-normal">{{ n }}</span></button>
         {% endfor %}
       </div>
     </div>
@@ -59,9 +59,9 @@
   </aside>
 
   {# results #}
-  <div class="lg:col-span-3">
+  <div class="min-w-0 lg:col-span-3">
     <p x-show="loading" class="text-stone-500">Loading events…</p>
-    <p x-show="!loading" x-cloak class="text-sm text-stone-500 mb-3"><span x-text="filtered.length"></span> events</p>
+    <p x-show="!loading" x-cloak class="text-sm text-stone-500 mb-3" role="status"><span x-text="filtered.length"></span> events</p>
     <p x-show="!loading && !filtered.length" x-cloak class="bg-white border border-stone-200 p-6 text-stone-500">No events match those filters.</p>
 
     <template x-for="day in days" :key="day.date">
@@ -93,6 +93,7 @@
   </div>
 
   {# picked events: add them to a calendar #}
+  <p class="sr-only" role="status" x-text="picked.length ? picked.length + (picked.length === 1 ? ' event' : ' events') + ' picked. Add them to your calendar with the buttons at the bottom of the page.' : ''"></p>
   <div x-show="picked.length" x-cloak class="h-24"></div>
   <div x-show="picked.length" x-cloak x-transition.opacity
        class="fixed bottom-0 inset-x-0 z-[1100] bg-white border-t-2 border-pine-700 shadow-[0_-4px_12px_rgba(0,0,0,0.08)]">
@@ -104,7 +105,7 @@
             <span class="w-12 shrink-0 text-xs text-stone-500" x-text="shortDay(e.date)"></span>
             <span class="min-w-0 flex-1 font-medium leading-snug" x-text="e.title"></span>
             <a :href="googleLink(e)" target="_blank" rel="noopener" class="shrink-0 font-semibold text-pine-700 hover:underline">Add to Google</a>
-            <button type="button" @click="pick(e)" class="shrink-0 text-stone-400 hover:text-red-700" :aria-label="'Remove ' + e.title">✕</button>
+            <button type="button" @click="pick(e)" class="shrink-0 text-stone-500 hover:text-red-700" :aria-label="'Remove ' + e.title">✕</button>
           </li>
         </template>
       </ul>
