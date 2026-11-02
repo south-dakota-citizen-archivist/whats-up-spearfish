@@ -25,6 +25,10 @@ scrapers (GitHub Actions, scheduled)  →  data branch (JSON snapshots)  →  si
   reports (2013–), and `archive/` — every planning/permit record collected from
   the city's OpenGov portal (2012–July 2026) before the city turned off public
   access. That archive is rebuilt only by `scripts/build_planning_archive.py`.
+  New applications come from Planning Commission agendas instead
+  (`planning_commission`, CivicClerk, itemized since August 2025: staff report
+  fields, attachments), also kept in full. To re-backfill, set
+  `PlanningCommission.since = FIRST_ITEMIZED` for one run.
 - **`sitegen/`** — renders `site/templates/` with Jinja into `_site/`: separate
   pages for Today, Events, Schools, Outdoors, On tap, Civic, Permits ("What's
   being built here?" — permits and applications by address, search or your
@@ -124,6 +128,7 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [SDPB](https://www.sdpb.org/news) | `sdpb_news` | news | needs browser |
 | [Sundance Times](https://www.sundancetimes.com) | `sundance_times` | news |  |
 | [SD DANR public notices (West River)](https://danr.sd.gov/public/default.aspx) | `danr_public_notices` | notice | full snapshot |
+| [Spearfish Planning Commission applications](https://spearfishsd.portal.civicclerk.com/) | `planning_commission` | planning_item |  |
 | [Black Hills National Forest](https://www.fs.usda.gov/r02/blackhills/newsroom/releases) | `bhnf` | press_release |  |
 | [City of Spearfish Blog](https://www.spearfish.gov/Blog.aspx) | `spearfish_blog` | press_release |  |
 | [City of Spearfish News Flash](https://www.spearfish.gov/CivicAlerts.aspx) | `spearfish_news` | press_release |  |

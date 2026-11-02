@@ -82,6 +82,12 @@
         {% if creek.current.ft %}Water level {{ creek.current.ft }} ft. {% endif %}
         {% if creek.median30 %}Typical for the past month: {{ creek.median30 | intcomma }}.{% endif %}
       </p>
+      {% if creek.spark %}
+      <svg viewBox="0 0 {{ creek.spark.width }} {{ creek.spark.height }}" class="w-full h-12 mt-3" preserveAspectRatio="none" role="img" aria-label="Creek flow over the past 7 days">
+        <polyline points="{{ creek.spark.points }}" fill="none" stroke="currentColor" stroke-width="2" class="text-sky-600" vector-effect="non-scaling-stroke"/>
+      </svg>
+      <p class="text-xs text-stone-500">Past 7 days · {{ creek.spark.min }} to {{ creek.spark.max }}</p>
+      {% endif %}
       {% else %}{{ empty("Creek readings aren't available right now.") }}{% endif %}
     {% endcall %}
 
@@ -119,7 +125,6 @@
               {% if pet.image_url %}<img src="{{ pet.image_url }}" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover " data-placeholder>{% endif %}
             </div>
           <p class="text-sm font-medium mt-1 group-hover:text-pine-700">{{ pet.title }}</p>
-          {% if pet.species %}<p class="text-xs text-stone-500">{{ pet.species }}</p>{% endif %}
         </a>
       </li>
       {% endfor %}

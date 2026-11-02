@@ -370,3 +370,14 @@ def test_rotate_changes_daily_and_wraps():
     a, b = rotate(items, 4, TODAY), rotate(items, 4, TODAY + timedelta(days=1))
     assert len(a) == 4 and a != b and b[0] == (a[0] + 1) % 10
     assert rotate([], 4, TODAY) == []
+
+
+def test_pet_picks_alternate_species(tmp_path):
+    from sitegen.pages import pet_picks
+
+    pets = [{"id": f"c{i}", "kind": "adoptable", "title": f"Cat {i}", "url": "u", "species": "cat"} for i in range(6)]
+    pets += [{"id": f"d{i}", "kind": "adoptable", "title": f"Dog {i}", "url": "u", "species": "dog"} for i in range(2)]
+    _write(tmp_path, "whhs_adoptable", pets, kind="adoptable")
+    picks = pet_picks(Site(tmp_path), 6, TODAY)
+    assert [p["species"] for p in picks][:4] == ["cat", "dog", "cat", "dog"]
+    assert len(picks) == 6

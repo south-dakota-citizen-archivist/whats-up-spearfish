@@ -56,6 +56,7 @@ KINDS: dict[str, Kind] = {
     "permit": Kind(("date_submitted", "date_created"), window_days=365),
     # Kept indefinitely: the monthly reports are the only ongoing permit record (see building_permits.py)
     "building_permit": Kind(("issued", "date"), window_days=365 * 100),
+    "planning_item": Kind(("meeting_date",), window_days=365 * 100),  # kept indefinitely
     "sighting": Kind(("observed_on",), window_days=14),
     "notice": Kind(("deadline_iso",), window_days=60),
     "project": Kind(),

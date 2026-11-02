@@ -86,9 +86,9 @@
               <template x-for="(r, i) in selected.r" :key="i">
                 <li class="px-4 py-3 text-sm">
                   <p class="text-xs font-semibold uppercase tracking-wide"
-                     :class="r.src === 'permit' ? 'text-pine-700' : 'text-sky-800'">
+                     :class="r.src === 'permit' ? 'text-pine-700' : (r.src === 'pc' ? 'text-amber-800' : 'text-sky-800')">
                     <span class="inline-block w-2 h-2 border border-stone-800 align-middle" :style="'background:' + categories[r.c || 'o'].color"></span>
-                    <span x-text="r.src === 'permit' ? 'Permit issued' : 'Application'"></span>
+                    <span x-text="{ permit: 'Permit issued', pc: 'Planning Commission' }[r.src] || 'Application'"></span>
                     · <span x-text="r.src === 'permit' ? day((r.d || '').slice(0, 7)) : day(r.d)"></span>
                     <span x-show="r.s" x-text="'· ' + r.s"></span>
                   </p>
@@ -100,8 +100,18 @@
                     <template x-if="r.con"><dt class="text-stone-400">Contractor</dt></template><template x-if="r.con"><dd x-text="r.con + (r.con_c ? ' · ' + r.con_c : '')"></dd></template>
                     <template x-if="r.own"><dt class="text-stone-400">Owner</dt></template><template x-if="r.own"><dd x-text="r.own + (r.own_c ? ' · ' + r.own_c : '')"></dd></template>
                     <template x-if="r.who && r.who !== r.own"><dt class="text-stone-400">Applicant</dt></template><template x-if="r.who && r.who !== r.own"><dd x-text="r.who"></dd></template>
+                    <template x-if="r.loc"><dt class="text-stone-400">Location</dt></template><template x-if="r.loc"><dd x-text="r.loc"></dd></template>
+                    <template x-if="r.legal"><dt class="text-stone-400">Legal</dt></template><template x-if="r.legal"><dd x-text="r.legal"></dd></template>
+                    <template x-if="r.rec"><dt class="text-stone-400">City staff</dt></template><template x-if="r.rec"><dd x-text="r.rec"></dd></template>
                   </dl>
-                  <a x-show="r.u" :href="r.u" target="_blank" rel="noopener" class="text-xs font-semibold text-pine-700 hover:underline">That month's permit list (PDF) →</a>
+                  <template x-if="r.src === 'pc'">
+                    <p class="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-xs font-semibold">
+                      <a x-show="r.u" :href="r.u" target="_blank" rel="noopener" class="text-pine-700 hover:underline">Staff report →</a>
+                      <template x-for="a in r.att || []"><a :href="a[1]" target="_blank" rel="noopener" class="text-pine-700 hover:underline" x-text="a[0] + ' →'"></a></template>
+                      <a :href="r.mu" target="_blank" rel="noopener" class="text-pine-700 hover:underline">Meeting agenda →</a>
+                    </p>
+                  </template>
+                  <a x-show="r.u && r.src === 'permit'" :href="r.u" target="_blank" rel="noopener" class="text-xs font-semibold text-pine-700 hover:underline">That month's permit list (PDF) →</a>
                 </li>
               </template>
             </ul>
@@ -135,7 +145,8 @@
 
   <p class="mt-6 text-sm text-stone-600 max-w-3xl">
     Includes building permits issued from {{ first_permit | fmt_day('%B %Y') }} through {{ latest_report | fmt_day('%B %Y') }}
-    and planning applications filed from 2012 through {{ archive_meta.newest_created | default('') | fmt_day('%B %Y') }}.
+    and planning applications filed from 2012 through {{ archive_meta.newest_created | default('') | fmt_day('%B %Y') }}{% if pc_first %},
+    plus every application on a Planning Commission agenda since {{ pc_first | fmt_day('%B %Y') }}{% endif %}.
     The city posts a list of new permits each month, and they show up here soon after.
     Some addresses can't be placed on the map, but you can still find them by searching.
   </p>

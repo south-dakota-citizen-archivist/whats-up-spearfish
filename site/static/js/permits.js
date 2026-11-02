@@ -96,7 +96,7 @@ document.addEventListener("alpine:init", () => {
           const words = q.split(/\s+/);
           return this.sites
             .filter((s) => {
-              const hay = (s.a + " " + s.r.map((r) => [r.no, r.t, r.con, r.who, r.own, r.desc].join(" ")).join(" ")).toLowerCase();
+              const hay = (s.a + " " + s.r.map((r) => [r.no, r.t, r.con, r.who, r.own, r.desc, r.loc, r.legal].join(" ")).join(" ")).toLowerCase();
               return words.every((w) => hay.includes(w));
             })
             .slice(0, 60);

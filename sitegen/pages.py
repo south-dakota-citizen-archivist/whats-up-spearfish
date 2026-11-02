@@ -273,6 +273,18 @@ def rotate(items: list, n: int, today: date) -> list:
     return (items[start:] + items[:start])[:n]
 
 
+def pet_picks(site: Site, n: int, today: date) -> list[dict]:
+    """Dogs and cats taking turns (the shelter usually has far more cats), rotating daily."""
+    by_species: dict[str, list] = defaultdict(list)
+    for p in site.get("whhs_adoptable").records:
+        by_species[(p.get("species") or "other").lower()].append(p)
+    groups = [rotate(v, len(v), today) for _, v in sorted(by_species.items())]
+    picks = []
+    for i in range(max((len(g) for g in groups), default=0)):
+        picks += [g[i] for g in groups if i < len(g)]
+    return picks[:n]
+
+
 def tap_picks(site: Site, n: int, today: date) -> list[dict]:
     """Beers with pictures, taking turns across venues, rotating daily."""
     by_venue = []
@@ -322,7 +334,7 @@ def home(site: Site, events: list[dict], today: date) -> dict:
         "week_count": sum(1 for e in events if e["date"] <= week_end),
         "menu_days": next_menus,
         "menu_lists": menu_lists(next_menus[0]["menus"]) if next_menus else {},
-        "pets": rotate([p for p in site.get("whhs_adoptable").records], 8, today),
+        "pets": pet_picks(site, 8, today),
         "beers": tap_picks(site, 8, today),
         "books": site.get("spearfish_library").records[:8],
         "creek": creek_context(site),
@@ -402,6 +414,15 @@ def civic(site: Site, events: list[dict], today: date) -> dict:
             bp.records, key=lambda r: (r.get("date", ""), r.get("cost_approximate") or 0), reverse=True
         )[:60],
         "bids": site.get("public_bids"),
+        "planning": site.get("planning_commission"),
+        "planning_items": [
+            dict(r, site_key=pc_site_key(r))
+            for r in sorted(
+                (r for r in site.get("planning_commission").records if r.get("site")),
+                key=lambda r: r.get("meeting_date", ""),
+                reverse=True,
+            )[:12]
+        ],
         "press": newest(site.records(kind="press_release", slugs=PRESS_SOURCES))[:20],
         "notices": site.get("danr_public_notices"),
     }
@@ -615,11 +636,19 @@ def _compact(d: dict) -> dict:
     return {k: v for k, v in d.items() if v not in ("", None, [], 0)}
 
 
+def pc_site_key(r: dict) -> str:
+    """Permits-page key for a Planning Commission item: its street address, else its location text."""
+    return r.get("address_key") or ("LOC " + " ".join(r.get("location", "").upper().rstrip(".").split()))
+
+
 def permit_sites(site: Site) -> list[dict]:
     """
-    Every planning application (OpenGov archive) and issued building permit
-    (monthly reports), grouped by normalized street address. Each record gets
-    a reader-friendly type, status and map category ("c").
+    Every planning application (OpenGov archive), issued building permit
+    (monthly reports) and Planning Commission agenda item, grouped by
+    normalized street address. Each record gets a reader-friendly type, status
+    and map category ("c"). Agenda items placed only by a description
+    ("Intersection of St. Onge Road and Highway 14") get their own entry, which
+    is searchable but can't go on the map.
     """
     groups: dict[str, dict] = {}
 
@@ -675,6 +704,31 @@ def permit_sites(site: Site) -> list[dict]:
             },
         )
 
+    for r in site.get("planning_commission").records:
+        if not r.get("site"):
+            continue
+        add(
+            pc_site_key(r),
+            r.get("address") or r.get("location", "").rstrip("."),
+            r.get("lat"),
+            r.get("lon"),
+            {
+                "src": "pc",
+                "d": (r.get("meeting_date") or "")[:10],
+                "t": r.get("app_type"),
+                "c": permit_category(r.get("app_type", "") + " " + r.get("agenda_text", "")),
+                "desc": r.get("agenda_text"),
+                "who": r.get("applicant"),
+                "own": r.get("owner"),
+                "rec": r.get("recommendation"),
+                "loc": r.get("location") if r.get("address") else "",
+                "legal": r.get("legal_description"),
+                "u": r.get("report_url"),
+                "mu": r.get("meeting_url"),
+                "att": [[a["name"], a["url"]] for a in r.get("attachments") or []],
+            },
+        )
+
     out = []
     for g in groups.values():
         g["r"].sort(key=lambda x: x.get("d") or "", reverse=True)
@@ -695,4 +749,5 @@ def permits_page(site: Site, events: list[dict], today: date) -> dict:
         "building_permits": bp,
         "latest_report": latest_report,
         "first_permit": min((r.get("date", "") for r in bp.records if r.get("date")), default=""),
+        "pc_first": min((r.get("meeting_date", "")[:10] for r in site.get("planning_commission").records), default=""),
     }

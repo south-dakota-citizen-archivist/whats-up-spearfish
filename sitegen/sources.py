@@ -31,6 +31,7 @@ CREDIT = {
     "spearfish_city": CITY,
     "public_bids": CITY,
     "building_permits": CITY,
+    "planning_commission": CITY,
     "lawrence_county": COUNTY,
     "lawrence_county_news": COUNTY,
     "lawrence_county_jobs": COUNTY,
@@ -86,6 +87,7 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
                     _i("Emergency and service alerts", "spearfish_alert_center"),
                     _i("Meeting agendas, minutes and video", "spearfish_city"),
                     _i("Monthly building permit reports", "building_permits"),
+                    _i("Planning Commission applications and staff reports", "planning_commission"),
                     _i(
                         "Planning and permit applications, 2012 to July 2026",
                         note="No longer posted online; we kept a copy",
