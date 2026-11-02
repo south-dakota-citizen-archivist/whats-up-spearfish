@@ -11,7 +11,20 @@ document.addEventListener("alpine:init", () => {
   // Readers who ask for less motion get instant jumps instead of glides
   const calm = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const glide = () => (calm() ? { animate: false } : { duration: 0.8 });
-  const scrollMode = () => (calm() ? "auto" : "smooth");
+  const large = () => window.matchMedia("(min-width: 1024px)").matches;
+
+  // Help for each way a location request fails (GeolocationPositionError codes)
+  const LOCATION_HELP = {
+    1: [
+      "Location sharing is off for this site.",
+      "Your browser won't ask again once it's been told no. iPhone: Settings → Privacy & Security → Location Services: on, and Safari Websites set to “While Using.” Android: tap the icon left of the web address → Permissions → Location → Allow. Then try again.",
+    ],
+    2: [
+      "Your phone couldn't work out where you are.",
+      "Location Services may be turned off for the whole phone, or there's no signal. Turn it on in your phone's settings and try again.",
+    ],
+    3: ["Finding your location took too long.", "Try again, ideally with a clear view of the sky or on Wi-Fi."],
+  };
 
   // recentUrl: places active in the past two years (what the page opens on);
   // allUrl: every place, fetched when a reader searches or looks further back
@@ -37,7 +50,10 @@ document.addEventListener("alpine:init", () => {
       here: null,
       locating: false,
       selected: null,
-      peek: null, // small-screen preview card shown over the map after tapping a dot
+      open: false, // phones: the bottom sheet pulled up to show the list
+      errorHelp: "",
+      canUseCenter: false, // offer "places near the middle of the map" when location fails
+      hereLabel: "",
       limit: 40, // how many places the list shows before "Show more"
 
       async init() {
@@ -53,7 +69,9 @@ document.addEventListener("alpine:init", () => {
         }
         this.loading = false;
         this.$nextTick(() => {
-          map = L.map(this.$refs.map, { preferCanvas: true }).setView([44.4906, -103.8594], 13);
+          // phones pinch to zoom, so the +/− buttons only appear on large screens
+          map = L.map(this.$refs.map, { preferCanvas: true, zoomControl: false }).setView([44.4906, -103.8594], 13);
+          if (large()) L.control.zoom({ position: "topright" }).addTo(map);
           L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
             maxZoom: 19,
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -80,7 +98,10 @@ document.addEventListener("alpine:init", () => {
         }, { deep: true });
         this.$watch("q", () => {
           this.limit = 40;
-          if (this.q.trim()) this.loadAll();
+          if (this.q.trim()) {
+            this.loadAll();
+            this.open = true;
+          }
           const pts = this.q.trim() ? this.results.filter((s) => s.lat != null).map((s) => [s.lat, s.lon]) : [];
           if (map && pts.length) map.flyToBounds(pts, { maxZoom: 17, padding: [30, 30], ...glide() });
         });
@@ -170,48 +191,108 @@ document.addEventListener("alpine:init", () => {
         return pool;
       },
 
-      near() {
-        if (!navigator.geolocation) {
-          this.error = "Your browser can't share its location.";
-          return;
+      // Where am I? Ask the browser, explain plainly if it can't say, and offer the map's middle instead.
+      async near() {
+        this.error = "";
+        this.errorHelp = "";
+        if (!navigator.geolocation) return this.fail("Your browser can't share its location.", "", true);
+        // If location was already refused, the browser won't ask again: say so before trying.
+        try {
+          const status = await navigator.permissions?.query({ name: "geolocation" });
+          if (status?.state === "denied") return this.fail(...LOCATION_HELP[1], true);
+        } catch {
+          // older browsers can't answer; just ask
         }
         this.locating = true;
+        const ask = (precise) =>
+          new Promise((resolve, reject) =>
+            navigator.geolocation.getCurrentPosition(resolve, reject, {
+              enableHighAccuracy: precise,
+              timeout: precise ? 10000 : 20000,
+              maximumAge: 60000,
+            }),
+          );
+        try {
+          let pos;
+          try {
+            pos = await ask(true);
+          } catch (err) {
+            if (err.code === 1) throw err;
+            pos = await ask(false); // GPS too slow or unavailable: a rougher fix is fine
+          }
+          this.goHere({ lat: pos.coords.latitude, lon: pos.coords.longitude }, "you");
+          youAreHere = L.circleMarker([this.here.lat, this.here.lon], { radius: 8, weight: 3, color: "#0369a1", fillColor: "#38bdf8", fillOpacity: 1, interactive: false }).addTo(map);
+        } catch (err) {
+          this.fail(...(LOCATION_HELP[err.code] || ["Couldn't get your location.", ""]), true);
+        } finally {
+          this.locating = false;
+        }
+      },
+
+      // No location? Pan the map to the spot you care about and use its middle.
+      nearCenter() {
+        const c = map.getCenter();
         this.error = "";
-        navigator.geolocation.getCurrentPosition(
-          (pos) => {
-            this.locating = false;
-            this.q = "";
-            this.clear();
-            this.here = { lat: pos.coords.latitude, lon: pos.coords.longitude };
-            if (youAreHere) youAreHere.remove();
-            youAreHere = L.circleMarker([this.here.lat, this.here.lon], { radius: 8, weight: 3, color: "#0369a1", fillColor: "#38bdf8", fillOpacity: 1 }).addTo(map);
-            map.flyTo([this.here.lat, this.here.lon], 17, glide());
-          },
-          () => {
-            this.locating = false;
-            this.error = "Couldn't get your location. Check your browser's location permission, or search by address.";
-          },
-          { enableHighAccuracy: true, timeout: 15000 },
-        );
+        this.goHere({ lat: c.lat, lon: c.lng }, "the middle of the map");
+      },
+
+      goHere(point, label) {
+        this.q = "";
+        this.back();
+        this.here = point;
+        this.hereLabel = label;
+        this.open = true;
+        if (youAreHere) youAreHere.remove();
+        youAreHere = null;
+        map.flyTo([point.lat, point.lon], Math.max(map.getZoom(), 16), glide());
+      },
+
+      fail(message, help = "", offerCenter = false) {
+        this.error = message;
+        this.errorHelp = help;
+        this.canUseCenter = offerCenter && !!map;
+      },
+
+      sheetTitle() {
+        const n = this.matches.length;
+        const places = `${n.toLocaleString()} ${n === 1 ? "place" : "places"}`;
+        if (this.q.trim()) return `${places} match “${this.q.trim()}”`;
+        if (this.here) return `Closest to ${this.hereLabel}`;
+        if (this.since === "latest") return `${places} in the latest permit report`;
+        return `${places}, most recent first`;
       },
 
       // Chosen from the list, a search result or a shared link: glide the map there.
       select(s) {
         this.show_(s);
-        this.peek = null;
-        if (s.lat != null && map) map.flyTo([s.lat, s.lon], Math.max(map.getZoom(), 16), glide());
+        this.focusMap(s);
         this.$nextTick(() => {
-          this.reveal();
+          this.$refs.sheet?.scrollTo(0, 0);
           // keyboard and screen-reader users land on the details they asked for
           this.$refs.detailTitle?.focus({ preventScroll: true });
         });
       },
 
-      // Tapped on the map: the reader is already looking at it, so leave the map alone.
+      // Tapped on the map: open the details in the sheet; the reader is already looking at the spot.
       pick(s) {
         this.show_(s);
-        if (window.matchMedia("(min-width: 1024px)").matches) this.$nextTick(() => this.reveal());
-        else this.peek = s;
+        this.$nextTick(() => this.$refs.sheet?.scrollTo(0, 0));
+      },
+
+      // Center a place in the part of the map the sheet doesn't cover.
+      focusMap(s) {
+        if (s.lat == null || !map) return;
+        const zoom = Math.max(map.getZoom(), 16);
+        let target = L.latLng(s.lat, s.lon);
+        const sheet = this.$refs.sheet?.parentElement;
+        if (!large() && sheet) {
+          // the sheet will cover the bottom ~60%; aim the spot at the middle of what's left
+          const lift = (this.$refs.map.clientHeight * 0.62) / 2;
+          target = map.unproject(map.project(target, zoom).add([0, lift]), zoom);
+        } else if (large()) {
+          target = map.unproject(map.project(target, zoom).subtract([200, 0]), zoom); // clear of the side panel
+        }
+        map.flyTo(target, zoom, glide());
       },
 
       show_(s) {
@@ -247,30 +328,14 @@ document.addEventListener("alpine:init", () => {
         return beacon + encodeURIComponent(s.pid);
       },
 
-      // returnFocus: closed from the details panel, so put focus back on the search box
-      clear(returnFocus = false) {
-        if (returnFocus) document.getElementById("pq")?.focus();
+      // Back from a place to the list
+      back() {
+        const was = this.selected;
         this.selected = null;
-        this.peek = null;
         if (ring) ring.remove();
         ring = null;
         history.replaceState(null, "", location.pathname);
-      },
-
-      // Scroll the details into view only if they aren't already on screen.
-      reveal() {
-        const el = this.$refs.detail;
-        if (!el) return;
-        const r = el.getBoundingClientRect();
-        if (r.top < 60 || r.top > window.innerHeight * 0.5) el.scrollIntoView({ behavior: scrollMode(), block: "start" });
-      },
-
-      showDetail() {
-        this.peek = null;
-        this.$nextTick(() => {
-          this.$refs.detail?.scrollIntoView({ behavior: scrollMode(), block: "start" });
-          this.$refs.detailTitle?.focus({ preventScroll: true });
-        });
+        if (was) this.$nextTick(() => this.$refs.sheet?.querySelector("li button")?.focus({ preventScroll: true }));
       },
 
       distance(a, b) {

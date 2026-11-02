@@ -359,15 +359,15 @@ def test_old_menu_link_explains(open_page):
 
 def test_permits_open_with_recent_places_and_fetch_the_rest_on_search(open_page):
     fetched = []
-    page = open_page("permits/", wait="text=Most recent activity")
+    page = open_page("permits/", wait="#sheet-body li button")
     page.on("request", lambda r: r.url.endswith(".json") and fetched.append(r.url.rsplit("/", 1)[1]))
-    assert page.locator("ul button").all_inner_texts()[0].startswith("440 Heritage")
-    assert page.locator("ul button", has_text="Old Mill").count() == 0  # 2015: not loaded yet
+    assert page.locator("#sheet-body li button").all_inner_texts()[0].startswith("440 Heritage")
+    assert page.locator("#sheet-body li button", has_text="Old Mill").count() == 0  # 2015: not loaded yet
 
     page.fill("#pq", "old mill")
-    page.wait_for_selector("ul button:has-text('Old Mill')")
+    page.wait_for_selector("#sheet-body li button:has-text('Old Mill')")
     assert "sites.json" in fetched
-    page.locator("ul button", has_text="Old Mill").focus()
+    page.locator("#sheet-body li button", has_text="Old Mill").focus()
     page.keyboard.press("Enter")
     page.wait_for_timeout(300)
     assert page.evaluate("document.activeElement.tagName") == "H2"  # focus moved to the details
@@ -392,3 +392,14 @@ def test_community_chart_and_pets(open_page):
     page.get_by_role("button", name="Show all 20 pets").click()
     page.locator("#pets li").nth(19).wait_for(state="visible")
     assert page.locator("#pets li:visible").count() == 20
+
+
+def test_permits_location_refused_explains_and_offers_the_map(open_page, browser, site_url):
+    # no location permission granted; on a phone the list waits behind the sheet's handle
+    page = open_page("permits/", viewport=PHONE, wait="button[aria-controls=sheet-body]:has-text('most recent first')")
+    page.get_by_role("button", name="Near me").click()
+    alert = page.get_by_role("alert")
+    alert.wait_for()
+    assert "Location sharing is off" in alert.inner_text() and "Settings" in alert.inner_text()
+    page.get_by_role("button", name="Show places near the middle of the map instead").click()
+    assert "Closest to the middle of the map" in page.locator("button[aria-controls=sheet-body]").inner_text()

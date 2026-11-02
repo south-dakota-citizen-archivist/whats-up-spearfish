@@ -7,76 +7,85 @@
 {% endblock %}
 
 {% block content %}
-<div class="mb-4">
-  <h1 class="text-2xl font-extrabold">What's being built here?</h1>
-  <p class="text-stone-600 text-sm max-w-3xl">
-    Find out what's being built in and around Spearfish. Use your location to see nearby projects, or search by address, permit number, contractor or owner.
-  </p>
-</div>
+{#
+  Mobile first: the map fills the screen; search and filters float over its top,
+  and a sheet along the bottom holds the list and the chosen place (pull it up to
+  read more). On large screens the sheet becomes a panel down the left side.
+#}
+<div x-data="permits('{{ root }}permits/recent.json', '{{ root }}permits/sites.json', '{{ latest_report[:7] }}', '{{ root }}permits/parcels.json', '{{ beacon }}')"
+     class="-mx-4 sm:-mx-6 -mt-6 lg:mx-0 lg:mt-0">
+  <h1 class="sr-only lg:not-sr-only lg:text-2xl lg:font-extrabold lg:mb-3">What's being built here?</h1>
 
-<div x-data="permits('{{ root }}permits/recent.json', '{{ root }}permits/sites.json', '{{ latest_report[:7] }}', '{{ root }}permits/parcels.json', '{{ beacon }}')">
-  <div class="flex flex-wrap gap-2 items-center mb-3">
-    <button type="button" @click="near()" :disabled="locating"
-            class="px-4 py-2 bg-pine-700 text-white font-semibold text-sm hover:bg-pine-800 disabled:opacity-60">
-      <span aria-hidden="true" x-show="!locating">📍 </span><span x-text="locating ? 'Locating…' : 'What\'s near me?'"></span>
-    </button>
-    <label for="pq" class="sr-only">Search permits</label>
-    <input id="pq" type="search" x-model.debounce.250ms="q" @input="here = null; clear()" @focus="loadAll()"
-           placeholder="Address, permit #, contractor, owner…"
-           class="flex-1 min-w-[14rem] border border-stone-300 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pine-600">
-    <label for="since" class="sr-only">Time period</label>
-    <select id="since" x-model="since" class="border border-stone-300 bg-white px-3 py-2 text-sm">
-      {% if latest_report %}<option value="latest">Permits issued in {{ latest_report | fmt_day('%B %Y') }}</option>{% endif %}
-      <option value="1">Past year</option>
-      <option value="2">Past 2 years</option>
-      <option value="5">Past 5 years</option>
-      <option value="all">All years</option>
-    </select>
-  </div>
-  <p x-show="error" x-cloak role="alert" class="text-sm text-red-700 mb-3" x-text="error"></p>
+  <section class="relative h-[calc(100svh-6.25rem)] min-h-[30rem] lg:h-[78vh] lg:border lg:border-stone-300 overflow-hidden">
+    <div x-ref="map" class="permits-map absolute inset-0 z-0 bg-stone-200" role="region"
+         aria-label="Map of building permits and planning applications. Every place on it is also in the list."></div>
 
-  <div class="grid lg:grid-cols-5 gap-4">
-    <div class="lg:col-span-3 min-w-0 order-2 lg:order-1">
-      <div class="relative">
-        <div x-ref="map" role="region" aria-label="Map of permit and application sites. Every site on it is also in the list." class="h-[40vh] lg:h-[60vh] min-h-72 border border-stone-300 bg-stone-200 z-0"></div>
-        {# small screens: a preview of the tapped site, instead of jumping the page #}
-        <div x-show="peek" x-cloak x-transition.opacity class="absolute inset-x-2 bottom-2 z-[1000] bg-white border border-stone-300 shadow-lg p-3 text-sm lg:hidden">
-          <template x-if="peek">
-            <div class="flex items-start gap-3">
-              <div class="min-w-0 flex-1">
-                <p class="font-bold" x-text="peek.a"></p>
-                <p class="text-xs text-stone-500">
-                  <span x-text="peek.r[0].t"></span> · <span x-text="peek.lp ? day(peek.last.slice(0, 7)) : day(peek.last)"></span>
-                </p>
-                <button type="button" @click="showDetail()" class="mt-1.5 text-xs font-semibold text-pine-700 hover:underline">
-                  <span x-text="'See ' + (peek.r.length === 1 ? 'the record' : 'all ' + peek.r.length + ' records')"></span><span aria-hidden="true"> ↑</span></button>
-              </div>
-              <button type="button" @click="clear()" class="text-stone-500 hover:text-stone-900 px-1" aria-label="Close preview">✕</button>
-            </div>
-          </template>
-        </div>
+    {# ── over the top of the map: search, near me, filters ── #}
+    <div class="absolute top-2 left-2 right-2 lg:left-[25.5rem] lg:right-14 z-[700] space-y-1.5 pointer-events-none">
+      <div class="flex bg-white border border-stone-300 shadow-md pointer-events-auto">
+        <label for="pq" class="sr-only">Search by address, permit number, contractor or owner</label>
+        <input id="pq" type="search" x-model.debounce.250ms="q" @input="here = null; back()" @focus="loadAll()"
+               placeholder="Search addresses, permits…"
+               class="min-w-0 flex-1 px-3 py-2.5 text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-inset focus:ring-pine-600">
+        <button type="button" @click="near()" :disabled="locating" :aria-busy="locating"
+                class="shrink-0 flex items-center gap-1.5 px-3 border-l border-stone-300 text-sm font-semibold text-pine-700 hover:bg-pine-50 disabled:opacity-60">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/></svg>
+          <span x-text="locating ? 'Finding you…' : 'Near me'"></span>
+        </button>
       </div>
-      <div class="mt-1.5 flex flex-wrap gap-1.5 text-xs" role="group" aria-label="Show on map">
+      <div class="flex gap-1.5 overflow-x-auto [scrollbar-width:none] pointer-events-auto" role="group" aria-label="Filters">
+        <label for="since" class="sr-only">Time period</label>
+        <select id="since" x-model="since" class="shrink-0 border border-stone-300 bg-white shadow-sm px-2 py-1 text-xs font-semibold text-stone-800">
+          {% if latest_report %}<option value="latest">Issued {{ latest_report | fmt_day('%b %Y') }}</option>{% endif %}
+          <option value="1">Past year</option>
+          <option value="2">Past 2 years</option>
+          <option value="5">Past 5 years</option>
+          <option value="all">All years</option>
+        </select>
         <template x-for="(cat, key) in categories" :key="key">
-          <button type="button" @click="show[key] = !show[key]" :aria-pressed="show[key]"
-                  class="flex items-center gap-1.5 border px-2 py-1"
-                  :class="show[key] ? 'border-stone-400 bg-white text-stone-800' : 'border-stone-200 bg-stone-100 text-stone-500 line-through'">
+          <button type="button" @click="show[key] = !show[key]" :aria-pressed="show[key]" :aria-label="'Show ' + cat.label.toLowerCase()"
+                  class="shrink-0 flex items-center gap-1.5 border shadow-sm px-2 py-1 text-xs whitespace-nowrap"
+                  :class="show[key] ? 'border-stone-400 bg-white text-stone-800' : 'border-stone-300 bg-stone-100 text-stone-500 line-through'">
             <span class="inline-block w-2.5 h-2.5 border border-stone-800" :style="'background:' + (show[key] ? cat.color : 'transparent')"></span>
             <span x-text="cat.label"></span>
           </button>
         </template>
-        <span class="self-center text-stone-500">Show or hide a type.</span>
+      </div>
+      <div x-show="error" x-cloak role="alert" class="pointer-events-auto bg-white border border-amber-300 shadow-md p-3 text-sm text-stone-800">
+        <div class="flex items-start gap-3">
+          <div class="min-w-0 flex-1">
+            <p class="font-semibold text-amber-900" x-text="error"></p>
+            <template x-if="errorHelp"><p class="mt-1 text-xs text-stone-600" x-text="errorHelp"></p></template>
+            <button type="button" x-show="canUseCenter" @click="nearCenter()" class="mt-2 text-xs font-semibold text-pine-700 hover:underline">
+              Show places near the middle of the map instead
+            </button>
+          </div>
+          <button type="button" @click="error = ''" class="shrink-0 px-1 text-stone-500 hover:text-stone-900" aria-label="Dismiss">✕</button>
+        </div>
       </div>
     </div>
 
-    <div class="lg:col-span-2 min-w-0 order-1 lg:order-2">
-      {# selected site #}
-      <section x-show="selected && !peek" x-cloak x-ref="detail" class="bg-white border border-stone-300 mb-4 scroll-mt-16 lg:scroll-mt-4">
+    {# ── the sheet (phones) / side panel (large screens) ── #}
+    <div class="absolute z-[800] inset-x-0 bottom-0 flex flex-col bg-white border-t border-stone-300 shadow-[0_-4px_14px_rgba(0,0,0,0.12)]
+                lg:inset-x-auto lg:top-2 lg:bottom-2 lg:left-2 lg:w-96 lg:border lg:shadow-lg lg:max-h-none transition-[max-height] duration-200"
+         :class="open || selected ? 'max-h-[62%]' : 'max-h-[4.25rem]'">
+      <button type="button" @click="open = !open; if (!open) selected = null" :aria-expanded="open || !!selected" aria-controls="sheet-body"
+              class="lg:hidden shrink-0 w-full px-4 pt-1.5 pb-2 text-left">
+        <span aria-hidden="true" class="block mx-auto mb-1.5 w-10 h-1 bg-stone-300"></span>
+        <span class="flex items-center justify-between gap-3">
+          <span class="text-sm font-semibold text-stone-900" x-text="loading ? 'Loading records…' : sheetTitle()"></span>
+          <span class="text-xs font-semibold text-pine-700" x-text="open || selected ? 'Hide' : 'Show list'"></span>
+        </span>
+      </button>
+
+      <div id="sheet-body" x-ref="sheet" class="min-h-0 flex-1 overflow-y-auto overscroll-contain" :class="open || selected ? '' : 'max-lg:hidden'">
+        {# chosen place #}
         <template x-if="selected">
-          <div>
-            <div class="px-4 py-3 border-b border-stone-200 flex justify-between gap-3">
-              <div>
-                <h2 x-ref="detailTitle" tabindex="-1" class="font-bold text-lg focus:outline-none" x-text="selected.a"></h2>
+          <section x-ref="detail">
+            <div class="sticky top-0 bg-white px-4 py-3 border-b border-stone-200 flex justify-between gap-3">
+              <div class="min-w-0">
+                <button type="button" @click="back()" class="mb-1 text-xs font-semibold text-pine-700 hover:underline"><span aria-hidden="true">← </span>All places</button>
+                <h2 x-ref="detailTitle" tabindex="-1" class="font-bold text-lg leading-tight focus:outline-none" x-text="selected.a"></h2>
                 <p class="text-xs text-stone-500" x-text="selected.r.length + (selected.r.length === 1 ? ' record' : ' records')"></p>
                 <template x-if="selected.pid">
                   <dl class="mt-1.5 grid grid-cols-[auto_1fr] gap-x-3 text-xs text-stone-600">
@@ -87,80 +96,82 @@
                   </dl>
                 </template>
               </div>
-              <button type="button" @click="clear(true)" class="text-sm text-stone-500 hover:text-stone-900 px-1 self-start" aria-label="Close details">✕</button>
             </div>
-            <ul class="divide-y divide-stone-100 lg:max-h-[60vh] lg:overflow-y-auto">
-              <template x-for="(r, i) in selected.r" :key="i">
-                <li class="px-4 py-3 text-sm">
-                  <p class="text-xs font-semibold uppercase tracking-wide"
-                     :class="r.src === 'permit' ? 'text-pine-700' : (r.src === 'pc' ? 'text-amber-800' : 'text-sky-800')">
-                    <span class="inline-block w-2 h-2 border border-stone-800 align-middle" :style="'background:' + categories[r.c || 'o'].color"></span>
-                    <span x-text="{ permit: 'Permit issued', pc: 'Planning Commission' }[r.src] || 'Application'"></span>
-                    · <span x-text="r.src === 'permit' ? day((r.d || '').slice(0, 7)) : day(r.d)"></span>
-                    <span x-show="r.s" x-text="'· ' + r.s"></span>
-                  </p>
-                  <p class="font-semibold" x-text="r.t"></p>
-                  <p x-show="r.desc" class="text-stone-700" x-text="r.desc"></p>
-                  <dl class="mt-1 grid grid-cols-[auto_1fr] gap-x-3 text-xs text-stone-600">
-                    <template x-if="r.no"><dt class="text-stone-500">Number</dt></template><template x-if="r.no"><dd x-text="r.no"></dd></template>
-                    <template x-if="r.v"><dt class="text-stone-500">Value</dt></template><template x-if="r.v"><dd x-text="money(r.v)"></dd></template>
-                    <template x-if="r.con"><dt class="text-stone-500">Contractor</dt></template><template x-if="r.con"><dd x-text="r.con + (r.con_c ? ' · ' + r.con_c : '')"></dd></template>
-                    <template x-if="r.own"><dt class="text-stone-500">Owner</dt></template><template x-if="r.own"><dd x-text="r.own + (r.own_c ? ' · ' + r.own_c : '')"></dd></template>
-                    <template x-if="r.who && r.who !== r.own"><dt class="text-stone-500">Applicant</dt></template><template x-if="r.who && r.who !== r.own"><dd x-text="r.who"></dd></template>
-                    <template x-if="r.loc"><dt class="text-stone-500">Location</dt></template><template x-if="r.loc"><dd x-text="r.loc"></dd></template>
-                    <template x-if="r.legal"><dt class="text-stone-500">Legal</dt></template><template x-if="r.legal"><dd x-text="r.legal"></dd></template>
-                    <template x-if="r.rec"><dt class="text-stone-500">City staff</dt></template><template x-if="r.rec"><dd x-text="r.rec"></dd></template>
-                  </dl>
-                  <template x-if="r.src === 'pc'">
-                    <p class="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-xs font-semibold">
-                      <a x-show="r.u" :href="r.u" target="_blank" rel="noopener" class="text-pine-700 hover:underline">Staff report<span aria-hidden="true"> →</span></a>
-                      <template x-for="a in r.att || []"><a :href="a[1]" target="_blank" rel="noopener" class="text-pine-700 hover:underline"><span x-text="a[0]"></span><span aria-hidden="true"> →</span></a></template>
-                      <a :href="r.mu" target="_blank" rel="noopener" class="text-pine-700 hover:underline">Meeting agenda<span aria-hidden="true"> →</span></a>
-                    </p>
-                  </template>
-                  <a x-show="r.u && r.src === 'permit'" :href="r.u" target="_blank" rel="noopener" class="text-xs font-semibold text-pine-700 hover:underline">That month's permit list (PDF)<span aria-hidden="true"> →</span></a>
-                </li>
+        <ul class="divide-y divide-stone-100">
+          <template x-for="(r, i) in selected.r" :key="i">
+            <li class="px-4 py-3 text-sm">
+              <p class="text-xs font-semibold uppercase tracking-wide"
+                 :class="r.src === 'permit' ? 'text-pine-700' : (r.src === 'pc' ? 'text-amber-800' : 'text-sky-800')">
+                <span class="inline-block w-2 h-2 border border-stone-800 align-middle" :style="'background:' + categories[r.c || 'o'].color"></span>
+                <span x-text="{ permit: 'Permit issued', pc: 'Planning Commission' }[r.src] || 'Application'"></span>
+                · <span x-text="r.src === 'permit' ? day((r.d || '').slice(0, 7)) : day(r.d)"></span>
+                <span x-show="r.s" x-text="'· ' + r.s"></span>
+              </p>
+              <p class="font-semibold" x-text="r.t"></p>
+              <p x-show="r.desc" class="text-stone-700" x-text="r.desc"></p>
+              <dl class="mt-1 grid grid-cols-[auto_1fr] gap-x-3 text-xs text-stone-600">
+                <template x-if="r.no"><dt class="text-stone-500">Number</dt></template><template x-if="r.no"><dd x-text="r.no"></dd></template>
+                <template x-if="r.v"><dt class="text-stone-500">Value</dt></template><template x-if="r.v"><dd x-text="money(r.v)"></dd></template>
+                <template x-if="r.con"><dt class="text-stone-500">Contractor</dt></template><template x-if="r.con"><dd x-text="r.con + (r.con_c ? ' · ' + r.con_c : '')"></dd></template>
+                <template x-if="r.own"><dt class="text-stone-500">Owner</dt></template><template x-if="r.own"><dd x-text="r.own + (r.own_c ? ' · ' + r.own_c : '')"></dd></template>
+                <template x-if="r.who && r.who !== r.own"><dt class="text-stone-500">Applicant</dt></template><template x-if="r.who && r.who !== r.own"><dd x-text="r.who"></dd></template>
+                <template x-if="r.loc"><dt class="text-stone-500">Location</dt></template><template x-if="r.loc"><dd x-text="r.loc"></dd></template>
+                <template x-if="r.legal"><dt class="text-stone-500">Legal</dt></template><template x-if="r.legal"><dd x-text="r.legal"></dd></template>
+                <template x-if="r.rec"><dt class="text-stone-500">City staff</dt></template><template x-if="r.rec"><dd x-text="r.rec"></dd></template>
+              </dl>
+              <template x-if="r.src === 'pc'">
+                <p class="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-xs font-semibold">
+                  <a x-show="r.u" :href="r.u" target="_blank" rel="noopener" class="text-pine-700 hover:underline">Staff report<span aria-hidden="true"> →</span></a>
+                  <template x-for="a in r.att || []"><a :href="a[1]" target="_blank" rel="noopener" class="text-pine-700 hover:underline"><span x-text="a[0]"></span><span aria-hidden="true"> →</span></a></template>
+                  <a :href="r.mu" target="_blank" rel="noopener" class="text-pine-700 hover:underline">Meeting agenda<span aria-hidden="true"> →</span></a>
+                </p>
               </template>
-            </ul>
-          </div>
+              <a x-show="r.u && r.src === 'permit'" :href="r.u" target="_blank" rel="noopener" class="text-xs font-semibold text-pine-700 hover:underline">That month's permit list (PDF)<span aria-hidden="true"> →</span></a>
+            </li>
+          </template>
+        </ul>
+          </section>
         </template>
-      </section>
 
-      {# results #}
-      <p x-show="loading" class="text-stone-500 text-sm">Loading records…</p>
-      <p x-show="loadingAll && !loading" x-cloak class="text-stone-500 text-sm mb-1.5">Loading older records too…</p>
-      <h2 x-show="!loading && !failed" x-cloak class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-1.5"
-          x-text="q ? 'Matching addresses' : (here ? 'Closest to you' : (since === 'latest' ? 'Newest permits' : 'Most recent activity'))"></h2>
-      <ul x-show="!loading && !failed" x-cloak class="bg-white border border-stone-300 divide-y divide-stone-100 lg:max-h-[60vh] lg:overflow-y-auto">
-        <template x-for="s in results" :key="s.k">
-          <li>
-            <button type="button" @click="select(s)" class="w-full text-left px-4 py-2.5 hover:bg-pine-50" :class="selected && selected.k === s.k ? 'bg-pine-50' : ''">
-              <span class="flex justify-between gap-3">
-                <span class="font-medium" x-text="s.a"></span>
-                <span x-show="s.dist != null" class="text-xs text-stone-500 whitespace-nowrap" x-text="feet(s.dist)"></span>
-              </span>
-              <span class="block text-xs text-stone-500">
-                <span x-text="s.r[0].t"></span> · <span x-text="s.lp ? day(s.last.slice(0, 7)) : day(s.last)"></span>
-                <span x-show="s.r.length > 1" x-text="'· ' + s.r.length + ' records'"></span>
-              </span>
-            </button>
-          </li>
-        </template>
-        <li x-show="!results.length" class="px-4 py-3 text-sm text-stone-500">Nothing matches. Try a different time period or search.</li>
-      </ul>
-      <button type="button" x-show="!loading && matches.length > limit" x-cloak @click="limit += 40"
-              class="w-full mt-2 py-2 border border-stone-300 bg-white text-sm font-semibold text-pine-700 hover:border-pine-600"
-              x-text="'Show more (' + (matches.length - limit).toLocaleString() + ' more)'"></button>
-      <p class="sr-only" role="status" x-text="loading ? '' : (matches.length ? matches.length.toLocaleString() + (matches.length === 1 ? ' place' : ' places') + ' in the list' : 'Nothing matches')"></p>
+        {# the list #}
+        <div x-show="!selected">
+          <p x-show="loadingAll && !loading" x-cloak class="px-4 pt-2 text-xs text-stone-500">Loading older records too…</p>
+          <h2 x-show="!loading && !failed" x-cloak class="hidden lg:block px-4 pt-3 pb-1.5 text-xs font-bold uppercase tracking-wide text-stone-500" x-text="sheetTitle()"></h2>
+          <ul x-show="!loading && !failed" x-cloak class="divide-y divide-stone-100 border-t border-stone-100">
+            <template x-for="s in results" :key="s.k">
+              <li>
+                <button type="button" @click="select(s)" class="w-full text-left px-4 py-2.5 hover:bg-pine-50">
+                  <span class="flex justify-between gap-3">
+                    <span class="font-medium" x-text="s.a"></span>
+                    <span x-show="s.dist != null" class="text-xs text-stone-500 whitespace-nowrap" x-text="feet(s.dist)"></span>
+                  </span>
+                  <span class="block text-xs text-stone-500">
+                    <span x-text="s.r[0].t"></span> · <span x-text="s.lp ? day(s.last.slice(0, 7)) : day(s.last)"></span>
+                    <span x-show="s.r.length > 1" x-text="'· ' + s.r.length + ' records'"></span>
+                  </span>
+                </button>
+              </li>
+            </template>
+            <li x-show="!results.length" class="px-4 py-3 text-sm text-stone-500">Nothing matches. Try a different time period or search.</li>
+          </ul>
+          <button type="button" x-show="!loading && matches.length > limit" x-cloak @click="limit += 40"
+                  class="w-full py-2.5 border-t border-stone-200 text-sm font-semibold text-pine-700 hover:bg-pine-50"
+                  x-text="'Show more (' + (matches.length - limit).toLocaleString() + ' more)'"></button>
+        </div>
+      </div>
     </div>
-  </div>
+    <p class="sr-only" role="status" x-text="loading ? '' : (matches.length ? matches.length.toLocaleString() + (matches.length === 1 ? ' place' : ' places') + ' in the list' : 'Nothing matches')"></p>
+  </section>
 
-  <p class="mt-6 text-sm text-stone-600 max-w-3xl">
-    Includes building permits issued from {{ first_permit | fmt_day('%B %Y') }} through {{ latest_report | fmt_day('%B %Y') }}
-    and planning applications filed from 2012 through {{ archive_meta.newest_created | default('') | fmt_day('%B %Y') }}{% if pc_first %},
-    plus every application on a Planning Commission agenda since {{ pc_first | fmt_day('%B %Y') }}{% endif %}.
-    The city posts a list of new permits each month, and they show up here soon after.
-    Some addresses can't be placed on the map, but you can still find them by searching.
-  </p>
+  <div class="px-4 sm:px-6 lg:px-0 mt-4 space-y-2 text-sm text-stone-600 max-w-3xl">
+    <p>Find out what's being built in and around Spearfish. Use your location to see nearby projects, or search by address, permit number, contractor or owner.</p>
+    <p>
+      Includes building permits issued from {{ first_permit | fmt_day('%B %Y') }} through {{ latest_report | fmt_day('%B %Y') }}
+      and planning applications filed from 2012 through {{ archive_meta.newest_created | default('') | fmt_day('%B %Y') }}{% if pc_first %},
+      plus every application on a Planning Commission agenda since {{ pc_first | fmt_day('%B %Y') }}{% endif %}.
+      The city posts a list of new permits each month, and they show up here soon after.
+      Some addresses can't be placed on the map, but you can still find them by searching.
+    </p>
+  </div>
 </div>
 {% endblock %}
