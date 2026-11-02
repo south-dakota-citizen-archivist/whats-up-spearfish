@@ -254,3 +254,133 @@ def test_scrape_keeps_west_river_and_fails_loudly_without_tables(monkeypatch):
     monkeypatch.setattr(danr.net, "get", lambda url, **kw: Resp(page if url == danr.DANR_URL else "<html></html>"))
     with pytest.raises(RuntimeError):
         danr.DANRPublicNotices().scrape()
+
+
+# ---------------------------------------------------------------------------
+# contested cases (fixtures trimmed from the live Caspio tables)
+# ---------------------------------------------------------------------------
+
+
+def _fixture(name):
+    from pathlib import Path
+
+    return BeautifulSoup((Path(__file__).parent / "fixtures" / name).read_text(), "html.parser")
+
+
+def test_contested_case_listing_groups_and_west_river_filter():
+    from scrapers.sources.danr_contested_cases import is_local, parse_listing
+
+    cases = parse_listing(_fixture("danr_contested_cases.html"))
+    assert len(cases) == 10
+    first = cases[0]
+    assert first["ccid"] == "123" and first["board"] == "Board of Minerals and Environment"
+    assert first["permit_type"] == "Uranium Exploration Permit"
+    assert "  " not in first["description"]
+    local = {c["title"] for c in cases if is_local(c)}
+    assert "2049-1 Stanley R Goschke" in local  # only a Black Hills legal description (T4N-R6E) places it
+    assert "Petition to Modify the Recommended Solid Waste Permit for the Rapid City Landfill" in local
+    assert "9008-3 Brian Gilbert" not in local  # Spink County, T115N-R65W
+    assert not any("Madison" in t for t in local)
+
+
+def test_contested_case_documents_newest_first_with_dates():
+    from scrapers.sources.danr_contested_cases import parse_documents
+
+    docs = parse_documents(_fixture("danr_contested_case_docs.html"))
+    assert len(docs) == 5
+    assert docs[0]["added"] == "2026-07-24" and docs[0]["url"].endswith(".pdf")
+    assert docs[0]["title"].startswith("Notice of Entry of Order")
+
+
+def test_contested_cases_scrape_keeps_local_and_statewide(monkeypatch):
+    from scrapers.sources import danr_contested_cases as cc
+
+    calls = []
+
+    def get(url, **params):
+        calls.append(params.get("CCID"))
+        return _fixture("danr_contested_cases.html" if url == cc.LISTING_URL else "danr_contested_case_docs.html")
+
+    monkeypatch.setattr(cc, "_get", get)
+    monkeypatch.setattr(cc.time, "sleep", lambda s: None)
+    out = cc.DANRContestedCases().scrape()
+    titles = [c["title"] for c in out]
+    assert "9008-3 Brian Gilbert" not in titles and "8987-3 Vic Utech" not in titles
+    cafo = next(c for c in out if c["permit_type"] == "General Permit")
+    assert cafo["area"] == "Statewide"
+    assert out[0]["url"] == "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID123"
+    assert len(out[0]["documents"]) == cc.LATEST_DOCS and out[0]["updated"] == "2026-07-24"
+    assert len(calls) == len(out) + 1  # documents fetched only for the cases kept
+
+
+def test_west_river_needs_whole_words():
+    from scrapers.sources.danr_public_notices import _is_west_river
+
+    assert _is_west_river("four miles northwest of Lead, SD")
+    assert not _is_west_river("a leading cause of erosion")
+
+
+# ---------------------------------------------------------------------------
+# spill reports
+# ---------------------------------------------------------------------------
+
+
+def test_spill_report_numbers():
+    from scrapers.sources.danr_spills import report_number
+
+    assert report_number(2026.14) == "2026.140"  # the layer drops trailing zeros
+    assert report_number(2026.163) == "2026.163"
+    assert report_number(2026005.0) is None  # the tank-check series, not spills
+    assert report_number(2026.0) is None and report_number(None) is None
+
+
+def test_spill_scrape(monkeypatch):
+    from scrapers.sources import danr_spills as spills
+
+    def feature(id_, **kw):
+        attrs = {"id": id_, "site_name": "Fuel Tanker Roll Over", "status": "O", "spill_cat": "Petroleum",
+                 "material": "Diesel", "sor_type": "Fuel Truck", "street": "Hwy 18", "city": "Edgemont",
+                 "county": "fall river", "resp_party": "Westco"} | kw  # fmt: skip
+        return {"attributes": attrs, "geometry": {"x": -103.8123456, "y": 43.3012345}}
+
+    features = [
+        feature(2026.162),
+        feature(2026.14, site_name="Hydraulic  Line", status="NFA", material="Hydraulic Oil", sor_type="AST"),
+        feature(2026.14, site_name="Hydraulic  Line"),  # listed twice
+        feature(2026005.0, site_name="Clean ATP - Spearfish DOT"),
+        feature(2026.15, material="None", sor_type="UST", spill_cat="Other(See Case File)"),
+    ]
+
+    class Resp:
+        ok = True
+        headers = {"Content-Type": "application/pdf"}
+
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return {"features": features}
+
+    def request(method, url, **kw):
+        r = Resp()
+        if url.endswith("2026.162.pdf"):
+            r.ok = False  # not posted yet
+        return r
+
+    monkeypatch.setattr(spills.net, "get", lambda url, params=None, **kw: Resp())
+    monkeypatch.setattr(spills.net, "request", request)
+    out = spills.DANRSpills().scrape()
+    assert [r["report_no"] for r in out] == ["2026.162", "2026.150", "2026.140"]
+    first, other, line = out
+    assert first["url"] == spills.MAP_URL and line["url"].endswith("/2026/2026.140.pdf")
+    assert first["county"] == "Fall River" and first["status"] == "Open" and first["lat"] == 43.30123
+    assert line["title"] == "Hydraulic Line" and line["status"] == "No further action"
+    assert line["material"] == "Hydraulic oil" and line["spill_source"] == "Above-ground tank"
+    assert other["material"] == "" and other["category"] == "Other" and other["spill_source"] == "Underground tank"
+
+
+def test_spill_sentence_case_keeps_acronyms():
+    from scrapers.sources.danr_spills import sentence_case
+
+    assert sentence_case("Transformer Oil NonPCB") == "Transformer oil NonPCB"
+    assert sentence_case("PFAS") == "PFAS" and sentence_case("") == ""

@@ -69,9 +69,12 @@ _HEADERS = {
 }
 
 
+_WEST_RIVER_RE = re.compile(r"\b(" + "|".join(sorted(WEST_RIVER, key=len, reverse=True)) + r")\b", re.I)
+
+
 def _is_west_river(text: str) -> bool:
-    t = text.lower()
-    return any(kw in t for kw in WEST_RIVER)
+    # whole words: "lead" is a town, "leading" isn't
+    return bool(_WEST_RIVER_RE.search(text))
 
 
 def _build_section_map() -> list[tuple[str, str, str]]:

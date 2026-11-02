@@ -108,6 +108,7 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [The Clubhouse](https://clubhouseofspearfish.com/food-and-drink/) | `clubhouse_spearfish` | beer | full snapshot |
 | [Public Bids](https://www.spearfish.gov/Bids.aspx) | `public_bids` | bid | full snapshot |
 | [Spearfish building permit reports](https://www.spearfish.gov/Archive.aspx?AMID=37) | `building_permits` | building_permit |  |
+| [SD DANR contested cases](https://danr.sd.gov/public/ContestedCase.aspx) | `danr_contested_cases` | case | full snapshot |
 | [City of Spearfish](https://spearfishsd.portal.civicclerk.com/) | `spearfish_city` | document |  |
 | [Lawrence County Agenda Center](https://www.lawrence.sd.us/AgendaCenter) | `lawrence_county` | document |  |
 | [Spearfish School Board](https://www.spearfish.k12.sd.us/documents/board-of-education/board-meeting-agendas/25745609) | `spearfish_school_board_docs` | document |  |
@@ -151,10 +152,9 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [Middle School Lunch](https://menus.healthepro.com/organizations/524/sites/4521/menus/124136) | `spearfish_ms_lunch` | school_menu |  |
 | [MS/HS Breakfast](https://menus.healthepro.com/organizations/524/sites/4520/menus/124135) | `spearfish_mshs_breakfast` | school_menu |  |
 | [eBird recent sightings](https://ebird.org/region/US-SD-081) | `ebird` | sighting | full snapshot |
+| [SD DANR spill reports](https://apps.sd.gov/NR42InteractiveMap/) | `danr_spills` | spill | full snapshot |
 | [Library checkouts](https://spearfish.blackhills.bywatersolutions.com) | `library_circulation` | stats |  |
 | [Public Meetings (YouTube)](https://www.youtube.com/@spearfishschooldistrictliv3794/streams) | `public_meetings_youtube` | youtube_video |  |
-| SD DANR contested cases | `danr_contested_cases` | notice | 🧊 on ice |
-| SD DANR spill reports | `danr_spills` | notice | 🧊 on ice |
 | [Spearfish planning & permits (OpenGov)](https://spearfishsd.portal.opengov.com/) | `planning_zoning` | permit | 🧊 on ice, full snapshot |
 | Wildlife carcass pickups (SD DOT) | `roadkill` | sighting | 🧊 on ice |
 <!-- sources:end -->

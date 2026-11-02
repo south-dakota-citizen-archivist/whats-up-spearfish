@@ -60,6 +60,8 @@ KINDS: dict[str, Kind] = {
     "sighting": Kind(("observed_on",), window_days=14),
     "notice": Kind(("deadline_iso",), window_days=60),
     "project": Kind(),
+    "case": Kind(),  # contested permit cases: the whole current list each time
+    "spill": Kind(),
     "beer": Kind(),
     "flavor": Kind(),
     "library_book": Kind(),

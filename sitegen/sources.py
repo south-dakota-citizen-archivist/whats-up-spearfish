@@ -52,6 +52,8 @@ CREDIT = {
     "creek_gauge": "U.S. Geological Survey",
     "ebird": "eBird",
     "danr_public_notices": "SD Dept. of Agriculture & Natural Resources",
+    "danr_contested_cases": "SD Dept. of Agriculture & Natural Resources",
+    "danr_spills": "SD Dept. of Agriculture & Natural Resources",
 }
 
 
@@ -117,7 +119,11 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
             Org(
                 "SD Dept. of Agriculture & Natural Resources",
                 "https://danr.sd.gov/public/default.aspx",
-                (_i("Public notices for western South Dakota", "danr_public_notices"),),
+                (
+                    _i("Public notices for western South Dakota", "danr_public_notices"),
+                    _i("Contested permit cases in western South Dakota", "danr_contested_cases"),
+                    _i("Spill reports in the Black Hills counties", "danr_spills"),
+                ),
             ),
         ],
     ),

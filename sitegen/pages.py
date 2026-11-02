@@ -525,6 +525,15 @@ def civic(site: Site, events: list[dict], today: date) -> dict:
         ],
         "press": newest(site.records(kind="press_release", slugs=PRESS_SOURCES))[:20],
         "notices": site.get("danr_public_notices"),
+        # soonest comment deadline first; notices without one go last
+        "notice_list": sorted(
+            site.get("danr_public_notices").records,
+            key=lambda n: (not n.get("deadline_iso"), n.get("deadline_iso", "")),
+        ),
+        "cases": site.get("danr_contested_cases"),
+        "case_list": sorted(site.get("danr_contested_cases").records, key=lambda c: c.get("updated", ""), reverse=True),
+        "spills": site.get("danr_spills"),
+        "spill_list": sorted(site.get("danr_spills").records, key=lambda r: r.get("report_no", ""), reverse=True),
     }
 
 

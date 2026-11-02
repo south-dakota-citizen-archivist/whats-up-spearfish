@@ -567,3 +567,22 @@ def test_tidy_description():
     )
     assert tidy_description("Story Time", "Songs and stories for toddlers.") == "Songs and stories for toddlers."
     assert tidy_description("Story Time", "") == ""
+
+
+def test_state_notices_soonest_deadline_first_and_newest_spills(tmp_path):
+    from sitegen.pages import civic
+
+    notices = [
+        {"title": "No deadline", "url": "u1", "deadline_iso": ""},
+        {"title": "Later", "url": "u2", "deadline_iso": "2026-11-16"},
+        {"title": "Sooner", "url": "u3", "deadline_iso": "2026-11-02"},
+    ]
+    _write(tmp_path, "danr_public_notices", notices, kind="notice")
+    _write(tmp_path, "danr_spills", [{"title": t, "report_no": n} for t, n in (("a", "2025.189"), ("b", "2026.040"))],
+           kind="spill")  # fmt: skip
+    _write(tmp_path, "danr_contested_cases", [{"title": "Old", "updated": "2026-07-24"},
+                                               {"title": "New", "updated": "2026-11-02"}], kind="case")  # fmt: skip
+    ctx = civic(Site(tmp_path), [], date(2026, 11, 2))
+    assert [n["title"] for n in ctx["notice_list"]] == ["Sooner", "Later", "No deadline"]
+    assert [r["report_no"] for r in ctx["spill_list"]] == ["2026.040", "2025.189"]
+    assert [c["title"] for c in ctx["case_list"]] == ["New", "Old"]

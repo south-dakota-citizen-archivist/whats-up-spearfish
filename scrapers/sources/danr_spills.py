@@ -1,239 +1,125 @@
 """
 scrapers/sources/danr_spills.py
 
-Detects new spill report records from the SD DANR ArcGIS MapServer for the
-Black Hills region by caching known OBJECTIDs and flagging new ones with the
-date they were first seen.
+Spill reports in the Black Hills counties, this year and last, from the SD DANR
+Tanks and Spills Map (https://apps.sd.gov/NR42InteractiveMap/), whose layer
+lives on the state's sdgis.sd.gov ArcGIS server.
 
-Source: SD DANR / NR42_SpillReports_Public
-Web UI: https://apps.sd.gov/NR42InteractiveMap
-API:    https://arcgis.sd.gov/arcgis/rest/services/DENR/NR42_SpillReports_Public/MapServer/0
+The layer carries no report date. Each report's number is YEAR.SEQUENCE
+(2026.140), in the order DANR logged them, and the runner stamps the day each
+first showed up here. A second numbering series (2026005) holds tank-removal
+checks that found nothing; those aren't spills and are left out.
 
-Year is derived from the `id` field (format: YEAR.SEQUENCE, e.g. 2011.100).
-
-Usage:
-    uv run python -m scrapers.sources.danr_spills
+Each report's scanned case file is a PDF that DANR posts some time after the
+report; until it's there, the link goes to the map.
 """
 
 from __future__ import annotations
 
-import json
-from datetime import datetime, timedelta, timezone
-from pathlib import Path
-
-from scrapers import net
+from scrapers import dates, net
 from scrapers.base import BaseScraper
 
-DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "danr_spills.json"
-
-BASE_URL = "https://arcgis.sd.gov/arcgis/rest/services/DENR/NR42_SpillReports_Public/MapServer/0/query"
-
-HEADERS = {"User-Agent": "whats-up-in-spearfish/1.0 (public data aggregator)"}
-
-# SD Black Hills counties tracked
-BH_COUNTIES = ("Lawrence", "Pennington", "Custer", "Meade", "Fall River", "Butte")
-
-LOOKBACK_DAYS = 30
-PAGE_SIZE = 1000
-
-OUT_FIELDS = ",".join(
-    [
-        "OBJECTID",
-        "id",
-        "site_name",
-        "site_type",
-        "status",
-        "street",
-        "city",
-        "county",
-        "spill_cat",
-        "material",
-        "sor_type",
-        "resp_party",
-    ]
-)
+MAP_URL = "https://apps.sd.gov/NR42InteractiveMap/"
+LAYER = "https://sdgis.sd.gov/danr/rest/services/BIT_Systems/NR42_SpillReports_Public/MapServer/0/query"
+PDF_URL = "https://danr.sd.gov/spillimages/{year}/{number}.pdf"
+COUNTIES = ("Lawrence", "Meade", "Butte", "Pennington", "Custer", "Fall River")
+STATUS = {"O": "Open", "C": "Closed", "NFA": "No further action"}
+SOURCES = {"AST": "Above-ground tank", "UST": "Underground tank"}
+_HEADERS = {"User-Agent": "whats-up-spearfish (https://github.com/south-dakota-citizen-archivist/whats-up-spearfish)"}
 
 
-def _year_from_id(id_val: float | int | None) -> int | None:
-    """Extract year from the id field (YEAR.SEQUENCE format, e.g. 2011.100)."""
-    if id_val is None:
+def report_number(raw) -> str | None:
+    """2026.14 → "2026.140"; None for the other numbering series and junk."""
+    try:
+        value = float(raw)
+    except (TypeError, ValueError):
         return None
-    year = int(id_val)
-    if year < 100:
-        year += 1900
-    return year
-
-
-def _pdf_url_from_id(id_val: float | int | None) -> str | None:
-    """Construct source PDF URL from id field (YEAR.SEQUENCE format, e.g. 2011.100).
-
-    PDF archive starts around 1990; older records return None.
-    """
-    if id_val is None:
+    year = int(value)
+    seq = round((value - year) * 1000)
+    if not 1990 <= year <= 2100 or seq <= 0:
         return None
-    year_raw = int(id_val)
-    year = year_raw + 1900 if year_raw < 100 else year_raw
-    if year < 1990:
+    return f"{year}.{seq:03d}"
+
+
+def _clean(value) -> str:
+    return " ".join(str(value or "").split())
+
+
+def sentence_case(text: str) -> str:
+    """ "Hydraulic Oil" → "Hydraulic oil"; acronyms (PFAS, NonPCB) stay as they are."""
+    first, *rest = text.split() or [""]
+    return " ".join([first] + [w.lower() if w[:1].isupper() and w[1:].islower() else w for w in rest])
+
+
+def spill_record(attrs: dict, geometry: dict | None) -> dict | None:
+    number = report_number(attrs.get("id"))
+    if not number:
         return None
-    seq = round((id_val - year_raw) * 1000)
-    if seq <= 0:
-        return None
-    return f"https://danr.sd.gov/spillimages/{year}/{year}.{seq:03d}.pdf"
+    material = _clean(attrs.get("material"))
+    source = _clean(attrs.get("sor_type"))
+    return {
+        "report_no": number,
+        "year": int(number[:4]),
+        "title": _clean(attrs.get("site_name")),
+        "status": STATUS.get(_clean(attrs.get("status")).upper(), _clean(attrs.get("status"))),
+        "category": _clean(attrs.get("spill_cat")).replace("(See Case File)", "").strip(),
+        "material": "" if material.lower() in ("none", "unknown") else sentence_case(material),
+        "spill_source": sentence_case(SOURCES.get(source.upper(), source)),
+        "street": _clean(attrs.get("street")),
+        "city": _clean(attrs.get("city")),
+        "county": _clean(attrs.get("county")).title(),
+        "responsible_party": _clean(attrs.get("resp_party")),
+        "lat": round(geometry["y"], 5) if geometry and geometry.get("y") else None,
+        "lon": round(geometry["x"], 5) if geometry and geometry.get("x") else None,
+    }
 
 
-def _fetch_all() -> list[dict]:
-    """Fetch all BH region records with pagination."""
-    counties_sql = ", ".join(f"'{c}'" for c in BH_COUNTIES)
-    features = []
-    offset = 0
-
-    while True:
-        params = {
-            "where": f"county IN ({counties_sql})",
-            "outFields": OUT_FIELDS,
-            "returnGeometry": "true",
-            "outSR": "4326",
-            "resultRecordCount": PAGE_SIZE,
-            "resultOffset": offset,
-            "f": "json",
-        }
-        try:
-            resp = net.get(BASE_URL, params=params, headers=HEADERS, timeout=30)
-            resp.raise_for_status()
-            data = resp.json()
-        except Exception as exc:
-            print(f"[DANR Spills] Warning: fetch failed at offset {offset}: {exc}")
-            break
-
-        if "error" in data:
-            print(f"[DANR Spills] API error: {data['error']}")
-            break
-
-        page = data.get("features") or []
-        features.extend(page)
-
-        if len(page) < PAGE_SIZE:
-            break
-        offset += PAGE_SIZE
-
-    return features
-
-
-def fetch_danr_spills() -> None:
-    # Load existing cached data
-    if DATA_FILE.exists():
-        try:
-            existing = json.loads(DATA_FILE.read_text(encoding="utf-8"))
-        except Exception:
-            existing = {}
-    else:
-        existing = {}
-
-    known_ids: set[int] = set(existing.get("known_ids", []))
-    new_records: list[dict] = existing.get("new_records", [])
-
-    # Prune new_records older than LOOKBACK_DAYS
-    cutoff = (datetime.now(timezone.utc).date() - timedelta(days=LOOKBACK_DAYS)).isoformat()
-    new_records = [r for r in new_records if r.get("first_seen", "") >= cutoff]
-    new_record_ids = {r["objectid"] for r in new_records}
-
-    current_year = datetime.now(timezone.utc).year
-
-    # Fetch all current BH records
-    features = _fetch_all()
-    if not features:
-        print("[DANR Spills] Warning: no records fetched; aborting update.")
-        return
-
-    today = datetime.now(timezone.utc).date().isoformat()
-    all_ids: set[int] = set()
-    added = 0
-
-    # Index existing new_records by objectid for fast retroactive patching
-    new_records_by_id = {r["objectid"]: r for r in new_records}
-
-    for feat in features:
-        attrs = feat.get("attributes") or {}
-        geom = feat.get("geometry") or {}
-        objectid = attrs.get("OBJECTID")
-        if objectid is None:
-            continue
-
-        all_ids.add(objectid)
-        id_raw = attrs.get("id")
-        year = _year_from_id(id_raw)
-
-        # Backfill pdf_url on existing records that predate the id_raw field
-        if objectid in new_records_by_id:
-            existing_rec = new_records_by_id[objectid]
-            if existing_rec.get("pdf_url") is None and "id_raw" not in existing_rec:
-                existing_rec["id_raw"] = id_raw
-                existing_rec["pdf_url"] = _pdf_url_from_id(id_raw)
-
-        # Include all current-year records, plus any genuinely new records from prior years
-        is_new_to_known = objectid not in known_ids
-        is_current_year = year == current_year
-        if objectid not in new_record_ids and (is_current_year or is_new_to_known):
-            lat = geom.get("y")
-            lon = geom.get("x")
-            new_records.append(
-                {
-                    "objectid": objectid,
-                    "first_seen": today,
-                    "id_raw": id_raw,
-                    "year": year,
-                    "pdf_url": _pdf_url_from_id(id_raw),
-                    "site_name": (attrs.get("site_name") or "").strip(),
-                    "site_type": (attrs.get("site_type") or "").strip(),
-                    "status": (attrs.get("status") or "").strip(),
-                    "street": (attrs.get("street") or "").strip(),
-                    "city": (attrs.get("city") or "").strip(),
-                    "county": (attrs.get("county") or "").strip(),
-                    "spill_cat": (attrs.get("spill_cat") or "").strip(),
-                    "material": (attrs.get("material") or "").strip() or None,
-                    "sor_type": (attrs.get("sor_type") or "").strip() or None,
-                    "resp_party": (attrs.get("resp_party") or "").strip() or None,
-                    "lat": round(lat, 6) if lat else None,
-                    "lon": round(lon, 6) if lon else None,
-                }
-            )
-            added += 1
-
-    known_ids.update(all_ids)
-
-    new_records.sort(key=lambda r: r["first_seen"], reverse=True)
-
-    DATA_FILE.write_text(
-        json.dumps(
-            {
-                "fetched_at": datetime.now(timezone.utc).isoformat(),
-                "lookback_days": LOOKBACK_DAYS,
-                "total_bh_sites": len(all_ids),
-                "known_ids": sorted(known_ids),
-                "new_records": new_records,
-            },
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
-
-    print(
-        f"[DANR Spills] {len(all_ids)} total BH sites, {added} added this run, {len(new_records)} in pool → {DATA_FILE.name}"  # noqa
-    )
-
-
-if __name__ == "__main__":
-    fetch_danr_spills()
+def _pdf_posted(url: str) -> bool:
+    try:
+        resp = net.request("HEAD", url, headers=_HEADERS, timeout=15, allow_redirects=True)
+    except Exception:  # noqa: BLE001 — a missing link isn't worth failing the scrape over
+        return False
+    return resp.ok and "pdf" in resp.headers.get("Content-Type", "")
 
 
 class DANRSpills(BaseScraper):
-    """On ice: kept for later, not run. Still uses its own standalone fetch
-    function and file format; port it to scrape() before enabling."""
-
     name = "SD DANR spill reports"
     slug = "danr_spills"
-    kind = "notice"
-    enabled = False
+    kind = "spill"
+    url = MAP_URL
+    replace = True
+    dedup_key = "report_no"
+    max_stale_hours = 24 * 3
 
     def scrape(self) -> list[dict]:
-        raise NotImplementedError("danr_spills is on ice")
+        since = dates.today().year - 1
+        counties = ", ".join(f"'{c}'" for c in COUNTIES)
+        resp = net.get(
+            LAYER,
+            params={
+                # county is sometimes typed lowercase
+                "where": f"UPPER(county) IN ({counties.upper()}) AND id >= {since} AND id < {since + 2}",
+                "outFields": "id,site_name,status,spill_cat,material,sor_type,street,city,county,resp_party",
+                "returnGeometry": "true",
+                "outSR": "4326",
+                "orderByFields": "id DESC",
+                "resultRecordCount": 2000,
+                "f": "json",
+            },
+            headers=_HEADERS,
+            timeout=30,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        if "error" in data:
+            raise RuntimeError(f"spill layer error: {data['error']}")
+
+        spills: dict[str, dict] = {}
+        for feature in data.get("features", []):
+            rec = spill_record(feature.get("attributes") or {}, feature.get("geometry"))
+            if rec and rec["title"] and rec["report_no"] not in spills:  # a report can be listed twice
+                spills[rec["report_no"]] = rec
+        for rec in spills.values():
+            pdf = PDF_URL.format(year=rec["year"], number=rec["report_no"])
+            rec["url"] = pdf if _pdf_posted(pdf) else MAP_URL
+        return sorted(spills.values(), key=lambda r: r["report_no"], reverse=True)

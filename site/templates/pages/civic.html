@@ -8,8 +8,8 @@
     <p class="text-xs font-semibold text-stone-500 uppercase tracking-wide">{{ m.date | fmt_day('%a, %b %-d') }} · {{ m.body }}</p>
     {{ ext(m.url, m.name, 'font-medium hover:text-pine-700 hover:underline') }}
     <span class="text-sm">
-      {% for d in m.docs %}{{ ext(d.url, d.label, 'inline-block py-1 text-pine-700 hover:underline ml-2') }}{% endfor %}
-      {% if m.video %}{{ ext(m.video, 'Video', 'inline-block py-1 text-pine-700 hover:underline ml-2') }}{% endif %}
+      {% for d in m.docs %}{{ ext(d.url, d.label, 'inline-block whitespace-nowrap py-1 text-pine-700 hover:underline ml-2') }}{% endfor %}
+      {% if m.video %}{{ ext(m.video, 'Video', 'inline-block whitespace-nowrap py-1 text-pine-700 hover:underline ml-2') }}{% endif %}
     </span>
   </li>
   {% endfor %}
@@ -77,29 +77,58 @@
     {% else %}{{ empty("No recent permits.") }}{% endif %}
   {% endcall %}
 
-  <div class="min-w-0 space-y-6">
-    {% call card("Open city bids", "bids", sources=bids, more=bids.url, more_label="Bids") %}
-      {% if bids.records %}
-      <ul class="space-y-2 text-sm">
-        {% for b in bids.records %}
-        <li>{{ ext(b.url, b.title, 'font-medium hover:text-pine-700 hover:underline') }}
-          {% if b.closes %}<p class="text-xs text-stone-500">Closes {{ b.closes }}</p>{% endif %}</li>
-        {% endfor %}
-      </ul>
-      {% else %}{{ empty("No open bids.") }}{% endif %}
-    {% endcall %}
+  {% call card("Open city bids", "bids", sources=bids, more=bids.url, more_label="Bids") %}
+    {% if bids.records %}
+    <ul class="space-y-2 text-sm">
+      {% for b in bids.records %}
+      <li>{{ ext(b.url, b.title, 'font-medium hover:text-pine-700 hover:underline') }}
+        {% if b.closes %}<p class="text-xs text-stone-500">Closes {{ b.closes }}</p>{% endif %}</li>
+      {% endfor %}
+    </ul>
+    {% else %}{{ empty("No open bids.") }}{% endif %}
+  {% endcall %}
 
-    {% call card("State environmental notices", "notices", sources=notices, more=notices.url, more_label="All notices") %}
-      {% if notices.records %}
-      <ul class="space-y-2.5 text-sm" data-more="8">
-        {% for n in notices.records %}
-        <li>{{ ext(n.url, n.title, 'font-medium hover:text-pine-700 hover:underline') }}
-          <p class="text-xs text-stone-500">{{ n.notice_type }}{% if n.location %} · {{ n.location }}{% endif %}{% if n.deadline %} · comments due {{ n.deadline }}{% endif %}</p></li>
-        {% endfor %}
-      </ul>
-      {% else %}{{ empty("No current notices for western South Dakota.") }}{% endif %}
-    {% endcall %}
-  </div>
+  {% call card("State environmental notices", "notices", sources=notices, more=notices.url, more_label="All notices") %}
+    {% if notice_list %}
+    <ul class="space-y-2.5 text-sm" data-more="8">
+      {% for n in notice_list %}
+      <li>{{ ext(n.url, n.title, 'font-medium hover:text-pine-700 hover:underline') }}
+        <p class="text-xs text-stone-500">{% if n.deadline_iso %}<span class="font-semibold text-stone-700">Comments due {{ n.deadline_iso | fmt_day('%b %-d') }}</span> · {% endif %}{{ n.notice_type }}{% if n.location %} · {{ n.location }}{% endif %}</p></li>
+      {% endfor %}
+    </ul>
+    {% else %}{{ empty("No current notices for western South Dakota.") }}{% endif %}
+  {% endcall %}
+
+  {% call card("Contested permit cases", "cases", sources=cases, more=cases.url, more_label="All cases") %}
+    <p class="text-sm text-stone-600 mb-3">Permit requests someone has formally challenged, decided after a hearing before a state board.</p>
+    {% if case_list %}
+    <ul class="divide-y divide-stone-100 text-sm" data-more="4" data-more-noun="cases">
+      {% for c in case_list %}
+      <li class="py-2.5">
+        {{ ext(c.url, c.title, 'font-medium hover:text-pine-700 hover:underline') }}
+        <p class="text-xs text-stone-500">{% if c.area %}{{ c.area }} · {% endif %}{{ c.permit_type }} · {{ c.board }}</p>
+        {% if c.documents %}{% set d = c.documents[0] %}
+        <p class="text-xs mt-1">Latest filing{% if d.added %}, {{ d.added | fmt_day('%b %-d') }}{% endif %}: {{ ext(d.url, d.title, 'text-pine-700 hover:underline') }}</p>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}{{ empty("No contested cases in western South Dakota right now.") }}{% endif %}
+  {% endcall %}
+
+  {% call card("Spill reports", "spills", sources=spills, more=spills.url, more_label="Spill map") %}
+    <p class="text-sm text-stone-600 mb-3">Spills and leaks reported to the state in the Black Hills counties, newest first.</p>
+    {% if spill_list %}
+    <ul class="divide-y divide-stone-100 text-sm" data-more="6" data-more-noun="reports">
+      {% for r in spill_list %}
+      <li class="py-2">
+        {{ ext(r.url, r.title, 'font-medium hover:text-pine-700 hover:underline') }}
+        <p class="text-xs text-stone-500">{{ r.material or r.category or 'Unknown material' }}{% if r.spill_source %} · {{ r.spill_source }}{% endif %} · {{ r.city or r.county ~ ' County' }} · {% if r.status == 'Open' %}<span class="font-semibold text-stone-700">Open</span>{% else %}{{ r.status }}{% endif %}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}{{ empty("No spill reports this year.") }}{% endif %}
+  {% endcall %}
 
   {% call card("Press releases", "press", class="lg:col-span-2") %}
     {% if press %}
