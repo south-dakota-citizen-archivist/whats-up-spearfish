@@ -35,6 +35,7 @@ from scrapers import dates
 from sitegen import feeds, pages
 from sitegen.data import Site
 from sitegen.events import CATEGORY_LABELS, unified_events
+from sitegen.parcels import ParcelLinks
 
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATES = ROOT / "site" / "templates"
@@ -217,7 +218,14 @@ def build(data_dir: Path, out_dir: Path) -> None:
     )
 
     feeds.write_json(events, out_dir / "events.json")
-    feeds.write_json(pages.permit_sites(site), out_dir / "permits" / "sites.json")
+    parcels = ParcelLinks.load(data_dir)
+    sites = pages.permit_sites(site, parcels)
+    feeds.write_json(sites, out_dir / "permits" / "sites.json")
+    # Parcel outlines, only for parcels with records; the permits page loads them on demand
+    feeds.write_json(
+        {g["pid"]: parcels.by_id[g["pid"]]["outline"] for g in sites if g.get("pid")},
+        out_dir / "permits" / "parcels.json",
+    )
     feeds.write_json(pages.menu_details(site, today), out_dir / "schools" / "menus.json")
     feeds.write_ics(events, out_dir / "calendar.ics", SITE_URL)
     feeds.write_rss(events, out_dir / "events.xml", SITE_URL)

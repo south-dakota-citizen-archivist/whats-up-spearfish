@@ -15,7 +15,7 @@
   </p>
 </div>
 
-<div x-data="permits('{{ root }}permits/sites.json', '{{ latest_report[:7] }}')">
+<div x-data="permits('{{ root }}permits/sites.json', '{{ latest_report[:7] }}', '{{ root }}permits/parcels.json', '{{ beacon }}')">
   <div class="flex flex-wrap gap-2 items-center mb-3">
     <button type="button" @click="near()" :disabled="locating"
             class="px-4 py-2 bg-pine-700 text-white font-semibold text-sm hover:bg-pine-800 disabled:opacity-60">
@@ -79,6 +79,14 @@
               <div>
                 <h2 class="font-bold text-lg" x-text="selected.a"></h2>
                 <p class="text-xs text-stone-500" x-text="selected.r.length + (selected.r.length === 1 ? ' record' : ' records')"></p>
+                <template x-if="selected.pid">
+                  <dl class="mt-1.5 grid grid-cols-[auto_1fr] gap-x-3 text-xs text-stone-600">
+                    <template x-if="selected.own"><dt class="text-stone-400">Owner</dt></template><template x-if="selected.own"><dd x-text="selected.own"></dd></template>
+                    <template x-if="selected.ac"><dt class="text-stone-400">Size</dt></template><template x-if="selected.ac"><dd x-text="selected.ac + (selected.ac === 1 ? ' acre' : ' acres')"></dd></template>
+                    <dt class="text-stone-400">Parcel</dt>
+                    <dd><a :href="parcelUrl(selected)" target="_blank" rel="noopener" class="font-semibold text-pine-700 hover:underline"><span x-text="selected.pid"></span> · county record →</a></dd>
+                  </dl>
+                </template>
               </div>
               <button type="button" @click="clear()" class="text-sm text-stone-500 hover:text-stone-900" aria-label="Close">✕</button>
             </div>

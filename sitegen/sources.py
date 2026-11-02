@@ -100,6 +100,10 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
                 COUNTY,
                 "https://www.lawrence.sd.us/",
                 (
+                    _i(
+                        "Property lines, owners and parcel records",
+                        note="Updated from time to time",
+                    ),
                     _i("Meeting agendas", "lawrence_county"),
                     _i("News", "lawrence_county_news"),
                     _i("Job openings", "lawrence_county_jobs"),

@@ -8,12 +8,13 @@ document.addEventListener("alpine:init", () => {
     o: { label: "Other", color: "#a8a29e" },
   };
 
-  Alpine.data("permits", (url, latestReport) => {
+  Alpine.data("permits", (url, latestReport, outlinesUrl, beacon) => {
     // Leaflet objects live outside Alpine's reactive state.
     let map = null;
     let markers = null;
     let youAreHere = null;
     let ring = null; // highlight around the selected site
+    let outlines = null; // parcel outlines, loaded the first time a parcel is selected
 
     return {
       sites: [],
@@ -96,7 +97,7 @@ document.addEventListener("alpine:init", () => {
           const words = q.split(/\s+/);
           return this.sites
             .filter((s) => {
-              const hay = (s.a + " " + s.r.map((r) => [r.no, r.t, r.con, r.who, r.own, r.desc, r.loc, r.legal].join(" ")).join(" ")).toLowerCase();
+              const hay = (s.a + " " + (s.own || "") + " " + (s.pid || "") + " " + s.r.map((r) => [r.no, r.t, r.con, r.who, r.own, r.desc, r.loc, r.legal].join(" ")).join(" ")).toLowerCase();
               return words.every((w) => hay.includes(w));
             })
             .slice(0, 60);
@@ -157,9 +158,24 @@ document.addEventListener("alpine:init", () => {
         history.replaceState(null, "", "#site=" + encodeURIComponent(s.k));
         if (ring) ring.remove();
         ring = null;
-        if (s.lat != null && map) {
-          ring = L.circleMarker([s.lat, s.lon], { radius: 11, weight: 3, color: "#1c1917", fill: false, interactive: false }).addTo(map);
-        }
+        if (s.lat == null || !map) return;
+        ring = L.circleMarker([s.lat, s.lon], { radius: 11, weight: 3, color: "#1c1917", fill: false, interactive: false }).addTo(map);
+        if (s.pid) this.outline(s);
+      },
+
+      // Swap the ring for the parcel's outline once outlines are loaded
+      async outline(s) {
+        if (!outlines) outlines = await (await fetch(outlinesUrl)).json();
+        const rings = outlines[s.pid];
+        if (!rings || this.selected !== s) return;
+        if (ring) ring.remove();
+        ring = L.featureGroup(
+          rings.map((r) => L.polygon(r.map(([lon, lat]) => [lat, lon]), { weight: 3, color: "#1c1917", fillColor: "#facc15", fillOpacity: 0.25, interactive: false })),
+        ).addTo(map);
+      },
+
+      parcelUrl(s) {
+        return beacon + encodeURIComponent(s.pid);
       },
 
       clear() {

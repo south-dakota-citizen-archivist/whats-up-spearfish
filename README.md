@@ -48,6 +48,11 @@ scrapers (GitHub Actions, scheduled)  →  data branch (JSON snapshots)  →  si
   scheduled run checks `data/_last_daily` and runs the daily tier itself if the
   last daily scrape is more than 20 hours old.
 
+## Parcels and addresses
+
+Addresses are matched to county parcel data. Addresses are standardized by
+`scrapers/address.py` (usaddress + USPS abbreviations, plus local fixes).
+
 ## Running locally
 
 ```sh

@@ -16,6 +16,7 @@ from datetime import date, timedelta
 from scrapers import geo
 from sitegen.data import Site, Source
 from sitegen.events import CATEGORY_LABELS
+from sitegen.parcels import BEACON, ParcelLinks, record_key
 from sitegen.sources import DIRECTORY
 
 # ── shared helpers ──────────────────────────────────────────────────────────
@@ -442,6 +443,7 @@ def civic(site: Site, events: list[dict], today: date) -> dict:
     t = today.isoformat()
     all_meetings = meetings(site)
     bp = site.get("building_permits")
+    planning_parcels = ParcelLinks.load(site.data_dir)
     return {
         "upcoming": [m for m in all_meetings if m["date"] >= t][:20],
         "recent": [m for m in reversed(all_meetings) if (today - timedelta(days=45)).isoformat() <= m["date"] < t],
@@ -455,7 +457,7 @@ def civic(site: Site, events: list[dict], today: date) -> dict:
         "bids": site.get("public_bids"),
         "planning": site.get("planning_commission"),
         "planning_items": [
-            dict(r, site_key=pc_site_key(r))
+            dict(r, site_key=pc_site_key(r, planning_parcels))
             for r in sorted(
                 (r for r in site.get("planning_commission").records if r.get("site")),
                 key=lambda r: r.get("meeting_date", ""),
@@ -675,35 +677,56 @@ def _compact(d: dict) -> dict:
     return {k: v for k, v in d.items() if v not in ("", None, [], 0)}
 
 
-def pc_site_key(r: dict) -> str:
-    """Permits-page key for a Planning Commission item: its street address, else its location text."""
+def pc_site_key(r: dict, links: ParcelLinks | None = None) -> str:
+    """Permits-page key for a Planning Commission item: its parcel, else its street address, else its location text."""
+    if links and (pid := links.pid(record_key("pc", r), r.get("address", ""))):
+        return f"P {pid}"
     return r.get("address_key") or ("LOC " + " ".join(r.get("location", "").upper().rstrip(".").split()))
 
 
-def permit_sites(site: Site) -> list[dict]:
+def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
     """
     Every planning application (OpenGov archive), issued building permit
-    (monthly reports) and Planning Commission agenda item, grouped by
-    normalized street address. Each record gets a reader-friendly type, status
-    and map category ("c"). Agenda items placed only by a description
-    ("Intersection of St. Onge Road and Highway 14") get their own entry, which
-    is searchable but can't go on the map.
+    (monthly reports) and Planning Commission agenda item, grouped by site.
+
+    A site is a county parcel whenever a record can be linked to one (see
+    sitegen/parcels.py, via parcel_links.json); the parcel supplies the map position, owner, acreage
+    and outline. Otherwise records group by standardized street address, and
+    agenda items placed only by a description ("Intersection of St. Onge Road
+    and Highway 14") get their own entry, searchable but not mapped.
+    Each record gets a reader-friendly type, status and map category ("c").
     """
+    parcels = parcels if parcels is not None else ParcelLinks.load(site.data_dir)
     groups: dict[str, dict] = {}
 
     def add(key, address, lat, lon, rec):
         if not key:
             return
-        g = groups.setdefault(key, {"k": key, "a": pretty_address(address), "r": []})
+        g = groups.get(key)
+        if g is None:
+            g = groups[key] = {"k": key, "a": pretty_address(address), "r": []}
+            if key.startswith("P "):
+                pf = parcels.site_fields(key[2:])
+                situs = parcels.by_id[key[2:]].get("situs")
+                g.update(pf)
+                if situs and not address:
+                    g["a"] = pretty_address(situs)
         if lat and lon and "lat" not in g:
             g["lat"], g["lon"] = round(lat, 5), round(lon, 5)
+        if not g["a"] and address:
+            g["a"] = pretty_address(address)
         g["r"].append(_compact(rec))
+
+    def place(key: str, addr: str, fallback: str) -> str:
+        if parcels and (pid := parcels.pid(key, addr)):
+            return f"P {pid}"
+        return fallback
 
     for r in load_planning_archive(site)["records"]:
         if not r.get("site") or "practice record" in (r.get("type") or "").lower():
             continue
         add(
-            geo.normalize_address(r.get("address", "")),
+            place(record_key("app", r), r.get("address", ""), geo.normalize_address(r.get("address", ""))),
             r.get("address"),
             r.get("lat"),
             r.get("lon"),
@@ -726,7 +749,7 @@ def permit_sites(site: Site) -> list[dict]:
 
     for r in site.get("building_permits").records:
         add(
-            geo.normalize_address(r.get("site_address", "")),
+            place(record_key("permit", r), r.get("site_address", ""), geo.normalize_address(r.get("site_address", ""))),
             r.get("site_address"),
             r.get("lat"),
             r.get("lon"),
@@ -747,7 +770,7 @@ def permit_sites(site: Site) -> list[dict]:
         if not r.get("site"):
             continue
         add(
-            pc_site_key(r),
+            pc_site_key(r, parcels),
             r.get("address") or r.get("location", "").rstrip("."),
             r.get("lat"),
             r.get("lon"),
@@ -789,4 +812,5 @@ def permits_page(site: Site, events: list[dict], today: date) -> dict:
         "latest_report": latest_report,
         "first_permit": min((r.get("date", "") for r in bp.records if r.get("date")), default=""),
         "pc_first": min((r.get("meeting_date", "")[:10] for r in site.get("planning_commission").records), default=""),
+        "beacon": BEACON,
     }
