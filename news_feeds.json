@@ -3,69 +3,9 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-01T20:21:24-07:00",
- "count": 79,
+ "fetched_at": "2026-11-02T07:21:17-07:00",
+ "count": 76,
  "records": [
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/02/money-begins-to-flow-in-fight-over-threshold-for-south-dakota-constitutional-changes/",
-   "title": "Money begins to flow in fight over threshold for South Dakota constitutional changes",
-   "slug": "south-dakota-searchlight-money-begins-to-flow-in-fight-over-threshold-for-south",
-   "published": "2026-10-02",
-   "byline": "John Hult",
-   "description": "The backers of a South Dakota ballot measure that would make it harder to change the state constitution accused their opponents this week of misleading voters with campaign ads tying the measure to “out-of-state billionaires.”  The spokesperson for the opposition called the allegations “comical.” The ads are a nod to how much more expensive campaigns [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "8d58e1792ec0",
-   "date": "2026-10-02",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/02/appeals-court-denies-south-dakotas-defense-of-ban-on-abortion-pill-advertising/",
-   "title": "Appeals court denies South Dakota’s defense of ban on abortion pill advertising",
-   "slug": "south-dakota-searchlight-appeals-court-denies-south-dakotas-defense-of-ban-on",
-   "published": "2026-10-02",
-   "byline": "Meghan O'Brien",
-   "description": "An appeals court shut down an attempt from South Dakota’s attorney general and governor to overturn a decision that blocks enforcement of a law that criminalizes abortion pill advertising in the state. Gov. Larry Rhoden and Attorney General Marty Jackley, both Republicans, filed the appeal in August after a lower court blocked enforcement of the [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "44273ebbd3a1",
-   "date": "2026-10-02",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/02/podcast-governor-candidates-debate-data-centers-education-economic-development/",
-   "title": "Podcast: Governor candidates debate data centers, education, economic development",
-   "slug": "south-dakota-searchlight-podcast-governor-candidates-debate-data-centers",
-   "published": "2026-10-02",
-   "byline": "Meghan O'Brien",
-   "description": "The two candidates for South Dakota governor recently met for a final debate before the Nov. 3 general election, hosted by South Dakota Public Broadcasting and South Dakota News Watch. In this episode of Searchlight Report, host Meghan O’Brien recaps the debate, including disagreements on data center laws, school funding and how the state helps [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "468bb54c5233",
-   "date": "2026-10-02",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/01/us-house-candidates-disagree-on-tariffs-but-find-common-ground-on-opposition-to-trump-beef-imports/",
-   "title": "US House candidates disagree on tariffs, but find common ground on opposition to Trump beef imports",
-   "slug": "south-dakota-searchlight-us-house-candidates-disagree-on-tariffs-but-find-common",
-   "published": "2026-10-02",
-   "byline": "John Hult",
-   "description": "SIOUX FALLS — During a Thursday night debate, the Republican candidate in the race for South Dakota’s lone seat in the U.S. House of Representatives joined a chorus of his party’s members in criticizing President Donald Trump’s approach on beef imports. Republican Attorney General Marty Jackley faces Democrat Nikki Gronli in the Nov. 3 general [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "8c9ec70350b7",
-   "date": "2026-10-02",
-   "_first_seen": "2026-11-01"
-  },
   {
    "url": "https://southdakotasearchlight.com/2026/10/03/whatever-the-motivation-republicans-endorsement-of-democrat-deserves-points-for-facts-and-reason/",
    "title": "Commentary: Whatever the motivation, Republican’s endorsement of Democrat deserves points for facts and reason",
@@ -457,21 +397,6 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://www.sdnewswatch.org/local-legislative-south-dakota-elections-2026/",
-   "title": "Local and legislative elections to watch this November",
-   "slug": "sd-newswatch-local-and-legislative-elections-to-watch-this-november",
-   "published": "2026-10-16",
-   "byline": "Molly Wetsch",
-   "description": "The South Dakota Legislature will see an Independent for the first time in over a decade, and school districts will vote on millions of dollars in bonds.",
-   "record_type": "news",
-   "source_label": "SD Newswatch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "305383490645",
-   "date": "2026-10-16",
-   "_first_seen": "2026-11-01"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/10/16/south-dakota-social-services-secretary-matt-althoff-departs-as-governor-larry-rhoden-names-interim-successor-brenda-tidball-zeltinger/",
    "title": "South Dakota social services secretary departs as governor names interim successor",
    "slug": "south-dakota-searchlight-south-dakota-social-services-secretary-departs-as-names",
@@ -543,6 +468,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "728e507dbba0",
+   "date": "2026-10-16",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/local-legislative-south-dakota-elections-2026/",
+   "title": "Local and legislative elections to watch this November",
+   "slug": "sd-newswatch-local-and-legislative-elections-to-watch-this-november",
+   "published": "2026-10-16",
+   "byline": "Molly Wetsch",
+   "description": "The South Dakota Legislature will see an Independent for the first time in over a decade, and school districts will vote on millions of dollars in bonds.",
+   "record_type": "news",
+   "source_label": "SD Newswatch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "305383490645",
    "date": "2026-10-16",
    "_first_seen": "2026-11-01"
   },
@@ -1190,6 +1130,21 @@
    "id": "40b991be5cbb",
    "date": "2026-11-01",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-aquifers-water-supplies/",
+   "title": "Major aquifers in South Dakota in decline, threatening fresh water supplies",
+   "slug": "sd-newswatch-major-aquifers-in-south-dakota-in-decline-threatening-fresh-water",
+   "published": "2026-11-02",
+   "byline": "Bart Pfankuch",
+   "description": "\"We’ll reach a point where all the currently available water supply will all be in use, and in that case, the next family or business that comes to South Dakota will have to bring their own water.\"",
+   "record_type": "news",
+   "source_label": "SD Newswatch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "86a2cd3ac200",
+   "date": "2026-11-02",
+   "_first_seen": "2026-11-02"
   }
  ]
 }

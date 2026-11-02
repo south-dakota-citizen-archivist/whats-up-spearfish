@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-01T20:21:37-07:00",
- "count": 6,
+ "fetched_at": "2026-11-02T07:21:47-07:00",
+ "count": 7,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -71,7 +71,7 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://www.sdpb.org/business-economics/2026-10-30/south-dakota-receives-share-of-nationwide-gm-settlement-over-driver-data-misuse",
+   "url": "https://www.sdpb.org/crime-courts/2026-10-30/south-dakota-receives-share-of-nationwide-gm-settlement-over-driver-data-misuse",
    "title": "South Dakota receives share of nationwide GM settlement over driver data misuse",
    "slug": "sdpb-south-dakota-receives-share-of-nationwide-gm-settlement-over-driver-data",
    "published": "2026-10-30",
@@ -82,9 +82,9 @@
    "source_label": "SDPB",
    "kind": "news",
    "source": "sdpb_news",
-   "id": "3fbd9182928c",
+   "id": "cae3019268c1",
    "date": "2026-10-30",
-   "_first_seen": "2026-11-01"
+   "_first_seen": "2026-11-02"
   },
   {
    "url": "https://www.sdpb.org/politics/2026-10-30/yearslong-process-to-reduce-states-recidivism-rate-requires-money-culture-changes",
@@ -99,6 +99,22 @@
    "kind": "news",
    "source": "sdpb_news",
    "id": "7f767f99393b",
+   "date": "2026-10-30",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sdpb.org/business-economics/2026-10-30/south-dakota-receives-share-of-nationwide-gm-settlement-over-driver-data-misuse",
+   "title": "South Dakota receives share of nationwide GM settlement over driver data misuse",
+   "slug": "sdpb-south-dakota-receives-share-of-nationwide-gm-settlement-over-driver-data",
+   "published": "2026-10-30",
+   "byline": "By SDPB News Staff",
+   "description": "South Dakota is receiving $2.6 million dollars in a settlement from General Motors over allegations the company illegally sold consumers’ data.",
+   "image_url": "https://npr.brightspotcdn.com/cd/be/09f8d0334a63b746dc496cb98c79/money-gavel-court-lawsuit-bank-financial.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "3fbd9182928c",
    "date": "2026-10-30",
    "_first_seen": "2026-11-01"
   }

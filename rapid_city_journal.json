@@ -3,8 +3,8 @@
  "name": "Rapid City Journal",
  "kind": "news",
  "url": "https://rapidcityjournal.com/",
- "fetched_at": "2026-11-01T20:21:27-07:00",
- "count": 100,
+ "fetched_at": "2026-11-02T07:21:28-07:00",
+ "count": 102,
  "records": [
   {
    "url": "https://rapidcityjournal.com/news/local/obituaries/article_9710b21b-5135-5f84-aaf9-ed290312c1ac.html",
@@ -1505,6 +1505,36 @@
    "id": "a20ed9507edb",
    "date": "2026-10-30",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/government-politics/article_87052af8-b8cb-41a4-9264-4fe9fab80cc3.html",
+   "title": "What's on the Rapid City Council's Monday, Nov. 2, agenda?",
+   "slug": "rapid-city-journal-what-s-on-the-rapid-city-council-s-monday-nov-2-agenda",
+   "published": "2026-11-01",
+   "byline": "FRANK ESPINOZA Journal staff",
+   "description": "A look at some items of interest on the agenda for the 6:30 p.m. Monday, Nov. 2, Rapid City Council meeting.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "35cb4c78c519",
+   "date": "2026-11-01",
+   "_first_seen": "2026-11-02"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/weather/article_be91734e-2757-5508-a7f2-a4af33b88fad.html",
+   "title": "High Wind Warning from MON 9:00 AM MST until TUE 6:00 AM MST",
+   "slug": "rapid-city-journal-high-wind-warning-from-mon-9-00-am-mst-until-tue-6-00-am-mst",
+   "published": "2026-11-02",
+   "byline": "",
+   "description": "A High Wind Warning is in effect from 9 AM this morning to 6 AM MST Tuesday. Northwest winds are expected to reach 30 to 40 mph, with gusts up to 60 mph.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "68fb30ef30b8",
+   "date": "2026-11-02",
+   "_first_seen": "2026-11-02"
   }
  ]
 }
