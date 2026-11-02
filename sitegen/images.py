@@ -18,6 +18,10 @@ from markupsafe import Markup
 #: Squarespace serves these widths when asked with ?format=<n>w
 _SQUARESPACE_WIDTHS = (100, 300, 500, 750, 1000, 1500, 2500)
 
+#: iNaturalist photo sizes (longest side, pixels)
+_INAT_SIZES = (("square", 75), ("small", 240), ("medium", 500), ("large", 1024))
+_INAT_PHOTO = re.compile(r"/(square|small|medium|large|original)(\.\w+)$")
+
 _AMAZON_COVER = re.compile(r"(/images/P/[0-9X]{10}\.01\.)[^/]*?(\.jpe?g)$", re.I)
 _WP_UPLOAD = re.compile(r"(/wp-content/uploads/.+?)(-\d+x\d+)?(\.(?:jpe?g|png|webp))$", re.I)
 
@@ -43,6 +47,10 @@ def thumb(url: str, width: int) -> tuple[str, bool]:
         if m:
             path = _AMAZON_COVER.sub(rf"\g<1>_SX{width}_SCLZZZZZZZ_\g<2>", parts.path)
             return urlunsplit(parts._replace(path=path)), False
+
+    if "inaturalist" in host and _INAT_PHOTO.search(parts.path):
+        name = next((n for n, w in _INAT_SIZES if w >= width), "large")
+        return urlunsplit(parts._replace(path=_INAT_PHOTO.sub(rf"/{name}\g<2>", parts.path))), False
 
     if host.endswith("ytimg.com") and parts.path.endswith("/hqdefault.jpg") and width <= 320:
         # 320×180 and no letterbox bars, unlike the 480×360 "hq" frame

@@ -32,6 +32,9 @@ button:disabled, [aria-disabled="true"] { cursor: not-allowed; }
 /* Keyboard focus: a thick outline that shows on light pages and the dark green header alike.
    In the base layer so a component's own focus style (e.g. the search boxes' ring) still wins. */
 @layer base {
+  /* Long web addresses and the like wrap instead of pushing the page sideways */
+  body { overflow-wrap: break-word; }
+
   :focus-visible { outline: 3px solid var(--color-pine-700); outline-offset: 2px; }
   header :focus-visible, nav :focus-visible, .bg-pine-800 :focus-visible, .bg-pine-700:focus-visible { outline-color: #fde047; }
   .leaflet-container:focus-visible { outline-offset: -3px; }

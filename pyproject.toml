@@ -23,12 +23,14 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "axe-playwright-python>=0.1.8",
     "pytest>=8.0",
     "ruff>=0.15.8",
 ]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+markers = ["browser: drives the built site in headless Chromium (tests/test_browser.py)"]
 addopts = "-v --tb=short"
 
 [tool.ruff]

@@ -23,5 +23,8 @@ jobs:
       - name: Ruff — lint
         run: uv run ruff check .
 
-      - name: Run tests
+      - name: Install Chromium for the browser tests
+        run: uv run playwright install --with-deps chromium
+
+      - name: Run tests (including the site in a headless browser, with accessibility checks)
         run: uv run pytest

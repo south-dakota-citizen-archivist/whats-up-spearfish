@@ -29,7 +29,7 @@ class Source:
     @property
     def label(self) -> str:
         """How readers know this source ("City of Spearfish", not "City of Spearfish News Flash")."""
-        return CREDIT.get(self.slug, self.name)
+        return CREDIT.get(self.slug) or self.name or self.slug.replace("_", " ").title()
 
     @property
     def enabled(self) -> bool:

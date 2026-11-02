@@ -99,7 +99,7 @@
           <a href="{{ b.url }}" target="_blank" rel="noopener" class="group block">
             <div class="relative w-full aspect-square bg-stone-200 flex flex-col items-center justify-center gap-1 text-stone-500">
               <span class="text-2xl" aria-hidden="true">🐦</span>
-              {% if b.photo_url %}<img src="{{ b.photo_url }}" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover " data-placeholder>{% endif %}
+              {% if b.photo_url %}<img {{ thumb_attrs(b.photo_url, 240) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover " data-placeholder>{% endif %}
             </div>
             <p class="text-sm font-medium mt-1 group-hover:text-pine-700">{{ b.common_name }}</p>
             <p class="text-xs text-stone-500 truncate">{{ b.location_name }}</p>

@@ -25,6 +25,13 @@ def test_amazon_cover_at_width():
     )
 
 
+def test_inaturalist_size_by_width():
+    sq = "https://static.inaturalist.org/photos/178968933/square.jpg"
+    assert thumb(sq, 240) == ("https://static.inaturalist.org/photos/178968933/small.jpg", False)
+    assert thumb(sq, 300)[0].endswith("/medium.jpg")
+    assert thumb("https://inaturalist-open-data.s3.amazonaws.com/photos/1/square.jpeg", 60)[0].endswith("/square.jpeg")
+
+
 def test_youtube_medium_frame():
     assert thumb("https://i2.ytimg.com/vi/abc/hqdefault.jpg", 320) == (
         "https://i2.ytimg.com/vi/abc/mqdefault.jpg",

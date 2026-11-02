@@ -6,7 +6,7 @@
 
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
   {% for v in venues %}
-  {% call card(v.name, v.slug, sources=v, more=v.url, more_label="Menu") %}
+  {% call card(v.label, v.slug, sources=v, more=v.url, more_label="Menu") %}
     {% if v.records %}
     <ul class="divide-y divide-stone-100 text-sm">
       {% for b in v.records | sort(attribute='title') %}
@@ -29,6 +29,8 @@
     </ul>
     {% else %}{{ empty("Tap list unavailable.") }}{% endif %}
   {% endcall %}
+  {% else %}
+  <p class="text-stone-500">No tap lists right now.</p>
   {% endfor %}
 </div>
 

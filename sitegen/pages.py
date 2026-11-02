@@ -436,7 +436,8 @@ def outdoors(site: Site, events: list[dict], today: date) -> dict:
 
 
 def on_tap(site: Site, events: list[dict], today: date) -> dict:
-    return {"venues": sources_of(site, TAP_SOURCES)}
+    # a venue the scrapers have never heard of (no data, no health entry) has nothing to show
+    return {"venues": [v for v in sources_of(site, TAP_SOURCES) if v.records or v.health]}
 
 
 def civic(site: Site, events: list[dict], today: date) -> dict:
@@ -471,7 +472,9 @@ def civic(site: Site, events: list[dict], today: date) -> dict:
 
 def news(site: Site, events: list[dict], today: date) -> dict:
     items = newest(since(site.records(kind="news", slugs=NEWS_SOURCES), 14, today))
-    outlet_counts = Counter(r["source_label"] for r in items)
+    for r in items:
+        r.setdefault("source_label", site.get(r.get("source", "")).label)
+    outlet_counts = Counter(r["source_label"] for r in items if r["source_label"])
     by_day: dict[str, list] = defaultdict(list)
     for r in items:
         by_day[r.get("date", "")].append(r)
