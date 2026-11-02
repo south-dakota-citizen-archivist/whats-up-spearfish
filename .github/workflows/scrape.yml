@@ -64,6 +64,10 @@ jobs:
         if: steps.tier.outputs.tier == 'daily' || steps.tier.outputs.tier == 'all'
         run: uv run playwright install --with-deps chromium
 
+      - name: Install Tesseract (reads Sawyer's tap list images)
+        if: steps.tier.outputs.tier == 'daily' || steps.tier.outputs.tier == 'all'
+        run: sudo apt-get install -y --no-install-recommends tesseract-ocr
+
       - name: Scrape
         if: steps.tier.outputs.tier != 'none'
         env:

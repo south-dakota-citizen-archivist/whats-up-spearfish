@@ -318,7 +318,7 @@ def outdoors(site: Site, events: list[dict], today: date) -> dict:
 
 
 def on_tap(site: Site, events: list[dict], today: date) -> dict:
-    return {"venues": sources_of(site, TAP_SOURCES), "leones": site.get("leones_creamery")}
+    return {"venues": sources_of(site, TAP_SOURCES)}
 
 
 def civic(site: Site, events: list[dict], today: date) -> dict:

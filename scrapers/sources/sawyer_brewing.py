@@ -4,15 +4,23 @@ scrapers/sources/sawyer_brewing.py
 Sawyer Brewing Co., Spearfish SD — beers currently on tap.
 https://www.sawyerbrewingco.com/menu
 
-The menu page (Squarespace) renders beer names as graphical text inside
-can-label images. We walk the page to collect image URLs per category,
-then enrich each with data from sawyer_brewing.json (title, description,
-ABV, prices, notes), keyed by image URL.
+The menu page (Squarespace) has no beer text at all: each beer is an image
+with the can on the left and the name, description, ABV and prices printed on
+the right. We walk the page to collect image URLs per category and read each
+label's text with Tesseract OCR. sawyer_brewing.json (hand-entered, keyed by
+image filename) is the fallback when OCR isn't available or can't read a label.
 """
 
+from __future__ import annotations
+
+import io
 import json
+import re
+import shutil
+import subprocess
 from pathlib import Path
 
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import fetch_html, make_slug
 
@@ -31,6 +39,48 @@ def _load_lookup() -> dict[str, dict]:
     except (OSError, json.JSONDecodeError):
         return {}
     return {e["img_url"].split("?")[0].rsplit("/", 1)[-1]: e for e in entries if e.get("img_url")}
+
+
+_PRICE_RE = re.compile(r"\$\s*(\d+(?:\.\d\d)?)\s*(\d+)\s*(?:oz|o2|02)", re.I)
+
+
+def ocr_label(image_url: str) -> str:
+    """Text from the right-hand (printed) part of a beer label image; "" if OCR isn't possible."""
+    if not shutil.which("tesseract"):
+        return ""
+    from PIL import Image
+
+    resp = net.get(image_url, params={"format": "1000w"})
+    resp.raise_for_status()
+    im = Image.open(io.BytesIO(resp.content)).convert("L")
+    w, h = im.size
+    # the can artwork fills the left ~37%; enlarging helps Tesseract with the small type
+    im = im.crop((int(w * 0.37), 0, w, h))
+    im = im.resize((im.width * 2, im.height * 2))
+    buf = io.BytesIO()
+    im.save(buf, "PNG")
+    out = subprocess.run(
+        ["tesseract", "stdin", "stdout", "--psm", "6"], input=buf.getvalue(), capture_output=True, timeout=60
+    )
+    return out.stdout.decode("utf-8", "replace")
+
+
+def parse_label(text: str) -> dict:
+    """'The Show Must Go On IPA / This small batch… / ABV 5.7% / $3.00 5 oz/ …' → title, description, abv, prices."""
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    if not lines:
+        return {}
+    out: dict = {"title": lines[0].replace("¢", "•"), "description": "", "abv": "", "prices": []}
+    desc = []
+    for ln in lines[1:]:
+        if m := re.match(r"ABV\s*([\d.]+)\s*%", ln, re.I):
+            out["abv"] = f"{m.group(1)}%"
+        elif "$" in ln:
+            out["prices"] = [{"price": float(p), "ounces": int(oz)} for p, oz in _PRICE_RE.findall(ln)]
+        elif not out["abv"]:
+            desc.append(ln)
+    out["description"] = " ".join(desc)
+    return out
 
 
 class SawyerBrewing(BaseScraper):
@@ -67,12 +117,18 @@ class SawyerBrewing(BaseScraper):
 
             image_url = img.get("src", "").strip().split("?")[0]
             filename = image_url.rsplit("/", 1)[-1]
-            info = lookup.get(filename, {})
-
+            try:
+                info = parse_label(ocr_label(image_url))
+            except Exception as exc:  # noqa: BLE001
+                print(f"[{self.slug}] OCR failed for {filename}: {exc}")
+                info = {}
+            if len(info.get("title", "")) < 3:
+                info = lookup.get(filename, {})
             if not info:
                 unmatched.append(image_url)
+                continue  # an unreadable label isn't worth showing as a file name
 
-            title = info.get("title") or filename
+            title = info.get("title")
             description = info.get("description") or ""
             abv = info.get("abv") or ""
             notes = info.get("notes") or ""
@@ -96,6 +152,6 @@ class SawyerBrewing(BaseScraper):
 
         if unmatched:
             names = ", ".join(u.rsplit("/", 1)[-1] for u in unmatched)
-            print(f"[{self.slug}] Warning: {len(unmatched)} beer image(s) not in sawyer_brewing.json: {names}")
+            print(f"[{self.slug}] Warning: couldn't read {len(unmatched)} label(s): {names}")
 
         return records

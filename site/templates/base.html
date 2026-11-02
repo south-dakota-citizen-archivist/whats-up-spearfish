@@ -14,6 +14,19 @@
   <meta property="og:url" content="{{ SITE_URL }}/{{ page_path }}">
   <meta property="og:image" content="{{ SITE_URL }}/static/spearfish-canyon.png">
   <meta name="twitter:card" content="summary_large_image">
+  <script>
+    // A photo marked data-placeholder that fails to load, or comes back as a 1-pixel
+    // "no image" stub (Amazon does this for books without covers), is removed so the
+    // placeholder behind it shows instead of a blank space or its alt text.
+    (() => {
+      const stub = (img) => img.complete && img.naturalWidth <= 1 && img.remove();
+      const on = (type, fn) =>
+        document.addEventListener(type, (e) => e.target.matches?.("img[data-placeholder]") && fn(e.target), true);
+      on("error", (img) => img.remove());
+      on("load", stub);
+      document.addEventListener("DOMContentLoaded", () => document.querySelectorAll("img[data-placeholder]").forEach(stub));
+    })();
+  </script>
   {% block head %}{% endblock %}
   <script defer src="{{ root }}static/vendor/alpine-3.14.9.min.js"></script>
 </head>

@@ -6,29 +6,38 @@
 {% block content %}
 
 {# ── alerts ──────────────────────────────────────────────────────────────── #}
-<div class="space-y-2 mb-6">
-  <div x-data="nwsAlerts()" x-init="load()" x-cloak>
+<div class="space-y-2 mb-6" x-data>
+  <div x-data="nwsAlerts()" x-init="load()" x-cloak class="space-y-2">
     <template x-for="a in alerts" :key="a.id">
-      <a :href="a.url" target="_blank" rel="noopener"
-         class="block border px-4 py-3 text-sm"
-         :class="a.severe ? 'bg-red-50 border-red-200 text-red-900' : 'bg-amber-50 border-amber-200 text-amber-900'">
-        <span class="font-bold" x-text="a.event"></span>
-        <span x-text="' — ' + a.headline"></span>
-      </a>
+      <div x-show="!$store.dismissed.has(a.id)" class="flex items-stretch border text-sm"
+           :class="a.severe ? 'bg-red-50 border-red-200 text-red-900' : 'bg-amber-50 border-amber-200 text-amber-900'">
+        <a :href="a.url" target="_blank" rel="noopener" class="flex-1 px-4 py-3 hover:underline">
+          <span class="font-bold" x-text="a.event"></span>
+          <span x-text="' — ' + a.headline"></span>
+        </a>
+        <button type="button" @click="$store.dismissed.add(a.id)" class="shrink-0 px-3 text-lg leading-none opacity-60 hover:opacity-100" aria-label="Dismiss this alert">✕</button>
+      </div>
     </template>
   </div>
   {% for a in alerts %}
-  <a href="{{ a.url }}" target="_blank" rel="noopener" class="block border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
-    <span class="font-bold">City alert:</span> {{ a.title }} <span class="text-amber-700">· {{ a.published | fmt_day }}</span>
-  </a>
+  <div x-show="!$store.dismissed.has({{ a.url | tojson | forceescape }})" class="flex items-stretch border border-amber-200 bg-amber-50 text-sm text-amber-900">
+    <a href="{{ a.url }}" target="_blank" rel="noopener" class="flex-1 px-4 py-3 hover:underline">
+      <span class="font-bold">City alert:</span> {{ a.title }} <span class="text-amber-700">· {{ a.published | fmt_day }}</span>
+    </a>
+    <button type="button" @click="$store.dismissed.add({{ a.url | tojson | forceescape }})" class="shrink-0 px-3 text-lg leading-none opacity-60 hover:opacity-100" aria-label="Dismiss this alert">✕</button>
+  </div>
   {% endfor %}
   {% if fire.local_danger %}
-  <a href="{{ root }}outdoors/#fire" class="flex flex-wrap items-center gap-2 border border-stone-200 bg-white px-4 py-3 text-sm">
-    <span class="font-bold">🔥 Fire:</span>
-    {{ danger_badge(fire.local_danger.level) }}
-    {% if fire.incidents %}<span>{{ fire.incidents | length }} active South Dakota wildfire{{ 's' if fire.incidents | length != 1 }}</span>{% endif %}
-    <span class="text-pine-700 font-semibold ml-auto">Details →</span>
-  </a>
+  {% set fire_key = 'fire|' ~ fire.local_danger.level ~ '|' ~ (fire.danger.issued or '') ~ '|' ~ fire.incidents | length %}
+  <div x-show="!$store.dismissed.has({{ fire_key | tojson | forceescape }})" class="flex items-stretch border border-stone-200 bg-white text-sm">
+    <a href="{{ root }}outdoors/#fire" class="flex-1 flex flex-wrap items-center gap-2 px-4 py-3">
+      <span class="font-bold">🔥 Fire:</span>
+      {{ danger_badge(fire.local_danger.level) }}
+      {% if fire.incidents %}<span>{{ fire.incidents | length }} active South Dakota wildfire{{ 's' if fire.incidents | length != 1 }}</span>{% endif %}
+      <span class="text-pine-700 font-semibold ml-auto">Details →</span>
+    </a>
+    <button type="button" @click="$store.dismissed.add({{ fire_key | tojson | forceescape }})" class="shrink-0 px-3 text-lg leading-none opacity-60 hover:opacity-100" aria-label="Dismiss this alert">✕</button>
+  </div>
   {% endif %}
 </div>
 
@@ -149,13 +158,28 @@
     {% call card("On tap", "taps", more=root ~ "on-tap/") %}
       <ul class="text-sm space-y-1.5">
         {% for v in taps %}
-        <li class="flex justify-between"><span>{{ v.name }}</span><span class="text-stone-500">{{ v.records | length }} on tap</span></li>
+        <li><a href="{{ root }}on-tap/#{{ v.slug }}" class="flex justify-between hover:text-pine-700"><span>{{ v.name }}</span><span class="text-stone-500">{{ v.records | length }} on tap</span></a></li>
         {% endfor %}
-        {% if leones.records %}
-        <li class="flex justify-between"><span>{{ leones.name }}</span><span class="text-stone-500">{{ leones.records | length }} flavors</span></li>
-        {% endif %}
       </ul>
     {% endcall %}
+
+    {% if leones.records %}
+    {% call card("Leone's Creamery flavors", "leones", sources=leones, more=leones.url, more_label="Leone's") %}
+      <ul class="grid grid-cols-3 gap-3">
+        {% for f in leones.records %}
+        <li>
+          <a href="{{ f.image_url or f.url }}" target="_blank" rel="noopener" class="group block">
+            <div class="relative w-full aspect-square bg-stone-200 flex items-center justify-center text-2xl">
+              <span aria-hidden="true">🍦</span>
+              {% if f.image_url %}<img src="{{ f.image_url }}" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" data-placeholder>{% endif %}
+            </div>
+            <p class="text-xs font-medium mt-1 leading-tight group-hover:text-pine-700">{{ f.title }}</p>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    {% endcall %}
+    {% endif %}
   </div>
 </div>
 {% endblock %}

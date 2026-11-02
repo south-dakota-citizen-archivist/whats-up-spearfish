@@ -128,3 +128,24 @@ class TestSchoolApis:
             }
         )
         assert rows == [["Calories", "504", False], ["Saturated fat", "3.2 g", True], ["Calcium", "27 mg", False]]
+
+
+def test_sawyer_label():
+    from scrapers.sources.sawyer_brewing import parse_label
+
+    text = """The Show Must Go On IPA
+
+This small batch hazy IPA features Motueka & Nectaron
+hops. Even if you drop the ball, The Show Must Go On!
+
+ABV 5.7%
+
+$3.00 5 oz/ $4.50 10 o2/ $6.50 16 oz
+"""
+    r = parse_label(text)
+    assert r["title"] == "The Show Must Go On IPA"
+    assert r["description"].startswith("This small batch hazy IPA features Motueka & Nectaron hops.")
+    assert r["abv"] == "5.7%"
+    assert r["prices"] == [{"price": 3.0, "ounces": 5}, {"price": 4.5, "ounces": 10}, {"price": 6.5, "ounces": 16}]
+    assert parse_label("100LL ¢ 2026 Barrel Aged Stout")["title"] == "100LL • 2026 Barrel Aged Stout"
+    assert parse_label("") == {}
