@@ -201,7 +201,7 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
             ),
             Org(
                 "U.S. Geological Survey",
-                "https://waterdata.usgs.gov/monitoring-location/06431500/",
+                "https://waterdata.usgs.gov/monitoring-location/USGS-06431500/",
                 (_i("Spearfish Creek water flow", "creek_gauge"),),
             ),
             Org(

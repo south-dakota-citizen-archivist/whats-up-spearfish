@@ -122,7 +122,7 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [Spearfish School District](https://www.spearfish.k12.sd.us/events) | `spearfish_schools` | event |  |
 | [Fire danger & wildfires](https://www.weather.gov/unr/) | `fire` | fire | frequent tier |
 | [Leone's Creamery](https://leonescreamery.com/flavors) | `leones_creamery` | flavor | full snapshot |
-| [Spearfish Creek gauge (USGS)](https://waterdata.usgs.gov/monitoring-location/06431500/) | `creek_gauge` | gauge | frequent tier |
+| [Spearfish Creek gauge (USGS)](https://waterdata.usgs.gov/monitoring-location/USGS-06431500/) | `creek_gauge` | gauge | frequent tier |
 | [BHSU](https://yourfuture.sdbor.edu/) | `bhsu_jobs` | job | full snapshot |
 | [Black Hills Pioneer](https://www.bhpioneer.com/classifieds/job/) | `bhpioneer_jobs` | job | full snapshot |
 | [City of Spearfish Jobs](https://www.spearfish.gov/Jobs.aspx) | `spearfish_jobs` | job | full snapshot |
