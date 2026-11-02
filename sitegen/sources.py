@@ -227,7 +227,11 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
             Org("Sawyer Brewing Co.", "https://www.sawyerbrewingco.com/", (_i("Tap list", "sawyer_brewing"),)),
             Org("Killian's", "https://untappd.com", (_i("Tap list", "killians"),)),
             Org("Redwater Kitchen", "https://untappd.com", (_i("Tap list", "redwater_kitchen"),)),
-            Org("The Clubhouse", "https://untappd.com", (_i("Tap list", "clubhouse_spearfish"),)),
+            Org(
+                "The Clubhouse",
+                "https://clubhouseofspearfish.com/food-and-drink/",
+                (_i("Tap list", "clubhouse_spearfish"),),
+            ),
             Org(
                 "Leone's Creamery", "https://leonescreamery.com/flavors", (_i("Ice cream flavors", "leones_creamery"),)
             ),

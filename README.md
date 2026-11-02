@@ -106,6 +106,7 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [Redwater Kitchen](https://untappd.com) | `redwater_kitchen` | beer | full snapshot |
 | [Sawyer Brewing Co.](https://www.sawyerbrewingco.com/menu) | `sawyer_brewing` | beer | full snapshot |
 | [Spearfish Brewing Company](https://www.spearfishbrewing.com/beers/) | `spearfish_brewing` | beer | full snapshot |
+| [The Clubhouse](https://clubhouseofspearfish.com/food-and-drink/) | `clubhouse_spearfish` | beer | full snapshot |
 | [Public Bids](https://www.spearfish.gov/Bids.aspx) | `public_bids` | bid | full snapshot |
 | [Spearfish building permit reports](https://www.cityofspearfish.com/Archive.aspx?AMID=37) | `building_permits` | building_permit |  |
 | [City of Spearfish](https://spearfishsd.portal.civicclerk.com/) | `spearfish_city` | document |  |
@@ -151,7 +152,6 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [MS/HS Breakfast](https://menus.healthepro.com/organizations/524/sites/4520/menus/124135) | `spearfish_mshs_breakfast` | school_menu |  |
 | [eBird recent sightings](https://ebird.org/region/US-SD-081) | `ebird` | sighting | full snapshot |
 | [Public Meetings (YouTube)](https://www.youtube.com/@spearfishschooldistrictliv3794/streams) | `public_meetings_youtube` | youtube_video |  |
-| [The Clubhouse](https://untappd.com/v/the-clubhouse-of-spearfish/9898973) | `clubhouse_spearfish` | beer | 🧊 on ice, full snapshot |
 | SD DANR contested cases | `danr_contested_cases` | notice | 🧊 on ice |
 | SD DANR spill reports | `danr_spills` | notice | 🧊 on ice |
 | [Spearfish planning & permits (OpenGov)](https://spearfishsd.portal.opengov.com/) | `planning_zoning` | permit | 🧊 on ice, full snapshot |
