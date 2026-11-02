@@ -430,6 +430,7 @@ def home(site: Site, events: list[dict], today: date) -> dict:
         "meetings": upcoming_meetings[:6],
         "bids": site.get("public_bids").records,
         "recent_permits": recent_permit_count(site, today),
+        "plant": plant_of_the_day(site, today),
         "alerts": alerts,
     }
 
@@ -463,6 +464,19 @@ def schools(site: Site, events: list[dict], today: date) -> dict:
     }
 
 
+def plant_of_the_day(site: Site, today: date) -> dict | None:
+    """One native plant per day, cycling through the whole list before any repeats.
+    The order is a fixed shuffle (so neighbors in the list, often relatives, aren't
+    back to back), the same on every build for a given list."""
+    plants = sorted(
+        (p for p in site.get("native_plants_spotlight").records if p.get("summary")), key=lambda p: p["taxon_id"]
+    )
+    if not plants:
+        return None
+    random.Random(57783).shuffle(plants)
+    return plants[today.toordinal() % len(plants)]
+
+
 def outdoors(site: Site, events: list[dict], today: date) -> dict:
     projects = [p for p in site.get("bhnf_projects").records if p.get("status") == "In Progress"]
     return {
@@ -474,6 +488,8 @@ def outdoors(site: Site, events: list[dict], today: date) -> dict:
         "bhnf_alerts": site.get("bhnf_alerts"),
         "projects": projects,
         "bhnf_projects": site.get("bhnf_projects"),
+        "plant": plant_of_the_day(site, today),
+        "plants": site.get("native_plants_spotlight"),
     }
 
 

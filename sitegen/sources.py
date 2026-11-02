@@ -205,6 +205,11 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
                 (_i("Spearfish Creek water flow", "creek_gauge"),),
             ),
             Org(
+                "iNaturalist",
+                "https://www.inaturalist.org/",
+                (_i("Native plant of the day", "native_plants_spotlight"),),
+            ),
+            Org(
                 FOREST,
                 "https://www.fs.usda.gov/r02/blackhills",
                 (

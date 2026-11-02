@@ -137,6 +137,7 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [Sundance Times](https://www.sundancetimes.com) | `sundance_times` | news |  |
 | [SD DANR public notices (West River)](https://danr.sd.gov/public/default.aspx) | `danr_public_notices` | notice | full snapshot |
 | [Spearfish Planning Commission applications](https://spearfishsd.portal.civicclerk.com/) | `planning_commission` | planning_item |  |
+| [Native plants of the Black Hills](https://www.inaturalist.org/places/black-hills-national-forest-us) | `native_plants_spotlight` | plant | full snapshot |
 | [Black Hills National Forest](https://www.fs.usda.gov/r02/blackhills/newsroom/releases) | `bhnf` | press_release |  |
 | [City of Spearfish Blog](https://www.spearfish.gov/Blog.aspx) | `spearfish_blog` | press_release |  |
 | [City of Spearfish News Flash](https://www.spearfish.gov/CivicAlerts.aspx) | `spearfish_news` | press_release |  |
@@ -155,6 +156,5 @@ Set `enabled = False` to put a source on ice without deleting it.
 | SD DANR contested cases | `danr_contested_cases` | notice | 🧊 on ice |
 | SD DANR spill reports | `danr_spills` | notice | 🧊 on ice |
 | [Spearfish planning & permits (OpenGov)](https://spearfishsd.portal.opengov.com/) | `planning_zoning` | permit | 🧊 on ice, full snapshot |
-| Native plant spotlight | `native_plants_spotlight` | plant | 🧊 on ice |
 | Wildlife carcass pickups (SD DOT) | `roadkill` | sighting | 🧊 on ice |
 <!-- sources:end -->

@@ -91,6 +91,19 @@
       {% else %}{{ empty("Creek readings aren't available right now.") }}{% endif %}
     {% endcall %}
 
+    {% if plant %}
+    {% call card("Native plant of the day", "plant", more=root ~ "outdoors/#plant", more_label="More") %}
+      <a href="{{ root }}outdoors/#plant" class="group flex gap-3">
+        <img {{ thumb_attrs(plant.image_url, 160) }} alt="" loading="lazy" class="w-20 h-20 shrink-0 object-cover bg-stone-200">
+        <span class="min-w-0">
+          <span class="block font-semibold group-hover:text-pine-700">{{ plant.title }}</span>
+          <span class="block text-xs italic text-stone-500">{{ plant.scientific_name }}</span>
+          <span class="mt-1 text-xs text-stone-600 line-clamp-3">{{ plant.summary }}</span>
+        </span>
+      </a>
+    {% endcall %}
+    {% endif %}
+
     {% call card("Recent bird sightings", "birds", sources=ebird, more=root ~ "outdoors/#birds") %}
       {% if birds %}
       <ul class="grid grid-cols-2 gap-3">
