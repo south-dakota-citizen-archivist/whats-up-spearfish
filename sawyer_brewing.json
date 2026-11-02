@@ -3,19 +3,32 @@
  "name": "Sawyer Brewing Co.",
  "kind": "beer",
  "url": "https://www.sawyerbrewingco.com/menu",
- "fetched_at": "2026-11-01T20:00:56-07:00",
+ "fetched_at": "2026-11-01T20:07:44-07:00",
  "count": 14,
  "records": [
   {
    "url": "https://www.sawyerbrewingco.com/menu",
    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/0303c668-371a-48cb-9cbe-f715b126c3f1/nzpilsdarkwebsite.jpg",
-   "title": "nzpilsdarkwebsite.jpg",
-   "slug": "nzpilsdarkwebsite-jpg",
+   "title": "New Zealand Rice Pilsner",
+   "slug": "new-zealand-rice-pilsner",
    "category": "Light & Easy",
-   "description": "",
-   "abv": "",
+   "description": "Light, crisp, & dangerously drinkable. Brewed with New Zealand hops & Jasmine rice. Bright delicate citrus/ grape notes lead to a clean refreshing finish. Tastes good with friends.",
+   "abv": "4.9%",
    "notes": "",
-   "prices": [],
+   "prices": [
+    {
+     "price": 2.0,
+     "ounces": 5
+    },
+    {
+     "price": 3.5,
+     "ounces": 10
+    },
+    {
+     "price": 5.5,
+     "ounces": 16
+    }
+   ],
    "record_type": "beer",
    "source_label": "Sawyer Brewing Co.",
    "kind": "beer",
@@ -89,7 +102,7 @@
    "title": "Blood Orange Blonde",
    "slug": "blood-orange-blonde",
    "category": "Light & Easy",
-   "description": "Blood Orange Blonde Ale is highlighted with real blood orange puree. Brewed with williamette hops to add a spicy fruity aroma. Subtle and easy drinkin'",
+   "description": "Blood Orange Blonde Ale is highlighted with real blood orange puree. Brewed with williamette hops to adda spicy fruity aroma. Subtle and easy drinkin’",
    "abv": "4.9%",
    "notes": "",
    "prices": [
@@ -149,7 +162,7 @@
    "title": "Prime Real Estate West Coast IPA",
    "slug": "prime-real-estate-west-coast-ipa",
    "category": "Hop Heads",
-   "description": "What's your prime real estate? McMansion? Cozy cabin? Around here it seems to be all of the above, so it seems fitting to name a beer about it. Bright & clean with complex stone fruit citrus zest. Featuring Citra, Simcoe, Mosaic, & Nectaron hops.",
+   "description": "What’s your prime real estate? McMansion? Cozy cabin? Around here it seems to be all of the above, so it seems fitting to name a beer about it. Bright & clean with complex stone fruit citrus zest. Featuring Citra, Simcoe, Mosaic, & Nectaron hops.",
    "abv": "6.5%",
    "notes": "",
    "prices": [
@@ -179,7 +192,7 @@
    "title": "4LO PALE ALE",
    "slug": "4lo-pale-ale",
    "category": "Hop Heads",
-   "description": "All of the flavor none of the \"I should have gone home energy.\" Our low alcohol pale ale brings a pop of real pineapple for a little tropical lift wihout the heavy buzz. A brew that's perfect for trails, tailgates, & everything in between.",
+   "description": "All of the flavor none of the “I should have gone home energy.” Our low alcohol pale ale brings a pop of real pineapple for a little tropical lift wihout the heavy buzz. A brew that’s perfect for trails, tailgates, & everything in between.",
    "abv": "3.2%",
    "notes": "",
    "prices": [
@@ -236,13 +249,26 @@
   {
    "url": "https://www.sawyerbrewingco.com/menu",
    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/fa8b51ed-b925-45d8-8e46-94b22551fb1d/citradarkwebsite.jpg",
-   "title": "citradarkwebsite.jpg",
-   "slug": "citradarkwebsite-jpg",
+   "title": "Citra Science Hazy Pale Ale",
+   "slug": "citra-science-hazy-pale-ale",
    "category": "Hop Heads",
-   "description": "",
-   "abv": "",
+   "description": "Our hypothesis leads us to believe this is our favorite pale ale brewed with our favorite hops, which will become a new flagship hazy pale ale. No need to skew the data on this one as the flavor is in the glass!",
+   "abv": "5.5%",
    "notes": "",
-   "prices": [],
+   "prices": [
+    {
+     "price": 3.0,
+     "ounces": 5
+    },
+    {
+     "price": 4.5,
+     "ounces": 10
+    },
+    {
+     "price": 6.5,
+     "ounces": 16
+    }
+   ],
    "record_type": "beer",
    "source_label": "Sawyer Brewing Co.",
    "kind": "beer",
@@ -253,13 +279,26 @@
   {
    "url": "https://www.sawyerbrewingco.com/menu",
    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/b7338ad0-c608-473b-9843-6f9c67b5266b/Phazerdark.jpg",
-   "title": "Phazerdark.jpg",
-   "slug": "phazerdark-jpg",
+   "title": "Phazer Hazy IPA",
+   "slug": "phazer-hazy-ipa",
    "category": "Hop Heads",
-   "description": "",
-   "abv": "",
+   "description": "Welcome to a new phaze of IPA! Hops were added in the hot water tank, mash tun, boil kettle, whirlpool, before, during, & after fermentatnion. Creating huge fruit flavor with low bitterness. Featuring Mosaic, Nelson Sauvin, & Amarillo hops.",
+   "abv": "6.8%",
    "notes": "",
-   "prices": [],
+   "prices": [
+    {
+     "price": 2.5,
+     "ounces": 5
+    },
+    {
+     "price": 4.5,
+     "ounces": 10
+    },
+    {
+     "price": 7.0,
+     "ounces": 16
+    }
+   ],
    "record_type": "beer",
    "source_label": "Sawyer Brewing Co.",
    "kind": "beer",
@@ -270,13 +309,26 @@
   {
    "url": "https://www.sawyerbrewingco.com/menu",
    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/35661dbc-dd4d-4189-a961-04f92ad4481d/showwebsite.jpg",
-   "title": "showwebsite.jpg",
-   "slug": "showwebsite-jpg",
+   "title": "The Show Must Go On IPA",
+   "slug": "the-show-must-go-on-ipa",
    "category": "Hop Heads",
-   "description": "",
-   "abv": "",
+   "description": "This small batch hazy IPA features Motueka & Nectaron hops. Lively lemon & lime juggle with intense pineapple & passion fruit. Even if you drop the ball, The Show Must Go On!",
+   "abv": "5.7%",
    "notes": "",
-   "prices": [],
+   "prices": [
+    {
+     "price": 3.0,
+     "ounces": 5
+    },
+    {
+     "price": 4.5,
+     "ounces": 10
+    },
+    {
+     "price": 6.5,
+     "ounces": 16
+    }
+   ],
    "record_type": "beer",
    "source_label": "Sawyer Brewing Co.",
    "kind": "beer",
@@ -287,13 +339,26 @@
   {
    "url": "https://www.sawyerbrewingco.com/menu",
    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/0d54566a-8384-4f0f-810c-f1b670f2fa96/pinneapplepeacheswebsitedark.jpg",
-   "title": "pinneapplepeacheswebsitedark.jpg",
-   "slug": "pinneapplepeacheswebsitedark-jpg",
+   "title": "Pineapple & Peaches Sour Ale",
+   "slug": "pineapple-peaches-sour-ale",
    "category": "Sour Power",
-   "description": "",
-   "abv": "",
+   "description": "Take your tastebuds on a staycation with bright sweet tropical pineapple notes melding with the mellow tartness of peaches. Brewed with real pineapple and peaches.",
+   "abv": "5.5%",
    "notes": "",
-   "prices": [],
+   "prices": [
+    {
+     "price": 3.0,
+     "ounces": 5
+    },
+    {
+     "price": 5.0,
+     "ounces": 10
+    },
+    {
+     "price": 7.5,
+     "ounces": 16
+    }
+   ],
    "record_type": "beer",
    "source_label": "Sawyer Brewing Co.",
    "kind": "beer",
@@ -304,13 +369,22 @@
   {
    "url": "https://www.sawyerbrewingco.com/menu",
    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/0303e4cf-d549-4455-beba-236127273587/nightowlstoutdark.jpg",
-   "title": "nightowlstoutdark.jpg",
-   "slug": "nightowlstoutdark-jpg",
+   "title": "Night Owl Coffee Stout",
+   "slug": "night-owl-coffee-stout",
    "category": "Dark Side",
-   "description": "",
-   "abv": "",
+   "description": "Dark roasted malts meld with the Night Owl coffee from Sawyer Coffee Lab to create layers of oittersweet chocolate. Full bodied and smooth with a decadent coffee aroma.",
+   "abv": "7.0%",
    "notes": "",
-   "prices": [],
+   "prices": [
+    {
+     "price": 4.5,
+     "ounces": 10
+    },
+    {
+     "price": 6.5,
+     "ounces": 16
+    }
+   ],
    "record_type": "beer",
    "source_label": "Sawyer Brewing Co.",
    "kind": "beer",
@@ -324,14 +398,10 @@
    "title": "100LL • 2026 Barrel Aged Stout",
    "slug": "100ll-2026-barrel-aged-stout",
    "category": "Dark Side",
-   "description": "The 2026 version of 100LL is an imperial stout aged 36 months in a single barrel of Rabbit Hole Rye.",
+   "description": "Limited Release The 2026 version of 100LL is an imperial stout aged 36 months in a single barrel of Rabbit Hole Rye.",
    "abv": "",
-   "notes": "Limited Release bottles $12 at the taproom. No Crowler or Growler fills.",
+   "notes": "",
    "prices": [
-    {
-     "price": 6.0,
-     "ounces": 4
-    },
     {
      "price": 8.0,
      "ounces": 6
