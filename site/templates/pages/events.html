@@ -7,11 +7,23 @@
 <div class="flex flex-wrap items-end justify-between gap-3 mb-4">
   <div>
     <h1 class="text-2xl font-extrabold">Events</h1>
-    <p class="text-stone-600 text-sm">{{ event_count | intcomma }} upcoming events around Spearfish.</p>
+    <p class="text-stone-600 text-sm">{{ event_count | intcomma }} upcoming events around Spearfish. Check the ones you want to add to your calendar.</p>
   </div>
-  <div class="flex gap-3 text-sm">
-    <a href="{{ root }}calendar.ics" class="font-semibold text-pine-700 hover:underline">Add to your calendar</a>
-  </div>
+  {% set feed = SITE_URL ~ '/calendar.ics' %}
+  {% set webcal = feed | replace('https://', 'webcal://') %}
+  <details class="relative text-sm">
+    <summary class="cursor-pointer font-semibold text-pine-700 hover:underline list-none">Subscribe to every event ▾</summary>
+    <div class="absolute right-0 z-20 mt-2 w-72 bg-white border border-stone-300 shadow-lg p-4 space-y-2">
+      <p class="text-stone-600">Your calendar will keep itself up to date with everything on this page.</p>
+      <ul class="space-y-1.5 font-semibold">
+        <li><a href="https://calendar.google.com/calendar/render?cid={{ webcal | urlencode }}" target="_blank" rel="noopener" class="text-pine-700 hover:underline">Google Calendar</a></li>
+        <li><a href="{{ webcal }}" class="text-pine-700 hover:underline">Apple Calendar</a></li>
+        <li><a href="https://outlook.live.com/calendar/0/addfromweb?url={{ feed | urlencode }}&amp;name={{ "What's up, Spearfish?" | urlencode }}" target="_blank" rel="noopener" class="text-pine-700 hover:underline">Outlook</a></li>
+      </ul>
+      <p class="text-xs text-stone-500">Another app? Copy this link into its “subscribe” or “add calendar from web” option:</p>
+      <input type="text" readonly value="{{ feed }}" onclick="this.select()" class="w-full border border-stone-300 px-2 py-1 text-xs text-stone-700">
+    </div>
+  </details>
 </div>
 
 <div x-data="calendar('{{ root }}events.json')" class="grid lg:grid-cols-4 gap-6">
@@ -57,7 +69,9 @@
         <h2 class="sticky top-11 lg:top-0 bg-stone-100/95 backdrop-blur py-1.5 text-sm font-bold uppercase tracking-wide text-pine-800 z-10" x-text="heading(day.date)"></h2>
         <ul class="bg-white border border-stone-200 divide-y divide-stone-100">
           <template x-for="e in day.events" :key="e.id">
-            <li class="px-4 py-3 flex gap-4">
+            <li class="px-4 py-3 flex gap-3 sm:gap-4" :class="isPicked(e) && 'bg-pine-50'">
+              <input type="checkbox" :checked="isPicked(e)" @change="pick(e)" :aria-label="'Add ' + e.title + ' to my calendar'"
+                     class="mt-0.5 size-4 shrink-0 accent-pine-700 cursor-pointer">
               <span class="w-[7.5rem] sm:w-[8.5rem] shrink-0 whitespace-nowrap text-xs sm:text-sm font-semibold text-stone-700 tabular-nums" x-text="e.time"></span>
               <div class="min-w-0">
                 <a :href="e.url" target="_blank" rel="noopener" class="font-medium hover:text-pine-700 hover:underline" x-text="e.title"></a>
@@ -77,7 +91,38 @@
       Show more
     </button>
   </div>
+
+  {# picked events: add them to a calendar #}
+  <div x-show="picked.length" x-cloak class="h-24"></div>
+  <div x-show="picked.length" x-cloak x-transition.opacity
+       class="fixed bottom-0 inset-x-0 z-[1100] bg-white border-t-2 border-pine-700 shadow-[0_-4px_12px_rgba(0,0,0,0.08)]">
+    <div x-show="showPicked" class="max-w-6xl mx-auto px-4 sm:px-6 pt-4 max-h-[50vh] overflow-y-auto">
+      <p class="text-xs text-stone-500 mb-2">Google Calendar takes one event at a time. To add them all at once, download the calendar file and import it in Google Calendar's settings.</p>
+      <ul class="divide-y divide-stone-100 border border-stone-200">
+        <template x-for="e in pickedEvents" :key="e.id">
+          <li class="px-3 py-2 flex items-center gap-3 text-sm">
+            <span class="w-12 shrink-0 text-xs text-stone-500" x-text="shortDay(e.date)"></span>
+            <span class="min-w-0 flex-1 font-medium leading-snug" x-text="e.title"></span>
+            <a :href="googleLink(e)" target="_blank" rel="noopener" class="shrink-0 font-semibold text-pine-700 hover:underline">Add to Google</a>
+            <button type="button" @click="pick(e)" class="shrink-0 text-stone-400 hover:text-red-700" :aria-label="'Remove ' + e.title">✕</button>
+          </li>
+        </template>
+      </ul>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+      <span class="font-semibold"><span x-text="picked.length"></span> <span x-text="picked.length === 1 ? 'event' : 'events'"></span> picked</span>
+      <button type="button" @click="download()" class="px-3 py-1.5 bg-pine-700 text-white font-semibold hover:bg-pine-800"
+              title="Opens in Apple Calendar, Outlook and most calendar apps">Add to my calendar</button>
+      <template x-if="picked.length === 1">
+        <a :href="googleLink(pickedEvents[0])" target="_blank" rel="noopener" class="px-3 py-1.5 border border-pine-700 text-pine-700 font-semibold hover:bg-pine-50">Google Calendar</a>
+      </template>
+      <button type="button" x-show="picked.length > 1" @click="showPicked = !showPicked"
+              class="px-3 py-1.5 border border-pine-700 text-pine-700 font-semibold hover:bg-pine-50"
+              x-text="showPicked ? 'Hide list' : 'Google Calendar / see list'"></button>
+      <button type="button" @click="clearPicks()" class="text-stone-500 hover:text-red-700 hover:underline">Clear</button>
+    </div>
+  </div>
 </div>
 
-<noscript><p class="mt-4">The calendar needs JavaScript turned on in your browser. You can also <a href="{{ root }}calendar.ics" class="text-pine-700 underline">add these events to your own calendar</a>.</p></noscript>
+<noscript><p class="mt-4">The calendar needs JavaScript turned on in your browser. You can also <a href="{{ root }}calendar.ics" class="text-pine-700 underline">subscribe to every event</a> in your own calendar.</p></noscript>
 {% endblock %}

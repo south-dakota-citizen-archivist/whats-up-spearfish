@@ -219,6 +219,10 @@ def test_smoke_build(fixture_data, tmp_path):
     events = json.loads((out / "events.json").read_text())
     assert [e["title"] for e in events] == ["Story Time", "Nutcracker"]
     assert b"BEGIN:VEVENT" in (out / "calendar.ics").read_bytes()
+    # the subscribe links live on the events page only, not in every footer
+    assert "calendar.ics" not in home
+    events_page = (out / "events" / "index.html").read_text()
+    assert "webcal://" in events_page and "calendar.google.com/calendar/render?cid=" in events_page
 
     sources = (out / "sources" / "index.html").read_text()
     assert "Black Hills Pioneer" in sources
