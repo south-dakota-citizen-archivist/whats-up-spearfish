@@ -15,14 +15,14 @@
   </p>
 </div>
 
-<div x-data="permits('{{ root }}permits/sites.json', '{{ latest_report[:7] }}', '{{ root }}permits/parcels.json', '{{ beacon }}')">
+<div x-data="permits('{{ root }}permits/recent.json', '{{ root }}permits/sites.json', '{{ latest_report[:7] }}', '{{ root }}permits/parcels.json', '{{ beacon }}')">
   <div class="flex flex-wrap gap-2 items-center mb-3">
     <button type="button" @click="near()" :disabled="locating"
             class="px-4 py-2 bg-pine-700 text-white font-semibold text-sm hover:bg-pine-800 disabled:opacity-60">
       <span aria-hidden="true" x-show="!locating">📍 </span><span x-text="locating ? 'Locating…' : 'What\'s near me?'"></span>
     </button>
     <label for="pq" class="sr-only">Search permits</label>
-    <input id="pq" type="search" x-model.debounce.250ms="q" @input="here = null; clear()"
+    <input id="pq" type="search" x-model.debounce.250ms="q" @input="here = null; clear()" @focus="loadAll()"
            placeholder="Address, permit #, contractor, owner…"
            class="flex-1 min-w-[14rem] border border-stone-300 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-pine-600">
     <label for="since" class="sr-only">Time period</label>
@@ -129,6 +129,7 @@
 
       {# results #}
       <p x-show="loading" class="text-stone-500 text-sm">Loading records…</p>
+      <p x-show="loadingAll && !loading" x-cloak class="text-stone-500 text-sm mb-1.5">Loading older records too…</p>
       <h2 x-show="!loading && !failed" x-cloak class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-1.5"
           x-text="q ? 'Matching addresses' : (here ? 'Closest to you' : (since === 'latest' ? 'Newest permits' : 'Most recent activity'))"></h2>
       <ul x-show="!loading && !failed" x-cloak class="bg-white border border-stone-300 divide-y divide-stone-100 max-h-[45vh] lg:max-h-[60vh] overflow-y-auto">

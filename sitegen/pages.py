@@ -684,6 +684,18 @@ def pc_site_key(r: dict, links: ParcelLinks | None = None) -> str:
     return r.get("address_key") or ("LOC " + " ".join(r.get("location", "").upper().rstrip(".").split()))
 
 
+#: The permits page opens on the past two years, so it first loads only places
+#: active in that window (with their full history); everything else loads when a
+#: reader searches or picks a longer period. A month of slack covers the site
+#: going a while without a rebuild.
+RECENT_DAYS = 2 * 365 + 31
+
+
+def recent_sites(sites: list[dict], today: date) -> list[dict]:
+    cutoff = (today - timedelta(days=RECENT_DAYS)).isoformat()
+    return [s for s in sites if any((r.get("d") or "") >= cutoff for r in s["r"])]
+
+
 def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
     """
     Every planning application (OpenGov archive), issued building permit

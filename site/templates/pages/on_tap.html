@@ -14,7 +14,7 @@
         {% if b.image_url %}
         <a href="{{ b.image_url }}" target="_blank" rel="noopener" class="shrink-0 relative w-16 h-16 bg-stone-100 flex items-center justify-center text-xl" aria-label="Picture of {{ b.title }} (opens in a new tab)">
           <span aria-hidden="true">🍺</span>
-          <img src="{{ b.image_url }}" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-left bg-stone-100" data-placeholder>
+          <img {{ thumb_attrs(b.image_url, 150) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-left bg-stone-100" data-placeholder>
         </a>
         {% endif %}
         <div class="min-w-0">

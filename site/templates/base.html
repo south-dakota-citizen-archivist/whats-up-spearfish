@@ -12,18 +12,24 @@
   <meta property="og:title" content="What's up, Spearfish?">
   <meta property="og:description" content="What's happening in Spearfish and the Northern Black Hills.">
   <meta property="og:url" content="{{ SITE_URL }}/{{ page_path }}">
-  <meta property="og:image" content="{{ SITE_URL }}/static/spearfish-canyon.png">
+  <meta property="og:image" content="{{ SITE_URL }}/static/spearfish-canyon.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <script>
-    // A photo marked data-placeholder that fails to load, or comes back as a 1-pixel
+    // Photos: a thumbnail-size guess that fails (data-fallback) falls back to the full-size
+    // original. A photo marked data-placeholder that fails to load, or comes back as a 1-pixel
     // "no image" stub (Amazon does this for books without covers), is removed so the
     // placeholder behind it shows instead of a blank space or its alt text.
     (() => {
-      const stub = (img) => img.complete && img.naturalWidth <= 1 && img.remove();
-      const on = (type, fn) =>
-        document.addEventListener(type, (e) => e.target.matches?.("img[data-placeholder]") && fn(e.target), true);
-      on("error", (img) => img.remove());
-      on("load", stub);
+      const stub = (img) => img.complete && img.naturalWidth <= 1 && img.hasAttribute("data-placeholder") && img.remove();
+      document.addEventListener("error", (e) => {
+        const img = e.target;
+        if (!(img instanceof HTMLImageElement)) return;
+        if (img.dataset.fallback) {
+          img.src = img.dataset.fallback;
+          delete img.dataset.fallback;
+        } else if (img.hasAttribute("data-placeholder")) img.remove();
+      }, true);
+      document.addEventListener("load", (e) => e.target instanceof HTMLImageElement && stub(e.target), true);
       document.addEventListener("DOMContentLoaded", () => document.querySelectorAll("img[data-placeholder]").forEach(stub));
     })();
   </script>

@@ -36,6 +36,7 @@ from scrapers import dates
 from sitegen import feeds, pages
 from sitegen.data import Site
 from sitegen.events import CATEGORY_LABELS, unified_events
+from sitegen.images import thumb_attrs
 from sitegen.parcels import ParcelLinks
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -168,7 +169,7 @@ def make_env() -> Environment:
         intcomma=intcomma,
         permit_type=pages.friendly_type,
     )
-    env.globals.update(NAV=NAV, CATEGORY_LABELS=CATEGORY_LABELS, SITE_URL=SITE_URL)
+    env.globals.update(NAV=NAV, CATEGORY_LABELS=CATEGORY_LABELS, SITE_URL=SITE_URL, thumb_attrs=thumb_attrs)
     return env
 
 
@@ -241,6 +242,7 @@ def build(data_dir: Path, out_dir: Path) -> None:
     parcels = ParcelLinks.load(data_dir)
     sites = pages.permit_sites(site, parcels)
     feeds.write_json(sites, out_dir / "permits" / "sites.json")
+    feeds.write_json(pages.recent_sites(sites, today), out_dir / "permits" / "recent.json")
     # Parcel outlines, only for parcels with records; the permits page loads them on demand
     feeds.write_json(
         {g["pid"]: parcels.by_id[g["pid"]]["outline"] for g in sites if g.get("pid")},

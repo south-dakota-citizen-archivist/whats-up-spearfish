@@ -12,7 +12,7 @@
         <a href="{{ b.url }}" target="_blank" rel="noopener" class="group block">
           <div class="relative w-full aspect-[2/3] bg-stone-200 flex flex-col items-center justify-center gap-1 text-stone-500">
             <span class="text-3xl" aria-hidden="true">📖</span><span class="text-[10px] uppercase tracking-wide">No cover</span>
-            {% if b.image_url %}<img src="{{ b.image_url }}" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" data-placeholder>{% endif %}
+            {% if b.image_url %}<img {{ thumb_attrs(b.image_url, 250) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" data-placeholder>{% endif %}
           </div>
           <p class="text-xs font-medium mt-1 line-clamp-2 group-hover:text-pine-700">{{ b.title }}</p>
         </a>
@@ -30,7 +30,7 @@
         <a href="{{ p.url }}" target="_blank" rel="noopener" class="group block">
           <div class="relative w-full aspect-square bg-stone-200 flex flex-col items-center justify-center gap-1 text-stone-500">
             <span class="text-3xl" aria-hidden="true">🐾</span><span class="text-[10px] uppercase tracking-wide">No photo yet</span>
-            {% if p.image_url %}<img src="{{ p.image_url }}" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" data-placeholder>{% endif %}
+            {% if p.image_url %}<img {{ thumb_attrs(p.image_url, 500) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" data-placeholder>{% endif %}
           </div>
           <p class="text-sm font-medium mt-1 group-hover:text-pine-700">{{ p.title }}</p>
           {% if p.species %}<p class="text-xs text-stone-500">{{ p.species }}</p>{% endif %}

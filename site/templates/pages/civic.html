@@ -37,7 +37,7 @@
       {% for v in videos %}
       <li>
         <a href="{{ v.url }}" target="_blank" rel="noopener" class="group block">
-          {% if v.thumbnail_url %}<img src="{{ v.thumbnail_url }}" alt="" loading="lazy" class="w-full aspect-video object-cover bg-stone-100">{% endif %}
+          {% if v.thumbnail_url %}<img {{ thumb_attrs(v.thumbnail_url, 320) }} alt="" loading="lazy" class="w-full aspect-video object-cover bg-stone-100">{% endif %}
           <p class="text-sm font-medium mt-1 group-hover:text-pine-700">{{ v.title }}</p>
           <p class="text-xs text-stone-500">{{ v.source_label }} · {{ v.published | fmt_day }}</p>
         </a>

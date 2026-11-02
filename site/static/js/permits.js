@@ -13,7 +13,9 @@ document.addEventListener("alpine:init", () => {
   const glide = () => (calm() ? { animate: false } : { duration: 0.8 });
   const scrollMode = () => (calm() ? "auto" : "smooth");
 
-  Alpine.data("permits", (url, latestReport, outlinesUrl, beacon) => {
+  // recentUrl: places active in the past two years (what the page opens on);
+  // allUrl: every place, fetched when a reader searches or looks further back
+  Alpine.data("permits", (recentUrl, allUrl, latestReport, outlinesUrl, beacon) => {
     // Leaflet objects live outside Alpine's reactive state.
     let map = null;
     let markers = null;
@@ -24,6 +26,8 @@ document.addEventListener("alpine:init", () => {
     return {
       sites: [],
       loading: true,
+      full: false, // every place loaded, not just recent ones
+      loadingAll: false,
       failed: false, // the records didn't load; nothing else on the page can work
       error: "",
       q: "",
@@ -38,7 +42,7 @@ document.addEventListener("alpine:init", () => {
 
       async init() {
         try {
-          const r = await fetch(url);
+          const r = await fetch(recentUrl);
           if (!r.ok) throw new Error(r.status);
           this.sites = await r.json();
         } catch {
@@ -57,11 +61,17 @@ document.addEventListener("alpine:init", () => {
           markers = L.layerGroup().addTo(map);
           this.draw();
           const key = decodeURIComponent(location.hash.replace(/^#site=/, ""));
-          const s = key && this.sites.find((x) => x.k === key);
+          if (!key || key === location.hash) return;
+          const s = this.sites.find((x) => x.k === key);
           if (s) this.select(s);
+          else this.loadAll().then(() => {
+            const old = this.sites.find((x) => x.k === key); // a link to a place with no recent activity
+            if (old) this.select(old);
+          });
         });
-        this.$watch("since", () => {
+        this.$watch("since", (v) => {
           this.limit = 40;
+          if (v === "5" || v === "all") this.loadAll();
           this.draw();
         });
         this.$watch("show", () => {
@@ -70,9 +80,30 @@ document.addEventListener("alpine:init", () => {
         }, { deep: true });
         this.$watch("q", () => {
           this.limit = 40;
+          if (this.q.trim()) this.loadAll();
           const pts = this.q.trim() ? this.results.filter((s) => s.lat != null).map((s) => [s.lat, s.lon]) : [];
           if (map && pts.length) map.flyToBounds(pts, { maxZoom: 17, padding: [30, 30], ...glide() });
         });
+      },
+
+      // Swap in every place, once. If it fails, the recent ones stay put.
+      async loadAll() {
+        if (this.full || this.loadingAll || this.failed) return;
+        this.loadingAll = true;
+        try {
+          const r = await fetch(allUrl);
+          if (!r.ok) throw new Error(r.status);
+          const all = await r.json();
+          const key = this.selected?.k;
+          this.sites = all;
+          this.full = true;
+          if (key) this.selected = all.find((x) => x.k === key) || this.selected;
+          this.draw();
+        } catch {
+          this.error = "Older records didn't load, so only the past two years are shown. Reload the page to try again.";
+        } finally {
+          this.loadingAll = false;
+        }
       },
 
       cutoff() {

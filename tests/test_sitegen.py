@@ -207,7 +207,16 @@ def test_smoke_build(fixture_data, tmp_path):
         "status/",  # redirect to sources/
     ]:
         assert (out / page / "index.html").exists(), page
-    for f in ["events.json", "calendar.ics", "events.xml", "404.html", "static/site.css", ".nojekyll"]:
+    for f in [
+        "events.json",
+        "calendar.ics",
+        "events.xml",
+        "404.html",
+        "static/site.css",
+        ".nojekyll",
+        "permits/sites.json",
+        "permits/recent.json",
+    ]:
         assert (out / f).exists(), f
 
     home = (out / "index.html").read_text()
@@ -459,3 +468,18 @@ def test_day_heading_is_a_time_element_the_browser_can_relabel():
     far = today + timedelta(days=9)
     assert f">{far.strftime('%A, %B %-d')}<" in str(day_heading(far.isoformat(), lower=True))
     assert day_heading("") == ""
+
+
+def test_recent_sites_keep_full_history():
+    from sitegen.pages import recent_sites
+
+    today = date(2026, 11, 2)
+    sites = [
+        {"k": "new", "r": [{"d": "2026-09-01"}, {"d": "2009-04-01"}]},
+        {"k": "old", "r": [{"d": "2015-01-01"}]},
+        {"k": "edge", "r": [{"d": "2024-10-03"}]},  # two years and a month back
+        {"k": "nodate", "r": [{}]},
+    ]
+    out = recent_sites(sites, today)
+    assert [s["k"] for s in out] == ["new", "edge"]
+    assert len(out[0]["r"]) == 2  # older records ride along, so a place's history is complete
