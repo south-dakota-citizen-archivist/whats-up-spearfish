@@ -359,17 +359,19 @@ def pet_picks(site: Site, n: int, rng: random.Random) -> list[dict]:
 
 
 def tap_picks(site: Site, n: int, rng: random.Random) -> list[dict]:
-    """Beers chosen at random with every venue represented (one each, a photo when the
-    venue has any), then random beers with photos to fill the row, in random order."""
+    """Beers with photos chosen at random, every venue that has photos represented (one
+    each), then more to fill the row, in random order. Venues without photos (the
+    Clubhouse posts none) are on the tap list page, not here: the front page shows no
+    placeholders."""
     venues = []
     for src in sources_of(site, TAP_SOURCES):
-        beers = [dict(b, venue=src.label, venue_slug=src.slug) for b in src.records]
+        beers = [dict(b, venue=src.label, venue_slug=src.slug) for b in src.records if b.get("image_url")]
         if beers:
             venues.append(rng.sample(beers, len(beers)))
     if len(venues) > n:
         venues = rng.sample(venues, n)
-    picks = [next((b for b in v if b.get("image_url")), v[0]) for v in venues]
-    rest = [b for v in venues for b in v if b.get("image_url") and b not in picks]
+    picks = [v[0] for v in venues]
+    rest = [b for v in venues for b in v[1:]]
     picks += rng.sample(rest, min(len(rest), n - len(picks)))
     return rng.sample(picks, len(picks))
 
@@ -403,7 +405,7 @@ def home(site: Site, events: list[dict], today: date) -> dict:
     birds = []
     seen = set()
     for r in newest(site.get("ebird").records, "published"):
-        if r["common_name"] not in seen:
+        if r.get("photo_url") and r["common_name"] not in seen:
             seen.add(r["common_name"])
             birds.append(r)
 
@@ -426,6 +428,7 @@ def home(site: Site, events: list[dict], today: date) -> dict:
         "birds": birds[:4],
         "ebird": site.get("ebird"),
         "leones": site.get("leones_creamery"),
+        "flavors": [f for f in site.get("leones_creamery").records if f.get("image_url")][:8],
         "headlines": newest(site.records(kind="news"))[:8],
         "meetings": upcoming_meetings[:6],
         "bids": site.get("public_bids").records,

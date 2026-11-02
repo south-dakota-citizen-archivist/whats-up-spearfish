@@ -18,19 +18,28 @@
     // Photos: a thumbnail-size guess that fails (data-fallback) falls back to the full-size
     // original. A photo marked data-placeholder that fails to load, or comes back as a 1-pixel
     // "no image" stub (Amazon does this for books without covers), is removed so the
-    // placeholder behind it shows instead of a blank space or its alt text.
+    // placeholder behind it shows instead of a blank space or its alt text. One marked
+    // data-tile-photo (the front page's picture rows) takes its whole tile with it.
     (() => {
-      const stub = (img) => img.complete && img.naturalWidth <= 1 && img.hasAttribute("data-placeholder") && img.remove();
+      const drop = (img) => {
+        if (img.hasAttribute("data-tile-photo")) {
+          const tile = img.closest("li");
+          const list = tile?.parentElement;
+          tile?.remove();
+          if (list && !list.children.length) list.closest("section")?.remove(); // no pictures left at all
+        } else if (img.hasAttribute("data-placeholder")) img.remove();
+      };
+      const stub = (img) => img.complete && img.naturalWidth <= 1 && drop(img);
       document.addEventListener("error", (e) => {
         const img = e.target;
         if (!(img instanceof HTMLImageElement)) return;
         if (img.dataset.fallback) {
           img.src = img.dataset.fallback;
           delete img.dataset.fallback;
-        } else if (img.hasAttribute("data-placeholder")) img.remove();
+        } else drop(img);
       }, true);
       document.addEventListener("load", (e) => e.target instanceof HTMLImageElement && stub(e.target), true);
-      document.addEventListener("DOMContentLoaded", () => document.querySelectorAll("img[data-placeholder]").forEach(stub));
+      document.addEventListener("DOMContentLoaded", () => document.querySelectorAll("img[data-placeholder], img[data-tile-photo]").forEach(stub));
     })();
   </script>
   <script defer src="{{ root }}static/js/time.js"></script>

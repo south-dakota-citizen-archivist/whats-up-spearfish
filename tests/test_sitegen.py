@@ -166,6 +166,7 @@ def fixture_data(tmp_path):
                 "published": dates.now().isoformat(),
                 "date": _iso(),
                 "location_name": "Spearfish",
+                "photo_url": "https://example.com/magpie.jpg",
             }
         ],
         kind="sighting",
@@ -426,7 +427,7 @@ def test_pet_picks_even_split_with_photos(tmp_path):
     assert sorted(p["species"] for p in picks).count("dog") == 2 and len(picks) == 8
 
 
-def test_tap_picks_every_venue_represented(tmp_path):
+def test_tap_picks_every_venue_with_photos_represented(tmp_path):
     import random
 
     from sitegen.pages import tap_picks
@@ -445,8 +446,8 @@ def test_tap_picks_every_venue_represented(tmp_path):
     for seed in range(5):
         picks = tap_picks(site, 8, random.Random(seed))
         assert len(picks) == 8 and len({p["id"] for p in picks}) == 8
-        assert {p["venue_slug"] for p in picks} == {"sawyer_brewing", "killians", "clubhouse_spearfish"}
-        assert sum(1 for p in picks if not p["image_url"]) == 1  # only the venue without photos goes without
+        assert {p["venue_slug"] for p in picks} == {"sawyer_brewing", "killians"}
+        assert all(p["image_url"] for p in picks)  # no placeholders on the front page
 
 
 def test_book_picks_only_with_covers(tmp_path):

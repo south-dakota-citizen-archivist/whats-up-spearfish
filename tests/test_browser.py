@@ -164,6 +164,17 @@ def site_url(tmp_path_factory):
         ],
         kind="adoptable",
     )  # fmt: skip
+    # beer photos are off-site, so (like every off-site request here) they fail to load
+    _write(
+        data,
+        "sawyer_brewing",
+        [
+            {"id": f"s{i}", "kind": "beer", "title": f"Beer {i}", "url": "https://example.com/beer",
+             "image_url": f"https://images.example.com/beer{i}.png" if i else ""}
+            for i in range(3)
+        ],
+        kind="beer",
+    )  # fmt: skip
     _write(
         data,
         "library_circulation",
@@ -380,6 +391,15 @@ def test_permits_say_so_when_records_dont_load(open_page):
 
 
 # ── community ────────────────────────────────────────────────────────────────
+
+
+def test_home_shows_no_placeholder_pictures(open_page):
+    page = open_page("")
+    # Beer 0 has no photo, so it's never picked; the others' photos fail, and a tile whose
+    # photo fails goes away, taking the card with it once nothing is left
+    page.wait_for_function("!document.querySelector('#taps')")
+    assert page.locator("img[data-tile-photo]").count() == 0
+    assert page.get_by_text("Beer 0").count() == 0
 
 
 def test_community_chart_and_pets(open_page):

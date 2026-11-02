@@ -110,9 +110,8 @@
         {% for b in birds %}
         <li>
           <a href="{{ b.url }}" target="_blank" rel="noopener" class="group block">
-            <div class="relative w-full aspect-square bg-stone-200 flex flex-col items-center justify-center gap-1 text-stone-500">
-              <span class="text-2xl" aria-hidden="true">🐦</span>
-              {% if b.photo_url %}<img {{ thumb_attrs(b.photo_url, 240) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover " data-placeholder>{% endif %}
+            <div class="relative w-full aspect-square bg-stone-200">
+              <img {{ thumb_attrs(b.photo_url, 240) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover " data-tile-photo>
             </div>
             <p class="text-sm font-medium mt-1 group-hover:text-pine-700">{{ b.common_name }}</p>
             <p class="text-xs text-stone-500 truncate">{{ b.location_name }}</p>
@@ -133,9 +132,8 @@
       {% for pet in pets %}
       <li>
         <a href="{{ pet.url }}" target="_blank" rel="noopener" class="group block">
-          <div class="relative w-full aspect-square bg-stone-200 flex flex-col items-center justify-center gap-1 text-stone-500">
-              <span class="text-2xl" aria-hidden="true">🐾</span>
-              {% if pet.image_url %}<img {{ thumb_attrs(pet.image_url, 300) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover " data-placeholder>{% endif %}
+          <div class="relative w-full aspect-square bg-stone-200">
+              <img {{ thumb_attrs(pet.image_url, 300) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover " data-tile-photo>
             </div>
           <p class="text-sm font-medium mt-1 group-hover:text-pine-700">{{ pet.title }}</p>
         </a>
@@ -151,9 +149,8 @@
       {% for beer in beers %}
       <li>
         <a href="{{ root }}on-tap/#{{ beer.venue_slug }}" class="group block">
-          <div class="relative w-full aspect-square bg-stone-200 flex flex-col items-center justify-center gap-1 text-stone-500">
-              <span class="text-2xl" aria-hidden="true">🍺</span>
-              {% if beer.image_url %}<img {{ thumb_attrs(beer.image_url, 300) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-left" data-placeholder>{% endif %}
+          <div class="relative w-full aspect-square bg-stone-200">
+              <img {{ thumb_attrs(beer.image_url, 300) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-left" data-tile-photo>
             </div>
           <p class="text-sm font-medium mt-1 leading-tight group-hover:text-pine-700">{{ beer.title }}</p>
           <p class="text-xs text-stone-500">{{ beer.venue }}</p>
@@ -164,15 +161,14 @@
   {% endcall %}
   {% endif %}
 
-  {% if leones.records %}
+  {% if flavors %}
   {% call card("Leone's Creamery flavors", "leones", sources=leones, more=leones.url, more_label="Leone's") %}
     <ul class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-      {% for f in leones.records[:8] %}
+      {% for f in flavors %}
       <li>
         <a href="{{ f.url }}" target="_blank" rel="noopener" class="group block" {% if f.description %}title="{{ f.description }}"{% endif %}>
-          <div class="relative w-full aspect-square bg-stone-200 flex flex-col items-center justify-center gap-1 text-stone-500">
-              <span class="text-2xl" aria-hidden="true">🍦</span>
-              {% if f.image_url %}<img {{ thumb_attrs(f.image_url, 300) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover " data-placeholder>{% endif %}
+          <div class="relative w-full aspect-square bg-stone-200">
+              <img {{ thumb_attrs(f.image_url, 300) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover " data-tile-photo>
             </div>
           <p class="text-sm font-medium mt-1 leading-tight group-hover:text-pine-700">{{ f.title }}</p>
           {% if f.gluten_free %}<p class="text-xs text-stone-500">Gluten-free</p>{% endif %}
@@ -189,9 +185,8 @@
       {% for b in books %}
       <li>
         <a href="{{ b.url }}" target="_blank" rel="noopener" class="group block">
-          <div class="relative w-full aspect-[2/3] bg-stone-200 flex flex-col items-center justify-center gap-1 text-stone-500">
-              <span class="text-2xl" aria-hidden="true">📖</span>
-              {% if b.image_url %}<img {{ thumb_attrs(b.image_url, 250) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover " data-placeholder>{% endif %}
+          <div class="relative w-full aspect-[2/3] bg-stone-200">
+              <img {{ thumb_attrs(b.image_url, 250) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover " data-tile-photo>
             </div>
           <p class="text-xs font-medium mt-1 line-clamp-2 group-hover:text-pine-700">{{ b.title }}</p>
         </a>
@@ -229,6 +224,7 @@
       {% endfor %}
     </ul>
     {% else %}{{ empty("No agendas posted for the next seven days yet.") }}{% endif %}
+    {% if recent_permits or bids %}<hr class="mt-3 border-stone-200">{% endif %}
     {% if recent_permits %}<p class="mt-3 text-sm"><a href="{{ root }}permits/" class="font-semibold text-pine-700 hover:underline">{{ recent_permits }} recent building permit{{ 's' if recent_permits != 1 }} and planning application{{ 's' if recent_permits != 1 }}<span aria-hidden="true"> →</span></a></p>{% endif %}
     {% if bids %}<p class="mt-3 text-sm"><a href="{{ root }}civic/#bids" class="font-semibold text-pine-700 hover:underline">{{ bids | length }} open city bid{{ 's' if bids | length != 1 }}<span aria-hidden="true"> →</span></a></p>{% endif %}
   {% endcall %}
