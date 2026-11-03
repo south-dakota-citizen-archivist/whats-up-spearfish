@@ -46,7 +46,9 @@ a[target="_blank"]::after {
   content: " (opens in a new tab)";
   /* in the flow (not position: absolute), so a link inside a scrolling shelf
      can't stretch the page: it stays clipped with the shelf */
-  display: inline-block; width: 1px; height: 1px; margin: -1px; overflow: hidden;
+  /* no negative margin: here it would make the link measure 1px narrower than its text, and a
+     shrink-to-fit box (an event title) would wrap its last word */
+  display: inline-block; width: 1px; height: 1px; margin: 0; overflow: hidden;
   clip-path: inset(50%); white-space: nowrap; vertical-align: top;
 }
 

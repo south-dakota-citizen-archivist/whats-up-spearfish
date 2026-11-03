@@ -88,6 +88,8 @@ def site_url(tmp_path_factory):
         "spearfish_calendar",
         [
             _event("spearfish_calendar", "Story Time", time="10:00", location="City Hall, 625 N 5th St"),
+            # a title wider than its place line, so its box is sized by the title alone
+            _event("spearfish_calendar", "Toddler Story Time Downstairs", time="09:30", location="Spearfish"),
             _event("spearfish_calendar", "Craft Fair", day=1, time=None),
             _event("spearfish_calendar", "Trail Cleanup", day=3, time="09:00"),
             # long unbroken text, as real listings have, is what pushes a page sideways on small phones
@@ -400,6 +402,20 @@ def test_home_shows_no_placeholder_pictures(open_page):
     page.wait_for_function("!document.querySelector('#taps')")
     assert page.locator("img[data-tile-photo]").count() == 0
     assert page.get_by_text("Beer 0").count() == 0
+
+
+def test_titles_dont_wrap_when_their_row_has_room(open_page):
+    # the hidden "(opens in a new tab)" once made links measure 1px short, so a short title wrapped
+    page = open_page("")
+    titles = page.evaluate(
+        """() => [...document.querySelectorAll('li.flex > div.min-w-0 > a')].map(a => {
+            const room = a.parentElement.parentElement.getBoundingClientRect().right
+                - a.parentElement.getBoundingClientRect().right;
+            return [a.textContent.trim(), a.getClientRects().length, room];
+        })"""
+    )
+    assert any(t.startswith("Toddler") for t, *_ in titles), titles
+    assert [t for t, lines, room in titles if lines > 1 and room > 20] == []
 
 
 def test_community_chart_and_pets(open_page):
