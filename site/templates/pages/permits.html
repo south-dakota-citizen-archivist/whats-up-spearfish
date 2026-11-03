@@ -26,9 +26,12 @@
             {% if not in_dialog %}<button type="button" x-show="selected.lat != null" @click="showView('map'); focusMap(selected)" class="lg:hidden text-pine-700 underline">Show on map</button>{% endif %}
           </p>
 
-          <ol class="mt-4 border-l-2 border-stone-200">
+          <ol class="mt-4">
             <template x-for="(r, i) in selected.r" :key="i">
-              <li class="relative ml-4 pb-5">
+              <li class="relative ml-[1.125rem] pb-5">
+                {# the timeline: a segment from this square to the next, so it starts and ends at a square #}
+                <span x-show="selected.r.length > 1" aria-hidden="true" class="absolute -left-[1.125rem] w-0.5 bg-stone-200"
+                      :class="i === 0 ? 'top-2 bottom-0' : (i === selected.r.length - 1 ? 'top-0 h-2' : 'top-0 bottom-0')"></span>
                 <span aria-hidden="true" class="absolute -left-[1.4rem] top-[3px] w-2.5 h-2.5 border border-stone-800" :style="'background:' + categories[r.c || 'o'].color"></span>
                 <p class="text-xs leading-4 font-semibold uppercase tracking-wide text-stone-600">
                   <span x-text="kind(r)"></span> · <span x-text="r.src === 'permit' ? day((r.d || '').slice(0, 7)) : day(r.d)"></span>
