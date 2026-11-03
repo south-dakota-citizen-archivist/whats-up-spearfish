@@ -36,17 +36,19 @@
     <div class="grid grid-cols-2 gap-2 sm:flex sm:items-end sm:gap-3">
       <div class="min-w-0">
         <label for="since" class="block text-xs font-semibold text-stone-600">When</label>
-        <select id="since" x-model="since" class="w-full border border-stone-400 bg-white px-2 py-2 text-sm">
+        <select id="since" x-model="since" class="h-10 w-full border border-stone-400 bg-white pl-2 text-sm">
           {% if latest_report %}<option value="latest">Permits issued {{ latest_report | fmt_day('%B %Y') }}</option>{% endif %}
           <option value="1">Past year</option>
           <option value="2">Past 2 years</option>
           <option value="5">Past 5 years</option>
           <option value="all">All years</option>
+          <option value="custom">Pick dates…</option>
         </select>
       </div>
+
       <div class="min-w-0">
         <label for="what" class="block text-xs font-semibold text-stone-600">What</label>
-        <select id="what" x-model="type" class="w-full border border-stone-400 bg-white px-2 py-2 text-sm">
+        <select id="what" x-model="type" class="h-10 w-full border border-stone-400 bg-white pl-2 text-sm">
           <option value="all">Everything</option>
           <option value="r">Homes</option>
           <option value="c">Businesses</option>
@@ -54,8 +56,20 @@
           <option value="o">Other</option>
         </select>
       </div>
+      <template x-if="since === 'custom'">
+        <div class="col-span-2 grid grid-cols-2 gap-2 sm:flex sm:gap-3">
+          <div class="min-w-0">
+            <label for="from" class="block text-xs font-semibold text-stone-600">From</label>
+            <input id="from" type="date" x-model="from" :max="to" min="2012-01-01" class="h-10 w-full border border-stone-400 bg-white px-2 text-sm">
+          </div>
+          <div class="min-w-0">
+            <label for="to" class="block text-xs font-semibold text-stone-600">To</label>
+            <input id="to" type="date" x-model="to" :min="from" class="h-10 w-full border border-stone-400 bg-white px-2 text-sm">
+          </div>
+        </div>
+      </template>
       <button type="button" @click="near()" :disabled="locating" :aria-busy="locating"
-              class="col-span-2 flex items-center justify-center gap-1.5 border border-pine-700 bg-white px-3 py-2 text-sm font-semibold text-pine-700 hover:bg-pine-50 disabled:opacity-60">
+              class="col-span-2 h-10 flex items-center justify-center gap-1.5 border border-pine-700 bg-white px-3 text-sm font-semibold text-pine-700 hover:bg-pine-50 disabled:opacity-60">
         <svg aria-hidden="true" viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/></svg>
         <span x-text="locating ? 'Finding you…' : 'Near me'">Near me</span>
       </button>
@@ -115,8 +129,8 @@
           <ol class="mt-4 border-l-2 border-stone-200">
             <template x-for="(r, i) in selected.r" :key="i">
               <li class="relative ml-4 pb-5">
-                <span aria-hidden="true" class="absolute -left-[1.4rem] top-1.5 w-2.5 h-2.5 border border-stone-800" :style="'background:' + categories[r.c || 'o'].color"></span>
-                <p class="text-xs font-semibold uppercase tracking-wide text-stone-600">
+                <span aria-hidden="true" class="absolute -left-[1.4rem] top-[3px] w-2.5 h-2.5 border border-stone-800" :style="'background:' + categories[r.c || 'o'].color"></span>
+                <p class="text-xs leading-4 font-semibold uppercase tracking-wide text-stone-600">
                   <span x-text="kind(r)"></span> · <span x-text="r.src === 'permit' ? day((r.d || '').slice(0, 7)) : day(r.d)"></span>
                 </p>
                 <p class="font-semibold" x-text="r.src === 'pc' ? 'Came up at a meeting' : r.t"></p>

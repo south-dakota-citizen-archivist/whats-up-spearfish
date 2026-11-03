@@ -36,6 +36,17 @@ button:disabled, [aria-disabled="true"] { cursor: not-allowed; }
   /* Long web addresses and the like wrap instead of pushing the page sideways */
   body { overflow-wrap: break-word; }
 
+  /* Dropdowns: one chevron everywhere, set in from the border, with room kept for it
+     (a select's own classes set only its left padding) */
+  select {
+    appearance: none;
+    padding-right: 2.25rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%2344403c' stroke-width='2'%3E%3Cpath d='M3.5 6l4.5 4.5L12.5 6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem center;
+    background-size: 0.85rem;
+  }
+
   :focus-visible { outline: 3px solid var(--color-pine-700); outline-offset: 2px; }
   header :focus-visible, nav :focus-visible, .bg-pine-800 :focus-visible, .bg-pine-700:focus-visible { outline-color: #fde047; }
   .leaflet-container:focus-visible { outline-offset: -3px; }

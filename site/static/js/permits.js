@@ -52,6 +52,14 @@ document.addEventListener("alpine:init", () => {
     });
   }
 
+  const isoDaysAgo = (n) => {
+    const d = new Date();
+    d.setDate(d.getDate() - n);
+    return d.toISOString().slice(0, 10);
+  };
+  // recent.json holds places active in about the past two years; anything older needs sites.json
+  const RECENT_FROM = isoDaysAgo(2 * 365);
+
   // Plain words for where a record came from
   const KIND = { permit: "Building permit", app: "Permit application", pc: "Planning Commission" };
 
@@ -78,7 +86,9 @@ document.addEventListener("alpine:init", () => {
       canUseCenter: false, // offer "the middle of the map" when location fails
       draft: "", // what's in the search box; nothing happens until Search
       query: "", // the search in effect
-      since: "2",
+      since: latestReport ? "latest" : "2", // opens on the city's latest monthly permit report
+      from: isoDaysAgo(365), // "Pick dates…": a year ago through today, to start
+      to: isoDaysAgo(0),
       type: "all",
       categories: CATEGORIES,
       view: "list", // phones: "list" or "map" (large screens show both)
@@ -114,10 +124,10 @@ document.addEventListener("alpine:init", () => {
             if (old) this.select(old);
           });
         });
-        for (const f of ["since", "type"]) {
+        for (const f of ["since", "type", "from", "to"]) {
           this.$watch(f, () => {
             this.limit = 40;
-            if (this.since === "5" || this.since === "all") this.loadAll();
+            if (this.needsOlder()) this.loadAll();
             this.draw();
           });
         }
@@ -207,22 +217,32 @@ document.addEventListener("alpine:init", () => {
         }
       },
 
+      // Does the chosen period reach back past what the page loaded first?
+      needsOlder() {
+        if (this.since === "custom") return (this.from || "") < RECENT_FROM;
+        return this.since === "5" || this.since === "all";
+      },
+
       cutoff() {
         if (this.since === "all" || this.since === "latest") return "";
+        if (this.since === "custom") return this.from || "";
         const d = new Date();
         d.setFullYear(d.getFullYear() - Number(this.since));
         return d.toISOString().slice(0, 10);
       },
 
       periodLabel() {
+        if (this.since === "custom") return `${this.day(this.from) || "the start"} – ${this.day(this.to) || "today"}`;
         return { latest: "the latest permit report", 1: "the past year", 2: "the past 2 years", 5: "the past 5 years", all: "all years" }[this.since];
       },
 
       // Records that fall in the chosen time period
       inPeriod(r) {
         if (this.since === "latest") return r.src === "permit" && (r.d || "").startsWith(latestReport);
+        const d = r.d || "";
+        if (this.since === "custom") return (!this.from || d >= this.from) && (!this.to || d <= this.to);
         const c = this.cutoff();
-        return !c || (r.d || "") >= c;
+        return !c || d >= c;
       },
 
       // A site's category: its most recent residential/commercial/land record in the period
@@ -290,7 +310,7 @@ document.addEventListener("alpine:init", () => {
         const places = `${n.toLocaleString()} ${n === 1 ? "place" : "places"}`;
         if (this.query) return `${places} match “${this.query}”`;
         if (this.here) return `${places}, closest to ${this.hereLabel} first`;
-        if (this.since === "latest") return `${places} in the latest permit report`;
+        if (this.since === "latest") return `${places} with permits issued ${this.monthName(latestReport)}`;
         return `${places} · ${this.periodLabel()}, newest first`;
       },
 
@@ -300,10 +320,11 @@ document.addEventListener("alpine:init", () => {
       },
 
       // One line under a place in the list: its latest activity
+      // (the latest activity within the chosen dates, not the place's latest ever)
       latestLine(s) {
-        const r = s.r[0];
+        const r = s.r.find((x) => this.inPeriod(x)) || s.r[0];
         const what = r.src === "pc" ? "Planning Commission meeting" : r.t;
-        const when = s.lp ? this.day((s.last || "").slice(0, 7)) : this.day(s.last);
+        const when = r.src === "permit" ? this.day((r.d || "").slice(0, 7)) : this.day(r.d);
         return [what, when, s.r.length > 1 ? `${s.r.length} records` : ""].filter(Boolean).join(" · ");
       },
 
@@ -486,6 +507,12 @@ document.addEventListener("alpine:init", () => {
 
       money(v) {
         return v ? "$" + Math.round(v).toLocaleString() : "";
+      },
+
+      monthName(ym) {
+        if (!ym) return "";
+        const [y, m] = ym.split("-").map(Number);
+        return new Date(y, m - 1, 1).toLocaleDateString("en-US", { month: "long", year: "numeric" });
       },
 
       day(iso) {

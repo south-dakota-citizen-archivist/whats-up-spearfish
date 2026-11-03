@@ -11,7 +11,7 @@
     </div>
     <div>
       <label for="outlet" class="sr-only">Show stories from</label>
-      <select id="outlet" x-model="outlet" class="border border-stone-300 bg-white px-3 py-2 text-sm">
+      <select id="outlet" x-model="outlet" class="border border-stone-300 bg-white pl-3 py-2 text-sm">
         <option value="">All outlets</option>
         {% for o, n in outlets.items() %}<option value="{{ o }}">{{ o }} ({{ n }})</option>{% endfor %}
       </select>

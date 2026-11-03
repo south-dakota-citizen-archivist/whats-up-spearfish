@@ -430,7 +430,30 @@ def test_permits_search_waits_for_the_search_button(open_page):
     page.get_by_role("button", name="Back to results").click()
     assert page.locator(PLACES, has_text="Old Mill").count() == 1
     page.get_by_role("button", name="Clear").click()  # and the time period goes back to what it was
-    assert page.locator("#since").input_value() == "2" and page.locator("#pq").input_value() == ""
+    assert page.locator("#since").input_value() == "latest" and page.locator("#pq").input_value() == ""
+
+
+def test_permits_custom_dates(open_page):
+    fetched = []
+    page = open_page("permits/", wait=PLACES)
+    page.on("request", lambda r: r.url.endswith(".json") and fetched.append(r.url.rsplit("/", 1)[1]))
+    assert page.locator("#since").input_value() == "latest"  # opens on the latest monthly report
+    page.select_option("#since", "custom")
+    page.fill("#from", "2015-01-01")
+    page.fill("#to", "2015-12-31")
+    page.wait_for_selector(PLACES + ":has-text('Old Mill')")  # older than the first download: fetched
+    assert "sites.json" in fetched
+    assert "Jan 1, 2015 – Dec 31, 2015" in page.locator("#results-summary").inner_text()
+    assert page.locator(PLACES, has_text="440 Heritage").count() == 0  # its records are all from later
+
+
+def test_dropdowns_leave_room_for_their_arrow(open_page):
+    for path in ("permits/", "news/"):
+        page = open_page(path)
+        pads = page.evaluate(
+            "[...document.querySelectorAll('select')].map(s => parseFloat(getComputedStyle(s).paddingRight))"
+        )
+        assert pads and min(pads) >= 30, (path, pads)
 
 
 def test_permits_filters_drive_the_list_and_the_map(open_page):
