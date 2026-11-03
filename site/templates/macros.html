@@ -84,12 +84,15 @@
   {% if m.entrees | length > shown | length %}<span class="block mt-0.5 text-xs text-stone-500">+{{ m.entrees | length - shown | length }} more</span>{% endif %}
   <span class="sr-only">. See the full menu.</span>
 {% endset %}
+{# The whole cell is the target: an ::after layer stretches the button over its (relative) cell, so the
+   cell keeps its natural height. (A 1px-tall cell with a full-height button did this before, and Safari
+   then sized rows to one line and let the lists spill over each other.) #}
 {% if popup %}
 <button type="button" @click="open({{ m.key | tojson | forceescape }})"
-        class="flex flex-col justify-start w-full h-full text-left px-2.5 py-2 hover:bg-pine-50 hover:text-pine-800">{{ inner }}</button>
+        class="block w-full text-left px-2.5 py-2 group-hover:text-pine-800 after:absolute after:inset-0 after:content-['']">{{ inner }}</button>
 {% else %}
 <a href="{{ root }}schools/#menu={{ m.key | urlencode }}"
-   class="block w-full h-full px-2.5 py-2 hover:bg-pine-50 hover:text-pine-800">{{ inner }}</a>
+   class="block w-full px-2.5 py-2 group-hover:text-pine-800 after:absolute after:inset-0 after:content-['']">{{ inner }}</a>
 {% endif %}
 {% else %}
 <p class="px-2.5 py-2 text-stone-500"><span aria-hidden="true">—</span><span class="sr-only">None posted</span></p>
@@ -108,9 +111,9 @@
     <tr class="border-t border-stone-200">
       <th scope="row" class="py-2 pr-2 text-left align-top font-semibold">{{ r.level }}</th>
       {% if r.breakfast_span %}
-      <td rowspan="{{ r.breakfast_span }}" class="h-px p-0 align-top border-l border-stone-200 {{ 'border-b' if r.breakfast_span > 1 }}">{{ cell(r.breakfast) }}</td>
+      <td rowspan="{{ r.breakfast_span }}" class="group relative p-0 align-top border-l border-stone-200 hover:bg-pine-50 {{ 'border-b' if r.breakfast_span > 1 }}">{{ cell(r.breakfast) }}</td>
       {% endif %}
-      <td class="h-px p-0 align-top border-l border-stone-200">{{ cell(r.lunch) }}</td>
+      <td class="group relative p-0 align-top border-l border-stone-200 hover:bg-pine-50">{{ cell(r.lunch) }}</td>
     </tr>
     {% endfor %}
   </tbody>

@@ -206,14 +206,20 @@ class QuietHandler(http.server.SimpleHTTPRequestHandler):
 
 
 @pytest.fixture(scope="module")
-def browser():
+def playwright():
+    # one Playwright session for the module: a second one can't start while another is open
     with sync_api.sync_playwright() as p:
-        try:
-            b = p.chromium.launch()
-        except Exception as exc:  # browser not installed
-            pytest.skip(f"Chromium isn't available: {exc}")
-        yield b
-        b.close()
+        yield p
+
+
+@pytest.fixture(scope="module")
+def browser(playwright):
+    try:
+        b = playwright.chromium.launch()
+    except Exception as exc:  # browser not installed
+        pytest.skip(f"Chromium isn't available: {exc}")
+    yield b
+    b.close()
 
 
 @pytest.fixture
@@ -347,6 +353,33 @@ def test_next_morning_dates_relabel_and_stale_note_shows(open_page):
 
 
 # ── schools ──────────────────────────────────────────────────────────────────
+
+
+def test_menu_cells_hold_their_lists_in_firefox(playwright, site_url):
+    # Firefox sized rows to one line under the old 1px-tall-cell trick, so lists spilled over each other
+    try:
+        b = playwright.firefox.launch()
+    except Exception as exc:  # browser not installed
+        pytest.skip(f"Firefox isn't available: {exc}")
+    page = b.new_page(viewport=DESKTOP)
+    page.route(lambda url: not url.startswith(site_url.split("/whats-up")[0]), lambda r: r.abort())
+    page.goto(site_url + "schools/")
+    page.wait_for_selector("#menus table")
+    spill = page.evaluate(
+        """() => Math.max(0, ...[...document.querySelectorAll('#menus td')].flatMap(td =>
+            [...td.querySelectorAll('.list-item')].map(li =>
+                li.getBoundingClientRect().bottom - td.getBoundingClientRect().bottom)))"""
+    )
+    b.close()
+    assert spill <= 1
+
+
+def test_menu_cell_is_tappable_below_a_short_list(open_page):
+    page = open_page("schools/")
+    # the bottom-left corner of a cell, under its last dish: the whole cell opens the menu
+    box = page.locator("#menus table tbody td").first.bounding_box()
+    page.mouse.click(box["x"] + 4, box["y"] + box["height"] - 3)
+    page.wait_for_selector("dialog[open]")
 
 
 def test_menu_popup_opens_with_focus_inside_and_closes(open_page):

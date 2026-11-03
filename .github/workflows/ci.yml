@@ -25,7 +25,7 @@ jobs:
         run: uv run ruff check .
 
       - name: Install Chromium for the browser tests
-        run: uv run playwright install --with-deps chromium
+        run: uv run playwright install --with-deps chromium firefox
 
       - name: Run tests (including the site in a headless browser, with accessibility checks)
         run: uv run pytest
