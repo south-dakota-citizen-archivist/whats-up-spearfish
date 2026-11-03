@@ -3,8 +3,8 @@
  "name": "BHNF Alerts",
  "kind": "alert",
  "url": "https://www.fs.usda.gov/r02/blackhills/alerts",
- "fetched_at": "2026-11-03T12:31:16-07:00",
- "count": 27,
+ "fetched_at": "2026-11-03T16:57:59-07:00",
+ "count": 26,
  "records": [
   {
    "record_type": "alert",
@@ -389,21 +389,6 @@
    "source": "bhnf_alerts",
    "id": "447784e212ac",
    "date": "2026-10-05",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "record_type": "alert",
-   "title": "Stage 1 Fire Restrictions in Black Hills National Forest Wyoming",
-   "url": "https://www.fs.usda.gov/r02/blackhills/alerts/stage-1-fire-restrictions-black-hills-national-forest-wyoming",
-   "description": "National Forest Service lands in the State of Wyoming on the Bearlodge and Hell Canyon Ranger Districts, Black Hills National Forest will be reduced to Stage 1 fire restrictions beginning Fri. Oct. 23, 2026 at 12:00am.Under Stage 1 restrictions, campfires are allowed if they are in permanent fire…",
-   "published": "2026-10-23",
-   "source_label": "BHNF",
-   "alert_type": "fire-restriction",
-   "forest_order": "BKF-200-2026",
-   "kind": "alert",
-   "source": "bhnf_alerts",
-   "id": "1790d1c52595",
-   "date": "2026-10-23",
    "_first_seen": "2026-11-01"
   }
  ]
