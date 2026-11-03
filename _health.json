@@ -129,17 +129,17 @@
    "url": "https://www.bhpioneer.com/"
   },
   "building_permits": {
-   "count": 6552,
-   "dropped": 0,
+   "count": 6586,
+   "dropped": 1,
    "enabled": true,
    "error": "",
    "failures": 0,
    "kind": "building_permit",
-   "last_run": "2026-11-03T10:50:12-07:00",
-   "last_success": "2026-11-03T10:50:12-07:00",
+   "last_run": "2026-11-03T15:06:55-07:00",
+   "last_success": "2026-11-03T15:06:55-07:00",
    "max_stale_hours": 168,
    "name": "Spearfish building permit reports",
-   "new": 0,
+   "new": 34,
    "status": "ok",
    "tier": "daily",
    "url": "https://www.spearfish.gov/Archive.aspx?AMID=37"
@@ -950,5 +950,5 @@
    "url": "https://www.westernhillshumanesociety.com/"
   }
  },
- "updated": "2026-11-03T13:02:52-07:00"
+ "updated": "2026-11-03T15:07:00-07:00"
 }
