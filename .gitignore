@@ -250,3 +250,6 @@ _site/
 
 # raw parcel snapshots stay on your machine; only parcel_links.json is published
 *.parquet
+
+# your hand-checking copy of the minutes decisions (scripts/minutes_outcomes.py --csv)
+planning_decisions.csv

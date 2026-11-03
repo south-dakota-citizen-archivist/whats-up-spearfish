@@ -348,6 +348,50 @@ def load_answers(model: str) -> dict:
 # ── run ──────────────────────────────────────────────────────────────────────
 
 
+def write_csv(path: Path, records: list[dict], answers: list[dict]) -> None:
+    """One row per application with minutes, oldest meeting first, with links to check each answer against."""
+    import csv
+
+    by_id = {a["item_id"]: a for a in answers}
+    fields = [
+        "meeting_date", "item_id", "status", "set_aside_because", "outcome", "vote", "conditions_unchecked", "quote",
+        "minutes_url", "agenda_url", "request", "location", "applicant", "your_verdict", "your_notes",
+    ]  # fmt: skip
+    with path.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=fields)
+        w.writeheader()
+        for r in sorted(records, key=lambda r: (r.get("meeting_date", ""), str(r.get("item_id")))):
+            a = by_id.get(str(r["item_id"]), {})
+            docs = {d["name"]: d["url"] for d in r.get("meeting_docs") or []}
+            w.writerow(
+                {
+                    "meeting_date": r.get("meeting_date", "")[:10],
+                    "item_id": r["item_id"],
+                    "status": (
+                        "set aside"
+                        if not a or a.get("problem")
+                        else "not found in minutes"
+                        if a.get("outcome") == "not in these minutes"
+                        else "kept"
+                    ),
+                    "set_aside_because": a.get("problem", "not asked yet") if a else "not asked yet",
+                    "outcome": a.get("outcome", ""),
+                    "vote": a.get("vote", ""),
+                    # the model's own summary; nothing checks it against the minutes
+                    "conditions_unchecked": " ".join((a.get("conditions") or "").split()),
+                    "quote": " ".join((a.get("quote") or "").split()),
+                    "minutes_url": docs.get("Minutes", ""),
+                    "agenda_url": docs.get("Agenda") or docs.get("Agenda Packet", ""),
+                    "request": " ".join((r.get("request") or r.get("agenda_text") or "").split()),
+                    "location": r.get("location", ""),
+                    "applicant": r.get("applicant", ""),
+                    "your_verdict": "",
+                    "your_notes": "",
+                }
+            )
+    print(f"[outcomes] {len(records)} rows → {path}")
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="python -m scripts.minutes_outcomes")
     ap.add_argument("--model", default="qwen/qwen3.5-9b")
@@ -358,6 +402,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--limit", type=int, help="ask at most this many new questions")
     ap.add_argument("--download-only", action="store_true", help="fetch the minutes PDFs and stop")
     ap.add_argument("--write", action="store_true", help="merge checked outcomes into planning_commission.json")
+    ap.add_argument("--csv", type=Path, help="write every answer, kept or set aside, to this CSV for checking by hand")
     args = ap.parse_args(argv)
     logging.getLogger("pdfminer").setLevel(logging.ERROR)
     CACHE.mkdir(parents=True, exist_ok=True)
@@ -448,6 +493,9 @@ def main(argv: list[str] | None = None) -> int:
                     f"  {tag} {a['item_id']}: said {a['outcome']!r}, label {gold[a['item_id']]['outcome']!r}"
                     f"{' — ' + a['problem'] if a['problem'] else ''}"
                 )
+
+    if args.csv:
+        write_csv(args.csv, todo, done)
 
     if args.write:
         by_id = {a["item_id"]: a for a in trusted if a["outcome"] != "not in these minutes"}
