@@ -22,7 +22,7 @@
 <p>
   Includes building permits issued from {{ first_permit | fmt_day('%B %Y') }} through {{ latest_report | fmt_day('%B %Y') }}
   and planning applications filed from 2012 through {{ archive_meta.newest_created | default('') | fmt_day('%B %Y') }}{% if pc_first %},
-  plus every application on a Planning Commission agenda since {{ pc_first | fmt_day('%B %Y') }}{% endif %}.
+  plus the Planning Commission meetings where each place came up, since {{ pc_first | fmt_day('%B %Y') }}{% endif %}.
   The city posts a list of new permits each month, and they show up here soon after.
   Some addresses can't be placed on the map, but you can still find them by searching.
 </p>
@@ -153,7 +153,8 @@
                 <p class="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-xs font-semibold">
                   <a x-show="r.u" :href="r.u" target="_blank" rel="noopener" class="whitespace-nowrap text-pine-700 hover:underline">Staff report<span aria-hidden="true"> →</span></a>
                   <template x-for="a in r.att || []"><a :href="a[1]" target="_blank" rel="noopener" class="text-pine-700 hover:underline"><span x-text="a[0]"></span><span aria-hidden="true"> →</span></a></template>
-                  <a :href="r.mu" target="_blank" rel="noopener" class="whitespace-nowrap text-pine-700 hover:underline">Meeting agenda<span aria-hidden="true"> →</span></a>
+                  <template x-for="d in r.docs || []"><a :href="d[1]" target="_blank" rel="noopener" class="whitespace-nowrap text-pine-700 hover:underline"><span x-text="d[0]"></span><span aria-hidden="true"> →</span></a></template>
+                  <a x-show="!(r.docs || []).length" :href="r.mu" target="_blank" rel="noopener" class="whitespace-nowrap text-pine-700 hover:underline">Meeting documents<span aria-hidden="true"> →</span></a>
                 </p>
               </template>
               <a x-show="r.u && r.src === 'permit'" :href="r.u" target="_blank" rel="noopener" class="text-xs font-semibold text-pine-700 hover:underline">That month's permit list (PDF)<span aria-hidden="true"> →</span></a>

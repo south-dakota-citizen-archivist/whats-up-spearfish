@@ -204,7 +204,11 @@ def test_city_wide_items_are_not_sites():
 
 
 def test_permit_sites_include_planning_items(tmp_path):
-    event = {"id": 2225, "startDateTime": "2026-09-01T16:00:00Z"}
+    event = {
+        "id": 2225,
+        "startDateTime": "2026-09-01T16:00:00Z",
+        "publishedFiles": [{"type": "Agenda", "fileId": 501}, {"type": "Minutes", "fileId": 502}],
+    }
     rec = item_record(
         _item(), "Items for Action", event, {"applicant": "Andy Van Deest.", "location": "1407 Charles Street"}
     )
@@ -228,13 +232,16 @@ def test_permit_sites_include_planning_items(tmp_path):
     charles = sites["1407 CHARLES ST"]
     assert [r["src"] for r in charles["r"]] == ["permit", "pc"]
     pc = charles["r"][1]
-    assert (
-        pc["t"] == "Variance"
-        and pc["u"].endswith("/files/report/9870")
-        and pc["att"][0][0] == "Proposed Addition Sketch"
-    )
+    # only that the place came up at a meeting, and the meeting's own documents
+    assert pc["t"] == "On the meeting agenda"
+    assert pc["docs"] == [
+        ["Agenda", "https://spearfishsd.portal.civicclerk.com/event/2225/files/agenda/501"],
+        ["Minutes", "https://spearfishsd.portal.civicclerk.com/event/2225/files/agenda/502"],
+    ]
+    assert pc["u"].endswith("/files/report/9870") and pc["att"][0][0] == "Proposed Addition Sketch"
+    assert not {"who", "own", "rec", "legal", "desc", "loc"} & set(pc)  # nothing read from the documents
     pines = sites["LOC INTERSECTION OF ST. ONGE ROAD AND HIGHWAY 14"]
-    assert "lat" not in pines and pines["r"][0]["t"] == "Preliminary plat"
+    assert "lat" not in pines and pines["r"][0]["t"] == "On the meeting agenda"
 
 
 # ── older agendas (backfill, 2016 – July 2025) ───────────────────────────────

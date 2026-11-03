@@ -323,6 +323,15 @@ def application_items(items: list[dict]) -> list[tuple[dict, str]]:
 
 
 _NO_PLACE = re.compile(r"^(n/?a|none|tbd|city[- ]?wide|various)\.?$", re.I)
+_DOC_TYPES = ("Agenda", "Agenda Packet", "Minutes")
+
+
+def meeting_docs(event: dict) -> list[dict]:
+    """The meeting's agenda, packet and minutes, as links into the public portal (one file each)."""
+    files = {f.get("type"): f["fileId"] for f in event.get("publishedFiles") or [] if f.get("fileId")}
+    return [
+        {"name": t, "url": f"{PORTAL}/event/{event['id']}/files/agenda/{files[t]}"} for t in _DOC_TYPES if t in files
+    ]
 
 
 def item_record(item: dict, section: str, event: dict, report: dict) -> dict:
@@ -346,6 +355,7 @@ def item_record(item: dict, section: str, event: dict, report: dict) -> dict:
         "event_id": eid,
         "meeting_date": event["startDateTime"],
         "meeting_url": f"{PORTAL}/event/{eid}/files",
+        "meeting_docs": meeting_docs(event),
         "section": section,
         "app_type": kind,
         "site": kind not in NOT_A_SITE and bool(address or location) and not _NOT_A_PLACE.search(location),

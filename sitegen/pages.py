@@ -899,19 +899,16 @@ def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
             r.get("address") or r.get("location", "").rstrip("."),
             r.get("lat"),
             r.get("lon"),
+            # Until the details read from agendas are checked, a Planning Commission entry says only
+            # that the place came up at a meeting, with that meeting's own documents.
             {
                 "src": "pc",
                 "d": (r.get("meeting_date") or "")[:10],
-                "t": r.get("app_type"),
-                "c": permit_category(r.get("app_type", "") + " " + r.get("agenda_text", "")),
-                "desc": r.get("agenda_text"),
-                "who": r.get("applicant"),
-                "own": r.get("owner"),
-                "rec": r.get("recommendation"),
-                "loc": r.get("location") if r.get("address") else "",
-                "legal": r.get("legal_description"),
+                "t": "On the meeting agenda",
+                "c": "l",
                 "u": r.get("report_url"),
                 "mu": r.get("meeting_url"),
+                "docs": [[d["name"], d["url"]] for d in r.get("meeting_docs") or []],
                 "att": [[a["name"], a["url"]] for a in r.get("attachments") or []],
             },
         )
