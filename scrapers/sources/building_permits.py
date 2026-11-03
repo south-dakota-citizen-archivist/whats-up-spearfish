@@ -1,53 +1,37 @@
 """
 scrapers/sources/building_permits.py
 
-Monthly building permit reports (PDF) from the City of Spearfish archive.
-Each run parses the most recent RECENT_MONTHS reports and merges them into the
-saved history, which is kept indefinitely: with the city's OpenGov portal closed
-to the public, these reports are the only ongoing record of permits issued.
-History before the scraper (2013–2025) was seeded by scripts/build_planning_archive.py
-from the spearfish-building-permits project.
+Monthly building permit reports from the City of Spearfish archive. Every
+report is kept: each run downloads any the city has posted that we don't have
+yet (into DATA_DIR/permit_reports/YYYY-MM.pdf, served with the site), then reads
+the most recent RECENT_MONTHS of them (scrapers/permit_reports.py reads every
+layout the city has used since 2013).
+
+Records are kept indefinitely: with the city's OpenGov portal closed to the
+public, these reports are the only ongoing record of permits issued. The
+2013 – September 2025 history was checked by hand against the reports.
 """
 
 from __future__ import annotations
 
+import difflib
 import re
-import tempfile
 import time
-from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
-from scrapers import geo, net
+from scrapers import base, geo, net
 from scrapers.base import BaseScraper
+from scrapers.permit_reports import parse_report
 
 BASE_URL = "https://www.spearfish.gov"  # cityofspearfish.com redirects here
 ARCHIVE_URL = f"{BASE_URL}/Archive.aspx?AMID=37"
 
 RECENT_MONTHS = 6
 
-MONTH_YEAR_FORMATS = ["%B %Y", "%B%Y"]
-
-# Permit types to skip (signs, ROW work, grading, burns)
-SKIP_TYPES = {
-    "VOID",
-    "ROW",
-    "ROW/GRADING",
-    "ROW (2)",
-    "SIGN",
-    "GRADING PERMIT",
-    "BURN PERMIT",
-    "SIGN PERMIT",
-    "GRADING",
-    "ROW PERMIT",
-    "BURN",
-    "RIGHT OF WAY PERMIT",
-    "SING PERMIT",
-}
-
-# Manual address fixes for known bad permit IDs (from spearfish-building-permits/const.py)
+# Addresses corrected by hand for permits whose report has a wrong or unreadable one
 ADDRESS_FIXES: dict[str, str] = {
     "14-0253": "1610 COLLEGE",
     "220316": "1996 RUSSELL STREET",
@@ -78,23 +62,6 @@ ADDRESS_FIXES: dict[str, str] = {
     "180215": "4025 E. COLORADO BLVD.",
     "180216": "4025 E. COLORADO BLVD.",
 }
-
-
-def _is_valid_permit(r: dict) -> bool:
-    """Return False for summary/totals rows that slipped through the PDF parser."""
-    pid = (r.get("permit_number") or "").strip()
-    if not pid:
-        return False
-    # Section headers ("2026 January Permits") and totals rows ("Total Permits Issued")
-    if re.search(r"^total|\d{4}\s+\w+\s+permits?|permits?\s+issued", pid, re.IGNORECASE):
-        return False
-    # Count rows: small integer permit ID with dollar amounts in type/addr columns
-    if re.match(r"^\d{1,4}$", pid):
-        ctype = r.get("construction_type", "") or ""
-        addr = r.get("site_address", "") or ""
-        if ctype.startswith("$") or addr.startswith("$"):
-            return False
-    return True
 
 
 def _categorize(construction_type: str) -> str:
@@ -140,90 +107,47 @@ def _categorize(construction_type: str) -> str:
     return "alterations"
 
 
-def _clean_money(val: str | None) -> float | None:
-    if not val:
-        return None
-    val = "".join((val or "").replace("$", "").replace(",", "").split())
-    if val in ("", "-", "‐"):
-        return None
-    try:
-        return float(val)
-    except ValueError:
-        return None
+def reports_dir() -> Path:
+    """Where the monthly reports are kept: DATA_DIR/permit_reports (the data branch), served at permits/reports/."""
+    return base.DATA_DIR / "permit_reports"
 
 
-def _parse_pdf(pdf_path: Path, year: str, month: str) -> list[dict]:
-    """
-    Parse a building permit PDF using pdfplumber.
-
-    Handles the 2025+ format (8-column table):
-        permit_id | applicant | address | const_type | valuation | permit_fee | contractor | jurisdiction
-
-    Returns a list of normalized record dicts.
-    """
-    try:
-        import pdfplumber
-    except ImportError:
-        raise ImportError("pdfplumber is required — run: uv add pdfplumber")
-
-    table_data: list[list] = []
-    with pdfplumber.open(pdf_path) as pdf:
-        for page in pdf.pages:
-            tables = page.extract_tables()
-            if tables:
-                table_data.extend(tables[0])
-
-    records: list[dict] = []
-    for line in table_data[1:]:
-        if not any(line):
-            continue
-        # Stop at summary / totals block (section header or totals row)
-        if line[0] and re.search(
-            r"^total|\d{4}\s+\w+\s+permits?|permits?\s+issued",
-            line[0],
-            re.IGNORECASE,
-        ):
-            break
-        if len(line) < 8:
-            continue
-
-        permit_id, applicant, address, const_type, valuation, permit_fee, contractor, jurisdiction = line[:8]
-
-        permit_id = (permit_id or "").strip()
-        if not permit_id:
-            continue
-
-        const_type_clean = " ".join((const_type or "").split())
-
-        # Skip non-building permit types
-        if const_type_clean.upper() in SKIP_TYPES:
-            continue
-
-        outside = (jurisdiction or "").lower().strip() not in ("city", "")
-
-        # Use manual address fix if available
-        pid_norm = permit_id.replace("/", "-")
-        addr = ADDRESS_FIXES.get(pid_norm, address or "")
-        addr = " ".join(addr.split())
-
+def read_report(pdf_path: Path, year: str, month: str) -> list[dict]:
+    """Records for one month's report, ready to save."""
+    records = []
+    for p in parse_report(pdf_path):
+        addr = ADDRESS_FIXES.get(p["permit_number"].replace("/", "-"), p["site_address"])
         records.append(
-            {
+            p
+            | {
                 "year": year,
                 "month": month,
                 "date": f"{year}-{month}-01",
-                "permit_number": permit_id,
-                "applicant_name": " ".join((applicant or "").upper().split()),
-                "site_address": addr,
-                "construction_type": const_type_clean,
-                "category": _categorize(const_type_clean),
-                "contractor": " ".join((contractor or "").upper().split()),
-                "cost_approximate": _clean_money(valuation),
-                "permit_fee": _clean_money(permit_fee),
-                "outside_city_limits": outside,
+                "report": f"{year}-{month}",
+                "applicant_name": p["applicant_name"].upper(),
+                "site_address": " ".join(addr.split()),
+                "contractor": p["contractor"].upper(),
+                "category": _categorize(p["construction_type"]),
             }
         )
-
     return records
+
+
+MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october",
+          "november", "december"]  # fmt: skip
+
+
+def month_of(label: str) -> tuple[str, str] | None:
+    """('2026', '07') from a link like 'Monthly Building Permit Report - July 2026 (PDF)', typos and all
+    ('Juy 2026', 'August2026'): the month is whichever name the word is closest to."""
+    m = re.search(r"([A-Za-z]{3,})\.?\s*,?\s*(\d{4})", label.split("-")[-1] if "-" in label else label)
+    if not m:
+        return None
+    word = m.group(1).lower()
+    close = difflib.get_close_matches(word, MONTHS, n=1, cutoff=0.7) or [x for x in MONTHS if x.startswith(word[:3])]
+    if not close:
+        return None
+    return m.group(2), str(MONTHS.index(close[0]) + 1).zfill(2)
 
 
 def _scrape_archive() -> list[dict]:
@@ -244,25 +168,14 @@ def _scrape_archive() -> list[dict]:
             continue
 
         url = urljoin(BASE_URL, href)
-        text = link.text.lower()
-        month_year = text.split("permits")[-1].split("report")[-1].strip().lstrip("-").split("(")[0].strip()
-
         # Fix a known report that has no year in its label
         if "ADID=1500" in href:
             year, month = "2023", "07"
+        elif parsed := month_of(link.text):
+            year, month = parsed
         else:
-            parsed = None
-            for fmt in MONTH_YEAR_FORMATS:
-                try:
-                    parsed = datetime.strptime(month_year, fmt)
-                    break
-                except ValueError:
-                    continue
-            if not parsed:
-                print(f"[BuildingPermits] Could not parse date from link: {link.text!r}")
-                continue
-            year = str(parsed.year)
-            month = str(parsed.month).zfill(2)
+            print(f"[{BuildingPermits.slug}] couldn't tell which month this report is: {link.text!r}")
+            continue
 
         reports.append({"year": year, "month": month, "url": url})
 
@@ -278,20 +191,33 @@ class BuildingPermits(BaseScraper):
     max_stale_hours = 24 * 7
 
     def scrape(self) -> list[dict]:
-        reports = sorted(_scrape_archive(), key=lambda r: (r["year"], r["month"]), reverse=True)
-        records: list[dict] = []
-        for report in reports[:RECENT_MONTHS]:
-            with tempfile.TemporaryDirectory() as tmp:
-                pdf = Path(tmp) / "report.pdf"
-                resp = net.get(report["url"], timeout=60)
-                resp.raise_for_status()
-                pdf.write_bytes(resp.content)
-                parsed = [r for r in _parse_pdf(pdf, report["year"], report["month"]) if _is_valid_permit(r)]
-            for r in parsed:
-                r["url"] = report["url"]
-                finish_record(r)
-            records.extend(parsed)
+        listed = sorted(_scrape_archive(), key=lambda r: (r["year"], r["month"]), reverse=True)
+        if not listed:
+            raise RuntimeError("no reports found on the city's archive page")
+        folder = reports_dir()
+        folder.mkdir(parents=True, exist_ok=True)
+        new = []
+        for report in listed:
+            path = folder / f"{report['year']}-{report['month']}.pdf"
+            if path.exists():
+                continue
+            resp = net.get(report["url"], timeout=60)
+            resp.raise_for_status()
+            if not resp.content.startswith(b"%PDF"):
+                print(f"[{self.slug}] {report['url']} isn't a PDF; skipped")
+                continue
+            path.write_bytes(resp.content)
+            new.append(report)
+            print(f"[{self.slug}] new report: {path.name}")
             time.sleep(1)
+        records: list[dict] = []
+        for report in {id(r): r for r in listed[:RECENT_MONTHS] + new}.values():
+            path = folder / f"{report['year']}-{report['month']}.pdf"
+            if not path.exists():
+                continue
+            for r in read_report(path, report["year"], report["month"]):
+                r["url"] = report["url"]  # the city's own copy, as the source
+                records.append(finish_record(r))
         add_coordinates(records)
         return records
 

@@ -239,6 +239,10 @@ def build(data_dir: Path, out_dir: Path) -> None:
     )
 
     feeds.write_json(events, out_dir / "events.json")
+    # The city's monthly permit reports, served from here (the permits page links each permit to its month)
+    reports = data_dir / "permit_reports"
+    if reports.is_dir():
+        shutil.copytree(reports, out_dir / "permits" / "reports", dirs_exist_ok=True)
     parcels = ParcelLinks.load(data_dir)
     sites = pages.permit_sites(site, parcels)
     feeds.write_json(sites, out_dir / "permits" / "sites.json")

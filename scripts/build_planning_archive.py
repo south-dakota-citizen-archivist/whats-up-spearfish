@@ -67,7 +67,8 @@ HISTORICAL_LABELS = [
 # Record types that aren't about a place (shown in the archive, left off the map/lookup)
 NOT_A_SITE = re.compile(r"contractor license|raffle|special event|alcohol|burn", re.I)
 
-BUILDING_PERMITS_PDF = "https://github.com/cjwinchester/spearfish-building-permits/blob/main/pdfs/{ym}.pdf"
+# The city's archive of monthly permit reports (its own copies; ours are on the data branch in permit_reports/)
+BUILDING_PERMITS_PDF = "https://www.spearfish.gov/Archive.aspx?AMID=37"
 
 # Form-field labels worth surfacing in the index (matched case-insensitively, first hit wins)
 FIELD_PICKS = {
@@ -252,7 +253,7 @@ def index_row(entry: dict) -> dict:
 
 def seed_building_permits(csv_path: Path) -> None:
     """
-    Seed data/building_permits.json with the full report history: the spearfish-building-permits
+    Seed data/building_permits.json with the full report history: the hand-checked
     CSV (2013–2025-09) plus every record ever saved in this repo's legacy building_permits.json,
     merged with whatever the scraper has already saved.
     """
@@ -278,7 +279,8 @@ def seed_building_permits(csv_path: Path) -> None:
                 "cost_approximate": money(row["cost_approximate"]),
                 "permit_fee": money(row["permit_fee"]),
                 "outside_city_limits": str(row.get("outside_city_limits", "")).lower() in ("true", "1", "yes"),
-                "url": BUILDING_PERMITS_PDF.format(ym=ym),
+                "url": BUILDING_PERMITS_PDF,
+                "report": ym,
             }
             seeded[finish_record(rec)["permit_key"]] = rec
 
@@ -288,7 +290,8 @@ def seed_building_permits(csv_path: Path) -> None:
         urls = legacy.get("month_urls") or {}
         for rec in legacy.get("records", []):
             ym = f"{rec.get('year')}-{str(rec.get('month')).zfill(2)}"
-            rec["url"] = urls.get(ym) or BUILDING_PERMITS_PDF.format(ym=ym)
+            rec["url"] = urls.get(ym) or BUILDING_PERMITS_PDF
+            rec["report"] = ym
             seeded.setdefault(finish_record(rec)["permit_key"], rec)
 
     scraper = BuildingPermits()
@@ -309,7 +312,7 @@ def main() -> None:
     ap.add_argument("--raw", action="append", type=Path, default=[], help="directory of raw per-record dumps")
     default_out = Path(os.environ.get("WUS_DATA_DIR") or REPO / "data") / "archive"
     ap.add_argument("--out", type=Path, default=default_out)
-    ap.add_argument("--permits-csv", type=Path, help="spearfish-building-permits combined CSV to seed building_permits")
+    ap.add_argument("--permits-csv", type=Path, help="hand-checked combined CSV of permits to seed building_permits")
     args = ap.parse_args()
     if args.permits_csv:
         seed_building_permits(args.permits_csv.expanduser())

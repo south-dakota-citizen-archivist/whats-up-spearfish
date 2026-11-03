@@ -821,6 +821,14 @@ def recent_sites(sites: list[dict], today: date) -> list[dict]:
     return [s for s in sites if any((r.get("d") or "") >= cutoff for r in s["r"])]
 
 
+def report_link(site: Site, r: dict) -> str:
+    """The month's permit report as this site serves it (relative to the permits page), else the city's copy."""
+    ym = r.get("report") or (f"{r.get('year')}-{str(r.get('month')).zfill(2)}" if r.get("year") else "")
+    if ym and (site.data_dir / "permit_reports" / f"{ym}.pdf").exists():
+        return f"reports/{ym}.pdf"
+    return r.get("url") or ""
+
+
 def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
     """
     Every planning application (OpenGov archive), issued building permit
@@ -899,7 +907,7 @@ def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
                 "v": r.get("cost_approximate"),
                 "who": (r.get("applicant_name") or "").title(),
                 "con": (r.get("contractor") or "").title(),
-                "u": r.get("url"),
+                "u": report_link(site, r),
             },
         )
 

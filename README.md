@@ -21,7 +21,10 @@ scrapers (GitHub Actions, scheduled)  →  data branch (JSON snapshots)  →  si
   code only. Files are snapshots: news, documents and events are pruned to a
   rolling window (see `KINDS` in `scrapers/schema.py`), not archived forever.
   Two exceptions are kept in full: building permits from the city's monthly
-  reports (2013–), and `archive/` — every planning/permit record collected from
+  reports (2013–), whose PDFs are archived in `permit_reports/YYYY-MM.pdf` and served at
+  `permits/reports/` (the scraper downloads each new report the city posts, and
+  `scrapers/permit_reports.py` reads every layout the city has used), and `archive/` —
+  every planning/permit record collected from
   the city's OpenGov portal (2012–July 2026) before the city turned off public
   access. That archive is rebuilt only by `scripts/build_planning_archive.py`.
   New applications come from Planning Commission agendas instead
