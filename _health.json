@@ -838,17 +838,17 @@
    "url": "https://www.spearfishsasquatch.com"
   },
   "spearfish_school_board_docs": {
-   "count": 14,
+   "count": 12,
    "dropped": 0,
    "enabled": true,
    "error": "",
    "failures": 0,
    "kind": "document",
-   "last_run": "2026-11-03T10:50:12-07:00",
-   "last_success": "2026-11-03T10:50:12-07:00",
+   "last_run": "2026-11-03T13:02:47-07:00",
+   "last_success": "2026-11-03T13:02:47-07:00",
    "max_stale_hours": 48,
    "name": "Spearfish School Board",
-   "new": 121,
+   "new": 124,
    "status": "ok",
    "tier": "daily",
    "url": "https://www.spearfish.k12.sd.us/documents/board-of-education/board-meeting-agendas/25745609"
@@ -950,5 +950,5 @@
    "url": "https://www.westernhillshumanesociety.com/"
   }
  },
- "updated": "2026-11-03T12:31:17-07:00"
+ "updated": "2026-11-03T13:02:52-07:00"
 }
