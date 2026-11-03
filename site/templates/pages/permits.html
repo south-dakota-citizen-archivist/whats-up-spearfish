@@ -50,7 +50,7 @@
                     </dl>
                     <p class="mt-1 flex flex-wrap gap-x-3 gap-y-1">
                       <template x-for="a in r.att || []"><a :href="a[1]" target="_blank" rel="noopener" class="text-pine-700 underline" x-text="a[0]"></a></template>
-                      <a x-show="r.src === 'permit' && r.u" :href="r.u" target="_blank" rel="noopener" class="text-pine-700 underline">The city's permit list for that month (PDF)</a>
+                      <a x-show="r.src === 'permit' && r.u" :href="r.u" target="_blank" rel="noopener" class="text-pine-700 underline" x-text="day((r.d || '').slice(0, 7)) + ' permit report (PDF)'"></a>
                     </p>
                   </details>
                 </template>
