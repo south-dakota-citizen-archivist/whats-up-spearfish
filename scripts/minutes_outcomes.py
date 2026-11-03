@@ -208,16 +208,65 @@ def outcome_from_wording(quote: str) -> str:
             if not any(a <= m.start() and m.end() <= b for a, b, _ in spans):
                 spans.append((m.start(), m.end(), name))
     which = max(spans)[2] if spans else ""
+    # "recommend approval of a variance and set the Board of Adjustment hearing": the recommendation is the outcome
+    names = {name for _, _, name in spans}
+    if which == "public hearing set" and names & {"recommended approval", "recommended denial"}:
+        which = max(sp for sp in spans if sp[2] in ("recommended approval", "recommended denial"))[2]
     if which and _DID_NOT_PASS.search(q) and not re.search(r"passed|carried|all (present )?voted", q, re.I):
         return "motion failed"
     return which
 
 
+def vote_from_quote(quote: str) -> str:
+    """The tally the quote states ("4-1"), or "unanimous" when everyone voted for it; never the model's guess."""
+    if m := re.search(r"\b(\d{1,2})\s?-\s?(\d{1,2})\b", quote):
+        return f"{m.group(1)}-{m.group(2)}"
+    if re.search(r"unanimous|all (present )?voted|all voted in favor", quote, re.I):
+        return "unanimous"
+    return ""
+
+
 def settle(answer: dict) -> dict:
-    """The model finds and quotes the deciding motion; the outcome is what that motion's words say."""
+    """The model finds and quotes the deciding motion; the outcome and the vote are what that quote says."""
     if answer.get("outcome") in NO_MOTION:
         return answer
-    return answer | {"outcome": outcome_from_wording(answer.get("quote", "")) or answer.get("outcome")}
+    quote = answer.get("quote", "")
+    return answer | {"outcome": outcome_from_wording(quote) or answer.get("outcome"), "vote": vote_from_quote(quote)}
+
+
+_STOP = set(
+    """approve approval request hearing public city spearfish council commission planning lots block
+tract section with from that this their there which within located location applicant action make
+recommendation recommend consider plat final preliminary sketch zoning change district""".split()
+)
+_HEADING = re.compile(r"(?:^|\s)\d{1,2}\.\s+(?:request:?\s*)?(?=[a-z])")
+
+
+def _words(text: str) -> set[str]:
+    return {w for w in re.findall(r"[a-z0-9]{4,}", norm(text)) if w not in _STOP}
+
+
+def belongs(rec: dict, siblings: list[dict], quote: str, minutes: str) -> str:
+    """Why the quote may be about another item at the same meeting, or "" if it's this one's.
+
+    The part of the minutes from the nearest numbered heading before the quote down to the quote has to
+    share more of this item's words (request, location, applicant) than any other item's of that meeting."""
+    m, q = norm(minutes), norm(quote).strip(" \"'")
+    pos = m.find(q[:60])
+    if pos < 0:
+        return "can't tell which item the quote is under"
+    heads = [h.start() for h in _HEADING.finditer(m, 0, pos)]
+    section = _words(m[heads[-1] if heads else 0 : pos + len(q)])
+
+    def score(r):
+        w = _words(" ".join(r.get(k) or "" for k in ("request", "agenda_text", "location", "applicant")))
+        return len(w & section) / max(len(w), 1)
+
+    mine = score(rec)
+    others = [score(r) for r in siblings if r is not rec and r.get("item_id") != rec.get("item_id")]
+    if others and max(others) > mine:
+        return "quote seems to be about another item at that meeting"
+    return ""
 
 
 def check(answer: dict, minutes: str) -> str:
@@ -231,6 +280,8 @@ def check(answer: dict, minutes: str) -> str:
         return "quote isn't in the minutes"
     if not re.search(r"\bmov(ed|es|e)\b|\bmotion\b|second", quote, re.I):
         return "quote isn't a motion"
+    if re.search(r"\bminutes of\b|approve the (agenda|minutes)|\badjourn", quote, re.I):
+        return "quote is about the minutes or agenda, not an item"
     if not re.search(_FITS[outcome], quote, re.I):
         return f"quote doesn't say {outcome!r}"
     if outcome != "motion failed" and _DID_NOT_PASS.search(quote) and not re.search(r"passed|carried", quote, re.I):
@@ -317,6 +368,9 @@ def main(argv: list[str] | None = None) -> int:
     gold = json.loads(args.eval.read_text()) if args.eval else None
     todo = [r for r in records if str(r["event_id"]) in files and (gold is None or str(r["item_id"]) in gold)]
     print(f"[outcomes] {len(todo)} applications with minutes (of {len(records)})")
+    by_event: dict[str, list[dict]] = {}
+    for r in records:
+        by_event.setdefault(str(r["event_id"]), []).append(r)
 
     texts: dict[str, str] = {}
     for r in todo:
@@ -343,7 +397,14 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"  {key}: no answer ({exc})")
                 continue
             a = settle(a)
-            problem = check(a, texts[str(r["event_id"])])
+            problem = (
+                check(a, texts[str(r["event_id"])])
+                or (
+                    a["outcome"] not in NO_MOTION
+                    and belongs(r, by_event[str(r["event_id"])], a["quote"], texts[str(r["event_id"])])
+                )
+                or ""
+            )
             a = {"item_id": key, **a, "problem": problem, "seconds": round(time.time() - t0)}
             answers[key] = a
             out.write(json.dumps(a) + "\n")
@@ -356,7 +417,11 @@ def main(argv: list[str] | None = None) -> int:
     for r in todo:
         if a := answers.get(str(r["item_id"])):
             a = settle(a)
-            done.append(a | {"problem": check(a, texts[str(r["event_id"])])})
+            minutes = texts[str(r["event_id"])]
+            problem = check(a, minutes) or (
+                a["outcome"] not in NO_MOTION and belongs(r, by_event[str(r["event_id"])], a["quote"], minutes)
+            )
+            done.append(a | {"problem": problem or ""})
     trusted = [a for a in done if not a["problem"]]
     print(f"[outcomes] {len(done)} answered, {len(trusted)} checked out, {len(done) - len(trusted)} set aside")
 

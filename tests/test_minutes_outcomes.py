@@ -97,6 +97,10 @@ def test_check(outcome, quote, problem):
         ("Bordewyk moved to recommend approval of the final plat in accordance with the previously approved "
          "preliminary plat. The motion passed 4-1.", "recommended approval"),
         ("Moths moved to continue the item, and the motion died due to lack of a second.", "motion failed"),
+        # a variance: the commission recommends, and sets the Board of Adjustment's hearing in the same motion
+        ("Motion was made by Kruskamp to recommend approval of a variance to rear setback requirements and to set "
+         "the Board of Adjustment public hearing for January 8. Upon vote taken thereon, the motion carried.",
+         "recommended approval"),
     ],
 )  # fmt: skip
 def test_outcome_from_wording(quote, outcome):
