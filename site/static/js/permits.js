@@ -40,6 +40,7 @@ document.addEventListener("alpine:init", () => {
       const here = map.mouseEventToContainerPoint(e);
       if (last && now - last.t < 300 && here.distanceTo(last.p) < 30) {
         touchZoomAt = now;
+        map.tapZoomedAt = now; // a single tap waiting to open a place stands down
         last = null;
         zoomAround(here, false);
       } else {
@@ -59,6 +60,23 @@ document.addEventListener("alpine:init", () => {
   };
   // recent.json holds places active in about the past two years; anything older needs sites.json
   const RECENT_FROM = isoDaysAgo(2 * 365);
+
+  // Zoomed in this far, places with a parcel show as its outline; further out, as dots
+  const OUTLINE_ZOOM = 16;
+  const coarse = () => window.matchMedia("(pointer: coarse)").matches;
+
+  // Is a point (lat, lon) inside any of a parcel's rings ([[lon, lat], …])?
+  function inside(lat, lon, rings) {
+    return rings.some((ring) => {
+      let hit = false;
+      for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+        const [xi, yi] = ring[i];
+        const [xj, yj] = ring[j];
+        if (yi > lat !== yj > lat && lon < ((xj - xi) * (lat - yi)) / (yj - yi) + xi) hit = !hit;
+      }
+      return hit;
+    });
+  }
 
   // Plain words for where a record came from
   const KIND = { permit: "Building permit", app: "Permit application", pc: "Planning Commission" };
@@ -96,6 +114,8 @@ document.addEventListener("alpine:init", () => {
       hereLabel: "",
       locating: false,
       selected: null,
+      choices: [], // a tap near several places: the ones to choose from
+      choicesTotal: 0, // how many were within reach (the list shows the nearest 12)
       limit: 40, // how many places the list shows before "Show more"
 
       async init() {
@@ -113,6 +133,7 @@ document.addEventListener("alpine:init", () => {
           return;
         }
         this.loading = false;
+        this.loadOutlines(); // parcel outlines draw as the map's shapes once they arrive
         this.$nextTick(() => {
           this.draw();
           const key = decodeURIComponent(location.hash.replace(/^#site=/, ""));
@@ -150,6 +171,83 @@ document.addEventListener("alpine:init", () => {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         }).addTo(map);
         markers = L.layerGroup().addTo(map);
+        this.$refs.map.leaflet = map; // for tests: where a place sits on screen
+        let outlined = map.getZoom() >= OUTLINE_ZOOM;
+        map.on("zoomend", () => {
+          if (outlined !== map.getZoom() >= OUTLINE_ZOOM) {
+            outlined = !outlined;
+            this.draw();
+          }
+        });
+        // One handler for taps and clicks, with a target the size of a fingertip
+        map.on("click", (e) => {
+          if (!coarse()) return this.tap(e);
+          const at = Date.now();
+          setTimeout(() => {
+            if ((map.tapZoomedAt || 0) >= at - 50) return; // it was the first tap of a double-tap zoom
+            this.tap(e);
+          }, 320);
+        });
+      },
+
+      async loadOutlines() {
+        if (outlines) return outlines;
+        try {
+          const r = await fetch(outlinesUrl);
+          if (!r.ok) throw new Error(r.status);
+          outlines = await r.json();
+          this.draw();
+        } catch {
+          // dots instead of outlines; the map still works
+        }
+        return outlines;
+      },
+
+      // Places near a tap: inside an outline, or within a fingertip of a dot; nearest first
+      tap(e) {
+        const reach = coarse() ? 26 : 14;
+        const shapes = map.getZoom() >= OUTLINE_ZOOM && outlines;
+        const hits = [];
+        for (const s of this.matches) {
+          if (s.lat == null) continue;
+          const rings = shapes && s.pid && outlines[s.pid];
+          if (rings && inside(e.latlng.lat, e.latlng.lng, rings)) {
+            hits.push({ s, d: 0 });
+            continue;
+          }
+          const d = map.latLngToContainerPoint([s.lat, s.lon]).distanceTo(e.containerPoint);
+          if (d <= reach) hits.push({ s, d });
+        }
+        hits.sort((a, b) => a.d - b.d);
+        if (!hits.length) return;
+        if (hits.length === 1) return this.openPlace(hits[0].s);
+        this.selected = null;
+        this.choicesTotal = hits.length;
+        this.choices = hits.slice(0, 12).map((h) => h.s);
+        this.showDialog();
+      },
+
+      showDialog() {
+        const d = this.$refs.placeDialog;
+        if (!d.open) d.showModal();
+        this.$nextTick(() => (d.scrollTop = 0));
+      },
+
+      // A place picked on the map: beside it on large screens, in the pop-up on phones
+      openPlace(s) {
+        this.choices = [];
+        if (large()) {
+          if (this.$refs.placeDialog.open) this.$refs.placeDialog.close();
+          return this.select(s);
+        }
+        listScroll = 0;
+        this.show_(s);
+        this.showDialog();
+      },
+
+      dialogClosed() {
+        this.choices = [];
+        if (!large()) this.back(false); // back to the map just as it was
       },
 
       // Phones: list or map. A map that was hidden needs to measure itself once it shows.
@@ -264,18 +362,20 @@ document.addEventListener("alpine:init", () => {
       draw() {
         if (!markers) return;
         markers.clearLayers();
+        const shapes = map.getZoom() >= OUTLINE_ZOOM && outlines;
         let n = 0;
         for (const s of this.matches) {
           if (s.lat == null) continue;
           n++;
-          L.circleMarker([s.lat, s.lon], { radius: 6, weight: 1, color: "#1c1917", fillColor: this.color(s), fillOpacity: 0.9 })
-            .on("click", (e) => {
-              L.DomEvent.stopPropagation(e);
-              this.pick(s);
-            })
-            .addTo(markers);
+          const rings = shapes && s.pid && outlines[s.pid];
+          const style = { color: "#1c1917", fillColor: this.color(s), interactive: false };
+          if (rings) {
+            L.polygon(rings.map((r) => r.map(([lon, lat]) => [lat, lon])), { ...style, weight: 1.5, fillOpacity: 0.55 }).addTo(markers);
+          } else {
+            L.circleMarker([s.lat, s.lon], { ...style, radius: 7, weight: 1, fillOpacity: 0.9 }).addTo(markers);
+          }
         }
-        this.$refs.map.dataset.dots = n; // the dots are drawn on a canvas; the count, for tests and the curious
+        this.$refs.map.dataset.dots = n; // drawn on a canvas; the count, for tests and the curious
       },
 
       get results() {
@@ -428,13 +528,6 @@ document.addEventListener("alpine:init", () => {
         });
       },
 
-      // Tapped on the map. Large screens show the history beside it; phones, a card under the map.
-      pick(s) {
-        if (large()) return this.select(s);
-        listScroll = 0;
-        this.show_(s);
-      },
-
       focusMap(s) {
         if (s.lat == null || !map) return;
         this.$nextTick(() => {
@@ -455,15 +548,7 @@ document.addEventListener("alpine:init", () => {
 
       // Swap the ring for the parcel's outline once outlines are loaded
       async outline(s) {
-        if (!outlines) {
-          try {
-            const r = await fetch(outlinesUrl);
-            if (!r.ok) throw new Error(r.status);
-            outlines = await r.json();
-          } catch {
-            return; // keep the circle; the outline is a nicety
-          }
-        }
+        if (!(await this.loadOutlines())) return; // keep the circle; the outline is a nicety
         const rings = outlines[s.pid];
         if (!rings || this.selected !== s) return;
         if (ring) ring.remove();

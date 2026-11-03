@@ -559,14 +559,35 @@ def test_permits_map_double_tap_zooms_one_level(browser, site_url):
     ctx.close()
 
 
-def test_permits_on_a_phone_switch_between_list_and_map(open_page):
-    page = open_page("permits/", viewport=PHONE, wait=PLACES)
+# Where a place sits on screen (the map exposes its Leaflet map for this; places come from the page's data)
+WHERE = """(k) => { const el = document.querySelector('.permits-map'), m = el.leaflet;
+    const d = Alpine.$data(el.closest('[x-data]')), s = d.matches.find(x => k ? x.k === k : x.lat != null);
+    const p = m.latLngToContainerPoint([s.lat, s.lon]), b = el.getBoundingClientRect();
+    return {k: s.k, x: b.left + p.x, y: b.top + p.y}; }"""
+
+
+def test_permits_on_a_phone_a_map_tap_opens_the_place(browser, site_url):
+    ctx = browser.new_context(viewport=PHONE, has_touch=True, is_mobile=True)
+    page = ctx.new_page()
+    page.route(lambda url: not url.startswith(site_url.split("/whats-up")[0]), lambda r: r.abort())
+    page.goto(site_url + "permits/")
+    page.wait_for_selector(PLACES)
     assert page.locator(".permits-map").is_hidden()  # the list first; the page scrolls like any other
-    page.locator(PLACES).first.click()
-    page.get_by_role("button", name="Show on map").click()
-    assert page.locator(".permits-map").is_visible()
-    assert page.locator("#place-name").is_hidden()  # the place's history makes way for the map
-    assert "440 Heritage" in page.get_by_role("button", name="See its history").locator("xpath=..").inner_text()
-    card = page.get_by_role("button", name="See its history")
-    card.click()
-    assert page.locator("#place-name").is_visible() and page.locator(".permits-map").is_hidden()
+    page.get_by_role("button", name="Map", exact=True).click()
+    page.wait_for_timeout(300)  # the map measures itself once it shows
+    place = page.evaluate(WHERE, None)
+    page.touchscreen.tap(place["x"] + 14, place["y"] + 10)  # beside the dot, not on it: a fingertip's reach
+    page.wait_for_selector("dialog[open]")
+    assert page.locator("#dialog-title").inner_text().strip()
+    assert page.locator("dialog ol li").count() >= 1  # the place's history
+    page.get_by_role("button", name="Close").click()
+    assert page.locator("dialog[open]").count() == 0 and page.locator(".permits-map").is_visible()
+    ctx.close()
+
+
+def test_permits_a_click_on_large_screens_shows_the_history_beside_the_map(open_page):
+    page = open_page("permits/", wait=PLACES)
+    place = page.evaluate(WHERE, None)
+    page.mouse.click(place["x"] + 6, place["y"])
+    page.wait_for_selector("#place-name")
+    assert page.locator("dialog[open]").count() == 0

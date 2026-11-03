@@ -16,6 +16,49 @@
 #}
 {% macro dot(color) %}<span aria-hidden="true" class="inline-block w-2.5 h-2.5 shrink-0 border border-stone-800" style="background: {{ color }}"></span>{% endmacro %}
 
+{# One place's history: shared by the list column and the pop-up a map tap opens #}
+{% macro history(in_dialog) %}
+          <p class="mt-1 text-sm text-stone-600">
+            <span x-text="selected.r.length + (selected.r.length === 1 ? ' record' : ' records')"></span><template x-if="selected.own"><span x-text="' · Owner: ' + selected.own"></span></template><template x-if="selected.ac"><span x-text="' · ' + selected.ac + (selected.ac === 1 ? ' acre' : ' acres')"></span></template>
+          </p>
+          <p class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm font-semibold">
+            <template x-if="selected.pid"><a :href="parcelUrl(selected)" target="_blank" rel="noopener" class="text-pine-700 underline">County parcel record</a></template>
+            {% if not in_dialog %}<button type="button" x-show="selected.lat != null" @click="showView('map'); focusMap(selected)" class="lg:hidden text-pine-700 underline">Show on map</button>{% endif %}
+          </p>
+
+          <ol class="mt-4 border-l-2 border-stone-200">
+            <template x-for="(r, i) in selected.r" :key="i">
+              <li class="relative ml-4 pb-5">
+                <span aria-hidden="true" class="absolute -left-[1.4rem] top-[3px] w-2.5 h-2.5 border border-stone-800" :style="'background:' + categories[r.c || 'o'].color"></span>
+                <p class="text-xs leading-4 font-semibold uppercase tracking-wide text-stone-600">
+                  <span x-text="kind(r)"></span> · <span x-text="r.src === 'permit' ? day((r.d || '').slice(0, 7)) : day(r.d)"></span>
+                </p>
+                <p class="font-semibold" x-text="r.src === 'pc' ? 'Came up at a meeting' : r.t"></p>
+                <p x-show="facts(r)" class="text-sm text-stone-700" x-text="facts(r)"></p>
+                <template x-if="r.src === 'pc'">
+                  <p class="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-sm">
+                    <template x-for="d in r.docs || []"><a :href="d[1]" target="_blank" rel="noopener" class="whitespace-nowrap text-pine-700 underline" x-text="d[0]"></a></template>
+                    <a x-show="r.u" :href="r.u" target="_blank" rel="noopener" class="whitespace-nowrap text-pine-700 underline">Staff report</a>
+                    <a x-show="!(r.docs || []).length" :href="r.mu" target="_blank" rel="noopener" class="whitespace-nowrap text-pine-700 underline">Meeting documents</a>
+                  </p>
+                </template>
+                <template x-if="details(r).length || (r.att || []).length || (r.src === 'permit' && r.u)">
+                  <details class="mt-1 text-sm">
+                    <summary class="cursor-pointer font-semibold text-pine-700">Details</summary>
+                    <dl class="mt-1 grid grid-cols-[auto_1fr] gap-x-3 gap-y-0.5 text-stone-700">
+                      <template x-for="[k, v] in details(r)"><div class="contents"><dt class="text-stone-600" x-text="k"></dt><dd x-text="v"></dd></div></template>
+                    </dl>
+                    <p class="mt-1 flex flex-wrap gap-x-3 gap-y-1">
+                      <template x-for="a in r.att || []"><a :href="a[1]" target="_blank" rel="noopener" class="text-pine-700 underline" x-text="a[0]"></a></template>
+                      <a x-show="r.src === 'permit' && r.u" :href="r.u" target="_blank" rel="noopener" class="text-pine-700 underline">The city's permit list for that month (PDF)</a>
+                    </p>
+                  </details>
+                </template>
+              </li>
+            </template>
+          </ol>
+{% endmacro %}
+
 {% block content %}
 <div x-data="permits('{{ root }}permits/recent.json', '{{ root }}permits/sites.json', '{{ latest_report[:7] }}', '{{ root }}permits/parcels.json', '{{ beacon }}')">
   <h1 class="text-2xl font-extrabold">Building permits and planning records</h1>
@@ -37,7 +80,7 @@
       <div class="min-w-0">
         <label for="since" class="block text-xs font-semibold text-stone-600">When</label>
         <select id="since" x-model="since" class="h-10 w-full border border-stone-400 bg-white pl-2 text-sm">
-          {% if latest_report %}<option value="latest">Permits issued {{ latest_report | fmt_day('%B %Y') }}</option>{% endif %}
+          {% if latest_report %}<option value="latest">{{ latest_report | fmt_day('%b %Y') }} report</option>{% endif %}
           <option value="1">Past year</option>
           <option value="2">Past 2 years</option>
           <option value="5">Past 5 years</option>
@@ -118,45 +161,7 @@
         <section aria-labelledby="place-name">
           <button type="button" @click="back()" class="text-sm font-semibold text-pine-700 underline"><span aria-hidden="true">← </span>Back to results</button>
           <h2 id="place-name" x-ref="detailTitle" tabindex="-1" class="mt-2 text-xl font-bold leading-tight" x-text="placeName(selected)"></h2>
-          <p class="mt-1 text-sm text-stone-600">
-            <span x-text="selected.r.length + (selected.r.length === 1 ? ' record' : ' records')"></span><template x-if="selected.own"><span x-text="' · Owner: ' + selected.own"></span></template><template x-if="selected.ac"><span x-text="' · ' + selected.ac + (selected.ac === 1 ? ' acre' : ' acres')"></span></template>
-          </p>
-          <p class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm font-semibold">
-            <template x-if="selected.pid"><a :href="parcelUrl(selected)" target="_blank" rel="noopener" class="text-pine-700 underline">County parcel record</a></template>
-            <button type="button" x-show="selected.lat != null" @click="showView('map'); focusMap(selected)" class="lg:hidden text-pine-700 underline">Show on map</button>
-          </p>
-
-          <ol class="mt-4 border-l-2 border-stone-200">
-            <template x-for="(r, i) in selected.r" :key="i">
-              <li class="relative ml-4 pb-5">
-                <span aria-hidden="true" class="absolute -left-[1.4rem] top-[3px] w-2.5 h-2.5 border border-stone-800" :style="'background:' + categories[r.c || 'o'].color"></span>
-                <p class="text-xs leading-4 font-semibold uppercase tracking-wide text-stone-600">
-                  <span x-text="kind(r)"></span> · <span x-text="r.src === 'permit' ? day((r.d || '').slice(0, 7)) : day(r.d)"></span>
-                </p>
-                <p class="font-semibold" x-text="r.src === 'pc' ? 'Came up at a meeting' : r.t"></p>
-                <p x-show="facts(r)" class="text-sm text-stone-700" x-text="facts(r)"></p>
-                <template x-if="r.src === 'pc'">
-                  <p class="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-sm">
-                    <template x-for="d in r.docs || []"><a :href="d[1]" target="_blank" rel="noopener" class="whitespace-nowrap text-pine-700 underline" x-text="d[0]"></a></template>
-                    <a x-show="r.u" :href="r.u" target="_blank" rel="noopener" class="whitespace-nowrap text-pine-700 underline">Staff report</a>
-                    <a x-show="!(r.docs || []).length" :href="r.mu" target="_blank" rel="noopener" class="whitespace-nowrap text-pine-700 underline">Meeting documents</a>
-                  </p>
-                </template>
-                <template x-if="details(r).length || (r.att || []).length || (r.src === 'permit' && r.u)">
-                  <details class="mt-1 text-sm">
-                    <summary class="cursor-pointer font-semibold text-pine-700">Details</summary>
-                    <dl class="mt-1 grid grid-cols-[auto_1fr] gap-x-3 gap-y-0.5 text-stone-700">
-                      <template x-for="[k, v] in details(r)"><div class="contents"><dt class="text-stone-600" x-text="k"></dt><dd x-text="v"></dd></div></template>
-                    </dl>
-                    <p class="mt-1 flex flex-wrap gap-x-3 gap-y-1">
-                      <template x-for="a in r.att || []"><a :href="a[1]" target="_blank" rel="noopener" class="text-pine-700 underline" x-text="a[0]"></a></template>
-                      <a x-show="r.src === 'permit' && r.u" :href="r.u" target="_blank" rel="noopener" class="text-pine-700 underline">The city's permit list for that month (PDF)</a>
-                    </p>
-                  </details>
-                </template>
-              </li>
-            </template>
-          </ol>
+          {{ history(in_dialog=false) }}
         </section>
       </template>
 
@@ -207,19 +212,41 @@
         <span class="inline-flex items-center gap-1.5">{{ dot(color) }}{{ label }}</span>
         {% endfor %}
       </p>
-      {# phones: the tapped place, with a way into its history #}
-      <div class="lg:hidden mt-3">
-        <template x-if="selected">
-          <div class="border border-stone-300 bg-white p-3">
-            <p class="font-semibold" x-text="placeName(selected)"></p>
-            <p class="text-sm text-stone-600" x-text="latestLine(selected)"></p>
-            <button type="button" @click="showView('list')" class="mt-2 w-full bg-pine-700 py-2.5 font-semibold text-white">See its history</button>
-          </div>
-        </template>
-        <p x-show="!selected" class="text-sm text-stone-600">Tap a dot on the map to see what's there.</p>
-      </div>
+      <p class="lg:hidden mt-2 text-sm text-stone-600">Tap a place on the map to see its history.</p>
     </div>
   </div>
+
+  {# A tap on the map: the place's history, or a choice when the tap lands near several #}
+  <dialog x-ref="placeDialog" @close="dialogClosed()" aria-labelledby="dialog-title"
+          class="m-0 mt-auto w-full max-w-none max-h-[88dvh] sm:m-auto sm:max-w-lg sm:max-h-[85vh] bg-white p-0 shadow-2xl backdrop:bg-stone-900/50">
+    <div class="sticky top-0 z-10 flex items-start justify-between gap-3 border-b border-stone-200 bg-white px-4 py-3">
+      <h2 id="dialog-title" class="text-lg font-bold leading-tight"
+          x-text="choices.length ? (choicesTotal > choices.length ? 'The ' + choices.length + ' nearest places' : choices.length + ' places here') : (selected ? placeName(selected) : '')"></h2>
+      <button type="button" @click="$refs.placeDialog.close()" class="shrink-0 border border-stone-400 px-3 py-1.5 text-sm font-semibold hover:bg-stone-100">Close</button>
+    </div>
+    <div class="px-4 py-3">
+      <p x-show="choices.length && choicesTotal > choices.length" class="text-sm text-stone-600"
+         x-text="choicesTotal + ' places are close to where you tapped. Zoom in on the map to narrow it down.'"></p>
+      <template x-if="choices.length">
+        <ul class="divide-y divide-stone-200" aria-label="Places near where you tapped">
+          <template x-for="s in choices" :key="s.k">
+            <li>
+              <button type="button" @click="openPlace(s)" class="flex w-full items-start gap-3 py-3 text-left hover:bg-pine-50">
+                <span aria-hidden="true" class="mt-1.5 inline-block w-2.5 h-2.5 shrink-0 border border-stone-800" :style="'background:' + color(s)"></span>
+                <span class="min-w-0 flex-1">
+                  <span class="block font-semibold" x-text="placeName(s)"></span>
+                  <span class="block text-sm text-stone-600" x-text="latestLine(s)"></span>
+                </span>
+              </button>
+            </li>
+          </template>
+        </ul>
+      </template>
+      <template x-if="!choices.length && selected">
+        <div>{{ history(in_dialog=true) }}</div>
+      </template>
+    </div>
+  </dialog>
 
   <div class="mt-8 max-w-3xl space-y-2 border-t border-stone-200 pt-4 text-sm text-stone-600">
     <h2 class="font-semibold text-stone-800">About these records</h2>
