@@ -23,8 +23,8 @@
    "error": "",
    "failures": 0,
    "kind": "alert",
-   "last_run": "2026-11-02T16:28:47-07:00",
-   "last_success": "2026-11-02T16:28:47-07:00",
+   "last_run": "2026-11-03T00:54:44-07:00",
+   "last_success": "2026-11-03T00:54:44-07:00",
    "max_stale_hours": 48,
    "name": "BHNF Alerts",
    "new": 0,
@@ -167,8 +167,8 @@
    "error": "",
    "failures": 0,
    "kind": "gauge",
-   "last_run": "2026-11-02T16:28:47-07:00",
-   "last_success": "2026-11-02T16:28:47-07:00",
+   "last_run": "2026-11-03T00:54:44-07:00",
+   "last_success": "2026-11-03T00:54:44-07:00",
    "max_stale_hours": 12,
    "name": "Spearfish Creek gauge (USGS)",
    "new": 0,
@@ -279,8 +279,8 @@
    "error": "",
    "failures": 0,
    "kind": "fire",
-   "last_run": "2026-11-02T16:28:47-07:00",
-   "last_success": "2026-11-02T16:28:47-07:00",
+   "last_run": "2026-11-03T00:54:44-07:00",
+   "last_success": "2026-11-03T00:54:44-07:00",
    "max_stale_hours": 12,
    "name": "Fire danger & wildfires",
    "new": 0,
@@ -572,8 +572,8 @@
    "error": "",
    "failures": 0,
    "kind": "alert",
-   "last_run": "2026-11-02T16:28:47-07:00",
-   "last_success": "2026-11-02T16:28:47-07:00",
+   "last_run": "2026-11-03T00:54:44-07:00",
+   "last_success": "2026-11-03T00:54:44-07:00",
    "max_stale_hours": 48,
    "name": "City of Spearfish Alert Center",
    "new": 0,
@@ -950,5 +950,5 @@
    "url": "https://www.westernhillshumanesociety.com/"
   }
  },
- "updated": "2026-11-02T16:28:48-07:00"
+ "updated": "2026-11-03T00:54:45-07:00"
 }
