@@ -36,7 +36,7 @@
                 <p class="text-xs leading-4 font-semibold uppercase tracking-wide text-stone-600">
                   <span x-text="kind(r)"></span> · <span x-text="r.src === 'permit' ? day((r.d || '').slice(0, 7)) : day(r.d)"></span>
                 </p>
-                <p class="font-semibold" x-text="r.src === 'pc' ? 'Came up at a meeting' : r.t"></p>
+                <p class="font-semibold" x-text="r.src === 'pc' ? 'On the agenda' : r.t"></p>
                 <p x-show="facts(r)" class="text-sm text-stone-700" x-text="facts(r)"></p>
                 <template x-if="r.src === 'pc'">
                   <p class="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-sm">

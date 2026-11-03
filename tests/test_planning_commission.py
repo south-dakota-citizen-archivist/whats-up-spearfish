@@ -232,7 +232,7 @@ def test_permit_sites_include_planning_items(tmp_path):
     charles = sites["1407 CHARLES ST"]
     assert [r["src"] for r in charles["r"]] == ["permit", "pc"]
     pc = charles["r"][1]
-    # only that the place came up at a meeting, and the meeting's own documents
+    # only that the place was on the agenda, and the meeting's own documents
     assert pc["t"] == "On the meeting agenda"
     assert pc["docs"] == [
         ["Agenda", "https://spearfishsd.portal.civicclerk.com/event/2225/files/agenda/501"],

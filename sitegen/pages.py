@@ -920,7 +920,7 @@ def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
             r.get("lat"),
             r.get("lon"),
             # Until the details read from agendas are checked, a Planning Commission entry says only
-            # that the place came up at a meeting, with that meeting's own documents.
+            # that the place was on a meeting's agenda, with that meeting's own documents.
             {
                 "src": "pc",
                 "d": (r.get("meeting_date") or "")[:10],
