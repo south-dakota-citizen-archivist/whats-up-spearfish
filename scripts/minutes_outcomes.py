@@ -41,13 +41,11 @@ from scrapers.sources import planning_commission as pc
 
 ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / ".cache" / "planning"
-PROMPT_VERSION = 1
+PROMPT_VERSION = 2
 
 OUTCOMES = [
     "approved",
-    "approved with conditions",
     "recommended approval",
-    "recommended approval with conditions",
     "recommended denial",
     "denied",
     "motion failed",
@@ -65,9 +63,9 @@ SCHEMA = {
     "type": "object",
     "properties": {
         "outcome": {"type": "string", "enum": OUTCOMES},
-        "vote": {"type": "string", "description": "e.g. 5-0, 4-1, unanimous; empty if not stated"},
-        "conditions": {"type": "string", "description": "conditions attached to the decision, or empty"},
-        "quote": {"type": "string", "description": "the deciding motion and its result, copied word for word"},
+        "vote": {"type": "string", "maxLength": 12, "pattern": "^(|unanimous|[0-9]{1,2}-[0-9]{1,2})$"},
+        "conditions": {"type": "string", "maxLength": 300},
+        "quote": {"type": "string", "maxLength": 700},
     },
     "required": ["outcome", "vote", "conditions", "quote"],
     "additionalProperties": False,
@@ -82,16 +80,21 @@ QUESTION = """Minutes of the {date} meeting:
 {minutes}
 </minutes>
 
-Agenda item:
+Agenda item{number}:
 Request: {request}
 Applicant: {applicant}
 Location: {location}
 
 What did the commission do on this agenda item?
 - If several motions were made on it, report the last one that passed; if none passed, the last one voted on.
+  A motion amended before the vote counts as amended (a motion to deny, amended to table, was a tabling).
 - "recommended …" is for a recommendation to the City Council; "approved"/"denied" for the commission's own decision.
 - "public hearing set" is for a motion that only sets a hearing date.
-- Copy the deciding motion and the sentence saying how the vote went, word for word, into quote.
+- Fields:
+  outcome: one of the listed choices.
+  vote: only the tally, like "5-0" or "unanimous"; empty if the minutes don't say.
+  conditions: any conditions or stipulations attached, in a few words; empty if none.
+  quote: the deciding motion and the sentence saying how the vote went, copied word for word from the minutes.
 - If the minutes don't mention this item, answer "not in these minutes" with an empty quote."""
 
 
@@ -140,7 +143,7 @@ def norm(text: str) -> str:
 def in_minutes(quote: str, minutes: str) -> bool:
     """The quote appears in the minutes: exactly once normalized, or nearly (a stray character or two).
     Quotation marks around it are ignored, and a quote shortened with "…" must match piece by piece."""
-    q, m = norm(quote).strip(" \"'"), norm(minutes)
+    q, m = re.sub(r"[\"'}\]*/\\n\s]+$", "", norm(quote)).strip(" \"'"), norm(minutes)
     pieces = [p.strip(" \"'") for p in re.split(r"\.\.\.|\u2026", q)]
     if len(pieces) > 1:
         return all(in_minutes(p, minutes) for p in pieces if len(p) >= 20) and any(len(p) >= 20 for p in pieces)
@@ -157,9 +160,7 @@ def in_minutes(quote: str, minutes: str) -> bool:
 
 _FITS = {
     "approved": r"approv",
-    "approved with conditions": r"approv",
     "recommended approval": r"approv|recommend",
-    "recommended approval with conditions": r"approv|recommend",
     "recommended denial": r"den(y|ial)",
     "denied": r"den(y|ied|ial)",
     "motion failed": r"fail|died|lack of a second|nay|opposed",
@@ -168,7 +169,55 @@ _FITS = {
     "public hearing set": r"hearing",
     "forwarded without a recommendation": r"(no|without( a)?) recommendation",
 }
-_DID_NOT_PASS = re.compile(r"died|lack of a second|motion failed|failed to pass", re.I)
+_DID_NOT_PASS = re.compile(r"died|lack of a second|\bfailed\b", re.I)
+# the quote has to show the motion passed, not just that it was made
+_PASSED = re.compile(
+    r"\bpassed\b|\bcarried\b|all (present )?voted|unanimous|voted (aye|in favor)|\b\d{1,2}-\d{1,2}\b", re.I
+)
+_AMENDED_TO = re.compile(r"amended (the|his|her|their)? ?motion to (table|postpone|continue|defer)", re.I)
+
+
+# What a motion did, from its own wording; when a quote holds several motions, the latest one decides.
+_WORDING = [
+    ("forwarded without a recommendation", r"(no|without( a)?) recommendation"),
+    ("recommended denial", r"recommend\w*\s+(the\s+)?denial|recommend\w*\s+(that\s+.{0,40})?den(y|ial)\w*"),
+    ("recommended approval", r"recommend\w*\s+(\w+\s+){0,3}approv\w*"),
+    ("tabled", r"\btabl(e|ed|ing)\b"),
+    ("postponed", r"\b(continu\w*|postpon\w*|defer\w*)\b"),
+    ("public hearing set", r"\bset\w*\s+(\w+\s+){0,3}(public\s+)?hearing"),
+    ("denied", r"\bden(y|ied|ial)\b"),
+    ("approved", r"\bapprov\w*"),
+]
+
+
+def outcome_from_wording(quote: str) -> str:
+    """The outcome a quoted motion's own words state (the model only has to find the right motion)."""
+    if _AMENDED_TO.search(quote):
+        return "tabled" if re.search(r"tabl", _AMENDED_TO.search(quote).group(0), re.I) else "postponed"
+    q = re.sub(
+        r"\bapproval of (the )?minutes\b|\b(motion )?on the table\b|\b(previously|already) approved\b",
+        "",
+        quote,
+        flags=re.I,
+    )
+    spans: list[tuple[int, int, str]] = []
+    for name, pattern in _WORDING:
+        for m in re.finditer(pattern, q, re.I):
+            # a match inside an earlier (more specific) pattern's span is part of that phrase:
+            # the "approval" in "recommend approval"
+            if not any(a <= m.start() and m.end() <= b for a, b, _ in spans):
+                spans.append((m.start(), m.end(), name))
+    which = max(spans)[2] if spans else ""
+    if which and _DID_NOT_PASS.search(q) and not re.search(r"passed|carried|all (present )?voted", q, re.I):
+        return "motion failed"
+    return which
+
+
+def settle(answer: dict) -> dict:
+    """The model finds and quotes the deciding motion; the outcome is what that motion's words say."""
+    if answer.get("outcome") in NO_MOTION:
+        return answer
+    return answer | {"outcome": outcome_from_wording(answer.get("quote", "")) or answer.get("outcome")}
 
 
 def check(answer: dict, minutes: str) -> str:
@@ -186,6 +235,12 @@ def check(answer: dict, minutes: str) -> str:
         return f"quote doesn't say {outcome!r}"
     if outcome != "motion failed" and _DID_NOT_PASS.search(quote) and not re.search(r"passed|carried", quote, re.I):
         return "quote says the motion didn't pass"
+    if outcome != "motion failed" and not _PASSED.search(quote):
+        return "quote doesn't show the motion passed"
+    if outcome != "forwarded without a recommendation" and re.search(r"(no|without( a)?) recommendation", quote, re.I):
+        return "quote says it went on without a recommendation"
+    if outcome not in ("tabled", "postponed") and _AMENDED_TO.search(quote):
+        return "quote says the motion was amended to table or postpone it"
     return ""
 
 
@@ -193,7 +248,9 @@ def check(answer: dict, minutes: str) -> str:
 
 
 def ask(endpoint: str, model: str, minutes: str, rec: dict) -> dict:
+    n = re.fullmatch(r"\d+-(\d+)", str(rec.get("item_id", "")))  # backfilled items: "{event}-{position}"
     question = QUESTION.format(
+        number=f" (item {n.group(1)} on the agenda)" if n else "",
         date=rec["meeting_date"][:10],
         minutes=minutes.strip(),
         request=rec.get("request") or rec.get("agenda_text", ""),
@@ -216,6 +273,14 @@ def ask(endpoint: str, model: str, minutes: str, rec: dict) -> dict:
     content = resp.json()["choices"][0]["message"]["content"] or ""
     content = re.sub(r"<think>.*?</think>", "", content, flags=re.S).strip()
     return json.loads(content)
+
+
+def ask_twice(endpoint: str, model: str, minutes: str, rec: dict) -> dict:
+    """Small models sometimes break their JSON; one more try usually fixes it."""
+    try:
+        return ask(endpoint, model, minutes, rec)
+    except json.JSONDecodeError:
+        return ask(endpoint, model, minutes, rec)
 
 
 def answers_file(model: str) -> Path:
@@ -273,10 +338,11 @@ def main(argv: list[str] | None = None) -> int:
                 break
             t0 = time.time()
             try:
-                a = ask(args.endpoint, args.model, texts[str(r["event_id"])], r)
+                a = ask_twice(args.endpoint, args.model, texts[str(r["event_id"])], r)
             except Exception as exc:  # noqa: BLE001
                 print(f"  {key}: no answer ({exc})")
                 continue
+            a = settle(a)
             problem = check(a, texts[str(r["event_id"])])
             a = {"item_id": key, **a, "problem": problem, "seconds": round(time.time() - t0)}
             answers[key] = a
@@ -289,15 +355,20 @@ def main(argv: list[str] | None = None) -> int:
     done = []
     for r in todo:
         if a := answers.get(str(r["item_id"])):
+            a = settle(a)
             done.append(a | {"problem": check(a, texts[str(r["event_id"])])})
     trusted = [a for a in done if not a["problem"]]
     print(f"[outcomes] {len(done)} answered, {len(trusted)} checked out, {len(done) - len(trusted)} set aside")
 
     if gold is not None:
 
+        def simple(o):  # labels made before conditions moved to their own field
+            return o.replace(" with conditions", "")
+
         def ok(a, lenient=False):
             g = gold[a["item_id"]]
-            return a["outcome"] == g["outcome"] or (lenient and a["outcome"] in g.get("also", []))
+            also = {simple(x) for x in g.get("also", [])}
+            return a["outcome"] == simple(g["outcome"]) or (lenient and a["outcome"] in also)
 
         strict = sum(1 for a in trusted if ok(a))
         lenient = sum(1 for a in trusted if ok(a, True))
