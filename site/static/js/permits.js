@@ -229,8 +229,21 @@ document.addEventListener("alpine:init", () => {
 
       showDialog() {
         const d = this.$refs.placeDialog;
-        if (!d.open) d.showModal();
+        if (!d.open) {
+          d.showModal();
+          this.holdStill(true);
+        }
         this.$nextTick(() => (d.scrollTop = 0));
+      },
+
+      // While the pop-up is open, swipes inside it scroll only it: the page behind is locked, and
+      // the map ignores drags and pinches (iPhones otherwise pass a swipe's leftover on to them)
+      holdStill(on) {
+        document.documentElement.classList.toggle("overflow-hidden", on);
+        document.body.classList.toggle("overflow-hidden", on);
+        for (const handler of [map?.dragging, map?.touchZoom, map?.scrollWheelZoom]) {
+          if (handler) on ? handler.disable() : handler.enable();
+        }
       },
 
       // A place picked on the map: beside it on large screens, in the pop-up on phones
@@ -246,6 +259,7 @@ document.addEventListener("alpine:init", () => {
       },
 
       dialogClosed() {
+        this.holdStill(false);
         this.choices = [];
         if (!large()) this.back(false); // back to the map just as it was
       },

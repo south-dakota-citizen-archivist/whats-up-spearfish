@@ -585,6 +585,40 @@ def test_permits_on_a_phone_a_map_tap_opens_the_place(browser, site_url):
     ctx.close()
 
 
+def test_permits_swiping_the_pop_up_never_moves_the_map(browser, site_url):
+    ctx = browser.new_context(viewport=PHONE, has_touch=True, is_mobile=True)
+    page = ctx.new_page()
+    cdp = ctx.new_cdp_session(page)
+    page.route(lambda url: not url.startswith(site_url.split("/whats-up")[0]), lambda r: r.abort())
+    page.goto(site_url + "permits/")
+    page.wait_for_selector(PLACES)
+    page.get_by_role("button", name="Map", exact=True).click()
+    page.wait_for_timeout(300)
+    place = page.evaluate(WHERE, None)
+    page.touchscreen.tap(place["x"], place["y"])
+    page.wait_for_selector("dialog[open]")
+    center = (
+        "(() => { const c = document.querySelector('.permits-map').leaflet.getCenter(); return [c.lat, c.lng]; })()"
+    )
+    before = page.evaluate(center)
+
+    def swipe(y0, y1):
+        cdp.send("Input.dispatchTouchEvent", {"type": "touchStart", "touchPoints": [{"x": 195, "y": y0}]})
+        for i in range(1, 9):
+            point = {"x": 195, "y": y0 + (y1 - y0) * i / 8}
+            cdp.send("Input.dispatchTouchEvent", {"type": "touchMove", "touchPoints": [point]})
+            page.wait_for_timeout(16)
+        cdp.send("Input.dispatchTouchEvent", {"type": "touchEnd", "touchPoints": []})
+        page.wait_for_timeout(200)
+
+    for y0, y1 in [(700, 300), (700, 300), (300, 780), (300, 780)]:  # past the pop-up's ends, both ways
+        swipe(y0, y1)
+    assert page.evaluate(center) == before and page.evaluate("scrollY") == 0
+    page.get_by_role("button", name="Close").click()
+    assert page.evaluate("document.querySelector('.permits-map').leaflet.dragging.enabled()")
+    ctx.close()
+
+
 def test_permits_a_click_on_large_screens_shows_the_history_beside_the_map(open_page):
     page = open_page("permits/", wait=PLACES)
     place = page.evaluate(WHERE, None)
