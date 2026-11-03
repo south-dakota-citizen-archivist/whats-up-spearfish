@@ -266,6 +266,16 @@ def fire_context(site: Site) -> dict:
     }
 
 
+def board_doc_label(r: dict) -> str:
+    """'Addendum' or 'Audio minutes' from the title when it says so; else the district's type ('Agenda')."""
+    title = (r.get("title") or "").lower()
+    if "addendum" in title:
+        return "Addendum"
+    if "audio" in title:
+        return "Audio minutes" if "minutes" in title else "Audio"
+    return (r.get("asset_type") or "Document").capitalize()
+
+
 def meetings(site: Site) -> list[dict]:
     """Agendas/minutes from the city, county and school board, grouped into meetings."""
     out: dict[str, dict] = {}
@@ -293,6 +303,8 @@ def meetings(site: Site) -> list[dict]:
             "docs": [{"label": "Agenda & packet", "url": r["url"]}],
         }
     for r in site.get("spearfish_school_board_docs").records:
+        if not r.get("date"):
+            continue  # a document that names no meeting date can't be placed with its meeting
         key = f"school-{r.get('date')}"
         m = out.setdefault(
             key,
@@ -305,7 +317,7 @@ def meetings(site: Site) -> list[dict]:
                 "docs": [],
             },
         )
-        m["docs"].append({"label": (r.get("asset_type") or "Document").title(), "url": r["url"]})
+        m["docs"].append({"label": board_doc_label(r), "url": r["url"]})
     return sorted(out.values(), key=lambda m: m["date"])
 
 

@@ -24,9 +24,11 @@ _ROOTS = {
     "minutes": 25745856,
 }
 
-_LABEL_RE = re.compile(r"^[a-z]\.\s+", re.IGNORECASE)  # strip leading "k. " prefixes
-# Match a date at the start of the title, e.g. "March 9, 2026"
-_DATE_RE = re.compile(r"^([A-Za-z]+ \d{1,2},? \d{4})")
+_LABEL_RE = re.compile(r"^[a-z]\.+\s+", re.IGNORECASE)  # strip leading "k. " / "g.. " prefixes
+# A date anywhere in the title, typos and all: "March 9, 2026", "October 14,, 2025", "August 4 , 2026",
+# "Rescheduled - September 16, 2026 …"
+_MONTHS = "January|February|March|April|May|June|July|August|September|October|November|December"
+_DATE_RE = re.compile(r"\b(" + _MONTHS + r")\.?\s+(\d{1,2})\s*[,.\s]*\s(\d{4})\b", re.IGNORECASE)
 
 
 def _clean_title(raw: str) -> str:
@@ -34,12 +36,12 @@ def _clean_title(raw: str) -> str:
 
 
 def _parse_date(title: str) -> str:
-    """Extract and return an ISO date string from the beginning of the title, or ''."""
-    m = _DATE_RE.match(title)
+    """The meeting date named in a document's title, as an ISO date, or ''."""
+    m = _DATE_RE.search(title)
     if not m:
         return ""
     try:
-        return dateutil_parser.parse(m.group(1)).date().isoformat()
+        return dateutil_parser.parse(f"{m.group(1)} {m.group(2)} {m.group(3)}").date().isoformat()
     except (ValueError, OverflowError):
         return ""
 
