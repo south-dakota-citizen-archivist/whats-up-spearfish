@@ -3,23 +3,9 @@
  "name": "Public Meetings (YouTube)",
  "kind": "youtube_video",
  "url": "https://www.youtube.com/@spearfishschooldistrictliv3794/streams",
- "fetched_at": "2026-11-02T13:56:29-07:00",
- "count": 18,
+ "fetched_at": "2026-11-03T10:50:52-07:00",
+ "count": 17,
  "records": [
-  {
-   "url": "https://www.youtube.com/watch?v=gR0YOnlV_68",
-   "title": "Lawrence County Planning & Zoning Meeting - July 2, 2026",
-   "published": "2026-07-05",
-   "thumbnail_url": "https://i4.ytimg.com/vi/gR0YOnlV_68/hqdefault.jpg",
-   "source_label": "Lawrence County",
-   "channel_url": "https://www.youtube.com/channel/UC2CZKGr9OGrsMcCZkW0_HMA",
-   "record_type": "youtube_video",
-   "kind": "youtube_video",
-   "source": "public_meetings_youtube",
-   "id": "8759b95d825f",
-   "date": "2026-07-05",
-   "_first_seen": "2026-11-01"
-  },
   {
    "url": "https://www.youtube.com/watch?v=P83zvPRitkk",
    "title": "SSD School Board Meeting 5:28 PM 07/13/2026",

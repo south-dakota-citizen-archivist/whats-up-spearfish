@@ -3,8 +3,8 @@
  "name": "Spearfish School District",
  "kind": "event",
  "url": "https://www.spearfish.k12.sd.us/events",
- "fetched_at": "2026-11-02T13:56:55-07:00",
- "count": 24,
+ "fetched_at": "2026-11-03T10:51:19-07:00",
+ "count": 25,
  "records": [
   {
    "event_id": 53400512,
@@ -485,6 +485,26 @@
    "date": "2027-02-15",
    "event_category": "schools",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "event_id": 53400538,
+   "title": "Early Release - Staff Professional Development",
+   "url": "https://www.spearfish.k12.sd.us/events",
+   "start_dt": "2027-03-03T13:00:00.000-07:00",
+   "end_dt": "2027-03-03T13:30:00.000-07:00",
+   "all_day": false,
+   "location": "",
+   "description": "",
+   "kind": "event",
+   "record_type": "event",
+   "source": "spearfish_schools",
+   "source_label": "Spearfish School District",
+   "id": "5645d2cffbc4",
+   "start": "2027-03-03T13:00:00-07:00",
+   "end": "2027-03-03T13:30:00-07:00",
+   "date": "2027-03-03",
+   "event_category": "schools",
+   "_first_seen": "2026-11-03"
   }
  ]
 }

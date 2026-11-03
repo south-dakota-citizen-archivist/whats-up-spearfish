@@ -3,8 +3,8 @@
  "name": "City of Spearfish News Flash",
  "kind": "press_release",
  "url": "https://www.spearfish.gov/CivicAlerts.aspx",
- "fetched_at": "2026-11-02T13:56:52-07:00",
- "count": 5,
+ "fetched_at": "2026-11-03T10:51:13-07:00",
+ "count": 6,
  "records": [
   {
    "url": "https://www.spearfish.gov/CivicAlerts.aspx?aid=581",
@@ -80,6 +80,21 @@
    "id": "b47f3d502896",
    "date": "2026-10-26",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.spearfish.gov/CivicAlerts.aspx?aid=540",
+   "title": "Prevent carbon monoxide poisoning",
+   "slug": "prevent-carbon-monoxide-poisoning",
+   "description": "The Spearfish Fire Department encourages everyone to take preventative measures to protect themselves by installing carbon monoxide detectors in their homes.",
+   "published": "2026-11-03T08:54:50-07:00",
+   "start_dt": "Tue, 03 Nov 2026 08:54:50 -0700",
+   "record_type": "press_release",
+   "source_label": "City of Spearfish",
+   "kind": "press_release",
+   "source": "spearfish_news",
+   "id": "5b5c0c920fec",
+   "date": "2026-11-03",
+   "_first_seen": "2026-11-03"
   }
  ]
 }

@@ -3,24 +3,9 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-02T13:56:23-07:00",
- "count": 77,
+ "fetched_at": "2026-11-03T10:50:40-07:00",
+ "count": 78,
  "records": [
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/03/whatever-the-motivation-republicans-endorsement-of-democrat-deserves-points-for-facts-and-reason/",
-   "title": "Commentary: Whatever the motivation, Republican’s endorsement of Democrat deserves points for facts and reason",
-   "slug": "south-dakota-searchlight-commentary-whatever-the-motivation-republicans-of-for",
-   "published": "2026-10-03",
-   "byline": "Rick Snedeker",
-   "description": "Since South Dakota’s Republican lame-duck Secretary of State Monae Johnson oddly endorsed the Democrat campaigning to replace her, voters reasonably might wonder: Is she for real? Even though she has been viewed at times during her tenure as just politically eccentric and confounding, this partisan betrayal was a core taboo, akin to political treason. Instead [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "3aad3bfc9314",
-   "date": "2026-10-03",
-   "_first_seen": "2026-11-01"
-  },
   {
    "url": "https://southdakotasearchlight.com/2026/10/04/inmates-moving-to-new-rapid-city-womens-prison-but-dilapidated-unit-in-pierre-remains-in-use/",
    "title": "Inmates moving to new Rapid City women’s prison, but dilapidated unit in Pierre remains in use",
@@ -487,21 +472,6 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://www.sdnewswatch.org/south-dakota-pheasant-hunting-season/",
-   "title": "Explainer: What to know about the 2026 South Dakota pheasant hunting season",
-   "slug": "sd-newswatch-explainer-what-to-know-about-the-2026-south-dakota-pheasant-hunting",
-   "published": "2026-10-17",
-   "byline": "Scott Waltman",
-   "description": "Opening day is today, and it's expected bird numbers will be high after a couple of years of mostly excellent nesting conditions across the state.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "0ba548636212",
-   "date": "2026-10-17",
-   "_first_seen": "2026-11-01"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/10/17/south-dakota-no-kings-events-emphasize-advance-voting/",
    "title": "South Dakota No Kings events emphasize advance voting",
    "slug": "south-dakota-searchlight-south-dakota-no-kings-events-emphasize-advance-voting",
@@ -528,6 +498,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "f8b7c0854ab2",
+   "date": "2026-10-17",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-pheasant-hunting-season/",
+   "title": "Explainer: What to know about the 2026 South Dakota pheasant hunting season",
+   "slug": "sd-newswatch-explainer-what-to-know-about-the-2026-south-dakota-pheasant-hunting",
+   "published": "2026-10-17",
+   "byline": "Scott Waltman",
+   "description": "Opening day is today, and it's expected bird numbers will be high after a couple of years of mostly excellent nesting conditions across the state.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "0ba548636212",
    "date": "2026-10-17",
    "_first_seen": "2026-11-01"
   },
@@ -1147,6 +1132,21 @@
    "_first_seen": "2026-11-02"
   },
   {
+   "url": "https://southdakotasearchlight.com/2026/11/02/south-dakotans-set-to-decide-races-for-governor-congress-legislature-and-4-ballot-questions/",
+   "title": "South Dakotans set to decide races for governor, Congress, Legislature and 4 ballot questions",
+   "slug": "south-dakota-searchlight-south-dakotans-set-to-decide-races-for-governor-and-4",
+   "published": "2026-11-02",
+   "byline": "South Dakota Searchlight staff",
+   "description": "Tuesday is Election Day in South Dakota, with races for state and legislative offices, four statewide ballot questions, and a variety of local races and questions. Nationally, control of both chambers of Congress is up for grabs, with implications for South Dakota Republican John Thune’s status as U.S. Senate majority leader. Polls are open from [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "28c9fd1539e6",
+   "date": "2026-11-02",
+   "_first_seen": "2026-11-03"
+  },
+  {
    "url": "https://southdakotasearchlight.com/2026/11/02/rural-south-dakotas-growth-strategy-has-to-start-under-a-roof/",
    "title": "Commentary: Rural South Dakota’s growth strategy has to start under a roof",
    "slug": "south-dakota-searchlight-commentary-rural-south-dakotas-growth-strategy-has-to-a",
@@ -1160,6 +1160,21 @@
    "id": "5f3bf1ee01e9",
    "date": "2026-11-02",
    "_first_seen": "2026-11-02"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-general-election-what-to-know/",
+   "title": "What to know for Tuesday's general election",
+   "slug": "sd-newswatch-what-to-know-for-tuesday-s-general-election",
+   "published": "2026-11-03",
+   "byline": "Molly Wetsch",
+   "description": "A snapshot of the election before the midterm, including voter registration numbers, absentee ballots cast and details on election observers.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "2b8ac8c3e420",
+   "date": "2026-11-03",
+   "_first_seen": "2026-11-03"
   }
  ]
 }

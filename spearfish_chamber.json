@@ -3,8 +3,8 @@
  "name": "Spearfish Chamber",
  "kind": "event",
  "url": "https://business.spearfishchamber.org/events/calendar/",
- "fetched_at": "2026-11-02T13:57:01-07:00",
- "count": 47,
+ "fetched_at": "2026-11-03T10:51:24-07:00",
+ "count": 48,
  "records": [
   {
    "url": "https://business.spearfishchamber.org/events/details/spearfish-city-council-meeting-11-02-2026-9840",
@@ -489,6 +489,28 @@
    "date": "2026-11-19",
    "event_category": "community",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://business.spearfishchamber.org/events/details/he-sapa-poetry-history-and-storytelling-30907",
+   "title": "He Sapa: Poetry, History, and Storytelling",
+   "slug": "he-sapa-poetry-history-and-storytelling",
+   "start_dt": "2026-11-19 6:00 PM MST",
+   "end_dt": "2026-11-19 8:00 PM MST",
+   "location": "High Plains Western Heritage Center and Museum 825 Heritage Dr. Spearfish, SD 57783",
+   "fees": "Free Admission",
+   "description": "Join us at the High Plains Western Heritage Center on Thursday, November 19 at 6 pm for “He Sapa: Poetry, History, and Storytelling”. Presented by Henry's Books Foundation Community Hisotry Series. Celebrate the sacred spirituality of our Black Hills home with local experts including Robert Bordeaux, Hilary Jackson, Geri Gutwein, Rosie Sprague. Moderated by Kelly Kirk. This event is free to the public. The Henry’s Books Foundation will be sponsoring books for all who attend!",
+   "website": "https://www.westernheritagecenter.com/upcoming-events",
+   "record_type": "event",
+   "source_label": "Spearfish Chamber",
+   "kind": "event",
+   "source": "spearfish_chamber",
+   "id": "726377097959",
+   "start": "2026-11-19T18:00:00-07:00",
+   "end": "2026-11-19T20:00:00-07:00",
+   "all_day": false,
+   "date": "2026-11-19",
+   "event_category": "community",
+   "_first_seen": "2026-11-03"
   },
   {
    "url": "https://business.spearfishchamber.org/events/details/art-of-silversmithing-11-22-2026-30846",

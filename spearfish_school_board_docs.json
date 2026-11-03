@@ -3,8 +3,8 @@
  "name": "Spearfish School Board",
  "kind": "document",
  "url": "https://www.spearfish.k12.sd.us/documents/board-of-education/board-meeting-agendas/25745609",
- "fetched_at": "2026-11-02T13:56:59-07:00",
- "count": 16,
+ "fetched_at": "2026-11-03T10:51:18-07:00",
+ "count": 14,
  "records": [
   {
    "url": "https://files-backend.assets.thrillshare.com/./hdnhzs82oie5yz2h6c0qjx61e83x?disposition=inline",
@@ -56,34 +56,6 @@
    "kind": "document",
    "source": "spearfish_school_board_docs",
    "id": "256785721270",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/5977/Ssd/77ec0876-2a8f-4336-aa08-bd3440df7d49/August-4%2C-2026-Special-School-Board-Meeting-Agenda.pdf?disposition=inline",
-   "title": "August 4, 2026 Special School Board Meeting Agenda",
-   "slug": "spearfish-board-agenda-august-4-2026-special-school-board-meeting-agenda",
-   "published": "2026-08-04",
-   "asset_type": "agenda",
-   "record_type": "document",
-   "source_label": "Spearfish School Board",
-   "kind": "document",
-   "source": "spearfish_school_board_docs",
-   "id": "2a22a1116c18",
-   "date": "2026-08-04",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/5977/Ssd/4208c445-2e00-4994-8153-08aae87e34ee/August-4%2C-2026-Special-School-Board-Meeting-Minutes.pdf?disposition=inline",
-   "title": "August 4, 2026 Special School Board Meeting Minutes",
-   "slug": "spearfish-board-minutes-august-4-2026-special-school-board-meeting-minutes",
-   "published": "2026-08-04",
-   "asset_type": "minutes",
-   "record_type": "document",
-   "source_label": "Spearfish School Board",
-   "kind": "document",
-   "source": "spearfish_school_board_docs",
-   "id": "9e4fb22de770",
-   "date": "2026-08-04",
    "_first_seen": "2026-11-01"
   },
   {

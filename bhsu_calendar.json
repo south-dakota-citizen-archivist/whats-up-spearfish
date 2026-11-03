@@ -3,42 +3,9 @@
  "name": "BHSU Campus Calendar",
  "kind": "event",
  "url": "https://bhsu.edu/campus-calendar.html",
- "fetched_at": "2026-11-02T13:56:08-07:00",
- "count": 29,
+ "fetched_at": "2026-11-03T10:50:12-07:00",
+ "count": 28,
  "records": [
-  {
-   "event_id": "dcf2b52d-4df8-442a-850a-aaebd7e284ca",
-   "url": "https://bhsu.edu/campus-calendar.html#event-details/dcf2b52d-4df8-442a-850a-aaebd7e284ca",
-   "title": "Friends of Music Fall Fundraiser Event",
-   "slug": "friends-of-music-fall-fundraiser-event",
-   "description": "Friends of Music Fall Fundraiser Event",
-   "start_dt": "2026-11-01T22:00",
-   "end_dt": "2026-11-02T00:00",
-   "location": "High Plains Western Heritage Center",
-   "image_url": "",
-   "image_alt": "",
-   "organizer": "",
-   "tags": [
-    "Alumni Event",
-    "Community Event",
-    "BHSU Event",
-    "Concert"
-   ],
-   "featured": false,
-   "ticket_url": "",
-   "category": "Campus Calendar/Events",
-   "record_type": "event",
-   "source_label": "BHSU Campus Calendar",
-   "kind": "event",
-   "source": "bhsu_calendar",
-   "id": "43f69358b394",
-   "start": "2026-11-01T15:00:00-07:00",
-   "end": "2026-11-01T17:00:00-07:00",
-   "all_day": false,
-   "date": "2026-11-01",
-   "event_category": "campus",
-   "_first_seen": "2026-11-01"
-  },
   {
    "event_id": "c62d108e-bc49-4117-81cd-5778c064de92",
    "url": "https://bhsu.edu/campus-calendar.html#event-details/c62d108e-bc49-4117-81cd-5778c064de92",
@@ -183,8 +150,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
@@ -216,8 +183,8 @@
    "image_alt": "Flyer for event",
    "organizer": "Kaitlin Palmer",
    "tags": [
-    "Alumni Event",
     "Yellow Jacket Dining",
+    "Alumni Event",
     "BHSU Event",
     "Student Life",
     "Academics",
@@ -251,8 +218,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
@@ -346,8 +313,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
@@ -379,8 +346,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
@@ -475,8 +442,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
@@ -512,8 +479,8 @@
     "Community Event",
     "Academics",
     "College of Liberal Arts",
-    "Career Development",
     "College of Business and Natural Sciences",
+    "Career Development",
     "University Advancement"
    ],
    "featured": false,
@@ -678,8 +645,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
@@ -777,8 +744,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
@@ -841,8 +808,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event"
    ],
    "featured": false,
@@ -873,8 +840,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
