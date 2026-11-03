@@ -243,3 +243,67 @@ def test_import_refuses_a_data_folder_without_planning_records(tmp_path, monkeyp
     assert import_parcels.main(["--snapshot", str(snapshot)]) == 1
     assert "WUS_DATA_DIR" in capsys.readouterr().out
     assert not (data / "parcel_links.json").exists()
+
+
+# ── agenda wording vs. the county's (the cases that went wrong or missed) ─────
+
+
+@pytest.fixture
+def county():
+    return Parcels(
+        [
+            _parcel("THOMSON", "", "THOMSON'S ADDITION LOT 2 BLK 1 PLAT 1992-06217A"),
+            _parcel("DV6", "", "DELLA VECCHIA ADDITION TIF #4 LOT 6 OF LOT 1R BLK 3 PLAT 2019-05432"),
+            _parcel("OT65", "", "ORIGINAL TOWN SPEARFISH LOTS 9, 10, 11 & 12 BLK 65 PLAT BK1 PG73"),
+            _parcel("OTPART", "", "ORIGINAL TOWN SPEARFISH E 65' OF LOTS 11 & 12 BLK 22 PLAT BK1 PG73"),
+            _parcel("GB", "", "REVISED GOLDEN BELT ADDITION LOTS 30 & 31 BLK 6 PLAT BK2 PG88I"),
+            _parcel("SH", "", "SANDSTONE HILLS ADDITION LOT 18H-1 BLK 14 PLAT 2015-05631"),
+            _parcel("RESERVE", "", "THE RESERVE ON HIGGINS CREEK LOT 3C BLK 14 PLAT 2018-04584"),
+            _parcel("VOORHEES", "", "VOORHEES ADDITION TRACT D PLAT 1996-01100"),
+            _parcel("SOUTHSLOPE", "", "SOUTH SLOPE S/D LOT 6 PLAT 1979-02184"),
+            _parcel("OAKDRAW", "", "OAK DRAW S/D TRACT A PLAT 2012-05297"),
+            _parcel("QTR", "", "W1/2 NE1/4 NW1/4", str="24-006-02"),
+            _parcel("PIECE", "", "E1/2 SE1/4 22-007-02", str="22-007-02"),
+            _parcel("NORTHAVE", "1300 NORTH AVE, SPEARFISH, SD 57783"),
+        ]
+    )
+
+
+@pytest.mark.parametrize(
+    "text, pid",
+    [
+        ("Final Plat for Lot 2 of Block 1 of Thomson Addition", "THOMSON"),  # county: THOMSON'S
+        ("Lot 6, Della Vecchia Addition", "DV6"),  # TIF #4 in the county's name; no block given
+        ("Original Town Lots 9, 10, 11 & 12 Blk 65", "OT65"),  # subdivision first, a list of lots
+        ("Lots 11 & 12, Block 22, Original Town", "OTPART"),  # county: "ORIGINAL TOWN SPEARFISH E 65' OF"
+        ("Lots 30 & 31, Block 6, Golden Belt Addition 702 E Grant Street", "GB"),  # county: REVISED …
+        ("city owned lot 18H-1, block 14, sandstone addition", "SH"),  # county: SANDSTONE HILLS
+        ("Tract D of the Voorhees Addition", "VOORHEES"),
+    ],
+)
+def test_by_lot_reads_agenda_wording(county, text, pid):
+    assert county.by_lot(text) == pid
+
+
+def test_named_subdivision_and_section(county):
+    assert county.by_named_lot("Lot 3C, Block 14 of The Reserve on Higgins Creek") == "RESERVE"
+    assert county.by_section("W½NE¼NW¼, Section 24, T6N, R2E") == "QTR"
+    assert county.by_address("1300 N Avenue") == "NORTHAVE"  # the street is North Avenue
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        "Lots 1-8 of the Western Slope Subdivision east of Sapphire Lane",  # not SOUTH SLOPE S/D
+        "a sketch plat of Lots A & B of the Oak Hills Subdivision",  # not OAK DRAW S/D tract A
+        "Lot 8A of Centennial Vista Subdivision",  # unknown subdivision: no guess
+        "Lot TR.C, McGuigan Ranch Addition",  # tract C, not a lot named "McGuigan"
+    ],
+)
+def test_no_false_lot_matches(county, text):
+    assert county.by_lot(text) is None and county.by_named_lot(text) is None
+
+
+def test_a_section_quarter_must_match_exactly(county):
+    # the agenda's W1/2 of the E1/2 isn't the county's E1/2 SE1/4
+    assert county.by_section("W1/2 of the E1/2 of Section 22, T7N, R2E, BHM") is None

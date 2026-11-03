@@ -143,7 +143,8 @@ def street_address(*texts: str) -> str:
     """The first street address ('1407 Charles Street') found in the given texts."""
     for t in texts:
         if m := _STREET_RE.search(t or ""):
-            return m.group(0).rstrip(".")
+            # "Lot G4 6845 St Onge Road" leaves a stray number in front
+            return re.sub(r"^\d{1,2}\s+(?=\d{3,}\s)", "", m.group(0)).rstrip(".")
     return ""
 
 

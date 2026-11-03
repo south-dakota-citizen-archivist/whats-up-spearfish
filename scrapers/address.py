@@ -97,6 +97,9 @@ def _parse_one(s: str) -> Address | None:
     if not name:
         return None
     post_type = _abbrev_type(tags.get("StreetNamePostType", ""))
+    # "1300 N Avenue" is North Avenue: a name that's only a direction is spelled out, as the county writes it
+    if name in ("N", "S", "E", "W") and post_type:
+        name = {"N": "NORTH", "S": "SOUTH", "E": "EAST", "W": "WEST"}[name]
     pre_dir = _DIRS.get(tags.get("StreetNamePreDirectional", ""), "")
     post_dir = _DIRS.get(tags.get("StreetNamePostDirectional", ""), "")
     # "540 32ND ST GA OFFICE": usaddress files "ST GA OFFICE" as a place name; recover the street type
