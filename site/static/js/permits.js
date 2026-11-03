@@ -52,6 +52,9 @@ document.addEventListener("alpine:init", () => {
     });
   }
 
+  // Plain words for where a record came from
+  const KIND = { permit: "Building permit", app: "Permit application", pc: "Planning Commission" };
+
   // recentUrl: places active in the past two years (what the page opens on);
   // allUrl: every place, fetched when a reader searches or looks further back
   Alpine.data("permits", (recentUrl, allUrl, latestReport, outlinesUrl, beacon) => {
@@ -61,6 +64,8 @@ document.addEventListener("alpine:init", () => {
     let youAreHere = null;
     let ring = null; // highlight around the selected site
     let outlines = null; // parcel outlines, loaded the first time a parcel is selected
+    let listScroll = 0; // where the reader was in the list, to return there from a place
+    let sinceBefore = null; // the time period before a search widened it to every year
 
     return {
       sites: [],
@@ -69,23 +74,24 @@ document.addEventListener("alpine:init", () => {
       loadingAll: false,
       failed: false, // the records didn't load; nothing else on the page can work
       error: "",
-      q: "",
+      errorHelp: "",
+      canUseCenter: false, // offer "the middle of the map" when location fails
+      draft: "", // what's in the search box; nothing happens until Search
+      query: "", // the search in effect
       since: "2",
+      type: "all",
       categories: CATEGORIES,
-      show: { r: true, c: true, l: true, o: true },
+      view: "list", // phones: "list" or "map" (large screens show both)
       here: null,
+      hereLabel: "",
       locating: false,
       selected: null,
-      open: false, // phones: the bottom sheet pulled up to show the list
-      swipeFrom: null, // where a swipe on the sheet's handle began
-      errorHelp: "",
-      canUseCenter: false, // offer "places near the middle of the map" when location fails
-      hereLabel: "",
       limit: 40, // how many places the list shows before "Show more"
 
       async init() {
-        // The map comes up right away, under a loading notice; the dots follow the records.
+        // The map comes up right away; the dots follow the records.
         this.$nextTick(() => this.makeMap());
+        window.addEventListener("resize", () => map?.invalidateSize());
         try {
           const r = await fetch(recentUrl);
           if (!r.ok) throw new Error(r.status);
@@ -108,7 +114,16 @@ document.addEventListener("alpine:init", () => {
             if (old) this.select(old);
           });
         });
-        this.watchFilters();
+        for (const f of ["since", "type"]) {
+          this.$watch(f, () => {
+            this.limit = 40;
+            if (this.since === "5" || this.since === "all") this.loadAll();
+            this.draw();
+          });
+        }
+        // the map shows what the list shows
+        this.$watch("query", () => this.draw());
+        this.$watch("here", () => this.draw());
       },
 
       makeMap() {
@@ -125,33 +140,51 @@ document.addEventListener("alpine:init", () => {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         }).addTo(map);
         markers = L.layerGroup().addTo(map);
-        // a tap on open map (not a dot) tucks the sheet away, so the map is always one tap from full view
-        map.on("click", () => {
-          if (large()) return;
-          this.open = false;
-          if (this.selected) this.back();
-        });
       },
 
-      watchFilters() {
-        this.$watch("since", (v) => {
-          this.limit = 40;
-          if (v === "5" || v === "all") this.loadAll();
-          this.draw();
-        });
-        this.$watch("show", () => {
-          this.limit = 40;
-          this.draw();
-        }, { deep: true });
-        this.$watch("q", () => {
-          this.limit = 40;
-          if (this.q.trim()) {
-            this.loadAll();
-            this.open = true;
-          }
-          const pts = this.q.trim() ? this.results.filter((s) => s.lat != null).map((s) => [s.lat, s.lon]) : [];
-          if (map && pts.length) map.flyToBounds(pts, { maxZoom: 17, padding: [30, 30], ...glide() });
-        });
+      // Phones: list or map. A map that was hidden needs to measure itself once it shows.
+      showView(v) {
+        this.view = v;
+        if (v === "map") this.$nextTick(() => map?.invalidateSize());
+        // keep the List | Map switch in sight (the page's scroll padding clears the pinned menu)
+        const bar = document.getElementById("results-summary");
+        if (bar && bar.getBoundingClientRect().top < 64) bar.scrollIntoView({ block: "start" });
+      },
+
+      // Search: only when the reader asks, so the map doesn't jump around while they type
+      async search() {
+        this.query = this.draft.trim();
+        this.here = null;
+        this.clearHere();
+        this.back(false);
+        this.limit = 40;
+        if (!this.query) return this.clear();
+        // someone looking up an address wants its whole history: search every year (Clear puts it back)
+        if (this.since !== "all") {
+          sinceBefore = this.since;
+          this.since = "all";
+        }
+        await this.loadAll();
+        const pts = this.matches.filter((s) => s.lat != null).map((s) => [s.lat, s.lon]);
+        if (map && pts.length) {
+          map.invalidateSize();
+          map.fitBounds(pts, { maxZoom: 17, padding: [30, 30], ...glide() });
+        }
+      },
+
+      clear() {
+        if (this.query && sinceBefore) this.since = sinceBefore;
+        sinceBefore = null;
+        this.draft = this.query = "";
+        this.here = null;
+        this.clearHere();
+        this.back(false);
+        this.limit = 40;
+      },
+
+      clearHere() {
+        if (youAreHere) youAreHere.remove();
+        youAreHere = null;
       },
 
       // Swap in every place, once. If it fails, the recent ones stay put.
@@ -181,6 +214,10 @@ document.addEventListener("alpine:init", () => {
         return d.toISOString().slice(0, 10);
       },
 
+      periodLabel() {
+        return { latest: "the latest permit report", 1: "the past year", 2: "the past 2 years", 5: "the past 5 years", all: "all years" }[this.since];
+      },
+
       // Records that fall in the chosen time period
       inPeriod(r) {
         if (this.since === "latest") return r.src === "permit" && (r.d || "").startsWith(latestReport);
@@ -194,44 +231,51 @@ document.addEventListener("alpine:init", () => {
         return (recs.find((r) => r.c && r.c !== "o") || recs[0] || s.r[0]).c || "o";
       },
 
+      // Places with a record in the period, of the chosen kind
       inRange() {
-        return this.sites.filter((s) => s.r.some((r) => this.inPeriod(r)) && this.show[this.category(s)]);
+        return this.sites.filter((s) => s.r.some((r) => this.inPeriod(r)) && (this.type === "all" || this.category(s) === this.type));
       },
 
       color(s) {
         return CATEGORIES[this.category(s)].color;
       },
 
+      // The map shows exactly what the list does (all of it, not just the first page)
       draw() {
         if (!markers) return;
         markers.clearLayers();
-        for (const s of this.inRange()) {
+        let n = 0;
+        for (const s of this.matches) {
           if (s.lat == null) continue;
+          n++;
           L.circleMarker([s.lat, s.lon], { radius: 6, weight: 1, color: "#1c1917", fillColor: this.color(s), fillOpacity: 0.9 })
             .on("click", (e) => {
-              L.DomEvent.stopPropagation(e); // a dot, not open map
+              L.DomEvent.stopPropagation(e);
               this.pick(s);
             })
             .addTo(markers);
         }
+        this.$refs.map.dataset.dots = n; // the dots are drawn on a canvas; the count, for tests and the curious
       },
 
       get results() {
         return this.matches.slice(0, this.limit);
       },
 
-      // Every place matching the search, location or filters, in list order
+      // Every place matching the filters, and the search or location if there is one, in list order
       get matches() {
-        const q = this.q.trim().toLowerCase();
+        let pool = this.inRange();
+        const q = this.query.toLowerCase();
         if (q) {
           const words = q.split(/\s+/);
-          return this.sites
-            .filter((s) => {
-              const hay = (s.a + " " + (s.own || "") + " " + (s.pid || "") + " " + s.r.map((r) => [r.no, r.t, r.con, r.who, r.own, r.desc, r.loc, r.legal].join(" ")).join(" ")).toLowerCase();
-              return words.every((w) => hay.includes(w));
-            });
+          pool = pool.filter((s) => {
+            const hay = (s.a + " " + (s.own || "") + " " + (s.pid || "") + " " + s.r.map((r) => [r.no, r.t, r.con, r.who, r.own, r.desc].join(" ")).join(" ")).toLowerCase();
+            return words.every((w) => hay.includes(w));
+          });
+          // places whose address has every word come first ("main st": Main Street before a contractor named Mainline)
+          const inAddress = (s) => words.every((w) => s.a.toLowerCase().includes(w));
+          pool = [...pool.filter(inAddress), ...pool.filter((s) => !inAddress(s))];
         }
-        const pool = this.inRange();
         if (this.here) {
           return pool
             .filter((s) => s.lat != null)
@@ -239,6 +283,53 @@ document.addEventListener("alpine:init", () => {
             .sort((a, b) => a.dist - b.dist);
         }
         return pool;
+      },
+
+      summary() {
+        const n = this.matches.length;
+        const places = `${n.toLocaleString()} ${n === 1 ? "place" : "places"}`;
+        if (this.query) return `${places} match “${this.query}”`;
+        if (this.here) return `${places}, closest to ${this.hereLabel} first`;
+        if (this.since === "latest") return `${places} in the latest permit report`;
+        return `${places} · ${this.periodLabel()}, newest first`;
+      },
+
+      // "714 North 5th Street, Spearfish, SD 57783" → "714 North 5th Street": every place here is in or near town
+      placeName(s) {
+        return (s.a || "").replace(/,\s*Spearfish,?\s*SD\s*\d{5}(-\d{4})?$/i, "");
+      },
+
+      // One line under a place in the list: its latest activity
+      latestLine(s) {
+        const r = s.r[0];
+        const what = r.src === "pc" ? "Planning Commission meeting" : r.t;
+        const when = s.lp ? this.day((s.last || "").slice(0, 7)) : this.day(s.last);
+        return [what, when, s.r.length > 1 ? `${s.r.length} records` : ""].filter(Boolean).join(" · ");
+      },
+
+      kind(r) {
+        return KIND[r.src] || "Record";
+      },
+
+      // The one or two facts worth reading first
+      facts(r) {
+        if (r.src === "pc") return "";
+        const bits = [];
+        if (r.s) bits.push(r.s);
+        if (r.v) bits.push(this.money(r.v));
+        if (r.con) bits.push(`Contractor: ${r.con}`);
+        return bits.join(" · ");
+      },
+
+      // Everything else, behind "Details"
+      details(r) {
+        const out = [];
+        if (r.no) out.push([r.src === "app" ? "Application" : "Permit number", r.no]);
+        if (r.who && r.who !== r.own) out.push(["Applicant", r.who]);
+        if (r.own) out.push(["Owner", r.own + (r.own_c ? ` · ${r.own_c}` : "")]);
+        if (r.con_c) out.push(["Contractor contact", r.con_c]);
+        if (r.desc) out.push(["Description", r.desc]);
+        return out;
       },
 
       // Where am I? Ask the browser, explain plainly if it can't say, and offer the map's middle instead.
@@ -287,13 +378,13 @@ document.addEventListener("alpine:init", () => {
       },
 
       goHere(point, label) {
-        this.q = "";
-        this.back();
+        this.draft = this.query = "";
+        this.back(false);
+        this.clearHere();
         this.here = point;
         this.hereLabel = label;
-        this.open = true;
-        if (youAreHere) youAreHere.remove();
-        youAreHere = null;
+        this.limit = 40;
+        map.invalidateSize();
         map.flyTo([point.lat, point.lon], Math.max(map.getZoom(), 16), glide());
       },
 
@@ -303,65 +394,32 @@ document.addEventListener("alpine:init", () => {
         this.canUseCenter = offerCenter && !!map;
       },
 
-      // Phones: tap the handle to open or close the sheet, or swipe it up or down
-      toggleSheet() {
-        if (Date.now() - (this._swiped || 0) < 400) return;
-        if (this.open || this.selected) {
-          this.open = false;
-          if (this.selected) this.back();
-        } else this.open = true;
-      },
-
-      swipeSheet(y) {
-        if (this.swipeFrom == null) return;
-        const dy = y - this.swipeFrom;
-        this.swipeFrom = null;
-        if (Math.abs(dy) < 25) return; // a tap; the click handler takes it
-        const up = dy < 0;
-        if (up !== (this.open || !!this.selected)) this.toggleSheet();
-        this._swiped = Date.now(); // the click that follows a swipe shouldn't undo it
-      },
-
-      sheetTitle() {
-        const n = this.matches.length;
-        const places = `${n.toLocaleString()} ${n === 1 ? "place" : "places"}`;
-        if (this.q.trim()) return `${places} match “${this.q.trim()}”`;
-        if (this.here) return `Closest to ${this.hereLabel}`;
-        if (this.since === "latest") return `${places} in the latest permit report`;
-        return `${places}, most recent first`;
-      },
-
-      // Chosen from the list, a search result or a shared link: glide the map there.
+      // Chosen from the list or a shared link: its history replaces the list, and the map goes there.
       select(s) {
+        listScroll = window.scrollY;
         this.show_(s);
-        this.focusMap(s);
+        this.view = "list";
+        if (large()) this.focusMap(s);
         this.$nextTick(() => {
-          this.$refs.sheet?.scrollTo(0, 0);
+          if (this.$refs.panel.getBoundingClientRect().top < 0) this.$refs.panel.scrollIntoView();
           // keyboard and screen-reader users land on the details they asked for
           this.$refs.detailTitle?.focus({ preventScroll: true });
         });
       },
 
-      // Tapped on the map: open the details in the sheet; the reader is already looking at the spot.
+      // Tapped on the map. Large screens show the history beside it; phones, a card under the map.
       pick(s) {
+        if (large()) return this.select(s);
+        listScroll = 0;
         this.show_(s);
-        this.$nextTick(() => this.$refs.sheet?.scrollTo(0, 0));
       },
 
-      // Center a place in the part of the map the sheet doesn't cover.
       focusMap(s) {
         if (s.lat == null || !map) return;
-        const zoom = Math.max(map.getZoom(), 16);
-        let target = L.latLng(s.lat, s.lon);
-        const sheet = this.$refs.sheet?.parentElement;
-        if (!large() && sheet) {
-          // the sheet will cover the bottom ~60%; aim the spot at the middle of what's left
-          const lift = (this.$refs.map.clientHeight * 0.62) / 2;
-          target = map.unproject(map.project(target, zoom).add([0, lift]), zoom);
-        } else if (large()) {
-          target = map.unproject(map.project(target, zoom).subtract([200, 0]), zoom); // clear of the side panel
-        }
-        map.flyTo(target, zoom, glide());
+        this.$nextTick(() => {
+          map.invalidateSize();
+          map.flyTo([s.lat, s.lon], Math.max(map.getZoom(), 16), glide());
+        });
       },
 
       show_(s) {
@@ -397,14 +455,19 @@ document.addEventListener("alpine:init", () => {
         return beacon + encodeURIComponent(s.pid);
       },
 
-      // Back from a place to the list
-      back() {
+      // Back from a place to the list, where the reader left it
+      back(restore = true) {
         const was = this.selected;
         this.selected = null;
         if (ring) ring.remove();
         ring = null;
+        if (!was) return;
         history.replaceState(null, "", location.pathname);
-        if (was) this.$nextTick(() => this.$refs.sheet?.querySelector("li button")?.focus({ preventScroll: true }));
+        if (!restore) return;
+        this.$nextTick(() => {
+          window.scrollTo({ top: listScroll });
+          [...this.$refs.panel.querySelectorAll("li button")].find((b) => b.textContent.includes(this.placeName(was)))?.focus({ preventScroll: true });
+        });
       },
 
       distance(a, b) {

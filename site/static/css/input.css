@@ -63,5 +63,3 @@ a[target="_blank"]::after {
 /* Small screens pin the section menu to the top; keep focused and linked-to things out from under it */
 @media (max-width: 1023px) { html { scroll-padding-top: 3.5rem; } }
 
-/* Permits map on phones: keep the map credit above the collapsed list sheet */
-@media (max-width: 1023px) { .permits-map .leaflet-bottom { bottom: 4.25rem; } }

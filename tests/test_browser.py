@@ -403,21 +403,47 @@ def test_old_menu_link_explains(open_page):
 # ── permits ──────────────────────────────────────────────────────────────────
 
 
-def test_permits_open_with_recent_places_and_fetch_the_rest_on_search(open_page):
-    fetched = []
-    page = open_page("permits/", wait="#sheet-body li button")
-    page.on("request", lambda r: r.url.endswith(".json") and fetched.append(r.url.rsplit("/", 1)[1]))
-    assert page.locator("#sheet-body li button").all_inner_texts()[0].startswith("440 Heritage")
-    assert page.locator("#sheet-body li button", has_text="Old Mill").count() == 0  # 2015: not loaded yet
+PLACES = "ul[aria-label=Places] li button"
 
-    page.fill("#pq", "old mill")
-    page.wait_for_selector("#sheet-body li button:has-text('Old Mill')")
-    assert "sites.json" in fetched
-    page.locator("#sheet-body li button", has_text="Old Mill").focus()
+
+def test_permits_search_waits_for_the_search_button(open_page):
+    fetched = []
+    page = open_page("permits/", wait=PLACES)
+    page.on("request", lambda r: r.url.endswith(".json") and fetched.append(r.url.rsplit("/", 1)[1]))
+    assert page.locator(PLACES).all_inner_texts()[0].startswith("440 Heritage")
+    assert page.locator(PLACES, has_text="Old Mill").count() == 0  # 2015: not loaded yet
+    zoom = page.locator(".permits-map").get_attribute("data-zoom")
+
+    page.fill("#pq", "old mill")  # typing alone changes nothing: no fetch, no new list, no map move
+    page.wait_for_timeout(500)
+    assert "sites.json" not in fetched and page.locator(PLACES).all_inner_texts()[0].startswith("440 Heritage")
+    assert page.locator(".permits-map").get_attribute("data-zoom") == zoom
+
+    page.keyboard.press("Enter")
+    page.wait_for_selector(PLACES + ":has-text('Old Mill')")  # from 2015: a search covers every year
+    assert "sites.json" in fetched and page.locator("#since").input_value() == "all"
+    page.locator(PLACES, has_text="Old Mill").focus()
     page.keyboard.press("Enter")
     page.wait_for_timeout(300)
-    assert page.evaluate("document.activeElement.tagName") == "H2"  # focus moved to the details
-    assert "15-007" in page.locator("section[x-ref=detail]").inner_text()
+    assert page.evaluate("document.activeElement.id") == "place-name"  # focus moved to its history
+    assert "15-007" in page.locator("section[aria-labelledby=place-name]").text_content()  # behind "Details"
+    page.get_by_role("button", name="Back to results").click()
+    assert page.locator(PLACES, has_text="Old Mill").count() == 1
+    page.get_by_role("button", name="Clear").click()  # and the time period goes back to what it was
+    assert page.locator("#since").input_value() == "2" and page.locator("#pq").input_value() == ""
+
+
+def test_permits_filters_drive_the_list_and_the_map(open_page):
+    page = open_page("permits/", wait=PLACES)
+    everything = page.locator("#results-summary").inner_text()
+    dots = page.locator(".permits-map")
+    assert int(dots.get_attribute("data-dots")) >= 1
+    page.select_option("#what", "c")  # businesses: none in the past 2 years here
+    page.wait_for_timeout(200)
+    assert page.locator("#results-summary").inner_text().startswith("0 places") != everything.startswith("0")
+    assert page.get_by_text("Nothing matches").is_visible()
+    # and the map shows the same: nothing
+    assert dots.get_attribute("data-dots") == "0"
 
 
 def test_permits_say_so_when_records_dont_load(open_page):
@@ -463,15 +489,14 @@ def test_community_chart_and_pets(open_page):
     assert page.locator("#pets li:visible").count() == 20
 
 
-def test_permits_location_refused_explains_and_offers_the_map(open_page, browser, site_url):
-    # no location permission granted; on a phone the list waits behind the sheet's handle
-    page = open_page("permits/", viewport=PHONE, wait="button[aria-controls=sheet-body]:has-text('most recent first')")
+def test_permits_location_refused_explains_and_offers_the_map(open_page):
+    page = open_page("permits/", viewport=PHONE, wait=PLACES)  # no location permission granted
     page.get_by_role("button", name="Near me").click()
     alert = page.get_by_role("alert")
     alert.wait_for()
     assert "Location sharing is off" in alert.inner_text() and "Settings" in alert.inner_text()
-    page.get_by_role("button", name="Show places near the middle of the map instead").click()
-    assert "Closest to the middle of the map" in page.locator("button[aria-controls=sheet-body]").inner_text()
+    page.get_by_role("button", name="Use the middle of the map instead").click()
+    assert "closest to the middle of the map" in page.locator("#results-summary").inner_text()
 
 
 def test_permits_map_shows_at_once_and_says_records_are_loading(browser, site_url):
@@ -482,12 +507,12 @@ def test_permits_map_shows_at_once_and_says_records_are_loading(browser, site_ur
     page.route("**/recent.json", lambda r: held.append(r))  # the records are slow to come
     page.goto(site_url + "permits/")
     page.wait_for_selector(".permits-map[data-zoom]")  # the map is up without them
-    notice = page.get_by_role("status").filter(has_text="Loading permits and applications")
-    assert notice.is_visible()
+    summary = page.locator("#results-summary")
+    assert "Loading permits and applications" in summary.inner_text()
     for r in held:
         r.continue_()
-    notice.wait_for(state="hidden")
-    page.locator("#sheet-body li button").first.wait_for()
+    page.wait_for_function("!document.querySelector('#results-summary').innerText.includes('Loading')")
+    page.locator(PLACES).first.wait_for()
     ctx.close()
 
 
@@ -497,21 +522,28 @@ def test_permits_map_double_tap_zooms_one_level(browser, site_url):
     page = ctx.new_page()
     page.route(lambda url: not url.startswith(site_url.split("/whats-up")[0]), lambda r: r.abort())
     page.goto(site_url + "permits/")
-    page.wait_for_selector(".permits-map[data-zoom]")
+    page.wait_for_selector(".permits-map[data-zoom]", state="attached")  # phones open on the list
+    page.get_by_role("button", name="Map", exact=True).click()
+    box = page.locator(".permits-map").bounding_box()
+    x, y = box["x"] + 40, box["y"] + box["height"] / 2
     start = int(page.locator(".permits-map").get_attribute("data-zoom"))
-    page.touchscreen.tap(60, 560)
+    page.touchscreen.tap(x, y)
     page.wait_for_timeout(80)
-    page.touchscreen.tap(60, 560)
+    page.touchscreen.tap(x, y)
     page.wait_for_function(f"document.querySelector('.permits-map').dataset.zoom != '{start}'")
     page.wait_for_timeout(600)  # a second (browser) zoom would land by now
     assert int(page.locator(".permits-map").get_attribute("data-zoom")) == start + 1
     ctx.close()
 
 
-def test_permits_on_a_phone_is_one_screen(open_page):
-    # the page itself never scrolls, so swiping the list can't drag the map along
-    page = open_page("permits/", viewport=PHONE, wait=".permits-map[data-zoom]")
-    assert page.evaluate("document.documentElement.scrollHeight") <= PHONE["height"]
-    assert page.locator("footer").is_hidden()
-    page.locator("[aria-controls=sheet-body]").click()
-    assert "About this map" in page.locator("#sheet-body details summary").inner_text()
+def test_permits_on_a_phone_switch_between_list_and_map(open_page):
+    page = open_page("permits/", viewport=PHONE, wait=PLACES)
+    assert page.locator(".permits-map").is_hidden()  # the list first; the page scrolls like any other
+    page.locator(PLACES).first.click()
+    page.get_by_role("button", name="Show on map").click()
+    assert page.locator(".permits-map").is_visible()
+    assert page.locator("#place-name").is_hidden()  # the place's history makes way for the map
+    assert "440 Heritage" in page.get_by_role("button", name="See its history").locator("xpath=..").inner_text()
+    card = page.get_by_role("button", name="See its history")
+    card.click()
+    assert page.locator("#place-name").is_visible() and page.locator(".permits-map").is_hidden()
