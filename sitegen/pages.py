@@ -292,6 +292,7 @@ def meetings(site: Site) -> list[dict]:
                 "url": r.get("portal_url") or r["url"],
                 # the portal's player (the agenda beside the video), else the video file itself
                 "videos": [v] if (v := r.get("media_page") or r.get("media_url")) else [],
+                "join": r.get("join_url") or "",
                 "chapters": [
                     {
                         "title": c["title"],
@@ -333,7 +334,11 @@ def meetings(site: Site) -> list[dict]:
         m["docs"].append({"label": board_doc_label(r), "url": r["url"]})
     found = list(out.values())
     add_meeting_videos(found, site.get("public_meetings_youtube").records)
+    today = dates.today().isoformat()
     for m in found:
+        # a way to take part online, until the meeting's over
+        if m.get("join") and m["date"][:10] >= today and not m["videos"]:
+            m["docs"].append({"label": "Join on Zoom" if "zoom.us" in m["join"] else "Join online", "url": m["join"]})
         # the recording goes with the agenda and minutes: "Video", or "Video, part 1" …
         n = len(m["videos"])
         for i, u in enumerate(m["videos"], 1):

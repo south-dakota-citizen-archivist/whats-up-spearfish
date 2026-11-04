@@ -233,3 +233,15 @@ def test_city_paging_stops_at_meetings_older_than_the_site_keeps(monkeypatch):
     records = scraper.scrape()
     assert asked == [0, 15]  # the second page is all older than the window: no third page
     assert {r["event_id"] for r in records} == set(range(15))
+
+
+def test_a_zoom_link_is_a_way_to_join_not_a_recording():
+    from scrapers.sources.spearfish_city import SpearfishCity
+
+    event = {"id": 3407, "eventName": "Art in Public Places Advisory Board Meeting",
+             "startDateTime": "2026-11-04T16:00:00Z", "hasMedia": True, "mediaStreamPath": "",
+             "mediaSourcePathMp4": "", "externalMediaUrl": "https://us02web.zoom.us/j/83682178231",
+             "publishedFiles": [{"fileId": 1, "type": "Agenda", "name": "Agenda"}]}  # fmt: skip
+    rec = SpearfishCity()._event_to_records(event)[0]
+    assert rec["join_url"] == "https://us02web.zoom.us/j/83682178231"
+    assert rec["media_url"] == "" and rec["media_page"] == "" and rec["chapters"] == []

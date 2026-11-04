@@ -105,6 +105,7 @@ class SpearfishCity(BaseScraper):
         )
         location_str = ", ".join(address_parts)
 
+        recording = event.get("mediaStreamPath") or event.get("mediaSourcePathMp4") or ""
         base = {
             "event_id": event_id,
             "event_name": event.get("eventName", ""),
@@ -113,10 +114,13 @@ class SpearfishCity(BaseScraper):
             "location": location_str,
             "portal_url": portal_url,
             "has_media": event.get("hasMedia", False),
-            "media_url": event.get("mediaStreamPath") or event.get("mediaSourcePathMp4") or "",
-            # the portal's player, with the agenda beside the video
-            "media_page": f"{portal_url}/media" if event.get("hasMedia") else "",
-            "chapters": self._chapters(event_id) if event.get("hasMedia") else [],
+            "media_url": recording,
+            # the portal's player, with the agenda beside the video ('hasMedia' is also true for a
+            # meeting whose only media is a link to join it online, so a recording is what counts)
+            "media_page": f"{portal_url}/media" if recording else "",
+            "chapters": self._chapters(event_id) if recording else [],
+            # a link to take part online (Zoom), which the city posts with the meeting
+            "join_url": event.get("externalMediaUrl") or "",
             "record_type": "document",
             "source_label": "City of Spearfish",
         }
