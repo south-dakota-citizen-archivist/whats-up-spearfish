@@ -45,6 +45,22 @@
   {% endcall %}
 {% endmacro %}
 
+{# off season: one slim line at the bottom, like the city bids strip #}
+{% macro terry_peak_strip() %}
+  <section id="terry-peak" aria-labelledby="terry-peak-heading" class="lg:col-span-2 bg-white border border-stone-200 shadow-sm px-5 py-3 flex flex-wrap items-baseline gap-x-6 gap-y-1.5 text-sm">
+    <h2 id="terry-peak-heading" class="text-base font-bold text-stone-900">Terry Peak</h2>
+    {% if ski.lifts or ski.snow %}
+    {% if ski.snow %}
+    <p>{% set bits = [] %}{% for key, label in [("overnight", "overnight"), ("season", "this season"), ("base", "base")] if ski.snow[key] is defined %}{% set _ = bits.append('<span class="font-bold">' ~ (ski.snow[key] | round(1) | replace('.0', '')) ~ '&rdquo;</span> ' ~ label) %}{% endfor %}{{ bits | join(' • ') | safe }}</p>
+    {% endif %}
+    {% if ski.lifts %}<p><span class="font-bold">{{ ski.lifts_open | length }} of {{ ski.lifts | length }}</span> lifts • <span class="font-bold">{{ ski.trails_open_count }} of {{ ski.trails | length }}</span> trails open</p>{% endif %}
+    {% else %}
+    <p class="text-stone-600">The ski report isn't available right now.</p>
+    {% endif %}
+    <p class="ml-auto flex flex-wrap gap-x-5 gap-y-1 font-semibold">{{ ext(ski.webcams, "Live web cams", "link-action") }}{{ ext(ski.source.url or "https://terrypeak.com/the-mountain/trails-lifts/", "Trails & lifts", "link-action") }}</p>
+  </section>
+{% endmacro %}
+
 <div class="grid lg:grid-cols-2 gap-6">
   {% if ski.first %}{{ terry_peak_card(true) }}{% endif %}
 
@@ -208,7 +224,7 @@
   {% endif %}
 
   {# alerts and the few projects open for comment, in one card #}
-  {% call card("Black Hills National Forest", "forest-alerts", sources=[bhnf_alerts, bhnf_projects], more=bhnf_alerts.url, more_label="All alerts", class="lg:col-span-2" if ski.first else "") %}
+  {% call card("Black Hills National Forest", "forest-alerts", sources=[bhnf_alerts, bhnf_projects], more=bhnf_alerts.url, more_label="All alerts", class="lg:col-span-2") %}
     <h3 class="text-sm font-bold mb-2">Alerts and closures</h3>
     {% if forest_alerts %}
     <ul class="space-y-2.5 text-sm" data-more="8">
@@ -230,6 +246,6 @@
     {% else %}{{ empty("No projects in progress.") }}{% endif %}
     <p class="mt-2 text-sm">{{ ext(bhnf_projects.url, "All projects", "link-action") }}</p>
   {% endcall %}
-{% if not ski.first %}{{ terry_peak_card(false) }}{% endif %}
+{% if not ski.first %}{{ terry_peak_strip() }}{% endif %}
 </div>
 {% endblock %}
