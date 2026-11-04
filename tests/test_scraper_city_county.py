@@ -245,3 +245,40 @@ def test_a_zoom_link_is_a_way_to_join_not_a_recording():
     rec = SpearfishCity()._event_to_records(event)[0]
     assert rec["join_url"] == "https://us02web.zoom.us/j/83682178231"
     assert rec["media_url"] == "" and rec["media_page"] == "" and rec["chapters"] == []
+
+
+def test_start_time_from_an_agendas_first_page():
+    from scrapers.utils import agenda_start_time
+
+    assert agenda_start_time("REGULAR MEETING AGENDA | Tuesday, October 13, 2026 @ 5:30 PM District Office") == "17:30"
+    assert agenda_start_time("November 5, 2026 @ 1:30 p.m.\nPlanning & Zoning Regular Meeting Agenda") == "13:30"
+    assert (
+        agenda_start_time("LAWRENCE COUNTY SEARCH & RESCUE\n11276 Black Forest Rd.\n7:00 PM November 2, 2026")
+        == "19:00"
+    )
+    assert agenda_start_time("Proposed agendas ... 9:00 AM") == "09:00"
+    assert agenda_start_time("Wednesday @ 12 PM") == "12:00" and agenda_start_time("12:15 a.m.") == "00:15"
+    assert agenda_start_time("No time on this page") == ""
+
+
+def test_county_agenda_file_and_times_only_for_upcoming_meetings(monkeypatch):
+    from datetime import date
+
+    from scrapers.sources import lawrence_county
+
+    rec = {"url": "https://www.lawrence.sd.us/AgendaCenter/PreviousVersions/1361", "meeting_date": "November 5, 2026"}
+    assert (
+        lawrence_county.agenda_pdf_url(rec) == "https://www.lawrence.sd.us/AgendaCenter/ViewFile/Agenda/_11052026-1361"
+    )
+
+    monkeypatch.setattr(lawrence_county.dates, "today", lambda: date(2026, 11, 4))
+    read = []
+    monkeypatch.setattr(lawrence_county, "pdf_start_time", lambda url: read.append(url) or "13:30")
+    old = {"url": "https://x/PreviousVersions/1300", "meeting_date": "October 1, 2026"}
+    saved = {"url": "https://x/PreviousVersions/1362", "meeting_date": "November 9, 2026"}
+    records = [dict(rec), old, saved]
+    lawrence_county.add_start_times(records, {saved["url"]: "09:00"})
+    assert (
+        records[0]["start_time"] == "13:30" and "start_time" not in records[1] and records[2]["start_time"] == "09:00"
+    )
+    assert len(read) == 1  # the new upcoming one only: past meetings skipped, saved times reused

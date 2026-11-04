@@ -740,3 +740,13 @@ def test_html_entities_in_source_text_are_decoded():
     assert decoded("BETTELYOUN, LORENZO &quot;JR&quot;") == 'BETTELYOUN, LORENZO "JR"'
     assert decoded("twice: &amp;#39;") == "twice: '"
     assert decoded("Q&A at 5 & 6") == "Q&A at 5 & 6"  # a plain ampersand stays
+
+
+def test_meeting_times_in_spearfish_time():
+    from sitegen.pages import meeting_time
+
+    assert meeting_time(start_dt="2026-11-04T16:00:00Z") == "9 AM"  # Mountain standard time
+    assert meeting_time(start_dt="2026-07-14T23:30:00Z") == "5:30 PM"  # daylight time
+    assert meeting_time(clock="13:30") == "1:30 PM"
+    assert meeting_time(start_dt="2026-11-04T07:00:00Z") == ""  # midnight: no time set
+    assert meeting_time() == ""

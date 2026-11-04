@@ -9,12 +9,13 @@ https://www.spearfish.k12.sd.us/documents/board-of-education/board-meeting-minut
 from __future__ import annotations
 
 import re
+from datetime import timedelta
 
 from dateutil import parser as dateutil_parser
 
-from scrapers import net
+from scrapers import dates, net
 from scrapers.base import BaseScraper
-from scrapers.utils import make_slug
+from scrapers.utils import make_slug, pdf_start_time
 
 API_BASE = "https://thrillshare-cmsv2.services.thrillshare.com/api/v2/s/547213/documents"
 
@@ -102,4 +103,10 @@ class SpearfishSchoolBoardDocs(BaseScraper):
                 if record["slug"] not in seen:
                     seen.add(record["slug"])
                     records.append(record)
+        # upcoming meetings' start times, from their agendas ('… October 13, 2026 @ 5:30 PM'), read once
+        saved = {r.get("slug"): r.get("start_time") for r in self.load_existing()}
+        since = (dates.today() - timedelta(days=1)).isoformat()
+        for r in records:
+            if r["asset_type"] == "agenda" and (r.get("published") or "")[:10] >= since:
+                r["start_time"] = saved.get(r["slug"]) or pdf_start_time(r["url"])
         return records

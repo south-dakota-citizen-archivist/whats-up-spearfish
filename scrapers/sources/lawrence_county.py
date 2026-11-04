@@ -10,9 +10,11 @@ the document date; the post date is the fallback.
 from __future__ import annotations
 
 import re
+from datetime import datetime, timedelta
 
+from scrapers import dates
 from scrapers.base import BaseScraper
-from scrapers.utils import fetch_feed
+from scrapers.utils import fetch_feed, pdf_start_time
 
 FEED_URL = "https://www.lawrence.sd.us/RSSFeed.aspx?ModID=65&CID=All-0"
 
@@ -47,4 +49,30 @@ class LawrenceCounty(BaseScraper):
 
     def scrape(self) -> list[dict]:
         feed = fetch_feed(FEED_URL)
-        return [parse_entry(e) for e in feed.entries]
+        records = [parse_entry(e) for e in feed.entries]
+        add_start_times(records, {r.get("url"): r.get("start_time") for r in self.load_existing()})
+        return records
+
+
+def agenda_pdf_url(rec: dict) -> str:
+    """The agenda file behind an Agenda Center entry: …/PreviousVersions/1361 of November 5, 2026 →
+    …/ViewFile/Agenda/_11052026-1361."""
+    m = re.search(r"/(\d+)$", rec.get("url", ""))
+    try:
+        day = datetime.strptime(rec.get("meeting_date", ""), "%B %d, %Y")
+    except ValueError:
+        return ""
+    return f"https://www.lawrence.sd.us/AgendaCenter/ViewFile/Agenda/_{day:%m%d%Y}-{m.group(1)}" if m else ""
+
+
+def add_start_times(records: list[dict], saved: dict) -> None:
+    """Start times for meetings from yesterday on, read from their agendas (once each)."""
+    since = dates.today() - timedelta(days=1)
+    for rec in records:
+        try:
+            day = datetime.strptime(rec.get("meeting_date", ""), "%B %d, %Y").date()
+        except ValueError:
+            continue
+        if day < since:
+            continue
+        rec["start_time"] = saved.get(rec["url"]) or ((url := agenda_pdf_url(rec)) and pdf_start_time(url)) or ""

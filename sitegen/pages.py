@@ -18,7 +18,7 @@ from urllib.parse import quote
 from scrapers import dates, geo
 from sitegen import trends
 from sitegen.data import Site, Source, read_json
-from sitegen.events import CATEGORY_LABELS
+from sitegen.events import CATEGORY_LABELS, fmt_clock
 from sitegen.parcels import BEACON, ParcelLinks, record_key
 from sitegen.sources import DIRECTORY
 
@@ -287,6 +287,7 @@ def meetings(site: Site) -> list[dict]:
             key,
             {
                 "date": r.get("date", ""),
+                "time": meeting_time(start_dt=r.get("start_dt")),
                 "body": "City of Spearfish",
                 "name": r.get("event_name") or r.get("category") or "Meeting",
                 "url": r.get("portal_url") or r["url"],
@@ -310,6 +311,7 @@ def meetings(site: Site) -> list[dict]:
     for r in site.get("lawrence_county").records:
         out[f"county-{r['id']}"] = {
             "date": r.get("date", ""),
+            "time": meeting_time(clock=r.get("start_time")),
             "body": "Lawrence County",
             "name": r["title"],
             "url": r["url"],
@@ -324,6 +326,7 @@ def meetings(site: Site) -> list[dict]:
             key,
             {
                 "date": r.get("date", ""),
+                "time": "",
                 "body": "School Board",
                 "name": "Board of Education",
                 "url": r["url"],
@@ -331,6 +334,8 @@ def meetings(site: Site) -> list[dict]:
                 "docs": [],
             },
         )
+        if r.get("start_time") and not m["time"]:
+            m["time"] = meeting_time(clock=r["start_time"])
         m["docs"].append({"label": board_doc_label(r), "url": r["url"]})
     found = list(out.values())
     add_meeting_videos(found, site.get("public_meetings_youtube").records)
@@ -344,6 +349,17 @@ def meetings(site: Site) -> list[dict]:
         for i, u in enumerate(m["videos"], 1):
             m["docs"].append({"label": "Video" if n == 1 else f"Video, part {i}", "url": u})
     return sorted(found, key=lambda m: m["date"])
+
+
+def meeting_time(start_dt: str | None = None, clock: str | None = None) -> str:
+    """'9 AM', '5:30 PM' in Spearfish time: from a UTC start ('2026-11-04T16:00:00Z') or an 'HH:MM' clock."""
+    if start_dt and "T" in start_dt:
+        d = dates.parse(start_dt)
+        # a midnight start is a date with no time set
+        return fmt_clock(d) if d and (d.hour or d.minute) else ""
+    if clock and (m := re.fullmatch(r"(\d{2}):(\d{2})", clock)):
+        return fmt_clock(datetime(2000, 1, 1, int(m.group(1)), int(m.group(2))))
+    return ""
 
 
 def agenda_depth(title: str, sub: bool = False) -> int:
