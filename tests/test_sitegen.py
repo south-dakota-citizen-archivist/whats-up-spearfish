@@ -648,3 +648,18 @@ def test_job_line_shows_pay_and_dates_when_the_posting_has_them(job, line):
     from sitegen.pages import job_meta
 
     assert job_meta(job, "Lawrence County", today=date(2026, 11, 4)) == line
+
+
+def test_spills_newest_first_place_undated_reports_by_number():
+    from sitegen.pages import spills_newest_first
+
+    spills = [
+        {"report_no": "2026.140", "spill_date": "2026-09-03"},
+        {"report_no": "2026.148", "spill_date": "2026-09-18"},
+        {"report_no": "2026.150"},  # no case file yet: after 2026.148
+        {"report_no": "2026.146", "reported_date": "2026-09-17"},
+        {"report_no": "2026.162", "spill_date": "2026-10-14"},
+        {"report_no": "2026.170"},  # the newest report
+    ]
+    assert [r["report_no"] for r in spills_newest_first(spills)] == [
+        "2026.170", "2026.162", "2026.150", "2026.148", "2026.146", "2026.140"]  # fmt: skip

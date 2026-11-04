@@ -353,7 +353,8 @@ def test_spill_scrape(monkeypatch):
 
     class Resp:
         ok = True
-        headers = {"Content-Type": "application/pdf"}
+        headers = {"Content-Type": "application/pdf", "Content-Length": "1234"}
+        content = b"%PDF-1.7 fake"
 
         def raise_for_status(self):
             pass
@@ -367,16 +368,41 @@ def test_spill_scrape(monkeypatch):
             r.ok = False  # not posted yet
         return r
 
+    read = []
+
+    def read_pdf(path, engine, pages):
+        read.append(path.name)
+        oil = [{"name": "Hydraulic Oil", "quantity": "65", "units": "gallons"}]
+        return {"forms": [{"form": "spill report", "method": "fields", "page": 1, "spill_date": "09/03/26",
+                           "materials": oil}]}  # fmt: skip
+
+    from spillarchive import extract, files
+
     monkeypatch.setattr(spills.net, "get", lambda url, params=None, **kw: Resp())
     monkeypatch.setattr(spills.net, "request", request)
-    out = spills.DANRSpills().scrape()
-    assert [r["report_no"] for r in out] == ["2026.162", "2026.150", "2026.140"]
-    first, other, line = out
+    monkeypatch.setattr(files, "lookup", lambda layer_id, delay=1.0: [])  # the state's list lags: guess the file
+    monkeypatch.setattr(extract, "read_pdf", read_pdf)
+    scraper = spills.DANRSpills()
+    out = scraper.scrape()
+    # newest first by the spill date its form gives; the rest by number
+    assert [r["report_no"] for r in out] == ["2026.150", "2026.140", "2026.162"]
+    by_no = {r["report_no"]: r for r in out}
+    first, other, line = by_no["2026.162"], by_no["2026.150"], by_no["2026.140"]
     assert first["url"] == spills.MAP_URL and line["url"].endswith("/2026/2026.140.pdf")
     assert first["county"] == "Fall River" and first["status"] == "Open" and first["lat"] == 43.30123
     assert line["title"] == "Hydraulic Line" and line["status"] == "No further action"
     assert line["material"] == "Hydraulic oil" and line["spill_source"] == "Above-ground tank"
     assert other["material"] == "" and other["category"] == "Other" and other["spill_source"] == "Underground tank"
+    # what the form says
+    assert line["spill_date"] == "2026-09-03"
+    assert line["report"]["materials"][0]["quantity"] == "65" and line["report"]["read_from"] == "fields"
+    assert line["pdfs"] == [{"url": line["url"], "size": 1234}]
+
+    # an unchanged PDF isn't read again
+    read.clear()
+    monkeypatch.setattr(scraper, "load_existing", lambda: out)
+    again = {r["report_no"]: r for r in scraper.scrape()}
+    assert read == [] and again["2026.140"]["spill_date"] == "2026-09-03"
 
 
 def test_spill_sentence_case_keeps_acronyms():

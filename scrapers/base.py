@@ -70,6 +70,8 @@ class BaseScraper(ABC):
     #: True: each scrape is the full current state (tap lists, job boards).
     #: False: merge with previously saved records, then prune by kind window.
     replace: bool = False
+    #: Seconds the runner waits for this source (None: the runner's default, 10 minutes).
+    timeout: int | None = None
     #: Field used to recognise the same record across runs.
     dedup_key: str = "url"
     #: How to interpret timestamps that carry no UTC offset.

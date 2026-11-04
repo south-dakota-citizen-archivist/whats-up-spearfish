@@ -83,6 +83,18 @@ branch; one-off scripts that change the data branch (`scripts/import_parcels.py`
 from and push.
 eBird needs `EBIRD_API_KEY` (a repo secret in Actions).
 
+## Spill report archive
+
+`spillarchive/` is a standalone tool (it imports nothing from the site) that builds a
+complete local archive of the state's spill reports for the Black Hills counties: the
+list of spills back to the 1970s, every PDF on file for each, and what their forms say.
+It reads fillable forms exactly and older scans with OCR. The site's spill scraper uses
+its readers for this year's and last year's reports. See `spillarchive/README.md`.
+
+```sh
+uv run python -m spillarchive --out .cache/spill-archive
+```
+
 ## Adding a source
 
 1. Add a module to `scrapers/sources/` with a `BaseScraper` subclass: set `name`,

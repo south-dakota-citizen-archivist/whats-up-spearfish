@@ -567,6 +567,68 @@ def on_tap(site: Site, events: list[dict], today: date) -> dict:
     return {"venues": [v for v in sources_of(site, TAP_SOURCES) if v.records or v.health]}
 
 
+def spills_newest_first(records: list[dict]) -> list[dict]:
+    """
+    Newest first, by the spill date its form gives (else the date it was reported). A spill
+    whose case file isn't posted yet has neither, but the state numbers reports in the order
+    they come in, so it sorts just after the last dated report numbered before it.
+    """
+    when: dict[str, str] = {}
+    last = ""
+    for r in sorted(records, key=lambda r: r.get("report_no", "")):
+        own = r.get("spill_date") or r.get("reported_date") or ""
+        last = max(last, own) if own else last
+        when[r.get("report_no", "")] = own or last or f"{r.get('year', '')}"
+    return sorted(records, key=lambda r: (when[r.get("report_no", "")], r.get("report_no", "")), reverse=True)
+
+
+def _spill_amount(m: dict) -> str:
+    qty, units = (m.get("quantity") or "").strip(), (m.get("units") or "").strip()
+    if not qty or qty.lower() in ("n/a", "na", "unk", "unknown", "?"):
+        return ""
+    return f"{qty} {units}".strip() if units and units != "other" else qty
+
+
+def spill_view(r: dict) -> dict:
+    """A spill for the Civic card: its date, a one-line summary, and the details its forms give."""
+    rep, fu = r.get("report") or {}, r.get("follow_up") or {}
+    mats = [m for m in rep.get("materials") or [] if m.get("name")]
+    named = "; ".join(f"{m['name']} ({_spill_amount(m)})" if _spill_amount(m) else m["name"] for m in mats)
+    material = named or rep.get("material") or r.get("material") or r.get("category") or ""
+    details = []
+
+    def add(label, value):
+        if isinstance(value, list):
+            value = ", ".join(v for v in value if v)
+        if value and str(value).strip().lower() not in ("n/a", "na", "none", "see above", "as above in b"):
+            details.append((label, str(value).strip()))
+
+    add("Reported", (r.get("reported_date") or "") and date.fromisoformat(r["reported_date"]).strftime("%b %-d, %Y"))
+    add("Material", material)
+    add("Source", rep.get("source") or r.get("spill_source"))
+    add("What it came from", rep.get("source_description"))
+    add("Cause", rep.get("cause"))
+    add("How it happened", rep.get("cause_description"))
+    add("Reached", rep.get("medium"))
+    add("Waterway", rep.get("waterway_affected"))
+    add("Where", rep.get("location") if rep.get("location") != r.get("street") else "")
+    add("Responsible party", r.get("responsible_party"))
+    add("What was done", rep.get("response_action"))
+    add("Notes", rep.get("comments"))
+    add("Cleaned up", fu.get("cleanup_date"))
+    add("Cleanup contractor", fu.get("contractor"))
+    add("Soil dug up", fu.get("soil_excavated"))
+    add("Kept to the spill area", fu.get("contained"))
+    return {
+        **r,
+        "when": r.get("spill_date") or r.get("reported_date") or "",
+        "summary_material": material,
+        "details": details,
+        "from_scan": rep.get("read_from") == "ocr" or fu.get("read_from") == "ocr",
+        "pdf_links": [p["url"] for p in r.get("pdfs") or []],
+    }
+
+
 def civic(site: Site, events: list[dict], today: date) -> dict:
     t = today.isoformat()
     all_meetings = meetings(site)
@@ -592,7 +654,7 @@ def civic(site: Site, events: list[dict], today: date) -> dict:
         "cases": site.get("danr_contested_cases"),
         "case_list": sorted(site.get("danr_contested_cases").records, key=lambda c: c.get("updated", ""), reverse=True),
         "spills": site.get("danr_spills"),
-        "spill_list": sorted(site.get("danr_spills").records, key=lambda r: r.get("report_no", ""), reverse=True),
+        "spill_list": [spill_view(r) for r in spills_newest_first(site.get("danr_spills").records)],
     }
 
 

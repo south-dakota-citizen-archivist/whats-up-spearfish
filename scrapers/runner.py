@@ -165,9 +165,10 @@ def run(
     futures = {cls: pool.submit(_run_one, cls) for cls in todo}
     for cls, fut in futures.items():
         try:
-            outcome = fut.result(timeout=SOURCE_TIMEOUT)
+            limit = getattr(cls, "timeout", None) or SOURCE_TIMEOUT
+            outcome = fut.result(timeout=limit)
         except FutureTimeout:
-            outcome = {"status": "error", "error": f"timed out after {SOURCE_TIMEOUT}s"}
+            outcome = {"status": "error", "error": f"timed out after {limit}s"}
         entry = sources[cls.slug]
         entry["last_run"] = now
         entry["status"] = outcome["status"]

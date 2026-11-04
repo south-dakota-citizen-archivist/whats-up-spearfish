@@ -23,7 +23,7 @@ jobs:
   run:
     # Pinned: Playwright can't install Chromium on ubuntu-26.04 (ubuntu-latest) yet.
     runs-on: ubuntu-24.04
-    timeout-minutes: 45
+    timeout-minutes: 60
     env:
       WUS_DATA_DIR: data  # the data branch, checked out below (local runs default to a fresh copy instead)
     environment: github-pages
