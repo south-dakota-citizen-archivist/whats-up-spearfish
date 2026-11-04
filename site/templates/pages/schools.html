@@ -110,8 +110,8 @@
       {% if board %}
       <ul class="space-y-2 text-sm">
         {% for m in board %}
-        <li><span class="font-semibold">{{ m.date | fmt_day('%b %-d') }}</span>
-          {% for d in m.docs %}{{ ext(d.url, d.label, 'link inline-block whitespace-nowrap py-1 ml-2') }}{% endfor %}</li>
+        <li class="flex flex-wrap items-baseline gap-x-3"><span class="font-semibold">{{ m.date | fmt_day('%b %-d') }}</span>
+          {% for d in m.docs %}{{ ext(d.url, d.label, 'link whitespace-nowrap py-1') }}{% endfor %}</li>
         {% endfor %}
       </ul>
       {% else %}{{ empty("No recent board documents.") }}{% endif %}
