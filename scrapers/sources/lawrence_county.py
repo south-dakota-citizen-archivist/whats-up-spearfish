@@ -14,7 +14,7 @@ from datetime import datetime, timedelta
 
 from scrapers import dates
 from scrapers.base import BaseScraper
-from scrapers.utils import fetch_feed, pdf_start_time
+from scrapers.utils import agenda_details, fetch_feed
 
 FEED_URL = "https://www.lawrence.sd.us/RSSFeed.aspx?ModID=65&CID=All-0"
 
@@ -50,7 +50,8 @@ class LawrenceCounty(BaseScraper):
     def scrape(self) -> list[dict]:
         feed = fetch_feed(FEED_URL)
         records = [parse_entry(e) for e in feed.entries]
-        add_start_times(records, {r.get("url"): r.get("start_time") for r in self.load_existing()})
+        saved = {r.get("url"): r for r in self.load_existing() if "dial_in" in r}
+        add_agenda_details(records, saved)
         return records
 
 
@@ -65,8 +66,8 @@ def agenda_pdf_url(rec: dict) -> str:
     return f"https://www.lawrence.sd.us/AgendaCenter/ViewFile/Agenda/_{day:%m%d%Y}-{m.group(1)}" if m else ""
 
 
-def add_start_times(records: list[dict], saved: dict) -> None:
-    """Start times for meetings from yesterday on, read from their agendas (once each)."""
+def add_agenda_details(records: list[dict], saved: dict) -> None:
+    """Start time and online join link for meetings from yesterday on, read from their agendas (once each)."""
     since = dates.today() - timedelta(days=1)
     for rec in records:
         try:
@@ -75,4 +76,9 @@ def add_start_times(records: list[dict], saved: dict) -> None:
             continue
         if day < since:
             continue
-        rec["start_time"] = saved.get(rec["url"]) or ((url := agenda_pdf_url(rec)) and pdf_start_time(url)) or ""
+        if before := saved.get(rec["url"]):
+            found = {k: before.get(k, "") for k in ("start_time", "join_url", "dial_in")}
+        else:
+            found = agenda_details(url) if (url := agenda_pdf_url(rec)) else {}
+        rec["start_time"], rec["join_url"] = found.get("start_time", ""), found.get("join_url", "")
+        rec["dial_in"] = found.get("dial_in") or {}

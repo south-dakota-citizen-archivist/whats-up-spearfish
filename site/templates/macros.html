@@ -127,3 +127,13 @@
 
 {# An animal silhouette from animals.svg.html (include that once on the page). Decorative: the species is always written beside it. #}
 {% macro animal(icon, class='w-6 h-5') %}<svg class="{{ class }} inline-block shrink-0" viewBox="0 1 32 27" aria-hidden="true" focusable="false"><use href="#a-{{ icon }}"/></svg>{% endmacro %}
+
+{# For taking part in a meeting from home: the Zoom app's meeting ID, and a number to call in on
+   (a tap on a phone dials the access code too). #}
+{% macro join_help(h) %}{% if h.meeting_id or h.tel %}
+<p class="text-xs text-stone-600">
+  {%- if h.meeting_id %}<span class="inline-block">Zoom meeting ID {{ h.meeting_id }}</span>{% endif %}
+  {%- if h.meeting_id and h.tel %} • {% endif %}
+  {%- if h.tel %}<span class="inline-block">By phone: <a href="{{ h.tel }}" class="link whitespace-nowrap">{{ h.phone }}</a>{% if h.code %}, code {{ h.code }}{% endif %}</span>{% endif -%}
+</p>
+{% endif %}{% endmacro %}

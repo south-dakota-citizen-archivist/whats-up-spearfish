@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import card, empty, event_row, ext, badge, danger_badge, freshness, animal %}
+{% from "macros.html" import card, empty, event_row, ext, badge, danger_badge, freshness, animal, join_help %}
 
 {% block head %}<script defer src="{{ root }}static/js/live.js"></script>{% endblock %}
 
@@ -260,6 +260,7 @@
           <a href="{{ m.url }}" target="_blank" rel="noopener" class="link-title min-w-0">{{ m.name }}</a>
           {% for d in m.docs %}{{ ext(d.url, d.label, 'link text-xs whitespace-nowrap py-1') }}{% endfor %}
         </div>
+        {% if m.join_help %}{{ join_help(m.join_help) }}{% endif %}
       </li>
       {% endfor %}
     </ul>

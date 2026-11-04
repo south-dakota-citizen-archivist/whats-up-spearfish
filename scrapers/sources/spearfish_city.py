@@ -8,7 +8,7 @@ Portal:  https://spearfishsd.portal.civicclerk.com/
 API:     https://spearfishsd.api.civicclerk.com/v1/
 """
 
-from datetime import timedelta
+from datetime import datetime, timedelta
 
 from scrapers import dates, net, schema
 from scrapers.base import BaseScraper
@@ -90,7 +90,7 @@ class SpearfishCity(BaseScraper):
         """
         event_id = event["id"]
         portal_url = f"{PORTAL_BASE}/event/{event_id}"
-        start_dt = event.get("startDateTime") or event.get("eventDate")
+        start_dt = local_time(event.get("startDateTime") or event.get("eventDate"))
 
         location = event.get("eventLocation") or {}
         address_parts = filter(
@@ -146,6 +146,20 @@ class SpearfishCity(BaseScraper):
             )
 
         return records
+
+
+def local_time(value: str | None) -> str:
+    """
+    CivicClerk's times are Spearfish clock times marked as UTC: the 4:15 PM special session is
+    '2026-10-14T16:15:00Z'. Read as Mountain time, with the offset that day really has.
+    """
+    if not value:
+        return ""
+    try:
+        naive = datetime.fromisoformat(value.rstrip("Z").split("+")[0])
+    except ValueError:
+        return value
+    return naive.replace(tzinfo=dates.MT).isoformat()
 
 
 def chapters_from(marks: list[dict]) -> list[dict]:

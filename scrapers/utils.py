@@ -84,8 +84,39 @@ def agenda_start_time(text: str) -> str:
     return f"{hour % 12 + (12 if half == 'p' else 0):02d}:{minute:02d}"
 
 
-def pdf_start_time(url: str) -> str:
-    """agenda_start_time() for an agenda PDF online ('' if it can't be read)."""
+_JOIN = re.compile(
+    r"https?://(?:[\w-]+\.)*(?:zoom\.us|zoomgov\.com|goto\.com|gotomeeting\.com|teams\.microsoft\.com|teams\.live\.com"
+    r"|webex\.com|meet\.google\.com)/[^\s<>()\"']+",
+    re.I,
+)
+
+
+def agenda_join_url(text: str) -> str:
+    """A link to take part online that an agenda gives ('https://meet.goto.com/lawrencecountypz'), or ''."""
+    m = _JOIN.search(text or "")
+    return m.group(0).rstrip(".,;") if m else ""
+
+
+_PHONE = r"(\+?1?[\s.-]?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4})"
+_DIAL = re.compile(r"(?:dial|call|phone|by telephone)[^\d+]{0,40}?" + _PHONE, re.I)
+_CODE = re.compile(
+    r"(?:access code|meeting id|meeting number|passcode|conference id|participant code|pin)"
+    r"\s*[:#]?\s*(\d[\d\s-]{2,18}\d)",
+    re.I,
+)
+
+
+def agenda_dial_in(text: str) -> dict:
+    """A phone number to call in on and its code, as the agenda gives them: {'phone': …, 'code': …}, or {}."""
+    m = _DIAL.search(text or "")
+    if not m:
+        return {}
+    code = _CODE.search(text[m.start() : m.end() + 120]) or _CODE.search(text)
+    return {"phone": " ".join(m.group(1).split()), "code": " ".join(code.group(1).split()) if code else ""}
+
+
+def agenda_details(url: str) -> dict:
+    """From an agenda PDF online, what its first page says: {'start_time': 'HH:MM', 'join_url': …} ('' if not)."""
     import io
 
     import pdfplumber
@@ -94,9 +125,10 @@ def pdf_start_time(url: str) -> str:
         resp = net.get(url, timeout=60)
         resp.raise_for_status()
         if not resp.content.startswith(b"%PDF"):
-            return ""
+            return {}
         with pdfplumber.open(io.BytesIO(resp.content)) as pdf:
-            return agenda_start_time(pdf.pages[0].extract_text() or "") if pdf.pages else ""
-    except Exception as exc:  # noqa: BLE001 — the meeting still lists without a time
-        print(f"[agenda] couldn't read a start time from {url}: {exc}")
-        return ""
+            text = (pdf.pages[0].extract_text() or "") if pdf.pages else ""
+    except Exception as exc:  # noqa: BLE001 — the meeting still lists without them
+        print(f"[agenda] couldn't read {url}: {exc}")
+        return {}
+    return {"start_time": agenda_start_time(text), "join_url": agenda_join_url(text), "dial_in": agenda_dial_in(text)}

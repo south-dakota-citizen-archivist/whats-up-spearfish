@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import card, empty, ext, badge %}
+{% from "macros.html" import card, empty, ext, badge, join_help %}
 
 {% macro meeting_list(items, times=false) %}
 <ul class="divide-y divide-stone-100" data-more="8">
@@ -11,6 +11,7 @@
       {{ ext(m.url, m.name, 'link-title min-w-0') }}
       {% for d in m.docs %}{{ ext(d.url, d.label, 'link text-sm whitespace-nowrap py-1') }}{% endfor %}
     </div>
+    {% if m.join_help and times %}{{ join_help(m.join_help) }}{% endif %}
     {% if m.chapters %}
     {# where each agenda item starts in the video #}
     <details class="mt-1 text-sm">

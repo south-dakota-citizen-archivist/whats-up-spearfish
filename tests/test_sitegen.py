@@ -767,3 +767,21 @@ def test_meeting_titles_drop_the_date_the_listing_already_gives():
     assert without_date("Board of Equalization Meetings 20260414") == "Board of Equalization Meetings"
     assert without_date("City Council Meeting") == "City Council Meeting"
     assert without_date("May 5, 2026") == "May 5, 2026"  # nothing but a date: kept rather than blank
+
+
+def test_join_labels_name_the_service():
+    from sitegen.pages import join_label
+
+    assert join_label("https://us02web.zoom.us/j/1") == "Join on Zoom"
+    assert join_label("https://meet.goto.com/lawrencecountypz") == "Join on GoTo"
+    assert join_label("https://example.com/live") == "Join online"
+
+
+def test_join_help_meeting_id_and_tap_to_call():
+    from sitegen.pages import join_help
+
+    assert join_help("https://us02web.zoom.us/j/83682178231", {}) == {"meeting_id": "836 8217 8231"}
+    assert join_help("https://meet.goto.com/lawrencecountypz", {"phone": "1-646-749-3122", "code": "973-687-509"}) == {
+        "phone": "1-646-749-3122", "code": "973-687-509", "tel": "tel:+16467493122,,973687509#"
+    }  # fmt: skip
+    assert join_help("", {"phone": "555-0100", "code": ""}) == {}  # not a full number: left out

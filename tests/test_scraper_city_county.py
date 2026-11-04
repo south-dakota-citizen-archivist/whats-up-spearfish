@@ -261,7 +261,7 @@ def test_start_time_from_an_agendas_first_page():
     assert agenda_start_time("No time on this page") == ""
 
 
-def test_county_agenda_file_and_times_only_for_upcoming_meetings(monkeypatch):
+def test_county_agenda_file_and_details_only_for_upcoming_meetings(monkeypatch):
     from datetime import date
 
     from scrapers.sources import lawrence_county
@@ -273,12 +273,39 @@ def test_county_agenda_file_and_times_only_for_upcoming_meetings(monkeypatch):
 
     monkeypatch.setattr(lawrence_county.dates, "today", lambda: date(2026, 11, 4))
     read = []
-    monkeypatch.setattr(lawrence_county, "pdf_start_time", lambda url: read.append(url) or "13:30")
+    found = {"start_time": "13:30", "join_url": "https://meet.goto.com/lawrencecountypz"}
+    monkeypatch.setattr(lawrence_county, "agenda_details", lambda url: read.append(url) or found)
     old = {"url": "https://x/PreviousVersions/1300", "meeting_date": "October 1, 2026"}
     saved = {"url": "https://x/PreviousVersions/1362", "meeting_date": "November 9, 2026"}
     records = [dict(rec), old, saved]
-    lawrence_county.add_start_times(records, {saved["url"]: "09:00"})
-    assert (
-        records[0]["start_time"] == "13:30" and "start_time" not in records[1] and records[2]["start_time"] == "09:00"
-    )
-    assert len(read) == 1  # the new upcoming one only: past meetings skipped, saved times reused
+    lawrence_county.add_agenda_details(records, {saved["url"]: {"start_time": "09:00", "join_url": ""}})
+    assert (records[0]["start_time"], records[0]["join_url"]) == ("13:30", "https://meet.goto.com/lawrencecountypz")
+    assert "start_time" not in records[1] and records[2]["start_time"] == "09:00"
+    assert len(read) == 1  # the new upcoming one only: past meetings skipped, saved details reused
+
+
+def test_join_link_from_an_agenda():
+    from scrapers.utils import agenda_join_url
+
+    text = "Join the meeting from your computer, tablet or Smartphone: https://meet.goto.com/lawrencecountypz\nDial in"
+    assert agenda_join_url(text) == "https://meet.goto.com/lawrencecountypz"
+    assert agenda_join_url("Zoom: https://us02web.zoom.us/j/83682178231.") == "https://us02web.zoom.us/j/83682178231"
+    assert agenda_join_url("Website: www.lawrence.sd.us") == ""
+
+
+def test_dial_in_from_an_agenda():
+    from scrapers.utils import agenda_dial_in
+
+    text = "Join: https://meet.goto.com/lawrencecountypz\nDial in Option: 1-646-749-3122 with Access Code 973-687-509\n"
+    assert agenda_dial_in(text) == {"phone": "1-646-749-3122", "code": "973-687-509"}
+    assert agenda_dial_in("Call (605) 555-0100 for accommodations") == {"phone": "(605) 555-0100", "code": ""}
+    assert agenda_dial_in("No phone here") == {}
+
+
+def test_city_times_are_spearfish_clock_times():
+    from scrapers.sources.spearfish_city import local_time
+
+    # the city's 4:15 PM special session, as its calendar gives it
+    assert local_time("2026-10-14T16:15:00Z") == "2026-10-14T16:15:00-06:00"  # daylight time
+    assert local_time("2026-11-04T16:00:00Z") == "2026-11-04T16:00:00-07:00"  # standard time
+    assert local_time("") == "" and local_time("not a date") == "not a date"

@@ -314,6 +314,8 @@ def meetings(site: Site) -> list[dict]:
             "time": meeting_time(clock=r.get("start_time")),
             "body": "Lawrence County",
             "name": without_date(r["title"]),
+            "join": r.get("join_url") or "",
+            "dial_in": r.get("dial_in") or {},
             "url": r["url"],
             "videos": [],
             "docs": [{"label": "Agenda & packet", "url": r["url"]}],
@@ -336,19 +338,57 @@ def meetings(site: Site) -> list[dict]:
         )
         if r.get("start_time") and not m["time"]:
             m["time"] = meeting_time(clock=r["start_time"])
+        if r.get("join_url"):
+            m["join"] = r["join_url"]
+        if r.get("dial_in"):
+            m["dial_in"] = r["dial_in"]
         m["docs"].append({"label": board_doc_label(r), "url": r["url"]})
     found = list(out.values())
     add_meeting_videos(found, site.get("public_meetings_youtube").records)
     today = dates.today().isoformat()
     for m in found:
         # a way to take part online, until the meeting's over
-        if m.get("join") and m["date"][:10] >= today and not m["videos"]:
-            m["docs"].append({"label": "Join on Zoom" if "zoom.us" in m["join"] else "Join online", "url": m["join"]})
+        if m["date"][:10] >= today and not m["videos"]:
+            if m.get("join"):
+                m["docs"].append({"label": join_label(m["join"]), "url": m["join"]})
+            m["join_help"] = join_help(m.get("join", ""), m.get("dial_in") or {})
         # the recording goes with the agenda and minutes: "Video", or "Video, part 1" …
         n = len(m["videos"])
         for i, u in enumerate(m["videos"], 1):
             m["docs"].append({"label": "Video" if n == 1 else f"Video, part {i}", "url": u})
     return sorted(found, key=lambda m: m["date"])
+
+
+def join_help(url: str, dial_in: dict) -> dict:
+    """
+    What else someone needs to take part: the Zoom meeting ID (for joining from the Zoom app), and
+    a number to call in on with its code, as a tap-to-call link that dials the code too.
+    """
+    out = {}
+    if m := re.search(r"zoom(?:gov)?\.(?:us|com)/[jw]/(\d{9,11})", url or ""):
+        d = m.group(1)
+        out["meeting_id"] = f"{d[:3]} {d[3:7]} {d[7:]}" if len(d) == 11 else f"{d[:3]} {d[3:6]} {d[6:]}"
+    phone, code = (dial_in or {}).get("phone", ""), (dial_in or {}).get("code", "")
+    digits = re.sub(r"\D", "", phone)
+    if len(digits) in (10, 11):
+        digits = digits if len(digits) == 11 else "1" + digits
+        out["phone"], out["code"] = phone, code
+        out["tel"] = f"tel:+{digits}" + (f",,{re.sub(r'\D', '', code)}#" if code else "")
+    return out
+
+
+def join_label(url: str) -> str:
+    """'Join on Zoom', 'Join on GoTo' …: how to take part online, by the service the link is for."""
+    for host, name in (
+        ("zoom", "Zoom"),
+        ("goto", "GoTo"),
+        ("teams.", "Teams"),
+        ("webex", "Webex"),
+        ("meet.google", "Google Meet"),
+    ):
+        if host in url:
+            return f"Join on {name}"
+    return "Join online"
 
 
 def meeting_time(start_dt: str | None = None, clock: str | None = None) -> str:
