@@ -32,7 +32,7 @@ from urllib.parse import urlparse
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup
 
-from scrapers import dates
+from scrapers import dates, livedata
 from sitegen import feeds, pages, trends
 from sitegen.data import Site
 from sitegen.events import CATEGORY_LABELS, fmt_clock, unified_events
@@ -274,7 +274,12 @@ def build(data_dir: Path, out_dir: Path) -> None:
 
 def main(argv: list[str] | None = None) -> None:
     ap = argparse.ArgumentParser(prog="python -m sitegen")
-    ap.add_argument("--data", type=Path, default=Path(os.environ.get("WUS_DATA_DIR") or ROOT / "data"))
+    ap.add_argument(
+        "--data",
+        type=Path,
+        help="build from this folder as is (default: WUS_DATA_DIR, else the live data, updated first)",
+    )
+    ap.add_argument("--fresh", action="store_true", help="discard local scrape results in the live data copy")
     ap.add_argument("--out", type=Path, default=ROOT / "_site")
     ap.add_argument(
         "--update-cpi",
@@ -282,6 +287,9 @@ def main(argv: list[str] | None = None) -> None:
         help="download the latest Consumer Price Index first (for the trends page's inflation-adjusted figures)",
     )
     args = ap.parse_args(argv)
+    data = args.data or livedata.data_dir()
+    if not args.data and data == livedata.CACHE:
+        livedata.refresh(discard_local=args.fresh)
     if args.update_cpi:
         trends.update_cpi()
-    build(args.data, args.out)
+    build(data, args.out)

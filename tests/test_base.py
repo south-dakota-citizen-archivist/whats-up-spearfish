@@ -181,3 +181,13 @@ class TestGuards:
 
         Fixed([_news("a")]).run()
         assert _saved(data_dir)["records"][0]["title"] == "STORY A"
+
+
+def test_data_folder_is_the_named_one_or_the_live_copy(monkeypatch, tmp_path):
+    from scrapers import livedata
+
+    monkeypatch.setenv("WUS_DATA_DIR", str(tmp_path))
+    assert livedata.data_dir() == tmp_path
+    monkeypatch.delenv("WUS_DATA_DIR")
+    assert livedata.data_dir() == livedata.CACHE  # never a stale folder in the repo
+    assert livedata.CACHE.relative_to(livedata.ROOT).parts[0] == ".cache"

@@ -36,7 +36,7 @@ from concurrent.futures import TimeoutError as FutureTimeout
 
 from dotenv import load_dotenv
 
-from scrapers import base, dates
+from scrapers import base, dates, livedata
 from scrapers.base import BaseScraper, ScrapeEmpty
 
 SOURCE_TIMEOUT = 600  # seconds per source
@@ -221,6 +221,8 @@ def main(argv: list[str] | None = None) -> None:
             print(f"{cls.slug:30} {cls.kind:15} {flags}")
         return
 
+    if base.DATA_DIR == livedata.CACHE:
+        livedata.refresh()  # scrape on top of the current live data, not an old copy
     run(
         tier=args.tier,
         only=args.only.split(",") if args.only else None,

@@ -60,19 +60,27 @@ Addresses are matched to county parcel data. Addresses are standardized by
 uv sync --group dev
 uv run playwright install chromium            # only needed for browser sources
 
-# get the current data (a worktree of the data branch at data/)
-git fetch origin data && git worktree add data data
-
 uv run python -m scrapers --list               # registry
 uv run python -m scrapers --only creek_gauge   # run some sources
 uv run python -m scrapers                      # run everything enabled
-uv run python -m sitegen                       # build _site/
+uv run python -m sitegen                       # build _site/ from the live data
 python -m http.server -d _site 8000
 
 uv run pytest && uv run ruff check .
 ```
 
-Set `WUS_DATA_DIR=/some/dir` to scrape into a scratch directory instead of `data/`.
+Locally, scrapers and sitegen always work from the **live data**: a copy of the
+`data` branch in `.cache/data` (git-ignored), downloaded the first time and brought
+up to date from GitHub before each run (`scrapers/livedata.py`). A local scrape's
+results stay in that copy and the next build uses them on top of the live data;
+`uv run python -m sitegen --fresh` throws them away. If GitHub can't be reached the
+build says so and uses the copy on hand.
+
+Set `WUS_DATA_DIR=/some/dir` (or `sitegen --data /some/dir`) to use a folder as is,
+with no updating. The GitHub workflow does this with its own checkout of the data
+branch; one-off scripts that change the data branch (`scripts/import_parcels.py`,
+`scripts/rebuild_building_permits.py`) should point at a full checkout you can commit
+from and push.
 eBird needs `EBIRD_API_KEY` (a repo secret in Actions).
 
 ## Adding a source

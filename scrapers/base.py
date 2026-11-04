@@ -26,15 +26,15 @@ which normalizes, merges/prunes, guards against empty results and writes
 from __future__ import annotations
 
 import json
-import os
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from datetime import timedelta
 from pathlib import Path
 
-from scrapers import dates, schema
+from scrapers import dates, livedata, schema
 
-DATA_DIR = Path(os.environ.get("WUS_DATA_DIR") or Path(__file__).resolve().parent.parent / "data")
+# WUS_DATA_DIR if set (the GitHub workflow's checkout), else the local copy of the live data (scrapers/livedata.py)
+DATA_DIR = livedata.data_dir()
 
 
 class ScrapeEmpty(Exception):

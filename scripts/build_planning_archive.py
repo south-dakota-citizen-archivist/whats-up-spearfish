@@ -13,7 +13,7 @@ Inputs
   - every version of data/planning_zoning.json in git history on main —
     summary fields only, through July 2026
 
-Outputs (into --out, default $WUS_DATA_DIR/archive or data/archive)
+Outputs (into --out, default $WUS_DATA_DIR/archive or the live data copy's archive/)
   planning_records.jsonl.gz  one JSON object per record, everything we have:
                              {"record_id", "detail": "full"|"summary", "record": {...},
                               "form": [{"section", "label", "value"}], "locations", "attachments",
@@ -33,7 +33,6 @@ import argparse
 import csv
 import gzip
 import json
-import os
 import re
 import subprocess
 import sys
@@ -310,7 +309,9 @@ def seed_building_permits(csv_path: Path) -> None:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--raw", action="append", type=Path, default=[], help="directory of raw per-record dumps")
-    default_out = Path(os.environ.get("WUS_DATA_DIR") or REPO / "data") / "archive"
+    from scrapers.livedata import data_dir
+
+    default_out = data_dir() / "archive"
     ap.add_argument("--out", type=Path, default=default_out)
     ap.add_argument("--permits-csv", type=Path, help="hand-checked combined CSV of permits to seed building_permits")
     args = ap.parse_args()
