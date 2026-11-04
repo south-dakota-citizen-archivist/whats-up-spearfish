@@ -750,3 +750,20 @@ def test_meeting_times_in_spearfish_time():
     assert meeting_time(clock="13:30") == "1:30 PM"
     assert meeting_time(start_dt="2026-11-04T07:00:00Z") == ""  # midnight: no time set
     assert meeting_time() == ""
+
+
+def test_meeting_titles_drop_the_date_the_listing_already_gives():
+    from sitegen.pages import without_date
+
+    assert without_date("Lawrence County Planning & Zoning Regular Meeting Info - November 5, 2026") == (
+        "Lawrence County Planning & Zoning Regular Meeting Info"
+    )
+    assert without_date("October 27, 2026 ~ County Commission and BOA Proposed Meeting Agendas") == (
+        "County Commission and BOA Proposed Meeting Agendas"
+    )
+    assert without_date("Search and Rescue Proposed Meeting Agenda ~ November 2, 2026") == (
+        "Search and Rescue Proposed Meeting Agenda"
+    )
+    assert without_date("Board of Equalization Meetings 20260414") == "Board of Equalization Meetings"
+    assert without_date("City Council Meeting") == "City Council Meeting"
+    assert without_date("May 5, 2026") == "May 5, 2026"  # nothing but a date: kept rather than blank

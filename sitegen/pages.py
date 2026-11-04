@@ -313,7 +313,7 @@ def meetings(site: Site) -> list[dict]:
             "date": r.get("date", ""),
             "time": meeting_time(clock=r.get("start_time")),
             "body": "Lawrence County",
-            "name": r["title"],
+            "name": without_date(r["title"]),
             "url": r["url"],
             "videos": [],
             "docs": [{"label": "Agenda & packet", "url": r["url"]}],
@@ -378,7 +378,10 @@ def clock_time(seconds: int) -> str:
 
 # ── meeting videos: the county's and school board's YouTube recordings, matched to their meetings ──
 
-_MONTH_DATE = re.compile(r"\b([A-Z][a-z]+)\.? (\d{1,2}),?\s*(\d{4})")
+_MONTH_DATE = re.compile(
+    r"\b(January|February|March|April|May|June|July|August|September|October|November|December)"
+    r" (\d{1,2}),?\s*(\d{4})\b"
+)
 _NUM_DATE = re.compile(r"\b(\d{1,2})/(\d{1,2})/(\d{4})\b")
 _COMPACT_DATE = re.compile(r"\b(20\d{2})(\d{2})(\d{2})\b")  # 20260414
 _PART = re.compile(r"\bpart (\d+)", re.I)
@@ -462,8 +465,20 @@ def _video_name(title: str, body: str) -> str:
     """A recording's title without its date and time: 'Lawrence County Planning & Zoning Meeting'."""
     if body == "School Board":
         return "Board of Education"
-    name = _NUM_DATE.sub("", _CLOCK.sub("", _MONTH_DATE.sub("", title)))
-    return re.sub(r"[\s\-–—~,]+$", "", " ".join(name.split())) or title
+    return without_date(_CLOCK.sub("", title))
+
+
+def without_date(title: str) -> str:
+    """
+    A meeting's title without the date it repeats (the listing gives the date):
+    'Planning & Zoning Regular Meeting Info - November 5, 2026' → 'Planning & Zoning Regular Meeting Info',
+    'October 27, 2026 ~ County Commission and BOA …' → 'County Commission and BOA …'.
+    """
+    name = _COMPACT_DATE.sub("", _NUM_DATE.sub("", _MONTH_DATE.sub("", title or "")))
+    name = " ".join(name.split())
+    name = re.sub(r"^[\s\-–—~,:|]+|[\s\-–—~,:|]+$", "", name)  # the separator the date leaves behind
+    name = re.sub(r"\s+[\-–—~|]\s+[\-–—~|]\s+", " – ", name)
+    return name or title
 
 
 def _interleave(groups: list[list]) -> list:
