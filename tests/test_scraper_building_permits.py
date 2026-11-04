@@ -83,6 +83,8 @@ def test_every_layout_matches_the_hand_checked_version(ym):
             assert norm(got[pid][field]) == norm(g[field]), (pid, field)
         for field in ("cost_approximate", "permit_fee"):
             assert (got[pid][field] or 0) == (permit_reports.money(g[field]) or 0), (pid, field)
+        if ym < "2021":  # starred in the report: issued outside city limits
+            assert got[pid]["outside_city_limits"] == (g["outside_city_limits"] == "True"), pid
 
 
 def test_totals_counts_and_headers_are_not_permits():
@@ -98,6 +100,21 @@ def test_totals_counts_and_headers_are_not_permits():
     assert [r["permit_number"] for r in out] == ["190013"]  # the sign permit, totals and counts left out
     assert out[0]["contractor"] == "PIONEER" and out[0]["construction_type"] == "COMMERCIAL ALTERATION"
     assert out[0]["cost_approximate"] == 80000.0
+
+
+def test_summary_by_type_and_title_rows_are_not_permits():
+    # 2018 reports end with a table of counts by type; a 2026 one put its title in the first cell
+    rows = [
+        ["PERMIT #", "NAME", "ADDRESS", "TYPE OF CONST.", "CONTRACTOR", "APPROX. COST", "PERMIT FEES", "HOOKUP FEES"],
+        ["*180351", "SMITH", "19940 GOBBLER RD", "RES-GARAGE", "SELF", "$ 4,000.00", "$ 74.00", "n/a"],
+        ["180352", "JONES", "12 MAIN ST", "RES-DECK", "SELF", "$ 2,000.00", "$ 40.00", "n/a"],
+        ["PROJECT TYPE", "# OF PERMITS", "VALUATION", "FEES", "", "", "", ""],
+        ["Res-New Dwelling", "$ 13,063.60", "4000.0", "$ 2,083,200.00", "", "", "", ""],
+        ["Building Permit Report - August 2026", "", "", "", "", "", "", ""],
+    ]  # fmt: skip
+    out = permit_reports.parse_tables([rows])
+    assert [r["permit_number"] for r in out] == ["180351", "180352"]
+    assert [r["outside_city_limits"] for r in out] == [True, False]
 
 
 def test_text_that_ran_into_the_next_cell_goes_back():

@@ -14,8 +14,10 @@ every layout the city has used since 2013:
                 Jurisdictional Area"
 
 Columns are found from a header row when there is one, else from what the cells
-look like. Totals and count rows at the end are left out, and so are permit
-types that aren't building (signs, burns, right-of-way, grading).
+look like. Totals, count and summary-by-type rows at the end are left out, and so
+are permit types that aren't building (signs, burns, right-of-way, grading).
+Permits outside city limits are starred in the older reports ("*13-0002") and
+have their own Jurisdictional Area since 2025.
 """
 
 from __future__ import annotations
@@ -152,11 +154,16 @@ def _record(values: dict) -> dict | None:
     values["contractor"], values["cost_approximate"] = _unspill(
         values.get("contractor", ""), values.get("cost_approximate", ""), numeric=True
     )
-    pid = squeeze(values.get("permit_number")).lstrip("*").rstrip("*").strip()
+    raw_pid = squeeze(values.get("permit_number"))
+    # 2013 – 2020 reports star permits "issued outside City limits" ("*13-0002")
+    starred = raw_pid.startswith("*") or raw_pid.endswith("*")
+    pid = raw_pid.strip("*").strip()
     if not pid or _TOTALS.search(pid) or pid.lower() in ("permit #", "record #", "none"):
         return None
     if re.fullmatch(r"\d{1,3}", pid):
         return None  # a count in a summary table; permit numbers are longer
+    if not re.search(r"\d", pid) or " " in pid:
+        return None  # a summary table's "Res-New Dwelling" row, or the report's title line
     ctype = squeeze(values.get("construction_type"))
     if ctype.upper() in SKIP_TYPES or squeeze(values.get("applicant_name")).upper() in SKIP_TYPES:
         return None
@@ -170,7 +177,7 @@ def _record(values: dict) -> dict | None:
         "cost_approximate": money(values.get("cost_approximate")),
         "permit_fee": money(values.get("permit_fee")),
         "hookup_fee": money(values.get("hookup_fee")),
-        "outside_city_limits": bool(jurisdiction) and jurisdiction != "city",
+        "outside_city_limits": starred or (bool(jurisdiction) and jurisdiction != "city"),
     }
 
 
