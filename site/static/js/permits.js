@@ -462,6 +462,7 @@ document.addEventListener("alpine:init", () => {
       details(r) {
         const out = [];
         if (r.no) out.push([r.src === "app" ? "Application" : "Permit number", r.no]);
+        if (r.ad) out.push(["Applied", this.day(r.ad) + (r.ano ? ` (application ${r.ano})` : "")]);
         if (r.who && r.who !== r.own) out.push(["Applicant", r.who]);
         if (r.own) out.push(["Owner", r.own + (r.own_c ? ` · ${r.own_c}` : "")]);
         if (r.con_c) out.push(["Contractor contact", r.con_c]);

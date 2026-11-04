@@ -897,6 +897,11 @@ def permit_site_key(r: dict, parcels: ParcelLinks | None) -> str:
     return site_key(parcels, record_key("permit", r), addr, geo.normalize_address(addr))
 
 
+def permit_no_key(number) -> str:
+    """A permit number for matching: '14-0545', '*140545' and '140545' are the same permit."""
+    return re.sub(r"[^0-9A-Z]", "", str(number or "").upper())
+
+
 def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
     """
     Every planning application (OpenGov archive), issued building permit
@@ -933,8 +938,33 @@ def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
     def place(key: str, addr: str, fallback: str) -> str:
         return site_key(parcels, key, addr, fallback)
 
+    # An application in the archive and the permit it became are one job: the permit (from the
+    # monthly report) carries the application's date, number and details, and the application
+    # isn't listed again. They share a number: the old system's 'historical_no' (140545 is permit
+    # 14-0545), the new system's own ('RAA-25-31'), within a year of each other.
+    permits = site.get("building_permits").records
+    by_number: dict[str, list[dict]] = defaultdict(list)
+    for r in permits:
+        if n := permit_no_key(r.get("permit_number")):
+            by_number[n].append(r)
+    applied: dict[int, dict] = {}  # id(permit) → its application
+
+    def became(app: dict) -> dict | None:
+        numbers = [app.get("historical_no")]
+        if re.search(r"[A-Za-z]", app.get("no") or ""):
+            numbers.append(app.get("no"))
+        year = (app.get("submitted") or app.get("created") or "")[:4]
+        for n in filter(None, map(permit_no_key, numbers)):
+            for r in by_number.get(n, []):
+                if year.isdigit() and abs(int(r.get("year") or 0) - int(year)) <= 1:
+                    return r
+        return None
+
     for r in load_planning_archive(site)["records"]:
         if not r.get("site") or "practice record" in (r.get("type") or "").lower():
+            continue
+        if (permit := became(r)) is not None:
+            applied.setdefault(id(permit), r)
             continue
         add(
             place(record_key("app", r), r.get("address", ""), geo.normalize_address(r.get("address", ""))),
@@ -958,12 +988,13 @@ def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
             },
         )
 
-    for r in site.get("building_permits").records:
+    for r in permits:
+        app = applied.get(id(r)) or {}
         add(
             permit_site_key(r, parcels),
-            r.get("site_address"),
-            r.get("lat"),
-            r.get("lon"),
+            r.get("site_address") or app.get("address"),
+            r.get("lat") or app.get("lat"),
+            r.get("lon") or app.get("lon"),
             {
                 "src": "permit",
                 "d": r.get("date"),
@@ -974,6 +1005,14 @@ def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
                 "who": (r.get("applicant_name") or "").title(),
                 "con": (r.get("contractor") or "").title(),
                 "u": report_link(site, r),
+                # from its application, when the archive has it
+                "ad": app.get("submitted") or app.get("created"),
+                "ano": app.get("no") if permit_no_key(app.get("no")) != permit_no_key(r.get("permit_number")) else None,
+                "s": friendly_status(app.get("status")) if app else None,
+                "desc": app.get("description"),
+                "own": app.get("owner"),
+                "own_c": " · ".join(x for x in (app.get("owner_phone"), app.get("owner_email")) if x),
+                "con_c": " · ".join(x for x in (app.get("contractor_phone"), app.get("contractor_email")) if x),
             },
         )
 

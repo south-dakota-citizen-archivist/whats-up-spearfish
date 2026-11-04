@@ -178,3 +178,38 @@ def test_permit_sites_groups_by_address(tmp_path):
     assert [r["c"] for r in s["r"]] == ["r", "c"]
     assert s["r"][0]["t"] == "Shed"
     assert s["lp"] == 1
+
+
+def test_an_application_and_the_permit_it_became_are_one_entry(tmp_path):
+    (tmp_path / "archive").mkdir()
+    app = {"site": True, "address": "412 W JACKSON BLVD, SPEARFISH, SD 57783", "type": "Com Roof (pre-2020 system)",
+           "status": "Complete", "applicant": "HETT, JANIE"}  # fmt: skip
+    archive = {
+        "meta": {},
+        "records": [
+            # the old system: its historical number is the permit's
+            dict(app, id=2899, no="1522", historical_no="140545", created="2014-10-30"),
+            # the same number years apart is a different job
+            dict(app, id=9000, no="1999", historical_no="140545", created="2019-04-02"),
+            # the new system: one number for both
+            dict(app, id=9965, no="RAA-25-31", type="Residential Additions or Alterations", created="2025-04-19"),
+        ],
+    }
+    (tmp_path / "archive" / "planning_index.json").write_text(json.dumps(archive))
+    permits = {
+        "records": [
+            {"site_address": "412 W JACKSON BLVD", "date": "2014-10-01", "year": "2014",
+             "construction_type": "COMM-ROOF", "permit_number": "14-0545", "cost_approximate": 5800},
+            {"site_address": "412 W JACKSON BLVD", "date": "2025-05-01", "year": "2025",
+             "construction_type": "Residential Additions or Alterations", "permit_number": "RAA-25-31"},
+        ]
+    }  # fmt: skip
+    (tmp_path / "building_permits.json").write_text(json.dumps(permits))
+
+    (place,) = permit_sites(Site(tmp_path))
+    by_no = {r.get("no"): r for r in place["r"]}
+    assert set(by_no) == {"14-0545", "RAA-25-31", "1999"}  # application 1522 folded into its permit
+    roof = by_no["14-0545"]
+    assert (roof["src"], roof["ad"], roof["ano"], roof["s"]) == ("permit", "2014-10-30", "1522", "Completed")
+    assert "ano" not in by_no["RAA-25-31"]  # the same number as the permit: not repeated
+    assert by_no["1999"]["src"] == "app"
