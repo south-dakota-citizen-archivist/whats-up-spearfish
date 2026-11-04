@@ -21,17 +21,17 @@
 
 <div class="grid lg:grid-cols-2 gap-6">
 
-  {% call card("Upcoming meetings", "meetings", sources=meeting_sources) %}
-    {% if upcoming %}{{ meeting_list(upcoming) }}{% else %}{{ empty("No upcoming agendas posted yet.") }}{% endif %}
+  {# one card: what's coming up, then what just happened #}
+  {% call card("Meetings", "meetings", sources=meeting_sources) %}
+    <h3 class="text-sm font-bold mb-1">Coming up</h3>
+    {% if upcoming %}{{ meeting_list(upcoming) }}{% else %}{{ empty("No agendas posted yet.") }}{% endif %}
+    <h3 class="text-sm font-bold mt-5 mb-1">Past six weeks</h3>
+    {% if recent %}{{ meeting_list(recent) }}{% else %}{{ empty("None.") }}{% endif %}
   {% endcall %}
 
-  {% call card("Recent meetings", "recent-meetings") %}
-    {% if recent %}{{ meeting_list(recent) }}{% else %}{{ empty("Nothing in the past six weeks.") }}{% endif %}
-  {% endcall %}
-
-  {% call card("Meeting video", "video", sources=youtube, class="lg:col-span-2") %}
+  {% call card("Meeting video", "video", sources=youtube) %}
     {% if videos %}
-    <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4" data-more="2" data-more-lg="3" data-more-noun="videos">
+    <ul class="grid sm:grid-cols-2 gap-4" data-more="2" data-more-lg="6" data-more-noun="videos">
       {% for v in videos %}
       <li>
         <a href="{{ v.url }}" target="_blank" rel="noopener" class="group block">
