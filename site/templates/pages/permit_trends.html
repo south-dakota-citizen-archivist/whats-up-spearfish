@@ -27,7 +27,7 @@
           aria-label="{{ b.year }}{% if b.partial %} ({{ b.months }} months){% endif %}: {{ b.label }}"
           @mouseenter="shown = {{ reading(b) | tojson | forceescape }}" @mouseleave="shown = ''"
           @focus="shown = {{ reading(b) | tojson | forceescape }}" @blur="shown = ''">
-        {% if labels and b.labeled %}<span class="{{ 'self-end' if loop.last else 'self-start' if loop.first else 'self-center' }} pointer-events-none mb-0.5 text-[11px] font-semibold leading-none text-stone-800 tabular-nums whitespace-nowrap">{{ b.label }}</span>{% endif %}
+        {% if labels and b.labeled %}<span class="self-center pointer-events-none mb-0.5 text-[11px] font-semibold leading-none text-stone-800 tabular-nums whitespace-nowrap">{{ b.label }}</span>{% endif %}
         <span class="block w-full {{ 'bar-partial' if b.partial else 'bg-pine-600 group-hover:bg-pine-800 group-focus:bg-pine-800' }}" style="height: {{ b.pct }}%"></span>
       </li>
       {% endfor %}
