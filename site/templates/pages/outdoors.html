@@ -150,8 +150,7 @@
 
   {# roadkill: what state crews picked up off Black Hills roads, with their photos #}
   {% if roadkill.count %}
-  {% call card("Roadkill", "roadkill", sources=roadkill.source, class="lg:col-span-2") %}
-    <p class="text-sm text-stone-600 mb-3">Deer and other animals state crews picked up off Black Hills roads.</p>
+  {% call card("Local roadkill", "roadkill", sources=roadkill.source, class="lg:col-span-2") %}
     <p class="flex flex-wrap items-baseline gap-x-2"><span class="text-4xl font-extrabold tabular-nums">{{ roadkill.past_month | intcomma }}</span><span class="text-stone-600">in the past 30 days</span></p>
     <p class="text-sm text-stone-500">{{ roadkill.past_week | intcomma }} in the past week</p>
     {% if roadkill.species %}
