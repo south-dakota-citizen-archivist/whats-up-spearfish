@@ -127,7 +127,8 @@
 {# ── pictures: pets, beer, ice cream, books ─────────────────────────────── #}
 <div class="grid lg:grid-cols-2 gap-6 mt-6">
   {% if pets %}
-  {% call card("Pets up for adoption", "pets", more=root ~ "community/#pets", more_label="All pets") %}
+  {% call card("Adopt a pet", "pets", more=root ~ "community/#pets", more_label="All pets") %}
+    <p class="mb-3 text-sm text-stone-700"><span class="font-bold">{{ pet_tally.total }}</span> {{ 'pet' if pet_tally.total == 1 else 'pets' }} up for adoption{% if pet_tally.kinds %}: {{ pet_tally.kinds }}{% endif %}</p>
     <ul class="grid grid-cols-2 sm:grid-cols-4 gap-3">
       {% for pet in pets %}
       <li>

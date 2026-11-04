@@ -8,8 +8,9 @@
 
 <div class="space-y-6">
   {# ── pets first: a dozen, the rest a tap away ── #}
-  {% call card("Pets up for adoption", "pets", sources=pets, more=pets.url, more_label="Western Hills Humane Society") %}
+  {% call card("Adopt a pet", "pets", sources=pets, more=pets.url, more_label="Western Hills Humane Society") %}
     {% if pets.records %}
+    <p class="mb-3 text-sm text-stone-700"><span class="font-bold">{{ pet_tally.total }}</span> {{ 'pet' if pet_tally.total == 1 else 'pets' }} up for adoption{% if pet_tally.kinds %}: {{ pet_tally.kinds }}{% endif %}</p>
     {% set shown = 12 %}
     <div x-data="{ all: false }">
       <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">

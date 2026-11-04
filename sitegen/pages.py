@@ -353,6 +353,14 @@ def mixed_pets(pets: list[dict]) -> list[dict]:
     return sorted(mixed, key=lambda p: not p.get("image_url"))
 
 
+def pet_tally(records: list[dict]) -> dict:
+    """How many pets are up for adoption, by species: {'total': 50, 'kinds': '40 cats, 10 dogs'}."""
+    plural = {"cat": "cats", "dog": "dogs", "rabbit": "rabbits", "puppy": "puppies", "kitten": "kittens"}
+    by_kind = Counter((r.get("species") or "other").lower() for r in records)
+    kinds = [f"{n} {k if n == 1 else plural.get(k, k + 's')}" for k, n in by_kind.most_common()]
+    return {"total": len(records), "kinds": ", ".join(kinds) if len(kinds) > 1 else ""}
+
+
 def pet_picks(site: Site, n: int, rng: random.Random) -> list[dict]:
     """Pets with photos, chosen at random with an even split between species (the
     shelter usually has far more cats than dogs), alternating so the row looks mixed."""
@@ -434,6 +442,7 @@ def home(site: Site, events: list[dict], today: date) -> dict:
         "menu_lists": menu_lists(next_menus[0]["menus"]) if next_menus else {},
         # a fresh mix on every build (several times a day)
         "pets": pet_picks(site, 8, rng),
+        "pet_tally": pet_tally(site.get("whhs_adoptable").records),
         "beers": tap_picks(site, 8, rng),
         "books": book_picks(site, 8, rng),
         "creek": creek_context(site),
@@ -609,6 +618,7 @@ def community(site: Site, events: list[dict], today: date) -> dict:
         "books": sorted(library.records, key=lambda b: not b.get("image_url")),
         "pets": site.get("whhs_adoptable"),
         "pet_list": mixed_pets(site.get("whhs_adoptable").records),
+        "pet_tally": pet_tally(site.get("whhs_adoptable").records),
         "checkouts": checkouts_context(site),
     }
 

@@ -140,6 +140,8 @@ def site_url(tmp_path_factory):
             {
                 "id": "n1",
                 "kind": "news",
+                "source": "black_hills_pioneer",
+                "source_label": "Black Hills Pioneer",
                 "title": "Council approves budget",
                 "url": "https://example.com/n1",
                 "published": dates.now().isoformat(),
@@ -455,7 +457,8 @@ def test_dropdowns_leave_room_for_their_arrow(open_page):
     for path in ("permits/", "news/"):
         page = open_page(path)
         pads = page.evaluate(
-            "[...document.querySelectorAll('select')].map(s => parseFloat(getComputedStyle(s).paddingRight))"
+            "[...document.querySelectorAll('select, #outlet-button')]"
+            ".map(s => parseFloat(getComputedStyle(s).paddingRight))"
         )
         assert pads and min(pads) >= 30, (path, pads)
 
@@ -678,4 +681,23 @@ def test_trends_biggest_projects_open_their_place_on_the_permits_page(open_page)
     link.click()
     page.wait_for_selector("#place-name", timeout=10000)
     assert page.locator("#place-name").inner_text() in ("440 Heritage Drive", "12 Old Mill Road")
+    assert page.errors == []
+
+
+def test_news_outlet_picker_takes_any_mix_and_remembers_it(open_page):
+    page = open_page("news/")
+    button = page.locator("#outlet-button")
+    assert "All outlets" in button.inner_text() and button.get_attribute("aria-expanded") == "false"
+    button.click()
+    assert button.get_attribute("aria-expanded") == "true"
+    outlet = page.locator("#outlet-menu input[type=checkbox]").first
+    outlet.check()
+    page.wait_for_timeout(100)
+    assert "Black Hills Pioneer" in button.inner_text()
+    assert page.get_by_role("link", name="Council approves budget").is_visible()
+    page.keyboard.press("Escape")
+    assert not page.locator("#outlet-menu").is_visible()
+    page.reload()
+    page.wait_for_timeout(300)
+    assert "Black Hills Pioneer" in page.locator("#outlet-button").inner_text()  # remembered
     assert page.errors == []

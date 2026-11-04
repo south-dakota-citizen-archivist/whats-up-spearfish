@@ -2,30 +2,57 @@
 {% from "macros.html" import freshness %}
 
 {% block content %}
-<div x-data="{ outlet: '', counts: {{ outlets | tojson | forceescape }}, total: {{ news_count }} }">
+{# Outlets: a checkbox list under a button, so readers can pick any mix; none picked shows everything.
+   The picks are remembered in this browser. #}
+<div x-data="{
+       open: false,
+       counts: {{ outlets | tojson | forceescape }},
+       picked: [],
+       init() {
+         try { this.picked = JSON.parse(localStorage.getItem('news-outlets') || '[]').filter((o) => o in this.counts); } catch (e) {}
+         this.$watch('picked', (v) => localStorage.setItem('news-outlets', JSON.stringify(v)));
+       },
+       shows(label) { return !this.picked.length || this.picked.includes(label); },
+       label() { return !this.picked.length ? 'All outlets' : this.picked.length === 1 ? this.picked[0] : this.picked.length + ' outlets'; },
+       shown() { return this.picked.reduce((n, o) => n + this.counts[o], 0); },
+     }">
   <div class="flex flex-wrap items-end justify-between gap-3 mb-4">
     <div>
       <h1 class="text-2xl font-extrabold">News</h1>
       <p class="text-sm text-stone-600">{{ news_count }} stories from regional outlets in the past two weeks.</p>
       {{ freshness(news_sources) }}
     </div>
-    <div>
-      <label for="outlet" class="sr-only">Show stories from</label>
-      <select id="outlet" x-model="outlet" class="border border-stone-300 bg-white pl-3 py-2 text-sm">
-        <option value="">All outlets</option>
-        {% for o, n in outlets.items() %}<option value="{{ o }}">{{ o }} ({{ n }})</option>{% endfor %}
-      </select>
-      <p class="sr-only" role="status" x-text="outlet ? counts[outlet] + ' stories from ' + outlet : ''"></p>
+    <div class="relative" @keydown.escape="open = false" @click.outside="open = false">
+      <button type="button" id="outlet-button" @click="open = !open" :aria-expanded="open.toString()" aria-controls="outlet-menu"
+              class="relative h-10 min-w-48 border border-stone-300 bg-white pl-3 pr-9 text-left text-sm">
+        <span class="sr-only">Show stories from: </span><span x-text="label()">All outlets</span>
+        <svg aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="#44403c" stroke-width="2" class="absolute right-[0.7rem] top-1/2 -translate-y-1/2 w-[0.85rem] h-[0.85rem]"><path d="M3.5 6l4.5 4.5L12.5 6"/></svg>
+      </button>
+      <div id="outlet-menu" x-show="open" x-cloak class="absolute right-0 z-20 mt-1 w-72 bg-white border border-stone-300 shadow-lg py-1">
+        <fieldset>
+          <legend class="sr-only">Show stories from</legend>
+          {% for o, n in outlets.items() %}
+          <label class="flex items-center gap-2.5 px-3 py-2 text-sm hover:bg-pine-50">
+            <input type="checkbox" value="{{ o }}" x-model="picked" class="w-4 h-4 accent-pine-700">
+            <span>{{ o }}</span><span class="ml-auto text-stone-500 tabular-nums">{{ n }}</span>
+          </label>
+          {% endfor %}
+        </fieldset>
+        <div x-show="picked.length" class="border-t border-stone-100 mt-1 px-3 pt-2 pb-1">
+          <button type="button" @click="picked = []" class="text-sm font-semibold text-pine-700 hover:underline">Show all outlets</button>
+        </div>
+      </div>
+      <p class="sr-only" role="status" x-text="picked.length ? shown() + ' stories from ' + label() : ''"></p>
     </div>
   </div>
 
   {% for day, items in news_days %}
-  {# hide the whole day when the chosen outlet has nothing that day #}
-  <section class="mb-5" x-show="!outlet || {{ items | map(attribute='source_label') | unique | list | tojson | forceescape }}.includes(outlet)">
+  {# hide the whole day when the chosen outlets have nothing that day #}
+  <section class="mb-5" x-show="{{ items | map(attribute='source_label') | unique | list | tojson | forceescape }}.some((o) => shows(o))">
     <h2 class="text-sm font-bold uppercase tracking-wide text-pine-800 mb-1.5">{{ day | day_heading }}</h2>
     <ul class="bg-white border border-stone-200 divide-y divide-stone-100">
       {% for n in items %}
-      <li class="px-4 py-3" x-show="!outlet || outlet === {{ n.source_label | tojson | forceescape }}">
+      <li class="px-4 py-3" x-show="shows({{ n.source_label | tojson | forceescape }})">
         <a href="{{ n.url }}" target="_blank" rel="noopener" class="font-medium hover:text-pine-700 hover:underline">{{ n.title }}</a>
         <p class="text-xs text-stone-500">{{ n.source_label }}{% if n.byline %} · {{ n.byline }}{% endif %}</p>
         {% if n.description %}<p class="text-sm text-stone-600 mt-1 line-clamp-2">{{ n.description }}</p>{% endif %}
