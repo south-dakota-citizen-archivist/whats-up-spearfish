@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-03T23:20:57-07:00",
- "count": 16,
+ "fetched_at": "2026-11-04T01:21:31-07:00",
+ "count": 17,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -171,7 +171,7 @@
    "title": "AP: Rhoden wins South Dakota gubernatorial race",
    "slug": "sdpb-ap-rhoden-wins-south-dakota-gubernatorial-race",
    "published": "2026-11-03",
-   "byline": "By Josh Chilson",
+   "byline": "By Josh Chilson, C.J. Keene",
    "description": "Republican Gov. Larry Rhoden has won four more years in the state’s highest office after defeating Democrat Dan Ahlers in the race for South Dakota governor.",
    "image_url": "https://npr.brightspotcdn.com/d8/42/c3436ac148ec9cbc8d6759c191dd/rhoden-runoff-4.jpg",
    "record_type": "news",
@@ -245,6 +245,22 @@
    "id": "c8c0ea7dadfb",
    "date": "2026-11-03",
    "_first_seen": "2026-11-03"
+  },
+  {
+   "url": "https://www.sdpb.org/elections/2026-11-04/while-sd-democrats-dont-win-statewide-candidates-draw-hope-from-other-states-flipping",
+   "title": "While SD Democrats don't win statewide, candidates draw hope from other states flipping",
+   "slug": "sdpb-while-sd-democrats-don-t-win-statewide-candidates-draw-hope-from-other",
+   "published": "2026-11-04",
+   "byline": "By Jackson Dircks",
+   "description": "South Dakota Democrats will have to wait another two years if they want to see a Democrat win a statewide office.",
+   "image_url": "https://npr.brightspotcdn.com/7e/cd/4465910e4e26859de0f68e0c761a/untitled-design-46.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "aff5bfe8a7a6",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-04"
   },
   {
    "url": "https://www.sdpb.org/elections/2026-11-03/ap-rounds-wins-u-s-senate-reelection-bid",
