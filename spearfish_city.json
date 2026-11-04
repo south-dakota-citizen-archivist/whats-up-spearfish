@@ -3,7 +3,7 @@
  "name": "City of Spearfish",
  "kind": "document",
  "url": "https://spearfishsd.portal.civicclerk.com/",
- "fetched_at": "2026-11-04T14:11:29-07:00",
+ "fetched_at": "2026-11-04T15:09:54-07:00",
  "count": 88,
  "records": [
   {
@@ -72,6 +72,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2192/files/agenda/7751",
@@ -151,6 +152,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2192/files/agenda-packet/7764",
@@ -230,6 +232,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2192/files/minutes/8783",
@@ -333,6 +336,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3350/files/agenda/7760",
@@ -436,6 +440,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3350/files/agenda-packet/7761",
@@ -779,6 +784,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/39/files/agenda/7770",
@@ -1122,6 +1128,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/39/files/agenda-packet/8770",
@@ -1465,6 +1472,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/39/files/minutes/8793",
@@ -1568,6 +1576,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2212/files/agenda/7767",
@@ -1671,6 +1680,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2212/files/agenda-packet/7768",
@@ -1774,6 +1784,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2212/files/minutes/8795",
@@ -1798,6 +1809,7 @@
    "media_url": "",
    "media_page": "",
    "chapters": [],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2244/files/agenda/8773",
@@ -1822,6 +1834,7 @@
    "media_url": "",
    "media_page": "",
    "chapters": [],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2244/files/agenda-packet/8777",
@@ -1846,6 +1859,7 @@
    "media_url": "",
    "media_page": "",
    "chapters": [],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3355/files/agenda/8782",
@@ -1973,6 +1987,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3353/files/agenda/8791",
@@ -2100,6 +2115,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3353/files/agenda-packet/8797",
@@ -2227,6 +2243,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3353/files/minutes/8800",
@@ -2251,6 +2268,7 @@
    "media_url": "",
    "media_page": "",
    "chapters": [],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3354/files/agenda/8779",
@@ -2275,6 +2293,7 @@
    "media_url": "",
    "media_page": "",
    "chapters": [],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3354/files/other/8780",
@@ -2372,6 +2391,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2225/files/agenda/8798",
@@ -2469,6 +2489,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2225/files/agenda-packet/8799",
@@ -2566,6 +2587,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2225/files/minutes/8823",
@@ -2651,6 +2673,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2193/files/agenda/8815",
@@ -2736,6 +2759,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2193/files/agenda-packet/8822",
@@ -2821,6 +2845,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2193/files/minutes/8857",
@@ -2845,6 +2870,7 @@
    "media_url": "",
    "media_page": "",
    "chapters": [],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2258/files/agenda/8826",
@@ -2869,6 +2895,7 @@
    "media_url": "",
    "media_page": "",
    "chapters": [],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2258/files/minutes/8840",
@@ -3200,6 +3227,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3344/files/agenda/8828",
@@ -3531,6 +3559,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3344/files/agenda-packet/8837",
@@ -3862,6 +3891,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3344/files/minutes/8872",
@@ -3923,6 +3953,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3356/files/agenda/8832",
@@ -3984,6 +4015,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3356/files/minutes/8854",
@@ -4045,6 +4077,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3357/files/agenda/8833",
@@ -4106,6 +4139,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3357/files/minutes/8855",
@@ -4167,6 +4201,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3358/files/agenda/8834",
@@ -4228,6 +4263,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3358/files/minutes/8856",
@@ -4331,6 +4367,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2026/files/agenda/8838",
@@ -4434,6 +4471,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2026/files/agenda-packet/8839",
@@ -4537,6 +4575,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2026/files/minutes/8871",
@@ -4616,6 +4655,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2194/files/agenda/8862",
@@ -4695,6 +4735,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2194/files/agenda-packet/8870",
@@ -4774,6 +4815,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2194/files/minutes/8883",
@@ -4796,8 +4838,9 @@
    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2245",
    "has_media": true,
    "media_url": "",
-   "media_page": "https://spearfishsd.portal.civicclerk.com/event/2245/media",
+   "media_page": "",
    "chapters": [],
+   "join_url": "https://vimeo.com/1227769393",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2245/files/agenda/8850",
@@ -4820,8 +4863,9 @@
    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2245",
    "has_media": true,
    "media_url": "",
-   "media_page": "https://spearfishsd.portal.civicclerk.com/event/2245/media",
+   "media_page": "",
    "chapters": [],
+   "join_url": "https://vimeo.com/1227769393",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2245/files/agenda-packet/8851",
@@ -4844,8 +4888,9 @@
    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2245",
    "has_media": true,
    "media_url": "",
-   "media_page": "https://spearfishsd.portal.civicclerk.com/event/2245/media",
+   "media_page": "",
    "chapters": [],
+   "join_url": "https://vimeo.com/1227769393",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2245/files/minutes/8880",
@@ -4870,6 +4915,7 @@
    "media_url": "",
    "media_page": "",
    "chapters": [],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3359/files/agenda/8848",
@@ -5135,6 +5181,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2175/files/agenda/8876",
@@ -5400,6 +5447,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2175/files/agenda-packet/8878",
@@ -5665,6 +5713,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2175/files/minutes/8882",
@@ -5738,6 +5787,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2195/files/agenda/8892",
@@ -5811,6 +5861,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2195/files/agenda-packet/8901",
@@ -5884,6 +5935,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2195/files/minutes/8908",
@@ -5951,6 +6003,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3362/files/agenda/8896",
@@ -6018,6 +6071,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3362/files/agenda-packet/8897",
@@ -6085,6 +6139,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3362/files/minutes/8909",
@@ -6332,6 +6387,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2150/files/agenda/8906",
@@ -6579,6 +6635,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2150/files/agenda-packet/8907",
@@ -6826,6 +6883,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2150/files/minutes/8930",
@@ -6935,6 +6993,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2226/files/agenda/8902",
@@ -7044,6 +7103,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2226/files/agenda-packet/8903",
@@ -7153,6 +7213,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2226/files/minutes/8940",
@@ -7226,6 +7287,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2196/files/agenda/8925",
@@ -7299,6 +7361,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2196/files/agenda-packet/8927",
@@ -7372,6 +7435,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2196/files/minutes/8945",
@@ -7439,6 +7503,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3404/files/agenda/8928",
@@ -7506,6 +7571,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3404/files/agenda-packet/8929",
@@ -7573,6 +7639,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3404/files/minutes/8946",
@@ -7595,8 +7662,9 @@
    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2246",
    "has_media": true,
    "media_url": "",
-   "media_page": "https://spearfishsd.portal.civicclerk.com/event/2246/media",
+   "media_page": "",
    "chapters": [],
+   "join_url": "https://vimeo.com/1236252649?fl=ip&fe=ec&share=copy",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2246/files/agenda/8915",
@@ -7619,8 +7687,9 @@
    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2246",
    "has_media": true,
    "media_url": "",
-   "media_page": "https://spearfishsd.portal.civicclerk.com/event/2246/media",
+   "media_page": "",
    "chapters": [],
+   "join_url": "https://vimeo.com/1236252649?fl=ip&fe=ec&share=copy",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2246/files/agenda-packet/8916",
@@ -7643,8 +7712,9 @@
    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2246",
    "has_media": true,
    "media_url": "",
-   "media_page": "https://spearfishsd.portal.civicclerk.com/event/2246/media",
+   "media_page": "",
    "chapters": [],
+   "join_url": "https://vimeo.com/1236252649?fl=ip&fe=ec&share=copy",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2246/files/minutes/8936",
@@ -7669,6 +7739,7 @@
    "media_url": "",
    "media_page": "",
    "chapters": [],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3406/files/agenda/8931",
@@ -7850,6 +7921,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2164/files/agenda/8938",
@@ -8031,6 +8103,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2164/files/agenda-packet/8939",
@@ -8212,6 +8285,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2164/files/minutes/8947",
@@ -8315,6 +8389,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2214/files/agenda/8933",
@@ -8418,6 +8493,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2214/files/agenda-packet/8934",
@@ -8491,6 +8567,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2197/files/agenda/8958",
@@ -8564,6 +8641,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2197/files/agenda-packet/8959",
@@ -8637,6 +8715,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2197/files/minutes/8964",
@@ -8938,6 +9017,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2151/files/agenda/8982",
@@ -9239,6 +9319,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2151/files/agenda-packet/8987",
@@ -9306,6 +9387,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3405/files/agenda/8976",
@@ -9373,6 +9455,7 @@
      "sub": false
     }
    ],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3405/files/agenda-packet/8977",
@@ -9419,6 +9502,7 @@
    "media_url": "",
    "media_page": "",
    "chapters": [],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3326/files/agenda/8969",
@@ -9443,6 +9527,7 @@
    "media_url": "",
    "media_page": "",
    "chapters": [],
+   "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3326/files/agenda-packet/8970",
@@ -9465,8 +9550,9 @@
    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/3407",
    "has_media": true,
    "media_url": "",
-   "media_page": "https://spearfishsd.portal.civicclerk.com/event/3407/media",
+   "media_page": "",
    "chapters": [],
+   "join_url": "https://us02web.zoom.us/j/83682178231",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3407/files/agenda/8990",
@@ -9489,8 +9575,9 @@
    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/3407",
    "has_media": true,
    "media_url": "",
-   "media_page": "https://spearfishsd.portal.civicclerk.com/event/3407/media",
+   "media_page": "",
    "chapters": [],
+   "join_url": "https://us02web.zoom.us/j/83682178231",
    "record_type": "document",
    "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/3407/files/agenda-packet/8991",
