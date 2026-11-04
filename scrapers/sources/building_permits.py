@@ -235,3 +235,5 @@ def add_coordinates(records: list[dict]) -> None:
     for r in records:
         if c := coords.get(r.get("address_key", "")):
             r["lat"], r["lon"] = c
+    # what the Census can't place (new streets): OpenStreetMap, read by the site at build time
+    geo.locate_streets(k for k, c in coords.items() if not c)

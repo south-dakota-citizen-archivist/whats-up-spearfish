@@ -21,6 +21,7 @@
           <p class="mt-1 text-sm text-stone-600">
             <span x-text="selected.r.length + (selected.r.length === 1 ? ' record' : ' records')"></span><template x-if="selected.own"><span x-text="' • Owner: ' + selected.own"></span></template><template x-if="selected.ac"><span x-text="' • ' + selected.ac + (selected.ac === 1 ? ' acre' : ' acres')"></span></template>
           </p>
+          <template x-if="selected.ap"><p class="mt-1 text-xs text-stone-500">The spot on the map is approximate.</p></template>
           <p class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm font-semibold">
             <template x-if="selected.pid"><a :href="parcelUrl(selected)" target="_blank" rel="noopener" class="link">County parcel record</a></template>
             {% if not in_dialog %}<button type="button" x-show="selected.lat != null" @click="showView('map'); focusMap(selected)" class="lg:hidden text-pine-700 underline">Show on map</button>{% endif %}

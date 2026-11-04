@@ -499,4 +499,5 @@ class PlanningCommission(BaseScraper):
         for r in records:
             if c := coords.get(r["address_key"]):
                 r["lat"], r["lon"] = c
+        geo.locate_streets(k for k, c in coords.items() if not c)  # new streets; see geo.locate_streets
         return records

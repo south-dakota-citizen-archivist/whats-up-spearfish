@@ -1223,6 +1223,9 @@ def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
             },
         )
 
+    # a place the Census couldn't put on the map (a house on a new street): OpenStreetMap's
+    # position, which is often just the street ("ap": approximate). See scrapers/geo.locate_streets.
+    place_unmapped(groups.values(), _osm_positions(site))
     out = []
     for g in groups.values():
         g["r"].sort(key=lambda x: x.get("d") or "", reverse=True)
@@ -1232,6 +1235,61 @@ def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
         out.append(g)
     out.sort(key=lambda g: g["last"], reverse=True)
     return out
+
+
+_NUMBERED = re.compile(r"(\d+)\s+(.+)")
+NEIGHBOR_REACH = 100  # house numbers: how far past the last mapped neighbor an estimate may reach
+
+
+def place_unmapped(places, osm: dict) -> None:
+    """
+    Map positions for places the Census couldn't place, best first:
+      1. OpenStreetMap has the house itself
+      2. mapped neighbors on the same street: between the two whose house numbers bracket it
+         (or the nearest, if it's within NEIGHBOR_REACH of the end)
+      3. OpenStreetMap has only the street (new streets, mostly: short ones)
+    2 and 3 are approximate ("ap"), and the place's panel says so.
+    """
+    places = list(places)
+    streets: dict[str, list[tuple[int, float, float]]] = defaultdict(list)
+    for g in places:
+        if "lat" in g and (m := _NUMBERED.fullmatch(g["k"])):
+            streets[m.group(2)].append((int(m.group(1)), g["lat"], g["lon"]))
+    for pts in streets.values():
+        pts.sort()
+    for g in places:
+        if "lat" in g:
+            continue
+        hit = osm.get(g["k"])
+        if hit and hit[2] == "house":
+            g["lat"], g["lon"] = round(hit[0], 5), round(hit[1], 5)
+            continue
+        if (m := _NUMBERED.fullmatch(g["k"])) and (est := _between_neighbors(int(m.group(1)), streets.get(m.group(2)))):
+            g["lat"], g["lon"], g["ap"] = round(est[0], 5), round(est[1], 5), 1
+            continue
+        if hit:
+            g["lat"], g["lon"], g["ap"] = round(hit[0], 5), round(hit[1], 5), 1
+
+
+def _between_neighbors(n: int, pts: list | None) -> tuple[float, float] | None:
+    if not pts:
+        return None
+    lower = [p for p in pts if p[0] <= n]
+    upper = [p for p in pts if p[0] >= n]
+    if lower and upper:
+        (a, alat, alon), (b, blat, blon) = lower[-1], upper[0]
+        f = 0 if a == b else (n - a) / (b - a)
+        return alat + f * (blat - alat), alon + f * (blon - alon)
+    near = lower[-1] if lower else upper[0]
+    return (near[1], near[2]) if abs(near[0] - n) <= NEIGHBOR_REACH else None
+
+
+def _osm_positions(site: Site) -> dict:
+    try:
+        cache = json.loads((site.data_dir / "_geocode_osm.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return {k: v for k, v in cache.items() if isinstance(v, list) and len(v) == 3}
 
 
 def permits_page(site: Site, events: list[dict], today: date) -> dict:

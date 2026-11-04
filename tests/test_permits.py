@@ -213,3 +213,73 @@ def test_an_application_and_the_permit_it_became_are_one_entry(tmp_path):
     assert (roof["src"], roof["ad"], roof["ano"], roof["s"]) == ("permit", "2014-10-30", "1522", "Completed")
     assert "ano" not in by_no["RAA-25-31"]  # the same number as the permit: not repeated
     assert by_no["1999"]["src"] == "app"
+
+
+# ── places the Census can't put on the map ──────────────────────────────────
+
+
+def test_unmapped_places_get_the_best_position_available():
+    from sitegen.pages import place_unmapped
+
+    places = [
+        {"k": "100 ELM ST", "lat": 44.50, "lon": -103.90},
+        {"k": "200 ELM ST", "lat": 44.52, "lon": -103.88},
+        {"k": "150 ELM ST"},  # between two mapped neighbors
+        {"k": "260 ELM ST"},  # past the end, but close
+        {"k": "900 ELM ST"},  # too far past the end to guess
+        {"k": "5 NEW ST"},  # a new street: OpenStreetMap has the street
+        {"k": "7 NEW ST"},  # ... and this house
+        {"k": "LOT 3 SOMEWHERE"},  # nothing to go on
+    ]
+    osm = {"5 NEW ST": [44.47, -103.81, "street"], "7 NEW ST": [44.471, -103.811, "house"]}
+    place_unmapped(places, osm)
+    by = {p["k"]: p for p in places}
+    assert (by["150 ELM ST"]["lat"], by["150 ELM ST"]["lon"], by["150 ELM ST"]["ap"]) == (44.51, -103.89, 1)
+    assert by["260 ELM ST"]["lat"] == 44.52 and by["260 ELM ST"]["ap"] == 1
+    assert "lat" not in by["900 ELM ST"]
+    assert by["5 NEW ST"]["lat"] == 44.47 and by["5 NEW ST"]["ap"] == 1
+    assert by["7 NEW ST"]["lat"] == 44.471 and "ap" not in by["7 NEW ST"]  # the house itself: exact
+    assert "lat" not in by["LOT 3 SOMEWHERE"]
+    assert "ap" not in by["100 ELM ST"]
+
+
+def test_locate_streets_caches_answers_and_retries_misses_later(tmp_path, monkeypatch):
+    from datetime import date
+
+    monkeypatch.setattr("scrapers.base.DATA_DIR", tmp_path)
+    monkeypatch.setattr(geo, "NOMINATIM_DELAY", 0)
+    asked = []
+
+    class Resp:
+        def __init__(self, body):
+            self.body = body
+
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return self.body
+
+    answers = {
+        "2312 PLATINUM DR": [{"lat": "44.4789", "lon": "-103.8169", "addresstype": "road", "address": {}}],
+        "10 MAIN ST": [
+            {"lat": "44.49", "lon": "-103.86", "addresstype": "building", "address": {"house_number": "10"}}
+        ],
+        "1 FAR AWAY RD": [{"lat": "43.0", "lon": "-100.0", "addresstype": "road", "address": {}}],  # not Spearfish
+    }
+
+    def fake_get(url, params=None, **kw):
+        key = params["q"].split(",")[0]
+        asked.append(key)
+        return Resp(answers.get(key, []))
+
+    monkeypatch.setattr(geo.net, "get", fake_get)
+    found = geo.locate_streets(["2312 PLATINUM DR", "10 MAIN ST", "1 FAR AWAY RD"], today=date(2026, 11, 4))
+    assert found == {"2312 PLATINUM DR": [44.4789, -103.8169, "street"], "10 MAIN ST": [44.49, -103.86, "house"]}
+    assert json.loads((tmp_path / "_geocode_osm.json").read_text())["1 FAR AWAY RD"] == {"miss": "2026-11-04"}
+
+    asked.clear()
+    geo.locate_streets(["2312 PLATINUM DR", "1 FAR AWAY RD"], today=date(2026, 11, 20))
+    assert asked == []  # answered, or missed too recently to ask again
+    geo.locate_streets(["1 FAR AWAY RD"], today=date(2026, 12, 20))
+    assert asked == ["1 FAR AWAY RD"]  # a month on, a miss is tried again

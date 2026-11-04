@@ -9,6 +9,11 @@ Address normalization and geocoding for Spearfish addresses.
 - geocode() resolves addresses to (lat, lon) with the free US Census batch
   geocoder, caching every answer (including misses) in {DATA_DIR}/_geocode_cache.json
   so each address is only ever looked up once.
+- locate_streets() is the fallback for what the Census misses, mostly houses on streets
+  too new for its map: OpenStreetMap's Nominatim, which often has the new street if not
+  the house number. Answers go in {DATA_DIR}/_geocode_osm.json as [lat, lon, "house"]
+  (the house itself) or [lat, lon, "street"] (somewhere on the street: approximate); a
+  miss is retried after MISS_RETRY_DAYS. Nominatim asks for one request a second at most.
 """
 
 from __future__ import annotations
@@ -16,6 +21,8 @@ from __future__ import annotations
 import csv
 import io
 import json
+import time
+from datetime import date, timedelta
 
 from scrapers import address, base, net
 
@@ -24,6 +31,14 @@ BBOX = {"min_lat": 44.40, "max_lat": 44.60, "min_lon": -104.05, "max_lon": -103.
 
 CENSUS_BATCH = "https://geocoding.geo.census.gov/geocoder/locations/addressbatch"
 BATCH_SIZE = 2000
+
+NOMINATIM = "https://nominatim.openstreetmap.org/search"
+NOMINATIM_HEADERS = {
+    "User-Agent": "whats-up-spearfish/1.0 (public data site; github.com/south-dakota-citizen-archivist)"
+}
+NOMINATIM_DELAY = 1.1  # seconds between requests (their limit is one a second)
+MISS_RETRY_DAYS = 30  # new streets reach OpenStreetMap eventually
+STREET_LEVEL = {"road", "residential", "street", "highway"}
 
 
 def in_spearfish(lat, lon) -> bool:
@@ -92,3 +107,70 @@ def geocode(addresses, cache: dict | None = None) -> dict:
     if todo and own_cache:
         save_cache(cache)
     return {k: cache.get(k) for k in keys}
+
+
+def _osm_path():
+    return base.DATA_DIR / "_geocode_osm.json"
+
+
+def load_osm_cache() -> dict:
+    try:
+        return json.loads(_osm_path().read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def _nominatim(key: str) -> list | None:
+    """[lat, lon, 'house'|'street'] for an address key, or None."""
+    resp = net.get(
+        NOMINATIM,
+        params={
+            "q": f"{key}, Spearfish, SD",
+            "format": "jsonv2",
+            "addressdetails": 1,
+            "limit": 1,
+            "countrycodes": "us",
+        },
+        headers=NOMINATIM_HEADERS,
+        timeout=30,
+    )
+    resp.raise_for_status()
+    for hit in resp.json():
+        lat, lon = float(hit["lat"]), float(hit["lon"])
+        if not in_spearfish(lat, lon):
+            continue
+        if (hit.get("address") or {}).get("house_number"):
+            return [round(lat, 6), round(lon, 6), "house"]
+        if hit.get("addresstype") in STREET_LEVEL or hit.get("category") == "highway":
+            return [round(lat, 6), round(lon, 6), "street"]
+    return None
+
+
+def locate_streets(keys, limit: int = 300, today: date | None = None) -> dict:
+    """
+    OpenStreetMap positions for address keys the Census couldn't place (see the module notes).
+    Looks up at most `limit` keys a run, so a backlog can't stall a scrape; returns key → answer.
+    """
+    today = today or date.today()
+    cache = load_osm_cache()
+    stale = (today - timedelta(days=MISS_RETRY_DAYS)).isoformat()
+    keys = sorted(set(keys) - {""})
+    todo = [
+        k for k in keys
+        if k not in cache or (isinstance(cache[k], dict) and cache[k].get("miss", "") < stale)
+    ][:limit]  # fmt: skip
+    if todo:
+        print(f"[geo] looking up {len(todo)} address(es) on OpenStreetMap")
+    for n, k in enumerate(todo):
+        if n:
+            time.sleep(NOMINATIM_DELAY)
+        try:
+            found = _nominatim(k)
+        except Exception as exc:  # noqa: BLE001 — a lookup that fails is tried again next run
+            print(f"[geo] OpenStreetMap lookup failed for {k!r}: {exc}")
+            break
+        cache[k] = found or {"miss": today.isoformat()}
+    if todo:
+        _osm_path().parent.mkdir(parents=True, exist_ok=True)
+        _osm_path().write_text(json.dumps(cache, sort_keys=True, separators=(",", ":")), encoding="utf-8")
+    return {k: cache[k] for k in keys if isinstance(cache.get(k), list)}

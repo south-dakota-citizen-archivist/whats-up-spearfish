@@ -117,9 +117,12 @@ def site_url(tmp_path_factory):
         [
             _permit("26-101", "440 Heritage Drive", recent),
             _permit("15-007", "12 Old Mill Road", "2015-06-01", kind="Comm-Roof", lon=-103.85),
+            # a house on a street too new for the Census geocoder; OpenStreetMap has the street
+            _permit("16-003", "2312 Platinum Drive", "2016-03-01", kind="Comm-New", lat=None, lon=None),
         ],
         kind="building_permit",
     )
+    (data / "_geocode_osm.json").write_text('{"2312 PLATINUM DR": [44.4789, -103.8169, "street"]}')
     _write(
         data,
         "creek_gauge",
@@ -805,3 +808,11 @@ def test_home_roadkill_teaser(open_page):
     assert "20 animals picked up off Black Hills roads in the past 30 days" in " ".join(teaser.inner_text().split())
     assert teaser.locator("img").count() == 4
     assert teaser.locator("a[href$='outdoors/#roadkill']").count() >= 1
+
+
+def test_a_shared_link_to_a_place_moves_the_map_there(open_page):
+    page = open_page("permits/#site=2312%20PLATINUM%20DR", wait=".permits-map[data-zoom]")
+    page.locator("#place-name", has_text="2312 Platinum Drive").wait_for()
+    page.wait_for_selector(".permits-map[data-zoom='16']")
+    assert "The spot on the map is approximate." in page.locator("section[aria-labelledby=place-name]").inner_text()
+    assert page.errors == []
