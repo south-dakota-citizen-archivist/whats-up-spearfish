@@ -3,7 +3,7 @@
  "name": "Lawrence County Agenda Center",
  "kind": "document",
  "url": "https://www.lawrence.sd.us/AgendaCenter",
- "fetched_at": "2026-11-04T12:48:46-07:00",
+ "fetched_at": "2026-11-04T15:28:47-07:00",
  "count": 3,
  "records": [
   {
@@ -42,6 +42,7 @@
    "updated_note": "",
    "record_type": "document",
    "source_label": "Lawrence County",
+   "start_time": "13:30",
    "kind": "document",
    "source": "lawrence_county",
    "id": "ba1c80523a72",
