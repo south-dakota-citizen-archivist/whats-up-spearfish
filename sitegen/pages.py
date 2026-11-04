@@ -13,6 +13,7 @@ import re
 import statistics
 from collections import Counter, defaultdict
 from datetime import date, timedelta
+from urllib.parse import quote
 
 from scrapers import geo
 from sitegen import trends
@@ -344,13 +345,28 @@ def recent_permit_count(site: Site, today: date) -> int:
     return sum(1 for r in permits if latest and r.get("date") == latest) + len(applications)
 
 
+def pet_link(p: dict) -> str:
+    """
+    A link to the pet's own entry on the shelter's page, which has no anchors to link to: a text
+    fragment for the pet's name followed by the first word of its description ('#:~:text=Cosco,-Female'),
+    so a mention of the name in another pet's story isn't the match. Browsers without text fragments
+    open the page at the top, as before.
+    """
+    url, name = p.get("url", ""), (p.get("title") or "").strip()
+    if not url or not name or "#" in url:
+        return url
+    words = (p.get("description") or "").split()
+    after = f",-{quote(words[0], safe='')}" if words else ""
+    return f"{url}#:~:text={quote(name, safe='')}{after}"
+
+
 def mixed_pets(pets: list[dict]) -> list[dict]:
     """Every pet, species taking turns (the shelter lists its many cats first), photos first."""
     by_species: dict[str, list] = defaultdict(list)
     for p in pets:
         by_species[(p.get("species") or "other").lower()].append(p)
     mixed = _interleave([v for _, v in sorted(by_species.items())])
-    return sorted(mixed, key=lambda p: not p.get("image_url"))
+    return [dict(p, link=pet_link(p)) for p in sorted(mixed, key=lambda p: not p.get("image_url"))]
 
 
 def pet_tally(records: list[dict]) -> dict:
@@ -376,7 +392,7 @@ def pet_picks(site: Site, n: int, rng: random.Random) -> list[dict]:
         share = left // (len(groups) - len(picked))
         picked[i] = g[:share]
         left -= len(picked[i])
-    return _interleave([picked[i] for i in range(len(groups))])
+    return [dict(p, link=pet_link(p)) for p in _interleave([picked[i] for i in range(len(groups))])]
 
 
 def tap_picks(site: Site, n: int, rng: random.Random) -> list[dict]:

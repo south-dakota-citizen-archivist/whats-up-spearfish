@@ -16,7 +16,7 @@
       <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
         {% for p in pet_list %}
         <li {% if loop.index > shown %}x-show="all" x-cloak{% endif %}>
-          <a href="{{ p.url }}" target="_blank" rel="noopener" class="group block">
+          <a href="{{ p.link or p.url }}" target="_blank" rel="noopener" class="group block">
             <div class="relative w-full aspect-square bg-stone-200 flex flex-col items-center justify-center gap-1 text-stone-500">
               <span class="text-3xl" aria-hidden="true">🐾</span><span class="text-[10px] uppercase tracking-wide">No photo yet</span>
               {% if p.image_url %}<img {{ thumb_attrs(p.image_url, 500) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" data-placeholder>{% endif %}

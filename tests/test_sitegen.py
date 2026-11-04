@@ -618,3 +618,12 @@ def test_terry_peak_tops_the_outdoors_page_in_ski_season(today, lift_open, first
     lifts = [{"name": "Stewart Lift", "open": lift_open, "type": "triple chair"}]
     site = type("S", (), {"get": lambda self, slug: Source(slug, data={"lifts": lifts, "trails": [], "snow": {}})})()
     assert terry_peak_context(site, today)["first"] is first
+
+
+def test_pet_links_jump_to_the_pet_on_the_shelter_page():
+    from sitegen.pages import pet_link
+
+    cat = {"url": "https://www.westernhillshumanesociety.com/cats", "title": "Pine Cone", "description": "Male | 2 yrs"}
+    assert pet_link(cat) == "https://www.westernhillshumanesociety.com/cats#:~:text=Pine%20Cone,-Male"
+    assert pet_link(dict(cat, description="")).endswith("#:~:text=Pine%20Cone")
+    assert pet_link(dict(cat, url="https://example.com/a#b")) == "https://example.com/a#b"  # its own anchor wins

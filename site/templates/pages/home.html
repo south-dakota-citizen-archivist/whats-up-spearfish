@@ -132,7 +132,7 @@
     <ul class="grid grid-cols-2 sm:grid-cols-4 gap-3">
       {% for pet in pets %}
       <li>
-        <a href="{{ pet.url }}" target="_blank" rel="noopener" class="group block">
+        <a href="{{ pet.link or pet.url }}" target="_blank" rel="noopener" class="group block">
           <div class="relative w-full aspect-square bg-stone-200">
               <img {{ thumb_attrs(pet.image_url, 300) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover " data-tile-photo>
             </div>
