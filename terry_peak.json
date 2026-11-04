@@ -1,0 +1,220 @@
+{
+ "slug": "terry_peak",
+ "name": "Terry Peak Ski Area",
+ "kind": "stats",
+ "url": "https://terrypeak.com/the-mountain/trails-lifts/",
+ "fetched_at": "2026-11-04T00:50:17-07:00",
+ "data": {
+  "lifts": [
+   {
+    "name": "Stewart Lift",
+    "open": false,
+    "type": "triple chair"
+   },
+   {
+    "name": "Snow Carpet",
+    "open": false,
+    "type": "surface lift"
+   },
+   {
+    "name": "Surprise Express",
+    "open": false,
+    "type": "high-speed quad"
+   },
+   {
+    "name": "Kussy Express",
+    "open": false,
+    "type": "high-speed quad"
+   },
+   {
+    "name": "Coeur Wharf Express",
+    "open": false,
+    "type": "high-speed quad"
+   }
+  ],
+  "trails": [
+   {
+    "name": "Stewart Slope",
+    "open": false,
+    "difficulty": "beginner",
+    "conditions": []
+   },
+   {
+    "name": "Upper Stewart",
+    "open": false,
+    "difficulty": "beginner",
+    "conditions": []
+   },
+   {
+    "name": "Little Phil",
+    "open": false,
+    "difficulty": "beginner",
+    "conditions": []
+   },
+   {
+    "name": "Welcome",
+    "open": false,
+    "difficulty": "intermediate",
+    "conditions": []
+   },
+   {
+    "name": "Snowstorm",
+    "open": false,
+    "difficulty": "beginner",
+    "conditions": []
+   },
+   {
+    "name": "Surprise",
+    "open": false,
+    "difficulty": "intermediate",
+    "conditions": []
+   },
+   {
+    "name": "The Falls",
+    "open": false,
+    "difficulty": "advanced",
+    "conditions": []
+   },
+   {
+    "name": "Old Falls",
+    "open": false,
+    "difficulty": "advanced",
+    "conditions": []
+   },
+   {
+    "name": "Black Moon",
+    "open": false,
+    "difficulty": "intermediate",
+    "conditions": []
+   },
+   {
+    "name": "Mini Moon",
+    "open": false,
+    "difficulty": "intermediate",
+    "conditions": []
+   },
+   {
+    "name": "Missing Link",
+    "open": false,
+    "difficulty": "intermediate",
+    "conditions": []
+   },
+   {
+    "name": "Millsite",
+    "open": false,
+    "difficulty": "beginner",
+    "conditions": []
+   },
+   {
+    "name": "Gold Run",
+    "open": false,
+    "difficulty": "beginner",
+    "conditions": []
+   },
+   {
+    "name": "Avalanche",
+    "open": false,
+    "difficulty": "advanced",
+    "conditions": []
+   },
+   {
+    "name": "Blizzard",
+    "open": false,
+    "difficulty": "advanced",
+    "conditions": []
+   },
+   {
+    "name": "Avalanche Glades",
+    "open": false,
+    "difficulty": "advanced",
+    "conditions": []
+   },
+   {
+    "name": "Ben Hur Glades",
+    "open": false,
+    "difficulty": "advanced",
+    "conditions": []
+   },
+   {
+    "name": "North Slide Glades",
+    "open": false,
+    "difficulty": "advanced",
+    "conditions": []
+   },
+   {
+    "name": "Maringo",
+    "open": false,
+    "difficulty": "advanced",
+    "conditions": []
+   },
+   {
+    "name": "Holy Terror",
+    "open": false,
+    "difficulty": "advanced",
+    "conditions": []
+   },
+   {
+    "name": "Ben Hur (upper closed)",
+    "open": false,
+    "difficulty": "advanced",
+    "conditions": []
+   },
+   {
+    "name": "Kussy",
+    "open": false,
+    "difficulty": "intermediate",
+    "conditions": []
+   },
+   {
+    "name": "Ricky's Run",
+    "open": false,
+    "difficulty": "intermediate",
+    "conditions": []
+   },
+   {
+    "name": "Homestake (upper closed)",
+    "open": false,
+    "difficulty": "intermediate",
+    "conditions": []
+   },
+   {
+    "name": "Hobo Queen",
+    "open": false,
+    "difficulty": "intermediate",
+    "conditions": []
+   },
+   {
+    "name": "Terry Cut-across",
+    "open": false,
+    "difficulty": "intermediate",
+    "conditions": []
+   },
+   {
+    "name": "Empress",
+    "open": false,
+    "difficulty": "intermediate",
+    "conditions": []
+   },
+   {
+    "name": "Inferno",
+    "open": false,
+    "difficulty": "advanced",
+    "conditions": []
+   },
+   {
+    "name": "Little Hope",
+    "open": false,
+    "difficulty": "advanced",
+    "conditions": []
+   }
+  ],
+  "snow": {
+   "overnight": 1.0,
+   "48h": 1.0,
+   "72h": 1.0,
+   "season": 1.0,
+   "base": 0.0
+  },
+  "webcams": "https://terrypeak.com/the-mountain/live-web-cams/"
+ }
+}
