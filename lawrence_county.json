@@ -3,7 +3,7 @@
  "name": "Lawrence County Agenda Center",
  "kind": "document",
  "url": "https://www.lawrence.sd.us/AgendaCenter",
- "fetched_at": "2026-11-04T15:28:47-07:00",
+ "fetched_at": "2026-11-04T15:35:14-07:00",
  "count": 3,
  "records": [
   {
@@ -43,6 +43,11 @@
    "record_type": "document",
    "source_label": "Lawrence County",
    "start_time": "13:30",
+   "join_url": "https://meet.goto.com/lawrencecountypz",
+   "dial_in": {
+    "phone": "1-646-749-3122",
+    "code": "973-687-509"
+   },
    "kind": "document",
    "source": "lawrence_county",
    "id": "ba1c80523a72",
