@@ -6,7 +6,45 @@
 {% block content %}
 <h1 class="text-2xl font-extrabold mb-4">Outdoors</h1>
 
+{# Terry Peak: first on the page in ski season (December – March, or whenever lifts are open) #}
+{% macro terry_peak_card() %}
+  {# full width on large screens (the grid's fifth half-width card would sit alone): snow on the left, what's open on the right #}
+  {% call card("Terry Peak", "terry-peak", sources=ski.source, more=ski.source.url or "https://terrypeak.com/the-mountain/trails-lifts/", more_label="Trails & lifts", class="lg:col-span-2") %}
+    {% if ski.lifts or ski.snow %}
+    <div class="grid lg:grid-cols-2 gap-x-10 gap-y-4">
+      {% if ski.snow %}
+      <div>
+        <h3 class="text-sm font-bold mb-2">Snow report</h3>
+        <dl class="grid grid-cols-5 gap-2 text-center">
+          {% for key, label in [("overnight", "Overnight"), ("48h", "48 hours"), ("72h", "72 hours"), ("season", "Season"), ("base", "Base")] %}
+          {% if ski.snow[key] is defined %}
+          <div class="flex flex-col-reverse"><dt class="text-xs text-stone-600">{{ label }}</dt><dd class="text-2xl font-extrabold tabular-nums">{{ ski.snow[key] | round(1) | replace('.0', '') }}&rdquo;</dd></div>
+          {% endif %}
+          {% endfor %}
+        </dl>
+      </div>
+      {% endif %}
+      <div>
+        <h3 class="text-sm font-bold mb-2">Open now</h3>
+        <p class="text-sm"><span class="font-bold">{{ ski.lifts_open | length }} of {{ ski.lifts | length }}</span> lifts · <span class="font-bold">{{ ski.trails_open_count }} of {{ ski.trails | length }}</span> trails</p>
+        {% if ski.lifts_open %}
+        <p class="mt-1 text-sm text-stone-700"><span class="font-semibold">Lifts:</span> {{ ski.lifts_open | map(attribute='name') | join(', ') }}</p>
+        {% endif %}
+        {% for level, names in ski.trails_open.items() if names %}
+        <p class="mt-1 text-sm text-stone-700"><span class="font-semibold">{{ level | capitalize }}:</span> {{ names | join(', ') }}</p>
+        {% endfor %}
+        <p class="mt-3 text-sm font-semibold">{{ ext(ski.webcams, "Live web cams") }}</p>
+      </div>
+    </div>
+    {% else %}
+    {{ empty("The ski report isn't available right now.") }}
+    <p class="mt-3 text-sm font-semibold">{{ ext(ski.webcams, "Live web cams") }}</p>
+    {% endif %}
+  {% endcall %}
+{% endmacro %}
+
 <div class="grid lg:grid-cols-2 gap-6">
+  {% if ski.first %}{{ terry_peak_card() }}{% endif %}
 
   {% call card("Spearfish Creek", "creek", sources=creek.source, more=creek.source.url, more_label="Live readings") %}
     {% if creek.current %}
@@ -71,28 +109,7 @@
     <p class="text-xs text-stone-500 mt-4">Burn bans and fire closures in the national forest are posted with the <a href="#forest-alerts" class="text-pine-700 underline">forest alerts</a> below.</p>
   {% endcall %}
 
-  {% call card("Terry Peak", "terry-peak", sources=ski.source, more=ski.source.url or "https://terrypeak.com/the-mountain/trails-lifts/", more_label="Trails & lifts") %}
-    {% if ski.lifts or ski.snow %}
-    {% if ski.snow %}
-    <h3 class="text-sm font-bold mb-2">Snow report</h3>
-    <dl class="grid grid-cols-5 gap-2 text-center mb-4">
-      {% for key, label in [("overnight", "Overnight"), ("48h", "48 hours"), ("72h", "72 hours"), ("season", "Season"), ("base", "Base")] %}
-      {% if ski.snow[key] is defined %}
-      <div class="flex flex-col-reverse"><dt class="text-xs text-stone-600">{{ label }}</dt><dd class="text-2xl font-extrabold tabular-nums">{{ ski.snow[key] | round(1) | replace('.0', '') }}&rdquo;</dd></div>
-      {% endif %}
-      {% endfor %}
-    </dl>
-    {% endif %}
-    <p class="text-sm"><span class="font-bold">{{ ski.lifts_open | length }} of {{ ski.lifts | length }}</span> lifts open · <span class="font-bold">{{ ski.trails_open_count }} of {{ ski.trails | length }}</span> trails open</p>
-    {% if ski.lifts_open %}
-    <p class="mt-1 text-sm text-stone-700">Lifts: {{ ski.lifts_open | map(attribute='name') | join(', ') }}</p>
-    {% endif %}
-    {% for level, names in ski.trails_open.items() if names %}
-    <p class="mt-1 text-sm text-stone-700"><span class="font-semibold">{{ level | capitalize }}:</span> {{ names | join(', ') }}</p>
-    {% endfor %}
-    {% else %}{{ empty("The ski report isn't available right now.") }}{% endif %}
-    <p class="mt-3 text-sm font-semibold">{{ ext(ski.webcams, "Live web cams") }}</p>
-  {% endcall %}
+  {% if not ski.first %}{{ terry_peak_card() }}{% endif %}
 
   {% if plant %}
   {% call card("Native plant of the day", "plant", sources=plants, more=plant.url, more_label="iNaturalist", class="lg:col-span-2") %}

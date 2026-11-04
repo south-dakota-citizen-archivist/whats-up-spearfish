@@ -604,3 +604,17 @@ def test_text_wraps_only_when_it_runs_out_of_room():
         if re.search(r"\btext-(balance|pretty)\b", html):
             found.append(f"{f.name}: text-balance/text-pretty")
     assert found == []
+
+
+@pytest.mark.parametrize(
+    "today, lift_open, first",
+    [(date(2026, 12, 5), False, True), (date(2027, 3, 30), False, True), (date(2026, 11, 4), False, False),
+     (date(2026, 11, 20), True, True), (date(2027, 7, 1), False, False)],
+)  # fmt: skip
+def test_terry_peak_tops_the_outdoors_page_in_ski_season(today, lift_open, first):
+    from sitegen.data import Source
+    from sitegen.pages import terry_peak_context
+
+    lifts = [{"name": "Stewart Lift", "open": lift_open, "type": "triple chair"}]
+    site = type("S", (), {"get": lambda self, slug: Source(slug, data={"lifts": lifts, "trails": [], "snow": {}})})()
+    assert terry_peak_context(site, today)["first"] is first

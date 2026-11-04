@@ -438,7 +438,7 @@ def home(site: Site, events: list[dict], today: date) -> dict:
         "books": book_picks(site, 8, rng),
         "creek": creek_context(site),
         "fire": fire_context(site),
-        "ski": terry_peak_context(site),
+        "ski": terry_peak_context(site, today),
         "birds": birds[:4],
         "ebird": site.get("ebird"),
         "leones": site.get("leones_creamery"),
@@ -494,7 +494,10 @@ def plant_of_the_day(site: Site, today: date) -> dict | None:
     return plants[today.toordinal() % len(plants)]
 
 
-def terry_peak_context(site: Site) -> dict:
+SKI_MONTHS = (12, 1, 2, 3)
+
+
+def terry_peak_context(site: Site, today: date) -> dict:
     """The ski area's snow report and what's open, for the Outdoors card."""
     src = site.get("terry_peak")
     data = src.data or {}
@@ -512,6 +515,8 @@ def terry_peak_context(site: Site) -> dict:
         },
         "trails_open_count": len(open_trails),
         "webcams": data.get("webcams") or "https://terrypeak.com/the-mountain/live-web-cams/",
+        # top of the Outdoors page in ski season: winter, or whenever a lift is running
+        "first": today.month in SKI_MONTHS or any(lift.get("open") for lift in lifts),
     }
 
 
@@ -520,7 +525,7 @@ def outdoors(site: Site, events: list[dict], today: date) -> dict:
     return {
         "creek": creek_context(site),
         "fire": fire_context(site),
-        "ski": terry_peak_context(site),
+        "ski": terry_peak_context(site, today),
         "birds": newest(site.get("ebird").records, "published"),
         "ebird": site.get("ebird"),
         "forest_alerts": newest(site.get("bhnf_alerts").records)[:15],
