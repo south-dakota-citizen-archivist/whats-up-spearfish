@@ -690,7 +690,7 @@ def home(site: Site, events: list[dict], today: date) -> dict:
         "bids": site.get("public_bids").records,
         "recent_permits": recent_permit_count(site, today),
         "plant": plant_of_the_day(site, today),
-        "roadkill": roadkill_context(site, today, photos=4),
+        "roadkill": roadkill_context(site, today, photos=4, per_species=0),
         "alerts": alerts,
     }
 
@@ -814,7 +814,11 @@ def road_name(highway: str) -> str:
     return h
 
 
-def roadkill_context(site: Site, today: date, photos: int = 48) -> dict:
+def roadkill_context(site: Site, today: date, photos: int = 48, per_species: int = 12) -> dict:
+    """
+    The counts, and a gallery: the latest `photos` pickups, plus each species' latest `per_species`
+    (so filtering to a rarer animal, elk or pronghorn, still has photos to show), newest first.
+    """
     src = site.get("roadkill")
     data = src.data or {}
     layer = data.get("layer", "")
@@ -824,27 +828,30 @@ def roadkill_context(site: Site, today: date, photos: int = 48) -> dict:
     week_ago = (today - timedelta(days=7)).isoformat()
     past_month = [r for r in recs if r["date"] > month_ago]
     by_species = Counter(r["species"] for r in past_month)
-    gallery = []
+    gallery, taken = [], Counter()
     for r in recs:
-        for ph in r.get("photos") or []:
-            if not (ph.get("type") or "image/").startswith("image/"):
-                continue
-            url = f"{layer}/{r['objectid']}/attachments/{ph['id']}"
-            gallery.append({
-                "thumb": f"{url}?w=400",
-                "full": f"{url}?w=1200",
-                "species": ROADKILL_SPECIES.get(r["species"], r["species"]),
-                "icon": ROADKILL_ICONS.get(r["species"], "small"),
-                "sex": r.get("sex") if r.get("sex") in ("Male", "Female") else "",
-                "road": road_name(r.get("highway", "")),
-                "note": r.get("comments", ""),
-                "date": r["date"],
-                "when": date.fromisoformat(r["date"]).strftime("%b %-d, %Y"),
-                "map": f"https://www.openstreetmap.org/?mlat={r['lat']}&mlon={r['lon']}#map=14/{r['lat']}/{r['lon']}"
-                if r.get("lat") and r.get("lon") else "",
-            })  # fmt: skip
-            break  # one photo per animal
-        if len(gallery) >= photos:
+        photo = next((ph for ph in r.get("photos") or [] if (ph.get("type") or "image/").startswith("image/")), None)
+        if not photo:
+            continue
+        if len(gallery) >= photos and taken[r["species"]] >= per_species:
+            continue
+        url = f"{layer}/{r['objectid']}/attachments/{photo['id']}"
+        gallery.append({
+            "thumb": f"{url}?w=400",
+            "full": f"{url}?w=1200",
+            "kind": r["species"],  # what the species buttons filter on
+            "species": ROADKILL_SPECIES.get(r["species"], r["species"]),
+            "icon": ROADKILL_ICONS.get(r["species"], "small"),
+            "sex": r.get("sex") if r.get("sex") in ("Male", "Female") else "",
+            "road": road_name(r.get("highway", "")),
+            "note": r.get("comments", ""),
+            "date": r["date"],
+            "when": date.fromisoformat(r["date"]).strftime("%b %-d, %Y"),
+            "map": f"https://www.openstreetmap.org/?mlat={r['lat']}&mlon={r['lon']}#map=14/{r['lat']}/{r['lon']}"
+            if r.get("lat") and r.get("lon") else "",
+        })  # fmt: skip
+        taken[r["species"]] += 1
+        if len(gallery) >= photos and (not per_species or all(taken[s] >= per_species for s in by_species)):
             break
     return {
         "source": src,
@@ -854,7 +861,9 @@ def roadkill_context(site: Site, today: date, photos: int = 48) -> dict:
         "past_week": sum(1 for r in recs if r["date"] > week_ago),
         "species": [
             {
+                "key": s,
                 "label": (ROADKILL_PLURAL.get(s) if n != 1 else None) or ROADKILL_SPECIES.get(s, s).lower(),
+                "name": (ROADKILL_PLURAL.get(s) or ROADKILL_SPECIES.get(s, s).lower()),
                 "icon": ROADKILL_ICONS.get(s, "small"),
                 "count": n,
             }

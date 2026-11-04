@@ -172,19 +172,23 @@
   {% call card("Local roadkill", "roadkill", sources=roadkill.source, class="lg:col-span-2") %}
     <p class="flex flex-wrap items-baseline gap-x-2"><span class="text-4xl font-extrabold tabular-nums">{{ roadkill.past_month | intcomma }}</span><span class="text-stone-600">in the past 30 days</span></p>
     <p class="text-sm text-stone-500">{{ roadkill.past_week | intcomma }} in the past week</p>
+    {# a species to show only its photos; again (or "Show all") for all of them #}
+    <div x-data="photoGallery()" data-limit="6" data-limit-lg="12">
     {% if roadkill.species %}
     <ul class="mt-2 mb-4 flex flex-wrap gap-x-5 gap-y-1.5 text-sm text-stone-700">
       {% for s in roadkill.species %}
-      <li class="flex items-center gap-1.5">{{ animal(s.icon, 'w-6 h-5 text-stone-500') }}<span><span class="font-bold tabular-nums">{{ s.count | intcomma }}</span> {{ s.label }}</span></li>
+      <li><button type="button" @click="setFilter({{ s.key | tojson | forceescape }})" :aria-pressed="(filter === {{ s.key | tojson | forceescape }}).toString()"
+                  :class="filter && filter !== {{ s.key | tojson | forceescape }} ? 'opacity-50' : ''"
+                  class="group flex items-center gap-1.5 hover:text-pine-700 aria-pressed:text-stone-900">{{ animal(s.icon, 'w-6 h-5 text-stone-500 group-hover:text-pine-700') }}<span class="underline-offset-4 decoration-2 decoration-pine-600 group-aria-pressed:underline"><span class="font-bold tabular-nums">{{ s.count | intcomma }}</span> {{ s.label }}</span></button></li>
       {% endfor %}
     </ul>
     {% endif %}
     {% if roadkill.photos %}
-    <div x-data="photoGallery()">
       <script type="application/json" x-ref="photos">{{ roadkill.photos | tojson }}</script>
-      <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3" data-more="6" data-more-lg="12" data-more-noun="photos">
+      <p x-show="filter" x-cloak class="mb-2 text-sm text-stone-600">Latest photos of {% for s in roadkill.species %}<span x-show="filter === {{ s.key | tojson | forceescape }}">{{ s.name }}</span>{% endfor %} • <button type="button" @click="setFilter('')" class="link">Show all</button></p>
+      <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
         {% for p in roadkill.photos %}
-        <li>
+        <li x-show="shows({{ loop.index0 }})">
           <a href="{{ p.full }}" @click.prevent="show({{ loop.index0 }})" class="group block">
             <div class="relative w-full aspect-[4/3] bg-stone-200">
               <img src="{{ p.thumb }}" alt="{{ p.species }}{% if p.road %} on {{ p.road }}{% endif %}, {{ p.when }}" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:opacity-90">
@@ -195,6 +199,9 @@
         </li>
         {% endfor %}
       </ul>
+      <button type="button" x-show="hiddenCount || expanded" x-cloak @click="expanded = !expanded" :aria-expanded="expanded.toString()"
+              class="mt-3 w-full py-2 border border-stone-300 bg-white text-sm font-semibold text-pine-700 hover:border-pine-600"
+              x-text="expanded ? 'Show fewer' : 'Show ' + hiddenCount + ' more photos'"></button>
 
       {# one photo at a time: arrows, swipes, Escape or a click outside closes #}
       <dialog x-ref="dialog" @close="closed()" @click.self="close()"
@@ -214,14 +221,14 @@
                 <p class="text-sm text-stone-300" x-text="[photo.when, photo.road, photo.note].filter(Boolean).join(' • ')"></p>
                 <a x-show="photo.map" :href="photo.map" target="_blank" rel="noopener" class="text-sm text-white underline underline-offset-2 hover:text-pine-200">Where it was</a>
               </div>
-              <p class="text-sm text-stone-400 tabular-nums whitespace-nowrap" x-text="(i + 1) + ' of ' + photos.length"></p>
+              <p class="text-sm text-stone-400 tabular-nums whitespace-nowrap" x-text="position + ' of ' + matching.length"></p>
               <button type="button" @click="close()" class="-mr-1 px-2 text-xl leading-none text-white/80 hover:text-white" aria-label="Close">✕</button>
             </div>
           </div>
         </template>
       </dialog>
-    </div>
     {% endif %}
+    </div>
     <p class="mt-3 text-xs text-stone-500">Source: South Dakota Department of Transportation. Photos are posted for pickups since August 2025.</p>
   {% endcall %}
   {% endif %}

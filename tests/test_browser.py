@@ -844,3 +844,32 @@ def test_a_meeting_moves_from_coming_up_to_past_when_it_starts(open_page):
         assert [li.get_attribute("data-list") for li in shown] == [which]
         assert ("Join on Zoom" in shown[0].inner_text()) is joins
     assert "open meetings law" in page.locator("#meetings").inner_text()
+
+
+def test_roadkill_species_filter_the_gallery(open_page):
+    page = open_page("outdoors/", wait="#roadkill img")
+    card = page.locator("#roadkill")
+
+    def shown():
+        return {li.inner_text().split("\n")[0] for li in card.locator("ul.grid > li").all() if li.is_visible()}
+
+    assert len(shown()) > 1
+    card.get_by_role("button", name="elk").click()
+    page.wait_for_timeout(200)
+    assert shown() == {"Elk"}
+    assert card.get_by_role("button", name="elk").get_attribute("aria-pressed") == "true"
+    card.locator("ul.grid > li:visible a").first.click()
+    card.locator("dialog").get_by_text("1 of 5").wait_for()  # steps through the elk only
+    page.keyboard.press("Escape")
+    card.get_by_role("button", name="Show all").click()
+    page.wait_for_timeout(200)
+    assert len(shown()) > 1
+
+    # the home page's species link to the gallery already filtered
+    home = open_page("", wait="#roadkill")
+    home.locator("#roadkill a", has_text="mule deer").click()
+    home.wait_for_selector("#roadkill ul.grid > li:visible")
+    home.wait_for_timeout(300)
+    visible = {li.inner_text().split("\n")[0] for li in home.locator("#roadkill ul.grid > li").all() if li.is_visible()}
+    assert visible == {"Mule deer"}
+    assert page.errors == [] and home.errors == []

@@ -80,7 +80,7 @@ def test_context_counts_and_gallery(tmp_path):
     (tmp_path / "roadkill.json").write_text(json.dumps(
         {"slug": "roadkill", "kind": "stats", "fetched_at": "2026-11-04T06:00:00-07:00",
          "data": {"layer": "https://example.com/layer/0", "records": records}}))  # fmt: skip
-    ctx = roadkill_context(Site(tmp_path), today, photos=3)
+    ctx = roadkill_context(Site(tmp_path), today, photos=3, per_species=0)
     assert ctx["count"] == 6 and ctx["past_month"] == 5 and ctx["past_week"] == 2
     assert [(s["label"], s["count"], s["icon"]) for s in ctx["species"]] == [
         ("small animals", 2, "small"),
@@ -91,4 +91,8 @@ def test_context_counts_and_gallery(tmp_path):
     first = ctx["photos"][0]
     assert len(ctx["photos"]) == 3 and first["species"] == "White-tailed deer" and first["road"] == "Highway 85"
     assert first["thumb"] == "https://example.com/layer/0/1/attachments/10?w=400"
+    assert first["kind"] == "White-tailed Deer" and ctx["species"][0]["key"] == "Small Animal"
+    # each species' latest photos too, so filtering to a rare one (the elk, 20 days back) has some
+    more = roadkill_context(Site(tmp_path), today, photos=2, per_species=1)
+    assert {p["kind"] for p in more["photos"]} == {"White-tailed Deer", "Mule Deer", "Small Animal", "Elk"}
     assert "mlat=44.5" in first["map"] and first["when"] == "Nov 3, 2026"
