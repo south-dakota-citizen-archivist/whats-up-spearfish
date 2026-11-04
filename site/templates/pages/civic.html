@@ -103,6 +103,17 @@
     {% else %}{{ empty("No contested cases in western South Dakota right now.") }}{% endif %}
   {% endcall %}
 
+  {% call card("Press releases", "press") %}
+    {% if press %}
+    <ul class="grid md:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+      {% for p in press %}
+      <li>{{ ext(p.url, p.title, 'link-title') }}
+        <p class="text-xs text-stone-500">{{ p.source_label }} • {{ p.published | fmt_day }}</p></li>
+      {% endfor %}
+    </ul>
+    {% else %}{{ empty("No recent announcements.") }}{% endif %}
+  {% endcall %}
+
   {% call card("Spill reports", "spills", sources=spills, more=spills.url, more_label="Spill map") %}
     <p class="text-sm text-stone-600 mb-3">Spills and leaks reported to the state in the Black Hills counties, newest first.</p>
     {% if spill_list %}
@@ -115,17 +126,6 @@
       {% endfor %}
     </ul>
     {% else %}{{ empty("No spill reports this year.") }}{% endif %}
-  {% endcall %}
-
-  {% call card("Press releases", "press", class="lg:col-span-2") %}
-    {% if press %}
-    <ul class="grid md:grid-cols-2 gap-x-6 gap-y-3 text-sm">
-      {% for p in press %}
-      <li>{{ ext(p.url, p.title, 'link-title') }}
-        <p class="text-xs text-stone-500">{{ p.source_label }} • {{ p.published | fmt_day }}</p></li>
-      {% endfor %}
-    </ul>
-    {% else %}{{ empty("No recent announcements.") }}{% endif %}
   {% endcall %}
 </div>
 {% endblock %}
