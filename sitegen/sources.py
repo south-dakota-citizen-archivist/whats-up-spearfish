@@ -173,11 +173,6 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
                 (_i("Community events calendar", "spearfish_chamber"),),
             ),
             Org(
-                "Matthews Opera House",
-                "https://www.matthewsopera.com/",
-                (_i("Shows and events", "matthews_opera_house"),),
-            ),
-            Org(
                 "Spearfish Sasquatch", "https://www.spearfishsasquatch.com/", (_i("Home games", "spearfish_sasquatch"),)
             ),
             Org(

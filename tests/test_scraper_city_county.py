@@ -2,14 +2,13 @@
 tests/test_scraper_city_county.py
 
 City and county listings read from pages and APIs rather than their (empty) RSS
-feeds: the city's Alert Center, the city job board, the county's job openings
-page, and the Matthews Opera House events API.
+feeds: the city's Alert Center, the city job board and the county's job openings
+page.
 """
 
 from __future__ import annotations
 
 from scrapers.sources.lawrence_county_feeds import parse_jobs_page
-from scrapers.sources.matthews_opera_house import parse_event
 from scrapers.sources.spearfish_city_feeds import parse_alert_center, parse_job
 
 ALERT_CENTER = """
@@ -92,39 +91,6 @@ def test_county_jobs_are_the_job_opening_links():
     jobs = parse_jobs_page(COUNTY_JOBS)
     assert [j["title"] for j in jobs] == ["Correctional Officer I (Part Time)", "Custodian"]
     assert jobs[1]["url"] == "https://lawrence.sd.us/DocumentCenter/View/2309/Job-Opening---Custodian-PDF"
-
-
-def test_matthews_event_from_the_calendar_api():
-    event = parse_event(
-        {
-            "status": "publish",
-            "title": "Play Some Petty",
-            "url": "https://www.matthewsopera.com/event/play-some-petty-2026/",
-            "start_date": "2026-11-06 19:00:00",
-            "end_date": "2026-11-06 21:30:00",
-            "all_day": False,
-            "excerpt": "<p>The Biscuit Lifters play a Tom Petty tribute &amp; more.</p>",
-            "description": "<div>a much longer page</div>",
-            "image": {"url": "https://www.matthewsopera.com/wp-content/uploads/petty.jpg"},
-            "venue": {"venue": "The Matthews Opera House &#8211; Theatre"},
-            "cost": "$25 – $40",
-        }
-    )
-    assert event["start_dt"] == "2026-11-06T19:00:00"  # the venue's local clock; the scraper reads it as Mountain
-    assert event["end_dt"] == "2026-11-06T21:30:00"
-    assert event["description"] == "The Biscuit Lifters play a Tom Petty tribute & more."
-    assert event["location"] == "The Matthews Opera House – Theatre"
-    assert event["cost"] == "$25 – $40"
-
-
-def test_matthews_skips_cancelled_and_all_day_events_keep_their_dates():
-    assert parse_event({"title": "CANCELLED: Gala", "url": "u", "start_date": "2026-12-01"}) is None
-    assert parse_event({"status": "draft", "title": "Gala", "url": "u", "start_date": "2026-12-01"}) is None
-    fest = parse_event(
-        {"title": "Art Fest", "url": "u", "all_day": True, "start_date": "2026-12-05 00:00:00",
-         "end_date": "2026-12-06 23:59:59"}
-    )  # fmt: skip
-    assert (fest["start_dt"], fest["end_dt"], fest["all_day"]) == ("2026-12-05", "2026-12-06", True)
 
 
 def test_bhsu_posting_page_gives_salary_and_closing():

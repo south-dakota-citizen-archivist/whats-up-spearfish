@@ -137,7 +137,6 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [BHSU Athletics](https://bhsuathletics.com/calendar) | `bhsu_athletics` | event |  |
 | [BHSU Campus Calendar](https://bhsu.edu/campus-calendar.html) | `bhsu_calendar` | event |  |
 | [City of Spearfish Calendar](https://www.spearfish.gov/Calendar.aspx) | `spearfish_calendar` | event |  |
-| [Matthews Opera House](https://www.matthewsopera.com/events/) | `matthews_opera_house` | event |  |
 | [Spearfish Chamber](https://business.spearfishchamber.org/events/calendar/) | `spearfish_chamber` | event |  |
 | [Spearfish HS Sports](https://gobound.com/sd/schools/spearfish) | `spearfish_sports` | event |  |
 | [Spearfish MS Sports](https://gobound.com/sd/schools/spearfishmiddleschool) | `spearfish_ms_sports` | event |  |

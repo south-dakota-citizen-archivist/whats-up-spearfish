@@ -19,7 +19,6 @@ HORIZON_DAYS = 180
 #: When duplicates collide, the first source in this list wins (others are
 #: kept as "also listed on" links). Sources not listed rank after these.
 SOURCE_PRIORITY = [
-    "matthews_opera_house",
     "bhsu_calendar",
     "bhsu_athletics",
     "spearfish_calendar",

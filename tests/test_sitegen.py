@@ -134,7 +134,7 @@ def fixture_data(tmp_path):
     d = tmp_path / "data"
     d.mkdir()
     _write(d, "spearfish_calendar", [_event("spearfish_calendar", "Story Time", time="10:00")])
-    _write(d, "matthews_opera_house", [_event("matthews_opera_house", "Nutcracker", day=2)])
+    _write(d, "spearfish_chamber", [_event("spearfish_chamber", "Nutcracker", day=2)])
     menu_item = {"name": "Tacos", "is_entree": True}
     _write(
         d,
