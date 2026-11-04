@@ -435,8 +435,28 @@ def test_permits_search_waits_for_the_search_button(open_page):
     assert "15-007" in page.locator("section[aria-labelledby=place-name]").text_content()  # behind "Details"
     page.get_by_role("button", name="Back to results").click()
     assert page.locator(PLACES, has_text="Old Mill").count() == 1
-    page.get_by_role("button", name="Clear").click()  # and the time period goes back to what it was
+    page.get_by_role("button", name="Start over").click()  # and the time period goes back to what it was
     assert page.locator("#since").input_value() == "latest" and page.locator("#pq").input_value() == ""
+
+
+def test_permits_start_over_puts_everything_back(open_page):
+    page = open_page("permits/", wait=PLACES)
+    start_over = page.get_by_role("button", name="Start over")
+    assert not start_over.is_visible()  # nothing to undo yet
+    view = "(() => { const m = document.querySelector('.permits-map').leaflet, c = m.getCenter();" \
+           " return [+c.lat.toFixed(3), +c.lng.toFixed(3), m.getZoom()]; })()"  # fmt: skip
+    before = page.evaluate(view)
+    page.select_option("#what", "r")
+    page.select_option("#since", "all")
+    page.locator(PLACES).first.click()  # a place chosen, and the map gone to it
+    page.wait_for_selector("#place-name")
+    start_over.click()
+    page.wait_for_timeout(1200)  # the map glides back
+    assert page.locator("#since").input_value() == "latest" and page.locator("#what").input_value() == "all"
+    assert page.locator("#place-name").count() == 0 and page.evaluate("location.hash") == ""
+    assert page.evaluate(view) == before
+    assert not start_over.is_visible()
+    assert page.errors == []
 
 
 def test_permits_custom_dates(open_page):

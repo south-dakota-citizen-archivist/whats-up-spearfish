@@ -119,6 +119,7 @@ document.addEventListener("alpine:init", () => {
       choices: [], // a tap near several places: the ones to choose from
       choicesTotal: 0, // how many were within reach (the list shows the nearest 12)
       limit: 40, // how many places the list shows before "Show more"
+      mapMoved: false, // the map isn't where it started (for "Start over")
 
       async init() {
         // The map comes up right away; the dots follow the records.
@@ -163,6 +164,10 @@ document.addEventListener("alpine:init", () => {
         // phones pinch to zoom, so the +/− buttons only appear on large screens
         map = L.map(this.$refs.map, { preferCanvas: true, zoomControl: false }).setView(START.center, START.zoom);
         if (large()) L.control.zoom({ position: "topright" }).addTo(map);
+        map.on("moveend", () => {
+          const c = map.getCenter();
+          this.mapMoved = map.getZoom() !== START.zoom || map.distance(c, START.center) > 50;
+        });
         doubleTapZoom(map);
         // the zoom level on the page, for tests and anyone curious
         const noteZoom = () => (this.$refs.map.dataset.zoom = map.getZoom());
@@ -304,6 +309,34 @@ document.addEventListener("alpine:init", () => {
         this.clearHere();
         this.back(false);
         this.limit = 40;
+      },
+
+      // Anything different from how the page opened?
+      changed() {
+        return !!(this.query || this.draft || this.here || this.selected || this.mapMoved || this.type !== "all" ||
+          this.since !== (latestReport ? "latest" : "2"));
+      },
+
+      // Start over: everything as it was when the page loaded
+      startOver() {
+        if (this.$refs.placeDialog?.open) this.$refs.placeDialog.close();
+        this.back(false);
+        this.draft = this.query = "";
+        this.here = null;
+        this.clearHere();
+        sinceBefore = null;
+        this.since = latestReport ? "latest" : "2";
+        this.type = "all";
+        this.from = isoDaysAgo(365);
+        this.to = isoDaysAgo(0);
+        this.error = "";
+        this.limit = 40;
+        this.view = "list";
+        if (map) {
+          map.invalidateSize();
+          map.flyTo(START.center, START.zoom, this.$refs.map.offsetParent ? glide() : { animate: false });
+        }
+        window.scrollTo({ top: 0 });
       },
 
       clearHere() {

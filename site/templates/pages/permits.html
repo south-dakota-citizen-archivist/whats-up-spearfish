@@ -141,7 +141,7 @@
           <span aria-hidden="true" class="w-3.5 h-3.5 border-2 border-pine-700 border-t-transparent animate-spin"></span>Loading permits and applications…
         </span>
         <span x-show="!loading" x-cloak class="font-semibold" x-text="summary()"></span>
-        <button type="button" x-show="!loading && (query || here)" x-cloak @click="clear()" class="ml-2 font-semibold text-pine-700 underline">Clear</button>
+        <button type="button" x-show="!loading && changed()" x-cloak @click="startOver()" class="ml-2 font-semibold text-pine-700 underline">Start over</button>
       </p>
       {# phones: list or map #}
       <div class="lg:hidden flex border border-stone-400" role="group" aria-label="Show as">
