@@ -351,11 +351,15 @@ def meetings(site: Site) -> list[dict]:
     today = dates.today().isoformat()
     now = dates.now()
     for m in found:
-        # when it stops being "coming up": its start, or the end of its day if no time is known
-        # (the page moves it then, in the reader's browser: see static/js/time.js)
-        moves = meeting_start(m) or meeting_start(m, end_of_day=True)
+        # when it stops being "coming up": an hour after it starts (marked "started less than an hour
+        # ago" meanwhile, its join link still there), or the end of its day if no time is known. The
+        # page moves it then, in the reader's browser: see static/js/time.js
+        start = meeting_start(m)
+        moves = start + timedelta(hours=1) if start else meeting_start(m, end_of_day=True)
+        m["starts"] = start.isoformat() if start else ""
         m["moves_at"] = moves.isoformat() if moves else ""
         m["over"] = bool(moves and moves <= now)
+        m["started"] = bool(start and start <= now and not m["over"])
         # a way to take part online, until the meeting's over
         if m["date"][:10] >= today and not m["videos"]:
             if m.get("join"):  # shown only while it's coming up (the list it's in decides)

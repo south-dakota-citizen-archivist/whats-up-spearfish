@@ -57,11 +57,15 @@
     for (const el of document.querySelectorAll("[data-today]")) {
       el.textContent = fmtDay(today(), { weekday: "short", month: "short", day: "numeric" });
     }
-    // meetings: "coming up" until they start, then past (data-moves-at, data-list="up" | "past")
+    // meetings: "coming up" until an hour after they start (data-moves-at), then past; in that
+    // hour, marked "started less than an hour ago" (data-starts, [data-started])
     for (const el of document.querySelectorAll("[data-moves-at]")) {
       if (!el.dataset.movesAt) continue;
-      const over = Date.now() >= new Date(el.dataset.movesAt).getTime();
+      const now = Date.now();
+      const over = now >= new Date(el.dataset.movesAt).getTime();
       el.classList.toggle("hidden", el.dataset.list === "up" ? over : !over);
+      const badge = el.querySelector("[data-started]");
+      if (badge) badge.hidden = !(el.dataset.starts && now >= new Date(el.dataset.starts).getTime() && !over);
     }
     // a "coming up" list whose meetings have all started says so
     for (const note of document.querySelectorAll("[data-up-empty]")) {
