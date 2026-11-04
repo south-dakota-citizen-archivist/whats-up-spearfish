@@ -14,7 +14,7 @@
 {% set last = chart.bars[-1] %}
 {% macro reading(b) %}{{ b.year }}{{ ' so far' if b.partial }}: {{ b.label }}{% endmacro %}
 <figure x-data="{ shown: '' }">
-  <p aria-hidden="true" class="ml-12 h-5 text-xs text-stone-700 tabular-nums whitespace-nowrap" x-text="shown || {{ reading(last) | tojson | forceescape }}">{{ reading(last) }}</p>
+  <p aria-hidden="true" class="ml-12 h-5 text-right text-xs font-semibold text-stone-700 tabular-nums whitespace-nowrap" x-text="shown || {{ reading(last) | tojson | forceescape }}">{{ reading(last) }}</p>
   <div class="relative h-52 ml-12" role="img" aria-label="{{ what }}, {{ chart.bars[0].year }} to {{ last.year }}. The numbers are in the year-over-year table below.">
     {% for t in chart.ticks %}
     <div aria-hidden="true" class="absolute inset-x-0 border-t {{ 'border-stone-400' if t.pct == 0 else 'border-stone-200' }}" style="bottom: {{ t.pct }}%">
