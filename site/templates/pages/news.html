@@ -28,7 +28,8 @@
         <span class="sr-only">Show stories from: </span><span x-text="label()">All outlets</span>
         <svg aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="#44403c" stroke-width="2" class="absolute right-[0.7rem] top-1/2 -translate-y-1/2 w-[0.85rem] h-[0.85rem]"><path d="M3.5 6l4.5 4.5L12.5 6"/></svg>
       </button>
-      <div id="outlet-menu" x-show="open" x-cloak class="absolute right-0 z-20 mt-1 w-72 bg-white border border-stone-300 shadow-lg py-1">
+      {# on phones the button sits at the left, so the list opens from its left edge and fits the screen #}
+      <div id="outlet-menu" x-show="open" x-cloak class="absolute left-0 sm:left-auto sm:right-0 z-20 mt-1 w-72 max-w-[calc(100vw-2rem)] bg-white border border-stone-300 shadow-lg py-1">
         <fieldset>
           <legend class="sr-only">Show stories from</legend>
           {% for o, n in outlets.items() %}

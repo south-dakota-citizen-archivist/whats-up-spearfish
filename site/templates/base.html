@@ -106,8 +106,9 @@
   </main>
 
   <footer class="border-t border-stone-300 bg-white {% block footer_class %}{% endblock %}">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-5 text-sm text-stone-600 flex flex-wrap gap-x-6 gap-y-2 items-center">
-      <span>Updated {{ build_time.strftime('%b %-d at %-I:%M %p') }}</span> • <a href="{{ root }}sources/" class="font-bold hover:text-pine-700 hover:underline">Data sources</a> • <a href="https://venmo.com/u/cjwinchester" target="_blank" rel="noopener" class="font-bold hover:text-pine-700 hover:underline">✌️ Buy me a coffee</a>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-5 text-sm text-stone-600 flex items-center justify-between gap-4">
+      <span>Updated {{ build_time.strftime('%b %-d at %-I:%M %p') }}</span>
+      <a href="{{ root }}sources/" class="font-bold hover:text-pine-700 hover:underline">Data sources</a>
     </div>
   </footer>
 

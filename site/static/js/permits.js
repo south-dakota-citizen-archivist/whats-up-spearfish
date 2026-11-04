@@ -1,4 +1,4 @@
-// Building permits and planning records — lookup by address, search or location.
+// Building permits — lookup by address, search or location.
 document.addEventListener("alpine:init", () => {
   // Map dot colors by category (see permit_category in sitegen/pages.py)
   const CATEGORIES = {

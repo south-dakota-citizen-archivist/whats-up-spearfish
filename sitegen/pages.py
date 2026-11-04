@@ -571,7 +571,6 @@ def civic(site: Site, events: list[dict], today: date) -> dict:
     t = today.isoformat()
     all_meetings = meetings(site)
     bp = site.get("building_permits")
-    planning_parcels = ParcelLinks.load(site.data_dir)
     return {
         "upcoming": [m for m in all_meetings if m["date"] >= t][:20],
         "recent": [m for m in reversed(all_meetings) if (today - timedelta(days=45)).isoformat() <= m["date"] < t],
@@ -583,15 +582,6 @@ def civic(site: Site, events: list[dict], today: date) -> dict:
             bp.records, key=lambda r: (r.get("date", ""), r.get("cost_approximate") or 0), reverse=True
         )[:60],
         "bids": site.get("public_bids"),
-        "planning": site.get("planning_commission"),
-        "planning_items": [
-            dict(r, site_key=pc_site_key(r, planning_parcels))
-            for r in sorted(
-                (r for r in site.get("planning_commission").records if r.get("site")),
-                key=lambda r: r.get("meeting_date", ""),
-                reverse=True,
-            )[:12]
-        ],
         "press": newest(site.records(kind="press_release", slugs=PRESS_SOURCES))[:20],
         "notices": site.get("danr_public_notices"),
         # soonest comment deadline first; notices without one go last
@@ -654,8 +644,12 @@ def job_meta(j: dict, employer: str = "", today: date | None = None) -> list[str
     return [x for x in (where, pay.strip(), f"posted {posted}" if posted else "", closes) if x]
 
 
+# Shorter card titles on the Jobs page, where locals know them by these names
+JOB_TITLES = {"bhsu_jobs": "BHSU", "bhpioneer_jobs": "Pioneer classifieds"}
+
+
 def jobs(site: Site, events: list[dict], today: date) -> dict:
-    return {"employers": [s for s in sources_of(site, JOB_SOURCES)]}
+    return {"employers": [s for s in sources_of(site, JOB_SOURCES)], "job_titles": JOB_TITLES}
 
 
 def community(site: Site, events: list[dict], today: date) -> dict:
@@ -730,7 +724,7 @@ def sources_page(site: Site, events: list[dict], today: date) -> dict:
     return {"groups": groups}
 
 
-# ── page: permits ("Building permits and planning records") ─────────────────
+# ── page: permits ("Building permits") ─────────────────
 
 
 def load_planning_archive(site: Site) -> dict:

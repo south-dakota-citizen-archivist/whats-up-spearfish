@@ -50,21 +50,6 @@
     <p class="text-sm text-pine-100">See what's being built in and around Spearfish.</p>
   </a>
 
-  {% call card("On Planning Commission agendas", "planning", sources=planning, more=root ~ "permits/", more_label="Look up an address") %}
-    {% if planning_items %}
-    <ul class="divide-y divide-stone-100 text-sm" data-more="8">
-      {% for p in planning_items %}
-      <li class="py-2">
-        <p class="text-xs font-semibold text-stone-500 uppercase tracking-wide">{{ p.meeting_date | fmt_day('%b %-d, %Y') }} • Planning Commission</p>
-        <a href="{{ root }}permits/#site={{ p.site_key | urlencode }}" class="font-medium hover:text-pine-700 hover:underline">{{ p.location or p.address }}</a>
-        {% set docs = p.meeting_docs or [] %}
-        <p class="text-xs">{% for d in docs %}{{ ext(d.url, d.name, 'inline-block whitespace-nowrap py-0.5 mr-2 text-pine-700 hover:underline') }}{% endfor %}</p>
-      </li>
-      {% endfor %}
-    </ul>
-    {% else %}{{ empty("No recent planning applications.") }}{% endif %}
-  {% endcall %}
-
   {% call card("Building permits issued", "building-permits", sources=building_permits, more=root ~ "permits/", more_label="Look up an address") %}
     {% if building_records %}
     <ul class="divide-y divide-stone-100 text-sm" data-more="8">

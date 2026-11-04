@@ -64,7 +64,7 @@
 {% if t %}
 <div x-data="{ real: false }"
      x-init="real = localStorage.getItem('trends-dollars') === 'adjusted'; $watch('real', v => localStorage.setItem('trends-dollars', v ? 'adjusted' : 'reported'))">
-<nav class="text-sm" aria-label="Breadcrumb"><a href="{{ root }}permits/" class="text-pine-700 hover:underline">Building permits and planning records</a> <span aria-hidden="true" class="text-stone-400">/</span> <span class="text-stone-600">Trends</span></nav>
+<nav class="text-sm" aria-label="Breadcrumb"><a href="{{ root }}permits/" class="text-pine-700 hover:underline">Building permits</a> <span aria-hidden="true" class="text-stone-400">/</span> <span class="text-stone-600">Trends</span></nav>
 <h1 class="mt-1 text-2xl font-extrabold">How Spearfish is building</h1>
 <p class="mt-1 text-stone-600">Every building permit the city has issued since {{ t.first_year }}, year by year, from the city's monthly permit reports.</p>
 

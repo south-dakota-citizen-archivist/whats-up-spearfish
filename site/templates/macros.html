@@ -19,12 +19,17 @@
 {# A titled card. Use with {% call card(...) %}…{% endcall %}. #}
 {% macro card(title, id='', sources=none, more=none, more_label='See all', class='') %}
 <section {% if id %}id="{{ id }}"{% endif %} class="min-w-0 bg-white border border-stone-200 shadow-sm overflow-hidden {{ class }}">
-  <div class="px-5 pt-4 pb-3 border-b border-stone-100 flex items-start justify-between gap-3">
-    <div class="min-w-0">
-      <h2 class="text-lg font-bold text-stone-900">{{ title }}</h2>
-      {% if sources is not none %}{{ freshness(sources) }}{% endif %}
+  {# the "see more" link spells itself out only when the card is wide enough (a container query on the
+     header, so a narrow card in a two-column grid counts too); otherwise it's an arrow with a full-size
+     tap target, and the words stay for screen readers. Either way the title keeps the room. #}
+  <div class="@container px-5 pt-4 pb-3 border-b border-stone-100">
+    <div class="flex items-start justify-between gap-3">
+      <div class="min-w-0">
+        <h2 class="text-lg font-bold text-stone-900">{{ title }}</h2>
+        {% if sources is not none %}{{ freshness(sources) }}{% endif %}
+      </div>
+      {% if more %}<a href="{{ more }}" class="shrink-0 -mr-2 -mt-2 min-w-10 min-h-10 inline-flex items-center justify-center text-sm font-semibold text-pine-700 hover:underline @md:m-0 @md:min-w-0 @md:min-h-0"><span class="sr-only @md:not-sr-only">{{ more_label }}</span><span aria-hidden="true" class="text-lg leading-none @md:text-sm @md:ml-1">→</span></a>{% endif %}
     </div>
-    {% if more %}<a href="{{ more }}" class="shrink-0 text-sm font-semibold text-pine-700 hover:underline">{{ more_label }}<span aria-hidden="true"> →</span></a>{% endif %}
   </div>
   <div class="px-5 py-4">
     {{ caller() }}

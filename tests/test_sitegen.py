@@ -590,13 +590,14 @@ def test_state_notices_soonest_deadline_first_and_newest_spills(tmp_path):
 
 
 def test_text_wraps_only_when_it_runs_out_of_room():
-    """No balanced wrapping and no width caps on text: both break lines that would fit."""
+    """No balanced wrapping and no width caps on text: both break lines that would fit.
+    (A pop-up kept within the screen, max-w-[calc(100vw…)], isn't a cap on text.)"""
     import re
     from pathlib import Path
 
     root = Path(__file__).parent.parent / "site"
     assert not re.search(r"text-wrap:\s*(balance|pretty)", (root / "static" / "css" / "input.css").read_text())
-    capped_text = re.compile(r'<(?!table|dialog)[a-z0-9]+\b[^>]*\bclass="[^"]*\bmax-w-(?!6xl|none)[^"]*"')
+    capped_text = re.compile(r'<(?!table|dialog)[a-z0-9]+\b[^>]*\bclass="[^"]*\bmax-w-(?!6xl|none|\[calc\(100vw)[^"]*"')
     found = []
     for f in (root / "templates").rglob("*.html"):
         html = f.read_text()
