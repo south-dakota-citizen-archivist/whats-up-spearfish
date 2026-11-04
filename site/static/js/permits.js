@@ -11,6 +11,7 @@ document.addEventListener("alpine:init", () => {
   // Readers who ask for less motion get instant jumps instead of glides
   const calm = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const glide = () => (calm() ? { animate: false } : { duration: 0.8 });
+  const START = { center: [44.4906, -103.8594], zoom: 13 }; // the whole town
   const large = () => window.matchMedia("(min-width: 1024px)").matches;
 
   // Help for each way a location request fails (GeolocationPositionError codes)
@@ -91,6 +92,7 @@ document.addEventListener("alpine:init", () => {
     let ring = null; // highlight around the selected site
     let outlines = null; // parcel outlines, loaded the first time a parcel is selected
     let listScroll = 0; // where the reader was in the list, to return there from a place
+    let viewBefore = null; // the map's view before a place was chosen, for "Back to results"
     let sinceBefore = null; // the time period before a search widened it to every year
 
     return {
@@ -159,7 +161,7 @@ document.addEventListener("alpine:init", () => {
 
       makeMap() {
         // phones pinch to zoom, so the +/− buttons only appear on large screens
-        map = L.map(this.$refs.map, { preferCanvas: true, zoomControl: false }).setView([44.4906, -103.8594], 13);
+        map = L.map(this.$refs.map, { preferCanvas: true, zoomControl: false }).setView(START.center, START.zoom);
         if (large()) L.control.zoom({ position: "topright" }).addTo(map);
         doubleTapZoom(map);
         // the zoom level on the page, for tests and anyone curious
@@ -532,6 +534,8 @@ document.addEventListener("alpine:init", () => {
       // Chosen from the list or a shared link: its history replaces the list, and the map goes there.
       select(s) {
         listScroll = window.scrollY;
+        // remember the map as the reader left it (once: going place to place keeps the first view)
+        if (map && !this.selected) viewBefore = { center: map.getCenter(), zoom: map.getZoom() };
         this.show_(s);
         this.view = "list";
         if (large()) this.focusMap(s);
@@ -583,7 +587,11 @@ document.addEventListener("alpine:init", () => {
         ring = null;
         if (!was) return;
         history.replaceState(null, "", location.pathname);
+        const view = viewBefore || START; // a shared link to a place started there: show the whole town
+        viewBefore = null;
         if (!restore) return;
+        // (a hidden map, on a phone showing the list, just jumps there)
+        if (map) map.flyTo(view.center, view.zoom, this.$refs.map.offsetParent ? glide() : { animate: false });
         this.$nextTick(() => {
           window.scrollTo({ top: listScroll });
           [...this.$refs.panel.querySelectorAll("li button")].find((b) => b.textContent.includes(this.placeName(was)))?.focus({ preventScroll: true });

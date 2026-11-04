@@ -632,6 +632,21 @@ def test_permits_a_click_on_large_screens_shows_the_history_beside_the_map(open_
     assert page.locator("dialog[open]").count() == 0
 
 
+def test_permits_back_to_results_puts_the_map_back(open_page):
+    page = open_page("permits/", wait=PLACES)
+    view = (
+        "const m = document.querySelector('.permits-map').leaflet, c = m.getCenter();"
+        " const v = [+c.lat.toFixed(4), +c.lng.toFixed(4), m.getZoom()];"
+    )
+    before = page.evaluate(f"(() => {{ {view} return v; }})()")
+    page.locator(PLACES).first.click()  # from the list: the map flies to the place
+    page.wait_for_selector("#place-name")
+    page.wait_for_function(f"b => {{ {view} return JSON.stringify(v) !== JSON.stringify(b); }}", arg=before)
+    page.get_by_role("button", name="Back to results").click()
+    page.wait_for_function(f"b => {{ {view} return JSON.stringify(v) === JSON.stringify(b); }}", arg=before)
+    assert page.errors == []
+
+
 def test_trends_dollars_switch_between_reported_and_adjusted(open_page):
     page = open_page("permits/trends/")
     # the 2015 permit: $12,000 then is more in today's dollars
