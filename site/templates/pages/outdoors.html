@@ -6,12 +6,13 @@
 {% block content %}
 <h1 class="text-2xl font-extrabold mb-4">Outdoors</h1>
 
-{# Terry Peak: first on the page in ski season (December – March, or whenever lifts are open) #}
-{% macro terry_peak_card() %}
-  {# full width on large screens (the grid's fifth half-width card would sit alone): snow on the left, what's open on the right #}
-  {% call card("Terry Peak", "terry-peak", sources=ski.source, more=ski.source.url or "https://terrypeak.com/the-mountain/trails-lifts/", more_label="Trails & lifts", class="lg:col-span-2") %}
+{# Terry Peak: in ski season (December – March, or whenever lifts are open) first on the page and
+   full width, snow on the left and what's open on the right; the rest of the year a half-width card at
+   the bottom, beside the national forest card #}
+{% macro terry_peak_card(wide) %}
+  {% call card("Terry Peak", "terry-peak", sources=ski.source, more=ski.source.url or "https://terrypeak.com/the-mountain/trails-lifts/", more_label="Trails & lifts", class="lg:col-span-2" if wide else "") %}
     {% if ski.lifts or ski.snow %}
-    <div class="grid lg:grid-cols-2 gap-x-10 gap-y-4">
+    <div class="grid {{ 'lg:grid-cols-2' if wide }} gap-x-10 gap-y-4">
       {% if ski.snow %}
       <div>
         <h3 class="text-sm font-bold mb-2">Snow report</h3>
@@ -44,7 +45,7 @@
 {% endmacro %}
 
 <div class="grid lg:grid-cols-2 gap-6">
-  {% if ski.first %}{{ terry_peak_card() }}{% endif %}
+  {% if ski.first %}{{ terry_peak_card(true) }}{% endif %}
 
   {% call card("Spearfish Creek", "creek", sources=creek.source, more=creek.source.url, more_label="Live readings") %}
     {% if creek.current %}
@@ -109,7 +110,6 @@
     <p class="text-xs text-stone-500 mt-4">Burn bans and fire closures in the national forest are posted with the <a href="#forest-alerts" class="link">forest alerts</a> below.</p>
   {% endcall %}
 
-  {% if not ski.first %}{{ terry_peak_card() }}{% endif %}
 
   {% if plant %}
   {% call card("Native plant of the day", "plant", sources=plants, more=plant.url, more_label="iNaturalist", class="lg:col-span-2") %}
@@ -147,7 +147,9 @@
     {% else %}{{ empty("No sightings available.") }}{% endif %}
   {% endcall %}
 
-  {% call card("National forest alerts", "forest-alerts", sources=bhnf_alerts, more=bhnf_alerts.url, more_label="All alerts") %}
+  {# alerts and the few projects open for comment, in one card #}
+  {% call card("Black Hills National Forest", "forest-alerts", sources=[bhnf_alerts, bhnf_projects], more=bhnf_alerts.url, more_label="All alerts", class="lg:col-span-2" if ski.first else "") %}
+    <h3 class="text-sm font-bold mb-2">Alerts and closures</h3>
     {% if forest_alerts %}
     <ul class="space-y-2.5 text-sm" data-more="8">
       {% for a in forest_alerts %}
@@ -156,17 +158,18 @@
       {% endfor %}
     </ul>
     {% else %}{{ empty("No current alerts.") }}{% endif %}
-  {% endcall %}
-
-  {% call card("Forest projects open for review", "projects", sources=bhnf_projects, more=bhnf_projects.url, more_label="All projects") %}
+    <hr class="my-4 border-stone-200">
+    <h3 id="projects" class="text-sm font-bold mb-2">Projects open for review</h3>
     {% if projects %}
-    <ul class="space-y-2.5 text-sm" data-more="8">
+    <ul class="space-y-2.5 text-sm">
       {% for p in projects %}
       <li>{{ ext(p.url, p.title, 'link-title') }}
         {% if p.comment_period_date %}<p class="text-xs text-stone-500">Comment period: {{ p.comment_period_date }}</p>{% endif %}</li>
       {% endfor %}
     </ul>
     {% else %}{{ empty("No projects in progress.") }}{% endif %}
+    <p class="mt-2 text-sm">{{ ext(bhnf_projects.url, "All projects", "link-action") }}</p>
   {% endcall %}
+{% if not ski.first %}{{ terry_peak_card(false) }}{% endif %}
 </div>
 {% endblock %}
