@@ -84,6 +84,7 @@ jobs:
         if: steps.tier.outputs.tier != 'none'
         env:
           EBIRD_API_KEY: ${{ secrets.EBIRD_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
           case "${{ steps.tier.outputs.tier }}" in
             all) uv run python -m scrapers ;;

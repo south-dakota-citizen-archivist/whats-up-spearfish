@@ -670,6 +670,8 @@ def test_meeting_videos_join_their_meetings():
 
     assert video_date("Lawrence County Commission and Board of Adjustment Meetings - October 27, 2026") == "2026-10-27"
     assert video_date("SSD School Board Meeting 5:30 PM 10/13/2026") == "2026-10-13"
+    assert video_date("Lawrence County Commission and Board of Equalization Meetings 20260414") == "2026-04-14"
+    assert video_date("Board of Adjustment and Board of Equalization Meetings - May 12,2026") == "2026-05-12"
     assert video_date("Budget workshop") == ""
     assert meeting_kind("Lawrence County Planning & Zoning Meeting - October 1, 2026") == "planning"
     assert meeting_kind("October 27, 2026 ~ County Commission and BOA Proposed Meeting Agendas") == "commission"

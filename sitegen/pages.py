@@ -332,8 +332,10 @@ def meetings(site: Site) -> list[dict]:
 
 # ── meeting videos: the county's and school board's YouTube recordings, matched to their meetings ──
 
-_MONTH_DATE = re.compile(r"\b([A-Z][a-z]+)\.? (\d{1,2}),? (\d{4})")
+_MONTH_DATE = re.compile(r"\b([A-Z][a-z]+)\.? (\d{1,2}),?\s*(\d{4})")
 _NUM_DATE = re.compile(r"\b(\d{1,2})/(\d{1,2})/(\d{4})\b")
+_COMPACT_DATE = re.compile(r"\b(20\d{2})(\d{2})(\d{2})\b")  # 20260414
+_PART = re.compile(r"\bpart (\d+)", re.I)
 _CLOCK = re.compile(r"\b(\d{1,2}):(\d{2}) ?([AP]M)\b", re.I)
 
 
@@ -344,11 +346,12 @@ def video_date(title: str) -> str:
             return datetime.strptime(" ".join(m.groups()), "%B %d %Y").date().isoformat()
         except ValueError:
             pass
-    if m := _NUM_DATE.search(title or ""):
-        try:
-            return date(int(m.group(3)), int(m.group(1)), int(m.group(2))).isoformat()
-        except ValueError:
-            pass
+    for pattern, (y, mo, d) in ((_NUM_DATE, (3, 1, 2)), (_COMPACT_DATE, (1, 2, 3))):
+        if m := pattern.search(title or ""):
+            try:
+                return date(int(m.group(y)), int(m.group(mo)), int(m.group(d))).isoformat()
+            except ValueError:
+                pass
     return ""
 
 
@@ -380,7 +383,13 @@ def add_meeting_videos(meetings_list: list[dict], videos: list[dict]) -> None:
     Each recording joins the meeting it's of, matched by body, date and (for the county) kind of
     meeting. A recording whose meeting has no agenda here is listed as a meeting of its own.
     """
-    for v in sorted(videos, key=lambda v: ((v.get("published") or "")[:10], _clock(v.get("title", "")))):
+
+    def order(v):  # a meeting's parts in order: 'Part 2' after 'Part 1', 7:11 PM after 5:59 PM
+        title = v.get("title", "")
+        part = int(m.group(1)) if (m := _PART.search(title)) else 0
+        return (video_date(title) or (v.get("published") or "")[:10], part, _clock(title), v.get("published") or "")
+
+    for v in sorted(videos, key=order):
         body, when = _video_body(v), video_date(v.get("title", "")) or (v.get("published") or "")[:10]
         if not body or not when or not v.get("url"):
             continue

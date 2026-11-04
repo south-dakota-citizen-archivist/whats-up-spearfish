@@ -1,12 +1,20 @@
 """
 scrapers/sources/public_meetings_youtube.py
 
-YouTube videos from Spearfish-area public body channels.
-Uses the public YouTube Atom RSS feed — no API key required.
+Meeting recordings from Spearfish-area public bodies' YouTube channels, matched to
+their meetings by the site (sitegen.pages.add_meeting_videos).
+
+With YOUTUBE_API_KEY in the environment (a free YouTube Data API v3 key, public data
+only), every video each channel has ever posted, finished livestreams included: the
+channel's uploads playlist, 50 videos a request (1 unit each of the free 10,000 a day).
+The key goes in a header, never the URL, so it can't turn up in an error message.
+
+Without a key, the channels' RSS feeds: their latest 15 videos.
 """
 
 from __future__ import annotations
 
+import os
 import re
 import xml.etree.ElementTree as ET
 
@@ -29,6 +37,8 @@ SOURCES = [
 ]
 
 FEED_URL = "https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
+API = "https://www.googleapis.com/youtube/v3"
+NOT_VIDEOS = {"Private video", "Deleted video"}  # what a playlist shows for a video since taken down
 
 _NS = {
     "atom": "http://www.w3.org/2005/Atom",
@@ -112,6 +122,61 @@ def _fetch_feed(channel_id: str, source_name: str, channel_url: str, n: int = 15
     return records
 
 
+def _api(path: str, key: str, **params) -> dict:
+    resp = net.get(f"{API}/{path}", params=params, headers={"X-Goog-Api-Key": key}, timeout=30)
+    if resp.status_code != 200:
+        # the API's own message ('quotaExceeded' …), never the request
+        try:
+            reason = resp.json()["error"]["errors"][0]["reason"]
+        except (ValueError, KeyError, IndexError, TypeError):
+            reason = ""
+        raise RuntimeError(f"YouTube API {path}: HTTP {resp.status_code} {reason}".strip())
+    return resp.json()
+
+
+def uploads_playlist(src: dict, key: str) -> str | None:
+    """A channel's playlist of everything it has posted."""
+    params = {"id": src["channel_id"]} if src.get("channel_id") else {"forHandle": "@" + src["handle"]}
+    items = _api("channels", key, part="contentDetails", **params).get("items") or []
+    return items[0]["contentDetails"]["relatedPlaylists"]["uploads"] if items else None
+
+
+def video_record(item: dict, src: dict) -> dict | None:
+    """One playlistItems entry as a record ('Private video' and 'Deleted video' entries: None)."""
+    sn, cd = item.get("snippet") or {}, item.get("contentDetails") or {}
+    vid = cd.get("videoId") or (sn.get("resourceId") or {}).get("videoId")
+    title = (sn.get("title") or "").strip()
+    if not vid or not title or title in NOT_VIDEOS:
+        return None
+    thumbs = sn.get("thumbnails") or {}
+    thumb = (thumbs.get("medium") or thumbs.get("high") or thumbs.get("default") or {}).get("url", "")
+    return {
+        "url": f"https://www.youtube.com/watch?v={vid}",
+        "video_id": vid,
+        "title": title,
+        "description": (sn.get("description") or "").strip(),
+        "published": (cd.get("videoPublishedAt") or sn.get("publishedAt") or "")[:10],
+        "thumbnail_url": thumb,
+        "source_label": src["name"],
+        "channel_url": src["channel_url"],
+        "record_type": "youtube_video",
+    }
+
+
+def channel_history(src: dict, key: str) -> list[dict]:
+    playlist = uploads_playlist(src, key)
+    if not playlist:
+        raise RuntimeError(f"no YouTube channel found for {src['name']}")
+    records, token = [], None
+    while True:
+        params = {"part": "snippet,contentDetails", "playlistId": playlist, "maxResults": 50}
+        page = _api("playlistItems", key, **params, **({"pageToken": token} if token else {}))
+        records += [r for item in page.get("items") or [] if (r := video_record(item, src))]
+        token = page.get("nextPageToken")
+        if not token:
+            return records
+
+
 class PublicMeetingsYouTube(BaseScraper):
     name = "Public Meetings (YouTube)"
     slug = "public_meetings_youtube"
@@ -120,15 +185,20 @@ class PublicMeetingsYouTube(BaseScraper):
     dedup_key = "url"
 
     def scrape(self) -> list[dict]:
+        key = os.environ.get("YOUTUBE_API_KEY", "").strip()
+        # the API gives each channel's whole history, so the list is replaced; the feeds give
+        # only the latest videos, so what's already saved is kept
+        self.replace = bool(key)
         records = []
         for src in SOURCES:
-            channel_id = src.get("channel_id")
-            if not channel_id:
-                channel_id = _resolve_channel_id(src["handle"])
-            if not channel_id:
-                print(f"[YouTube] Warning: could not resolve channel for {src['name']}")
-                continue
-            items = _fetch_feed(channel_id, src["name"], src["channel_url"])
+            if key:
+                items = channel_history(src, key)
+            else:
+                channel_id = src.get("channel_id") or _resolve_channel_id(src["handle"])
+                if not channel_id:
+                    print(f"[YouTube] Warning: could not resolve channel for {src['name']}")
+                    continue
+                items = _fetch_feed(channel_id, src["name"], src["channel_url"])
             print(f"  [YouTube/{src['name']}] {len(items)} videos")
             records.extend(items)
         return records

@@ -117,7 +117,7 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
             Org(
                 "Public meeting video",
                 "https://www.youtube.com/@spearfishschooldistrictliv3794/streams",
-                (_i("Recordings of city, county and school board meetings", "public_meetings_youtube"),),
+                (_i("Recordings of county and school board meetings", "public_meetings_youtube"),),
             ),
             Org(
                 "SD Dept. of Agriculture & Natural Resources",
