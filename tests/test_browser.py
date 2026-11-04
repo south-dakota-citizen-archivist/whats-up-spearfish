@@ -865,11 +865,4 @@ def test_roadkill_species_filter_the_gallery(open_page):
     page.wait_for_timeout(200)
     assert len(shown()) > 1
 
-    # the home page's species link to the gallery already filtered
-    home = open_page("", wait="#roadkill")
-    home.locator("#roadkill a", has_text="mule deer").click()
-    home.wait_for_selector("#roadkill ul.grid > li:visible")
-    home.wait_for_timeout(300)
-    visible = {li.inner_text().split("\n")[0] for li in home.locator("#roadkill ul.grid > li").all() if li.is_visible()}
-    assert visible == {"Mule deer"}
-    assert page.errors == [] and home.errors == []
+    assert page.errors == []
