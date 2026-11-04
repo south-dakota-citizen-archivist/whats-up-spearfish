@@ -663,3 +663,58 @@ def test_spills_newest_first_place_undated_reports_by_number():
     ]
     assert [r["report_no"] for r in spills_newest_first(spills)] == [
         "2026.170", "2026.162", "2026.150", "2026.148", "2026.146", "2026.140"]  # fmt: skip
+
+
+def test_meeting_videos_join_their_meetings():
+    from sitegen.pages import add_meeting_videos, meeting_kind, video_date
+
+    assert video_date("Lawrence County Commission and Board of Adjustment Meetings - October 27, 2026") == "2026-10-27"
+    assert video_date("SSD School Board Meeting 5:30 PM 10/13/2026") == "2026-10-13"
+    assert video_date("Budget workshop") == ""
+    assert meeting_kind("Lawrence County Planning & Zoning Meeting - October 1, 2026") == "planning"
+    assert meeting_kind("October 27, 2026 ~ County Commission and BOA Proposed Meeting Agendas") == "commission"
+    assert meeting_kind("Search and Rescue Proposed Meeting Agenda") == "rescue"
+
+    county = {
+        "date": "2026-10-27",
+        "body": "Lawrence County",
+        "name": "October 27, 2026 ~ County Commission and BOA",
+        "videos": [],
+        "docs": [],
+    }
+    rescue = {
+        "date": "2026-10-27",
+        "body": "Lawrence County",
+        "name": "Search and Rescue Proposed Meeting Agenda",
+        "videos": [],
+        "docs": [],
+    }
+    school = {"date": "2026-09-16", "body": "School Board", "name": "Board of Education", "videos": [], "docs": []}
+    found = [county, rescue, school]
+
+    def vid(title, label, published, url):
+        return {"title": title, "source_label": label, "published": published, "url": url}
+
+    add_meeting_videos(found, [
+        vid("Lawrence County Commission and Board of Adjustment Meetings - October 27, 2026", "Lawrence County",
+            "2026-10-27T20:00:00", "https://youtu.be/c"),
+        # one meeting recorded in two parts, the later one uploaded first
+        vid("SSD School Board Meeting 7:11 PM 09/16/2026", "Spearfish School District", "2026-09-17T01:00:00",
+            "https://youtu.be/s2"),
+        vid("SSD School Board Meeting 5:59 PM 09/16/2026", "Spearfish School District", "2026-09-17T02:00:00",
+            "https://youtu.be/s1"),
+        # its agenda isn't here any more: listed on its own
+        vid("Lawrence County Planning & Zoning Meeting - September 3, 2026", "Lawrence County",
+            "2026-10-06T15:00:00", "https://youtu.be/pz"),
+    ])  # fmt: skip
+    assert county["videos"] == ["https://youtu.be/c"]
+    assert rescue["videos"] == []  # the commission's recording, not search and rescue's
+    assert school["videos"] == ["https://youtu.be/s1", "https://youtu.be/s2"]  # in the order they were recorded
+    own = found[-1]
+    assert (own["date"], own["body"], own["name"], own["videos"]) == (
+        "2026-09-03",
+        "Lawrence County",
+        "Lawrence County Planning & Zoning Meeting",
+        ["https://youtu.be/pz"],
+    )
+    assert "from_video" not in own

@@ -12,7 +12,7 @@ import random
 import re
 import statistics
 from collections import Counter, defaultdict
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from urllib.parse import quote
 
 from scrapers import dates, geo
@@ -290,7 +290,7 @@ def meetings(site: Site) -> list[dict]:
                 "body": "City of Spearfish",
                 "name": r.get("event_name") or r.get("category") or "Meeting",
                 "url": r.get("portal_url") or r["url"],
-                "video": r.get("media_url") or "",
+                "videos": [r["media_url"]] if r.get("media_url") else [],
                 "docs": [],
             },
         )
@@ -301,7 +301,7 @@ def meetings(site: Site) -> list[dict]:
             "body": "Lawrence County",
             "name": r["title"],
             "url": r["url"],
-            "video": "",
+            "videos": [],
             "docs": [{"label": "Agenda & packet", "url": r["url"]}],
         }
     for r in site.get("spearfish_school_board_docs").records:
@@ -315,12 +315,100 @@ def meetings(site: Site) -> list[dict]:
                 "body": "School Board",
                 "name": "Board of Education",
                 "url": r["url"],
-                "video": "",
+                "videos": [],
                 "docs": [],
             },
         )
         m["docs"].append({"label": board_doc_label(r), "url": r["url"]})
-    return sorted(out.values(), key=lambda m: m["date"])
+    found = list(out.values())
+    add_meeting_videos(found, site.get("public_meetings_youtube").records)
+    for m in found:
+        # the recording goes with the agenda and minutes: "Video", or "Video, part 1" …
+        n = len(m["videos"])
+        for i, u in enumerate(m["videos"], 1):
+            m["docs"].append({"label": "Video" if n == 1 else f"Video, part {i}", "url": u})
+    return sorted(found, key=lambda m: m["date"])
+
+
+# ── meeting videos: the county's and school board's YouTube recordings, matched to their meetings ──
+
+_MONTH_DATE = re.compile(r"\b([A-Z][a-z]+)\.? (\d{1,2}),? (\d{4})")
+_NUM_DATE = re.compile(r"\b(\d{1,2})/(\d{1,2})/(\d{4})\b")
+_CLOCK = re.compile(r"\b(\d{1,2}):(\d{2}) ?([AP]M)\b", re.I)
+
+
+def video_date(title: str) -> str:
+    """The meeting date a recording's title gives: 'Meetings - October 27, 2026', 'Meeting 5:30 PM 10/13/2026'."""
+    if m := _MONTH_DATE.search(title or ""):
+        try:
+            return datetime.strptime(" ".join(m.groups()), "%B %d %Y").date().isoformat()
+        except ValueError:
+            pass
+    if m := _NUM_DATE.search(title or ""):
+        try:
+            return date(int(m.group(3)), int(m.group(1)), int(m.group(2))).isoformat()
+        except ValueError:
+            pass
+    return ""
+
+
+def meeting_kind(text: str) -> str:
+    """Which of a body's meetings: the county's commission, planning & zoning or search and rescue board."""
+    t = (text or "").lower()
+    if "planning" in t or "p&z" in t or "zoning" in t:
+        return "planning"
+    if "rescue" in t:
+        return "rescue"
+    return "commission" if "commission" in t or "board of adjustment" in t or "boa" in t else ""
+
+
+def _video_body(v: dict) -> str:
+    label = v.get("source_label") or ""
+    return "School Board" if "School" in label else "Lawrence County" if "Lawrence" in label else ""
+
+
+def _clock(title: str) -> int:
+    """Minutes past midnight a recording started, from its title (a split meeting's parts, in order)."""
+    if m := _CLOCK.search(title or ""):
+        h, mins, half = int(m.group(1)) % 12, int(m.group(2)), m.group(3).upper()
+        return (h + (12 if half == "PM" else 0)) * 60 + mins
+    return 0
+
+
+def add_meeting_videos(meetings_list: list[dict], videos: list[dict]) -> None:
+    """
+    Each recording joins the meeting it's of, matched by body, date and (for the county) kind of
+    meeting. A recording whose meeting has no agenda here is listed as a meeting of its own.
+    """
+    for v in sorted(videos, key=lambda v: ((v.get("published") or "")[:10], _clock(v.get("title", "")))):
+        body, when = _video_body(v), video_date(v.get("title", "")) or (v.get("published") or "")[:10]
+        if not body or not when or not v.get("url"):
+            continue
+        kind = meeting_kind(v.get("title", ""))
+        same_day = [m for m in meetings_list if m["body"] == body and m["date"][:10] == when]
+        match = [m for m in same_day if body != "Lawrence County" or meeting_kind(m["name"]) == kind] or (
+            same_day if len(same_day) == 1 and body != "Lawrence County" else []
+        )
+        if match:
+            target = match[0]
+        else:
+            target = next((m for m in meetings_list if m.get("from_video") == (body, when, kind)), None)
+            if target is None:
+                target = {"date": when, "body": body, "name": _video_name(v["title"], body), "url": v["url"],
+                          "videos": [], "docs": [], "from_video": (body, when, kind)}  # fmt: skip
+                meetings_list.append(target)
+        if v["url"] not in target["videos"]:
+            target["videos"].append(v["url"])
+    for m in meetings_list:
+        m.pop("from_video", None)
+
+
+def _video_name(title: str, body: str) -> str:
+    """A recording's title without its date and time: 'Lawrence County Planning & Zoning Meeting'."""
+    if body == "School Board":
+        return "Board of Education"
+    name = _NUM_DATE.sub("", _CLOCK.sub("", _MONTH_DATE.sub("", title)))
+    return re.sub(r"[\s\-–—~,]+$", "", " ".join(name.split())) or title
 
 
 def _interleave(groups: list[list]) -> list:
@@ -724,9 +812,9 @@ def civic(site: Site, events: list[dict], today: date) -> dict:
     return {
         "upcoming": [m for m in all_meetings if m["date"] >= t][:20],
         "recent": [m for m in reversed(all_meetings) if (today - timedelta(days=45)).isoformat() <= m["date"] < t],
-        "meeting_sources": sources_of(site, ["spearfish_city", "lawrence_county", "spearfish_school_board_docs"]),
-        "videos": newest(site.get("public_meetings_youtube").records)[:9],
-        "youtube": site.get("public_meetings_youtube"),
+        "meeting_sources": sources_of(
+            site, ["spearfish_city", "lawrence_county", "spearfish_school_board_docs", "public_meetings_youtube"]
+        ),
         "building_permits": bp,
         # each with its place on the permits page (the key its #site= link opens)
         "building_records": [

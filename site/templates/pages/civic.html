@@ -9,7 +9,6 @@
     {{ ext(m.url, m.name, 'link-title') }}
     <span class="text-sm">
       {% for d in m.docs %}{{ ext(d.url, d.label, 'link inline-block whitespace-nowrap py-1 ml-2') }}{% endfor %}
-      {% if m.video %}{{ ext(m.video, 'Video', 'link inline-block whitespace-nowrap py-1 ml-2') }}{% endif %}
     </span>
   </li>
   {% endfor %}
@@ -21,28 +20,19 @@
 
 <div class="grid lg:grid-cols-2 gap-6">
 
-  {# one card: what's coming up, then what just happened #}
-  {% call card("Meetings", "meetings", sources=meeting_sources) %}
-    <h3 class="text-sm font-bold mb-1">Coming up</h3>
-    {% if upcoming %}{{ meeting_list(upcoming) }}{% else %}{{ empty("No agendas posted yet.") }}{% endif %}
-    <h3 class="text-sm font-bold mt-5 mb-1">Past six weeks</h3>
-    {% if recent %}{{ meeting_list(recent) }}{% else %}{{ empty("None.") }}{% endif %}
-  {% endcall %}
-
-  {% call card("Meeting video", "video", sources=youtube) %}
-    {% if videos %}
-    <ul class="grid sm:grid-cols-2 gap-4" data-more="2" data-more-lg="6" data-more-noun="videos">
-      {% for v in videos %}
-      <li>
-        <a href="{{ v.url }}" target="_blank" rel="noopener" class="group block">
-          {% if v.thumbnail_url %}<img {{ thumb_attrs(v.thumbnail_url, 320) }} alt="" loading="lazy" class="w-full aspect-video object-cover bg-stone-100">{% endif %}
-          <p class="text-sm font-medium mt-1 group-hover:text-pine-700">{{ v.title }}</p>
-          <p class="text-xs text-stone-500">{{ v.source_label }} • {{ v.published | fmt_day }}</p>
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-    {% else %}{{ empty("No recent recordings.") }}{% endif %}
+  {# one card, full width: what's coming up beside what just happened, each with its agenda,
+     minutes and video #}
+  {% call card("Meetings", "meetings", sources=meeting_sources, class="lg:col-span-2") %}
+    <div class="grid lg:grid-cols-2 gap-x-10 gap-y-5">
+      <div>
+        <h3 class="text-sm font-bold mb-1">Coming up</h3>
+        {% if upcoming %}{{ meeting_list(upcoming) }}{% else %}{{ empty("No agendas posted yet.") }}{% endif %}
+      </div>
+      <div>
+        <h3 class="text-sm font-bold mb-1">Past six weeks</h3>
+        {% if recent %}{{ meeting_list(recent) }}{% else %}{{ empty("None.") }}{% endif %}
+      </div>
+    </div>
   {% endcall %}
 
   {# open bids: usually one or two, so a strip rather than a card; gone when there are none #}
