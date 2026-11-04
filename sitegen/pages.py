@@ -637,10 +637,10 @@ def _job_day(value, today: date) -> str:
 def job_meta(j: dict, employer: str = "", today: date | None = None) -> list[str]:
     """
     The line under a job's title: where, pay, when posted, when it closes — whichever the
-    posting has. ('Police · Hiring range: $32.84 - $38.08 · posted Oct 16, 2025 · open until filled')
+    posting has. ('Police • Hiring range: $32.84 - $38.08 • posted Oct 16, 2025 • open until filled')
     """
     today = today or dates.today()
-    where = (j.get("department") or j.get("location") or j.get("category") or "").replace(employer, "").strip(" -·")
+    where = (j.get("department") or j.get("location") or j.get("category") or "").replace(employer, "").strip(" -•")
     where = re.sub(r"^BHSU\s*-\s*", "", where)  # under the Black Hills State University card already
     pay = re.sub(r"\s+(commensurate|depending on|DOE\b|DOQ\b|plus benefits).*$", "", j.get("salary") or "", flags=re.I)
     posted = _job_day(j.get("published"), today)
@@ -1014,9 +1014,9 @@ def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
                 "desc": r.get("description"),
                 "who": r.get("applicant"),
                 "own": r.get("owner"),
-                "own_c": " · ".join(x for x in (r.get("owner_phone"), r.get("owner_email")) if x),
+                "own_c": " • ".join(x for x in (r.get("owner_phone"), r.get("owner_email")) if x),
                 "con": r.get("contractor"),
-                "con_c": " · ".join(x for x in (r.get("contractor_phone"), r.get("contractor_email")) if x),
+                "con_c": " • ".join(x for x in (r.get("contractor_phone"), r.get("contractor_email")) if x),
             },
         )
 
@@ -1043,8 +1043,8 @@ def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
                 "s": friendly_status(app.get("status")) if app else None,
                 "desc": app.get("description"),
                 "own": app.get("owner"),
-                "own_c": " · ".join(x for x in (app.get("owner_phone"), app.get("owner_email")) if x),
-                "con_c": " · ".join(x for x in (app.get("contractor_phone"), app.get("contractor_email")) if x),
+                "own_c": " • ".join(x for x in (app.get("owner_phone"), app.get("owner_email")) if x),
+                "con_c": " • ".join(x for x in (app.get("contractor_phone"), app.get("contractor_email")) if x),
             },
         )
 

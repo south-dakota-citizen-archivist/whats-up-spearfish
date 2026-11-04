@@ -94,7 +94,7 @@ def _parse_posting(ul) -> dict | None:
         description_parts.append(f"Location: {location}")
     if closing:
         description_parts.append(f"Closes: {closing}")
-    description = " · ".join(description_parts)
+    description = " • ".join(description_parts)
 
     return {
         "url": url,

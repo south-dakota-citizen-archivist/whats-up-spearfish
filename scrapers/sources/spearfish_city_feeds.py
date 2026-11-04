@@ -183,7 +183,7 @@ def parse_job(job: dict) -> dict:
         "salary": job.get("salary") or "",
         "published": (job.get("openDate") or "").replace(".", "-"),
         "closing": (job.get("closeDate") or "").replace(".", "-")[:10],
-        "description": " · ".join(d for d in details if d),
+        "description": " • ".join(d for d in details if d),
         "record_type": "job",
         "source_label": "City of Spearfish",
     }

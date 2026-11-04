@@ -5,7 +5,7 @@
 <ul class="divide-y divide-stone-100" data-more="8">
   {% for m in items %}
   <li class="py-2.5">
-    <p class="text-xs font-semibold text-stone-500 uppercase tracking-wide">{{ m.date | fmt_day('%a, %b %-d') }} · {{ m.body }}</p>
+    <p class="text-xs font-semibold text-stone-500 uppercase tracking-wide">{{ m.date | fmt_day('%a, %b %-d') }} • {{ m.body }}</p>
     {{ ext(m.url, m.name, 'font-medium hover:text-pine-700 hover:underline') }}
     <span class="text-sm">
       {% for d in m.docs %}{{ ext(d.url, d.label, 'inline-block whitespace-nowrap py-1 text-pine-700 hover:underline ml-2') }}{% endfor %}
@@ -37,7 +37,7 @@
         <a href="{{ v.url }}" target="_blank" rel="noopener" class="group block">
           {% if v.thumbnail_url %}<img {{ thumb_attrs(v.thumbnail_url, 320) }} alt="" loading="lazy" class="w-full aspect-video object-cover bg-stone-100">{% endif %}
           <p class="text-sm font-medium mt-1 group-hover:text-pine-700">{{ v.title }}</p>
-          <p class="text-xs text-stone-500">{{ v.source_label }} · {{ v.published | fmt_day }}</p>
+          <p class="text-xs text-stone-500">{{ v.source_label }} • {{ v.published | fmt_day }}</p>
         </a>
       </li>
       {% endfor %}
@@ -55,7 +55,7 @@
     <ul class="divide-y divide-stone-100 text-sm" data-more="8">
       {% for p in planning_items %}
       <li class="py-2">
-        <p class="text-xs font-semibold text-stone-500 uppercase tracking-wide">{{ p.meeting_date | fmt_day('%b %-d, %Y') }} · Planning Commission</p>
+        <p class="text-xs font-semibold text-stone-500 uppercase tracking-wide">{{ p.meeting_date | fmt_day('%b %-d, %Y') }} • Planning Commission</p>
         <a href="{{ root }}permits/#site={{ p.site_key | urlencode }}" class="font-medium hover:text-pine-700 hover:underline">{{ p.location or p.address }}</a>
         {% set docs = p.meeting_docs or [] %}
         <p class="text-xs">{% for d in docs %}{{ ext(d.url, d.name, 'inline-block whitespace-nowrap py-0.5 mr-2 text-pine-700 hover:underline') }}{% endfor %}</p>
@@ -71,7 +71,7 @@
       {% for p in building_records %}
       <li class="py-2">
         <p class="font-medium">{{ p.site_address or 'Address not listed' }}</p>
-        <p class="text-xs text-stone-500">{{ p.construction_type | permit_type }}{% if p.cost_approximate %} · ${{ p.cost_approximate | intcomma }}{% endif %}{% if p.contractor %} · {{ p.contractor | title }}{% endif %} · {{ p.date | fmt_day('%B %Y') }}</p>
+        <p class="text-xs text-stone-500">{{ p.construction_type | permit_type }}{% if p.cost_approximate %} • ${{ p.cost_approximate | intcomma }}{% endif %}{% if p.contractor %} • {{ p.contractor | title }}{% endif %} • {{ p.date | fmt_day('%B %Y') }}</p>
       </li>
       {% endfor %}
     </ul>
@@ -95,7 +95,7 @@
     <ul class="space-y-2.5 text-sm" data-more="8">
       {% for n in notice_list %}
       <li>{{ ext(n.url, n.title, 'font-medium hover:text-pine-700 hover:underline') }}
-        <p class="text-xs text-stone-500">{% if n.deadline_iso %}<span class="font-semibold text-stone-700">Comments due {{ n.deadline_iso | fmt_day('%b %-d') }}</span> · {% endif %}{{ n.notice_type }}{% if n.location %} · {{ n.location }}{% endif %}</p></li>
+        <p class="text-xs text-stone-500">{% if n.deadline_iso %}<span class="font-semibold text-stone-700">Comments due {{ n.deadline_iso | fmt_day('%b %-d') }}</span> • {% endif %}{{ n.notice_type }}{% if n.location %} • {{ n.location }}{% endif %}</p></li>
       {% endfor %}
     </ul>
     {% else %}{{ empty("No current notices for western South Dakota.") }}{% endif %}
@@ -108,7 +108,7 @@
       {% for c in case_list %}
       <li class="py-2.5">
         {{ ext(c.url, c.title, 'font-medium hover:text-pine-700 hover:underline') }}
-        <p class="text-xs text-stone-500">{% if c.area %}{{ c.area }} · {% endif %}{{ c.permit_type }} · {{ c.board }}</p>
+        <p class="text-xs text-stone-500">{% if c.area %}{{ c.area }} • {% endif %}{{ c.permit_type }} • {{ c.board }}</p>
         {% if c.documents %}{% set d = c.documents[0] %}
         <p class="text-xs mt-1">Latest filing{% if d.added %}, {{ d.added | fmt_day('%b %-d') }}{% endif %}: {{ ext(d.url, d.title, 'text-pine-700 hover:underline') }}</p>
         {% endif %}
@@ -125,7 +125,7 @@
       {% for r in spill_list %}
       <li class="py-2">
         {{ ext(r.url, r.title, 'font-medium hover:text-pine-700 hover:underline') }}
-        <p class="text-xs text-stone-500">{{ r.material or r.category or 'Unknown material' }}{% if r.spill_source %} · {{ r.spill_source }}{% endif %} · {{ r.city or r.county ~ ' County' }} · {% if r.status == 'Open' %}<span class="font-semibold text-stone-700">Open</span>{% else %}{{ r.status }}{% endif %}</p>
+        <p class="text-xs text-stone-500">{{ r.material or r.category or 'Unknown material' }}{% if r.spill_source %} • {{ r.spill_source }}{% endif %} • {{ r.city or r.county ~ ' County' }} • {% if r.status == 'Open' %}<span class="font-semibold text-stone-700">Open</span>{% else %}{{ r.status }}{% endif %}</p>
       </li>
       {% endfor %}
     </ul>
@@ -137,7 +137,7 @@
     <ul class="grid md:grid-cols-2 gap-x-6 gap-y-3 text-sm">
       {% for p in press %}
       <li>{{ ext(p.url, p.title, 'font-medium hover:text-pine-700 hover:underline') }}
-        <p class="text-xs text-stone-500">{{ p.source_label }} · {{ p.published | fmt_day }}</p></li>
+        <p class="text-xs text-stone-500">{{ p.source_label }} • {{ p.published | fmt_day }}</p></li>
       {% endfor %}
     </ul>
     {% else %}{{ empty("No recent announcements.") }}{% endif %}

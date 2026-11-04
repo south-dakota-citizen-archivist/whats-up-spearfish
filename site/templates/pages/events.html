@@ -105,7 +105,7 @@
           <li class="px-3 py-2.5 flex items-start gap-3 text-sm">
             <div class="min-w-0 flex-1">
               <p class="font-medium leading-snug" x-text="e.title"></p>
-              <p class="text-xs text-stone-500"><span x-text="shortDay(e.date)"></span><span x-show="e.time" x-text="' · ' + e.time"></span></p>
+              <p class="text-xs text-stone-500"><span x-text="shortDay(e.date)"></span><span x-show="e.time" x-text="' • ' + e.time"></span></p>
               <p class="mt-0.5 text-xs"><a :href="googleLink(e)" target="_blank" rel="noopener" class="font-semibold text-pine-700 hover:underline">Add to Google Calendar</a></p>
             </div>
             <button type="button" @click="pick(e)" class="shrink-0 -mr-1 px-2 py-1 text-stone-500 hover:text-red-700" :aria-label="'Remove ' + e.title">✕</button>

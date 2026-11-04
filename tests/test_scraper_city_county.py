@@ -70,7 +70,7 @@ def test_city_job_from_the_job_board():
     assert job["closing"] == ""
     assert job["department"] == "Police"
     assert job["url"].endswith("#330")
-    assert job["description"] == "Police · FT Employee · Hiring range: $32.84 - $38.08"
+    assert job["description"] == "Police • FT Employee • Hiring range: $32.84 - $38.08"
 
 
 COUNTY_JOBS = """

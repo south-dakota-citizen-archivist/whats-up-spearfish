@@ -7,9 +7,9 @@
 {% set newest = srcs | selectattr('fetched_at') | map(attribute='fetched_at') | sort | list %}
 <p class="text-xs {{ 'text-amber-700' if stale else 'text-stone-500' }}">
   {% if stale and stale | length == srcs | length %}
-  <span class="font-semibold">⚠ May be out of date</span>{% if newest %} · last updated {{ newest[-1] | ago }}{% endif %}
+  <span class="font-semibold">⚠ May be out of date</span>{% if newest %} • last updated {{ newest[-1] | ago }}{% endif %}
   {% elif stale %}
-  Updated {{ newest[-1] | ago }} · <span class="font-semibold">some of this may be out of date</span>
+  Updated {{ newest[-1] | ago }} • <span class="font-semibold">some of this may be out of date</span>
   {% elif newest %}
   Updated {{ newest[-1] | ago }}
   {% endif %}

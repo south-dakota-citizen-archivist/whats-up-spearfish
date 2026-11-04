@@ -154,9 +154,9 @@ def intcomma(value) -> str:
         return str(value or "")
 
 
-def together(parts, sep: str = " · ") -> Markup:
+def together(parts, sep: str = " • ") -> Markup:
     """
-    A line of pieces ("Police · posted Oct 16 · closes Nov 30"), each kept whole when
+    A line of pieces ("Police • posted Oct 16 • closes Nov 30"), each kept whole when
     the line wraps, so it breaks between pieces rather than inside one.
     """
     piece = Markup('<span class="inline-block">{}</span>')

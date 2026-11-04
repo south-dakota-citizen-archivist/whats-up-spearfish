@@ -70,7 +70,7 @@ def write_rss(events: list[dict], path: Path, site_url: str, days: int = 14) -> 
         ET.SubElement(item, "title").text = f"{e['title']} ({label})"
         ET.SubElement(item, "link").text = e["url"] or f"{site_url}/events/"
         ET.SubElement(item, "guid", isPermaLink="false").text = e["id"]
-        ET.SubElement(item, "description").text = " · ".join(
+        ET.SubElement(item, "description").text = " • ".join(
             x for x in (e["location"], e["source_label"], e["description"]) if x
         )
     ET.ElementTree(rss).write(path, encoding="utf-8", xml_declaration=True)

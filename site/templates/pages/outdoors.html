@@ -26,7 +26,7 @@
       {% endif %}
       <div>
         <h3 class="text-sm font-bold mb-2">Open now</h3>
-        <p class="text-sm"><span class="font-bold">{{ ski.lifts_open | length }} of {{ ski.lifts | length }}</span> lifts · <span class="font-bold">{{ ski.trails_open_count }} of {{ ski.trails | length }}</span> trails</p>
+        <p class="text-sm"><span class="font-bold">{{ ski.lifts_open | length }} of {{ ski.lifts | length }}</span> lifts • <span class="font-bold">{{ ski.trails_open_count }} of {{ ski.trails | length }}</span> trails</p>
         {% if ski.lifts_open %}
         <p class="mt-1 text-sm text-stone-700"><span class="font-semibold">Lifts:</span> {{ ski.lifts_open | map(attribute='name') | join(', ') }}</p>
         {% endif %}
@@ -92,7 +92,7 @@
 
   {% call card("Fire", "fire", sources=fire.source, more="https://www.fs.usda.gov/r02/blackhills/alerts", more_label="Burn bans & closures") %}
     {% if fire.danger and fire.danger.zones %}
-    <h3 class="text-sm font-bold mb-1">Fire danger <span class="font-normal text-stone-500">· National Weather Service{% if fire.danger.issued %}, {{ fire.danger.issued }}{% endif %}</span></h3>
+    <h3 class="text-sm font-bold mb-1">Fire danger <span class="font-normal text-stone-500">• National Weather Service{% if fire.danger.issued %}, {{ fire.danger.issued }}{% endif %}</span></h3>
     <ul class="space-y-1.5 text-sm mb-4">
       {% for z in fire.danger.zones %}
       <li class="flex items-start gap-2">{{ danger_badge(z.level) }}<span class="text-stone-700">{{ z.name }}</span></li>
@@ -102,7 +102,7 @@
     {% if fire.incidents %}
     <h3 class="text-sm font-bold mt-4 mb-1">Active South Dakota wildfires</h3>
     <ul class="space-y-1 text-sm">
-      {% for i in fire.incidents %}<li>{{ ext(i.url, i.name) }} <span class="text-stone-500">· {{ i.type }}{% if i.size %} · {{ i.size }}{% endif %}{% if i.contained is not none %} · {{ i.contained }}% contained{% endif %}</span></li>{% endfor %}
+      {% for i in fire.incidents %}<li>{{ ext(i.url, i.name) }} <span class="text-stone-500">• {{ i.type }}{% if i.size %} • {{ i.size }}{% endif %}{% if i.contained is not none %} • {{ i.contained }}% contained{% endif %}</span></li>{% endfor %}
     </ul>
     {% endif %}
     {% if not (fire.danger and fire.danger.zones) and not fire.incidents %}{{ empty("No fire danger statement out and no active South Dakota wildfires.") }}{% endif %}
@@ -121,7 +121,7 @@
         <h3 class="text-xl font-bold">{{ plant.title }}</h3>
         <p class="text-sm italic text-stone-600">{{ plant.scientific_name }}</p>
         <p class="mt-2 text-sm text-stone-700">{{ plant.summary }}</p>
-        <p class="mt-2 text-xs text-stone-500">Seen {{ plant.sightings | intcomma }} times in the Black Hills on iNaturalist{% if plant.wikipedia_url %} · {{ ext(plant.wikipedia_url, 'Wikipedia', 'text-pine-700 hover:underline') }}{% endif %}</p>
+        <p class="mt-2 text-xs text-stone-500">Seen {{ plant.sightings | intcomma }} times in the Black Hills on iNaturalist{% if plant.wikipedia_url %} • {{ ext(plant.wikipedia_url, 'Wikipedia', 'text-pine-700 hover:underline') }}{% endif %}</p>
         <p class="mt-1 text-[11px] text-stone-500">Photo {{ plant.photo_credit }}</p>
       </div>
     </div>
@@ -138,7 +138,7 @@
           {% if b.photo_url %}<img {{ thumb_attrs(b.photo_url, 240) }} alt="" loading="lazy" class="w-full aspect-square object-cover bg-stone-100">
           {% else %}<div class="w-full aspect-square bg-stone-100"></div>{% endif %}
           <p class="text-sm font-medium mt-1 group-hover:text-pine-700">{{ b.common_name }}</p>
-          <p class="text-xs text-stone-500">{{ b.published | fmt_day('%b %-d') }}{% if b.count %} · {{ b.count }} seen{% endif %}</p>
+          <p class="text-xs text-stone-500">{{ b.published | fmt_day('%b %-d') }}{% if b.count %} • {{ b.count }} seen{% endif %}</p>
           <p class="text-xs text-stone-500 truncate">{{ b.location_name }}</p>
         </a>
       </li>
@@ -152,7 +152,7 @@
     <ul class="space-y-2.5 text-sm" data-more="8">
       {% for a in forest_alerts %}
       <li>{{ ext(a.url, a.title, 'font-medium hover:text-pine-700 hover:underline') }}
-        <p class="text-xs text-stone-500">{% if a.alert_type %}{{ a.alert_type }} · {% endif %}{{ a.published | fmt_day('%b %-d, %Y') }}</p></li>
+        <p class="text-xs text-stone-500">{% if a.alert_type %}{{ a.alert_type }} • {% endif %}{{ a.published | fmt_day('%b %-d, %Y') }}</p></li>
       {% endfor %}
     </ul>
     {% else %}{{ empty("No current alerts.") }}{% endif %}

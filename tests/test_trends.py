@@ -72,5 +72,5 @@ def test_without_cpi_the_adjusted_figures_are_the_reported_ones():
 def test_together_keeps_each_piece_whole():
     out = together(["Police", "", "posted Oct 16", "<b>"])
     assert isinstance(out, Markup)
-    assert out == ('<span class="inline-block">Police</span> · <span class="inline-block">posted Oct 16</span> · '
+    assert out == ('<span class="inline-block">Police</span> • <span class="inline-block">posted Oct 16</span> • '
                    '<span class="inline-block">&lt;b&gt;</span>')  # fmt: skip

@@ -132,7 +132,7 @@
         <span class="w-16 shrink-0 text-right font-bold tabular-nums">{{ p.value | money_short }}</span>
         <span class="min-w-0">
           {% if p.site %}<a href="{{ root }}permits/#site={{ p.site | urlencode }}" class="font-semibold text-pine-700 hover:underline">{{ p.owner }}</a>{% else %}<span class="font-semibold">{{ p.owner }}</span>{% endif %}
-          <span class="block text-stone-600">{{ [p.address, p.type] | together }} · {% if p.report %}<a href="{{ root }}permits/reports/{{ p.report }}.pdf" target="_blank" rel="noopener" class="inline-block text-pine-700 hover:underline">{{ (p.report ~ '-01') | fmt_day('%b %Y') }}</a>{% else %}{{ p.year }}{% endif %}</span>
+          <span class="block text-stone-600">{{ [p.address, p.type] | together }} • {% if p.report %}<a href="{{ root }}permits/reports/{{ p.report }}.pdf" target="_blank" rel="noopener" class="inline-block text-pine-700 hover:underline">{{ (p.report ~ '-01') | fmt_day('%b %Y') }}</a>{% else %}{{ p.year }}{% endif %}</span>
         </span>
       </li>
       {% endfor %}

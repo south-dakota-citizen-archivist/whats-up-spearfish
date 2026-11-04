@@ -460,7 +460,7 @@ document.addEventListener("alpine:init", () => {
         if (this.query) return `${places} match “${this.query}”`;
         if (this.here) return `${places}, closest to ${this.hereLabel} first`;
         if (this.since === "latest") return `${places} with permits issued ${this.monthName(latestReport)}`;
-        return `${places} · ${this.periodLabel()}, newest first`;
+        return `${places} • ${this.periodLabel()}, newest first`;
       },
 
       // "714 North 5th Street, Spearfish, SD 57783" → "714 North 5th Street": every place here is in or near town
@@ -474,7 +474,7 @@ document.addEventListener("alpine:init", () => {
         const r = s.r.find((x) => this.inPeriod(x)) || s.r[0];
         const what = r.src === "pc" ? "Planning Commission meeting" : r.t;
         const when = r.src === "permit" ? this.day((r.d || "").slice(0, 7)) : this.day(r.d);
-        return [what, when, s.r.length > 1 ? `${s.r.length} records` : ""].filter(Boolean).join(" · ");
+        return [what, when, s.r.length > 1 ? `${s.r.length} records` : ""].filter(Boolean).join(" • ");
       },
 
       kind(r) {
@@ -488,7 +488,7 @@ document.addEventListener("alpine:init", () => {
         if (r.s) bits.push(r.s);
         if (r.v) bits.push(this.money(r.v));
         if (r.con) bits.push(`Contractor: ${r.con}`);
-        return bits.join(" · ");
+        return bits.join(" • ");
       },
 
       // Everything else, behind "Details"
@@ -497,7 +497,7 @@ document.addEventListener("alpine:init", () => {
         if (r.no) out.push([r.src === "app" ? "Application" : "Permit number", r.no]);
         if (r.ad) out.push(["Applied", this.day(r.ad) + (r.ano ? ` (application ${r.ano})` : "")]);
         if (r.who && r.who !== r.own) out.push(["Applicant", r.who]);
-        if (r.own) out.push(["Owner", r.own + (r.own_c ? ` · ${r.own_c}` : "")]);
+        if (r.own) out.push(["Owner", r.own + (r.own_c ? ` • ${r.own_c}` : "")]);
         if (r.con_c) out.push(["Contractor contact", r.con_c]);
         if (r.desc) out.push(["Description", r.desc]);
         return out;
