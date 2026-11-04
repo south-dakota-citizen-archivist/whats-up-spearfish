@@ -805,7 +805,7 @@ def test_roadkill_gallery_steps_through_photos(open_page):
 def test_home_roadkill_teaser(open_page):
     page = open_page("", wait="#roadkill")
     teaser = page.locator("#roadkill")
-    assert "20 animals picked up off Black Hills roads in the past 30 days" in " ".join(teaser.inner_text().split())
+    assert "20 animals scraped off Black Hills roads in the past 30 days" in " ".join(teaser.inner_text().split())
     assert teaser.locator("img").count() == 4
     assert teaser.locator("a[href$='outdoors/#roadkill']").count() >= 1
 

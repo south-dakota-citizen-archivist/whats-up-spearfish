@@ -174,3 +174,62 @@ def test_county_job_notice():
     }
     dated = parse_notice(NOTICE.replace("When Position is Filled", "December 1, 2026"))
     assert dated["closing"] == "2026-12-01"
+
+
+# ── city meetings: where each agenda item starts in the video ───────────────
+
+
+def test_video_bookmarks_become_agenda_item_chapters():
+    from scrapers.sources.spearfish_city import chapters_from
+
+    marks = [
+        {"id": 3, "markerTitle": "3.A. Hold a public hearing", "markerTimeStart": 714, "sortorder": 4, "parentId": 2},
+        {"id": 1, "markerTitle": "1. Call to Order", "markerTimeStart": 677, "sortorder": 1, "parentId": -1},
+        {"id": 2, "markerTitle": "3.  Action Items", "markerTimeStart": 711, "sortorder": 3, "parentId": -1,
+         "additionalBookmarks": [{"id": 9, "markerTitle": "Motion", "markerTimeStart": 712}]},
+        {"id": 4, "markerTitle": "", "markerTimeStart": 800, "sortorder": 5},  # untitled: skipped
+    ]  # fmt: skip
+    assert chapters_from(marks) == [
+        {"id": 1, "t": 677, "title": "1. Call to Order", "sub": False},
+        {"id": 2, "t": 711, "title": "3. Action Items", "sub": False},
+        {"id": 9, "t": 712, "title": "Motion", "sub": True},
+        {"id": 3, "t": 714, "title": "3.A. Hold a public hearing", "sub": True},
+    ]
+
+
+def test_city_paging_stops_at_meetings_older_than_the_site_keeps(monkeypatch):
+    from datetime import date, timedelta
+
+    from scrapers.sources import spearfish_city
+
+    today = date(2026, 11, 4)
+    monkeypatch.setattr(spearfish_city.dates, "today", lambda: today)
+
+    def event(i, days_ago):
+        return {"id": i, "eventName": "City Council", "startDateTime": f"{today - timedelta(days=days_ago)}T18:00:00Z",
+                "hasMedia": False, "publishedFiles": [{"fileId": i, "type": "Agenda", "name": "Agenda"}]}  # fmt: skip
+
+    pages = {0: [event(i, i * 5) for i in range(15)], 15: [event(100 + i, 200 + i) for i in range(15)],
+             30: [event(200 + i, 400 + i) for i in range(15)]}  # fmt: skip
+    asked = []
+
+    class Resp:
+        def __init__(self, body):
+            self.body = body
+
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return self.body
+
+    def fake_get(url, params=None, **kw):
+        asked.append(params["$skip"])
+        return Resp({"value": pages.get(params["$skip"], [])})
+
+    monkeypatch.setattr(spearfish_city.net, "get", fake_get)
+    scraper = spearfish_city.SpearfishCity()
+    monkeypatch.setattr(scraper, "load_existing", lambda: [])
+    records = scraper.scrape()
+    assert asked == [0, 15]  # the second page is all older than the window: no third page
+    assert {r["event_id"] for r in records} == set(range(15))

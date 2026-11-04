@@ -720,3 +720,13 @@ def test_meeting_videos_join_their_meetings():
         ["https://youtu.be/pz"],
     )
     assert "from_video" not in own
+
+
+def test_agenda_item_times_and_depth():
+    from sitegen.pages import agenda_depth, clock_time
+
+    assert clock_time(677) == "11:17" and clock_time(3725) == "1:02:05" and clock_time(5) == "0:05"
+    assert agenda_depth("3. Action Items") == 0
+    assert agenda_depth("3.A. Hold a public hearing") == 1
+    assert agenda_depth("3.A.1. Approve the variance") == 2
+    assert agenda_depth("Motion", sub=True) == 1

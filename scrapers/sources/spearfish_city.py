@@ -8,7 +8,9 @@ Portal:  https://spearfishsd.portal.civicclerk.com/
 API:     https://spearfishsd.api.civicclerk.com/v1/
 """
 
-from scrapers import net
+from datetime import timedelta
+
+from scrapers import dates, net, schema
 from scrapers.base import BaseScraper
 
 API_BASE = "https://spearfishsd.api.civicclerk.com/v1"
@@ -18,6 +20,8 @@ PAGE_SIZE = 15
 
 
 class SpearfishCity(BaseScraper):
+    _saved_chapters: dict = {}
+
     name = "City of Spearfish"
     slug = "spearfish_city"
     kind = "document"
@@ -25,8 +29,12 @@ class SpearfishCity(BaseScraper):
     dedup_key = "url"
 
     def scrape(self) -> list[dict]:
+        self._saved_chapters = {r.get("event_id"): r["chapters"] for r in self.load_existing() if r.get("chapters")}
         records = []
         skip = 0
+        # newest first, so paging stops at meetings older than the site keeps (the API would
+        # otherwise hand over every meeting the city has ever posted, each run)
+        cutoff = (dates.today() - timedelta(days=schema.KINDS[self.kind].window_days + 7)).isoformat()
 
         while True:
             params = {
@@ -45,14 +53,35 @@ class SpearfishCity(BaseScraper):
             if not events:
                 break
 
+            older = 0
             for event in events:
+                if (event.get("startDateTime") or event.get("eventDate") or "")[:10] < cutoff:
+                    older += 1
+                    continue
                 records.extend(self._event_to_records(event))
 
-            if len(events) < PAGE_SIZE:
+            if len(events) < PAGE_SIZE or older == len(events):
                 break
             skip += PAGE_SIZE
 
         return records
+
+    def _chapters(self, event_id: int) -> list[dict]:
+        """
+        Where each agenda item starts in the meeting's video (the clerk's bookmarks), from the
+        endpoint the portal's video page uses. Saved ones are reused; a video's bookmarks are
+        added once, after the meeting.
+        """
+        if saved := self._saved_chapters.get(event_id):
+            return saved
+        try:
+            resp = net.get(f"{API_BASE}/EventsMedia/{event_id}", headers={"Accept": "application/json"}, timeout=30)
+            resp.raise_for_status()
+            marks = resp.json().get("eventBookmarks") or []
+        except Exception as exc:  # noqa: BLE001 — the meeting still lists without them
+            print(f"[{self.slug}] no video bookmarks for event {event_id}: {exc}")
+            return []
+        return chapters_from(marks)
 
     def _event_to_records(self, event: dict) -> list[dict]:
         """
@@ -85,6 +114,9 @@ class SpearfishCity(BaseScraper):
             "portal_url": portal_url,
             "has_media": event.get("hasMedia", False),
             "media_url": event.get("mediaStreamPath") or event.get("mediaSourcePathMp4") or "",
+            # the portal's player, with the agenda beside the video
+            "media_page": f"{portal_url}/media" if event.get("hasMedia") else "",
+            "chapters": self._chapters(event_id) if event.get("hasMedia") else [],
             "record_type": "document",
             "source_label": "City of Spearfish",
         }
@@ -110,3 +142,15 @@ class SpearfishCity(BaseScraper):
             )
 
         return records
+
+
+def chapters_from(marks: list[dict]) -> list[dict]:
+    """The clerk's bookmarks as [{id, t (seconds), title, sub (an item under another)}], in agenda order."""
+    out = []
+    for m in sorted(marks, key=lambda m: m.get("sortorder") or 0):
+        # a bookmark can carry more under it (additionalBookmarks), as the portal shows them
+        for b, sub in [(m, (m.get("parentId") or -1) != -1)] + [(a, True) for a in m.get("additionalBookmarks") or []]:
+            t, title = b.get("markerTimeStart"), " ".join((b.get("markerTitle") or b.get("markerText") or "").split())
+            if isinstance(t, (int, float)) and title:
+                out.append({"id": b.get("id"), "t": int(t), "title": title, "sub": sub})
+    return out

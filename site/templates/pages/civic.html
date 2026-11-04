@@ -10,6 +10,17 @@
     <span class="text-sm">
       {% for d in m.docs %}{{ ext(d.url, d.label, 'link inline-block whitespace-nowrap py-1 ml-2') }}{% endfor %}
     </span>
+    {% if m.chapters %}
+    {# where each agenda item starts in the video #}
+    <details class="mt-1 text-sm">
+      <summary class="cursor-pointer font-semibold text-pine-700">Jump to an agenda item</summary>
+      <ol class="mt-1.5 space-y-1">
+        {% for c in m.chapters %}
+        <li class="flex gap-3"><span class="w-12 shrink-0 text-right tabular-nums text-stone-500">{{ c.at }}</span><span class="{{ ['', 'pl-4', 'pl-8', 'pl-12'][c.depth] }}">{{ ext(c.url, c.title, 'link') }}</span></li>
+        {% endfor %}
+      </ol>
+    </details>
+    {% endif %}
   </li>
   {% endfor %}
 </ul>

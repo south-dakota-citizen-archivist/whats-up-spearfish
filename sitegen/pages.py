@@ -290,7 +290,18 @@ def meetings(site: Site) -> list[dict]:
                 "body": "City of Spearfish",
                 "name": r.get("event_name") or r.get("category") or "Meeting",
                 "url": r.get("portal_url") or r["url"],
-                "videos": [r["media_url"]] if r.get("media_url") else [],
+                # the portal's player (the agenda beside the video), else the video file itself
+                "videos": [v] if (v := r.get("media_page") or r.get("media_url")) else [],
+                "chapters": [
+                    {
+                        "title": c["title"],
+                        "depth": agenda_depth(c["title"], c.get("sub", False)),
+                        "at": clock_time(c["t"]),
+                        "url": f"{r['media_page']}?bookmarkId={c['id']}",
+                    }
+                    for c in r.get("chapters") or []
+                    if r.get("media_page") and c.get("id") is not None
+                ],
                 "docs": [],
             },
         )
@@ -328,6 +339,20 @@ def meetings(site: Site) -> list[dict]:
         for i, u in enumerate(m["videos"], 1):
             m["docs"].append({"label": "Video" if n == 1 else f"Video, part {i}", "url": u})
     return sorted(found, key=lambda m: m["date"])
+
+
+def agenda_depth(title: str, sub: bool = False) -> int:
+    """How far an agenda item is nested, from its number: '3.' 0, '3.A.' 1, '3.A.1.' 2."""
+    if m := re.match(r"((?:[0-9]+|[A-Za-z])\.)+", title or ""):
+        return min(m.group(0).count(".") - 1, 3)
+    return 1 if sub else 0
+
+
+def clock_time(seconds: int) -> str:
+    """677 → '11:17'; 3725 → '1:02:05' (a spot in a video)."""
+    h, rest = divmod(int(seconds), 3600)
+    m, s = divmod(rest, 60)
+    return f"{h}:{m:02d}:{s:02d}" if h else f"{m}:{s:02d}"
 
 
 # ── meeting videos: the county's and school board's YouTube recordings, matched to their meetings ──

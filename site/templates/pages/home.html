@@ -142,7 +142,7 @@
 
     {% if roadkill.count %}
     {% call card("Roadkill", "roadkill", sources=roadkill.source, more=root ~ "outdoors/#roadkill", more_label="Photos") %}
-      <p class="text-sm"><span class="font-bold">{{ roadkill.past_month | intcomma }}</span> animals picked up off Black Hills roads in the past 30 days</p>
+      <p class="text-sm"><span class="font-bold">{{ roadkill.past_month | intcomma }}</span> animals scraped off Black Hills roads in the past 30 days</p>
       {% if roadkill.species %}
       <ul class="mt-1.5 flex flex-wrap gap-x-4 gap-y-1 text-xs text-stone-600">
         {% for s in roadkill.species[:3] %}<li class="flex items-center gap-1">{{ animal(s.icon, 'w-5 h-4 text-stone-500') }}<span><span class="font-semibold tabular-nums">{{ s.count | intcomma }}</span> {{ s.label }}</span></li>{% endfor %}
