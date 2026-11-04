@@ -27,6 +27,7 @@ from collections import defaultdict
 from pathlib import Path
 
 from scrapers import address
+from sitegen.data import read_json
 
 BEACON = (
     "https://beacon.schneidercorp.com/Application.aspx?AppID=1225&LayerID=37418&PageTypeID=4&PageID=14291&KeyValue="
@@ -321,7 +322,7 @@ class ParcelLinks:
     @classmethod
     def load(cls, data_dir: Path) -> ParcelLinks:
         try:
-            env = json.loads((data_dir / "parcel_links.json").read_text(encoding="utf-8"))
+            env = read_json(data_dir / "parcel_links.json")
         except (OSError, json.JSONDecodeError):
             return cls({}, {})
         return cls(env.get("links") or {}, env.get("parcels") or {})

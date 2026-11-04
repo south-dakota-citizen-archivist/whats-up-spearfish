@@ -730,3 +730,13 @@ def test_agenda_item_times_and_depth():
     assert agenda_depth("3.A. Hold a public hearing") == 1
     assert agenda_depth("3.A.1. Approve the variance") == 2
     assert agenda_depth("Motion", sub=True) == 1
+
+
+def test_html_entities_in_source_text_are_decoded():
+    from sitegen.data import decoded
+
+    assert decoded("Add covered roof in back (aprox 10&#39;x12&#39;)") == "Add covered roof in back (aprox 10'x12')"
+    assert decoded({"credit": ["Pete &amp; Gretchen"], "n": 3}) == {"credit": ["Pete & Gretchen"], "n": 3}
+    assert decoded("BETTELYOUN, LORENZO &quot;JR&quot;") == 'BETTELYOUN, LORENZO "JR"'
+    assert decoded("twice: &amp;#39;") == "twice: '"
+    assert decoded("Q&A at 5 & 6") == "Q&A at 5 & 6"  # a plain ampersand stays

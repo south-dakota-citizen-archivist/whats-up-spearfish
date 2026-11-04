@@ -6,7 +6,9 @@ Loads the scraper output (envelopes + _health.json) from the data directory.
 
 from __future__ import annotations
 
+import html
 import json
+import re
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -16,6 +18,32 @@ from sitegen.sources import CREDIT
 
 #: Data-branch files that aren't scraper output (see scripts/import_parcels.py)
 NOT_SOURCES = {"parcel_links.json"}
+
+_ENTITY = re.compile(r"&(#\d+|#x[0-9a-fA-F]+|[A-Za-z]{2,8});")
+
+
+def decoded(value):
+    """
+    Text as written: sources hand over HTML entities ('10&#39;x12&#39;', 'Pete &amp; Gretchen')
+    in fields that are plain text, and the pages escape text themselves, so the entities would
+    show as typed. Decoded throughout (twice, for text encoded twice: '&amp;#39;').
+    """
+    if isinstance(value, str):
+        for _ in range(2):
+            if not _ENTITY.search(value):
+                break
+            value = html.unescape(value)
+        return value
+    if isinstance(value, list):
+        return [decoded(v) for v in value]
+    if isinstance(value, dict):
+        return {k: decoded(v) for k, v in value.items()}
+    return value
+
+
+def read_json(path: Path):
+    """A data file, its text decoded (see decoded())."""
+    return decoded(json.loads(path.read_text(encoding="utf-8")))
 
 
 @dataclass
@@ -76,7 +104,7 @@ class Site:
             if path.name.startswith("_") or path.name in NOT_SOURCES:
                 continue
             try:
-                env = json.loads(path.read_text(encoding="utf-8"))
+                env = read_json(path)
             except (OSError, json.JSONDecodeError) as exc:
                 print(f"[sitegen] Warning: could not read {path.name}: {exc}")
                 continue

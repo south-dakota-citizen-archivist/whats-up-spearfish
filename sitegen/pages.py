@@ -17,7 +17,7 @@ from urllib.parse import quote
 
 from scrapers import dates, geo
 from sitegen import trends
-from sitegen.data import Site, Source
+from sitegen.data import Site, Source, read_json
 from sitegen.events import CATEGORY_LABELS
 from sitegen.parcels import BEACON, ParcelLinks, record_key
 from sitegen.sources import DIRECTORY
@@ -1011,7 +1011,7 @@ def sources_page(site: Site, events: list[dict], today: date) -> dict:
 def load_planning_archive(site: Site) -> dict:
     path = site.data_dir / "archive" / "planning_index.json"
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
+        return read_json(path)
     except (OSError, json.JSONDecodeError):
         return {"meta": {}, "records": []}
 
