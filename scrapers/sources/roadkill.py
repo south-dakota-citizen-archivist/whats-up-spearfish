@@ -1,185 +1,165 @@
 """
 scrapers/sources/roadkill.py
 
-Fetches recent wildlife carcass pickup records from the SD DOT ArcGIS
-FeatureServer, filtered to the Black Hills bounding box.
+Every wildlife carcass the state picked up off Black Hills roads, from SD DOT's
+"DOT Wildlife Carcass Pickup" layer (filled in by crews in the field with
+Survey123), with every field the layer has and every photo.
 
-Source: SD DOT / Survey123 "DOT Wildlife Carcass Pickup" layer
-API: https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/
-     service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0
+  layer   https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/
+          service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0
 
-Usage:
-    uv run python -c "
-    from scrapers.sources.roadkill import fetch_roadkill
-    fetch_roadkill()
-    "
+The whole Black Hills history (about 22,600 pickups since 2010, ~4,000 a year) is
+re-read each day: 1,000 records a request, then the photos for 1,000 records a
+request, about 50 requests in all. Re-reading everything keeps edits and deletions
+current without any bookkeeping.
+
+A photo's file is {LAYER}/{objectid}/attachments/{photo id}; add ?w=320 for a
+smaller copy, which the server makes.
 """
 
 from __future__ import annotations
 
-import json
-from datetime import datetime, timedelta, timezone
-from pathlib import Path
+import time
+from datetime import datetime, timezone
 
 from scrapers import net
 from scrapers.base import BaseScraper
+from scrapers.dates import MT
 
-DATA_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "roadkill.json"
-
-SERVICE_BASE = (
+LAYER = (
     "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services"
     "/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0"
 )
-BASE_URL = f"{SERVICE_BASE}/query"
-ATTACHMENTS_URL = f"{SERVICE_BASE}/queryAttachments"
-
-HEADERS = {"User-Agent": "whats-up-in-spearfish/1.0 (public data aggregator)"}
-
-# How far back to fetch
-LOOKBACK_DAYS = 30
+PAGE = 1000  # the layer's most records a request
+DELAY = 1.0  # seconds between requests
 
 # The Black Hills and the towns around them, Hot Springs/Edgemont to Spearfish/Belle Fourche
 # and Rapid City into the Wyoming foothills (WGS84)
-BBOX = {"min_lat": 43.30, "max_lat": 44.80, "min_lon": -104.70, "max_lon": -103.00}
+BBOX = {"xmin": -104.70, "ymin": 43.30, "xmax": -103.00, "ymax": 44.80}
+_GEOMETRY = {
+    "geometry": '{{"xmin":{xmin},"ymin":{ymin},"xmax":{xmax},"ymax":{ymax},"spatialReference":{{"wkid":4326}}}}'.format(
+        **BBOX
+    ),
+    "geometryType": "esriGeometryEnvelope",
+    "inSR": 4326,
+    "spatialRel": "esriSpatialRelIntersects",
+}
+NO_HIGHWAY = {"", "N/A", "NA", "NONE"}
 
-# ArcGIS envelope geometry for BBOX
-BH_ENVELOPE = (
-    f'{{"xmin":{BBOX["min_lon"]},"ymin":{BBOX["min_lat"]},'
-    f'"xmax":{BBOX["max_lon"]},"ymax":{BBOX["max_lat"]},'
-    f'"spatialReference":{{"wkid":4326}}}}'
-)
 
-
-def _ts_to_iso(ms: int | None) -> str:
-    """Convert ArcGIS epoch-milliseconds timestamp to ISO date string."""
+def _when(ms: int | None) -> str:
+    """ArcGIS epoch milliseconds → Mountain time, ISO."""
     if not ms:
         return ""
-    return datetime.fromtimestamp(ms / 1000, tz=timezone.utc).strftime("%Y-%m-%d")
+    return datetime.fromtimestamp(ms / 1000, tz=timezone.utc).astimezone(MT).isoformat(timespec="seconds")
 
 
-def fetch_roadkill() -> None:
-    cutoff = datetime.now(tz=timezone.utc) - timedelta(days=LOOKBACK_DAYS)
-    cutoff_str = cutoff.strftime("%Y-%m-%d %H:%M:%S")
+def _text(value) -> str:
+    return " ".join(str(value).split()) if value not in (None, "") else ""
 
-    params = {
-        "where": f"Date > TIMESTAMP '{cutoff_str}'",
-        "geometry": BH_ENVELOPE,
-        "geometryType": "esriGeometryEnvelope",
-        "spatialRel": "esriSpatialRelIntersects",
-        "outFields": "OBJECTID,Date,Species,Highway,Sex,Present,Comments,Contractor",
-        "orderByFields": "Date DESC",
-        "resultRecordCount": 1000,
-        "f": "json",
+
+def parse_feature(feature: dict) -> dict | None:
+    """One pickup, every field the layer has."""
+    a = feature.get("attributes") or {}
+    g = feature.get("geometry") or {}
+    oid = a.get("objectid") or a.get("OBJECTID")
+    if oid is None:
+        return None
+    lat, lon = g.get("y", a.get("Latitude")), g.get("x", a.get("Longitude"))
+    when = _when(a.get("Date"))
+    highway = _text(a.get("Highway"))
+    rec = {
+        "objectid": oid,
+        "globalid": a.get("globalid") or "",
+        "date": when[:10],  # the day of the pickup; the form's time is a placeholder (noon)
+        "species": _text(a.get("Species")),
+        "sex": _text(a.get("Sex")),
+        "present": _text(a.get("Present")),
+        "highway": "" if highway.upper() in NO_HIGHWAY else highway,
+        "highway_raw": highway,
+        "comments": _text(a.get("Comments")),
+        "contractor": _text(a.get("Contractor")),
+        "pcn": _text(a.get("PCN")),
+        "lat": round(lat, 6) if isinstance(lat, (int, float)) else None,
+        "lon": round(lon, 6) if isinstance(lon, (int, float)) else None,
+        "date_raw": when,
+        "created": _when(a.get("CreationDate")),
+        "creator": _text(a.get("Creator")),
+        "edited": _when(a.get("EditDate")),
+        "editor": _text(a.get("Editor")),
+        "parentglobalid": a.get("parentglobalid") or "",
+        "photos": [],
     }
+    # the form's own GPS reading, when it differs from the point on the map
+    for key, attr, ref in (("gps_lat", "Latitude", rec["lat"]), ("gps_lon", "Longitude", rec["lon"])):
+        v = a.get(attr)
+        if isinstance(v, (int, float)) and (ref is None or abs(v - ref) > 1e-5):
+            rec[key] = round(v, 6)
+    return rec
 
-    try:
-        resp = net.get(BASE_URL, params=params, headers=HEADERS, timeout=30)
-        resp.raise_for_status()
-        data = resp.json()
-    except Exception as exc:
-        print(f"[Roadkill] Warning: fetch failed: {exc}")
-        return
 
-    if "error" in data:
-        print(f"[Roadkill] API error: {data['error']}")
-        return
-
-    records = []
-    for feature in data.get("features") or []:
-        attrs = feature.get("attributes") or {}
-        geom = feature.get("geometry") or {}
-
-        species = (attrs.get("Species") or "").strip()
-        if not species:
+def add_photos(records: dict[int, dict], groups: list[dict]) -> None:
+    """Attach each record's photos (from queryAttachments) in place."""
+    for group in groups:
+        rec = records.get(group.get("parentObjectId"))
+        if not rec:
             continue
-
-        lat = geom.get("y") or attrs.get("Latitude")
-        lon = geom.get("x") or attrs.get("Longitude")
-
-        # Skip records with no usable coordinates
-        if not lat or not lon:
-            continue
-
-        highway = (attrs.get("Highway") or "").strip()
-        if highway.upper() in ("N/A", "NA", "NONE", ""):
-            highway = ""
-
-        records.append(
-            {
-                "objectid": attrs.get("objectid") or attrs.get("OBJECTID"),
-                "date": _ts_to_iso(attrs.get("Date")),
-                "species": species,
-                "highway": highway,
-                "sex": (attrs.get("Sex") or "").strip(),
-                "present": attrs.get("Present"),
-                "comments": (attrs.get("Comments") or "").strip() or None,
-                "contractor": (attrs.get("Contractor") or "").strip() or None,
-                "lat": round(lat, 6),
-                "lon": round(lon, 6),
-                "image_url": None,
-            }
-        )
-
-    # Fetch attachments in batches and map image URLs back to records
-    oid_to_record = {r["objectid"]: r for r in records if r["objectid"] is not None}
-    oids = list(oid_to_record.keys())
-    batch_size = 100
-    for i in range(0, len(oids), batch_size):
-        batch = oids[i : i + batch_size]
-        try:
-            att_resp = net.get(
-                ATTACHMENTS_URL,
-                params={
-                    "objectIds": ",".join(str(o) for o in batch),
-                    "definitionExpression": "1=1",
-                    "f": "json",
-                },
-                headers=HEADERS,
-                timeout=30,
+        for info in group.get("attachmentInfos") or []:
+            rec["photos"].append(
+                {
+                    "id": info.get("id"),
+                    "name": info.get("name") or "",
+                    "type": info.get("contentType") or "",
+                    "size": info.get("size"),
+                    "keywords": info.get("keywords") or "",
+                }
             )
-            att_resp.raise_for_status()
-            att_data = att_resp.json()
-        except Exception as exc:
-            print(f"[Roadkill] Warning: attachment fetch failed: {exc}")
-            continue
-
-        for group in att_data.get("attachmentGroups") or []:
-            oid = group.get("parentObjectId")
-            if oid not in oid_to_record:
-                continue
-            for info in group.get("attachmentInfos") or []:
-                if (info.get("contentType") or "").startswith("image/"):
-                    oid_to_record[oid]["image_url"] = f"{SERVICE_BASE}/{oid}/attachments/{info['id']}"
-                    break  # first image only
-
-    with_images = sum(1 for r in records if r["image_url"])
-    print(f"[Roadkill] {len(records)} records, {with_images} with images → {DATA_FILE.name}")
-
-    DATA_FILE.write_text(
-        json.dumps(
-            {
-                "fetched_at": datetime.now(timezone.utc).isoformat(),
-                "lookback_days": LOOKBACK_DAYS,
-                "records": records,
-            },
-            indent=2,
-        ),
-        encoding="utf-8",
-    )
 
 
-if __name__ == "__main__":
-    fetch_roadkill()
+def photo_url(rec: dict, photo: dict, width: int | None = None) -> str:
+    url = f"{LAYER}/{rec['objectid']}/attachments/{photo['id']}"
+    return f"{url}?w={width}" if width else url
+
+
+def _json(method, url: str, data: dict) -> dict:
+    resp = method(url, **({"params": data} if method is net.get else {"data": data}), timeout=60)
+    resp.raise_for_status()
+    body = resp.json()
+    if "error" in body:
+        raise RuntimeError(f"layer error: {body['error']}")
+    return body
 
 
 class Roadkill(BaseScraper):
-    """On ice: kept for later, not run. Still uses its own standalone fetch
-    function and file format; port it to scrape() before enabling."""
-
-    name = "Wildlife carcass pickups (SD DOT)"
+    name = "Wildlife carcass pickups"
     slug = "roadkill"
-    kind = "sighting"
-    enabled = False
+    kind = "stats"
+    url = "https://dot.sd.gov/"
+    timeout = 15 * 60
+    max_stale_hours = 24 * 3
 
-    def scrape(self) -> list[dict]:
-        raise NotImplementedError("roadkill is on ice")
+    def scrape(self) -> dict:
+        ids = _json(net.get, f"{LAYER}/query", {"where": "1=1", **_GEOMETRY, "returnIdsOnly": "true", "f": "json"})
+        oids = sorted(ids.get("objectIds") or [])
+        records: dict[int, dict] = {}
+        for i in range(0, len(oids), PAGE):
+            time.sleep(DELAY)
+            chunk = oids[i : i + PAGE]
+            body = _json(
+                net.post,
+                f"{LAYER}/query",
+                {"objectIds": ",".join(map(str, chunk)), "outFields": "*", "outSR": 4326, "f": "json"},
+            )
+            for feature in body.get("features") or []:
+                if rec := parse_feature(feature):
+                    records[rec["objectid"]] = rec
+        for i in range(0, len(oids), PAGE):
+            time.sleep(DELAY)
+            chunk = oids[i : i + PAGE]
+            body = _json(net.post, f"{LAYER}/queryAttachments", {"objectIds": ",".join(map(str, chunk)), "f": "json"})
+            add_photos(records, body.get("attachmentGroups") or [])
+        rows = sorted(records.values(), key=lambda r: (r["date"], r["objectid"]), reverse=True)
+        return {"layer": LAYER, "bbox": BBOX, "records": rows}
+
+    def is_empty(self, payload: dict) -> bool:
+        return len(payload.get("records") or []) < 1000  # the full history is far more; a short read is a failure

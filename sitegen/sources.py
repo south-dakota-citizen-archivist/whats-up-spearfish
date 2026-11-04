@@ -52,6 +52,7 @@ CREDIT = {
     "danr_public_notices": "SD Dept. of Agriculture & Natural Resources",
     "danr_contested_cases": "SD Dept. of Agriculture & Natural Resources",
     "danr_spills": "SD Dept. of Agriculture & Natural Resources",
+    "roadkill": "SD Dept. of Transportation",
 }
 
 
@@ -235,6 +236,11 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
                 "eBird",
                 "https://ebird.org/explore",
                 (_i("Bird sightings within about 30 miles of Spearfish", "ebird"),),
+            ),
+            Org(
+                "South Dakota Department of Transportation",
+                "https://dot.sd.gov/",
+                (_i("Wildlife picked up off Black Hills roads, with photos", "roadkill"),),
             ),
         ],
     ),

@@ -473,6 +473,7 @@ def home(site: Site, events: list[dict], today: date) -> dict:
         "bids": site.get("public_bids").records,
         "recent_permits": recent_permit_count(site, today),
         "plant": plant_of_the_day(site, today),
+        "roadkill": roadkill_context(site, today, photos=4),
         "alerts": alerts,
     }
 
@@ -559,6 +560,90 @@ def outdoors(site: Site, events: list[dict], today: date) -> dict:
         "bhnf_projects": site.get("bhnf_projects"),
         "plant": plant_of_the_day(site, today),
         "plants": site.get("native_plants_spotlight"),
+        "roadkill": roadkill_context(site, today),
+    }
+
+
+# ── roadkill: wildlife the state picked up off Black Hills roads ───────────
+
+#: the layer's species names, as a reader would say them
+ROADKILL_SPECIES = {
+    "White-tailed Deer": "White-tailed deer",
+    "Mule Deer": "Mule deer",
+    "Small Animal": "Small animal",
+    "Domestic": "Pet or livestock",
+}
+#: each species' silhouette in templates/animals.svg.html
+ROADKILL_ICONS = {
+    "White-tailed Deer": "whitetail",
+    "Mule Deer": "muledeer",
+    "Elk": "elk",
+    "Pronghorn": "pronghorn",
+    "Bison": "bison",
+    "Small Animal": "small",
+    "Domestic": "domestic",
+}
+ROADKILL_PLURAL = {"Small Animal": "small animals", "Domestic": "pets or livestock"}  # the rest read the same
+NOT_AN_ANIMAL = {"", "No Pick-Up"}  # a crew visit that found nothing to pick up
+
+
+def road_name(highway: str) -> str:
+    """The layer's road codes as people say them: 'I90' → 'I-90', '85' → 'Highway 85'."""
+    h = (highway or "").strip()
+    if m := re.fullmatch(r"I-?\s*(\d+)", h, re.I):
+        return f"I-{m.group(1)}"
+    if re.fullmatch(r"\d+[A-Z]?", h):
+        return f"Highway {h}"
+    return h
+
+
+def roadkill_context(site: Site, today: date, photos: int = 48) -> dict:
+    src = site.get("roadkill")
+    data = src.data or {}
+    layer = data.get("layer", "")
+    recs = [r for r in data.get("records") or [] if r.get("species") not in NOT_AN_ANIMAL and r.get("date")]
+    recs.sort(key=lambda r: (r["date"], r.get("objectid") or 0), reverse=True)
+    month_ago = (today - timedelta(days=30)).isoformat()
+    week_ago = (today - timedelta(days=7)).isoformat()
+    past_month = [r for r in recs if r["date"] > month_ago]
+    by_species = Counter(r["species"] for r in past_month)
+    gallery = []
+    for r in recs:
+        for ph in r.get("photos") or []:
+            if not (ph.get("type") or "image/").startswith("image/"):
+                continue
+            url = f"{layer}/{r['objectid']}/attachments/{ph['id']}"
+            gallery.append({
+                "thumb": f"{url}?w=400",
+                "full": f"{url}?w=1200",
+                "species": ROADKILL_SPECIES.get(r["species"], r["species"]),
+                "icon": ROADKILL_ICONS.get(r["species"], "small"),
+                "sex": r.get("sex") if r.get("sex") in ("Male", "Female") else "",
+                "road": road_name(r.get("highway", "")),
+                "note": r.get("comments", ""),
+                "date": r["date"],
+                "when": date.fromisoformat(r["date"]).strftime("%b %-d, %Y"),
+                "map": f"https://www.openstreetmap.org/?mlat={r['lat']}&mlon={r['lon']}#map=14/{r['lat']}/{r['lon']}"
+                if r.get("lat") and r.get("lon") else "",
+            })  # fmt: skip
+            break  # one photo per animal
+        if len(gallery) >= photos:
+            break
+    return {
+        "source": src,
+        "count": len(recs),
+        "first": recs[-1]["date"] if recs else "",
+        "past_month": len(past_month),
+        "past_week": sum(1 for r in recs if r["date"] > week_ago),
+        "species": [
+            {
+                "label": (ROADKILL_PLURAL.get(s) if n != 1 else None) or ROADKILL_SPECIES.get(s, s).lower(),
+                "icon": ROADKILL_ICONS.get(s, "small"),
+                "count": n,
+            }
+            for s, n in by_species.most_common()
+        ],
+        "photos": gallery,
     }
 
 

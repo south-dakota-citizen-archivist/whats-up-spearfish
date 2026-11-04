@@ -1,10 +1,11 @@
 {% extends "base.html" %}
-{% from "macros.html" import card, empty, ext, badge, danger_badge %}
+{% from "macros.html" import card, empty, ext, badge, danger_badge, animal %}
 
-{% block head %}<script defer src="{{ root }}static/js/creek.js"></script>{% endblock %}
+{% block head %}<script defer src="{{ root }}static/js/creek.js"></script><script defer src="{{ root }}static/js/gallery.js"></script>{% endblock %}
 
 {% block content %}
 <h1 class="text-2xl font-extrabold mb-4">Outdoors</h1>
+{% include "animals.svg.html" %}
 
 {# Terry Peak: in ski season (December – March, or whenever lifts are open) first on the page and
    full width, snow on the left and what's open on the right; the rest of the year a half-width card at
@@ -146,6 +147,66 @@
     </ul>
     {% else %}{{ empty("No sightings available.") }}{% endif %}
   {% endcall %}
+
+  {# roadkill: what state crews picked up off Black Hills roads, with their photos #}
+  {% if roadkill.count %}
+  {% call card("Roadkill", "roadkill", sources=roadkill.source, class="lg:col-span-2") %}
+    <p class="text-sm text-stone-600 mb-3">Deer and other animals state crews picked up off Black Hills roads.</p>
+    <p class="flex flex-wrap items-baseline gap-x-2"><span class="text-4xl font-extrabold tabular-nums">{{ roadkill.past_month | intcomma }}</span><span class="text-stone-600">in the past 30 days</span></p>
+    <p class="text-sm text-stone-500">{{ roadkill.past_week | intcomma }} in the past week</p>
+    {% if roadkill.species %}
+    <ul class="mt-2 mb-4 flex flex-wrap gap-x-5 gap-y-1.5 text-sm text-stone-700">
+      {% for s in roadkill.species %}
+      <li class="flex items-center gap-1.5">{{ animal(s.icon, 'w-6 h-5 text-stone-500') }}<span><span class="font-bold tabular-nums">{{ s.count | intcomma }}</span> {{ s.label }}</span></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% if roadkill.photos %}
+    <div x-data="photoGallery()">
+      <script type="application/json" x-ref="photos">{{ roadkill.photos | tojson }}</script>
+      <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3" data-more="6" data-more-lg="12" data-more-noun="photos">
+        {% for p in roadkill.photos %}
+        <li>
+          <a href="{{ p.full }}" @click.prevent="show({{ loop.index0 }})" class="group block">
+            <div class="relative w-full aspect-[4/3] bg-stone-200">
+              <img src="{{ p.thumb }}" alt="{{ p.species }}{% if p.road %} on {{ p.road }}{% endif %}, {{ p.when }}" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:opacity-90">
+            </div>
+            <p class="mt-1 flex items-center gap-1.5 text-sm font-medium group-hover:text-pine-700">{{ animal(p.icon, 'w-5 h-4 text-stone-500') }}{{ p.species }}</p>
+            <p class="text-xs text-stone-500">{{ [p.date | fmt_day('%b %-d'), p.road] | together }}</p>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+
+      {# one photo at a time: arrows, swipes, Escape or a click outside closes #}
+      <dialog x-ref="dialog" @close="closed()" @click.self="close()"
+              @keydown.arrow-right.prevent="step(1)" @keydown.arrow-left.prevent="step(-1)"
+              @touchstart.passive="touchStart($event)" @touchend="touchEnd($event)"
+              aria-label="Roadkill photos" class="m-auto w-full max-w-4xl max-h-[100dvh] p-0 bg-stone-950 text-white backdrop:bg-black/80">
+        <template x-if="photo">
+          <div>
+            <div class="relative bg-black">
+              <img :src="photo.full" :alt="photo.species + (photo.road ? ' on ' + photo.road : '') + ', ' + photo.when" class="block w-full max-h-[75dvh] object-contain">
+              <button type="button" @click="step(-1)" class="absolute left-0 inset-y-0 w-14 flex items-center justify-center text-3xl text-white/80 hover:text-white hover:bg-white/10" aria-label="Previous photo"><span aria-hidden="true">‹</span></button>
+              <button type="button" @click="step(1)" class="absolute right-0 inset-y-0 w-14 flex items-center justify-center text-3xl text-white/80 hover:text-white hover:bg-white/10" aria-label="Next photo"><span aria-hidden="true">›</span></button>
+            </div>
+            <div class="flex items-start gap-4 px-4 py-3">
+              <div class="min-w-0 flex-1">
+                <p class="font-semibold" x-text="photo.species + (photo.sex ? ', ' + photo.sex.toLowerCase() : '')"></p>
+                <p class="text-sm text-stone-300" x-text="[photo.when, photo.road, photo.note].filter(Boolean).join(' • ')"></p>
+                <a x-show="photo.map" :href="photo.map" target="_blank" rel="noopener" class="text-sm text-white underline underline-offset-2 hover:text-pine-200">Where it was</a>
+              </div>
+              <p class="text-sm text-stone-400 tabular-nums whitespace-nowrap" x-text="(i + 1) + ' of ' + photos.length"></p>
+              <button type="button" @click="close()" class="-mr-1 px-2 text-xl leading-none text-white/80 hover:text-white" aria-label="Close">✕</button>
+            </div>
+          </div>
+        </template>
+      </dialog>
+    </div>
+    {% endif %}
+    <p class="mt-3 text-xs text-stone-500">Source: South Dakota Department of Transportation. Photos are posted for pickups since August 2025.</p>
+  {% endcall %}
+  {% endif %}
 
   {# alerts and the few projects open for comment, in one card #}
   {% call card("Black Hills National Forest", "forest-alerts", sources=[bhnf_alerts, bhnf_projects], more=bhnf_alerts.url, more_label="All alerts", class="lg:col-span-2" if ski.first else "") %}

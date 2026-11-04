@@ -197,6 +197,23 @@ def site_url(tmp_path_factory):
         kind="stats",
     )  # fmt: skip
 
+    # roadkill: 20 pickups in the past three weeks, each with a photo (served from nowhere)
+    _write(
+        data,
+        "roadkill",
+        data={
+            "layer": "http://127.0.0.1:9/layer",
+            "records": [
+                {"objectid": i, "date": (dates.today() - timedelta(days=i)).isoformat(),
+                 "species": ["White-tailed Deer", "Mule Deer", "Small Animal", "Elk"][i % 4], "sex": "Female",
+                 "highway": "85", "comments": "Exit 10" if i == 2 else "", "lat": 44.5, "lon": -103.9,
+                 "photos": [{"id": 100 + i, "type": "image/jpeg"}]}
+                for i in range(1, 21)
+            ],
+        },
+        kind="stats",
+    )  # fmt: skip
+
     # served the way GitHub Pages serves it, under /whats-up-spearfish/
     root = tmp / "root"
     build(data, root / "whats-up-spearfish")
@@ -758,3 +775,33 @@ def test_news_outlet_picker_takes_any_mix_and_saves_a_default(open_page):
     page.wait_for_timeout(300)
     assert "All outlets" in page.locator("#outlet-button").inner_text()
     assert page.errors == []
+
+
+def test_roadkill_gallery_steps_through_photos(open_page):
+    page = open_page("outdoors/", wait="#roadkill img")
+    card = page.locator("#roadkill")
+    assert "20 in the past 30 days" in " ".join(card.inner_text().split())
+    assert "5 white-tailed deer" in card.inner_text() and "5 small animals" in card.inner_text()
+    assert card.locator("svg use").count() >= 4  # an animal shape beside each species
+    page.locator("#roadkill li a").nth(1).click()
+    dialog = page.locator("#roadkill dialog")
+    dialog.get_by_text("2 of 20").wait_for()
+    assert "Small animal, female" in dialog.inner_text() and "Exit 10" in dialog.inner_text()
+    page.keyboard.press("ArrowRight")
+    dialog.get_by_text("3 of 20").wait_for()
+    dialog.get_by_role("button", name="Previous photo").click()
+    dialog.get_by_role("button", name="Previous photo").click()
+    dialog.get_by_text("1 of 20").wait_for()
+    page.keyboard.press("ArrowLeft")  # wraps around
+    dialog.get_by_text("20 of 20").wait_for()
+    page.keyboard.press("Escape")
+    assert not dialog.evaluate("d => d.open")
+    assert page.errors == []
+
+
+def test_home_roadkill_teaser(open_page):
+    page = open_page("", wait="#roadkill")
+    teaser = page.locator("#roadkill")
+    assert "20 animals picked up off Black Hills roads in the past 30 days" in " ".join(teaser.inner_text().split())
+    assert teaser.locator("img").count() == 4
+    assert teaser.locator("a[href$='outdoors/#roadkill']").count() >= 1
