@@ -1,15 +1,19 @@
 {% extends "base.html" %}
 {% from "macros.html" import card, empty, ext, badge, join_help %}
 
-{% macro meeting_list(items, times=false) %}
+{# which: 'up' (coming up) or 'past'. A meeting is in one or the other by whether it has started
+   (data-moves-at), which the page rechecks as it's read (static/js/time.js) #}
+{% macro meeting_list(items, which) %}
+{% set times = which == 'up' %}
 <ul class="divide-y divide-stone-100" data-more="8">
   {% for m in items %}
-  <li class="py-2.5">
+  <li class="py-2.5{{ ' hidden' if (m.over if times else not m.over) }}" data-moves-at="{{ m.moves_at }}" data-list="{{ which }}">
     <p class="text-xs font-semibold text-stone-500 uppercase tracking-wide">{{ [m.date | fmt_day('%a, %b %-d'), m.time if times else '', m.body] | together }}</p>
     {# the title and its documents in one wrapping row: links that don't fit start the next line flush left #}
     <div class="flex flex-wrap items-baseline gap-x-3">
       {{ ext(m.url, m.name, 'link-title min-w-0') }}
       {% for d in m.docs %}{{ ext(d.url, d.label, 'link text-sm whitespace-nowrap py-1') }}{% endfor %}
+      {% if times and m.join_link %}{{ ext(m.join_link.url, m.join_link.label, 'link text-sm whitespace-nowrap py-1') }}{% endif %}
     </div>
     {% if m.join_help and times %}{{ join_help(m.join_help) }}{% endif %}
     {% if m.chapters %}
@@ -35,17 +39,20 @@
 
   {# one card, full width: what's coming up beside what just happened, each with its agenda,
      minutes and video #}
-  {% call card("Meetings", "meetings", sources=meeting_sources, class="lg:col-span-2") %}
+  {% call card("Public meetings", "meetings", sources=meeting_sources, class="lg:col-span-2") %}
     <div class="grid lg:grid-cols-2 gap-x-10 gap-y-5">
       <div>
         <h3 class="text-sm font-bold mb-1">Coming up</h3>
-        {% if upcoming %}{{ meeting_list(upcoming, times=true) }}{% else %}{{ empty("No agendas posted yet.") }}{% endif %}
+        {% if upcoming %}{{ meeting_list(upcoming, 'up') }}
+        <p data-up-empty class="hidden text-sm text-stone-500 py-2">No agendas posted yet.</p>
+        {% else %}{{ empty("No agendas posted yet.") }}{% endif %}
       </div>
       <div>
         <h3 class="text-sm font-bold mb-1">Past six weeks</h3>
-        {% if recent %}{{ meeting_list(recent) }}{% else %}{{ empty("None.") }}{% endif %}
+        {% if recent %}{{ meeting_list(recent, 'past') }}{% else %}{{ empty("None.") }}{% endif %}
       </div>
     </div>
+    <p class="mt-4 text-xs text-stone-500">{{ ext("https://sdlegislature.gov/Statutes/1-25-1", "South Dakota's open meetings law", "link") }}</p>
   {% endcall %}
 
   {# open bids: usually one or two, so a strip rather than a card; gone when there are none #}

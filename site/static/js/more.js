@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const large = window.matchMedia("(min-width: 1024px)").matches;
   for (const list of document.querySelectorAll("[data-more]")) {
     const limit = Number((large && list.dataset.moreLg) || list.dataset.more) || 8;
-    const extra = [...list.children].slice(limit);
+    // items hidden for another reason (a meeting that's moved to the other list) don't count
+    const extra = [...list.children].filter((el) => !el.classList.contains("hidden")).slice(limit);
     if (extra.length < 3) continue; // not worth a button for one or two more
     const noun = list.dataset.moreNoun ? ` ${list.dataset.moreNoun}` : ""; // "Show 6 more days"
     const label = `Show ${extra.length} more${noun}`;

@@ -777,11 +777,12 @@ def test_join_labels_name_the_service():
     assert join_label("https://example.com/live") == "Join online"
 
 
-def test_join_help_meeting_id_and_tap_to_call():
+def test_join_help_tap_to_call():
     from sitegen.pages import join_help
 
-    assert join_help("https://us02web.zoom.us/j/83682178231", {}) == {"meeting_id": "836 8217 8231"}
-    assert join_help("https://meet.goto.com/lawrencecountypz", {"phone": "1-646-749-3122", "code": "973-687-509"}) == {
+    assert join_help({"phone": "1-646-749-3122", "code": "973-687-509"}) == {
         "phone": "1-646-749-3122", "code": "973-687-509", "tel": "tel:+16467493122,,973687509#"
     }  # fmt: skip
-    assert join_help("", {"phone": "555-0100", "code": ""}) == {}  # not a full number: left out
+    assert join_help({"phone": "(605) 555-0100", "code": ""})["tel"] == "tel:+16055550100"
+    assert join_help({"phone": "555-0100", "code": ""}) == {}  # not a full number: left out
+    assert join_help({}) == {}

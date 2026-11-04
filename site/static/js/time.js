@@ -57,6 +57,18 @@
     for (const el of document.querySelectorAll("[data-today]")) {
       el.textContent = fmtDay(today(), { weekday: "short", month: "short", day: "numeric" });
     }
+    // meetings: "coming up" until they start, then past (data-moves-at, data-list="up" | "past")
+    for (const el of document.querySelectorAll("[data-moves-at]")) {
+      if (!el.dataset.movesAt) continue;
+      const over = Date.now() >= new Date(el.dataset.movesAt).getTime();
+      el.classList.toggle("hidden", el.dataset.list === "up" ? over : !over);
+    }
+    // a "coming up" list whose meetings have all started says so
+    for (const note of document.querySelectorAll("[data-up-empty]")) {
+      const items = note.parentElement.querySelectorAll('[data-list="up"]');
+      const any = [...items].some((el) => !el.classList.contains("hidden"));
+      note.classList.toggle("hidden", !!any);
+    }
     const note = document.getElementById("behind");
     if (note) note.hidden = Date.now() - new Date(note.dataset.built).getTime() < BEHIND_HOURS * 3600000;
   }

@@ -288,6 +288,7 @@ def meetings(site: Site) -> list[dict]:
             {
                 "date": r.get("date", ""),
                 "time": meeting_time(start_dt=r.get("start_dt")),
+                "start_dt": r.get("start_dt") or "",
                 "body": "City of Spearfish",
                 "name": r.get("event_name") or r.get("category") or "Meeting",
                 "url": r.get("portal_url") or r["url"],
@@ -312,6 +313,7 @@ def meetings(site: Site) -> list[dict]:
         out[f"county-{r['id']}"] = {
             "date": r.get("date", ""),
             "time": meeting_time(clock=r.get("start_time")),
+            "clock": r.get("start_time") or "",
             "body": "Lawrence County",
             "name": without_date(r["title"]),
             "join": r.get("join_url") or "",
@@ -338,6 +340,7 @@ def meetings(site: Site) -> list[dict]:
         )
         if r.get("start_time") and not m["time"]:
             m["time"] = meeting_time(clock=r["start_time"])
+            m["clock"] = r["start_time"]
         if r.get("join_url"):
             m["join"] = r["join_url"]
         if r.get("dial_in"):
@@ -346,12 +349,18 @@ def meetings(site: Site) -> list[dict]:
     found = list(out.values())
     add_meeting_videos(found, site.get("public_meetings_youtube").records)
     today = dates.today().isoformat()
+    now = dates.now()
     for m in found:
+        # when it stops being "coming up": its start, or the end of its day if no time is known
+        # (the page moves it then, in the reader's browser: see static/js/time.js)
+        moves = meeting_start(m) or meeting_start(m, end_of_day=True)
+        m["moves_at"] = moves.isoformat() if moves else ""
+        m["over"] = bool(moves and moves <= now)
         # a way to take part online, until the meeting's over
         if m["date"][:10] >= today and not m["videos"]:
-            if m.get("join"):
-                m["docs"].append({"label": join_label(m["join"]), "url": m["join"]})
-            m["join_help"] = join_help(m.get("join", ""), m.get("dial_in") or {})
+            if m.get("join"):  # shown only while it's coming up (the list it's in decides)
+                m["join_link"] = {"label": join_label(m["join"]), "url": m["join"]}
+            m["join_help"] = join_help(m.get("dial_in") or {})
         # the recording goes with the agenda and minutes: "Video", or "Video, part 1" …
         n = len(m["videos"])
         for i, u in enumerate(m["videos"], 1):
@@ -359,22 +368,14 @@ def meetings(site: Site) -> list[dict]:
     return sorted(found, key=lambda m: m["date"])
 
 
-def join_help(url: str, dial_in: dict) -> dict:
-    """
-    What else someone needs to take part: the Zoom meeting ID (for joining from the Zoom app), and
-    a number to call in on with its code, as a tap-to-call link that dials the code too.
-    """
-    out = {}
-    if m := re.search(r"zoom(?:gov)?\.(?:us|com)/[jw]/(\d{9,11})", url or ""):
-        d = m.group(1)
-        out["meeting_id"] = f"{d[:3]} {d[3:7]} {d[7:]}" if len(d) == 11 else f"{d[:3]} {d[3:6]} {d[6:]}"
+def join_help(dial_in: dict) -> dict:
+    """A number to call in on and its code, as a tap-to-call link that dials the code too ({} if none)."""
     phone, code = (dial_in or {}).get("phone", ""), (dial_in or {}).get("code", "")
     digits = re.sub(r"\D", "", phone)
-    if len(digits) in (10, 11):
-        digits = digits if len(digits) == 11 else "1" + digits
-        out["phone"], out["code"] = phone, code
-        out["tel"] = f"tel:+{digits}" + (f",,{re.sub(r'\D', '', code)}#" if code else "")
-    return out
+    if len(digits) not in (10, 11):
+        return {}
+    digits = digits if len(digits) == 11 else "1" + digits
+    return {"phone": phone, "code": code, "tel": f"tel:+{digits}" + (f",,{re.sub(r'\D', '', code)}#" if code else "")}
 
 
 def join_label(url: str) -> str:
@@ -389,6 +390,22 @@ def join_label(url: str) -> str:
         if host in url:
             return f"Join on {name}"
     return "Join online"
+
+
+def meeting_start(m: dict, end_of_day: bool = False):
+    """A meeting's start as an aware Mountain datetime (or, with end_of_day, its day's last minute)."""
+    try:
+        day = date.fromisoformat((m.get("date") or "")[:10])
+    except ValueError:
+        return None
+    if end_of_day:
+        return datetime(day.year, day.month, day.day, 23, 59, tzinfo=dates.MT)
+    if (sd := m.get("start_dt")) and "T" in sd:
+        d = dates.parse(sd)
+        return d if isinstance(d, datetime) and (d.hour or d.minute) else None
+    if c := re.fullmatch(r"(\d{2}):(\d{2})", m.get("clock") or ""):
+        return datetime(day.year, day.month, day.day, int(c.group(1)), int(c.group(2)), tzinfo=dates.MT)
+    return None
 
 
 def meeting_time(start_dt: str | None = None, clock: str | None = None) -> str:
@@ -644,7 +661,9 @@ def home(site: Site, events: list[dict], today: date) -> dict:
             seen.add(r["common_name"])
             birds.append(r)
 
-    upcoming_meetings = [m for m in meetings(site) if t <= m["date"] <= week_end]
+    # from yesterday on: the page hides each once it has started (static/js/time.js)
+    yesterday = (today - timedelta(days=1)).isoformat()
+    upcoming_meetings = [m for m in meetings(site) if yesterday <= m["date"] <= week_end]
     next_menus = menu_days(site, today, 1)
     alerts = newest(since(site.get("spearfish_alert_center").records, 14, today))
 
@@ -667,7 +686,7 @@ def home(site: Site, events: list[dict], today: date) -> dict:
         "leones": site.get("leones_creamery"),
         "flavors": [f for f in site.get("leones_creamery").records if f.get("image_url")][:8],
         "headlines": newest(site.records(kind="news"))[:8],
-        "meetings": upcoming_meetings[:6],
+        "meetings": [m for m in upcoming_meetings if not (m["over"] and m["date"] < t)][:8],
         "bids": site.get("public_bids").records,
         "recent_permits": recent_permit_count(site, today),
         "plant": plant_of_the_day(site, today),
@@ -920,8 +939,12 @@ def civic(site: Site, events: list[dict], today: date) -> dict:
     by_month_then_size = lambda r: (r.get("date", ""), r.get("cost_approximate") or 0)  # noqa: E731
     latest_permits = sorted(bp.records, key=by_month_then_size, reverse=True)[:60]
     return {
-        "upcoming": [m for m in all_meetings if m["date"] >= t][:20],
-        "recent": [m for m in reversed(all_meetings) if (today - timedelta(days=45)).isoformat() <= m["date"] < t],
+        # meetings from yesterday on are in both lists, and the page shows each in the right one for
+        # the time it's read (a meeting that started an hour ago is past, though the page is older)
+        "upcoming": [m for m in all_meetings if m["date"] >= (today - timedelta(days=1)).isoformat()][:24],
+        "recent": [
+            m for m in reversed(all_meetings) if (today - timedelta(days=45)).isoformat() <= m["date"][:10] <= t
+        ],
         "meeting_sources": sources_of(
             site, ["spearfish_city", "lawrence_county", "spearfish_school_board_docs", "public_meetings_youtube"]
         ),

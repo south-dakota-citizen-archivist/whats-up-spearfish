@@ -200,6 +200,20 @@ def site_url(tmp_path_factory):
         kind="stats",
     )  # fmt: skip
 
+    # a city meeting at 4 PM today, with a Zoom link to join it
+    today_iso = dates.today().isoformat()
+    _write(
+        data,
+        "spearfish_city",
+        [
+            {"kind": "document", "url": "https://example.com/agenda/1", "title": "Agenda", "doc_type": "Agenda",
+             "file_url": "https://example.com/agenda/1", "event_id": 1, "event_name": "Arts Board Meeting",
+             "date": today_iso, "start_dt": f"{today_iso}T16:00:00-07:00", "portal_url": "https://example.com/event/1",
+             "join_url": "https://us02web.zoom.us/j/83682178231", "media_url": "", "media_page": ""}
+        ],
+        kind="document",
+    )  # fmt: skip
+
     # roadkill: 20 pickups in the past three weeks, each with a photo (served from nowhere)
     _write(
         data,
@@ -816,3 +830,17 @@ def test_a_shared_link_to_a_place_moves_the_map_there(open_page):
     page.wait_for_selector(".permits-map[data-zoom='16']")
     assert "The spot on the map is approximate." in page.locator("section[aria-labelledby=place-name]").inner_text()
     assert page.errors == []
+
+
+def test_a_meeting_moves_from_coming_up_to_past_when_it_starts(open_page):
+    import datetime as dt
+
+    from scrapers import dates as d
+
+    today = d.today()
+    for hour, which, joins in ((15, "up", True), (17, "past", False)):
+        page = open_page("civic/", clock=dt.datetime(today.year, today.month, today.day, hour, tzinfo=d.MT))
+        shown = [li for li in page.locator("#meetings li", has_text="Arts Board Meeting").all() if li.is_visible()]
+        assert [li.get_attribute("data-list") for li in shown] == [which]
+        assert ("Join on Zoom" in shown[0].inner_text()) is joins
+    assert "open meetings law" in page.locator("#meetings").inner_text()
