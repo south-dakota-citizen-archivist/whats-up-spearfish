@@ -4,23 +4,32 @@ scrapers/sources/spearfish_city_feeds.py
 City of Spearfish, SD — CivicEngage RSS feeds.
 https://www.spearfish.gov/rss.aspx#calendar
 
-Five sources (AgendaCenter RSS omitted — it returns city nav pages, not documents;
+Four sources (AgendaCenter RSS omitted — it returns city nav pages, not documents;
 real agendas/minutes come from spearfish_city.py via the CivicClerk API):
-  SpearfishAlertCenter   — utility/road/parks alerts (ModID=63)
-  SpearfishBlog          — city blog posts (ModID=51)
-  SpearfishCalendar      — city events calendar (ModID=58)
-  SpearfishJobs          — job postings (ModID=66)
-  SpearfishNews          — news flash / press releases (ModID=1)
+  SpearfishAlertCenter   — road closures, holiday schedules and other notices, read from
+                           the Alert Center page itself (its RSS feed comes back empty
+                           while the page still lists alerts)
+  SpearfishCalendar      — city events calendar (RSS, ModID=58)
+  SpearfishJobs          — openings on the city's job board (Criterion HCM), which the
+                           Career Opportunities page embeds; the CivicEngage jobs module
+                           and its feed are no longer used
+  SpearfishNews          — news flash / press releases (RSS, ModID=1)
+
+The city blog (ModID=51) is empty and no longer scraped.
 """
 
 import re
 from datetime import datetime
 
-from scrapers import dates
+from bs4 import BeautifulSoup
+
+from scrapers import dates, net
 from scrapers.base import BaseScraper
 from scrapers.utils import fetch_feed, make_slug
 
 BASE = "https://www.spearfish.gov"
+JOBS_API = "https://cityofspearfish.criterionhcm.com/api/jobs/443/1/api/organization/job"
+JOBS_PAGE = "https://www.spearfish.gov/161/Career-Opportunities"
 
 
 def _parse_feed(url: str, record_type: str, source_label: str) -> list[dict]:
@@ -90,6 +99,43 @@ def parse_calendar_entry(entry: dict) -> dict:
     }
 
 
+def parse_alert_center(page: str) -> list[dict]:
+    """Alerts listed on AlertCenter.aspx, under each category heading."""
+    soup = BeautifulSoup(page, "html.parser")
+    records = []
+    for cat in soup.select("div.listing"):
+        heading = cat.find("h2")
+        for item in cat.select("li.alerts-list"):
+            link = item.select_one("h3 a")
+            if not link or not link.get("href"):
+                continue
+            when = item.select_one("span.date")
+            stamp = when.get_text(" ", strip=True) if when else ""
+            try:
+                posted = datetime.strptime(stamp, "%B %d, %Y %I:%M %p" if ":" in stamp else "%B %d, %Y").isoformat()
+            except ValueError:
+                posted = ""
+            full = " ".join(link.get_text(" ").split())
+            title = re.sub(r"^City of Spearfish\s*[-–:]?\s*", "", full) or full
+            # long alerts are cut short and followed by a "<title> Read On..." line
+            paras = [" ".join(p.get_text(" ").split()) for p in item.find_all("p")]
+            body = " ".join(x for x in paras if x and not x.endswith("Read On..."))
+            href = link["href"]
+            records.append(
+                {
+                    "url": BASE + href if href.startswith("/") else href,
+                    "title": title,
+                    "slug": make_slug(title),
+                    "description": re.sub(r"\.{3,}$", "…", body),
+                    "category": heading.get_text(strip=True) if heading else "",
+                    "published": posted,
+                    "record_type": "alert",
+                    "source_label": "City of Spearfish",
+                }
+            )
+    return records
+
+
 class SpearfishAlertCenter(BaseScraper):
     name = "City of Spearfish Alert Center"
     slug = "spearfish_alert_center"
@@ -98,29 +144,13 @@ class SpearfishAlertCenter(BaseScraper):
     tier = "frequent"
     min_records = 0
     dedup_key = "url"
+    replace = True  # the page lists every alert still posted
+    naive_tz = dates.MT
 
     def scrape(self) -> list[dict]:
-        return _parse_feed(
-            f"{BASE}/RSSFeed.aspx?ModID=63&CID=All-0",
-            record_type="alert",
-            source_label="City of Spearfish",
-        )
-
-
-class SpearfishBlog(BaseScraper):
-    name = "City of Spearfish Blog"
-    slug = "spearfish_blog"
-    kind = "press_release"
-    url = "https://www.spearfish.gov/Blog.aspx"
-    min_records = 0
-    dedup_key = "url"
-
-    def scrape(self) -> list[dict]:
-        return _parse_feed(
-            f"{BASE}/RSSFeed.aspx?ModID=51&CID=All-blog.xml",
-            record_type="press_release",
-            source_label="City of Spearfish",
-        )
+        resp = net.get(self.url)
+        resp.raise_for_status()
+        return parse_alert_center(resp.text)
 
 
 class SpearfishCalendar(BaseScraper):
@@ -139,21 +169,39 @@ class SpearfishCalendar(BaseScraper):
         return [parse_calendar_entry(e) for e in feed.entries if e.get("calendarevent_eventdates")]
 
 
+def parse_job(job: dict) -> dict:
+    """One opening from the city's job board API."""
+    title = " ".join((job.get("title") or "").split())
+    department = job.get("department") or job.get("location") or ""
+    details = [department, job.get("positionType") or "", job.get("salary") or ""]
+    return {
+        "url": job.get("jobUrl") or JOBS_PAGE,
+        "title": title,
+        "slug": make_slug(title),
+        "department": department,
+        "position_type": job.get("positionType") or "",
+        "salary": job.get("salary") or "",
+        "published": (job.get("openDate") or "").replace(".", "-"),
+        "closing": (job.get("closeDate") or "").replace(".", "-")[:10],
+        "description": " · ".join(d for d in details if d),
+        "record_type": "job",
+        "source_label": "City of Spearfish",
+    }
+
+
 class SpearfishJobs(BaseScraper):
     name = "City of Spearfish Jobs"
     slug = "spearfish_jobs"
     kind = "job"
-    url = "https://www.spearfish.gov/Jobs.aspx"
+    url = JOBS_PAGE
     min_records = 0
     dedup_key = "url"
     replace = True
 
     def scrape(self) -> list[dict]:
-        return _parse_feed(
-            f"{BASE}/RSSFeed.aspx?CommunityJobs=False&ModID=66&CID=All-0",
-            record_type="job",
-            source_label="City of Spearfish",
-        )
+        resp = net.get(JOBS_API, params={"isInternal": "false", "page": 1, "start": 0, "limit": 100})
+        resp.raise_for_status()
+        return [parse_job(j) for j in resp.json().get("result", []) if j.get("title")]
 
 
 class SpearfishNews(BaseScraper):

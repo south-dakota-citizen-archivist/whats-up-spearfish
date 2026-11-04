@@ -101,7 +101,7 @@ Set `enabled = False` to put a source on ice without deleting it.
 |---|---|---|---|
 | [Western Hills Humane Society](https://www.westernhillshumanesociety.com/) | `whhs_adoptable` | adoptable | full snapshot |
 | [BHNF Alerts](https://www.fs.usda.gov/r02/blackhills/alerts) | `bhnf_alerts` | alert | frequent tier, full snapshot |
-| [City of Spearfish Alert Center](https://www.spearfish.gov/AlertCenter.aspx) | `spearfish_alert_center` | alert | frequent tier |
+| [City of Spearfish Alert Center](https://www.spearfish.gov/AlertCenter.aspx) | `spearfish_alert_center` | alert | frequent tier, full snapshot |
 | [Crow Peak Brewing](https://crowpeakbrewing.com/) | `crow_peak_brewing` | beer | full snapshot |
 | [Killian's](https://untappd.com) | `killians` | beer | full snapshot |
 | [Redwater Kitchen](https://untappd.com) | `redwater_kitchen` | beer | full snapshot |
@@ -128,8 +128,8 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [Spearfish Creek gauge (USGS)](https://waterdata.usgs.gov/monitoring-location/USGS-06431500/) | `creek_gauge` | gauge | frequent tier |
 | [BHSU](https://yourfuture.sdbor.edu/) | `bhsu_jobs` | job | full snapshot |
 | [Black Hills Pioneer](https://www.bhpioneer.com/classifieds/job/) | `bhpioneer_jobs` | job | full snapshot |
-| [City of Spearfish Jobs](https://www.spearfish.gov/Jobs.aspx) | `spearfish_jobs` | job | full snapshot |
-| [Lawrence County Jobs](https://www.lawrence.sd.us/Jobs.aspx) | `lawrence_county_jobs` | job | full snapshot |
+| [City of Spearfish Jobs](https://www.spearfish.gov/161/Career-Opportunities) | `spearfish_jobs` | job | full snapshot |
+| [Lawrence County Jobs](https://lawrence.sd.us/381/Employment-Opportunities) | `lawrence_county_jobs` | job | full snapshot |
 | [Spearfish School District](https://www.applitrack.com/bhssc/onlineapp/default.aspx) | `spearfish_schools_jobs` | job | full snapshot |
 | [Grace Balloch Memorial Library](https://spearfish.blackhills.bywatersolutions.com) | `spearfish_library` | library_book | needs browser, full snapshot |
 | [Black Hills Pioneer](https://www.bhpioneer.com/) | `black_hills_pioneer` | news |  |
@@ -142,9 +142,7 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [Spearfish Planning Commission applications](https://spearfishsd.portal.civicclerk.com/) | `planning_commission` | planning_item |  |
 | [Native plants of the Black Hills](https://www.inaturalist.org/places/black-hills-national-forest-us) | `native_plants_spotlight` | plant | full snapshot |
 | [Black Hills National Forest](https://www.fs.usda.gov/r02/blackhills/newsroom/releases) | `bhnf` | press_release |  |
-| [City of Spearfish Blog](https://www.spearfish.gov/Blog.aspx) | `spearfish_blog` | press_release |  |
 | [City of Spearfish News Flash](https://www.spearfish.gov/CivicAlerts.aspx) | `spearfish_news` | press_release |  |
-| [Lawrence County News Flash](https://www.lawrence.sd.us/CivicAlerts.aspx) | `lawrence_county_news` | press_release |  |
 | [Spearfish School District](https://www.spearfish.k12.sd.us/news) | `spearfish_school_news` | press_release | full snapshot |
 | [Black Hills National Forest projects](https://www.fs.usda.gov/r02/blackhills/projects) | `bhnf_projects` | project | full snapshot |
 | [Elementary 3-5 Lunch](https://menus.healthepro.com/organizations/524/sites/4523/menus/124131) | `spearfish_elem_35_lunch` | school_menu |  |

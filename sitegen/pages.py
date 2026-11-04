@@ -49,7 +49,7 @@ NEWS_SOURCES = [
     "sundance_times",
     "custer_county_chronicle",
 ]
-PRESS_SOURCES = ["spearfish_news", "spearfish_blog", "lawrence_county_news", "spearfish_school_news", "bhnf"]
+PRESS_SOURCES = ["spearfish_news", "spearfish_school_news", "bhnf"]
 JOB_SOURCES = ["spearfish_jobs", "lawrence_county_jobs", "spearfish_schools_jobs", "bhsu_jobs", "bhpioneer_jobs"]
 TAP_SOURCES = [
     "crow_peak_brewing",

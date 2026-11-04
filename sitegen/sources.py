@@ -25,7 +25,6 @@ FOREST = "Black Hills National Forest"
 CREDIT = {
     "spearfish_calendar": CITY,
     "spearfish_news": CITY,
-    "spearfish_blog": CITY,
     "spearfish_alert_center": CITY,
     "spearfish_jobs": CITY,
     "spearfish_city": CITY,
@@ -33,7 +32,6 @@ CREDIT = {
     "building_permits": CITY,
     "planning_commission": CITY,
     "lawrence_county": COUNTY,
-    "lawrence_county_news": COUNTY,
     "lawrence_county_jobs": COUNTY,
     "spearfish_schools": DISTRICT,
     "spearfish_school_news": DISTRICT,
@@ -85,7 +83,7 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
                 "https://www.spearfish.gov/",
                 (
                     _i("Community events calendar", "spearfish_calendar"),
-                    _i("News and announcements", "spearfish_news", "spearfish_blog"),
+                    _i("News and announcements", "spearfish_news"),
                     _i("Emergency and service alerts", "spearfish_alert_center"),
                     _i("Meeting agendas, minutes and video", "spearfish_city"),
                     _i("Monthly building permit reports", "building_permits"),
@@ -107,7 +105,6 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
                         note="Updated from time to time",
                     ),
                     _i("Meeting agendas", "lawrence_county"),
-                    _i("News", "lawrence_county_news"),
                     _i("Job openings", "lawrence_county_jobs"),
                 ),
             ),
