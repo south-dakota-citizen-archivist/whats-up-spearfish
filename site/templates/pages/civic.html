@@ -68,7 +68,7 @@
     <ul class="divide-y divide-stone-100 text-sm" data-more="8">
       {% for p in building_records %}
       <li class="py-2">
-        <p class="font-medium">{{ p.site_address or 'Address not listed' }}</p>
+        <p>{% if p.site_key %}<a href="{{ root }}permits/#site={{ p.site_key | urlencode }}" class="link-title">{{ p.site_address }}</a>{% else %}<span class="font-medium">{{ p.site_address or 'Address not listed' }}</span>{% endif %}</p>
         <p class="text-xs text-stone-500">{{ p.construction_type | permit_type }}{% if p.cost_approximate %} • ${{ p.cost_approximate | intcomma }}{% endif %}{% if p.contractor %} • {{ p.contractor | title }}{% endif %} • {{ p.date | fmt_day('%B %Y') }}</p>
       </li>
       {% endfor %}

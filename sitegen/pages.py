@@ -633,6 +633,9 @@ def civic(site: Site, events: list[dict], today: date) -> dict:
     t = today.isoformat()
     all_meetings = meetings(site)
     bp = site.get("building_permits")
+    parcels = ParcelLinks.load(site.data_dir)
+    by_month_then_size = lambda r: (r.get("date", ""), r.get("cost_approximate") or 0)  # noqa: E731
+    latest_permits = sorted(bp.records, key=by_month_then_size, reverse=True)[:60]
     return {
         "upcoming": [m for m in all_meetings if m["date"] >= t][:20],
         "recent": [m for m in reversed(all_meetings) if (today - timedelta(days=45)).isoformat() <= m["date"] < t],
@@ -640,9 +643,10 @@ def civic(site: Site, events: list[dict], today: date) -> dict:
         "videos": newest(site.get("public_meetings_youtube").records)[:9],
         "youtube": site.get("public_meetings_youtube"),
         "building_permits": bp,
-        "building_records": sorted(
-            bp.records, key=lambda r: (r.get("date", ""), r.get("cost_approximate") or 0), reverse=True
-        )[:60],
+        # each with its place on the permits page (the key its #site= link opens)
+        "building_records": [
+            dict(r, site_key=permit_site_key(r, parcels) if r.get("site_address") else "") for r in latest_permits
+        ],
         "bids": site.get("public_bids"),
         "press": newest(site.records(kind="press_release", slugs=PRESS_SOURCES))[:20],
         "notices": site.get("danr_public_notices"),
