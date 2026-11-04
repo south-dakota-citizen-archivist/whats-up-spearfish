@@ -739,6 +739,10 @@ CHECKOUT_SERIES = [
 ]
 
 
+#: where the board's meeting minutes (the checkout numbers' source) are posted
+LIBRARY_BOARD_URL = "https://www.spearfish.gov/214/Library-Board-of-Trustees"
+
+
 def checkouts_context(site: Site) -> dict:
     src = site.get("library_circulation")
     rows = (src.data or {}).get("rows") or []
@@ -746,8 +750,11 @@ def checkouts_context(site: Site) -> dict:
         return {"source": src, "rows": []}
     years: dict[str, dict] = {}
     for r in rows:
-        y = years.setdefault(r["month"][:4], {"year": r["month"][:4], "months": 0})
+        y = years.setdefault(r["month"][:4], {"year": r["month"][:4], "months": 0, "by_month": []})
         y["months"] += 1
+        # each month, with the board minutes its numbers came from
+        y["by_month"].append({"month": r["month"], "minutes": r.get("minutes") or "",
+                              **{key: r.get(key) for key, *_ in CHECKOUT_SERIES}})  # fmt: skip
         for key, *_ in CHECKOUT_SERIES:
             if r.get(key) is not None:
                 y[key] = y.get(key, 0) + r[key]
@@ -759,6 +766,7 @@ def checkouts_context(site: Site) -> dict:
         "latest": latest,
         "years": sorted(years.values(), key=lambda y: y["year"], reverse=True),
         "first": rows[0]["month"],
+        "board_url": LIBRARY_BOARD_URL,
     }
 
 

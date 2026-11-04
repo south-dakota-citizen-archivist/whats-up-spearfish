@@ -3,15 +3,19 @@
 
 {% block content %}
 {# Outlets: a checkbox list under a button, so readers can pick any mix; none picked shows everything.
-   The picks are remembered in this browser. #}
+   A reader can save a mix as their default, kept in this browser, and clear it. #}
 <div x-data="{
        open: false,
        counts: {{ outlets | tojson | forceescape }},
        picked: [],
+       saved: [],
        init() {
-         try { this.picked = JSON.parse(localStorage.getItem('news-outlets') || '[]').filter((o) => o in this.counts); } catch (e) {}
-         this.$watch('picked', (v) => localStorage.setItem('news-outlets', JSON.stringify(v)));
+         try { this.saved = JSON.parse(localStorage.getItem('news-outlets') || '[]').filter((o) => o in this.counts); } catch (e) {}
+         this.picked = [...this.saved];
        },
+       isDefault() { return this.picked.length === this.saved.length && this.picked.every((o) => this.saved.includes(o)); },
+       saveDefault() { this.saved = [...this.picked]; try { localStorage.setItem('news-outlets', JSON.stringify(this.saved)); } catch (e) {} },
+       clearDefault() { this.saved = []; try { localStorage.removeItem('news-outlets'); } catch (e) {} },
        shows(label) { return !this.picked.length || this.picked.includes(label); },
        label() { return !this.picked.length ? 'All outlets' : this.picked.length === 1 ? this.picked[0] : this.picked.length + ' outlets'; },
        shown() { return this.picked.reduce((n, o) => n + this.counts[o], 0); },
@@ -39,8 +43,11 @@
           </label>
           {% endfor %}
         </fieldset>
-        <div x-show="picked.length" class="border-t border-stone-100 mt-1 px-3 pt-2 pb-1">
-          <button type="button" @click="picked = []" class="text-sm font-semibold text-pine-700 hover:underline">Show all outlets</button>
+        <div x-show="picked.length || saved.length" class="border-t border-stone-100 mt-1 px-3 pt-2 pb-1 flex flex-wrap gap-x-4 gap-y-1.5 text-sm font-semibold text-pine-700">
+          <button type="button" x-show="picked.length" @click="picked = []" class="hover:underline">Show all outlets</button>
+          <button type="button" x-show="picked.length && !isDefault()" @click="saveDefault()" class="hover:underline">Save as my default</button>
+          <button type="button" x-show="saved.length" @click="clearDefault()" class="hover:underline">Clear my default</button>
+          <p role="status" class="w-full text-xs font-normal text-stone-500" x-text="saved.length && isDefault() ? 'Your default on this device' : ''"></p>
         </div>
       </div>
       <p class="sr-only" role="status" x-text="picked.length ? shown() + ' stories from ' + label() : ''"></p>

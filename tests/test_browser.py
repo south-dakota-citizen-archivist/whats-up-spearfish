@@ -189,7 +189,8 @@ def site_url(tmp_path_factory):
         data={
             "rows": [
                 {"month": f"{y}-{m:02d}", "loans": 6000 + (m * 97) % 900, "overdrive": 3500 if y >= 2022 else None,
-                 "hoopla": 800 if 2022 <= y <= 2025 else None}
+                 "hoopla": 800 if 2022 <= y <= 2025 else None,
+                 "minutes": f"https://example.com/minutes/{y}-{(m + 1) // 2}"}
                 for y in range(2019, 2027) for m in range(1, 13) if (y, m) <= (2026, 4) and (y, m) != (2021, 5)
             ]
         },
@@ -533,6 +534,22 @@ def test_community_chart_and_pets(open_page):
     page = open_page("community/", wait="#checkouts svg")
     assert page.locator("#checkouts svg path").count() == 3  # one line per way of borrowing
     assert "In April 2026" in page.locator("#checkouts").inner_text()
+    assert page.locator("#checkouts a", has_text="Library Board of Trustees meeting minutes").count() == 1
+    # a year in the table opens to its months, each linked to its minutes
+    page.locator("#checkouts summary").click()
+    year = page.get_by_role("button", name="2025")
+    assert year.get_attribute("aria-expanded") == "false"
+    assert not page.locator("#checkouts-2025").is_visible()
+    year.click()
+    months = page.locator("#checkouts-2025 tr")
+    months.first.wait_for(state="visible")
+    assert months.count() == 12 and year.get_attribute("aria-expanded") == "true"
+    assert "January" in months.first.inner_text()
+    assert (
+        months.first.get_by_role("link", name="Minutes").get_attribute("href") == "https://example.com/minutes/2025-1"
+    )
+    year.click()
+    page.locator("#checkouts-2025").wait_for(state="hidden")
     shown = page.locator("#pets li:visible")
     assert shown.count() == 12
     assert "Dog" in page.locator("#pets").inner_text().split("Show all")[0]  # dogs mixed in, not after all the cats
@@ -706,7 +723,7 @@ def test_trends_biggest_projects_open_their_place_on_the_permits_page(open_page)
     assert page.errors == []
 
 
-def test_news_outlet_picker_takes_any_mix_and_remembers_it(open_page):
+def test_news_outlet_picker_takes_any_mix_and_saves_a_default(open_page):
     page = open_page("news/")
     button = page.locator("#outlet-button")
     assert "All outlets" in button.inner_text() and button.get_attribute("aria-expanded") == "false"
@@ -721,5 +738,23 @@ def test_news_outlet_picker_takes_any_mix_and_remembers_it(open_page):
     assert not page.locator("#outlet-menu").is_visible()
     page.reload()
     page.wait_for_timeout(300)
-    assert "Black Hills Pioneer" in page.locator("#outlet-button").inner_text()  # remembered
+    assert "All outlets" in page.locator("#outlet-button").inner_text()  # a pick isn't kept unless saved
+
+    # saved as the default, it's what the page opens with
+    page.locator("#outlet-button").click()
+    page.locator("#outlet-menu input[type=checkbox]").first.check()
+    page.get_by_role("button", name="Save as my default").click()
+    page.get_by_role("button", name="Save as my default").wait_for(state="hidden")
+    assert "Your default on this device" in page.locator("#outlet-menu").inner_text()
+    page.reload()
+    page.wait_for_timeout(300)
+    assert "Black Hills Pioneer" in page.locator("#outlet-button").inner_text()
+
+    # cleared, the page opens with everything again
+    page.locator("#outlet-button").click()
+    page.get_by_role("button", name="Clear my default").click()
+    page.get_by_role("button", name="Clear my default").wait_for(state="hidden")
+    page.reload()
+    page.wait_for_timeout(300)
+    assert "All outlets" in page.locator("#outlet-button").inner_text()
     assert page.errors == []
