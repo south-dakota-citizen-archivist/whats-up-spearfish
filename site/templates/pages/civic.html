@@ -81,7 +81,7 @@
       {% for n in notice_list %}
       <li>{{ ext(n.url, n.title, 'link-title') }}
         {# a company can file several at once (Powertech's two water permits): what each is for tells them apart #}
-        <p class="text-xs text-stone-500">{% if n.deadline_iso %}<span class="font-semibold text-stone-700">Comments due {{ n.deadline_iso | fmt_day('%b %-d') }}</span> • {% endif %}{{ [n.notice_type, n.location, n.water_source, n.use_type] | together }}</p></li>
+        <p class="text-xs text-stone-500">{% if n.deadline_iso %}<span class="font-semibold text-stone-700">Comments due {{ n.deadline_iso | fmt_day('%b %-d') }}</span> • {% endif %}{{ [(n.notice_type ~ ' ' ~ n.application_no) if n.application_no else n.notice_type, n.location, n.water_source, n.use_type] | together }}</p></li>
       {% endfor %}
     </ul>
     {% else %}{{ empty("No current notices for western South Dakota.") }}{% endif %}
