@@ -227,6 +227,11 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
                 ),
             ),
             Org(
+                "Terry Peak Ski Area",
+                "https://terrypeak.com/",
+                (_i("Snow report, and which lifts and trails are open", "terry_peak"),),
+            ),
+            Org(
                 "eBird",
                 "https://ebird.org/explore",
                 (_i("Bird sightings within about 30 miles of Spearfish", "ebird"),),

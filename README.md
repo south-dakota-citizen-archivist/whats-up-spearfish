@@ -154,6 +154,7 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [eBird recent sightings](https://ebird.org/region/US-SD-081) | `ebird` | sighting | full snapshot |
 | [SD DANR spill reports](https://apps.sd.gov/NR42InteractiveMap/) | `danr_spills` | spill | full snapshot |
 | [Library checkouts](https://spearfish.blackhills.bywatersolutions.com) | `library_circulation` | stats |  |
+| [Terry Peak Ski Area](https://terrypeak.com/the-mountain/trails-lifts/) | `terry_peak` | stats | frequent tier |
 | [Public Meetings (YouTube)](https://www.youtube.com/@spearfishschooldistrictliv3794/streams) | `public_meetings_youtube` | youtube_video |  |
 | [Spearfish planning & permits (OpenGov)](https://spearfishsd.portal.opengov.com/) | `planning_zoning` | permit | 🧊 on ice, full snapshot |
 | Wildlife carcass pickups (SD DOT) | `roadkill` | sighting | 🧊 on ice |

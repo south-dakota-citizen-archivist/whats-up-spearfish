@@ -438,6 +438,7 @@ def home(site: Site, events: list[dict], today: date) -> dict:
         "books": book_picks(site, 8, rng),
         "creek": creek_context(site),
         "fire": fire_context(site),
+        "ski": terry_peak_context(site),
         "birds": birds[:4],
         "ebird": site.get("ebird"),
         "leones": site.get("leones_creamery"),
@@ -493,11 +494,33 @@ def plant_of_the_day(site: Site, today: date) -> dict | None:
     return plants[today.toordinal() % len(plants)]
 
 
+def terry_peak_context(site: Site) -> dict:
+    """The ski area's snow report and what's open, for the Outdoors card."""
+    src = site.get("terry_peak")
+    data = src.data or {}
+    lifts, trails = data.get("lifts") or [], data.get("trails") or []
+    open_trails = [t for t in trails if t.get("open")]
+    return {
+        "source": src,
+        "snow": data.get("snow") or {},
+        "lifts": lifts,
+        "lifts_open": [lift for lift in lifts if lift.get("open")],
+        "trails": trails,
+        "trails_open": {
+            level: [t["name"] for t in open_trails if t.get("difficulty") == level]
+            for level in ("beginner", "intermediate", "advanced")
+        },
+        "trails_open_count": len(open_trails),
+        "webcams": data.get("webcams") or "https://terrypeak.com/the-mountain/live-web-cams/",
+    }
+
+
 def outdoors(site: Site, events: list[dict], today: date) -> dict:
     projects = [p for p in site.get("bhnf_projects").records if p.get("status") == "In Progress"]
     return {
         "creek": creek_context(site),
         "fire": fire_context(site),
+        "ski": terry_peak_context(site),
         "birds": newest(site.get("ebird").records, "published"),
         "ebird": site.get("ebird"),
         "forest_alerts": newest(site.get("bhnf_alerts").records)[:15],
