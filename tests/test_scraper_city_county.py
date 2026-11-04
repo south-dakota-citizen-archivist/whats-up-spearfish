@@ -125,3 +125,18 @@ def test_matthews_skips_cancelled_and_all_day_events_keep_their_dates():
          "end_date": "2026-12-06 23:59:59"}
     )  # fmt: skip
     assert (fest["start_dt"], fest["end_dt"], fest["all_day"]) == ("2026-12-05", "2026-12-06", True)
+
+
+def test_bhsu_posting_page_gives_salary_and_closing():
+    from scrapers.sources.bhsu_jobs import parse_posting_page
+
+    def page(closing, open_until):
+        return (f"<table><tr><th>Posting Date</th><td>05/14/2025</td></tr>"
+                f"<tr><th>Closing Date</th><td>{closing}</td></tr>"
+                f"<tr><th>Open Until Filled</th><td>{open_until}</td></tr>"
+                "<tr><th>Advertised Salary</th><td>$1,076-$1,317 per credit hour</td></tr></table>")  # fmt: skip
+
+    assert parse_posting_page(page("", "Yes")) == {"salary": "$1,076-$1,317 per credit hour",
+                                                   "closing": "Open until filled"}  # fmt: skip
+    assert parse_posting_page(page("11/30/2026", "No"))["closing"] == "2026-11-30"
+    assert parse_posting_page("<table></table>") == {}

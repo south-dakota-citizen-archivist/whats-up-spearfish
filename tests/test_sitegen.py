@@ -627,3 +627,23 @@ def test_pet_links_jump_to_the_pet_on_the_shelter_page():
     assert pet_link(cat) == "https://www.westernhillshumanesociety.com/cats#:~:text=Pine%20Cone,-Male"
     assert pet_link(dict(cat, description="")).endswith("#:~:text=Pine%20Cone")
     assert pet_link(dict(cat, url="https://example.com/a#b")) == "https://example.com/a#b"  # its own anchor wins
+
+
+@pytest.mark.parametrize(
+    "job, line",
+    [
+        ({"department": "Police", "salary": "Hiring range: $32.84 - $38.08", "published": "2025-10-16"},
+         ["Police", "Hiring range: $32.84 - $38.08", "posted Oct 16, 2025"]),
+        ({"department": "BHSU-Registrar", "salary": "$85,000-$95,000 commensurate with qualifications plus benefits",
+          "published": "2026-09-30T10:00:00-06:00", "closing": "Open until filled"},
+         ["Registrar", "$85,000-$95,000", "posted Sep 30", "open until filled"]),
+        ({"location": "Spearfish High School", "published": "2026-06-01", "closing": "Open Until Filled"},
+         ["Spearfish High School", "posted Jun 1", "open until filled"]),
+        ({"published": "2026-10-01", "closing": "11/15/2026"}, ["posted Oct 1", "closes Nov 15"]),
+        ({"department": "Lawrence County"}, []),  # the employer's own name isn't repeated
+    ],
+)  # fmt: skip
+def test_job_line_shows_pay_and_dates_when_the_posting_has_them(job, line):
+    from sitegen.pages import job_meta
+
+    assert job_meta(job, "Lawrence County", today=date(2026, 11, 4)) == line

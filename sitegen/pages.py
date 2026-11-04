@@ -15,7 +15,7 @@ from collections import Counter, defaultdict
 from datetime import date, timedelta
 from urllib.parse import quote
 
-from scrapers import geo
+from scrapers import dates, geo
 from sitegen import trends
 from sitegen.data import Site, Source
 from sitegen.events import CATEGORY_LABELS
@@ -620,6 +620,38 @@ def news(site: Site, events: list[dict], today: date) -> dict:
         "news_sources": sources_of(site, NEWS_SOURCES),
         "news_count": len(items),
     }
+
+
+def _job_day(value, today: date) -> str:
+    """'Oct 16' this year, 'Oct 16, 2025' otherwise; '' if it isn't a date."""
+    raw = str(value or "").strip()
+    if m := re.fullmatch(r"(\d{1,2})/(\d{1,2})/(\d{4})", raw):  # the school board's 6/1/2026
+        raw = f"{m.group(3)}-{int(m.group(1)):02d}-{int(m.group(2)):02d}"
+    try:
+        d = date.fromisoformat(raw[:10])
+    except ValueError:
+        return ""
+    return f"{d:%b} {d.day}" + ("" if d.year == today.year else f", {d.year}")
+
+
+def job_meta(j: dict, employer: str = "", today: date | None = None) -> list[str]:
+    """
+    The line under a job's title: where, pay, when posted, when it closes — whichever the
+    posting has. ('Police · Hiring range: $32.84 - $38.08 · posted Oct 16, 2025 · open until filled')
+    """
+    today = today or dates.today()
+    where = (j.get("department") or j.get("location") or j.get("category") or "").replace(employer, "").strip(" -·")
+    where = re.sub(r"^BHSU\s*-\s*", "", where)  # under the Black Hills State University card already
+    pay = re.sub(r"\s+(commensurate|depending on|DOE\b|DOQ\b|plus benefits).*$", "", j.get("salary") or "", flags=re.I)
+    posted = _job_day(j.get("published"), today)
+    closing = str(j.get("closing") or "").strip()
+    if re.fullmatch(r"open until filled", closing, re.I):
+        closes = "open until filled"
+    elif closing:
+        closes = "closes " + (_job_day(closing, today) or closing)
+    else:
+        closes = ""
+    return [x for x in (where, pay.strip(), f"posted {posted}" if posted else "", closes) if x]
 
 
 def jobs(site: Site, events: list[dict], today: date) -> dict:

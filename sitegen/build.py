@@ -178,6 +178,7 @@ def make_env() -> Environment:
         domain=domain,
         intcomma=intcomma,
         together=together,
+        job_meta=pages.job_meta,
         money_short=trends.money_short,
         permit_type=pages.friendly_type,
     )
