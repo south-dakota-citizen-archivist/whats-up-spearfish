@@ -514,13 +514,15 @@ def test_home_shows_no_placeholder_pictures(open_page):
 
 
 def test_titles_dont_wrap_when_their_row_has_room(open_page):
-    # the hidden "(opens in a new tab)" once made links measure 1px short, so a short title wrapped
+    # the hidden "(opens in a new tab)" once made links measure 1px short, so a short title wrapped,
+    # and later, as a 1px box, dropped to a line of its own under a title that filled its line
     page = open_page("")
     titles = page.evaluate(
         """() => [...document.querySelectorAll('li.flex > div.min-w-0 > a')].map(a => {
             const room = a.parentElement.parentElement.getBoundingClientRect().right
                 - a.parentElement.getBoundingClientRect().right;
-            return [a.textContent.trim(), a.getClientRects().length, room];
+            const lines = new Set([...a.getClientRects()].map(r => Math.round(r.top))).size;  // rows, not boxes
+            return [a.textContent.trim(), lines, room];
         })"""
     )
     assert any(t.startswith("Toddler") for t, *_ in titles), titles
