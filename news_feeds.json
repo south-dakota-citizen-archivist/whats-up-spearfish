@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-04T01:35:27-07:00",
- "count": 88,
+ "fetched_at": "2026-11-04T12:48:52-07:00",
+ "count": 91,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/05/south-dakota-national-guard-helps-with-more-than-1000-deportations-since-july-2025-governor-says/",
@@ -547,21 +547,6 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://www.sdnewswatch.org/south-dakota-governor-secretary-of-state-campaign-finance/",
-   "title": "Individual donations fund Democratic candidates",
-   "slug": "sd-newswatch-individual-donations-fund-democratic-candidates",
-   "published": "2026-10-20",
-   "byline": "Molly Wetsch",
-   "description": "Democratic secretary of state candidate outraises 2022 candidate, gets Republican incumbent's endorsement. Governor candidate reports no out-of-state or federal PAC money.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "0822206e8372",
-   "date": "2026-10-20",
-   "_first_seen": "2026-11-01"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/10/20/south-dakota-specialty-courts-cost-thousands-less-than-incarceration-report-says/",
    "title": "South Dakota specialty courts cost thousands less than incarceration, report says",
    "slug": "south-dakota-searchlight-south-dakota-specialty-courts-cost-thousands-less-than",
@@ -588,6 +573,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "beed01547383",
+   "date": "2026-10-20",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-governor-secretary-of-state-campaign-finance/",
+   "title": "Individual donations fund Democratic candidates",
+   "slug": "sd-newswatch-individual-donations-fund-democratic-candidates",
+   "published": "2026-10-20",
+   "byline": "Molly Wetsch",
+   "description": "Democratic secretary of state candidate outraises 2022 candidate, gets Republican incumbent's endorsement. Governor candidate reports no out-of-state or federal PAC money.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "0822206e8372",
    "date": "2026-10-20",
    "_first_seen": "2026-11-01"
   },
@@ -1192,12 +1192,27 @@
    "_first_seen": "2026-11-03"
   },
   {
+   "url": "https://www.sdnewswatch.org/south-dakota-general-election-2026-down-ballot/",
+   "title": "Citizenship voting, unclaimed property issues pass",
+   "slug": "sd-newswatch-citizenship-voting-unclaimed-property-issues-pass",
+   "published": "2026-11-04",
+   "byline": "Molly Wetsch",
+   "description": "Ballot measures to tie Medicaid expansion to federal funding and raise the threshold to amend the constitution fail. Republican candidates win office for secretary of state, attorney general, auditor, treasurer and school of public lands.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "eddc7a322add",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-04"
+  },
+  {
    "url": "https://www.sdnewswatch.org/south-dakota-general-election-2026/",
    "title": "Republicans Rhoden, Jackley and Rounds win",
    "slug": "sd-newswatch-republicans-rhoden-jackley-and-rounds-win",
    "published": "2026-11-04",
    "byline": "Molly Wetsch",
-   "description": "Gov. Larry Rhoden earns his first election as governor. Longtime prosecutor Marty Jackley heads to the U.S. House. And U.S. Sen. Mike Rounds gets a third term. GOP's candidate for Secretary of State's Office has strong lead.",
+   "description": "Gov. Larry Rhoden earns his first election as governor. Longtime prosecutor Marty Jackley heads to the U.S. House. And U.S. Sen. Mike Rounds gets a third term. GOP's candidate for Secretary of State's Office also won.",
    "record_type": "news",
    "source_label": "South Dakota News Watch",
    "kind": "news",
@@ -1205,6 +1220,36 @@
    "id": "91bc2b7a8368",
    "date": "2026-11-04",
    "_first_seen": "2026-11-03"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/04/democrats-gain-seats-in-south-dakota-legislature-for-the-first-time-since-2008/",
+   "title": "Democrats gain seats in South Dakota Legislature for the first time since 2008",
+   "slug": "south-dakota-searchlight-democrats-gain-seats-in-south-dakota-legislature-for",
+   "published": "2026-11-04",
+   "byline": "John Hult",
+   "description": "No Democrat won a statewide race Tuesday in South Dakota, but the party picked up four seats in the Legislature. Nationally, Democrats racked up historic gains. They retook control of the U.S. House of Representatives and Senate, and scored major state-level wins, including the governorship in Texas for the first time since 1994 and Iowa [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "540366ad2d20",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/04/2026-south-dakota-general-election-results/",
+   "title": "2026 South Dakota general election results",
+   "slug": "south-dakota-searchlight-2026-south-dakota-general-election-results",
+   "published": "2026-11-04",
+   "byline": "South Dakota Searchlight staff",
+   "description": "See below for results from South Dakota statewide races, statewide ballot questions and legislative races. For news coverage and commentary about South Dakota&#8217;s election, see Searchlight&#8217;s Election 2026 page. For local election results, such as county, city and school races and questions, see the South Dakota Secretary of State&#8217;s results page. For election coverage from [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "6696432ab782",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-04"
   },
   {
    "url": "https://southdakotasearchlight.com/2026/11/04/voters-reject-measure-that-could-have-triggered-repeal-of-medicaid-expansion-in-south-dakota/",

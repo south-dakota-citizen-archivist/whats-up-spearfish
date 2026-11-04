@@ -3,7 +3,7 @@
  "name": "BHSU Campus Calendar",
  "kind": "event",
  "url": "https://bhsu.edu/campus-calendar.html",
- "fetched_at": "2026-11-04T01:35:17-07:00",
+ "fetched_at": "2026-11-04T12:48:37-07:00",
  "count": 26,
  "records": [
   {
@@ -82,8 +82,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],
@@ -115,8 +115,8 @@
    "image_alt": "Flyer for event",
    "organizer": "Kaitlin Palmer",
    "tags": [
-    "Yellow Jacket Dining",
     "Alumni Event",
+    "Yellow Jacket Dining",
     "BHSU Event",
     "Student Life",
     "Academics",
@@ -150,8 +150,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],
@@ -245,8 +245,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],
@@ -278,8 +278,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],
@@ -374,8 +374,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],
@@ -411,8 +411,8 @@
     "Community Event",
     "Academics",
     "College of Liberal Arts",
-    "College of Business and Natural Sciences",
     "Career Development",
+    "College of Business and Natural Sciences",
     "University Advancement"
    ],
    "featured": false,
@@ -577,8 +577,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],
@@ -676,8 +676,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],
@@ -740,8 +740,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event"
    ],
    "featured": false,
@@ -772,8 +772,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],

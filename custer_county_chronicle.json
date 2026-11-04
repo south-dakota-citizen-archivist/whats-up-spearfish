@@ -3,8 +3,8 @@
  "name": "Custer County Chronicle",
  "kind": "news",
  "url": "https://custercountychronicle.com",
- "fetched_at": "2026-11-04T01:35:21-07:00",
- "count": 33,
+ "fetched_at": "2026-11-04T12:48:43-07:00",
+ "count": 38,
  "records": [
   {
    "url": "https://custercountychronicle.com/content/council-designates-funds-light-town",
@@ -500,6 +500,81 @@
    "id": "55c622347388",
    "date": "2026-10-28",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://custercountychronicle.com/content/council-discusses-payment-plan-sewer-phase-three",
+   "title": "Council discusses payment plan for sewer phase three",
+   "slug": "custer-county-chronicle-council-discusses-payment-plan-for-sewer-phase-three",
+   "published": "2026-11-04",
+   "byline": "",
+   "description": "",
+   "record_type": "news",
+   "source_label": "Custer County Chronicle",
+   "kind": "news",
+   "source": "custer_county_chronicle",
+   "id": "479814dbfdb0",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "url": "https://custercountychronicle.com/content/history-taking-museum-closes",
+   "title": "History for the taking as museum closes",
+   "slug": "custer-county-chronicle-history-for-the-taking-as-museum-closes",
+   "published": "2026-11-04",
+   "byline": "",
+   "description": "",
+   "record_type": "news",
+   "source_label": "Custer County Chronicle",
+   "kind": "news",
+   "source": "custer_county_chronicle",
+   "id": "5692582618f0",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "url": "https://custercountychronicle.com/content/robin-martinez-joins-prevailer-staff",
+   "title": "Robin Martinez joins Prevailer staff",
+   "slug": "custer-county-chronicle-robin-martinez-joins-prevailer-staff",
+   "published": "2026-11-04",
+   "byline": "",
+   "description": "",
+   "record_type": "news",
+   "source_label": "Custer County Chronicle",
+   "kind": "news",
+   "source": "custer_county_chronicle",
+   "id": "e4563f25a5f3",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "url": "https://custercountychronicle.com/content/council-establishes-gmp-contract-sewer",
+   "title": "Council establishes GMP contract for sewer",
+   "slug": "custer-county-chronicle-council-establishes-gmp-contract-for-sewer",
+   "published": "2026-11-04",
+   "byline": "",
+   "description": "",
+   "record_type": "news",
+   "source_label": "Custer County Chronicle",
+   "kind": "news",
+   "source": "custer_county_chronicle",
+   "id": "c5396bf63be2",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "url": "https://custercountychronicle.com/content/city-poised-tackle-major-projects-budget",
+   "title": "City poised to tackle major projects with budget",
+   "slug": "custer-county-chronicle-city-poised-to-tackle-major-projects-with-budget",
+   "published": "2026-11-04",
+   "byline": "",
+   "description": "",
+   "record_type": "news",
+   "source_label": "Custer County Chronicle",
+   "kind": "news",
+   "source": "custer_county_chronicle",
+   "id": "8594ac7dc61c",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-04"
   }
  ]
 }

@@ -3,7 +3,7 @@
  "name": "Killian's",
  "kind": "beer",
  "url": "https://untappd.com",
- "fetched_at": "2026-11-04T01:35:23-07:00",
+ "fetched_at": "2026-11-04T12:48:46-07:00",
  "count": 17,
  "records": [
   {
@@ -14,7 +14,7 @@
    "abv": "9%",
    "ibu": "",
    "brewery": "Outer Range Brewing Co.",
-   "rating": "4.25",
+   "rating": "4.26",
    "image_url": "https://labels.untappd.com/6560039",
    "record_type": "beer",
    "source_label": "Killian's",

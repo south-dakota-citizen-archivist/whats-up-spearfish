@@ -3,8 +3,8 @@
  "name": "Spearfish HS Sports",
  "kind": "event",
  "url": "https://gobound.com/sd/schools/spearfish",
- "fetched_at": "2026-11-04T01:35:58-07:00",
- "count": 417,
+ "fetched_at": "2026-11-04T12:49:41-07:00",
+ "count": 418,
  "records": [
   {
    "uid": "h20260929012546460cce18b92acfd4e",
@@ -1380,6 +1380,31 @@
    "date": "2026-12-12",
    "event_category": "school sports",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "uid": "h20261104050410542e775473a99e14f",
+   "url": "https://gobound.com/direct/comps/h20261104050410542e775473a99e14f/show",
+   "title": "Girls Wrestling: Harding County Round Robin (Varsity)",
+   "slug": "girls-wrestling-harding-county-round-robin-varsity",
+   "sport": "Girls Wrestling",
+   "level": "Varsity",
+   "sex": "female",
+   "description": "Varsity Girls Wrestling - Harding County Round Robin",
+   "start_dt": "2026-12-15T23:30:00",
+   "end_dt": "2026-12-16T03:30:00",
+   "location": "Harding County School Gymnasium",
+   "status": "CONFIRMED",
+   "record_type": "event",
+   "source_label": "Spearfish HS Sports",
+   "kind": "event",
+   "source": "spearfish_sports",
+   "id": "49bf8a7e74ef",
+   "start": "2026-12-15T16:30:00-07:00",
+   "end": "2026-12-15T20:30:00-07:00",
+   "all_day": false,
+   "date": "2026-12-15",
+   "event_category": "school sports",
+   "_first_seen": "2026-11-04"
   },
   {
    "uid": "h20260527045254217deab008135134c",

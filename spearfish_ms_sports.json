@@ -3,8 +3,8 @@
  "name": "Spearfish MS Sports",
  "kind": "event",
  "url": "https://gobound.com/sd/schools/spearfishmiddleschool",
- "fetched_at": "2026-11-04T01:35:54-07:00",
- "count": 104,
+ "fetched_at": "2026-11-04T12:49:29-07:00",
+ "count": 105,
  "records": [
   {
    "uid": "h2026060505375991345e8af38cf4949",
@@ -105,6 +105,31 @@
    "date": "2026-11-05",
    "event_category": "school sports",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "uid": "h20261104024427457ecb6eb67ced742",
+   "url": "https://gobound.com/direct/comps/h20261104024427457ecb6eb67ced742/show",
+   "title": "Boys Basketball: Spearfish MS vs Stagebarn MS (7th Grade)",
+   "slug": "boys-basketball-spearfish-ms-vs-stagebarn-ms-7th-grade",
+   "sport": "Boys Basketball",
+   "level": "7th Grade",
+   "sex": "male",
+   "description": "7th Grade Boys Basketball - Spearfish MS vs Stagebarn MS",
+   "start_dt": "2026-11-05T23:00:00",
+   "end_dt": "2026-11-06T01:00:00",
+   "location": "",
+   "status": "CONFIRMED",
+   "record_type": "event",
+   "source_label": "Spearfish MS Sports",
+   "kind": "event",
+   "source": "spearfish_ms_sports",
+   "id": "8427666cd073",
+   "start": "2026-11-05T16:00:00-07:00",
+   "end": "2026-11-05T18:00:00-07:00",
+   "all_day": false,
+   "date": "2026-11-05",
+   "event_category": "school sports",
+   "_first_seen": "2026-11-04"
   },
   {
    "uid": "h2026033008503781841fdd28c67a544",

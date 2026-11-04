@@ -3,7 +3,7 @@
  "name": "eBird recent sightings",
  "kind": "sighting",
  "url": "https://ebird.org/region/US-SD-081",
- "fetched_at": "2026-11-04T01:35:55-07:00",
+ "fetched_at": "2026-11-04T12:49:14-07:00",
  "count": 50,
  "records": [
   {
@@ -1015,30 +1015,6 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "obs_key": "S407035251:ferhaw",
-   "title": "Ferruginous Hawk",
-   "url": "https://ebird.org/checklist/S407035251",
-   "species_code": "ferhaw",
-   "common_name": "Ferruginous Hawk",
-   "scientific_name": "Buteo regalis",
-   "observed_on": "2026-10-31 17:17",
-   "count": 1,
-   "location_name": "I-90 E, Sundance US-WY 44.43864, -104.29419",
-   "lat": 44.438638,
-   "lng": -104.294191,
-   "location_id": "L79217001",
-   "checklist_id": "S407035251",
-   "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/131172059/square.jpg",
-   "kind": "sighting",
-   "record_type": "sighting",
-   "source": "ebird",
-   "source_label": "eBird recent sightings",
-   "id": "c9deda96dbde",
-   "published": "2026-10-31T17:17:00-06:00",
-   "date": "2026-10-31",
-   "_first_seen": "2026-11-01"
-  },
-  {
    "obs_key": "S407570163:mallar3",
    "title": "Mallard",
    "url": "https://ebird.org/checklist/S407570163",
@@ -1205,6 +1181,30 @@
    "published": "2026-11-02T12:24:00-07:00",
    "date": "2026-11-02",
    "_first_seen": "2026-11-03"
+  },
+  {
+   "obs_key": "S407973474:ferhaw",
+   "title": "Ferruginous Hawk",
+   "url": "https://ebird.org/checklist/S407973474",
+   "species_code": "ferhaw",
+   "common_name": "Ferruginous Hawk",
+   "scientific_name": "Buteo regalis",
+   "observed_on": "2026-11-04 10:49",
+   "count": 1,
+   "location_name": "Hwy 79 (44.798, -103.425)",
+   "lat": 44.7982984,
+   "lng": -103.425492,
+   "location_id": "L79341603",
+   "checklist_id": "S407973474",
+   "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/131172059/square.jpg",
+   "kind": "sighting",
+   "record_type": "sighting",
+   "source": "ebird",
+   "source_label": "eBird recent sightings",
+   "id": "1165475cf470",
+   "published": "2026-11-04T10:49:00-07:00",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-04"
   }
  ]
 }

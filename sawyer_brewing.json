@@ -3,7 +3,7 @@
  "name": "Sawyer Brewing Co.",
  "kind": "beer",
  "url": "https://www.sawyerbrewingco.com/menu",
- "fetched_at": "2026-11-04T01:35:42-07:00",
+ "fetched_at": "2026-11-04T12:49:25-07:00",
  "count": 14,
  "records": [
   {
@@ -372,7 +372,7 @@
    "title": "Night Owl Coffee Stout",
    "slug": "night-owl-coffee-stout",
    "category": "Dark Side",
-   "description": "Dark roasted malts meld with the Night Owl coffee from Sawyer Coffee Lab to create layers of oittersweet chocolate. Full bodied and smooth with a decadent coffee aroma.",
+   "description": "Dark roasted malts meld with the Night Owl coffee from Sawyer Coffee Lab to create layers of dittersweet chocolate. Full bodied and smooth with a decadent coffee aroma.",
    "abv": "7.0%",
    "notes": "",
    "prices": [
