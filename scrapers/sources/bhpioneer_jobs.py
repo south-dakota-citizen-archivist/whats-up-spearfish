@@ -8,6 +8,7 @@ https://www.bhpioneer.com/classifieds/job/
 from __future__ import annotations
 
 import json
+import re
 import time
 
 from bs4 import BeautifulSoup
@@ -25,6 +26,12 @@ _HEADERS = {
     )
 }
 _LIST_URL = BASE_URL + "/classifieds/job/?c%5B0%5D=job&m=56448c72-888d-11e0-8e12-001cc4c002e0&l=10&o={offset}"
+
+
+def tidy_category(tag: str) -> str:
+    """The paper's section tag, readable: 'Fulltime' → 'Full time'; the bare 'Job' says nothing."""
+    tag = re.sub(r"\b(full|part)\s*-?\s*time\b", lambda m: m.group(1).capitalize() + " time", tag, flags=re.I)
+    return "" if tag.strip().lower() in ("job", "jobs") else tag.strip()
 
 
 def _parse_page(html: str) -> list[dict]:
@@ -48,7 +55,7 @@ def _parse_page(html: str) -> list[dict]:
         published = time_el["datetime"] if time_el else ""
 
         category_el = article.select_one(".tnt-section-tag")
-        category = category_el.get_text(strip=True) if category_el else ""
+        category = tidy_category(category_el.get_text(strip=True) if category_el else "")
 
         records.append(
             {

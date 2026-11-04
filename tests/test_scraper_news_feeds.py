@@ -23,3 +23,10 @@ def test_label_and_stable_story_id():
     assert story["source_label"] == "South Dakota News Watch"
     assert story["slug"] == "sd-newswatch-legislature-opens"  # ids from before the rename still match
     assert story["published"] == "2026-11-02"
+
+
+def test_pioneer_job_tags_read_as_words():
+    from scrapers.sources.bhpioneer_jobs import tidy_category
+
+    assert [tidy_category(t) for t in ("Fulltime", "Parttime", "PART-TIME", "Job", "")] == [
+        "Full time", "Part time", "Part time", "", ""]  # fmt: skip
