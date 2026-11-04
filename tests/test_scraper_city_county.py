@@ -140,3 +140,37 @@ def test_bhsu_posting_page_gives_salary_and_closing():
                                                    "closing": "Open until filled"}  # fmt: skip
     assert parse_posting_page(page("11/30/2026", "No"))["closing"] == "2026-11-30"
     assert parse_posting_page("<table></table>") == {}
+
+
+NOTICE = """LAWRENCE COUNTY JOB OPENING NOTICE
+Date: November 11th, 2025
+Job Title: Correctional Officer I (Part-Time)
+Department/Office: Sheriff’s Office
+Closing Date: When Position is Filled
+Start Date: To be set
+Starting Pay: $24.08 to $26.61 DOE
+Work Schedule: Hours will vary, including nights, weekends and holidays.
+Submit Application/ Chief Deputy Patrick D. Johnson
+Résumé to: Lawrence County Sheriff’s Office
+Description of Duties: Processes Inmates, Conducts Work Release Program, Controls
+Inmate Movement, and Provides Routine Medical Care to
+Prisoners.
+Experience/Education: Corrections Experience Desired.
+Lawrence County is an equal opportunity employer."""
+
+
+def test_county_job_notice():
+    from scrapers.sources.lawrence_county_feeds import parse_notice
+
+    notice = parse_notice(NOTICE)
+    assert notice == {
+        "title": "Correctional Officer I (Part-Time)",
+        "department": "Sheriff’s Office",
+        "published": "2025-11-11",
+        "closing": "Open until filled",
+        "salary": "$24.08 to $26.61 DOE",
+        "description": "Processes Inmates, Conducts Work Release Program, Controls Inmate Movement, and Provides "
+        "Routine Medical Care to Prisoners.",
+    }
+    dated = parse_notice(NOTICE.replace("When Position is Filled", "December 1, 2026"))
+    assert dated["closing"] == "2026-12-01"
