@@ -34,11 +34,9 @@ button:disabled, [aria-disabled="true"] { cursor: not-allowed; }
    In the base layer so a component's own focus style (e.g. the search boxes' ring) still wins. */
 @layer base {
   /* Long web addresses and the like wrap instead of pushing the page sideways.
-     Text that wraps is balanced, so no line ends with a stray word or a short fragment
-     ("…on the permits page, / or look up any address there."); text that fits on one
-     line is untouched. Inherited by everything. Browsers balance only the first several
-     lines of a block (Chrome six, Firefox ten), so long text wraps as usual. */
-  body { overflow-wrap: break-word; text-wrap: balance; }
+     Text otherwise wraps only when it runs out of room: no balanced or "pretty" wrapping
+     (both break lines early), and no width caps on text in the templates. */
+  body { overflow-wrap: break-word; }
 
   /* Dropdowns: one chevron everywhere, set in from the border, with room kept for it
      (a select's own classes set only its left padding) */

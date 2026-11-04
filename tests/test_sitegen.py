@@ -587,3 +587,20 @@ def test_state_notices_soonest_deadline_first_and_newest_spills(tmp_path):
     assert [n["title"] for n in ctx["notice_list"]] == ["Sooner", "Later", "No deadline"]
     assert [r["report_no"] for r in ctx["spill_list"]] == ["2026.040", "2025.189"]
     assert [c["title"] for c in ctx["case_list"]] == ["New", "Old"]
+
+
+def test_text_wraps_only_when_it_runs_out_of_room():
+    """No balanced wrapping and no width caps on text: both break lines that would fit."""
+    import re
+    from pathlib import Path
+
+    root = Path(__file__).parent.parent / "site"
+    assert not re.search(r"text-wrap:\s*(balance|pretty)", (root / "static" / "css" / "input.css").read_text())
+    capped_text = re.compile(r'<(?!table|dialog)[a-z0-9]+\b[^>]*\bclass="[^"]*\bmax-w-(?!6xl|none)[^"]*"')
+    found = []
+    for f in (root / "templates").rglob("*.html"):
+        html = f.read_text()
+        found += [f"{f.name}: {tag[:80]}" for tag in capped_text.findall(html)]
+        if re.search(r"\btext-(balance|pretty)\b", html):
+            found.append(f"{f.name}: text-balance/text-pretty")
+    assert found == []
