@@ -54,6 +54,16 @@ button:disabled, [aria-disabled="true"] { cursor: not-allowed; }
   .leaflet-container:focus-visible { outline-offset: -3px; }
 }
 
+/* Links: three kinds, one look each (use these instead of styling a link by hand)
+     link         inside a sentence, or a document in a row: green, always underlined
+     link-action  stands on its own ("See all →", "Data sources"): green and bold, underlined on hover
+     link-title   an item's title in a list (a headline, an event, a job): dark, green and underlined on hover */
+@layer components {
+  .link { @apply text-pine-700 underline underline-offset-2 hover:text-pine-900; }
+  .link-action { @apply font-semibold text-pine-700 hover:underline underline-offset-2; }
+  .link-title { @apply font-medium text-stone-900 hover:text-pine-700 hover:underline underline-offset-2; }
+}
+
 /* Screen readers hear that a link opens a new tab */
 a[target="_blank"]::after {
   content: " (opens in a new tab)";

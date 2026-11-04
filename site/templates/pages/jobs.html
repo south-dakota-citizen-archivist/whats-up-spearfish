@@ -9,7 +9,7 @@
     {% if s.records %}
     <ul class="space-y-2.5 text-sm" data-more="8">
       {% for j in s.records | sort(attribute='published', reverse=true) %}
-      <li>{{ ext(j.url, j.title, 'font-medium hover:text-pine-700 hover:underline') }}
+      <li>{{ ext(j.url, j.title, 'link-title') }}
         <p class="text-xs text-stone-500">{{ j | job_meta(s.label) | together }}</p></li>
       {% endfor %}
     </ul>

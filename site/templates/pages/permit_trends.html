@@ -64,7 +64,7 @@
 {% if t %}
 <div x-data="{ real: false }"
      x-init="real = localStorage.getItem('trends-dollars') === 'adjusted'; $watch('real', v => localStorage.setItem('trends-dollars', v ? 'adjusted' : 'reported'))">
-<nav class="text-sm" aria-label="Breadcrumb"><a href="{{ root }}permits/" class="text-pine-700 hover:underline">Building permits</a> <span aria-hidden="true" class="text-stone-400">/</span> <span class="text-stone-600">Trends</span></nav>
+<nav class="text-sm" aria-label="Breadcrumb"><a href="{{ root }}permits/" class="link">Building permits</a> <span aria-hidden="true" class="text-stone-400">/</span> <span class="text-stone-600">Trends</span></nav>
 <h1 class="mt-1 text-2xl font-extrabold">How Spearfish is building</h1>
 <p class="mt-1 text-stone-600">Every building permit the city has issued since {{ t.first_year }}, year by year, from the city's monthly permit reports.</p>
 
@@ -131,8 +131,8 @@
       <li class="py-2 flex items-baseline gap-3">
         <span class="w-16 shrink-0 text-right font-bold tabular-nums">{{ p.value | money_short }}</span>
         <span class="min-w-0">
-          {% if p.site %}<a href="{{ root }}permits/#site={{ p.site | urlencode }}" class="font-semibold text-pine-700 hover:underline">{{ p.owner }}</a>{% else %}<span class="font-semibold">{{ p.owner }}</span>{% endif %}
-          <span class="block text-stone-600">{{ [p.address, p.type] | together }} • {% if p.report %}<a href="{{ root }}permits/reports/{{ p.report }}.pdf" target="_blank" rel="noopener" class="inline-block text-pine-700 hover:underline">{{ (p.report ~ '-01') | fmt_day('%b %Y') }}</a>{% else %}{{ p.year }}{% endif %}</span>
+          {% if p.site %}<a href="{{ root }}permits/#site={{ p.site | urlencode }}" class="link-action">{{ p.owner }}</a>{% else %}<span class="font-semibold">{{ p.owner }}</span>{% endif %}
+          <span class="block text-stone-600">{{ [p.address, p.type] | together }} • {% if p.report %}<a href="{{ root }}permits/reports/{{ p.report }}.pdf" target="_blank" rel="noopener" class="link inline-block">{{ (p.report ~ '-01') | fmt_day('%b %Y') }}</a>{% else %}{{ p.year }}{% endif %}</span>
         </span>
       </li>
       {% endfor %}

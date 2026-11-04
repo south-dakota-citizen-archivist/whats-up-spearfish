@@ -28,7 +28,7 @@
         <h2 class="text-lg font-bold text-stone-900">{{ title }}</h2>
         {% if sources is not none %}{{ freshness(sources) }}{% endif %}
       </div>
-      {% if more %}<a href="{{ more }}" class="shrink-0 -mr-2 -mt-2 min-w-10 min-h-10 inline-flex items-center justify-center text-sm font-semibold text-pine-700 hover:underline @md:m-0 @md:min-w-0 @md:min-h-0"><span class="sr-only @md:not-sr-only">{{ more_label }}</span><span aria-hidden="true" class="text-lg leading-none @md:text-sm @md:ml-1">→</span></a>{% endif %}
+      {% if more %}<a href="{{ more }}" class="link-action shrink-0 -mr-2 -mt-2 min-w-10 min-h-10 inline-flex items-center justify-center text-sm @md:m-0 @md:min-w-0 @md:min-h-0"><span class="sr-only @md:not-sr-only">{{ more_label }}</span><span aria-hidden="true" class="text-lg leading-none @md:text-sm @md:ml-1">→</span></a>{% endif %}
     </div>
   </div>
   <div class="px-5 py-4">
@@ -41,14 +41,14 @@
 <p class="text-sm text-stone-500 italic">{{ message }}</p>
 {% endmacro %}
 
-{% macro ext(url, text, class='') %}<a href="{{ url }}" class="{{ class or 'text-pine-700 hover:underline' }}" target="_blank" rel="noopener">{{ text }}</a>{% endmacro %}
+{% macro ext(url, text, class='') %}<a href="{{ url }}" class="{{ class or 'link' }}" target="_blank" rel="noopener">{{ text }}</a>{% endmacro %}
 
 {# One line in the unified calendar (server-rendered, e.g. on the home page). #}
 {% macro event_row(e) %}
 <li class="py-2.5 flex gap-3">
   <span class="w-[7.5rem] sm:w-[8.5rem] shrink-0 whitespace-nowrap text-xs sm:text-sm font-semibold text-stone-700 tabular-nums">{{ e.time or '' }}</span>
   <div class="min-w-0">
-    <a href="{{ e.url }}" class="font-medium text-stone-900 hover:text-pine-700 hover:underline" target="_blank" rel="noopener">{{ e.title }}</a>
+    <a href="{{ e.url }}" class="link-title" target="_blank" rel="noopener">{{ e.title }}</a>
     <p class="text-xs text-stone-500">
       {{ e.location or e.source_label }}
     </p>

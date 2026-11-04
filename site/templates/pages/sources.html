@@ -23,7 +23,7 @@
       <tr class="block sm:table-row {{ 'border-t border-stone-200' if loop.first else 'sm:border-t sm:border-stone-100' }} align-top pb-2.5 sm:pb-0">
         {% if loop.first %}
         <td rowspan="{{ o.offers | length }}" class="block sm:table-cell px-4 pt-2.5 sm:py-2.5 font-semibold">
-          <a href="{{ o.url }}" target="_blank" rel="noopener" class="hover:text-pine-700 hover:underline">{{ o.name }}</a>
+          <a href="{{ o.url }}" target="_blank" rel="noopener" class="link-title">{{ o.name }}</a>
         </td>
         {% endif %}
         <td class="block sm:table-cell px-4 pt-1 sm:py-2.5 text-stone-700">{{ i.what }}</td>
@@ -41,7 +41,8 @@
   </table>
 </div>
 
-<p class="mt-6 text-sm text-stone-600">
-  <a href="https://github.com/south-dakota-citizen-archivist/whats-up-spearfish/" target="_blank" rel="noopener" class="hover:text-pine-700 hover:underline">Source code on GitHub</a> / Built by Claude & Spearfish resident Cody Winchester (<a href="https://venmo.com/u/cjwinchester" target="_blank" rel="noopener" class="hover:text-pine-700 hover:underline">buy me a coffee</a>!)  
-</p>
+<section class="mt-8 border-t border-stone-300 pt-4 text-sm text-stone-700" aria-labelledby="about-site">
+  <h2 id="about-site" class="font-bold text-stone-900">About this site</h2>
+  <p class="mt-1">Built by Spearfish resident Cody Winchester, with Claude. It's free and has no ads. The code is <a href="https://github.com/south-dakota-citizen-archivist/whats-up-spearfish/" target="_blank" rel="noopener" class="link">on GitHub</a>, and if the site is useful to you, you can <a href="https://venmo.com/u/cjwinchester" target="_blank" rel="noopener" class="link">buy Cody a coffee</a>.</p>
+</section>
 {% endblock %}

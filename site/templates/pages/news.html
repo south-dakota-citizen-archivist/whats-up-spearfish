@@ -54,7 +54,7 @@
     <ul class="bg-white border border-stone-200 divide-y divide-stone-100">
       {% for n in items %}
       <li class="px-4 py-3" x-show="shows({{ n.source_label | tojson | forceescape }})">
-        <a href="{{ n.url }}" target="_blank" rel="noopener" class="font-medium hover:text-pine-700 hover:underline">{{ n.title }}</a>
+        <a href="{{ n.url }}" target="_blank" rel="noopener" class="link-title">{{ n.title }}</a>
         <p class="text-xs text-stone-500">{{ n.source_label }}{% if n.byline %} • {{ n.byline }}{% endif %}</p>
         {% if n.description %}<p class="text-sm text-stone-600 mt-1 line-clamp-2">{{ n.description }}</p>{% endif %}
       </li>

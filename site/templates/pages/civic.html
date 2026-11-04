@@ -6,10 +6,10 @@
   {% for m in items %}
   <li class="py-2.5">
     <p class="text-xs font-semibold text-stone-500 uppercase tracking-wide">{{ m.date | fmt_day('%a, %b %-d') }} • {{ m.body }}</p>
-    {{ ext(m.url, m.name, 'font-medium hover:text-pine-700 hover:underline') }}
+    {{ ext(m.url, m.name, 'link-title') }}
     <span class="text-sm">
-      {% for d in m.docs %}{{ ext(d.url, d.label, 'inline-block whitespace-nowrap py-1 text-pine-700 hover:underline ml-2') }}{% endfor %}
-      {% if m.video %}{{ ext(m.video, 'Video', 'inline-block whitespace-nowrap py-1 text-pine-700 hover:underline ml-2') }}{% endif %}
+      {% for d in m.docs %}{{ ext(d.url, d.label, 'link inline-block whitespace-nowrap py-1 ml-2') }}{% endfor %}
+      {% if m.video %}{{ ext(m.video, 'Video', 'link inline-block whitespace-nowrap py-1 ml-2') }}{% endif %}
     </span>
   </li>
   {% endfor %}
@@ -61,14 +61,14 @@
       {% endfor %}
     </ul>
     {% else %}{{ empty("No recent permits.") }}{% endif %}
-    <p class="mt-3 text-sm font-semibold"><a href="{{ root }}permits/trends/" class="text-pine-700 hover:underline">How Spearfish is building, year by year<span aria-hidden="true"> →</span></a></p>
+    <p class="mt-3 text-sm"><a href="{{ root }}permits/trends/" class="link-action">How Spearfish is building, year by year<span aria-hidden="true"> →</span></a></p>
   {% endcall %}
 
   {% call card("Open city bids", "bids", sources=bids, more=bids.url, more_label="Bids") %}
     {% if bids.records %}
     <ul class="space-y-2 text-sm">
       {% for b in bids.records %}
-      <li>{{ ext(b.url, b.title, 'font-medium hover:text-pine-700 hover:underline') }}
+      <li>{{ ext(b.url, b.title, 'link-title') }}
         {% if b.closes %}<p class="text-xs text-stone-500">Closes {{ b.closes }}</p>{% endif %}</li>
       {% endfor %}
     </ul>
@@ -79,7 +79,7 @@
     {% if notice_list %}
     <ul class="space-y-2.5 text-sm" data-more="8">
       {% for n in notice_list %}
-      <li>{{ ext(n.url, n.title, 'font-medium hover:text-pine-700 hover:underline') }}
+      <li>{{ ext(n.url, n.title, 'link-title') }}
         <p class="text-xs text-stone-500">{% if n.deadline_iso %}<span class="font-semibold text-stone-700">Comments due {{ n.deadline_iso | fmt_day('%b %-d') }}</span> • {% endif %}{{ n.notice_type }}{% if n.location %} • {{ n.location }}{% endif %}</p></li>
       {% endfor %}
     </ul>
@@ -92,10 +92,10 @@
     <ul class="divide-y divide-stone-100 text-sm" data-more="4" data-more-noun="cases">
       {% for c in case_list %}
       <li class="py-2.5">
-        {{ ext(c.url, c.title, 'font-medium hover:text-pine-700 hover:underline') }}
+        {{ ext(c.url, c.title, 'link-title') }}
         <p class="text-xs text-stone-500">{% if c.area %}{{ c.area }} • {% endif %}{{ c.permit_type }} • {{ c.board }}</p>
         {% if c.documents %}{% set d = c.documents[0] %}
-        <p class="text-xs mt-1">Latest filing{% if d.added %}, {{ d.added | fmt_day('%b %-d') }}{% endif %}: {{ ext(d.url, d.title, 'text-pine-700 hover:underline') }}</p>
+        <p class="text-xs mt-1">Latest filing{% if d.added %}, {{ d.added | fmt_day('%b %-d') }}{% endif %}: {{ ext(d.url, d.title, 'link') }}</p>
         {% endif %}
       </li>
       {% endfor %}
@@ -109,7 +109,7 @@
     <ul class="divide-y divide-stone-100 text-sm" data-more="6" data-more-noun="reports">
       {% for r in spill_list %}
       <li class="py-2">
-        {{ ext(r.url, r.title, 'font-medium hover:text-pine-700 hover:underline') }}
+        {{ ext(r.url, r.title, 'link-title') }}
         <p class="text-xs text-stone-500">{{ r.material or r.category or 'Unknown material' }}{% if r.spill_source %} • {{ r.spill_source }}{% endif %} • {{ r.city or r.county ~ ' County' }} • {% if r.status == 'Open' %}<span class="font-semibold text-stone-700">Open</span>{% else %}{{ r.status }}{% endif %}</p>
       </li>
       {% endfor %}
@@ -121,7 +121,7 @@
     {% if press %}
     <ul class="grid md:grid-cols-2 gap-x-6 gap-y-3 text-sm">
       {% for p in press %}
-      <li>{{ ext(p.url, p.title, 'font-medium hover:text-pine-700 hover:underline') }}
+      <li>{{ ext(p.url, p.title, 'link-title') }}
         <p class="text-xs text-stone-500">{{ p.source_label }} • {{ p.published | fmt_day }}</p></li>
       {% endfor %}
     </ul>

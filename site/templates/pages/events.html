@@ -16,9 +16,9 @@
     <div class="absolute right-0 z-20 mt-2 w-72 bg-white border border-stone-300 shadow-lg p-4 space-y-2">
       <p class="text-stone-600">Your calendar will keep itself up to date with everything on this page.</p>
       <ul class="space-y-1.5 font-semibold">
-        <li><a href="https://calendar.google.com/calendar/render?cid={{ webcal | urlencode }}" target="_blank" rel="noopener" class="text-pine-700 hover:underline">Google Calendar</a></li>
-        <li><a href="{{ webcal }}" class="text-pine-700 hover:underline">Apple Calendar</a></li>
-        <li><a href="https://outlook.live.com/calendar/0/addfromweb?url={{ feed | urlencode }}&amp;name={{ "What's up, Spearfish?" | urlencode }}" target="_blank" rel="noopener" class="text-pine-700 hover:underline">Outlook</a></li>
+        <li><a href="https://calendar.google.com/calendar/render?cid={{ webcal | urlencode }}" target="_blank" rel="noopener" class="link">Google Calendar</a></li>
+        <li><a href="{{ webcal }}" class="link">Apple Calendar</a></li>
+        <li><a href="https://outlook.live.com/calendar/0/addfromweb?url={{ feed | urlencode }}&amp;name={{ "What's up, Spearfish?" | urlencode }}" target="_blank" rel="noopener" class="link">Outlook</a></li>
       </ul>
       <p class="text-xs text-stone-500">Another app? Copy this link into its “subscribe” or “add calendar from web” option:</p>
       <input type="text" readonly value="{{ feed }}" onclick="this.select()" class="w-full border border-stone-300 px-2 py-1 text-xs text-stone-700">
@@ -75,7 +75,7 @@
                      class="mt-0.5 size-4 shrink-0 accent-pine-700 cursor-pointer">
               <span class="w-[7.5rem] sm:w-[8.5rem] shrink-0 whitespace-nowrap text-xs sm:text-sm font-semibold text-stone-700 tabular-nums" x-text="e.time"></span>
               <div class="min-w-0">
-                <a :href="e.url" target="_blank" rel="noopener" class="font-medium hover:text-pine-700 hover:underline" x-text="e.title"></a>
+                <a :href="e.url" target="_blank" rel="noopener" class="link-title" x-text="e.title"></a>
                 <p class="text-xs text-stone-500">
                   <span x-text="e.location || e.source_label"></span>
                 </p>
@@ -106,7 +106,7 @@
             <div class="min-w-0 flex-1">
               <p class="font-medium leading-snug" x-text="e.title"></p>
               <p class="text-xs text-stone-500"><span x-text="shortDay(e.date)"></span><span x-show="e.time" x-text="' • ' + e.time"></span></p>
-              <p class="mt-0.5 text-xs"><a :href="googleLink(e)" target="_blank" rel="noopener" class="font-semibold text-pine-700 hover:underline">Add to Google Calendar</a></p>
+              <p class="mt-0.5 text-xs"><a :href="googleLink(e)" target="_blank" rel="noopener" class="link-action">Add to Google Calendar</a></p>
             </div>
             <button type="button" @click="pick(e)" class="shrink-0 -mr-1 px-2 py-1 text-stone-500 hover:text-red-700" :aria-label="'Remove ' + e.title">✕</button>
           </li>
@@ -129,5 +129,5 @@
   </div>
 </div>
 
-<noscript><p class="mt-4">The calendar needs JavaScript turned on in your browser. You can also <a href="{{ root }}calendar.ics" class="text-pine-700 underline">subscribe to every event</a> in your own calendar.</p></noscript>
+<noscript><p class="mt-4">The calendar needs JavaScript turned on in your browser. You can also <a href="{{ root }}calendar.ics" class="link">subscribe to every event</a> in your own calendar.</p></noscript>
 {% endblock %}

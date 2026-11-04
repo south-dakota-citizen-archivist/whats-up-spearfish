@@ -22,7 +22,7 @@
             <span x-text="selected.r.length + (selected.r.length === 1 ? ' record' : ' records')"></span><template x-if="selected.own"><span x-text="' • Owner: ' + selected.own"></span></template><template x-if="selected.ac"><span x-text="' • ' + selected.ac + (selected.ac === 1 ? ' acre' : ' acres')"></span></template>
           </p>
           <p class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm font-semibold">
-            <template x-if="selected.pid"><a :href="parcelUrl(selected)" target="_blank" rel="noopener" class="text-pine-700 underline">County parcel record</a></template>
+            <template x-if="selected.pid"><a :href="parcelUrl(selected)" target="_blank" rel="noopener" class="link">County parcel record</a></template>
             {% if not in_dialog %}<button type="button" x-show="selected.lat != null" @click="showView('map'); focusMap(selected)" class="lg:hidden text-pine-700 underline">Show on map</button>{% endif %}
           </p>
 
@@ -40,9 +40,9 @@
                 <p x-show="facts(r)" class="text-sm text-stone-700" x-text="facts(r)"></p>
                 <template x-if="r.src === 'pc'">
                   <p class="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-sm">
-                    <template x-for="d in r.docs || []"><a :href="d[1]" target="_blank" rel="noopener" class="whitespace-nowrap text-pine-700 underline" x-text="d[0]"></a></template>
-                    <a x-show="r.u" :href="r.u" target="_blank" rel="noopener" class="whitespace-nowrap text-pine-700 underline">Staff report</a>
-                    <a x-show="!(r.docs || []).length" :href="r.mu" target="_blank" rel="noopener" class="whitespace-nowrap text-pine-700 underline">Meeting documents</a>
+                    <template x-for="d in r.docs || []"><a :href="d[1]" target="_blank" rel="noopener" class="link whitespace-nowrap" x-text="d[0]"></a></template>
+                    <a x-show="r.u" :href="r.u" target="_blank" rel="noopener" class="link whitespace-nowrap">Staff report</a>
+                    <a x-show="!(r.docs || []).length" :href="r.mu" target="_blank" rel="noopener" class="link whitespace-nowrap">Meeting documents</a>
                   </p>
                 </template>
                 <template x-if="details(r).length || (r.att || []).length || (r.src === 'permit' && r.u)">
@@ -52,8 +52,8 @@
                       <template x-for="[k, v] in details(r)"><div class="contents"><dt class="text-stone-600" x-text="k"></dt><dd x-text="v"></dd></div></template>
                     </dl>
                     <p class="mt-1 flex flex-wrap gap-x-3 gap-y-1">
-                      <template x-for="a in r.att || []"><a :href="a[1]" target="_blank" rel="noopener" class="text-pine-700 underline" x-text="a[0]"></a></template>
-                      <a x-show="r.src === 'permit' && r.u" :href="r.u" target="_blank" rel="noopener" class="text-pine-700 underline" x-text="day((r.d || '').slice(0, 7)) + ' permit report (PDF)'"></a>
+                      <template x-for="a in r.att || []"><a :href="a[1]" target="_blank" rel="noopener" class="link" x-text="a[0]"></a></template>
+                      <a x-show="r.src === 'permit' && r.u" :href="r.u" target="_blank" rel="noopener" class="link" x-text="day((r.d || '').slice(0, 7)) + ' permit report (PDF)'"></a>
                     </p>
                   </details>
                 </template>
@@ -65,7 +65,7 @@
 {% block content %}
 <div x-data="permits('{{ root }}permits/recent.json', '{{ root }}permits/sites.json', '{{ latest_report[:7] }}', '{{ root }}permits/parcels.json', '{{ beacon }}')">
   <h1 class="text-2xl font-extrabold">Building permits</h1>
-  <p class="mt-1 text-stone-600">See what's going up around Spearfish. <a href="{{ root }}permits/trends/" class="inline-block font-semibold text-pine-700 hover:underline">Trends since 2013<span aria-hidden="true"> →</span></a></p>
+  <p class="mt-1 text-stone-600">See what's going up around Spearfish. <a href="{{ root }}permits/trends/" class="link-action inline-block">Trends since 2013<span aria-hidden="true"> →</span></a></p>
 
   {# ── search and filters: the same for the list and the map ── #}
   <div class="mt-4 space-y-3">
