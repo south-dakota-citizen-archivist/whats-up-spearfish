@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-04T01:26:24-07:00",
- "count": 17,
+ "fetched_at": "2026-11-04T01:35:47-07:00",
+ "count": 18,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -245,6 +245,22 @@
    "id": "c8c0ea7dadfb",
    "date": "2026-11-03",
    "_first_seen": "2026-11-03"
+  },
+  {
+   "url": "https://www.sdpb.org/elections/2026-11-04/for-both-gop-dems-it-was-the-best-of-nights-worst-of-nights",
+   "title": "For both GOP & Dems, it was the best of nights, worst of nights",
+   "slug": "sdpb-for-both-gop-dems-it-was-the-best-of-nights-worst-of-nights",
+   "published": "2026-11-04",
+   "byline": "By Lori Walsh, C.J. Keene, Jackson Dircks, Jackie Hendry",
+   "description": "South Dakota Republicans won big at home but mourned a shifting national landscape. State Democrats won little at home, but danced joyfully at a blue wave that swept the U.S. SDPB reporters explore the tale of two parties.",
+   "image_url": "https://npr.brightspotcdn.com/52/a4/27ad8392458d90c0af200f3647e9/website-photo-1.png",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "26c95e766b42",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-04"
   },
   {
    "url": "https://www.sdpb.org/elections/2026-11-04/while-sd-democrats-dont-win-statewide-candidates-draw-hope-from-other-states-flipping",
