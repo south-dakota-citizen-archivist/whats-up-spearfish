@@ -171,7 +171,7 @@
             <div class="relative w-full aspect-[4/3] bg-stone-200">
               <img src="{{ p.thumb }}" alt="{{ p.species }}{% if p.road %} on {{ p.road }}{% endif %}, {{ p.when }}" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:opacity-90">
             </div>
-            <p class="mt-1 flex items-center gap-1.5 text-sm font-medium group-hover:text-pine-700">{{ animal(p.icon, 'w-5 h-4 text-stone-500') }}{{ p.species }}</p>
+            <p class="mt-1 text-sm font-medium group-hover:text-pine-700">{{ p.species }}</p>
             <p class="text-xs text-stone-500">{{ [p.date | fmt_day('%b %-d'), p.road] | together }}</p>
           </a>
         </li>
