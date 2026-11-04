@@ -690,7 +690,7 @@ def home(site: Site, events: list[dict], today: date) -> dict:
         "bids": site.get("public_bids").records,
         "recent_permits": recent_permit_count(site, today),
         "plant": plant_of_the_day(site, today),
-        "roadkill": roadkill_context(site, today, photos=4, per_species=0),
+        "roadkill": roadkill_context(site, today, photos=4),
         "alerts": alerts,
     }
 
@@ -814,10 +814,10 @@ def road_name(highway: str) -> str:
     return h
 
 
-def roadkill_context(site: Site, today: date, photos: int = 48, per_species: int = 12) -> dict:
+def roadkill_context(site: Site, today: date, photos: int | None = None) -> dict:
     """
-    The counts, and a gallery: the latest `photos` pickups, plus each species' latest `per_species`
-    (so filtering to a rarer animal, elk or pronghorn, still has photos to show), newest first.
+    The past 30 days: counts by species, and a gallery of that month's photos, newest first (the
+    species buttons filter it, so the photos match the counts). `photos` caps the gallery (home's teaser).
     """
     src = site.get("roadkill")
     data = src.data or {}
@@ -828,12 +828,10 @@ def roadkill_context(site: Site, today: date, photos: int = 48, per_species: int
     week_ago = (today - timedelta(days=7)).isoformat()
     past_month = [r for r in recs if r["date"] > month_ago]
     by_species = Counter(r["species"] for r in past_month)
-    gallery, taken = [], Counter()
-    for r in recs:
+    gallery = []
+    for r in past_month:
         photo = next((ph for ph in r.get("photos") or [] if (ph.get("type") or "image/").startswith("image/")), None)
         if not photo:
-            continue
-        if len(gallery) >= photos and taken[r["species"]] >= per_species:
             continue
         url = f"{layer}/{r['objectid']}/attachments/{photo['id']}"
         gallery.append({
@@ -850,8 +848,7 @@ def roadkill_context(site: Site, today: date, photos: int = 48, per_species: int
             "map": f"https://www.openstreetmap.org/?mlat={r['lat']}&mlon={r['lon']}#map=14/{r['lat']}/{r['lon']}"
             if r.get("lat") and r.get("lon") else "",
         })  # fmt: skip
-        taken[r["species"]] += 1
-        if len(gallery) >= photos and (not per_species or all(taken[s] >= per_species for s in by_species)):
+        if photos and len(gallery) >= photos:
             break
     return {
         "source": src,

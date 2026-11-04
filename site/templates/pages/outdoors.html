@@ -175,17 +175,16 @@
     {# a species to show only its photos; again (or "Show all") for all of them #}
     <div x-data="photoGallery()" data-limit="6" data-limit-lg="12">
     {% if roadkill.species %}
-    <ul class="mt-2 mb-4 flex flex-wrap gap-x-5 gap-y-1.5 text-sm text-stone-700">
+    <ul class="mt-3 mb-4 flex flex-wrap gap-2 text-sm text-stone-700" aria-label="Show photos of">
       {% for s in roadkill.species %}
       <li><button type="button" @click="setFilter({{ s.key | tojson | forceescape }})" :aria-pressed="(filter === {{ s.key | tojson | forceescape }}).toString()"
-                  :class="filter && filter !== {{ s.key | tojson | forceescape }} ? 'opacity-50' : ''"
-                  class="group flex items-center gap-1.5 hover:text-pine-700 aria-pressed:text-stone-900">{{ animal(s.icon, 'w-6 h-5 text-stone-500 group-hover:text-pine-700') }}<span class="underline-offset-4 decoration-2 decoration-pine-600 group-aria-pressed:underline"><span class="font-bold tabular-nums">{{ s.count | intcomma }}</span> {{ s.label }}</span></button></li>
+                  class="flex items-center gap-1.5 border border-stone-300 bg-white px-2.5 py-1 hover:border-pine-600 hover:text-pine-800 aria-pressed:border-pine-700 aria-pressed:bg-pine-700 aria-pressed:text-white">{{ animal(s.icon, 'w-6 h-5') }}<span><span class="font-bold tabular-nums">{{ s.count | intcomma }}</span> {{ s.label }}</span></button></li>
       {% endfor %}
     </ul>
     {% endif %}
     {% if roadkill.photos %}
       <script type="application/json" x-ref="photos">{{ roadkill.photos | tojson }}</script>
-      <p x-show="filter" x-cloak class="mb-2 text-sm text-stone-600">Latest photos of {% for s in roadkill.species %}<span x-show="filter === {{ s.key | tojson | forceescape }}">{{ s.name }}</span>{% endfor %} • <button type="button" @click="setFilter('')" class="link">Show all</button></p>
+      <p x-show="filter" x-cloak class="mb-2 text-sm text-stone-600">Showing {% for s in roadkill.species %}<span x-show="filter === {{ s.key | tojson | forceescape }}">{{ s.name }}</span>{% endfor %} • <button type="button" @click="setFilter('')" class="link">Show all</button></p>
       <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
         {% for p in roadkill.photos %}
         <li x-show="shows({{ loop.index0 }})">
