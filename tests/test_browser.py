@@ -75,6 +75,10 @@ def _permit(no, address, date, kind="Res-Deck", lat=44.49, lon=-103.86):
         "lat": lat,
         "lon": lon,
         "url": f"https://example.com/permits/{date[:7]}.pdf",
+        "year": date[:4],
+        "month": date[5:7],
+        "report": date[:7],
+        "category": "new_construction" if "New" in kind else "alterations",
     }
 
 
@@ -615,7 +619,8 @@ def test_permits_swiping_the_pop_up_never_moves_the_map(browser, site_url):
         swipe(y0, y1)
     assert page.evaluate(center) == before and page.evaluate("scrollY") == 0
     page.get_by_role("button", name="Close").click()
-    assert page.evaluate("document.querySelector('.permits-map').leaflet.dragging.enabled()")
+    # the dialog's close event arrives a moment after the click; the map is draggable again once it has
+    page.wait_for_function("document.querySelector('.permits-map').leaflet.dragging.enabled()", timeout=2000)
     ctx.close()
 
 
@@ -625,3 +630,37 @@ def test_permits_a_click_on_large_screens_shows_the_history_beside_the_map(open_
     page.mouse.click(place["x"] + 6, place["y"])
     page.wait_for_selector("#place-name")
     assert page.locator("dialog[open]").count() == 0
+
+
+def test_trends_dollars_switch_between_reported_and_adjusted(open_page):
+    page = open_page("permits/trends/")
+    # the 2015 permit: $12,000 then is more in today's dollars
+    row_2015 = page.locator("tbody tr", has=page.locator("th", has_text="2015"))
+    reported = row_2015.locator("td").nth(4).inner_text()
+    assert reported == "$12K"
+    adjusted_button = page.get_by_role("button", name="Adjusted for inflation")
+    assert adjusted_button.get_attribute("aria-pressed") == "false"
+    adjusted_button.click()
+    page.wait_for_timeout(100)
+    assert adjusted_button.get_attribute("aria-pressed") == "true"
+    assert page.get_by_text("dollars, using the Consumer Price Index").is_visible()
+    assert row_2015.locator("td").nth(4).inner_text() not in ("", reported)
+    # every reported-dollars figure is hidden: the tiles, charts, table and biggest projects switch together
+    hidden = page.evaluate(
+        "[...document.querySelectorAll('main [x-show=\"!real\"]')].every(el => getComputedStyle(el).display === 'none')"
+    )
+    assert hidden
+    page.reload()
+    page.wait_for_timeout(300)
+    assert page.get_by_role("button", name="Adjusted for inflation").get_attribute("aria-pressed") == "true"
+    assert page.errors == []
+
+
+def test_trends_biggest_projects_open_their_place_on_the_permits_page(open_page):
+    page = open_page("permits/trends/")
+    biggest = page.locator("section", has=page.get_by_role("heading", name="The biggest projects since 2015"))
+    link = biggest.locator("ol:visible a[href*='#site=']").first
+    link.click()
+    page.wait_for_selector("#place-name", timeout=10000)
+    assert page.locator("#place-name").inner_text() in ("440 Heritage Drive", "12 Old Mill Road")
+    assert page.errors == []

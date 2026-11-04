@@ -33,8 +33,12 @@ button:disabled, [aria-disabled="true"] { cursor: not-allowed; }
 /* Keyboard focus: a thick outline that shows on light pages and the dark green header alike.
    In the base layer so a component's own focus style (e.g. the search boxes' ring) still wins. */
 @layer base {
-  /* Long web addresses and the like wrap instead of pushing the page sideways */
-  body { overflow-wrap: break-word; }
+  /* Long web addresses and the like wrap instead of pushing the page sideways.
+     Text that wraps is balanced, so no line ends with a stray word or a short fragment
+     ("…on the permits page, / or look up any address there."); text that fits on one
+     line is untouched. Inherited by everything. Browsers balance only the first several
+     lines of a block (Chrome six, Firefox ten), so long text wraps as usual. */
+  body { overflow-wrap: break-word; text-wrap: balance; }
 
   /* Dropdowns: one chevron everywhere, set in from the border, with room kept for it
      (a select's own classes set only its left padding) */

@@ -33,7 +33,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup
 
 from scrapers import dates
-from sitegen import feeds, pages
+from sitegen import feeds, pages, trends
 from sitegen.data import Site
 from sitegen.events import CATEGORY_LABELS, fmt_clock, unified_events
 from sitegen.images import thumb_attrs
@@ -67,6 +67,7 @@ PAGES = [
     ("on-tap/", "pages/on_tap.html", "On tap", pages.on_tap),
     ("civic/", "pages/civic.html", "Civic", pages.civic),
     ("permits/", "pages/permits.html", "Building permits and planning records", pages.permits_page),
+    ("permits/trends/", "pages/permit_trends.html", "How Spearfish is building", pages.permit_trends_page),
     ("news/", "pages/news.html", "News", pages.news),
     ("jobs/", "pages/jobs.html", "Jobs", pages.jobs),
     ("community/", "pages/community.html", "Community", pages.community),
@@ -153,6 +154,15 @@ def intcomma(value) -> str:
         return str(value or "")
 
 
+def together(parts, sep: str = " · ") -> Markup:
+    """
+    A line of pieces ("Police · posted Oct 16 · closes Nov 30"), each kept whole when
+    the line wraps, so it breaks between pieces rather than inside one.
+    """
+    piece = Markup('<span class="inline-block">{}</span>')
+    return Markup(sep).join(piece.format(p) for p in parts if p)
+
+
 def make_env() -> Environment:
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATES)),
@@ -167,6 +177,8 @@ def make_env() -> Environment:
         day_heading=day_heading,
         domain=domain,
         intcomma=intcomma,
+        together=together,
+        money_short=trends.money_short,
         permit_type=pages.friendly_type,
     )
     env.globals.update(NAV=NAV, CATEGORY_LABELS=CATEGORY_LABELS, SITE_URL=SITE_URL, thumb_attrs=thumb_attrs)

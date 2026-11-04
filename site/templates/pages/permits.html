@@ -65,7 +65,7 @@
 {% block content %}
 <div x-data="permits('{{ root }}permits/recent.json', '{{ root }}permits/sites.json', '{{ latest_report[:7] }}', '{{ root }}permits/parcels.json', '{{ beacon }}')">
   <h1 class="text-2xl font-extrabold">Building permits and planning records</h1>
-  <p class="mt-1 text-stone-600">See what's been built, or asked to be built, at any address in and around Spearfish.</p>
+  <p class="mt-1 text-stone-600">See what's been built, or asked to be built, at any address in and around Spearfish. <a href="{{ root }}permits/trends/" class="inline-block font-semibold text-pine-700 hover:underline">Trends since 2013<span aria-hidden="true"> →</span></a></p>
 
   {# ── search and filters: the same for the list and the map ── #}
   <div class="mt-4 space-y-3">

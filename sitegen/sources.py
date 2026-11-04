@@ -109,6 +109,11 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
                 ),
             ),
             Org(
+                "U.S. Bureau of Labor Statistics",
+                "https://www.bls.gov/cpi/",
+                (_i("Consumer Price Index", note="To adjust building values for inflation"),),
+            ),
+            Org(
                 "Public meeting video",
                 "https://www.youtube.com/@spearfishschooldistrictliv3794/streams",
                 (_i("Recordings of city, county and school board meetings", "public_meetings_youtube"),),

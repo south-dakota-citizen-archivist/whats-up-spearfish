@@ -12,7 +12,7 @@
     {% if creek.current %}
     <p class="flex flex-wrap items-baseline gap-x-2"><span class="text-4xl font-extrabold tabular-nums">{{ creek.current.cfs | intcomma }}</span><span class="text-stone-600">cubic feet per second</span>
       {% if creek.current.ft %}<span class="text-stone-500 text-sm basis-full">Water level {{ creek.current.ft }} ft</span>{% endif %}</p>
-    <p class="text-sm text-stone-500">Measured {{ creek.current.time | fmt_time }} {{ creek.current.time | fmt_day }}{% if creek.median30 %} · typical for the past month: {{ creek.median30 | intcomma }}{% endif %}</p>
+    <p class="text-sm text-stone-500">{{ ['Measured ' ~ (creek.current.time | fmt_time) ~ ' ' ~ (creek.current.time | fmt_day), 'typical for the past month: ' ~ (creek.median30 | intcomma) if creek.median30 else ''] | together }}</p>
     {% if creek.daily or creek.series %}
     <div x-data="creekChart()" class="mt-4">
       <script type="application/json" x-ref="data">{{ {"series7d": creek.series, "daily30": creek.daily} | tojson }}</script>

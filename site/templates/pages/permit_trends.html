@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+{% from "macros.html" import card, empty %}
+
+{#
+  Year-by-year building in Spearfish, from the city's monthly permit reports.
+  The bar charts are plain HTML so their labels stay readable on a phone: each
+  bar is a column whose height is its share of the axis. The highest bar and the
+  latest are labeled; the rest show their value on hover or keyboard focus, and
+  every number is in the table at the bottom.
+#}
+{% macro bar_chart(chart, what, note='') %}
+<figure>
+  <div class="relative h-52 ml-12" role="img" aria-label="{{ what }}, {{ chart.bars[0].year }} to {{ chart.bars[-1].year }}. The numbers are in the table at the bottom of the page.">
+    {% for t in chart.ticks %}
+    <div aria-hidden="true" class="absolute inset-x-0 border-t {{ 'border-stone-400' if t.pct == 0 else 'border-stone-200' }}" style="bottom: {{ t.pct }}%">
+      <span class="absolute -left-12 w-11 -translate-y-1/2 pr-1 text-right text-[11px] leading-none text-stone-500 tabular-nums whitespace-nowrap">{{ t.label }}</span>
+    </div>
+    {% endfor %}
+    <ol class="absolute inset-0 grid items-end gap-[2px]" style="grid-template-columns: repeat({{ chart.bars | length }}, minmax(0, 1fr))">
+      {% for b in chart.bars %}
+      <li class="group relative h-full flex flex-col justify-end outline-none" tabindex="0"
+          aria-label="{{ b.year }}{% if b.partial %} ({{ b.months }} months){% endif %}: {{ b.label }}">
+        <span class="{{ '' if b.labeled else 'opacity-0 group-hover:opacity-100 group-focus:opacity-100' }} {{ 'self-end' if loop.last else 'self-start' if loop.first else 'self-center' }} pointer-events-none mb-0.5 text-center text-[11px] font-semibold leading-none text-stone-800 tabular-nums whitespace-nowrap">{{ b.label }}</span>
+        <span class="block w-full {{ 'bar-partial' if b.partial else 'bg-pine-600 group-hover:bg-pine-800 group-focus:bg-pine-800' }}" style="height: {{ b.pct }}%"></span>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+  {# a year label every five years, centered under its bar (and free to run past it) #}
+  <ol aria-hidden="true" class="ml-12 mt-1 grid gap-[2px] text-[11px] text-stone-500 tabular-nums whitespace-nowrap" style="grid-template-columns: repeat({{ chart.bars | length }}, minmax(0, 1fr))">
+    {% for b in chart.bars %}<li class="flex justify-center">{{ b.year if b.year % 5 == 0 else '' }}</li>{% endfor %}
+  </ol>
+  {% if note %}<figcaption class="mt-2 text-xs text-stone-600">{{ note }}</figcaption>{% endif %}
+</figure>
+{% endmacro %}
+
+{% macro change(now, then) %}
+{%- if then -%}
+{%- set pct = ((now - then) / then * 100) | round | int -%}
+<span class="text-stone-600">{{ 'up' if pct > 0 else 'down' if pct < 0 else 'same as' }}{% if pct %} {{ pct | abs }}% from{% endif %}</span>
+{%- endif -%}
+{% endmacro %}
+
+{% block head %}
+<style>
+  /* a year still in progress: lighter, with a stripe, so it doesn't read as a drop */
+  .bar-partial { background: repeating-linear-gradient(135deg, #2f6b4f 0 2px, #dcede3 2px 6px); outline: 1px solid #2f6b4f; outline-offset: -1px; }
+</style>
+{% endblock %}
+
+{# A dollar amount both ways: as reported, and adjusted for inflation (shown when the reader picks it) #}
+{% macro dollars(reported, adjusted) -%}
+<span x-show="!real">{{ reported | money_short }}</span><span x-show="real" x-cloak>{{ adjusted | money_short }}</span>
+{%- endmacro %}
+
+{% block content %}
+{% if t %}
+<div x-data="{ real: false }"
+     x-init="real = localStorage.getItem('trends-dollars') === 'adjusted'; $watch('real', v => localStorage.setItem('trends-dollars', v ? 'adjusted' : 'reported'))">
+<nav class="text-sm" aria-label="Breadcrumb"><a href="{{ root }}permits/" class="text-pine-700 hover:underline">Building permits and planning records</a> <span aria-hidden="true" class="text-stone-400">/</span> <span class="text-stone-600">Trends</span></nav>
+<h1 class="mt-1 text-2xl font-extrabold">How Spearfish is building</h1>
+<p class="mt-1 max-w-2xl text-stone-600">Every building permit the city has issued since {{ t.first_year }}, year by year, from the city's monthly permit reports.</p>
+
+{% if t.dollars_of %}
+{# needs script, so hidden until Alpine starts #}
+<div x-cloak class="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm">
+  <span id="dollars-label" class="text-stone-600">Dollar amounts:</span>
+  <div class="inline-flex border border-pine-700" role="group" aria-labelledby="dollars-label">
+    <button type="button" @click="real = false" :aria-pressed="(!real).toString()"
+            :class="real ? 'bg-white text-pine-700 hover:bg-pine-50' : 'bg-pine-700 text-white'" class="px-3 py-1.5 font-semibold">As reported</button>
+    <button type="button" @click="real = true" :aria-pressed="real.toString()"
+            :class="real ? 'bg-pine-700 text-white' : 'bg-white text-pine-700 hover:bg-pine-50'" class="px-3 py-1.5 font-semibold border-l border-pine-700">Adjusted for inflation</button>
+  </div>
+  <span x-show="real" class="text-stone-600">In {{ t.dollars_of }} dollars, using the Consumer Price Index</span>
+</div>
+{% endif %}
+
+{% if t.ytd %}
+{% set y = t.ytd %}
+<section class="mt-5" aria-labelledby="ytd-heading">
+  <h2 id="ytd-heading" class="text-sm font-semibold uppercase tracking-wide text-stone-600">So far in {{ y.year }} <span class="normal-case font-normal tracking-normal">({{ y.span }})</span></h2>
+  <dl class="mt-2 grid grid-cols-1 sm:grid-cols-3 gap-3">
+    <div class="bg-white border border-stone-200 shadow-sm px-4 py-3">
+      <dt class="text-sm text-stone-600">Permits for new homes</dt>
+      <dd class="text-3xl font-extrabold tabular-nums">{{ y.now.homes }}</dd>
+      <dd class="text-xs">{{ change(y.now.homes, y.then.homes) }} {{ y.then.homes }} in the same months of {{ y.then.year }}</dd>
+    </div>
+    <div class="bg-white border border-stone-200 shadow-sm px-4 py-3">
+      <dt class="text-sm text-stone-600">Value of all construction</dt>
+      <dd class="text-3xl font-extrabold tabular-nums">{{ dollars(y.now.value, y.now.value_real) }}</dd>
+      <dd class="text-xs"><span x-show="!real">{{ change(y.now.value, y.then.value) }}</span><span x-show="real" x-cloak>{{ change(y.now.value_real, y.then.value_real) }}</span> {{ dollars(y.then.value, y.then.value_real) }} in the same months of {{ y.then.year }}</dd>
+    </div>
+    <div class="bg-white border border-stone-200 shadow-sm px-4 py-3">
+      <dt class="text-sm text-stone-600">All building permits</dt>
+      <dd class="text-3xl font-extrabold tabular-nums">{{ y.now.permits }}</dd>
+      <dd class="text-xs">{{ change(y.now.permits, y.then.permits) }} {{ y.then.permits }} in the same months of {{ y.then.year }}</dd>
+    </div>
+  </dl>
+</section>
+{% endif %}
+
+<div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-5">
+  {% call card("Permits for new homes") %}
+    {{ bar_chart(t.homes_chart, "Permits for new homes by year",
+       "One permit per building: a duplex or a row of townhomes can be one permit. Includes homes just outside city limits that the city permits." ~ (" The striped bar is " ~ t.latest.year ~ " so far." if t.ytd else "")) }}
+  {% endcall %}
+
+  {% call card("Value of all construction") %}
+    <p class="mb-3 text-sm text-stone-700">What builders and owners told the city the work would cost, for every permit: new buildings, additions, remodels, roofs and more.</p>
+    <div x-show="!real">{{ bar_chart(t.value_chart, "Reported value of all construction by year",
+       "In each year's dollars. A single large project can lift a year: see the biggest projects below.") }}</div>
+    <div x-show="real" x-cloak>{{ bar_chart(t.value_chart_real, "Value of all construction by year, in " ~ t.dollars_of ~ " dollars",
+       "In " ~ t.dollars_of ~ " dollars. A single large project can lift a year: see the biggest projects below.") }}</div>
+  {% endcall %}
+
+  {% call card("Median new home value") %}
+    <div x-show="!real">{{ bar_chart(t.median_chart, "Median reported value of a new home by year", "As reported to the city; land not included.") }}</div>
+    <div x-show="real" x-cloak>{{ bar_chart(t.median_chart_real, "Median value of a new home by year, in " ~ t.dollars_of ~ " dollars",
+       "In " ~ t.dollars_of ~ " dollars; land not included.") }}</div>
+  {% endcall %}
+
+  {% call card("The biggest projects since " ~ t.first_year) %}
+    {% for list, shown in [(t.biggest, '!real'), (t.biggest_real, 'real')] %}
+    <ol x-show="{{ shown }}" {% if shown == 'real' %}x-cloak{% endif %} class="divide-y divide-stone-100 text-sm">
+      {% for p in list %}
+      <li class="py-2 flex items-baseline gap-3">
+        <span class="w-16 shrink-0 text-right font-bold tabular-nums">{{ p.value | money_short }}</span>
+        <span class="min-w-0">
+          {% if p.site %}<a href="{{ root }}permits/#site={{ p.site | urlencode }}" class="font-semibold text-pine-700 hover:underline">{{ p.owner }}</a>{% else %}<span class="font-semibold">{{ p.owner }}</span>{% endif %}
+          <span class="block text-stone-600">{{ [p.address, p.type] | together }} · {% if p.report %}<a href="{{ root }}permits/reports/{{ p.report }}.pdf" target="_blank" rel="noopener" class="inline-block text-pine-700 hover:underline">{{ (p.report ~ '-01') | fmt_day('%b %Y') }}</a>{% else %}{{ p.year }}{% endif %}</span>
+        </span>
+      </li>
+      {% endfor %}
+    </ol>
+    {% endfor %}
+  {% endcall %}
+</div>
+
+<section class="mt-6 bg-white border border-stone-200 shadow-sm px-5 py-4" aria-labelledby="numbers-heading">
+  <h2 id="numbers-heading" class="text-lg font-bold">The numbers</h2>
+  {# scrolls sideways on a phone, so it takes keyboard focus #}
+  <div class="mt-2 overflow-x-auto" tabindex="0" role="region" aria-label="Year-by-year table">
+    <table class="w-full min-w-[34rem] text-sm tabular-nums">
+      <thead><tr class="text-left text-stone-600 border-b border-stone-200">
+        <th scope="col" class="py-1.5 pr-3 font-medium">Year</th>
+        <th scope="col" class="py-1.5 px-2 font-medium text-right">All permits</th>
+        <th scope="col" class="py-1.5 px-2 font-medium text-right">New homes</th>
+        <th scope="col" class="py-1.5 px-2 font-medium text-right">New commercial buildings</th>
+        <th scope="col" class="py-1.5 px-2 font-medium text-right">Demolitions</th>
+        <th scope="col" class="py-1.5 px-2 font-medium text-right">Value of construction</th>
+        <th scope="col" class="py-1.5 pl-2 font-medium text-right">Median new home</th>
+      </tr></thead>
+      <tbody>
+        {% for r in t.rows | reverse %}
+        <tr class="border-b border-stone-100">
+          <th scope="row" class="py-1.5 pr-3 text-left font-semibold">{{ r.year }}{% if r.months < 12 %} <span class="font-normal text-stone-500">(Jan–{{ ('2000-%02d-01' % r.last_month) | fmt_day('%b') }})</span>{% endif %}</th>
+          <td class="py-1.5 px-2 text-right">{{ r.permits | intcomma }}</td>
+          <td class="py-1.5 px-2 text-right">{{ r.homes }}</td>
+          <td class="py-1.5 px-2 text-right">{{ r.commercial }}</td>
+          <td class="py-1.5 px-2 text-right">{{ r.demolitions }}</td>
+          <td class="py-1.5 px-2 text-right">{{ dollars(r.value, r.value_real) }}</td>
+          <td class="py-1.5 pl-2 text-right">{% if r.median_home %}{{ dollars(r.median_home, r.median_home_real) }}{% else %}—{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <h3 class="mt-5 font-semibold">About these numbers</h3>
+  <p class="mt-1 text-sm text-stone-700 max-w-3xl">These figures are from the city's monthly building permit reports. They include permits just outside city limits. Sign, burn, grading and right-of-way permits are excluded.</p>
+</section>
+</div>
+{% else %}
+<h1 class="text-2xl font-extrabold">How Spearfish is building</h1>
+{{ empty("The permit numbers aren't available right now.") }}
+{% endif %}
+{% endblock %}

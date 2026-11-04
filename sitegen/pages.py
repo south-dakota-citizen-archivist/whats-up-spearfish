@@ -15,6 +15,7 @@ from collections import Counter, defaultdict
 from datetime import date, timedelta
 
 from scrapers import geo
+from sitegen import trends
 from sitegen.data import Site, Source
 from sitegen.events import CATEGORY_LABELS
 from sitegen.parcels import BEACON, ParcelLinks, record_key
@@ -829,6 +830,19 @@ def report_link(site: Site, r: dict) -> str:
     return r.get("url") or ""
 
 
+def site_key(parcels: ParcelLinks | None, key: str, addr: str, fallback: str) -> str:
+    """The permits page's key for a record's place: its county parcel when linked, else its address."""
+    if parcels and (pid := parcels.pid(key, addr)):
+        return f"P {pid}"
+    return fallback
+
+
+def permit_site_key(r: dict, parcels: ParcelLinks | None) -> str:
+    """Where a building permit sits on the permits page (its #site= link)."""
+    addr = r.get("site_address", "")
+    return site_key(parcels, record_key("permit", r), addr, geo.normalize_address(addr))
+
+
 def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
     """
     Every planning application (OpenGov archive), issued building permit
@@ -863,9 +877,7 @@ def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
         g["r"].append(_compact(rec))
 
     def place(key: str, addr: str, fallback: str) -> str:
-        if parcels and (pid := parcels.pid(key, addr)):
-            return f"P {pid}"
-        return fallback
+        return site_key(parcels, key, addr, fallback)
 
     for r in load_planning_archive(site)["records"]:
         if not r.get("site") or "practice record" in (r.get("type") or "").lower():
@@ -894,7 +906,7 @@ def permit_sites(site: Site, parcels: ParcelLinks | None = None) -> list[dict]:
 
     for r in site.get("building_permits").records:
         add(
-            place(record_key("permit", r), r.get("site_address", ""), geo.normalize_address(r.get("site_address", ""))),
+            permit_site_key(r, parcels),
             r.get("site_address"),
             r.get("lat"),
             r.get("lon"),
@@ -955,4 +967,16 @@ def permits_page(site: Site, events: list[dict], today: date) -> dict:
         "first_permit": min((r.get("date", "") for r in bp.records if r.get("date")), default=""),
         "pc_first": min((r.get("meeting_date", "")[:10] for r in site.get("planning_commission").records), default=""),
         "beacon": BEACON,
+    }
+
+
+def permit_trends_page(site: Site, events: list[dict], today: date) -> dict:
+    parcels = ParcelLinks.load(site.data_dir)
+    return {
+        "t": trends.build(
+            site.get("building_permits").records,
+            today,
+            trends.cpi_lookup(),
+            place=lambda r: permit_site_key(r, parcels),
+        )
     }

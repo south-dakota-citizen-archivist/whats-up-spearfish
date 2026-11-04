@@ -61,7 +61,7 @@
             <li>
               <a href="{{ root }}schools/#menu={{ m.key | urlencode }}" class="group block">
                 <span class="font-semibold group-hover:text-pine-700">{{ m.label }}</span>
-                <span class="block text-stone-600">{{ m.entrees[:3] | join(' · ') }}{% if m.entrees | length > 3 %} <span class="text-stone-500">+{{ m.entrees | length - 3 }} more</span>{% endif %}</span>
+                <span class="block text-stone-600">{{ m.entrees[:3] | together }}{% if m.entrees | length > 3 %} <span class="text-stone-500">+{{ m.entrees | length - 3 }} more</span>{% endif %}</span>
               </a>
             </li>
             {% endfor %}
@@ -79,8 +79,8 @@
       {% if creek.current %}
       <p class="flex flex-wrap items-baseline gap-x-2"><span class="text-3xl font-extrabold tabular-nums">{{ creek.current.cfs | intcomma }}</span><span class="text-stone-600">cubic feet per second</span></p>
       <p class="text-sm text-stone-500">
-        {% if creek.current.ft %}Water level {{ creek.current.ft }} ft. {% endif %}
-        {% if creek.median30 %}Typical for the past month: {{ creek.median30 | intcomma }}.{% endif %}
+        {{ ['Water level ' ~ creek.current.ft ~ ' ft.' if creek.current.ft else '',
+            'Typical for the past month: ' ~ (creek.median30 | intcomma) ~ '.' if creek.median30 else ''] | together(' ') }}
       </p>
       {% if creek.spark %}
       <svg viewBox="0 0 {{ creek.spark.width }} {{ creek.spark.height }}" class="w-full h-12 mt-3" preserveAspectRatio="none" role="img" aria-label="Creek flow over the past 7 days">

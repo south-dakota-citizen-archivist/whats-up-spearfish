@@ -76,6 +76,7 @@
       {% endfor %}
     </ul>
     {% else %}{{ empty("No recent permits.") }}{% endif %}
+    <p class="mt-3 text-sm font-semibold"><a href="{{ root }}permits/trends/" class="text-pine-700 hover:underline">How Spearfish is building, year by year<span aria-hidden="true"> →</span></a></p>
   {% endcall %}
 
   {% call card("Open city bids", "bids", sources=bids, more=bids.url, more_label="Bids") %}
