@@ -3,7 +3,7 @@
  "name": "eBird recent sightings",
  "kind": "sighting",
  "url": "https://ebird.org/region/US-SD-081",
- "fetched_at": "2026-11-03T10:50:56-07:00",
+ "fetched_at": "2026-11-03T23:21:05-07:00",
  "count": 50,
  "records": [
   {
@@ -524,7 +524,7 @@
    "lng": -103.4130828,
    "location_id": "L63749701",
    "checklist_id": "S405862179",
-   "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/5741270/square.jpg",
+   "photo_url": "https://static.inaturalist.org/photos/743694712/square.jpg",
    "kind": "sighting",
    "record_type": "sighting",
    "source": "ebird",

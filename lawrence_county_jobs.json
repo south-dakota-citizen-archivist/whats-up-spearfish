@@ -2,8 +2,48 @@
  "slug": "lawrence_county_jobs",
  "name": "Lawrence County Jobs",
  "kind": "job",
- "url": "https://www.lawrence.sd.us/Jobs.aspx",
- "fetched_at": "2026-11-03T10:50:28-07:00",
- "count": 0,
- "records": []
+ "url": "https://lawrence.sd.us/381/Employment-Opportunities",
+ "fetched_at": "2026-11-03T23:20:35-07:00",
+ "count": 3,
+ "records": [
+  {
+   "url": "https://lawrence.sd.us/DocumentCenter/View/2188/Job-Opening---Correctional-Officer-I-Part-Time-PDF",
+   "title": "Correctional Officer I (Part Time)",
+   "slug": "correctional-officer-i-part-time",
+   "department": "Lawrence County",
+   "description": "",
+   "record_type": "job",
+   "source_label": "Lawrence County",
+   "kind": "job",
+   "source": "lawrence_county_jobs",
+   "id": "51d8a01f105b",
+   "_first_seen": "2026-11-03"
+  },
+  {
+   "url": "https://lawrence.sd.us/DocumentCenter/View/2309/Job-Opening---Custodian-PDF",
+   "title": "Custodian",
+   "slug": "custodian",
+   "department": "Lawrence County",
+   "description": "",
+   "record_type": "job",
+   "source_label": "Lawrence County",
+   "kind": "job",
+   "source": "lawrence_county_jobs",
+   "id": "8382b55925d3",
+   "_first_seen": "2026-11-03"
+  },
+  {
+   "url": "https://lawrence.sd.us/DocumentCenter/View/2242/Job-Opening---Deputy-States-Attorney-PDF",
+   "title": "Deputy States Attorney",
+   "slug": "deputy-states-attorney",
+   "department": "Lawrence County",
+   "description": "",
+   "record_type": "job",
+   "source_label": "Lawrence County",
+   "kind": "job",
+   "source": "lawrence_county_jobs",
+   "id": "f556cc53b822",
+   "_first_seen": "2026-11-03"
+  }
+ ]
 }

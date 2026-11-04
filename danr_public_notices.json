@@ -3,8 +3,8 @@
  "name": "SD DANR public notices (West River)",
  "kind": "notice",
  "url": "https://danr.sd.gov/public/default.aspx",
- "fetched_at": "2026-11-03T10:50:39-07:00",
- "count": 6,
+ "fetched_at": "2026-11-03T23:20:48-07:00",
+ "count": 4,
  "records": [
   {
    "notice_type": "Mineral Exploration",
@@ -32,78 +32,6 @@
    "source": "danr_public_notices",
    "source_label": "SD DANR public notices (West River)",
    "id": "935dda0548ae",
-   "_first_seen": "2026-11-02"
-  },
-  {
-   "notice_type": "Water Rights",
-   "deadline": "11/02/2026",
-   "comment_url": "",
-   "application_no": "2051-1",
-   "name": "Continental Resources, c/o Peter MacIntyre, Oklahoma City OK",
-   "location": "Harding",
-   "water_source": "Inyan Kara Aquifer",
-   "use_type": "Industrial",
-   "links": [
-    {
-     "label": "Public Notice",
-     "url": "https://danr.sd.gov/wrimage/pub/2051-1_app.pdf"
-    },
-    {
-     "label": "Appl.",
-     "url": "https://danr.sd.gov/wrimage/pub/2051-1_apl.pdf"
-    },
-    {
-     "label": "Recom. Action",
-     "url": "https://danr.sd.gov/wrimage/pub/2051-1_rec.pdf"
-    }
-   ],
-   "title": "Continental Resources, c/o Peter MacIntyre, Oklahoma City OK",
-   "url": "https://danr.sd.gov/wrimage/pub/2051-1_app.pdf",
-   "deadline_iso": "2026-11-02",
-   "notice_key": "Water Rights|2051-1|Continental Resources, c/o Peter MacIntyre, Oklahoma City OK|Harding",
-   "kind": "notice",
-   "record_type": "notice",
-   "source": "danr_public_notices",
-   "source_label": "SD DANR public notices (West River)",
-   "id": "f26852585eb6",
-   "published": "2026-11-02",
-   "date": "2026-11-02",
-   "_first_seen": "2026-11-02"
-  },
-  {
-   "notice_type": "Water Rights",
-   "deadline": "11/02/2026",
-   "comment_url": "",
-   "application_no": "2918-2",
-   "name": "Jeff Johnson, Martin SD",
-   "location": "Bennett",
-   "water_source": "Ogallala Aquifer",
-   "use_type": "Irrigation (156 acres)",
-   "links": [
-    {
-     "label": "Public Notice",
-     "url": "https://danr.sd.gov/wrimage/pub/2918-2_app.pdf"
-    },
-    {
-     "label": "Appl.",
-     "url": "https://danr.sd.gov/wrimage/pub/2918-2_apl.pdf"
-    },
-    {
-     "label": "Recom. Action",
-     "url": "https://danr.sd.gov/wrimage/pub/2918-2_rec.pdf"
-    }
-   ],
-   "title": "Jeff Johnson, Martin SD",
-   "url": "https://danr.sd.gov/wrimage/pub/2918-2_app.pdf",
-   "deadline_iso": "2026-11-02",
-   "notice_key": "Water Rights|2918-2|Jeff Johnson, Martin SD|Bennett",
-   "kind": "notice",
-   "record_type": "notice",
-   "source": "danr_public_notices",
-   "source_label": "SD DANR public notices (West River)",
-   "id": "efb4eb3750aa",
-   "published": "2026-11-02",
-   "date": "2026-11-02",
    "_first_seen": "2026-11-02"
   },
   {

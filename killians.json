@@ -3,7 +3,7 @@
  "name": "Killian's",
  "kind": "beer",
  "url": "https://untappd.com",
- "fetched_at": "2026-11-03T10:50:27-07:00",
+ "fetched_at": "2026-11-03T23:20:34-07:00",
  "count": 17,
  "records": [
   {
@@ -41,21 +41,21 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://untappd.com/b/sawyer-brewing-co-smoldering-scotch/3069887",
-   "title": "Smoldering Scotch",
-   "slug": "smoldering-scotch",
-   "category": "Scotch Ale / Wee Heavy",
-   "abv": "7.1%",
-   "ibu": "16",
-   "brewery": "Sawyer Brewing Co",
+   "url": "https://untappd.com/b/fair-state-brewing-black-pils/6376551",
+   "title": "Black Pils",
+   "slug": "black-pils",
+   "category": "Lager - Dark",
+   "abv": "4.9%",
+   "ibu": "",
+   "brewery": "Fair State Brewing",
    "rating": "3.84",
-   "image_url": "https://labels.untappd.com/3069887",
+   "image_url": "https://labels.untappd.com/6376551",
    "record_type": "beer",
    "source_label": "Killian's",
    "kind": "beer",
    "source": "killians",
-   "id": "ed1874b70995",
-   "_first_seen": "2026-11-01"
+   "id": "413eae32f482",
+   "_first_seen": "2026-11-03"
   },
   {
    "url": "https://untappd.com/b/kros-strain-brewing-classic-lager/6134857",

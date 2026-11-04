@@ -3,8 +3,8 @@
  "name": "Black Hills National Forest",
  "kind": "press_release",
  "url": "https://www.fs.usda.gov/r02/blackhills/newsroom/releases",
- "fetched_at": "2026-11-03T10:50:14-07:00",
- "count": 4,
+ "fetched_at": "2026-11-03T23:20:31-07:00",
+ "count": 5,
  "records": [
   {
    "url": "https://www.fs.usda.gov/r02/blackhills/newsroom/releases/safety-alert-closure-pactola-north-boat-ramp",
@@ -61,6 +61,20 @@
    "id": "78cce3c1ee54",
    "date": "2026-10-06",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.fs.usda.gov/r02/blackhills/newsroom/releases/stage-1-fire-restrictions-rescinded-black-hills-national-forest",
+   "title": "Stage 1 Fire Restrictions Rescinded Black Hills National Forest Wyoming",
+   "slug": "bhnf-release-stage-1-fire-restrictions-rescinded-black-hills-national-forest",
+   "published": "2026-11-03",
+   "description": "Black Hills National Forest Issues Immediate Fire Restrictions Changes(Custer, SD, November 3, 2026) National Forest Service lands in the State of…",
+   "record_type": "press_release",
+   "source_label": "Black Hills National Forest",
+   "kind": "press_release",
+   "source": "bhnf",
+   "id": "27908012f9ce",
+   "date": "2026-11-03",
+   "_first_seen": "2026-11-03"
   }
  ]
 }

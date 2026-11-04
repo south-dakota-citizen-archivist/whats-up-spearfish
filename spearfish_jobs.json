@@ -2,8 +2,27 @@
  "slug": "spearfish_jobs",
  "name": "City of Spearfish Jobs",
  "kind": "job",
- "url": "https://www.spearfish.gov/Jobs.aspx",
- "fetched_at": "2026-11-03T10:51:08-07:00",
- "count": 0,
- "records": []
+ "url": "https://www.spearfish.gov/161/Career-Opportunities",
+ "fetched_at": "2026-11-03T23:21:03-07:00",
+ "count": 1,
+ "records": [
+  {
+   "url": "https://cityofspearfish.sagehcm.com/jobs/443/1/#330",
+   "title": "Police Officer ~Sign-on-Bonus $6,000",
+   "slug": "police-officer-sign-on-bonus-6000",
+   "department": "Police",
+   "position_type": "FT Employee",
+   "salary": "Hiring range: $32.84 - $38.08",
+   "published": "2025-10-16",
+   "closing": "",
+   "description": "Police · FT Employee · Hiring range: $32.84 - $38.08",
+   "record_type": "job",
+   "source_label": "City of Spearfish",
+   "kind": "job",
+   "source": "spearfish_jobs",
+   "id": "81940ff77f57",
+   "date": "2025-10-16",
+   "_first_seen": "2026-11-03"
+  }
+ ]
 }

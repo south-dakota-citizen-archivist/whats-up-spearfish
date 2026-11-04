@@ -3,7 +3,7 @@
  "name": "BHSU Athletics",
  "kind": "event",
  "url": "https://bhsuathletics.com/calendar",
- "fetched_at": "2026-11-03T10:50:13-07:00",
+ "fetched_at": "2026-11-03T23:20:30-07:00",
  "count": 91,
  "records": [
   {
@@ -91,7 +91,7 @@
    "conference": "Rocky Mountain Athletic Conference",
    "status": "A",
    "video_url": "https://www.rmacnetwork.com/bhsu/",
-   "stats_url": null,
+   "stats_url": "https://live.rapidresultstiming.com/meets/80206",
    "tickets_url": null,
    "result_team": null,
    "result_opp": null,
@@ -125,7 +125,7 @@
    "conference": "Rocky Mountain Athletic Conference",
    "status": "A",
    "video_url": "https://www.rmacnetwork.com/bhsu/",
-   "stats_url": null,
+   "stats_url": "https://live.rapidresultstiming.com/meets/80206",
    "tickets_url": null,
    "result_team": null,
    "result_opp": null,

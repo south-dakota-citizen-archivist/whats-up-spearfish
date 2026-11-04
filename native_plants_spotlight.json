@@ -3,7 +3,7 @@
  "name": "Native plants of the Black Hills",
  "kind": "plant",
  "url": "https://www.inaturalist.org/places/black-hills-national-forest-us",
- "fetched_at": "2026-11-03T10:51:04-07:00",
+ "fetched_at": "2026-11-03T23:21:04-07:00",
  "count": 389,
  "records": [
   {
@@ -1915,8 +1915,8 @@
    "title": "American bittersweet",
    "scientific_name": "Celastrus scandens",
    "summary": "Celastrus scandens, commonly called American bittersweet or bittersweet, is a species of Celastrus that blooms mostly in June and is commonly found on rich, well-drained soils of woodlands. It is a sturdy perennial vine that may have twining, woody stems that are 30 feet (9.1 m) or longer and an inch or more thick at the base.",
-   "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/4910702/medium.jpg",
-   "photo_credit": "(c) Rob Curtis, some rights reserved (CC BY-NC-SA), uploaded by Rob Curtis",
+   "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2556390/medium.JPG",
+   "photo_credit": "(c) sea-kangaroo, some rights reserved (CC BY-NC-ND), uploaded by sea-kangaroo",
    "url": "https://www.inaturalist.org/taxa/64538",
    "wikipedia_url": "https://en.wikipedia.org/wiki/Celastrus scandens",
    "sightings": 26,
@@ -3347,7 +3347,7 @@
    "photo_credit": "(c) bendingtree, some rights reserved (CC BY-NC), uploaded by bendingtree",
    "url": "https://www.inaturalist.org/taxa/79072",
    "wikipedia_url": "http://en.wikipedia.org/wiki/Shepherdia_canadensis",
-   "sightings": 100,
+   "sightings": 102,
    "kind": "plant",
    "record_type": "plant",
    "source": "native_plants_spotlight",
