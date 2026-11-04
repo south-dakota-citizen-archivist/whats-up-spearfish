@@ -275,5 +275,12 @@ def main(argv: list[str] | None = None) -> None:
     ap = argparse.ArgumentParser(prog="python -m sitegen")
     ap.add_argument("--data", type=Path, default=Path(os.environ.get("WUS_DATA_DIR") or ROOT / "data"))
     ap.add_argument("--out", type=Path, default=ROOT / "_site")
+    ap.add_argument(
+        "--update-cpi",
+        action="store_true",
+        help="download the latest Consumer Price Index first (for the trends page's inflation-adjusted figures)",
+    )
     args = ap.parse_args(argv)
+    if args.update_cpi:
+        trends.update_cpi()
     build(args.data, args.out)

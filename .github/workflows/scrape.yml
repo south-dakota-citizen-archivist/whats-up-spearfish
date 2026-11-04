@@ -120,7 +120,8 @@ jobs:
         run: uv run python scripts/health_issue.py data/_health.json
 
       - name: Build site
-        run: uv run python -m sitegen --data data --out _site
+        # --update-cpi: the trends page's inflation-adjusted figures use the newest month the BLS has published
+        run: uv run python -m sitegen --data data --out _site --update-cpi
 
       - uses: actions/configure-pages@v5
 

@@ -107,6 +107,24 @@ def bars(rows: list[dict], key: str, fmt) -> dict:
     }
 
 
+def update_cpi() -> None:
+    """
+    Download the latest CPI into the cpi package's database. If the BLS can't be
+    reached, the build carries on with the copy the package already has.
+    """
+    import warnings
+
+    try:
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            import cpi
+
+            cpi.update()
+        print("[sitegen] Consumer Price Index updated")
+    except Exception as exc:  # noqa: BLE001
+        print(f"[sitegen] couldn't update the Consumer Price Index ({exc}); using the copy on hand")
+
+
 def cpi_lookup():
     """
     Monthly Consumer Price Index values (CPI-U, U.S. city average) from the cpi

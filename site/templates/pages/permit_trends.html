@@ -4,13 +4,18 @@
 {#
   Year-by-year building in Spearfish, from the city's monthly permit reports.
   The bar charts are plain HTML so their labels stay readable on a phone: each
-  bar is a column whose height is its share of the axis. The highest bar and the
-  latest are labeled; the rest show their value on hover or keyboard focus, and
-  every number is in the table at the bottom.
+  bar is a column whose height is its share of the axis. The year under the
+  pointer (or keyboard focus) is read out in one line above the chart, so a wide
+  value like "$103.6M" never sits over the neighboring bars; the line shows the
+  latest year otherwise. Charts of counts also label their highest and latest
+  bars, which are narrow enough to fit. Every number is in the table below.
 #}
-{% macro bar_chart(chart, what, note='') %}
-<figure>
-  <div class="relative h-52 ml-12" role="img" aria-label="{{ what }}, {{ chart.bars[0].year }} to {{ chart.bars[-1].year }}. The numbers are in the table at the bottom of the page.">
+{% macro bar_chart(chart, what, note='', labels=false) %}
+{% set last = chart.bars[-1] %}
+{% macro reading(b) %}{{ b.year }}{{ ' so far' if b.partial }}: {{ b.label }}{% endmacro %}
+<figure x-data="{ shown: '' }">
+  <p aria-hidden="true" class="ml-12 h-5 text-xs text-stone-700 tabular-nums whitespace-nowrap" x-text="shown || {{ reading(last) | tojson | forceescape }}">{{ reading(last) }}</p>
+  <div class="relative h-52 ml-12" role="img" aria-label="{{ what }}, {{ chart.bars[0].year }} to {{ last.year }}. The numbers are in the year-over-year table below.">
     {% for t in chart.ticks %}
     <div aria-hidden="true" class="absolute inset-x-0 border-t {{ 'border-stone-400' if t.pct == 0 else 'border-stone-200' }}" style="bottom: {{ t.pct }}%">
       <span class="absolute -left-12 w-11 -translate-y-1/2 pr-1 text-right text-[11px] leading-none text-stone-500 tabular-nums whitespace-nowrap">{{ t.label }}</span>
@@ -19,8 +24,10 @@
     <ol class="absolute inset-0 grid items-end gap-[2px]" style="grid-template-columns: repeat({{ chart.bars | length }}, minmax(0, 1fr))">
       {% for b in chart.bars %}
       <li class="group relative h-full flex flex-col justify-end outline-none" tabindex="0"
-          aria-label="{{ b.year }}{% if b.partial %} ({{ b.months }} months){% endif %}: {{ b.label }}">
-        <span class="{{ '' if b.labeled else 'opacity-0 group-hover:opacity-100 group-focus:opacity-100' }} {{ 'self-end' if loop.last else 'self-start' if loop.first else 'self-center' }} pointer-events-none mb-0.5 text-center text-[11px] font-semibold leading-none text-stone-800 tabular-nums whitespace-nowrap">{{ b.label }}</span>
+          aria-label="{{ b.year }}{% if b.partial %} ({{ b.months }} months){% endif %}: {{ b.label }}"
+          @mouseenter="shown = {{ reading(b) | tojson | forceescape }}" @mouseleave="shown = ''"
+          @focus="shown = {{ reading(b) | tojson | forceescape }}" @blur="shown = ''">
+        {% if labels and b.labeled %}<span class="{{ 'self-end' if loop.last else 'self-start' if loop.first else 'self-center' }} pointer-events-none mb-0.5 text-[11px] font-semibold leading-none text-stone-800 tabular-nums whitespace-nowrap">{{ b.label }}</span>{% endif %}
         <span class="block w-full {{ 'bar-partial' if b.partial else 'bg-pine-600 group-hover:bg-pine-800 group-focus:bg-pine-800' }}" style="height: {{ b.pct }}%"></span>
       </li>
       {% endfor %}
@@ -101,16 +108,14 @@
 
 <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-5">
   {% call card("Permits for new homes") %}
-    {{ bar_chart(t.homes_chart, "Permits for new homes by year",
+    {{ bar_chart(t.homes_chart, "Permits for new homes by year", labels=true, note=
        "One permit per building: a duplex or a row of townhomes can be one permit. Includes homes just outside city limits that the city permits." ~ (" The striped bar is " ~ t.latest.year ~ " so far." if t.ytd else "")) }}
   {% endcall %}
 
   {% call card("Value of all construction") %}
     <p class="mb-3 text-sm text-stone-700">What builders and owners told the city the work would cost, for every permit: new buildings, additions, remodels, roofs and more.</p>
-    <div x-show="!real">{{ bar_chart(t.value_chart, "Reported value of all construction by year",
-       "In each year's dollars. A single large project can lift a year: see the biggest projects below.") }}</div>
-    <div x-show="real" x-cloak>{{ bar_chart(t.value_chart_real, "Value of all construction by year, in " ~ t.dollars_of ~ " dollars",
-       "In " ~ t.dollars_of ~ " dollars. A single large project can lift a year: see the biggest projects below.") }}</div>
+    <div x-show="!real">{{ bar_chart(t.value_chart, "Reported value of all construction by year", "In each year's dollars.") }}</div>
+    <div x-show="real" x-cloak>{{ bar_chart(t.value_chart_real, "Value of all construction by year, in " ~ t.dollars_of ~ " dollars", "In " ~ t.dollars_of ~ " dollars.") }}</div>
   {% endcall %}
 
   {% call card("Median new home value") %}
@@ -137,7 +142,7 @@
 </div>
 
 <section class="mt-6 bg-white border border-stone-200 shadow-sm px-5 py-4" aria-labelledby="numbers-heading">
-  <h2 id="numbers-heading" class="text-lg font-bold">The numbers</h2>
+  <h2 id="numbers-heading" class="text-lg font-bold">Year over year</h2>
   {# scrolls sideways on a phone, so it takes keyboard focus #}
   <div class="mt-2 overflow-x-auto" tabindex="0" role="region" aria-label="Year-by-year table">
     <table class="w-full min-w-[34rem] text-sm tabular-nums">
@@ -166,7 +171,11 @@
     </table>
   </div>
   <h3 class="mt-5 font-semibold">About these numbers</h3>
-  <p class="mt-1 text-sm text-stone-700 max-w-3xl">These figures are from the city's monthly building permit reports. They include permits just outside city limits. Sign, burn, grading and right-of-way permits are excluded.</p>
+  <p class="mt-1 space-y-0.5 text-sm text-stone-700">
+    <span class="block">These figures are from the city's monthly building permit reports.</span>
+    <span class="block">They include permits just outside city limits.</span>
+    <span class="block">Sign, burn, grading and right-of-way permits are excluded.</span>
+  </p>
 </section>
 </div>
 {% else %}
