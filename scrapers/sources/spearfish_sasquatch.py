@@ -24,7 +24,7 @@ class SpearfishSasquatch(BaseScraper):
     name = "Spearfish Sasquatch"
     slug = "spearfish_sasquatch"
     kind = "event"
-    category = "sports"
+    category = "sasquatch"
     url = SOURCE_URL
     dedup_key = "slug"
     max_stale_hours = 24 * 30

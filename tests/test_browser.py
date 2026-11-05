@@ -333,7 +333,12 @@ def test_skip_link_is_first_and_focus_is_visible(open_page):
 def test_events_filters_say_which_is_on(open_page):
     page = open_page("events/", wait="li input[type=checkbox]")
     assert page.locator("aside button[aria-pressed=true]").all_inner_texts() == ["Next 7 days"]
-    page.locator("aside button", has_text="Sports").click()
+    # the types are grouped by who they're for; BHSU's games are under Black Hills State
+    assert (
+        page.get_by_role("group", name="Black Hills State").get_by_role("button", name="Yellow Jackets sports").count()
+        == 1
+    )
+    page.locator("aside button", has_text="Yellow Jackets sports").click()
     assert page.locator("aside button[aria-pressed=true]").count() == 2
     assert page.get_by_role("status").first.inner_text() == "1 events"
 

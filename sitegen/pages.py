@@ -18,7 +18,7 @@ from urllib.parse import quote
 from scrapers import dates, geo
 from sitegen import trends
 from sitegen.data import Site, Source, read_json
-from sitegen.events import CATEGORY_LABELS, fmt_clock
+from sitegen.events import CATEGORY_GROUPS, CATEGORY_LABELS, fmt_clock
 from sitegen.parcels import BEACON, ParcelLinks, record_key
 from sitegen.sources import DIRECTORY
 
@@ -707,7 +707,20 @@ def events_page(site: Site, events: list[dict], today: date) -> dict:
     for e in events:
         cats[e["category"]] += 1
     return {
-        "categories": [(k, CATEGORY_LABELS.get(k, k.title()), n) for k, n in sorted(cats.items(), key=lambda x: -x[1])],
+        # by audience (CATEGORY_GROUPS), each group's types busiest first; a type in no group goes in its own
+        "category_groups": [
+            (
+                heading,
+                [
+                    (k, CATEGORY_LABELS.get(k, k.title()), cats[k])
+                    for k in sorted(keys, key=lambda k: -cats[k])
+                    if cats[k]
+                ],
+            )
+            for heading, keys in CATEGORY_GROUPS
+            + [("Other", tuple(k for k in cats if not any(k in g for _, g in CATEGORY_GROUPS)))]
+            if any(cats[k] for k in keys)
+        ],
         "event_count": len(events),
         "event_source_objs": [s for s in site.by_kind("event")],
     }

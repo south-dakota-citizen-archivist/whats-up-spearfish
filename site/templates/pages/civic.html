@@ -64,7 +64,7 @@
       <li>{{ ext(b.url, b.title, 'link-title') }}{% if b.closes_iso or b.closes %} <span class="text-xs text-stone-500 whitespace-nowrap">closes {{ (b.closes_iso | fmt_day('%b %-d')) if b.closes_iso else b.closes }}</span>{% endif %}</li>
       {% endfor %}
     </ul>
-    <p class="ml-auto text-sm">{{ ext(bids.url, "All bids", "link-action") }}</p>
+    <p class="sm:ml-auto text-sm">{{ ext(bids.url, "All bids", "link-action") }}</p>
   </section>
   {% endif %}
 

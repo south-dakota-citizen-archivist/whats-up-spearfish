@@ -57,7 +57,7 @@
     {% else %}
     <p class="text-stone-600">The ski report isn't available right now.</p>
     {% endif %}
-    <p class="ml-auto flex flex-wrap gap-x-5 gap-y-1 font-semibold">{{ ext(ski.webcams, "Live web cams", "link-action") }}{{ ext(ski.source.url or "https://terrypeak.com/the-mountain/trails-lifts/", "Trails & lifts", "link-action") }}</p>
+    <p class="sm:ml-auto flex flex-wrap gap-x-5 gap-y-1 font-semibold">{{ ext(ski.webcams, "Live web cams", "link-action") }}{{ ext(ski.source.url or "https://terrypeak.com/the-mountain/trails-lifts/", "Trails & lifts", "link-action") }}</p>
   </section>
 {% endmacro %}
 

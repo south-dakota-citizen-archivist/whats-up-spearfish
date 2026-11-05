@@ -47,11 +47,19 @@
     </div>
     <div>
       <p id="type-label" class="text-xs font-bold uppercase tracking-wide text-stone-500 mb-2">Type</p>
-      <div class="flex flex-wrap gap-1.5" role="group" aria-labelledby="type-label">
-        {% for key, label, n in categories %}
-        <button type="button" @click="toggle('{{ key }}')" :aria-pressed="cats.includes('{{ key }}')"
-                :class="cats.includes('{{ key }}') ? 'bg-pine-700 text-white border-pine-700' : 'bg-white text-stone-700 border-stone-300 hover:border-pine-600'"
-                class="px-3 py-1 border text-sm">{{ label }} <span class="font-normal">{{ n }}</span></button>
+      {# grouped by who they're for: around town, the school district, the university #}
+      <div class="space-y-2.5" aria-labelledby="type-label" role="group">
+        {% for heading, items in category_groups %}
+        <div role="group" aria-label="{{ heading }}">
+          <p class="text-xs text-stone-600 mb-1">{{ heading }}</p>
+          <div class="flex flex-wrap gap-1.5">
+            {% for key, label, n in items %}
+            <button type="button" @click="toggle('{{ key }}')" :aria-pressed="cats.includes('{{ key }}')"
+                    :class="cats.includes('{{ key }}') ? 'bg-pine-700 text-white border-pine-700' : 'bg-white text-stone-700 border-stone-300 hover:border-pine-600'"
+                    class="px-3 py-1 border text-sm">{{ label }} <span class="font-normal">{{ n }}</span></button>
+            {% endfor %}
+          </div>
+        </div>
         {% endfor %}
       </div>
     </div>

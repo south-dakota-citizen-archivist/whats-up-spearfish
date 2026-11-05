@@ -24,7 +24,7 @@ class BHSUAthletics(BaseScraper):
     slug = "bhsu_athletics"
     kind = "event"
     url = "https://bhsuathletics.com/calendar"
-    category = "sports"
+    category = "bhsu sports"
     dedup_key = "game_id"
 
     def fix(self, record: dict) -> dict:

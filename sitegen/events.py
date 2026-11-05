@@ -32,10 +32,28 @@ SOURCE_PRIORITY = [
 CATEGORY_LABELS = {
     "community": "Community",
     "arts": "Arts & culture",
-    "sports": "Sports",
+    "sasquatch": "Sasquatch baseball",
+    "schools": "School calendar",
     "school sports": "School sports",
-    "campus": "BHSU campus",
-    "schools": "Schools",
+    "campus": "Campus events",
+    "bhsu sports": "Yellow Jackets sports",
+}
+
+#: The event types by who they're for, as the events page groups its filters
+CATEGORY_GROUPS = [
+    ("Around town", ("community", "arts", "sasquatch")),
+    ("Spearfish schools", ("schools", "school sports")),
+    ("Black Hills State", ("campus", "bhsu sports")),
+]
+
+#: A source's events are this type, whatever it calls them ('sports' alone was BHSU's and the Sasquatch's)
+SOURCE_CATEGORY = {
+    "bhsu_athletics": "bhsu sports",
+    "bhsu_calendar": "campus",
+    "spearfish_sasquatch": "sasquatch",
+    "spearfish_schools": "schools",
+    "spearfish_sports": "school sports",
+    "spearfish_ms_sports": "school sports",
 }
 
 _STOPWORDS = {"the", "a", "an", "of", "and", "at", "in", "for", "meeting", "spearfish", "city", "regular", "vs"}
@@ -154,7 +172,7 @@ def unified_events(site: Site, today: date | None = None) -> list[dict]:
                     "location": undouble(r.get("location", "")),
                     "description": tidy_description(r["title"], r.get("description") or "")[:400],
                     "url": r["url"],
-                    "category": r.get("event_category", "community"),
+                    "category": SOURCE_CATEGORY.get(r["source"]) or r.get("event_category") or "community",
                     "source": r["source"],
                     "source_label": r["source_label"],
                     "also": [],
