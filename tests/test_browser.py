@@ -574,7 +574,7 @@ def test_community_chart_and_pets(open_page):
     page = open_page("community/", wait="#checkouts svg")
     assert page.locator("#checkouts svg path").count() == 3  # one line per way of borrowing
     assert "In April 2026" in page.locator("#checkouts").inner_text()
-    assert page.locator("#checkouts a", has_text="Library Board of Trustees meeting minutes").count() == 1
+    assert page.locator("#checkouts a", has_text="Library Board meeting minutes").count() == 1
     # a year in the table opens to its months, each linked to its minutes
     page.locator("#checkouts summary").click()
     year = page.get_by_role("button", name="2025")
