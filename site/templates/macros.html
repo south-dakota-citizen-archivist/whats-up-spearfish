@@ -132,3 +132,13 @@
 {% macro join_help(h) %}{% if h.tel %}
 <p class="text-xs text-stone-600">By phone: <a href="{{ h.tel }}" class="link whitespace-nowrap">{{ h.phone }}</a>{% if h.code %}, code {{ h.code }}{% endif %}</p>
 {% endif %}{% endmacro %}
+
+{# A movie's showtimes, one line a day; static/js/movies.js (x-data="showtimes") shows the chosen day's
+   and strikes through the shows that have started. Before that runs, the first day shows. #}
+{% macro movie_times(m, first) %}
+{% for d in m.days %}
+<p x-show="day === '{{ d.date }}'" {% if d.date != first %}style="display: none"{% endif %} class="flex flex-wrap gap-1.5 mt-1.5">
+  {% for s in d.times %}<span class="border border-stone-300 px-1.5 text-sm tabular-nums whitespace-nowrap" :class="past('{{ s.at }}') && 'line-through text-stone-400 border-stone-200'">{{ s.label }}{% if s.luxury %} <span class="text-xs text-stone-500">Luxury</span>{% endif %}</span>{% endfor %}
+</p>
+{% endfor %}
+{% endmacro %}

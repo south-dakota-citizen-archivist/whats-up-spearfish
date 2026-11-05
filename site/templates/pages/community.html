@@ -1,7 +1,7 @@
 {% extends "base.html" %}
-{% from "macros.html" import card, empty, ext %}
+{% from "macros.html" import card, empty, ext, movie_times %}
 
-{% block head %}<script defer src="{{ root }}static/js/checkouts.js"></script>{% endblock %}
+{% block head %}<script defer src="{{ root }}static/js/checkouts.js"></script><script defer src="{{ root }}static/js/movies.js"></script>{% endblock %}
 
 {% block content %}
 <h1 class="text-2xl font-extrabold mb-4">Community</h1>
@@ -34,6 +34,57 @@
       {% endif %}
     </div>
     {% else %}{{ empty("No pets listed right now.") }}{% endif %}
+  {% endcall %}
+
+  {# ── the movie theater: pick a day, see what's on ── #}
+  {% call card("At the movies", "movies", sources=movies.source, more=movies.source.url, more_label="Northern Hills Cinema") %}
+    {% if movies.now %}
+    {% set first = movies.days[0].date %}
+    <div x-data="showtimes" data-days='{{ movies.days | tojson }}'>
+      <div role="group" aria-label="Pick a day" class="flex flex-wrap gap-1.5 mb-4 text-sm">
+        {% for d in movies.days %}
+        <button type="button" @click="day = '{{ d.date }}'" x-show="'{{ d.date }}' >= now.slice(0, 10)" :aria-pressed="day === '{{ d.date }}'" aria-pressed="{{ 'true' if d.date == first else 'false' }}"
+                class="border border-stone-300 bg-white px-2.5 py-1 hover:border-pine-600 hover:text-pine-800 aria-pressed:border-pine-700 aria-pressed:bg-pine-700 aria-pressed:text-white"
+                x-text="label('{{ d.date }}')">{{ d.label }}</button>
+        {% endfor %}
+      </div>
+      <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-5">
+        {% for m in movies.now %}
+        <li class="flex gap-3" x-show='{{ m.dates | tojson }}.includes(day)' {% if first not in m.dates %}style="display: none"{% endif %}>
+          <a href="{{ m.url }}" target="_blank" rel="noopener" class="relative w-20 shrink-0 self-start aspect-[2/3] bg-stone-200" tabindex="-1" aria-hidden="true">
+            {% if m.image_url %}<img {{ thumb_attrs(m.image_url, 160) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" data-placeholder>{% endif %}
+          </a>
+          <div class="min-w-0">
+            <a href="{{ m.url }}" target="_blank" rel="noopener" class="link-title">{{ m.title }}</a>
+            {% if m.info %}<p class="text-xs text-stone-500">{{ m.info }}</p>{% endif %}
+            {% if m.note %}<p class="text-xs font-semibold text-stone-700">{{ m.note }}</p>{% endif %}
+            {{ movie_times(m, first) }}
+            {% if m.trailer_url %}<p class="mt-1.5 text-xs">{{ ext(m.trailer_url, "Trailer") }}</p>{% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="mt-4 text-xs text-stone-600">Luxury shows have luxury seating, for a little more. {{ ext(movies.prices_url, "Prices") }} • {{ ext(movies.tickets_url, "Buy tickets") }}</p>
+    </div>
+    {% else %}{{ empty("No showtimes posted right now.") }}{% endif %}
+
+    {% if movies.soon %}
+    <h3 class="mt-6 mb-2 text-xs font-bold uppercase tracking-wide text-stone-500">Coming soon</h3>
+    <ul class="flex gap-3 overflow-x-auto snap-x pb-3" aria-label="Coming soon">
+      {% for m in movies.soon %}
+      <li class="w-24 shrink-0 snap-start">
+        <a href="{{ m.trailer_url or m.url }}" target="_blank" rel="noopener" class="group block" {% if m.synopsis %}title="{{ m.synopsis }}"{% endif %}>
+          <div class="relative w-24 aspect-[2/3] bg-stone-200">
+            {% if m.image_url %}<img {{ thumb_attrs(m.image_url, 200) }} alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover" data-placeholder>{% endif %}
+          </div>
+          <p class="text-xs font-medium mt-1 line-clamp-2 group-hover:text-pine-700">{{ m.title }}</p>
+          {% set bits = [m.rating, 'Trailer' if m.trailer_url else ''] | select | list %}
+          {% if bits %}<p class="text-xs text-stone-500">{{ bits | join(' • ') }}</p>{% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
   {% endcall %}
 
   <div class="grid lg:grid-cols-2 gap-6 items-start">

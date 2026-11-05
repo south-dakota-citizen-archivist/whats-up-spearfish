@@ -17,7 +17,7 @@ from __future__ import annotations
 import functools
 import http.server
 import threading
-from datetime import datetime, timedelta
+from datetime import datetime, time, timedelta
 from pathlib import Path
 
 import pytest
@@ -230,6 +230,24 @@ def site_url(tmp_path_factory):
             ],
         },
         kind="stats",
+    )  # fmt: skip
+
+    # the movie theater: one movie the day after the build, another the day after that
+    day1, day2 = (dates.today() + timedelta(days=n) for n in (1, 2))
+    _write(
+        data,
+        "nhcinema",
+        [
+            {"id": "m1", "kind": "movie", "status": "now", "title": "Tomorrow Movie", "url": "https://example.com/m1",
+             "rating": "PG", "runtime": 95,
+             "showtimes": [{"date": day1.isoformat(), "times": [{"time": "15:00", "luxury": False},
+                                                                {"time": "21:00", "luxury": True}]}]},
+            {"id": "m2", "kind": "movie", "status": "now", "title": "Later Movie", "url": "https://example.com/m2",
+             "showtimes": [{"date": day2.isoformat(), "times": [{"time": "19:00", "luxury": False}]}]},
+            {"id": "m3", "kind": "movie", "status": "soon", "title": "Soon Movie", "url": "https://example.com/m3",
+             "trailer": "abc123"},
+        ],
+        kind="movie",
     )  # fmt: skip
 
     # served the way GitHub Pages serves it, under /whats-up-spearfish/
@@ -885,4 +903,27 @@ def test_trends_year_over_year_fits_a_phone(open_page):
     section.locator("select").select_option("homes")
     page.wait_for_timeout(100)
     assert section.locator("ol:visible").get_attribute("aria-label") == "New homes, by year"
+    assert page.errors == []
+
+
+def test_movies_open_on_today_and_strike_through_started_shows(open_page):
+    # read the day after the build, at 8 PM: the 3 PM show has started, the 9 PM one hasn't
+    day1 = dates.today() + timedelta(days=1)
+    evening = datetime.combine(day1, time(20, 0), tzinfo=dates.MT)
+    page = open_page("community/", clock=evening)
+    card = page.locator("#movies")
+    assert card.locator("[role=group] button:visible").all_inner_texts() == ["Today", "Tomorrow"]
+    assert card.locator("[aria-pressed=true]").inner_text() == "Today"
+    assert card.locator("li.flex:visible .link-title").all_inner_texts() == ["Tomorrow Movie"]
+    shows = card.locator("li.flex:visible p:visible span.border")
+    assert "line-through" in shows.nth(0).get_attribute("class")  # 3 PM, started
+    assert "line-through" not in shows.nth(1).get_attribute("class")  # 9 PM Luxury
+    assert shows.nth(1).inner_text() == "9 PM Luxury"
+    card.locator("button", has_text="Tomorrow").click()
+    sync_api.expect(card.locator("li.flex:visible .link-title")).to_have_text(["Later Movie"])
+    assert card.get_by_text("Soon Movie").is_visible()
+    # the front page lists the same day
+    home = open_page("", clock=evening).locator("#movies")
+    assert home.get_by_text("Today at Northern Hills Cinema").is_visible()
+    assert home.locator("li.flex:visible .link-title").all_inner_texts() == ["Tomorrow Movie"]
     assert page.errors == []

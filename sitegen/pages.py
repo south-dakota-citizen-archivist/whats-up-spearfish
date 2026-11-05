@@ -695,6 +695,7 @@ def home(site: Site, events: list[dict], today: date) -> dict:
         "recent_permits": recent_permit_count(site, today),
         "plant": plant_of_the_day(site, today),
         "roadkill": roadkill_context(site, today, photos=4),
+        "movies": movies_context(site, today),
         "alerts": alerts,
     }
 
@@ -1047,9 +1048,75 @@ def jobs(site: Site, events: list[dict], today: date) -> dict:
     return {"employers": [s for s in sources_of(site, JOB_SOURCES)], "job_titles": JOB_TITLES}
 
 
+#: the theater's ticket site and price list
+MOVIE_TICKETS_URL = "https://7994.formovietickets.com:2235/"
+MOVIE_PRICES_URL = "https://nhcinema.com/ticket-information"
+
+
+def runtime_label(minutes: int | None) -> str:
+    """101 → '1 hr 41 min'; 90 → '1 hr 30 min'; 45 → '45 min'."""
+    if not minutes:
+        return ""
+    h, m = divmod(int(minutes), 60)
+    return " ".join(p for p in (f"{h} hr" if h else "", f"{m} min" if m else "") if p)
+
+
+def movies_context(site: Site, today: date) -> dict:
+    """
+    Northern Hills Cinema: what's playing, by day, and what's coming soon.
+
+    days lists every day with a showtime from today on, each with its last show, so the
+    page can open on the first day that still has one left (static/js/movies.js).
+    """
+    src = site.get("nhcinema")
+    t = today.isoformat()
+    now, soon, last = [], [], {}
+    for m in src.records:
+        info = [m.get("rating") or "", runtime_label(m.get("runtime")), m.get("genre") or ""]
+        movie = dict(
+            m,
+            info=" • ".join(p for p in info if p),
+            trailer_url=f"https://www.youtube.com/watch?v={m['trailer']}" if m.get("trailer") else "",
+        )
+        if m.get("status") == "soon":
+            soon.append(movie)
+            continue
+        days = []
+        for d in m.get("showtimes") or []:
+            if d["date"] < t:
+                continue
+            times = [
+                {"label": meeting_time(clock=s["time"]), "at": f"{d['date']}T{s['time']}", "luxury": s["luxury"]}
+                for s in d["times"]
+            ]
+            days.append({"date": d["date"], "times": times})
+            last[d["date"]] = max(last.get(d["date"], ""), times[-1]["at"])
+        if days:
+            note = ""
+            if m.get("ends"):
+                note = f"Last day {short_day(m['ends'])}"
+            elif m.get("starts") and m["starts"] > t:
+                note = f"Starts {short_day(m['starts'])}"
+            now.append(dict(movie, days=days, dates=[d["date"] for d in days], note=note))
+    return {
+        "source": src,
+        "now": now,
+        "soon": soon,
+        "days": [{"date": d, "last": last[d], "label": short_day(d)} for d in sorted(last)],
+        "tickets_url": MOVIE_TICKETS_URL,
+        "prices_url": MOVIE_PRICES_URL,
+    }
+
+
+def short_day(iso: str) -> str:
+    """'2026-11-05' → 'Thu, Nov 5'."""
+    return date.fromisoformat(iso[:10]).strftime("%a, %b %-d")
+
+
 def community(site: Site, events: list[dict], today: date) -> dict:
     library = site.get("spearfish_library")
     return {
+        "movies": movies_context(site, today),
         "library": library,
         # covers first: a shelf of placeholders up front looks broken
         "books": sorted(library.records, key=lambda b: not b.get("image_url")),

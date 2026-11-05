@@ -66,6 +66,7 @@ KINDS: dict[str, Kind] = {
     "flavor": Kind(),
     "library_book": Kind(),
     "adoptable": Kind(),
+    "movie": Kind(),  # the theater's whole current list each time
 }
 
 DEFAULT_KIND = Kind()

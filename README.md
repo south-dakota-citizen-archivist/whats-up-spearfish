@@ -151,6 +151,7 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [Lawrence County Jobs](https://lawrence.sd.us/381/Employment-Opportunities) | `lawrence_county_jobs` | job | full snapshot |
 | [Spearfish School District](https://www.applitrack.com/bhssc/onlineapp/default.aspx) | `spearfish_schools_jobs` | job | full snapshot |
 | [Grace Balloch Memorial Library](https://spearfish.blackhills.bywatersolutions.com) | `spearfish_library` | library_book | needs browser, full snapshot |
+| [Northern Hills Cinema](https://nhcinema.com/) | `nhcinema` | movie | full snapshot |
 | [Black Hills Pioneer](https://www.bhpioneer.com/) | `black_hills_pioneer` | news |  |
 | [Custer County Chronicle](https://custercountychronicle.com) | `custer_county_chronicle` | news |  |
 | [Rapid City Journal](https://rapidcityjournal.com/) | `rapid_city_journal` | news |  |

@@ -11,7 +11,7 @@ Renders the static site into _site/:
     /civic/           meetings, permits, bids, notices
     /news/            regional headlines
     /jobs/            local job postings
-    /community/       library new arrivals, adoptable pets
+    /community/       movie showtimes, library new arrivals, adoptable pets
     /sources/         where the information comes from (/status/ redirects here)
 
 Usage: python -m sitegen [--data DIR] [--out DIR]

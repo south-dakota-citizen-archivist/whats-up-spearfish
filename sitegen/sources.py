@@ -53,6 +53,7 @@ CREDIT = {
     "danr_contested_cases": "SD Dept. of Agriculture & Natural Resources",
     "danr_spills": "SD Dept. of Agriculture & Natural Resources",
     "roadkill": "SD Dept. of Transportation",
+    "nhcinema": "Northern Hills Cinema",
 }
 
 
@@ -182,6 +183,11 @@ DIRECTORY: list[tuple[str, list[Org]]] = [
                     _i("New books and movies", "spearfish_library"),
                     _i("Checkouts by month", "library_circulation", note="From the library board's monthly reports"),
                 ),
+            ),
+            Org(
+                "Northern Hills Cinema",
+                "https://nhcinema.com/",
+                (_i("Movies, showtimes and what's coming soon", "nhcinema"),),
             ),
             Org(
                 "Western Hills Humane Society",
