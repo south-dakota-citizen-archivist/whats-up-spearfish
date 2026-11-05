@@ -143,9 +143,23 @@
 
 <section class="mt-6 bg-white border border-stone-200 shadow-sm px-5 py-4" aria-labelledby="numbers-heading">
   <h2 id="numbers-heading" class="text-lg font-bold">Year over year</h2>
-  {# scrolls sideways on a phone, so it takes keyboard focus #}
-  <div class="mt-2 overflow-x-auto" tabindex="0" role="region" aria-label="Year-by-year table">
-    <table class="w-full min-w-[34rem] text-sm tabular-nums">
+  {# phones: a block per year, its figures in two columns; wider screens: the table #}
+  <ol class="md:hidden mt-2 divide-y divide-stone-200 border-y border-stone-200 tabular-nums">
+    {% for r in t.rows | reverse %}
+    <li class="py-2.5">
+      <h3 class="font-semibold">{{ r.year }}{% if r.months < 12 %} <span class="font-normal text-stone-500">(Jan–{{ ('2000-%02d-01' % r.last_month) | fmt_day('%b') }})</span>{% endif %}</h3>
+      <dl class="mt-1.5 grid grid-cols-3 gap-x-3 gap-y-2">
+        {% for label, value in [("All permits", r.permits | intcomma), ("New homes", r.homes), ("New commercial", r.commercial),
+                                ("Demolitions", r.demolitions), ("Construction value", dollars(r.value, r.value_real)),
+                                ("Median new home", dollars(r.median_home, r.median_home_real) if r.median_home else "—")] %}
+        <div class="flex flex-col-reverse justify-end"><dt class="text-xs leading-tight text-stone-600">{{ label }}</dt><dd class="font-semibold">{{ value }}</dd></div>
+        {% endfor %}
+      </dl>
+    </li>
+    {% endfor %}
+  </ol>
+  <div class="hidden md:block mt-2">
+    <table class="w-full text-sm tabular-nums">
       <thead><tr class="text-left text-stone-600 border-b border-stone-200">
         <th scope="col" class="py-1.5 pr-3 font-medium">Year</th>
         <th scope="col" class="py-1.5 px-2 font-medium text-right">All permits</th>

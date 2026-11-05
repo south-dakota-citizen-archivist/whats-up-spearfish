@@ -872,3 +872,11 @@ def test_roadkill_species_filter_the_gallery(open_page):
     assert len(shown()) > 1
 
     assert page.errors == []
+
+
+def test_trends_year_over_year_fits_a_phone(open_page):
+    page = open_page("permits/trends/", viewport=PHONE)
+    assert not page.evaluate("document.documentElement.scrollWidth > innerWidth")  # nothing scrolls sideways
+    years = page.locator("section", has=page.locator("#numbers-heading")).locator("ol li")
+    assert years.first.is_visible() and "All permits" in years.first.inner_text()
+    assert not page.locator("section", has=page.locator("#numbers-heading")).locator("table").is_visible()
