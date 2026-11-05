@@ -60,8 +60,9 @@
     <h2 class="text-sm font-bold uppercase tracking-wide text-pine-800 mb-1.5">{{ day | day_heading }}</h2>
     <ul class="bg-white border border-stone-200 divide-y divide-stone-100">
       {% for n in items %}
-      <li class="px-4 py-3" x-show="shows({{ n.source_label | tojson | forceescape }})">
-        <a href="{{ n.url }}" target="_blank" rel="noopener" class="link-title">{{ n.title }}</a>
+      {# the whole row is the link: the headline's ::after stretches over its (relative) row #}
+      <li class="relative px-4 py-3 hover:bg-pine-50" x-show="shows({{ n.source_label | tojson | forceescape }})">
+        <a href="{{ n.url }}" target="_blank" rel="noopener" class="link-title after:absolute after:inset-0">{{ n.title }}</a>
         <p class="text-xs text-stone-500">{{ n.source_label }}{% if n.byline %} • {{ n.byline }}{% endif %}</p>
         {% if n.description %}<p class="text-sm text-stone-600 mt-1 line-clamp-2">{{ n.description }}</p>{% endif %}
       </li>
