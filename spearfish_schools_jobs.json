@@ -3,8 +3,8 @@
  "name": "Spearfish School District",
  "kind": "job",
  "url": "https://www.applitrack.com/bhssc/onlineapp/default.aspx",
- "fetched_at": "2026-11-04T23:10:17-07:00",
- "count": 6,
+ "fetched_at": "2026-11-05T09:35:04-07:00",
+ "count": 7,
  "records": [
   {
    "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4340&posFirstChoice=Student%20Support%20Services/",
@@ -113,6 +113,24 @@
    "id": "d28700c2e055",
    "date": "2026-07-13",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4658&posFirstChoice=Elementary%20School%20Teaching/",
+   "title": "Elementary Learning Center Teacher",
+   "slug": "4658-elementary-learning-center-teacher",
+   "location": "West Elementary  Spearfish",
+   "district": "Spearfish School District",
+   "position_type": "Elementary School Teaching/",
+   "published": "2026-11-05",
+   "closing": "Open Until Filled",
+   "description": "Position type: Elementary School Teaching/ • Location: West Elementary  Spearfish • Closes: Open Until Filled",
+   "record_type": "job",
+   "source_label": "Spearfish School District",
+   "kind": "job",
+   "source": "spearfish_schools_jobs",
+   "id": "f97e60c50f26",
+   "date": "2026-11-05",
+   "_first_seen": "2026-11-05"
   }
  ]
 }

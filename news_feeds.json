@@ -3,39 +3,9 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-04T23:09:28-07:00",
- "count": 94,
+ "fetched_at": "2026-11-05T09:34:07-07:00",
+ "count": 93,
  "records": [
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/05/south-dakota-national-guard-helps-with-more-than-1000-deportations-since-july-2025-governor-says/",
-   "title": "South Dakota National Guard helps with more than 1,000 deportations since July 2025, governor says",
-   "slug": "south-dakota-searchlight-south-dakota-national-guard-helps-with-more-than-1000",
-   "published": "2026-10-05",
-   "byline": "John Hult",
-   "description": "The South Dakota National Guard has helped process 1,013 deportations for U.S. Immigration and Customs Enforcement since July 2025. Gov. Larry Rhoden’s office included the figure on Monday in a news release announcing his decision to extend his order for cooperation with ICE in paperwork processing, a task assigned to seven National Guard members. The [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "8a01d78380c7",
-   "date": "2026-10-05",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/05/aclu-seeks-deterrent-against-election-problems-by-training-observers-across-south-dakota/",
-   "title": "ACLU seeks ‘deterrent’ against election problems by training observers across South Dakota",
-   "slug": "south-dakota-searchlight-aclu-seeks-deterrent-against-election-problems-by-south",
-   "published": "2026-10-05",
-   "byline": "Meghan O'Brien",
-   "description": "Citizen observers could play an especially important role in the Nov. 3 general election, according to the American Civil Liberties Union of South Dakota. “They are a deterrent against bad behavior,” said Samantha Chapman, the organization’s advocacy manager. The group plans to deploy trained, volunteer observers in Aberdeen, Rapid City and Sioux Falls on Election [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "852cc71f0dc4",
-   "date": "2026-10-05",
-   "_first_seen": "2026-11-01"
-  },
   {
    "url": "https://southdakotasearchlight.com/2026/10/06/chance-of-dyed-diesel-lingering-in-tank-makes-some-farmers-hesitant-to-accept-trumps-help/",
    "title": "Chance of dyed diesel lingering in tanks makes some farmers hesitant to accept Trump’s help",
@@ -622,21 +592,6 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://www.sdnewswatch.org/south-dakota-poll-us-house-jackley-gronli/",
-   "title": "Poll: Jackley leads Gronli 60-32% for US House",
-   "slug": "sd-newswatch-poll-jackley-leads-gronli-60-32-for-us-house",
-   "published": "2026-10-21",
-   "byline": "Molly Wetsch",
-   "description": "Republican Marty Jackley is South Dakota's attorney general. Democrat Nicki Gronli was formerly the state's director for the Department of Agriculture’s Rural Development program.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "d5aacdddf8c4",
-   "date": "2026-10-21",
-   "_first_seen": "2026-11-01"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/10/21/all-of-us-have-a-role-in-prevention-health-official-says-as-south-dakota-suicide-numbers-rise/",
    "title": "‘All of us have a role in prevention,’ health official says as South Dakota suicide numbers rise",
    "slug": "south-dakota-searchlight-all-of-us-have-a-role-in-prevention-health-official-as",
@@ -663,6 +618,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "44d283804619",
+   "date": "2026-10-21",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-poll-us-house-jackley-gronli/",
+   "title": "Poll: Jackley leads Gronli 60-32% for US House",
+   "slug": "sd-newswatch-poll-jackley-leads-gronli-60-32-for-us-house",
+   "published": "2026-10-21",
+   "byline": "Molly Wetsch",
+   "description": "Republican Marty Jackley is South Dakota's attorney general. Democrat Nicki Gronli was formerly the state's director for the Department of Agriculture’s Rural Development program.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "d5aacdddf8c4",
    "date": "2026-10-21",
    "_first_seen": "2026-11-01"
   },
@@ -1415,6 +1385,21 @@
    "id": "71064ea97568",
    "date": "2026-11-04",
    "_first_seen": "2026-11-03"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-general-election-2026-turnout/",
+   "title": "General election: SD voter turnout hits historic low, sales tax increases fail",
+   "slug": "sd-newswatch-general-election-sd-voter-turnout-hits-historic-low-sales-tax-fail",
+   "published": "2026-11-05",
+   "byline": "Molly Wetsch",
+   "description": "What failures to pass amendments, Democratic statewide losses and local elections may mean.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "6e7051e5224b",
+   "date": "2026-11-05",
+   "_first_seen": "2026-11-05"
   }
  ]
 }

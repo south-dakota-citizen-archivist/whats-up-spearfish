@@ -3,7 +3,7 @@
  "name": "SD DANR spill reports",
  "kind": "spill",
  "url": "https://apps.sd.gov/NR42InteractiveMap/",
- "fetched_at": "2026-11-04T23:10:22-07:00",
+ "fetched_at": "2026-11-05T09:35:13-07:00",
  "count": 67,
  "records": [
   {
@@ -2877,7 +2877,7 @@
    "report_no": "2026.013",
    "year": 2026,
    "title": "Magellan Terminal | AST Leak",
-   "status": "Open",
+   "status": "No further action",
    "category": "Petroleum",
    "material": "Diesel",
    "spill_source": "Above-ground tank",
@@ -2890,7 +2890,7 @@
    "pdfs": [
     {
      "url": "https://danr.sd.gov/spillimages/2026/2026.013.pdf",
-     "size": 5669850
+     "size": 5806492
     }
    ],
    "url": "https://danr.sd.gov/spillimages/2026/2026.013.pdf",
@@ -2997,22 +2997,22 @@
       },
       {
        "form": "follow-up",
-       "page": 9,
+       "page": 12,
        "method": "text"
       },
       {
        "form": "follow-up",
-       "page": 10,
-       "method": "text"
-      },
-      {
-       "form": "follow-up",
-       "page": 23,
+       "page": 13,
        "method": "text"
       },
       {
        "form": "follow-up",
        "page": 26,
+       "method": "text"
+      },
+      {
+       "form": "follow-up",
+       "page": 29,
        "method": "text"
       }
      ],
@@ -3073,7 +3073,7 @@
    "report_no": "2026.006",
    "year": 2026,
    "title": "Overblown Mag Chloride Tank Camp Rapid",
-   "status": "Open",
+   "status": "Closed",
    "category": "Chemical",
    "material": "Magnesium chloride",
    "spill_source": "Transport tank",
@@ -3086,7 +3086,7 @@
    "pdfs": [
     {
      "url": "https://danr.sd.gov/spillimages/2026/2026.006.pdf",
-     "size": 5878900
+     "size": 5937850
     }
    ],
    "url": "https://danr.sd.gov/spillimages/2026/2026.006.pdf",

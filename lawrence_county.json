@@ -3,8 +3,8 @@
  "name": "Lawrence County Agenda Center",
  "kind": "document",
  "url": "https://www.lawrence.sd.us/AgendaCenter",
- "fetched_at": "2026-11-04T23:09:23-07:00",
- "count": 3,
+ "fetched_at": "2026-11-05T09:34:01-07:00",
+ "count": 4,
  "records": [
   {
    "url": "https://www.lawrence.sd.us/AgendaCenter/PreviousVersions/1358",
@@ -53,6 +53,23 @@
    "id": "ba1c80523a72",
    "date": "2026-11-05",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.lawrence.sd.us/AgendaCenter/PreviousVersions/1360",
+   "title": "November 10, 2026 ~ County Commission and BOA Proposed Meeting Agendas and Information Packet",
+   "meeting_date": "November 10, 2026",
+   "published": "2026-11-10",
+   "updated_note": "",
+   "record_type": "document",
+   "source_label": "Lawrence County",
+   "start_time": "09:00",
+   "join_url": "",
+   "dial_in": {},
+   "kind": "document",
+   "source": "lawrence_county",
+   "id": "0119614c5d81",
+   "date": "2026-11-10",
+   "_first_seen": "2026-11-05"
   }
  ]
 }

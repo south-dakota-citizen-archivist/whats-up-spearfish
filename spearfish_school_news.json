@@ -3,23 +3,9 @@
  "name": "Spearfish School District",
  "kind": "press_release",
  "url": "https://www.spearfish.k12.sd.us/news",
- "fetched_at": "2026-11-04T23:10:06-07:00",
+ "fetched_at": "2026-11-05T09:34:53-07:00",
  "count": 20,
  "records": [
-  {
-   "title": "Spearfish School District Launches New Mobile App",
-   "url": "https://www.spearfish.k12.sd.us/o/ssd/article/2763242",
-   "published": "2026-03-12T14:14:00-06:00",
-   "description": "We're thrilled to announce the new app for Spearfish School District! It's everything Spearfish School District , in your pocket. With the new app, you can access documents,...",
-   "image_url": "https://core-docs.s3.amazonaws.com/article/image/large_93e10e4a-081a-4933-82d1-3b16c9288d87.png",
-   "kind": "press_release",
-   "record_type": "press_release",
-   "source": "spearfish_school_news",
-   "source_label": "Spearfish School District",
-   "id": "ac1bfc91293b",
-   "date": "2026-03-12",
-   "_first_seen": "2026-11-01"
-  },
   {
    "title": "Unofficial School Board Election Results",
    "url": "https://www.spearfish.k12.sd.us/o/ssd/article/2962777",
@@ -285,6 +271,20 @@
    "id": "7f26c5ae5165",
    "date": "2026-10-28",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "title": "School Board Meeting, Monday, November 9, 2026",
+   "url": "https://www.spearfish.k12.sd.us/o/ssd/article/3236246",
+   "published": "2026-11-05T09:22:22-07:00",
+   "description": "School Board Meeting Monday, November 9, 2026 @ 5:30 p.m. 525 E. Illinois Spearfish, SD 57783",
+   "image_url": "https://core-docs.s3.amazonaws.com/spearfish_school_district/article/image/large_174d6afc-8d6c-4617-bd3e-c28ab77b2fdf.png",
+   "kind": "press_release",
+   "record_type": "press_release",
+   "source": "spearfish_school_news",
+   "source_label": "Spearfish School District",
+   "id": "2e96255a8133",
+   "date": "2026-11-05",
+   "_first_seen": "2026-11-05"
   }
  ]
 }
