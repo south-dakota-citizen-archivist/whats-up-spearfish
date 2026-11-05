@@ -892,17 +892,13 @@ def test_roadkill_species_filter_the_gallery(open_page):
     assert page.errors == []
 
 
-def test_trends_year_over_year_fits_a_phone(open_page):
+def test_trends_year_over_year_table_is_left_off_phones(open_page):
+    # on a phone the table would only repeat the charts above it
     page = open_page("permits/trends/", viewport=PHONE)
     assert not page.evaluate("document.documentElement.scrollWidth > innerWidth")  # nothing scrolls sideways
-    section = page.locator("section", has=page.locator("#numbers-heading"))
-    assert not section.locator("table").is_visible()
-    # one measure at a time, a line per year
-    shown = section.locator("ol:visible")
-    assert shown.count() == 1 and shown.get_attribute("aria-label") == "All permits, by year"
-    section.locator("select").select_option("homes")
-    page.wait_for_timeout(100)
-    assert section.locator("ol:visible").get_attribute("aria-label") == "New homes, by year"
+    box = page.locator("section", has=page.locator("#numbers-heading")).bounding_box()
+    assert box["height"] <= 1  # there for screen readers only
+    assert open_page("permits/trends/", viewport={"width": 800, "height": 900}).locator("table").first.is_visible()
     assert page.errors == []
 
 

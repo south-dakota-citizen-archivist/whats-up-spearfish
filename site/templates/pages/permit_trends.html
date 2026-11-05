@@ -141,43 +141,11 @@
   {% endcall %}
 </div>
 
-<section class="mt-6 bg-white border border-stone-200 shadow-sm px-5 py-4" aria-labelledby="numbers-heading">
+{# the full table, from tablet width up; on a phone it would only repeat the charts above, so there
+   it is kept for screen readers alone (the charts give them their numbers through it) #}
+<section class="max-md:sr-only mt-6 bg-white border border-stone-200 shadow-sm px-5 py-4" aria-labelledby="numbers-heading">
   <h2 id="numbers-heading" class="text-lg font-bold">Year over year</h2>
-  {# phones: one measure at a time (the menu picks it), a line per year with a bar to compare;
-     wider screens: the whole table #}
-  {% set measures = [("permits", "All permits", false), ("homes", "New homes", false),
-                     ("commercial", "New commercial buildings", false), ("demolitions", "Demolitions", false),
-                     ("value", "Value of construction", true), ("median_home", "Median new home", true)] %}
-  <div class="md:hidden mt-2" x-data="{ show: 'permits' }">
-    <label class="flex items-center gap-2 text-sm"><span class="text-stone-600">Show</span>
-      <select x-model="show" class="h-10 flex-1 border border-stone-400 bg-white pl-2 text-sm">
-        {% for key, label, money in measures %}<option value="{{ key }}">{{ label }}</option>{% endfor %}
-      </select>
-    </label>
-    {% for key, label, money in measures %}
-    {% set top = (t.rows | map(attribute=key) | select | max) or 1 %}
-    {% set top_real = ((t.rows | map(attribute=key ~ '_real') | select | max) or 1) if money else 1 %}
-    <ol x-show="show === '{{ key }}'"{{ ' x-cloak' if not loop.first }} class="mt-2 tabular-nums" aria-label="{{ label }}, by year">
-      {% for r in t.rows | reverse %}
-      {% set partial = r.months < 12 %}
-      <li class="grid grid-cols-[4rem_1fr_5rem] items-center gap-3 py-1.5 border-b border-stone-100">
-        <span class="font-semibold leading-tight">{{ r.year }}{% if partial %}<span class="block text-xs font-normal text-stone-500">Jan–{{ ('2000-%02d-01' % r.last_month) | fmt_day('%b') }}</span>{% endif %}</span>
-        <span class="h-2.5 bg-stone-100" aria-hidden="true">
-          {%- set bar = 'block h-full ' ~ ('bg-pine-600/45' if partial else 'bg-pine-600') %}
-          {%- if money %}
-          <span x-show="!real" class="{{ bar }}" style="width: {{ ((r[key] or 0) / top * 100) | round(1) }}%"></span>
-          <span x-show="real" x-cloak class="{{ bar }}" style="width: {{ ((r[key ~ '_real'] or 0) / top_real * 100) | round(1) }}%"></span>
-          {%- else %}
-          <span class="{{ bar }}" style="width: {{ ((r[key] or 0) / top * 100) | round(1) }}%"></span>
-          {%- endif %}
-        </span>
-        <span class="text-right font-medium">{% if money %}{% if r[key] %}{{ dollars(r[key], r[key ~ '_real']) }}{% else %}—{% endif %}{% else %}{{ r[key] | intcomma }}{% endif %}</span>
-      </li>
-      {% endfor %}
-    </ol>
-    {% endfor %}
-  </div>
-  <div class="hidden md:block mt-2">
+  <div class="mt-2">
     <table class="w-full text-sm tabular-nums">
       <thead><tr class="text-left text-stone-600 border-b border-stone-200">
         <th scope="col" class="py-1.5 pr-3 font-medium">Year</th>
