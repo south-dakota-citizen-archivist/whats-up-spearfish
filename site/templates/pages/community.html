@@ -64,7 +64,7 @@
         </li>
         {% endfor %}
       </ul>
-      <p class="mt-4 text-xs text-stone-600">Luxury shows have luxury seating, for a little more. {{ ext(movies.prices_url, "Prices") }} • {{ ext(movies.tickets_url, "Buy tickets") }}</p>
+      <p class="mt-4 text-xs text-stone-600">{{ ext(movies.prices_url, "Prices") }} • {{ ext(movies.tickets_url, "Buy tickets") }}</p>
     </div>
     {% else %}{{ empty("No showtimes posted right now.") }}{% endif %}
 
