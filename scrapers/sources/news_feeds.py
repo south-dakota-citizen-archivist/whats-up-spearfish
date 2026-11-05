@@ -63,6 +63,7 @@ def _parse_feed(feed, source_label: str, key: str = "") -> list[dict]:
 class NewsFeeds(BaseScraper):
     name = "Regional News"
     slug = "news_feeds"
+    tier = "frequent"  # news: every 3 hours
     kind = "news"
     url = "https://www.sdnewswatch.org/"
     dedup_key = "slug"

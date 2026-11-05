@@ -190,3 +190,29 @@ def test_leones_detail():
         "gluten_free": True,
         "contains": ["Eggs", "Dairy"],
     }
+
+
+def test_sundance_times_feed_entry_and_byline():
+    import feedparser
+
+    from scrapers.sources.sundance_times import parse_byline, parse_entry
+
+    feed = feedparser.parse(
+        """<rss version="2.0"><channel><item>
+        <title><![CDATA[Crook County secures healthcare grants]]></title>
+        <link><![CDATA[https://www.sundancetimes.com/story/2026/11/05/news/crook-county-grants/13350.html]]></link>
+        <description><![CDATA[The county has won <b>two</b> grants...]]></description>
+        <pubDate>Wed, 4 Nov 2026 16:09:00 +0100</pubDate>
+        </item></channel></rss>"""
+    )
+    rec = parse_entry(feed.entries[0])
+    # dated by its edition (from the address), not by the feed's mislabeled time
+    assert rec["published"] == "2026-11-05"
+    assert rec["title"] == "Crook County secures healthcare grants"
+    assert rec["description"] == "The county has won two grants..."
+    page = (
+        "<div class=\"byline_date_comments\"><span class='author'><span><a href='/author/sp' class=\"author-blue\">"
+        'Sarah Pridgeon</a></span></span><span class="volume_issue"> | Nov 05, 2026</span></div>'
+    )
+    assert parse_byline(page) == "Sarah Pridgeon"
+    assert parse_byline("<div class='byline_date_comments'><span class='volume_issue'> | Nov 05</span></div>") == ""

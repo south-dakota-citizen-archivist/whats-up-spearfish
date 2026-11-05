@@ -82,6 +82,7 @@ def _parse_page(soup: BeautifulSoup) -> list[dict]:
 class CusterCountyChronicle(BaseScraper):
     name = "Custer County Chronicle"
     slug = "custer_county_chronicle"
+    tier = "frequent"  # news: every 3 hours
     kind = "news"
     url = "https://custercountychronicle.com"
 

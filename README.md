@@ -152,12 +152,12 @@ Set `enabled = False` to put a source on ice without deleting it.
 | [Spearfish School District](https://www.applitrack.com/bhssc/onlineapp/default.aspx) | `spearfish_schools_jobs` | job | full snapshot |
 | [Grace Balloch Memorial Library](https://spearfish.blackhills.bywatersolutions.com) | `spearfish_library` | library_book | needs browser, full snapshot |
 | [Northern Hills Cinema](https://nhcinema.com/) | `nhcinema` | movie | full snapshot |
-| [Black Hills Pioneer](https://www.bhpioneer.com/) | `black_hills_pioneer` | news |  |
-| [Custer County Chronicle](https://custercountychronicle.com) | `custer_county_chronicle` | news |  |
-| [Rapid City Journal](https://rapidcityjournal.com/) | `rapid_city_journal` | news |  |
-| [Regional News](https://www.sdnewswatch.org/) | `news_feeds` | news |  |
+| [Black Hills Pioneer](https://www.bhpioneer.com/) | `black_hills_pioneer` | news | frequent tier |
+| [Custer County Chronicle](https://custercountychronicle.com) | `custer_county_chronicle` | news | frequent tier |
+| [Rapid City Journal](https://rapidcityjournal.com/) | `rapid_city_journal` | news | frequent tier |
+| [Regional News](https://www.sdnewswatch.org/) | `news_feeds` | news | frequent tier |
 | [SDPB](https://www.sdpb.org/news) | `sdpb_news` | news | needs browser |
-| [Sundance Times](https://www.sundancetimes.com) | `sundance_times` | news |  |
+| [Sundance Times](https://www.sundancetimes.com) | `sundance_times` | news | frequent tier |
 | [SD DANR public notices (West River)](https://danr.sd.gov/public/default.aspx) | `danr_public_notices` | notice | full snapshot |
 | [Spearfish Planning Commission applications](https://spearfishsd.portal.civicclerk.com/) | `planning_commission` | planning_item |  |
 | [Native plants of the Black Hills](https://www.inaturalist.org/places/black-hills-national-forest-us) | `native_plants_spotlight` | plant | full snapshot |

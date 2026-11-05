@@ -118,6 +118,7 @@ class _TownNewsScraper(BaseScraper):
 class BlackHillsPioneer(_TownNewsScraper):
     name = "Black Hills Pioneer"
     slug = "black_hills_pioneer"
+    tier = "frequent"  # news: every 3 hours
     kind = "news"
     url = "https://www.bhpioneer.com/"
     search_url = "https://www.bhpioneer.com/search"
@@ -141,6 +142,7 @@ class BlackHillsPioneer(_TownNewsScraper):
 class RapidCityJournal(_TownNewsScraper):
     name = "Rapid City Journal"
     slug = "rapid_city_journal"
+    tier = "frequent"  # news: every 3 hours
     kind = "news"
     url = "https://rapidcityjournal.com/"
     search_url = "https://rapidcityjournal.com/search"
