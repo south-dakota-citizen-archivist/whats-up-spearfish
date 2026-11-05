@@ -48,14 +48,14 @@ TAILWIND_VERSION = "v4.2.2"
 NAV = [
     ("", "Today"),
     ("events/", "Events"),
+    ("community/", "Community"),
     ("schools/", "Schools"),
-    ("outdoors/", "Outdoors"),
-    ("on-tap/", "On tap"),
     ("civic/", "Civic"),
     ("permits/", "Permits"),
     ("news/", "News"),
+    ("outdoors/", "Outdoors"),
+    ("on-tap/", "On tap"),
     ("jobs/", "Jobs"),
-    ("community/", "Community"),
 ]
 
 PAGES = [
