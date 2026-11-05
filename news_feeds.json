@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-05T09:42:42-07:00",
- "count": 93,
+ "fetched_at": "2026-11-05T11:00:01-07:00",
+ "count": 94,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/06/chance-of-dyed-diesel-lingering-in-tank-makes-some-farmers-hesitant-to-accept-trumps-help/",
@@ -1398,6 +1398,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "6e7051e5224b",
+   "date": "2026-11-05",
+   "_first_seen": "2026-11-05"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/05/departing-us-representative-scheduled-to-lead-civic-discourse-series-on-critical-issues/",
+   "title": "Departing US representative scheduled to lead civic discourse series on critical issues",
+   "slug": "south-dakota-searchlight-departing-us-representative-scheduled-to-lead-civic-on",
+   "published": "2026-11-05",
+   "byline": "Joshua Haiar",
+   "description": "South Dakota’s soon-to-be-former U.S. Rep. Dusty Johnson will begin a statewide speaker series this evening aimed at encouraging civil discourse, critical thinking and long-term solutions to some of the country’s greatest challenges. “I think America makes the best decisions when we plan for the long-term and when we use good data to make decisions,” Johnson [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "6eb5364fb402",
    "date": "2026-11-05",
    "_first_seen": "2026-11-05"
   }
