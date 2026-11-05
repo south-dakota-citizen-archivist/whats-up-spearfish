@@ -877,6 +877,12 @@ def test_roadkill_species_filter_the_gallery(open_page):
 def test_trends_year_over_year_fits_a_phone(open_page):
     page = open_page("permits/trends/", viewport=PHONE)
     assert not page.evaluate("document.documentElement.scrollWidth > innerWidth")  # nothing scrolls sideways
-    years = page.locator("section", has=page.locator("#numbers-heading")).locator("ol li")
-    assert years.first.is_visible() and "All permits" in years.first.inner_text()
-    assert not page.locator("section", has=page.locator("#numbers-heading")).locator("table").is_visible()
+    section = page.locator("section", has=page.locator("#numbers-heading"))
+    assert not section.locator("table").is_visible()
+    # one measure at a time, a line per year
+    shown = section.locator("ol:visible")
+    assert shown.count() == 1 and shown.get_attribute("aria-label") == "All permits, by year"
+    section.locator("select").select_option("homes")
+    page.wait_for_timeout(100)
+    assert section.locator("ol:visible").get_attribute("aria-label") == "New homes, by year"
+    assert page.errors == []
