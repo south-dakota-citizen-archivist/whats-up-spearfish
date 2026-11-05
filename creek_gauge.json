@@ -3,7 +3,7 @@
  "name": "Spearfish Creek gauge (USGS)",
  "kind": "gauge",
  "url": "https://waterdata.usgs.gov/monitoring-location/USGS-06431500/",
- "fetched_at": "2026-11-05T09:38:30-07:00",
+ "fetched_at": "2026-11-05T09:42:42-07:00",
  "data": {
   "current": {
    "cfs": 36,
