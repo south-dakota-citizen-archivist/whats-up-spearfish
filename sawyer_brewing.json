@@ -3,7 +3,7 @@
  "name": "Sawyer Brewing Co.",
  "kind": "beer",
  "url": "https://www.sawyerbrewingco.com/menu",
- "fetched_at": "2026-11-04T12:49:25-07:00",
+ "fetched_at": "2026-11-04T23:09:58-07:00",
  "count": 14,
  "records": [
   {
@@ -278,36 +278,6 @@
   },
   {
    "url": "https://www.sawyerbrewingco.com/menu",
-   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/b7338ad0-c608-473b-9843-6f9c67b5266b/Phazerdark.jpg",
-   "title": "Phazer Hazy IPA",
-   "slug": "phazer-hazy-ipa",
-   "category": "Hop Heads",
-   "description": "Welcome to a new phaze of IPA! Hops were added in the hot water tank, mash tun, boil kettle, whirlpool, before, during, & after fermentatnion. Creating huge fruit flavor with low bitterness. Featuring Mosaic, Nelson Sauvin, & Amarillo hops.",
-   "abv": "6.8%",
-   "notes": "",
-   "prices": [
-    {
-     "price": 2.5,
-     "ounces": 5
-    },
-    {
-     "price": 4.5,
-     "ounces": 10
-    },
-    {
-     "price": 7.0,
-     "ounces": 16
-    }
-   ],
-   "record_type": "beer",
-   "source_label": "Sawyer Brewing Co.",
-   "kind": "beer",
-   "source": "sawyer_brewing",
-   "id": "0f77b4b5dc8b",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://www.sawyerbrewingco.com/menu",
    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/35661dbc-dd4d-4189-a961-04f92ad4481d/showwebsite.jpg",
    "title": "The Show Must Go On IPA",
    "slug": "the-show-must-go-on-ipa",
@@ -341,7 +311,7 @@
    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/0d54566a-8384-4f0f-810c-f1b670f2fa96/pinneapplepeacheswebsitedark.jpg",
    "title": "Pineapple & Peaches Sour Ale",
    "slug": "pineapple-peaches-sour-ale",
-   "category": "Sour Power",
+   "category": "Hop Heads",
    "description": "Take your tastebuds on a staycation with bright sweet tropical pineapple notes melding with the mellow tartness of peaches. Brewed with real pineapple and peaches.",
    "abv": "5.5%",
    "notes": "",
@@ -372,7 +342,7 @@
    "title": "Night Owl Coffee Stout",
    "slug": "night-owl-coffee-stout",
    "category": "Dark Side",
-   "description": "Dark roasted malts meld with the Night Owl coffee from Sawyer Coffee Lab to create layers of dittersweet chocolate. Full bodied and smooth with a decadent coffee aroma.",
+   "description": "Dark roasted malts meld with the Night Owl coffee from Sawyer Coffee Lab to create layers of oittersweet chocolate. Full bodied and smooth with a decadent coffee aroma.",
    "abv": "7.0%",
    "notes": "",
    "prices": [
@@ -391,6 +361,36 @@
    "source": "sawyer_brewing",
    "id": "243971712409",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/0d46c3e7-9e62-471c-ade5-8d6588df6393/DarkLager2024.jpg",
+   "title": "Dark Lager",
+   "slug": "dark-lager",
+   "category": "Dark Side",
+   "description": "Our Dark Lager is malty sweet with smooth dark roasty notes and a light body. The best of both worlds.",
+   "abv": "5.8%",
+   "notes": "",
+   "prices": [
+    {
+     "price": 2.5,
+     "ounces": 5
+    },
+    {
+     "price": 4.0,
+     "ounces": 10
+    },
+    {
+     "price": 6.0,
+     "ounces": 16
+    }
+   ],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "8f629b14c88d",
+   "_first_seen": "2026-11-04"
   },
   {
    "url": "https://www.sawyerbrewingco.com/menu",

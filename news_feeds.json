@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-04T12:48:52-07:00",
- "count": 91,
+ "fetched_at": "2026-11-04T23:09:28-07:00",
+ "count": 94,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/05/south-dakota-national-guard-helps-with-more-than-1000-deportations-since-july-2025-governor-says/",
@@ -1220,6 +1220,51 @@
    "id": "91bc2b7a8368",
    "date": "2026-11-04",
    "_first_seen": "2026-11-03"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/04/the-blue-tsunami-brings-a-ripple-of-hope-to-south-dakota-democrats/",
+   "title": "Commentary: The ‘blue tsunami’ brings a ripple of hope to South Dakota Democrats",
+   "slug": "south-dakota-searchlight-commentary-the-blue-tsunami-brings-a-ripple-of-hope-to",
+   "published": "2026-11-04",
+   "byline": "Seth Tupper",
+   "description": "By the time Tuesday’s “blue tsunami” washed in from the coasts and reached South Dakota, it was a ripple. State Democrats added four legislative seats, moving from eight to 12. It was the first time in 18 years Democrats have gained ground in the 105-member Legislature. Otherwise, South Dakota stayed Republican red as another 18-year [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "447d14867943",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/04/voters-in-two-south-dakota-counties-reject-local-sales-taxes-for-property-tax-reductions/",
+   "title": "Voters in two South Dakota counties reject local sales taxes for property tax reductions",
+   "slug": "south-dakota-searchlight-voters-in-two-south-dakota-counties-reject-local-sales",
+   "published": "2026-11-04",
+   "byline": "Makenzie Huber",
+   "description": "Voters in South Dakota&#8217;s Brown and Codington counties rejected new half-percent county sales taxes Tuesday, voting down plans their county commissions had proposed to lower homeowners’ property taxes. Brown and Codington were the first counties where voters weighed in on the new taxes. The decisions come after a string of county commissions approved local sales [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "722dae796741",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/04/losing-our-voice-south-dakota-general-election-turnout-falls-to-historic-low/",
+   "title": "‘Losing our voice’: South Dakota general election turnout falls to historic low",
+   "slug": "south-dakota-searchlight-losing-our-voice-south-dakota-general-election-turnout",
+   "published": "2026-11-04",
+   "byline": "Makenzie Huber",
+   "description": "South Dakota’s general election voter turnout dropped to a historic low Tuesday, with 49% of registered voters casting a ballot. Turnout is generally lower in non-presidential election years, according to data from the Secretary of State’s Office dating to 1964. The state’s previous low for a general election was 52% in 2010. University of South [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "e83b8291965f",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-04"
   },
   {
    "url": "https://southdakotasearchlight.com/2026/11/04/democrats-gain-seats-in-south-dakota-legislature-for-the-first-time-since-2008/",

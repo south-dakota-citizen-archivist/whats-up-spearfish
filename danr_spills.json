@@ -3,7 +3,7 @@
  "name": "SD DANR spill reports",
  "kind": "spill",
  "url": "https://apps.sd.gov/NR42InteractiveMap/",
- "fetched_at": "2026-11-04T12:49:50-07:00",
+ "fetched_at": "2026-11-04T23:10:22-07:00",
  "count": 67,
  "records": [
   {
@@ -2890,7 +2890,7 @@
    "pdfs": [
     {
      "url": "https://danr.sd.gov/spillimages/2026/2026.013.pdf",
-     "size": 5367114
+     "size": 5669850
     }
    ],
    "url": "https://danr.sd.gov/spillimages/2026/2026.013.pdf",
@@ -2997,22 +2997,22 @@
       },
       {
        "form": "follow-up",
-       "page": 7,
+       "page": 9,
        "method": "text"
       },
       {
        "form": "follow-up",
-       "page": 8,
+       "page": 10,
        "method": "text"
       },
       {
        "form": "follow-up",
-       "page": 21,
+       "page": 23,
        "method": "text"
       },
       {
        "form": "follow-up",
-       "page": 24,
+       "page": 26,
        "method": "text"
       }
      ],

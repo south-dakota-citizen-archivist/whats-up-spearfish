@@ -3,7 +3,7 @@
  "name": "BHSU Athletics",
  "kind": "event",
  "url": "https://bhsuathletics.com/calendar",
- "fetched_at": "2026-11-04T12:48:45-07:00",
+ "fetched_at": "2026-11-04T23:09:17-07:00",
  "count": 90,
  "records": [
   {
@@ -37,7 +37,7 @@
    "all_day": false,
    "date": "2026-11-06",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -71,7 +71,7 @@
    "all_day": false,
    "date": "2026-11-07",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -105,7 +105,7 @@
    "all_day": false,
    "date": "2026-11-07",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -139,7 +139,7 @@
    "all_day": false,
    "date": "2026-11-07",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -173,7 +173,7 @@
    "all_day": false,
    "date": "2026-11-07",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -207,7 +207,7 @@
    "all_day": false,
    "date": "2026-11-07",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -241,7 +241,7 @@
    "end": "",
    "date": "2026-11-08",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -275,7 +275,7 @@
    "all_day": false,
    "date": "2026-11-08",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -377,7 +377,7 @@
    "all_day": false,
    "date": "2026-11-13",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -411,7 +411,7 @@
    "all_day": false,
    "date": "2026-11-13",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -479,7 +479,7 @@
    "all_day": false,
    "date": "2026-11-14",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -513,7 +513,7 @@
    "all_day": false,
    "date": "2026-11-14",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -547,7 +547,7 @@
    "all_day": false,
    "date": "2026-11-14",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -581,7 +581,7 @@
    "all_day": false,
    "date": "2026-11-20",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -615,7 +615,7 @@
    "all_day": false,
    "date": "2026-11-20",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -649,7 +649,7 @@
    "end": "",
    "date": "2026-11-21",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -683,7 +683,7 @@
    "end": "",
    "date": "2026-11-21",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -717,7 +717,7 @@
    "all_day": false,
    "date": "2026-11-21",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -751,7 +751,7 @@
    "all_day": false,
    "date": "2026-11-21",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -785,7 +785,7 @@
    "all_day": false,
    "date": "2026-11-26",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -819,7 +819,7 @@
    "all_day": false,
    "date": "2026-11-27",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -853,7 +853,7 @@
    "all_day": false,
    "date": "2026-11-28",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -887,7 +887,7 @@
    "all_day": false,
    "date": "2026-11-28",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -921,7 +921,7 @@
    "all_day": false,
    "date": "2026-12-03",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -955,7 +955,7 @@
    "all_day": false,
    "date": "2026-12-03",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -989,7 +989,7 @@
    "end": "",
    "date": "2026-12-04",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1023,7 +1023,7 @@
    "end": "",
    "date": "2026-12-04",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1057,7 +1057,7 @@
    "all_day": false,
    "date": "2026-12-05",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1091,7 +1091,7 @@
    "all_day": false,
    "date": "2026-12-05",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1125,7 +1125,7 @@
    "all_day": false,
    "date": "2026-12-08",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1159,7 +1159,7 @@
    "all_day": false,
    "date": "2026-12-08",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1193,7 +1193,7 @@
    "all_day": false,
    "date": "2026-12-10",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1227,7 +1227,7 @@
    "all_day": false,
    "date": "2026-12-10",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1261,7 +1261,7 @@
    "all_day": false,
    "date": "2026-12-19",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1295,7 +1295,7 @@
    "all_day": false,
    "date": "2026-12-30",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1329,7 +1329,7 @@
    "all_day": false,
    "date": "2026-12-30",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1363,7 +1363,7 @@
    "all_day": false,
    "date": "2027-01-02",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1397,7 +1397,7 @@
    "all_day": false,
    "date": "2027-01-07",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1431,7 +1431,7 @@
    "all_day": false,
    "date": "2027-01-07",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1465,7 +1465,7 @@
    "all_day": false,
    "date": "2027-01-09",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1499,7 +1499,7 @@
    "all_day": false,
    "date": "2027-01-09",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1533,7 +1533,7 @@
    "all_day": false,
    "date": "2027-01-14",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1567,7 +1567,7 @@
    "all_day": false,
    "date": "2027-01-14",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1601,7 +1601,7 @@
    "all_day": false,
    "date": "2027-01-16",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1635,7 +1635,7 @@
    "all_day": false,
    "date": "2027-01-16",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1669,7 +1669,7 @@
    "all_day": false,
    "date": "2027-01-21",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1703,7 +1703,7 @@
    "all_day": false,
    "date": "2027-01-21",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1737,7 +1737,7 @@
    "all_day": false,
    "date": "2027-01-23",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1771,7 +1771,7 @@
    "all_day": false,
    "date": "2027-01-23",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1805,7 +1805,7 @@
    "all_day": false,
    "date": "2027-01-28",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1839,7 +1839,7 @@
    "all_day": false,
    "date": "2027-01-28",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1873,7 +1873,7 @@
    "all_day": false,
    "date": "2027-01-30",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1907,7 +1907,7 @@
    "all_day": false,
    "date": "2027-01-30",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1941,7 +1941,7 @@
    "all_day": false,
    "date": "2027-02-02",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -1975,7 +1975,7 @@
    "all_day": false,
    "date": "2027-02-02",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2009,7 +2009,7 @@
    "all_day": false,
    "date": "2027-02-06",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2043,7 +2043,7 @@
    "all_day": false,
    "date": "2027-02-06",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2077,7 +2077,7 @@
    "all_day": false,
    "date": "2027-02-11",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2111,7 +2111,7 @@
    "all_day": false,
    "date": "2027-02-11",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2145,7 +2145,7 @@
    "all_day": false,
    "date": "2027-02-13",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2179,7 +2179,7 @@
    "all_day": false,
    "date": "2027-02-13",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2213,7 +2213,7 @@
    "all_day": false,
    "date": "2027-02-18",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2247,7 +2247,7 @@
    "all_day": false,
    "date": "2027-02-18",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2281,7 +2281,7 @@
    "all_day": false,
    "date": "2027-02-20",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2315,7 +2315,7 @@
    "all_day": false,
    "date": "2027-02-20",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2349,7 +2349,7 @@
    "all_day": false,
    "date": "2027-02-25",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2383,7 +2383,7 @@
    "all_day": false,
    "date": "2027-02-25",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2417,7 +2417,7 @@
    "all_day": false,
    "date": "2027-02-27",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2451,7 +2451,7 @@
    "all_day": false,
    "date": "2027-02-27",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2485,7 +2485,7 @@
    "end": "",
    "date": "2027-03-02",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2519,7 +2519,7 @@
    "end": "",
    "date": "2027-03-02",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2553,7 +2553,7 @@
    "end": "",
    "date": "2027-03-05",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2587,7 +2587,7 @@
    "end": "",
    "date": "2027-03-05",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2621,7 +2621,7 @@
    "end": "",
    "date": "2027-03-06",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2655,7 +2655,7 @@
    "end": "",
    "date": "2027-03-06",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2689,7 +2689,7 @@
    "end": "",
    "date": "2027-03-12",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2723,7 +2723,7 @@
    "end": "",
    "date": "2027-03-12",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2757,7 +2757,7 @@
    "end": "",
    "date": "2027-03-13",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2791,7 +2791,7 @@
    "end": "",
    "date": "2027-03-13",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2825,7 +2825,7 @@
    "end": "",
    "date": "2027-03-15",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2859,7 +2859,7 @@
    "end": "",
    "date": "2027-03-15",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2893,7 +2893,7 @@
    "end": "",
    "date": "2027-03-23",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2927,7 +2927,7 @@
    "end": "",
    "date": "2027-03-23",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2961,7 +2961,7 @@
    "end": "",
    "date": "2027-03-25",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -2995,7 +2995,7 @@
    "end": "",
    "date": "2027-03-25",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -3029,7 +3029,7 @@
    "end": "",
    "date": "2027-03-27",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   },
   {
@@ -3063,7 +3063,7 @@
    "end": "",
    "date": "2027-03-27",
    "description": "",
-   "event_category": "sports",
+   "event_category": "bhsu sports",
    "_first_seen": "2026-11-01"
   }
  ]

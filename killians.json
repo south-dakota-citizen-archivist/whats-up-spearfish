@@ -3,7 +3,7 @@
  "name": "Killian's",
  "kind": "beer",
  "url": "https://untappd.com",
- "fetched_at": "2026-11-04T12:48:46-07:00",
+ "fetched_at": "2026-11-04T23:09:22-07:00",
  "count": 17,
  "records": [
   {
@@ -58,21 +58,21 @@
    "_first_seen": "2026-11-03"
   },
   {
-   "url": "https://untappd.com/b/kros-strain-brewing-classic-lager/6134857",
-   "title": "Classic Lager",
-   "slug": "classic-lager",
-   "category": "Lager - Helles",
-   "abv": "4.8%",
-   "ibu": "",
-   "brewery": "Kros Strain Brewing",
-   "rating": "3.81",
-   "image_url": "https://labels.untappd.com/6134857",
+   "url": "https://untappd.com/b/lost-cabin-beer-co-cabana/3231567",
+   "title": "Cabaña",
+   "slug": "cabana",
+   "category": "Lager - Mexican",
+   "abv": "5.2%",
+   "ibu": "21",
+   "brewery": "Lost Cabin Beer Co.",
+   "rating": "3.71",
+   "image_url": "https://labels.untappd.com/3231567",
    "record_type": "beer",
    "source_label": "Killian's",
    "kind": "beer",
    "source": "killians",
-   "id": "d2df8b50f174",
-   "_first_seen": "2026-11-01"
+   "id": "a415a07f92e8",
+   "_first_seen": "2026-11-04"
   },
   {
    "url": "https://untappd.com/b/heavy-riff-brewing-company-bocelli/4354628",

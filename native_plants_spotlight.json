@@ -3,7 +3,7 @@
  "name": "Native plants of the Black Hills",
  "kind": "plant",
  "url": "https://www.inaturalist.org/places/black-hills-national-forest-us",
- "fetched_at": "2026-11-04T12:49:21-07:00",
+ "fetched_at": "2026-11-04T23:09:54-07:00",
  "count": 389,
  "records": [
   {
@@ -253,7 +253,7 @@
    "photo_credit": "(c) Sherrie Snyder, some rights reserved (CC BY-NC), uploaded by Sherrie Snyder",
    "url": "https://www.inaturalist.org/taxa/49870",
    "wikipedia_url": "https://en.wikipedia.org/wiki/Actaea rubra",
-   "sightings": 73,
+   "sightings": 74,
    "kind": "plant",
    "record_type": "plant",
    "source": "native_plants_spotlight",
@@ -2718,7 +2718,7 @@
    "photo_credit": "(c) Li Jianong, some rights reserved (CC BY-NC), uploaded by Li Jianong",
    "url": "https://www.inaturalist.org/taxa/77780",
    "wikipedia_url": "https://en.wikipedia.org/wiki/Linnaea borealis",
-   "sightings": 105,
+   "sightings": 106,
    "kind": "plant",
    "record_type": "plant",
    "source": "native_plants_spotlight",

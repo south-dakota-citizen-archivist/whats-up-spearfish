@@ -1,0 +1,1128 @@
+{
+ "slug": "nhcinema",
+ "name": "Northern Hills Cinema",
+ "kind": "movie",
+ "url": "https://nhcinema.com/",
+ "fetched_at": "2026-11-04T23:09:45-07:00",
+ "count": 19,
+ "records": [
+  {
+   "title": "Heart of the Beast",
+   "url": "https://nhcinema.com/view/heart-of-the-beast",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3704/heart_of_the_beast_heart_of_the_beast_-_one_sheet__standard.jpg",
+   "rating": "PG-13",
+   "runtime": 101,
+   "no_passes": false,
+   "note": "Ends Thursday 11/5",
+   "ends": "2026-11-05",
+   "showtimes": [
+    {
+     "date": "2026-11-05",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:45",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Action, Drama",
+   "starring": "Brad Pitt, J.K. Simmons, Anna Lambe",
+   "director": "David Ayer",
+   "synopsis": "After a harrowing plane crash, Special Forces officer James Belmont (Brad Pitt) and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements. From acclaimed filmmaker David Ayer, Heart of the Beast is an intense adventure thriller that explores the unbreakable bond between a man and his best friend as they face their greatest battle yet.",
+   "trailer": "bfCgu83suHs",
+   "slug": "heart-of-the-beast",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "35363858ccf3",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "Joshua Live!",
+   "url": "https://nhcinema.com/view/joshua-live",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3731/sight__sound_presents_joshua_live_joshua_-_one_sheet_(1)__standard.jpg",
+   "rating": "",
+   "runtime": 135,
+   "no_passes": true,
+   "note": "Ends Thursday 11/5",
+   "ends": "2026-11-05",
+   "showtimes": [
+    {
+     "date": "2026-11-05",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Faith, Music",
+   "starring": "Carl Anderson, Hope Klessig",
+   "director": "Chris Wert",
+   "synopsis": "Journey alongside the people of Israel as they navigate their newfound freedom in an unforgiving wilderness and under a new leader, Joshua. Captured in front of a live audience, JOSHUA LIVE! combines the energy of stage performance with the immersive experience of the cinema, bringing this unforgettable story of faith, courage and redemption to movie theaters.",
+   "trailer": "2_ppN4x_i7k",
+   "slug": "joshua-live",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "a4dd7185d1af",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "Clayface",
+   "url": "https://nhcinema.com/view/clayface",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3721/clayface_clayface_-_one_sheet_2764x4096__standard.jpg",
+   "rating": "R",
+   "runtime": 108,
+   "no_passes": true,
+   "note": "Ends Thursday 11/5",
+   "ends": "2026-11-05",
+   "showtimes": [
+    {
+     "date": "2026-11-05",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": true
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Horror",
+   "starring": "Tom Rhys Harries, Naomi Ackie, Max Minghella, Eddie Marsan",
+   "director": "James Watkins",
+   "synopsis": "“Clayface” unravels one man’s horrifying descent from rising Hollywood star to revenge-filled monster in a story that explores the loss of one’s identity and humanity,corrosive love, and the dark underbelly of scientific ambition.",
+   "trailer": "OGO4Mqvo3jI",
+   "slug": "clayface",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "5cdfd14f18f7",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "Wildwood",
+   "url": "https://nhcinema.com/view/wildwood",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3722/wildwood_wildwood_-_one_sheet_full_size__standard.jpg",
+   "rating": "PG-13",
+   "runtime": 132,
+   "no_passes": true,
+   "showtimes": [
+    {
+     "date": "2026-11-05",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-06",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "21:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-07",
+     "times": [
+      {
+       "time": "12:00",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-08",
+     "times": [
+      {
+       "time": "12:00",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-09",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-10",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-11",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Animated",
+   "starring": "Carey Mulligan, Angela Bassett, Tantoo Cardinal, Tom Waits, Richard E. Grant, Jemaine Clement, Jake Johnson",
+   "director": "Travis Knight",
+   "synopsis": "Wildwood is a handcrafted epic fantasy adventure that transports audiences into a secret, magical, and dangerously alive world just beyond their doorstep. At its heart is the story of a courageous girl, Prue McKeel (PROO muh-KEEL), on a desperate mission to rescue her baby brother from a forbidden forest filled with enchanted creatures, endearing allies, and formidable adversaries. Her journey unfolds into a spectacular, high-stakes adventure where the fate of an entire hidden world hangs in the balance.",
+   "trailer": "dtr5JL1zkiM",
+   "slug": "wildwood",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "46218f9baf65",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "You Can See Everything",
+   "url": "https://nhcinema.com/view/you-can-see-everything",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3729/you_can_see_everything_you_can_see_everything_-_one_sheet_2__standard.jpg",
+   "rating": "R",
+   "runtime": 174,
+   "no_passes": true,
+   "showtimes": [
+    {
+     "date": "2026-11-05",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-06",
+     "times": [
+      {
+       "time": "14:45",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "21:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-07",
+     "times": [
+      {
+       "time": "11:30",
+       "luxury": false
+      },
+      {
+       "time": "14:45",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "21:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-08",
+     "times": [
+      {
+       "time": "11:30",
+       "luxury": false
+      },
+      {
+       "time": "14:45",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-09",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-10",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-11",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Documentary",
+   "director": "Nathan Fielder, Lance Oppenheim",
+   "synopsis": "Thirty-four days before she’s sent to prison, notorious Silicon Valley founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait of an enigmatic felon becomes a mind-bending three-year journey into the abyss. From boundary-pushing directors Nathan Fielder and Lance Oppenheim comes YOU CAN SEE EVERYTHING.",
+   "trailer": "HvW_N5p1q44",
+   "slug": "you-can-see-everything",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "402c95a9f617",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "Wicker",
+   "url": "https://nhcinema.com/view/wicker",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3730/wicker_teaser_poster__standard.jpg",
+   "rating": "R",
+   "runtime": 105,
+   "no_passes": true,
+   "note": "Ends Tuesday 11/10",
+   "ends": "2026-11-10",
+   "showtimes": [
+    {
+     "date": "2026-11-05",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-06",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      },
+      {
+       "time": "21:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-07",
+     "times": [
+      {
+       "time": "12:15",
+       "luxury": false
+      },
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      },
+      {
+       "time": "21:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-08",
+     "times": [
+      {
+       "time": "12:15",
+       "luxury": false
+      },
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-09",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-10",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Comedy, Drama, Fantasy, Romance",
+   "starring": "Olivia Colman, Alexander Skarsgård, Peter Dinklage, Elizabeth Debicki",
+   "director": "Eleanor Wilson, Alex Huston Fischer",
+   "synopsis": "THERE IS NO TRAILER LINKED FOR THIS MOVIE DUE TO GRAPHIC CONTENT!!!",
+   "slug": "wicker",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "1ac7391842e4",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "Drummer Boy",
+   "url": "https://nhcinema.com/view/drummer-boy",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3723/drummer_boy_drummer_boy_-_one_sheet_27x40__standard.jpg",
+   "rating": "PG-13",
+   "runtime": 129,
+   "no_passes": true,
+   "showtimes": [
+    {
+     "date": "2026-11-06",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": true
+      },
+      {
+       "time": "21:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-07",
+     "times": [
+      {
+       "time": "12:00",
+       "luxury": true
+      },
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": true
+      },
+      {
+       "time": "21:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-08",
+     "times": [
+      {
+       "time": "11:45",
+       "luxury": false
+      },
+      {
+       "time": "15:15",
+       "luxury": true
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-09",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": true
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-10",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-11",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-12",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Animated, Musical",
+   "starring": "Lucas Leach, Joel David Smallbone, Beth Easdown",
+   "director": "Richard L. Ramsey",
+   "synopsis": "As America’s fight for independence begins, a young drummer boy, an enslaved woman, and a divided family each search for freedom in a world built to deny it. With music carrying hope through battle and loss, Drummer Boy turns the Revolution into a deeply human story of faith, forgiveness, and the belief that no person is born to live in chains or be forgotten.",
+   "trailer": "rXaR4nXRvOY",
+   "slug": "drummer-boy",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "e74da5cf2618",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "American Sniper",
+   "url": "https://nhcinema.com/view/american-sniper",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3728/american_sniper_one_sheet__standard.jpg",
+   "rating": "R",
+   "runtime": 132,
+   "no_passes": true,
+   "showtimes": [
+    {
+     "date": "2026-11-11",
+     "times": [
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Action, Biography",
+   "starring": "Bradley Cooper, Sienna Miller, Jake McDorman, Luke Grimes, Navid Negahban, Keir O'Donnell",
+   "director": "Clint Eastwood",
+   "synopsis": "FOR ONE DAY ONLY!!! SEE IT THIS VETERANS DAY, WEDNESDAY, NOVEMBER 11!!!",
+   "slug": "american-sniper",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "4ca1b2412ccb",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "Godzilla Minus Zero",
+   "url": "https://nhcinema.com/view/godzilla-minus-zero",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3725/godzilla_minus_zero_godzilla_minus_zero_-_one_sheet_2__standard.jpg",
+   "rating": "R",
+   "runtime": 135,
+   "no_passes": true,
+   "showtimes": [
+    {
+     "date": "2026-11-06",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": true
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      },
+      {
+       "time": "21:15",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-07",
+     "times": [
+      {
+       "time": "11:45",
+       "luxury": false
+      },
+      {
+       "time": "15:15",
+       "luxury": true
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      },
+      {
+       "time": "21:15",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-08",
+     "times": [
+      {
+       "time": "12:00",
+       "luxury": true
+      },
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-09",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-10",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": true
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-11",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-12",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": true
+      }
+     ]
+    }
+   ],
+   "genre": "Action",
+   "starring": "Ryunosuke Kamiki, Minami Hamabe, Miou Tanaka",
+   "director": "Takashi Yamazaki",
+   "synopsis": "GODZILLA MINUS ZERO picks up in 1949, two years after the tumultuous events of Godzilla Minus One, and continues the story of the Shikishima family as they face an all-new calamity.",
+   "trailer": "kw0YhiqOPFg",
+   "slug": "godzilla-minus-zero",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "4aa5cc72a022",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "The Cat in the Hat",
+   "url": "https://nhcinema.com/view/the-cat-in-the-hat",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3724/the_cat_in_the_hat_the_cat_in_the_hat_-_one_sheet__standard.jpg",
+   "rating": "PG",
+   "runtime": 91,
+   "no_passes": true,
+   "showtimes": [
+    {
+     "date": "2026-11-06",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      },
+      {
+       "time": "21:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-07",
+     "times": [
+      {
+       "time": "12:15",
+       "luxury": false
+      },
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      },
+      {
+       "time": "21:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-08",
+     "times": [
+      {
+       "time": "12:15",
+       "luxury": false
+      },
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-09",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-10",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-11",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-12",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Animated",
+   "starring": "Bill Hader, Bowen Yang, Matt Berry, Paula Pell, Xochiti Gomez, Quinta Brunson",
+   "director": "Alessandro Carloni, Erica Rivinoja",
+   "synopsis": "In the wonderfully whimsical tradition of Dr. Seuss, THE CAT IN THE HAT comes to the big screen in his animated theatrical feature film debut, doing what he does best--spreading joy to 'happyless' kids. In the film, The Cat takes on his toughest assignment yet... to cheer a pair of siblings struggling with their move to a new town.",
+   "trailer": "Vuv0kqGWjno",
+   "slug": "the-cat-in-the-hat",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "1e77703b1d9d",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "Ghost Soldier",
+   "url": "https://nhcinema.com/view/ghost-soldier",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3727/ghost_soldier_ghost_soldier_-_one_sheet_high_res_size_-_1400x2100__standard.jpg",
+   "rating": "PG-13",
+   "runtime": 90,
+   "no_passes": true,
+   "note": "Starts Wednesday 11/11",
+   "starts": "2026-11-11",
+   "showtimes": [
+    {
+     "date": "2026-11-11",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-12",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": true
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Action, Thriller",
+   "starring": "Jim Caviezel, Olivia Thirlby, Beau Knapp, Garret Dillahunt, Shea Whigham",
+   "director": "William Eubank",
+   "synopsis": "In the action-thriller Ghost Soldier, Jim Caviezel stars as Henry “Fitz” Fitzgerald, a solitary man with a mysterious past, living a quiet life off the grid in his hometown. But when a powerful foreign corporation descends on his community determined to seize his and his neighbors’ land for a massive payday, Fitz takes action — he’s actually a former Special Forces soldier and advanced weapons developer. Armed with weapons no one has ever seen, a lifetime of lethal military training, and an unwavering code of justice, Fitz becomes the one thing his enemies never anticipated: a one-man war they can’t win.",
+   "trailer": "UKaWzMf9Ybc",
+   "slug": "ghost-soldier",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "518b07809926",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "Rocky 50th Anniversary",
+   "url": "https://nhcinema.com/view/rocky-50th-anniversary",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3732/rocky_50th_anniversary_fthm_50th_anniversary_social_graphic_1080x1920__standard.jpg",
+   "rating": "PG",
+   "runtime": 132,
+   "no_passes": true,
+   "showtimes": [
+    {
+     "date": "2026-11-07",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "21:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-08",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Drama, Special Events, Sport",
+   "starring": "Sylvester Stallone, Talia Shire, Burt Young, Carl Weathers, Burgess Meredith",
+   "director": "John G. Avildsen",
+   "synopsis": "FOR 2 DAYS ONLY!!! SEE IT NOVEMBER 7TH AND 8TH!!!",
+   "trailer": "pzm9ui_A_2o",
+   "slug": "rocky-50th-anniversary",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "66192d9911e0",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "How to Rob a Bank",
+   "url": "https://nhcinema.com/coming-soon#How%20to%20Rob%20a%20Bank",
+   "status": "soon",
+   "image_url": "https://nhcinema.com/images/movies/3733/how_to_rob_a_bank_how_to_rob_a_bank_-_one_sheet_2_1080x1600__standard.jpg",
+   "rating": "R",
+   "runtime": null,
+   "no_passes": false,
+   "trailer": "B9XOzCUvFB8",
+   "synopsis": "In HOW TO ROB A BANK, a crew of social media-savvy bank robbers broadcasts their daring heists, unaware that their growing viral fame has put them in the crosshairs of a veteran FBI agent and a brilliant software engineer. Despite the unlikely duo closing in, the crime ring pushes past their limits, putting everything on the line for their beliefs - and their most ambitious heist yet.",
+   "slug": "how-to-rob-a-bank",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "206658709f51",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "The Hunger Games: Sunrise on the Reaping",
+   "url": "https://nhcinema.com/coming-soon#The%20Hunger%20Games%3A%20Sunrise%20on%20the%20Reaping",
+   "status": "soon",
+   "image_url": "https://nhcinema.com/images/movies/3734/the_hunger_games_sunrise_on_the_reaping_hunger_games_-_one_sheet__standard.jpg",
+   "rating": "PG-13",
+   "runtime": null,
+   "no_passes": false,
+   "trailer": "lYXtL5TreOE",
+   "synopsis": "THE HUNGER GAMES: SUNRISE ON THE REAPING will revisit the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
+   "slug": "the-hunger-games-sunrise-on-the-reaping",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "92ba7c9cae71",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "Ebenezer",
+   "url": "https://nhcinema.com/coming-soon#Ebenezer",
+   "status": "soon",
+   "image_url": "https://nhcinema.com/images/movies/3735/ebenezer_ebenezer_-_one_sheet_2__standard.jpg",
+   "rating": "PG-13",
+   "runtime": null,
+   "no_passes": false,
+   "trailer": "l_Ozo1xUgbU",
+   "synopsis": "This November, Johnny Depp is Ebenezer Scrooge. The name you know, the story you don’t. From Ti West, EBENEZER also stars Rupert Grint, Andrea Riseborough, Sam Claflin, Daisy Ridley, Arthur Conti, Ellie Bamber, Henry Lloyd-Hughes, Charlie Murphy, with Tramell Tillman and Ian McKellen.",
+   "slug": "ebenezer",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "8062cac463ef",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "Hexed",
+   "url": "https://nhcinema.com/coming-soon#Hexed",
+   "status": "soon",
+   "image_url": "https://nhcinema.com/images/movies/3736/disneys_hexed_hexed_-_one_sheet__standard.jpg",
+   "rating": "PG",
+   "runtime": null,
+   "no_passes": false,
+   "trailer": "KXO21xZdUaM",
+   "synopsis": "In Walt Disney Animation Studios' all-new magical coming-of-age saga, “Hexed,” an impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever. Directed by Fawn Veerasunthorn and Jason Hand, co-directed by Josie Trinidad and produced by Roy Conli, Disney’s “Hexed” opens exclusively in theaters November 25, 2026.",
+   "slug": "hexed",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "d27774bcb0e8",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "Hershey",
+   "url": "https://nhcinema.com/coming-soon#Hershey",
+   "status": "soon",
+   "image_url": "https://nhcinema.com/images/movies/3737/hershey_hershey_-_one_sheet__standard.jpg",
+   "rating": "PG",
+   "runtime": null,
+   "no_passes": false,
+   "trailer": "Dihu6iM__rI",
+   "synopsis": "Based on the life of Milton Hershey, founder of the iconic Hershey chocolate company. Milton's grit and determination to conquer the world of candy-making propel him from bankruptcy to monumental success, and the love of his life, Kitty, helps him build a legacy sweeter than any candy bar. But when Kitty falls ill, Milton’s wild optimism teeters on the edge of destruction, and she sparks an even bolder dream: to leave their fortune in the hands of America’s children in need.",
+   "slug": "hershey",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "445eb4886f48",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "Focker-In-Law",
+   "url": "https://nhcinema.com/coming-soon#Focker-In-Law",
+   "status": "soon",
+   "image_url": "https://nhcinema.com/images/movies/3738/focker_in-law_focker-in-law_-_one_sheet__standard.jpg",
+   "rating": "PG-13",
+   "runtime": null,
+   "no_passes": false,
+   "trailer": "vyISuWUWcFs",
+   "synopsis": "This November, comedy icon and Emmy winner Ben Stiller and two-time Oscar® winner Robert De Niro reunite, joined by Grammy winner and Oscar® nominee Ariana Grande, in Focker-In-Law, a new chapter in the blockbuster Meet the Parents franchise.",
+   "slug": "focker-in-law",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "b127bb188b47",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "Violent Night 2",
+   "url": "https://nhcinema.com/coming-soon#Violent%20Night%202",
+   "status": "soon",
+   "image_url": "https://nhcinema.com/images/movies/3739/violent_night_2_violent_night_2_-_one_sheet_1080x1920__standard.jpg",
+   "rating": "R",
+   "runtime": null,
+   "no_passes": false,
+   "trailer": "FmM2giDwLAE",
+   "synopsis": "Santa's back. And he's not happy. From 87North, the powerhouse producers of Bullet Train, John Wick, The Fall Guy, Atomic Blonde, Nobody and this summer's Nobody 2, comes a new chapter in yuletide mayhem: VIOLENT NIGHT 2. In 2022's bare-knuckle holiday sensation, VIOLENT NIGHT, an embittered Santa (Emmy and Golden Globe nominee David Harbour), armed with lethal combat skills, took out a team of ruthless mercenaries to rescue a girl and her family. Now, it's time for not-so-jolly Saint Nick to suit up again. VIOLENT NIGHT 2 is produced by 87North founders Kelly McCormick and David Leitch and will be released by Universal Pictures.",
+   "slug": "violent-night-2",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "64816f583118",
+   "_first_seen": "2026-11-04"
+  }
+ ]
+}
