@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-05T12:58:48-07:00",
- "count": 94,
+ "fetched_at": "2026-11-05T17:12:20-07:00",
+ "count": 95,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/06/chance-of-dyed-diesel-lingering-in-tank-makes-some-farmers-hesitant-to-accept-trumps-help/",
@@ -1398,6 +1398,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "6e7051e5224b",
+   "date": "2026-11-05",
+   "_first_seen": "2026-11-05"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/05/regulators-approve-16-monthly-black-hills-energy-rate-hike-as-extra-20-surcharge-looms/",
+   "title": "Regulators approve $16 monthly Black Hills Energy rate hike as extra $20 surcharge looms",
+   "slug": "south-dakota-searchlight-regulators-approve-16-monthly-black-hills-energy-rate",
+   "published": "2026-11-05",
+   "byline": "Joshua Haiar",
+   "description": "South Dakota utility regulators unanimously approved a rate increase Wednesday that will add about $16 to the typical Black Hills Energy residential customer’s monthly electric bill, while an additional request from the company to add a $20 surcharge is pending. The South Dakota Public Utilities Commission approved a settlement allowing the company to collect an [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "a4f786ce03fe",
    "date": "2026-11-05",
    "_first_seen": "2026-11-05"
   },
