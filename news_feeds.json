@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-06T00:54:18-07:00",
- "count": 93,
+ "fetched_at": "2026-11-06T12:27:12-07:00",
+ "count": 96,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/07/help-crops-and-reduce-flooding-and-pollution-with-new-approach-to-drainage-speaker-tells-farmers/",
@@ -547,21 +547,6 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://www.sdnewswatch.org/south-dakota-campaign-finance-republicans-rhoden-baxter/",
-   "title": "Republicans for top state offices out-raise opponents",
-   "slug": "sd-newswatch-republicans-for-top-state-offices-out-raise-opponents",
-   "published": "2026-10-21",
-   "byline": "Molly Wetsch",
-   "description": "Gov. Larry Rhoden saw over $1 million in individual donations while secretary of state candidate Heather Baxter received $105,000, in part from legislators and the Freedom Caucus. Toby Doeden spent $5.3 million of his own money in governor's race.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "7f717a79eb50",
-   "date": "2026-10-21",
-   "_first_seen": "2026-11-01"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/10/21/all-of-us-have-a-role-in-prevention-health-official-says-as-south-dakota-suicide-numbers-rise/",
    "title": "‘All of us have a role in prevention,’ health official says as South Dakota suicide numbers rise",
    "slug": "south-dakota-searchlight-all-of-us-have-a-role-in-prevention-health-official-as",
@@ -588,6 +573,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "44d283804619",
+   "date": "2026-10-21",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-campaign-finance-republicans-rhoden-baxter/",
+   "title": "Republicans for top state offices out-raise opponents",
+   "slug": "sd-newswatch-republicans-for-top-state-offices-out-raise-opponents",
+   "published": "2026-10-21",
+   "byline": "Molly Wetsch",
+   "description": "Gov. Larry Rhoden saw over $1 million in individual donations while secretary of state candidate Heather Baxter received $105,000, in part from legislators and the Freedom Caucus. Toby Doeden spent $5.3 million of his own money in governor's race.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "7f717a79eb50",
    "date": "2026-10-21",
    "_first_seen": "2026-11-01"
   },
@@ -1400,6 +1400,51 @@
    "id": "6eb5364fb402",
    "date": "2026-11-05",
    "_first_seen": "2026-11-05"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-national-guard-citizen-warriors/",
+   "title": "'Citizen warriors' form backbone of South Dakota National Guard",
+   "slug": "sd-newswatch-citizen-warriors-form-backbone-of-south-dakota-national-guard",
+   "published": "2026-11-06",
+   "byline": "Bart Pfankuch",
+   "description": "In advance of the federal Veterans Day holiday on Wednesday, Nov. 11, News Watch spoke with the leader of the South Dakota National Guard about its evolving mission, its personnel and the attempt to bring a new fighter jet to Sioux Falls.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "f5e9cdcfbb2f",
+   "date": "2026-11-06",
+   "_first_seen": "2026-11-06"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/06/state-expands-hunting-license-buybacks-as-reported-deer-deaths-from-viral-disease-jump-to-791/",
+   "title": "State expands hunting-license buybacks as reported deer deaths from viral disease jump to 791",
+   "slug": "south-dakota-searchlight-state-expands-hunting-license-buybacks-as-reported-deer",
+   "published": "2026-11-06",
+   "byline": "Joshua Haiar",
+   "description": "Reports of deer deaths from a viral disease have jumped by hundreds in recent weeks, prompting South Dakota wildlife officials to expand a program allowing hunters to return their licenses for a refund. Epizootic hemorrhagic disease is a viral illness spread by tiny biting midges typically found along muddy shorelines. In South Dakota, the disease [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "f7a075adf960",
+   "date": "2026-11-06",
+   "_first_seen": "2026-11-06"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/06/podcast-what-south-dakotas-blue-ripple-means-for-the-state-democratic-party/",
+   "title": "Podcast: What South Dakota’s blue ‘ripple’ means for the state Democratic Party",
+   "slug": "south-dakota-searchlight-podcast-what-south-dakotas-blue-ripple-means-for-the",
+   "published": "2026-11-06",
+   "byline": "Meghan O'Brien",
+   "description": "Though they didn’t win any statewide seats, South Dakota Democrats gained ground in the Legislature after Tuesday’s election for the first time since 2008, bringing their numbers from eight to 12 out of 105 total legislators. Shane Merrill, the state party’s chair, joined the Searchlight Report podcast to talk about what the legislative wins mean [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "b9bddb078b23",
+   "date": "2026-11-06",
+   "_first_seen": "2026-11-06"
   }
  ]
 }

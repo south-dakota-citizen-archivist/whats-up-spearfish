@@ -3,7 +3,7 @@
  "name": "Fire danger & wildfires",
  "kind": "fire",
  "url": "https://www.weather.gov/unr/",
- "fetched_at": "2026-11-06T00:54:18-07:00",
+ "fetched_at": "2026-11-06T12:27:13-07:00",
  "data": {
   "errors": [],
   "incidents": [],
