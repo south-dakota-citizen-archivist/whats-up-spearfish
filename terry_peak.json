@@ -3,7 +3,7 @@
  "name": "Terry Peak Ski Area",
  "kind": "stats",
  "url": "https://terrypeak.com/the-mountain/trails-lifts/",
- "fetched_at": "2026-11-06T12:27:13-07:00",
+ "fetched_at": "2026-11-06T16:43:49-07:00",
  "data": {
   "lifts": [
    {
@@ -209,10 +209,10 @@
    }
   ],
   "snow": {
-   "overnight": 1.0,
-   "48h": 1.0,
-   "72h": 1.0,
-   "season": 1.0,
+   "overnight": 0.0,
+   "48h": 0.0,
+   "72h": 0.0,
+   "season": 2.0,
    "base": 0.0
   },
   "webcams": "https://terrypeak.com/the-mountain/live-web-cams/"
