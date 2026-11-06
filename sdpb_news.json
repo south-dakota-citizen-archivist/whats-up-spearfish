@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-05T09:34:44-07:00",
- "count": 23,
+ "fetched_at": "2026-11-06T10:29:18-07:00",
+ "count": 27,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -247,22 +247,6 @@
    "_first_seen": "2026-11-03"
   },
   {
-   "url": "https://www.sdpb.org/elections/2026-11-04/early-returns-of-new-laws-show-voters-rejecting-sales-tax-shift-options",
-   "title": "Early returns of new laws show voters rejecting sales tax shift options",
-   "slug": "sdpb-early-returns-of-new-laws-show-voters-rejecting-sales-tax-shift-options",
-   "published": "2026-11-04",
-   "byline": "By Jackson Dircks",
-   "description": "Several efforts to implement new sales taxes fail at the local level in South Dakota. Two involved counties rejecting a sales tax to offset property tax and another saw a city vote down a tax to subsidize childcare development.",
-   "image_url": "https://npr.brightspotcdn.com/3e/07/edf30b3e4da687f81390683c52b2/53f6676e80-i-voted.jpg",
-   "record_type": "news",
-   "source_label": "SDPB",
-   "kind": "news",
-   "source": "sdpb_news",
-   "id": "51eab16c9799",
-   "date": "2026-11-04",
-   "_first_seen": "2026-11-04"
-  },
-  {
    "url": "https://www.sdpb.org/education/2026-11-04/rapid-city-passes-first-school-bond-effort-since-nixon-presidency",
    "title": "Rapid City passes first school bond effort since Nixon Presidency",
    "slug": "sdpb-rapid-city-passes-first-school-bond-effort-since-nixon-presidency",
@@ -275,6 +259,22 @@
    "kind": "news",
    "source": "sdpb_news",
    "id": "fdf78fccc4f9",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "url": "https://www.sdpb.org/elections/2026-11-04/early-returns-of-new-laws-show-voters-rejecting-sales-tax-shift-options",
+   "title": "Early returns of new laws show voters rejecting sales tax shift options",
+   "slug": "sdpb-early-returns-of-new-laws-show-voters-rejecting-sales-tax-shift-options",
+   "published": "2026-11-04",
+   "byline": "By Jackson Dircks",
+   "description": "Several efforts to implement new sales taxes fail at the local level in South Dakota. Two involved counties rejecting a sales tax to offset property tax and another saw a city vote down a tax to subsidize childcare development.",
+   "image_url": "https://npr.brightspotcdn.com/3e/07/edf30b3e4da687f81390683c52b2/53f6676e80-i-voted.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "51eab16c9799",
    "date": "2026-11-04",
    "_first_seen": "2026-11-04"
   },
@@ -373,6 +373,70 @@
    "id": "8d59ae0f4561",
    "date": "2026-11-04",
    "_first_seen": "2026-11-03"
+  },
+  {
+   "url": "https://www.sdpb.org/politics/2026-11-05/rapid-city-adjusts-general-public-comment-at-city-council-meetings",
+   "title": "Rapid City adjusts general public comment at city council meetings",
+   "slug": "sdpb-rapid-city-adjusts-general-public-comment-at-city-council-meetings",
+   "published": "2026-11-05",
+   "byline": "By C.J. Keene",
+   "description": "Business will change for Rapid City Common Council meetings. In a shift, general public comment will now take place at the end of the docket rather than the top.",
+   "image_url": "https://npr.brightspotcdn.com/6f/d6/26b1968b47ee87fcd718ea53b0dd/bac00fed25-rapid-city-hall.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "330df144813f",
+   "date": "2026-11-05",
+   "_first_seen": "2026-11-06"
+  },
+  {
+   "url": "https://www.sdpb.org/healthcare/2026-11-05/second-year-funding-delayed-for-rural-health-transformation-program",
+   "title": "Second year funding delayed for Rural Health Transformation Program",
+   "slug": "sdpb-second-year-funding-delayed-for-rural-health-transformation-program",
+   "published": "2026-11-05",
+   "byline": "By Jackie Hendry",
+   "description": "According to a report from <a href=\"https://kffhealthnews.org/rural-health/rural-health-transformation-program-funding-delays-states-cms/?fbclid=IwY2xjawVZj3xleHRuA2FlbQIxMQBwZG9mBXNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR8bevoGRXK25Qoppeh2dpTGwtFFJ3wm7QF3vvdM1X8XSc_7adNvq5c5eTwAKQ_aem_UQ6g9Pi1h0PIFAiF7_xrlg\">KFF Health News</a>, state leaders received an email on Oct. 30 alerting them to the second-year funding announcement delay.",
+   "image_url": "https://npr.brightspotcdn.com/e1/d6/fd89716c4fa092842fc4d50344d7/woman-health-checkup.png",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "6ac28d986998",
+   "date": "2026-11-05",
+   "_first_seen": "2026-11-06"
+  },
+  {
+   "url": "https://www.sdpb.org/politics/2026-11-06/while-blue-wave-didnt-reach-south-dakota-statewide-races-dems-see-promise-in-legislative-results",
+   "title": "While 'blue wave' didn't reach South Dakota statewide races, Dems see promise in legislative results",
+   "slug": "sdpb-while-blue-wave-didn-t-reach-south-dakota-statewide-races-dems-see-promise",
+   "published": "2026-11-06",
+   "byline": "By Jackson Dircks",
+   "description": "South Dakota Democratic candidates running for statewide office got swept by Republicans. But in legislative races Dems pushed to flip seats for the first time in years, cutting into one of the country’s darkest red supermajorities.",
+   "image_url": "https://npr.brightspotcdn.com/f2/2c/ab8297814fa69658c11e5cd97f94/untitled-design-47.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "3d329fda3d47",
+   "date": "2026-11-06",
+   "_first_seen": "2026-11-06"
+  },
+  {
+   "url": "https://www.sdpb.org/arts-life/2026-11-06/american-pope-biography-offers-insights-into-leo-xivs-take-on-ai-and-human-dignity",
+   "title": "'American Pope' biography offers insights into Leo XIV's take on AI and human dignity",
+   "slug": "sdpb-american-pope-biography-offers-insights-into-leo-xiv-s-take-on-ai-and-human",
+   "published": "2026-11-06",
+   "byline": "By Lori Walsh",
+   "description": "NPR's Daniel Burke and Scott Detrow discuss their biography of Robert Prevost and his journey from the south side of Chicago to Vatican City.",
+   "image_url": "https://npr.brightspotcdn.com/83/81/e301f1484f85a7de097e8343fa28/pope.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "a6a54fe7e320",
+   "date": "2026-11-06",
+   "_first_seen": "2026-11-06"
   }
  ]
 }

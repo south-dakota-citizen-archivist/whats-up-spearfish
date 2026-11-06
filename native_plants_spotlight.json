@@ -3,7 +3,7 @@
  "name": "Native plants of the Black Hills",
  "kind": "plant",
  "url": "https://www.inaturalist.org/places/black-hills-national-forest-us",
- "fetched_at": "2026-11-05T09:34:38-07:00",
+ "fetched_at": "2026-11-06T10:29:22-07:00",
  "count": 392,
  "records": [
   {
@@ -3636,7 +3636,7 @@
    "photo_credit": "(c) irishboy1, some rights reserved (CC BY-NC)",
    "url": "https://www.inaturalist.org/taxa/83061",
    "wikipedia_url": "https://en.wikipedia.org/wiki/Calochortus gunnisonii",
-   "sightings": 217,
+   "sightings": 218,
    "kind": "plant",
    "record_type": "plant",
    "source": "native_plants_spotlight",
@@ -6199,8 +6199,8 @@
    "title": "Star Moss",
    "scientific_name": "Syntrichia ruralis",
    "summary": "Tortula ruralis, commonly known as twisted moss and star moss, is a species of moss with a cosmopolitan distribution. It occurs in North America, the Pacific, Europe, Asia, the Middle East, North and South Africa, South America, and Australia.",
-   "image_url": "https://static.inaturalist.org/photos/63056096/medium.jpg",
-   "photo_credit": "(c) Matthew Ireland, all rights reserved, uploaded by Matthew Ireland",
+   "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/360037308/medium.jpeg",
+   "photo_credit": "(c) Alexis Tinker-Tsavalas, alcuni diritti riservati (CC BY), caricata da Alexis Tinker-Tsavalas",
    "url": "https://www.inaturalist.org/taxa/244075",
    "wikipedia_url": "https://en.wikipedia.org/wiki/Syntrichia ruralis",
    "sightings": 8,

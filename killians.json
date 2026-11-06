@@ -3,7 +3,7 @@
  "name": "Killian's",
  "kind": "beer",
  "url": "https://untappd.com",
- "fetched_at": "2026-11-05T09:34:00-07:00",
+ "fetched_at": "2026-11-06T10:28:46-07:00",
  "count": 17,
  "records": [
   {
@@ -133,7 +133,7 @@
    "abv": "6.2%",
    "ibu": "",
    "brewery": "Fair State Brewing",
-   "rating": "3.57",
+   "rating": "3.56",
    "image_url": "https://labels.untappd.com/6998493",
    "record_type": "beer",
    "source_label": "Killian's",

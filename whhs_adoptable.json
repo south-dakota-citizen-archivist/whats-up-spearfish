@@ -3,8 +3,8 @@
  "name": "Western Hills Humane Society",
  "kind": "adoptable",
  "url": "https://www.westernhillshumanesociety.com/",
- "fetched_at": "2026-11-05T09:35:01-07:00",
- "count": 50,
+ "fetched_at": "2026-11-06T10:29:35-07:00",
+ "count": 48,
  "records": [
   {
    "url": "https://www.westernhillshumanesociety.com/cats",
@@ -413,21 +413,6 @@
   },
   {
    "url": "https://www.westernhillshumanesociety.com/cats",
-   "title": "Phoebe",
-   "slug": "cat-phoebe",
-   "species": "cat",
-   "description": "Female | Born ~5/2026\nON HOLD\nNever been around dogs. \nPhoebe came to us from the Rapid area after living as a stray for a while. A nice woman kept her safe and fed until she could come to us. Phoebe is very sweet and a little shy but really opens up once she starts getting attention. Come visit her!",
-   "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/1672767c-4e8e-42c6-8ce2-acab17de1c0a/Phoebe.jpg?format=500w",
-   "image_alt": "Phoebe",
-   "record_type": "adoptable",
-   "source_label": "Western Hills Humane Society",
-   "kind": "adoptable",
-   "source": "whhs_adoptable",
-   "id": "42c19338ff26",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://www.westernhillshumanesociety.com/cats",
    "title": "Belle",
    "slug": "cat-belle",
    "species": "cat",
@@ -739,21 +724,6 @@
    "kind": "adoptable",
    "source": "whhs_adoptable",
    "id": "b92dd4ffec9d",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://www.westernhillshumanesociety.com/dogs",
-   "title": "Abrazo",
-   "slug": "dog-abrazo",
-   "species": "dog",
-   "description": "Male | Collie Mix | Undetermined Age (Born ~2025)\nAvailable soon - needing rabies + in-house vaccinations!\nAbrazo came to us 10/26/26 after being found on Hwy 85. No one has come forward for this fine gentleman. We named him Abrazo which means “hug” in Spanish. He’s a big fan of giving hugs and kisses. When he gets excited, he does like to jump and be a little mouthy but he’s quite gentle and contains his excitement well. He will need some training but is a very sweet boy probably around 45 lbs - exact weight coming soon!",
-   "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/8790b4e0-33fe-4ab2-ba78-472f993e64a3/Abrazo.jpg?format=500w",
-   "image_alt": "Abrazo",
-   "record_type": "adoptable",
-   "source_label": "Western Hills Humane Society",
-   "kind": "adoptable",
-   "source": "whhs_adoptable",
-   "id": "67e171813f53",
    "_first_seen": "2026-11-01"
   }
  ]

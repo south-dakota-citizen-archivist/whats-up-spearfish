@@ -3,8 +3,8 @@
  "name": "SD DANR contested cases",
  "kind": "case",
  "url": "https://danr.sd.gov/public/ContestedCase.aspx",
- "fetched_at": "2026-11-05T09:34:05-07:00",
- "count": 6,
+ "fetched_at": "2026-11-06T10:28:45-07:00",
+ "count": 8,
  "records": [
   {
    "ccid": "123",
@@ -137,6 +137,56 @@
    "source_label": "SD DANR contested cases",
    "id": "f6ea1591699a",
    "_first_seen": "2026-11-02"
+  },
+  {
+   "ccid": "135",
+   "board": "Water Management Board",
+   "permit_type": "Water Right Permit Application",
+   "title": "2915-2 Powertech (USA), Inc.",
+   "description": "An application for a water permit to appropriate water from the Madison Aquifer for industrial use in a uranium in-situ mining project (Dewey-Burdock) located in southwestern Custer County & northwestern Fall River County, as well as domestic and rural water system purposes intended to service landowners in and around the project area.",
+   "area": "",
+   "url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID135",
+   "documents": [],
+   "updated": "",
+   "kind": "case",
+   "record_type": "case",
+   "source": "danr_contested_cases",
+   "source_label": "SD DANR contested cases",
+   "id": "2e410b040f09",
+   "_first_seen": "2026-11-06"
+  },
+  {
+   "ccid": "134",
+   "board": "Water Management Board",
+   "permit_type": "Water Right Permit Application",
+   "title": "2914-2 Powertech (USA), Inc.",
+   "description": "An application for a water permit to appropriate water from the Inyan Kara Aquifer for industrial use in a uranium in-situ mining project (Dewey-Burdock) located in southwestern Custer County & northwestern Fall River County.",
+   "area": "",
+   "url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID134",
+   "documents": [
+    {
+     "title": "Petitions",
+     "url": "https://danr.sd.gov/wrimage/pub/2914-2_petitions_cc.pdf",
+     "added": "2026-11-06"
+    },
+    {
+     "title": "Comments",
+     "url": "https://danr.sd.gov/wrimage/pub/2914-2_comments_cc.pdf",
+     "added": "2026-11-06"
+    },
+    {
+     "title": "Public Notice",
+     "url": "https://danr.sd.gov/wrimage/pub/2914-2_pubnot_cc.pdf",
+     "added": "2026-11-06"
+    }
+   ],
+   "updated": "2026-11-06",
+   "kind": "case",
+   "record_type": "case",
+   "source": "danr_contested_cases",
+   "source_label": "SD DANR contested cases",
+   "id": "b738e62cd07a",
+   "_first_seen": "2026-11-06"
   },
   {
    "ccid": "133",

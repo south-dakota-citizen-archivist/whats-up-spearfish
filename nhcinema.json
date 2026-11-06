@@ -3,123 +3,9 @@
  "name": "Northern Hills Cinema",
  "kind": "movie",
  "url": "https://nhcinema.com/",
- "fetched_at": "2026-11-05T09:34:24-07:00",
- "count": 19,
+ "fetched_at": "2026-11-06T10:29:06-07:00",
+ "count": 16,
  "records": [
-  {
-   "title": "Heart of the Beast",
-   "url": "https://nhcinema.com/view/heart-of-the-beast",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3704/heart_of_the_beast_heart_of_the_beast_-_one_sheet__standard.jpg",
-   "rating": "PG-13",
-   "runtime": 101,
-   "no_passes": false,
-   "note": "Ends Thursday 11/5",
-   "ends": "2026-11-05",
-   "showtimes": [
-    {
-     "date": "2026-11-05",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:45",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Action, Drama",
-   "starring": "Brad Pitt, J.K. Simmons, Anna Lambe",
-   "director": "David Ayer",
-   "synopsis": "After a harrowing plane crash, Special Forces officer James Belmont (Brad Pitt) and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements. From acclaimed filmmaker David Ayer, Heart of the Beast is an intense adventure thriller that explores the unbreakable bond between a man and his best friend as they face their greatest battle yet.",
-   "trailer": "bfCgu83suHs",
-   "slug": "heart-of-the-beast",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "35363858ccf3",
-   "_first_seen": "2026-11-04"
-  },
-  {
-   "title": "Joshua Live!",
-   "url": "https://nhcinema.com/view/joshua-live",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3731/sight__sound_presents_joshua_live_joshua_-_one_sheet_(1)__standard.jpg",
-   "rating": "",
-   "runtime": 135,
-   "no_passes": true,
-   "note": "Ends Thursday 11/5",
-   "ends": "2026-11-05",
-   "showtimes": [
-    {
-     "date": "2026-11-05",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Faith, Music",
-   "starring": "Carl Anderson, Hope Klessig",
-   "director": "Chris Wert",
-   "synopsis": "Journey alongside the people of Israel as they navigate their newfound freedom in an unforgiving wilderness and under a new leader, Joshua. Captured in front of a live audience, JOSHUA LIVE! combines the energy of stage performance with the immersive experience of the cinema, bringing this unforgettable story of faith, courage and redemption to movie theaters.",
-   "trailer": "2_ppN4x_i7k",
-   "slug": "joshua-live",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "a4dd7185d1af",
-   "_first_seen": "2026-11-04"
-  },
-  {
-   "title": "Clayface",
-   "url": "https://nhcinema.com/view/clayface",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3721/clayface_clayface_-_one_sheet_2764x4096__standard.jpg",
-   "rating": "R",
-   "runtime": 108,
-   "no_passes": true,
-   "note": "Ends Thursday 11/5",
-   "ends": "2026-11-05",
-   "showtimes": [
-    {
-     "date": "2026-11-05",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": true
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Horror",
-   "starring": "Tom Rhys Harries, Naomi Ackie, Max Minghella, Eddie Marsan",
-   "director": "James Watkins",
-   "synopsis": "“Clayface” unravels one man’s horrifying descent from rising Hollywood star to revenge-filled monster in a story that explores the loss of one’s identity and humanity,corrosive love, and the dark underbelly of scientific ambition.",
-   "trailer": "OGO4Mqvo3jI",
-   "slug": "clayface",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "5cdfd14f18f7",
-   "_first_seen": "2026-11-04"
-  },
   {
    "title": "Wildwood",
    "url": "https://nhcinema.com/view/wildwood",
@@ -127,21 +13,8 @@
    "image_url": "https://nhcinema.com/images/movies/3722/wildwood_wildwood_-_one_sheet_full_size__standard.jpg",
    "rating": "PG-13",
    "runtime": 132,
-   "no_passes": true,
+   "no_passes": false,
    "showtimes": [
-    {
-     "date": "2026-11-05",
-     "times": [
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-06",
      "times": [
@@ -223,6 +96,19 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-11-12",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
     }
    ],
    "genre": "Animated",
@@ -247,19 +133,6 @@
    "runtime": 174,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-05",
-     "times": [
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": true
-      }
-     ]
-    },
     {
      "date": "2026-11-06",
      "times": [
@@ -353,6 +226,19 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-11-12",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
     }
    ],
    "genre": "Documentary",
@@ -378,19 +264,6 @@
    "note": "Ends Tuesday 11/10",
    "ends": "2026-11-10",
    "showtimes": [
-    {
-     "date": "2026-11-05",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-06",
      "times": [
