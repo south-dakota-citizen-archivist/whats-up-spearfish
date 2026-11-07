@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-07T00:05:43-07:00",
- "count": 94,
+ "fetched_at": "2026-11-07T10:45:28-07:00",
+ "count": 96,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/08/south-dakota-farmers-union-asks-governor-and-lawmakers-to-approve-a-state-fuel-tax-holiday/",
@@ -1415,6 +1415,36 @@
    "id": "b9bddb078b23",
    "date": "2026-11-06",
    "_first_seen": "2026-11-06"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/07/pendulum-continues-to-swing-in-south-dakota-senate-with-selection-of-new-republican-leaders/",
+   "title": "Pendulum continues to swing in South Dakota Senate with selection of new Republican leaders",
+   "slug": "south-dakota-searchlight-pendulum-continues-to-swing-in-south-dakota-senate-with",
+   "published": "2026-11-07",
+   "byline": "Seth Tupper",
+   "description": "An anticipated shakeup in South Dakota’s Republican legislative leadership has begun. Republican senators met Friday and nominated Tim Reed of Brookings as president pro tempore and selected Casey Crabtree of Madison as majority leader and Amber Hulse of Hot Springs as assistant majority leader. As majority whips, Republican senators selected Randy Deibert of Spearfish, Helene [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "8bb3b76d6edc",
+   "date": "2026-11-07",
+   "_first_seen": "2026-11-07"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/07/law-and-disorder-a-troubling-trend-among-south-dakota-republican-lawmakers/",
+   "title": "Commentary: Law and disorder: a troubling trend among South Dakota Republican lawmakers",
+   "slug": "south-dakota-searchlight-commentary-law-and-disorder-a-troubling-trend-among",
+   "published": "2026-11-07",
+   "byline": "Dana Hess",
+   "description": "In January, it looks like some legislators in the Republican Party may have to attend their caucus meetings via Zoom. There’s a chance they could be in court or jail. Three Republican lawmakers have faced or are facing criminal charges since the last legislative session. We’ve all heard that government is corrupt, but it’s usually [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "f39b2e663a3b",
+   "date": "2026-11-07",
+   "_first_seen": "2026-11-07"
   }
  ]
 }
