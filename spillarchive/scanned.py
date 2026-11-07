@@ -17,10 +17,20 @@ from __future__ import annotations
 import re
 
 DATE = r"(\d{1,2}\s*[/\-.]\s*\d{1,2}\s*[/\-.]\s*\d{2,4})"
-# labels that end an answer that runs over several lines
+COORDS = r"-?\d{2,3}\.\d{2,},\s*-?\d{2,3}\.\d{2,}"  # '44.1561, -103.09602'
+# labels that end an answer that runs over several lines; a section title printed sideways in
+# the margin can come first ('DEIFITON Responding Agency:', 'NOTIFIED' read backwards)
 STOP = re.compile(
-    r"^(Responding Agency|Agencies Notified|Comments|Response Action|Reported Cause|Medium Affected|Source of Spill|"
-    r"Material Type|# of Injuries|Waterway Affected|Spill Date|Name:|Address:|City:|Phone:)",
+    r"^(?:\S{1,12}\s+)?(Responding Agency|Agencies Notified|Comments|Response Action|Reported Cause|Medium Affected|"
+    r"Source of Spill|Material Type|# of Injuries|Waterway Affected|Spill Date|Name:|Address:|City:|Phone:)",
+    re.I,
+)
+# the forms' own labels: an "answer" that is one (or starts with one) is the next line of a blank form
+LABEL = re.compile(
+    r"^(?:\S{1,12}\s+)?(?:Organization Name|Mailing Address|City\s*/\s*State|Telephone Number|Spill Location|"
+    r"Total Amount of Product|(?:Name\s*/\s*)?Type of Product|Pounds of Active|Survey Description|Street or Approx|"
+    r"Responding Agency|Agencies Notified|Reported By|Address|Phone|Email|City|County|State|Zip|"
+    r"Incident Date|Date Cleanup|Spill Date|Responsible Party|Consultant)\b",
     re.I,
 )
 
@@ -39,6 +49,12 @@ def kind(text: str) -> str | None:
 
 
 def _after(text: str, pattern: str, multiline: bool = False) -> str:
+    """
+    The answer after a label: *pattern* matches the label and captures what follows it on
+    the same line ('[ \\t]*', never '\\s*', between them: a blank answer would otherwise take
+    the next line of the form, which is the next label). With *multiline*, the answer
+    goes on over the following lines until a blank line or the next label.
+    """
     m = re.search(pattern, text, re.I | re.M)
     if not m:
         return ""
@@ -46,12 +62,14 @@ def _after(text: str, pattern: str, multiline: bool = False) -> str:
     if multiline:
         more = []
         for line in text[m.end() :].split("\n")[1:6]:
-            if not line.strip() or STOP.match(line.strip()):
+            if not line.strip() or STOP.match(line.strip()) or LABEL.match(line.strip()):
                 break
             more.append(line.strip())
         value = " ".join([value, *more]).strip()
     # an answer ends where the next label on the line begins
     value = re.split(r"\s{2,}[A-Z][\w .#()/]{1,30}:", value)[0]
+    if LABEL.match(value.strip()):
+        return ""
     return _tidy(value)
 
 
@@ -67,7 +85,7 @@ _CHECKBOX_ROW = re.compile(r"□|Quantity Spilled|Spilled in Water|\(Check", re.
 def _tidy(value: str) -> str:
     """An answer without the form's own words around it; '' if what's left isn't readable."""
     value = " ".join(value.split())
-    if re.fullmatch(DATE, value):
+    if re.fullmatch(DATE, value) or re.fullmatch(COORDS, value):
         return value
     for _ in range(2):
         value = _NOISE.sub("", value).strip(" :|_-")
@@ -95,16 +113,17 @@ def spill_report(text: str) -> dict:
         "form": "spill report",
         "reported_date": _after(text, r"Reported:?\s*(?:\(mm/dd/yy\))?\s*" + DATE),
         "spill_date": _after(text, r"Spill Date:?\s*(?:\(mm/dd/yy\))?\s*" + DATE),
-        "reported_by": _after(text, r"Reported By:\s*(.+)$"),
-        "discharger": _after_section(text, r"Responsible Party|DISCHARGER", r"^\s*Name:\s*(.+)$"),
-        "location": _after(text, r"Street or Approx\.?\s*Location:\s*(.+)$"),
-        "material": _after(text, r"Material Type\s*\(Code/Name\):?\s*(.+)$"),
-        "source_description": _after_section(text, r"Source of Spill", r"Description:\s*(.+)$"),
-        "cause_description": _after_section(text, r"Reported Cause", r"Description:\s*(.+)$"),
-        "response_action": _after(text, r"Response Action Taken:\s*(.*)$", multiline=True),
-        "comments": _after(text, r"Comments:\s*(.*)$", multiline=True),
+        "reported_by": _after(text, r"Reported By:[ \t]*(.+)$"),
+        "discharger": _after_section(text, r"Responsible Party|DISCHARGER", r"^[ \t]*Name:[ \t]*(.+)$"),
+        "location": _after(text, r"Street or Approx\.?\s*Location:[ \t]*(.+)$")
+        or _after(text, r"Survey Description:[ \t]*(.+)$"),
+        "material": _after(text, r"Material Type\s*\(Code/Name\):?[ \t]*(.+)$"),
+        "source_description": _after_section(text, r"Source of Spill", r"(?<!Survey )Description:[ \t]*(.+)$"),
+        "cause_description": _after_section(text, r"Reported Cause", r"(?<!Survey )Description:[ \t]*(.+)$"),
+        "response_action": _after(text, r"Response Action Taken:[ \t]*(.*)$", multiline=True),
+        "comments": _after(text, r"Comments:[ \t]*(.*)$", multiline=True),
     }
-    county = re.findall(r"County:\s*([A-Z][A-Za-z ]{2,20}?)(?:\s{2,}|\s+State:|$)", text, re.M)
+    county = re.findall(r"County:[ \t]*([A-Z][A-Za-z ]{2,20}?)(?:\s{2,}|\s+State:|$)", text, re.M)
     if county:
         out["county"] = county[-1].strip()
     return {k: v for k, v in out.items() if v}
@@ -115,8 +134,8 @@ def old_spill_report(text: str) -> dict:
     out = {
         "form": "spill report",
         "spill_date": _after(text, r"\bDATE\s*" + DATE),
-        "material": _after_section(text, r"MATERIAL SPILLED", r"\bNA[MN]E\s+(.+)$"),
-        "location": _after(text, r"FACILITY OR SPILL LOCATION\s*(.+)$"),
+        "material": _after_section(text, r"MATERIAL SPILLED", r"\bNA[MN]E[ \t]+(.+)$"),
+        "location": _after(text, r"FACILITY OR SPILL LOCATION[ \t]*(.+)$"),
     }
     return {k: v for k, v in out.items() if v}
 
@@ -124,13 +143,13 @@ def old_spill_report(text: str) -> dict:
 def follow_up(text: str) -> dict:
     out = {
         "form": "follow-up",
-        "product": _after(text, r"TYPE OF PRODUCT SPILLED:?\s*(.+)$"),
-        "amount": _after(text, r"TOTAL AMOUNT OF PRODUCT SPILLED:?\s*(.+)$"),
+        "product": _after(text, r"TYPE OF PRODUCT SPILLED:?[ \t]*(.+)$"),
+        "amount": _after(text, r"TOTAL AMOUNT OF PRODUCT SPILLED:?[ \t]*(.+)$"),
         "spill_date": _after(text, r"SPILL DATE:?\s*" + DATE),
-        "cleanup_date": _after(text, r"DATE CLEANUP OCCURRED:?\s*(.+)$"),
-        "responsible_party": _after(text, r"RESPONSIBLE PARTY:?\s*(.+)$"),
-        "contractor": _after(text, r"CONSULTANT.{0,40}?CONTRACTOR.{0,20}?:\s*(.+)$"),
-        "soil_excavated": _after(text, r"WAS SOIL EXCAVATED\??:?\s*(\w+)"),
+        "cleanup_date": _after(text, r"DATE CLEANUP OCCURRED:?[ \t]*(.+)$"),
+        "responsible_party": _after(text, r"RESPONSIBLE PARTY:?[ \t]*(.+)$"),
+        "contractor": _after(text, r"CONSULTANT.{0,40}?CONTRACTOR.{0,20}?:[ \t]*(.+)$"),
+        "soil_excavated": _after(text, r"WAS SOIL EXCAVATED\??:?[ \t]*(\w+)"),
     }
     return {k: v for k, v in out.items() if v}
 

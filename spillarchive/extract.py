@@ -28,7 +28,11 @@ from pathlib import Path
 from . import forms, ocr, scanned
 from .store import Archive
 
-VERSION = 2  # bump to re-read every PDF after a change to the readers
+VERSION = 3  # bump to re-read every PDF after a change to the readers
+#: 3: answers read from page text stay on their label's line (a blank answer no longer takes
+#: the next label). A reading from version 2 or later is brought up to date from the text it
+#: kept, without opening the PDF again (see reread).
+REREAD_FROM = 2
 
 
 def read_pdf(path: Path, engine: str = "rapidocr", ocr_pages: int | None = 4) -> dict:
@@ -75,6 +79,27 @@ def read_pdf(path: Path, engine: str = "rapidocr", ocr_pages: int | None = 4) ->
     return out
 
 
+def reread(saved: dict) -> dict:
+    """
+    A saved reading brought up to date without opening its PDF: forms read from page text
+    (typed or OCR) are read again from the text kept with each page; forms read from fillable
+    fields stay as they are.
+    """
+    kept = [f for f in saved.get("forms") or [] if f.get("method") == "fields"]
+    reports = [f for f in kept if f.get("form") == "spill report"]
+    follow_ups = [f for f in kept if f.get("form") != "spill report"]
+    from_text = []
+    for page in saved.get("pages") or []:
+        if page.get("method") in ("text", "ocr") and page.get("text") and (form := scanned.read(page["text"])):
+            from_text.append({**form, "page": page["n"], "method": page["method"]})
+    forms = sorted(reports + from_text, key=lambda f: f.get("page", 0)) + follow_ups
+    return {**saved, "version": VERSION, "forms": forms}
+
+
+def _rereadable(saved) -> bool:
+    return bool(saved) and REREAD_FROM <= (saved.get("version") or 0) < VERSION
+
+
 def _done(arc: Archive, pdf: Path) -> bool:
     saved = arc.read(f"extracted/{pdf.name}.json", None)
     return bool(saved) and saved.get("version") == VERSION
@@ -90,7 +115,19 @@ def _work(args):
 
 def step_extract(arc: Archive, args) -> None:
     pdfs = sorted(arc.path("pdfs").rglob("*.pdf"))
-    todo = [p for p in pdfs if not _done(arc, p)]
+    todo = []
+    updated = 0
+    for p in pdfs:
+        if _done(arc, p):
+            continue
+        saved = arc.read(f"extracted/{p.name}.json", None)
+        if _rereadable(saved):
+            arc.write(f"extracted/{p.name}.json", reread(saved))
+            updated += 1
+        else:
+            todo.append(p)
+    if updated:
+        print(f"[extract] {updated} earlier readings brought up to date from their saved text")
     pages = None if str(getattr(args, "ocr_pages", "4")) == "all" else int(getattr(args, "ocr_pages", 4))
     workers = max(1, int(getattr(args, "workers", 4)))
     print(f"[extract] {len(todo)} of {len(pdfs)} PDFs to read (OCR: {args.ocr}, pages: {pages or 'all'})")

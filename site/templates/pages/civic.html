@@ -138,7 +138,7 @@
           <p class="mt-1.5 flex flex-wrap gap-x-3">
             {% for u in r.pdf_links %}{{ ext(u, 'Case file' if loop.length == 1 else u.rsplit('/', 1)[-1], 'link') }}{% endfor %}
           </p>
-          {% if r.from_scan %}<p class="mt-1 text-xs text-stone-500">Some of this was read from a scanned form by computer and may have mistakes; the case file has the original.</p>{% endif %}
+          {% if r.details %}<p class="mt-1 text-xs text-stone-500">Read automatically from the state's report forms{{ ' (some from scanned pages)' if r.from_scan }}, so it may have mistakes. The case file has the original.</p>{% endif %}
         </details>
         {% endif %}
       </li>

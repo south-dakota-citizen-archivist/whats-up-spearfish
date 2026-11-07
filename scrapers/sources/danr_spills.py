@@ -139,6 +139,15 @@ def sort_key(rec: dict) -> tuple:
     return (rec.get("spill_date") or rec.get("reported_date") or "", rec["report_no"])
 
 
+def _fields_only(reading: dict | None) -> bool:
+    """A reading (since readers version 2) whose forms all came from fillable fields."""
+    from spillarchive import extract
+
+    if not reading or (reading.get("version") or 0) < extract.REREAD_FROM:
+        return False
+    return all(f.get("method") == "fields" for f in reading.get("forms") or [])
+
+
 def _size(url: str) -> int | None:
     try:
         resp = net.request("HEAD", url, headers=_HEADERS, timeout=20, allow_redirects=True)
@@ -177,8 +186,12 @@ def add_case_file(rec: dict, before: dict) -> None:
         name = url.rsplit("/", 1)[-1]
         if not is_case_file(name, rec["report_no"]):
             continue  # an attachment (photos, invoices, work plans): linked, not read for forms
-        if seen.get(url, {}).get("size") == size and readings.get(name, {}).get("version") == extract.VERSION:
+        same_file = seen.get(url, {}).get("size") == size
+        if same_file and readings.get(name, {}).get("version") == extract.VERSION:
             continue  # read before, unchanged, by the same readers
+        if same_file and _fields_only(readings.get(name)):
+            readings[name]["version"] = extract.VERSION
+            continue  # fillable-form answers: a change to the text readers can't change them
         try:
             with tempfile.TemporaryDirectory() as tmp:
                 path = Path(tmp) / name

@@ -97,3 +97,65 @@ def test_summary_prefers_the_exact_reading():
     row = extract.summarize(spill, [url], readings)
     assert row["spill_date"] == "2026-09-18" and row["report"]["read_from"] == "fields"
     assert row["follow_up"]["contractor"] == "AET" and row["pdfs"] == [url]
+
+
+# blank answers on scanned forms: the next line is the next label, never the answer
+BLANK_REPORT = """South Dakota Spill Report Form
+Reported By:
+Organization Name: OEM  Discharger   Public ✓ State  Local  Federal
+A.  REPORTER  Phone:  Email:
+Name:
+Address:
+State: Zip:
+Street or Approx. Location:
+c  INCIDENT DATE  & LOCATION
+Survey Description: 44.1561, -103.09602
+City: County: Meade State: Zip:
+SNOITCA Response Action Taken:
+.K
+DEIFITON Responding Agency: DANR Local Discharger Federal EPA Other
+"""
+
+BLANK_FOLLOW_UP = """INCIDENT FOLLOW-UP REPORT
+NAME/TYPE OF PRODUCT SPILLED:
+TOTAL AMOUNT OF PRODUCT SPILLED:  Approximately 40 gallons
+SPILL DATE:  DATE CLEANUP OCCURRED:
+SPILL LOCATION (physical address, directions, distance to nearest intersection or landmark, etc.):
+630 E Summit St, Lead, SD
+CONSULTANT / CLEANUP CONTRACTOR (if applicable):
+MAILING ADDRESS
+CITY/STATE:  TELEPHONE NUMBER:
+"""
+
+
+def test_blank_answers_dont_take_the_next_label():
+
+    report = scanned.read(BLANK_REPORT)
+    for key in ("reported_by", "discharger", "response_action"):
+        assert key not in report, (key, report.get(key))
+    # the street line is blank; the survey's coordinates say where
+    assert report["location"] == "44.1561, -103.09602"
+    follow = scanned.read(BLANK_FOLLOW_UP)
+    assert follow["amount"] == "Approximately 40 gallons"
+    for key in ("product", "cleanup_date", "contractor"):
+        assert key not in follow, (key, follow.get(key))
+
+
+def test_old_readings_are_brought_up_to_date_from_their_text():
+
+    saved = {
+        "version": 2,
+        "pages": [
+            {"n": 1, "method": "ocr", "text": BLANK_REPORT},
+            {"n": 2, "method": "fields", "form": "spill report"},
+        ],
+        "forms": [
+            {"form": "spill report", "page": 1, "method": "ocr", "reported_by": "Organization Name: OEM"},
+            {"form": "spill report", "page": 2, "method": "fields", "discharger": "Westco"},
+            {"form": "follow-up", "page": 3, "method": "fields", "contractor": "ERTS"},
+        ],
+    }
+    new = extract.reread(saved)
+    assert new["version"] == extract.VERSION
+    assert [(f["page"], f["method"]) for f in new["forms"]] == [(1, "ocr"), (2, "fields"), (3, "fields")]
+    assert "reported_by" not in new["forms"][0] and new["forms"][1]["discharger"] == "Westco"
