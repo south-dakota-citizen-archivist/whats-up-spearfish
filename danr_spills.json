@@ -3,7 +3,7 @@
  "name": "SD DANR spill reports",
  "kind": "spill",
  "url": "https://apps.sd.gov/NR42InteractiveMap/",
- "fetched_at": "2026-11-07T08:10:27-07:00",
+ "fetched_at": "2026-11-07T08:41:02-07:00",
  "count": 67,
  "records": [
   {
@@ -99,7 +99,7 @@
        "method": "ocr"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-10-14",
@@ -255,7 +255,7 @@
        "method": "text"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-09-22",
@@ -458,7 +458,7 @@
        "method": "text"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-09-18",
@@ -545,6 +545,7 @@
        "spill_date": "09/17/26",
        "reported_by": "Zach Burggraff",
        "discharger": "Circle K (Veronica Rivera)",
+       "location": "44.085076, -103.259333",
        "source_description": "Vehicle being refueled on a trailer",
        "cause_description": "leaked out of the bottom of a vehicle on a trailer",
        "county": "Pennington",
@@ -609,7 +610,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-09-17",
@@ -617,6 +618,7 @@
     "spill_date": "09/17/26",
     "source_description": "Vehicle being refueled on a trailer",
     "cause_description": "leaked out of the bottom of a vehicle on a trailer",
+    "location": "44.085076, -103.259333",
     "county": "Pennington",
     "discharger": "Circle K (Veronica Rivera)",
     "reported_by": "Zach Burggraff",
@@ -670,7 +672,6 @@
       {
        "form": "spill report",
        "spill_date": "09/08/26",
-       "reported_by": "Organization Name: OEM Discharger Public ✓ State Local Federal",
        "discharger": "Kieffer Sanitation (c/o Donald Clark)",
        "location": "Westberry Drive to Westberry Hill/S Canyon Rd to Rapid City Landil",
        "source_description": "Sanitation truck",
@@ -686,7 +687,7 @@
        "method": "ocr"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-09-08",
@@ -697,7 +698,6 @@
     "location": "Westberry Drive to Westberry Hill/S Canyon Rd to Rapid City Landil",
     "county": "Pennington",
     "discharger": "Kieffer Sanitation (c/o Donald Clark)",
-    "reported_by": "Organization Name: OEM Discharger Public ✓ State Local Federal",
     "response_action": "Rapid City HAZMAT responded and placed Floor dry",
     "read_from": "ocr",
     "pdf": "https://danr.sd.gov/spillimages/2026/2026.142.pdf",
@@ -812,7 +812,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-09-04",
@@ -974,7 +974,7 @@
        "method": "text"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-09-03",
@@ -1118,7 +1118,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-08-16",
@@ -1316,7 +1316,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-08-13",
@@ -1454,7 +1454,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     },
     "2026.125_Aug2026_ATP Report.pdf": {
      "forms": []
@@ -1543,7 +1543,7 @@
        "method": "ocr"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-08-10",
@@ -1734,7 +1734,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-07-21",
@@ -1834,7 +1834,7 @@
        "method": "ocr"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-07-14",
@@ -1956,7 +1956,7 @@
        "method": "ocr"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-07-13",
@@ -2081,7 +2081,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-06-09",
@@ -2198,21 +2198,17 @@
       },
       {
        "form": "follow-up",
-       "product": "TOTAL AMOUNT OF PRODUCT SPILLED: Approximately 40 gallons",
        "amount": "Approximately 40 gallons",
-       "cleanup_date": "SPILL LOCATION (physical address, directions, distance to nearest intersection or landmark, etc.)",
-       "contractor": "MAILING ADDRESS",
        "page": 3,
        "method": "ocr"
       },
       {
        "form": "follow-up",
-       "soil_excavated": "CUBIC",
        "page": 4,
        "method": "ocr"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-06-03",
@@ -2249,10 +2245,7 @@
     "page": 1
    },
    "follow_up": {
-    "cleanup_date": "SPILL LOCATION (physical address, directions, distance to nearest intersection or landmark, etc.)",
-    "contractor": "MAILING ADDRESS",
     "amount": "Approximately 40 gallons",
-    "product": "TOTAL AMOUNT OF PRODUCT SPILLED: Approximately 40 gallons",
     "read_from": "ocr",
     "pdf": "https://danr.sd.gov/spillimages/2026/2026.087.pdf",
     "page": 3
@@ -2418,7 +2411,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "reported_date": "2026-04-07",
@@ -2577,7 +2570,7 @@
        "method": "text"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-03-24",
@@ -2732,7 +2725,7 @@
        "product": "isrea",
        "spill_date": "2/20/26",
        "cleanup_date": "1n progress",
-       "responsible_party": "DaKota Millrgiln",
+       "responsible_party": "DaKota Mill rain",
        "page": 3,
        "method": "ocr"
       },
@@ -2742,7 +2735,7 @@
        "method": "ocr"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-02-20",
@@ -2875,7 +2868,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-02-11",
@@ -3061,7 +3054,7 @@
        "method": "text"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2026-01-27",
@@ -3265,7 +3258,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "reported_date": "2026-01-21",
@@ -3427,7 +3420,7 @@
        "method": "text"
       }
      ],
-     "version": 2
+     "version": 3
     },
     "2026.007_ExcavationReport.pdf": {
      "forms": [
@@ -3626,7 +3619,7 @@
        "method": "text"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-12-20",
@@ -3768,10 +3761,9 @@
       },
       {
        "form": "follow-up",
-       "product": "TOTAL AMOUNT OF PRODUCT SPILLED: ≈ 250 g<1lons",
        "spill_date": "12/19/25",
        "cleanup_date": "Bega 12/20, not Comp/eted",
-       "responsible_party": "Western Area Power Administration n (WAPA)",
+       "responsible_party": "Western Area Power Administration n(WAPA)",
        "page": 3,
        "method": "ocr"
       },
@@ -3781,7 +3773,7 @@
        "method": "ocr"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-12-19",
@@ -3820,7 +3812,6 @@
    },
    "follow_up": {
     "cleanup_date": "Bega 12/20, not Comp/eted",
-    "product": "TOTAL AMOUNT OF PRODUCT SPILLED: ≈ 250 g<1lons",
     "read_from": "ocr",
     "pdf": "https://danr.sd.gov/spillimages/2025/2025.187.pdf",
     "page": 3
@@ -3931,7 +3922,7 @@
        "method": "text"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-12-17",
@@ -4117,7 +4108,7 @@
        "method": "text"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-12-15",
@@ -4270,7 +4261,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "reported_date": "2025-12-05",
@@ -4439,7 +4430,7 @@
        "method": "ocr"
       }
      ],
-     "version": 2
+     "version": 3
     },
     "2025.171_RBCAEvalSiteAssWrkPlan.pdf": {
      "forms": []
@@ -4601,7 +4592,7 @@
        "method": "ocr"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-10-29",
@@ -4788,7 +4779,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-10-29",
@@ -4956,7 +4947,7 @@
        "method": "text"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-09-21",
@@ -5110,7 +5101,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "reported_date": "2025-09-10",
@@ -5249,7 +5240,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "reported_date": "2025-09-08",
@@ -5371,7 +5362,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-08-05",
@@ -5503,7 +5494,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-07-26",
@@ -5645,7 +5636,7 @@
        "method": "text"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-07-21",
@@ -5771,7 +5762,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-07-12",
@@ -5928,7 +5919,7 @@
        "method": "text"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-07-10",
@@ -6149,7 +6140,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "reported_date": "2025-07-02",
@@ -6298,7 +6289,7 @@
        "method": "text"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-06-24",
@@ -6446,7 +6437,7 @@
        "method": "ocr"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "reported_date": "2025-06-16",
@@ -6570,7 +6561,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-06-09",
@@ -6684,7 +6675,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     },
     "2025.146_ATP Removal Report.pdf": {
      "forms": []
@@ -6826,7 +6817,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     },
     "2025.073_report.pdf": {
      "forms": []
@@ -6965,7 +6956,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-06-06",
@@ -7109,7 +7100,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     },
     "2025.060_ USTSystemRemoval.pdf": {
      "forms": []
@@ -7263,7 +7254,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     },
     "2025.044_ChangeOrder.pdf": {
      "forms": []
@@ -7385,7 +7376,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-04-07",
@@ -7448,7 +7439,7 @@
        "source_description": "Tote",
        "cause_description": "Valve failure",
        "response_action": "Release impacted gravel/soil lot outside of the building.",
-       "comments": "The solution has a pH of 12.5. The contaminated soil will need to be excavated and properly disposed. X COMMENTS",
+       "comments": "The solution has a pH of 12.5. The contaminated soil will need to be excavated and properly disposed.",
        "county": "Meade",
        "page": 1,
        "method": "ocr"
@@ -7459,7 +7450,7 @@
        "method": "ocr"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-03-27",
@@ -7472,7 +7463,7 @@
     "discharger": "PMI West",
     "reported_by": "Brendan Leach",
     "response_action": "Release impacted gravel/soil lot outside of the building.",
-    "comments": "The solution has a pH of 12.5. The contaminated soil will need to be excavated and properly disposed. X COMMENTS",
+    "comments": "The solution has a pH of 12.5. The contaminated soil will need to be excavated and properly disposed.",
     "read_from": "ocr",
     "pdf": "https://danr.sd.gov/spillimages/2025/2025.032.pdf",
     "page": 1
@@ -7622,7 +7613,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "reported_date": "2025-03-21",
@@ -7830,7 +7821,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-03-05",
@@ -7983,7 +7974,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-03-01",
@@ -8173,7 +8164,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "reported_date": "2025-02-28",
@@ -8319,7 +8310,7 @@
        "method": "text"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-02-25",
@@ -8480,7 +8471,6 @@
       {
        "form": "follow-up",
        "cleanup_date": "3-13-26",
-       "contractor": "MAILING ADDRESS",
        "page": 3,
        "method": "ocr"
       },
@@ -8490,7 +8480,7 @@
        "method": "ocr"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-02-10",
@@ -8530,7 +8520,6 @@
    },
    "follow_up": {
     "cleanup_date": "3-13-26",
-    "contractor": "MAILING ADDRESS",
     "read_from": "ocr",
     "pdf": "https://danr.sd.gov/spillimages/2026/2026.027.pdf",
     "page": 3
@@ -8571,7 +8560,8 @@
        "spill_date": "01/23/25",
        "reported_by": "Lisa Swartz",
        "discharger": "Ellsworth AFB - CORRAY DLA",
-       "location": "& LOCATION",
+       "location": "44.1561, -103.09602",
+       "source_description": "44.1561, -103.09602",
        "response_action": "placed absorbents and pooled liquid pumped into drum",
        "county": "Meade",
        "page": 1,
@@ -8644,13 +8634,14 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-01-23",
    "report": {
     "spill_date": "01/23/25",
-    "location": "& LOCATION",
+    "source_description": "44.1561, -103.09602",
+    "location": "44.1561, -103.09602",
     "county": "Meade",
     "discharger": "Ellsworth AFB - CORRAY DLA",
     "reported_by": "Lisa Swartz",
@@ -8844,7 +8835,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2025-01-19",
@@ -9040,7 +9031,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "spill_date": "2024-09-24",
@@ -9182,7 +9173,7 @@
        "method": "ocr"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "report": {
@@ -9241,13 +9232,13 @@
        "source_description": "Underground storage tank (UST) system(s)",
        "cause_description": "The operation of multiple UST systems from at least 1963 until 2025",
        "response_action": "Phased removal of eight (1 x 4k gal, 3 x 12k gal, and 4 x 20k gal) USTs, product piping, and dispensers; Excavation and proper disposal 1,710 tons of contaminated soils (During May, June, and July 2025)",
-       "comments": "During removal activies, 34 soil samples were collected, screened with a PID, and subsequently submitted for laboratory analyses. Laboratory analytical results indicated all but one sample contained measurable concentrations of petroleum hydrocarbons. Of these, 22 samples exceeded DANR Tier 1 Trigger and/or Action Levels for Soils, with several exceeding by a substantial margin. In addition, the subsurface water present in two tank basin excavations K COMMENTS was overlain by thin layer of free ",
+       "comments": "During removal activities, 34 soil samples were collected, screened with a PID, and subsequently submitted for laboratory analyses. Laboratory analytical results indicated all but one sample contained measurable concentrations of petroleum hydrocarbons. Of these, 22 samples exceeded DANR Tier 1 Trigger and/or Action Levels for Soils, with several exceeding by a substantial margin. In addition, the subsurface water present in two tank basin excavations",
        "county": "Pennington",
        "page": 1,
        "method": "ocr"
       }
      ],
-     "version": 2
+     "version": 3
     },
     "2025.152_UST Removal Report.pdf": {
      "forms": []
@@ -9267,7 +9258,7 @@
     "discharger": "M.G. Oil Company (Dave Kulish)",
     "reported_by": "Jeremy Huot",
     "response_action": "Phased removal of eight (1 x 4k gal, 3 x 12k gal, and 4 x 20k gal) USTs, product piping, and dispensers; Excavation and proper disposal 1,710 tons of contaminated soils (During May, June, and July 2025)",
-    "comments": "During removal activies, 34 soil samples were collected, screened with a PID, and subsequently submitted for laboratory analyses. Laboratory analytical results indicated all but one sample contained measurable concentrations of petroleum hydrocarbons. Of these, 22 samples exceeded DANR Tier 1 Trigger and/or Action Levels for Soils, with several exceeding by a substantial margin. In addition, the subsurface water present in two tank basin excavations K COMMENTS was overlain by thin layer of free ",
+    "comments": "During removal activities, 34 soil samples were collected, screened with a PID, and subsequently submitted for laboratory analyses. Laboratory analytical results indicated all but one sample contained measurable concentrations of petroleum hydrocarbons. Of these, 22 samples exceeded DANR Tier 1 Trigger and/or Action Levels for Soils, with several exceeding by a substantial margin. In addition, the subsurface water present in two tank basin excavations",
     "read_from": "ocr",
     "pdf": "https://danr.sd.gov/spillimages/2025/2025.152.pdf",
     "page": 1
@@ -9381,7 +9372,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     },
     "2025.126_Phase II ESA.pdf": {
      "forms": []
@@ -9535,7 +9526,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     },
     "2025.125_Phase II ESA.pdf": {
      "forms": []
@@ -9609,11 +9600,6 @@
      "forms": [
       {
        "form": "spill report",
-       "reported_by": "Organization Name: Discharger Public State Local Federal",
-       "discharger": "Address",
-       "location": "Survey Description",
-       "source_description": "Regulated Tank Facility: Tank Facility ID #",
-       "response_action": ".K DEIFITON Responding Agency: DANR Local Discharger Federal EPA Other",
        "comments": "cleanupcompletedattimeofreporting,waitingondocumentationforclosure",
        "page": 1,
        "method": "text"
@@ -9634,15 +9620,10 @@
        "method": "text"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "report": {
-    "source_description": "Regulated Tank Facility: Tank Facility ID #",
-    "location": "Survey Description",
-    "discharger": "Address",
-    "reported_by": "Organization Name: Discharger Public State Local Federal",
-    "response_action": ".K DEIFITON Responding Agency: DANR Local Discharger Federal EPA Other",
     "comments": "cleanupcompletedattimeofreporting,waitingondocumentationforclosure",
     "read_from": "text",
     "pdf": "https://danr.sd.gov/spillimages/2025/2025.121.pdf",
@@ -9768,7 +9749,7 @@
        "method": "fields"
       }
      ],
-     "version": 2
+     "version": 3
     }
    },
    "report": {

@@ -3,7 +3,7 @@
  "name": "Native plants of the Black Hills",
  "kind": "plant",
  "url": "https://www.inaturalist.org/places/black-hills-national-forest-us",
- "fetched_at": "2026-11-07T08:10:20-07:00",
+ "fetched_at": "2026-11-07T08:32:46-07:00",
  "count": 392,
  "records": [
   {
@@ -1324,7 +1324,7 @@
    "photo_credit": "no rights reserved, uploaded by Harald Schnöde (Schnde)",
    "url": "https://www.inaturalist.org/taxa/58790",
    "wikipedia_url": "https://en.wikipedia.org/wiki/Berula erecta",
-   "sightings": 6,
+   "sightings": 7,
    "kind": "plant",
    "record_type": "plant",
    "source": "native_plants_spotlight",
