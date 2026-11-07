@@ -50,7 +50,7 @@
   <div class="min-w-0">
     <a href="{{ e.url }}" class="link-title" target="_blank" rel="noopener">{{ e.title }}</a>
     <p class="text-xs text-stone-500">
-      {{ e.location or e.source_label }}
+      {{ e.location or e.source_label }}{% if e.tickets_url %} • <a href="{{ e.tickets_url }}" class="link" target="_blank" rel="noopener">Tickets</a>{% endif %}
     </p>
   </div>
 </li>

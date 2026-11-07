@@ -134,6 +134,11 @@ def tidy_description(title: str, description: str) -> str:
     return desc
 
 
+def home_tickets(r: dict) -> str:
+    """Where to buy tickets to a game here in town (a home game, by the schedule's H/A/N), or ''."""
+    return (r.get("tickets_url") or "") if r.get("home_away", "H") == "H" else ""
+
+
 def unified_events(site: Site, today: date | None = None) -> list[dict]:
     today = today or dates.today()
     horizon = today + timedelta(days=HORIZON_DAYS)
@@ -156,6 +161,7 @@ def unified_events(site: Site, today: date | None = None) -> list[dict]:
         for kept in bucket:
             if kept["source"] != r["source"] and _same(kept["_tokens"], toks):
                 kept["also"].append({"source": r["source_label"], "url": r["url"]})
+                kept["tickets_url"] = kept["tickets_url"] or home_tickets(r)
                 if not kept["location"] and r.get("location"):
                     kept["location"] = undouble(r["location"])
                 break
@@ -172,6 +178,7 @@ def unified_events(site: Site, today: date | None = None) -> list[dict]:
                     "location": undouble(r.get("location", "")),
                     "description": tidy_description(r["title"], r.get("description") or "")[:400],
                     "url": r["url"],
+                    "tickets_url": home_tickets(r),
                     "category": SOURCE_CATEGORY.get(r["source"]) or r.get("event_category") or "community",
                     "source": r["source"],
                     "source_label": r["source_label"],

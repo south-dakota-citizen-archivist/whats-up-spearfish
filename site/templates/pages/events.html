@@ -85,7 +85,7 @@
               <div class="min-w-0">
                 <a :href="e.url" target="_blank" rel="noopener" class="link-title" x-text="e.title"></a>
                 <p class="text-xs text-stone-500">
-                  <span x-text="e.location || e.source_label"></span>
+                  <span x-text="e.location || e.source_label"></span><template x-if="e.tickets_url"><span> • <a :href="e.tickets_url" target="_blank" rel="noopener" class="link">Tickets</a></span></template>
                 </p>
                 <p x-show="e.description" class="text-sm text-stone-600 mt-1 line-clamp-2" x-text="e.description"></p>
               </div>
