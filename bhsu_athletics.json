@@ -3,7 +3,7 @@
  "name": "BHSU Athletics",
  "kind": "event",
  "url": "https://bhsuathletics.com/calendar",
- "fetched_at": "2026-11-06T10:28:36-07:00",
+ "fetched_at": "2026-11-07T06:59:14-07:00",
  "count": 90,
  "records": [
   {
@@ -159,7 +159,7 @@
    "conference": "Rocky Mountain Athletic Conference",
    "status": "A",
    "video_url": "https://www.sunshinestateconference.tv/fscmocs/",
-   "stats_url": "https://www.statbroadcast.com/events/statbroadcast.php?gid=blac",
+   "stats_url": "https://stats.statbroadcast.com/broadcast/?id=691393&vislive=blac",
    "tickets_url": null,
    "result_team": null,
    "result_opp": null,
@@ -261,7 +261,7 @@
    "conference": "Rocky Mountain Athletic Conference",
    "status": "A",
    "video_url": "https://www.sunshinestateconference.tv/fscmocs/",
-   "stats_url": "https://www.statbroadcast.com/events/statbroadcast.php?gid=blac",
+   "stats_url": "https://stats.statbroadcast.com/broadcast/?id=683140&vislive=blac",
    "tickets_url": null,
    "result_team": null,
    "result_opp": null,

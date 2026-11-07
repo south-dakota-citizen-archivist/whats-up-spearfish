@@ -3,7 +3,7 @@
  "name": "SD DANR contested cases",
  "kind": "case",
  "url": "https://danr.sd.gov/public/ContestedCase.aspx",
- "fetched_at": "2026-11-06T10:28:45-07:00",
+ "fetched_at": "2026-11-07T06:59:23-07:00",
  "count": 8,
  "records": [
   {
@@ -146,8 +146,24 @@
    "description": "An application for a water permit to appropriate water from the Madison Aquifer for industrial use in a uranium in-situ mining project (Dewey-Burdock) located in southwestern Custer County & northwestern Fall River County, as well as domestic and rural water system purposes intended to service landowners in and around the project area.",
    "area": "",
    "url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID135",
-   "documents": [],
-   "updated": "",
+   "documents": [
+    {
+     "title": "Petitions",
+     "url": "https://danr.sd.gov/wrimage/pub/2915-2_petitions_cc.pdf",
+     "added": "2026-11-06"
+    },
+    {
+     "title": "Comments",
+     "url": "https://danr.sd.gov/wrimage/pub/2915-2_comments_cc.pdf",
+     "added": "2026-11-06"
+    },
+    {
+     "title": "Public Notice",
+     "url": "https://danr.sd.gov/wrimage/pub/2915-2_app.pdf",
+     "added": "2026-11-06"
+    }
+   ],
+   "updated": "2026-11-06",
    "kind": "case",
    "record_type": "case",
    "source": "danr_contested_cases",
@@ -231,6 +247,11 @@
    "url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID131",
    "documents": [
     {
+     "title": "Notice of Withdrawal",
+     "url": "https://danr.sd.gov/wrimage/pub/2049-1_withdrawn.pdf",
+     "added": "2026-11-06"
+    },
+    {
      "title": "Applicant's Request to Withdraw Application",
      "url": "https://danr.sd.gov/wrimage/pub/2049-1_withdraw request.pdf",
      "added": "2026-11-02"
@@ -239,14 +260,9 @@
      "title": "Notice of Hearing",
      "url": "https://danr.sd.gov/wrimage/pub/2049-1_goschke_NOH_2.pdf",
      "added": "2026-10-19"
-    },
-    {
-     "title": "Notice of Automatic Delay of Hearing",
-     "url": "https://danr.sd.gov/wrimage/pub/2049-1_notdly.pdf",
-     "added": "2026-08-25"
     }
    ],
-   "updated": "2026-11-02",
+   "updated": "2026-11-06",
    "kind": "case",
    "record_type": "case",
    "source": "danr_contested_cases",

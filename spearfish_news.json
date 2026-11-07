@@ -3,8 +3,8 @@
  "name": "City of Spearfish News Flash",
  "kind": "press_release",
  "url": "https://www.spearfish.gov/CivicAlerts.aspx",
- "fetched_at": "2026-11-06T10:29:26-07:00",
- "count": 6,
+ "fetched_at": "2026-11-07T07:00:08-07:00",
+ "count": 7,
  "records": [
   {
    "url": "https://www.spearfish.gov/CivicAlerts.aspx?aid=581",
@@ -95,6 +95,21 @@
    "id": "5b5c0c920fec",
    "date": "2026-11-03",
    "_first_seen": "2026-11-03"
+  },
+  {
+   "url": "https://www.spearfish.gov/CivicAlerts.aspx?aid=569",
+   "title": "The Monthly Catch - Community Development Department Newsletter",
+   "slug": "the-monthly-catch-community-development-department-newsletter",
+   "description": "Read up on the Community Development Department's Monthly Newsletter - The Monthly Catch!",
+   "published": "2026-11-06T14:29:00-07:00",
+   "start_dt": "Fri, 06 Nov 2026 14:29:00 -0700",
+   "record_type": "press_release",
+   "source_label": "City of Spearfish",
+   "kind": "press_release",
+   "source": "spearfish_news",
+   "id": "e3dcde81d92a",
+   "date": "2026-11-06",
+   "_first_seen": "2026-11-07"
   }
  ]
 }

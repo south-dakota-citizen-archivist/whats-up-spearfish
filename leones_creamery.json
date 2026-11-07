@@ -3,7 +3,7 @@
  "name": "Leone's Creamery",
  "kind": "flavor",
  "url": "https://leonescreamery.com/flavors",
- "fetched_at": "2026-11-06T10:28:52-07:00",
+ "fetched_at": "2026-11-07T06:59:25-07:00",
  "count": 8,
  "records": [
   {
@@ -43,6 +43,44 @@
    "_first_seen": "2026-11-01"
   },
   {
+   "url": "https://leonescreamery.com/flavor-detail/pistachio",
+   "image_url": "https://leonescreamery.com/images/uploads/cropped/Pistachio-131-1523657833.jpg",
+   "title": "Pistachio",
+   "slug": "pistachio",
+   "record_type": "flavor",
+   "source_label": "Leone's Creamery",
+   "gluten_free": true,
+   "contains": [
+    "Eggs",
+    "Dairy",
+    "Pistachios"
+   ],
+   "description": "Ultra creamy, nutty, and delicious. We make our homemade pistachio butter from freshly toasted pistachios to churn up the MOST delicious pistachio ice cream you've ever tasted (no funky green dye required).",
+   "kind": "flavor",
+   "source": "leones_creamery",
+   "id": "e7bd1b399938",
+   "_first_seen": "2026-11-07"
+  },
+  {
+   "url": "https://leonescreamery.com/flavor-detail/birthday-cake",
+   "image_url": "https://leonescreamery.com/images/uploads/cropped/BirthdayCake-132-1523658762.jpg",
+   "title": "Birthday Cake",
+   "slug": "birthday-cake",
+   "record_type": "flavor",
+   "source_label": "Leone's Creamery",
+   "gluten_free": false,
+   "contains": [
+    "Eggs",
+    "Dairy",
+    "Gluten"
+   ],
+   "description": "Just like your favorite funfetti birthday cake...in ice cream form!",
+   "kind": "flavor",
+   "source": "leones_creamery",
+   "id": "fe9e0acaf843",
+   "_first_seen": "2026-11-07"
+  },
+  {
    "url": "https://leonescreamery.com/flavor-detail/blueberry-goats-cheese",
    "image_url": "https://leonescreamery.com/images/uploads/cropped/Blue-Goat-159-1534649838.jpg",
    "title": "Blueberry Goat’s Cheese",
@@ -77,42 +115,6 @@
    "kind": "flavor",
    "source": "leones_creamery",
    "id": "cc624d43ebb2",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://leonescreamery.com/flavor-detail/salted-caramel-cone",
-   "image_url": "https://leonescreamery.com/images/uploads/cropped/EBCFE440-7DA8-4CB3-AF30-9D6254AA9513-169-1549072771.jpg",
-   "title": "Salted Caramel Cone",
-   "slug": "salted-caramel-cone",
-   "record_type": "flavor",
-   "source_label": "Leone's Creamery",
-   "gluten_free": true,
-   "contains": [
-    "Eggs",
-    "Dairy"
-   ],
-   "description": "Ice cream made with our signature salted caramel sauce, and full of our gluten-free cone pieces folded in!",
-   "kind": "flavor",
-   "source": "leones_creamery",
-   "id": "147b8a3565ea",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://leonescreamery.com/flavor-detail/butterbeer",
-   "image_url": "https://leonescreamery.com/images/uploads/cropped/1B3EE3E3-34E8-46F3-8FC9-E2154E29A554-262-1579041149.jpg",
-   "title": "Butterbeer",
-   "slug": "butterbeer",
-   "record_type": "flavor",
-   "source_label": "Leone's Creamery",
-   "gluten_free": true,
-   "contains": [
-    "Eggs",
-    "Dairy"
-   ],
-   "description": "A once-a-year seasonal favorite!! We make a butter rum ice cream and swirl it with a thick ribbon of our house-made butter beer caramel. Loved by witches and wizards alike!",
-   "kind": "flavor",
-   "source": "leones_creamery",
-   "id": "e7048e7663c2",
    "_first_seen": "2026-11-01"
   },
   {

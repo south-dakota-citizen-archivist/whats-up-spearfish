@@ -3,7 +3,7 @@
  "name": "Northern Hills Cinema",
  "kind": "movie",
  "url": "https://nhcinema.com/",
- "fetched_at": "2026-11-06T10:29:06-07:00",
+ "fetched_at": "2026-11-07T06:59:37-07:00",
  "count": 16,
  "records": [
   {
@@ -15,23 +15,6 @@
    "runtime": 132,
    "no_passes": false,
    "showtimes": [
-    {
-     "date": "2026-11-06",
-     "times": [
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      },
-      {
-       "time": "21:15",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-07",
      "times": [
@@ -133,23 +116,6 @@
    "runtime": 174,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-06",
-     "times": [
-      {
-       "time": "14:45",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      },
-      {
-       "time": "21:00",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-07",
      "times": [
@@ -265,23 +231,6 @@
    "ends": "2026-11-10",
    "showtimes": [
     {
-     "date": "2026-11-06",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      },
-      {
-       "time": "21:30",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-07",
      "times": [
       {
@@ -367,23 +316,6 @@
    "runtime": 129,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-06",
-     "times": [
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": true
-      },
-      {
-       "time": "21:30",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-07",
      "times": [
@@ -525,23 +457,6 @@
    "no_passes": true,
    "showtimes": [
     {
-     "date": "2026-11-06",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": true
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      },
-      {
-       "time": "21:15",
-       "luxury": true
-      }
-     ]
-    },
-    {
      "date": "2026-11-07",
      "times": [
       {
@@ -654,23 +569,6 @@
    "runtime": 91,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-06",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      },
-      {
-       "time": "21:00",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-07",
      "times": [

@@ -3,7 +3,7 @@
  "name": "Killian's",
  "kind": "beer",
  "url": "https://untappd.com",
- "fetched_at": "2026-11-06T10:28:46-07:00",
+ "fetched_at": "2026-11-07T06:59:18-07:00",
  "count": 17,
  "records": [
   {
@@ -14,7 +14,7 @@
    "abv": "9%",
    "ibu": "",
    "brewery": "Outer Range Brewing Co.",
-   "rating": "4.26",
+   "rating": "4.25",
    "image_url": "https://labels.untappd.com/6560039",
    "record_type": "beer",
    "source_label": "Killian's",
@@ -160,21 +160,21 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://untappd.com/b/lost-cabin-beer-co-juicy-bruce/2134365",
-   "title": "Juicy Bruce",
-   "slug": "juicy-bruce",
-   "category": "Pale Ale - American",
-   "abv": "5.6%",
-   "ibu": "60",
-   "brewery": "Lost Cabin Beer Co.",
-   "rating": "3.92",
-   "image_url": "https://labels.untappd.com/2134365",
+   "url": "https://untappd.com/b/sawyer-brewing-co-prime-real-estate/5601878",
+   "title": "Prime Real Estate",
+   "slug": "prime-real-estate",
+   "category": "IPA - American",
+   "abv": "6.5%",
+   "ibu": "",
+   "brewery": "Sawyer Brewing Co",
+   "rating": "3.81",
+   "image_url": "https://labels.untappd.com/5601878",
    "record_type": "beer",
    "source_label": "Killian's",
    "kind": "beer",
    "source": "killians",
-   "id": "2b6af6ea60ac",
-   "_first_seen": "2026-11-01"
+   "id": "4605ade2b8b0",
+   "_first_seen": "2026-11-07"
   },
   {
    "url": "https://untappd.com/b/austin-eastciders-texas-honey-cider/857792",

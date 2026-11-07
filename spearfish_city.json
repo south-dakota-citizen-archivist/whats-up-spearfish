@@ -3,8 +3,8 @@
  "name": "City of Spearfish",
  "kind": "document",
  "url": "https://spearfishsd.portal.civicclerk.com/",
- "fetched_at": "2026-11-06T10:29:23-07:00",
- "count": 90,
+ "fetched_at": "2026-11-07T06:59:59-07:00",
+ "count": 95,
  "records": [
   {
    "event_id": 2192,
@@ -9406,6 +9406,308 @@
    "_first_seen": "2026-11-02"
   },
   {
+   "event_id": 2151,
+   "event_name": "City Council Meeting",
+   "category": "City Council",
+   "start_dt": "2026-11-02T17:30:00-07:00",
+   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2151",
+   "has_media": true,
+   "media_url": "https://cpmedia.azureedge.net/spearfishsd/9ec7b20953.mp4",
+   "media_page": "https://spearfishsd.portal.civicclerk.com/event/2151/media",
+   "chapters": [
+    {
+     "id": 5898,
+     "t": 26,
+     "title": "1. Roll Call",
+     "sub": false
+    },
+    {
+     "id": 5899,
+     "t": 16,
+     "title": "2. Call to Order",
+     "sub": false
+    },
+    {
+     "id": 5900,
+     "t": 42,
+     "title": "3. Invocation",
+     "sub": false
+    },
+    {
+     "id": 5901,
+     "t": 220,
+     "title": "4. Pledge of Allegiance",
+     "sub": false
+    },
+    {
+     "id": 5902,
+     "t": 239,
+     "title": "5. Approve Agenda",
+     "sub": false
+    },
+    {
+     "id": 5903,
+     "t": 286,
+     "title": "6. Public Comment -",
+     "sub": false
+    },
+    {
+     "id": 5904,
+     "t": 595,
+     "title": "7. Declaration of Any Potential Conflicts of Interest",
+     "sub": false
+    },
+    {
+     "id": 5905,
+     "t": 605,
+     "title": "8. Items from Visitors",
+     "sub": false
+    },
+    {
+     "id": 5906,
+     "t": 605,
+     "title": "8.A. Mayor Senden to proclaim November 11, 2026 as Buddy Poppy Day in Spearfish.",
+     "sub": true
+    },
+    {
+     "id": 5907,
+     "t": 737,
+     "title": "9. Consent Agenda",
+     "sub": false
+    },
+    {
+     "id": 5908,
+     "t": 739,
+     "title": "9.A. Approve the minutes of the October 14, 2026, City Council special session.",
+     "sub": true
+    },
+    {
+     "id": 5909,
+     "t": 739,
+     "title": "9.B. Approve the minutes of the October 14, 2026, City Council study session.",
+     "sub": true
+    },
+    {
+     "id": 5910,
+     "t": 739,
+     "title": "9.C. Approve the minutes of the October 19, 2026, City Council regular session.",
+     "sub": true
+    },
+    {
+     "id": 5911,
+     "t": 743,
+     "title": "9.D. Approve the Treasurer's Report dated ​September 30th, 2026.",
+     "sub": true
+    },
+    {
+     "id": 5912,
+     "t": 744,
+     "title": "9.E. Approve the Access Agreement with Mandy and Chad Knight of 420 North Meier Ave., for the removal of a tree on City property to be accessed through the Knight's property.",
+     "sub": true
+    },
+    {
+     "id": 5913,
+     "t": 785,
+     "title": "10. Added and Adjusted Wages",
+     "sub": false
+    },
+    {
+     "id": 5914,
+     "t": 785,
+     "title": "10.A. Approve the following wage additions and adjustments as budgeted for 2026:Regular EmployeeBudgeted PositionWageReasonPlanning ManagerYes$47.56ReclassificationPolice CorporalYes$36.25PromotionUtilities Operator IYes$26.95New HireRed Carded Firefighter - Sean SchippPaid by stateAD-C $22.84Wildland RateParks Maintenance & Forestry TechnicianYes$26.29New HireParks Maintenance & Forestry TechnicianYes$25.65New Hire",
+     "sub": true
+    },
+    {
+     "id": 5915,
+     "t": 826,
+     "title": "11. Community Development",
+     "sub": false
+    },
+    {
+     "id": 5916,
+     "t": 830,
+     "title": "11.A. Hold a public hearing to hear and consider a final plat located within the ETJ Area, combining two residential lots into one.",
+     "sub": true
+    },
+    {
+     "id": 5917,
+     "t": 965,
+     "title": "11.A.1. Approve the final plat.",
+     "sub": true
+    },
+    {
+     "id": 5918,
+     "t": 983,
+     "title": "11.B. Hold a public hearing to hear and consider the Final Plat of Lots A, B, and C Spring Creek Ranch Estates.",
+     "sub": true
+    },
+    {
+     "id": 5919,
+     "t": 1422,
+     "title": "11.B.1. Approve the final plat.",
+     "sub": true
+    },
+    {
+     "id": 5920,
+     "t": 1440,
+     "title": "12. Finance",
+     "sub": false
+    },
+    {
+     "id": 5921,
+     "t": 1442,
+     "title": "12.A. Approve the 2027 liquor and wine license renewal applications for businesses on the attached list.",
+     "sub": true
+    },
+    {
+     "id": 5922,
+     "t": 1504,
+     "title": "12.B. Approve a $1,228,285.28 transfer from 101-General Fund to 201-Second Penny Sales Tax Fund for the final payment for the 2015 Sales Tax Revenue Refunding Bond.",
+     "sub": true
+    },
+    {
+     "id": 5923,
+     "t": 1579,
+     "title": "12.C. Approve the first reading of Ordinance 1433 - An Ordinance Supplementing the 2026 Appropriations Ordinance No. 1408 of the Code of Ordinances, City of Spearfish, South Dakota.",
+     "sub": true
+    },
+    {
+     "id": 5924,
+     "t": 1668,
+     "title": "12.D. Accept the proposal from A&B Business Solutions for the Managed Print Services at a cost of $3,268.41 with a 4-year term.",
+     "sub": true
+    },
+    {
+     "id": 5925,
+     "t": 1821,
+     "title": "13. Fire",
+     "sub": false
+    },
+    {
+     "id": 5926,
+     "t": 1823,
+     "title": "13.A. Approve additional wildland rates for firefighters effective August 1, 2026:Red Carded FirefightersPosition QualificationAD Pay Plan RateReth, FreddieFFT2AD-C $22.84Kipp, ElissaFFT2AD-C $22.84Rowe, KatFFT1AD-D $25.12Non Red Carded Firefighters:Position QualificationAD Pay Plan RateAnderson, MattAD-B $20.44Hitson, KellyAD-B $20.44Jerrel, McKinseyAD-B $20.44Fetter, CharlesAD-B $20.44Mullany, TroyAD-B $20.44Walters, TrentAD-B $20.44Jansevics, JakeAD-B $20.44Kerutis, KristaAD-B $20.44Joynt, DanielAD-B $20.44Secord, DerrickAD-B $20.44Deitschman, NateAD-B $20.44",
+     "sub": true
+    },
+    {
+     "id": 5927,
+     "t": 2116,
+     "title": "13.B. Approve a professional services agreement with Structural Dynamics, LLC for construction inspection services for the Fire Training Tower for a total amount not to exceed $56,218.95.",
+     "sub": true
+    },
+    {
+     "id": 5928,
+     "t": 2815,
+     "title": "13.C. Approve OnScene Dynamics proposal for a Type 6 Fire Upfit on the 2027 Ford F-550 for a total of $19,427.85.",
+     "sub": true
+    },
+    {
+     "id": 5929,
+     "t": 2945,
+     "title": "14. Parks and Recreation",
+     "sub": false
+    },
+    {
+     "id": 5930,
+     "t": 2948,
+     "title": "14.A. Approve extension of short-term Lease Agreement with Northern Hills Amateur Hockey Association (Chinook).",
+     "sub": true
+    },
+    {
+     "id": 5931,
+     "t": 3005,
+     "title": "15. Public Works",
+     "sub": false
+    },
+    {
+     "id": 5932,
+     "t": 3006,
+     "title": "15.A. Approve the agreement with Butte Electric Cooperative, Inc. to provide electric service to the Sawmill TID #8 along Bandsaw Avenue for a fee of $130,409.45.",
+     "sub": true
+    },
+    {
+     "id": 5933,
+     "t": 3115,
+     "title": "15.B. Accept asphalt paving completed as part of the Downtown Mill and Overlay Project on Main Street between Jackson Boulevard and Grant Street for the sole purpose of payment of the offered incentive.",
+     "sub": true
+    },
+    {
+     "id": 5934,
+     "t": 3324,
+     "title": "15.C. Approve the Final Under/Over Change Order #1 for the Mainline Pavement Marking with a net decrease of $3,818.10, and Certificate of Final Completion and Acceptance for the 2026 Mainline Pavement Markings Project.",
+     "sub": true
+    },
+    {
+     "id": 5935,
+     "t": 3393,
+     "title": "15.D. Award the lowest responsive and responsible bid for the 2027 Biosolids Hauling Services to Fortin Trucking & Excavating LLC at a total amount of $60,060.00.",
+     "sub": true
+    },
+    {
+     "id": 5936,
+     "t": 3502,
+     "title": "15.E. Approve the Final Under/Over Change Order #5 for the Colorado Boulevard Roadway Improvements Project with a net increase of $205,386.86 and Certificate of Final Completion and Acceptance setting 10/26/2026 as the start of the two-year warranty period.",
+     "sub": true
+    },
+    {
+     "id": 5937,
+     "t": 3502,
+     "title": "16. Approve the Bills",
+     "sub": false
+    },
+    {
+     "id": 5938,
+     "t": 3503,
+     "title": "16.A. Approve the Bill List dated November 2, 2026.",
+     "sub": true
+    },
+    {
+     "id": 5939,
+     "t": 3539,
+     "title": "17. Publication of Wages per SDCL 6-1-10",
+     "sub": false
+    },
+    {
+     "id": 5940,
+     "t": 3540,
+     "title": "17.A. In accordance with South Dakota state law, human resources will publish a complete list of all added and adjusted wages in the official minutes. The changes are as follows:Regular EmployeePositionWageEffective DateCaleb GallagherParks Maintenance & Forestry Supervisor$32.8410-19-2026Jonathan BeachUtilities Operator III$32.049-27-2026Jaymia EckerPlanning Manager$47.5610-25-2026Saul TorresPolice Corporal$36.2511-8-2026Rhyse NaylorUtilities Operator I$26.9511-17-026",
+     "sub": true
+    },
+    {
+     "id": 5941,
+     "t": 3563,
+     "title": "18. Mayor and Council Discussion",
+     "sub": false
+    },
+    {
+     "id": 5942,
+     "t": 3615,
+     "title": "19. Departmental Discussion",
+     "sub": false
+    },
+    {
+     "id": 5943,
+     "t": 3812,
+     "title": "20. Adjournment",
+     "sub": false
+    }
+   ],
+   "join_url": "",
+   "record_type": "document",
+   "source_label": "City of Spearfish",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2151/files/minutes/9000",
+   "title": "City Council Regular Session Minutes 11/2/2026",
+   "doc_type": "Minutes",
+   "file_url": "https://spearfishsd.portal.civicclerk.com/event/2151/files/minutes/9000",
+   "kind": "document",
+   "source": "spearfish_city",
+   "id": "e92951d4c960",
+   "published": "2026-11-02T17:30:00-07:00",
+   "date": "2026-11-02",
+   "_first_seen": "2026-11-07"
+  },
+  {
    "event_id": 3405,
    "event_name": "Board of Adjustment",
    "category": "General",
@@ -9462,16 +9764,16 @@
    "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
-   "url": "https://spearfishsd.portal.civicclerk.com/event/3405/files/agenda/8976",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/3405/files/agenda/8999",
    "title": "Board of Adjustment Agenda 11/2/2026",
    "doc_type": "Agenda",
-   "file_url": "https://spearfishsd.portal.civicclerk.com/event/3405/files/agenda/8976",
+   "file_url": "https://spearfishsd.portal.civicclerk.com/event/3405/files/agenda/8999",
    "kind": "document",
    "source": "spearfish_city",
-   "id": "8180811a96fa",
+   "id": "3e1838b89065",
    "published": "2026-11-02T17:30:00-07:00",
    "date": "2026-11-02",
-   "_first_seen": "2026-11-01"
+   "_first_seen": "2026-11-07"
   },
   {
    "event_id": 3405,
@@ -9537,6 +9839,142 @@
    "kind": "document",
    "source": "spearfish_city",
    "id": "c4186f03f55c",
+   "published": "2026-11-02T17:30:00-07:00",
+   "date": "2026-11-02",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "event_id": 3405,
+   "event_name": "Board of Adjustment",
+   "category": "General",
+   "start_dt": "2026-11-02T17:30:00-07:00",
+   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/3405",
+   "has_media": true,
+   "media_url": "https://cpmedia.azureedge.net/spearfishsd/a0b75f6748.mp4",
+   "media_page": "https://spearfishsd.portal.civicclerk.com/event/3405/media",
+   "chapters": [
+    {
+     "id": 5891,
+     "t": 677,
+     "title": "1. Call to Order",
+     "sub": false
+    },
+    {
+     "id": 5892,
+     "t": 695,
+     "title": "2. Roll Call",
+     "sub": false
+    },
+    {
+     "id": 5893,
+     "t": 711,
+     "title": "3. Action Items",
+     "sub": false
+    },
+    {
+     "id": 5894,
+     "t": 714,
+     "title": "3.A. Hold a public hearing for a variance request to reduce the required side-yard setback from 8' to 6' 9\" for 430 Meier Avenue.",
+     "sub": true
+    },
+    {
+     "id": 5895,
+     "t": 1135,
+     "title": "3.A.1. Approve the requested variance with conditions.",
+     "sub": true
+    },
+    {
+     "id": 5896,
+     "t": 1151,
+     "title": "4. Public Comment for Issues not on the Agenda",
+     "sub": false
+    },
+    {
+     "id": 5897,
+     "t": 1178,
+     "title": "5. Adjournment",
+     "sub": false
+    }
+   ],
+   "join_url": "",
+   "record_type": "document",
+   "source_label": "City of Spearfish",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/3405/files/minutes/9001",
+   "title": "Corrected - Board of Adjustment Minutes 11/2/2026",
+   "doc_type": "Minutes",
+   "file_url": "https://spearfishsd.portal.civicclerk.com/event/3405/files/minutes/9001",
+   "kind": "document",
+   "source": "spearfish_city",
+   "id": "03dd05f07f13",
+   "published": "2026-11-02T17:30:00-07:00",
+   "date": "2026-11-02",
+   "_first_seen": "2026-11-07"
+  },
+  {
+   "event_id": 3405,
+   "event_name": "Board of Adjustment",
+   "category": "General",
+   "start_dt": "2026-11-02T17:30:00-07:00",
+   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/3405",
+   "has_media": true,
+   "media_url": "https://cpmedia.azureedge.net/spearfishsd/a0b75f6748.mp4",
+   "media_page": "https://spearfishsd.portal.civicclerk.com/event/3405/media",
+   "chapters": [
+    {
+     "id": 5891,
+     "t": 677,
+     "title": "1. Call to Order",
+     "sub": false
+    },
+    {
+     "id": 5892,
+     "t": 695,
+     "title": "2. Roll Call",
+     "sub": false
+    },
+    {
+     "id": 5893,
+     "t": 711,
+     "title": "3. Action Items",
+     "sub": false
+    },
+    {
+     "id": 5894,
+     "t": 714,
+     "title": "3.A. Hold a public hearing for a variance request to reduce the required side-yard setback from 8' to 6' 9\" for 430 Meier Avenue.",
+     "sub": true
+    },
+    {
+     "id": 5895,
+     "t": 1135,
+     "title": "3.A.1. Approve the requested variance with conditions.",
+     "sub": true
+    },
+    {
+     "id": 5896,
+     "t": 1151,
+     "title": "4. Public Comment for Issues not on the Agenda",
+     "sub": false
+    },
+    {
+     "id": 5897,
+     "t": 1178,
+     "title": "5. Adjournment",
+     "sub": false
+    }
+   ],
+   "join_url": "",
+   "record_type": "document",
+   "source_label": "City of Spearfish",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/3405/files/agenda/8976",
+   "title": "Board of Adjustment Agenda 11/2/2026",
+   "doc_type": "Agenda",
+   "file_url": "https://spearfishsd.portal.civicclerk.com/event/3405/files/agenda/8976",
+   "kind": "document",
+   "source": "spearfish_city",
+   "id": "8180811a96fa",
    "published": "2026-11-02T17:30:00-07:00",
    "date": "2026-11-02",
    "_first_seen": "2026-11-01"
@@ -9640,6 +10078,56 @@
    "published": "2026-11-04T16:00:00-07:00",
    "date": "2026-11-04",
    "_first_seen": "2026-11-03"
+  },
+  {
+   "event_id": 2259,
+   "event_name": "Library Board of Trustees Meeting",
+   "category": "Library Board of Trustees",
+   "start_dt": "2026-11-10T16:00:00-07:00",
+   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2259",
+   "has_media": false,
+   "media_url": "",
+   "media_page": "",
+   "chapters": [],
+   "join_url": "",
+   "record_type": "document",
+   "source_label": "City of Spearfish",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2259/files/agenda/9002",
+   "title": "Library Board Agenda 11-10-2026",
+   "doc_type": "Agenda",
+   "file_url": "https://spearfishsd.portal.civicclerk.com/event/2259/files/agenda/9002",
+   "kind": "document",
+   "source": "spearfish_city",
+   "id": "30c2c41650ca",
+   "published": "2026-11-10T16:00:00-07:00",
+   "date": "2026-11-10",
+   "_first_seen": "2026-11-07"
+  },
+  {
+   "event_id": 2259,
+   "event_name": "Library Board of Trustees Meeting",
+   "category": "Library Board of Trustees",
+   "start_dt": "2026-11-10T16:00:00-07:00",
+   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2259",
+   "has_media": false,
+   "media_url": "",
+   "media_page": "",
+   "chapters": [],
+   "join_url": "",
+   "record_type": "document",
+   "source_label": "City of Spearfish",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2259/files/other/8995",
+   "title": "2027 Holiday Closures",
+   "doc_type": "Other",
+   "file_url": "https://spearfishsd.portal.civicclerk.com/event/2259/files/other/8995",
+   "kind": "document",
+   "source": "spearfish_city",
+   "id": "380040ed270a",
+   "published": "2026-11-10T16:00:00-07:00",
+   "date": "2026-11-10",
+   "_first_seen": "2026-11-07"
   }
  ]
 }

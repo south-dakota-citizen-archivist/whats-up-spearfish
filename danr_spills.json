@@ -3,7 +3,7 @@
  "name": "SD DANR spill reports",
  "kind": "spill",
  "url": "https://apps.sd.gov/NR42InteractiveMap/",
- "fetched_at": "2026-11-06T10:29:44-07:00",
+ "fetched_at": "2026-11-07T07:00:56-07:00",
  "count": 67,
  "records": [
   {
@@ -310,7 +310,7 @@
    "report_no": "2026.148",
    "year": 2026,
    "title": "AST Overfill Sturgis Kickstart",
-   "status": "Open",
+   "status": "No further action",
    "category": "Petroleum",
    "material": "Diesel",
    "spill_source": "Above-ground tank",
@@ -323,7 +323,7 @@
    "pdfs": [
     {
      "url": "https://danr.sd.gov/spillimages/2026/2026.148.pdf",
-     "size": 11045709
+     "size": 11299851
     }
    ],
    "url": "https://danr.sd.gov/spillimages/2026/2026.148.pdf",
@@ -429,32 +429,32 @@
       },
       {
        "form": "follow-up",
-       "page": 5,
+       "page": 9,
        "method": "text"
       },
       {
        "form": "follow-up",
-       "page": 6,
+       "page": 10,
        "method": "text"
       },
       {
        "form": "follow-up",
-       "page": 7,
+       "page": 11,
        "method": "text"
       },
       {
        "form": "follow-up",
-       "page": 25,
+       "page": 29,
        "method": "text"
       },
       {
        "form": "follow-up",
-       "page": 28,
+       "page": 32,
        "method": "text"
       },
       {
        "form": "follow-up",
-       "page": 34,
+       "page": 38,
        "method": "text"
       }
      ],
