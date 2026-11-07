@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-06T10:29:18-07:00",
- "count": 27,
+ "fetched_at": "2026-11-07T08:10:16-07:00",
+ "count": 29,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -407,6 +407,22 @@
    "_first_seen": "2026-11-06"
   },
   {
+   "url": "https://www.sdpb.org/crime-courts/2026-11-06/state-dci-report-sheds-light-on-what-led-up-to-shooting-of-deputy-frank",
+   "title": "State DCI report sheds light on what led up to shooting of Deputy Frank",
+   "slug": "sdpb-state-dci-report-sheds-light-on-what-led-up-to-shooting-of-deputy-frank",
+   "published": "2026-11-06",
+   "byline": "By Jackson Dircks",
+   "description": "New details on the death of Minnehaha Sheriff’s Deputy Katherine Frank have been released following a state-led investigation. Among the findings — an officer was deemed justified in firing his weapon at the suspect who shot Frank.",
+   "image_url": "https://npr.brightspotcdn.com/00/64/665161db40408292814c6f27e9ef/frank-oetken-gun.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "ed401be48cb8",
+   "date": "2026-11-06",
+   "_first_seen": "2026-11-07"
+  },
+  {
    "url": "https://www.sdpb.org/politics/2026-11-06/while-blue-wave-didnt-reach-south-dakota-statewide-races-dems-see-promise-in-legislative-results",
    "title": "While 'blue wave' didn't reach South Dakota statewide races, Dems see promise in legislative results",
    "slug": "sdpb-while-blue-wave-didn-t-reach-south-dakota-statewide-races-dems-see-promise",
@@ -437,6 +453,22 @@
    "id": "a6a54fe7e320",
    "date": "2026-11-06",
    "_first_seen": "2026-11-06"
+  },
+  {
+   "url": "https://www.sdpb.org/arts-life/2026-11-07/frontlines-scammed-investigates-the-underbelly-of-a-global-scamming-industry",
+   "title": "Frontline's 'Scammed' investigates the underbelly of a global scamming industry",
+   "slug": "sdpb-frontline-s-scammed-investigates-the-underbelly-of-a-global-scamming",
+   "published": "2026-11-07",
+   "byline": "By Lori Walsh",
+   "description": "Since the pandemic, the scamming industry has metastasized into a global network of relentless attacks. Frontline's Martha Mendoza explains how it works, who suffers, and how Americans are fighting back.",
+   "image_url": "https://npr.brightspotcdn.com/52/a4/27ad8392458d90c0af200f3647e9/website-photo-1.png",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "3ce4ac7aaf2b",
+   "date": "2026-11-07",
+   "_first_seen": "2026-11-07"
   }
  ]
 }
