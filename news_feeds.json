@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-08T04:15:24-07:00",
- "count": 94,
+ "fetched_at": "2026-11-08T11:21:08-07:00",
+ "count": 95,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/09/dan-ahlers-democrat-seeking-south-dakotas-top-office-says-he-knows-how-to-win-uphill-battles/",
@@ -1415,6 +1415,21 @@
    "id": "f39b2e663a3b",
    "date": "2026-11-07",
    "_first_seen": "2026-11-07"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/08/medicaid-expansion-supporter-hopes-lawmakers-move-on-after-latest-ballot-fight/",
+   "title": "Medicaid expansion supporter hopes lawmakers ‘move on’ after latest ballot fight",
+   "slug": "south-dakota-searchlight-medicaid-expansion-supporter-hopes-lawmakers-move-on",
+   "published": "2026-11-08",
+   "byline": "Meghan O'Brien",
+   "description": "After South Dakota voters rejected a ballot question Tuesday that could have triggered a repeal of the state’s Medicaid expansion mandate, some people who worked to defeat the measure said lawmakers should listen to voters and stop tinkering with the program. Some lawmakers, meanwhile, remain concerned about the program&#8217;s effects on the state budget. The [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "4da9e5d2a5c2",
+   "date": "2026-11-08",
+   "_first_seen": "2026-11-08"
   }
  ]
 }
