@@ -3,8 +3,8 @@
  "name": "Spearfish School District",
  "kind": "event",
  "url": "https://www.spearfish.k12.sd.us/events",
- "fetched_at": "2026-11-07T08:32:57-07:00",
- "count": 24,
+ "fetched_at": "2026-11-08T10:58:02-07:00",
+ "count": 25,
  "records": [
   {
    "event_id": 53400081,
@@ -485,6 +485,26 @@
    "date": "2027-03-03",
    "event_category": "schools",
    "_first_seen": "2026-11-03"
+  },
+  {
+   "event_id": 53400271,
+   "title": "School Board Meeting",
+   "url": "https://www.spearfish.k12.sd.us/events",
+   "start_dt": "2027-03-08T17:30:00.000-07:00",
+   "end_dt": "2027-03-08T19:00:00.000-07:00",
+   "all_day": false,
+   "location": "",
+   "description": "",
+   "kind": "event",
+   "record_type": "event",
+   "source": "spearfish_schools",
+   "source_label": "Spearfish School District",
+   "id": "f992a5ec5c3f",
+   "start": "2027-03-08T17:30:00-07:00",
+   "end": "2027-03-08T19:00:00-07:00",
+   "date": "2027-03-08",
+   "event_category": "schools",
+   "_first_seen": "2026-11-08"
   }
  ]
 }

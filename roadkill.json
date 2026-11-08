@@ -3,7 +3,7 @@
  "name": "Wildlife carcass pickups",
  "kind": "stats",
  "url": "https://dot.sd.gov/",
- "fetched_at": "2026-11-07T08:33:30-07:00",
+ "fetched_at": "2026-11-08T10:58:47-07:00",
  "data": {
   "layer": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0",
   "bbox": {
@@ -13,6 +13,156 @@
    "ymax": 44.8
   },
   "records": [
+   {
+    "objectid": 73239,
+    "globalid": "924e37c5-c4f7-47df-b116-3cc8f7efe99e",
+    "date": "2026-11-07",
+    "species": "Mule Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "I90",
+    "highway_raw": "I90",
+    "comments": "",
+    "contractor": "Tony Hanig",
+    "pcn": "I-90 Rapid City Region",
+    "lat": 44.221319,
+    "lon": -103.373855,
+    "date_raw": "2026-11-07T12:00:00-07:00",
+    "created": "2026-11-07T12:45:00-07:00",
+    "creator": "",
+    "edited": "2026-11-07T12:45:00-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 15969,
+      "name": "Picture1-20261107-194442.jpg",
+      "type": "image/jpeg",
+      "size": 201341,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73238,
+    "globalid": "2b9157a6-e6fd-451f-a889-60b4c27d5a27",
+    "date": "2026-11-07",
+    "species": "White-tailed Deer",
+    "sex": "Female",
+    "present": "Yes",
+    "highway": "I90",
+    "highway_raw": "I90",
+    "comments": "",
+    "contractor": "Tony Hanig",
+    "pcn": "I-90 Rapid City Region",
+    "lat": 44.477913,
+    "lon": -103.669772,
+    "date_raw": "2026-11-07T12:00:00-07:00",
+    "created": "2026-11-07T12:14:52-07:00",
+    "creator": "",
+    "edited": "2026-11-07T12:14:52-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 15968,
+      "name": "Picture1-20261107-191437.jpg",
+      "type": "image/jpeg",
+      "size": 195396,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73236,
+    "globalid": "d6224035-d2d7-4fc6-b7b8-a17f5fb99932",
+    "date": "2026-11-07",
+    "species": "White-tailed Deer",
+    "sex": "Female",
+    "present": "Yes",
+    "highway": "I90",
+    "highway_raw": "I90",
+    "comments": "",
+    "contractor": "Tony Hanig",
+    "pcn": "I-90 Rapid City Region",
+    "lat": 44.522619,
+    "lon": -103.906823,
+    "date_raw": "2026-11-07T12:00:00-07:00",
+    "created": "2026-11-07T11:34:50-07:00",
+    "creator": "",
+    "edited": "2026-11-07T11:34:50-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 15966,
+      "name": "Picture1-20261107-183432.jpg",
+      "type": "image/jpeg",
+      "size": 145382,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73234,
+    "globalid": "66d66b80-803c-4f48-bcb1-2167f0aabbc3",
+    "date": "2026-11-07",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "I90",
+    "highway_raw": "I90",
+    "comments": "",
+    "contractor": "Tony Hanig",
+    "pcn": "I-90 Rapid City Region",
+    "lat": 44.398464,
+    "lon": -103.514263,
+    "date_raw": "2026-11-07T12:00:00-07:00",
+    "created": "2026-11-07T11:02:53-07:00",
+    "creator": "",
+    "edited": "2026-11-07T11:02:53-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 15964,
+      "name": "Picture1-20261107-180237.jpg",
+      "type": "image/jpeg",
+      "size": 129974,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73232,
+    "globalid": "2ebcbb53-0f9f-4b7d-947d-c16db9bd98fd",
+    "date": "2026-11-07",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "I90",
+    "highway_raw": "I90",
+    "comments": "",
+    "contractor": "Tony Hanig",
+    "pcn": "I-90 Rapid City Region",
+    "lat": 44.391075,
+    "lon": -103.494083,
+    "date_raw": "2026-11-07T12:00:00-07:00",
+    "created": "2026-11-07T10:55:03-07:00",
+    "creator": "",
+    "edited": "2026-11-07T10:55:03-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 15962,
+      "name": "Picture1-20261107-175449.jpg",
+      "type": "image/jpeg",
+      "size": 139729,
+      "keywords": "Picture1"
+     }
+    ]
+   },
    {
     "objectid": 73089,
     "globalid": "e15c074c-0374-4674-ac37-f9bbd351c5ab",
