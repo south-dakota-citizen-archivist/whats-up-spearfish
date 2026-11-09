@@ -3,8 +3,8 @@
  "name": "Spearfish MS Sports",
  "kind": "event",
  "url": "https://gobound.com/sd/schools/spearfishmiddleschool",
- "fetched_at": "2026-11-09T08:52:59-07:00",
- "count": 101,
+ "fetched_at": "2026-11-09T15:26:20-07:00",
+ "count": 102,
  "records": [
   {
    "uid": "h202611060313337822f6eec4f7fd147",
@@ -1705,6 +1705,31 @@
    "date": "2027-02-20",
    "event_category": "school sports",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "uid": "h2026110909264142229a813b9d8614c",
+   "url": "https://gobound.com/direct/comps/h2026110909264142229a813b9d8614c/show",
+   "title": "Boys Basketball: Custer vs Spearfish MS (8th Grade)",
+   "slug": "boys-basketball-custer-vs-spearfish-ms-8th-grade",
+   "sport": "Boys Basketball",
+   "level": "8th Grade",
+   "sex": "male",
+   "description": "8th Grade Boys Basketball - Custer vs Spearfish MS",
+   "start_dt": "2027-02-20T15:00:00",
+   "end_dt": "2027-02-21T00:00:00",
+   "location": "Spearfish Middle School",
+   "status": "CONFIRMED",
+   "record_type": "event",
+   "source_label": "Spearfish MS Sports",
+   "kind": "event",
+   "source": "spearfish_ms_sports",
+   "id": "34dfa7ea2353",
+   "start": "2027-02-20T08:00:00-07:00",
+   "end": "2027-02-20T17:00:00-07:00",
+   "all_day": false,
+   "date": "2027-02-20",
+   "event_category": "school sports",
+   "_first_seen": "2026-11-09"
   },
   {
    "uid": "h202606080553527614e1d0ecdc33046",

@@ -3,9 +3,90 @@
  "name": "Northern Hills Cinema",
  "kind": "movie",
  "url": "https://nhcinema.com/",
- "fetched_at": "2026-11-09T08:51:14-07:00",
- "count": 17,
+ "fetched_at": "2026-11-09T15:26:01-07:00",
+ "count": 16,
  "records": [
+  {
+   "title": "Wicker",
+   "url": "https://nhcinema.com/view/wicker",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3730/wicker_teaser_poster__standard.jpg",
+   "rating": "R",
+   "runtime": 105,
+   "no_passes": true,
+   "note": "Ends Tuesday 11/10",
+   "ends": "2026-11-10",
+   "showtimes": [
+    {
+     "date": "2026-11-09",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-10",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Comedy, Drama, Fantasy, Romance",
+   "starring": "Olivia Colman, Alexander Skarsgård, Peter Dinklage, Elizabeth Debicki",
+   "director": "Eleanor Wilson, Alex Huston Fischer",
+   "synopsis": "THERE IS NO TRAILER LINKED FOR THIS MOVIE DUE TO GRAPHIC CONTENT!!!",
+   "slug": "wicker",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "1ac7391842e4",
+   "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "American Sniper",
+   "url": "https://nhcinema.com/view/american-sniper",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3728/american_sniper_one_sheet__standard.jpg",
+   "rating": "R",
+   "runtime": 132,
+   "no_passes": true,
+   "showtimes": [
+    {
+     "date": "2026-11-11",
+     "times": [
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Action, Biography",
+   "starring": "Bradley Cooper, Sienna Miller, Jake McDorman, Luke Grimes, Navid Negahban, Keir O'Donnell",
+   "director": "Clint Eastwood",
+   "synopsis": "FOR ONE DAY ONLY!!! SEE IT THIS VETERANS DAY, WEDNESDAY, NOVEMBER 11!!!",
+   "slug": "american-sniper",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "4ca1b2412ccb",
+   "_first_seen": "2026-11-04"
+  },
   {
    "title": "Wildwood",
    "url": "https://nhcinema.com/view/wildwood",
@@ -14,6 +95,8 @@
    "rating": "PG-13",
    "runtime": 132,
    "no_passes": false,
+   "note": "Ends Thursday 11/12",
+   "ends": "2026-11-12",
    "showtimes": [
     {
      "date": "2026-11-09",
@@ -89,6 +172,8 @@
    "rating": "R",
    "runtime": 174,
    "no_passes": true,
+   "note": "Ends Thursday 11/12",
+   "ends": "2026-11-12",
    "showtimes": [
     {
      "date": "2026-11-09",
@@ -156,56 +241,6 @@
    "_first_seen": "2026-11-04"
   },
   {
-   "title": "Wicker",
-   "url": "https://nhcinema.com/view/wicker",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3730/wicker_teaser_poster__standard.jpg",
-   "rating": "R",
-   "runtime": 105,
-   "no_passes": true,
-   "note": "Ends Tuesday 11/10",
-   "ends": "2026-11-10",
-   "showtimes": [
-    {
-     "date": "2026-11-09",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-10",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Comedy, Drama, Fantasy, Romance",
-   "starring": "Olivia Colman, Alexander Skarsgård, Peter Dinklage, Elizabeth Debicki",
-   "director": "Eleanor Wilson, Alex Huston Fischer",
-   "synopsis": "THERE IS NO TRAILER LINKED FOR THIS MOVIE DUE TO GRAPHIC CONTENT!!!",
-   "slug": "wicker",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "1ac7391842e4",
-   "_first_seen": "2026-11-04"
-  },
-  {
    "title": "Drummer Boy",
    "url": "https://nhcinema.com/view/drummer-boy",
    "status": "now",
@@ -261,6 +296,61 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-11-13",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      },
+      {
+       "time": "20:45",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-14",
+     "times": [
+      {
+       "time": "13:00",
+       "luxury": false
+      },
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      },
+      {
+       "time": "21:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-15",
+     "times": [
+      {
+       "time": "13:00",
+       "luxury": false
+      },
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
     }
    ],
    "genre": "Animated, Musical",
@@ -274,37 +364,6 @@
    "kind": "movie",
    "source": "nhcinema",
    "id": "e74da5cf2618",
-   "_first_seen": "2026-11-04"
-  },
-  {
-   "title": "American Sniper",
-   "url": "https://nhcinema.com/view/american-sniper",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3728/american_sniper_one_sheet__standard.jpg",
-   "rating": "R",
-   "runtime": 132,
-   "no_passes": true,
-   "showtimes": [
-    {
-     "date": "2026-11-11",
-     "times": [
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Action, Biography",
-   "starring": "Bradley Cooper, Sienna Miller, Jake McDorman, Luke Grimes, Navid Negahban, Keir O'Donnell",
-   "director": "Clint Eastwood",
-   "synopsis": "FOR ONE DAY ONLY!!! SEE IT THIS VETERANS DAY, WEDNESDAY, NOVEMBER 11!!!",
-   "slug": "american-sniper",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "4ca1b2412ccb",
    "_first_seen": "2026-11-04"
   },
   {
@@ -365,6 +424,61 @@
       {
        "time": "18:15",
        "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-13",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "20:45",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-14",
+     "times": [
+      {
+       "time": "12:45",
+       "luxury": false
+      },
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      },
+      {
+       "time": "20:45",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-15",
+     "times": [
+      {
+       "time": "12:30",
+       "luxury": false
+      },
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
       }
      ]
     }
@@ -442,6 +556,61 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-11-13",
+     "times": [
+      {
+       "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      },
+      {
+       "time": "21:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-14",
+     "times": [
+      {
+       "time": "12:30",
+       "luxury": false
+      },
+      {
+       "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      },
+      {
+       "time": "21:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-15",
+     "times": [
+      {
+       "time": "12:30",
+       "luxury": false
+      },
+      {
+       "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
     }
    ],
    "genre": "Animated",
@@ -465,8 +634,6 @@
    "rating": "PG-13",
    "runtime": 90,
    "no_passes": true,
-   "note": "Starts Wednesday 11/11",
-   "starts": "2026-11-11",
    "showtimes": [
     {
      "date": "2026-11-11",
@@ -493,6 +660,87 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-11-13",
+     "times": [
+      {
+       "time": "15:45",
+       "luxury": true
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      },
+      {
+       "time": "21:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-14",
+     "times": [
+      {
+       "time": "13:00",
+       "luxury": false
+      },
+      {
+       "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": true
+      },
+      {
+       "time": "21:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-15",
+     "times": [
+      {
+       "time": "13:00",
+       "luxury": false
+      },
+      {
+       "time": "15:45",
+       "luxury": true
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-16",
+     "times": [
+      {
+       "time": "15:45",
+       "luxury": true
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-17",
+     "times": [
+      {
+       "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": true
+      }
+     ]
     }
    ],
    "genre": "Action, Thriller",
@@ -509,44 +757,264 @@
    "_first_seen": "2026-11-04"
   },
   {
-   "title": "Rocky 50th Anniversary",
-   "url": "https://nhcinema.com/view/rocky-50th-anniversary",
+   "title": "Ebenezer",
+   "url": "https://nhcinema.com/view/ebenezer",
    "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3732/rocky_50th_anniversary_fthm_50th_anniversary_social_graphic_1080x1920__standard.jpg",
-   "rating": "PG",
-   "runtime": 132,
+   "image_url": "https://nhcinema.com/images/movies/3735/ebenezer_ebenezer_-_one_sheet_2__standard.jpg",
+   "rating": "PG-13",
+   "runtime": 115,
    "no_passes": true,
-   "showtimes": [],
-   "genre": "Drama, Special Events, Sport",
-   "starring": "Sylvester Stallone, Talia Shire, Burt Young, Carl Weathers, Burgess Meredith",
-   "director": "John G. Avildsen",
-   "synopsis": "FOR 2 DAYS ONLY!!! SEE IT NOVEMBER 7TH AND 8TH!!!",
-   "trailer": "pzm9ui_A_2o",
-   "slug": "rocky-50th-anniversary",
+   "showtimes": [
+    {
+     "date": "2026-11-13",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": true
+      },
+      {
+       "time": "21:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-14",
+     "times": [
+      {
+       "time": "12:45",
+       "luxury": true
+      },
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "21:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-15",
+     "times": [
+      {
+       "time": "12:30",
+       "luxury": false
+      },
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-16",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-17",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": true
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-18",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-19",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Drama",
+   "starring": "Johnny Depp, Rupert Grint, Ian McKellen",
+   "director": "Ti West",
+   "synopsis": "This November, Johnny Depp is Ebenezer Scrooge. The name you know, the story you don’t. From Ti West, EBENEZER also stars Rupert Grint, Andrea Riseborough, Sam Claflin, Daisy Ridley, Arthur Conti, Ellie Bamber, Henry Lloyd-Hughes, Charlie Murphy, with Tramell Tillman and Ian McKellen.",
+   "trailer": "l_Ozo1xUgbU",
+   "slug": "ebenezer",
    "record_type": "movie",
    "source_label": "Northern Hills Cinema",
    "kind": "movie",
    "source": "nhcinema",
-   "id": "66192d9911e0",
-   "_first_seen": "2026-11-04"
+   "id": "4b406f20e274",
+   "_first_seen": "2026-11-09"
   },
   {
    "title": "How to Rob a Bank",
-   "url": "https://nhcinema.com/coming-soon#How%20to%20Rob%20a%20Bank",
-   "status": "soon",
+   "url": "https://nhcinema.com/view/how-to-rob-a-bank",
+   "status": "now",
    "image_url": "https://nhcinema.com/images/movies/3733/how_to_rob_a_bank_how_to_rob_a_bank_-_one_sheet_2_1080x1600__standard.jpg",
    "rating": "R",
-   "runtime": null,
-   "no_passes": false,
-   "trailer": "B9XOzCUvFB8",
+   "runtime": 121,
+   "no_passes": true,
+   "showtimes": [
+    {
+     "date": "2026-11-13",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "21:15",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-14",
+     "times": [
+      {
+       "time": "12:30",
+       "luxury": false
+      },
+      {
+       "time": "15:30",
+       "luxury": true
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "20:45",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-15",
+     "times": [
+      {
+       "time": "12:45",
+       "luxury": true
+      },
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-16",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-17",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-18",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": true
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-19",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": true
+      }
+     ]
+    }
+   ],
+   "genre": "Action",
+   "starring": "Nicholas Hoult, Pete Davidson, Anna Sawai, Zoe Kravitz, Rhenzy Feliz, Christian Slater, John C. Reilly",
+   "director": "David Leitch",
    "synopsis": "In HOW TO ROB A BANK, a crew of social media-savvy bank robbers broadcasts their daring heists, unaware that their growing viral fame has put them in the crosshairs of a veteran FBI agent and a brilliant software engineer. Despite the unlikely duo closing in, the crime ring pushes past their limits, putting everything on the line for their beliefs - and their most ambitious heist yet.",
+   "trailer": "B9XOzCUvFB8",
    "slug": "how-to-rob-a-bank",
    "record_type": "movie",
    "source_label": "Northern Hills Cinema",
    "kind": "movie",
    "source": "nhcinema",
-   "id": "206658709f51",
-   "_first_seen": "2026-11-04"
+   "id": "d838d0ca9e5e",
+   "_first_seen": "2026-11-09"
   },
   {
    "title": "The Hunger Games: Sunrise on the Reaping",
@@ -567,21 +1035,21 @@
    "_first_seen": "2026-11-04"
   },
   {
-   "title": "Ebenezer",
-   "url": "https://nhcinema.com/coming-soon#Ebenezer",
+   "title": "Focker-In-Law",
+   "url": "https://nhcinema.com/coming-soon#Focker-In-Law",
    "status": "soon",
-   "image_url": "https://nhcinema.com/images/movies/3735/ebenezer_ebenezer_-_one_sheet_2__standard.jpg",
+   "image_url": "https://nhcinema.com/images/movies/3738/focker_in-law_focker-in-law_-_one_sheet__standard.jpg",
    "rating": "PG-13",
    "runtime": null,
    "no_passes": false,
-   "trailer": "l_Ozo1xUgbU",
-   "synopsis": "This November, Johnny Depp is Ebenezer Scrooge. The name you know, the story you don’t. From Ti West, EBENEZER also stars Rupert Grint, Andrea Riseborough, Sam Claflin, Daisy Ridley, Arthur Conti, Ellie Bamber, Henry Lloyd-Hughes, Charlie Murphy, with Tramell Tillman and Ian McKellen.",
-   "slug": "ebenezer",
+   "trailer": "vyISuWUWcFs",
+   "synopsis": "This November, comedy icon and Emmy winner Ben Stiller and two-time Oscar® winner Robert De Niro reunite, joined by Grammy winner and Oscar® nominee Ariana Grande, in Focker-In-Law, a new chapter in the blockbuster Meet the Parents franchise.",
+   "slug": "focker-in-law",
    "record_type": "movie",
    "source_label": "Northern Hills Cinema",
    "kind": "movie",
    "source": "nhcinema",
-   "id": "8062cac463ef",
+   "id": "b127bb188b47",
    "_first_seen": "2026-11-04"
   },
   {
@@ -618,24 +1086,6 @@
    "kind": "movie",
    "source": "nhcinema",
    "id": "445eb4886f48",
-   "_first_seen": "2026-11-04"
-  },
-  {
-   "title": "Focker-In-Law",
-   "url": "https://nhcinema.com/coming-soon#Focker-In-Law",
-   "status": "soon",
-   "image_url": "https://nhcinema.com/images/movies/3738/focker_in-law_focker-in-law_-_one_sheet__standard.jpg",
-   "rating": "PG-13",
-   "runtime": null,
-   "no_passes": false,
-   "trailer": "vyISuWUWcFs",
-   "synopsis": "This November, comedy icon and Emmy winner Ben Stiller and two-time Oscar® winner Robert De Niro reunite, joined by Grammy winner and Oscar® nominee Ariana Grande, in Focker-In-Law, a new chapter in the blockbuster Meet the Parents franchise.",
-   "slug": "focker-in-law",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "b127bb188b47",
    "_first_seen": "2026-11-04"
   },
   {

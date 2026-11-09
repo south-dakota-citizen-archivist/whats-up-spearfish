@@ -3,7 +3,7 @@
  "name": "Wildlife carcass pickups",
  "kind": "stats",
  "url": "https://dot.sd.gov/",
- "fetched_at": "2026-11-09T08:52:32-07:00",
+ "fetched_at": "2026-11-09T15:27:14-07:00",
  "data": {
   "layer": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0",
   "bbox": {
@@ -13,6 +13,36 @@
    "ymax": 44.8
   },
   "records": [
+   {
+    "objectid": 73338,
+    "globalid": "b44829a1-1d99-4822-a802-fb05821d8452",
+    "date": "2026-11-09",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "I90",
+    "highway_raw": "I90",
+    "comments": "",
+    "contractor": "Tony Hanig",
+    "pcn": "I-90 Rapid City Region",
+    "lat": 44.546205,
+    "lon": -104.009917,
+    "date_raw": "2026-11-09T12:00:00-07:00",
+    "created": "2026-11-09T12:18:24-07:00",
+    "creator": "",
+    "edited": "2026-11-09T12:18:24-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16068,
+      "name": "Picture1-20261109-191811.jpg",
+      "type": "image/jpeg",
+      "size": 150243,
+      "keywords": "Picture1"
+     }
+    ]
+   },
    {
     "objectid": 73239,
     "globalid": "924e37c5-c4f7-47df-b116-3cc8f7efe99e",

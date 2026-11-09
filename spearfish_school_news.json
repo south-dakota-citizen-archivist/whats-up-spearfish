@@ -3,37 +3,9 @@
  "name": "Spearfish School District",
  "kind": "press_release",
  "url": "https://www.spearfish.k12.sd.us/news",
- "fetched_at": "2026-11-09T08:53:03-07:00",
+ "fetched_at": "2026-11-09T15:26:23-07:00",
  "count": 20,
  "records": [
-  {
-   "title": "Unofficial School Board Election Results",
-   "url": "https://www.spearfish.k12.sd.us/o/ssd/article/2962777",
-   "published": "2026-06-03T09:11:28-06:00",
-   "description": "Unofficial School Board Election Results",
-   "image_url": "https://core-docs.s3.amazonaws.com/spearfish_school_district/article/image/large_2370db75-78d5-4b40-9be6-3aa2cf201044.png",
-   "kind": "press_release",
-   "record_type": "press_release",
-   "source": "spearfish_school_news",
-   "source_label": "Spearfish School District",
-   "id": "089032757279",
-   "date": "2026-06-03",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "title": "Superintendent/Business Office - Summer Hours",
-   "url": "https://www.spearfish.k12.sd.us/o/ssd/article/2962789",
-   "published": "2026-06-03T09:13:00-06:00",
-   "description": "Superintendent/Business Office - Summer Hours 605-717-1201",
-   "image_url": "https://core-docs.s3.amazonaws.com/spearfish_school_district/article/image/large_e65085e6-9ee1-42e3-9c08-471eeb191c4c.jpeg",
-   "kind": "press_release",
-   "record_type": "press_release",
-   "source": "spearfish_school_news",
-   "source_label": "Spearfish School District",
-   "id": "dbc53ec690e7",
-   "date": "2026-06-03",
-   "_first_seen": "2026-11-01"
-  },
   {
    "title": "School Board Announcement",
    "url": "https://www.spearfish.k12.sd.us/o/ssd/article/2977355",
@@ -121,7 +93,7 @@
   {
    "title": "Substitutes Needed",
    "url": "https://www.spearfish.k12.sd.us/o/ssd/article/3086499",
-   "published": "2026-08-20T16:16:16-06:00",
+   "published": "2026-08-20T16:16:00-06:00",
    "description": "Substitutes needed in the Spearfish School District. Apply online at https://www.spearfish.k12.sd.us/o/ssd/page/employment or Pick up application packet at: Spearfish School ...",
    "image_url": "https://core-docs.s3.amazonaws.com/spearfish_school_district/article/image/large_79aae14f-c87a-4630-af86-9eed3a87ceae.png",
    "kind": "press_release",
@@ -285,6 +257,34 @@
    "id": "2e96255a8133",
    "date": "2026-11-05",
    "_first_seen": "2026-11-05"
+  },
+  {
+   "title": "Substitute Teachers Needed",
+   "url": "https://www.spearfish.k12.sd.us/o/ssd/article/3242323",
+   "published": "2026-11-09T10:25:21-07:00",
+   "description": "Substitute teacher needed in the Spearfish School District. Apply online at https://www.spearfish.k12.sd.us/o/ssd/page/employment or Pick up application packet at: Spearfish S...",
+   "image_url": "https://core-docs.s3.amazonaws.com/spearfish_school_district/article/image/large_7a6dae9a-88e3-4bef-9c37-63cbe5206608.png",
+   "kind": "press_release",
+   "record_type": "press_release",
+   "source": "spearfish_school_news",
+   "source_label": "Spearfish School District",
+   "id": "4759b4465d58",
+   "date": "2026-11-09",
+   "_first_seen": "2026-11-09"
+  },
+  {
+   "title": "Vacancy Notices",
+   "url": "https://www.spearfish.k12.sd.us/o/ssd/article/3242332",
+   "published": "2026-11-09T10:27:43-07:00",
+   "description": "Vacancy Notices https://www.spearfish.k12.sd.us/o/ssd/page/employment",
+   "image_url": "https://core-docs.s3.amazonaws.com/spearfish_school_district/article/image/large_98c1911c-6c6a-49cc-969c-69c8c17dffff.png",
+   "kind": "press_release",
+   "record_type": "press_release",
+   "source": "spearfish_school_news",
+   "source_label": "Spearfish School District",
+   "id": "157dc47ac486",
+   "date": "2026-11-09",
+   "_first_seen": "2026-11-09"
   }
  ]
 }

@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-09T08:52:36-07:00",
- "count": 31,
+ "fetched_at": "2026-11-09T15:26:14-07:00",
+ "count": 33,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -469,6 +469,38 @@
    "id": "3ce4ac7aaf2b",
    "date": "2026-11-07",
    "_first_seen": "2026-11-07"
+  },
+  {
+   "url": "https://www.sdpb.org/politics/2026-11-09/legislative-leadership-announced-shows-changing-tides-a-few-firsts",
+   "title": "Legislative leadership announced; Shows changing tides, a few 'firsts'",
+   "slug": "sdpb-legislative-leadership-announced-shows-changing-tides-a-few-firsts",
+   "published": "2026-11-09",
+   "byline": "By Jackson Dircks",
+   "description": "The past two years in the South Dakota Legislature, Republican leadership has been more skeptical of state-backed economic development. It was a shift from traditional Republican leadership seen in Pierre. Now, the tide has turned back, as the new crop of legislative leadership also sees a few \"firsts.\"",
+   "image_url": "https://npr.brightspotcdn.com/legacy/prod/filer_public/kusd-bento-live-pbs/Learn/specials/Capitol%20Idea/d71132e770_CapitolPromo%20(8).jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "1e7666deeb08",
+   "date": "2026-11-09",
+   "_first_seen": "2026-11-09"
+  },
+  {
+   "url": "https://www.sdpb.org/crime-courts/2026-11-09/supreme-court-hears-final-arguments-in-circuit-consolidation-debate",
+   "title": "Supreme Court hears final arguments in circuit consolidation debate",
+   "slug": "sdpb-supreme-court-hears-final-arguments-in-circuit-consolidation-debate",
+   "published": "2026-11-09",
+   "byline": "By C.J. Keene",
+   "description": "The final hurdle approaches for consolidation of South Dakota's Fourth and Seventh judicial circuits as the state Supreme Court heard final comments in Pierre. With a decision nearing, the statehouse was filled with mostly opposition opinions.",
+   "image_url": "https://npr.brightspotcdn.com/97/b3/e66582c2477981fe0ee25d85173d/ujs-south-dakota-circuit-court-map.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "a3074b310ef8",
+   "date": "2026-11-09",
+   "_first_seen": "2026-11-09"
   },
   {
    "url": "https://www.sdpb.org/politics/2026-11-09/south-dakota-black-hills-energy-increase-dec-1",
