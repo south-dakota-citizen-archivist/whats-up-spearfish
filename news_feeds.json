@@ -3,24 +3,9 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-08T15:51:57-07:00",
- "count": 95,
+ "fetched_at": "2026-11-09T00:56:00-07:00",
+ "count": 94,
  "records": [
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/09/dan-ahlers-democrat-seeking-south-dakotas-top-office-says-he-knows-how-to-win-uphill-battles/",
-   "title": "Dan Ahlers: Democrat seeking South Dakota’s top office says he knows how to win uphill battles",
-   "slug": "south-dakota-searchlight-dan-ahlers-democrat-seeking-south-dakotas-top-office-he",
-   "published": "2026-10-09",
-   "byline": "Meghan O'Brien",
-   "description": "DELL RAPIDS — In a coffee shop on his hometown’s main thoroughfare, Dan Ahlers thinks back on his first run for elected office 20 years ago. There was a different Democrat running who needed to drop out, local party leaders said, and they wanted Ahlers as a replacement. “‘Don&#8217;t worry, it won&#8217;t be a big [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "c20b1e46d654",
-   "date": "2026-10-09",
-   "_first_seen": "2026-11-01"
-  },
   {
    "url": "https://southdakotasearchlight.com/2026/10/10/recent-razor-thin-result-is-a-reminder-of-the-importance-of-voting/",
    "title": "Commentary: Recent razor-thin result is a reminder of the importance of voting",
