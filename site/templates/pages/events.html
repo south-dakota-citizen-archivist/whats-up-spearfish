@@ -78,9 +78,9 @@
         <h2 class="sticky top-11 lg:top-0 bg-stone-100/95 backdrop-blur py-1.5 text-sm font-bold uppercase tracking-wide text-pine-800 z-10" x-text="heading(day.date)"></h2>
         <ul class="bg-white border border-stone-200 divide-y divide-stone-100">
           <template x-for="e in day.events" :key="e.id">
-            <li class="px-4 py-3 flex gap-3 sm:gap-4" :class="isPicked(e) && 'bg-pine-50'">
+            <li class="px-4 py-3 flex items-baseline gap-3 sm:gap-4" :class="isPicked(e) && 'bg-pine-50'">
               <input type="checkbox" :checked="isPicked(e)" @change="pick(e)" :aria-label="'Add ' + e.title + ' to my calendar'"
-                     class="mt-0.5 size-4 shrink-0 accent-pine-700 cursor-pointer">
+                     class="self-start mt-0.5 size-4 shrink-0 accent-pine-700 cursor-pointer">
               <span class="w-[7.5rem] sm:w-[8.5rem] shrink-0 whitespace-nowrap text-xs sm:text-sm font-semibold text-stone-700 tabular-nums" x-text="e.time"></span>
               <div class="min-w-0">
                 <a :href="e.url" target="_blank" rel="noopener" class="link-title" x-text="e.title"></a>

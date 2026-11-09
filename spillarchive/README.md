@@ -57,7 +57,7 @@ pip install requests pdfplumber rapidocr onnxruntime    # or: uv sync
 
 python -m spillarchive --out ~/spill-archive                       # everything, Black Hills
 python -m spillarchive index files --out ~/spill-archive           # just the lists
-python -m spillarchive extract build --out ~/spill-archive --workers 6
+python -m spillarchive extract build --out ~/spill-archive --workers 2
 python -m spillarchive --out ~/sd-spills --counties Minnehaha Lincoln
 ```
 

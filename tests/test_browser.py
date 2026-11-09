@@ -923,3 +923,16 @@ def test_movies_open_on_today_and_strike_through_started_shows(open_page):
     assert home.get_by_text("Today at Northern Hills Cinema").is_visible()
     assert home.locator("li.flex:visible .link-title").all_inner_texts() == ["Tomorrow Movie"]
     assert page.errors == []
+
+
+def test_event_time_sits_on_the_title_line(open_page):
+    # the time is smaller type than the title: they line up by baseline, not by the top of the row
+    baseline = """el => { const m = document.createElement('span');
+        m.style.cssText = 'display:inline-block;width:0;height:0';
+        el.prepend(m); const y = m.getBoundingClientRect().bottom; m.remove(); return y; }"""
+    page = open_page("events/", viewport=PHONE, wait="li input[type=checkbox]")
+    row = page.locator("li", has=page.locator("input[type=checkbox]")).first
+    time_y = row.locator("span").first.evaluate(baseline)
+    title_y = row.locator("a.link-title").evaluate(baseline)
+    assert abs(time_y - title_y) < 1
+    assert page.errors == []

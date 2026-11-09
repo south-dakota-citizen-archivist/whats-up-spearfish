@@ -159,3 +159,25 @@ def test_old_readings_are_brought_up_to_date_from_their_text():
     assert new["version"] == extract.VERSION
     assert [(f["page"], f["method"]) for f in new["forms"]] == [(1, "ocr"), (2, "fields"), (3, "fields")]
     assert "reported_by" not in new["forms"][0] and new["forms"][1]["discharger"] == "Westco"
+
+
+def test_pages_are_let_go_as_they_are_read(monkeypatch):
+    # pdfplumber keeps a page's contents until it's closed; a 14,000-page case file ran the computer out of memory
+    import pdfplumber
+
+    closed, finished = [], []
+    close_page, close_pdf = pdfplumber.page.Page.close, pdfplumber.pdf.PDF.close
+
+    def page_close(self):
+        if not finished:  # closing the PDF closes its pages too, but by then it's too late to help
+            closed.append(self.page_number)
+        close_page(self)
+
+    def pdf_close(self):
+        finished.append(True)
+        close_pdf(self)
+
+    monkeypatch.setattr(pdfplumber.page.Page, "close", page_close)
+    monkeypatch.setattr(pdfplumber.pdf.PDF, "close", pdf_close)
+    result = extract.read_pdf(FIXTURE, "none")
+    assert closed == [p["n"] for p in result["pages"]]

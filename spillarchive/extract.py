@@ -73,6 +73,10 @@ def read_pdf(path: Path, engine: str = "rapidocr", ocr_pages: int | None = 4) ->
             else:
                 entry.update(method="not read")
             out["pages"].append(entry)
+            if not (has_fields and kind == "follow-up"):  # those are read together, below
+                # pdfplumber holds on to everything it finds on a page until told otherwise:
+                # about 4 MB a page, and some case files run to 14,000 pages
+                page.close()
         if follow_up_pages:
             out["forms"].append({**forms.follow_up([p for _, p in follow_up_pages]),
                                  "page": follow_up_pages[0][0], "method": "fields"})  # fmt: skip
@@ -129,10 +133,11 @@ def step_extract(arc: Archive, args) -> None:
     if updated:
         print(f"[extract] {updated} earlier readings brought up to date from their saved text")
     pages = None if str(getattr(args, "ocr_pages", "4")) == "all" else int(getattr(args, "ocr_pages", 4))
-    workers = max(1, int(getattr(args, "workers", 4)))
+    workers = max(1, int(getattr(args, "workers", 2)))
     print(f"[extract] {len(todo)} of {len(pdfs)} PDFs to read (OCR: {args.ocr}, pages: {pages or 'all'})")
     started = time.monotonic()
-    with ProcessPoolExecutor(max_workers=workers) as pool:
+    # a fresh worker now and then, so what a worker holds on to can't build up over thousands of PDFs
+    with ProcessPoolExecutor(max_workers=workers, max_tasks_per_child=25) as pool:
         jobs = [pool.submit(_work, (p, args.ocr, pages)) for p in todo]
         for n, job in enumerate(as_completed(jobs), 1):
             path, result, error = job.result()

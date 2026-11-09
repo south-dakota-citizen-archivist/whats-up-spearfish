@@ -89,7 +89,7 @@ def main(argv=None) -> int:
     ap.add_argument("--refresh", action="store_true", help="look up files again for spills already looked up")
     ap.add_argument("--ocr", choices=("rapidocr", "textra", "none"), default="rapidocr", help="OCR engine for scans")
     ap.add_argument("--ocr-pages", default="4", help="scanned pages to OCR per PDF, or 'all' (default 4)")
-    ap.add_argument("--workers", type=int, default=4, help="PDFs read at once (default 4)")
+    ap.add_argument("--workers", type=int, default=2, help="PDFs read at once (default 2)")
     args = ap.parse_args(argv)
     steps = args.steps or list(STEPS)
     if bad := [s for s in steps if s not in STEPS]:
