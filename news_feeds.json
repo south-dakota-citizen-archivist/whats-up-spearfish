@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-09T00:56:00-07:00",
- "count": 94,
+ "fetched_at": "2026-11-09T13:42:46-07:00",
+ "count": 95,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/10/recent-razor-thin-result-is-a-reminder-of-the-importance-of-voting/",
@@ -532,21 +532,6 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://www.sdnewswatch.org/south-dakota-poll-us-senate-rounds-bengs/",
-   "title": "Poll: Sen. Rounds leads challenger Bengs 56-37%",
-   "slug": "sd-newswatch-poll-sen-rounds-leads-challenger-bengs-56-37",
-   "published": "2026-10-22",
-   "byline": "Emily DeCock",
-   "description": "Race includes second-time Senate hopeful Independent Brian Bengs challenging incumbent Republican U.S. Sen. Mike Rounds, who's seeking his third term.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "575885611ae9",
-   "date": "2026-10-22",
-   "_first_seen": "2026-11-01"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/10/22/work-begins-on-spendiest-bridge-project-in-south-dakota-history/",
    "title": "Work begins on spendiest bridge project in South Dakota history",
    "slug": "south-dakota-searchlight-work-begins-on-spendiest-bridge-project-in-south-dakota",
@@ -588,6 +573,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "3dcdb4f6c638",
+   "date": "2026-10-22",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-poll-us-senate-rounds-bengs/",
+   "title": "Poll: Sen. Rounds leads challenger Bengs 56-37%",
+   "slug": "sd-newswatch-poll-sen-rounds-leads-challenger-bengs-56-37",
+   "published": "2026-10-22",
+   "byline": "Emily DeCock",
+   "description": "Race includes second-time Senate hopeful Independent Brian Bengs challenging incumbent Republican U.S. Sen. Mike Rounds, who's seeking his third term.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "575885611ae9",
    "date": "2026-10-22",
    "_first_seen": "2026-11-01"
   },
@@ -1415,6 +1415,21 @@
    "id": "4da9e5d2a5c2",
    "date": "2026-11-08",
    "_first_seen": "2026-11-08"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-board-of-regents-reduced-credit-degrees/",
+   "title": "Board of Regents to consider reduced-credit degrees",
+   "slug": "sd-newswatch-board-of-regents-to-consider-reduced-credit-degrees",
+   "published": "2026-11-09",
+   "byline": "Emily DeCock",
+   "description": "90-credit bachelor of applied science degrees mark a change in attitudes toward higher education nationwide.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "404f4e348459",
+   "date": "2026-11-09",
+   "_first_seen": "2026-11-09"
   }
  ]
 }

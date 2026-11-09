@@ -3,7 +3,7 @@
  "name": "Lawrence County Agenda Center",
  "kind": "document",
  "url": "https://www.lawrence.sd.us/AgendaCenter",
- "fetched_at": "2026-11-09T08:45:09-07:00",
+ "fetched_at": "2026-11-09T13:42:47-07:00",
  "count": 5,
  "records": [
   {
@@ -25,7 +25,7 @@
    "title": "Search and Rescue Proposed Meeting Agenda ~ November 2, 2026",
    "meeting_date": "November 2, 2026",
    "published": "2026-11-02",
-   "updated_note": "",
+   "updated_note": "minutes",
    "record_type": "document",
    "source_label": "Lawrence County",
    "kind": "document",

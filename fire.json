@@ -3,27 +3,27 @@
  "name": "Fire danger & wildfires",
  "kind": "fire",
  "url": "https://www.weather.gov/unr/",
- "fetched_at": "2026-11-09T00:56:00-07:00",
+ "fetched_at": "2026-11-09T13:42:47-07:00",
  "data": {
   "errors": [],
   "incidents": [],
   "danger": {
-   "issued": "147 AM MST Sun Nov 8 2026",
+   "issued": "256 AM MST Mon Nov 9 2026",
    "zones": [
     {
-     "name": "Custer Co Plains, Pennington Co Plains",
-     "level": "Very High",
-     "description": "The grassland fire danger index will reach the very high category this afternoon. Very poor weather conditions and very low moisture content of grasses, and other dry organic material on the ground, indicate that dangerous burning conditions exist. Fires will spread rapidly and show erratic behavior. Outdoor burning is not recommended."
-    },
-    {
-     "name": "Harding, Northern Perkins, Butte, Northern Meade Co Plains, Ziebach, Rapid City, Haakon, Northern Oglala Lakota, Bennett, Southern Meade Co Plains, Hermosa Foothills, Southern Oglala Lakota, Southern Jackson, Southern Perkins",
+     "name": "Harding, Northern Perkins, Northern Meade Co Plains, Ziebach, Southern Perkins",
      "level": "High",
      "description": "The grassland fire danger index will reach the high category this afternoon. Unfavorable weather conditions and low moisture content of grasses, and other dry organic material on the ground, indicate that there is high potential for a fire to spread. Outdoor burning should be restricted to early morning or evening hours when wind speeds are usually lower and the relative humidity is higher."
     },
     {
-     "name": "Northern Foothills, Southern Foothills, Western Fall River, Northern Jackson, Mellette, Todd, Tripp, Sturgis/Piedmont Foothills, Eastern Fall River",
+     "name": "Butte, Rapid City, Custer Co Plains, Pennington Co Plains, Haakon, Northern Jackson, Mellette, Todd, Tripp, Sturgis/Piedmont Foothills, Southern Meade Co Plains, Hermosa Foothills",
      "level": "Moderate",
      "description": "The grassland fire danger index will reach the moderate category this afternoon. Marginal weather conditions or a lowering moisture content of grasses, and other dry organic material on the ground, indicate that there is some potential for a fire to spread. Any outdoor burning should be closely monitored."
+    },
+    {
+     "name": "Northern Foothills, Southern Foothills, Western Fall River, Northern Oglala Lakota, Bennett, Eastern Fall River, Southern Oglala Lakota, Southern Jackson",
+     "level": "Low",
+     "description": "The grassland fire danger index will reach the low category this afternoon. Favorable weather conditions or a high moisture content of grasses, and other dry organic material on the ground, indicate that the probability of a fast moving fire is low. Outdoor burning under these conditions can usually be performed with reasonable safety precautions, but should be monitored."
     }
    ],
    "url": "https://forecast.weather.gov/product.php?site=UNR&issuedby=UNR&product=RFD&format=TXT&version=1&glossary=0"

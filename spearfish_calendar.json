@@ -3,8 +3,8 @@
  "name": "City of Spearfish Calendar",
  "kind": "event",
  "url": "https://www.spearfish.gov/Calendar.aspx",
- "fetched_at": "2026-11-09T08:45:34-07:00",
- "count": 62,
+ "fetched_at": "2026-11-09T13:42:50-07:00",
+ "count": 63,
  "records": [
   {
    "url": "https://www.spearfish.gov/Calendar.aspx?EID=4092",
@@ -965,6 +965,26 @@
    "date": "2026-11-19",
    "event_category": "community",
    "_first_seen": "2026-11-05"
+  },
+  {
+   "url": "https://www.spearfish.gov/Calendar.aspx?EID=4102",
+   "title": "Park, Recreation, and Forestry Advisory Board Meeting",
+   "slug": "park-recreation-and-forestry-advisory-board-meeting",
+   "description": "",
+   "location": "City Hall, 625 N 5th St, Spearfish, SD 57783",
+   "start_dt": "2026-11-19T07:30:00",
+   "end_dt": "2026-11-19T23:59:00",
+   "all_day": false,
+   "record_type": "event",
+   "source_label": "City of Spearfish",
+   "kind": "event",
+   "source": "spearfish_calendar",
+   "id": "92fce82d66be",
+   "start": "2026-11-19T07:30:00-07:00",
+   "end": "2026-11-19T23:59:00-07:00",
+   "date": "2026-11-19",
+   "event_category": "community",
+   "_first_seen": "2026-11-09"
   },
   {
    "url": "https://www.spearfish.gov/Calendar.aspx?EID=3850",
