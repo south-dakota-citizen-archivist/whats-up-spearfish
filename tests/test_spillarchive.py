@@ -181,3 +181,22 @@ def test_pages_are_let_go_as_they_are_read(monkeypatch):
     monkeypatch.setattr(pdfplumber.pdf.PDF, "close", pdf_close)
     result = extract.read_pdf(FIXTURE, "none")
     assert closed == [p["n"] for p in result["pages"]]
+
+
+def test_answers_that_only_look_like_labels_are_kept():
+    form = scanned.read(
+        """South Dakota Spill Report Form
+Reported By: State Farm Agent
+B. DISCHARGER
+Name: City of Rapid City
+Street or Approx. Location: Rapid City
+County: State  Zip:
+Response Action Taken: absorbents applied
+City of Lead crews helped
+Responding Agency: DANR
+"""
+    )
+    assert form["reported_by"] == "State Farm Agent" and form["discharger"] == "City of Rapid City"
+    assert form["location"] == "Rapid City"
+    assert form["response_action"] == "absorbents applied City of Lead crews helped"
+    assert "county" not in form  # blank on the form: 'State' is the next label

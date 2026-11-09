@@ -28,10 +28,11 @@ from pathlib import Path
 from . import forms, ocr, scanned
 from .store import Archive
 
-VERSION = 3  # bump to re-read every PDF after a change to the readers
+VERSION = 4  # bump to re-read every PDF after a change to the readers
 #: 3: answers read from page text stay on their label's line (a blank answer no longer takes
-#: the next label). A reading from version 2 or later is brought up to date from the text it
-#: kept, without opening the PDF again (see reread).
+#: the next label). 4: only a whole label counts as one ('City of Rapid City' is an answer).
+#: A reading from version 2 or later is brought up to date from the text it kept, without
+#: opening the PDF again (see reread).
 REREAD_FROM = 2
 
 

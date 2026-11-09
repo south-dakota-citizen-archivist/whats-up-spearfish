@@ -25,12 +25,14 @@ STOP = re.compile(
     r"Source of Spill|Material Type|# of Injuries|Waterway Affected|Spill Date|Name:|Address:|City:|Phone:)",
     re.I,
 )
-# the forms' own labels: an "answer" that is one (or starts with one) is the next line of a blank form
+# the forms' own labels: an "answer" that is nothing but one, or one and its colon, is the next
+# part of a blank form. Only the whole label counts: 'City of Rapid City' and 'State Farm' are answers.
 LABEL = re.compile(
-    r"^(?:\S{1,12}\s+)?(?:Organization Name|Mailing Address|City\s*/\s*State|Telephone Number|Spill Location|"
-    r"Total Amount of Product|(?:Name\s*/\s*)?Type of Product|Pounds of Active|Survey Description|Street or Approx|"
-    r"Responding Agency|Agencies Notified|Reported By|Address|Phone|Email|City|County|State|Zip|"
-    r"Incident Date|Date Cleanup|Spill Date|Responsible Party|Consultant)\b",
+    r"^(?:Organization Name|Mailing Address|City\s*/\s*State|Telephone Number|Spill Location|"
+    r"Total Amount of Product Spilled|(?:Name\s*/\s*)?Type of Product Spilled|Pounds of Active Ingredient Spilled|"
+    r"Survey Description|Street or Approx\.?\s*Location|Responding Agency|Agencies Notified|Reported By|Address|"
+    r"Phone|Email|City|County|State|Zip|Incident Date|Date Cleanup Occurred|Spill Date|Responsible Party)"
+    r"\s*(?:\([^)]*\))?\s*(?::|$)",
     re.I,
 )
 
@@ -124,7 +126,7 @@ def spill_report(text: str) -> dict:
         "comments": _after(text, r"Comments:[ \t]*(.*)$", multiline=True),
     }
     county = re.findall(r"County:[ \t]*([A-Z][A-Za-z ]{2,20}?)(?:\s{2,}|\s+State:|$)", text, re.M)
-    if county:
+    if county and not LABEL.match(county[-1].strip()):  # the last is the spill's; blank, it reads as the next label
         out["county"] = county[-1].strip()
     return {k: v for k, v in out.items() if v}
 
