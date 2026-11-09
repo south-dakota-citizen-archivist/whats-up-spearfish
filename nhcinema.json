@@ -3,8 +3,8 @@
  "name": "Northern Hills Cinema",
  "kind": "movie",
  "url": "https://nhcinema.com/",
- "fetched_at": "2026-11-08T10:57:37-07:00",
- "count": 16,
+ "fetched_at": "2026-11-09T08:45:25-07:00",
+ "count": 17,
  "records": [
   {
    "title": "Wildwood",
@@ -15,19 +15,6 @@
    "runtime": 132,
    "no_passes": false,
    "showtimes": [
-    {
-     "date": "2026-11-08",
-     "times": [
-      {
-       "time": "12:00",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-09",
      "times": [
@@ -103,23 +90,6 @@
    "runtime": 174,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-08",
-     "times": [
-      {
-       "time": "11:30",
-       "luxury": false
-      },
-      {
-       "time": "14:45",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-09",
      "times": [
@@ -197,23 +167,6 @@
    "ends": "2026-11-10",
    "showtimes": [
     {
-     "date": "2026-11-08",
-     "times": [
-      {
-       "time": "12:15",
-       "luxury": false
-      },
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-09",
      "times": [
       {
@@ -261,23 +214,6 @@
    "runtime": 129,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-08",
-     "times": [
-      {
-       "time": "11:45",
-       "luxury": false
-      },
-      {
-       "time": "15:15",
-       "luxury": true
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-09",
      "times": [
@@ -381,23 +317,6 @@
    "no_passes": true,
    "showtimes": [
     {
-     "date": "2026-11-08",
-     "times": [
-      {
-       "time": "12:00",
-       "luxury": true
-      },
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": true
-      }
-     ]
-    },
-    {
      "date": "2026-11-09",
      "times": [
       {
@@ -472,23 +391,6 @@
    "runtime": 91,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-08",
-     "times": [
-      {
-       "time": "12:15",
-       "luxury": false
-      },
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-09",
      "times": [
@@ -614,17 +516,7 @@
    "rating": "PG",
    "runtime": 132,
    "no_passes": true,
-   "showtimes": [
-    {
-     "date": "2026-11-08",
-     "times": [
-      {
-       "time": "15:00",
-       "luxury": false
-      }
-     ]
-    }
-   ],
+   "showtimes": [],
    "genre": "Drama, Special Events, Sport",
    "starring": "Sylvester Stallone, Talia Shire, Burt Young, Carl Weathers, Burgess Meredith",
    "director": "John G. Avildsen",
@@ -763,6 +655,24 @@
    "source": "nhcinema",
    "id": "64816f583118",
    "_first_seen": "2026-11-04"
+  },
+  {
+   "title": "Zero A.D.: The Birth of Christ",
+   "url": "https://nhcinema.com/coming-soon#Zero%20A.D.%3A%20The%20Birth%20of%20Christ",
+   "status": "soon",
+   "image_url": "https://nhcinema.com/images/movies/3741/zero_a.d._the_birth_of_christ_zero_ad_-_one_sheet__standard.jpg",
+   "rating": "PG-13",
+   "runtime": null,
+   "no_passes": false,
+   "trailer": "lRF1Etsd4wo",
+   "synopsis": "An empire in decay. A ruler consumed by fear. A star rising over Bethlehem. When Christ is born, Herod’s terror erupts into the slaughter of the innocents, and Mary must protect the child promised to save the world. As violence spreads and hope flickers, the true battle begins—not for a throne, but for the soul of mankind.",
+   "slug": "zero-a-d-the-birth-of-christ",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "04172f9ff82f",
+   "_first_seen": "2026-11-09"
   }
  ]
 }

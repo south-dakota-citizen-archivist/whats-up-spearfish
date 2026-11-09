@@ -3,8 +3,8 @@
  "name": "Spearfish School Board",
  "kind": "document",
  "url": "https://www.spearfish.k12.sd.us/documents/board-of-education/board-meeting-agendas/25745609",
- "fetched_at": "2026-11-08T10:58:07-07:00",
- "count": 13,
+ "fetched_at": "2026-11-09T08:45:52-07:00",
+ "count": 10,
  "records": [
   {
    "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/5977/Ssd/523a72fe-3e68-45a5-9485-d42a4958d17a/g..-November-13%2C-2023-School-Board-Audio-Minutes.mp3?disposition=inline",
@@ -17,48 +17,6 @@
    "kind": "document",
    "source": "spearfish_school_board_docs",
    "id": "256785721270",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/5977/Ssd/8e07e42a-c86c-498e-a4ac-c3bf8b1370ae/August-10%2C-2026-School-Board-Addendum.pdf?disposition=inline",
-   "title": "August 10, 2026 School Board Addendum",
-   "slug": "spearfish-board-agenda-august-10-2026-school-board-addendum",
-   "published": "2026-08-10",
-   "asset_type": "agenda",
-   "record_type": "document",
-   "source_label": "Spearfish School Board",
-   "kind": "document",
-   "source": "spearfish_school_board_docs",
-   "id": "85854116e402",
-   "date": "2026-08-10",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/5977/Ssd/56331b74-aef3-4bcb-acb6-6cca0ef2a1d9/August-10%2C-2026-School-Board-Agenda.pdf?disposition=inline",
-   "title": "August 10, 2026 School Board Agenda",
-   "slug": "spearfish-board-agenda-august-10-2026-school-board-agenda",
-   "published": "2026-08-10",
-   "asset_type": "agenda",
-   "record_type": "document",
-   "source_label": "Spearfish School Board",
-   "kind": "document",
-   "source": "spearfish_school_board_docs",
-   "id": "f6c4d18186e2",
-   "date": "2026-08-10",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/5977/Ssd/1beed2d6-82ae-487c-b283-24fe4c6482d9/August-10%2C-2026-School-Board-Minutes.pdf?disposition=inline",
-   "title": "August 10, 2026 School Board Minutes",
-   "slug": "spearfish-board-minutes-august-10-2026-school-board-minutes",
-   "published": "2026-08-10",
-   "asset_type": "minutes",
-   "record_type": "document",
-   "source_label": "Spearfish School Board",
-   "kind": "document",
-   "source": "spearfish_school_board_docs",
-   "id": "22c8eac661ad",
-   "date": "2026-08-10",
    "_first_seen": "2026-11-01"
   },
   {

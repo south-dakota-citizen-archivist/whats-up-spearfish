@@ -3,8 +3,8 @@
  "name": "Sawyer Brewing Co.",
  "kind": "beer",
  "url": "https://www.sawyerbrewingco.com/menu",
- "fetched_at": "2026-11-08T10:57:49-07:00",
- "count": 14,
+ "fetched_at": "2026-11-09T08:45:35-07:00",
+ "count": 15,
  "records": [
   {
    "url": "https://www.sawyerbrewingco.com/menu",
@@ -311,7 +311,7 @@
    "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/0d54566a-8384-4f0f-810c-f1b670f2fa96/pinneapplepeacheswebsitedark.jpg",
    "title": "Pineapple & Peaches Sour Ale",
    "slug": "pineapple-peaches-sour-ale",
-   "category": "Hop Heads",
+   "category": "Sour Power",
    "description": "Take your tastebuds on a staycation with bright sweet tropical pineapple notes melding with the mellow tartness of peaches. Brewed with real pineapple and peaches.",
    "abv": "5.5%",
    "notes": "",
@@ -413,6 +413,36 @@
    "source": "sawyer_brewing",
    "id": "a46e9ef2c5e8",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/d2130165-782b-4fcb-a3f4-4d867e4ffee3/scotchdarkweb.jpg",
+   "title": "Smoldering Scotch Ale",
+   "slug": "smoldering-scotch-ale",
+   "category": "Dark Side",
+   "description": "A roasty, and slightly sweet malty treat. Hints of caramel and maple will make this an instant favorite.",
+   "abv": "7.1%",
+   "notes": "",
+   "prices": [
+    {
+     "price": 2.0,
+     "ounces": 5
+    },
+    {
+     "price": 3.5,
+     "ounces": 10
+    },
+    {
+     "price": 5.5,
+     "ounces": 16
+    }
+   ],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "ff36123bd2a8",
+   "_first_seen": "2026-11-09"
   }
  ]
 }

@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-08T10:57:52-07:00",
- "count": 29,
+ "fetched_at": "2026-11-09T08:45:38-07:00",
+ "count": 31,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -469,6 +469,38 @@
    "id": "3ce4ac7aaf2b",
    "date": "2026-11-07",
    "_first_seen": "2026-11-07"
+  },
+  {
+   "url": "https://www.sdpb.org/politics/2026-11-09/south-dakota-black-hills-energy-increase-dec-1",
+   "title": "South Dakota Black Hills Energy customers to see rate increase Dec. 1",
+   "slug": "sdpb-south-dakota-black-hills-energy-customers-to-see-rate-increase-dec-1",
+   "published": "2026-11-09",
+   "byline": "By C.J. Keene",
+   "description": "Rates are going up for Black Hills Energy customers. The state Public Utilities Commission said approving the increase was a complicated decision to make.",
+   "image_url": "https://npr.brightspotcdn.com/9e/76/a462729f4707bb803ba43f9d9d2f/black-hills-energy-bhe.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "7a6bac5206cb",
+   "date": "2026-11-09",
+   "_first_seen": "2026-11-09"
+  },
+  {
+   "url": "https://www.sdpb.org/crime-courts/2026-11-09/pennington-county-legal-backlog-months-behind-pace",
+   "title": "Pennington County legal backlog months behind pace",
+   "slug": "sdpb-pennington-county-legal-backlog-months-behind-pace",
+   "published": "2026-11-09",
+   "byline": "By C.J. Keene",
+   "description": "Cases are piling up in Pennington County. Officials say in the aftermath of a cybersecurity incident that impacted services county-wide, issues have sprung up from the jail to court services to everyday needs of citizens. As a result, leadership in the court circuit is looking outside the box to find solutions.",
+   "image_url": "https://npr.brightspotcdn.com/81/f6/ad7e609e41b6a785dd85be32cfaf/pennington-county-admin.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "df10f4725034",
+   "date": "2026-11-09",
+   "_first_seen": "2026-11-09"
   }
  ]
 }

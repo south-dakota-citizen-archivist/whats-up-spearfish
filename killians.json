@@ -3,7 +3,7 @@
  "name": "Killian's",
  "kind": "beer",
  "url": "https://untappd.com",
- "fetched_at": "2026-11-08T10:57:19-07:00",
+ "fetched_at": "2026-11-09T08:45:10-07:00",
  "count": 17,
  "records": [
   {
@@ -99,7 +99,7 @@
    "abv": "5.5%",
    "ibu": "",
    "brewery": "Jefferson Beer Supply",
-   "rating": "N/A",
+   "rating": "3.79",
    "image_url": "https://labels.untappd.com/7615387",
    "record_type": "beer",
    "source_label": "Killian's",
@@ -228,21 +228,21 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://untappd.com/b/golden-road-brewing-mango-cart/1919131",
-   "title": "Mango Cart",
-   "slug": "mango-cart",
-   "category": "Wheat Beer - Fruited",
-   "abv": "4%",
-   "ibu": "10",
-   "brewery": "Golden Road Brewing",
-   "rating": "3.81",
-   "image_url": "https://labels.untappd.com/1919131",
+   "url": "https://untappd.com/b/boulevard-brewing-co-unfiltered-wheat-beer/10501",
+   "title": "Unfiltered Wheat Beer",
+   "slug": "unfiltered-wheat-beer",
+   "category": "Wheat Beer - American Pale Wheat",
+   "abv": "4.4%",
+   "ibu": "14",
+   "brewery": "Boulevard Brewing Co.",
+   "rating": "3.6",
+   "image_url": "https://labels.untappd.com/10501",
    "record_type": "beer",
    "source_label": "Killian's",
    "kind": "beer",
    "source": "killians",
-   "id": "766a58925b85",
-   "_first_seen": "2026-11-01"
+   "id": "9858f0fcfcd0",
+   "_first_seen": "2026-11-09"
   },
   {
    "url": "https://untappd.com/b/dakota-point-brewing-black-hills-porter/3814701",
