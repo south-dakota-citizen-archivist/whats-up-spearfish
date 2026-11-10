@@ -16,7 +16,6 @@ dependencies = [
     "pdfplumber>=0.11",
     "python-dateutil>=2.9.0.post0",
     "pillow>=12.2.0",
-    "usaddress-scourgify>=0.7.1",
     "shapely>=2.2.0",
     "pyarrow>=26.0.0",
     "cpi>=2.1.0",
@@ -24,6 +23,7 @@ dependencies = [
     "onnxruntime>=1.31.1",
     "sdfetch[impersonate]",
     "sddocs",
+    "sdplaces[address,geocode]",
 ]
 
 [dependency-groups]
@@ -45,6 +45,13 @@ line-length = 120
 [tool.ruff.lint]
 select = ["E", "F", "W", "I"]
 
+[tool.uv]
+# sdplaces asks for sdfetch from its own release commit; this pin is the one used everywhere
+override-dependencies = [
+    "sdfetch[impersonate] @ git+https://github.com/south-dakota-citizen-archivist/sd-archive@sdfetch-v0.4.1#subdirectory=packages/sdfetch",
+]
+
 [tool.uv.sources]
-sdfetch = { git = "https://github.com/south-dakota-citizen-archivist/sd-archive", subdirectory = "packages/sdfetch", tag = "sdfetch-v0.1.1" }
+sdfetch = { git = "https://github.com/south-dakota-citizen-archivist/sd-archive", subdirectory = "packages/sdfetch", tag = "sdfetch-v0.4.1" }
 sddocs = { git = "https://github.com/south-dakota-citizen-archivist/sd-archive", subdirectory = "packages/sddocs", tag = "sddocs-v0.1.1" }
+sdplaces = { git = "https://github.com/south-dakota-citizen-archivist/sd-archive", subdirectory = "packages/sdplaces", tag = "sdplaces-v0.1.0" }
