@@ -100,7 +100,7 @@ class BHSUAthletics(BaseScraper):
                 "name": "schedule-calendar",
             },
             headers={
-                "User-Agent": "Mozilla/5.0",
+                "User-Agent": net.USER_AGENT,
                 "X-Requested-With": "XMLHttpRequest",
                 "Referer": SOURCE_URL,
             },
@@ -166,7 +166,7 @@ class BHSUAthletics(BaseScraper):
             )
 
         try:
-            resp = net.get(TICKET_SHOP, headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
+            resp = net.get(TICKET_SHOP, headers={"User-Agent": net.USER_AGENT}, timeout=30)
             resp.raise_for_status()
             shop = shop_events(resp.text)
         except Exception as exc:  # noqa: BLE001 — the schedule matters more than the ticket links

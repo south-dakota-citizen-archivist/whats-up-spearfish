@@ -17,6 +17,7 @@ import urllib.parse
 import requests
 from bs4 import BeautifulSoup
 
+from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
@@ -25,11 +26,7 @@ LIST_URL = f"{BASE_URL}/default.aspx"
 OUTPUT_URL = f"{BASE_URL}/jobpostings/Output.asp"
 
 _HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
-    ),
+    "User-Agent": net.USER_AGENT,
     "Referer": LIST_URL,
 }
 
@@ -154,6 +151,7 @@ class SpearfishSchoolsJobs(BaseScraper):
 
     def scrape(self) -> list[dict]:
         session = requests.Session()
+        session.headers.update(net.DEFAULT_HEADERS)
         categories = _get_categories(session)
         if not categories:
             print(f"[{self.name}] No categories found.")

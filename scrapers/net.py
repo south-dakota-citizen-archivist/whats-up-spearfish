@@ -23,15 +23,22 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+# Every request looks like desktop Chrome on a Mac: nothing names the site, the org or a bot,
+# and nothing goes out as python-requests. Keep CHROME near the current stable release (a
+# stale version stands out). Sources use net.USER_AGENT rather than their own.
+CHROME = "157"
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/130.0.0.0 Safari/537.36"
+    f"Chrome/{CHROME}.0.0.0 Safari/537.36"
 )
 
 DEFAULT_HEADERS = {
     "User-Agent": USER_AGENT,
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,application/json;q=0.8,*/*;q=0.7",
     "Accept-Language": "en-US,en;q=0.9",
+    "sec-ch-ua": f'"Google Chrome";v="{CHROME}", "Chromium";v="{CHROME}", "Not_A Brand";v="24"',
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": '"macOS"',
 }
 
 DEFAULT_TIMEOUT = 30

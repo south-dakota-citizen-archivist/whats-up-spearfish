@@ -22,7 +22,7 @@ from scrapers.utils import make_slug
 
 BASE_URL = "https://business.spearfishchamber.org"
 CALENDAR_URL = f"{BASE_URL}/events/calendar"
-_HEADERS = {"User-Agent": "Mozilla/5.0"}
+_HEADERS = {"User-Agent": net.USER_AGENT}
 
 _TIME_SEP_RE = re.compile(r"\s*[-–]\s*")
 

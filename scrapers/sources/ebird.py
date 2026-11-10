@@ -24,7 +24,7 @@ BACK_DAYS = 14
 EBIRD_API = "https://api.ebird.org/v2"
 INAT_API = "https://api.inaturalist.org/v1"
 INAT_HEADERS = {
-    "User-Agent": "whats-up-in-spearfish/1.0",
+    "User-Agent": net.USER_AGENT,
     "Accept": "application/json",
 }
 

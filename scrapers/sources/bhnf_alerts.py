@@ -25,7 +25,7 @@ BASE_URL = "https://www.fs.usda.gov"
 ALERTS_URL = f"{BASE_URL}/r02/blackhills/alerts"
 
 _HEADERS = {
-    "User-Agent": "whats-up-in-spearfish/1.0 (public data aggregator)",
+    "User-Agent": net.USER_AGENT,
     "Accept": "text/html,application/xhtml+xml",
 }
 

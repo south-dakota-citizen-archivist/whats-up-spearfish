@@ -31,7 +31,7 @@ CASE_URL = "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID{}"
 LATEST_DOCS = 3
 
 _HEADERS = {
-    "User-Agent": "whats-up-in-spearfish/1.0 (public data aggregator)",
+    "User-Agent": net.USER_AGENT,
     "Referer": PAGE_URL,
     "Accept": "text/html,application/xhtml+xml",
 }

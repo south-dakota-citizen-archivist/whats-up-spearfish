@@ -17,6 +17,9 @@ from pathlib import Path
 
 import requests
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scrapers import net  # noqa: E402
+
 TITLE = "Scraper health"
 THRESHOLD = 3
 HEALTH_JSON = "https://github.com/south-dakota-citizen-archivist/whats-up-spearfish/blob/data/_health.json"
@@ -56,7 +59,9 @@ def main(health_path: str = "data/_health.json") -> None:
 
     api = f"https://api.github.com/repos/{repo}"
     s = requests.Session()
-    s.headers.update({"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"})
+    s.headers.update(
+        {"User-Agent": net.USER_AGENT, "Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"}
+    )
     open_issues = s.get(f"{api}/issues", params={"state": "open", "per_page": 100}, timeout=30).json()
     issue = next((i for i in open_issues if i.get("title") == TITLE and "pull_request" not in i), None)
 

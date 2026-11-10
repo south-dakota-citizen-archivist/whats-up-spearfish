@@ -18,13 +18,7 @@ from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
 BASE_URL = "https://www.bhpioneer.com"
-_HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
-    )
-}
+_HEADERS = {"User-Agent": net.USER_AGENT}
 _LIST_URL = BASE_URL + "/classifieds/job/?c%5B0%5D=job&m=56448c72-888d-11e0-8e12-001cc4c002e0&l=10&o={offset}"
 
 

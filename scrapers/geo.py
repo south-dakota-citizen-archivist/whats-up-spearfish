@@ -33,9 +33,7 @@ CENSUS_BATCH = "https://geocoding.geo.census.gov/geocoder/locations/addressbatch
 BATCH_SIZE = 2000
 
 NOMINATIM = "https://nominatim.openstreetmap.org/search"
-NOMINATIM_HEADERS = {
-    "User-Agent": "whats-up-spearfish/1.0 (public data site; github.com/south-dakota-citizen-archivist)"
-}
+NOMINATIM_HEADERS = {"User-Agent": net.USER_AGENT}
 NOMINATIM_DELAY = 1.1  # seconds between requests (their limit is one a second)
 MISS_RETRY_DAYS = 30  # new streets reach OpenStreetMap eventually
 STREET_LEVEL = {"road", "residential", "street", "highway"}

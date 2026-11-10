@@ -46,13 +46,7 @@ _NS = {
     "media": "http://search.yahoo.com/mrss/",
 }
 
-_HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
-    )
-}
+_HEADERS = {"User-Agent": net.USER_AGENT}
 
 
 def _resolve_channel_id(handle: str) -> str | None:
