@@ -181,16 +181,27 @@ def _record(values: dict) -> dict | None:
     }
 
 
+def _is_address_row(row: list) -> bool:
+    return bool(row) and squeeze(row[0]).upper() == "ADDRESS"
+
+
 def parse_tables(tables: list[list[list]]) -> list[dict]:
     """Permit records from a report's tables, in the order they appear."""
     records: list[dict] = []
     columns: dict[int, str] | None = None
+    card_top: list | None = None  # a card's first row left at the bottom of a page
     for table in tables:
         rows = [r for r in table if r and any(squeeze(c) for c in r)]
         if not rows:
             continue
+        # A page break can split a card: its ADDRESS row starts the next page's table
+        if card_top is not None and _is_address_row(rows[0]):
+            rows = [card_top, *rows]
+        card_top = None
         # 2021 – 2024: two-row cards, the second row labeled ADDRESS / CONTRACTOR / HOOKUP FEE
-        if any(squeeze(r[0]).upper() == "ADDRESS" for r in rows):
+        if any(_is_address_row(r) for r in rows):
+            if not _is_address_row(rows[-1]):
+                card_top = rows[-1]
             for top, bottom in zip(rows, rows[1:]):
                 if squeeze(bottom[0]).upper() != "ADDRESS" or squeeze(top[0]).upper() == "ADDRESS":
                     continue
@@ -221,11 +232,48 @@ def parse_tables(tables: list[list[list]]) -> list[dict]:
     return records
 
 
+_PERMIT_NO = re.compile(r"^\*?([A-Z]{2,4}[‐-]\d{2}[‐-]\d{1,4}|\d{2}[‐-]\d{3,4}|\d{6})\*?$")
+
+
+def _rows_above(page, table, top: float) -> list[list]:
+    """
+    Permit rows the table finder left out between `top` and the table's top edge. In
+    September 2015 the first permit sits between the header and the table's first rule
+    line, so it isn't in the table. A line there that starts with a permit number is
+    split into cells at the table's own column edges.
+    """
+    x0, table_top, x1, _ = table.bbox
+    if table_top - top < 2:
+        return []
+    edges = sorted({round(c[0], 1) for c in table.cells}) + [x1]
+    words = page.crop((x0, top, x1, table_top)).extract_words(keep_blank_chars=False, use_text_flow=True)
+    lines: dict[int, list] = {}
+    for w in words:
+        lines.setdefault(round(w["top"] / 3), []).append(w)
+    rows = []
+    for _, line in sorted(lines.items()):
+        line.sort(key=lambda w: w["x0"])
+        if not _PERMIT_NO.match(line[0]["text"]):
+            continue  # a title or header line
+        cells = [""] * (len(edges) - 1)
+        for w in line:
+            mid = (w["x0"] + w["x1"]) / 2
+            i = next((k for k in range(len(cells)) if edges[k] <= mid < edges[k + 1]), len(cells) - 1)
+            cells[i] = f"{cells[i]} {w['text']}".strip()
+        rows.append(cells)
+    return rows
+
+
 def parse_report(path: str | Path) -> list[dict]:
     """Every building permit in one monthly report."""
     import pdfplumber
 
     logging.getLogger("pdfminer").setLevel(logging.ERROR)
+    tables: list[list[list]] = []
     with pdfplumber.open(path) as pdf:
-        tables = [t for page in pdf.pages for t in page.extract_tables()]
+        for page in pdf.pages:
+            top = 0.0
+            for table in sorted(page.find_tables(), key=lambda t: t.bbox[1]):
+                tables.append(_rows_above(page, table, top) + table.extract())
+                top = table.bbox[3]
     return parse_tables(tables)

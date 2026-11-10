@@ -117,6 +117,40 @@ def test_summary_by_type_and_title_rows_are_not_permits():
     assert [r["outside_city_limits"] for r in out] == [True, False]
 
 
+def test_a_card_split_by_a_page_break_is_put_back_together():
+    # May 2024: RBP-24-25's first row ends page 1; its ADDRESS row starts page 2's table
+    page1 = [
+        ["RBP-24-24*", "Shirley Doten", "Residential Alteration", None, "$ 325.00", "$ 36.00"],
+        ["ADDRESS", "202 West Pine Street", "CONTRACTOR", "Fireplaces, Stoves", "HOOKUP FEE", "$ -"],
+        ["RBP-24-25", "Sean Sailor", "Residential Alteration", None, "$ 400.00", "$ 90.00"],
+    ]  # fmt: skip
+    page2 = [
+        ["ADDRESS", "818 East Illinois Street", "CONTRACTOR", "Owner", "HOOKUP FEE", "$ -"],
+        [None, None, "TOTAL TO MAY 2024 $ 23,153,469.89 $ 181,847.62", None, None, None],
+    ]  # fmt: skip
+    out = permit_reports.parse_tables([page1, page2])
+    assert [r["permit_number"] for r in out] == ["RBP-24-24", "RBP-24-25"]
+    assert out[1]["site_address"] == "818 East Illinois Street" and out[1]["contractor"] == "Owner"
+    assert out[1]["cost_approximate"] == 400.0 and out[1]["permit_fee"] == 90.0
+
+
+def test_a_permit_the_table_finder_skipped_is_read_from_the_page():
+    # September 2015: the first permit sits between the header and the table's first rule line
+    by_no = {r["permit_number"]: r for r in permit_reports.parse_report(FIXTURES / "permit_reports" / "2015-09.pdf")}
+    assert by_no["15-0386"] == {
+        "permit_number": "15-0386",
+        "applicant_name": "Conklin Poperties, LLC",
+        "site_address": "130 Ryan Road E",
+        "construction_type": "Comm-New Building",
+        "contractor": "Kokinos Const",
+        "cost_approximate": 1200000.0,
+        "permit_fee": 6101.4,
+        "hookup_fee": None,
+        "outside_city_limits": False,
+    }
+    assert "15-0422" in by_no  # the table's own first row is still there
+
+
 def test_text_that_ran_into_the_next_cell_goes_back():
     row = ["13-0296", "Don/Marlyce Abrahams", "o4n02 Belleview Court", "Res-Deck", "Rapid Foundation Re",
            "pair $ 7,781.60", "$ 96.00", "N/A"]  # fmt: skip
