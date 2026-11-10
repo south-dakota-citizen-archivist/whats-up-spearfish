@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-09T13:42:46-07:00",
- "count": 95,
+ "fetched_at": "2026-11-09T21:06:15-07:00",
+ "count": 97,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/10/recent-razor-thin-result-is-a-reminder-of-the-importance-of-voting/",
@@ -1428,6 +1428,36 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "404f4e348459",
+   "date": "2026-11-09",
+   "_first_seen": "2026-11-09"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/09/south-dakota-house-republicans-select-entirely-new-leadership-after-contentious-election-season/",
+   "title": "South Dakota House Republicans select entirely new leadership after contentious election season",
+   "slug": "south-dakota-searchlight-south-dakota-house-republicans-select-entirely-new",
+   "published": "2026-11-09",
+   "byline": "Joshua Haiar",
+   "description": "South Dakota House Republicans selected an entirely new leadership team Monday, completing a shakeup arising from a contentious campaign season. Mike Stevens, of Yankton, is the nominee for speaker of the House, and Amber Arlint, of Sioux Falls, is the nominee for speaker pro tempore. Taylor Rehfeldt, of Sioux Falls, will be majority leader and [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "83a3b39d9a4f",
+   "date": "2026-11-09",
+   "_first_seen": "2026-11-09"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/09/opponents-of-south-dakota-court-consolidation-say-move-would-harm-rural-access-to-justice/",
+   "title": "Opponents of South Dakota court consolidation say move would harm rural access to justice",
+   "slug": "south-dakota-searchlight-opponents-of-south-dakota-court-consolidation-say-move",
+   "published": "2026-11-09",
+   "byline": "Joshua Haiar",
+   "description": "The South Dakota Supreme Court heard concerns Monday at the Capitol in Pierre from people who said the proposed merger of two western judicial circuits could leave rural communities behind.  The proposal would combine the state&#8217;s 4th and 7th Judicial Circuits into a single 12-county 4th Circuit headquartered in Rapid City, reducing the number of [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "6db3113e9c75",
    "date": "2026-11-09",
    "_first_seen": "2026-11-09"
   }
