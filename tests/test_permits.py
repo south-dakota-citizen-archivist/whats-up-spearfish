@@ -247,7 +247,7 @@ def test_locate_streets_caches_answers_and_retries_misses_later(tmp_path, monkey
     from datetime import date
 
     monkeypatch.setattr("scrapers.base.DATA_DIR", tmp_path)
-    monkeypatch.setattr(geo, "NOMINATIM_DELAY", 0)
+    monkeypatch.setattr("sdplaces.geocode.NOMINATIM_DELAY", 0)
     asked = []
 
     class Resp:
@@ -273,7 +273,7 @@ def test_locate_streets_caches_answers_and_retries_misses_later(tmp_path, monkey
         asked.append(key)
         return Resp(answers.get(key, []))
 
-    monkeypatch.setattr(geo.net, "get", fake_get)
+    monkeypatch.setattr(geo, "session", type("FakeSession", (), {"get": staticmethod(fake_get)})())
     found = geo.locate_streets(["2312 PLATINUM DR", "10 MAIN ST", "1 FAR AWAY RD"], today=date(2026, 11, 4))
     assert found == {"2312 PLATINUM DR": [44.4789, -103.8169, "street"], "10 MAIN ST": [44.49, -103.86, "house"]}
     assert json.loads((tmp_path / "_geocode_osm.json").read_text())["1 FAR AWAY RD"] == {"miss": "2026-11-04"}
