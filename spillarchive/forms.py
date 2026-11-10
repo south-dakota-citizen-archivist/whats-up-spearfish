@@ -16,6 +16,16 @@ from __future__ import annotations
 
 import re
 
+# The generic reading by position lives in sddocs; the spill forms' sections, options and
+# keys stay here
+from sddocs.forms import key as _key
+from sddocs.forms import label_left as _label_left
+from sddocs.forms import mid as _mid
+from sddocs.forms import option_right as _option_right
+from sddocs.forms import same_line as _same_line
+from sddocs.forms import section_at as _section
+from sddocs.forms import section_starts, upright_words, widgets
+
 # Spill Report Form sections, by the label that opens each (top to bottom)
 REPORT_SECTIONS = (
     ("reporter", ("Reported By",)),
@@ -46,116 +56,9 @@ OPTIONS = {
 UNITS = {"lb.": "lb", "bbl.": "barrels", "gal.": "gallons", "oth.": "other"}
 
 
-def _text(value) -> str:
-    if isinstance(value, bytes):
-        if value.startswith(b"\xfe\xff"):
-            return value[2:].decode("utf-16-be", "replace")
-        return value.decode("latin-1")
-    return str(value or "")
-
-
-def _clean(value) -> str:
-    return " ".join(_text(value).split())
-
-
-def _key(label: str) -> str:
-    return re.sub(r"[^a-z0-9]+", "_", label.lower()).strip("_")
-
-
-def widgets(page) -> list[dict]:
-    """Every filled-in field on a page: text fields with a value, checkboxes that are checked."""
-    out = []
-    for a in page.annots or []:
-        d = a.get("data") or {}
-        kind = str(
-            d.get("FT") or (d.get("Parent") or {}).get("FT") if isinstance(d.get("Parent"), dict) else d.get("FT")
-        )
-        name = _clean(d.get("T"))
-        box = {"x0": a["x0"], "x1": a["x1"], "top": a["top"], "bottom": a["bottom"], "name": name}
-        if "Tx" in kind:
-            value = _clean(d.get("V"))
-            if value:
-                out.append({**box, "type": "text", "value": value})
-        elif "Btn" in kind:
-            state = _text(d.get("AS") or d.get("V") or "").strip("/'")
-            if state and state.lower() not in ("off", "no"):
-                out.append({**box, "type": "check"})
-    return out
-
-
-def _lines(words: list[dict]) -> list[list[dict]]:
-    """Words grouped into printed lines, left to right."""
-    lines: list[list[dict]] = []
-    for w in sorted(words, key=lambda w: ((w["top"] + w["bottom"]) / 2, w["x0"])):
-        mid = (w["top"] + w["bottom"]) / 2
-        if lines and abs((lines[-1][0]["top"] + lines[-1][0]["bottom"]) / 2 - mid) < 4:
-            lines[-1].append(w)
-        else:
-            lines.append([w])
-    return [sorted(line, key=lambda w: w["x0"]) for line in lines]
-
-
-def _same_line(words, top, bottom, tolerance=6):
-    mid = (top + bottom) / 2
-    return sorted((w for w in words if abs((w["top"] + w["bottom"]) / 2 - mid) < tolerance), key=lambda w: w["x0"])
-
-
-def _label_left(words, field) -> str:
-    """
-    The printed label just left of a field: the nearest colon-ended phrase ('Spill Date:'),
-    plus any note after it ('(MM/DD/YY)', dropped from the label).
-    """
-    # a tall box (a paragraph answer) is labeled level with its first line, not its middle
-    bottom = min(field["bottom"], field["top"] + 12)
-    left = [w["text"] for w in _same_line(words, field["top"], bottom, tolerance=8) if w["x1"] <= field["x0"] + 2]
-    colons = [i for i, w in enumerate(left) if w.endswith(":")]
-    if not colons:
-        return " ".join(left[-4:]).strip()
-    end = colons[-1]
-    start = end
-    while start > 0 and not left[start - 1].endswith(":") and not left[start - 1].startswith("("):
-        start -= 1
-    return " ".join(left[start : end + 1]).rstrip(":").strip()
-
-
-def _option_right(words, box, options) -> str:
-    right = " ".join(w["text"] for w in _same_line(words, box["top"], box["bottom"]) if w["x0"] >= box["x1"] - 2)
-    for option in sorted(options, key=len, reverse=True):
-        if right.lower().startswith(option.lower()):
-            return option
-    return right.split(" ")[0] if right else ""
-
-
-def _mid(f) -> float:
-    return (f["top"] + f["bottom"]) / 2
-
-
-def _section(y: float, starts: list[tuple[str, float]]) -> str:
-    """The section a field is in, by its middle: fields sit a little above their label's text."""
-    current = ""
-    for name, top in starts:
-        if y >= top - 8:
-            current = name
-    return current
-
-
 def _section_starts(words) -> list[tuple[str, float]]:
-    """Where each section begins: the first line, below the last section's, that opens with its label."""
-    lines = [(line[0]["top"], " ".join(w["text"] for w in line)) for line in _lines(words)]
-    starts: list[tuple[str, float]] = []
-    for name, labels in REPORT_SECTIONS:
-        for top, text in lines:
-            if starts and top <= starts[-1][1]:
-                continue
-            if any(re.match(re.escape(lab) + r"\b", text) for lab in labels):
-                starts.append((name, top))
-                break
-    return starts
-
-
-def upright_words(page) -> list[dict]:
-    """The page's words, minus the sideways section titles ('RETROPER' is 'REPORTER' on its side)."""
-    return [w for w in page.extract_words(extra_attrs=["upright"]) if w.get("upright", True)]
+    """Where each of the Spill Report Form's sections begins."""
+    return section_starts(words, REPORT_SECTIONS)
 
 
 def spill_report(page) -> dict:

@@ -23,6 +23,7 @@ dependencies = [
     "rapidocr>=3.10.0",
     "onnxruntime>=1.31.1",
     "sdfetch[impersonate]",
+    "sddocs",
 ]
 
 [dependency-groups]
@@ -46,3 +47,4 @@ select = ["E", "F", "W", "I"]
 
 [tool.uv.sources]
 sdfetch = { git = "https://github.com/south-dakota-citizen-archivist/sd-archive", subdirectory = "packages/sdfetch", tag = "sdfetch-v0.1.1" }
+sddocs = { git = "https://github.com/south-dakota-citizen-archivist/sd-archive", subdirectory = "packages/sddocs", tag = "sddocs-v0.1.1" }
