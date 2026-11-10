@@ -3,7 +3,7 @@
  "name": "Lawrence County Agenda Center",
  "kind": "document",
  "url": "https://www.lawrence.sd.us/AgendaCenter",
- "fetched_at": "2026-11-09T15:25:41-07:00",
+ "fetched_at": "2026-11-10T12:46:19-07:00",
  "count": 5,
  "records": [
   {
@@ -35,6 +35,20 @@
    "_first_seen": "2026-11-01"
   },
   {
+   "url": "https://www.lawrence.sd.us/AgendaCenter/PreviousVersions/1361",
+   "title": "Lawrence County Planning & Zoning Regular Meeting Info - November 5, 2026",
+   "meeting_date": "November 5, 2026",
+   "published": "2026-11-05",
+   "updated_note": "minutes",
+   "record_type": "document",
+   "source_label": "Lawrence County",
+   "kind": "document",
+   "source": "lawrence_county",
+   "id": "ba1c80523a72",
+   "date": "2026-11-05",
+   "_first_seen": "2026-11-01"
+  },
+  {
    "url": "https://www.lawrence.sd.us/AgendaCenter/PreviousVersions/1359",
    "title": "November 5, 2026 ~ Special Meeting Primary Election Vote Canvass",
    "meeting_date": "November 5, 2026",
@@ -47,20 +61,6 @@
    "id": "200b90f484b0",
    "date": "2026-11-05",
    "_first_seen": "2026-11-06"
-  },
-  {
-   "url": "https://www.lawrence.sd.us/AgendaCenter/PreviousVersions/1361",
-   "title": "Lawrence County Planning & Zoning Regular Meeting Info - November 5, 2026",
-   "meeting_date": "November 5, 2026",
-   "published": "2026-11-05",
-   "updated_note": "",
-   "record_type": "document",
-   "source_label": "Lawrence County",
-   "kind": "document",
-   "source": "lawrence_county",
-   "id": "ba1c80523a72",
-   "date": "2026-11-05",
-   "_first_seen": "2026-11-01"
   },
   {
    "url": "https://www.lawrence.sd.us/AgendaCenter/PreviousVersions/1360",

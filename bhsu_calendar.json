@@ -3,42 +3,9 @@
  "name": "BHSU Campus Calendar",
  "kind": "event",
  "url": "https://bhsu.edu/campus-calendar.html",
- "fetched_at": "2026-11-09T15:25:32-07:00",
- "count": 20,
+ "fetched_at": "2026-11-10T12:46:13-07:00",
+ "count": 19,
  "records": [
-  {
-   "event_id": "ebd6c44e-09c1-46fe-875c-18cf9a47e9be",
-   "url": "https://bhsu.edu/campus-calendar.html#event-details/ebd6c44e-09c1-46fe-875c-18cf9a47e9be",
-   "title": "Abigail Scott Senior Recital",
-   "slug": "abigail-scott-senior-recital",
-   "description": "Abigail Scott Senior Recital",
-   "start_dt": "2026-11-08T21:00",
-   "end_dt": "2026-11-08T22:00",
-   "location": "Meier Hall",
-   "image_url": "",
-   "image_alt": "",
-   "organizer": "",
-   "tags": [
-    "Community Event",
-    "Alumni Event",
-    "BHSU Event",
-    "Concert"
-   ],
-   "featured": false,
-   "ticket_url": "",
-   "category": "Campus Calendar/Events",
-   "record_type": "event",
-   "source_label": "BHSU Campus Calendar",
-   "kind": "event",
-   "source": "bhsu_calendar",
-   "id": "b9e6f22a8998",
-   "start": "2026-11-08T14:00:00-07:00",
-   "end": "2026-11-08T15:00:00-07:00",
-   "all_day": false,
-   "date": "2026-11-08",
-   "event_category": "campus",
-   "_first_seen": "2026-11-01"
-  },
   {
    "event_id": "32565df4-dd73-4796-9924-d45c065052cf",
    "url": "https://bhsu.edu/campus-calendar.html#event-details/32565df4-dd73-4796-9924-d45c065052cf",
@@ -177,8 +144,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
@@ -214,8 +181,8 @@
     "Community Event",
     "Academics",
     "College of Liberal Arts",
-    "Career Development",
     "College of Business and Natural Sciences",
+    "Career Development",
     "University Advancement"
    ],
    "featured": false,
@@ -380,8 +347,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
@@ -479,8 +446,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
@@ -543,8 +510,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event"
    ],
    "featured": false,
@@ -575,8 +542,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],

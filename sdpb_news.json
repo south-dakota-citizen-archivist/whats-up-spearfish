@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-09T15:26:14-07:00",
- "count": 33,
+ "fetched_at": "2026-11-10T12:46:49-07:00",
+ "count": 36,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -533,6 +533,54 @@
    "id": "df10f4725034",
    "date": "2026-11-09",
    "_first_seen": "2026-11-09"
+  },
+  {
+   "url": "https://www.sdpb.org/politics/2026-11-10/rounds-is-lone-republican-vote-against-permitting-reform-noting-state-level-concerns",
+   "title": "Rounds is lone Republican vote against permitting reform, noting state-level concerns",
+   "slug": "sdpb-rounds-is-lone-republican-vote-against-permitting-reform-noting-state-level",
+   "published": "2026-11-10",
+   "byline": "By Jackson Dircks",
+   "description": "The U.S. Senate advanced a bill that has sections opposed by tribal members and the state Public Utilities Commission. The procedural vote of the <a href=\"https://www.congress.gov/119/bills/s5653/BILLS-119s5653is.pdf\"><b>Bipartisan American Affordability and Jobs Act</b></a> was supported by Sen. John Thune, but opposed by Sen. Mike Rounds.",
+   "image_url": "https://npr.brightspotcdn.com/df/8e/b0fd38a64257849c59f42b287e64/us-capitol-senate-house-congress.png",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "0389712bf7f9",
+   "date": "2026-11-10",
+   "_first_seen": "2026-11-10"
+  },
+  {
+   "url": "https://www.sdpb.org/business-economics/2026-11-10/midwest-author-argues-food-system-monopolies-need-to-break-up",
+   "title": "Midwest author argues food system monopolies need to break up",
+   "slug": "sdpb-midwest-author-argues-food-system-monopolies-need-to-break-up",
+   "published": "2026-11-10",
+   "byline": "By Jackson Dircks",
+   "description": "One Midwestern author argues that competition in the American food system is failing, and monopolies are partly to blame.<br/><br/>Iowa Native Austin Frerick wrote \"Barons: Money, Power, and the Corruption of America's Food Industry\". He argues the U.S. needs to break up these monopolies.",
+   "image_url": "https://npr.brightspotcdn.com/2b/53/a6d551ef4f4c93645b3c88af08b8/image-89.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "cad931acccb9",
+   "date": "2026-11-10",
+   "_first_seen": "2026-11-10"
+  },
+  {
+   "url": "https://www.sdpb.org/politics/2026-11-10/rhoden-reappoints-goed-tourism-leaders-in-cabinet",
+   "title": "Rhoden reappoints GOED, tourism leaders in cabinet",
+   "slug": "sdpb-rhoden-reappoints-goed-tourism-leaders-in-cabinet",
+   "published": "2026-11-10",
+   "byline": "By SDPB News Staff",
+   "description": "Governor’s Office of Economic Development Commissioner Bill Even and Travel South Dakota Secretary Jim Hagen are set to continue in their roles.",
+   "image_url": "https://npr.brightspotcdn.com/legacy/prod/filer_public/kusd-bento-live-pbs/News%20Blog/STOCK%20PHOTOS/General%20Pierre/87211a711f_Capitol6.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "f78dc34bc66d",
+   "date": "2026-11-10",
+   "_first_seen": "2026-11-10"
   }
  ]
 }

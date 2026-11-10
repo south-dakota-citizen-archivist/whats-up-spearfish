@@ -3,8 +3,8 @@
  "name": "SD DANR public notices (West River)",
  "kind": "notice",
  "url": "https://danr.sd.gov/public/default.aspx",
- "fetched_at": "2026-11-09T15:25:56-07:00",
- "count": 4,
+ "fetched_at": "2026-11-10T12:46:37-07:00",
+ "count": 2,
  "records": [
   {
    "notice_type": "Mineral Exploration",
@@ -32,78 +32,6 @@
    "source": "danr_public_notices",
    "source_label": "SD DANR public notices (West River)",
    "id": "935dda0548ae",
-   "_first_seen": "2026-11-09"
-  },
-  {
-   "notice_type": "Water Rights",
-   "deadline": "11/09/2026",
-   "comment_url": "",
-   "application_no": "2915-2",
-   "name": "Powertech (USA), Inc., c/o Jay Douthit, Edgemont SD",
-   "location": "Fall River",
-   "water_source": "Madison Aquifer",
-   "use_type": "Industrial, Domestic, Rural Water System",
-   "links": [
-    {
-     "label": "Public Notice",
-     "url": "https://danr.sd.gov/wrimage/pub/2915-2_app.pdf"
-    },
-    {
-     "label": "Appl.",
-     "url": "https://danr.sd.gov/wrimage/pub/2915-2_apl.pdf"
-    },
-    {
-     "label": "Recom. Action",
-     "url": "https://danr.sd.gov/wrimage/pub/2915-2_rec.pdf"
-    }
-   ],
-   "title": "Powertech (USA), Inc., c/o Jay Douthit, Edgemont SD",
-   "url": "https://danr.sd.gov/wrimage/pub/2915-2_app.pdf",
-   "deadline_iso": "2026-11-09",
-   "notice_key": "Water Rights|2915-2|Powertech (USA), Inc., c/o Jay Douthit, Edgemont SD|Fall River",
-   "kind": "notice",
-   "record_type": "notice",
-   "source": "danr_public_notices",
-   "source_label": "SD DANR public notices (West River)",
-   "id": "59129840241f",
-   "published": "2026-11-09",
-   "date": "2026-11-09",
-   "_first_seen": "2026-11-09"
-  },
-  {
-   "notice_type": "Water Rights",
-   "deadline": "11/09/2026",
-   "comment_url": "",
-   "application_no": "2914-2",
-   "name": "Powertech (USA), Inc., c/o Jay Douthit, Edgemont SD",
-   "location": "Fall River",
-   "water_source": "Inyan Kara Aquifer",
-   "use_type": "Industrial",
-   "links": [
-    {
-     "label": "Public Notice",
-     "url": "https://danr.sd.gov/wrimage/pub/2914-2_app.pdf"
-    },
-    {
-     "label": "Appl.",
-     "url": "https://danr.sd.gov/wrimage/pub/2914-2_apl.pdf"
-    },
-    {
-     "label": "Recom. Action",
-     "url": "https://danr.sd.gov/wrimage/pub/2914-2_rec.pdf"
-    }
-   ],
-   "title": "Powertech (USA), Inc., c/o Jay Douthit, Edgemont SD",
-   "url": "https://danr.sd.gov/wrimage/pub/2914-2_app.pdf",
-   "deadline_iso": "2026-11-09",
-   "notice_key": "Water Rights|2914-2|Powertech (USA), Inc., c/o Jay Douthit, Edgemont SD|Fall River",
-   "kind": "notice",
-   "record_type": "notice",
-   "source": "danr_public_notices",
-   "source_label": "SD DANR public notices (West River)",
-   "id": "cb7c20a72920",
-   "published": "2026-11-09",
-   "date": "2026-11-09",
    "_first_seen": "2026-11-09"
   },
   {

@@ -3,8 +3,8 @@
  "name": "Public Meetings (YouTube)",
  "kind": "youtube_video",
  "url": "https://www.youtube.com/@spearfishschooldistrictliv3794/streams",
- "fetched_at": "2026-11-09T15:26:04-07:00",
- "count": 168,
+ "fetched_at": "2026-11-10T12:46:37-07:00",
+ "count": 171,
  "records": [
   {
    "url": "https://www.youtube.com/watch?v=qMkwX7lt0Nc",
@@ -2693,6 +2693,54 @@
    "id": "8336932c0eaf",
    "date": "2026-11-06",
    "_first_seen": "2026-11-06"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=e8o1IvlXFG8",
+   "video_id": "e8o1IvlXFG8",
+   "title": "SSD School Board Meeting 7:19 PM 11/09/2026",
+   "description": "Spearfish School District School Board Meeting Livestream",
+   "published": "2026-11-10",
+   "thumbnail_url": "https://i.ytimg.com/vi/e8o1IvlXFG8/mqdefault.jpg",
+   "source_label": "Spearfish School District",
+   "channel_url": "https://www.youtube.com/@spearfishschooldistrictliv3794/streams",
+   "record_type": "youtube_video",
+   "kind": "youtube_video",
+   "source": "public_meetings_youtube",
+   "id": "87e3f3c1a22b",
+   "date": "2026-11-10",
+   "_first_seen": "2026-11-10"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=NRzX8Yt2Tmo",
+   "video_id": "NRzX8Yt2Tmo",
+   "title": "SSD School Board Meeting 5:29 PM 11/09/2026",
+   "description": "Spearfish School District School Board Meeting Livestream",
+   "published": "2026-11-10",
+   "thumbnail_url": "https://i.ytimg.com/vi/NRzX8Yt2Tmo/mqdefault.jpg",
+   "source_label": "Spearfish School District",
+   "channel_url": "https://www.youtube.com/@spearfishschooldistrictliv3794/streams",
+   "record_type": "youtube_video",
+   "kind": "youtube_video",
+   "source": "public_meetings_youtube",
+   "id": "ccca213ddd68",
+   "date": "2026-11-10",
+   "_first_seen": "2026-11-10"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=TAR7i5Gd8GA",
+   "video_id": "TAR7i5Gd8GA",
+   "title": "Lawrence County Commission & Board of Adjustment Meeting - November 10, 2026",
+   "description": "The electronic video and audio format of the board proceedings are provided as a public service and do not constitute an official record of the Board of County Commissioners and no warranty or guarantee of any kind is provided. The minutes of the Lawrence County Board of Commissioners record the official acts, orders, and judgments made by the Board of County Commissioners, as required by law. The official record of proceedings before the Lawrence County Board of Commissioners shall be the County board minutes as approved by the Lawrence County Commission.",
+   "published": "2026-11-10",
+   "thumbnail_url": "https://i.ytimg.com/vi/TAR7i5Gd8GA/mqdefault.jpg",
+   "source_label": "Lawrence County",
+   "channel_url": "https://www.youtube.com/channel/UC2CZKGr9OGrsMcCZkW0_HMA",
+   "record_type": "youtube_video",
+   "kind": "youtube_video",
+   "source": "public_meetings_youtube",
+   "id": "0e646b7a255b",
+   "date": "2026-11-10",
+   "_first_seen": "2026-11-10"
   }
  ]
 }

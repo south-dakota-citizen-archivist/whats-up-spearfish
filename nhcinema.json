@@ -3,7 +3,7 @@
  "name": "Northern Hills Cinema",
  "kind": "movie",
  "url": "https://nhcinema.com/",
- "fetched_at": "2026-11-09T15:26:01-07:00",
+ "fetched_at": "2026-11-10T12:46:36-07:00",
  "count": 16,
  "records": [
   {
@@ -17,19 +17,6 @@
    "note": "Ends Tuesday 11/10",
    "ends": "2026-11-10",
    "showtimes": [
-    {
-     "date": "2026-11-09",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-10",
      "times": [
@@ -99,19 +86,6 @@
    "ends": "2026-11-12",
    "showtimes": [
     {
-     "date": "2026-11-09",
-     "times": [
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-10",
      "times": [
       {
@@ -176,19 +150,6 @@
    "ends": "2026-11-12",
    "showtimes": [
     {
-     "date": "2026-11-09",
-     "times": [
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-10",
      "times": [
       {
@@ -249,19 +210,6 @@
    "runtime": 129,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-09",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": true
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-10",
      "times": [
@@ -351,6 +299,19 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-11-16",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
     }
    ],
    "genre": "Animated, Musical",
@@ -375,19 +336,6 @@
    "runtime": 135,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-09",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": true
-      }
-     ]
-    },
     {
      "date": "2026-11-10",
      "times": [
@@ -481,6 +429,19 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-11-16",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
     }
    ],
    "genre": "Action",
@@ -505,19 +466,6 @@
    "runtime": 91,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-09",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-10",
      "times": [
@@ -608,6 +556,19 @@
       },
       {
        "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-16",
+     "times": [
+      {
+       "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
        "luxury": false
       }
      ]
