@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-10T05:37:11-07:00",
- "count": 97,
+ "fetched_at": "2026-11-10T13:28:02-07:00",
+ "count": 98,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/11/south-dakota-wildlife-officials-offer-hunting-license-refunds-as-deer-disease-reports-continue/",
@@ -1445,6 +1445,21 @@
    "id": "6db3113e9c75",
    "date": "2026-11-09",
    "_first_seen": "2026-11-09"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/fact-brief-did-south-dakota-voters-shift-left/",
+   "title": "Fact brief: Did South Dakota voters shift further right in 2026 federal races?",
+   "slug": "sd-newswatch-fact-brief-did-south-dakota-voters-shift-further-right-in-2026",
+   "published": "2026-11-10",
+   "byline": "Molly Wetsch",
+   "description": "A look at the final U.S. House vote between Republican Marty Jackley and Nikki Gronli compared to results from two years ago.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "7c7a71271a45",
+   "date": "2026-11-10",
+   "_first_seen": "2026-11-10"
   },
   {
    "url": "https://www.sdnewswatch.org/fact-brief-did-south-dakota-voters-shift-left/",
