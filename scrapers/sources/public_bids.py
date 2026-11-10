@@ -19,7 +19,7 @@ from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
-_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; SpearfishBulletin/1.0)"}
+_HEADERS = {"User-Agent": net.USER_AGENT}
 
 _SOURCES = [
     {

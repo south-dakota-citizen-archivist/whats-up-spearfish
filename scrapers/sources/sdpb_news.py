@@ -28,13 +28,7 @@ from scrapers.utils import make_slug
 BASE_URL = "https://www.sdpb.org"
 NEWS_URL = f"{BASE_URL}/news"
 
-_HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
-    )
-}
+_HEADERS = {"User-Agent": net.USER_AGENT}
 _WHITESPACE_RE = re.compile(r"\s+")
 _LDJSON_RE = re.compile(r'type="application/ld\+json">(.*?)</script>', re.DOTALL)
 

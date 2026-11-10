@@ -8,7 +8,11 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-USER_AGENT = "spillarchive (South Dakota spill report archive; https://github.com/south-dakota-citizen-archivist)"
+# Looks like desktop Chrome, like every request (see scrapers/net.py, whose version to keep in step)
+USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/157.0.0.0 Safari/537.36"
+)
 
 _session: requests.Session | None = None
 _last = 0.0

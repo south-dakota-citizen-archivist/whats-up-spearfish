@@ -36,7 +36,7 @@ from scrapers.base import BaseScraper
 
 API = "https://spearfishsd.api.civicclerk.com/v1"
 PORTAL = "https://spearfishsd.portal.civicclerk.com"
-HEADERS = {"Accept": "application/json", "User-Agent": "Mozilla/5.0"}
+HEADERS = {"Accept": "application/json", "User-Agent": net.USER_AGENT}
 LOOKBACK_DAYS = 120
 FIRST_ITEMIZED = "2025-08-01"  # earlier meetings have only agenda/minutes PDFs (see the backfill plan)
 

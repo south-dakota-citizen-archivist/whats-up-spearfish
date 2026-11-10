@@ -23,7 +23,7 @@ API = "https://api.inaturalist.org/v1"
 #: Black Hills National Forest; Black Hills Core Highlands, Foothills and Plateau ecoregions
 PLACES = "133194,137084,145898,136545"
 MIN_SIGHTINGS = 5  # leave out one-off records
-_HEADERS = {"User-Agent": "whats-up-spearfish (https://github.com/south-dakota-citizen-archivist/whats-up-spearfish)"}
+_HEADERS = {"User-Agent": net.USER_AGENT}
 
 
 def _get(path: str, **params) -> dict:

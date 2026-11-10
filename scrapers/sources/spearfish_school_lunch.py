@@ -27,7 +27,7 @@ _RECIPES_URL = (
     "https://menus.healthepro.com/api/organizations/{org}/menus/{menu}/start_date/{start}/end_date/{end}/recipes/"
 )
 
-_HEADERS = {"User-Agent": "Mozilla/5.0"}
+_HEADERS = {"User-Agent": net.USER_AGENT}
 
 
 def _fetch_month_overwrites(org: int, menu: int, year: int, month: int) -> list[dict]:

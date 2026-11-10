@@ -33,7 +33,7 @@ PDF_URL = "https://danr.sd.gov/spillimages/{year}/{number}.pdf"
 COUNTIES = ("Lawrence", "Meade", "Butte", "Pennington", "Custer", "Fall River")
 STATUS = {"O": "Open", "C": "Closed", "NFA": "No further action"}
 SOURCES = {"AST": "Above-ground tank", "UST": "Underground tank"}
-_HEADERS = {"User-Agent": "whats-up-spearfish (https://github.com/south-dakota-citizen-archivist/whats-up-spearfish)"}
+_HEADERS = {"User-Agent": net.USER_AGENT}
 
 
 def report_number(raw) -> str | None:

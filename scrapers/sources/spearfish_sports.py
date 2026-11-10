@@ -40,7 +40,7 @@ class GoBoundSportsScraper(BaseScraper):
     source_url: str = ""
 
     def scrape(self) -> list[dict]:
-        resp = net.get(self.ical_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
+        resp = net.get(self.ical_url, headers={"User-Agent": net.USER_AGENT}, timeout=30)
         resp.raise_for_status()
 
         cal = Calendar.from_ical(resp.content)

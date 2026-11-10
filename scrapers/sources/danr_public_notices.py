@@ -63,7 +63,7 @@ _DLINE_RE = re.compile(r'new Date\("([^"]+)"\)')
 _COMMENT_URL_RE = re.compile(r'href=\\"(https://danr\.sd\.gov/public/comment\.aspx[^"\\]+)\\"')
 
 _HEADERS = {
-    "User-Agent": "whats-up-in-spearfish/1.0 (public data aggregator)",
+    "User-Agent": net.USER_AGENT,
     "Referer": DANR_URL,
     "Accept": "text/html,application/xhtml+xml",
 }

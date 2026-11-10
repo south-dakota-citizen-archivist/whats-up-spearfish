@@ -17,7 +17,7 @@ from scrapers import net
 from scrapers.base import BaseScraper
 from scrapers.utils import make_slug
 
-_HEADERS = {"User-Agent": "Mozilla/5.0"}
+_HEADERS = {"User-Agent": net.USER_AGENT}
 _BLOCK_TAGS = {"p", "div", "h1", "h2", "h3", "h4", "h5", "h6", "li", "br", "tr"}
 
 
