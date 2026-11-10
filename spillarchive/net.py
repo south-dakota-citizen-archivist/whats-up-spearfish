@@ -1,44 +1,30 @@
-"""HTTP for spillarchive: one session, a polite pause between requests, retries."""
+"""HTTP for spillarchive, on sdfetch: Chrome's headers, retries honoring Retry-After, a pause
+between requests to a host, and curl_cffi when a server blocks plain requests."""
 
 from __future__ import annotations
 
-import time
-
 import requests
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
+import sdfetch
 
-# Looks like desktop Chrome, like every request (see scrapers/net.py, whose version to keep in step)
-USER_AGENT = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/157.0.0.0 Safari/537.36"
-)
+USER_AGENT = sdfetch.USER_AGENT
 
-_session: requests.Session | None = None
-_last = 0.0
+_fetcher: sdfetch.Fetcher | None = None
+
+
+def fetcher() -> sdfetch.Fetcher:
+    global _fetcher
+    if _fetcher is None:
+        _fetcher = sdfetch.Fetcher(max_strategy="impersonate", timeout=60, retries=4, backoff=2, raise_errors=False)
+    return _fetcher
 
 
 def session() -> requests.Session:
-    global _session
-    if _session is None:
-        s = requests.Session()
-        retry = Retry(total=4, backoff_factor=2, status_forcelist=(429, 500, 502, 503, 504),
-                      allowed_methods=("GET", "HEAD", "POST"), respect_retry_after_header=True)  # fmt: skip
-        s.mount("https://", HTTPAdapter(max_retries=retry))
-        s.mount("http://", HTTPAdapter(max_retries=retry))
-        s.headers["User-Agent"] = USER_AGENT
-        _session = s
-    return _session
+    return fetcher().session
 
 
-def request(method: str, url: str, delay: float = 1.0, **kwargs) -> requests.Response:
-    """A request, at least `delay` seconds after the last one (the state's servers are small)."""
-    global _last
-    wait = _last + delay - time.monotonic()
-    if wait > 0:
-        time.sleep(wait)
-    kwargs.setdefault("timeout", 60)
-    try:
-        return session().request(method, url, **kwargs)
-    finally:
-        _last = time.monotonic()
+def request(method: str, url: str, delay: float = 1.0, **kwargs):
+    """A request, at least `delay` seconds after the last one to that host (the state's
+    servers are small). The response comes back for the caller to check."""
+    f = fetcher()
+    f.delay = delay
+    return f.request(method, url, **kwargs)

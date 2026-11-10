@@ -7,8 +7,8 @@ Each report ID corresponds to a collection/category in the ILS.
 Books are fetched as HTML fragments and parsed for title, cover image,
 and OPAC detail URL.
 
-The Koha instance is behind Cloudflare, so we use a playwright stealth
-browser to bypass the bot challenge.
+Fetched with sdfetch: plain HTTP, falling back to curl_cffi and then a browser when a
+response isn't the report.
 """
 
 from __future__ import annotations
@@ -16,9 +16,8 @@ from __future__ import annotations
 import re
 from concurrent.futures import ThreadPoolExecutor
 
+import sdfetch
 from bs4 import BeautifulSoup
-from playwright.sync_api import sync_playwright
-from playwright_stealth import Stealth
 
 from scrapers import net
 from scrapers.base import BaseScraper
@@ -99,18 +98,15 @@ def _fetch_all_books() -> list[dict]:
     records = []
     seen_urls: set[str] = set()
 
-    with Stealth().use_sync(sync_playwright()) as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
-
+    with sdfetch.Fetcher(max_strategy="stealth", delay=1, timeout=30, raise_errors=False) as f:
         for report_id in REPORT_IDS:
             url = API_URL.format(report_id=report_id)
             try:
-                resp = page.goto(url, timeout=20000)
-                if resp and resp.status != 200:
-                    print(f"[SpearfishLibrary] Warning: report {report_id} returned {resp.status}")
+                resp = f.request("GET", url)
+                if resp.status_code != 200:
+                    print(f"[SpearfishLibrary] Warning: report {report_id} returned {resp.status_code}")
                     continue
-                html = page.content()
+                html = resp.text
             except Exception as exc:
                 print(f"[SpearfishLibrary] Warning: report {report_id} failed: {exc}")
                 continue
@@ -119,8 +115,6 @@ def _fetch_all_books() -> list[dict]:
                 if record["url"] not in seen_urls:
                     seen_urls.add(record["url"])
                     records.append(record)
-
-        browser.close()
 
     return records
 
