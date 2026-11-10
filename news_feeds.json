@@ -3,24 +3,9 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-09T21:06:15-07:00",
+ "fetched_at": "2026-11-10T05:37:11-07:00",
  "count": 97,
  "records": [
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/10/recent-razor-thin-result-is-a-reminder-of-the-importance-of-voting/",
-   "title": "Commentary: Recent razor-thin result is a reminder of the importance of voting",
-   "slug": "south-dakota-searchlight-commentary-recent-razor-thin-result-is-a-reminder-of-of",
-   "published": "2026-10-10",
-   "byline": "Dana Hess",
-   "description": "Sometimes voting in South Dakota can seem like a lost cause. With Republicans dominating every state and national elected office, it seems like a foregone conclusion that they will win again. It’s easy to make excuses for sitting out this election.  Part of the problem is the less than stellar job that members of the [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "31c3daeef9ad",
-   "date": "2026-10-10",
-   "_first_seen": "2026-11-01"
-  },
   {
    "url": "https://southdakotasearchlight.com/2026/10/11/south-dakota-wildlife-officials-offer-hunting-license-refunds-as-deer-disease-reports-continue/",
    "title": "South Dakota wildlife officials offer hunting license refunds as deer disease reports continue",
@@ -592,21 +577,6 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://www.sdnewswatch.org/pine-ridge-south-dakota-solar-energy/",
-   "title": "Pine Ridge solar nonprofit trains workers for high-paying jobs",
-   "slug": "sd-newswatch-pine-ridge-solar-nonprofit-trains-workers-for-high-paying-jobs",
-   "published": "2026-10-23",
-   "byline": "Bart Pfankuch",
-   "description": "Red Cloud Renewable Energy Center houses and trains students to work in the solar power industry, and the nonprofit was recently given a national award for its efforts.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "fec371a0c0fe",
-   "date": "2026-10-23",
-   "_first_seen": "2026-11-01"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/10/23/national-groups-power-spending-against-higher-bar-for-constitutional-amendments/",
    "title": "National groups power spending against higher bar for constitutional amendments",
    "slug": "south-dakota-searchlight-national-groups-power-spending-against-higher-bar-for",
@@ -633,6 +603,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "c510e19157b1",
+   "date": "2026-10-23",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/pine-ridge-south-dakota-solar-energy/",
+   "title": "Pine Ridge solar nonprofit trains workers for high-paying jobs",
+   "slug": "sd-newswatch-pine-ridge-solar-nonprofit-trains-workers-for-high-paying-jobs",
+   "published": "2026-10-23",
+   "byline": "Bart Pfankuch",
+   "description": "Red Cloud Renewable Energy Center houses and trains students to work in the solar power industry, and the nonprofit was recently given a national award for its efforts.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "fec371a0c0fe",
    "date": "2026-10-23",
    "_first_seen": "2026-11-01"
   },
@@ -1460,6 +1445,21 @@
    "id": "6db3113e9c75",
    "date": "2026-11-09",
    "_first_seen": "2026-11-09"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/fact-brief-did-south-dakota-voters-shift-left/",
+   "title": "Fact brief: Did South Dakota voters shift further left in 2026 federal races?",
+   "slug": "sd-newswatch-fact-brief-did-south-dakota-voters-shift-further-left-in-2026-races",
+   "published": "2026-11-10",
+   "byline": "Molly Wetsch",
+   "description": "A look at the final U.S. House vote between Republican Marty Jackley and Nikki Gronli compared to results from two years ago.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "0830a1645769",
+   "date": "2026-11-10",
+   "_first_seen": "2026-11-10"
   }
  ]
 }
