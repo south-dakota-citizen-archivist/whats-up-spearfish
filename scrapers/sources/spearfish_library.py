@@ -7,9 +7,8 @@ Each report ID corresponds to a collection/category in the ILS.
 Books are fetched as HTML fragments and parsed for title, cover image,
 and OPAC detail URL.
 
-The Koha instance is behind Cloudflare. sdfetch starts with plain HTTP (which got the
-reports from a laptop in 2026-11) and climbs to curl_cffi and then a stealth browser only
-if Cloudflare challenges the request, as it may from a CI runner's address.
+Fetched with sdfetch: plain HTTP, falling back to curl_cffi and then a browser when a
+response isn't the report.
 """
 
 from __future__ import annotations
@@ -99,7 +98,6 @@ def _fetch_all_books() -> list[dict]:
     records = []
     seen_urls: set[str] = set()
 
-    # Plain HTTP first; curl_cffi, then a stealth browser, only if Cloudflare challenges
     with sdfetch.Fetcher(max_strategy="stealth", delay=1, timeout=30, raise_errors=False) as f:
         for report_id in REPORT_IDS:
             url = API_URL.format(report_id=report_id)

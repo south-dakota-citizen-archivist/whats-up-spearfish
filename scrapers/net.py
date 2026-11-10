@@ -1,18 +1,16 @@
 """
 scrapers/net.py
 
-Shared HTTP for every scraper, on sdfetch (south-dakota-citizen-archivist/sd-archive,
-packages/sdfetch):
+Shared HTTP for every scraper, on sdfetch:
 
-- every request looks like desktop Chrome on a Mac (sdfetch.BROWSER_HEADERS)
+- default browser headers (sdfetch.BROWSER_HEADERS)
 - retries with backoff, honoring Retry-After on 429/503
 - a pause between requests to the same host, shared by every thread
-- block-page detection: a site that blocks plain requests gets curl_cffi, with Chrome's
-  TLS fingerprint, before the request fails (sdfetch.Blocked, a RequestException)
+- a curl_cffi fallback when a response isn't the page (sdfetch.Blocked, a RequestException,
+  if that fails too)
 
-Responses come back for the caller to check, as before (raise_errors=False). Ordinary
-sources never climb to a browser; a source that needs one uses sdfetch directly (see
-sources/spearfish_library.py).
+Responses come back for the caller to check (raise_errors=False). Sources that need a
+browser use sdfetch directly (see sources/spearfish_library.py).
 
 Usage:
     from scrapers import net
