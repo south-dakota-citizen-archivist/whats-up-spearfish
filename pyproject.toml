@@ -22,6 +22,7 @@ dependencies = [
     "cpi>=2.1.0",
     "rapidocr>=3.10.0",
     "onnxruntime>=1.31.1",
+    "sdfetch[impersonate]",
 ]
 
 [dependency-groups]
@@ -42,3 +43,6 @@ line-length = 120
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I"]
+
+[tool.uv.sources]
+sdfetch = { git = "https://github.com/south-dakota-citizen-archivist/sd-archive", subdirectory = "packages/sdfetch", tag = "sdfetch-v0.1.1" }
