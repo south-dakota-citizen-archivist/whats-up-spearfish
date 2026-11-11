@@ -3,24 +3,9 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-10T18:55:12-07:00",
+ "fetched_at": "2026-11-11T04:50:58-07:00",
  "count": 100,
  "records": [
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/11/south-dakota-wildlife-officials-offer-hunting-license-refunds-as-deer-disease-reports-continue/",
-   "title": "South Dakota wildlife officials offer hunting license refunds as deer disease reports continue",
-   "slug": "south-dakota-searchlight-south-dakota-wildlife-officials-offer-hunting-license",
-   "published": "2026-10-11",
-   "byline": "Joshua Haiar",
-   "description": "Reports of deer deaths from a viral disease have spiked as hunters take to the fields in South Dakota, and state wildlife officials are reducing some hunting opportunities and offering hunting-license refunds to protect deer numbers. Epizootic hemorrhagic disease is a viral illness spread by tiny biting midges typically found along muddy shorelines. In South [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "68a718694362",
-   "date": "2026-10-11",
-   "_first_seen": "2026-11-01"
-  },
   {
    "url": "https://southdakotasearchlight.com/2026/10/12/independent-us-senate-candidates-from-plains-states-say-they-would-not-caucus-with-either-party/",
    "title": "Independent US Senate candidates from Plains states say they would not caucus with either party",
@@ -667,21 +652,6 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://www.sdnewswatch.org/south-dakota-civics-media-politics-voting-series/",
-   "title": "Voter education events set for Sioux Falls and Yankton",
-   "slug": "sd-newswatch-voter-education-events-set-for-sioux-falls-and-yankton",
-   "published": "2026-10-26",
-   "byline": "SD News Watch",
-   "description": "Free nonpartisan gatherings on the election and nation's 250th anniversary include discussions about civic responsibilities, how to find fact-based news and information, the ballot measures and voting.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "b8809b661e4a",
-   "date": "2026-10-26",
-   "_first_seen": "2026-11-01"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/10/26/south-dakota-task-force-recommends-bills-to-move-toward-ambulance-service-regions/",
    "title": "South Dakota task force recommends bills to move toward ambulance service regions",
    "slug": "south-dakota-searchlight-south-dakota-task-force-recommends-bills-to-move-toward",
@@ -723,6 +693,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "f7f75b7b4b8a",
+   "date": "2026-10-26",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-civics-media-politics-voting-series/",
+   "title": "Voter education events set for Sioux Falls and Yankton",
+   "slug": "sd-newswatch-voter-education-events-set-for-sioux-falls-and-yankton",
+   "published": "2026-10-26",
+   "byline": "SD News Watch",
+   "description": "Free nonpartisan gatherings on the election and nation's 250th anniversary include discussions about civic responsibilities, how to find fact-based news and information, the ballot measures and voting.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "b8809b661e4a",
    "date": "2026-10-26",
    "_first_seen": "2026-11-01"
   },
@@ -1505,6 +1490,21 @@
    "id": "0830a1645769",
    "date": "2026-11-10",
    "_first_seen": "2026-11-10"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/mahpiya-lutas-alumni-network-workforce-recruitment/",
+   "title": "How Maȟpíya Lúta's alumni network became a workforce recruitment strategy",
+   "slug": "sd-newswatch-how-mahpiya-luta-s-alumni-network-became-a-workforce-recruitment",
+   "published": "2026-11-11",
+   "byline": "Molly Wetsch",
+   "description": "At this school on the Pine Ridge Reservation, alumni don't just donate to their alma mater – they build its future.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "a047760b4fb0",
+   "date": "2026-11-11",
+   "_first_seen": "2026-11-11"
   }
  ]
 }
