@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-10T13:28:02-07:00",
- "count": 98,
+ "fetched_at": "2026-11-10T18:55:12-07:00",
+ "count": 100,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/11/south-dakota-wildlife-officials-offer-hunting-license-refunds-as-deer-disease-reports-continue/",
@@ -1458,6 +1458,36 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "7c7a71271a45",
+   "date": "2026-11-10",
+   "_first_seen": "2026-11-10"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/10/lawmakers-argue-about-legislative-memo-on-data-centers-that-one-calls-a-very-opinionated-piece/",
+   "title": "Lawmakers argue about legislative data center memo that one calls ‘a very opinionated piece’",
+   "slug": "south-dakota-searchlight-lawmakers-argue-about-legislative-data-center-memo-that",
+   "published": "2026-11-10",
+   "byline": "Joshua Haiar",
+   "description": "A South Dakota state senator employed by a utility company criticized a legislative staff report on large data centers as “very opinionated,” drawing pushback from some fellow lawmakers who said the report fulfilled its purpose. Sen. Steve Kolbeck, R-Brandon, is an executive for Xcel Energy, a multi-state provider of electricity and natural gas. He is [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "596635639086",
+   "date": "2026-11-10",
+   "_first_seen": "2026-11-10"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/10/limits-of-south-dakota-law-on-new-trials-for-dna-evidence-debated-at-state-supreme-court/",
+   "title": "Limits of South Dakota law on new trials for DNA evidence debated at state Supreme Court",
+   "slug": "south-dakota-searchlight-limits-of-south-dakota-law-on-new-trials-for-dna-at",
+   "published": "2026-11-10",
+   "byline": "John Hult",
+   "description": "An impending South Dakota Supreme Court decision stands between a man who’s spent 42 years in prison for a double murder and his chance to convince a jury he never should’ve been there. The decision and underlying case will offer guidance on how judges are meant to apply a South Dakota law. The statute lets [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "73bb5057cf26",
    "date": "2026-11-10",
    "_first_seen": "2026-11-10"
   },
