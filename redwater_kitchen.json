@@ -3,9 +3,26 @@
  "name": "Redwater Kitchen",
  "kind": "beer",
  "url": "https://untappd.com",
- "fetched_at": "2026-11-10T12:46:38-07:00",
+ "fetched_at": "2026-11-11T12:39:21-07:00",
  "count": 11,
  "records": [
+  {
+   "url": "https://untappd.com/b/modist-brewing-co-doomed-moon/6457354",
+   "title": "Doomed Moon",
+   "slug": "doomed-moon",
+   "category": "Lager - Amber / Red",
+   "abv": "5.5%",
+   "ibu": "",
+   "brewery": "Modist Brewing Co.",
+   "rating": "3.76",
+   "image_url": "https://labels.untappd.com/6457354",
+   "record_type": "beer",
+   "source_label": "Redwater Kitchen",
+   "kind": "beer",
+   "source": "redwater_kitchen",
+   "id": "89dfc1c087bc",
+   "_first_seen": "2026-11-11"
+  },
   {
    "url": "https://untappd.com/b/kros-strain-brewing-dark-lager/5790934",
    "title": "Dark Lager",
@@ -157,23 +174,6 @@
    "kind": "beer",
    "source": "redwater_kitchen",
    "id": "b60035e53279",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://untappd.com/b/dakota-point-brewing-o-quinn-s-irish-red-ale/5991597",
-   "title": "O'Quinn's Irish Red Ale",
-   "slug": "o-quinn-s-irish-red-ale",
-   "category": "Red Ale - Irish",
-   "abv": "5.7%",
-   "ibu": "21",
-   "brewery": "Dakota Point Brewing",
-   "rating": "3.75",
-   "image_url": "https://labels.untappd.com/5991597",
-   "record_type": "beer",
-   "source_label": "Redwater Kitchen",
-   "kind": "beer",
-   "source": "redwater_kitchen",
-   "id": "034481a6ca71",
    "_first_seen": "2026-11-01"
   },
   {

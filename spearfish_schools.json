@@ -3,29 +3,9 @@
  "name": "Spearfish School District",
  "kind": "event",
  "url": "https://www.spearfish.k12.sd.us/events",
- "fetched_at": "2026-11-10T12:46:59-07:00",
+ "fetched_at": "2026-11-11T12:39:45-07:00",
  "count": 25,
  "records": [
-  {
-   "event_id": 53400081,
-   "title": "School Board Meeting",
-   "url": "https://www.spearfish.k12.sd.us/events",
-   "start_dt": "2026-11-09T17:30:00.000-07:00",
-   "end_dt": "2026-11-09T19:00:00.000-07:00",
-   "all_day": false,
-   "location": "",
-   "description": "",
-   "kind": "event",
-   "record_type": "event",
-   "source": "spearfish_schools",
-   "source_label": "Spearfish School District",
-   "id": "796490caea4e",
-   "start": "2026-11-09T17:30:00-07:00",
-   "end": "2026-11-09T19:00:00-07:00",
-   "date": "2026-11-09",
-   "event_category": "schools",
-   "_first_seen": "2026-11-01"
-  },
   {
    "event_id": 53400624,
    "title": "Thanksgiving Break - No School",
@@ -505,6 +485,26 @@
    "date": "2027-03-08",
    "event_category": "schools",
    "_first_seen": "2026-11-08"
+  },
+  {
+   "event_id": 53400966,
+   "title": "Spring Break - No School",
+   "url": "https://www.spearfish.k12.sd.us/events",
+   "start_dt": "2027-03-11",
+   "end_dt": "2027-03-11",
+   "all_day": true,
+   "location": "",
+   "description": "",
+   "kind": "event",
+   "record_type": "event",
+   "source": "spearfish_schools",
+   "source_label": "Spearfish School District",
+   "id": "e0be1430c35e",
+   "start": "2027-03-11",
+   "end": "",
+   "date": "2027-03-11",
+   "event_category": "schools",
+   "_first_seen": "2026-11-11"
   }
  ]
 }

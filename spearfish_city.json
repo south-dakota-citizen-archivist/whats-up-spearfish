@@ -3,249 +3,9 @@
  "name": "City of Spearfish",
  "kind": "document",
  "url": "https://spearfishsd.portal.civicclerk.com/",
- "fetched_at": "2026-11-10T12:46:52-07:00",
- "count": 96,
+ "fetched_at": "2026-11-11T12:39:39-07:00",
+ "count": 95,
  "records": [
-  {
-   "event_id": 2192,
-   "event_name": "City Council Study Session",
-   "category": "City Council",
-   "start_dt": "2026-08-12T16:15:00-06:00",
-   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
-   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2192",
-   "has_media": true,
-   "media_url": "https://cpmedia.azureedge.net/spearfishsd/8a6cad0a78.mp4",
-   "media_page": "https://spearfishsd.portal.civicclerk.com/event/2192/media",
-   "chapters": [
-    {
-     "id": 4514,
-     "t": 894,
-     "title": "1. Approve Agenda",
-     "sub": false
-    },
-    {
-     "id": 4515,
-     "t": 923,
-     "title": "2. Review City Council Agenda.",
-     "sub": false
-    },
-    {
-     "id": 4516,
-     "t": 923,
-     "title": "2.A. Review the City Council Agenda for August 17,2026.",
-     "sub": true
-    },
-    {
-     "id": 4517,
-     "t": 1678,
-     "title": "3. Items for Discussion",
-     "sub": false
-    },
-    {
-     "id": 4518,
-     "t": 1680,
-     "title": "3.A. Annual review of open meetings information.",
-     "sub": true
-    },
-    {
-     "id": 4519,
-     "t": 2525,
-     "title": "4. Departmental Discussion",
-     "sub": false
-    },
-    {
-     "id": 4520,
-     "t": 2529,
-     "title": "4.A. Presentation of 2027 Budget requests for Public Works Division.",
-     "sub": true
-    },
-    {
-     "id": 4521,
-     "t": 5089,
-     "title": "5. Public Comment",
-     "sub": false
-    },
-    {
-     "id": 4522,
-     "t": 5454,
-     "title": "6. Adjournment",
-     "sub": false
-    }
-   ],
-   "join_url": "",
-   "record_type": "document",
-   "source_label": "City of Spearfish",
-   "url": "https://spearfishsd.portal.civicclerk.com/event/2192/files/agenda/7751",
-   "title": "City Council Study Session Agenda 8/12/2026",
-   "doc_type": "Agenda",
-   "file_url": "https://spearfishsd.portal.civicclerk.com/event/2192/files/agenda/7751",
-   "kind": "document",
-   "source": "spearfish_city",
-   "id": "b1f74f9322f7",
-   "published": "2026-08-12T16:15:00-06:00",
-   "date": "2026-08-12",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "event_id": 2192,
-   "event_name": "City Council Study Session",
-   "category": "City Council",
-   "start_dt": "2026-08-12T16:15:00-06:00",
-   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
-   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2192",
-   "has_media": true,
-   "media_url": "https://cpmedia.azureedge.net/spearfishsd/8a6cad0a78.mp4",
-   "media_page": "https://spearfishsd.portal.civicclerk.com/event/2192/media",
-   "chapters": [
-    {
-     "id": 4514,
-     "t": 894,
-     "title": "1. Approve Agenda",
-     "sub": false
-    },
-    {
-     "id": 4515,
-     "t": 923,
-     "title": "2. Review City Council Agenda.",
-     "sub": false
-    },
-    {
-     "id": 4516,
-     "t": 923,
-     "title": "2.A. Review the City Council Agenda for August 17,2026.",
-     "sub": true
-    },
-    {
-     "id": 4517,
-     "t": 1678,
-     "title": "3. Items for Discussion",
-     "sub": false
-    },
-    {
-     "id": 4518,
-     "t": 1680,
-     "title": "3.A. Annual review of open meetings information.",
-     "sub": true
-    },
-    {
-     "id": 4519,
-     "t": 2525,
-     "title": "4. Departmental Discussion",
-     "sub": false
-    },
-    {
-     "id": 4520,
-     "t": 2529,
-     "title": "4.A. Presentation of 2027 Budget requests for Public Works Division.",
-     "sub": true
-    },
-    {
-     "id": 4521,
-     "t": 5089,
-     "title": "5. Public Comment",
-     "sub": false
-    },
-    {
-     "id": 4522,
-     "t": 5454,
-     "title": "6. Adjournment",
-     "sub": false
-    }
-   ],
-   "join_url": "",
-   "record_type": "document",
-   "source_label": "City of Spearfish",
-   "url": "https://spearfishsd.portal.civicclerk.com/event/2192/files/agenda-packet/7764",
-   "title": "Updated Study Session Packet 8/12/2026",
-   "doc_type": "Agenda Packet",
-   "file_url": "https://spearfishsd.portal.civicclerk.com/event/2192/files/agenda-packet/7764",
-   "kind": "document",
-   "source": "spearfish_city",
-   "id": "6622d5f052ac",
-   "published": "2026-08-12T16:15:00-06:00",
-   "date": "2026-08-12",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "event_id": 2192,
-   "event_name": "City Council Study Session",
-   "category": "City Council",
-   "start_dt": "2026-08-12T16:15:00-06:00",
-   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
-   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2192",
-   "has_media": true,
-   "media_url": "https://cpmedia.azureedge.net/spearfishsd/8a6cad0a78.mp4",
-   "media_page": "https://spearfishsd.portal.civicclerk.com/event/2192/media",
-   "chapters": [
-    {
-     "id": 4514,
-     "t": 894,
-     "title": "1. Approve Agenda",
-     "sub": false
-    },
-    {
-     "id": 4515,
-     "t": 923,
-     "title": "2. Review City Council Agenda.",
-     "sub": false
-    },
-    {
-     "id": 4516,
-     "t": 923,
-     "title": "2.A. Review the City Council Agenda for August 17,2026.",
-     "sub": true
-    },
-    {
-     "id": 4517,
-     "t": 1678,
-     "title": "3. Items for Discussion",
-     "sub": false
-    },
-    {
-     "id": 4518,
-     "t": 1680,
-     "title": "3.A. Annual review of open meetings information.",
-     "sub": true
-    },
-    {
-     "id": 4519,
-     "t": 2525,
-     "title": "4. Departmental Discussion",
-     "sub": false
-    },
-    {
-     "id": 4520,
-     "t": 2529,
-     "title": "4.A. Presentation of 2027 Budget requests for Public Works Division.",
-     "sub": true
-    },
-    {
-     "id": 4521,
-     "t": 5089,
-     "title": "5. Public Comment",
-     "sub": false
-    },
-    {
-     "id": 4522,
-     "t": 5454,
-     "title": "6. Adjournment",
-     "sub": false
-    }
-   ],
-   "join_url": "",
-   "record_type": "document",
-   "source_label": "City of Spearfish",
-   "url": "https://spearfishsd.portal.civicclerk.com/event/2192/files/minutes/8783",
-   "title": "City Council Study Session Minutes 8/12/2026",
-   "doc_type": "Minutes",
-   "file_url": "https://spearfishsd.portal.civicclerk.com/event/2192/files/minutes/8783",
-   "kind": "document",
-   "source": "spearfish_city",
-   "id": "ef7c8096cb37",
-   "published": "2026-08-12T16:15:00-06:00",
-   "date": "2026-08-12",
-   "_first_seen": "2026-11-01"
-  },
   {
    "event_id": 3350,
    "event_name": "Art in Public Places Advisory Board Meeting",
@@ -10093,6 +9853,81 @@
    "join_url": "",
    "record_type": "document",
    "source_label": "City of Spearfish",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2259/files/agenda/9002",
+   "title": "Library Board Agenda 11-10-2026",
+   "doc_type": "Agenda",
+   "file_url": "https://spearfishsd.portal.civicclerk.com/event/2259/files/agenda/9002",
+   "kind": "document",
+   "source": "spearfish_city",
+   "id": "30c2c41650ca",
+   "published": "2026-11-10T16:00:00-07:00",
+   "date": "2026-11-10",
+   "_first_seen": "2026-11-07"
+  },
+  {
+   "event_id": 2198,
+   "event_name": "City Council Study Session",
+   "category": "City Council",
+   "start_dt": "2026-11-12T16:15:00-07:00",
+   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2198",
+   "has_media": true,
+   "media_url": "",
+   "media_page": "",
+   "chapters": [],
+   "join_url": "https://us02web.zoom.us/j/87106681037",
+   "record_type": "document",
+   "source_label": "City of Spearfish",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2198/files/agenda/9007",
+   "title": "City Council Study Session Agenda 11/12/2026",
+   "doc_type": "Agenda",
+   "file_url": "https://spearfishsd.portal.civicclerk.com/event/2198/files/agenda/9007",
+   "kind": "document",
+   "source": "spearfish_city",
+   "id": "453a2b379a79",
+   "published": "2026-11-12T16:15:00-07:00",
+   "date": "2026-11-12",
+   "_first_seen": "2026-11-11"
+  },
+  {
+   "event_id": 2198,
+   "event_name": "City Council Study Session",
+   "category": "City Council",
+   "start_dt": "2026-11-12T16:15:00-07:00",
+   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2198",
+   "has_media": true,
+   "media_url": "",
+   "media_page": "",
+   "chapters": [],
+   "join_url": "https://us02web.zoom.us/j/87106681037",
+   "record_type": "document",
+   "source_label": "City of Spearfish",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2198/files/agenda-packet/9012",
+   "title": "City Council Study Session Packet 11/12/2026",
+   "doc_type": "Agenda Packet",
+   "file_url": "https://spearfishsd.portal.civicclerk.com/event/2198/files/agenda-packet/9012",
+   "kind": "document",
+   "source": "spearfish_city",
+   "id": "e43f9f2b8672",
+   "published": "2026-11-12T16:15:00-07:00",
+   "date": "2026-11-12",
+   "_first_seen": "2026-11-11"
+  },
+  {
+   "event_id": 2259,
+   "event_name": "Library Board of Trustees Meeting",
+   "category": "Library Board of Trustees",
+   "start_dt": "2026-11-17T16:00:00-07:00",
+   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2259",
+   "has_media": false,
+   "media_url": "",
+   "media_page": "",
+   "chapters": [],
+   "join_url": "",
+   "record_type": "document",
+   "source_label": "City of Spearfish",
    "url": "https://spearfishsd.portal.civicclerk.com/event/2259/files/agenda/9004",
    "title": "Library Board Agenda 11-10-2026",
    "doc_type": "Agenda",
@@ -10100,15 +9935,15 @@
    "kind": "document",
    "source": "spearfish_city",
    "id": "ff1536695541",
-   "published": "2026-11-10T16:00:00-07:00",
-   "date": "2026-11-10",
+   "published": "2026-11-17T16:00:00-07:00",
+   "date": "2026-11-17",
    "_first_seen": "2026-11-09"
   },
   {
    "event_id": 2259,
    "event_name": "Library Board of Trustees Meeting",
    "category": "Library Board of Trustees",
-   "start_dt": "2026-11-10T16:00:00-07:00",
+   "start_dt": "2026-11-17T16:00:00-07:00",
    "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2259",
    "has_media": false,
@@ -10125,33 +9960,8 @@
    "kind": "document",
    "source": "spearfish_city",
    "id": "380040ed270a",
-   "published": "2026-11-10T16:00:00-07:00",
-   "date": "2026-11-10",
-   "_first_seen": "2026-11-07"
-  },
-  {
-   "event_id": 2259,
-   "event_name": "Library Board of Trustees Meeting",
-   "category": "Library Board of Trustees",
-   "start_dt": "2026-11-10T16:00:00-07:00",
-   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
-   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2259",
-   "has_media": false,
-   "media_url": "",
-   "media_page": "",
-   "chapters": [],
-   "join_url": "",
-   "record_type": "document",
-   "source_label": "City of Spearfish",
-   "url": "https://spearfishsd.portal.civicclerk.com/event/2259/files/agenda/9002",
-   "title": "Library Board Agenda 11-10-2026",
-   "doc_type": "Agenda",
-   "file_url": "https://spearfishsd.portal.civicclerk.com/event/2259/files/agenda/9002",
-   "kind": "document",
-   "source": "spearfish_city",
-   "id": "30c2c41650ca",
-   "published": "2026-11-10T16:00:00-07:00",
-   "date": "2026-11-10",
+   "published": "2026-11-17T16:00:00-07:00",
+   "date": "2026-11-17",
    "_first_seen": "2026-11-07"
   }
  ]

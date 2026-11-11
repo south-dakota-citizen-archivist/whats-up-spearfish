@@ -3,7 +3,7 @@
  "name": "Killian's",
  "kind": "beer",
  "url": "https://untappd.com",
- "fetched_at": "2026-11-10T12:46:19-07:00",
+ "fetched_at": "2026-11-11T12:39:03-07:00",
  "count": 17,
  "records": [
   {
@@ -126,21 +126,21 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://untappd.com/b/fair-state-brewing-spruce-ipa/6998493",
-   "title": "Spruce IPA",
-   "slug": "spruce-ipa",
+   "url": "https://untappd.com/b/surly-brewing-company-furious/7808",
+   "title": "Furious",
+   "slug": "furious",
    "category": "IPA - American",
-   "abv": "6.2%",
-   "ibu": "",
-   "brewery": "Fair State Brewing",
-   "rating": "3.59",
-   "image_url": "https://labels.untappd.com/6998493",
+   "abv": "6.7%",
+   "ibu": "100",
+   "brewery": "Surly Brewing Company",
+   "rating": "3.84",
+   "image_url": "https://labels.untappd.com/7808",
    "record_type": "beer",
    "source_label": "Killian's",
    "kind": "beer",
    "source": "killians",
-   "id": "ae678a97a83b",
-   "_first_seen": "2026-11-01"
+   "id": "c8449156bbef",
+   "_first_seen": "2026-11-11"
   },
   {
    "url": "https://untappd.com/b/brouwerij-der-trappisten-van-westmalle-westmalle-trappist-dubbel/4168",

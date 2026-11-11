@@ -3,37 +3,9 @@
  "name": "SD DANR public notices (West River)",
  "kind": "notice",
  "url": "https://danr.sd.gov/public/default.aspx",
- "fetched_at": "2026-11-10T12:46:37-07:00",
- "count": 2,
+ "fetched_at": "2026-11-11T12:39:24-07:00",
+ "count": 1,
  "records": [
-  {
-   "notice_type": "Mineral Exploration",
-   "deadline": "",
-   "comment_url": "https://danr.sd.gov/public/comment.aspx?d_comment=&name=DTRC LLC&pntype=mm_ex&description=Notice of Intent for Gold Exploration",
-   "name": "DTRC LLC",
-   "description": "Notice of Intent for Gold Exploration",
-   "location": "Four miles northwest of Lead, SD",
-   "links": [
-    {
-     "label": "Public Notice",
-     "url": "https://danr.sd.gov/Press/docs/publicnotices/MineralsMining/EXNI472NOF.pdf"
-    },
-    {
-     "label": "Application",
-     "url": "https://danr.sd.gov/Environment/MineralsMining/Exploration/NewEXNIS.aspx"
-    }
-   ],
-   "title": "DTRC LLC",
-   "url": "https://danr.sd.gov/public/comment.aspx?d_comment=&name=DTRC LLC&pntype=mm_ex&description=Notice of Intent for Gold Exploration",
-   "deadline_iso": "",
-   "notice_key": "Mineral Exploration||DTRC LLC|Four miles northwest of Lead, SD",
-   "kind": "notice",
-   "record_type": "notice",
-   "source": "danr_public_notices",
-   "source_label": "SD DANR public notices (West River)",
-   "id": "935dda0548ae",
-   "_first_seen": "2026-11-09"
-  },
   {
    "notice_type": "Water Rights",
    "deadline": "11/16/2026",

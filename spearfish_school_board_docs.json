@@ -3,7 +3,7 @@
  "name": "Spearfish School Board",
  "kind": "document",
  "url": "https://www.spearfish.k12.sd.us/documents/board-of-education/board-meeting-agendas/25745609",
- "fetched_at": "2026-11-10T12:47:04-07:00",
+ "fetched_at": "2026-11-11T12:39:50-07:00",
  "count": 11,
  "records": [
   {
@@ -139,9 +139,6 @@
    "asset_type": "agenda",
    "record_type": "document",
    "source_label": "Spearfish School Board",
-   "start_time": "17:30",
-   "join_url": "",
-   "dial_in": {},
    "kind": "document",
    "source": "spearfish_school_board_docs",
    "id": "7d0fd346cbac",

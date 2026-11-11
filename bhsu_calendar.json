@@ -3,41 +3,9 @@
  "name": "BHSU Campus Calendar",
  "kind": "event",
  "url": "https://bhsu.edu/campus-calendar.html",
- "fetched_at": "2026-11-10T12:46:13-07:00",
- "count": 19,
+ "fetched_at": "2026-11-11T12:38:52-07:00",
+ "count": 18,
  "records": [
-  {
-   "event_id": "32565df4-dd73-4796-9924-d45c065052cf",
-   "url": "https://bhsu.edu/campus-calendar.html#event-details/32565df4-dd73-4796-9924-d45c065052cf",
-   "title": "Dr. Lesleigh Owen and Oliver Johnson Some Politics of Period Poverty",
-   "slug": "dr-lesleigh-owen-and-oliver-johnson-some-politics-of-period-poverty",
-   "description": "Geek Speak is back for fall. Please join us on Mondays at 4:00 p.m. in Jonas 110 for a new topic each week: November 2: Dr. Denice Turner A Field Guide to Faults A Field Guide to Faults invites readers into the changing landscape of love after upheaval. Through stories from A Beginner's Guide to Faults, this presentation explores the emotional terrain revealed by betrayal, fidelity, grace, and forgiveness. Rather than offering prescriptions, it offers a way of noticing—of recognizing the fault lines that run through every life and discovering how they can become places of deeper understanding, compassion, and hope. November 9: Dr. Lesleigh Owen and Oliver Johnson Some Politics of Period Poverty Why does discussing menstruation make us uncomfortable? Why are toilet paper, water, and soap provided free in public bathrooms while menstrual products are often unavailable or require purchase? Surely everyone can afford menstrual products every month... right? How does period poverty affect college students' education, health, and well-being? What would change if menstrual products were treated as necessities rather than optional consumer goods? Join Oliver Johnson and Dr. Lesleigh Owen as they explore the social, economic, and cultural dimensions of period poverty. Learn how stigma, inequality, and access shape the experiences of menstruating individuals, examine research on the impact of period poverty among college students, and discover what we are doing on campus to address this often-overlooked issue. Attendees will leave with a deeper understanding of the problem and practical ideas for creating change in their own communities. November 16: Dr. Breon Derby Knotty Habit: A Stress-Relief Workshop for Happy Hookers It is time to unplug from the endless notifications, step away from the screen, and pick up a new kind of coping mechanism: a Knotty Habit Knotty Habit is a chill, zero-pressure workshop designed to help you de-stress through fiber arts--crochet, cross-stitch, and embroidery. Learn how hands-on crafting helps with anxiety, slashes cortisol, and lets you make cool stuff. Nerd out on the science behind crafting and practice the basics at your own pace. Zero experience needed and all supplies provided. Let’s get knotty! To ensure we have enough supplies, an RSVP would be appreciated; please text 605-641-0668 Questions? Contact Dr. Courtney Huse Wika at Courtney.HuseWika@BHSU.edu",
-   "start_dt": "2026-11-09T23:00",
-   "end_dt": "2026-11-10T00:00",
-   "location": "Jonas 110",
-   "image_url": "",
-   "image_alt": "",
-   "organizer": "Courtney Huse-Wika",
-   "tags": [
-    "BHSU Event",
-    "Geek Speak",
-    "Home"
-   ],
-   "featured": false,
-   "ticket_url": "",
-   "category": "Campus Calendar/Events",
-   "record_type": "event",
-   "source_label": "BHSU Campus Calendar",
-   "kind": "event",
-   "source": "bhsu_calendar",
-   "id": "2b4dcdfc2f1e",
-   "start": "2026-11-09T16:00:00-07:00",
-   "end": "2026-11-09T17:00:00-07:00",
-   "all_day": false,
-   "date": "2026-11-09",
-   "event_category": "campus",
-   "_first_seen": "2026-11-01"
-  },
   {
    "event_id": "9e33796e-9fab-4d4a-a7e0-d5b5dd21849c",
    "url": "https://bhsu.edu/campus-calendar.html#event-details/9e33796e-9fab-4d4a-a7e0-d5b5dd21849c",
@@ -144,8 +112,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],
@@ -181,8 +149,8 @@
     "Community Event",
     "Academics",
     "College of Liberal Arts",
-    "College of Business and Natural Sciences",
     "Career Development",
+    "College of Business and Natural Sciences",
     "University Advancement"
    ],
    "featured": false,
@@ -347,8 +315,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],
@@ -446,8 +414,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],
@@ -510,8 +478,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event"
    ],
    "featured": false,
@@ -542,8 +510,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],
