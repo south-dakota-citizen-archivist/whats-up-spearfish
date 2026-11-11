@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-11T04:50:58-07:00",
- "count": 100,
+ "fetched_at": "2026-11-11T13:10:57-07:00",
+ "count": 101,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/12/independent-us-senate-candidates-from-plains-states-say-they-would-not-caucus-with-either-party/",
@@ -1503,6 +1503,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "a047760b4fb0",
+   "date": "2026-11-11",
+   "_first_seen": "2026-11-11"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/11/without-prairie-dogs-endangered-black-footed-ferrets-disappear/",
+   "title": "Commentary: Without prairie dogs, endangered black-footed ferrets disappear",
+   "slug": "south-dakota-searchlight-commentary-without-prairie-dogs-endangered-black-footed",
+   "published": "2026-11-11",
+   "byline": "Ted Williams",
+   "description": "The black-footed ferret is among the planet’s most endangered species. A native of central North America, it was considered extinct until Sept. 26, 1981, when a Meeteetse, Wyoming, investigator named Shep rediscovered it. Shep was a ranch dog who delivered a carcass to his owners’ front steps. Black-footed ferrets need prairie dog towns as habitat. [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "7efa65bde3a4",
    "date": "2026-11-11",
    "_first_seen": "2026-11-11"
   }
