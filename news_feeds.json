@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-11T13:10:57-07:00",
- "count": 101,
+ "fetched_at": "2026-11-11T19:56:41-07:00",
+ "count": 102,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/12/independent-us-senate-candidates-from-plains-states-say-they-would-not-caucus-with-either-party/",
@@ -1503,6 +1503,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "a047760b4fb0",
+   "date": "2026-11-11",
+   "_first_seen": "2026-11-11"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/11/south-dakota-board-assigns-final-6-1-million-in-biden-era-federal-funds-for-water-projects/",
+   "title": "South Dakota board assigns final $6.1 million in Biden-era federal funds for water projects",
+   "slug": "south-dakota-searchlight-south-dakota-board-assigns-final-6-1-million-in-biden",
+   "published": "2026-11-11",
+   "byline": "Meghan O'Brien",
+   "description": "The South Dakota Board of Water and Natural Resources assigned the final dollars of Biden-era federal funding for drinking water and wastewater projects during its November meeting. The dollars come from the American Rescue Plan Act. Congress passed the ARPA legislation in 2021. Then-President Joe Biden signed it into law that March. It included a [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "71e8a5084a86",
    "date": "2026-11-11",
    "_first_seen": "2026-11-11"
   },

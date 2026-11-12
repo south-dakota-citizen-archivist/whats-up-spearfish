@@ -3,8 +3,8 @@
  "name": "Custer County Chronicle",
  "kind": "news",
  "url": "https://custercountychronicle.com",
- "fetched_at": "2026-11-11T13:10:59-07:00",
- "count": 42,
+ "fetched_at": "2026-11-11T19:56:44-07:00",
+ "count": 45,
  "records": [
   {
    "url": "https://custercountychronicle.com/content/csp-concessions-going-out-state-operator",
@@ -545,6 +545,51 @@
    "id": "8594ac7dc61c",
    "date": "2026-11-04",
    "_first_seen": "2026-11-04"
+  },
+  {
+   "url": "https://custercountychronicle.com/content/highway-will-inspect-approaches",
+   "title": "Highway will inspect approaches",
+   "slug": "custer-county-chronicle-highway-will-inspect-approaches",
+   "published": "2026-11-11",
+   "byline": "",
+   "description": "By Jason Ferguson",
+   "record_type": "news",
+   "source_label": "Custer County Chronicle",
+   "kind": "news",
+   "source": "custer_county_chronicle",
+   "id": "b33411d64a92",
+   "date": "2026-11-11",
+   "_first_seen": "2026-11-11"
+  },
+  {
+   "url": "https://custercountychronicle.com/content/city-council-oks-additional-fd-funding",
+   "title": "City council OKs additional FD funding",
+   "slug": "custer-county-chronicle-city-council-oks-additional-fd-funding",
+   "published": "2026-11-11",
+   "byline": "",
+   "description": "The Custer Volunteer Fire Department will receive $269,500 in additional funding from the City of Custer in 2026, this after the Custer City Council approved the allocation of the additional funding at its Nov. 2 meeting. The deparment intially requested the addtional funding at the council’s July 20 meeting, but at that time department chief Matt Spring was told the council wanted more information about the department’s proposed budget.",
+   "record_type": "news",
+   "source_label": "Custer County Chronicle",
+   "kind": "news",
+   "source": "custer_county_chronicle",
+   "id": "750dc58eca58",
+   "date": "2026-11-11",
+   "_first_seen": "2026-11-11"
+  },
+  {
+   "url": "https://custercountychronicle.com/content/voter-turnout-was-record-low",
+   "title": "Voter turnout was record low",
+   "slug": "custer-county-chronicle-voter-turnout-was-record-low",
+   "published": "2026-11-11",
+   "byline": "",
+   "description": "“This year’s general election saw the lowest voter turnout in the state in more than 50 years,” wrote Molly Wetsch with South Dakota News Watch in her article “General election: SD voter turnout hits historic low, sales tax increases fail.” In the 2022 midterm election, nearly 60 percent of registered voters headed to the polls, according to Wetsch.",
+   "record_type": "news",
+   "source_label": "Custer County Chronicle",
+   "kind": "news",
+   "source": "custer_county_chronicle",
+   "id": "1685dede00ad",
+   "date": "2026-11-11",
+   "_first_seen": "2026-11-11"
   },
   {
    "url": "https://custercountychronicle.com/content/buffalo-auction-sets-record",
