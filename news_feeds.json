@@ -3,24 +3,9 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-11T19:56:41-07:00",
+ "fetched_at": "2026-11-12T05:39:53-07:00",
  "count": 102,
  "records": [
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/12/independent-us-senate-candidates-from-plains-states-say-they-would-not-caucus-with-either-party/",
-   "title": "Independent US Senate candidates from Plains states say they would not caucus with either party",
-   "slug": "south-dakota-searchlight-independent-us-senate-candidates-from-plains-states-say",
-   "published": "2026-10-12",
-   "byline": "Joshua Haiar",
-   "description": "Three independent U.S. Senate candidates from Great Plains states said Monday they will not caucus with Republicans or Democrats if elected, while the National Republican Senatorial Committee accused them of being Democrats in disguise. Brian Bengs of South Dakota, Seth Bodnar of Montana and Dan Osborn of Nebraska made the commitment during a virtual press [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "adca71bb14cc",
-   "date": "2026-10-12",
-   "_first_seen": "2026-11-01"
-  },
   {
    "url": "https://southdakotasearchlight.com/2026/10/13/new-program-provides-5-down-payment-for-qualifying-south-dakota-homebuyers/",
    "title": "New program provides 5% down payment for qualifying South Dakota homebuyers",
@@ -637,21 +622,6 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://www.sdnewswatch.org/south-dakota-poll-constitutional-amendments-ballot-measures/",
-   "title": "Poll: 1/3 of voters undecided on Medicaid, unclaimed property",
-   "slug": "sd-newswatch-poll-1-3-of-voters-undecided-on-medicaid-unclaimed-property",
-   "published": "2026-10-26",
-   "byline": "Emily DeCock",
-   "description": "South Dakota Poll shows support for non-citizen voting and unclaimed property ballot issues but higher opposition for changes to Medicaid and the threshold to amend the constitution.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "db9f225474e3",
-   "date": "2026-10-26",
-   "_first_seen": "2026-11-01"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/10/26/south-dakota-task-force-recommends-bills-to-move-toward-ambulance-service-regions/",
    "title": "South Dakota task force recommends bills to move toward ambulance service regions",
    "slug": "south-dakota-searchlight-south-dakota-task-force-recommends-bills-to-move-toward",
@@ -693,6 +663,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "f7f75b7b4b8a",
+   "date": "2026-10-26",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-poll-constitutional-amendments-ballot-measures/",
+   "title": "Poll: 1/3 of voters undecided on Medicaid, unclaimed property",
+   "slug": "sd-newswatch-poll-1-3-of-voters-undecided-on-medicaid-unclaimed-property",
+   "published": "2026-10-26",
+   "byline": "Emily DeCock",
+   "description": "South Dakota Poll shows support for non-citizen voting and unclaimed property ballot issues but higher opposition for changes to Medicaid and the threshold to amend the constitution.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "db9f225474e3",
    "date": "2026-10-26",
    "_first_seen": "2026-11-01"
   },
@@ -1535,6 +1520,21 @@
    "id": "7efa65bde3a4",
    "date": "2026-11-11",
    "_first_seen": "2026-11-11"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/fact-brief-have-warm-fall-temperatures-in-south-dakota-set-records/",
+   "title": "Fact Brief: Have warm fall temperatures in South Dakota set records?",
+   "slug": "sd-newswatch-fact-brief-have-warm-fall-temperatures-in-south-dakota-set-records",
+   "published": "2026-11-12",
+   "byline": "Emily DeCock",
+   "description": "What temperature data from the around the state shows.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "0df9c4a38c28",
+   "date": "2026-11-12",
+   "_first_seen": "2026-11-12"
   }
  ]
 }
