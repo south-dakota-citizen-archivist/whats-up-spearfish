@@ -3,8 +3,8 @@
  "name": "Spearfish School District",
  "kind": "event",
  "url": "https://www.spearfish.k12.sd.us/events",
- "fetched_at": "2026-11-11T12:39:45-07:00",
- "count": 25,
+ "fetched_at": "2026-11-12T12:57:57-07:00",
+ "count": 26,
  "records": [
   {
    "event_id": 53400624,
@@ -505,6 +505,26 @@
    "date": "2027-03-11",
    "event_category": "schools",
    "_first_seen": "2026-11-11"
+  },
+  {
+   "event_id": 53400967,
+   "title": "Spring Break - No School",
+   "url": "https://www.spearfish.k12.sd.us/events",
+   "start_dt": "2027-03-12",
+   "end_dt": "2027-03-12",
+   "all_day": true,
+   "location": "",
+   "description": "",
+   "kind": "event",
+   "record_type": "event",
+   "source": "spearfish_schools",
+   "source_label": "Spearfish School District",
+   "id": "d0035e7ffd83",
+   "start": "2027-03-12",
+   "end": "",
+   "date": "2027-03-12",
+   "event_category": "schools",
+   "_first_seen": "2026-11-12"
   }
  ]
 }

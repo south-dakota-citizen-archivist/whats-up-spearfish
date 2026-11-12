@@ -3,217 +3,9 @@
  "name": "City of Spearfish",
  "kind": "document",
  "url": "https://spearfishsd.portal.civicclerk.com/",
- "fetched_at": "2026-11-11T12:39:39-07:00",
- "count": 95,
+ "fetched_at": "2026-11-12T12:57:49-07:00",
+ "count": 94,
  "records": [
-  {
-   "event_id": 3350,
-   "event_name": "Art in Public Places Advisory Board Meeting",
-   "category": "General",
-   "start_dt": "2026-08-13T16:00:00-06:00",
-   "location": "625 N 5th St, Council Chambers, Spearfish, SD, 57783",
-   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/3350",
-   "has_media": true,
-   "media_url": "SPEARFISHSD/d1b88dd8-ece9-402e-ab87-46bb68c84e33.mp4",
-   "media_page": "https://spearfishsd.portal.civicclerk.com/event/3350/media",
-   "chapters": [
-    {
-     "id": 4523,
-     "t": 847,
-     "title": "A. Call to Order",
-     "sub": false
-    },
-    {
-     "id": 4524,
-     "t": 851,
-     "title": "B. Roll Call",
-     "sub": false
-    },
-    {
-     "id": 4525,
-     "t": 908,
-     "title": "C. Approve Agenda",
-     "sub": false
-    },
-    {
-     "id": 4526,
-     "t": 924,
-     "title": "D. Introduction and Discussion",
-     "sub": false
-    },
-    {
-     "id": 4527,
-     "t": 1161,
-     "title": "D.1. Get to know one another!",
-     "sub": true
-    },
-    {
-     "id": 4528,
-     "t": 1704,
-     "title": "D.2. Purpose & Funding",
-     "sub": true
-    },
-    {
-     "id": 4529,
-     "t": 2011,
-     "title": "D.3. ​Determine Initial Terms",
-     "sub": true
-    },
-    {
-     "id": 4530,
-     "t": 2134,
-     "title": "D.4. Open Meetings",
-     "sub": true
-    },
-    {
-     "id": 4531,
-     "t": 2981,
-     "title": "E. Items for Action",
-     "sub": false
-    },
-    {
-     "id": 4532,
-     "t": 3197,
-     "title": "E.1. Elect a Chairperson and Vice Chairperson",
-     "sub": true
-    },
-    {
-     "id": 4533,
-     "t": 0,
-     "title": "F. Departmental Discussion",
-     "sub": false
-    },
-    {
-     "id": 4534,
-     "t": 3292,
-     "title": "G. Public Comment",
-     "sub": false
-    },
-    {
-     "id": 4535,
-     "t": 3849,
-     "title": "H. Adjournment",
-     "sub": false
-    }
-   ],
-   "join_url": "",
-   "record_type": "document",
-   "source_label": "City of Spearfish",
-   "url": "https://spearfishsd.portal.civicclerk.com/event/3350/files/agenda/7760",
-   "title": "Agenda",
-   "doc_type": "Agenda",
-   "file_url": "https://spearfishsd.portal.civicclerk.com/event/3350/files/agenda/7760",
-   "kind": "document",
-   "source": "spearfish_city",
-   "id": "affe6b1bcad6",
-   "published": "2026-08-13T16:00:00-06:00",
-   "date": "2026-08-13",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "event_id": 3350,
-   "event_name": "Art in Public Places Advisory Board Meeting",
-   "category": "General",
-   "start_dt": "2026-08-13T16:00:00-06:00",
-   "location": "625 N 5th St, Council Chambers, Spearfish, SD, 57783",
-   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/3350",
-   "has_media": true,
-   "media_url": "SPEARFISHSD/d1b88dd8-ece9-402e-ab87-46bb68c84e33.mp4",
-   "media_page": "https://spearfishsd.portal.civicclerk.com/event/3350/media",
-   "chapters": [
-    {
-     "id": 4523,
-     "t": 847,
-     "title": "A. Call to Order",
-     "sub": false
-    },
-    {
-     "id": 4524,
-     "t": 851,
-     "title": "B. Roll Call",
-     "sub": false
-    },
-    {
-     "id": 4525,
-     "t": 908,
-     "title": "C. Approve Agenda",
-     "sub": false
-    },
-    {
-     "id": 4526,
-     "t": 924,
-     "title": "D. Introduction and Discussion",
-     "sub": false
-    },
-    {
-     "id": 4527,
-     "t": 1161,
-     "title": "D.1. Get to know one another!",
-     "sub": true
-    },
-    {
-     "id": 4528,
-     "t": 1704,
-     "title": "D.2. Purpose & Funding",
-     "sub": true
-    },
-    {
-     "id": 4529,
-     "t": 2011,
-     "title": "D.3. ​Determine Initial Terms",
-     "sub": true
-    },
-    {
-     "id": 4530,
-     "t": 2134,
-     "title": "D.4. Open Meetings",
-     "sub": true
-    },
-    {
-     "id": 4531,
-     "t": 2981,
-     "title": "E. Items for Action",
-     "sub": false
-    },
-    {
-     "id": 4532,
-     "t": 3197,
-     "title": "E.1. Elect a Chairperson and Vice Chairperson",
-     "sub": true
-    },
-    {
-     "id": 4533,
-     "t": 0,
-     "title": "F. Departmental Discussion",
-     "sub": false
-    },
-    {
-     "id": 4534,
-     "t": 3292,
-     "title": "G. Public Comment",
-     "sub": false
-    },
-    {
-     "id": 4535,
-     "t": 3849,
-     "title": "H. Adjournment",
-     "sub": false
-    }
-   ],
-   "join_url": "",
-   "record_type": "document",
-   "source_label": "City of Spearfish",
-   "url": "https://spearfishsd.portal.civicclerk.com/event/3350/files/agenda-packet/7761",
-   "title": "Agenda Packet",
-   "doc_type": "Agenda Packet",
-   "file_url": "https://spearfishsd.portal.civicclerk.com/event/3350/files/agenda-packet/7761",
-   "kind": "document",
-   "source": "spearfish_city",
-   "id": "2c0e41f9bcdf",
-   "published": "2026-08-13T16:00:00-06:00",
-   "date": "2026-08-13",
-   "_first_seen": "2026-11-01"
-  },
   {
    "event_id": 39,
    "event_name": "City Council Meeting",
@@ -9943,7 +9735,32 @@
    "event_id": 2259,
    "event_name": "Library Board of Trustees Meeting",
    "category": "Library Board of Trustees",
-   "start_dt": "2026-11-17T16:00:00-07:00",
+   "start_dt": "2026-11-18T16:00:00-07:00",
+   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2259",
+   "has_media": false,
+   "media_url": "",
+   "media_page": "",
+   "chapters": [],
+   "join_url": "",
+   "record_type": "document",
+   "source_label": "City of Spearfish",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2259/files/agenda/9013",
+   "title": "Library Board Agenda 11-18-2026",
+   "doc_type": "Agenda",
+   "file_url": "https://spearfishsd.portal.civicclerk.com/event/2259/files/agenda/9013",
+   "kind": "document",
+   "source": "spearfish_city",
+   "id": "0b74d6dfc169",
+   "published": "2026-11-18T16:00:00-07:00",
+   "date": "2026-11-18",
+   "_first_seen": "2026-11-12"
+  },
+  {
+   "event_id": 2259,
+   "event_name": "Library Board of Trustees Meeting",
+   "category": "Library Board of Trustees",
+   "start_dt": "2026-11-18T16:00:00-07:00",
    "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2259",
    "has_media": false,
@@ -9960,8 +9777,8 @@
    "kind": "document",
    "source": "spearfish_city",
    "id": "380040ed270a",
-   "published": "2026-11-17T16:00:00-07:00",
-   "date": "2026-11-17",
+   "published": "2026-11-18T16:00:00-07:00",
+   "date": "2026-11-18",
    "_first_seen": "2026-11-07"
   }
  ]

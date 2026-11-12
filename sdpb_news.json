@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-11T12:39:35-07:00",
- "count": 37,
+ "fetched_at": "2026-11-12T12:57:47-07:00",
+ "count": 40,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -589,7 +589,7 @@
    "published": "2026-11-11",
    "byline": "By C.J. Keene",
    "description": "While South Dakota didn’t quite see the “blue wave” the rest of the country saw on election night, the waters are changing in the statehouse. This is perhaps best reflected in the new leadership positions, appointed this week, and reflective of a change in the overall makeup of the legislative body.",
-   "image_url": "https://npr.brightspotcdn.com/legacy/prod/filer_public/kusd-bento-live-pbs/70855b691c_SD2021%20House%20Senate_.jpg",
+   "image_url": "https://npr.brightspotcdn.com/83/1b/0f0d33ef4e45a214d9b3ca3be6f4/70855b691c-sd2021-house-senate.jpg",
    "record_type": "news",
    "source_label": "SDPB",
    "kind": "news",
@@ -597,6 +597,54 @@
    "id": "8742cac510aa",
    "date": "2026-11-11",
    "_first_seen": "2026-11-11"
+  },
+  {
+   "url": "https://www.sdpb.org/education/2026-11-12/voters-reject-bid-to-dissolve-oldham-ramona-rutland-school-district",
+   "title": "Voters reject bid to dissolve Oldham-Ramona-Rutland School District",
+   "slug": "sdpb-voters-reject-bid-to-dissolve-oldham-ramona-rutland-school-district",
+   "published": "2026-11-12",
+   "byline": "By SDPB News Staff",
+   "description": "Tuesday’s vote to dissolve the district failed with 393 against, 352 in favor, officials said.",
+   "image_url": "https://npr.brightspotcdn.com/26/36/3d75f9394ba5a5d122c63d59f7c4/microsoftteams-image-1.png",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "ad8cc883b7b7",
+   "date": "2026-11-12",
+   "_first_seen": "2026-11-12"
+  },
+  {
+   "url": "https://www.sdpb.org/sports-rec/2026-11-12/wall-eagles-back-to-back-state-champions-after-topping-st-marys-cardinals",
+   "title": "Wall Eagles back-to-back state champions after topping St. Mary's Cardinals",
+   "slug": "sdpb-wall-eagles-back-to-back-state-champions-after-topping-st-mary-s-cardinals",
+   "published": "2026-11-12",
+   "byline": "By Jackson Dircks",
+   "description": "The Wall Eagles are state champions for the second year in a row.",
+   "image_url": "https://npr.brightspotcdn.com/94/4b/534b5a6e47d3a69efc0837ab8976/1dx25162.JPG",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "7a84d9912c29",
+   "date": "2026-11-12",
+   "_first_seen": "2026-11-12"
+  },
+  {
+   "url": "https://www.sdpb.org/science/2026-11-12/construction-begins-on-massive-underground-neutrino-experiment-at-surf",
+   "title": "Construction begins on massive underground neutrino experiment at SURF",
+   "slug": "sdpb-construction-begins-on-massive-underground-neutrino-experiment-at-surf",
+   "published": "2026-11-12",
+   "byline": "By C.J. Keene",
+   "description": "New construction has begun on DUNE, the Deep Underground Neutrino Experiment at the Sanford Underground Research Facility in Lead.",
+   "image_url": "https://npr.brightspotcdn.com/c8/5f/895e00864aa9afd41e18c654e53f/surf-dune-beams-construction.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "f4347d385af6",
+   "date": "2026-11-12",
+   "_first_seen": "2026-11-12"
   }
  ]
 }

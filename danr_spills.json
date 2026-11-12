@@ -3,8 +3,8 @@
  "name": "SD DANR spill reports",
  "kind": "spill",
  "url": "https://apps.sd.gov/NR42InteractiveMap/",
- "fetched_at": "2026-11-11T12:39:43-07:00",
- "count": 67,
+ "fetched_at": "2026-11-12T12:58:05-07:00",
+ "count": 68,
  "records": [
   {
    "report_no": "2026.162",
@@ -9088,6 +9088,64 @@
    "source_label": "SD DANR spill reports",
    "id": "ee97688c5b6d",
    "_first_seen": "2026-11-02"
+  },
+  {
+   "report_no": "2026.181",
+   "year": 2026,
+   "title": "Ben French Powerstation Propylene Glycol Spill",
+   "status": "Open",
+   "category": "Other",
+   "material": "Propylene glycol",
+   "spill_source": "Line",
+   "street": "393 Deadwood Ave",
+   "city": "Rapid City",
+   "county": "Pennington",
+   "responsible_party": "Black Hills Energy",
+   "lat": 44.0874,
+   "lon": -103.26098,
+   "pdfs": [
+    {
+     "url": "https://danr.sd.gov/spillimages/2026/2026.181.pdf",
+     "size": 136540
+    }
+   ],
+   "url": "https://danr.sd.gov/spillimages/2026/2026.181.pdf",
+   "_readings": {
+    "2026.181.pdf": {
+     "forms": [
+      {
+       "form": "spill report",
+       "page": 1,
+       "method": "ocr"
+      },
+      {
+       "form": "spill report",
+       "spill_date": "11/11/26",
+       "reported_by": "Krisit Chamley",
+       "location": "393 Deadwood Ave",
+       "source_description": "Line",
+       "cause_description": "Line rupture",
+       "response_action": "Pooled material placed in storage tank, contaminated soil excavated and stored in drums ACTIONS Date of Tank Removal",
+       "comments": "Release remained in soil/gravel containment",
+       "county": "Pennington",
+       "page": 2,
+       "method": "ocr"
+      }
+     ],
+     "version": 4
+    }
+   },
+   "report": {
+    "read_from": "ocr",
+    "pdf": "https://danr.sd.gov/spillimages/2026/2026.181.pdf",
+    "page": 1
+   },
+   "kind": "spill",
+   "record_type": "spill",
+   "source": "danr_spills",
+   "source_label": "SD DANR spill reports",
+   "id": "0b5691315a99",
+   "_first_seen": "2026-11-12"
   },
   {
    "report_no": "2026.163",

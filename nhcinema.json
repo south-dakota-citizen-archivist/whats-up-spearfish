@@ -3,32 +3,9 @@
  "name": "Northern Hills Cinema",
  "kind": "movie",
  "url": "https://nhcinema.com/",
- "fetched_at": "2026-11-11T12:39:20-07:00",
- "count": 16,
+ "fetched_at": "2026-11-12T12:57:29-07:00",
+ "count": 15,
  "records": [
-  {
-   "title": "Wicker",
-   "url": "https://nhcinema.com/view/wicker",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3730/wicker_teaser_poster__standard.jpg",
-   "rating": "R",
-   "runtime": 105,
-   "no_passes": true,
-   "note": "Ends Tuesday 11/10",
-   "ends": "2026-11-10",
-   "showtimes": [],
-   "genre": "Comedy, Drama, Fantasy, Romance",
-   "starring": "Olivia Colman, Alexander Skarsgård, Peter Dinklage, Elizabeth Debicki",
-   "director": "Eleanor Wilson, Alex Huston Fischer",
-   "synopsis": "THERE IS NO TRAILER LINKED FOR THIS MOVIE DUE TO GRAPHIC CONTENT!!!",
-   "slug": "wicker",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "1ac7391842e4",
-   "_first_seen": "2026-11-04"
-  },
   {
    "title": "American Sniper",
    "url": "https://nhcinema.com/view/american-sniper",
@@ -37,17 +14,7 @@
    "rating": "R",
    "runtime": 132,
    "no_passes": true,
-   "showtimes": [
-    {
-     "date": "2026-11-11",
-     "times": [
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    }
-   ],
+   "showtimes": [],
    "genre": "Action, Biography",
    "starring": "Bradley Cooper, Sienna Miller, Jake McDorman, Luke Grimes, Navid Negahban, Keir O'Donnell",
    "director": "Clint Eastwood",
@@ -71,19 +38,6 @@
    "note": "Ends Thursday 11/12",
    "ends": "2026-11-12",
    "showtimes": [
-    {
-     "date": "2026-11-11",
-     "times": [
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-12",
      "times": [
@@ -123,19 +77,6 @@
    "ends": "2026-11-12",
    "showtimes": [
     {
-     "date": "2026-11-11",
-     "times": [
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-12",
      "times": [
       {
@@ -170,15 +111,6 @@
    "runtime": 129,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-11",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": true
-      }
-     ]
-    },
     {
      "date": "2026-11-12",
      "times": [
@@ -272,6 +204,19 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-11-18",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
     }
    ],
    "genre": "Animated, Musical",
@@ -296,19 +241,6 @@
    "runtime": 135,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-11",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-12",
      "times": [
@@ -402,6 +334,19 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-11-18",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
     }
    ],
    "genre": "Action",
@@ -426,19 +371,6 @@
    "runtime": 91,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-11",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-12",
      "times": [
@@ -532,6 +464,19 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-11-18",
+     "times": [
+      {
+       "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
     }
    ],
    "genre": "Animated",
@@ -556,19 +501,6 @@
    "runtime": 90,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-11",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": true
-      }
-     ]
-    },
     {
      "date": "2026-11-12",
      "times": [
@@ -660,6 +592,19 @@
       {
        "time": "18:30",
        "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-18",
+     "times": [
+      {
+       "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
       }
      ]
     }

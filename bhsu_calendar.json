@@ -3,8 +3,8 @@
  "name": "BHSU Campus Calendar",
  "kind": "event",
  "url": "https://bhsu.edu/campus-calendar.html",
- "fetched_at": "2026-11-11T12:38:52-07:00",
- "count": 18,
+ "fetched_at": "2026-11-12T12:57:02-07:00",
+ "count": 19,
  "records": [
   {
    "event_id": "9e33796e-9fab-4d4a-a7e0-d5b5dd21849c",
@@ -112,8 +112,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
@@ -149,8 +149,8 @@
     "Community Event",
     "Academics",
     "College of Liberal Arts",
-    "Career Development",
     "College of Business and Natural Sciences",
+    "Career Development",
     "University Advancement"
    ],
    "featured": false,
@@ -267,6 +267,37 @@
    "_first_seen": "2026-11-01"
   },
   {
+   "event_id": "f8100145-b6a3-4ff2-9d55-f5efdbbc000d",
+   "url": "https://bhsu.edu/campus-calendar.html#event-details/f8100145-b6a3-4ff2-9d55-f5efdbbc000d",
+   "title": "Center for American Indian Studies Presents: Lakota Nation vs United States",
+   "slug": "center-for-american-indian-studies-presents-lakota-nation-vs-united-states",
+   "description": "The Center for American Indian Studies and Lakota Omniciye invite the BHSU campus community to a special screening of the acclaimed documentary Lakota Nation vs. United States on Tuesday, November 17, at 5:30 p.m. in Woodburn Theatre with a social gather beginning at 5:00pm in the Woodburn Theatre Lobby. Following the screening, attendees will have the opportunity to participate in a special director's forum with Jesse Short Bull, offering insight into the filmmaking process, the stories behind the documentary, and the importance of sharing Lakota perspectives and experiences. This event provides a meaningful opportunity for students, faculty, staff, and community members to deepen their understanding of Lakota history, engage in thoughtful discussion, and reflect on the historical and contemporary significance of the Black Hills. Date: Tuesday, November 17, 2026 Time: 5:00 p.m. Social, 5:30 p.m. Screening Location: Woodburn Theatre Free to attend. All are welcome and encouraged to attend! Accessibility: Persons with disabilities requesting accommodations for this event or additional information may call 605-642-6578 or email Jordon.Mendoza@BHSU.edu at least 48 hours prior to the event.",
+   "start_dt": "2026-11-18T00:00",
+   "end_dt": "2026-11-18T00:00",
+   "location": "Woodburn Theatre",
+   "image_url": "",
+   "image_alt": "",
+   "organizer": "Jordon Mendoza",
+   "tags": [
+    "Center for American Indian Studies",
+    "Home"
+   ],
+   "featured": false,
+   "ticket_url": "",
+   "category": "Campus Calendar/Events",
+   "record_type": "event",
+   "source_label": "BHSU Campus Calendar",
+   "kind": "event",
+   "source": "bhsu_calendar",
+   "id": "b54e50c39987",
+   "start": "2026-11-17T17:00:00-07:00",
+   "end": "",
+   "all_day": false,
+   "date": "2026-11-17",
+   "event_category": "campus",
+   "_first_seen": "2026-11-12"
+  },
+  {
    "event_id": "1ab8fd33-f4ef-4865-9634-bc164ca91423",
    "url": "https://bhsu.edu/campus-calendar.html#event-details/1ab8fd33-f4ef-4865-9634-bc164ca91423",
    "title": "Join Henry's Books for \"He Sapa: Poetry, History, & Storytelling\"",
@@ -315,8 +346,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
@@ -414,8 +445,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
@@ -478,8 +509,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event"
    ],
    "featured": false,
@@ -510,8 +541,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],

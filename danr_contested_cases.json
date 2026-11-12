@@ -3,7 +3,7 @@
  "name": "SD DANR contested cases",
  "kind": "case",
  "url": "https://danr.sd.gov/public/ContestedCase.aspx",
- "fetched_at": "2026-11-11T12:39:06-07:00",
+ "fetched_at": "2026-11-12T12:57:13-07:00",
  "count": 8,
  "records": [
   {
@@ -159,7 +159,7 @@
     },
     {
      "title": "Comments",
-     "url": "https://danr.sd.gov/wrimage/pub/2915-2_comments_cc.pdf",
+     "url": "https://danr.sd.gov/wrimage/pub/2915-2_comments.pdf",
      "added": "2026-11-06"
     }
    ],
@@ -192,7 +192,7 @@
     },
     {
      "title": "Comments",
-     "url": "https://danr.sd.gov/wrimage/pub/2914-2_comments_cc.pdf",
+     "url": "https://danr.sd.gov/wrimage/pub/2914-2_comments.pdf",
      "added": "2026-11-06"
     }
    ],

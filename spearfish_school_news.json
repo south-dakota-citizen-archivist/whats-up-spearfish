@@ -3,23 +3,9 @@
  "name": "Spearfish School District",
  "kind": "press_release",
  "url": "https://www.spearfish.k12.sd.us/news",
- "fetched_at": "2026-11-11T12:39:44-07:00",
+ "fetched_at": "2026-11-12T12:57:56-07:00",
  "count": 20,
  "records": [
-  {
-   "title": "School Board Announcement",
-   "url": "https://www.spearfish.k12.sd.us/o/ssd/article/2977355",
-   "published": "2026-06-09T14:17:45-06:00",
-   "description": "School Board Announcement",
-   "image_url": "https://core-docs.s3.amazonaws.com/spearfish_school_district/article/image/large_57851f3c-a0b9-4225-b68b-79c67bbc8328.png",
-   "kind": "press_release",
-   "record_type": "press_release",
-   "source": "spearfish_school_news",
-   "source_label": "Spearfish School District",
-   "id": "91f4d7bb5057",
-   "date": "2026-06-09",
-   "_first_seen": "2026-11-01"
-  },
   {
    "title": "First Day of School",
    "url": "https://www.spearfish.k12.sd.us/o/ssd/article/3024688",
@@ -285,6 +271,20 @@
    "id": "157dc47ac486",
    "date": "2026-11-09",
    "_first_seen": "2026-11-09"
+  },
+  {
+   "title": "Thanksgiving Break - No School",
+   "url": "https://www.spearfish.k12.sd.us/o/ssd/article/3248277",
+   "published": "2026-11-11T14:31:00-07:00",
+   "description": "Thanksgiving Break School will resume Monday, November 30, 2026",
+   "image_url": "https://core-docs.s3.amazonaws.com/spearfish_school_district/article/image/large_6c579ae9-829d-4964-b655-971effae5961.png",
+   "kind": "press_release",
+   "record_type": "press_release",
+   "source": "spearfish_school_news",
+   "source_label": "Spearfish School District",
+   "id": "c3cc8395c39b",
+   "date": "2026-11-11",
+   "_first_seen": "2026-11-12"
   }
  ]
 }
