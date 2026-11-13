@@ -3,54 +3,9 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-12T19:37:31-07:00",
- "count": 104,
+ "fetched_at": "2026-11-13T05:09:21-07:00",
+ "count": 102,
  "records": [
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/13/new-program-provides-5-down-payment-for-qualifying-south-dakota-homebuyers/",
-   "title": "New program provides 5% down payment for qualifying South Dakota homebuyers",
-   "slug": "south-dakota-searchlight-new-program-provides-5-down-payment-for-qualifying",
-   "published": "2026-10-13",
-   "byline": "Joshua Haiar",
-   "description": "The South Dakota Housing Development Authority is starting a temporary program to give down-payment assistance to homebuyers. The authority will launch its Give Me Five program on Nov. 2, lending qualifying homebuyers a down payment equal to 5% of their mortgage. Recipients are not required to make payments on the down-payment loan, and it’s forgiven [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "2a8cae409f4e",
-   "date": "2026-10-13",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/13/advocates-again-ask-south-dakota-governor-to-endorse-summer-food-program-operating-in-39-states/",
-   "title": "Advocates again ask South Dakota governor to endorse summer food program operating in 39 states",
-   "slug": "south-dakota-searchlight-advocates-again-ask-south-dakota-governor-to-endorse-in",
-   "published": "2026-10-13",
-   "byline": "John Hult",
-   "description": "Thirty-four South Dakota organizations and businesses have asked Gov. Larry Rhoden to support a program that offers debit cards for food to low-income families during the summer months. The program is federally funded, but is administered by states.  The governor’s deputy secretary of education told South Dakota Searchlight that the administration is “taking another look [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "81fa04919005",
-   "date": "2026-10-13",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/13/up-to-6-million-in-tax-rebates-approved-for-south-dakotas-largest-wind-project/",
-   "title": "Up to $6 million in tax rebates approved for South Dakota’s largest wind project",
-   "slug": "south-dakota-searchlight-up-to-6-million-in-tax-rebates-approved-for-south-wind",
-   "published": "2026-10-13",
-   "byline": "Joshua Haiar",
-   "description": "South Dakota’s Board of Economic Development voted Tuesday to authorize up to $6.1 million in tax rebates for the state’s largest wind energy project.  The $750 million, 333-megawatt wind farm will span about 110 square miles of private land, located north of Philip and 85 miles east of Rapid City. State regulators described the project [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "6775cd443724",
-   "date": "2026-10-13",
-   "_first_seen": "2026-11-01"
-  },
   {
    "url": "https://southdakotasearchlight.com/2026/10/14/podcast-pros-and-cons-on-a-ballot-question-that-could-repeal-sds-medicaid-expansion-requirement/",
    "title": "Podcast: Pros and cons on a ballot question that could repeal SD’s Medicaid expansion requirement",
@@ -697,21 +652,6 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://www.sdnewswatch.org/south-dakota-poll-secretary-of-state-executive-offices/",
-   "title": "South Dakota Poll: Secretary of State race anyone's game; other executive offices",
-   "slug": "sd-newswatch-south-dakota-poll-secretary-of-state-race-anyone-s-game-other",
-   "published": "2026-10-27",
-   "byline": "Emily DeCock",
-   "description": "Secretary of state race is contentious with three candidates vying for office. Other executive offices, including attorney general, treasurer, auditor, school and public lands and public utilities commission outlined.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "5b1b016624bb",
-   "date": "2026-10-27",
-   "_first_seen": "2026-11-01"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/10/27/water-pipeline-discussion-is-about-choosing-our-future-or-letting-scarcity-choose-it-for-us/",
    "title": "Commentary: Water pipeline discussion is about choosing our future, or letting scarcity choose it for us",
    "slug": "south-dakota-searchlight-commentary-water-pipeline-discussion-is-about-choosing",
@@ -738,6 +678,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "266f6cd1db8c",
+   "date": "2026-10-27",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-poll-secretary-of-state-executive-offices/",
+   "title": "South Dakota Poll: Secretary of State race anyone's game; other executive offices",
+   "slug": "sd-newswatch-south-dakota-poll-secretary-of-state-race-anyone-s-game-other",
+   "published": "2026-10-27",
+   "byline": "Emily DeCock",
+   "description": "Secretary of state race is contentious with three candidates vying for office. Other executive offices, including attorney general, treasurer, auditor, school and public lands and public utilities commission outlined.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "5b1b016624bb",
    "date": "2026-10-27",
    "_first_seen": "2026-11-01"
   },
@@ -1565,6 +1520,21 @@
    "id": "b4fe6bcda80a",
    "date": "2026-11-12",
    "_first_seen": "2026-11-12"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/black-hills-lakes-walleye-fisheries/",
+   "title": "Efforts to bring walleye fisheries to Black Hills lakes falling short",
+   "slug": "sd-newswatch-efforts-to-bring-walleye-fisheries-to-black-hills-lakes-falling",
+   "published": "2026-11-13",
+   "byline": "Bart Pfankuch",
+   "description": "Despite more than 1.3 million being stocked, two targeted lakes have not generated a sustained population of the state's most coveted game fish.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "fd94c4ac2283",
+   "date": "2026-11-13",
+   "_first_seen": "2026-11-13"
   }
  ]
 }
