@@ -3,8 +3,8 @@
  "name": "Rapid City Journal",
  "kind": "news",
  "url": "https://rapidcityjournal.com/",
- "fetched_at": "2026-11-13T05:09:22-07:00",
- "count": 184,
+ "fetched_at": "2026-11-13T13:29:17-07:00",
+ "count": 188,
  "records": [
   {
    "url": "https://rapidcityjournal.com/news/local/obituaries/article_9710b21b-5135-5f84-aaf9-ed290312c1ac.html",
@@ -2622,7 +2622,7 @@
    "slug": "rapid-city-journal-south-dakota-supreme-court-hears-first-court-circuit-merger",
    "published": "2026-11-09",
    "byline": "SHALOM BAER GEE<br>Journal staff",
-   "description": "For the first time since 1999, the South Dakota Supreme Court is considering merging two West River judicial circuits, which could create the largest circuit by lan mass and the second most populous in the state.",
+   "description": "PIERRE — For the first time since 1999, the South Dakota Supreme Court is considering merging two West River judicial circuits, which could create the largest circuit by lan mass and the second most populous in the state.",
    "record_type": "news",
    "source_label": "Rapid City Journal",
    "kind": "news",
@@ -2765,6 +2765,66 @@
    "id": "5f892de6e3ee",
    "date": "2026-11-11",
    "_first_seen": "2026-11-12"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/article_f9f89274-f612-46db-bd1c-41a69e3a5366.html",
+   "title": "Painting of Bald Eagle 'Itan' by veteran Del Iron Cloud unveiled at Black Hills Raptor Center",
+   "slug": "rapid-city-journal-painting-of-bald-eagle-itan-by-veteran-del-iron-cloud-at",
+   "published": "2026-11-12",
+   "byline": "<p>SHALOM BAER GEE</p><p>Journal staff</p>",
+   "description": "One of the most recognizable symbols of America is its national bird, the Bald Eagle. And on Wednesday, Nov. 11, the Black Hills Raptor Center celebrated Veterans Day with the unveiling of a painting of one those majestic birds.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "d69bec891d55",
+   "date": "2026-11-12",
+   "_first_seen": "2026-11-13"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/business/article_c580bee6-e5fe-4865-8dda-fabdeac3a80f.html",
+   "title": "Wear cow print, get free food when Chick-fil-A opens Nov. 19 in Rapid City",
+   "slug": "rapid-city-journal-wear-cow-print-get-free-food-when-chick-fil-a-opens-nov-19-in",
+   "published": "2026-11-12",
+   "byline": "TANYA MANUS<br>Journal staff",
+   "description": "Rapid City’s first Chick-fil-A is opening Nov. 19, and guests are invited to celebrate by dressing in their best cow-themed attire.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "0459d87f003a",
+   "date": "2026-11-12",
+   "_first_seen": "2026-11-13"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/government-politics/article_ee7eff1a-d799-4c47-8eee-ceeab04bf36e.html",
+   "title": "'We are trying to protect the quality of life': Mayor Salamun on his efforts for data center regulations",
+   "slug": "rapid-city-journal-we-are-trying-to-protect-the-quality-of-life-mayor-salamun-on",
+   "published": "2026-11-12",
+   "byline": "FRANK ESPINOZA Journal staff",
+   "description": "Rapid City Mayor Jason Salamun held a press conference on Thursday, Nov. 12, to share two interim measures geared toward data center regulations in the city, as city staff works on a more thorough data center ordinance.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "c0b76114da98",
+   "date": "2026-11-12",
+   "_first_seen": "2026-11-13"
+  },
+  {
+   "url": "https://rapidcityjournal.com/brandavestudios/article_8fe5edd2-0bb0-5265-a44f-f9c112f1b0fc.html",
+   "title": "Trail King reaches new dimensions",
+   "slug": "rapid-city-journal-trail-king-reaches-new-dimensions",
+   "published": "2026-11-12",
+   "byline": "Sponsored content by Mary McHugh, Brand Ave. Studios contributing writer",
+   "description": "No load is too big or too small.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "5bd34e578c30",
+   "date": "2026-11-12",
+   "_first_seen": "2026-11-13"
   }
  ]
 }
