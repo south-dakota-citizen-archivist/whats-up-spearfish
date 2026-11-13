@@ -3,8 +3,8 @@
  "name": "City of Spearfish News Flash",
  "kind": "press_release",
  "url": "https://www.spearfish.gov/CivicAlerts.aspx",
- "fetched_at": "2026-11-12T12:57:54-07:00",
- "count": 7,
+ "fetched_at": "2026-11-13T12:45:37-07:00",
+ "count": 8,
  "records": [
   {
    "url": "https://www.spearfish.gov/CivicAlerts.aspx?aid=581",
@@ -110,6 +110,21 @@
    "id": "e3dcde81d92a",
    "date": "2026-11-06",
    "_first_seen": "2026-11-07"
+  },
+  {
+   "url": "https://www.spearfish.gov/CivicAlerts.aspx?aid=587",
+   "title": "Art in Public Places: Seeing Advisory Board Member",
+   "slug": "art-in-public-places-seeing-advisory-board-member",
+   "description": "Are you passionate about public art in Spearfish? Submit your application to serve on the Art in Public Places Advisory Board!",
+   "published": "2026-11-12T15:25:00-07:00",
+   "start_dt": "Thu, 12 Nov 2026 15:25:00 -0700",
+   "record_type": "press_release",
+   "source_label": "City of Spearfish",
+   "kind": "press_release",
+   "source": "spearfish_news",
+   "id": "31114c30ee04",
+   "date": "2026-11-12",
+   "_first_seen": "2026-11-13"
   }
  ]
 }

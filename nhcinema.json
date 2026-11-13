@@ -3,105 +3,9 @@
  "name": "Northern Hills Cinema",
  "kind": "movie",
  "url": "https://nhcinema.com/",
- "fetched_at": "2026-11-12T12:57:29-07:00",
- "count": 15,
+ "fetched_at": "2026-11-13T12:45:11-07:00",
+ "count": 12,
  "records": [
-  {
-   "title": "American Sniper",
-   "url": "https://nhcinema.com/view/american-sniper",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3728/american_sniper_one_sheet__standard.jpg",
-   "rating": "R",
-   "runtime": 132,
-   "no_passes": true,
-   "showtimes": [],
-   "genre": "Action, Biography",
-   "starring": "Bradley Cooper, Sienna Miller, Jake McDorman, Luke Grimes, Navid Negahban, Keir O'Donnell",
-   "director": "Clint Eastwood",
-   "synopsis": "FOR ONE DAY ONLY!!! SEE IT THIS VETERANS DAY, WEDNESDAY, NOVEMBER 11!!!",
-   "slug": "american-sniper",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "4ca1b2412ccb",
-   "_first_seen": "2026-11-04"
-  },
-  {
-   "title": "Wildwood",
-   "url": "https://nhcinema.com/view/wildwood",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3722/wildwood_wildwood_-_one_sheet_full_size__standard.jpg",
-   "rating": "PG-13",
-   "runtime": 132,
-   "no_passes": false,
-   "note": "Ends Thursday 11/12",
-   "ends": "2026-11-12",
-   "showtimes": [
-    {
-     "date": "2026-11-12",
-     "times": [
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Animated",
-   "starring": "Carey Mulligan, Angela Bassett, Tantoo Cardinal, Tom Waits, Richard E. Grant, Jemaine Clement, Jake Johnson",
-   "director": "Travis Knight",
-   "synopsis": "Wildwood is a handcrafted epic fantasy adventure that transports audiences into a secret, magical, and dangerously alive world just beyond their doorstep. At its heart is the story of a courageous girl, Prue McKeel (PROO muh-KEEL), on a desperate mission to rescue her baby brother from a forbidden forest filled with enchanted creatures, endearing allies, and formidable adversaries. Her journey unfolds into a spectacular, high-stakes adventure where the fate of an entire hidden world hangs in the balance.",
-   "trailer": "dtr5JL1zkiM",
-   "slug": "wildwood",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "46218f9baf65",
-   "_first_seen": "2026-11-04"
-  },
-  {
-   "title": "You Can See Everything",
-   "url": "https://nhcinema.com/view/you-can-see-everything",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3729/you_can_see_everything_you_can_see_everything_-_one_sheet_2__standard.jpg",
-   "rating": "R",
-   "runtime": 174,
-   "no_passes": true,
-   "note": "Ends Thursday 11/12",
-   "ends": "2026-11-12",
-   "showtimes": [
-    {
-     "date": "2026-11-12",
-     "times": [
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Documentary",
-   "director": "Nathan Fielder, Lance Oppenheim",
-   "synopsis": "Thirty-four days before she’s sent to prison, notorious Silicon Valley founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait of an enigmatic felon becomes a mind-bending three-year journey into the abyss. From boundary-pushing directors Nathan Fielder and Lance Oppenheim comes YOU CAN SEE EVERYTHING.",
-   "trailer": "HvW_N5p1q44",
-   "slug": "you-can-see-everything",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "402c95a9f617",
-   "_first_seen": "2026-11-04"
-  },
   {
    "title": "Drummer Boy",
    "url": "https://nhcinema.com/view/drummer-boy",
@@ -111,19 +15,6 @@
    "runtime": 129,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-12",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-13",
      "times": [
@@ -217,6 +108,19 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-11-19",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
     }
    ],
    "genre": "Animated, Musical",
@@ -241,19 +145,6 @@
    "runtime": 135,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-12",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": true
-      }
-     ]
-    },
     {
      "date": "2026-11-13",
      "times": [
@@ -347,6 +238,19 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-11-19",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
     }
    ],
    "genre": "Action",
@@ -371,19 +275,6 @@
    "runtime": 91,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-12",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-13",
      "times": [
@@ -477,6 +368,19 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-11-19",
+     "times": [
+      {
+       "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
     }
    ],
    "genre": "Animated",
@@ -501,19 +405,6 @@
    "runtime": 90,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-12",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": true
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-13",
      "times": [
@@ -601,6 +492,19 @@
       {
        "time": "15:45",
        "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-19",
+     "times": [
+      {
+       "time": "15:45",
+       "luxury": true
       },
       {
        "time": "18:30",

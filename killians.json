@@ -3,7 +3,7 @@
  "name": "Killian's",
  "kind": "beer",
  "url": "https://untappd.com",
- "fetched_at": "2026-11-12T12:57:11-07:00",
+ "fetched_at": "2026-11-13T12:44:56-07:00",
  "count": 17,
  "records": [
   {
@@ -75,21 +75,21 @@
    "_first_seen": "2026-11-12"
   },
   {
-   "url": "https://untappd.com/b/heavy-riff-brewing-company-bocelli/4354628",
-   "title": "Bocelli",
-   "slug": "bocelli",
-   "category": "Wheat Beer - Other",
-   "abv": "4.1%",
-   "ibu": "15",
-   "brewery": "Heavy Riff Brewing Company",
-   "rating": "3.89",
-   "image_url": "https://labels.untappd.com/4354628",
+   "url": "https://untappd.com/b/remedy-brewing-company-queen-bee/593393",
+   "title": "Queen Bee",
+   "slug": "queen-bee",
+   "category": "Cream Ale - Imperial / Double",
+   "abv": "7.3%",
+   "ibu": "20",
+   "brewery": "Remedy Brewing Company",
+   "rating": "3.75",
+   "image_url": "https://labels.untappd.com/593393",
    "record_type": "beer",
    "source_label": "Killian's",
    "kind": "beer",
    "source": "killians",
-   "id": "6019c31a1c02",
-   "_first_seen": "2026-11-01"
+   "id": "2571916a1f76",
+   "_first_seen": "2026-11-13"
   },
   {
    "url": "https://untappd.com/b/cohort-craft-brewery-chai-me-a-river/4517117",
@@ -194,21 +194,21 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://untappd.com/b/sturgis-brewing-company-tatanka-s-badlands-brown/6526992",
-   "title": "Tatanka's Badlands Brown",
-   "slug": "tatanka-s-badlands-brown",
-   "category": "Brown Ale - American",
-   "abv": "5.2%",
-   "ibu": "34",
-   "brewery": "Sturgis Brewing Company",
-   "rating": "3.68",
-   "image_url": "https://labels.untappd.com/6526992",
+   "url": "https://untappd.com/b/left-hand-brewing-company-peanut-butter-milk-stout/3159839",
+   "title": "Peanut Butter Milk Stout",
+   "slug": "peanut-butter-milk-stout",
+   "category": "Stout - Milk / Sweet",
+   "abv": "6.2%",
+   "ibu": "25",
+   "brewery": "Left Hand Brewing Company",
+   "rating": "3.81",
+   "image_url": "https://labels.untappd.com/3159839",
    "record_type": "beer",
    "source_label": "Killian's",
    "kind": "beer",
    "source": "killians",
-   "id": "87dc3b806627",
-   "_first_seen": "2026-11-01"
+   "id": "67b797c4b6e2",
+   "_first_seen": "2026-11-13"
   },
   {
    "url": "https://untappd.com/b/jefferson-beer-supply-pour-the-cure/5514031",
@@ -245,21 +245,21 @@
    "_first_seen": "2026-11-09"
   },
   {
-   "url": "https://untappd.com/b/dakota-point-brewing-black-hills-porter/3814701",
-   "title": "Black Hills Porter",
-   "slug": "black-hills-porter",
-   "category": "Porter - American",
-   "abv": "6%",
-   "ibu": "38",
-   "brewery": "Dakota Point Brewing",
-   "rating": "3.81",
-   "image_url": "https://labels.untappd.com/3814701",
+   "url": "https://untappd.com/b/black-tooth-brewing-company-snow-fence/5922652",
+   "title": "Snow Fence",
+   "slug": "snow-fence",
+   "category": "Porter - Other",
+   "abv": "6.5%",
+   "ibu": "",
+   "brewery": "Black Tooth Brewing Company",
+   "rating": "3.84",
+   "image_url": "https://labels.untappd.com/5922652",
    "record_type": "beer",
    "source_label": "Killian's",
    "kind": "beer",
    "source": "killians",
-   "id": "87735fa3dd1f",
-   "_first_seen": "2026-11-01"
+   "id": "b1b548fe4245",
+   "_first_seen": "2026-11-13"
   },
   {
    "url": "https://untappd.com/b/scribbled-lines-lois-v-4/6516090",

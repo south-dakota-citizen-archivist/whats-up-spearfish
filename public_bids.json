@@ -3,7 +3,26 @@
  "name": "Public Bids",
  "kind": "bid",
  "url": "https://www.spearfish.gov/Bids.aspx",
- "fetched_at": "2026-11-12T12:57:28-07:00",
- "count": 0,
- "records": []
+ "fetched_at": "2026-11-13T12:45:12-07:00",
+ "count": 1,
+ "records": [
+  {
+   "url": "https://www.spearfish.gov/bids.aspx?bidID=91",
+   "title": "Request for Proposals-Managed Information Technology Services",
+   "slug": "city-of-spearfish-request-for-proposals-managed-information-technology-services",
+   "bid_no": "",
+   "status": "Open",
+   "closes": "1/15/2027 8:00 AM",
+   "closes_iso": "2027-01-15T08:00:00",
+   "description": "",
+   "record_type": "bid",
+   "source_label": "City of Spearfish",
+   "kind": "bid",
+   "source": "public_bids",
+   "id": "885378ac1fd0",
+   "published": "2027-01-15T01:00:00-07:00",
+   "date": "2027-01-15",
+   "_first_seen": "2026-11-13"
+  }
+ ]
 }

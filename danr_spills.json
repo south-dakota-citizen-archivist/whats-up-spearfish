@@ -3,7 +3,7 @@
  "name": "SD DANR spill reports",
  "kind": "spill",
  "url": "https://apps.sd.gov/NR42InteractiveMap/",
- "fetched_at": "2026-11-12T12:58:05-07:00",
+ "fetched_at": "2026-11-13T12:45:51-07:00",
  "count": 68,
  "records": [
   {
@@ -4649,7 +4649,7 @@
    "report_no": "2025.157",
    "year": 2025,
    "title": "Ice Melt release",
-   "status": "Open",
+   "status": "Closed",
    "category": "Chemical",
    "material": "Calcium chloride",
    "spill_source": "Above-ground tank",
@@ -4662,7 +4662,7 @@
    "pdfs": [
     {
      "url": "https://danr.sd.gov/spillimages/2025/2025.157.pdf",
-     "size": 1839492
+     "size": 1898894
     }
    ],
    "url": "https://danr.sd.gov/spillimages/2025/2025.157.pdf",

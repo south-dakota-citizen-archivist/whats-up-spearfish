@@ -3,8 +3,8 @@
  "name": "Spearfish HS Sports",
  "kind": "event",
  "url": "https://gobound.com/sd/schools/spearfish",
- "fetched_at": "2026-11-12T12:58:02-07:00",
- "count": 488,
+ "fetched_at": "2026-11-13T12:45:44-07:00",
+ "count": 489,
  "records": [
   {
    "uid": "h202603230205297002c5c979e530141",
@@ -605,6 +605,31 @@
    "date": "2026-12-05",
    "event_category": "school sports",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "uid": "h20261113061636407e4143d6b89dc42",
+   "url": "https://gobound.com/direct/comps/h20261113061636407e4143d6b89dc42/show",
+   "title": "Debate & Individual Events: Spearfish Tournament (Varsity)",
+   "slug": "debate-individual-events-spearfish-tournament-varsity",
+   "sport": "Debate & Individual Events",
+   "level": "Varsity",
+   "sex": "coed",
+   "description": "Varsity Debate & Individual Events - Spearfish Tournament",
+   "start_dt": "2026-12-05T16:00:00",
+   "end_dt": "2026-12-05T17:00:00",
+   "location": "Spearfish High School",
+   "status": "CONFIRMED",
+   "record_type": "event",
+   "source_label": "Spearfish HS Sports",
+   "kind": "event",
+   "source": "spearfish_sports",
+   "id": "d5312cdef73f",
+   "start": "2026-12-05T09:00:00-07:00",
+   "end": "2026-12-05T10:00:00-07:00",
+   "all_day": false,
+   "date": "2026-12-05",
+   "event_category": "school sports",
+   "_first_seen": "2026-11-13"
   },
   {
    "uid": "h2026052704372445634c89474da4c42",

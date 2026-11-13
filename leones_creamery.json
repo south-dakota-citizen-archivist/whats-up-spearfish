@@ -3,7 +3,7 @@
  "name": "Leone's Creamery",
  "kind": "flavor",
  "url": "https://leonescreamery.com/flavors",
- "fetched_at": "2026-11-12T12:57:18-07:00",
+ "fetched_at": "2026-11-13T12:45:03-07:00",
  "count": 8,
  "records": [
   {
@@ -121,23 +121,22 @@
    "_first_seen": "2026-11-07"
   },
   {
-   "url": "https://leonescreamery.com/flavor-detail/curry-with-peanut-butter-swirl",
-   "image_url": "https://leonescreamery.com/images/uploads/cropped/CurryWithPB-139-1552248466.jpg",
-   "title": "Curry with Peanut Butter Swirl",
-   "slug": "curry-with-peanut-butter-swirl",
+   "url": "https://leonescreamery.com/flavor-detail/ginger-beet-with-chocolate-speckle",
+   "image_url": "https://leonescreamery.com/images/uploads/cropped/641CC351-F7CD-40A6-82C9-96B39C8DB554-235-1533841375.jpg",
+   "title": "Ginger Beet with Chocolate Speckle",
+   "slug": "ginger-beet-with-chocolate-speckle",
    "record_type": "flavor",
    "source_label": "Leone's Creamery",
    "gluten_free": true,
    "contains": [
     "Eggs",
-    "Dairy",
-    "Peanuts"
+    "Dairy"
    ],
-   "description": "Creamy, sweet, curry ice cream with a thick ribbon of peanut butter. Crazy delicious, and surprisingly addictive!",
+   "description": "Made with HEAPS of ginger and fresh Cycle Beets (we juice the heck out of them) plus flakes of rich Belgian chocolate-- this one's sweet and earthy and gorgeous.",
    "kind": "flavor",
    "source": "leones_creamery",
-   "id": "33b8a97c5338",
-   "_first_seen": "2026-11-01"
+   "id": "a7ce12edf051",
+   "_first_seen": "2026-11-13"
   },
   {
    "url": "https://leonescreamery.com/flavor-detail/vegan-brown-sugar-cinnamon",
