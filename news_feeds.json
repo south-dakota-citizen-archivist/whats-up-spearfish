@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-12T13:48:12-07:00",
- "count": 102,
+ "fetched_at": "2026-11-12T19:37:31-07:00",
+ "count": 104,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/13/new-program-provides-5-down-payment-for-qualifying-south-dakota-homebuyers/",
@@ -1533,6 +1533,36 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "0df9c4a38c28",
+   "date": "2026-11-12",
+   "_first_seen": "2026-11-12"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/12/customers-get-higher-bills-while-black-hills-energy-discovers-data-center-gold/",
+   "title": "Commentary: Customers get higher bills while Black Hills Energy discovers data center gold",
+   "slug": "south-dakota-searchlight-commentary-customers-get-higher-bills-while-black-hills",
+   "published": "2026-11-12",
+   "byline": "Brad Johnson",
+   "description": "While Rapid City residents debate whether data centers belong in their backyard, a homegrown corporation is quietly anchoring some of the largest tech developments in the country — just across the state line. Back home, its South Dakota electricity customers face substantial rate increases. Meanwhile, Black Hills Corp. expects to earn $150 million annually by [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "6afa4d345a95",
+   "date": "2026-11-12",
+   "_first_seen": "2026-11-12"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/12/sioux-falls-democrat-seeks-recount-in-state-senate-race/",
+   "title": "Sioux Falls Democrat seeks recount in state Senate race",
+   "slug": "south-dakota-searchlight-sioux-falls-democrat-seeks-recount-in-state-senate-race",
+   "published": "2026-11-12",
+   "byline": "John Hult",
+   "description": "One of the five losing South Dakota legislative candidates with a race close enough for a recount has asked for one. Democrat Aaron Matson filed a recount request Thursday afternoon. The deadline to file for a recount is three days after the state canvass of election results. The canvass took place Tuesday. Matson lost the [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "b4fe6bcda80a",
    "date": "2026-11-12",
    "_first_seen": "2026-11-12"
   }
