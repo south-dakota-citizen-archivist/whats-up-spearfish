@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-14T04:26:06-07:00",
- "count": 99,
+ "fetched_at": "2026-11-14T11:43:53-07:00",
+ "count": 100,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/15/ex-biden-appointee-faces-attorney-general-in-us-house-race-with-differences-on-tariffs-immigration/",
@@ -1488,6 +1488,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "7dad4cb6a352",
+   "date": "2026-11-14",
+   "_first_seen": "2026-11-14"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/14/south-dakota-floats-toward-moderation-even-without-a-wave/",
+   "title": "Commentary: South Dakota floats toward moderation, even without a wave",
+   "slug": "south-dakota-searchlight-commentary-south-dakota-floats-toward-moderation-even-a",
+   "published": "2026-11-14",
+   "byline": "Seth Tupper",
+   "description": "“The Blue Wave Washed Across Much of America,” said a recent headline in The New York Times, “But Not Here.” It was a reference to South Dakota, and it missed some nuance. There was in fact a political shift that washed across the state this year. But it was less like a wave crashing on [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "c507c2ecdd18",
    "date": "2026-11-14",
    "_first_seen": "2026-11-14"
   }
