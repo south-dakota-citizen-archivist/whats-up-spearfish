@@ -3,24 +3,9 @@
  "name": "Rapid City Journal",
  "kind": "news",
  "url": "https://rapidcityjournal.com/",
- "fetched_at": "2026-11-13T19:24:48-07:00",
- "count": 188,
+ "fetched_at": "2026-11-14T04:26:05-07:00",
+ "count": 187,
  "records": [
-  {
-   "url": "https://rapidcityjournal.com/news/local/obituaries/article_9710b21b-5135-5f84-aaf9-ed290312c1ac.html",
-   "title": "Fred Carl Knuth",
-   "slug": "rapid-city-journal-fred-carl-knuth",
-   "published": "2026-10-14",
-   "byline": "",
-   "description": "July 3, 1925 - September 29, 2026",
-   "record_type": "news",
-   "source_label": "Rapid City Journal",
-   "kind": "news",
-   "source": "rapid_city_journal",
-   "id": "70ed2588e127",
-   "date": "2026-10-14",
-   "_first_seen": "2026-11-01"
-  },
   {
    "url": "https://rapidcityjournal.com/news/local/article_d5d3dfd5-c344-4bc3-bfd0-07d7085d0972.html",
    "title": "Most Rapid City park restrooms already closed or will close for winter season",
