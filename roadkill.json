@@ -3,7 +3,7 @@
  "name": "Wildlife carcass pickups",
  "kind": "stats",
  "url": "https://dot.sd.gov/",
- "fetched_at": "2026-11-13T12:46:20-07:00",
+ "fetched_at": "2026-11-14T11:08:40-07:00",
  "data": {
   "layer": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0",
   "bbox": {
@@ -13,6 +13,913 @@
    "ymax": 44.8
   },
   "records": [
+   {
+    "objectid": 73644,
+    "globalid": "601d4807-bfe2-425f-8fb0-1a818c1506b4",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "11858 mountan medows",
+    "contractor": "Chris Moeller",
+    "pcn": "Game Fish and Parks",
+    "lat": 44.393608,
+    "lon": -103.675554,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:50-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:50-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16377,
+      "name": "Picture1-20261114-002913.jpg",
+      "type": "image/jpeg",
+      "size": 28398,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73643,
+    "globalid": "a36d57ac-be2c-4f58-90e4-b1bd3e2e2cc3",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Female",
+    "present": "Yes",
+    "highway": "14A",
+    "highway_raw": "14A",
+    "comments": "",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.39646,
+    "lon": -103.60433,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:50-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:50-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16376,
+      "name": "Picture1-20261113-235450.jpg",
+      "type": "image/jpeg",
+      "size": 35485,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73642,
+    "globalid": "59342c10-6023-499e-925e-473bf6eaa5f4",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Unknown",
+    "present": "Yes",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "Hendersons campground",
+    "contractor": "Chris Moeller",
+    "pcn": "Game Fish and Parks",
+    "lat": 44.419965,
+    "lon": -103.531583,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:49-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:49-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16375,
+      "name": "Picture1-20261113-234652.jpg",
+      "type": "image/jpeg",
+      "size": 14157,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73641,
+    "globalid": "ef2adb59-cab5-4cf7-acfb-7b1e5dfabe79",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "79",
+    "highway_raw": "79",
+    "comments": "",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.565944,
+    "lon": -103.44701,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:48-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:48-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16374,
+      "name": "Picture1-20261113-231237.jpg",
+      "type": "image/jpeg",
+      "size": 36786,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73640,
+    "globalid": "9fa13844-fc54-4736-ba37-1072ff22567c",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Unknown",
+    "present": "Yes",
+    "highway": "79",
+    "highway_raw": "79",
+    "comments": "",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.566698,
+    "lon": -103.447024,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:47-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:47-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16373,
+      "name": "Picture1-20261113-231023.jpg",
+      "type": "image/jpeg",
+      "size": 25906,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73639,
+    "globalid": "06b3106a-faf6-4f77-8e2b-3995f7a91517",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "79",
+    "highway_raw": "79",
+    "comments": "",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.631393,
+    "lon": -103.427555,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:47-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:47-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16372,
+      "name": "Picture1-20261113-224657.jpg",
+      "type": "image/jpeg",
+      "size": 63262,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73638,
+    "globalid": "6f442248-dea4-4d2e-8aab-647b004d95f3",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "79",
+    "highway_raw": "79",
+    "comments": "",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.686159,
+    "lon": -103.424751,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:46-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:46-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16371,
+      "name": "Picture1-20261113-223641.jpg",
+      "type": "image/jpeg",
+      "size": 41217,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73637,
+    "globalid": "308bd866-dd81-4f9a-9933-434387601423",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Female",
+    "present": "Yes",
+    "highway": "212",
+    "highway_raw": "212",
+    "comments": "",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.676669,
+    "lon": -103.533467,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:45-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:45-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16370,
+      "name": "Picture1-20261113-222826.jpg",
+      "type": "image/jpeg",
+      "size": 39084,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73636,
+    "globalid": "e6af3dd6-84eb-452b-9d24-185c50efb7de",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "85",
+    "highway_raw": "85",
+    "comments": "",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.556203,
+    "lon": -103.859096,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:44-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:44-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16369,
+      "name": "Picture1-20261113-214143.jpg",
+      "type": "image/jpeg",
+      "size": 63371,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73635,
+    "globalid": "16ad65c9-9a9a-41c3-ac48-bd10a8350f94",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "Maitland Rd & Arizona Ave",
+    "contractor": "Chris Moeller",
+    "pcn": "City of Spearfish",
+    "lat": 44.461717,
+    "lon": -103.794446,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:44-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:44-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16368,
+      "name": "Picture1-20261113-212504.jpg",
+      "type": "image/jpeg",
+      "size": 56073,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73634,
+    "globalid": "2438d9b6-7f12-4b88-ab99-3ed84b417ee6",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "2110 medow ln",
+    "contractor": "Chris Moeller",
+    "pcn": "Game Fish and Parks",
+    "lat": 44.506191,
+    "lon": -103.90625,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:43-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:43-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16367,
+      "name": "Picture1-20261113-210837.jpg",
+      "type": "image/jpeg",
+      "size": 48585,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73633,
+    "globalid": "e63dd5b6-0c6a-44f6-8370-c9582338b67c",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Unknown",
+    "present": "No",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "Deceased deer university and canton bypass,",
+    "contractor": "Chris Moeller",
+    "pcn": "City of Spearfish",
+    "lat": 44.492185,
+    "lon": -103.870132,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:42-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:42-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16366,
+      "name": "Picture1-20261113-210105.jpg",
+      "type": "image/jpeg",
+      "size": 29241,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73632,
+    "globalid": "dadaf1da-4c5a-4afb-99f4-b9a3a00216f9",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Female",
+    "present": "Yes",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "Camp comfort rd",
+    "contractor": "Chris Moeller",
+    "pcn": "City of Spearfish",
+    "lat": 44.539801,
+    "lon": -103.861498,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:42-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:42-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16365,
+      "name": "Picture1-20261113-204453.jpg",
+      "type": "image/jpeg",
+      "size": 60497,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73631,
+    "globalid": "9218c3d2-0bf3-4684-8596-600e22951df2",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Female",
+    "present": "Yes",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "Camp comfort rd",
+    "contractor": "Chris Moeller",
+    "pcn": "City of Spearfish",
+    "lat": 44.5398,
+    "lon": -103.861507,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:41-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:41-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16364,
+      "name": "Picture1-20261113-204430.jpg",
+      "type": "image/jpeg",
+      "size": 60613,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73630,
+    "globalid": "d04a530c-ba41-4ce5-b6af-a770a76ebfca",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "Camp comfort rd",
+    "contractor": "Chris Moeller",
+    "pcn": "City of Spearfish",
+    "lat": 44.53981,
+    "lon": -103.861533,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:40-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:40-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16363,
+      "name": "Picture1-20261113-204407.jpg",
+      "type": "image/jpeg",
+      "size": 54317,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73629,
+    "globalid": "38144a95-697f-4007-a8a6-0f929f2e4526",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "Camp comfort rd",
+    "contractor": "Chris Moeller",
+    "pcn": "City of Spearfish",
+    "lat": 44.539802,
+    "lon": -103.861523,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:40-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:40-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16362,
+      "name": "Picture1-20261113-204329.jpg",
+      "type": "image/jpeg",
+      "size": 49230,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73628,
+    "globalid": "f43082e6-fcf2-47d3-a689-f97ed26f330d",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Female",
+    "present": "Yes",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "Camp comfort rd",
+    "contractor": "Chris Moeller",
+    "pcn": "City of Spearfish",
+    "lat": 44.539803,
+    "lon": -103.861548,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:39-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:39-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16361,
+      "name": "Picture1-20261113-204213.jpg",
+      "type": "image/jpeg",
+      "size": 52458,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73627,
+    "globalid": "a8615dff-ce4f-443d-ad9e-8bee9aa82596",
+    "date": "2026-11-13",
+    "species": "Mule Deer",
+    "sex": "Female",
+    "present": "Yes",
+    "highway": "85",
+    "highway_raw": "85",
+    "comments": "",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.544749,
+    "lon": -103.859771,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:38-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:38-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16360,
+      "name": "Picture1-20261113-203911.jpg",
+      "type": "image/jpeg",
+      "size": 65728,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73622,
+    "globalid": "1fb56f25-959a-4e5d-8e70-96315571e4a3",
+    "date": "2026-11-13",
+    "species": "Mule Deer",
+    "sex": "Female",
+    "present": "Yes",
+    "highway": "85",
+    "highway_raw": "85",
+    "comments": "",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.726409,
+    "lon": -103.852268,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:34-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:34-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16355,
+      "name": "Picture1-20261113-192702.jpg",
+      "type": "image/jpeg",
+      "size": 51858,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73621,
+    "globalid": "15fd42f6-2a86-4162-9ffc-137169510e48",
+    "date": "2026-11-13",
+    "species": "Pronghorn",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "212",
+    "highway_raw": "212",
+    "comments": "",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.694721,
+    "lon": -103.873939,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:33-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:33-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16354,
+      "name": "Picture1-20261113-191124.jpg",
+      "type": "image/jpeg",
+      "size": 53816,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73620,
+    "globalid": "580d97f7-e43b-4967-8055-5b85053dc907",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Female",
+    "present": "Yes",
+    "highway": "212",
+    "highway_raw": "212",
+    "comments": "Highway 212",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.700928,
+    "lon": -103.883355,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:32-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:32-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16353,
+      "name": "Picture1-20261113-190651.jpg",
+      "type": "image/jpeg",
+      "size": 60627,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73619,
+    "globalid": "512564e2-c823-4699-bfb6-393be5cc2cd4",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Unknown",
+    "present": "Yes",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "3V ROAD",
+    "contractor": "Chris Moeller",
+    "pcn": "Game Fish and Parks",
+    "lat": 44.691139,
+    "lon": -103.89546,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:31-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:31-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16352,
+      "name": "Picture1-20261113-185249.jpg",
+      "type": "image/jpeg",
+      "size": 50441,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73618,
+    "globalid": "633398d0-b415-4d08-bcc3-539b93642143",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Unknown",
+    "present": "Yes",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "3V ROAD",
+    "contractor": "Chris Moeller",
+    "pcn": "Game Fish and Parks",
+    "lat": 44.691185,
+    "lon": -103.885909,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:30-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:30-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16351,
+      "name": "Picture1-20261113-185009.jpg",
+      "type": "image/jpeg",
+      "size": 49573,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73617,
+    "globalid": "471aacd5-84cf-4819-b19e-04c02472dc4f",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "34",
+    "highway_raw": "34",
+    "comments": "Highway 34",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.616954,
+    "lon": -103.816411,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:30-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:30-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16350,
+      "name": "Picture1-20261113-180936.jpg",
+      "type": "image/jpeg",
+      "size": 53102,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73616,
+    "globalid": "fca9b5a9-0f04-4ae5-84cf-26f76e787d61",
+    "date": "2026-11-13",
+    "species": "Mule Deer",
+    "sex": "Female",
+    "present": "Yes",
+    "highway": "34",
+    "highway_raw": "34",
+    "comments": "Highway 34",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.609358,
+    "lon": -103.788914,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:29-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:29-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16348,
+      "name": "Picture1-20261113-180308.jpg",
+      "type": "image/jpeg",
+      "size": 64564,
+      "keywords": "Picture1"
+     },
+     {
+      "id": 16349,
+      "name": "Picture2-20261113-180319.jpg",
+      "type": "image/jpeg",
+      "size": 31922,
+      "keywords": "Picture2"
+     }
+    ]
+   },
+   {
+    "objectid": 73615,
+    "globalid": "8d96480a-8816-4d1a-bb12-a23df6424509",
+    "date": "2026-11-13",
+    "species": "Mule Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "34",
+    "highway_raw": "34",
+    "comments": "",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.533292,
+    "lon": -103.70743,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:28-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:28-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16347,
+      "name": "Picture1-20261113-175255.jpg",
+      "type": "image/jpeg",
+      "size": 56573,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73614,
+    "globalid": "c86aa889-627e-4c03-9951-e3602d6f8b32",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "34",
+    "highway_raw": "34",
+    "comments": "Highway 34",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.483966,
+    "lon": -103.647451,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:27-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:27-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16346,
+      "name": "Picture1-20261113-174447.jpg",
+      "type": "image/jpeg",
+      "size": 49555,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73613,
+    "globalid": "d26a2b5e-b370-43bb-8820-1e310be1db2c",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "Whitewood service rd",
+    "contractor": "Chris Moeller",
+    "pcn": "Game Fish and Parks",
+    "lat": 44.443524,
+    "lon": -103.59005,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:26-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:26-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16345,
+      "name": "Picture1-20261113-173404.jpg",
+      "type": "image/jpeg",
+      "size": 55841,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73612,
+    "globalid": "3f99ce5b-ac6b-45d8-988e-63314a28db3d",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "90WF",
+    "highway_raw": "90WF",
+    "comments": "Sturgis rd",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.136327,
+    "lon": -103.30169,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:25-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:25-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16344,
+      "name": "Picture1-20261113-165313.jpg",
+      "type": "image/jpeg",
+      "size": 70076,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73611,
+    "globalid": "62c71681-5133-4a1b-9253-bfb172cddbcc",
+    "date": "2026-11-13",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "8585 NEMO RD",
+    "contractor": "Chris Moeller",
+    "pcn": "City of Rapid City",
+    "lat": 44.021145,
+    "lon": -103.271862,
+    "date_raw": "2026-11-13T12:00:00-07:00",
+    "created": "2026-11-13T18:31:23-07:00",
+    "creator": "",
+    "edited": "2026-11-13T18:31:23-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16343,
+      "name": "Picture1-20261113-163151.jpg",
+      "type": "image/jpeg",
+      "size": 62926,
+      "keywords": "Picture1"
+     }
+    ]
+   },
    {
     "objectid": 73605,
     "globalid": "b8cdce49-b0d6-4945-894c-e76eda199387",

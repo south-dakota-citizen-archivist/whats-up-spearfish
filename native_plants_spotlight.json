@@ -3,7 +3,7 @@
  "name": "Native plants of the Black Hills",
  "kind": "plant",
  "url": "https://www.inaturalist.org/places/black-hills-national-forest-us",
- "fetched_at": "2026-11-13T12:45:32-07:00",
+ "fetched_at": "2026-11-14T11:07:41-07:00",
  "count": 392,
  "records": [
   {
@@ -4398,7 +4398,7 @@
    "scientific_name": "Symphyotrichum laeve",
    "summary": "Symphyotrichum laeve (smooth blue aster, smooth aster, smooth-leaved aster, glaucous Michaelmas-daisy or glaucous aster) is a flowering plant native to Canada and the United States.",
    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/174402823/medium.jpg",
-   "photo_credit": "(c) Eric Lamb, některá práva vyhrazena (CC BY), nahrál/a Eric Lamb",
+   "photo_credit": "(c) Eric Lamb, some rights reserved (CC BY), uploaded by Eric Lamb",
    "url": "https://www.inaturalist.org/taxa/129607",
    "wikipedia_url": "https://en.wikipedia.org/wiki/Symphyotrichum laeve",
    "sightings": 58,
@@ -4707,7 +4707,7 @@
    "photo_credit": "(c) Will H., all rights reserved, uploaded by Will H.",
    "url": "https://www.inaturalist.org/taxa/138674",
    "wikipedia_url": "https://en.wikipedia.org/wiki/Oxytropis lambertii",
-   "sightings": 118,
+   "sightings": 119,
    "kind": "plant",
    "record_type": "plant",
    "source": "native_plants_spotlight",

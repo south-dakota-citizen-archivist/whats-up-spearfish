@@ -3,8 +3,8 @@
  "name": "City of Spearfish",
  "kind": "document",
  "url": "https://spearfishsd.portal.civicclerk.com/",
- "fetched_at": "2026-11-13T12:45:33-07:00",
- "count": 96,
+ "fetched_at": "2026-11-14T11:07:44-07:00",
+ "count": 97,
  "records": [
   {
    "event_id": 39,
@@ -9877,6 +9877,31 @@
    "published": "2026-11-16T17:30:00-07:00",
    "date": "2026-11-16",
    "_first_seen": "2026-11-13"
+  },
+  {
+   "event_id": 3448,
+   "event_name": "Planning Commission Meeting",
+   "category": "Planning Commission",
+   "start_dt": "2026-11-17T16:00:00-07:00",
+   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/3448",
+   "has_media": false,
+   "media_url": "",
+   "media_page": "",
+   "chapters": [],
+   "join_url": "",
+   "record_type": "document",
+   "source_label": "City of Spearfish",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/3448/files/other/9017",
+   "title": "Planning Commission Report - No Meeting",
+   "doc_type": "Other",
+   "file_url": "https://spearfishsd.portal.civicclerk.com/event/3448/files/other/9017",
+   "kind": "document",
+   "source": "spearfish_city",
+   "id": "9e8ee76e5667",
+   "published": "2026-11-17T16:00:00-07:00",
+   "date": "2026-11-17",
+   "_first_seen": "2026-11-14"
   },
   {
    "event_id": 2259,

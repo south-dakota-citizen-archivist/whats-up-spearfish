@@ -3,7 +3,7 @@
  "name": "Redwater Kitchen",
  "kind": "beer",
  "url": "https://untappd.com",
- "fetched_at": "2026-11-13T12:45:16-07:00",
+ "fetched_at": "2026-11-14T11:07:24-07:00",
  "count": 11,
  "records": [
   {
@@ -150,7 +150,7 @@
    "abv": "6.4%",
    "ibu": "55",
    "brewery": "Heavy Riff Brewing Company",
-   "rating": "3.7",
+   "rating": "3.69",
    "image_url": "https://labels.untappd.com/3675477",
    "record_type": "beer",
    "source_label": "Redwater Kitchen",

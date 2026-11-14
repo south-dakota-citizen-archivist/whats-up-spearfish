@@ -3,7 +3,7 @@
  "name": "SD DANR spill reports",
  "kind": "spill",
  "url": "https://apps.sd.gov/NR42InteractiveMap/",
- "fetched_at": "2026-11-13T12:45:51-07:00",
+ "fetched_at": "2026-11-14T11:08:25-07:00",
  "count": 68,
  "records": [
   {
@@ -1170,7 +1170,7 @@
    "report_no": "2026.130",
    "year": 2026,
    "title": "Black Hills Energy regulator transformer oil",
-   "status": "Open",
+   "status": "No further action",
    "category": "Oil",
    "material": "Transformer oil NonPCB",
    "spill_source": "Regulator",
@@ -1183,7 +1183,7 @@
    "pdfs": [
     {
      "url": "https://danr.sd.gov/spillimages/2026/2026.130.pdf",
-     "size": 22071693
+     "size": 22186928
     }
    ],
    "url": "https://danr.sd.gov/spillimages/2026/2026.130.pdf",
@@ -4662,7 +4662,7 @@
    "pdfs": [
     {
      "url": "https://danr.sd.gov/spillimages/2025/2025.157.pdf",
-     "size": 1898894
+     "size": 1853174
     }
    ],
    "url": "https://danr.sd.gov/spillimages/2025/2025.157.pdf",

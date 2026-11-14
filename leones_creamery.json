@@ -3,7 +3,7 @@
  "name": "Leone's Creamery",
  "kind": "flavor",
  "url": "https://leonescreamery.com/flavors",
- "fetched_at": "2026-11-13T12:45:03-07:00",
+ "fetched_at": "2026-11-14T11:07:17-07:00",
  "count": 8,
  "records": [
   {
@@ -45,25 +45,6 @@
    "_first_seen": "2026-11-08"
   },
   {
-   "url": "https://leonescreamery.com/flavor-detail/pistachio",
-   "image_url": "https://leonescreamery.com/images/uploads/cropped/Pistachio-131-1523657833.jpg",
-   "title": "Pistachio",
-   "slug": "pistachio",
-   "record_type": "flavor",
-   "source_label": "Leone's Creamery",
-   "gluten_free": true,
-   "contains": [
-    "Eggs",
-    "Dairy",
-    "Pistachios"
-   ],
-   "description": "Ultra creamy, nutty, and delicious. We make our homemade pistachio butter from freshly toasted pistachios to churn up the MOST delicious pistachio ice cream you've ever tasted (no funky green dye required).",
-   "kind": "flavor",
-   "source": "leones_creamery",
-   "id": "e7bd1b399938",
-   "_first_seen": "2026-11-07"
-  },
-  {
    "url": "https://leonescreamery.com/flavor-detail/french-silk-pie",
    "image_url": "https://leonescreamery.com/images/uploads/cropped/IMG_6379-491-1794073317.jpg",
    "title": "French Silk Pie",
@@ -82,6 +63,25 @@
    "source": "leones_creamery",
    "id": "fe5ee6c39b76",
    "_first_seen": "2026-11-08"
+  },
+  {
+   "url": "https://leonescreamery.com/flavor-detail/monster-cookie",
+   "image_url": "https://leonescreamery.com/images/uploads/cropped/CCB503D2-912C-469A-9AA8-FB31AFAE6FD0-290-1556241353.jpg",
+   "title": "Monster Cookie",
+   "slug": "monster-cookie",
+   "record_type": "flavor",
+   "source_label": "Leone's Creamery",
+   "gluten_free": true,
+   "contains": [
+    "Eggs",
+    "Dairy",
+    "Peanuts"
+   ],
+   "description": "Cinnamon-vanilla ice cream with a peanut butter ribbon, and full of monster cookie bits!",
+   "kind": "flavor",
+   "source": "leones_creamery",
+   "id": "1c6ed7867d74",
+   "_first_seen": "2026-11-14"
   },
   {
    "url": "https://leonescreamery.com/flavor-detail/blueberry-goats-cheese",

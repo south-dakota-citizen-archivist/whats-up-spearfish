@@ -3,8 +3,8 @@
  "name": "BHSU Campus Calendar",
  "kind": "event",
  "url": "https://bhsu.edu/campus-calendar.html",
- "fetched_at": "2026-11-13T12:44:51-07:00",
- "count": 19,
+ "fetched_at": "2026-11-14T11:06:57-07:00",
+ "count": 17,
  "records": [
   {
    "event_id": "9e33796e-9fab-4d4a-a7e0-d5b5dd21849c",
@@ -36,68 +36,6 @@
    "date": "2026-11-11",
    "event_category": "campus",
    "_first_seen": "2026-11-04"
-  },
-  {
-   "event_id": "41f9cb03-c557-462e-8ac6-0ec3d833b7b7",
-   "url": "https://bhsu.edu/campus-calendar.html#event-details/41f9cb03-c557-462e-8ac6-0ec3d833b7b7",
-   "title": "Romeo and Juliet Auditions",
-   "slug": "romeo-and-juliet-auditions",
-   "description": "Auditions for Romeo and Juliet will be held on: November 11th and 12th at 5 to 7 pm in the Woodburn Theatre Must have a memorized Shakespearean monologue (that is not from Romeo and Juliet) prepared. Please email Casey.Hibbert@bhsu.edu if you have questions!",
-   "start_dt": "2026-11-12T00:00",
-   "end_dt": "2026-11-13T02:00",
-   "location": "Woodburn Theatre",
-   "image_url": "",
-   "image_alt": "",
-   "organizer": "Casey Hibbert",
-   "tags": [
-    "Theatre",
-    "Home"
-   ],
-   "featured": false,
-   "ticket_url": "",
-   "category": "Campus Calendar/Events",
-   "record_type": "event",
-   "source_label": "BHSU Campus Calendar",
-   "kind": "event",
-   "source": "bhsu_calendar",
-   "id": "0cdecf970bcc",
-   "start": "2026-11-11T17:00:00-07:00",
-   "end": "2026-11-12T19:00:00-07:00",
-   "all_day": false,
-   "date": "2026-11-11",
-   "event_category": "campus",
-   "_first_seen": "2026-11-04"
-  },
-  {
-   "event_id": "8c143997-13e5-445c-aedc-72e40646f5cc",
-   "url": "https://bhsu.edu/campus-calendar.html#event-details/8c143997-13e5-445c-aedc-72e40646f5cc",
-   "title": "Workshop: Make Your Slideshow Accessible",
-   "slug": "workshop-make-your-slideshow-accessible",
-   "description": "Do you use PowerPoint, Google Slides, or other slideshow tools to teach? Have you been told to “check reading order” or fix “slide titles” in your Panorama reports? Are you unsure how to handle complex graphics like charts or detailed images? Join this workshop to learn the basics of accessible slides. Bring a slide-deck you know you will use in a future class; leave with a fixed file and a new toolset for avoiding accessibility challenges when drafting or editing slides in the future. When: Thursday, Nov 12th, 3:00pm-4:15pm Where: JA 103A (online option available when you RSVP)",
-   "start_dt": "2026-11-12T22:00",
-   "end_dt": "2026-11-12T23:15",
-   "location": "Jonas 103A",
-   "image_url": "",
-   "image_alt": "",
-   "organizer": "Nick Van Kley",
-   "tags": [
-    "Career Development",
-    "Home"
-   ],
-   "featured": false,
-   "ticket_url": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=i_L8mxE610-oE49RnNsNsusAZROMm-hNnJUqFmMw7mlUOFA0RDFEMFgxOEpOWVVHNEdYTk5ZNEI2VS4u",
-   "category": "Campus Calendar/Events",
-   "record_type": "event",
-   "source_label": "BHSU Campus Calendar",
-   "kind": "event",
-   "source": "bhsu_calendar",
-   "id": "eee157108825",
-   "start": "2026-11-12T15:00:00-07:00",
-   "end": "2026-11-12T16:15:00-07:00",
-   "all_day": false,
-   "date": "2026-11-12",
-   "event_category": "campus",
-   "_first_seen": "2026-11-01"
   },
   {
    "event_id": "927b701a-ed38-438b-a0ce-c674a643e495",
@@ -149,8 +87,8 @@
     "Community Event",
     "Academics",
     "College of Liberal Arts",
-    "College of Business and Natural Sciences",
     "Career Development",
+    "College of Business and Natural Sciences",
     "University Advancement"
    ],
    "featured": false,
@@ -346,8 +284,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],
@@ -445,8 +383,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],
@@ -509,8 +447,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event"
    ],
    "featured": false,
@@ -541,8 +479,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],

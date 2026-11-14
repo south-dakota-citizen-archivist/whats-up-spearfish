@@ -3,8 +3,8 @@
  "name": "SD DANR public notices (West River)",
  "kind": "notice",
  "url": "https://danr.sd.gov/public/default.aspx",
- "fetched_at": "2026-11-13T12:45:16-07:00",
- "count": 1,
+ "fetched_at": "2026-11-14T11:07:21-07:00",
+ "count": 2,
  "records": [
   {
    "notice_type": "Water Rights",
@@ -41,6 +41,36 @@
    "published": "2026-11-16",
    "date": "2026-11-16",
    "_first_seen": "2026-11-09"
+  },
+  {
+   "notice_type": "Waste Management — Solid Waste",
+   "deadline": "12/14/2026",
+   "comment_url": "",
+   "name": "GCC Dacotach, Inc.",
+   "description": "Permit renewal application to continue operation of a Type IIA Solid Waste Disposal Facility with amendment to allow for acceptance of biomass to be buried or as alternative fuel use and of tire-derived fuel for alternative fuel use.",
+   "location": "Rapid City, SD",
+   "links": [
+    {
+     "label": "Public Notice",
+     "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/GCC Dacotah Public Notice.pdf"
+    },
+    {
+     "label": "Draft Permit",
+     "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/DRAFT_GCC_Dacotah_26_IP.pdf"
+    }
+   ],
+   "title": "GCC Dacotach, Inc.",
+   "url": "https://danr.sd.gov/Press/docs/publicnotices/wastemanagementnotices/GCC Dacotah Public Notice.pdf",
+   "deadline_iso": "2026-12-14",
+   "notice_key": "Waste Management — Solid Waste||GCC Dacotach, Inc.|Rapid City, SD",
+   "kind": "notice",
+   "record_type": "notice",
+   "source": "danr_public_notices",
+   "source_label": "SD DANR public notices (West River)",
+   "id": "e996e88f67f8",
+   "published": "2026-12-14",
+   "date": "2026-12-14",
+   "_first_seen": "2026-11-14"
   }
  ]
 }
