@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-13T13:29:18-07:00",
- "count": 102,
+ "fetched_at": "2026-11-13T19:24:49-07:00",
+ "count": 104,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/14/podcast-pros-and-cons-on-a-ballot-question-that-could-repeal-sds-medicaid-expansion-requirement/",
@@ -1533,6 +1533,36 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "fd94c4ac2283",
+   "date": "2026-11-13",
+   "_first_seen": "2026-11-13"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/13/podcast-nominated-speaker-of-the-state-house-says-hell-expect-the-unexpected-in-2027-session/",
+   "title": "Podcast: Nominated speaker of the state House says he’ll ‘expect the unexpected’ in 2027 session",
+   "slug": "south-dakota-searchlight-podcast-nominated-speaker-of-the-state-house-says-hell",
+   "published": "2026-11-13",
+   "byline": "Meghan O'Brien",
+   "description": "The ongoing struggle for power among factions of the Republican Party has resulted in new leadership for the South Dakota House, including historic firsts. Rep. Mike Stevens, R-Yankton, is nominated to serve as speaker of the House, a role that’s nominated by the majority party and voted on by the full House. At 73 years [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "ff18b2f93418",
+   "date": "2026-11-13",
+   "_first_seen": "2026-11-13"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/13/south-dakotas-economic-development-board-approves-66k-sales-tax-rebate-for-sioux-falls-lab/",
+   "title": "South Dakota’s economic development board approves $66K sales tax rebate for Sioux Falls lab",
+   "slug": "south-dakota-searchlight-south-dakotas-economic-development-board-approves-66k",
+   "published": "2026-11-13",
+   "byline": "Joshua Haiar",
+   "description": "South Dakota’s Board of Economic Development this week approved a sales tax rebate of up to $65,804 for a Sioux Falls lab.  The assistance for OmegaQuant comes from the state’s New Frontiers program, which supports qualifying research and clinical trials.  The rebate will help fund additional research to develop blood fatty-acid-based algorithms to predict insulin [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "81a5a30a0ab3",
    "date": "2026-11-13",
    "_first_seen": "2026-11-13"
   }
