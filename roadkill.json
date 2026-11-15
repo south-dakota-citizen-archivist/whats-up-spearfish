@@ -3,7 +3,7 @@
  "name": "Wildlife carcass pickups",
  "kind": "stats",
  "url": "https://dot.sd.gov/",
- "fetched_at": "2026-11-14T11:08:40-07:00",
+ "fetched_at": "2026-11-15T10:07:21-07:00",
  "data": {
   "layer": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0",
   "bbox": {
@@ -13,6 +13,156 @@
    "ymax": 44.8
   },
   "records": [
+   {
+    "objectid": 73649,
+    "globalid": "3fb4e1c3-8313-4d11-a87d-65fe7bf095e8",
+    "date": "2026-11-14",
+    "species": "White-tailed Deer",
+    "sex": "Female",
+    "present": "Yes",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "1721 West Blvd allyway",
+    "contractor": "Chris Moeller",
+    "pcn": "City of Rapid City",
+    "lat": 44.068805,
+    "lon": -103.237321,
+    "date_raw": "2026-11-14T12:00:00-07:00",
+    "created": "2026-11-14T14:08:54-07:00",
+    "creator": "",
+    "edited": "2026-11-14T14:08:54-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16382,
+      "name": "Picture1-20261114-193752.jpg",
+      "type": "image/jpeg",
+      "size": 61597,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73648,
+    "globalid": "41bbcc7e-8112-47c5-8a3b-d3ebb5e7e300",
+    "date": "2026-11-14",
+    "species": "No Pick-Up",
+    "sex": "",
+    "present": "No",
+    "highway": "385",
+    "highway_raw": "385",
+    "comments": "385 highway and Sanders Ranch Rd",
+    "contractor": "Chris Moeller",
+    "pcn": "Rapid City Area",
+    "lat": 44.029313,
+    "lon": -103.495914,
+    "date_raw": "2026-11-14T12:00:00-07:00",
+    "created": "2026-11-14T14:08:53-07:00",
+    "creator": "",
+    "edited": "2026-11-14T14:08:53-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16381,
+      "name": "Picture1-20261114-185953.jpg",
+      "type": "image/jpeg",
+      "size": 23992,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73647,
+    "globalid": "93d2db2f-404a-4fb6-80af-312cdec94280",
+    "date": "2026-11-14",
+    "species": "No Pick-Up",
+    "sex": "",
+    "present": "No",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "DAKOTA DR\\CANYON LAKE",
+    "contractor": "Chris Moeller",
+    "pcn": "City of Rapid City",
+    "lat": 44.077928,
+    "lon": -103.255342,
+    "date_raw": "2026-11-14T12:00:00-07:00",
+    "created": "2026-11-14T14:08:52-07:00",
+    "creator": "",
+    "edited": "2026-11-14T14:08:52-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16380,
+      "name": "Picture1-20261114-182334.jpg",
+      "type": "image/jpeg",
+      "size": 30029,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73646,
+    "globalid": "5ed2f0f0-a0bb-47fe-9cc7-c2bd4590ea46",
+    "date": "2026-11-14",
+    "species": "Mule Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "609 Stumer Rd",
+    "contractor": "Chris Moeller",
+    "pcn": "City of Rapid City",
+    "lat": 44.035057,
+    "lon": -103.230514,
+    "date_raw": "2026-11-14T12:00:00-07:00",
+    "created": "2026-11-14T14:08:51-07:00",
+    "creator": "",
+    "edited": "2026-11-14T14:08:51-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16379,
+      "name": "Picture1-20261114-175502.jpg",
+      "type": "image/jpeg",
+      "size": 46583,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 73645,
+    "globalid": "72ec62f8-2dc3-4038-8b2e-9343e8615396",
+    "date": "2026-11-14",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "",
+    "highway_raw": "N/A",
+    "comments": "Cambell St \\ E Saint Patrick",
+    "contractor": "Chris Moeller",
+    "pcn": "City of Rapid City",
+    "lat": 44.06797,
+    "lon": -103.191544,
+    "date_raw": "2026-11-14T12:00:00-07:00",
+    "created": "2026-11-14T14:08:50-07:00",
+    "creator": "",
+    "edited": "2026-11-14T14:08:50-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16378,
+      "name": "Picture1-20261114-173908.jpg",
+      "type": "image/jpeg",
+      "size": 56741,
+      "keywords": "Picture1"
+     }
+    ]
+   },
    {
     "objectid": 73644,
     "globalid": "601d4807-bfe2-425f-8fb0-1a818c1506b4",

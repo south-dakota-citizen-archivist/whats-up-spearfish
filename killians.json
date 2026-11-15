@@ -3,7 +3,7 @@
  "name": "Killian's",
  "kind": "beer",
  "url": "https://untappd.com",
- "fetched_at": "2026-11-14T11:07:08-07:00",
+ "fetched_at": "2026-11-15T10:05:48-07:00",
  "count": 17,
  "records": [
   {
@@ -177,21 +177,21 @@
    "_first_seen": "2026-11-07"
   },
   {
-   "url": "https://untappd.com/b/austin-eastciders-texas-honey-cider/857792",
-   "title": "Texas Honey Cider",
-   "slug": "texas-honey-cider",
-   "category": "Cider - Traditional / Apfelwein",
-   "abv": "5%",
+   "url": "https://untappd.com/b/austin-eastciders-agua-fresca-strawberry-hibiscus/6208449",
+   "title": "Agua Fresca - Strawberry Hibiscus",
+   "slug": "agua-fresca-strawberry-hibiscus",
+   "category": "Cider - Other Fruit",
+   "abv": "4.5%",
    "ibu": "",
    "brewery": "Austin Eastciders",
-   "rating": "3.73",
-   "image_url": "https://labels.untappd.com/857792",
+   "rating": "3.77",
+   "image_url": "https://labels.untappd.com/6208449",
    "record_type": "beer",
    "source_label": "Killian's",
    "kind": "beer",
    "source": "killians",
-   "id": "ed3cd5fafc74",
-   "_first_seen": "2026-11-01"
+   "id": "0949235ff232",
+   "_first_seen": "2026-11-15"
   },
   {
    "url": "https://untappd.com/b/left-hand-brewing-company-peanut-butter-milk-stout/3159839",
@@ -252,7 +252,7 @@
    "abv": "6.5%",
    "ibu": "",
    "brewery": "Black Tooth Brewing Company",
-   "rating": "3.84",
+   "rating": "3.85",
    "image_url": "https://labels.untappd.com/5922652",
    "record_type": "beer",
    "source_label": "Killian's",
@@ -269,7 +269,7 @@
    "abv": "6%",
    "ibu": "",
    "brewery": "Scribbled Lines",
-   "rating": "3.87",
+   "rating": "3.85",
    "image_url": "https://labels.untappd.com/6516090",
    "record_type": "beer",
    "source_label": "Killian's",

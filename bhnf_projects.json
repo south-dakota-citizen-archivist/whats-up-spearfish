@@ -3,8 +3,8 @@
  "name": "Black Hills National Forest projects",
  "kind": "project",
  "url": "https://www.fs.usda.gov/r02/blackhills/projects",
- "fetched_at": "2026-11-14T11:07:13-07:00",
- "count": 45,
+ "fetched_at": "2026-11-15T10:05:46-07:00",
+ "count": 44,
  "records": [
   {
    "project_id": "66463",
@@ -705,28 +705,6 @@
    "source": "bhnf_projects",
    "source_label": "Black Hills National Forest projects",
    "id": "cdb2b6f79501",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "project_id": "68789",
-   "title": "Pine Encroachment Follow-Up Project",
-   "url": "https://www.fs.usda.gov/r02/blackhills/projects/68789",
-   "status": "Completed",
-   "district": "Hell Canyon Ranger District",
-   "purpose": "Fuels Management",
-   "description": "Project to reduce hazardous fuels, primarily along public roads and/or adjacent to private lands, in Custer County, SD.",
-   "milestones": [],
-   "comment_period_date": null,
-   "comment_period_sort": "9999-99",
-   "location_summary": "",
-   "counties": [],
-   "contact": {},
-   "last_updated": "",
-   "kind": "project",
-   "record_type": "project",
-   "source": "bhnf_projects",
-   "source_label": "Black Hills National Forest projects",
-   "id": "791cea1f79ad",
    "_first_seen": "2026-11-01"
   },
   {

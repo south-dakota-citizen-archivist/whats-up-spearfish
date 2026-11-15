@@ -3,29 +3,9 @@
  "name": "City of Spearfish Calendar",
  "kind": "event",
  "url": "https://www.spearfish.gov/Calendar.aspx",
- "fetched_at": "2026-11-14T11:07:30-07:00",
+ "fetched_at": "2026-11-15T10:06:17-07:00",
  "count": 64,
  "records": [
-  {
-   "url": "https://www.spearfish.gov/Calendar.aspx?EID=3914",
-   "title": "Silver Sneakers Classic",
-   "slug": "silver-sneakers-classic",
-   "description": "",
-   "location": "Spearfish, SD 57783",
-   "start_dt": "2026-11-13T09:00:00",
-   "end_dt": "2026-11-13T09:45:00",
-   "all_day": false,
-   "record_type": "event",
-   "source_label": "City of Spearfish",
-   "kind": "event",
-   "source": "spearfish_calendar",
-   "id": "3d858e837bfc",
-   "start": "2026-11-13T09:00:00-07:00",
-   "end": "2026-11-13T09:45:00-07:00",
-   "date": "2026-11-13",
-   "event_category": "community",
-   "_first_seen": "2026-11-05"
-  },
   {
    "url": "https://www.spearfish.gov/Calendar.aspx?EID=4093",
    "title": "Line Dance",
@@ -1285,6 +1265,26 @@
    "date": "2026-11-27",
    "event_category": "community",
    "_first_seen": "2026-11-13"
+  },
+  {
+   "url": "https://www.spearfish.gov/Calendar.aspx?EID=4095",
+   "title": "Line Dance",
+   "slug": "line-dance",
+   "description": "",
+   "location": "Spearfish, SD 57783",
+   "start_dt": "2026-11-29T13:30:00",
+   "end_dt": "2026-11-29T15:00:00",
+   "all_day": false,
+   "record_type": "event",
+   "source_label": "City of Spearfish",
+   "kind": "event",
+   "source": "spearfish_calendar",
+   "id": "42955b65839e",
+   "start": "2026-11-29T13:30:00-07:00",
+   "end": "2026-11-29T15:00:00-07:00",
+   "date": "2026-11-29",
+   "event_category": "community",
+   "_first_seen": "2026-11-15"
   }
  ]
 }

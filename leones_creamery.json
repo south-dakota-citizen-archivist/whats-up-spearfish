@@ -3,7 +3,7 @@
  "name": "Leone's Creamery",
  "kind": "flavor",
  "url": "https://leonescreamery.com/flavors",
- "fetched_at": "2026-11-14T11:07:17-07:00",
+ "fetched_at": "2026-11-15T10:05:55-07:00",
  "count": 8,
  "records": [
   {
@@ -84,22 +84,22 @@
    "_first_seen": "2026-11-14"
   },
   {
-   "url": "https://leonescreamery.com/flavor-detail/blueberry-goats-cheese",
-   "image_url": "https://leonescreamery.com/images/uploads/cropped/Blue-Goat-159-1534649838.jpg",
-   "title": "Blueberry Goat’s Cheese",
-   "slug": "blueberry-goats-cheese",
+   "url": "https://leonescreamery.com/flavor-detail/drunken-banana",
+   "image_url": "https://leonescreamery.com/images/uploads/cropped/447452D5-3771-4CF3-8456-4B697A5E9942-178-1526843638.jpg",
+   "title": "Drunken Banana",
+   "slug": "drunken-banana",
    "record_type": "flavor",
    "source_label": "Leone's Creamery",
    "gluten_free": true,
    "contains": [
-    "Eggs",
+    "Egg",
     "Dairy"
    ],
-   "description": "An OG favorite at Leones' Creamery. Bursting with sweet blueberries and a lil' bit of goat cheese funk. It's creamy, sweet, tangy, and perfect.",
+   "description": "One of our OG flavors, this creamy banana-rum ice cream is delicious on it’s own and pairs beautifully with all of our topping choices.",
    "kind": "flavor",
    "source": "leones_creamery",
-   "id": "a4225f6859f3",
-   "_first_seen": "2026-11-01"
+   "id": "097bffd5c659",
+   "_first_seen": "2026-11-15"
   },
   {
    "url": "https://leonescreamery.com/flavor-detail/birthday-cake",

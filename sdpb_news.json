@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-14T11:07:38-07:00",
- "count": 49,
+ "fetched_at": "2026-11-15T10:06:21-07:00",
+ "count": 50,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -669,7 +669,7 @@
    "published": "2026-11-13",
    "byline": "By C.J. Keene",
    "description": "The data center debate is wide reaching, deeply divisive statewide, and acutely felt in Rapid City. After Mayor Jason Salamun voiced his desire for decisive action, a local advocate said he didn’t go far enough.",
-   "image_url": "https://npr.brightspotcdn.com/legacy/prod/filer_public/kusd-bento-live-pbs/News%20Blog/Seth%20Tupper/bac00fed25_Rapid%20City%20Hall.jpg",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/legacy/prod/filer_public/kusd-bento-live-pbs/News%20Blog/Seth%20Tupper/bac00fed25_Rapid%20City%20Hall.jpg",
    "record_type": "news",
    "source_label": "SDPB",
    "kind": "news",
@@ -685,7 +685,7 @@
    "published": "2026-11-13",
    "byline": "By Jackson Dircks",
    "description": "The Pierre T.F. Riggs Governors are 11AA Champions for the ninth time in 10 years. The Governors were able to push past a strong defensive effort from the Watertown Arrows, 31-14.",
-   "image_url": "https://npr.brightspotcdn.com/be/5a/8f42ee124548aa9a7e01055cf16d/1dx42094.JPG",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/be/5a/8f42ee124548aa9a7e01055cf16d/1dx42094.JPG",
    "record_type": "news",
    "source_label": "SDPB",
    "kind": "news",
@@ -701,7 +701,7 @@
    "published": "2026-11-13",
    "byline": "By Jackson Dircks",
    "description": "Sioux Falls Christian Chargers are back-to-back 11A State champions, after defeating the Lennox Orioles 41-0. It’s the second time the school has gone back-to-back.",
-   "image_url": "https://npr.brightspotcdn.com/78/6e/3bd7b32c4fe18e79987a64f7982d/1dx41641.JPG",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/78/6e/3bd7b32c4fe18e79987a64f7982d/1dx41641.JPG",
    "record_type": "news",
    "source_label": "SDPB",
    "kind": "news",
@@ -717,7 +717,7 @@
    "published": "2026-11-13",
    "byline": "By Jackson Dircks",
    "description": "Elk-Point Jefferson spoiled St. Thomas More’s back-to-back championship hopes, putting together a dominant rushing performance that scored 61 points, a record for 11B Championship football. The Huskies defense continued to put pressure on the Cavaliers offense, holding the team to two scores.",
-   "image_url": "https://npr.brightspotcdn.com/d4/e8/fb0c51394b22b06e9fd01e87c7f9/1dx40254.JPG",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/d4/e8/fb0c51394b22b06e9fd01e87c7f9/1dx40254.JPG",
    "record_type": "news",
    "source_label": "SDPB",
    "kind": "news",
@@ -733,7 +733,7 @@
    "published": "2026-11-13",
    "byline": "By SDPB News Staff",
    "description": "The South Dakota Supreme Court overturned a lower court’s ruling favoring a church in a dispute with a pastor over a $300,000 donation.",
-   "image_url": "https://npr.brightspotcdn.com/72/ae/5516378141288c2a8833d175b440/5cfe67db8f-supreme-court-sdpb.jpg",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/72/ae/5516378141288c2a8833d175b440/5cfe67db8f-supreme-court-sdpb.jpg",
    "record_type": "news",
    "source_label": "SDPB",
    "kind": "news",
@@ -789,6 +789,22 @@
    "id": "51182d1a8bf0",
    "date": "2026-11-13",
    "_first_seen": "2026-11-13"
+  },
+  {
+   "url": "https://www.sdpb.org/sports-rec/2026-11-15/cavaliers-second-half-comeback-secures-11aaa-title-in-late-game-thriller",
+   "title": "Cavaliers second half comeback secures 11AAA title in late-game thriller",
+   "slug": "sdpb-cavaliers-second-half-comeback-secures-11aaa-title-in-late-game-thriller",
+   "published": "2026-11-15",
+   "byline": "By Jackson Dircks",
+   "description": "The Sioux Falls Jefferson Cavaliers are state champions once again. The 11AAA Championship game was a thriller with turnovers, explosive offenses and a late-game comeback to put the Cavaliers on top.<br/><br/>The game was within two points with a minute and a half to play, but Jefferson pulled away in that time to seal the deal, 42-26.",
+   "image_url": "https://static.npr.production.npr.brightspot.cloud/d1/43/69b5358c4ad2a6aad4e0ea30e809/untitled-design-48.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "29ecc7798f5e",
+   "date": "2026-11-15",
+   "_first_seen": "2026-11-15"
   }
  ]
 }
