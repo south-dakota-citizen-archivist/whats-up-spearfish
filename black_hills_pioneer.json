@@ -3,7 +3,7 @@
  "name": "Black Hills Pioneer",
  "kind": "news",
  "url": "https://www.bhpioneer.com/",
- "fetched_at": "2026-11-15T00:49:56-07:00",
+ "fetched_at": "2026-11-15T11:53:33-07:00",
  "count": 229,
  "records": [
   {
@@ -3037,21 +3037,6 @@
    "_first_seen": "2026-11-12"
   },
   {
-   "url": "https://www.bhpioneer.com/local_news/lawmakers-argue-about-legislative-data-center-memo-that-one-calls-a-very-opinionated-piece/article_3b539987-6a0b-4285-8245-5f521f87aa56.html",
-   "title": "Lawmakers argue about legislative data center memo that one calls ‘a very opinionated piece’",
-   "slug": "black-hills-pioneer-lawmakers-argue-about-legislative-data-center-memo-that-one",
-   "published": "2026-11-12",
-   "byline": "By Joshua Haiar Southdakotasearchlight.com",
-   "description": "PIERRE — A South Dakota state senator employed by a utility company criticized a legislative staff report on large data centers as “very opinionated,” drawing pushback from some fellow lawmakers who said the report fulfilled its purpose.",
-   "record_type": "news",
-   "source_label": "Black Hills Pioneer",
-   "kind": "news",
-   "source": "black_hills_pioneer",
-   "id": "3cd0bab84810",
-   "date": "2026-11-12",
-   "_first_seen": "2026-11-12"
-  },
-  {
    "url": "https://www.bhpioneer.com/local_news/lead-festival-of-trees-to-be-held-this-weekend/article_78fcaf29-e3ff-4858-ae6e-e621432f47aa.html",
    "title": "Lead Festival of Trees to be held this weekend",
    "slug": "black-hills-pioneer-lead-festival-of-trees-to-be-held-this-weekend",
@@ -3063,6 +3048,21 @@
    "kind": "news",
    "source": "black_hills_pioneer",
    "id": "7e20981a88ed",
+   "date": "2026-11-12",
+   "_first_seen": "2026-11-12"
+  },
+  {
+   "url": "https://www.bhpioneer.com/local_news/lawmakers-argue-about-legislative-data-center-memo-that-one-calls-a-very-opinionated-piece/article_3b539987-6a0b-4285-8245-5f521f87aa56.html",
+   "title": "Lawmakers argue about legislative data center memo that one calls ‘a very opinionated piece’",
+   "slug": "black-hills-pioneer-lawmakers-argue-about-legislative-data-center-memo-that-one",
+   "published": "2026-11-12",
+   "byline": "By Joshua Haiar Southdakotasearchlight.com",
+   "description": "PIERRE — A South Dakota state senator employed by a utility company criticized a legislative staff report on large data centers as “very opinionated,” drawing pushback from some fellow lawmakers who said the report fulfilled its purpose.",
+   "record_type": "news",
+   "source_label": "Black Hills Pioneer",
+   "kind": "news",
+   "source": "black_hills_pioneer",
+   "id": "3cd0bab84810",
    "date": "2026-11-12",
    "_first_seen": "2026-11-12"
   },

@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-15T00:49:57-07:00",
- "count": 97,
+ "fetched_at": "2026-11-15T11:53:34-07:00",
+ "count": 98,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/16/south-dakota-social-services-secretary-matt-althoff-departs-as-governor-larry-rhoden-names-interim-successor-brenda-tidball-zeltinger/",
@@ -1460,6 +1460,21 @@
    "id": "c507c2ecdd18",
    "date": "2026-11-14",
    "_first_seen": "2026-11-14"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/15/insufficient-wellness-funding-is-a-common-hurdle-in-supporting-native-students-researchers-find/",
+   "title": "Insufficient wellness funding is a common hurdle in supporting Native students, researchers find",
+   "slug": "south-dakota-searchlight-insufficient-wellness-funding-is-a-common-hurdle-in",
+   "published": "2026-11-15",
+   "byline": "Meghan O'Brien",
+   "description": "The need for mental health and other wellness services among Native American students outpaces what’s available with existing funding, according to data collected earlier this year and presented recently to South Dakota educators. Dorothy Aguilera-Black Bear and Brooke Rumper, of the Central Comprehensive Center, asked South Dakota principals whose schools have at least one Native [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "aa02a5edc19a",
+   "date": "2026-11-15",
+   "_first_seen": "2026-11-15"
   }
  ]
 }

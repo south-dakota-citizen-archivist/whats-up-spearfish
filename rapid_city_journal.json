@@ -3,8 +3,8 @@
  "name": "Rapid City Journal",
  "kind": "news",
  "url": "https://rapidcityjournal.com/",
- "fetched_at": "2026-11-15T00:49:56-07:00",
- "count": 194,
+ "fetched_at": "2026-11-15T11:53:33-07:00",
+ "count": 196,
  "records": [
   {
    "url": "https://rapidcityjournal.com/news/local/obituaries/article_5bf840d6-1fab-5489-acd4-e429bb5b860e.html",
@@ -2915,6 +2915,36 @@
    "id": "9de1a319c97d",
    "date": "2026-11-13",
    "_first_seen": "2026-11-14"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/article_b19322a3-2239-47b6-bdd2-73cd4c72babd.html",
+   "title": "Former legislative candidate Jeff Shelton calls for 1-year data center moratorium, residents to get involved",
+   "slug": "rapid-city-journal-former-legislative-candidate-jeff-shelton-calls-for-1-year-to",
+   "published": "2026-11-14",
+   "byline": "FRANK ESPINOZA Journal staff",
+   "description": "Former legislative candidate and founding member of the West River Alliance for Democracy (WRAD) Jeff Shelton is calling for a one-year moratorium on data centers in Rapid City, and for residents to make their voices heard.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "2afea8509629",
+   "date": "2026-11-14",
+   "_first_seen": "2026-11-15"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/article_e5646f83-bac8-4ea7-9aea-630ff0d6d636.html",
+   "title": "Pistols and Pulaskis: South Dakota Wildland Fire, Highway Patrol team up on blood drive",
+   "slug": "rapid-city-journal-pistols-and-pulaskis-south-dakota-wildland-fire-highway-team",
+   "published": "2026-11-14",
+   "byline": "SHALOM BAER GEE<br>Journal staff",
+   "description": "Two arms of the South Dakota Department of Public Safety are holding their friendly, but competitive, blood drive to boost donations ahead of the holiday season.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "e5647d772f4a",
+   "date": "2026-11-14",
+   "_first_seen": "2026-11-15"
   }
  ]
 }
