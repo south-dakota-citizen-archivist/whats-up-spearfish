@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-16T00:57:36-07:00",
- "count": 92,
+ "fetched_at": "2026-11-16T15:06:42-07:00",
+ "count": 94,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/17/south-dakota-no-kings-events-emphasize-advance-voting/",
@@ -517,21 +517,6 @@
    "_first_seen": "2026-11-01"
   },
   {
-   "url": "https://www.sdnewswatch.org/fact-brief-do-all-pollsters-target-specific-people-to-get-the-answers-they-want/",
-   "title": "Fact brief: Do all pollsters target specific people to get the answers they want?",
-   "slug": "sd-newswatch-fact-brief-do-all-pollsters-target-specific-people-to-get-the-they",
-   "published": "2026-10-29",
-   "byline": "Emily DeCock",
-   "description": "Some political polls have garnered conflicting results. The latest findings of the South Dakota Poll, sponsored by News Watch and the Chiesman Center for Democracy at USD, are out. All the details will be published Friday.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "7bf416eb0de0",
-   "date": "2026-10-29",
-   "_first_seen": "2026-11-01"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/10/29/rehabilitation-reduction-in-repeat-offenses-will-require-ongoing-investment-task-force-says/",
    "title": "Rehabilitation, reduction in repeat offenses will require ongoing investment, task force says",
    "slug": "south-dakota-searchlight-rehabilitation-reduction-in-repeat-offenses-will-task",
@@ -573,6 +558,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "03035ee5eb59",
+   "date": "2026-10-29",
+   "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/fact-brief-do-all-pollsters-target-specific-people-to-get-the-answers-they-want/",
+   "title": "Fact brief: Do all pollsters target specific people to get the answers they want?",
+   "slug": "sd-newswatch-fact-brief-do-all-pollsters-target-specific-people-to-get-the-they",
+   "published": "2026-10-29",
+   "byline": "Emily DeCock",
+   "description": "Some political polls have garnered conflicting results. The latest findings of the South Dakota Poll, sponsored by News Watch and the Chiesman Center for Democracy at USD, are out. All the details will be published Friday.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "7bf416eb0de0",
    "date": "2026-10-29",
    "_first_seen": "2026-11-01"
   },
@@ -1385,6 +1385,36 @@
    "id": "aa02a5edc19a",
    "date": "2026-11-15",
    "_first_seen": "2026-11-15"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-ambulance-ems-funding-ems/",
+   "title": "State asks for 'systemwide' ambulance redesign as Legislature weighs EMS funding",
+   "slug": "sd-newswatch-state-asks-for-systemwide-ambulance-redesign-as-legislature-weighs",
+   "published": "2026-11-16",
+   "byline": "Molly Wetsch",
+   "description": "First responders across the state struggle with costs and staffing, prompting the work of the Emergency Medical Services Task Force.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "84cf5a6ed6c0",
+   "date": "2026-11-16",
+   "_first_seen": "2026-11-16"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/16/black-hills-corp-northwestern-energy-complete-merger-to-create-15-billion-company/",
+   "title": "Black Hills Corp., NorthWestern Energy complete merger to create $15 billion company",
+   "slug": "south-dakota-searchlight-black-hills-corp-northwestern-energy-complete-merger-to",
+   "published": "2026-11-16",
+   "byline": "Joshua Haiar",
+   "description": "South Dakota-based utility companies Black Hills Corp. and NorthWestern Energy have completed their merger, forming Bright Horizon Energy, a company serving a combined 2.2 million electric or natural gas customers across eight states. The company announced the merger’s completion on Monday. Filings with the South Dakota Public Utilities Commission list the new company&#8217;s value at [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "ac5cd9a21865",
+   "date": "2026-11-16",
+   "_first_seen": "2026-11-16"
   }
  ]
 }

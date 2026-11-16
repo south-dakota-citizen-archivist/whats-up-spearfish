@@ -3,8 +3,8 @@
  "name": "Rapid City Journal",
  "kind": "news",
  "url": "https://rapidcityjournal.com/",
- "fetched_at": "2026-11-16T00:57:36-07:00",
- "count": 185,
+ "fetched_at": "2026-11-16T15:06:43-07:00",
+ "count": 187,
  "records": [
   {
    "url": "https://rapidcityjournal.com/news/local/article_e0254cc0-8a32-44e4-a539-574db678e351.html",
@@ -2780,6 +2780,36 @@
    "id": "e5647d772f4a",
    "date": "2026-11-14",
    "_first_seen": "2026-11-15"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/article_43ce4e29-d121-554a-93e9-596813c3d186.html",
+   "title": "A paralyzed Buffalo, a daring rescue and the November storm of 1974 | From the archives",
+   "slug": "rapid-city-journal-a-paralyzed-buffalo-a-daring-rescue-and-the-november-storm-of",
+   "published": "2026-11-15",
+   "byline": "",
+   "description": "The Buffalo Niagara region is no stranger to famous November storms. Sunday will mark the 10th anniversary of the \"Wall of Snow,\" the famous storm that sliced through the area like a knife, providing the City of Buffalo and its northern suburbs a mere dusting of snow, compared with the nearly 7 feet of snow dumped on the Southtowns and areas east of the city.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "d0838c0136f5",
+   "date": "2026-11-15",
+   "_first_seen": "2026-11-16"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/article_35a10ca4-cef8-4d2d-860d-86daf3e6effd.html",
+   "title": "Efforts to bring walleye fisheries to Black Hills lakes falling short",
+   "slug": "rapid-city-journal-efforts-to-bring-walleye-fisheries-to-black-hills-lakes-short",
+   "published": "2026-11-15",
+   "byline": "BART PFANKUCH South Dakota News Watch",
+   "description": "SHERIDAN LAKE, S.D. – Like many South Dakota anglers, Kyle Caudle of Rapid City heads to the Missouri River if he wants to specifically target walleyes, the hard-fighting, good-eating prey that are the official state fish of the Rushmore State.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "9b7ddaef0dc4",
+   "date": "2026-11-15",
+   "_first_seen": "2026-11-16"
   }
  ]
 }
