@@ -3,101 +3,9 @@
  "name": "Northern Hills Cinema",
  "kind": "movie",
  "url": "https://nhcinema.com/",
- "fetched_at": "2026-11-15T10:06:03-07:00",
+ "fetched_at": "2026-11-16T13:26:51-07:00",
  "count": 12,
  "records": [
-  {
-   "title": "Drummer Boy",
-   "url": "https://nhcinema.com/view/drummer-boy",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3723/drummer_boy_drummer_boy_-_one_sheet_27x40__standard.jpg",
-   "rating": "PG-13",
-   "runtime": 129,
-   "no_passes": true,
-   "showtimes": [
-    {
-     "date": "2026-11-15",
-     "times": [
-      {
-       "time": "13:00",
-       "luxury": false
-      },
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-16",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-17",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-18",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-19",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Animated, Musical",
-   "starring": "Lucas Leach, Joel David Smallbone, Beth Easdown",
-   "director": "Richard L. Ramsey",
-   "synopsis": "As America’s fight for independence begins, a young drummer boy, an enslaved woman, and a divided family each search for freedom in a world built to deny it. With music carrying hope through battle and loss, Drummer Boy turns the Revolution into a deeply human story of faith, forgiveness, and the belief that no person is born to live in chains or be forgotten.",
-   "trailer": "rXaR4nXRvOY",
-   "slug": "drummer-boy",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "e74da5cf2618",
-   "_first_seen": "2026-11-04"
-  },
   {
    "title": "Godzilla Minus Zero",
    "url": "https://nhcinema.com/view/godzilla-minus-zero",
@@ -106,24 +14,9 @@
    "rating": "R",
    "runtime": 135,
    "no_passes": true,
+   "note": "Ends Thursday 11/19",
+   "ends": "2026-11-19",
    "showtimes": [
-    {
-     "date": "2026-11-15",
-     "times": [
-      {
-       "time": "12:30",
-       "luxury": false
-      },
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-16",
      "times": [
@@ -198,24 +91,9 @@
    "rating": "PG",
    "runtime": 91,
    "no_passes": true,
+   "note": "Ends Thursday 11/19",
+   "ends": "2026-11-19",
    "showtimes": [
-    {
-     "date": "2026-11-15",
-     "times": [
-      {
-       "time": "12:30",
-       "luxury": false
-      },
-      {
-       "time": "15:45",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-16",
      "times": [
@@ -283,6 +161,138 @@
    "_first_seen": "2026-11-04"
   },
   {
+   "title": "Drummer Boy",
+   "url": "https://nhcinema.com/view/drummer-boy",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3723/drummer_boy_drummer_boy_-_one_sheet_27x40__standard.jpg",
+   "rating": "PG-13",
+   "runtime": 129,
+   "no_passes": true,
+   "note": "Ends Tuesday 11/24",
+   "ends": "2026-11-24",
+   "showtimes": [
+    {
+     "date": "2026-11-16",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-17",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-18",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-19",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-20",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      },
+      {
+       "time": "21:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-21",
+     "times": [
+      {
+       "time": "12:00",
+       "luxury": false
+      },
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      },
+      {
+       "time": "21:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-22",
+     "times": [
+      {
+       "time": "12:00",
+       "luxury": false
+      },
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Animated, Musical",
+   "starring": "Lucas Leach, Joel David Smallbone, Beth Easdown",
+   "director": "Richard L. Ramsey",
+   "synopsis": "As America’s fight for independence begins, a young drummer boy, an enslaved woman, and a divided family each search for freedom in a world built to deny it. With music carrying hope through battle and loss, Drummer Boy turns the Revolution into a deeply human story of faith, forgiveness, and the belief that no person is born to live in chains or be forgotten.",
+   "trailer": "rXaR4nXRvOY",
+   "slug": "drummer-boy",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "e74da5cf2618",
+   "_first_seen": "2026-11-04"
+  },
+  {
    "title": "Ghost Soldier",
    "url": "https://nhcinema.com/view/ghost-soldier",
    "status": "now",
@@ -290,24 +300,9 @@
    "rating": "PG-13",
    "runtime": 90,
    "no_passes": true,
+   "note": "Ends Tuesday 11/24",
+   "ends": "2026-11-24",
    "showtimes": [
-    {
-     "date": "2026-11-15",
-     "times": [
-      {
-       "time": "13:00",
-       "luxury": false
-      },
-      {
-       "time": "15:45",
-       "luxury": true
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-16",
      "times": [
@@ -352,6 +347,61 @@
      "times": [
       {
        "time": "15:45",
+       "luxury": true
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-20",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      },
+      {
+       "time": "21:30",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-21",
+     "times": [
+      {
+       "time": "12:30",
+       "luxury": false
+      },
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": true
+      },
+      {
+       "time": "21:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-22",
+     "times": [
+      {
+       "time": "12:30",
+       "luxury": false
+      },
+      {
+       "time": "15:30",
        "luxury": true
       },
       {
@@ -375,98 +425,6 @@
    "_first_seen": "2026-11-04"
   },
   {
-   "title": "Ebenezer",
-   "url": "https://nhcinema.com/view/ebenezer",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3735/ebenezer_ebenezer_-_one_sheet_2__standard.jpg",
-   "rating": "PG-13",
-   "runtime": 115,
-   "no_passes": true,
-   "showtimes": [
-    {
-     "date": "2026-11-15",
-     "times": [
-      {
-       "time": "12:30",
-       "luxury": false
-      },
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": true
-      }
-     ]
-    },
-    {
-     "date": "2026-11-16",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-17",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": true
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-18",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": true
-      }
-     ]
-    },
-    {
-     "date": "2026-11-19",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Drama",
-   "starring": "Johnny Depp, Rupert Grint, Ian McKellen",
-   "director": "Ti West",
-   "synopsis": "This November, Johnny Depp is Ebenezer Scrooge. The name you know, the story you don’t. From Ti West, EBENEZER also stars Rupert Grint, Andrea Riseborough, Sam Claflin, Daisy Ridley, Arthur Conti, Ellie Bamber, Henry Lloyd-Hughes, Charlie Murphy, with Tramell Tillman and Ian McKellen.",
-   "trailer": "l_Ozo1xUgbU",
-   "slug": "ebenezer",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "4b406f20e274",
-   "_first_seen": "2026-11-09"
-  },
-  {
    "title": "How to Rob a Bank",
    "url": "https://nhcinema.com/view/how-to-rob-a-bank",
    "status": "now",
@@ -476,23 +434,6 @@
    "no_passes": true,
    "showtimes": [
     {
-     "date": "2026-11-15",
-     "times": [
-      {
-       "time": "12:45",
-       "luxury": true
-      },
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-16",
      "times": [
       {
@@ -541,6 +482,61 @@
       {
        "time": "18:00",
        "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-20",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "21:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-21",
+     "times": [
+      {
+       "time": "12:15",
+       "luxury": false
+      },
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "21:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-22",
+     "times": [
+      {
+       "time": "12:15",
+       "luxury": false
+      },
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
       }
      ]
     }
@@ -559,76 +555,467 @@
    "_first_seen": "2026-11-09"
   },
   {
-   "title": "The Hunger Games: Sunrise on the Reaping",
-   "url": "https://nhcinema.com/coming-soon#The%20Hunger%20Games%3A%20Sunrise%20on%20the%20Reaping",
-   "status": "soon",
-   "image_url": "https://nhcinema.com/images/movies/3734/the_hunger_games_sunrise_on_the_reaping_hunger_games_-_one_sheet__standard.jpg",
+   "title": "Ebenezer",
+   "url": "https://nhcinema.com/view/ebenezer",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3735/ebenezer_ebenezer_-_one_sheet_2__standard.jpg",
    "rating": "PG-13",
-   "runtime": null,
-   "no_passes": false,
-   "trailer": "lYXtL5TreOE",
-   "synopsis": "THE HUNGER GAMES: SUNRISE ON THE REAPING will revisit the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
-   "slug": "the-hunger-games-sunrise-on-the-reaping",
+   "runtime": 115,
+   "no_passes": true,
+   "showtimes": [
+    {
+     "date": "2026-11-16",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-17",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": true
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-18",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-19",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-20",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": true
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      },
+      {
+       "time": "21:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-21",
+     "times": [
+      {
+       "time": "12:30",
+       "luxury": true
+      },
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      },
+      {
+       "time": "21:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-22",
+     "times": [
+      {
+       "time": "12:30",
+       "luxury": false
+      },
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": true
+      }
+     ]
+    }
+   ],
+   "genre": "Drama",
+   "starring": "Johnny Depp, Rupert Grint, Ian McKellen",
+   "director": "Ti West",
+   "synopsis": "This November, Johnny Depp is Ebenezer Scrooge. The name you know, the story you don’t. From Ti West, EBENEZER also stars Rupert Grint, Andrea Riseborough, Sam Claflin, Daisy Ridley, Arthur Conti, Ellie Bamber, Henry Lloyd-Hughes, Charlie Murphy, with Tramell Tillman and Ian McKellen.",
+   "trailer": "l_Ozo1xUgbU",
+   "slug": "ebenezer",
    "record_type": "movie",
    "source_label": "Northern Hills Cinema",
    "kind": "movie",
    "source": "nhcinema",
-   "id": "92ba7c9cae71",
-   "_first_seen": "2026-11-04"
+   "id": "4b406f20e274",
+   "_first_seen": "2026-11-09"
   },
   {
-   "title": "Focker-In-Law",
-   "url": "https://nhcinema.com/coming-soon#Focker-In-Law",
-   "status": "soon",
+   "title": "Focker In-Law",
+   "url": "https://nhcinema.com/view/focker-in-law",
+   "status": "now",
    "image_url": "https://nhcinema.com/images/movies/3738/focker_in-law_focker-in-law_-_one_sheet__standard.jpg",
    "rating": "PG-13",
-   "runtime": null,
-   "no_passes": false,
-   "trailer": "vyISuWUWcFs",
+   "runtime": 105,
+   "no_passes": true,
+   "showtimes": [
+    {
+     "date": "2026-11-25",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": true
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-26",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": true
+      }
+     ]
+    }
+   ],
+   "genre": "Comedy",
+   "starring": "Robert De Niro, Ben Stiller, Ariana Grande, Owen Wilson, Blythe Danner, Teri Polo, Skyler Gisondo, Beanie Feldstein, Eduardo Fra",
+   "director": "John Hamburg",
    "synopsis": "This November, comedy icon and Emmy winner Ben Stiller and two-time Oscar® winner Robert De Niro reunite, joined by Grammy winner and Oscar® nominee Ariana Grande, in Focker-In-Law, a new chapter in the blockbuster Meet the Parents franchise.",
+   "trailer": "vyISuWUWcFs",
    "slug": "focker-in-law",
    "record_type": "movie",
    "source_label": "Northern Hills Cinema",
    "kind": "movie",
    "source": "nhcinema",
-   "id": "b127bb188b47",
-   "_first_seen": "2026-11-04"
-  },
-  {
-   "title": "Hexed",
-   "url": "https://nhcinema.com/coming-soon#Hexed",
-   "status": "soon",
-   "image_url": "https://nhcinema.com/images/movies/3736/disneys_hexed_hexed_-_one_sheet__standard.jpg",
-   "rating": "PG",
-   "runtime": null,
-   "no_passes": false,
-   "trailer": "KXO21xZdUaM",
-   "synopsis": "In Walt Disney Animation Studios' all-new magical coming-of-age saga, “Hexed,” an impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever. Directed by Fawn Veerasunthorn and Jason Hand, co-directed by Josie Trinidad and produced by Roy Conli, Disney’s “Hexed” opens exclusively in theaters November 25, 2026.",
-   "slug": "hexed",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "d27774bcb0e8",
-   "_first_seen": "2026-11-04"
+   "id": "a7011610f43b",
+   "_first_seen": "2026-11-16"
   },
   {
    "title": "Hershey",
-   "url": "https://nhcinema.com/coming-soon#Hershey",
-   "status": "soon",
+   "url": "https://nhcinema.com/view/hershey",
+   "status": "now",
    "image_url": "https://nhcinema.com/images/movies/3737/hershey_hershey_-_one_sheet__standard.jpg",
    "rating": "PG",
-   "runtime": null,
-   "no_passes": false,
-   "trailer": "Dihu6iM__rI",
+   "runtime": 110,
+   "no_passes": true,
+   "showtimes": [
+    {
+     "date": "2026-11-25",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-26",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Drama",
+   "starring": "Finn Wittrock, Alexandra Daddario, Alan Ruck, Richard Kind, David Costabile",
+   "director": "Mark Waters",
    "synopsis": "Based on the life of Milton Hershey, founder of the iconic Hershey chocolate company. Milton's grit and determination to conquer the world of candy-making propel him from bankruptcy to monumental success, and the love of his life, Kitty, helps him build a legacy sweeter than any candy bar. But when Kitty falls ill, Milton’s wild optimism teeters on the edge of destruction, and she sparks an even bolder dream: to leave their fortune in the hands of America’s children in need.",
+   "trailer": "Dihu6iM__rI",
    "slug": "hershey",
    "record_type": "movie",
    "source_label": "Northern Hills Cinema",
    "kind": "movie",
    "source": "nhcinema",
-   "id": "445eb4886f48",
-   "_first_seen": "2026-11-04"
+   "id": "cb6c1204f10b",
+   "_first_seen": "2026-11-16"
+  },
+  {
+   "title": "Hexed",
+   "url": "https://nhcinema.com/view/hexed",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3736/disneys_hexed_hexed_-_one_sheet__standard.jpg",
+   "rating": "PG",
+   "runtime": 109,
+   "no_passes": true,
+   "showtimes": [
+    {
+     "date": "2026-11-25",
+     "times": [
+      {
+       "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-26",
+     "times": [
+      {
+       "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Animated",
+   "starring": "Hailee Steinfeld, Rashida Jones, Tracey Ullman, Stephen Fry",
+   "director": "Fawn Veerasunthorn, Josie Trinidad",
+   "synopsis": "In Walt Disney Animation Studios' all-new magical coming-of-age saga, “Hexed,” an impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever. Directed by Fawn Veerasunthorn and Jason Hand, co-directed by Josie Trinidad and produced by Roy Conli, Disney’s “Hexed” opens exclusively in theaters November 25, 2026.",
+   "trailer": "KXO21xZdUaM",
+   "slug": "hexed",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "8ba0c5948919",
+   "_first_seen": "2026-11-16"
+  },
+  {
+   "title": "The Hunger Games: Sunrise on the Reaping",
+   "url": "https://nhcinema.com/view/the-hunger-games-sunrise-on-the-reaping",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3734/the_hunger_games_sunrise_on_the_reaping_hunger_games_-_one_sheet__standard.jpg",
+   "rating": "PG-13",
+   "runtime": 158,
+   "no_passes": true,
+   "showtimes": [
+    {
+     "date": "2026-11-20",
+     "times": [
+      {
+       "time": "14:45",
+       "luxury": false
+      },
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": true
+      },
+      {
+       "time": "20:45",
+       "luxury": false
+      },
+      {
+       "time": "21:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-21",
+     "times": [
+      {
+       "time": "11:45",
+       "luxury": false
+      },
+      {
+       "time": "12:15",
+       "luxury": false
+      },
+      {
+       "time": "14:45",
+       "luxury": false
+      },
+      {
+       "time": "15:15",
+       "luxury": true
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      },
+      {
+       "time": "20:45",
+       "luxury": true
+      },
+      {
+       "time": "21:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-22",
+     "times": [
+      {
+       "time": "11:45",
+       "luxury": false
+      },
+      {
+       "time": "12:15",
+       "luxury": true
+      },
+      {
+       "time": "14:45",
+       "luxury": false
+      },
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-23",
+     "times": [
+      {
+       "time": "14:45",
+       "luxury": false
+      },
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": true
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-24",
+     "times": [
+      {
+       "time": "14:45",
+       "luxury": true
+      },
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-25",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-26",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": true
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Action, Drama",
+   "starring": "Ralph Fiennes, Jesse Plemons, Glenn Close, Kieran Culkin, Elle Fanning, Maya Hawke, Mckenna Grace, Kelvin Harrison Jr., Whitney",
+   "director": "Francis Lawrence",
+   "synopsis": "THE HUNGER GAMES: SUNRISE ON THE REAPING will revisit the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
+   "trailer": "lYXtL5TreOE",
+   "slug": "the-hunger-games-sunrise-on-the-reaping",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "71276e8780af",
+   "_first_seen": "2026-11-16"
   },
   {
    "title": "Violent Night 2",

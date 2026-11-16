@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-15T10:06:21-07:00",
- "count": 50,
+ "fetched_at": "2026-11-16T13:27:08-07:00",
+ "count": 52,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -663,22 +663,6 @@
    "_first_seen": "2026-11-12"
   },
   {
-   "url": "https://www.sdpb.org/politics/2026-11-13/anti-data-center-advocates-demand-moratorium-in-rapid-city",
-   "title": "Anti-data center advocates demand moratorium in Rapid City",
-   "slug": "sdpb-anti-data-center-advocates-demand-moratorium-in-rapid-city",
-   "published": "2026-11-13",
-   "byline": "By C.J. Keene",
-   "description": "The data center debate is wide reaching, deeply divisive statewide, and acutely felt in Rapid City. After Mayor Jason Salamun voiced his desire for decisive action, a local advocate said he didn’t go far enough.",
-   "image_url": "https://npr-brightspot.s3.amazonaws.com/legacy/prod/filer_public/kusd-bento-live-pbs/News%20Blog/Seth%20Tupper/bac00fed25_Rapid%20City%20Hall.jpg",
-   "record_type": "news",
-   "source_label": "SDPB",
-   "kind": "news",
-   "source": "sdpb_news",
-   "id": "92b06e07f683",
-   "date": "2026-11-13",
-   "_first_seen": "2026-11-14"
-  },
-  {
    "url": "https://www.sdpb.org/sports-rec/2026-11-13/governors-run-their-way-to-tenth-all-time-11aa-title",
    "title": "Governors run their way to tenth all-time 11AA title",
    "slug": "sdpb-governors-run-their-way-to-tenth-all-time-11aa-title",
@@ -707,6 +691,22 @@
    "kind": "news",
    "source": "sdpb_news",
    "id": "4aa0a8c0491f",
+   "date": "2026-11-13",
+   "_first_seen": "2026-11-14"
+  },
+  {
+   "url": "https://www.sdpb.org/politics/2026-11-13/anti-data-center-advocates-demand-moratorium-in-rapid-city",
+   "title": "Anti-data center advocates demand moratorium in Rapid City",
+   "slug": "sdpb-anti-data-center-advocates-demand-moratorium-in-rapid-city",
+   "published": "2026-11-13",
+   "byline": "By C.J. Keene",
+   "description": "The data center debate is wide reaching, deeply divisive statewide, and acutely felt in Rapid City. After Mayor Jason Salamun voiced his desire for decisive action, a local advocate said he didn’t go far enough.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/legacy/prod/filer_public/kusd-bento-live-pbs/News%20Blog/Seth%20Tupper/bac00fed25_Rapid%20City%20Hall.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "92b06e07f683",
    "date": "2026-11-13",
    "_first_seen": "2026-11-14"
   },
@@ -805,6 +805,38 @@
    "id": "29ecc7798f5e",
    "date": "2026-11-15",
    "_first_seen": "2026-11-15"
+  },
+  {
+   "url": "https://www.sdpb.org/business-economics/2026-11-16/u-s-weapons-manufacturing-in-high-gear-but-small-towns-sometimes-suffer",
+   "title": "U.S. weapons manufacturing in high gear, but small towns sometimes suffer",
+   "slug": "sdpb-u-s-weapons-manufacturing-in-high-gear-but-small-towns-sometimes-suffer",
+   "published": "2026-11-16",
+   "byline": "By Lori Walsh",
+   "description": "Small towns across America are supporting the war effort through manufacturing. But the economic benefits sometimes come with safety, community, and environmental tradeoffs. SDPB's Lori Walsh talks with journalist Sonner Kehrt of The War Horse.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/0c/53/4b011dda44fe98c0069c3887acdd/in-the-moment-itmo-daily-podcast-web-photo.png",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "715e30109319",
+   "date": "2026-11-16",
+   "_first_seen": "2026-11-16"
+  },
+  {
+   "url": "https://www.sdpb.org/education/2026-11-16/ai-disruption-in-mathematics-offers-head-spinning-moment",
+   "title": "AI disruption in mathematics offers 'head-spinning' moment",
+   "slug": "sdpb-ai-disruption-in-mathematics-offers-head-spinning-moment",
+   "published": "2026-11-16",
+   "byline": "By Lori Walsh",
+   "description": "As tech companies race to show dominance, mathematicians say math is about more than \"solving\" problems.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/52/a4/27ad8392458d90c0af200f3647e9/website-photo-1.png",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "8c37d84e26d7",
+   "date": "2026-11-16",
+   "_first_seen": "2026-11-16"
   }
  ]
 }

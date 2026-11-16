@@ -3,8 +3,8 @@
  "name": "Black Hills National Forest",
  "kind": "press_release",
  "url": "https://www.fs.usda.gov/r02/blackhills/newsroom/releases",
- "fetched_at": "2026-11-15T10:05:45-07:00",
- "count": 5,
+ "fetched_at": "2026-11-16T13:26:25-07:00",
+ "count": 7,
  "records": [
   {
    "url": "https://www.fs.usda.gov/r02/blackhills/newsroom/releases/safety-alert-closure-pactola-north-boat-ramp",
@@ -75,6 +75,34 @@
    "id": "27908012f9ce",
    "date": "2026-11-03",
    "_first_seen": "2026-11-03"
+  },
+  {
+   "url": "https://www.fs.usda.gov/r02/blackhills/newsroom/releases/moskee-prescribed-burn-planned-today",
+   "title": "Moskee Prescribed Burn Planned Today",
+   "slug": "bhnf-release-moskee-prescribed-burn-planned-today",
+   "published": "2026-11-16",
+   "description": "(Custer, SD, November 16, 2026) — The Bearlodge Ranger District is planning the Moskee prescribed fire today Monday, November 16. Forest…",
+   "record_type": "press_release",
+   "source_label": "Black Hills National Forest",
+   "kind": "press_release",
+   "source": "bhnf",
+   "id": "c4242a1311ce",
+   "date": "2026-11-16",
+   "_first_seen": "2026-11-16"
+  },
+  {
+   "url": "https://www.fs.usda.gov/r02/blackhills/newsroom/releases/beartown-prescribed-burn-planned",
+   "title": "Beartown Prescribed Burn Planned",
+   "slug": "bhnf-release-beartown-prescribed-burn-planned",
+   "published": "2026-11-16",
+   "description": "(Custer, SD, November 16, 2026) — The Northern Hills Ranger District is planning the Beartown prescribed fire on Tuesday, November 17 pending all…",
+   "record_type": "press_release",
+   "source_label": "Black Hills National Forest",
+   "kind": "press_release",
+   "source": "bhnf",
+   "id": "09b4721c7e82",
+   "date": "2026-11-16",
+   "_first_seen": "2026-11-16"
   }
  ]
 }

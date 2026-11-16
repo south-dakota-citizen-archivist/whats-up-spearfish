@@ -3,8 +3,8 @@
  "name": "SD DANR public notices (West River)",
  "kind": "notice",
  "url": "https://danr.sd.gov/public/default.aspx",
- "fetched_at": "2026-11-15T10:06:10-07:00",
- "count": 2,
+ "fetched_at": "2026-11-16T13:27:09-07:00",
+ "count": 3,
  "records": [
   {
    "notice_type": "Water Rights",
@@ -41,6 +41,42 @@
    "published": "2026-11-16",
    "date": "2026-11-16",
    "_first_seen": "2026-11-09"
+  },
+  {
+   "notice_type": "Water Rights",
+   "deadline": "11/30/2026",
+   "comment_url": "",
+   "application_no": "2055-1",
+   "name": "Red Water Well, LLC., c/o Duston Morehead, Belle Fourche SD",
+   "location": "Butte",
+   "water_source": "Madison Aquifer",
+   "use_type": "Water Distribution System and Domestic",
+   "links": [
+    {
+     "label": "Public Notice",
+     "url": "https://danr.sd.gov/wrimage/pub/2055-1_app.pdf"
+    },
+    {
+     "label": "Appl.",
+     "url": "https://danr.sd.gov/wrimage/pub/2055-1_apl.pdf"
+    },
+    {
+     "label": "Recom. Action",
+     "url": "https://danr.sd.gov/wrimage/pub/2055-1_rec.pdf"
+    }
+   ],
+   "title": "Red Water Well, LLC., c/o Duston Morehead, Belle Fourche SD",
+   "url": "https://danr.sd.gov/wrimage/pub/2055-1_app.pdf",
+   "deadline_iso": "2026-11-30",
+   "notice_key": "Water Rights|2055-1|Red Water Well, LLC., c/o Duston Morehead, Belle Fourche SD|Butte",
+   "kind": "notice",
+   "record_type": "notice",
+   "source": "danr_public_notices",
+   "source_label": "SD DANR public notices (West River)",
+   "id": "34da5e51047d",
+   "published": "2026-11-30",
+   "date": "2026-11-30",
+   "_first_seen": "2026-11-16"
   },
   {
    "notice_type": "Waste Management — Solid Waste",
