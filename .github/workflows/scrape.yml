@@ -2,8 +2,10 @@ name: Scrape, build and deploy
 
 on:
   schedule:
-    - cron: "15 12 * * *"   # daily tier — 6:15 AM MDT / 5:15 AM MST
-    - cron: "10 1-22/3 * * *"  # frequent tier (creek gauge, fire, alerts) — every 3 hours; the 07:10 UTC
+    # Off the hour and the quarter hours, when GitHub most often delays or drops scheduled
+    # runs (every repo's schedules fire at once).
+    - cron: "37 12 * * *"   # daily tier — 6:37 AM MDT / 5:37 AM MST
+    - cron: "52 1-22/3 * * *"  # frequent tier (creek gauge, fire, alerts) — every 3 hours; the 07:52 UTC
                                 #   run lands just after midnight Mountain time, so dates roll over promptly
   push:
     branches: [main]        # code changes: rebuild and deploy, no scrape
@@ -58,7 +60,7 @@ jobs:
             tier="none"
           elif [ "$age" -gt $(( 20 * 3600 )) ]; then
             tier="daily"
-          elif [ "${{ github.event.schedule }}" = "15 12 * * *" ] && [ "$age" -gt $(( 6 * 3600 )) ]; then
+          elif [ "${{ github.event.schedule }}" = "37 12 * * *" ] && [ "$age" -gt $(( 6 * 3600 )) ]; then
             tier="daily"
           else
             tier="frequent"
