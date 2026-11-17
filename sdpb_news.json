@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-16T13:27:08-07:00",
- "count": 52,
+ "fetched_at": "2026-11-17T07:43:08-07:00",
+ "count": 56,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -807,6 +807,38 @@
    "_first_seen": "2026-11-15"
   },
   {
+   "url": "https://www.sdpb.org/politics/2026-11-16/tensions-mount-as-residents-urge-rapid-city-council-to-act-on-data-centers",
+   "title": "Tensions mount as residents urge Rapid City Council to act on data centers",
+   "slug": "sdpb-tensions-mount-as-residents-urge-rapid-city-council-to-act-on-data-centers",
+   "published": "2026-11-16",
+   "byline": "By C.J. Keene",
+   "description": "A movement from an anti-data center advocate in Rapid City is gaining momentum in City Hall. Put simply, residents offered a choice Monday night: halt data centers in the community or face potential recall petitions.",
+   "image_url": "https://static.npr.production.npr.brightspot.cloud/f0/f0/582d2d7c44e3a852ee0db3e2e6ff/image-2026-11-16t205335-152.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "dc5c7ca9801f",
+   "date": "2026-11-16",
+   "_first_seen": "2026-11-17"
+  },
+  {
+   "url": "https://www.sdpb.org/politics/2026-11-16/thune-pushes-for-passage-of-major-permitting-reform-bill",
+   "title": "Thune pushes for passage of major permitting reform bill",
+   "slug": "sdpb-thune-pushes-for-passage-of-major-permitting-reform-bill",
+   "published": "2026-11-16",
+   "byline": "By Jackson Dircks",
+   "description": "A permitting reform bill in Congress would overhaul how energy projects get their permits, essentially speeding up some projects. It’s something Sen. John Thune says would benefit South Dakotans.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/58/c7/64540d5d46a7988541ba9dd459d3/john-thune-speaks-at-maes.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "e9a2460d5254",
+   "date": "2026-11-16",
+   "_first_seen": "2026-11-17"
+  },
+  {
    "url": "https://www.sdpb.org/business-economics/2026-11-16/u-s-weapons-manufacturing-in-high-gear-but-small-towns-sometimes-suffer",
    "title": "U.S. weapons manufacturing in high gear, but small towns sometimes suffer",
    "slug": "sdpb-u-s-weapons-manufacturing-in-high-gear-but-small-towns-sometimes-suffer",
@@ -837,6 +869,38 @@
    "id": "8c37d84e26d7",
    "date": "2026-11-16",
    "_first_seen": "2026-11-16"
+  },
+  {
+   "url": "https://www.sdpb.org/arts-life/2026-11-17/volunteers-humanely-reduce-feral-cat-populations-through-trap-neuter-release",
+   "title": "Volunteers humanely reduce feral cat populations through trap-neuter-release",
+   "slug": "sdpb-volunteers-humanely-reduce-feral-cat-populations-through-trap-neuter",
+   "published": "2026-11-17",
+   "byline": "By Lura Roti",
+   "description": "Volunteers in South Dakota communities have mobilized after the Legislature changed state law legalizing trap-neuter-release programs as a way of reducing the feral cat population.",
+   "image_url": "https://static.npr.production.npr.brightspot.cloud/fb/58/c1dfa455479d9c8c1772cbf62d76/laura-jones-cat-tnr.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "da722c01b607",
+   "date": "2026-11-17",
+   "_first_seen": "2026-11-17"
+  },
+  {
+   "url": "https://www.sdpb.org/business-economics/2026-11-17/affordability-in-south-dakota-and-a-rise-in-food-insecurity",
+   "title": "Affordability in South Dakota and a rise in food insecurity",
+   "slug": "sdpb-affordability-in-south-dakota-and-a-rise-in-food-insecurity",
+   "published": "2026-11-17",
+   "byline": "By Lori Walsh",
+   "description": "Around 130,000 South Dakotans experience food insecurity. We look at efforts to get food to folks who need it, from urban centers to remote communities.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/71/a8/3b62d3434c9390c8894264fd8ec0/123024feedingsd-1.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "a1f65d88c8c0",
+   "date": "2026-11-17",
+   "_first_seen": "2026-11-17"
   }
  ]
 }

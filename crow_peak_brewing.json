@@ -3,7 +3,7 @@
  "name": "Crow Peak Brewing",
  "kind": "beer",
  "url": "https://crowpeakbrewing.com/",
- "fetched_at": "2026-11-16T13:26:26-07:00",
+ "fetched_at": "2026-11-17T07:42:35-07:00",
  "count": 16,
  "records": [
   {
@@ -68,18 +68,18 @@
   },
   {
    "url": "https://crowpeakbrewing.com/",
-   "title": "Trailhead Hazy IPA",
-   "slug": "trailhead-hazy-ipa",
-   "abv": "7.3%",
-   "ibu": "38",
-   "image_url": "https://crowpeakbrewing.com/wp-content/uploads/2026/02/7.png",
+   "title": "Mother Gooseberry Gose",
+   "slug": "mother-gooseberry-gose",
+   "abv": "5.2%",
+   "ibu": "08",
+   "image_url": "https://crowpeakbrewing.com/wp-content/uploads/2026/06/15.png",
    "description": "",
    "record_type": "beer",
    "source_label": "Crow Peak Brewing",
    "kind": "beer",
    "source": "crow_peak_brewing",
-   "id": "604fc192c53e",
-   "_first_seen": "2026-11-01"
+   "id": "24adc9e3ee2d",
+   "_first_seen": "2026-11-17"
   },
   {
    "url": "https://crowpeakbrewing.com/",
@@ -98,18 +98,18 @@
   },
   {
    "url": "https://crowpeakbrewing.com/",
-   "title": "RoughOcktoberfest",
-   "slug": "roughocktoberfest",
-   "abv": "5.6%",
-   "ibu": "23",
-   "image_url": "https://crowpeakbrewing.com/wp-content/uploads/2026/11/Roughlocktoberfest-beer-thumbnail.png",
+   "title": "Guest - Huckleberry Cider",
+   "slug": "guest-huckleberry-cider",
+   "abv": "8%",
+   "ibu": "",
+   "image_url": "https://crowpeakbrewing.com/wp-content/uploads/2026/07/twotownscider.jpg",
    "description": "",
    "record_type": "beer",
    "source_label": "Crow Peak Brewing",
    "kind": "beer",
    "source": "crow_peak_brewing",
-   "id": "704126865a80",
-   "_first_seen": "2026-11-01"
+   "id": "39f9cf7056be",
+   "_first_seen": "2026-11-17"
   },
   {
    "url": "https://crowpeakbrewing.com/",

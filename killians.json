@@ -3,7 +3,7 @@
  "name": "Killian's",
  "kind": "beer",
  "url": "https://untappd.com",
- "fetched_at": "2026-11-16T13:26:30-07:00",
+ "fetched_at": "2026-11-17T07:42:41-07:00",
  "count": 17,
  "records": [
   {
@@ -24,21 +24,21 @@
    "_first_seen": "2026-11-14"
   },
   {
-   "url": "https://untappd.com/b/fair-state-brewing-spirit-foul/2245070",
-   "title": "Spirit Foul",
-   "slug": "spirit-foul",
+   "url": "https://untappd.com/b/sawyer-brewing-co-the-show-must-go-on/5868304",
+   "title": "The Show Must Go On",
+   "slug": "the-show-must-go-on",
    "category": "IPA - New England / Hazy",
-   "abv": "6.3%",
+   "abv": "5.7%",
    "ibu": "",
-   "brewery": "Fair State Brewing",
-   "rating": "4.12",
-   "image_url": "https://labels.untappd.com/2245070",
+   "brewery": "Sawyer Brewing Co",
+   "rating": "3.89",
+   "image_url": "https://labels.untappd.com/5868304",
    "record_type": "beer",
    "source_label": "Killian's",
    "kind": "beer",
    "source": "killians",
-   "id": "2b78794255dd",
-   "_first_seen": "2026-11-10"
+   "id": "3eb0c604af5e",
+   "_first_seen": "2026-11-17"
   },
   {
    "url": "https://untappd.com/b/samuel-smith-winter-welcome-ale/632964",

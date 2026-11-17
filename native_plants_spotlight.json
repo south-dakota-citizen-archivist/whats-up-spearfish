@@ -3,7 +3,7 @@
  "name": "Native plants of the Black Hills",
  "kind": "plant",
  "url": "https://www.inaturalist.org/places/black-hills-national-forest-us",
- "fetched_at": "2026-11-16T13:27:09-07:00",
+ "fetched_at": "2026-11-17T07:43:17-07:00",
  "count": 392,
  "records": [
   {
@@ -573,7 +573,7 @@
    "scientific_name": "Matricaria discoidea",
    "summary": "Matricaria discoidea, commonly known as pineappleweed, wild chamomile, and disc mayweed is an annual plant native to North America and Northeast Asia but which has become a cosmopolitan weed. It is in the family Asteraceae.",
    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/34171885/medium.jpeg",
-   "photo_credit": "no rights reserved, uploaded by Anne Parsons",
+   "photo_credit": "hakları saklı değildir, yükleyen: Anne Parsons",
    "url": "https://www.inaturalist.org/taxa/52992",
    "wikipedia_url": "https://en.wikipedia.org/wiki/Matricaria discoidea",
    "sightings": 50,
@@ -1202,7 +1202,7 @@
    "scientific_name": "Helianthus annuus",
    "summary": "Helianthus annuus, the common sunflower, is a large annual forb of the genus Helianthus grown as a crop for its edible oil and edible fruits (sunflower seeds). This sunflower species is also used as bird food, as livestock forage (as a meal or a silage plant), and in some industrial applications.",
    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/323768714/medium.jpg",
-   "photo_credit": "(c) Emily Scherer, bazı hakları saklıdır (CC BY-NC), yükleyen: Emily Scherer",
+   "photo_credit": "(c) Emily Scherer, some rights reserved (CC BY-NC), uploaded by Emily Scherer",
    "url": "https://www.inaturalist.org/taxa/57983",
    "wikipedia_url": "https://en.wikipedia.org/wiki/Helianthus annuus",
    "sightings": 22,
@@ -4649,7 +4649,7 @@
   },
   {
    "taxon_id": 133440,
-   "title": "Alpine golden buckwheat",
+   "title": "Yellow Buckwheat",
    "scientific_name": "Eriogonum flavum",
    "summary": "Eriogonum flavum is a species of wild buckwheat.",
    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/13002298/medium.jpg",

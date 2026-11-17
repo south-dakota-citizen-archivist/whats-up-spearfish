@@ -3,8 +3,8 @@
  "name": "Northern Hills Cinema",
  "kind": "movie",
  "url": "https://nhcinema.com/",
- "fetched_at": "2026-11-16T13:26:51-07:00",
- "count": 12,
+ "fetched_at": "2026-11-17T07:42:58-07:00",
+ "count": 15,
  "records": [
   {
    "title": "Godzilla Minus Zero",
@@ -17,19 +17,6 @@
    "note": "Ends Thursday 11/19",
    "ends": "2026-11-19",
    "showtimes": [
-    {
-     "date": "2026-11-16",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-17",
      "times": [
@@ -95,19 +82,6 @@
    "ends": "2026-11-19",
    "showtimes": [
     {
-     "date": "2026-11-16",
-     "times": [
-      {
-       "time": "15:45",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-17",
      "times": [
       {
@@ -172,19 +146,6 @@
    "ends": "2026-11-24",
    "showtimes": [
     {
-     "date": "2026-11-16",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-17",
      "times": [
       {
@@ -268,6 +229,19 @@
        "time": "12:00",
        "luxury": false
       },
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-23",
+     "times": [
       {
        "time": "15:00",
        "luxury": false
@@ -304,19 +278,6 @@
    "ends": "2026-11-24",
    "showtimes": [
     {
-     "date": "2026-11-16",
-     "times": [
-      {
-       "time": "15:45",
-       "luxury": true
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-17",
      "times": [
       {
@@ -400,6 +361,19 @@
        "time": "12:30",
        "luxury": false
       },
+      {
+       "time": "15:30",
+       "luxury": true
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-23",
+     "times": [
       {
        "time": "15:30",
        "luxury": true
@@ -423,413 +397,6 @@
    "source": "nhcinema",
    "id": "518b07809926",
    "_first_seen": "2026-11-04"
-  },
-  {
-   "title": "How to Rob a Bank",
-   "url": "https://nhcinema.com/view/how-to-rob-a-bank",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3733/how_to_rob_a_bank_how_to_rob_a_bank_-_one_sheet_2_1080x1600__standard.jpg",
-   "rating": "R",
-   "runtime": 121,
-   "no_passes": true,
-   "showtimes": [
-    {
-     "date": "2026-11-16",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": true
-      }
-     ]
-    },
-    {
-     "date": "2026-11-17",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-18",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": true
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-19",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": true
-      }
-     ]
-    },
-    {
-     "date": "2026-11-20",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      },
-      {
-       "time": "21:00",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-21",
-     "times": [
-      {
-       "time": "12:15",
-       "luxury": false
-      },
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      },
-      {
-       "time": "21:00",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-22",
-     "times": [
-      {
-       "time": "12:15",
-       "luxury": false
-      },
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Action",
-   "starring": "Nicholas Hoult, Pete Davidson, Anna Sawai, Zoe Kravitz, Rhenzy Feliz, Christian Slater, John C. Reilly",
-   "director": "David Leitch",
-   "synopsis": "In HOW TO ROB A BANK, a crew of social media-savvy bank robbers broadcasts their daring heists, unaware that their growing viral fame has put them in the crosshairs of a veteran FBI agent and a brilliant software engineer. Despite the unlikely duo closing in, the crime ring pushes past their limits, putting everything on the line for their beliefs - and their most ambitious heist yet.",
-   "trailer": "B9XOzCUvFB8",
-   "slug": "how-to-rob-a-bank",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "d838d0ca9e5e",
-   "_first_seen": "2026-11-09"
-  },
-  {
-   "title": "Ebenezer",
-   "url": "https://nhcinema.com/view/ebenezer",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3735/ebenezer_ebenezer_-_one_sheet_2__standard.jpg",
-   "rating": "PG-13",
-   "runtime": 115,
-   "no_passes": true,
-   "showtimes": [
-    {
-     "date": "2026-11-16",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-17",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": true
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-18",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": true
-      }
-     ]
-    },
-    {
-     "date": "2026-11-19",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-20",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": true
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      },
-      {
-       "time": "21:15",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-21",
-     "times": [
-      {
-       "time": "12:30",
-       "luxury": true
-      },
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      },
-      {
-       "time": "21:15",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-22",
-     "times": [
-      {
-       "time": "12:30",
-       "luxury": false
-      },
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": true
-      }
-     ]
-    }
-   ],
-   "genre": "Drama",
-   "starring": "Johnny Depp, Rupert Grint, Ian McKellen",
-   "director": "Ti West",
-   "synopsis": "This November, Johnny Depp is Ebenezer Scrooge. The name you know, the story you don’t. From Ti West, EBENEZER also stars Rupert Grint, Andrea Riseborough, Sam Claflin, Daisy Ridley, Arthur Conti, Ellie Bamber, Henry Lloyd-Hughes, Charlie Murphy, with Tramell Tillman and Ian McKellen.",
-   "trailer": "l_Ozo1xUgbU",
-   "slug": "ebenezer",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "4b406f20e274",
-   "_first_seen": "2026-11-09"
-  },
-  {
-   "title": "Focker In-Law",
-   "url": "https://nhcinema.com/view/focker-in-law",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3738/focker_in-law_focker-in-law_-_one_sheet__standard.jpg",
-   "rating": "PG-13",
-   "runtime": 105,
-   "no_passes": true,
-   "showtimes": [
-    {
-     "date": "2026-11-25",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": true
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-26",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": true
-      }
-     ]
-    }
-   ],
-   "genre": "Comedy",
-   "starring": "Robert De Niro, Ben Stiller, Ariana Grande, Owen Wilson, Blythe Danner, Teri Polo, Skyler Gisondo, Beanie Feldstein, Eduardo Fra",
-   "director": "John Hamburg",
-   "synopsis": "This November, comedy icon and Emmy winner Ben Stiller and two-time Oscar® winner Robert De Niro reunite, joined by Grammy winner and Oscar® nominee Ariana Grande, in Focker-In-Law, a new chapter in the blockbuster Meet the Parents franchise.",
-   "trailer": "vyISuWUWcFs",
-   "slug": "focker-in-law",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "a7011610f43b",
-   "_first_seen": "2026-11-16"
-  },
-  {
-   "title": "Hershey",
-   "url": "https://nhcinema.com/view/hershey",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3737/hershey_hershey_-_one_sheet__standard.jpg",
-   "rating": "PG",
-   "runtime": 110,
-   "no_passes": true,
-   "showtimes": [
-    {
-     "date": "2026-11-25",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-26",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Drama",
-   "starring": "Finn Wittrock, Alexandra Daddario, Alan Ruck, Richard Kind, David Costabile",
-   "director": "Mark Waters",
-   "synopsis": "Based on the life of Milton Hershey, founder of the iconic Hershey chocolate company. Milton's grit and determination to conquer the world of candy-making propel him from bankruptcy to monumental success, and the love of his life, Kitty, helps him build a legacy sweeter than any candy bar. But when Kitty falls ill, Milton’s wild optimism teeters on the edge of destruction, and she sparks an even bolder dream: to leave their fortune in the hands of America’s children in need.",
-   "trailer": "Dihu6iM__rI",
-   "slug": "hershey",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "cb6c1204f10b",
-   "_first_seen": "2026-11-16"
-  },
-  {
-   "title": "Hexed",
-   "url": "https://nhcinema.com/view/hexed",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3736/disneys_hexed_hexed_-_one_sheet__standard.jpg",
-   "rating": "PG",
-   "runtime": 109,
-   "no_passes": true,
-   "showtimes": [
-    {
-     "date": "2026-11-25",
-     "times": [
-      {
-       "time": "15:45",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
-    {
-     "date": "2026-11-26",
-     "times": [
-      {
-       "time": "15:45",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Animated",
-   "starring": "Hailee Steinfeld, Rashida Jones, Tracey Ullman, Stephen Fry",
-   "director": "Fawn Veerasunthorn, Josie Trinidad",
-   "synopsis": "In Walt Disney Animation Studios' all-new magical coming-of-age saga, “Hexed,” an impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever. Directed by Fawn Veerasunthorn and Jason Hand, co-directed by Josie Trinidad and produced by Roy Conli, Disney’s “Hexed” opens exclusively in theaters November 25, 2026.",
-   "trailer": "KXO21xZdUaM",
-   "slug": "hexed",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "8ba0c5948919",
-   "_first_seen": "2026-11-16"
   },
   {
    "title": "The Hunger Games: Sunrise on the Reaping",
@@ -1018,6 +585,419 @@
    "_first_seen": "2026-11-16"
   },
   {
+   "title": "How to Rob a Bank",
+   "url": "https://nhcinema.com/view/how-to-rob-a-bank",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3733/how_to_rob_a_bank_how_to_rob_a_bank_-_one_sheet_2_1080x1600__standard.jpg",
+   "rating": "R",
+   "runtime": 121,
+   "no_passes": true,
+   "showtimes": [
+    {
+     "date": "2026-11-17",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-18",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": true
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-19",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-20",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "21:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-21",
+     "times": [
+      {
+       "time": "12:15",
+       "luxury": false
+      },
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "21:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-22",
+     "times": [
+      {
+       "time": "12:15",
+       "luxury": false
+      },
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-23",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Action",
+   "starring": "Nicholas Hoult, Pete Davidson, Anna Sawai, Zoe Kravitz, Rhenzy Feliz, Christian Slater, John C. Reilly",
+   "director": "David Leitch",
+   "synopsis": "In HOW TO ROB A BANK, a crew of social media-savvy bank robbers broadcasts their daring heists, unaware that their growing viral fame has put them in the crosshairs of a veteran FBI agent and a brilliant software engineer. Despite the unlikely duo closing in, the crime ring pushes past their limits, putting everything on the line for their beliefs - and their most ambitious heist yet.",
+   "trailer": "B9XOzCUvFB8",
+   "slug": "how-to-rob-a-bank",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "d838d0ca9e5e",
+   "_first_seen": "2026-11-09"
+  },
+  {
+   "title": "Ebenezer",
+   "url": "https://nhcinema.com/view/ebenezer",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3735/ebenezer_ebenezer_-_one_sheet_2__standard.jpg",
+   "rating": "PG-13",
+   "runtime": 115,
+   "no_passes": true,
+   "showtimes": [
+    {
+     "date": "2026-11-17",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": true
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-18",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-19",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-20",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": true
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      },
+      {
+       "time": "21:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-21",
+     "times": [
+      {
+       "time": "12:30",
+       "luxury": true
+      },
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      },
+      {
+       "time": "21:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-22",
+     "times": [
+      {
+       "time": "12:30",
+       "luxury": false
+      },
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-23",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Drama",
+   "starring": "Johnny Depp, Rupert Grint, Ian McKellen",
+   "director": "Ti West",
+   "synopsis": "This November, Johnny Depp is Ebenezer Scrooge. The name you know, the story you don’t. From Ti West, EBENEZER also stars Rupert Grint, Andrea Riseborough, Sam Claflin, Daisy Ridley, Arthur Conti, Ellie Bamber, Henry Lloyd-Hughes, Charlie Murphy, with Tramell Tillman and Ian McKellen.",
+   "trailer": "l_Ozo1xUgbU",
+   "slug": "ebenezer",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "4b406f20e274",
+   "_first_seen": "2026-11-09"
+  },
+  {
+   "title": "Focker In-Law",
+   "url": "https://nhcinema.com/view/focker-in-law",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3738/focker_in-law_focker-in-law_-_one_sheet__standard.jpg",
+   "rating": "PG-13",
+   "runtime": 105,
+   "no_passes": true,
+   "note": "Starts Wednesday 11/25",
+   "starts": "2026-11-25",
+   "showtimes": [
+    {
+     "date": "2026-11-25",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": true
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-26",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": true
+      }
+     ]
+    }
+   ],
+   "genre": "Comedy",
+   "starring": "Robert De Niro, Ben Stiller, Ariana Grande, Owen Wilson, Blythe Danner, Teri Polo, Skyler Gisondo, Beanie Feldstein, Eduardo Fra",
+   "director": "John Hamburg",
+   "synopsis": "This November, comedy icon and Emmy winner Ben Stiller and two-time Oscar® winner Robert De Niro reunite, joined by Grammy winner and Oscar® nominee Ariana Grande, in Focker-In-Law, a new chapter in the blockbuster Meet the Parents franchise.",
+   "trailer": "vyISuWUWcFs",
+   "slug": "focker-in-law",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "a7011610f43b",
+   "_first_seen": "2026-11-16"
+  },
+  {
+   "title": "Hershey",
+   "url": "https://nhcinema.com/view/hershey",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3737/hershey_hershey_-_one_sheet__standard.jpg",
+   "rating": "PG",
+   "runtime": 110,
+   "no_passes": true,
+   "note": "Starts Wednesday 11/25",
+   "starts": "2026-11-25",
+   "showtimes": [
+    {
+     "date": "2026-11-25",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-26",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Drama",
+   "starring": "Finn Wittrock, Alexandra Daddario, Alan Ruck, Richard Kind, David Costabile",
+   "director": "Mark Waters",
+   "synopsis": "Based on the life of Milton Hershey, founder of the iconic Hershey chocolate company. Milton's grit and determination to conquer the world of candy-making propel him from bankruptcy to monumental success, and the love of his life, Kitty, helps him build a legacy sweeter than any candy bar. But when Kitty falls ill, Milton’s wild optimism teeters on the edge of destruction, and she sparks an even bolder dream: to leave their fortune in the hands of America’s children in need.",
+   "trailer": "Dihu6iM__rI",
+   "slug": "hershey",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "cb6c1204f10b",
+   "_first_seen": "2026-11-16"
+  },
+  {
+   "title": "Hexed",
+   "url": "https://nhcinema.com/view/hexed",
+   "status": "now",
+   "image_url": "https://nhcinema.com/images/movies/3736/disneys_hexed_hexed_-_one_sheet__standard.jpg",
+   "rating": "PG",
+   "runtime": 109,
+   "no_passes": true,
+   "note": "Starts Wednesday 11/25",
+   "starts": "2026-11-25",
+   "showtimes": [
+    {
+     "date": "2026-11-25",
+     "times": [
+      {
+       "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-26",
+     "times": [
+      {
+       "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    }
+   ],
+   "genre": "Animated",
+   "starring": "Hailee Steinfeld, Rashida Jones, Tracey Ullman, Stephen Fry",
+   "director": "Fawn Veerasunthorn, Josie Trinidad",
+   "synopsis": "In Walt Disney Animation Studios' all-new magical coming-of-age saga, “Hexed,” an impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever. Directed by Fawn Veerasunthorn and Jason Hand, co-directed by Josie Trinidad and produced by Roy Conli, Disney’s “Hexed” opens exclusively in theaters November 25, 2026.",
+   "trailer": "KXO21xZdUaM",
+   "slug": "hexed",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "8ba0c5948919",
+   "_first_seen": "2026-11-16"
+  },
+  {
    "title": "Violent Night 2",
    "url": "https://nhcinema.com/coming-soon#Violent%20Night%202",
    "status": "soon",
@@ -1052,6 +1032,60 @@
    "source": "nhcinema",
    "id": "04172f9ff82f",
    "_first_seen": "2026-11-09"
+  },
+  {
+   "title": "Avengers: Doomsday",
+   "url": "https://nhcinema.com/coming-soon#Avengers%3A%20Doomsday",
+   "status": "soon",
+   "image_url": "https://nhcinema.com/images/movies/3742/avengers_doomsday_avengers_doomsday_-_ticket_on_sale_poster_social_media_use_only__standard.jpg",
+   "rating": "PG-13",
+   "runtime": null,
+   "no_passes": false,
+   "trailer": "UfNu7pcR0e8",
+   "synopsis": "Universes collide and the Multiverse Saga begins its final chapter in Marvel Studios' Avengers: Doomsday. Beloved heroes from three distinct universes will be set on a deadly collision course and ultimately face an existential threat unlike anything",
+   "slug": "avengers-doomsday",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "eec0fc5f10c9",
+   "_first_seen": "2026-11-17"
+  },
+  {
+   "title": "The Angry Birds Movie 3",
+   "url": "https://nhcinema.com/coming-soon#The%20Angry%20Birds%20Movie%203",
+   "status": "soon",
+   "image_url": "https://nhcinema.com/images/movies/3743/the_angry_birds_movie_3_the_angry_bird_movie_3_-_one_sheet__standard.jpg",
+   "rating": "PG",
+   "runtime": null,
+   "no_passes": false,
+   "trailer": "FjYzudbOzlY",
+   "synopsis": "This holiday season, one angry bird will face his greatest challenge yet, surviving fatherhood… while saving the world!",
+   "slug": "the-angry-birds-movie-3",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "c2b5529f0466",
+   "_first_seen": "2026-11-17"
+  },
+  {
+   "title": "Dune: Part 3",
+   "url": "https://nhcinema.com/coming-soon#Dune%3A%20Part%203",
+   "status": "soon",
+   "image_url": "https://nhcinema.com/images/movies/3744/dune_part_3_dune_part_3_-_one_sheet_3_2764x4096__standard.jpg",
+   "rating": "PG-13",
+   "runtime": null,
+   "no_passes": false,
+   "trailer": "uJqaGLmZpGo",
+   "synopsis": "Dune: Part Three is set nearly two decades after Paul Atreides seized control of the Imperium. Now a ruthless Emperor, Paul must face the consequences of his reign as old allies return, terrifying new threats emerge, and betrayal lurks in every shadow. Haunted by visions of Imperial collapse and the reappearance of his long-lost love, Paul is drawn into a sweeping conspiracy, with Chani at the heart of its unfolding mystery. As rebellion brews and enemies close in, Paul must confront the true cost of power and the fate of those he loves the most.",
+   "slug": "dune-part-3",
+   "record_type": "movie",
+   "source_label": "Northern Hills Cinema",
+   "kind": "movie",
+   "source": "nhcinema",
+   "id": "cfa67e67777b",
+   "_first_seen": "2026-11-17"
   }
  ]
 }

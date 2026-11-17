@@ -3,9 +3,26 @@
  "name": "Redwater Kitchen",
  "kind": "beer",
  "url": "https://untappd.com",
- "fetched_at": "2026-11-16T13:26:53-07:00",
+ "fetched_at": "2026-11-17T07:42:51-07:00",
  "count": 11,
  "records": [
+  {
+   "url": "https://untappd.com/b/surly-brewing-company-furious/7808",
+   "title": "Furious",
+   "slug": "furious",
+   "category": "IPA - American",
+   "abv": "6.7%",
+   "ibu": "100",
+   "brewery": "Surly Brewing Company",
+   "rating": "3.84",
+   "image_url": "https://labels.untappd.com/7808",
+   "record_type": "beer",
+   "source_label": "Redwater Kitchen",
+   "kind": "beer",
+   "source": "redwater_kitchen",
+   "id": "c3385da80d37",
+   "_first_seen": "2026-11-17"
+  },
   {
    "url": "https://untappd.com/b/modist-brewing-co-doomed-moon/6457354",
    "title": "Doomed Moon",
@@ -157,23 +174,6 @@
    "kind": "beer",
    "source": "redwater_kitchen",
    "id": "5669284b0b16",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://untappd.com/b/outer-range-brewing-co-in-the-steep/2002572",
-   "title": "In the Steep",
-   "slug": "in-the-steep",
-   "category": "IPA - New England / Hazy",
-   "abv": "6.7%",
-   "ibu": "",
-   "brewery": "Outer Range Brewing Co.",
-   "rating": "4.09",
-   "image_url": "https://labels.untappd.com/2002572",
-   "record_type": "beer",
-   "source_label": "Redwater Kitchen",
-   "kind": "beer",
-   "source": "redwater_kitchen",
-   "id": "b60035e53279",
    "_first_seen": "2026-11-01"
   },
   {
