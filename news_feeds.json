@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-16T15:06:42-07:00",
- "count": 94,
+ "fetched_at": "2026-11-16T21:28:12-07:00",
+ "count": 95,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/17/south-dakota-no-kings-events-emphasize-advance-voting/",
@@ -1414,6 +1414,21 @@
    "source": "news_feeds",
    "id": "ac5cd9a21865",
    "date": "2026-11-16",
+   "_first_seen": "2026-11-16"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/16/candidate-is-right-that-no-party-is-above-scrutiny-including-his-own/",
+   "title": "Commentary: Candidate is right that no party is above scrutiny — including his own",
+   "slug": "south-dakota-searchlight-commentary-candidate-is-right-that-no-party-is-above",
+   "published": "2026-11-17",
+   "byline": "Dana Hess",
+   "description": "The Sunday night before Election Day, I read a point/counterpoint column from Dan Ahlers, the Democratic candidate for governor, in The Dakota Scout. With an impending blue wave expected to wash over the nation, it was with a certain degree of anticipation that I read Ahlers’ missive. In this new age for Democrats, perhaps Ahlers [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "dbbc7f23fbde",
+   "date": "2026-11-17",
    "_first_seen": "2026-11-16"
   }
  ]
