@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-17T16:40:45-07:00",
- "count": 94,
+ "fetched_at": "2026-11-18T02:14:29-07:00",
+ "count": 96,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/19/night-and-day-difference-revealed-after-restoration-in-south-dakota-capitol-rotunda/",
@@ -1400,6 +1400,36 @@
    "id": "e644f790fcf3",
    "date": "2026-11-17",
    "_first_seen": "2026-11-17"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/17/south-dakota-lawmakers-receive-award-for-bipartisan-work-on-school-lunch-bill/",
+   "title": "South Dakota lawmakers receive award for bipartisan work on school lunch bill",
+   "slug": "south-dakota-searchlight-south-dakota-lawmakers-receive-award-for-bipartisan-on",
+   "published": "2026-11-17",
+   "byline": "Meghan O'Brien",
+   "description": "State Rep. Kadyn Wittman, D-Sioux Falls, and state Sen. Brandon Wipf, R-Huron, received the Cherisse Eatmon Collective Impact Award on Monday from the Future Caucus, a bipartisan group supporting millennial and Gen Z lawmakers. “These leaders remind us that politics doesn’t have to be a zero-sum game,” said Layla Zaidane, president and CEO of Future [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "718ab9a636aa",
+   "date": "2026-11-17",
+   "_first_seen": "2026-11-18"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/17/federal-permitting-bill-splits-south-dakota-republicans-causing-some-to-align-with-democrats/",
+   "title": "Federal permitting bill splits South Dakota Republicans, causing some to align with Democrats",
+   "slug": "south-dakota-searchlight-federal-permitting-bill-splits-south-dakota-republicans",
+   "published": "2026-11-17",
+   "byline": "Joshua Haiar",
+   "description": "Federal legislation that could accelerate permitting for large energy and infrastructure projects has scrambled political allegiances in South Dakota, leading two Republican U.S. senators to vote differently while splitting Republican state lawmakers and causing some of them to align with Democrats. Fifty state lawmakers and lawmakers-elect from South Dakota — including 37 Republicans, 12 Democrats [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "80ae445ea85a",
+   "date": "2026-11-17",
+   "_first_seen": "2026-11-18"
   },
   {
    "url": "https://southdakotasearchlight.com/2026/11/16/candidate-is-right-that-no-party-is-above-scrutiny-including-his-own/",
