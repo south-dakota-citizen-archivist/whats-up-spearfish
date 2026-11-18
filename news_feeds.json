@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-18T02:14:29-07:00",
- "count": 96,
+ "fetched_at": "2026-11-18T13:52:42-07:00",
+ "count": 97,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/19/night-and-day-difference-revealed-after-restoration-in-south-dakota-capitol-rotunda/",
@@ -1445,6 +1445,21 @@
    "id": "dbbc7f23fbde",
    "date": "2026-11-17",
    "_first_seen": "2026-11-16"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/18/minimum-wage-going-up-to-12-30-in-south-dakota-due-to-voter-approved-auto-adjustments/",
+   "title": "Minimum wage going up to $12.30 in South Dakota due to voter-approved auto adjustments",
+   "slug": "south-dakota-searchlight-minimum-wage-going-up-to-12-30-in-south-dakota-due-to",
+   "published": "2026-11-18",
+   "byline": "South Dakota Searchlight staff",
+   "description": "The minimum wage for non-tipped employees in South Dakota will increase from $11.85 per hour to $12.30 per hour on Jan. 1, according to the state Department of Labor and Regulation. The minimum wage in the state is adjusted annually based on increases in the cost of living, as measured by the consumer price index [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "59fc28a46255",
+   "date": "2026-11-18",
+   "_first_seen": "2026-11-18"
   }
  ]
 }

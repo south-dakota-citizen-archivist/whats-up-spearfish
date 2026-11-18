@@ -3,8 +3,8 @@
  "name": "Rapid City Journal",
  "kind": "news",
  "url": "https://rapidcityjournal.com/",
- "fetched_at": "2026-11-18T02:14:30-07:00",
- "count": 189,
+ "fetched_at": "2026-11-18T13:52:42-07:00",
+ "count": 197,
  "records": [
   {
    "url": "https://rapidcityjournal.com/news/local/obituaries/article_f7f94e84-22f7-59d8-8b6c-6086febd6410.html",
@@ -2767,6 +2767,21 @@
    "_first_seen": "2026-11-17"
   },
   {
+   "url": "https://rapidcityjournal.com/news/local/government-politics/article_9d060081-dfff-4ef9-944e-c40bcbe0c8d1.html",
+   "title": "Rapid City residents show opposition to data centers at council meeting",
+   "slug": "rapid-city-journal-rapid-city-residents-show-opposition-to-data-centers-at",
+   "published": "2026-11-16",
+   "byline": "FRANK ESPINOZA Journal staff",
+   "description": "About 50 residents packed inside Rapid City Hall on Monday, Nov. 16, and 10 spoke out against data centers in city limits.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "8620a9830a69",
+   "date": "2026-11-16",
+   "_first_seen": "2026-11-18"
+  },
+  {
    "url": "https://rapidcityjournal.com/news/local/article_2f9c8cdf-1898-5e0a-8c7a-4f276ff02fb3.html",
    "title": "Black Hills Energy merger official, combined to cover eight states, 2.2 million customers",
    "slug": "rapid-city-journal-black-hills-energy-merger-official-combined-to-cover-eight-2",
@@ -2780,6 +2795,21 @@
    "id": "0b7f565cb38f",
    "date": "2026-11-16",
    "_first_seen": "2026-11-17"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/government-politics/article_c3d75499-d11b-4329-9691-89eefd3134ea.html",
+   "title": "Councilmembers share their opinions on Salamun's data center interim measures",
+   "slug": "rapid-city-journal-councilmembers-share-their-opinions-on-salamun-s-data-center",
+   "published": "2026-11-16",
+   "byline": "FRANK ESPINOZA Journal staff",
+   "description": "Ahead of the Monday, Nov. 16, Rapid City Council meeting, amid rumblings of public turnout with concerns related to data centers, the Journal reached out to each council member for their thoughts on possible actions.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "617998492252",
+   "date": "2026-11-16",
+   "_first_seen": "2026-11-18"
   },
   {
    "url": "https://rapidcityjournal.com/news/local/article_834393e8-892c-4ed2-b54a-71a2e1b19523.html",
@@ -2840,6 +2870,96 @@
    "id": "ea75e196e246",
    "date": "2026-11-16",
    "_first_seen": "2026-11-17"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/government-politics/article_61e5ec9a-90b9-4b83-a116-b93a4416feac.html",
+   "title": "Survey results show Rapid Citians opposed to data centers, water a top concern",
+   "slug": "rapid-city-journal-survey-results-show-rapid-citians-opposed-to-data-centers-a",
+   "published": "2026-11-17",
+   "byline": "FRANK ESPINOZA, Journal staff",
+   "description": "Rapid Citians are not excited about letting data centers into city limits, per survey results.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "b0c2c791cbb2",
+   "date": "2026-11-17",
+   "_first_seen": "2026-11-18"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/government-politics/article_f1d37a6f-ef8d-4b40-81b2-01fafb02380e.html",
+   "title": "Auditor says estimated 50 ballots impacted by RCAS bond ballot mix-up, school board certifies vote",
+   "slug": "rapid-city-journal-auditor-says-estimated-50-ballots-impacted-by-rcas-bond-mix",
+   "published": "2026-11-17",
+   "byline": "FRANK ESPINOZA Journal staff",
+   "description": "Pennington County Auditor Sabrina Green told to the Journal on Tuesday, Nov. 17, an estimated 50 ballots could be part of the mix-up in the Rapid City Area School District's $107 million bond vote during the Nov. 3 general election.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "855f9d1463eb",
+   "date": "2026-11-17",
+   "_first_seen": "2026-11-18"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/article_fd0c10ad-fba7-4be6-ac28-67c445b00fc7.html",
+   "title": "Kids can get free cold-weather apparel at Goodwill Shoe Party Nov. 21",
+   "slug": "rapid-city-journal-kids-can-get-free-cold-weather-apparel-at-goodwill-shoe-party",
+   "published": "2026-11-17",
+   "byline": "Journal staff",
+   "description": "Kids from Rapid City and surrounding areas will be able to get a new, free pair of shoes, socks, gloves and a hat at Goodwill’s annual Shoe Party on Nov. 21.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "0325a0fb505a",
+   "date": "2026-11-17",
+   "_first_seen": "2026-11-18"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/education/article_20cdbb63-0fb0-4184-a1b2-0677d906fd8e.html",
+   "title": "RCAS Board Member Walt Swan resigning, board to discuss vacancy at Tuesday meeting",
+   "slug": "rapid-city-journal-rcas-board-member-walt-swan-resigning-board-to-discuss-at",
+   "published": "2026-11-17",
+   "byline": "Journal staff",
+   "description": "The Rapid City Area Schools Board of Education will discuss an upcoming Area 4 vacancy and the proposed process for appointing a replacement at its meeting on Tuesday, November 17, 2026. Area 4 representative Walt Swan plans to step down due to growing job commitments.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "0ee098d30d4b",
+   "date": "2026-11-17",
+   "_first_seen": "2026-11-18"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/business/health-care/article_ddd16239-78ea-41fc-9081-f16e3d7b2a59.html",
+   "title": "BackInAction: Local patients can benefit from newest knee replacement technology, robotics",
+   "slug": "rapid-city-journal-backinaction-local-patients-can-benefit-from-newest-knee",
+   "published": "2026-11-17",
+   "byline": "TANYA MANUS<br>Journal staff",
+   "description": "New technology that’s precise, easier on muscles and may speed up recovery from knee replacement surgery is now in use at Sanford Health Black Hills Orthopedic and Spine Center in Rapid City.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "dc3cab82150a",
+   "date": "2026-11-17",
+   "_first_seen": "2026-11-18"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/weather/article_2b05c0a6-dbab-52af-b391-cb6790a33408.html",
+   "title": "High Wind Warning from WED 2:00 AM MST until WED 9:00 AM MST",
+   "slug": "rapid-city-journal-high-wind-warning-from-wed-2-00-am-mst-until-wed-9-00-am-mst",
+   "published": "2026-11-18",
+   "byline": "",
+   "description": "A High Wind Warning is in effect from 2 AM to 9 AM MST on Wednesday. Expect west winds of 25 to 35 mph, with gusts reaching up to 60 mph, particularly on higher peaks and slopes.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "e930ce9713bd",
+   "date": "2026-11-18",
+   "_first_seen": "2026-11-18"
   }
  ]
 }
