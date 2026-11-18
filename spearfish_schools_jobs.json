@@ -3,8 +3,8 @@
  "name": "Spearfish School District",
  "kind": "job",
  "url": "https://www.applitrack.com/bhssc/onlineapp/default.aspx",
- "fetched_at": "2026-11-17T07:43:36-07:00",
- "count": 8,
+ "fetched_at": "2026-11-18T12:09:48-07:00",
+ "count": 9,
  "records": [
   {
    "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4340&posFirstChoice=Student%20Support%20Services/",
@@ -149,6 +149,24 @@
    "id": "b8b2f9b9bfaf",
    "date": "2026-11-06",
    "_first_seen": "2026-11-07"
+  },
+  {
+   "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4660&posFirstChoice=Middle%20School%20Teaching/",
+   "title": "Middle School Science/Social Studies Teacher",
+   "slug": "4660-middle-school-science-social-studies-teacher",
+   "location": "Spearfish Middle School",
+   "district": "Spearfish School District",
+   "position_type": "Middle School Teaching/",
+   "published": "2026-11-17",
+   "closing": "Open Until Filled",
+   "description": "Position type: Middle School Teaching/ • Location: Spearfish Middle School • Closes: Open Until Filled",
+   "record_type": "job",
+   "source_label": "Spearfish School District",
+   "kind": "job",
+   "source": "spearfish_schools_jobs",
+   "id": "6ecb61c2fa74",
+   "date": "2026-11-17",
+   "_first_seen": "2026-11-18"
   }
  ]
 }

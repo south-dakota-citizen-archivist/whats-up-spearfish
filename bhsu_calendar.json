@@ -3,8 +3,8 @@
  "name": "BHSU Campus Calendar",
  "kind": "event",
  "url": "https://bhsu.edu/campus-calendar.html",
- "fetched_at": "2026-11-17T07:42:31-07:00",
- "count": 13,
+ "fetched_at": "2026-11-18T12:08:13-07:00",
+ "count": 12,
  "records": [
   {
    "event_id": "9e33796e-9fab-4d4a-a7e0-d5b5dd21849c",
@@ -36,38 +36,6 @@
    "date": "2026-11-11",
    "event_category": "campus",
    "_first_seen": "2026-11-04"
-  },
-  {
-   "event_id": "d4abee83-997d-434e-b137-272cbe5f6820",
-   "url": "https://bhsu.edu/campus-calendar.html#event-details/d4abee83-997d-434e-b137-272cbe5f6820",
-   "title": "Dr. Breon Derby Knotty Habit: A Stress-Relief Workshop for Happy Hookers",
-   "slug": "dr-breon-derby-knotty-habit-a-stress-relief-workshop-for-happy-hookers",
-   "description": "Geek Speak is back for fall. Please join us on Mondays at 4:00 p.m. in Jonas 110 for a new topic each week: November 2: Dr. Denice Turner A Field Guide to Faults A Field Guide to Faults invites readers into the changing landscape of love after upheaval. Through stories from A Beginner's Guide to Faults, this presentation explores the emotional terrain revealed by betrayal, fidelity, grace, and forgiveness. Rather than offering prescriptions, it offers a way of noticing—of recognizing the fault lines that run through every life and discovering how they can become places of deeper understanding, compassion, and hope. November 9: Dr. Lesleigh Owen and Oliver Johnson Some Politics of Period Poverty Why does discussing menstruation make us uncomfortable? Why are toilet paper, water, and soap provided free in public bathrooms while menstrual products are often unavailable or require purchase? Surely everyone can afford menstrual products every month... right? How does period poverty affect college students' education, health, and well-being? What would change if menstrual products were treated as necessities rather than optional consumer goods? Join Oliver Johnson and Dr. Lesleigh Owen as they explore the social, economic, and cultural dimensions of period poverty. Learn how stigma, inequality, and access shape the experiences of menstruating individuals, examine research on the impact of period poverty among college students, and discover what we are doing on campus to address this often-overlooked issue. Attendees will leave with a deeper understanding of the problem and practical ideas for creating change in their own communities. November 16: Dr. Breon Derby Knotty Habit: A Stress-Relief Workshop for Happy Hookers It is time to unplug from the endless notifications, step away from the screen, and pick up a new kind of coping mechanism: a Knotty Habit Knotty Habit is a chill, zero-pressure workshop designed to help you de-stress through fiber arts--crochet, cross-stitch, and embroidery. Learn how hands-on crafting helps with anxiety, slashes cortisol, and lets you make cool stuff. Nerd out on the science behind crafting and practice the basics at your own pace. Zero experience needed and all supplies provided. Let’s get knotty! To ensure we have enough supplies, an RSVP would be appreciated; please text 605-641-0668 Questions? Contact Dr. Courtney Huse Wika at Courtney.HuseWika@BHSU.edu",
-   "start_dt": "2026-11-16T23:00",
-   "end_dt": "2026-11-17T00:00",
-   "location": "Jonas 110",
-   "image_url": "",
-   "image_alt": "",
-   "organizer": "Courtney Huse-Wika",
-   "tags": [
-    "BHSU Event",
-    "Geek Speak",
-    "Home"
-   ],
-   "featured": false,
-   "ticket_url": "",
-   "category": "Campus Calendar/Events",
-   "record_type": "event",
-   "source_label": "BHSU Campus Calendar",
-   "kind": "event",
-   "source": "bhsu_calendar",
-   "id": "2392b69fef13",
-   "start": "2026-11-16T16:00:00-07:00",
-   "end": "2026-11-16T17:00:00-07:00",
-   "all_day": false,
-   "date": "2026-11-16",
-   "event_category": "campus",
-   "_first_seen": "2026-11-01"
   },
   {
    "event_id": "f8100145-b6a3-4ff2-9d55-f5efdbbc000d",
@@ -149,8 +117,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
@@ -248,8 +216,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
@@ -285,7 +253,7 @@
     "BHSU Event"
    ],
    "featured": false,
-   "ticket_url": "https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommerce.cashnet.com%2FBHSU_BHGEN%3Fcname%3DMUSIC&data=05%7C02%7CCharles.Williams%40bhsu.edu%7C7ebdb5238cf444b6e30f08df296c5862%7C9bfcf28b3a114fd7a8138f519cdb0db2%7C0%7C0%7C6392752174414923",
+   "ticket_url": "https://bhsu.edu/university-resources/music-events/madrigal-dinner.html#purchase",
    "category": "Campus Calendar/Events",
    "record_type": "event",
    "source_label": "BHSU Campus Calendar",
@@ -312,8 +280,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event"
    ],
    "featured": false,
@@ -344,8 +312,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],

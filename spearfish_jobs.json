@@ -3,8 +3,8 @@
  "name": "City of Spearfish Jobs",
  "kind": "job",
  "url": "https://www.spearfish.gov/161/Career-Opportunities",
- "fetched_at": "2026-11-17T07:43:20-07:00",
- "count": 1,
+ "fetched_at": "2026-11-18T12:09:27-07:00",
+ "count": 2,
  "records": [
   {
    "url": "https://cityofspearfish.sagehcm.com/jobs/443/1/#330",
@@ -23,6 +23,24 @@
    "id": "81940ff77f57",
    "date": "2025-10-16",
    "_first_seen": "2026-11-03"
+  },
+  {
+   "url": "https://cityofspearfish.sagehcm.com/jobs/443/1/#378",
+   "title": "Firefighter",
+   "slug": "firefighter",
+   "department": "Fire",
+   "position_type": "FT Employee",
+   "salary": "$32.32 - $39.38 an hour",
+   "published": "2026-11-17",
+   "closing": "",
+   "description": "Fire • FT Employee • $32.32 - $39.38 an hour",
+   "record_type": "job",
+   "source_label": "City of Spearfish",
+   "kind": "job",
+   "source": "spearfish_jobs",
+   "id": "75c00d3eb3e8",
+   "date": "2026-11-17",
+   "_first_seen": "2026-11-18"
   }
  ]
 }

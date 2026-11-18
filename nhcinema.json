@@ -3,7 +3,7 @@
  "name": "Northern Hills Cinema",
  "kind": "movie",
  "url": "https://nhcinema.com/",
- "fetched_at": "2026-11-17T07:42:58-07:00",
+ "fetched_at": "2026-11-18T12:08:56-07:00",
  "count": 15,
  "records": [
   {
@@ -17,19 +17,6 @@
    "note": "Ends Thursday 11/19",
    "ends": "2026-11-19",
    "showtimes": [
-    {
-     "date": "2026-11-17",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-18",
      "times": [
@@ -82,19 +69,6 @@
    "ends": "2026-11-19",
    "showtimes": [
     {
-     "date": "2026-11-17",
-     "times": [
-      {
-       "time": "15:45",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-18",
      "times": [
       {
@@ -146,19 +120,6 @@
    "ends": "2026-11-24",
    "showtimes": [
     {
-     "date": "2026-11-17",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-18",
      "times": [
       {
@@ -241,6 +202,19 @@
     },
     {
      "date": "2026-11-23",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-24",
      "times": [
       {
        "time": "15:00",
@@ -278,19 +252,6 @@
    "ends": "2026-11-24",
    "showtimes": [
     {
-     "date": "2026-11-17",
-     "times": [
-      {
-       "time": "15:45",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": true
-      }
-     ]
-    },
-    {
      "date": "2026-11-18",
      "times": [
       {
@@ -377,6 +338,19 @@
       {
        "time": "15:30",
        "luxury": true
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-24",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
       },
       {
        "time": "18:30",
@@ -594,19 +568,6 @@
    "no_passes": true,
    "showtimes": [
     {
-     "date": "2026-11-17",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-18",
      "times": [
       {
@@ -689,6 +650,19 @@
     },
     {
      "date": "2026-11-23",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-24",
      "times": [
       {
        "time": "15:15",
@@ -724,19 +698,6 @@
    "no_passes": true,
    "showtimes": [
     {
-     "date": "2026-11-17",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": true
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-18",
      "times": [
       {
@@ -827,6 +788,19 @@
       {
        "time": "18:15",
        "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-24",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": true
       }
      ]
     }

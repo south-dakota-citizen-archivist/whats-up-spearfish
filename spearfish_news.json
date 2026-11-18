@@ -3,8 +3,8 @@
  "name": "City of Spearfish News Flash",
  "kind": "press_release",
  "url": "https://www.spearfish.gov/CivicAlerts.aspx",
- "fetched_at": "2026-11-17T07:43:25-07:00",
- "count": 9,
+ "fetched_at": "2026-11-18T12:09:31-07:00",
+ "count": 10,
  "records": [
   {
    "url": "https://www.spearfish.gov/CivicAlerts.aspx?aid=581",
@@ -140,6 +140,21 @@
    "id": "481f8d064b6b",
    "date": "2026-11-13",
    "_first_seen": "2026-11-14"
+  },
+  {
+   "url": "https://www.spearfish.gov/CivicAlerts.aspx?aid=589",
+   "title": "Spearfish Promotes Jaymia Ecker to Community Development Director",
+   "slug": "spearfish-promotes-jaymia-ecker-to-community-development-director",
+   "description": "The Spearfish City Council voted Monday, November 16, 2026, to promote Jaymia Ecker to Community Development Director, effective November 22, 2026.",
+   "published": "2026-11-17T12:31:27-07:00",
+   "start_dt": "Tue, 17 Nov 2026 12:31:27 -0700",
+   "record_type": "press_release",
+   "source_label": "City of Spearfish",
+   "kind": "press_release",
+   "source": "spearfish_news",
+   "id": "6d5ffb3d9c94",
+   "date": "2026-11-17",
+   "_first_seen": "2026-11-18"
   }
  ]
 }
