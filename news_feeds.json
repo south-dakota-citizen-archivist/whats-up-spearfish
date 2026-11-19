@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-19T02:32:31-07:00",
- "count": 96,
+ "fetched_at": "2026-11-19T13:57:18-07:00",
+ "count": 97,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/20/south-dakota-specialty-courts-cost-thousands-less-than-incarceration-report-says/",
@@ -622,21 +622,6 @@
    "_first_seen": "2026-11-03"
   },
   {
-   "url": "https://www.sdnewswatch.org/live-results-south-dakota-general-election-2026/",
-   "title": "Live results: 2026 South Dakota General Election",
-   "slug": "sd-newswatch-live-results-2026-south-dakota-general-election",
-   "published": "2026-11-03",
-   "byline": "The Associated Press",
-   "description": "Updated vote numbers on the statewide candidate races and ballot measures from The Associated Press, updated as votes are counted.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "23aa12208cdc",
-   "date": "2026-11-03",
-   "_first_seen": "2026-11-03"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/11/03/voter-interviews-reflect-struggle-for-south-dakota-democrats-as-party-hopes-for-gains-nationally/",
    "title": "Voter interviews reflect struggle for South Dakota Democrats as party hopes for gains nationally",
    "slug": "south-dakota-searchlight-voter-interviews-reflect-struggle-for-south-dakota-as",
@@ -648,6 +633,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "c34ea059580f",
+   "date": "2026-11-03",
+   "_first_seen": "2026-11-03"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/live-results-south-dakota-general-election-2026/",
+   "title": "Live results: 2026 South Dakota General Election",
+   "slug": "sd-newswatch-live-results-2026-south-dakota-general-election",
+   "published": "2026-11-03",
+   "byline": "The Associated Press",
+   "description": "Updated vote numbers on the statewide candidate races and ballot measures from The Associated Press, updated as votes are counted.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "23aa12208cdc",
    "date": "2026-11-03",
    "_first_seen": "2026-11-03"
   },
@@ -1445,6 +1445,21 @@
    "id": "59fc28a46255",
    "date": "2026-11-18",
    "_first_seen": "2026-11-18"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/fact-brief-democrats-flip-senate-seats/",
+   "title": "Fact brief: Did Democrats flip the most Senate seats in history?",
+   "slug": "sd-newswatch-fact-brief-did-democrats-flip-the-most-senate-seats-in-history",
+   "published": "2026-11-19",
+   "byline": "Emily DeCock",
+   "description": "Historic midterm election will give Democrats the majority for the 120th Congress. New senators will be sworn in Jan. 3, 2027.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "a5b88c1bac1d",
+   "date": "2026-11-19",
+   "_first_seen": "2026-11-19"
   }
  ]
 }
