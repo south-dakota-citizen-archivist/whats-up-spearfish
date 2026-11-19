@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-18T13:52:42-07:00",
- "count": 97,
+ "fetched_at": "2026-11-18T18:32:08-07:00",
+ "count": 99,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/19/night-and-day-difference-revealed-after-restoration-in-south-dakota-capitol-rotunda/",
@@ -1445,6 +1445,36 @@
    "id": "dbbc7f23fbde",
    "date": "2026-11-17",
    "_first_seen": "2026-11-16"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/18/voters-sd-charles-mix-clay-counties-reject-local-sales-taxes-for-property-tax-reductions/",
+   "title": "Voters in two more South Dakota counties reject implementing a sales tax to reduce property taxes",
+   "slug": "south-dakota-searchlight-voters-in-two-more-south-dakota-counties-reject-a-sales",
+   "published": "2026-11-18",
+   "byline": "Makenzie Huber",
+   "description": "Voters in two more South Dakota counties rejected proposals Tuesday to impose sales taxes for homeowner property tax relief, making the new option 0-for-4 when it’s submitted to county voters. At least seven other counties have adopted a sales tax without putting it to voters or being subjected to a referendum. There are 66 counties [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "039cad753854",
+   "date": "2026-11-18",
+   "_first_seen": "2026-11-18"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/18/us-house-approves-south-dakota-rep-johnsons-bill-to-fund-water-pipeline-project-studies/",
+   "title": "US House approves South Dakota Rep. Johnson’s bill to fund water pipeline project studies",
+   "slug": "south-dakota-searchlight-us-house-approves-south-dakota-rep-johnsons-bill-to",
+   "published": "2026-11-18",
+   "byline": "Joshua Haiar",
+   "description": "The U.S. House passed legislation Tuesday sponsored by Republican Rep. Dusty Johnson of South Dakota to fund studies for three proposed Missouri River water pipeline projects. Similar legislation sponsored by South Dakota Republican Sens. John Thune and Mike Rounds has received committee approval and awaits action by the full Senate. Johnson’s bill is called the [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "637a331f32ce",
+   "date": "2026-11-18",
+   "_first_seen": "2026-11-18"
   },
   {
    "url": "https://southdakotasearchlight.com/2026/11/18/minimum-wage-going-up-to-12-30-in-south-dakota-due-to-voter-approved-auto-adjustments/",
