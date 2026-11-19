@@ -3,8 +3,8 @@
  "name": "BHSU",
  "kind": "job",
  "url": "https://yourfuture.sdbor.edu/",
- "fetched_at": "2026-11-18T12:08:18-07:00",
- "count": 4,
+ "fetched_at": "2026-11-19T12:11:40-07:00",
+ "count": 5,
  "records": [
   {
    "url": "https://yourfuture.sdbor.edu/postings/49737",
@@ -65,6 +65,21 @@
    "id": "799fec5b4690",
    "date": "2026-10-30",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://yourfuture.sdbor.edu/postings/50594",
+   "title": "Accountant",
+   "slug": "accountant",
+   "department": "BHSU-Administrative Services",
+   "description": "Black Hills State University seeks applicants to fill an Accountant position. DUTIES: Develop and maintain financial structures for departments Develop procedures for accessing information Develop reports based on their interpretation of applicable state and federal regulations Analyze fiscal data to determine trends and make projections This position will assist with accounts payable, reconciling, and general accounting KNOWLEDGE, SKILLS AND ABILITIES: Generally accepted accounting principles (GAAP) Analyze and interpret financial data and information and reach conclusions Maintain effective working relationships with coworkers, managers, and representatives of other agencies or departments PREFERRED REQUIREMENTS: Higher education accounting experience is preferred A bachelor’s degree OR three or more years of finance and/or accounting experience COMMENTS: Sponsorship is not available for this position. Remote work is not an option. TO APPLY: Applications must be made online at https://yourfuture.sdbor.edu . Candidates will need to attach a cover letter, resume, and the names/contact information of at least three professional references. This position is open until it is filled with a first review date of November 24, 2026, at 11 pm mountain time. For application assistance, please contact Human Resources at 605.642.6549. Questions specific to the position may directed towards Dawn Miller at dawn.miller@bhsu.edu . Arrangements for accommodations required by disabilities can be made by contacting Cassie Maser at 605-642-6545 or Cassie.Maser@bhsu.edu . Employment is dependent upon a satisfactory background check.",
+   "published": "2026-11-18T15:34:00-07:00",
+   "record_type": "job",
+   "source_label": "BHSU",
+   "kind": "job",
+   "source": "bhsu_jobs",
+   "id": "d0b520833ad8",
+   "date": "2026-11-18",
+   "_first_seen": "2026-11-19"
   }
  ]
 }

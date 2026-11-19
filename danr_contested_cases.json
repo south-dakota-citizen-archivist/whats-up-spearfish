@@ -3,7 +3,7 @@
  "name": "SD DANR contested cases",
  "kind": "case",
  "url": "https://danr.sd.gov/public/ContestedCase.aspx",
- "fetched_at": "2026-11-18T13:53:05-07:00",
+ "fetched_at": "2026-11-19T12:12:01-07:00",
  "count": 8,
  "records": [
   {
@@ -158,9 +158,9 @@
      "added": "2026-11-10"
     },
     {
-     "title": "Petitions Submitted (timely and correct form)",
-     "url": "https://danr.sd.gov/wrimage/pub/2915-2_petitions_timely_correctform_1.pdf",
-     "added": "2026-11-06"
+     "title": "Petitions Submitted (un-timely)",
+     "url": "https://danr.sd.gov/wrimage/pub/2915-2_late_petitions_.pdf",
+     "added": "2026-11-18"
     }
    ],
    "updated": "2026-11-16",
@@ -191,9 +191,9 @@
      "added": "2026-11-10"
     },
     {
-     "title": "Petitions Submitted (timely and correct form)",
-     "url": "https://danr.sd.gov/wrimage/pub/2914-2_petitions_timely_correctform_1.pdf",
-     "added": "2026-11-06"
+     "title": "Petitions Submitted (un-timely)",
+     "url": "https://danr.sd.gov/wrimage/pub/2914-2_late_petitions_.pdf",
+     "added": "2026-11-18"
     }
    ],
    "updated": "2026-11-16",

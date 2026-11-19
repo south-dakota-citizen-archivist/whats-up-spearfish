@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-18T12:09:12-07:00",
- "count": 62,
+ "fetched_at": "2026-11-19T12:12:24-07:00",
+ "count": 67,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -951,6 +951,22 @@
    "_first_seen": "2026-11-17"
   },
   {
+   "url": "https://www.sdpb.org/politics/2026-11-18/rep-johnson-backed-rural-water-support-bill-clears-u-s-house",
+   "title": "Rep. Johnson-backed rural water support bill clears U.S. House",
+   "slug": "sdpb-rep-johnson-backed-rural-water-support-bill-clears-u-s-house",
+   "published": "2026-11-18",
+   "byline": "By C.J. Keene",
+   "description": "Rural water is the subject on Capitol Hill, as the U.S. House unanimously passes Rep. Dusty Johnson’s package supporting three South Dakota water projects.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/9e/85/9e7d218b45c0bf38c2fab258552b/dusty-johnson-2.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "85c4e011dfea",
+   "date": "2026-11-18",
+   "_first_seen": "2026-11-19"
+  },
+  {
    "url": "https://www.sdpb.org/business-economics/2026-11-18/south-dakotas-minimum-wage-to-increase-by-45-cents-in-2027",
    "title": "South Dakota's minimum wage to increase by 45 cents in 2027",
    "slug": "sdpb-south-dakota-s-minimum-wage-to-increase-by-45-cents-in-2027",
@@ -997,6 +1013,70 @@
    "id": "7d63eea64ad1",
    "date": "2026-11-18",
    "_first_seen": "2026-11-18"
+  },
+  {
+   "url": "https://www.sdpb.org/crime-courts/2026-11-19/south-dakota-sues-tiktok-alleging-harm-to-minors-outcome-could-grow-meta-settlement-funds",
+   "title": "South Dakota sues TikTok alleging harm to minors; outcome could grow Meta settlement funds",
+   "slug": "sdpb-south-dakota-sues-tiktok-alleging-harm-to-minors-outcome-could-grow-meta",
+   "published": "2026-11-19",
+   "byline": "By Jackson Dircks",
+   "description": "South Dakota is suing the company Tik Tok, alleging its app actively targets minors while deceiving parents about its dangers. It’s part of a five-state coalition, North Dakota, Idaho, West Virginia and Wisconsin, to sue over concerns with popular social media app. Each state is doing so in its individual state court system.",
+   "image_url": "https://static.npr.production.npr.brightspot.cloud/42/f8/d8d69e644b5c9096c20d03f227c3/image-91.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "089eedb0c990",
+   "date": "2026-11-19",
+   "_first_seen": "2026-11-19"
+  },
+  {
+   "url": "https://www.sdpb.org/crime-courts/2026-11-19/state-anti-abortion-group-argue-over-sd-donor-disclosure-on-ads-law-in-eighth-circuit",
+   "title": "State, anti-abortion group argue over SD donor disclosure on ads law in Eighth Circuit",
+   "slug": "sdpb-state-anti-abortion-group-argue-over-sd-donor-disclosure-on-ads-law-in",
+   "published": "2026-11-19",
+   "byline": "By Jackson Dircks",
+   "description": "A nonprofit anti-abortion group that doesn’t require the disclosure of its donors is continuing to push back against a state law that requires the top five donors to be listed on political communications. The Eighth Circuit Court heard arguments in the appeals case on a suit <a href=\"https://southdakotasearchlight.com/2023/06/06/anti-abortion-group-sues-south-dakota-over-campaign-finance-requirements/\"><b>dating back to 2023</b></a>.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/c4/a6/444f1f7445cb993bbc74dca324a2/gavel-2492011-1280.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "777166b7e233",
+   "date": "2026-11-19",
+   "_first_seen": "2026-11-19"
+  },
+  {
+   "url": "https://www.sdpb.org/elections/2026-11-19/two-more-south-dakota-counties-reject-option-of-using-sales-tax-to-lower-property-tax",
+   "title": "Two more South Dakota counties reject option of using sales tax to lower property tax",
+   "slug": "sdpb-two-more-south-dakota-counties-reject-option-of-using-sales-tax-to-lower",
+   "published": "2026-11-19",
+   "byline": "By Jackson Dircks",
+   "description": "Every county that’s proposed a higher sales tax for lower property taxes to voters has seen voters reject it, following the third and fourth counties to vote on it Tuesday.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/cf/ad/e123e1b14c44b6c7a9aa1072341b/microsoftteams-image-3.png",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "4d9c7034a380",
+   "date": "2026-11-19",
+   "_first_seen": "2026-11-19"
+  },
+  {
+   "url": "https://www.sdpb.org/politics/2026-11-19/politico-columnist-jonathan-martin-on-thune-trump-and-the-lost-region",
+   "title": "Politico columnist Jonathan Martin on Thune, Trump, and the 'Lost Region'",
+   "slug": "sdpb-politico-columnist-jonathan-martin-on-thune-trump-and-the-lost-region",
+   "published": "2026-11-19",
+   "byline": "By Lori Walsh",
+   "description": "Politico columnist Jonathan Martin explains the influence of the Midwest on U.S. politics and looks to the future of the Republican party as they recover from a dizzying midterm election.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/52/a4/27ad8392458d90c0af200f3647e9/website-photo-1.png",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "8a41a25f8289",
+   "date": "2026-11-19",
+   "_first_seen": "2026-11-19"
   }
  ]
 }
