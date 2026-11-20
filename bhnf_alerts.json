@@ -3,24 +3,9 @@
  "name": "BHNF Alerts",
  "kind": "alert",
  "url": "https://www.fs.usda.gov/r02/blackhills/alerts",
- "fetched_at": "2026-11-20T02:13:51-07:00",
- "count": 26,
+ "fetched_at": "2026-11-20T13:42:06-07:00",
+ "count": 21,
  "records": [
-  {
-   "record_type": "alert",
-   "title": "Order 010 - Nuclear Burial Site - Warren Peak",
-   "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-010-nuclear-burial-site-warren-peak",
-   "description": "For public health or safety the use of explosives within the below described area is prohibited. (36 CFR 261.53)",
-   "published": "1979-06-08",
-   "source_label": "BHNF",
-   "alert_type": "information",
-   "forest_order": "010",
-   "kind": "alert",
-   "source": "bhnf_alerts",
-   "id": "459c2df70d69",
-   "date": "1979-06-08",
-   "_first_seen": "2026-11-01"
-  },
   {
    "record_type": "alert",
    "title": "Order 019 - Mining Prohibited - Norbeck",
@@ -34,21 +19,6 @@
    "source": "bhnf_alerts",
    "id": "76fdf37fa1c2",
    "date": "1989-09-12",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "record_type": "alert",
-   "title": "Order 024 - Mine Closure - Spokane",
-   "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-024-mine-closure-spokane",
-   "description": "Pursuant to 36 CFR 261.50(a), the following are prohibited: a) All motorized vehicles are prohibited from entering the area known as the Spokane Mine. Access is limited to foot travel and by horseback. This prohibited area is shown on the attached map. (36 CFR 261.53(c) and (f)). b) Access is…",
-   "published": "1992-12-03",
-   "source_label": "BHNF",
-   "alert_type": "information",
-   "forest_order": "024",
-   "kind": "alert",
-   "source": "bhnf_alerts",
-   "id": "4ef0022cf664",
-   "date": "1992-12-03",
    "_first_seen": "2026-11-01"
   },
   {
@@ -113,21 +83,6 @@
   },
   {
    "record_type": "alert",
-   "title": "Order 046 - Length of Stay Restrictions & Reservation - Campgrounds",
-   "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-046-length-stay-restrictions-reservation-campgrounds",
-   "description": "Length Order Special Restrictions & Reservation.",
-   "published": "1998-12-09",
-   "source_label": "BHNF",
-   "alert_type": "information",
-   "forest_order": "046",
-   "kind": "alert",
-   "source": "bhnf_alerts",
-   "id": "c81007903a1c",
-   "date": "1998-12-09",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "record_type": "alert",
    "title": "Order 074 - Prohibited Entry - Forest Caves/Mines",
    "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-074-prohibited-entry-forest-caves-mines",
    "description": "Prohibited Entry - Forest Caves/Mines information.",
@@ -139,36 +94,6 @@
    "source": "bhnf_alerts",
    "id": "e6f65133e896",
    "date": "2003-06-24",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "record_type": "alert",
-   "title": "Order 079 - Area Closure - Craven Canyon",
-   "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-079-area-closure-craven-canyon",
-   "description": "Area closure for occupancy and use regulations - Craven Canyon information",
-   "published": "2004-01-27",
-   "source_label": "BHNF",
-   "alert_type": "information",
-   "forest_order": "079",
-   "kind": "alert",
-   "source": "bhnf_alerts",
-   "id": "fd0a895b15b5",
-   "date": "2004-01-27",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "record_type": "alert",
-   "title": "Order 082 - Area Closure - Motorized Vehicles within Botanical Area",
-   "url": "https://www.fs.usda.gov/r02/blackhills/alerts/order-082-area-closure-motorized-vehicles-within-botanical-area",
-   "description": "Acts prohibited information on possessing or operating a motorized vehicle off Forest Development Roads within these Botanical Areas. 36 CFR 261.53 (b).",
-   "published": "2004-10-07",
-   "source_label": "BHNF",
-   "alert_type": "information",
-   "forest_order": "082",
-   "kind": "alert",
-   "source": "bhnf_alerts",
-   "id": "5c3bf767b0e4",
-   "date": "2004-10-07",
    "_first_seen": "2026-11-01"
   },
   {

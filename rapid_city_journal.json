@@ -3,8 +3,8 @@
  "name": "Rapid City Journal",
  "kind": "news",
  "url": "https://rapidcityjournal.com/",
- "fetched_at": "2026-11-20T02:13:49-07:00",
- "count": 202,
+ "fetched_at": "2026-11-20T13:42:04-07:00",
+ "count": 203,
  "records": [
   {
    "url": "https://rapidcityjournal.com/news/local/obituaries/article_287b8efd-7070-568d-b469-d2da3c944b11.html",
@@ -2602,21 +2602,6 @@
    "_first_seen": "2026-11-15"
   },
   {
-   "url": "https://rapidcityjournal.com/news/local/article_e5646f83-bac8-4ea7-9aea-630ff0d6d636.html",
-   "title": "Pistols and Pulaskis: South Dakota Wildland Fire, Highway Patrol team up on blood drive",
-   "slug": "rapid-city-journal-pistols-and-pulaskis-south-dakota-wildland-fire-highway-team",
-   "published": "2026-11-14",
-   "byline": "SHALOM BAER GEE<br>Journal staff",
-   "description": "Two arms of the South Dakota Department of Public Safety are holding their friendly, but competitive, blood drive to boost donations ahead of the holiday season.",
-   "record_type": "news",
-   "source_label": "Rapid City Journal",
-   "kind": "news",
-   "source": "rapid_city_journal",
-   "id": "e5647d772f4a",
-   "date": "2026-11-14",
-   "_first_seen": "2026-11-15"
-  },
-  {
    "url": "https://rapidcityjournal.com/news/local/article_43ce4e29-d121-554a-93e9-596813c3d186.html",
    "title": "A paralyzed Buffalo, a daring rescue and the November storm of 1974 | From the archives",
    "slug": "rapid-city-journal-a-paralyzed-buffalo-a-daring-rescue-and-the-november-storm-of",
@@ -2857,21 +2842,6 @@
    "_first_seen": "2026-11-18"
   },
   {
-   "url": "https://rapidcityjournal.com/news/local/obituaries/article_5e85e8fe-30cd-5323-a3b6-b069fd10c5f4.html",
-   "title": "Kathleen Ann Watson",
-   "slug": "rapid-city-journal-kathleen-ann-watson",
-   "published": "2026-11-18",
-   "byline": "",
-   "description": "December 28, 1948 - November 9, 2026",
-   "record_type": "news",
-   "source_label": "Rapid City Journal",
-   "kind": "news",
-   "source": "rapid_city_journal",
-   "id": "ee4a7fcfef4e",
-   "date": "2026-11-18",
-   "_first_seen": "2026-11-19"
-  },
-  {
    "url": "https://rapidcityjournal.com/news/local/obituaries/article_e1ed13d5-e210-50bb-a432-9ba9d3fd323c.html",
    "title": "Arlene Mary Flack",
    "slug": "rapid-city-journal-arlene-mary-flack",
@@ -2977,6 +2947,21 @@
    "_first_seen": "2026-11-19"
   },
   {
+   "url": "https://rapidcityjournal.com/news/local/obituaries/article_5e85e8fe-30cd-5323-a3b6-b069fd10c5f4.html",
+   "title": "Kathleen Ann Watson",
+   "slug": "rapid-city-journal-kathleen-ann-watson",
+   "published": "2026-11-18",
+   "byline": "",
+   "description": "December 28, 1948 - November 9, 2026",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "ee4a7fcfef4e",
+   "date": "2026-11-18",
+   "_first_seen": "2026-11-19"
+  },
+  {
    "url": "https://rapidcityjournal.com/news/local/government-politics/article_9fb36f32-3b57-46fa-b85a-44c2ffaa6292.html",
    "title": "Sen. Taffy Howard's campaign finance complaint 'resolved', AG's office confirms",
    "slug": "rapid-city-journal-sen-taffy-howard-s-campaign-finance-complaint-resolved-ag-s",
@@ -3035,6 +3020,36 @@
    "id": "e930ce9713bd",
    "date": "2026-11-18",
    "_first_seen": "2026-11-18"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/article_2253c439-12ca-4b86-ab23-5be3540074b9.html",
+   "title": "Firefighters, deputy, neighbors put out Rockerville deck fire, saving home",
+   "slug": "rapid-city-journal-firefighters-deputy-neighbors-put-out-rockerville-deck-fire",
+   "published": "2026-11-19",
+   "byline": "Journal staff",
+   "description": "It took a joint effort of first responders and neighbors to put out a deck fire in Rockerville on Wednesday, Nov. 18.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "43a44f242033",
+   "date": "2026-11-19",
+   "_first_seen": "2026-11-20"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/article_e5646f83-bac8-4ea7-9aea-630ff0d6d636.html",
+   "title": "Pistols and Pulaskis: South Dakota Wildland Fire, Highway Patrol team up on blood drive",
+   "slug": "rapid-city-journal-pistols-and-pulaskis-south-dakota-wildland-fire-highway-team",
+   "published": "2026-11-19",
+   "byline": "SHALOM BAER GEE<br>Journal staff",
+   "description": "Two arms of the South Dakota Department of Public Safety are holding their friendly, but competitive, blood drive to boost donations ahead of the holiday season.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "e5647d772f4a",
+   "date": "2026-11-19",
+   "_first_seen": "2026-11-15"
   }
  ]
 }

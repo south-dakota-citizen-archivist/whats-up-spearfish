@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-20T02:13:49-07:00",
- "count": 96,
+ "fetched_at": "2026-11-20T13:42:05-07:00",
+ "count": 99,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/21/all-of-us-have-a-role-in-prevention-health-official-says-as-south-dakota-suicide-numbers-rise/",
@@ -547,21 +547,6 @@
    "_first_seen": "2026-11-02"
   },
   {
-   "url": "https://www.sdnewswatch.org/south-dakota-general-election-what-to-know/",
-   "title": "What to know for Tuesday's general election",
-   "slug": "sd-newswatch-what-to-know-for-tuesday-s-general-election",
-   "published": "2026-11-03",
-   "byline": "Molly Wetsch",
-   "description": "A snapshot of the election before the midterm, including voter registration numbers, absentee ballots cast and details on election observers.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "2b8ac8c3e420",
-   "date": "2026-11-03",
-   "_first_seen": "2026-11-03"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/11/03/voter-interviews-reflect-struggle-for-south-dakota-democrats-as-party-hopes-for-gains-nationally/",
    "title": "Voter interviews reflect struggle for South Dakota Democrats as party hopes for gains nationally",
    "slug": "south-dakota-searchlight-voter-interviews-reflect-struggle-for-south-dakota-as",
@@ -573,6 +558,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "c34ea059580f",
+   "date": "2026-11-03",
+   "_first_seen": "2026-11-03"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-general-election-what-to-know/",
+   "title": "What to know for Tuesday's general election",
+   "slug": "sd-newswatch-what-to-know-for-tuesday-s-general-election",
+   "published": "2026-11-03",
+   "byline": "Molly Wetsch",
+   "description": "A snapshot of the election before the midterm, including voter registration numbers, absentee ballots cast and details on election observers.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "2b8ac8c3e420",
    "date": "2026-11-03",
    "_first_seen": "2026-11-03"
   },
@@ -1445,6 +1445,51 @@
    "id": "92a298736e30",
    "date": "2026-11-19",
    "_first_seen": "2026-11-19"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/mitchell-baseball-player-appeal-defamation-supreme-court/",
+   "title": "Mitchell baseball player appeals defamation case to Supreme Court",
+   "slug": "sd-newswatch-mitchell-baseball-player-appeals-defamation-case-to-supreme-court",
+   "published": "2026-11-20",
+   "byline": "Molly Wetsch",
+   "description": "It is one of three civil lawsuits filed by Peyton Mandel, a former Mitchell baseball player involved in a 2023 hazing incident at a Rapid City hotel.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "d4a77f9994fb",
+   "date": "2026-11-20",
+   "_first_seen": "2026-11-20"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/20/midwest-is-less-red-than-maybe-we-assumed-politico-columnist-tells-south-dakotans/",
+   "title": "Midwest is ‘less red than maybe we assumed,’ Politico columnist tells South Dakotans",
+   "slug": "south-dakota-searchlight-midwest-is-less-red-than-maybe-we-assumed-politico",
+   "published": "2026-11-20",
+   "byline": "Makenzie Huber",
+   "description": "SIOUX FALLS — The blue wave was a ripple in South Dakota during the midterm elections this month, but the results nationwide and elsewhere in the Midwest show the red-and-blue map is less fixed than it once seemed, Politico’s Jonathan Martin said Thursday. Martin, Politico’s politics bureau chief and senior political columnist, spoke to reporters [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "76c5b7c0dd93",
+   "date": "2026-11-20",
+   "_first_seen": "2026-11-20"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/20/podcast-economy-affordability-are-big-issues-for-session-new-state-senate-leaders-say/",
+   "title": "Podcast: Economy, affordability are big issues for session, new state Senate leaders say",
+   "slug": "south-dakota-searchlight-podcast-economy-affordability-are-big-issues-for-new",
+   "published": "2026-11-20",
+   "byline": "Meghan O'Brien",
+   "description": "Newly elected leaders in the South Dakota Senate joined the podcast to talk about affordability, data centers, emergency medical services, fuel taxes and other potential topics for the annual legislative session, which begins in January. Sen. Liz Larson, D-Sioux Falls, will lead a team of two Democrats in the Senate as minority leader. Sen. Casey [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "f78b006e2562",
+   "date": "2026-11-20",
+   "_first_seen": "2026-11-20"
   }
  ]
 }
