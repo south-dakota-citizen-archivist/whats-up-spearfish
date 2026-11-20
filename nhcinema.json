@@ -3,85 +3,9 @@
  "name": "Northern Hills Cinema",
  "kind": "movie",
  "url": "https://nhcinema.com/",
- "fetched_at": "2026-11-19T12:12:01-07:00",
- "count": 15,
+ "fetched_at": "2026-11-20T11:53:17-07:00",
+ "count": 13,
  "records": [
-  {
-   "title": "Godzilla Minus Zero",
-   "url": "https://nhcinema.com/view/godzilla-minus-zero",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3725/godzilla_minus_zero_godzilla_minus_zero_-_one_sheet_2__standard.jpg",
-   "rating": "R",
-   "runtime": 135,
-   "no_passes": true,
-   "note": "Ends Thursday 11/19",
-   "ends": "2026-11-19",
-   "showtimes": [
-    {
-     "date": "2026-11-19",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Action",
-   "starring": "Ryunosuke Kamiki, Minami Hamabe, Miou Tanaka",
-   "director": "Takashi Yamazaki",
-   "synopsis": "GODZILLA MINUS ZERO picks up in 1949, two years after the tumultuous events of Godzilla Minus One, and continues the story of the Shikishima family as they face an all-new calamity.",
-   "trailer": "kw0YhiqOPFg",
-   "slug": "godzilla-minus-zero",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "4aa5cc72a022",
-   "_first_seen": "2026-11-04"
-  },
-  {
-   "title": "The Cat in the Hat",
-   "url": "https://nhcinema.com/view/the-cat-in-the-hat",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3724/the_cat_in_the_hat_the_cat_in_the_hat_-_one_sheet__standard.jpg",
-   "rating": "PG",
-   "runtime": 91,
-   "no_passes": true,
-   "note": "Ends Thursday 11/19",
-   "ends": "2026-11-19",
-   "showtimes": [
-    {
-     "date": "2026-11-19",
-     "times": [
-      {
-       "time": "15:45",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Animated",
-   "starring": "Bill Hader, Bowen Yang, Matt Berry, Paula Pell, Xochiti Gomez, Quinta Brunson",
-   "director": "Alessandro Carloni, Erica Rivinoja",
-   "synopsis": "In the wonderfully whimsical tradition of Dr. Seuss, THE CAT IN THE HAT comes to the big screen in his animated theatrical feature film debut, doing what he does best--spreading joy to 'happyless' kids. In the film, The Cat takes on his toughest assignment yet... to cheer a pair of siblings struggling with their move to a new town.",
-   "trailer": "Vuv0kqGWjno",
-   "slug": "the-cat-in-the-hat",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "1e77703b1d9d",
-   "_first_seen": "2026-11-04"
-  },
   {
    "title": "Drummer Boy",
    "url": "https://nhcinema.com/view/drummer-boy",
@@ -89,23 +13,10 @@
    "image_url": "https://nhcinema.com/images/movies/3723/drummer_boy_drummer_boy_-_one_sheet_27x40__standard.jpg",
    "rating": "PG-13",
    "runtime": 129,
-   "no_passes": true,
+   "no_passes": false,
    "note": "Ends Tuesday 11/24",
    "ends": "2026-11-24",
    "showtimes": [
-    {
-     "date": "2026-11-19",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-20",
      "times": [
@@ -212,19 +123,6 @@
    "note": "Ends Tuesday 11/24",
    "ends": "2026-11-24",
    "showtimes": [
-    {
-     "date": "2026-11-19",
-     "times": [
-      {
-       "time": "15:45",
-       "luxury": true
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-20",
      "times": [
@@ -516,19 +414,6 @@
    "no_passes": true,
    "showtimes": [
     {
-     "date": "2026-11-19",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": true
-      }
-     ]
-    },
-    {
      "date": "2026-11-20",
      "times": [
       {
@@ -621,6 +506,19 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-11-26",
+     "times": [
+      {
+       "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
     }
    ],
    "genre": "Action",
@@ -645,19 +543,6 @@
    "runtime": 115,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-19",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-20",
      "times": [
@@ -741,6 +626,19 @@
     },
     {
      "date": "2026-11-25",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-26",
      "times": [
       {
        "time": "15:15",

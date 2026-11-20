@@ -3,7 +3,7 @@
  "name": "Wildlife carcass pickups",
  "kind": "stats",
  "url": "https://dot.sd.gov/",
- "fetched_at": "2026-11-19T12:13:13-07:00",
+ "fetched_at": "2026-11-20T11:54:46-07:00",
  "data": {
   "layer": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0",
   "bbox": {
@@ -13,6 +13,186 @@
    "ymax": 44.8
   },
   "records": [
+   {
+    "objectid": 74129,
+    "globalid": "46bd2ddb-65d6-487b-963a-4a43a145c9c1",
+    "date": "2026-11-19",
+    "species": "White-tailed Deer",
+    "sex": "Female",
+    "present": "Yes",
+    "highway": "I90",
+    "highway_raw": "I90",
+    "comments": "",
+    "contractor": "Tony Hanig",
+    "pcn": "I-90 Rapid City Region",
+    "lat": 44.252756,
+    "lon": -103.404379,
+    "date_raw": "2026-11-19T12:00:00-07:00",
+    "created": "2026-11-19T13:30:54-07:00",
+    "creator": "",
+    "edited": "2026-11-19T13:30:54-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16863,
+      "name": "Picture1-20261119-203042.jpg",
+      "type": "image/jpeg",
+      "size": 136325,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 74127,
+    "globalid": "a6e6b720-ba89-47e3-b493-751eac0a2742",
+    "date": "2026-11-19",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "I90",
+    "highway_raw": "I90",
+    "comments": "",
+    "contractor": "Tony Hanig",
+    "pcn": "I-90 Rapid City Region",
+    "lat": 44.371656,
+    "lon": -103.473858,
+    "date_raw": "2026-11-19T12:00:00-07:00",
+    "created": "2026-11-19T13:12:28-07:00",
+    "creator": "",
+    "edited": "2026-11-19T13:12:28-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16861,
+      "name": "Picture1-20261119-201214.jpg",
+      "type": "image/jpeg",
+      "size": 136891,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 74125,
+    "globalid": "875032df-28ab-4dbe-aed2-6cbba6be42c8",
+    "date": "2026-11-19",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "I90",
+    "highway_raw": "I90",
+    "comments": "",
+    "contractor": "Tony Hanig",
+    "pcn": "I-90 Rapid City Region",
+    "lat": 44.41826,
+    "lon": -103.531708,
+    "date_raw": "2026-11-19T12:00:00-07:00",
+    "created": "2026-11-19T13:02:18-07:00",
+    "creator": "",
+    "edited": "2026-11-19T13:02:18-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16859,
+      "name": "Picture1-20261119-200203.jpg",
+      "type": "image/jpeg",
+      "size": 177776,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 74124,
+    "globalid": "dfa859b3-241a-4ded-9866-cdb604f622b4",
+    "date": "2026-11-19",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "I90",
+    "highway_raw": "I90",
+    "comments": "",
+    "contractor": "Tony Hanig",
+    "pcn": "I-90 Rapid City Region",
+    "lat": 44.461403,
+    "lon": -103.621628,
+    "date_raw": "2026-11-19T12:00:00-07:00",
+    "created": "2026-11-19T12:47:25-07:00",
+    "creator": "",
+    "edited": "2026-11-19T12:47:25-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16858,
+      "name": "Picture1-20261119-194710.jpg",
+      "type": "image/jpeg",
+      "size": 174826,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 74121,
+    "globalid": "730464e5-5343-4d82-8718-d68d1372b23f",
+    "date": "2026-11-19",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "I90",
+    "highway_raw": "I90",
+    "comments": "",
+    "contractor": "Tony Hanig",
+    "pcn": "I-90 Rapid City Region",
+    "lat": 44.493455,
+    "lon": -103.848289,
+    "date_raw": "2026-11-19T12:00:00-07:00",
+    "created": "2026-11-19T12:27:34-07:00",
+    "creator": "",
+    "edited": "2026-11-19T12:27:34-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16855,
+      "name": "Picture1-20261119-192718.jpg",
+      "type": "image/jpeg",
+      "size": 139930,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 74118,
+    "globalid": "cb77f01c-6f93-4cc9-9476-054fbcaa8328",
+    "date": "2026-11-19",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "I90",
+    "highway_raw": "I90",
+    "comments": "",
+    "contractor": "Tony Hanig",
+    "pcn": "I-90 Rapid City Region",
+    "lat": 44.521188,
+    "lon": -103.878664,
+    "date_raw": "2026-11-19T12:00:00-07:00",
+    "created": "2026-11-19T12:19:09-07:00",
+    "creator": "",
+    "edited": "2026-11-19T12:19:09-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 16852,
+      "name": "Picture1-20261119-191857.jpg",
+      "type": "image/jpeg",
+      "size": 166508,
+      "keywords": "Picture1"
+     }
+    ]
+   },
    {
     "objectid": 74106,
     "globalid": "c0b31c44-a480-4441-811d-7122d5d0d1cd",
@@ -35334,18 +35514,18 @@
     "parentglobalid": "",
     "photos": [
      {
-      "id": 12564,
-      "name": "Picture2-20260819-201330.jpg",
-      "type": "image/jpeg",
-      "size": 88987,
-      "keywords": "Picture2"
-     },
-     {
       "id": 12563,
       "name": "Picture1-20260819-201305.jpg",
       "type": "image/jpeg",
       "size": 77114,
       "keywords": "Picture1"
+     },
+     {
+      "id": 12564,
+      "name": "Picture2-20260819-201330.jpg",
+      "type": "image/jpeg",
+      "size": 88987,
+      "keywords": "Picture2"
      }
     ]
    },

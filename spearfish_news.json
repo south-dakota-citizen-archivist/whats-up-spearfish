@@ -3,7 +3,7 @@
  "name": "City of Spearfish News Flash",
  "kind": "press_release",
  "url": "https://www.spearfish.gov/CivicAlerts.aspx",
- "fetched_at": "2026-11-19T12:12:33-07:00",
+ "fetched_at": "2026-11-20T11:53:42-07:00",
  "count": 10,
  "records": [
   {
@@ -127,21 +127,6 @@
    "_first_seen": "2026-11-13"
   },
   {
-   "url": "https://www.spearfish.gov/CivicAlerts.aspx?aid=588",
-   "title": "Crack Sealing the week of November 16th through November 20th",
-   "slug": "crack-sealing-the-week-of-november-16th-through-november-20th",
-   "description": "Crack sealing will be performed throughout multiple areas of Spearfish from November 16th to November 20th. This work will be performed during daylight hours. During application there will be road work signage and mobile traffic control.",
-   "published": "2026-11-13T16:24:31-07:00",
-   "start_dt": "Fri, 13 Nov 2026 16:24:31 -0700",
-   "record_type": "press_release",
-   "source_label": "City of Spearfish",
-   "kind": "press_release",
-   "source": "spearfish_news",
-   "id": "481f8d064b6b",
-   "date": "2026-11-13",
-   "_first_seen": "2026-11-14"
-  },
-  {
    "url": "https://www.spearfish.gov/CivicAlerts.aspx?aid=589",
    "title": "Spearfish Promotes Jaymia Ecker to Community Development Director",
    "slug": "spearfish-promotes-jaymia-ecker-to-community-development-director",
@@ -155,6 +140,21 @@
    "id": "6d5ffb3d9c94",
    "date": "2026-11-17",
    "_first_seen": "2026-11-18"
+  },
+  {
+   "url": "https://www.spearfish.gov/CivicAlerts.aspx?aid=588",
+   "title": "Update: Crack sealing will continue the week after Thanksgiving",
+   "slug": "update-crack-sealing-will-continue-the-week-after-thanksgiving",
+   "description": "Due to weather-related delays, crack sealing operations will continue the week after Thanksgiving, November 30th through December 4th, 2026.",
+   "published": "2026-11-19T16:12:00-07:00",
+   "start_dt": "Thu, 19 Nov 2026 16:12:00 -0700",
+   "record_type": "press_release",
+   "source_label": "City of Spearfish",
+   "kind": "press_release",
+   "source": "spearfish_news",
+   "id": "481f8d064b6b",
+   "date": "2026-11-19",
+   "_first_seen": "2026-11-14"
   }
  ]
 }

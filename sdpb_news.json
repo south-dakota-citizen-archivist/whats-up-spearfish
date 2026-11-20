@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-19T12:12:24-07:00",
- "count": 67,
+ "fetched_at": "2026-11-20T11:53:35-07:00",
+ "count": 71,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -1077,6 +1077,70 @@
    "id": "8a41a25f8289",
    "date": "2026-11-19",
    "_first_seen": "2026-11-19"
+  },
+  {
+   "url": "https://www.sdpb.org/politics/2026-11-20/rounds-votes-no-thune-votes-yes-as-senate-passes-permitting-reform-bill",
+   "title": "Rounds votes no, Thune votes yes as Senate passes permitting reform bill",
+   "slug": "sdpb-rounds-votes-no-thune-votes-yes-as-senate-passes-permitting-reform-bill",
+   "published": "2026-11-20",
+   "byline": "By SDPB News Staff",
+   "description": "U.S. Senator Mike Rounds was one of only two Republicans to vote against a major permitting reform bill.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/78/aa/58e3e93047f9bb2e4837d234fcc5/70f2a2cccb-capitol-building.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "cb431f726cf0",
+   "date": "2026-11-20",
+   "_first_seen": "2026-11-20"
+  },
+  {
+   "url": "https://www.sdpb.org/politics/2026-11-20/lawmakers-face-tightrope-walk-priorities-as-data-centers-prove-unpopular",
+   "title": "Lawmakers face tightrope walk of priorities as data centers prove unpopular",
+   "slug": "sdpb-lawmakers-face-tightrope-walk-of-priorities-as-data-centers-prove-unpopular",
+   "published": "2026-11-20",
+   "byline": "By C.J. Keene",
+   "description": "The legislative Executive Board has approved an interim report that looks at data centers. The state Legislature has also adopted a data center bill of rights. Now local governments like Rapid City are looking at the issue through a different lens.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/23/47/23007ee8450099bdaef657390048/computer-technology-jan-2024-sdpb.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "cc28faaf23f0",
+   "date": "2026-11-20",
+   "_first_seen": "2026-11-20"
+  },
+  {
+   "url": "https://www.sdpb.org/politics/2026-11-20/incoming-u-s-rep-jackley-prepares-for-move-to-washington",
+   "title": "Incoming U.S. Rep. Jackley prepares for move to Washington",
+   "slug": "sdpb-incoming-u-s-rep-jackley-prepares-for-move-to-washington",
+   "published": "2026-11-20",
+   "byline": "By Lori Walsh",
+   "description": "After a whirlwind congressional orientation, Marty Jackley returns to South Dakota to close out his term as attorney general and spend some time in the deer stand.",
+   "image_url": "https://static.npr.production.npr.brightspot.cloud/9b/34/5c908a714c2faf9d8a7def1e2f72/jackley-orientation.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "b64b97fb0fbe",
+   "date": "2026-11-20",
+   "_first_seen": "2026-11-20"
+  },
+  {
+   "url": "https://www.sdpb.org/healthcare/2026-11-20/as-glp-1-complications-rise-fitness-experts-recommend-strength-training-to-complement-weight-loss",
+   "title": "As GLP-1 complications rise, fitness experts recommend strength training to complement weight loss",
+   "slug": "sdpb-as-glp-1-complications-rise-fitness-experts-recommend-strength-training-to",
+   "published": "2026-11-20",
+   "byline": "By Lori Walsh",
+   "description": "South Dakotans seeking to stay healthy over the holidays might consider lifting weights as well as a smaller serving of turkey. Fitness pro Annie Mello offers tips.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/52/a4/27ad8392458d90c0af200f3647e9/website-photo-1.png",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "c392a0943510",
+   "date": "2026-11-20",
+   "_first_seen": "2026-11-20"
   }
  ]
 }
