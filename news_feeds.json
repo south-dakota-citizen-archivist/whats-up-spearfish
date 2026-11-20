@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-19T13:57:18-07:00",
- "count": 97,
+ "fetched_at": "2026-11-19T18:27:36-07:00",
+ "count": 100,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/20/south-dakota-specialty-courts-cost-thousands-less-than-incarceration-report-says/",
@@ -1458,6 +1458,51 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "a5b88c1bac1d",
+   "date": "2026-11-19",
+   "_first_seen": "2026-11-19"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/19/recount-results-remain-the-same-in-sioux-falls-state-senate-race-chris-karr-aaron-matson/",
+   "title": "Recount results remain the same in Sioux Falls state Senate race",
+   "slug": "south-dakota-searchlight-recount-results-remain-the-same-in-sioux-falls-state",
+   "published": "2026-11-19",
+   "byline": "Makenzie Huber",
+   "description": "The results of the District 11 South Dakota Senate race in southwestern Sioux Falls are unchanged after a recount on Thursday, according to the Minnehaha County Auditor’s Office. Among five races close enough to qualify for a recount, Democrat Aaron Matson was the sole losing South Dakota legislative candidate to ask for one.  Matson lost to [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "4dfdc170f9ca",
+   "date": "2026-11-19",
+   "_first_seen": "2026-11-19"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/19/black-hills-energy-agrees-to-delay-monthly-surcharge-request/",
+   "title": "Black Hills Energy agrees to delay monthly surcharge request",
+   "slug": "south-dakota-searchlight-black-hills-energy-agrees-to-delay-monthly-surcharge",
+   "published": "2026-11-19",
+   "byline": "Joshua Haiar",
+   "description": "Black Hills Energy has reversed course and will not try to immediately impose a new monthly surcharge on its electric customers while South Dakota regulators consider the request. The surcharge could still be implemented later, though, and it would further raise monthly bills for Black Hills Energy customers already dealing with a regular rate increase. [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "7e856d0fd023",
+   "date": "2026-11-19",
+   "_first_seen": "2026-11-19"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/19/south-dakota-sues-tiktok-in-state-court-after-settlement-negotiations-in-federal-lawsuit-stall/",
+   "title": "South Dakota sues TikTok in state court after settlement negotiations in federal lawsuit stall",
+   "slug": "south-dakota-searchlight-south-dakota-sues-tiktok-in-state-court-after-in-stall",
+   "published": "2026-11-19",
+   "byline": "John Hult",
+   "description": "South Dakota’s attorney general is suing TikTok for allegedly breaking state law by lying to parents about safety, bypassing safety controls and failing to protect kids from harm. The lawsuit, filed Thursday in Hughes County, comes as settlement talks faltered between South Dakota and ByteDance, the Chinese company behind the social media app the state [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "92a298736e30",
    "date": "2026-11-19",
    "_first_seen": "2026-11-19"
   }
