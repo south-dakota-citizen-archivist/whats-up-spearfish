@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-20T11:53:35-07:00",
- "count": 71,
+ "fetched_at": "2026-11-21T10:48:22-07:00",
+ "count": 72,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -1077,6 +1077,22 @@
    "id": "8a41a25f8289",
    "date": "2026-11-19",
    "_first_seen": "2026-11-19"
+  },
+  {
+   "url": "https://www.sdpb.org/healthcare/2026-11-20/day-county-ambulance-conflict-a-symptom-of-broader-system-failure",
+   "title": "Day County Ambulance conflict a symptom of broader system failure",
+   "slug": "sdpb-day-county-ambulance-conflict-a-symptom-of-broader-system-failure",
+   "published": "2026-11-20",
+   "byline": "By Jackie Hendry",
+   "description": "The resignation of eleven ambulance volunteers Day County brings renewed attention to the funding challenges counties face in supporting ambulance services.",
+   "image_url": "https://static.npr.production.npr.brightspot.cloud/59/28/111def934b61935e8ce375ae20e4/11172026-day-county-ems-01-29-09-17-still001.png",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "7f4c8fc39cb1",
+   "date": "2026-11-20",
+   "_first_seen": "2026-11-21"
   },
   {
    "url": "https://www.sdpb.org/politics/2026-11-20/rounds-votes-no-thune-votes-yes-as-senate-passes-permitting-reform-bill",

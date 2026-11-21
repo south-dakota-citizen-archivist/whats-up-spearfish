@@ -3,8 +3,8 @@
  "name": "Sawyer Brewing Co.",
  "kind": "beer",
  "url": "https://www.sawyerbrewingco.com/menu",
- "fetched_at": "2026-11-20T11:53:33-07:00",
- "count": 15,
+ "fetched_at": "2026-11-21T10:48:22-07:00",
+ "count": 16,
  "records": [
   {
    "url": "https://www.sawyerbrewingco.com/menu",
@@ -443,6 +443,23 @@
    "source": "sawyer_brewing",
    "id": "ff36123bd2a8",
    "_first_seen": "2026-11-09"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/cf97446e-c244-4dde-a797-5bf467785130/santaevent.jpg",
+   "title": "My, Nowaenelee - 28):",
+   "slug": "my-nowaenelee-28",
+   "category": "Dark Side",
+   "description": "eee ll",
+   "abv": "",
+   "notes": "",
+   "prices": [],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "69916f19a708",
+   "_first_seen": "2026-11-21"
   }
  ]
 }

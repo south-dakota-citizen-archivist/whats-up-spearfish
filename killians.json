@@ -3,7 +3,7 @@
  "name": "Killian's",
  "kind": "beer",
  "url": "https://untappd.com",
- "fetched_at": "2026-11-20T11:52:53-07:00",
+ "fetched_at": "2026-11-21T10:47:50-07:00",
  "count": 17,
  "records": [
   {
@@ -31,7 +31,7 @@
    "abv": "5.7%",
    "ibu": "",
    "brewery": "Sawyer Brewing Co",
-   "rating": "3.9",
+   "rating": "3.89",
    "image_url": "https://labels.untappd.com/5868304",
    "record_type": "beer",
    "source_label": "Killian's",
@@ -126,21 +126,21 @@
    "_first_seen": "2026-11-12"
   },
   {
-   "url": "https://untappd.com/b/surly-brewing-company-furious/7808",
-   "title": "Furious",
-   "slug": "furious",
+   "url": "https://untappd.com/b/look-s-beer-co-warm-gun/3566121",
+   "title": "Warm Gun",
+   "slug": "warm-gun",
    "category": "IPA - American",
-   "abv": "6.7%",
-   "ibu": "100",
-   "brewery": "Surly Brewing Company",
-   "rating": "3.84",
-   "image_url": "https://labels.untappd.com/7808",
+   "abv": "7%",
+   "ibu": "67",
+   "brewery": "Look's Beer Co.",
+   "rating": "3.85",
+   "image_url": "https://labels.untappd.com/3566121",
    "record_type": "beer",
    "source_label": "Killian's",
    "kind": "beer",
    "source": "killians",
-   "id": "c8449156bbef",
-   "_first_seen": "2026-11-11"
+   "id": "081b2ad6567e",
+   "_first_seen": "2026-11-21"
   },
   {
    "url": "https://untappd.com/b/surly-brewing-company-darkness/2100546",
@@ -262,21 +262,21 @@
    "_first_seen": "2026-11-13"
   },
   {
-   "url": "https://untappd.com/b/scribbled-lines-lois-v-4/6516090",
-   "title": "Loïs V.4",
-   "slug": "lois-v-4",
-   "category": "Sour - Other",
-   "abv": "6%",
+   "url": "https://untappd.com/b/odell-brewing-co-sippin-pretty/2852344",
+   "title": "Sippin' Pretty",
+   "slug": "sippin-pretty",
+   "category": "Sour - Fruited",
+   "abv": "4.5%",
    "ibu": "",
-   "brewery": "Scribbled Lines",
-   "rating": "3.85",
-   "image_url": "https://labels.untappd.com/6516090",
+   "brewery": "Odell Brewing Co.",
+   "rating": "3.55",
+   "image_url": "https://labels.untappd.com/2852344",
    "record_type": "beer",
    "source_label": "Killian's",
    "kind": "beer",
    "source": "killians",
-   "id": "03ef110ef6ef",
-   "_first_seen": "2026-11-01"
+   "id": "9331c5988868",
+   "_first_seen": "2026-11-21"
   },
   {
    "url": "https://untappd.com/b/guinness-guinness-draught/4473",

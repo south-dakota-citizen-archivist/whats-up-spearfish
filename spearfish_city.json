@@ -3,8 +3,8 @@
  "name": "City of Spearfish",
  "kind": "document",
  "url": "https://spearfishsd.portal.civicclerk.com/",
- "fetched_at": "2026-11-20T11:53:41-07:00",
- "count": 96,
+ "fetched_at": "2026-11-21T10:48:30-07:00",
+ "count": 98,
  "records": [
   {
    "event_id": 3353,
@@ -9132,6 +9132,308 @@
    "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
    "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2165",
    "has_media": true,
+   "media_url": "https://cpmedia.azureedge.net/spearfishsd/4b337df37c.mp4",
+   "media_page": "https://spearfishsd.portal.civicclerk.com/event/2165/media",
+   "chapters": [
+    {
+     "id": 6944,
+     "t": 91,
+     "title": "1. Call to Order",
+     "sub": false
+    },
+    {
+     "id": 6945,
+     "t": 98,
+     "title": "2. Roll Call",
+     "sub": false
+    },
+    {
+     "id": 6946,
+     "t": 126,
+     "title": "3. Invocation",
+     "sub": false
+    },
+    {
+     "id": 6947,
+     "t": 140,
+     "title": "3.A. Countryside Church",
+     "sub": true
+    },
+    {
+     "id": 6948,
+     "t": 320,
+     "title": "4. Pledge of Allegiance",
+     "sub": false
+    },
+    {
+     "id": 6949,
+     "t": 347,
+     "title": "5. Approve Agenda",
+     "sub": false
+    },
+    {
+     "id": 6950,
+     "t": 381,
+     "title": "6. Public Comment -",
+     "sub": false
+    },
+    {
+     "id": 6951,
+     "t": 430,
+     "title": "7. Declaration of Any Potential Conflicts of Interest",
+     "sub": false
+    },
+    {
+     "id": 6953,
+     "t": 439,
+     "title": "9. Consent Agenda",
+     "sub": false
+    },
+    {
+     "id": 6954,
+     "t": 439,
+     "title": "9.A. Approve the minutes of the October 28, 2026, City Council study session.",
+     "sub": true
+    },
+    {
+     "id": 6955,
+     "t": 439,
+     "title": "9.B. Approve the minutes of the November 2, 2026, Board of Adjustment meeting.",
+     "sub": true
+    },
+    {
+     "id": 6956,
+     "t": 439,
+     "title": "9.C. Approve the minutes of the November 2, 2026, City Council regular session.",
+     "sub": true
+    },
+    {
+     "id": 6957,
+     "t": 439,
+     "title": "9.D. Add Mason Beal and Trace Prescott to the 2026 Spearfish Volunteer Firefighter list.",
+     "sub": true
+    },
+    {
+     "id": 6959,
+     "t": 455,
+     "title": "10. Added and Adjusted Wages",
+     "sub": false
+    },
+    {
+     "id": 6960,
+     "t": 455,
+     "title": "10.A. Approve the following wage additions and adjustments as budgeted for 2026.Regular PositionBudgeted PositionWageWastewater Treatment OperatorYes$27.62Community Development DirectorYes$62.40Police Officer Yes $33.66",
+     "sub": true
+    },
+    {
+     "id": 6961,
+     "t": 485,
+     "title": "11. City Administrator",
+     "sub": false
+    },
+    {
+     "id": 6962,
+     "t": 495,
+     "title": "11.A. Approve Airport Management Agreement with Eagle Aviation, LLC.",
+     "sub": true
+    },
+    {
+     "id": 6963,
+     "t": 714,
+     "title": "11.B. Approve Lease and Fixed Base Operator Agreement with Eagle Aviation, LLC.",
+     "sub": true
+    },
+    {
+     "id": 6964,
+     "t": 0,
+     "title": "12. Community Development",
+     "sub": false
+    },
+    {
+     "id": 6965,
+     "t": 0,
+     "title": "12.A. Approve the Platting Agreement between Spring Creek Ranch LLC and the City of Spearfish.",
+     "sub": true
+    },
+    {
+     "id": 6966,
+     "t": 0,
+     "title": "12.B. Approve the first reading of Ordinance 1434 An Ordinance Amending The Revised Ordinances of the City of Spearfish, Title V Public Works, Chapter 53: Sanitary Sewer Service.",
+     "sub": true
+    },
+    {
+     "id": 6967,
+     "t": 0,
+     "title": "13. Finance",
+     "sub": false
+    },
+    {
+     "id": 6968,
+     "t": 0,
+     "title": "13.A. Hold a public hearing to consider an application from Susan Cerelli of Husker Properties, LLC dba Sunny's 3 for a retail (on-off sale) wine and cider license and a retail (on-off sale) malt beverage and SD farm wine license located at 2435 Platinum Dr., Ste. #1.",
+     "sub": true
+    },
+    {
+     "id": 6969,
+     "t": 0,
+     "title": "13.A.1. Approve the application.",
+     "sub": true
+    },
+    {
+     "id": 6970,
+     "t": 0,
+     "title": "13.B. Approve the second reading of Ordinance 1433 - An Ordinance Supplementing the 2026 Appropriations Ordinance No. 1408 of the Code of Ordinances, City of Spearfish, South Dakota.",
+     "sub": true
+    },
+    {
+     "id": 6971,
+     "t": 0,
+     "title": "13.C. Hold a public hearing to consider an application from Isabelle Drumm with Crow Peak Brewing for a special event malt beverage license for the Spearfish Clayworks Holiday Craft Fair on November 28, 2026, from 2:00 p.m. to 7:00 p.m. at Spearfish Clayworks located at 521 N. Main Street.",
+     "sub": true
+    },
+    {
+     "id": 6972,
+     "t": 0,
+     "title": "13.C.1. Approve the application.",
+     "sub": true
+    },
+    {
+     "id": 6973,
+     "t": 0,
+     "title": "13.D. Hold a public hearing to consider an application from John Williams with Spearfish Brewing for a special malt beverage license for the Community Tree Lighting on November 28, 2026, from 2:00 p.m. to 7:00 p.m. on the 700 block of Main Street and at 722 Main Street (Old City Hall).",
+     "sub": true
+    },
+    {
+     "id": 6974,
+     "t": 0,
+     "title": "13.D.1. Approve the application.",
+     "sub": true
+    },
+    {
+     "id": 6975,
+     "t": 0,
+     "title": "13.E. Approve Resolution 2026-24 - A Resolution to Set Fees Charged By the City.",
+     "sub": true
+    },
+    {
+     "id": 6976,
+     "t": 0,
+     "title": "14. Fire",
+     "sub": false
+    },
+    {
+     "id": 6977,
+     "t": 0,
+     "title": "14.A. Approve Danko proposal for the Skid Unit for the 2027 Ford F-550 for a total of $42,305.00.",
+     "sub": true
+    },
+    {
+     "id": 6978,
+     "t": 0,
+     "title": "15. Library",
+     "sub": false
+    },
+    {
+     "id": 6979,
+     "t": 0,
+     "title": "15.A. Award the lowest responsive and responsible bid for the Grace Balloch Memorial Library Furniture to Demco, Inc. at a total amount of $133,950.15.",
+     "sub": true
+    },
+    {
+     "id": 6980,
+     "t": 0,
+     "title": "16. Public Works",
+     "sub": false
+    },
+    {
+     "id": 6981,
+     "t": 0,
+     "title": "16.A. Approve the Final Under/Over Change Order #5 for the Colorado Boulevard Roadway Improvements Project with a net increase of $200,392.29 and Certificate of Final Completion and Acceptance setting 10/26/2026 as the start of the two-year warranty period.",
+     "sub": true
+    },
+    {
+     "id": 6982,
+     "t": 0,
+     "title": "16.B. Approve Change Order #1 for the Wyoming Court Yellowstone Place Drainage Project with a net increase of $34,041.25 (9.14%) and a revised substantial completion date of December 21, 2026.",
+     "sub": true
+    },
+    {
+     "id": 6983,
+     "t": 0,
+     "title": "17. Approve the Bills",
+     "sub": false
+    },
+    {
+     "id": 6984,
+     "t": 0,
+     "title": "17.A. Approve the Bill List dated November 16, 2026.",
+     "sub": true
+    },
+    {
+     "id": 6985,
+     "t": 0,
+     "title": "17.B. Approve the salary expense, bank fees and credit card fees for the month of October 2026.",
+     "sub": true
+    },
+    {
+     "id": 6986,
+     "t": 0,
+     "title": "18. Mayor and Council Discussion",
+     "sub": false
+    },
+    {
+     "id": 6987,
+     "t": 0,
+     "title": "18.A. Appoint Jim Moravec to the Planning Commission, for a term to expire December 31, 2026.",
+     "sub": true
+    },
+    {
+     "id": 6988,
+     "t": 0,
+     "title": "18.B. Appoint Jim Moravec to the Planning Commission for a 4-year term to begin January 1, 2027 and end December 31, 2030.",
+     "sub": true
+    },
+    {
+     "id": 6989,
+     "t": 0,
+     "title": "18.C. Reappoint Meghan Byrum to the Planning Commission for a 4-year term to begin January 1, 2027 and end December 31, 2030.",
+     "sub": true
+    },
+    {
+     "id": 6990,
+     "t": 0,
+     "title": "19. Departmental Discussion",
+     "sub": false
+    },
+    {
+     "id": 6991,
+     "t": 0,
+     "title": "20. Adjournment",
+     "sub": false
+    }
+   ],
+   "join_url": "",
+   "record_type": "document",
+   "source_label": "City of Spearfish",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/2165/files/minutes/10029",
+   "title": "City Council Regular Session Minutes 11/16/2026",
+   "doc_type": "Minutes",
+   "file_url": "https://spearfishsd.portal.civicclerk.com/event/2165/files/minutes/10029",
+   "kind": "document",
+   "source": "spearfish_city",
+   "id": "dc9f2d8df7e0",
+   "published": "2026-11-16T17:30:00-07:00",
+   "date": "2026-11-16",
+   "_first_seen": "2026-11-21"
+  },
+  {
+   "event_id": 2165,
+   "event_name": "City Council Meeting",
+   "category": "City Council",
+   "start_dt": "2026-11-16T17:30:00-07:00",
+   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/2165",
+   "has_media": true,
    "media_url": "",
    "media_page": "",
    "chapters": [],
@@ -9313,16 +9615,16 @@
    "join_url": "https://vimeo.com/1248437495?share=copy&fl=sv&fe=ci",
    "record_type": "document",
    "source_label": "City of Spearfish",
-   "url": "https://spearfishsd.portal.civicclerk.com/event/3435/files/agenda-packet/10021",
-   "title": "PRFAB Agenda Packet November 19, 2026",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/3435/files/agenda-packet/10027",
+   "title": "UPDATED November 19, 2026 Agenda Packet",
    "doc_type": "Agenda Packet",
-   "file_url": "https://spearfishsd.portal.civicclerk.com/event/3435/files/agenda-packet/10021",
+   "file_url": "https://spearfishsd.portal.civicclerk.com/event/3435/files/agenda-packet/10027",
    "kind": "document",
    "source": "spearfish_city",
-   "id": "6ffe84189d53",
+   "id": "9a968af40f10",
    "published": "2026-11-19T07:30:00-07:00",
    "date": "2026-11-19",
-   "_first_seen": "2026-11-18"
+   "_first_seen": "2026-11-21"
   },
   {
    "event_id": 3435,
@@ -9348,6 +9650,31 @@
    "published": "2026-11-19T07:30:00-07:00",
    "date": "2026-11-19",
    "_first_seen": "2026-11-20"
+  },
+  {
+   "event_id": 3435,
+   "event_name": "Park, Recreation, and Forestry Advisory Board Meeting",
+   "category": "Parks, Recreation, and Forestry Advisory Board",
+   "start_dt": "2026-11-19T07:30:00-07:00",
+   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/3435",
+   "has_media": true,
+   "media_url": "",
+   "media_page": "",
+   "chapters": [],
+   "join_url": "https://vimeo.com/1248437495?share=copy&fl=sv&fe=ci",
+   "record_type": "document",
+   "source_label": "City of Spearfish",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/3435/files/agenda-packet/10021",
+   "title": "PRFAB Agenda Packet November 19, 2026",
+   "doc_type": "Agenda Packet",
+   "file_url": "https://spearfishsd.portal.civicclerk.com/event/3435/files/agenda-packet/10021",
+   "kind": "document",
+   "source": "spearfish_city",
+   "id": "6ffe84189d53",
+   "published": "2026-11-19T07:30:00-07:00",
+   "date": "2026-11-19",
+   "_first_seen": "2026-11-18"
   },
   {
    "event_id": 4448,

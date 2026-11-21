@@ -3,8 +3,8 @@
  "name": "Western Hills Humane Society",
  "kind": "adoptable",
  "url": "https://www.westernhillshumanesociety.com/",
- "fetched_at": "2026-11-20T11:53:45-07:00",
- "count": 50,
+ "fetched_at": "2026-11-21T10:48:38-07:00",
+ "count": 52,
  "records": [
   {
    "url": "https://www.westernhillshumanesociety.com/cats",
@@ -612,7 +612,7 @@
    "slug": "cat-gladys",
    "species": "cat",
    "description": "Female | Born 2025/2026\nPOSSIBLY available 11/27 following spay appt (she’s still pretty scared)\nNever been around dogs. Indoor only home or you’ll never see her again. \nGladys and her kiddos, Gigi and Gulligan came to us Nov. 2026 after living as strays. They are all quite shy and we will be very picky with their adoptions. Indoor only is a MUST because of their history and skittishness. They would do best being adopted together or going to a quite home without children.",
-   "image_url": "",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/26f35594-1d43-49e5-b134-1971ed2e473e/1000062282+%281%29.jpg?format=500w",
    "image_alt": "Gladys",
    "record_type": "adoptable",
    "source_label": "Western Hills Humane Society",
@@ -620,6 +620,36 @@
    "source": "whhs_adoptable",
    "id": "7285ed749eef",
    "_first_seen": "2026-11-19"
+  },
+  {
+   "url": "https://www.westernhillshumanesociety.com/cats",
+   "title": "Ravioli",
+   "slug": "cat-ravioli",
+   "species": "cat",
+   "description": "Female | Born 7/2025\nAvailable 11/27 following spay appt.\nHas been around other cats, dogs, and children. \nRavioli came to us 11/20/26 after her owner could no longer care for her. She’s sweet and talkative and is said to do well with other cats, dogs, and kids. She can be a bit rambunctious when playing with children so older kids might be a better fit for her. She is still young and would love to have a home to run around in! She seems like quite the cuddle bug and we were told she likes to sleep under the covers at night all night.",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/e4149ef1-864a-4004-baae-e035d4d16d21/1000062277.jpg?format=500w",
+   "image_alt": "Ravioli",
+   "record_type": "adoptable",
+   "source_label": "Western Hills Humane Society",
+   "kind": "adoptable",
+   "source": "whhs_adoptable",
+   "id": "66ce73d9ec1a",
+   "_first_seen": "2026-11-21"
+  },
+  {
+   "url": "https://www.westernhillshumanesociety.com/cats",
+   "title": "Hashi",
+   "slug": "cat-hashi",
+   "species": "cat",
+   "description": "Male | Born 5/17/24\nAvailable 11/27 following rabies vax\nHas been around other cats, children, and dogs. Does NOT do well with dog visitors. \nHashi came to us on 11/20/26 after his family had issues with him marking following a visit from grandma’s dog. He has not had issues otherwise and did just fine with the 4 dogs that were already living in the home. So a home without animal visitors would be ideal. Hashi is a sweet, curious boy that we look forward to getting to know a little better. He is said to take a little while to warm up to new pets but when living together, he does quite well. He’s a larger and very handsome boy!",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/930ae55c-494c-4fdb-a1a4-31a12c97d3b6/1000062276.jpg?format=500w",
+   "image_alt": "Hashi",
+   "record_type": "adoptable",
+   "source_label": "Western Hills Humane Society",
+   "kind": "adoptable",
+   "source": "whhs_adoptable",
+   "id": "c82c96423d4d",
+   "_first_seen": "2026-11-21"
   },
   {
    "url": "https://www.westernhillshumanesociety.com/dogs",

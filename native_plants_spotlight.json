@@ -3,7 +3,7 @@
  "name": "Native plants of the Black Hills",
  "kind": "plant",
  "url": "https://www.inaturalist.org/places/black-hills-national-forest-us",
- "fetched_at": "2026-11-20T11:53:34-07:00",
+ "fetched_at": "2026-11-21T10:48:23-07:00",
  "count": 392,
  "records": [
   {
@@ -3381,7 +3381,7 @@
    "photo_credit": "(c) Wren Coxson, some rights reserved (CC BY-NC), uploaded by Wren Coxson",
    "url": "https://www.inaturalist.org/taxa/79071",
    "wikipedia_url": "https://en.wikipedia.org/wiki/Shepherdia argentea",
-   "sightings": 37,
+   "sightings": 40,
    "kind": "plant",
    "record_type": "plant",
    "source": "native_plants_spotlight",
@@ -3956,7 +3956,7 @@
    "scientific_name": "Aralia nudicaulis",
    "summary": "Aralia nudicaulis (commonly wild sarsaparilla, false sarsaparilla, shot bush, small spikenard, wild liquorice, and rabbit root) is a flowering plant of northern and eastern North America which reaches a height of 30–60 cm (12–24 in) with creeping underground stems.",
    "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/334790/medium.jpg",
-   "photo_credit": "(c) Susan Elliott, some rights reserved (CC BY-NC), uploaded by Susan Elliott",
+   "photo_credit": "(c) Susan Elliott, bazı hakları saklıdır (CC BY-NC), yükleyen: Susan Elliott",
    "url": "https://www.inaturalist.org/taxa/119828",
    "wikipedia_url": "https://en.wikipedia.org/wiki/Aralia nudicaulis",
    "sightings": 155,
