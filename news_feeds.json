@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-21T01:50:27-07:00",
- "count": 95,
+ "fetched_at": "2026-11-21T12:45:59-07:00",
+ "count": 96,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/22/work-begins-on-spendiest-bridge-project-in-south-dakota-history/",
@@ -1430,6 +1430,21 @@
    "id": "f78b006e2562",
    "date": "2026-11-20",
    "_first_seen": "2026-11-20"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/21/south-dakota-cant-recruit-its-way-out-of-a-workforce-problem/",
+   "title": "Commentary: South Dakota can’t recruit its way out of a workforce problem",
+   "slug": "south-dakota-searchlight-commentary-south-dakota-cant-recruit-its-way-out-of-a",
+   "published": "2026-11-21",
+   "byline": "Tresha Moreland",
+   "description": "South Dakota is facing a workforce challenge that won&#8217;t be solved by filling more job openings. And I wonder whether we&#8217;re spending enough time talking about why. Recent reporting by South Dakota Searchlight highlighted a troubling trend: the state&#8217;s labor force participation rate fell from 68.2% in September 2025 to 66.3% in September 2026. Meanwhile, [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "96cdbf308c85",
+   "date": "2026-11-21",
+   "_first_seen": "2026-11-21"
   }
  ]
 }
