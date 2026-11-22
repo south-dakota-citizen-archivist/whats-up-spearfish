@@ -3,24 +3,9 @@
  "name": "Custer County Chronicle",
  "kind": "news",
  "url": "https://custercountychronicle.com",
- "fetched_at": "2026-11-21T16:57:22-07:00",
- "count": 37,
+ "fetched_at": "2026-11-22T01:53:24-07:00",
+ "count": 36,
  "records": [
-  {
-   "url": "https://custercountychronicle.com/content/watching-bluebirds-and-fire-oct-27",
-   "title": "'Watching bluebirds and fire' Oct. 27",
-   "slug": "custer-county-chronicle-watching-bluebirds-and-fire-oct-27",
-   "published": "2026-10-22",
-   "byline": "",
-   "description": "JoAnn Stearns claims she has the best office view in the Midwest, and she’s probably right. For the last three years Stearns as been the lookout at Bear Mountain, which is one of six active fire towers in the Black Hills. It’s a great job with a rich history and she gets many interesting visitors every summer.",
-   "record_type": "news",
-   "source_label": "Custer County Chronicle",
-   "kind": "news",
-   "source": "custer_county_chronicle",
-   "id": "6ee1ce1273be",
-   "date": "2026-10-22",
-   "_first_seen": "2026-11-01"
-  },
   {
    "url": "https://custercountychronicle.com/content/get-out-and-vote-general-election",
    "title": "Get out and vote in General Election",
