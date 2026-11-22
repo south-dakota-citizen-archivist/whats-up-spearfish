@@ -3,42 +3,9 @@
  "name": "BHSU Campus Calendar",
  "kind": "event",
  "url": "https://bhsu.edu/campus-calendar.html",
- "fetched_at": "2026-11-21T10:47:45-07:00",
- "count": 10,
+ "fetched_at": "2026-11-22T11:04:58-07:00",
+ "count": 9,
  "records": [
-  {
-   "event_id": "319c04dc-9c72-4d03-83e7-138ada56a816",
-   "url": "https://bhsu.edu/campus-calendar.html#event-details/319c04dc-9c72-4d03-83e7-138ada56a816",
-   "title": "Jazz Ensemble Concert",
-   "slug": "jazz-ensemble-concert",
-   "description": "Jazz Ensemble Concert",
-   "start_dt": "2026-11-21T02:00",
-   "end_dt": "2026-11-21T03:30",
-   "location": "Meier Hall",
-   "image_url": "",
-   "image_alt": "",
-   "organizer": "",
-   "tags": [
-    "Alumni Event",
-    "Community Event",
-    "BHSU Event",
-    "Concert"
-   ],
-   "featured": false,
-   "ticket_url": "",
-   "category": "Campus Calendar/Events",
-   "record_type": "event",
-   "source_label": "BHSU Campus Calendar",
-   "kind": "event",
-   "source": "bhsu_calendar",
-   "id": "9fb8986fb69a",
-   "start": "2026-11-20T19:00:00-07:00",
-   "end": "2026-11-20T20:30:00-07:00",
-   "all_day": false,
-   "date": "2026-11-20",
-   "event_category": "campus",
-   "_first_seen": "2026-11-01"
-  },
   {
    "event_id": "7bac0807-99a8-4bb5-b6bb-479d2c41e341",
    "url": "https://bhsu.edu/campus-calendar.html#event-details/7bac0807-99a8-4bb5-b6bb-479d2c41e341",
@@ -118,8 +85,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],
@@ -182,8 +149,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event"
    ],
    "featured": false,
@@ -214,8 +181,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Community Event",
     "Alumni Event",
+    "Community Event",
     "BHSU Event",
     "Concert"
    ],

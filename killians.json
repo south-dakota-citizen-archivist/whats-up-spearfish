@@ -3,7 +3,7 @@
  "name": "Killian's",
  "kind": "beer",
  "url": "https://untappd.com",
- "fetched_at": "2026-11-21T10:47:50-07:00",
+ "fetched_at": "2026-11-22T11:05:08-07:00",
  "count": 17,
  "records": [
   {
@@ -279,21 +279,21 @@
    "_first_seen": "2026-11-21"
   },
   {
-   "url": "https://untappd.com/b/guinness-guinness-draught/4473",
-   "title": "Guinness Draught",
-   "slug": "guinness-draught",
-   "category": "Stout - Irish Dry",
-   "abv": "4.2%",
-   "ibu": "45",
-   "brewery": "Guinness",
-   "rating": "3.77",
-   "image_url": "https://labels.untappd.com/4473",
+   "url": "https://untappd.com/b/heavy-riff-brewing-company-dark-days-nitro-stout/5982000",
+   "title": "Dark Days Nitro Stout",
+   "slug": "dark-days-nitro-stout",
+   "category": "Stout - American",
+   "abv": "6.6%",
+   "ibu": "",
+   "brewery": "Heavy Riff Brewing Company",
+   "rating": "N/A",
+   "image_url": "https://labels.untappd.com/5982000",
    "record_type": "beer",
    "source_label": "Killian's",
    "kind": "beer",
    "source": "killians",
-   "id": "f7b02293d402",
-   "_first_seen": "2026-11-01"
+   "id": "55ad639ae150",
+   "_first_seen": "2026-11-22"
   }
  ]
 }

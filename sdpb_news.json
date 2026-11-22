@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-21T10:48:22-07:00",
- "count": 72,
+ "fetched_at": "2026-11-22T11:05:36-07:00",
+ "count": 73,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -1157,6 +1157,22 @@
    "id": "c392a0943510",
    "date": "2026-11-20",
    "_first_seen": "2026-11-20"
+  },
+  {
+   "url": "https://www.sdpb.org/business-economics/2026-11-22/clear-lake-weapons-maker-asks-state-to-continue-allowing-open-burning-detonation-of-hazardous-material-in-the-open-air",
+   "title": "Clear Lake weapons maker asks state to continue allowing open burning, detonation of hazardous material in the open air",
+   "slug": "sdpb-clear-lake-weapons-maker-asks-state-to-continue-allowing-open-burning-of-in",
+   "published": "2026-11-22",
+   "byline": "By Lori Walsh",
+   "description": "The window for public comment for Tech Ord's open burn/open detonation permit renewal is open until Nov. 28.",
+   "image_url": "https://static.npr.production.npr.brightspot.cloud/2f/b9/93f27e48450888e24abf3e8fed33/tech-ord-gov-rhoden.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "4324cb4c40ba",
+   "date": "2026-11-22",
+   "_first_seen": "2026-11-22"
   }
  ]
 }
