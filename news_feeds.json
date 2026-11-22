@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-22T01:53:21-07:00",
- "count": 92,
+ "fetched_at": "2026-11-22T12:57:21-07:00",
+ "count": 93,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/23/national-groups-power-spending-against-higher-bar-for-constitutional-amendments/",
@@ -1385,6 +1385,21 @@
    "id": "96cdbf308c85",
    "date": "2026-11-21",
    "_first_seen": "2026-11-21"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/22/trumps-plan-sparked-anger-but-beef-imports-had-already-been-rising-as-us-cattle-numbers-fell/",
+   "title": "Trump’s plan sparked anger, but beef imports had already been rising as US cattle numbers fell",
+   "slug": "south-dakota-searchlight-trumps-plan-sparked-anger-but-beef-imports-had-already",
+   "published": "2026-11-22",
+   "byline": "Joshua Haiar",
+   "description": "President Donald Trump has angered ranchers by allowing more foreign beef into the country, but the United States was importing beef before he began his second stay in the White House.  In 2024, during the final year of President Joe Biden’s administration, U.S. beef imports reached a then-record 4.64 billion pounds, and they’ve continued to [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "94de1fb80c9c",
+   "date": "2026-11-22",
+   "_first_seen": "2026-11-22"
   }
  ]
 }

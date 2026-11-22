@@ -3,8 +3,8 @@
  "name": "Rapid City Journal",
  "kind": "news",
  "url": "https://rapidcityjournal.com/",
- "fetched_at": "2026-11-22T01:53:22-07:00",
- "count": 201,
+ "fetched_at": "2026-11-22T12:57:20-07:00",
+ "count": 203,
  "records": [
   {
    "url": "https://rapidcityjournal.com/news/local/obituaries/article_a26b4c35-37f8-5ff1-97ce-f3a7a64f85fd.html",
@@ -3020,6 +3020,36 @@
    "id": "52283d18d093",
    "date": "2026-11-20",
    "_first_seen": "2026-11-21"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/obituaries/article_721e0662-eb1a-515d-9963-b6611aee20c2.html",
+   "title": "Roberta Kay Rever",
+   "slug": "rapid-city-journal-roberta-kay-rever",
+   "published": "2026-11-21",
+   "byline": "",
+   "description": "March 31, 1942 - October 20, 2026",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "4981e74a4ced",
+   "date": "2026-11-21",
+   "_first_seen": "2026-11-22"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/government-politics/article_738fc809-f476-4876-b096-9b8db3f84208.html",
+   "title": "Weifenbach says Rapid City 'should have been on top of' data center regulations",
+   "slug": "rapid-city-journal-weifenbach-says-rapid-city-should-have-been-on-top-of-data",
+   "published": "2026-11-21",
+   "byline": "FRANK ESPINOZA Journal staff",
+   "description": "Pennington County Commission Chair (District 2) Ron Weifenbach said he has been looking at the attention the City of Rapid City has received as it's updating the 2024 data center ordinance.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "d194fa115014",
+   "date": "2026-11-21",
+   "_first_seen": "2026-11-22"
   }
  ]
 }
