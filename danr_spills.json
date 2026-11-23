@@ -3,7 +3,7 @@
  "name": "SD DANR spill reports",
  "kind": "spill",
  "url": "https://apps.sd.gov/NR42InteractiveMap/",
- "fetched_at": "2026-11-22T11:05:51-07:00",
+ "fetched_at": "2026-11-23T15:22:11-07:00",
  "count": 68,
  "records": [
   {
@@ -148,7 +148,7 @@
    "report_no": "2026.152",
    "year": 2026,
    "title": "Coeur Wharf Hydraulic OIl Spill",
-   "status": "Open",
+   "status": "Closed",
    "category": "Oil",
    "material": "Hydraulic oil",
    "spill_source": "Truck",
@@ -161,7 +161,7 @@
    "pdfs": [
     {
      "url": "https://danr.sd.gov/spillimages/2026/2026.152.pdf",
-     "size": 1256214
+     "size": 1311802
     }
    ],
    "url": "https://danr.sd.gov/spillimages/2026/2026.152.pdf",
@@ -858,7 +858,7 @@
    "report_no": "2026.140",
    "year": 2026,
    "title": "Coeur Wharf Hydraulic Line",
-   "status": "Open",
+   "status": "Closed",
    "category": "Oil",
    "material": "Hydraulic oil",
    "spill_source": "Hydraulic line",
@@ -871,7 +871,7 @@
    "pdfs": [
     {
      "url": "https://danr.sd.gov/spillimages/2026/2026.140.pdf",
-     "size": 1135090
+     "size": 1191909
     }
    ],
    "url": "https://danr.sd.gov/spillimages/2026/2026.140.pdf",
@@ -1579,7 +1579,7 @@
    "report_no": "2026.112",
    "year": 2026,
    "title": "Ellsworth Air Force Base Diesel Spill",
-   "status": "Open",
+   "status": "Closed",
    "category": "Petroleum",
    "material": "Diesel",
    "spill_source": "Above-ground tank",
@@ -1592,7 +1592,7 @@
    "pdfs": [
     {
      "url": "https://danr.sd.gov/spillimages/2026/2026.112.pdf",
-     "size": 8936850
+     "size": 8993771
     }
    ],
    "url": "https://danr.sd.gov/spillimages/2026/2026.112.pdf",

@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-22T11:05:36-07:00",
- "count": 73,
+ "fetched_at": "2026-11-23T15:21:35-07:00",
+ "count": 77,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -1173,6 +1173,70 @@
    "id": "4324cb4c40ba",
    "date": "2026-11-22",
    "_first_seen": "2026-11-22"
+  },
+  {
+   "url": "https://www.sdpb.org/politics/2026-11-23/baaja-critics-raise-tribal-sovereignty-concerns-as-bill-advances-in-washington",
+   "title": "BAAJA critics raise tribal sovereignty concerns as bill advances in Washington",
+   "slug": "sdpb-baaja-critics-raise-tribal-sovereignty-concerns-as-bill-advances-in",
+   "published": "2026-11-23",
+   "byline": "By C.J. Keene",
+   "description": "The Bipartisan American Affordability and Jobs Act, better known as BAAJA, has cleared a major first hurdle in Congress. Meanwhile, some are raising red flags on environmentalism and tribal governance as the package takes its next step.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/df/8e/b0fd38a64257849c59f42b287e64/us-capitol-senate-house-congress.png",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "65cf4a3e05df",
+   "date": "2026-11-23",
+   "_first_seen": "2026-11-23"
+  },
+  {
+   "url": "https://www.sdpb.org/elections/2026-11-23/over-2-300-south-dakota-students-take-part-in-kids-voting-program",
+   "title": "Over 2,300 South Dakota students take part in Kids Voting program",
+   "slug": "sdpb-over-2300-south-dakota-students-take-part-in-kids-voting-program",
+   "published": "2026-11-23",
+   "byline": "By SDPB News Staff",
+   "description": "The Chiesman Center for Democracy at USD has wrapped up its initiative aimed at getting K-12 students interested in the election process.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/legacy/prod/filer_public/kusd-bento-live-pbs/News%20Blog/STOCK%20PHOTOS/Election/81bb33672a_IVotedTodayStickerElection.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "ac62d07c003f",
+   "date": "2026-11-23",
+   "_first_seen": "2026-11-23"
+  },
+  {
+   "url": "https://www.sdpb.org/business-economics/2026-11-23/sba-loans-seek-to-address-shortfalls-in-disaster-assistance",
+   "title": "SBA loans seek to address 'shortfalls' in disaster assistance",
+   "slug": "sdpb-sba-loans-seek-to-address-shortfalls-in-disaster-assistance",
+   "published": "2026-11-23",
+   "byline": "By Lori Walsh",
+   "description": "Recovery is still underway in areas devastated by historic summer floods and hail in the Pine Ridge area. The U.S. Small Business Administration is offering loan products for eligible South Dakotans.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/legacy/prod/filer_public/kusd-bento-live-pbs/News%20Blog/Seth%20Tupper/7f4b3a63ab_SBA%20logo.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "5e7bf5354ebf",
+   "date": "2026-11-23",
+   "_first_seen": "2026-11-23"
+  },
+  {
+   "url": "https://www.sdpb.org/business-economics/2026-11-23/thanksgiving-travel-forecast-gas-prices-falling-but-remain-higher-than-recent-years",
+   "title": "Thanksgiving travel forecast: Gas prices falling, but remain higher than recent years",
+   "slug": "sdpb-thanksgiving-travel-forecast-gas-prices-falling-but-remain-higher-than",
+   "published": "2026-11-23",
+   "byline": "By Jackson Dircks",
+   "description": "This week, analysts forecast over a quarter-million South Dakotans are traveling for the Thanksgiving holiday.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/6c/8b/6449650a41358490e240b59ce66e/sioux-falls-labor-day-traffic-i29.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "bb72a2c7d90b",
+   "date": "2026-11-23",
+   "_first_seen": "2026-11-23"
   }
  ]
 }

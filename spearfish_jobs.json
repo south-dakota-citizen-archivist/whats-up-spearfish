@@ -3,7 +3,7 @@
  "name": "City of Spearfish Jobs",
  "kind": "job",
  "url": "https://www.spearfish.gov/161/Career-Opportunities",
- "fetched_at": "2026-11-22T11:05:44-07:00",
+ "fetched_at": "2026-11-23T15:21:41-07:00",
  "count": 4,
  "records": [
   {
@@ -48,10 +48,10 @@
    "slug": "electrician-traffic-signal-technician",
    "department": "Public Works",
    "position_type": "FT Employee",
-   "salary": "$33.95 - $41.37 an hour",
+   "salary": "",
    "published": "2026-11-18",
    "closing": "",
-   "description": "Public Works • FT Employee • $33.95 - $41.37 an hour",
+   "description": "Public Works • FT Employee",
    "record_type": "job",
    "source_label": "City of Spearfish",
    "kind": "job",

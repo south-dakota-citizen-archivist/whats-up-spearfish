@@ -3,7 +3,7 @@
  "name": "Leone's Creamery",
  "kind": "flavor",
  "url": "https://leonescreamery.com/flavors",
- "fetched_at": "2026-11-22T11:05:14-07:00",
+ "fetched_at": "2026-11-23T15:21:12-07:00",
  "count": 8,
  "records": [
   {
@@ -82,22 +82,22 @@
    "_first_seen": "2026-11-20"
   },
   {
-   "url": "https://leonescreamery.com/flavor-detail/drunken-banana",
-   "image_url": "https://leonescreamery.com/images/uploads/cropped/447452D5-3771-4CF3-8456-4B697A5E9942-178-1526843638.jpg",
-   "title": "Drunken Banana",
-   "slug": "drunken-banana",
+   "url": "https://leonescreamery.com/flavor-detail/sweet-potato-w-marshmallow-swirl",
+   "image_url": "https://leonescreamery.com/images/uploads/cropped/983934A9-8644-489C-8044-CD5FD425A79D-335-1605897682.jpg",
+   "title": "Sweet Potato w/ Marshmallow Swirl",
+   "slug": "sweet-potato-w-marshmallow-swirl",
    "record_type": "flavor",
    "source_label": "Leone's Creamery",
    "gluten_free": true,
    "contains": [
-    "Egg",
+    "Eggs",
     "Dairy"
    ],
-   "description": "One of our OG flavors, this creamy banana-rum ice cream is delicious on it’s own and pairs beautifully with all of our topping choices.",
+   "description": "A spiced sweet potato ice cream with a house-made marshmallow meringue swirl! The best way to enjoy SWEET sweet potatoes!",
    "kind": "flavor",
    "source": "leones_creamery",
-   "id": "097bffd5c659",
-   "_first_seen": "2026-11-15"
+   "id": "0b4876abcfda",
+   "_first_seen": "2026-11-23"
   },
   {
    "url": "https://leonescreamery.com/flavor-detail/ginger-beet-with-chocolate-speckle",
@@ -118,23 +118,22 @@
    "_first_seen": "2026-11-13"
   },
   {
-   "url": "https://leonescreamery.com/flavor-detail/monster-cookie",
-   "image_url": "https://leonescreamery.com/images/uploads/cropped/CCB503D2-912C-469A-9AA8-FB31AFAE6FD0-290-1556241353.jpg",
-   "title": "Monster Cookie",
-   "slug": "monster-cookie",
+   "url": "https://leonescreamery.com/flavor-detail/drunken-banana",
+   "image_url": "https://leonescreamery.com/images/uploads/cropped/447452D5-3771-4CF3-8456-4B697A5E9942-178-1526843638.jpg",
+   "title": "Drunken Banana",
+   "slug": "drunken-banana",
    "record_type": "flavor",
    "source_label": "Leone's Creamery",
    "gluten_free": true,
    "contains": [
-    "Eggs",
-    "Dairy",
-    "Peanuts"
+    "Egg",
+    "Dairy"
    ],
-   "description": "Cinnamon-vanilla ice cream with a peanut butter ribbon, and full of monster cookie bits!",
+   "description": "One of our OG flavors, this creamy banana-rum ice cream is delicious on it’s own and pairs beautifully with all of our topping choices.",
    "kind": "flavor",
    "source": "leones_creamery",
-   "id": "1c6ed7867d74",
-   "_first_seen": "2026-11-14"
+   "id": "097bffd5c659",
+   "_first_seen": "2026-11-15"
   },
   {
    "url": "https://leonescreamery.com/flavor-detail/vegan-brown-sugar-cinnamon",

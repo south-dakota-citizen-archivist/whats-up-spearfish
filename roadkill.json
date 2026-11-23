@@ -3,7 +3,7 @@
  "name": "Wildlife carcass pickups",
  "kind": "stats",
  "url": "https://dot.sd.gov/",
- "fetched_at": "2026-11-22T11:06:30-07:00",
+ "fetched_at": "2026-11-23T15:22:36-07:00",
  "data": {
   "layer": "https://services1.arcgis.com/PwrabBhZHUggYYSp/ArcGIS/rest/services/service_45cc7abd52f846ce8ad10dba811a5535/FeatureServer/0",
   "bbox": {
@@ -13,6 +13,126 @@
    "ymax": 44.8
   },
   "records": [
+   {
+    "objectid": 74648,
+    "globalid": "cdae0524-8102-4b43-93e5-36bea4bea0b5",
+    "date": "2026-11-23",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "I90",
+    "highway_raw": "I90",
+    "comments": "",
+    "contractor": "Tony Hanig",
+    "pcn": "I-90 Rapid City Region",
+    "lat": 44.417866,
+    "lon": -103.531429,
+    "date_raw": "2026-11-23T12:00:00-07:00",
+    "created": "2026-11-23T13:19:00-07:00",
+    "creator": "",
+    "edited": "2026-11-23T13:19:00-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 17384,
+      "name": "Picture1-20261123-201846.jpg",
+      "type": "image/jpeg",
+      "size": 170313,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 74639,
+    "globalid": "fc611ef8-9b09-4884-9d18-d5ece40b80a3",
+    "date": "2026-11-23",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "I90",
+    "highway_raw": "I90",
+    "comments": "",
+    "contractor": "Tony Hanig",
+    "pcn": "I-90 Rapid City Region",
+    "lat": 44.423655,
+    "lon": -103.549914,
+    "date_raw": "2026-11-23T12:00:00-07:00",
+    "created": "2026-11-23T12:06:07-07:00",
+    "creator": "",
+    "edited": "2026-11-23T12:06:07-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 17375,
+      "name": "Picture1-20261123-190549.jpg",
+      "type": "image/jpeg",
+      "size": 202982,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 74636,
+    "globalid": "15cacbec-df32-4ea3-88b7-e1825d687dcb",
+    "date": "2026-11-23",
+    "species": "White-tailed Deer",
+    "sex": "Female",
+    "present": "Yes",
+    "highway": "I90",
+    "highway_raw": "I90",
+    "comments": "",
+    "contractor": "Tony Hanig",
+    "pcn": "I-90 Rapid City Region",
+    "lat": 44.390766,
+    "lon": -103.493912,
+    "date_raw": "2026-11-23T12:00:00-07:00",
+    "created": "2026-11-23T11:55:13-07:00",
+    "creator": "",
+    "edited": "2026-11-23T11:55:13-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 17372,
+      "name": "Picture1-20261123-185458.jpg",
+      "type": "image/jpeg",
+      "size": 188194,
+      "keywords": "Picture1"
+     }
+    ]
+   },
+   {
+    "objectid": 74632,
+    "globalid": "52e5d08e-dc68-4531-9eee-43ccf44a9102",
+    "date": "2026-11-23",
+    "species": "White-tailed Deer",
+    "sex": "Male",
+    "present": "Yes",
+    "highway": "I90",
+    "highway_raw": "I90",
+    "comments": "",
+    "contractor": "Tony Hanig",
+    "pcn": "I-90 Rapid City Region",
+    "lat": 44.186482,
+    "lon": -103.332613,
+    "date_raw": "2026-11-23T12:00:00-07:00",
+    "created": "2026-11-23T11:25:08-07:00",
+    "creator": "",
+    "edited": "2026-11-23T11:25:08-07:00",
+    "editor": "",
+    "parentglobalid": "",
+    "photos": [
+     {
+      "id": 17368,
+      "name": "Picture1-20261123-182449.jpg",
+      "type": "image/jpeg",
+      "size": 213952,
+      "keywords": "Picture1"
+     }
+    ]
+   },
    {
     "objectid": 74558,
     "globalid": "2f577ccd-6c58-417d-aa50-7dff6aa6216b",
@@ -40584,18 +40704,18 @@
     "parentglobalid": "",
     "photos": [
      {
-      "id": 12564,
-      "name": "Picture2-20260819-201330.jpg",
-      "type": "image/jpeg",
-      "size": 88987,
-      "keywords": "Picture2"
-     },
-     {
       "id": 12563,
       "name": "Picture1-20260819-201305.jpg",
       "type": "image/jpeg",
       "size": 77114,
       "keywords": "Picture1"
+     },
+     {
+      "id": 12564,
+      "name": "Picture2-20260819-201330.jpg",
+      "type": "image/jpeg",
+      "size": 88987,
+      "keywords": "Picture2"
      }
     ]
    },

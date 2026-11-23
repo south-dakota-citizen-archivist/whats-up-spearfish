@@ -3,8 +3,8 @@
  "name": "Spearfish School District",
  "kind": "job",
  "url": "https://www.applitrack.com/bhssc/onlineapp/default.aspx",
- "fetched_at": "2026-11-22T11:05:57-07:00",
- "count": 9,
+ "fetched_at": "2026-11-23T15:21:56-07:00",
+ "count": 8,
  "records": [
   {
    "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4340&posFirstChoice=Student%20Support%20Services/",
@@ -131,24 +131,6 @@
    "id": "f97e60c50f26",
    "date": "2026-11-05",
    "_first_seen": "2026-11-05"
-  },
-  {
-   "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4659&posFirstChoice=Secretarial/Clerical/",
-   "title": "Administrative Assistant - Creekside Elementary",
-   "slug": "4659-administrative-assistant-creekside-elementary",
-   "location": "Creekside Elementary   Spearfish",
-   "district": "Spearfish School District",
-   "position_type": "Secretarial/Clerical/",
-   "published": "2026-11-06",
-   "closing": "11/23/2026",
-   "description": "Position type: Secretarial/Clerical/ • Location: Creekside Elementary   Spearfish • Closes: 11/23/2026",
-   "record_type": "job",
-   "source_label": "Spearfish School District",
-   "kind": "job",
-   "source": "spearfish_schools_jobs",
-   "id": "b8b2f9b9bfaf",
-   "date": "2026-11-06",
-   "_first_seen": "2026-11-07"
   },
   {
    "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4660&posFirstChoice=Middle%20School%20Teaching/",
