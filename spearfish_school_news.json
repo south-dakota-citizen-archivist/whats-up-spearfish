@@ -3,23 +3,9 @@
  "name": "Spearfish School District",
  "kind": "press_release",
  "url": "https://www.spearfish.k12.sd.us/news",
- "fetched_at": "2026-11-23T15:21:45-07:00",
+ "fetched_at": "2026-11-24T12:08:56-07:00",
  "count": 20,
  "records": [
-  {
-   "title": "Vacancy Notices",
-   "url": "https://www.spearfish.k12.sd.us/o/ssd/article/3025010",
-   "published": "2026-07-08T07:45:00-06:00",
-   "description": "Vacancy Notices Spearfish School District",
-   "image_url": "https://core-docs.s3.amazonaws.com/spearfish_school_district/article/image/large_a8b9b84d-322b-46a6-96bc-b7928ca9d2c6.png",
-   "kind": "press_release",
-   "record_type": "press_release",
-   "source": "spearfish_school_news",
-   "source_label": "Spearfish School District",
-   "id": "70630b2dd20c",
-   "date": "2026-07-08",
-   "_first_seen": "2026-11-01"
-  },
   {
    "title": "Open Houses - Tuesday, August 25",
    "url": "https://www.spearfish.k12.sd.us/o/ssd/article/3064283",
@@ -259,20 +245,6 @@
    "_first_seen": "2026-11-09"
   },
   {
-   "title": "Thanksgiving Break - No School",
-   "url": "https://www.spearfish.k12.sd.us/o/ssd/article/3248277",
-   "published": "2026-11-11T14:31:00-07:00",
-   "description": "Thanksgiving Break School will resume Monday, November 30, 2026",
-   "image_url": "https://core-docs.s3.amazonaws.com/spearfish_school_district/article/image/large_6c579ae9-829d-4964-b655-971effae5961.png",
-   "kind": "press_release",
-   "record_type": "press_release",
-   "source": "spearfish_school_news",
-   "source_label": "Spearfish School District",
-   "id": "c3cc8395c39b",
-   "date": "2026-11-11",
-   "_first_seen": "2026-11-12"
-  },
-  {
    "title": "West Elementary Community Input Meeting",
    "url": "https://www.spearfish.k12.sd.us/o/ssd/article/3252931",
    "published": "2026-11-13T10:10:13-07:00",
@@ -285,6 +257,34 @@
    "id": "99a3ef359cbf",
    "date": "2026-11-13",
    "_first_seen": "2026-11-13"
+  },
+  {
+   "title": "Thanksgiving Break - No School",
+   "url": "https://www.spearfish.k12.sd.us/o/ssd/article/3626438",
+   "published": "2026-11-24T11:36:27-07:00",
+   "description": "Thanksgiving Break School will resume Monday, November 30, 2026",
+   "image_url": "https://core-docs.s3.amazonaws.com/spearfish_school_district/article/image/large_d10ff10b-f0c0-4726-a234-36d893932104.png",
+   "kind": "press_release",
+   "record_type": "press_release",
+   "source": "spearfish_school_news",
+   "source_label": "Spearfish School District",
+   "id": "64da2eea93e7",
+   "date": "2026-11-24",
+   "_first_seen": "2026-11-24"
+  },
+  {
+   "title": "Early Release - Staff Development, Wednesday, December 2, 2026",
+   "url": "https://www.spearfish.k12.sd.us/o/ssd/article/3626470",
+   "published": "2026-11-24T11:51:46-07:00",
+   "description": "Early Release Schedule 12:30 p.m. Mountain View Elementary 12:40 p.m. West Elementary 12:50 p.m. Creekside Elementary 1:00 p.m. Middle School 1:00 p.m. High School",
+   "image_url": "https://core-docs.s3.amazonaws.com/spearfish_school_district/article/image/large_af47eeb2-cea2-462f-b13b-ec7b9b104fd3.png",
+   "kind": "press_release",
+   "record_type": "press_release",
+   "source": "spearfish_school_news",
+   "source_label": "Spearfish School District",
+   "id": "0a56cbbe923c",
+   "date": "2026-11-24",
+   "_first_seen": "2026-11-24"
   }
  ]
 }

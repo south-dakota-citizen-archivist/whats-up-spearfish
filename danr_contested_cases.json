@@ -3,7 +3,7 @@
  "name": "SD DANR contested cases",
  "kind": "case",
  "url": "https://danr.sd.gov/public/ContestedCase.aspx",
- "fetched_at": "2026-11-23T15:21:07-07:00",
+ "fetched_at": "2026-11-24T12:08:23-07:00",
  "count": 8,
  "records": [
   {
@@ -148,22 +148,22 @@
    "url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID135",
    "documents": [
     {
+     "title": "Letters to Un-timely Petitioners",
+     "url": "https://danr.sd.gov/wrimage/pub/2914-2_2915-2_Untimely.pdf",
+     "added": "2026-11-24"
+    },
+    {
+     "title": "Notice of Delay of Hearing",
+     "url": "https://danr.sd.gov/wrimage/pub/2915-2_Delay.pdf",
+     "added": "2026-11-24"
+    },
+    {
      "title": "Notice of Withdrawal of Petition in Opposition",
      "url": "https://danr.sd.gov/wrimage/pub/2914-2_2915-2_PetWithdrawn.pdf",
      "added": "2026-11-16"
-    },
-    {
-     "title": "Notice of Appearance - Counsel for Applicant",
-     "url": "https://danr.sd.gov/wrimage/pub/2915-2_Noticeofappearance_applicant.pdf",
-     "added": "2026-11-10"
-    },
-    {
-     "title": "Petitions Submitted (un-timely)",
-     "url": "https://danr.sd.gov/wrimage/pub/2915-2_late_petitions_.pdf",
-     "added": "2026-11-18"
     }
    ],
-   "updated": "2026-11-16",
+   "updated": "2026-11-24",
    "kind": "case",
    "record_type": "case",
    "source": "danr_contested_cases",
@@ -181,22 +181,22 @@
    "url": "https://danr.sd.gov/public/ccdocs.aspx?CCID=CCID134",
    "documents": [
     {
+     "title": "Letters to Un-timely Petitioners",
+     "url": "https://danr.sd.gov/wrimage/pub/2914-2_2915-2_Untimely.pdf",
+     "added": "2026-11-24"
+    },
+    {
+     "title": "Notice of Delay of Hearing",
+     "url": "https://danr.sd.gov/wrimage/pub/2914-2_Delay.pdf",
+     "added": "2026-11-24"
+    },
+    {
      "title": "Notice of Withdrawal of Petition in Opposition",
      "url": "https://danr.sd.gov/wrimage/pub/2914-2_2915-2_PetWithdrawn.pdf",
      "added": "2026-11-16"
-    },
-    {
-     "title": "Notice of Appearance - Counsel for Applicant",
-     "url": "https://danr.sd.gov/wrimage/pub/2914-2_Noticeofappearance_applicant.pdf",
-     "added": "2026-11-10"
-    },
-    {
-     "title": "Petitions Submitted (un-timely)",
-     "url": "https://danr.sd.gov/wrimage/pub/2914-2_late_petitions_.pdf",
-     "added": "2026-11-18"
     }
    ],
-   "updated": "2026-11-16",
+   "updated": "2026-11-24",
    "kind": "case",
    "record_type": "case",
    "source": "danr_contested_cases",

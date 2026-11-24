@@ -3,42 +3,9 @@
  "name": "BHSU Campus Calendar",
  "kind": "event",
  "url": "https://bhsu.edu/campus-calendar.html",
- "fetched_at": "2026-11-23T15:20:55-07:00",
- "count": 8,
+ "fetched_at": "2026-11-24T12:07:57-07:00",
+ "count": 7,
  "records": [
-  {
-   "event_id": "7f476578-5de9-4bbc-b63d-70b73ff53c74",
-   "url": "https://bhsu.edu/campus-calendar.html#event-details/7f476578-5de9-4bbc-b63d-70b73ff53c74",
-   "title": "Band Concert",
-   "slug": "band-concert",
-   "description": "Band Concert",
-   "start_dt": "2026-11-22T21:00",
-   "end_dt": "2026-11-22T22:30",
-   "location": "Meier Hall",
-   "image_url": "",
-   "image_alt": "",
-   "organizer": "",
-   "tags": [
-    "Alumni Event",
-    "Community Event",
-    "BHSU Event",
-    "Concert"
-   ],
-   "featured": false,
-   "ticket_url": "",
-   "category": "Campus Calendar/Events",
-   "record_type": "event",
-   "source_label": "BHSU Campus Calendar",
-   "kind": "event",
-   "source": "bhsu_calendar",
-   "id": "641175f9ccba",
-   "start": "2026-11-22T14:00:00-07:00",
-   "end": "2026-11-22T15:30:00-07:00",
-   "all_day": false,
-   "date": "2026-11-22",
-   "event_category": "campus",
-   "_first_seen": "2026-11-01"
-  },
   {
    "event_id": "7b0ea266-1762-4357-ab2b-abb2e2b76fbd",
    "url": "https://bhsu.edu/campus-calendar.html#event-details/7b0ea266-1762-4357-ab2b-abb2e2b76fbd",
@@ -52,8 +19,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],
@@ -116,8 +83,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event"
    ],
    "featured": false,
@@ -148,8 +115,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],

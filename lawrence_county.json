@@ -3,8 +3,8 @@
  "name": "Lawrence County Agenda Center",
  "kind": "document",
  "url": "https://www.lawrence.sd.us/AgendaCenter",
- "fetched_at": "2026-11-23T15:21:08-07:00",
- "count": 5,
+ "fetched_at": "2026-11-24T12:08:04-07:00",
+ "count": 6,
  "records": [
   {
    "url": "https://www.lawrence.sd.us/AgendaCenter/PreviousVersions/1358",
@@ -75,6 +75,20 @@
    "id": "0119614c5d81",
    "date": "2026-11-10",
    "_first_seen": "2026-11-05"
+  },
+  {
+   "url": "https://www.lawrence.sd.us/AgendaCenter/PreviousVersions/1366",
+   "title": "Lawrence County Planning & Zoning Regular Meeting Info - December3, 2026",
+   "meeting_date": "",
+   "published": "2026-11-23T15:24:25-07:00",
+   "updated_note": "",
+   "record_type": "document",
+   "source_label": "Lawrence County",
+   "kind": "document",
+   "source": "lawrence_county",
+   "id": "ce39a6df37a4",
+   "date": "2026-11-23",
+   "_first_seen": "2026-11-24"
   }
  ]
 }

@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-23T15:21:35-07:00",
- "count": 77,
+ "fetched_at": "2026-11-24T12:08:46-07:00",
+ "count": 78,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -1237,6 +1237,22 @@
    "id": "bb72a2c7d90b",
    "date": "2026-11-23",
    "_first_seen": "2026-11-23"
+  },
+  {
+   "url": "https://www.sdpb.org/healthcare/2026-11-24/day-county-rebuilding-ems-staff-after-resignations",
+   "title": "Day County rebuilding EMS staff after resignations",
+   "slug": "sdpb-day-county-rebuilding-ems-staff-after-resignations",
+   "published": "2026-11-24",
+   "byline": "By Justin Bergh",
+   "description": "Day County commissioners unanimously approved the hiring of five new ambulance staff and the use of a county credit card for the new ambulance director.",
+   "image_url": "https://static.npr.production.npr.brightspot.cloud/bb/e7/b9d2967c4c77a7c0bb0e992a762f/day-county-commission-nov-23.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "703f2fff29e5",
+   "date": "2026-11-24",
+   "_first_seen": "2026-11-24"
   }
  ]
 }

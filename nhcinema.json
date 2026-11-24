@@ -3,7 +3,7 @@
  "name": "Northern Hills Cinema",
  "kind": "movie",
  "url": "https://nhcinema.com/",
- "fetched_at": "2026-11-23T15:21:22-07:00",
+ "fetched_at": "2026-11-24T12:08:23-07:00",
  "count": 14,
  "records": [
   {
@@ -17,19 +17,6 @@
    "note": "Ends Tuesday 11/24",
    "ends": "2026-11-24",
    "showtimes": [
-    {
-     "date": "2026-11-23",
-     "times": [
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-24",
      "times": [
@@ -69,19 +56,6 @@
    "ends": "2026-11-24",
    "showtimes": [
     {
-     "date": "2026-11-23",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": true
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-24",
      "times": [
       {
@@ -117,27 +91,6 @@
    "runtime": 158,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-23",
-     "times": [
-      {
-       "time": "14:45",
-       "luxury": false
-      },
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": true
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-24",
      "times": [
@@ -250,6 +203,23 @@
        "time": "12:15",
        "luxury": false
       },
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-11-30",
+     "times": [
       {
        "time": "15:00",
        "luxury": false
@@ -339,19 +309,6 @@
    "no_passes": true,
    "showtimes": [
     {
-     "date": "2026-11-23",
-     "times": [
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-24",
      "times": [
       {
@@ -439,6 +396,19 @@
        "time": "12:15",
        "luxury": false
       },
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-11-30",
+     "times": [
       {
        "time": "15:30",
        "luxury": false
