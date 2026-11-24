@@ -3,24 +3,9 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-23T23:28:57-07:00",
- "count": 93,
+ "fetched_at": "2026-11-24T15:44:36-07:00",
+ "count": 95,
  "records": [
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/24/enrollment-increases-at-south-dakota-technical-colleges-despite-drops-in-some-programs/",
-   "title": "Enrollment increases at South Dakota technical colleges, despite drops in some programs",
-   "slug": "south-dakota-searchlight-enrollment-increases-at-south-dakota-technical-colleges",
-   "published": "2026-10-24",
-   "byline": "Makenzie Huber",
-   "description": "Enrollment at South Dakota’s four technical colleges increased, according to the 2026 fall enrollment report. The state Board of Technical Education reviewed the report Thursday during its Rapid City meeting. Total enrollment grew by 39 students over last year, reaching a record 7,813 across degree-seeking, dual-credit and non-degree-seeking categories. Dual-credit programs allow high-schoolers to earn [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "22ac6923036d",
-   "date": "2026-10-24",
-   "_first_seen": "2026-11-01"
-  },
   {
    "url": "https://southdakotasearchlight.com/2026/10/25/candidates-running-as-independents-dont-always-seem-well-independent/",
    "title": "Commentary: Candidates running as independents don’t always seem, well, independent",
@@ -427,21 +412,6 @@
    "_first_seen": "2026-11-03"
   },
   {
-   "url": "https://www.sdnewswatch.org/south-dakota-general-election-2026-down-ballot/",
-   "title": "Citizenship voting, unclaimed property issues pass",
-   "slug": "sd-newswatch-citizenship-voting-unclaimed-property-issues-pass",
-   "published": "2026-11-04",
-   "byline": "Molly Wetsch",
-   "description": "Ballot measures to tie Medicaid expansion to federal funding and raise the threshold to amend the constitution fail. Republican candidates win office for secretary of state, attorney general, auditor, treasurer and school of public lands.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "eddc7a322add",
-   "date": "2026-11-04",
-   "_first_seen": "2026-11-04"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/11/04/the-blue-tsunami-brings-a-ripple-of-hope-to-south-dakota-democrats/",
    "title": "Commentary: The ‘blue tsunami’ brings a ripple of hope to South Dakota Democrats",
    "slug": "south-dakota-searchlight-commentary-the-blue-tsunami-brings-a-ripple-of-hope-to",
@@ -635,6 +605,21 @@
    "id": "71064ea97568",
    "date": "2026-11-04",
    "_first_seen": "2026-11-03"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-general-election-2026-down-ballot/",
+   "title": "Citizenship voting, unclaimed property issues pass",
+   "slug": "sd-newswatch-citizenship-voting-unclaimed-property-issues-pass",
+   "published": "2026-11-04",
+   "byline": "Molly Wetsch",
+   "description": "Ballot measures to tie Medicaid expansion to federal funding and raise the threshold to amend the constitution fail. Republican candidates win office for secretary of state, attorney general, auditor, treasurer and school of public lands.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "eddc7a322add",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-04"
   },
   {
    "url": "https://www.sdnewswatch.org/south-dakota-general-election-2026/",
@@ -1385,6 +1370,51 @@
    "id": "60ef97fb6770",
    "date": "2026-11-23",
    "_first_seen": "2026-11-23"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/fact-brief-president-south-dakota-turkey-pardon/",
+   "title": "Fact brief: Has the president ever pardoned a turkey from SD?",
+   "slug": "sd-newswatch-fact-brief-has-the-president-ever-pardoned-a-turkey-from-sd",
+   "published": "2026-11-24",
+   "byline": "Emily DeCock",
+   "description": "The presidential turkey pardon is a long-standing U.S. tradition.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "a9e325658404",
+   "date": "2026-11-24",
+   "_first_seen": "2026-11-24"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/24/south-dakotas-investments-hit-milestone-of-underperformance-but-managers-see-silver-lining/",
+   "title": "South Dakota’s investments hit milestone of underperformance, but managers see silver lining",
+   "slug": "south-dakota-searchlight-south-dakotas-investments-hit-milestone-of-but-managers",
+   "published": "2026-11-24",
+   "byline": "John Hult",
+   "description": "South Dakota’s state government investment portfolio tends to bring in less money from the stock market at times when other portfolios are making more.  That’s by design, according to the portfolio’s managers. The “contrarian” approach includes putting a smaller share of money in stocks when prices are high, and snatching up more stocks when prices [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "d48a6d024e96",
+   "date": "2026-11-24",
+   "_first_seen": "2026-11-24"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/24/new-voter-backed-trust-fund-could-become-south-dakotas-largest-state-treasurer-says/",
+   "title": "New voter-backed trust fund could become South Dakota’s largest, state treasurer says",
+   "slug": "south-dakota-searchlight-new-voter-backed-trust-fund-could-become-south-dakotas",
+   "published": "2026-11-24",
+   "byline": "John Hult",
+   "description": "A trust fund endorsed by voters on Election Day could grow to become South Dakota’s largest, according to State Treasurer Josh Haeder. Haeder made his comments during a recent meeting of the South Dakota Investment Council, which manages the state retirement system and trust funds that benefit schools, healthcare and the state budget. The state [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "5d92a95e31e2",
+   "date": "2026-11-24",
+   "_first_seen": "2026-11-24"
   },
   {
    "url": "https://southdakotasearchlight.com/2026/11/23/commission-rejects-allegation-that-eavesdropping-on-closed-meeting-violated-open-meetings-law/",
