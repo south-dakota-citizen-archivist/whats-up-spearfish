@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-23T02:51:14-07:00",
- "count": 90,
+ "fetched_at": "2026-11-23T17:19:51-07:00",
+ "count": 93,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/24/enrollment-increases-at-south-dakota-technical-colleges-despite-drops-in-some-programs/",
@@ -442,21 +442,6 @@
    "_first_seen": "2026-11-04"
   },
   {
-   "url": "https://www.sdnewswatch.org/south-dakota-general-election-2026/",
-   "title": "Republicans Rhoden, Jackley and Rounds win",
-   "slug": "sd-newswatch-republicans-rhoden-jackley-and-rounds-win",
-   "published": "2026-11-04",
-   "byline": "Molly Wetsch",
-   "description": "Gov. Larry Rhoden earns his first election as governor. Longtime prosecutor Marty Jackley heads to the U.S. House. And U.S. Sen. Mike Rounds gets a third term. GOP's candidate for Secretary of State's Office also won.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "91bc2b7a8368",
-   "date": "2026-11-04",
-   "_first_seen": "2026-11-03"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/11/04/the-blue-tsunami-brings-a-ripple-of-hope-to-south-dakota-democrats/",
    "title": "Commentary: The ‘blue tsunami’ brings a ripple of hope to South Dakota Democrats",
    "slug": "south-dakota-searchlight-commentary-the-blue-tsunami-brings-a-ripple-of-hope-to",
@@ -648,6 +633,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "71064ea97568",
+   "date": "2026-11-04",
+   "_first_seen": "2026-11-03"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-general-election-2026/",
+   "title": "Republicans Rhoden, Jackley and Rounds win",
+   "slug": "sd-newswatch-republicans-rhoden-jackley-and-rounds-win",
+   "published": "2026-11-04",
+   "byline": "Molly Wetsch",
+   "description": "Gov. Larry Rhoden earns his first election as governor. Longtime prosecutor Marty Jackley heads to the U.S. House. And U.S. Sen. Mike Rounds gets a third term. GOP's candidate for Secretary of State's Office also won.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "91bc2b7a8368",
    "date": "2026-11-04",
    "_first_seen": "2026-11-03"
   },
@@ -1355,6 +1355,51 @@
    "id": "94de1fb80c9c",
    "date": "2026-11-22",
    "_first_seen": "2026-11-22"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-seatbelt-use-fatalities/",
+   "title": "9 deaths in a single week raise concerns about seat belt use",
+   "slug": "sd-newswatch-9-deaths-in-a-single-week-raise-concerns-about-seat-belt-use",
+   "published": "2026-11-23",
+   "byline": "Bart Pfankuch",
+   "description": "Those killed ranged in age from 12 to 88, revealing an even greater challenge for law enforcement officials and safety advocates who are trying to instill a lifelong habit of consistent seat belt use.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "524f573a3b8d",
+   "date": "2026-11-23",
+   "_first_seen": "2026-11-23"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/23/states-high-court-combines-administration-of-two-judicial-circuits-but-holds-off-on-full-merger/",
+   "title": "State’s high court combines administration of two judicial circuits but holds off on full merger",
+   "slug": "south-dakota-searchlight-states-high-court-combines-administration-of-two-but-on",
+   "published": "2026-11-23",
+   "byline": "John Hult",
+   "description": "South Dakota&#8217;s Unified Judicial System will not fully merge two circuits to create the state&#8217;s largest by area.  At least not yet.  Instead, the borders of the 4th and 7th circuits will remain, as will each circuit’s judges, while the court system moves to consolidate administrative functions under a single team. A state Supreme Court [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "60ef97fb6770",
+   "date": "2026-11-23",
+   "_first_seen": "2026-11-23"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/23/commission-rejects-allegation-that-eavesdropping-on-closed-meeting-violated-open-meetings-law/",
+   "title": "Commission rejects allegation that eavesdropping on closed meeting violated open-meetings law",
+   "slug": "south-dakota-searchlight-commission-rejects-allegation-that-eavesdropping-on-law",
+   "published": "2026-11-24",
+   "byline": "Meghan O'Brien",
+   "description": "PIERRE — The South Dakota Open Meetings Commission found no violation of law occurred when a person allegedly eavesdropped on the non-public portion of a city council meeting, but the commission decided to reprimand another city council for failing to adequately disclose its reasons for closed-door sessions. The Open Meetings Commission considered those and other cases [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "f18af1299329",
+   "date": "2026-11-24",
+   "_first_seen": "2026-11-23"
   }
  ]
 }

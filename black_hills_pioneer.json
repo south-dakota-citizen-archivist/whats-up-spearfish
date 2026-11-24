@@ -3,7 +3,7 @@
  "name": "Black Hills Pioneer",
  "kind": "news",
  "url": "https://www.bhpioneer.com/",
- "fetched_at": "2026-11-23T02:51:13-07:00",
+ "fetched_at": "2026-11-23T17:19:50-07:00",
  "count": 257,
  "records": [
   {
@@ -3682,21 +3682,6 @@
    "_first_seen": "2026-11-21"
   },
   {
-   "url": "https://www.bhpioneer.com/local_news/sd-sues-tiktok-in-state-court-after-settlement-negotiations-in-federal-lawsuit-stall/article_8d57a0f9-3c7b-44d0-a95a-2941519cc5af.html",
-   "title": "SD sues TikTok in state court after settlement negotiations in federal lawsuit stall",
-   "slug": "black-hills-pioneer-sd-sues-tiktok-in-state-court-after-settlement-negotiations",
-   "published": "2026-11-21",
-   "byline": "By John Hult Southdakotasearchlight.com",
-   "description": "PIERRE — South Dakota’s attorney general is suing TikTok for allegedly breaking state law by lying to parents about safety, bypassing safety controls and failing to protect kids from harm.",
-   "record_type": "news",
-   "source_label": "Black Hills Pioneer",
-   "kind": "news",
-   "source": "black_hills_pioneer",
-   "id": "58d96d471e49",
-   "date": "2026-11-21",
-   "_first_seen": "2026-11-21"
-  },
-  {
    "url": "https://www.bhpioneer.com/local_news/sturgis-leverages-federal-state-funds-to-complete-5m-in-airport-improvements/article_b926c6d2-ca62-45f9-bec1-f97213a60970.html",
    "title": "Sturgis leverages federal, state funds to complete $5M in airport improvements",
    "slug": "black-hills-pioneer-sturgis-leverages-federal-state-funds-to-complete-5m-in",
@@ -3858,6 +3843,21 @@
    "kind": "news",
    "source": "black_hills_pioneer",
    "id": "5b8835275b63",
+   "date": "2026-11-21",
+   "_first_seen": "2026-11-21"
+  },
+  {
+   "url": "https://www.bhpioneer.com/local_news/sd-sues-tiktok-in-state-court-after-settlement-negotiations-in-federal-lawsuit-stall/article_8d57a0f9-3c7b-44d0-a95a-2941519cc5af.html",
+   "title": "SD sues TikTok in state court after settlement negotiations in federal lawsuit stall",
+   "slug": "black-hills-pioneer-sd-sues-tiktok-in-state-court-after-settlement-negotiations",
+   "published": "2026-11-21",
+   "byline": "By John Hult Southdakotasearchlight.com",
+   "description": "PIERRE — South Dakota’s attorney general is suing TikTok for allegedly breaking state law by lying to parents about safety, bypassing safety controls and failing to protect kids from harm.",
+   "record_type": "news",
+   "source_label": "Black Hills Pioneer",
+   "kind": "news",
+   "source": "black_hills_pioneer",
+   "id": "58d96d471e49",
    "date": "2026-11-21",
    "_first_seen": "2026-11-21"
   }

@@ -3,8 +3,8 @@
  "name": "Rapid City Journal",
  "kind": "news",
  "url": "https://rapidcityjournal.com/",
- "fetched_at": "2026-11-23T02:51:13-07:00",
- "count": 192,
+ "fetched_at": "2026-11-23T17:19:50-07:00",
+ "count": 193,
  "records": [
   {
    "url": "https://rapidcityjournal.com/news/local/government-politics/article_039def4d-ffa9-47a8-87f2-ed6de60324ff.html",
@@ -2885,6 +2885,21 @@
    "id": "d194fa115014",
    "date": "2026-11-21",
    "_first_seen": "2026-11-22"
+  },
+  {
+   "url": "https://rapidcityjournal.com/news/local/crime-courts/article_025fb77b-b621-4e00-9252-83d6b57c1f41.html",
+   "title": "FBI continues investigation after hoax bomb threat at Rapid City mall",
+   "slug": "rapid-city-journal-fbi-continues-investigation-after-hoax-bomb-threat-at-rapid",
+   "published": "2026-11-22",
+   "byline": "Journal staff",
+   "description": "After a surge of hoax bomb threats across South Dakota in the past several weeks, the Rapid City Police Department investigated their very own when a threat was called in Saturday, Nov. 21 at Uptown Rapid, previously known as the Rushmore Mall.",
+   "record_type": "news",
+   "source_label": "Rapid City Journal",
+   "kind": "news",
+   "source": "rapid_city_journal",
+   "id": "a55ec6a5fe21",
+   "date": "2026-11-22",
+   "_first_seen": "2026-11-23"
   }
  ]
 }
