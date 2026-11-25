@@ -3,8 +3,8 @@
  "name": "Spearfish Chamber",
  "kind": "event",
  "url": "https://business.spearfishchamber.org/events/calendar/",
- "fetched_at": "2026-11-24T12:09:12-07:00",
- "count": 33,
+ "fetched_at": "2026-11-25T14:59:36-07:00",
+ "count": 34,
  "records": [
   {
    "url": "https://business.spearfishchamber.org/events/details/rotary-northern-black-hills-11-25-2026-30059",
@@ -269,6 +269,28 @@
    "date": "2026-12-05",
    "event_category": "community",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://business.spearfishchamber.org/events/details/holidazzle-light-parade-30923",
+   "title": "Holidazzle Light Parade",
+   "slug": "holidazzle-light-parade",
+   "start_dt": "2026-12-05 6:00 PM MST",
+   "end_dt": "2026-12-05 7:00 PM MST",
+   "location": "Parade Route: Spearfish High school parking lot to North Ave and onto Main Street.",
+   "fees": "Free",
+   "description": "Come enjoy the Light parade through downtown Spearfish. For more details: VisitSpearfish.com",
+   "website": "",
+   "record_type": "event",
+   "source_label": "Spearfish Chamber",
+   "kind": "event",
+   "source": "spearfish_chamber",
+   "id": "4a513f97c302",
+   "start": "2026-12-05T18:00:00-07:00",
+   "end": "2026-12-05T19:00:00-07:00",
+   "all_day": false,
+   "date": "2026-12-05",
+   "event_category": "community",
+   "_first_seen": "2026-11-25"
   },
   {
    "url": "https://business.spearfishchamber.org/events/details/art-of-silversmithing-12-06-2026-30848",

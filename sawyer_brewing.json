@@ -3,8 +3,8 @@
  "name": "Sawyer Brewing Co.",
  "kind": "beer",
  "url": "https://www.sawyerbrewingco.com/menu",
- "fetched_at": "2026-11-24T12:08:54-07:00",
- "count": 16,
+ "fetched_at": "2026-11-25T14:59:03-07:00",
+ "count": 17,
  "records": [
   {
    "url": "https://www.sawyerbrewingco.com/menu",
@@ -155,6 +155,36 @@
    "source": "sawyer_brewing",
    "id": "a985ad2d9df1",
    "_first_seen": "2026-11-01"
+  },
+  {
+   "url": "https://www.sawyerbrewingco.com/menu",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/5c484d047c9327393b19dc04/20a8b4e5-c855-4731-8f17-fc7c50851665/extrapddayzedarkweb.jpg",
+   "title": "Extra Powder Dayze - Session IPA",
+   "slug": "extra-powder-dayze-session-ipa",
+   "category": "Light & Easy",
+   "description": "The Citra & Amarillo hops take you on a citrusy flavor ride leading your taste buds to a nice clean finish. You won’t be sacrificing flavor with this session IPA. Go ahead hit the trails, maybe even shovel. Then grab another it’s only 5%",
+   "abv": "5%",
+   "notes": "",
+   "prices": [
+    {
+     "price": 2.5,
+     "ounces": 5
+    },
+    {
+     "price": 4.0,
+     "ounces": 10
+    },
+    {
+     "price": 6.0,
+     "ounces": 16
+    }
+   ],
+   "record_type": "beer",
+   "source_label": "Sawyer Brewing Co.",
+   "kind": "beer",
+   "source": "sawyer_brewing",
+   "id": "7f9c6bccff67",
+   "_first_seen": "2026-11-25"
   },
   {
    "url": "https://www.sawyerbrewingco.com/menu",

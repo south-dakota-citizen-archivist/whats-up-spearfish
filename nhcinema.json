@@ -3,85 +3,9 @@
  "name": "Northern Hills Cinema",
  "kind": "movie",
  "url": "https://nhcinema.com/",
- "fetched_at": "2026-11-24T12:08:23-07:00",
- "count": 14,
+ "fetched_at": "2026-11-25T14:58:51-07:00",
+ "count": 12,
  "records": [
-  {
-   "title": "Drummer Boy",
-   "url": "https://nhcinema.com/view/drummer-boy",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3723/drummer_boy_drummer_boy_-_one_sheet_27x40__standard.jpg",
-   "rating": "PG-13",
-   "runtime": 129,
-   "no_passes": false,
-   "note": "Ends Tuesday 11/24",
-   "ends": "2026-11-24",
-   "showtimes": [
-    {
-     "date": "2026-11-24",
-     "times": [
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Animated, Musical",
-   "starring": "Lucas Leach, Joel David Smallbone, Beth Easdown",
-   "director": "Richard L. Ramsey",
-   "synopsis": "As America’s fight for independence begins, a young drummer boy, an enslaved woman, and a divided family each search for freedom in a world built to deny it. With music carrying hope through battle and loss, Drummer Boy turns the Revolution into a deeply human story of faith, forgiveness, and the belief that no person is born to live in chains or be forgotten.",
-   "trailer": "rXaR4nXRvOY",
-   "slug": "drummer-boy",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "e74da5cf2618",
-   "_first_seen": "2026-11-04"
-  },
-  {
-   "title": "Ghost Soldier",
-   "url": "https://nhcinema.com/view/ghost-soldier",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3727/ghost_soldier_ghost_soldier_-_one_sheet_high_res_size_-_1400x2100__standard.jpg",
-   "rating": "PG-13",
-   "runtime": 90,
-   "no_passes": true,
-   "note": "Ends Tuesday 11/24",
-   "ends": "2026-11-24",
-   "showtimes": [
-    {
-     "date": "2026-11-24",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Action, Thriller",
-   "starring": "Jim Caviezel, Olivia Thirlby, Beau Knapp, Garret Dillahunt, Shea Whigham",
-   "director": "William Eubank",
-   "synopsis": "In the action-thriller Ghost Soldier, Jim Caviezel stars as Henry “Fitz” Fitzgerald, a solitary man with a mysterious past, living a quiet life off the grid in his hometown. But when a powerful foreign corporation descends on his community determined to seize his and his neighbors’ land for a massive payday, Fitz takes action — he’s actually a former Special Forces soldier and advanced weapons developer. Armed with weapons no one has ever seen, a lifetime of lethal military training, and an unwavering code of justice, Fitz becomes the one thing his enemies never anticipated: a one-man war they can’t win.",
-   "trailer": "UKaWzMf9Ybc",
-   "slug": "ghost-soldier",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "518b07809926",
-   "_first_seen": "2026-11-04"
-  },
   {
    "title": "The Hunger Games: Sunrise on the Reaping",
    "url": "https://nhcinema.com/view/the-hunger-games-sunrise-on-the-reaping",
@@ -91,27 +15,6 @@
    "runtime": 158,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-24",
-     "times": [
-      {
-       "time": "14:45",
-       "luxury": true
-      },
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-25",
      "times": [
@@ -231,6 +134,23 @@
       {
        "time": "18:00",
        "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-12-01",
+     "times": [
+      {
+       "time": "15:15",
+       "luxury": true
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
       }
      ]
     }
@@ -309,19 +229,6 @@
    "no_passes": true,
    "showtimes": [
     {
-     "date": "2026-11-24",
-     "times": [
-      {
-       "time": "15:00",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": true
-      }
-     ]
-    },
-    {
      "date": "2026-11-25",
      "times": [
       {
@@ -418,6 +325,19 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-12-01",
+     "times": [
+      {
+       "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
     }
    ],
    "genre": "Drama",
@@ -441,8 +361,6 @@
    "rating": "PG-13",
    "runtime": 105,
    "no_passes": true,
-   "note": "Starts Wednesday 11/25",
-   "starts": "2026-11-25",
    "showtimes": [
     {
      "date": "2026-11-25",
@@ -577,8 +495,6 @@
    "rating": "PG",
    "runtime": 110,
    "no_passes": true,
-   "note": "Starts Wednesday 11/25",
-   "starts": "2026-11-25",
    "showtimes": [
     {
      "date": "2026-11-25",
@@ -713,8 +629,6 @@
    "rating": "PG",
    "runtime": 109,
    "no_passes": true,
-   "note": "Starts Wednesday 11/25",
-   "starts": "2026-11-25",
    "showtimes": [
     {
      "date": "2026-11-25",

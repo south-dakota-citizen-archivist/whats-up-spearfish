@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-24T12:08:46-07:00",
- "count": 78,
+ "fetched_at": "2026-11-25T14:59:08-07:00",
+ "count": 80,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -1239,6 +1239,22 @@
    "_first_seen": "2026-11-23"
   },
   {
+   "url": "https://www.sdpb.org/crime-courts/2026-11-24/sd-supreme-court-approves-limited-administrative-merger-of-fourth-and-seventh-circuits",
+   "title": "SD Supreme Court approves limited administrative merger of Fourth and Seventh Circuits",
+   "slug": "sdpb-sd-supreme-court-approves-limited-administrative-merger-of-fourth-and",
+   "published": "2026-11-24",
+   "byline": "By C.J. Keene",
+   "description": "South Dakota’s Fourth and Seventh judicial circuits are merging administrative functions, but are retaining their geographic boundaries, for now. This comes following extensive debate along with some public pushback on the subject.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/97/b3/e66582c2477981fe0ee25d85173d/ujs-south-dakota-circuit-court-map.jpg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "89c1f9bd9a5e",
+   "date": "2026-11-24",
+   "_first_seen": "2026-11-25"
+  },
+  {
    "url": "https://www.sdpb.org/healthcare/2026-11-24/day-county-rebuilding-ems-staff-after-resignations",
    "title": "Day County rebuilding EMS staff after resignations",
    "slug": "sdpb-day-county-rebuilding-ems-staff-after-resignations",
@@ -1253,6 +1269,22 @@
    "id": "703f2fff29e5",
    "date": "2026-11-24",
    "_first_seen": "2026-11-24"
+  },
+  {
+   "url": "https://www.sdpb.org/business-economics/2026-11-25/retailer-survey-suggests-strong-holiday-shopping-outlook-in-south-dakota",
+   "title": "Retailer survey suggests strong holiday shopping outlook in South Dakota",
+   "slug": "sdpb-retailer-survey-suggests-strong-holiday-shopping-outlook-in-south-dakota",
+   "published": "2026-11-25",
+   "byline": "By C.J. Keene",
+   "description": "Black Friday nears and presents will be under the tree in no time. Perhaps surprisingly, a survey of state retailers found businessowners are optimistic despite inflation concerns that have dogged the economy in the last year.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/ad/01/176a99b246cdbb40bf571c6dc28f/trucks-1.jpeg",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "c3ee52bb890c",
+   "date": "2026-11-25",
+   "_first_seen": "2026-11-25"
   }
  ]
 }

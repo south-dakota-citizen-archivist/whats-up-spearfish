@@ -3,7 +3,7 @@
  "name": "Native plants of the Black Hills",
  "kind": "plant",
  "url": "https://www.inaturalist.org/places/black-hills-national-forest-us",
- "fetched_at": "2026-11-24T12:08:38-07:00",
+ "fetched_at": "2026-11-25T14:59:10-07:00",
  "count": 392,
  "records": [
   {
@@ -729,7 +729,7 @@
    "photo_credit": "(c) William Van Hemessen, some rights reserved (CC BY-NC), uploaded by William Van Hemessen",
    "url": "https://www.inaturalist.org/taxa/53547",
    "wikipedia_url": "https://en.wikipedia.org/wiki/Ulmus americana",
-   "sightings": 21,
+   "sightings": 31,
    "kind": "plant",
    "record_type": "plant",
    "source": "native_plants_spotlight",
@@ -1681,7 +1681,7 @@
    "photo_credit": "(c) Conquest, some rights reserved (CC BY), uploaded by Conquest",
    "url": "https://www.inaturalist.org/taxa/62292",
    "wikipedia_url": "https://en.wikipedia.org/wiki/Asclepias speciosa",
-   "sightings": 371,
+   "sightings": 386,
    "kind": "plant",
    "record_type": "plant",
    "source": "native_plants_spotlight",

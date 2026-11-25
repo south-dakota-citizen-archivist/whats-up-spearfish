@@ -3,8 +3,8 @@
  "name": "Public Meetings (YouTube)",
  "kind": "youtube_video",
  "url": "https://www.youtube.com/@spearfishschooldistrictliv3794/streams",
- "fetched_at": "2026-11-24T12:08:27-07:00",
- "count": 171,
+ "fetched_at": "2026-11-25T14:58:48-07:00",
+ "count": 172,
  "records": [
   {
    "url": "https://www.youtube.com/watch?v=qMkwX7lt0Nc",
@@ -2741,6 +2741,22 @@
    "id": "0e646b7a255b",
    "date": "2026-11-10",
    "_first_seen": "2026-11-10"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=jfySit6mQrw",
+   "video_id": "jfySit6mQrw",
+   "title": "Lawrence County Commission and Board of Adjustment Meeting - November 24, 2026",
+   "description": "The electronic video and audio format of the board proceedings are provided as a public service and do not constitute an official record of the Board of County Commissioners and no warranty or guarantee of any kind is provided. The minutes of the Lawrence County Board of Commissioners record the official acts, orders, and judgments made by the Board of County Commissioners, as required by law. The official record of proceedings before the Lawrence County Board of Commissioners shall be the County board minutes as approved by the Lawrence County Commission.",
+   "published": "2026-11-25",
+   "thumbnail_url": "https://i.ytimg.com/vi/jfySit6mQrw/mqdefault.jpg",
+   "source_label": "Lawrence County",
+   "channel_url": "https://www.youtube.com/channel/UC2CZKGr9OGrsMcCZkW0_HMA",
+   "record_type": "youtube_video",
+   "kind": "youtube_video",
+   "source": "public_meetings_youtube",
+   "id": "f1ae0be8b8ba",
+   "date": "2026-11-25",
+   "_first_seen": "2026-11-25"
   }
  ]
 }

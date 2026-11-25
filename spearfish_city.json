@@ -3,393 +3,9 @@
  "name": "City of Spearfish",
  "kind": "document",
  "url": "https://spearfishsd.portal.civicclerk.com/",
- "fetched_at": "2026-11-24T12:08:53-07:00",
- "count": 98,
+ "fetched_at": "2026-11-25T14:59:10-07:00",
+ "count": 97,
  "records": [
-  {
-   "event_id": 3353,
-   "event_name": "Special City Council Meeting 8/26/2026",
-   "category": "City Council",
-   "start_dt": "2026-08-26T16:15:00-06:00",
-   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
-   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/3353",
-   "has_media": true,
-   "media_url": "https://cpmedia.azureedge.net/spearfishsd/e5389ec86c.mp4",
-   "media_page": "https://spearfishsd.portal.civicclerk.com/event/3353/media",
-   "chapters": [
-    {
-     "id": 5589,
-     "t": 953,
-     "title": "1. Call to Order",
-     "sub": false
-    },
-    {
-     "id": 5590,
-     "t": 967,
-     "title": "2. Roll Call",
-     "sub": false
-    },
-    {
-     "id": 5591,
-     "t": 0,
-     "title": "3. Invocation",
-     "sub": false
-    },
-    {
-     "id": 5592,
-     "t": 981,
-     "title": "4. Pledge of Allegiance",
-     "sub": false
-    },
-    {
-     "id": 5593,
-     "t": 1007,
-     "title": "5. Approve Agenda",
-     "sub": false
-    },
-    {
-     "id": 5594,
-     "t": 1064,
-     "title": "6. Public Comment -",
-     "sub": false
-    },
-    {
-     "id": 5595,
-     "t": 1101,
-     "title": "7. Declaration of Any Potential Conflicts of Interest",
-     "sub": false
-    },
-    {
-     "id": 5596,
-     "t": 1109,
-     "title": "8. Public Works",
-     "sub": false
-    },
-    {
-     "id": 5605,
-     "t": 1498,
-     "title": "Authorize staff to proceed with a field directive on the Colorado Blvd Sewer Upsize, Phase 2 project, and bring the change order for this back to council at a future meeting for final approval.",
-     "sub": true
-    },
-    {
-     "id": 5597,
-     "t": 1113,
-     "title": "8.A. Award the lowest responsive and responsible bid for the Sandstone Hills (Remediation) Project to Johner & Sons Inc. at a total amount of $271,194.50.",
-     "sub": true
-    },
-    {
-     "id": 5598,
-     "t": 1294,
-     "title": "8.B. Award the lowest responsive and responsible bid for the Downtown Mill & Overlay project to Johner & Sons Inc. at a total amount of $348,662.45.",
-     "sub": true
-    },
-    {
-     "id": 5599,
-     "t": 1419,
-     "title": "8.C. Approve the Final Under/Over Change Order #1 for the Annual Crosswalks, Stop Bar, and Turn Arrow Painting with a $0 increase and a $4,233.30 decrease, for a net decrease of $4,233.30 and Certificate of Final Completion and Acceptance dated 08/26/2026.",
-     "sub": true
-    },
-    {
-     "id": 5600,
-     "t": 1672,
-     "title": "9. Approve the Bills",
-     "sub": false
-    },
-    {
-     "id": 5601,
-     "t": 1673,
-     "title": "9.A. Approve the bill list dated 8/26/2026.",
-     "sub": true
-    },
-    {
-     "id": 5602,
-     "t": 1727,
-     "title": "10. Mayor and Council Discussion",
-     "sub": false
-    },
-    {
-     "id": 5603,
-     "t": 2136,
-     "title": "11. Departmental Discussion",
-     "sub": false
-    },
-    {
-     "id": 5604,
-     "t": 2151,
-     "title": "12. Adjournment",
-     "sub": false
-    }
-   ],
-   "join_url": "",
-   "record_type": "document",
-   "source_label": "City of Spearfish",
-   "url": "https://spearfishsd.portal.civicclerk.com/event/3353/files/agenda/8791",
-   "title": "City Council Special Session Agenda 8/26/2026",
-   "doc_type": "Agenda",
-   "file_url": "https://spearfishsd.portal.civicclerk.com/event/3353/files/agenda/8791",
-   "kind": "document",
-   "source": "spearfish_city",
-   "id": "48c34d4f3217",
-   "published": "2026-08-26T16:15:00-06:00",
-   "date": "2026-08-26",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "event_id": 3353,
-   "event_name": "Special City Council Meeting 8/26/2026",
-   "category": "City Council",
-   "start_dt": "2026-08-26T16:15:00-06:00",
-   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
-   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/3353",
-   "has_media": true,
-   "media_url": "https://cpmedia.azureedge.net/spearfishsd/e5389ec86c.mp4",
-   "media_page": "https://spearfishsd.portal.civicclerk.com/event/3353/media",
-   "chapters": [
-    {
-     "id": 5589,
-     "t": 953,
-     "title": "1. Call to Order",
-     "sub": false
-    },
-    {
-     "id": 5590,
-     "t": 967,
-     "title": "2. Roll Call",
-     "sub": false
-    },
-    {
-     "id": 5591,
-     "t": 0,
-     "title": "3. Invocation",
-     "sub": false
-    },
-    {
-     "id": 5592,
-     "t": 981,
-     "title": "4. Pledge of Allegiance",
-     "sub": false
-    },
-    {
-     "id": 5593,
-     "t": 1007,
-     "title": "5. Approve Agenda",
-     "sub": false
-    },
-    {
-     "id": 5594,
-     "t": 1064,
-     "title": "6. Public Comment -",
-     "sub": false
-    },
-    {
-     "id": 5595,
-     "t": 1101,
-     "title": "7. Declaration of Any Potential Conflicts of Interest",
-     "sub": false
-    },
-    {
-     "id": 5596,
-     "t": 1109,
-     "title": "8. Public Works",
-     "sub": false
-    },
-    {
-     "id": 5605,
-     "t": 1498,
-     "title": "Authorize staff to proceed with a field directive on the Colorado Blvd Sewer Upsize, Phase 2 project, and bring the change order for this back to council at a future meeting for final approval.",
-     "sub": true
-    },
-    {
-     "id": 5597,
-     "t": 1113,
-     "title": "8.A. Award the lowest responsive and responsible bid for the Sandstone Hills (Remediation) Project to Johner & Sons Inc. at a total amount of $271,194.50.",
-     "sub": true
-    },
-    {
-     "id": 5598,
-     "t": 1294,
-     "title": "8.B. Award the lowest responsive and responsible bid for the Downtown Mill & Overlay project to Johner & Sons Inc. at a total amount of $348,662.45.",
-     "sub": true
-    },
-    {
-     "id": 5599,
-     "t": 1419,
-     "title": "8.C. Approve the Final Under/Over Change Order #1 for the Annual Crosswalks, Stop Bar, and Turn Arrow Painting with a $0 increase and a $4,233.30 decrease, for a net decrease of $4,233.30 and Certificate of Final Completion and Acceptance dated 08/26/2026.",
-     "sub": true
-    },
-    {
-     "id": 5600,
-     "t": 1672,
-     "title": "9. Approve the Bills",
-     "sub": false
-    },
-    {
-     "id": 5601,
-     "t": 1673,
-     "title": "9.A. Approve the bill list dated 8/26/2026.",
-     "sub": true
-    },
-    {
-     "id": 5602,
-     "t": 1727,
-     "title": "10. Mayor and Council Discussion",
-     "sub": false
-    },
-    {
-     "id": 5603,
-     "t": 2136,
-     "title": "11. Departmental Discussion",
-     "sub": false
-    },
-    {
-     "id": 5604,
-     "t": 2151,
-     "title": "12. Adjournment",
-     "sub": false
-    }
-   ],
-   "join_url": "",
-   "record_type": "document",
-   "source_label": "City of Spearfish",
-   "url": "https://spearfishsd.portal.civicclerk.com/event/3353/files/agenda-packet/8797",
-   "title": "Updated Special Session Packet 8/26/2026",
-   "doc_type": "Agenda Packet",
-   "file_url": "https://spearfishsd.portal.civicclerk.com/event/3353/files/agenda-packet/8797",
-   "kind": "document",
-   "source": "spearfish_city",
-   "id": "483776d65fb3",
-   "published": "2026-08-26T16:15:00-06:00",
-   "date": "2026-08-26",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "event_id": 3353,
-   "event_name": "Special City Council Meeting 8/26/2026",
-   "category": "City Council",
-   "start_dt": "2026-08-26T16:15:00-06:00",
-   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
-   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/3353",
-   "has_media": true,
-   "media_url": "https://cpmedia.azureedge.net/spearfishsd/e5389ec86c.mp4",
-   "media_page": "https://spearfishsd.portal.civicclerk.com/event/3353/media",
-   "chapters": [
-    {
-     "id": 5589,
-     "t": 953,
-     "title": "1. Call to Order",
-     "sub": false
-    },
-    {
-     "id": 5590,
-     "t": 967,
-     "title": "2. Roll Call",
-     "sub": false
-    },
-    {
-     "id": 5591,
-     "t": 0,
-     "title": "3. Invocation",
-     "sub": false
-    },
-    {
-     "id": 5592,
-     "t": 981,
-     "title": "4. Pledge of Allegiance",
-     "sub": false
-    },
-    {
-     "id": 5593,
-     "t": 1007,
-     "title": "5. Approve Agenda",
-     "sub": false
-    },
-    {
-     "id": 5594,
-     "t": 1064,
-     "title": "6. Public Comment -",
-     "sub": false
-    },
-    {
-     "id": 5595,
-     "t": 1101,
-     "title": "7. Declaration of Any Potential Conflicts of Interest",
-     "sub": false
-    },
-    {
-     "id": 5596,
-     "t": 1109,
-     "title": "8. Public Works",
-     "sub": false
-    },
-    {
-     "id": 5605,
-     "t": 1498,
-     "title": "Authorize staff to proceed with a field directive on the Colorado Blvd Sewer Upsize, Phase 2 project, and bring the change order for this back to council at a future meeting for final approval.",
-     "sub": true
-    },
-    {
-     "id": 5597,
-     "t": 1113,
-     "title": "8.A. Award the lowest responsive and responsible bid for the Sandstone Hills (Remediation) Project to Johner & Sons Inc. at a total amount of $271,194.50.",
-     "sub": true
-    },
-    {
-     "id": 5598,
-     "t": 1294,
-     "title": "8.B. Award the lowest responsive and responsible bid for the Downtown Mill & Overlay project to Johner & Sons Inc. at a total amount of $348,662.45.",
-     "sub": true
-    },
-    {
-     "id": 5599,
-     "t": 1419,
-     "title": "8.C. Approve the Final Under/Over Change Order #1 for the Annual Crosswalks, Stop Bar, and Turn Arrow Painting with a $0 increase and a $4,233.30 decrease, for a net decrease of $4,233.30 and Certificate of Final Completion and Acceptance dated 08/26/2026.",
-     "sub": true
-    },
-    {
-     "id": 5600,
-     "t": 1672,
-     "title": "9. Approve the Bills",
-     "sub": false
-    },
-    {
-     "id": 5601,
-     "t": 1673,
-     "title": "9.A. Approve the bill list dated 8/26/2026.",
-     "sub": true
-    },
-    {
-     "id": 5602,
-     "t": 1727,
-     "title": "10. Mayor and Council Discussion",
-     "sub": false
-    },
-    {
-     "id": 5603,
-     "t": 2136,
-     "title": "11. Departmental Discussion",
-     "sub": false
-    },
-    {
-     "id": 5604,
-     "t": 2151,
-     "title": "12. Adjournment",
-     "sub": false
-    }
-   ],
-   "join_url": "",
-   "record_type": "document",
-   "source_label": "City of Spearfish",
-   "url": "https://spearfishsd.portal.civicclerk.com/event/3353/files/minutes/8800",
-   "title": "City Council Special Session Minutes 8/26/2026",
-   "doc_type": "Minutes",
-   "file_url": "https://spearfishsd.portal.civicclerk.com/event/3353/files/minutes/8800",
-   "kind": "document",
-   "source": "spearfish_city",
-   "id": "6214293477ca",
-   "published": "2026-08-26T16:15:00-06:00",
-   "date": "2026-08-26",
-   "_first_seen": "2026-11-01"
-  },
   {
    "event_id": 3354,
    "event_name": "Party in the Woods: New Trails Grand Opening",
@@ -9700,6 +9316,56 @@
    "published": "2026-11-19T18:00:00-07:00",
    "date": "2026-11-19",
    "_first_seen": "2026-11-19"
+  },
+  {
+   "event_id": 3327,
+   "event_name": "Planning Commission Meeting",
+   "category": "Planning Commission",
+   "start_dt": "2026-12-01T16:00:00-07:00",
+   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/3327",
+   "has_media": true,
+   "media_url": "",
+   "media_page": "",
+   "chapters": [],
+   "join_url": "https://us02web.zoom.us/j/84741376706",
+   "record_type": "document",
+   "source_label": "City of Spearfish",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/3327/files/agenda/11025",
+   "title": "Agenda",
+   "doc_type": "Agenda",
+   "file_url": "https://spearfishsd.portal.civicclerk.com/event/3327/files/agenda/11025",
+   "kind": "document",
+   "source": "spearfish_city",
+   "id": "6c931746c1ff",
+   "published": "2026-12-01T16:00:00-07:00",
+   "date": "2026-12-01",
+   "_first_seen": "2026-11-25"
+  },
+  {
+   "event_id": 3327,
+   "event_name": "Planning Commission Meeting",
+   "category": "Planning Commission",
+   "start_dt": "2026-12-01T16:00:00-07:00",
+   "location": "City Hall, 625 N 5th St, Spearfish, SD, 57783",
+   "portal_url": "https://spearfishsd.portal.civicclerk.com/event/3327",
+   "has_media": true,
+   "media_url": "",
+   "media_page": "",
+   "chapters": [],
+   "join_url": "https://us02web.zoom.us/j/84741376706",
+   "record_type": "document",
+   "source_label": "City of Spearfish",
+   "url": "https://spearfishsd.portal.civicclerk.com/event/3327/files/agenda-packet/11027",
+   "title": "Agenda Packet",
+   "doc_type": "Agenda Packet",
+   "file_url": "https://spearfishsd.portal.civicclerk.com/event/3327/files/agenda-packet/11027",
+   "kind": "document",
+   "source": "spearfish_city",
+   "id": "6f86ecc25e0b",
+   "published": "2026-12-01T16:00:00-07:00",
+   "date": "2026-12-01",
+   "_first_seen": "2026-11-25"
   }
  ]
 }

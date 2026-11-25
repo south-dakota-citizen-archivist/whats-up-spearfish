@@ -3,8 +3,8 @@
  "name": "Spearfish School District",
  "kind": "job",
  "url": "https://www.applitrack.com/bhssc/onlineapp/default.aspx",
- "fetched_at": "2026-11-24T12:09:05-07:00",
- "count": 8,
+ "fetched_at": "2026-11-25T14:59:26-07:00",
+ "count": 9,
  "records": [
   {
    "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4340&posFirstChoice=Student%20Support%20Services/",
@@ -149,6 +149,24 @@
    "id": "6ecb61c2fa74",
    "date": "2026-11-17",
    "_first_seen": "2026-11-18"
+  },
+  {
+   "url": "https://www.applitrack.com/bhssc/onlineapp/_application.aspx?posJobCodes=4661&posFirstChoice=Secretarial/Clerical/",
+   "title": "Administrative Assistant - West Elementary",
+   "slug": "4661-administrative-assistant-west-elementary",
+   "location": "West Elementary  Spearfish",
+   "district": "Spearfish School District",
+   "position_type": "Secretarial/Clerical/",
+   "published": "2026-11-24",
+   "closing": "12/07/2026",
+   "description": "Position type: Secretarial/Clerical/ • Location: West Elementary  Spearfish • Closes: 12/07/2026",
+   "record_type": "job",
+   "source_label": "Spearfish School District",
+   "kind": "job",
+   "source": "spearfish_schools_jobs",
+   "id": "4614df66e088",
+   "date": "2026-11-24",
+   "_first_seen": "2026-11-25"
   }
  ]
 }
