@@ -3,20 +3,20 @@
  "name": "Fire danger & wildfires",
  "kind": "fire",
  "url": "https://www.weather.gov/unr/",
- "fetched_at": "2026-11-24T20:12:05-07:00",
+ "fetched_at": "2026-11-25T08:00:59-07:00",
  "data": {
   "errors": [],
   "incidents": [],
   "danger": {
-   "issued": "1219 AM MST Tue Nov 24 2026",
+   "issued": "1222 AM MST Wed Nov 25 2026",
    "zones": [
     {
-     "name": "Southern Foothills, Eastern Fall River, Southern Oglala Lakota",
+     "name": "Harding, Northern Perkins, Butte, Northern Meade Co Plains, Ziebach, Rapid City, Custer Co Plains, Pennington Co Plains, Northern Oglala Lakota, Sturgis/Piedmont Foothills, Southern Meade Co Plains, Hermosa Foothills, Southern Oglala Lakota, Southern Perkins",
      "level": "Moderate",
      "description": "The grassland fire danger index will reach the moderate category this afternoon. Marginal weather conditions or a lowering moisture content of grasses, and other dry organic material on the ground, indicate that there is some potential for a fire to spread. Any outdoor burning should be closely monitored."
     },
     {
-     "name": "Harding, Northern Perkins, Butte, Northern Meade Co Plains, Ziebach, Northern Foothills, Rapid City, Custer Co Plains, Pennington Co Plains, Haakon, Western Fall River, Northern Oglala Lakota, Northern Jackson, Bennett, Mellette, Todd, Tripp, Sturgis/Piedmont Foothills, Southern Meade Co Plains, Hermosa Foothills, Southern Jackson, Southern Perkins",
+     "name": "Northern Foothills, Southern Foothills, Haakon, Western Fall River, Northern Jackson, Bennett, Mellette, Todd, Tripp, Eastern Fall River, Southern Jackson",
      "level": "Low",
      "description": "The grassland fire danger index will reach the low category this afternoon. Favorable weather conditions or a high moisture content of grasses, and other dry organic material on the ground, indicate that the probability of a fast moving fire is low. Outdoor burning under these conditions can usually be performed with reasonable safety precautions, but should be monitored."
     }

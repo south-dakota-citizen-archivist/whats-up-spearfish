@@ -3,24 +3,9 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-24T20:12:06-07:00",
- "count": 95,
+ "fetched_at": "2026-11-25T08:00:59-07:00",
+ "count": 96,
  "records": [
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/25/candidates-running-as-independents-dont-always-seem-well-independent/",
-   "title": "Commentary: Candidates running as independents don’t always seem, well, independent",
-   "slug": "south-dakota-searchlight-commentary-candidates-running-as-independents-dont-seem",
-   "published": "2026-10-25",
-   "byline": "Dana Hess",
-   "description": "As if South Dakota’s two-party system wasn’t weak enough, now there are a slew of independent candidates up and down the ballot. While the number of independents running for the Legislature is unusual, it’s hard to tell just how independent those candidates will be. South Dakota’s two-party system is weak because candidates from the Democratic [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "f971bc0ba816",
-   "date": "2026-10-25",
-   "_first_seen": "2026-11-01"
-  },
   {
    "url": "https://southdakotasearchlight.com/2026/10/26/south-dakota-task-force-recommends-bills-to-move-toward-ambulance-service-regions/",
    "title": "South Dakota task force recommends bills to move toward ambulance service regions",
@@ -637,21 +622,6 @@
    "_first_seen": "2026-11-03"
   },
   {
-   "url": "https://www.sdnewswatch.org/south-dakota-general-election-2026-turnout/",
-   "title": "General election: SD voter turnout hits historic low, sales tax increases fail",
-   "slug": "sd-newswatch-general-election-sd-voter-turnout-hits-historic-low-sales-tax-fail",
-   "published": "2026-11-05",
-   "byline": "Molly Wetsch",
-   "description": "What failures to pass amendments, Democratic statewide losses and local elections may mean.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "6e7051e5224b",
-   "date": "2026-11-05",
-   "_first_seen": "2026-11-05"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/11/05/regulators-approve-16-monthly-black-hills-energy-rate-hike-as-extra-20-surcharge-looms/",
    "title": "Regulators approve $16 monthly Black Hills Energy rate hike as extra $20 surcharge looms",
    "slug": "south-dakota-searchlight-regulators-approve-16-monthly-black-hills-energy-rate",
@@ -682,19 +652,19 @@
    "_first_seen": "2026-11-05"
   },
   {
-   "url": "https://www.sdnewswatch.org/south-dakota-national-guard-citizen-warriors/",
-   "title": "'Citizen warriors' form backbone of South Dakota National Guard",
-   "slug": "sd-newswatch-citizen-warriors-form-backbone-of-south-dakota-national-guard",
-   "published": "2026-11-06",
-   "byline": "Bart Pfankuch",
-   "description": "In advance of the federal Veterans Day holiday on Wednesday, Nov. 11, News Watch spoke with the leader of the South Dakota National Guard about its evolving mission, its personnel and the attempt to bring a new fighter jet to Sioux Falls.",
+   "url": "https://www.sdnewswatch.org/south-dakota-general-election-2026-turnout/",
+   "title": "General election: SD voter turnout hits historic low, sales tax increases fail",
+   "slug": "sd-newswatch-general-election-sd-voter-turnout-hits-historic-low-sales-tax-fail",
+   "published": "2026-11-05",
+   "byline": "Molly Wetsch",
+   "description": "What failures to pass amendments, Democratic statewide losses and local elections may mean.",
    "record_type": "news",
    "source_label": "South Dakota News Watch",
    "kind": "news",
    "source": "news_feeds",
-   "id": "f5e9cdcfbb2f",
-   "date": "2026-11-06",
-   "_first_seen": "2026-11-06"
+   "id": "6e7051e5224b",
+   "date": "2026-11-05",
+   "_first_seen": "2026-11-05"
   },
   {
    "url": "https://southdakotasearchlight.com/2026/11/06/state-expands-hunting-license-buybacks-as-reported-deer-deaths-from-viral-disease-jump-to-791/",
@@ -723,6 +693,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "b9bddb078b23",
+   "date": "2026-11-06",
+   "_first_seen": "2026-11-06"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-national-guard-citizen-warriors/",
+   "title": "'Citizen warriors' form backbone of South Dakota National Guard",
+   "slug": "sd-newswatch-citizen-warriors-form-backbone-of-south-dakota-national-guard",
+   "published": "2026-11-06",
+   "byline": "Bart Pfankuch",
+   "description": "In advance of the federal Veterans Day holiday on Wednesday, Nov. 11, News Watch spoke with the leader of the South Dakota National Guard about its evolving mission, its personnel and the attempt to bring a new fighter jet to Sioux Falls.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "f5e9cdcfbb2f",
    "date": "2026-11-06",
    "_first_seen": "2026-11-06"
   },
@@ -1430,6 +1415,36 @@
    "id": "f18af1299329",
    "date": "2026-11-24",
    "_first_seen": "2026-11-23"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/non-regents-south-dakota-colleges-adapting/",
+   "title": "Non-regents schools adapting to changing needs",
+   "slug": "sd-newswatch-non-regents-schools-adapting-to-changing-needs",
+   "published": "2026-11-25",
+   "byline": "Emily DeCock",
+   "description": "Growing list of non-traditional higher education programs in South Dakota represent national changes, expanding options for students.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "4bd2bbded3e1",
+   "date": "2026-11-25",
+   "_first_seen": "2026-11-25"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/guide-south-dakota-higher-education/",
+   "title": "Guide: South Dakota higher education",
+   "slug": "sd-newswatch-guide-south-dakota-higher-education",
+   "published": "2026-11-25",
+   "byline": "Emily DeCock",
+   "description": "A guide to South Dakota's colleges, resources to pay for college, governing bodies and locations.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "9bdd228be4ac",
+   "date": "2026-11-25",
+   "_first_seen": "2026-11-25"
   }
  ]
 }
