@@ -3,7 +3,7 @@
  "name": "Northern Hills Cinema",
  "kind": "movie",
  "url": "https://nhcinema.com/",
- "fetched_at": "2026-11-25T14:58:51-07:00",
+ "fetched_at": "2026-11-26T12:51:49-07:00",
  "count": 12,
  "records": [
   {
@@ -15,19 +15,6 @@
    "runtime": 158,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-25",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": true
-      }
-     ]
-    },
     {
      "date": "2026-11-26",
      "times": [
@@ -153,6 +140,23 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-12-02",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": true
+      },
+      {
+       "time": "15:15",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
     }
    ],
    "genre": "Action, Drama",
@@ -179,19 +183,6 @@
    "note": "Ends Thursday 11/26",
    "ends": "2026-11-26",
    "showtimes": [
-    {
-     "date": "2026-11-25",
-     "times": [
-      {
-       "time": "15:45",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-26",
      "times": [
@@ -229,19 +220,6 @@
    "no_passes": true,
    "showtimes": [
     {
-     "date": "2026-11-25",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-26",
      "times": [
       {
@@ -331,6 +309,19 @@
      "times": [
       {
        "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-12-02",
+     "times": [
+      {
+       "time": "15:30",
        "luxury": false
       },
       {
@@ -363,19 +354,6 @@
    "no_passes": true,
    "showtimes": [
     {
-     "date": "2026-11-25",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": true
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-26",
      "times": [
       {
@@ -470,6 +448,19 @@
       {
        "time": "18:30",
        "luxury": true
+      }
+     ]
+    },
+    {
+     "date": "2026-12-02",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
       }
      ]
     }
@@ -497,19 +488,6 @@
    "no_passes": true,
    "showtimes": [
     {
-     "date": "2026-11-25",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-26",
      "times": [
       {
@@ -606,6 +584,19 @@
        "luxury": false
       }
      ]
+    },
+    {
+     "date": "2026-12-02",
+     "times": [
+      {
+       "time": "15:45",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": true
+      }
+     ]
     }
    ],
    "genre": "Drama",
@@ -630,19 +621,6 @@
    "runtime": 109,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-25",
-     "times": [
-      {
-       "time": "15:45",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-26",
      "times": [
@@ -769,6 +747,23 @@
       },
       {
        "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-12-02",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
        "luxury": false
       }
      ]
