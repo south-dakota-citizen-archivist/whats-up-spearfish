@@ -3,8 +3,8 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-25T08:00:59-07:00",
- "count": 96,
+ "fetched_at": "2026-11-25T17:43:03-07:00",
+ "count": 99,
  "records": [
   {
    "url": "https://southdakotasearchlight.com/2026/10/26/south-dakota-task-force-recommends-bills-to-move-toward-ambulance-service-regions/",
@@ -1418,8 +1418,8 @@
   },
   {
    "url": "https://www.sdnewswatch.org/non-regents-south-dakota-colleges-adapting/",
-   "title": "Non-regents schools adapting to changing needs",
-   "slug": "sd-newswatch-non-regents-schools-adapting-to-changing-needs",
+   "title": "Schools around the state adapting to changing needs",
+   "slug": "sd-newswatch-schools-around-the-state-adapting-to-changing-needs",
    "published": "2026-11-25",
    "byline": "Emily DeCock",
    "description": "Growing list of non-traditional higher education programs in South Dakota represent national changes, expanding options for students.",
@@ -1427,7 +1427,7 @@
    "source_label": "South Dakota News Watch",
    "kind": "news",
    "source": "news_feeds",
-   "id": "4bd2bbded3e1",
+   "id": "8d3cd5467d4f",
    "date": "2026-11-25",
    "_first_seen": "2026-11-25"
   },
@@ -1443,6 +1443,51 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "9bdd228be4ac",
+   "date": "2026-11-25",
+   "_first_seen": "2026-11-25"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/25/south-dakota-plans-start-medicaid-work-requirements-jan-1-despite-six-month-grace-period/",
+   "title": "South Dakota plans to start Medicaid work requirements Jan. 1 despite six-month grace period",
+   "slug": "south-dakota-searchlight-south-dakota-plans-to-start-medicaid-work-requirements",
+   "published": "2026-11-25",
+   "byline": "Makenzie Huber",
+   "description": "The South Dakota Department of Social Services plans to enforce Medicaid work requirements by the original deadline of Jan. 1, even though the federal government is giving states six more months. The U.S. Centers for Medicare and Medicaid Services announced the six-month grace period earlier this month. Top congressional Democrats had said states need more time [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "9e9e757de49f",
+   "date": "2026-11-25",
+   "_first_seen": "2026-11-25"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/25/give-thanks-for-the-extraordinary-natural-world-south-dakotans-have-inherited/",
+   "title": "Commentary: Give thanks for the extraordinary natural world South Dakotans have inherited",
+   "slug": "south-dakota-searchlight-commentary-give-thanks-for-the-extraordinary-natural",
+   "published": "2026-11-25",
+   "byline": "Brad Johnson",
+   "description": "The South Dakota countryside never seems to be in much of a hurry. Spend an afternoon walking a windswept prairie trail, sitting beneath an old cottonwood or wandering through a thick Black Hills forest, and before long the landscape begins to slow you down. There is something about these places that draws us in. It [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "52ca08899e70",
+   "date": "2026-11-25",
+   "_first_seen": "2026-11-25"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/non-regents-south-dakota-colleges-adapting/",
+   "title": "Non-regents schools adapting to changing needs",
+   "slug": "sd-newswatch-non-regents-schools-adapting-to-changing-needs",
+   "published": "2026-11-25",
+   "byline": "Emily DeCock",
+   "description": "Growing list of non-traditional higher education programs in South Dakota represent national changes, expanding options for students.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "4bd2bbded3e1",
    "date": "2026-11-25",
    "_first_seen": "2026-11-25"
   }
