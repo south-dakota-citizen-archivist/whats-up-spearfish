@@ -3,7 +3,7 @@
  "name": "Black Hills Pioneer",
  "kind": "news",
  "url": "https://www.bhpioneer.com/",
- "fetched_at": "2026-11-26T03:04:22-07:00",
+ "fetched_at": "2026-11-26T14:53:49-07:00",
  "count": 270,
  "records": [
   {
@@ -3382,21 +3382,6 @@
    "_first_seen": "2026-11-20"
   },
   {
-   "url": "https://www.bhpioneer.com/local_news/proposed-sturgis-sculpture-would-honor-pappy-and-pearl-hoel/article_4cfeb566-ba3b-4bd8-975f-b423f57f0306.html",
-   "title": "Proposed Sturgis sculpture would honor Pappy and Pearl Hoel",
-   "slug": "black-hills-pioneer-proposed-sturgis-sculpture-would-honor-pappy-and-pearl-hoel",
-   "published": "2026-11-20",
-   "byline": "Pioneer staff reports",
-   "description": "STURGIS – A proposed bronze sculpture honoring Sturgis Motorcycle Rally pioneers Clarence “Pappy” and Pearl Hoel could create a new landmark, celebrating the event’s history and the couple’s lasting legacy, according to representatives of the Sturgis Area Arts Council.",
-   "record_type": "news",
-   "source_label": "Black Hills Pioneer",
-   "kind": "news",
-   "source": "black_hills_pioneer",
-   "id": "92e17799f94d",
-   "date": "2026-11-20",
-   "_first_seen": "2026-11-20"
-  },
-  {
    "url": "https://www.bhpioneer.com/local_news/more-than-a-hunt/article_788496d3-0739-4edd-ac7c-1bdd36db77fa.html",
    "title": "More than a hunt",
    "slug": "black-hills-pioneer-more-than-a-hunt",
@@ -3438,6 +3423,21 @@
    "kind": "news",
    "source": "black_hills_pioneer",
    "id": "52b98749fe78",
+   "date": "2026-11-20",
+   "_first_seen": "2026-11-20"
+  },
+  {
+   "url": "https://www.bhpioneer.com/local_news/proposed-sturgis-sculpture-would-honor-pappy-and-pearl-hoel/article_4cfeb566-ba3b-4bd8-975f-b423f57f0306.html",
+   "title": "Proposed Sturgis sculpture would honor Pappy and Pearl Hoel",
+   "slug": "black-hills-pioneer-proposed-sturgis-sculpture-would-honor-pappy-and-pearl-hoel",
+   "published": "2026-11-20",
+   "byline": "Pioneer staff reports",
+   "description": "STURGIS – A proposed bronze sculpture honoring Sturgis Motorcycle Rally pioneers Clarence “Pappy” and Pearl Hoel could create a new landmark, celebrating the event’s history and the couple’s lasting legacy, according to representatives of the Sturgis Area Arts Council.",
+   "record_type": "news",
+   "source_label": "Black Hills Pioneer",
+   "kind": "news",
+   "source": "black_hills_pioneer",
+   "id": "92e17799f94d",
    "date": "2026-11-20",
    "_first_seen": "2026-11-20"
   },
@@ -3697,21 +3697,6 @@
    "_first_seen": "2026-11-24"
   },
   {
-   "url": "https://www.bhpioneer.com/local_news/dune-activity-significantly-increasing-at-surf/article_70e2a468-9dff-4f7d-a83d-0578a9eedef9.html",
-   "title": "DUNE activity significantly increasing at SURF",
-   "slug": "black-hills-pioneer-dune-activity-significantly-increasing-at-surf",
-   "published": "2026-11-24",
-   "byline": "By Wendy Pitlick Black Hills Pioneer",
-   "description": "LEAD — Deep underneath the Ross Campus at the Sanford Underground Research Facility, a construction crew from Minnesota raised a massive red beam, that is covered with signatures from Lead residents and visitors of all ages and backgrounds, who are all excited and filled with hope for the future of science at SURF.",
-   "record_type": "news",
-   "source_label": "Black Hills Pioneer",
-   "kind": "news",
-   "source": "black_hills_pioneer",
-   "id": "5d41e917d97b",
-   "date": "2026-11-24",
-   "_first_seen": "2026-11-24"
-  },
-  {
    "url": "https://www.bhpioneer.com/local_news/spearfish-hs-auditorium-sees-new-life/article_d444062f-cec0-4039-9373-f04400b27c3c.html",
    "title": "Spearfish HS auditorium sees new life",
    "slug": "black-hills-pioneer-spearfish-hs-auditorium-sees-new-life",
@@ -3723,21 +3708,6 @@
    "kind": "news",
    "source": "black_hills_pioneer",
    "id": "3e063e42f144",
-   "date": "2026-11-24",
-   "_first_seen": "2026-11-24"
-  },
-  {
-   "url": "https://www.bhpioneer.com/local_news/reporting-in-the-classroom/article_01702ab0-f4a1-412d-8694-cf852a84920f.html",
-   "title": "Reporting in the classroom",
-   "slug": "black-hills-pioneer-reporting-in-the-classroom",
-   "published": "2026-11-24",
-   "byline": "Pioneer staff reports",
-   "description": "Pioneer Reporter Sara Morgan spoke with the Lead-Deadwood High School publications class Friday, where she performed a mock-interview with the instructor and answered questions about the interviewing process, keeping stories free of bias, and keeping local news alive. Courtesy photo",
-   "record_type": "news",
-   "source_label": "Black Hills Pioneer",
-   "kind": "news",
-   "source": "black_hills_pioneer",
-   "id": "ef44843d9d7d",
    "date": "2026-11-24",
    "_first_seen": "2026-11-24"
   },
@@ -3877,6 +3847,36 @@
    "_first_seen": "2026-11-24"
   },
   {
+   "url": "https://www.bhpioneer.com/local_news/dune-activity-significantly-increasing-at-surf/article_70e2a468-9dff-4f7d-a83d-0578a9eedef9.html",
+   "title": "DUNE activity significantly increasing at SURF",
+   "slug": "black-hills-pioneer-dune-activity-significantly-increasing-at-surf",
+   "published": "2026-11-24",
+   "byline": "By Wendy Pitlick Black Hills Pioneer",
+   "description": "LEAD — Deep underneath the Ross Campus at the Sanford Underground Research Facility, a construction crew from Minnesota raised a massive red beam, that is covered with signatures from Lead residents and visitors of all ages and backgrounds, who are all excited and filled with hope for the future of science at SURF.",
+   "record_type": "news",
+   "source_label": "Black Hills Pioneer",
+   "kind": "news",
+   "source": "black_hills_pioneer",
+   "id": "5d41e917d97b",
+   "date": "2026-11-24",
+   "_first_seen": "2026-11-24"
+  },
+  {
+   "url": "https://www.bhpioneer.com/local_news/reporting-in-the-classroom/article_01702ab0-f4a1-412d-8694-cf852a84920f.html",
+   "title": "Reporting in the classroom",
+   "slug": "black-hills-pioneer-reporting-in-the-classroom",
+   "published": "2026-11-24",
+   "byline": "Pioneer staff reports",
+   "description": "Pioneer Reporter Sara Morgan spoke with the Lead-Deadwood High School publications class Friday, where she performed a mock-interview with the instructor and answered questions about the interviewing process, keeping stories free of bias, and keeping local news alive. Courtesy photo",
+   "record_type": "news",
+   "source_label": "Black Hills Pioneer",
+   "kind": "news",
+   "source": "black_hills_pioneer",
+   "id": "ef44843d9d7d",
+   "date": "2026-11-24",
+   "_first_seen": "2026-11-24"
+  },
+  {
    "url": "https://www.bhpioneer.com/local_news/gearing-up-for-giving-thanksgiving-at-the-spearfish-community-food-pantry-is-a-month-long/article_96ab2793-5d53-411a-9ea6-d437af798ff7.html",
    "title": "Gearing up for giving: Thanksgiving at the Spearfish Community Food Pantry is a month-long affair",
    "slug": "black-hills-pioneer-gearing-up-for-giving-thanksgiving-at-the-spearfish-food-is",
@@ -3933,21 +3933,6 @@
    "kind": "news",
    "source": "black_hills_pioneer",
    "id": "686e31ec3b1e",
-   "date": "2026-11-25",
-   "_first_seen": "2026-11-25"
-  },
-  {
-   "url": "https://www.bhpioneer.com/local_news/wilson-crafts-and-framing-offers-quality-craft-supplies-custom-framing/article_376a6ff5-6419-4b2a-bd5b-6edfefd31e22.html",
-   "title": "Wilson Crafts and Framing offers quality craft supplies, custom framing",
-   "slug": "black-hills-pioneer-wilson-crafts-and-framing-offers-quality-craft-supplies",
-   "published": "2026-11-25",
-   "byline": "By Wendy Pitlick Black Hills Pioneer",
-   "description": "Forrest and Levi Wilson purchased the Lead-Deadwood Arts Center’s frame shop, moved it across the street, and combined it with a craft supply store on Lead’s Main Street. Pioneer photo by Wendy Pitlick",
-   "record_type": "news",
-   "source_label": "Black Hills Pioneer",
-   "kind": "news",
-   "source": "black_hills_pioneer",
-   "id": "da4a60dfc683",
    "date": "2026-11-25",
    "_first_seen": "2026-11-25"
   },
@@ -4053,6 +4038,21 @@
    "kind": "news",
    "source": "black_hills_pioneer",
    "id": "1327a2f0e729",
+   "date": "2026-11-25",
+   "_first_seen": "2026-11-25"
+  },
+  {
+   "url": "https://www.bhpioneer.com/local_news/wilson-crafts-and-framing-offers-quality-craft-supplies-custom-framing/article_376a6ff5-6419-4b2a-bd5b-6edfefd31e22.html",
+   "title": "Wilson Crafts and Framing offers quality craft supplies, custom framing",
+   "slug": "black-hills-pioneer-wilson-crafts-and-framing-offers-quality-craft-supplies",
+   "published": "2026-11-25",
+   "byline": "By Wendy Pitlick Black Hills Pioneer",
+   "description": "Forrest and Levi Wilson purchased the Lead-Deadwood Arts Center’s frame shop, moved it across the street, and combined it with a craft supply store on Lead’s Main Street. Pioneer photo by Wendy Pitlick",
+   "record_type": "news",
+   "source_label": "Black Hills Pioneer",
+   "kind": "news",
+   "source": "black_hills_pioneer",
+   "id": "da4a60dfc683",
    "date": "2026-11-25",
    "_first_seen": "2026-11-25"
   }
