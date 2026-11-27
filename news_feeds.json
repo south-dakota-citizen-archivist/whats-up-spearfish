@@ -3,54 +3,9 @@
  "name": "Regional News",
  "kind": "news",
  "url": "https://www.sdnewswatch.org/",
- "fetched_at": "2026-11-26T19:26:52-07:00",
- "count": 95,
+ "fetched_at": "2026-11-27T07:25:58-07:00",
+ "count": 94,
  "records": [
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/27/water-pipeline-discussion-is-about-choosing-our-future-or-letting-scarcity-choose-it-for-us/",
-   "title": "Commentary: Water pipeline discussion is about choosing our future, or letting scarcity choose it for us",
-   "slug": "south-dakota-searchlight-commentary-water-pipeline-discussion-is-about-choosing",
-   "published": "2026-10-27",
-   "byline": "Brad Johnson",
-   "description": "Imagine if Lake Oahe were filled with oil instead of water. We would treat it as one of the country&#8217;s greatest economic assets. Pipelines would be flowing. Industries would be built around it. The cost of moving oil west would be a budget line item. Water deserves the same kind of thinking. The difference is [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "d6f9f6a9eb59",
-   "date": "2026-10-27",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://southdakotasearchlight.com/2026/10/27/department-of-justice-election-monitor-deployment-will-include-south-dakotas-minnehaha-county/",
-   "title": "Department of Justice election monitor deployment will include South Dakota’s Minnehaha County",
-   "slug": "south-dakota-searchlight-department-of-justice-election-monitor-deployment-will",
-   "published": "2026-10-27",
-   "byline": "Joshua Haiar",
-   "description": "The South Dakota Secretary of State’s Office said this week that federal election monitors will be in Minnehaha County for the Nov. 3 election, as the Trump administration prepares to deploy 1,000 monitors nationwide.  The state office said it received notice from the U.S. Department of Justice that monitors will go to the state’s most [&#8230;]",
-   "record_type": "news",
-   "source_label": "South Dakota Searchlight",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "266f6cd1db8c",
-   "date": "2026-10-27",
-   "_first_seen": "2026-11-01"
-  },
-  {
-   "url": "https://www.sdnewswatch.org/south-dakota-poll-secretary-of-state-executive-offices/",
-   "title": "South Dakota Poll: Secretary of State race anyone's game; other executive offices",
-   "slug": "sd-newswatch-south-dakota-poll-secretary-of-state-race-anyone-s-game-other",
-   "published": "2026-10-27",
-   "byline": "Emily DeCock",
-   "description": "Secretary of state race is contentious with three candidates vying for office. Other executive offices, including attorney general, treasurer, auditor, school and public lands and public utilities commission outlined.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "5b1b016624bb",
-   "date": "2026-10-27",
-   "_first_seen": "2026-11-01"
-  },
   {
    "url": "https://southdakotasearchlight.com/2026/10/28/potential-of-missouri-river-pipelines-to-western-states-opens-new-front-in-uptream-downstream-fight/",
    "title": "Potential of Missouri River pipelines to Western states opens new front in upstream-downstream fight",
@@ -727,21 +682,6 @@
    "_first_seen": "2026-11-09"
   },
   {
-   "url": "https://www.sdnewswatch.org/fact-brief-did-south-dakota-voters-shift-left/",
-   "title": "Fact brief: Did South Dakota voters shift further right in 2026 federal races?",
-   "slug": "sd-newswatch-fact-brief-did-south-dakota-voters-shift-further-right-in-2026",
-   "published": "2026-11-10",
-   "byline": "Molly Wetsch",
-   "description": "A look at the final U.S. House vote between Republican Marty Jackley and Nikki Gronli compared to results from two years ago.",
-   "record_type": "news",
-   "source_label": "South Dakota News Watch",
-   "kind": "news",
-   "source": "news_feeds",
-   "id": "7c7a71271a45",
-   "date": "2026-11-10",
-   "_first_seen": "2026-11-10"
-  },
-  {
    "url": "https://southdakotasearchlight.com/2026/11/10/lawmakers-argue-about-legislative-memo-on-data-centers-that-one-calls-a-very-opinionated-piece/",
    "title": "Lawmakers argue about legislative data center memo that one calls ‘a very opinionated piece’",
    "slug": "south-dakota-searchlight-lawmakers-argue-about-legislative-data-center-memo-that",
@@ -768,6 +708,21 @@
    "kind": "news",
    "source": "news_feeds",
    "id": "73bb5057cf26",
+   "date": "2026-11-10",
+   "_first_seen": "2026-11-10"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/fact-brief-did-south-dakota-voters-shift-left/",
+   "title": "Fact brief: Did South Dakota voters shift further right in 2026 federal races?",
+   "slug": "sd-newswatch-fact-brief-did-south-dakota-voters-shift-further-right-in-2026",
+   "published": "2026-11-10",
+   "byline": "Molly Wetsch",
+   "description": "A look at the final U.S. House vote between Republican Marty Jackley and Nikki Gronli compared to results from two years ago.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "7c7a71271a45",
    "date": "2026-11-10",
    "_first_seen": "2026-11-10"
   },
@@ -1430,6 +1385,36 @@
    "id": "2d3176b197ba",
    "date": "2026-11-26",
    "_first_seen": "2026-11-26"
+  },
+  {
+   "url": "https://www.sdnewswatch.org/south-dakota-spelling-bee-deadline/",
+   "title": "Deadline approaching for SD spelling bee signup",
+   "slug": "sd-newswatch-deadline-approaching-for-sd-spelling-bee-signup",
+   "published": "2026-11-27",
+   "byline": "SD News Watch",
+   "description": "Elementary and middle schools as well as family home schools can now register to qualify for the Feb. 6 competition at Dakota Wesleyan University in Mitchell.",
+   "record_type": "news",
+   "source_label": "South Dakota News Watch",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "d283061a9975",
+   "date": "2026-11-27",
+   "_first_seen": "2026-11-27"
+  },
+  {
+   "url": "https://southdakotasearchlight.com/2026/11/27/podcast-christmas-takes-over-the-south-dakota-capitol/",
+   "title": "Podcast: Christmas takes over the South Dakota Capitol",
+   "slug": "south-dakota-searchlight-podcast-christmas-takes-over-the-south-dakota-capitol",
+   "published": "2026-11-27",
+   "byline": "Meghan O'Brien",
+   "description": "For the past four decades, trees with bright, twinkling lights, ribbons, garland, stars and ornaments have decorated the halls of South Dakota’s Capitol at Christmastime. Searchlight Report Host Meghan O’Brien speaks with volunteers and organizers of Christmas at the Capitol in its 45th year, and brings listeners sounds of the grand lighting ceremony and an [&#8230;]",
+   "record_type": "news",
+   "source_label": "South Dakota Searchlight",
+   "kind": "news",
+   "source": "news_feeds",
+   "id": "72751a248f32",
+   "date": "2026-11-27",
+   "_first_seen": "2026-11-27"
   }
  ]
 }
