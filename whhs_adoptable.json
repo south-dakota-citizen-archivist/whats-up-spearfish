@@ -3,8 +3,8 @@
  "name": "Western Hills Humane Society",
  "kind": "adoptable",
  "url": "https://www.westernhillshumanesociety.com/",
- "fetched_at": "2026-11-26T12:52:24-07:00",
- "count": 61,
+ "fetched_at": "2026-11-27T14:38:52-07:00",
+ "count": 62,
  "records": [
   {
    "url": "https://www.westernhillshumanesociety.com/cats",
@@ -611,7 +611,7 @@
    "title": "Gma Luna",
    "slug": "cat-gma-luna",
    "species": "cat",
-   "description": "Female | Born 9/3/2019\nDeclawed - Indoor only!\nNever been around dogs, would prefer older children, has lived with another cat. \nLuna is a new senior lady that joined us on 11/21/26 after deciding the baby’s stuff was okay to potty on. She’s lived with kids but began not using the litterbox when a new baby joined the family. We look forward to getting to know Luna, help her lose some weight, and give her some love while she is with us! We have another kitty Luna so that’s why we are calling her Gma Luna.",
+   "description": "Female | Born 9/3/2019\nAvailable 12/9 following dental appt\nDeclawed - Indoor only!\nNever been around dogs, would prefer older children, has lived with another cat. \nLuna is a new senior lady that joined us on 11/21/26 after deciding the baby’s stuff was okay to potty on. She’s lived with kids but began not using the litterbox when a new baby joined the family. We look forward to getting to know Luna, help her lose some weight, and give her some love while she is with us! We have another kitty Luna so that’s why we are calling her Gma Luna.",
    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/5eeae56f-6319-4beb-9302-ee72c7ca1231/1000062556.jpg?format=500w",
    "image_alt": "Gma Luna",
    "record_type": "adoptable",
@@ -710,6 +710,21 @@
    "source": "whhs_adoptable",
    "id": "adbce45fc694",
    "_first_seen": "2026-11-25"
+  },
+  {
+   "url": "https://www.westernhillshumanesociety.com/cats",
+   "title": "Grillos",
+   "slug": "cat-grillos",
+   "species": "cat",
+   "description": "Female | Kitten\nAvailable 12/5 following spay appt \nGrillos came to us as a stray in Nov. 2026 after being trapped at the Stadium Sports Grill and going unclaimed. She’s a silly little thing that REALLY enjoys the company of another cat or kitten - she’ll act tough at first and then is a total snuggler with her kitty buddies. She would do best with another cat/kitten in the home or being adopted with one of her friends. \nFun fact: Grillos loves tuna melts & watching Heated Rivalry!",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/c949e43b-0522-4633-a6a2-3c17a80a627d/Grillos.jpg?format=500w",
+   "image_alt": "Grillos",
+   "record_type": "adoptable",
+   "source_label": "Western Hills Humane Society",
+   "kind": "adoptable",
+   "source": "whhs_adoptable",
+   "id": "706c343eba91",
+   "_first_seen": "2026-11-27"
   },
   {
    "url": "https://www.westernhillshumanesociety.com/cats",
@@ -893,25 +908,10 @@
   },
   {
    "url": "https://www.westernhillshumanesociety.com/dogs",
-   "title": "Pointer",
-   "slug": "dog-pointer",
-   "species": "dog",
-   "description": "Male | Border Collie/Blue Heeler Mix | Born 4/2026\nAvailable 12/5 following neuter appt\nNever been around cats. Has lived with dogs and children.\nPointer came to us 11/21/26 after his family was moving and couldn’t take him with. He is a sweet boy that seems to get along well with other dogs. He knows some commands like “sit” and we are getting to know him better. Pointer is 39 lbs.",
-   "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/51e7ce4e-5515-43d9-8fb7-af30f97c2d87/1000062430.jpg?format=500w",
-   "image_alt": "Pointer",
-   "record_type": "adoptable",
-   "source_label": "Western Hills Humane Society",
-   "kind": "adoptable",
-   "source": "whhs_adoptable",
-   "id": "299234540058",
-   "_first_seen": "2026-11-22"
-  },
-  {
-   "url": "https://www.westernhillshumanesociety.com/dogs",
    "title": "Shiba Wawa",
    "slug": "dog-shiba-wawa",
    "species": "dog",
-   "description": "Female | Chihuahua/Shiba Inu Mix? | Undetermined Age (~6 years old) \nAvailable TBD following vet appt\nShiba Wawa came to us as a stray in 11/19/26 and no one claimed her. We aren’t sure of her history but some rumors have gone around that she was rehomed, the new home decided they didn’t want her, and she was not able to be returned to the original owner so she may have been dumped - but again, we are not sure of the truth of her history. She seems interested in other dogs and curious of cats. She is not house broken. We believe she’s spayed and will get a second opinion at the vet when we’re able to make an appt for her. She looks like a mix of Chihuahua and Shiba Inu so that’s where her temporary name comes from. She is sweet once you get to know her - she doesn’t take long at all to warm up to people. She does not do the best being kenneled and will bark.",
+   "description": "Female | Chihuahua/Shiba Inu Mix? | Undetermined Age (~6 years old) \nAvailable TBD following vet appt\nShiba Wawa came to us as a stray in 11/19/26 and no one claimed her. We aren’t sure of her history but some rumors have gone around that she was rehomed, the new home decided they didn’t want her, and she was not able to be returned to the original owner so she may have been dumped - but again, we are not sure of the truth of her history. She seems interested in other dogs and curious of cats. She is not house broken. We believe she’s spayed and will get a second opinion at the vet when we’re able to make an appt for her. She looks like a mix of Chihuahua and Shiba Inu so that’s where her temporary name comes from. She is sweet once you get to know her - she doesn’t take long at all to warm up to people. She does not do the best being kenneled and will bark. Shiba Wawa weighs just under 19 lbs",
    "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/6050049e-0797-4b2f-8c05-76ef011f4f01/1000062563.jpg?format=500w",
    "image_alt": "Shiba Wawa",
    "record_type": "adoptable",
@@ -920,6 +920,21 @@
    "source": "whhs_adoptable",
    "id": "e9a5718ba273",
    "_first_seen": "2026-11-25"
+  },
+  {
+   "url": "https://www.westernhillshumanesociety.com/dogs",
+   "title": "Tilford",
+   "slug": "dog-tilford",
+   "species": "dog",
+   "description": "Tilford | Husky/Collie Mix? | Senior\nAvailable TBA after vet/groomer visit\nDoes not appear to like other dogs\nTilford came to us as a stray (most likely dumped) from the Iron Creek Lake area November 2026. He is not a big fan of other dogs and are not sure how he would do with cats or children. Weight & more info coming soon!",
+   "image_url": "https://images.squarespace-cdn.com/content/v1/6833638f52663f7b5354620e/8955676e-3749-4922-9069-342cea2507de/Tilford.jpg?format=500w",
+   "image_alt": "Tilford",
+   "record_type": "adoptable",
+   "source_label": "Western Hills Humane Society",
+   "kind": "adoptable",
+   "source": "whhs_adoptable",
+   "id": "06b2fdf48eb1",
+   "_first_seen": "2026-11-27"
   }
  ]
 }

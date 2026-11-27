@@ -3,8 +3,8 @@
  "name": "Northern Hills Cinema",
  "kind": "movie",
  "url": "https://nhcinema.com/",
- "fetched_at": "2026-11-26T12:51:49-07:00",
- "count": 12,
+ "fetched_at": "2026-11-27T14:38:18-07:00",
+ "count": 11,
  "records": [
   {
    "title": "The Hunger Games: Sunrise on the Reaping",
@@ -15,19 +15,6 @@
    "runtime": 158,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-26",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": true
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-27",
      "times": [
@@ -154,6 +141,23 @@
       },
       {
        "time": "18:00",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-12-03",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": true
+      },
+      {
+       "time": "18:15",
        "luxury": false
       }
      ]
@@ -173,65 +177,14 @@
    "_first_seen": "2026-11-16"
   },
   {
-   "title": "How to Rob a Bank",
-   "url": "https://nhcinema.com/view/how-to-rob-a-bank",
-   "status": "now",
-   "image_url": "https://nhcinema.com/images/movies/3733/how_to_rob_a_bank_how_to_rob_a_bank_-_one_sheet_2_1080x1600__standard.jpg",
-   "rating": "R",
-   "runtime": 121,
-   "no_passes": true,
-   "note": "Ends Thursday 11/26",
-   "ends": "2026-11-26",
-   "showtimes": [
-    {
-     "date": "2026-11-26",
-     "times": [
-      {
-       "time": "15:45",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": false
-      }
-     ]
-    }
-   ],
-   "genre": "Action",
-   "starring": "Nicholas Hoult, Pete Davidson, Anna Sawai, Zoe Kravitz, Rhenzy Feliz, Christian Slater, John C. Reilly",
-   "director": "David Leitch",
-   "synopsis": "In HOW TO ROB A BANK, a crew of social media-savvy bank robbers broadcasts their daring heists, unaware that their growing viral fame has put them in the crosshairs of a veteran FBI agent and a brilliant software engineer. Despite the unlikely duo closing in, the crime ring pushes past their limits, putting everything on the line for their beliefs - and their most ambitious heist yet.",
-   "trailer": "B9XOzCUvFB8",
-   "slug": "how-to-rob-a-bank",
-   "record_type": "movie",
-   "source_label": "Northern Hills Cinema",
-   "kind": "movie",
-   "source": "nhcinema",
-   "id": "d838d0ca9e5e",
-   "_first_seen": "2026-11-09"
-  },
-  {
    "title": "Ebenezer",
    "url": "https://nhcinema.com/view/ebenezer",
    "status": "now",
    "image_url": "https://nhcinema.com/images/movies/3735/ebenezer_ebenezer_-_one_sheet_2__standard.jpg",
    "rating": "PG-13",
    "runtime": 115,
-   "no_passes": true,
+   "no_passes": false,
    "showtimes": [
-    {
-     "date": "2026-11-26",
-     "times": [
-      {
-       "time": "15:15",
-       "luxury": false
-      },
-      {
-       "time": "18:00",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-27",
      "times": [
@@ -322,6 +275,19 @@
      "times": [
       {
        "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:15",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-12-03",
+     "times": [
+      {
+       "time": "15:15",
        "luxury": false
       },
       {
@@ -354,19 +320,6 @@
    "no_passes": true,
    "showtimes": [
     {
-     "date": "2026-11-26",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:30",
-       "luxury": true
-      }
-     ]
-    },
-    {
      "date": "2026-11-27",
      "times": [
       {
@@ -457,6 +410,19 @@
       {
        "time": "15:30",
        "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-12-03",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": true
       },
       {
        "time": "18:30",
@@ -488,19 +454,6 @@
    "no_passes": true,
    "showtimes": [
     {
-     "date": "2026-11-26",
-     "times": [
-      {
-       "time": "15:30",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
-    {
      "date": "2026-11-27",
      "times": [
       {
@@ -597,6 +550,19 @@
        "luxury": true
       }
      ]
+    },
+    {
+     "date": "2026-12-03",
+     "times": [
+      {
+       "time": "15:30",
+       "luxury": false
+      },
+      {
+       "time": "18:00",
+       "luxury": false
+      }
+     ]
     }
    ],
    "genre": "Drama",
@@ -621,19 +587,6 @@
    "runtime": 109,
    "no_passes": true,
    "showtimes": [
-    {
-     "date": "2026-11-26",
-     "times": [
-      {
-       "time": "15:45",
-       "luxury": false
-      },
-      {
-       "time": "18:15",
-       "luxury": false
-      }
-     ]
-    },
     {
      "date": "2026-11-27",
      "times": [
@@ -760,6 +713,23 @@
       },
       {
        "time": "18:00",
+       "luxury": false
+      },
+      {
+       "time": "18:30",
+       "luxury": false
+      }
+     ]
+    },
+    {
+     "date": "2026-12-03",
+     "times": [
+      {
+       "time": "15:00",
+       "luxury": false
+      },
+      {
+       "time": "15:15",
        "luxury": false
       },
       {

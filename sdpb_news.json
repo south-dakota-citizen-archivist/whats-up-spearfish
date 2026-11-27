@@ -3,8 +3,8 @@
  "name": "SDPB",
  "kind": "news",
  "url": "https://www.sdpb.org/news",
- "fetched_at": "2026-11-26T12:52:04-07:00",
- "count": 80,
+ "fetched_at": "2026-11-27T14:38:34-07:00",
+ "count": 81,
  "records": [
   {
    "url": "https://www.sdpb.org/politics/2026-10-29/republican-state-sen-taffy-howard-faces-campaign-finance-crime-allegation",
@@ -1285,6 +1285,22 @@
    "id": "c3ee52bb890c",
    "date": "2026-11-25",
    "_first_seen": "2026-11-25"
+  },
+  {
+   "url": "https://www.sdpb.org/crime-courts/2026-11-27/state-supreme-court-rejects-improper-search-first-amendment-appeal-in-mcfate-case",
+   "title": "State Supreme Court rejects improper search, First Amendment appeal in McFate case",
+   "slug": "sdpb-state-supreme-court-rejects-improper-search-first-amendment-appeal-in-case",
+   "published": "2026-11-27",
+   "byline": "By C.J. Keene",
+   "description": "The South Dakota Supreme Court case of State V. McFate confirmed a lower court decision over threatening a law enforcement officer and drug charges. Ultimately, the high court rejected McFate’s First Amendment and improper seizure of evidence claims.",
+   "image_url": "https://npr-brightspot.s3.amazonaws.com/c3/2e/68c6ba3741e1a7f9df1500607881/sdnet-thumbnail-ujs.png",
+   "record_type": "news",
+   "source_label": "SDPB",
+   "kind": "news",
+   "source": "sdpb_news",
+   "id": "30d77b6fd044",
+   "date": "2026-11-27",
+   "_first_seen": "2026-11-27"
   }
  ]
 }

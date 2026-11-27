@@ -3,7 +3,7 @@
  "name": "BHSU Campus Calendar",
  "kind": "event",
  "url": "https://bhsu.edu/campus-calendar.html",
- "fetched_at": "2026-11-26T12:51:31-07:00",
+ "fetched_at": "2026-11-27T14:38:01-07:00",
  "count": 6,
  "records": [
   {
@@ -50,8 +50,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event"
    ],
    "featured": false,
@@ -82,8 +82,8 @@
    "image_alt": "",
    "organizer": "",
    "tags": [
-    "Alumni Event",
     "Community Event",
+    "Alumni Event",
     "BHSU Event",
     "Concert"
    ],

@@ -3,7 +3,7 @@
  "name": "Redwater Kitchen",
  "kind": "beer",
  "url": "https://untappd.com",
- "fetched_at": "2026-11-26T12:51:51-07:00",
+ "fetched_at": "2026-11-27T14:38:23-07:00",
  "count": 11,
  "records": [
   {
@@ -31,7 +31,7 @@
    "abv": "5.5%",
    "ibu": "",
    "brewery": "Modist Brewing Co.",
-   "rating": "3.76",
+   "rating": "3.77",
    "image_url": "https://labels.untappd.com/6457354",
    "record_type": "beer",
    "source_label": "Redwater Kitchen",
